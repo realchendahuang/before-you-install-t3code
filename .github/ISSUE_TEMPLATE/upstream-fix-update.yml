@@ -1,0 +1,41 @@
+name: Upstream Fix / Status Update
+description: Report a verified upstream fix or status change in pingdotgg/t3code with direct commit or PR citations.
+title: "[Status Update]: "
+labels:
+  - status-update
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please read [CONTRIBUTING.md](https://github.com/realchendahuang/before-you-install-t3code/blob/main/CONTRIBUTING.md) before submitting. Only verifiable public commits, pull requests, and official documentation updates on `pingdotgg/t3code` are accepted. Zero X redirect shortlinks or unverified speculation.
+  - type: input
+    id: affected-section
+    attributes:
+      label: Affected Dossier / Section
+      description: Specify the exact document(s) and section(s) in this repository that should be updated.
+      placeholder: "e.g., README.md §3.2 and docs/dossiers/02-local-safety-and-security-audit.md (Issue #15353)"
+    validations:
+      required: true
+  - type: input
+    id: upstream-fix-url
+    attributes:
+      label: Upstream Fix PR / Commit URL
+      description: Provide the canonical https:// GitHub PR or commit URL in pingdotgg/t3code.
+      placeholder: "https://github.com/pingdotgg/t3code/pull/..."
+    validations:
+      required: true
+  - type: textarea
+    id: verification-details
+    attributes:
+      label: Verification Details
+      description: Summarize what changed in the upstream code/docs, the merge date/commit SHA, and whether any related gaps remain open.
+      placeholder: "Include verified file paths, line numbers, runtime behavior observed, and remaining scope limits..."
+    validations:
+      required: true
+  - type: checkboxes
+    id: ground-rules
+    attributes:
+      label: Primary-Source Checklist
+      options:
+        - label: I have verified the commit/PR directly on pingdotgg/t3code and provided canonical https:// URLs (no X redirect shortlinks or private contact info).
+          required: true

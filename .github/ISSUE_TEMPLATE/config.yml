@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Contribution Guidelines & Verification Rules
+    url: https://github.com/realchendahuang/before-you-install-t3code/blob/main/CONTRIBUTING.md
+    about: Read CONTRIBUTING.md for ground rules, primary-source standards, i18n parity requirements, and verification commands before opening an issue or discussion.

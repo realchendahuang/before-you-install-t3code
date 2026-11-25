@@ -2,7 +2,9 @@
 
 [Back to README](../../README.md) · [Complete Source Index](../COMPLETE-SOURCE-INDEX.md) · [Next Dossier: Local Safety & Security Audit →](./02-local-safety-and-security-audit.md)
 
-> **Covers:** Audit [Part 1](https://x.com/realchendahuang/status/2125153472450527440), [Part 7](https://x.com/realchendahuang/status/2125391659492081947), [Part 11](https://x.com/realchendahuang/status/2125394810559426993), and [Part 12](https://x.com/realchendahuang/status/2125395501663281198), plus the minute-by-minute Nov 23–25, 2026 event sequence and primary source verification against `pingdotgg/t3code`.
+> **Covers:** Audit [Part 1](https://x.com/realchendahuang/status/2125153472450527440), [Part 7](https://x.com/realchendahuang/status/2125391659492081947), [Part 11](https://x.com/realchendahuang/status/2125394810559426993), and [Part 12](https://x.com/realchendahuang/status/2125395501663281198), plus the minute-by-minute Nov 23–25, 2026 event sequence and primary source verification against `pingdotgg/t3code`.  
+> **Audited Upstream Snapshot:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) (`PR #42000`, `2026-11-24T08:41:04Z` / `2026-11-24 16:41:04 CST`)  
+> **Post-Audit Upstream Re-Audit:** [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`PR #42634`, `2026-11-25T06:49:37Z` / `2026-11-25 14:49:37 CST`, `259` commits ahead of `9d3195b4`)
 
 ---
 
@@ -15,8 +17,9 @@
 5. [The Nov 25 Morning Clarification vs. Overnight PRs & 100MB Dump (Part 11)](#5-the-nov-25-morning-clarification-vs-overnight-prs--100mb-dump-part-11)
 6. [The 6-Hour Post-GDPR Overnight Sprint: Four Deeper Disclosures (Part 12)](#6-the-6-hour-post-gdpr-overnight-sprint-four-deeper-disclosures-part-12)
 7. [Minute-by-Minute Timeline: Nov 23–25, 2026 (CST / UTC)](#7-minute-by-minute-timeline-nov-2325-2026-cst--utc)
-8. [Verification & Remediation Summary](#8-verification--remediation-summary)
-9. [Primary References](#9-primary-references)
+8. [Post-Audit Upstream Tracking (9d3195b4 to ca81b7b9)](#8-post-audit-upstream-tracking-9d3195b4-to-ca81b7b9)
+9. [Verification & Remediation Summary](#9-verification--remediation-summary)
+10. [Primary References](#10-primary-references)
 
 ---
 
@@ -262,15 +265,39 @@ All timestamps below come directly from archived X analytics metadata (`all_18_p
 
 ---
 
-## 8. Verification & Remediation Summary
+## 8. Post-Audit Upstream Tracking (9d3195b4 to ca81b7b9)
 
-1. **Block `ingest.t3.codes` at the OS boundary** in `/etc/hosts` (`127.0.0.1 ingest.t3.codes`) rather than relying solely on environment variables, because `AnalyticsService.ts:149` still initializes identity on disk and older desktop builds ignored shell/user opt-outs.
-2. **Export both disable flags** in shell profiles (`~/.zshrc` / Windows User env) **and** understand that `DesktopShellEnvironment.ts` forwards `T3CODE_TELEMETRY_ENABLED`, not `T3CODE_OTEL_SDK_DISABLED`, so set both `T3CODE_TELEMETRY_ENABLED=false` and `T3CODE_OTEL_SDK_DISABLED=true` in the environment launching T3, or enforce `"limits": { "telemetry": false }` via an administrator-owned `policy.json`.
-3. **Treat `app.t3.codes` and mobile clients separately:** Per `docs/user/telemetry.md`, the hosted web app still has no relay tracing toggle, and `Publish agent activity` continues transmitting project/thread titles and model names even when telemetry is disabled.
+Between the audited baseline snapshot ([`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2), `PR #42000`, `2026-11-24T08:41:04Z`) and `main` HEAD ([`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd), `PR #42634`, `2026-11-25T06:49:37Z`, `259` commits), upstream merged several telemetry-narrowing patches while leaving core architectural gaps intact.
+
+### 8.1 Verified Upstream Changes After `9d3195b4`
+
+| PR / Commit (UTC) | Change Verified in `pingdotgg/t3code` | Remaining Scope Boundary |
+|---|---|---|
+| [**PR #42299**](https://github.com/pingdotgg/t3code/pull/42299) / [`84e4264b`](https://github.com/pingdotgg/t3code/commit/84e4264bb347e36e97f6c3bd95d666eecfa12e07) (`2026-11-24T20:46:02Z`) | Removes `~/.codex/auth.json` and `~/.claude.json` reads from `Identify.ts`; `getTelemetryIdentity` now hashes only the local random `anonymousIdPath` UUID. | `getServerOwners` (`Identify.ts:151-164`) still hashes `CLOUD_LINKED_USER_ID` (`source: "connect"`) and accepts `"device"` client owner hashes via unsalted SHA-256 (`telemetryId.ts`). |
+| [**PR #42465**](https://github.com/pingdotgg/t3code/pull/42465) / [`6b3899f2`](https://github.com/pingdotgg/t3code/commit/6b3899f224947178088ca97ec9907e681807f7da) (`2026-11-24T23:10:38Z`) | Updates `modelLabel` in `ProviderDimensions.ts` (`lines 66-72`) to return `catalogSlug(providers, model) ?? \`custom:${driver}\``, masking custom proxy/local model IDs that `PR #41237` had leaked verbatim. | Catalog and vendor-listed models still report their catalog slug even when served behind a custom endpoint (`docs/user/telemetry.md:9-11`). |
+| [**PR #42630**](https://github.com/pingdotgg/t3code/pull/42630) / [`c925b9ab`](https://github.com/pingdotgg/t3code/commit/c925b9ab198099f67de862ed01701bd1d8809f2b) (`2026-11-25T05:27:52Z`) | Adds `isCiEnvironment` in [`packages/shared/src/otelEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/otelEnvironment.ts) (`lines 322-343`) checking 13 CI env vars (`CI`, `GITHUB_ACTIONS`, `GITLAB_CI`, `CIRCLECI`, `TRAVIS`, `BUILDKITE`, `JENKINS_URL`, `TEAMCITY_VERSION`, `TF_BUILD`, `BITBUCKET_BUILD_NUMBER`, `CODEBUILD_BUILD_ID`, `DRONE`, `APPVEYOR`, ignoring empty/`false`/`0`), defaulting `AnalyticsService` (`line 130`) and `isRelayTracingEnabled` (`lines 349-361`) off in CI. | Only suppresses default collection on CI runners; `T3CODE_TELEMETRY_ENABLED=true` overrides it unless blocked by `DO_NOT_TRACK` or Managed Policy. |
+| [**PR #42629**](https://github.com/pingdotgg/t3code/pull/42629) / [`ef4a1643`](https://github.com/pingdotgg/t3code/commit/ef4a1643edf72ad119452c82b01c91adbf7b9e64) (`2026-11-25T05:46:55Z`) | Adds `isDoNotTrackSet` (`otelEnvironment.ts:346-347`), enforces it in `AnalyticsService.ts:137` and `isRelayTracingEnabled` (`otelEnvironment.ts:357`), and forwards `DO_NOT_TRACK` via `DesktopShellEnvironment.ts` (`lines 126, 138, 569, 677`) and `DesktopBackendConfiguration.ts` (`line 97`). | `DO_NOT_TRACK=1` disables product events and server relay tracing (overriding `T3CODE_TELEMETRY_ENABLED=true`), but still relies on env config rather than an in-app UI toggle. |
+| [**PR #42356**](https://github.com/pingdotgg/t3code/pull/42356), [**#42394**](https://github.com/pingdotgg/t3code/pull/42394), [**#42397**](https://github.com/pingdotgg/t3code/pull/42397), [**#42398**](https://github.com/pingdotgg/t3code/pull/42398), [**#42415**](https://github.com/pingdotgg/t3code/pull/42415) | Server-opened browsers inherit server relay tracing opt-outs; `relayTracing.ts` drops error messages, stacks, and request address attributes (`url.full`, `url.query`, `server.address`, `server.port`); mobile gets its own random device ID and a **Send connection traces** toggle; MCP analytics restrict errors/delivery to closed enums; `agent.feedback` drops `installId` (`#42398` + `#42466`). | Hosted web (`app.t3.codes`), mobile exclusion from Managed Policy, and `Publish agent activity` remain untouched. |
+
+### 8.2 Verified Remaining Gaps at `ca81b7b9`
+
+1. **`AnalyticsService.ts` Unconditional Startup Identity (`line 156`, formerly `line 149` at `9d3195b4`):** Inside `AnalyticsService.make`, `const { distinctId, installId } = yield* getTelemetryIdentity;` still executes unconditionally **before** checking `telemetryEnabled`. Even with `T3CODE_TELEMETRY_ENABLED=false`, `DO_NOT_TRACK=1`, CI runner defaults, or a denying Managed Policy, server startup still runs `upsertAnonymousId` (`Identify.ts:103-133`) and writes the persistent identity file at `anonymousIdPath`.
+2. **`DesktopShellEnvironment.ts` Still Omits `T3CODE_OTEL_SDK_DISABLED` & `OTEL_SDK_DISABLED`:** While [`apps/desktop/src/backend/DesktopBackendConfiguration.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/backend/DesktopBackendConfiguration.ts) (`lines 100-101`) forwards `T3CODE_OTEL_SDK_DISABLED` and `OTEL_SDK_DISABLED` into WSL backends, `DesktopShellEnvironment.ts` (`LOGIN_SHELL_ENV_NAMES:102-132`, `WINDOWS_PROFILE_ENV_NAMES:133-139`, POSIX shell copy `lines 553-576`, `CACHED_ENV_NAMES:665-680`) still forwards only `T3CODE_TELEMETRY_ENABLED` and `DO_NOT_TRACK`.
+3. **Closed-Source `https://ingest.t3.codes` & No Settings UI Opt-Out:** `AnalyticsService.ts` (`line 1`, `lines 70-77`) still defaults `posthogHost` to closed-source `https://ingest.t3.codes` (retaining raw copies of every event before PostHog forwarding) with telemetry enabled by default outside CI and still no in-app toggle in Settings.
+4. **Hosted Web App (`app.t3.codes`), Mobile Policy Exclusion & `Publish agent activity`:** Current `docs/user/telemetry.md` (`lines 84-119`) and `docs/user/managed-policy.md` (`lines 201-202`) confirm that `app.t3.codes` *"sends relay traces when configured and has no tracing toggle"*, server env vars and Managed Policy still do not disable mobile tracing, and `Publish agent activity` ignores telemetry opt-outs (`telemetry.md:115`).
+5. **Unchanged Formal Privacy Policy:** [`apps/marketing/src/pages/privacy-policy.astro`](https://github.com/pingdotgg/t3code/blob/main/apps/marketing/src/pages/privacy-policy.astro) (`lines 24-25`) remains unchanged at `effectiveDate="2026-10-06"` / `lastUpdated="2026-10-06"`.
 
 ---
 
-## 9. Primary References
+## 9. Verification & Remediation Summary
+
+1. **Block `ingest.t3.codes` at the OS boundary** in `/etc/hosts` (`127.0.0.1 ingest.t3.codes`) rather than relying solely on environment variables, because `AnalyticsService.ts` (`line 149` at `9d3195b4`, `line 156` at `ca81b7b9`) still initializes identity on disk unconditionally and older desktop builds ignored shell/user opt-outs.
+2. **Export all disable flags** in shell profiles (`~/.zshrc` / Windows User env): set `DO_NOT_TRACK=1` (honored starting in `PR #42629`), `T3CODE_TELEMETRY_ENABLED=false`, and `T3CODE_OTEL_SDK_DISABLED=true` (noting `DesktopShellEnvironment.ts` still omits `T3CODE_OTEL_SDK_DISABLED`), or enforce `"limits": { "telemetry": false }` via an administrator-owned `policy.json`.
+3. **Treat `app.t3.codes` and mobile clients separately:** Per `docs/user/telemetry.md`, the hosted web app (`app.t3.codes`) still has no relay tracing toggle, and `Publish agent activity` continues transmitting project/thread titles and model names even when telemetry is disabled.
+
+---
+
+## 10. Primary References
 
 - Origin 1 (`2026-11-24T10:49:51+08:00`): https://x.com/realchendahuang/status/2125059292919394654
 - Origin 2 (`2026-11-24T11:03:18+08:00`): https://x.com/realchendahuang/status/2125062675147448475
@@ -279,6 +306,7 @@ All timestamps below come directly from archived X analytics metadata (`all_18_p
 - Part 11 (`2026-11-25T09:03:05+08:00`): https://x.com/realchendahuang/status/2125394810559426993
 - Part 12 (`2026-11-25T09:05:50+08:00`): https://x.com/realchendahuang/status/2125395501663281198
 - Ingest Gateway: https://ingest.t3.codes/
+- Baseline & Post-Audit Upstream Snapshots: https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2 ; https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd
 - PR #174 (Default PostHog telemetry): https://github.com/pingdotgg/t3code/pull/174
 - Commit `3bdaa6e1` (Silent deletion of homepage promise): https://github.com/pingdotgg/t3code/commit/3bdaa6e10046945ccc08264d2d6f3b81775efcb3
 - Issue #1397 (`"We will not make this easier to opt out of"`): https://github.com/pingdotgg/t3code/issues/1397
@@ -286,8 +314,9 @@ All timestamps below come directly from archived X analytics metadata (`all_18_p
 - PR #15028 (`ingest.t3.codes` retention): https://github.com/pingdotgg/t3code/pull/15028
 - PR #21506 (Cross-tool identity stitching): https://github.com/pingdotgg/t3code/pull/21506
 - Rejected opt-out PRs: https://github.com/pingdotgg/t3code/pull/13458 ; https://github.com/pingdotgg/t3code/pull/16763 ; https://github.com/pingdotgg/t3code/pull/21248 ; https://github.com/pingdotgg/t3code/pull/27077
-- Telemetry Source Files: https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts
+- Telemetry Source Files: https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts ; https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/otelEnvironment.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/backend/DesktopBackendConfiguration.ts
 - Official Docs: https://github.com/pingdotgg/t3code/blob/main/docs/user/telemetry.md ; https://github.com/pingdotgg/t3code/blob/main/docs/user/managed-policy.md
 - Theo Claims & Clarifications: https://x.com/theo/status/2125186071357251715 ; https://x.com/theo/status/2125191784859115766 ; https://x.com/theo/status/2125332390239494211 ; https://x.com/theo/status/2125370330244128924
 - Post-GDPR & Overnight PRs: https://github.com/pingdotgg/t3code/pull/42450 ; https://github.com/pingdotgg/t3code/pull/42376 ; https://github.com/pingdotgg/t3code/pull/42464 ; https://github.com/pingdotgg/t3code/pull/42380 ; https://github.com/pingdotgg/t3code/pull/42285 ; https://github.com/pingdotgg/t3code/pull/42430 ; https://github.com/pingdotgg/t3code/pull/42459 ; https://github.com/pingdotgg/t3code/pull/41859 ; https://github.com/pingdotgg/t3code/pull/42466
+- Post-Audit Telemetry Commits & PRs (`9d3195b4`–`ca81b7b9`): https://github.com/pingdotgg/t3code/pull/42299 ; https://github.com/pingdotgg/t3code/commit/84e4264bb347e36e97f6c3bd95d666eecfa12e07 ; https://github.com/pingdotgg/t3code/pull/42465 ; https://github.com/pingdotgg/t3code/commit/6b3899f224947178088ca97ec9907e681807f7da ; https://github.com/pingdotgg/t3code/pull/42630 ; https://github.com/pingdotgg/t3code/commit/c925b9ab198099f67de862ed01701bd1d8809f2b ; https://github.com/pingdotgg/t3code/pull/42629 ; https://github.com/pingdotgg/t3code/commit/ef4a1643edf72ad119452c82b01c91adbf7b9e64 ; https://github.com/pingdotgg/t3code/pull/42356 ; https://github.com/pingdotgg/t3code/pull/42394 ; https://github.com/pingdotgg/t3code/pull/42397 ; https://github.com/pingdotgg/t3code/pull/42398 ; https://github.com/pingdotgg/t3code/pull/42415
 - Theo Public Cleaned Telemetry Dump: https://files.tslop.org/2026/11/t3code-telemetry-events-jsonl-a4896cdc.gz

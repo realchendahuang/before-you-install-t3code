@@ -3,7 +3,9 @@
 # Dossier 05: Repository Governance, Fork-Scraping Bots, Trademark Overreach & Historical Record
 
 > **Covers:** Origin Posts 1–2 and Audit Parts 9, 10, 15, and 16 (plus governance findings from Parts 2–3)  
-> **Primary Record Scope:** `pingdotgg/t3code` files (`CONTRIBUTING.md`, `TRADEMARK.md`, `.github/VOUCHED.td`, `.github/scripts/pr-limits.cjs`, `.github/workflows/issue-vouch.yml`, `apps/marketing/src/i18n/en.ts`), USPTO TSDR records, GitHub Trademark Policy, and public X/YouTube receipts (2024–2026).
+> **Primary Record Scope:** `pingdotgg/t3code` files (`CONTRIBUTING.md`, `TRADEMARK.md`, `.github/VOUCHED.td`, `.github/scripts/pr-limits.cjs`, `.github/workflows/issue-vouch.yml`, `apps/marketing/src/i18n/en.ts`), USPTO TSDR records, GitHub Trademark Policy, and public X/YouTube receipts (2024–2026).  
+> **Audited Upstream Snapshot:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) (`PR #42000`, `2026-11-24T08:41:04Z` / `2026-11-24 16:41:04 CST`)  
+> **Post-Audit Upstream Re-Audit:** [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`PR #42634`, `2026-11-25T06:49:37Z` / `2026-11-25 14:49:37 CST`, `259` commits ahead of `9d3195b4`) — `TRADEMARK.md`, `CONTRIBUTING.md`, `.github/VOUCHED.td`, `.github/scripts/pr-limits.cjs`, and `.github/workflows/issue-vouch.yml` remain unchanged.
 
 ---
 

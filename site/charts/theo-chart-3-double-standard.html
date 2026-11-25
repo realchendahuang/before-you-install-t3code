@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chart 3 · Selective Politeness &amp; Power Asymmetry</title>
+<style>
+  :root {
+    --bg: #090e1a;
+    --surface: #111827;
+    --surface-2: #162033;
+    --border: #24324a;
+    --text: #f1f5f9;
+    --muted: #94a3b8;
+    --dim: #64748b;
+    --blue: #38bdf8;
+    --blue-bg: rgba(56, 189, 248, 0.12);
+    --red: #f43f5e;
+    --red-bg: rgba(244, 63, 94, 0.12);
+    --slate: #94a3b8;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.45;
+    padding: 20px;
+  }
+  .canvas {
+    max-width: 1180px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, #0d1424 0%, #0a101d 100%);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px 26px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .top-accent {
+    position: absolute;
+    top: 0; left: 0; right: 0; height: 4px;
+    background: linear-gradient(90deg, #38bdf8 0%, #818cf8 50%, #f43f5e 100%);
+  }
+  .header-top {
+    display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 10px;
+  }
+  .eyebrow { font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--blue); }
+  .controls { display: flex; align-items: center; gap: 8px; }
+  .pill { font-size: 12px; font-weight: 600; color: var(--muted); background: var(--surface-2); border: 1px solid var(--border); padding: 4px 10px; border-radius: 999px; }
+  .lang-btn {
+    cursor: pointer; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--surface); color: var(--muted); transition: all 0.15s ease;
+  }
+  .lang-btn.active { background: var(--blue-bg); color: var(--blue); border-color: rgba(56, 189, 248, 0.45); }
+  .title { font-size: clamp(20px, 2.5vw, 28px); font-weight: 800; letter-spacing: -0.02em; margin-bottom: 6px; }
+  .title .blue { color: var(--blue); }
+  .title .red { color: var(--red); }
+  .subtitle { font-size: 14px; color: var(--muted); margin-bottom: 16px; }
+
+  .c3-grid {
+    display: grid;
+    grid-template-columns: 1.28fr 1fr;
+    gap: 18px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 18px 20px;
+  }
+  .card-title { font-size: 16px; font-weight: 700; margin-bottom: 3px; }
+  .card-sub { font-size: 12.5px; color: var(--muted); margin-bottom: 12px; }
+
+  .mode-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+  .mode-btn {
+    cursor: pointer; font-size: 12px; font-weight: 600; padding: 6px 12px; border-radius: 8px;
+    border: 1px solid var(--border); background: var(--surface-2); color: var(--muted); transition: all 0.15s ease;
+  }
+  .mode-btn.active { background: var(--blue-bg); color: var(--blue); border-color: rgba(56, 189, 248, 0.45); }
+
+  .group-block {
+    padding: 15px 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    margin-bottom: 12px;
+  }
+  .group-block:last-child { margin-bottom: 0; }
+  .group-block.safe {
+    border-color: rgba(56, 189, 248, 0.4);
+    background: linear-gradient(180deg, rgba(56, 189, 248, 0.08) 0%, var(--surface-2) 100%);
+  }
+  .group-block.danger {
+    border-color: rgba(244, 63, 94, 0.4);
+    background: linear-gradient(180deg, rgba(244, 63, 94, 0.09) 0%, var(--surface-2) 100%);
+  }
+  .g-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px; margin-bottom: 8px; }
+  .g-title { font-size: 15px; font-weight: 700; }
+  .g-n { font-size: 12px; color: var(--muted); font-weight: 600; }
+  .g-bar-row { display: flex; align-items: center; gap: 12px; }
+  .g-track {
+    flex: 1; height: 22px; background: #1e293b; border-radius: 999px; overflow: hidden; display: flex; align-items: center;
+  }
+  .g-track.zero-track {
+    background: rgba(56, 189, 248, 0.08);
+    border: 1.5px dashed rgba(56, 189, 248, 0.45);
+  }
+  .g-zero-note { font-size: 12px; font-weight: 700; color: var(--blue); padding-left: 12px; }
+  .g-fill { height: 100%; border-radius: 999px; transition: width 0.35s ease; }
+  .g-big { font-size: 26px; font-weight: 800; width: 88px; text-align: right; letter-spacing: -0.02em; }
+  .g-sub { font-size: 12.5px; color: var(--muted); margin-top: 8px; line-height: 1.45; }
+  .g-sub strong { color: var(--text); }
+
+  .evidence-col { display: flex; flex-direction: column; gap: 12px; }
+  .ev-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 15px 18px;
+    flex: 1;
+  }
+  .ev-tag {
+    display: inline-block; font-size: 11.5px; font-weight: 700; padding: 3px 9px; border-radius: 6px; margin-bottom: 8px;
+  }
+  .ev-tag.blue { background: var(--blue-bg); color: var(--blue); }
+  .ev-tag.slate { background: rgba(148, 163, 184, 0.14); color: #cbd5e1; }
+  .ev-tag.red { background: var(--red-bg); color: #fda4af; }
+  .ev-title { font-size: 15px; font-weight: 700; margin-bottom: 6px; }
+  .ev-text { font-size: 13px; color: var(--muted); line-height: 1.5; }
+  .ev-text strong { color: var(--text); }
+
+  .footer {
+    margin-top: 16px;
+    padding-top: 12px;
+    border-top: 1px solid var(--border);
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px;
+    font-size: 12px; color: var(--dim);
+  }
+  .footer strong { color: var(--muted); }
+
+  @media (max-width: 860px) {
+    body { padding: 10px; }
+    .canvas { padding: 18px 14px; }
+    .c3-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="canvas">
+  <div class="top-accent"></div>
+
+  <div class="header-top">
+    <span class="eyebrow" data-i18n="eyebrow">THEO (@THEO) X CORPUS FORENSIC PROFILE</span>
+    <div class="controls">
+      <span class="pill" data-i18n="pill">03 / 04 · Selective Politeness Split</span>
+      <button type="button" class="lang-btn active" data-lang="en">EN</button>
+      <button type="button" class="lang-btn" data-lang="zh">中文</button>
+    </div>
+  </div>
+  <h1 class="title" data-i18n-html="title">Selective Politeness: <span class="blue">0.0%</span> Profanity to VIPs vs. 8.0% to Devs &amp; <span class="red">14.4%</span> in Crisis</h1>
+  <p class="subtitle" data-i18n="subtitle">Deterministic regex audit over all 809 leading-@ replies: calm &amp; apologetic toward 20 major tech executives/labs, hostile toward ordinary developers.</p>
+
+  <div class="c3-grid">
+    <div class="card">
+      <div class="card-title" data-i18n="left_t">Targeted Hostility &amp; Insult Rate by Cohort</div>
+      <div class="card-sub" data-i18n="left_s">Toggle cohort definition (Dossier 06 §1 &amp; §4.1 verified counts)</div>
+
+      <div class="mode-bar">
+        <button type="button" class="mode-btn active" data-mode="strict" data-i18n="m_strict">Strict Primary-@ (n=43 vs n=766)</button>
+        <button type="button" class="mode-btn" data-mode="any" data-i18n="m_any">Any-@ Mention (n=62 vs n=747)</button>
+      </div>
+
+      <div class="group-block safe">
+        <div class="g-head">
+          <span class="g-title" data-i18n="g1_t">Big-Tech Execs / AI Lab Staff / Top KOLs (20 Accounts)</span>
+          <span class="g-n" id="g1n"></span>
+        </div>
+        <div class="g-bar-row">
+          <div class="g-track zero-track"><span class="g-zero-note" id="g1zero"></span></div>
+          <div class="g-big" style="color:var(--blue);">0.0%</div>
+        </div>
+        <div class="g-sub" id="g1sub"></div>
+      </div>
+
+      <div class="group-block">
+        <div class="g-head">
+          <span class="g-title" data-i18n="g2_t">Ordinary Developers &amp; Critics</span>
+          <span class="g-n" id="g2n"></span>
+        </div>
+        <div class="g-bar-row">
+          <div class="g-track"><div class="g-fill" id="g2bar" style="width:44.2%; background:#94a3b8;"></div></div>
+          <div class="g-big" id="g2val" style="color:#e2e8f0;">8.0%</div>
+        </div>
+        <div class="g-sub" id="g2sub"></div>
+      </div>
+
+      <div class="group-block danger">
+        <div class="g-head">
+          <span class="g-title" data-i18n="g3_t">25-Hour Chinese-Fork Crisis Window</span>
+          <span class="g-n" data-i18n="g3_n">Nov 23 19:00 – Nov 24 20:28 BJ · n = 132</span>
+        </div>
+        <div class="g-bar-row">
+          <div class="g-track"><div class="g-fill" style="width:80.0%; background:#f43f5e;"></div></div>
+          <div class="g-big" style="color:var(--red);">14.4%</div>
+        </div>
+        <div class="g-sub" data-i18n-html="g3_sub">Direct personal insults surged <strong>4.0×</strong> above pre-crisis 16-day baseline (3.6% → 14.4%, 19/132).</div>
+      </div>
+    </div>
+
+    <div class="evidence-col">
+      <div class="ev-card">
+        <span class="ev-tag blue" data-i18n="e1_tag">TOWARD LABS: RAPID DE-ESCALATION</span>
+        <div class="ev-title" data-i18n="e1_t">Criticizes Models, Then Mends Bridges</div>
+        <div class="ev-text" data-i18n-html="e1_d">Called GPT-6.2 Astra weak on Nov 18, then praised OpenAI's generosity next morning; slammed Google reasoning on Nov 12, apologized on Nov 19, and celebrated <strong>"Happy I didn't burn bridges"</strong> on Nov 21.</div>
+      </div>
+
+      <div class="ev-card">
+        <span class="ev-tag slate" data-i18n="e2_tag">TOWARD DEVS: BLANKET HOSTILITY</span>
+        <div class="ev-title" data-i18n="e2_t">Broad-Brush Contempt for Communities</div>
+        <div class="ev-text" data-i18n-html="e2_d">Wrote <strong>"Engineers deserve the mass unemployment they have coming"</strong>, vowed to <strong>"dance on the graves of the 'local ai' community"</strong>, called Linux users <em>"Linux larpers"</em>, and repeated <em>"stupid bitch"</em> 3 times.</div>
+      </div>
+
+      <div class="ev-card">
+        <span class="ev-tag red" data-i18n="e3_tag">TOWARD DISSENTERS: AUTOMATED PURGE</span>
+        <div class="ev-title" data-i18n="e3_t">Auto-Blocker Bot + Demonetization Call</div>
+        <div class="ev-text" data-i18n-html="e3_d">Confirmed running an X <strong>auto-blocker bot</strong> (~100 accounts blocked on Nov 24) and urged followers on Nov 11 to use Community Notes to <strong>"demonetize them"</strong>.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <span data-i18n="foot_l">20-account VIP group includes @_mohansolo, @thsottiaux, @PatrickToulme, @Google, @OpenAI, @sama, @elonmusk, @martin_casado, etc.</span>
+    <span>Audit &amp; Visualization: <strong>@realchendahuang</strong></span>
+  </div>
+</div>
+
+<script>
+(function () {
+  var lang = "en";
+  var mode = "strict";
+
+  var dict = {
+    en: {
+      eyebrow: "THEO (@THEO) X CORPUS FORENSIC PROFILE",
+      pill: "03 / 04 · Selective Politeness Split",
+      title: 'Selective Politeness: <span class="blue">0.0%</span> Profanity to VIPs vs. 8.0% to Devs &amp; <span class="red">14.4%</span> in Crisis',
+      subtitle: "Deterministic regex audit over all 809 leading-@ replies: calm & apologetic toward 20 major tech executives/labs, hostile toward ordinary developers.",
+      left_t: "Targeted Hostility & Insult Rate by Cohort",
+      left_s: "Toggle cohort definition (Dossier 06 §1 & §4.1 verified counts)",
+      m_strict: "Strict Primary-@ (n=43 vs n=766)",
+      m_any: "Any-@ Mention (n=62 vs n=747)",
+      g1_t: "Big-Tech Execs / AI Lab Staff / Top KOLs (20 Accounts)",
+      g2_t: "Ordinary Developers & Critics",
+      g3_t: "25-Hour Chinese-Fork Crisis Window",
+      g3_n: "Nov 23 19:00 – Nov 24 20:28 BJ · n = 132",
+      g3_sub: 'Direct personal insults surged <strong>4.0×</strong> above pre-crisis 16-day baseline (3.6% → 14.4%, 19/132).',
+      e1_tag: "TOWARD LABS: RAPID DE-ESCALATION",
+      e1_t: "Criticizes Models, Then Mends Bridges",
+      e1_d: 'Called GPT-6.2 Astra weak on Nov 18, then praised OpenAI\'s generosity next morning; slammed Google reasoning on Nov 12, apologized on Nov 19, and celebrated <strong>"Happy I didn\'t burn bridges"</strong> on Nov 21.',
+      e2_tag: "TOWARD DEVS: BLANKET HOSTILITY",
+      e2_t: "Broad-Brush Contempt for Communities",
+      e2_d: 'Wrote <strong>"Engineers deserve the mass unemployment they have coming"</strong>, vowed to <strong>"dance on the graves of the \'local ai\' community"</strong>, called Linux users <em>"Linux larpers"</em>, and repeated <em>"stupid bitch"</em> 3 times.',
+      e3_tag: "TOWARD DISSENTERS: AUTOMATED PURGE",
+      e3_t: "Auto-Blocker Bot + Demonetization Call",
+      e3_d: 'Confirmed running an X <strong>auto-blocker bot</strong> (~100 accounts blocked on Nov 24) and urged followers on Nov 11 to use Community Notes to <strong>"demonetize them"</strong>.',
+      foot_l: "20-account VIP group includes @_mohansolo, @thsottiaux, @PatrickToulme, @Google, @OpenAI, @sama, @elonmusk, @martin_casado, etc."
+    },
+    zh: {
+      eyebrow: "THEO (@THEO) X 账号全量数据画像",
+      pill: "03 / 04 · 权力不对称对照",
+      title: '看人下菜碟实锤：对大厂 <span class="blue">0%</span> 粗口，对普通人 8.0%，对中文区 <span class="red">14.4%</span>',
+      subtitle: "按首位直接 @ 或全量 @ 提及拆分组别：面对掌握话语权的大厂情绪极其稳定，面对普通开发者与批评者随时开火",
+      left_t: "不同对象组别的攻击性语言占比对照",
+      left_s: "切换统计口径（严格对应 Dossier 06 §1 与 §4.1 核验数据）",
+      m_strict: "严格首位直接 @ (n=43 vs n=766)",
+      m_any: "含任意 @ 提及 (n=62 vs n=747)",
+      g1_t: "大厂高管 / 核心员工 / 头部大 V（20 个账号）",
+      g2_t: "普通开发者与批评者",
+      g3_t: "中文 Fork 争议爆发后 25 小时",
+      g3_n: "11-23 19:00 至 11-24 20:28 BJ · n = 132",
+      g3_sub: "直接人身攻击率较前 16 天基线（3.6%）暴涨 <strong>4.0 倍</strong>（19/132）。",
+      e1_tag: "面对大厂：骂完立刻修桥",
+      e1_t: "情绪稳定，从不把路走死",
+      e1_d: "11-18 发长文批 GPT-6.2，次日即发长文盛赞 OpenAI 格局大；11-12 连发四条喷 Google 推理差，一周后公开庆幸<strong>没烧毁和 Google 的关系</strong>。",
+      e2_tag: "面对普通开发者：固定鄙视链",
+      e2_t: "群体扫射成常态",
+      e2_d: "称要在本地模型社区<strong>坟头跳舞</strong>；称普通程序员<strong>活该大规模失业、平均智商不高</strong>；称 Linux 用户是 <em>Linux larpers</em>；反复骂女性批评者 <em>stupid bitch</em> 并自转。",
+      e3_tag: "面对异议者：自动化清场",
+      e3_t: "拉黑 Bot + 社区笔记断收益",
+      e3_d: "11-24 亲口承认 X 账号挂了<strong>自动拉黑 Bot</strong>，单日拉黑约 <strong>100 个账号</strong>；11-11 公开号召粉丝打 Community Notes 断掉批评者的 X 创作者收益。",
+      foot_l: "大厂组含 @_mohansolo、@thsottiaux、@PatrickToulme、@Google、@OpenAI、@martin_casado 等 20 个头部账号"
+    }
+  };
+
+  function renderCohort() {
+    var g1n = document.getElementById("g1n");
+    var g1zero = document.getElementById("g1zero");
+    var g1sub = document.getElementById("g1sub");
+    var g2n = document.getElementById("g2n");
+    var g2bar = document.getElementById("g2bar");
+    var g2val = document.getElementById("g2val");
+    var g2sub = document.getElementById("g2sub");
+
+    if (mode === "strict") {
+      g1n.textContent = lang === "en" ? "Leading-@ reply · n = 43" : "首位直接 @ 回复 · n = 43";
+      g1zero.textContent = lang === "en" ? "0 / 43 · Zero targeted profanity or insults" : "0 / 43 · 针对对方本人零粗口、零攻击";
+      g1sub.innerHTML = lang === "en"
+        ? 'Polite gratitude &amp; praise rate reached <strong>32.6%</strong> (14 / 43).'
+        : '礼貌致谢与客气捧场占比高达 <strong>32.6%</strong>（14/43）';
+
+      g2n.textContent = lang === "en" ? "Remaining leading-@ replies · n = 766" : "其余首位直接 @ 回复 · n = 766";
+      g2bar.style.width = "44.2%";
+      g2val.textContent = "8.0%";
+      g2sub.innerHTML = lang === "en"
+        ? '<strong>61 / 766</strong> matched hostility/profanity (22.2% polite). Full corpus (1,151): 9.7% profanity (112), 4.9% personal insults (56).'
+        : '含粗口或直接人身攻击 <strong>61 条</strong>（22.2% 礼貌）；全样本 1,151 条含粗口 9.7%（112 条）、人身攻击 4.9%（56 条）。';
+    } else {
+      g1n.textContent = lang === "en" ? "Any-@ mention in 809 replies · n = 62" : "809 条 @ 回复中含任意大厂提及 · n = 62";
+      g1zero.textContent = lang === "en" ? "0 / 62 targeted (1 hit targets @opsRich)" : "0 / 62 针对大厂本人（唯一命中骂的是 @opsRich）";
+      g1sub.innerHTML = lang === "en"
+        ? 'Polite gratitude &amp; praise rate: <strong>29.0%</strong> (18 / 62).'
+        : '礼貌致谢与客气捧场占比：<strong>29.0%</strong>（18/62）';
+
+      g2n.textContent = lang === "en" ? "Non-VIP @ replies · n = 747" : "非大厂 @ 回复 · n = 747";
+      g2bar.style.width = "44.5%";
+      g2val.textContent = "8.0%";
+      g2sub.innerHTML = lang === "en"
+        ? '<strong>60 / 747 (8.03%)</strong> matched hostility/profanity (plus 1 @opsRich reply mentioning @GergelyOrosz).'
+        : '<strong>60 / 747（8.03%）</strong>含粗口或攻击（另有 1 条同时 @GergelyOrosz 但实际骂 @opsRich）。';
+    }
+  }
+
+  function applyLang() {
+    var t = dict[lang];
+    document.documentElement.lang = lang === "en" ? "en" : "zh-CN";
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n");
+      if (t[k] !== undefined) el.textContent = t[k];
+    });
+    document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+      var k = el.getAttribute("data-i18n-html");
+      if (t[k] !== undefined) el.innerHTML = t[k];
+    });
+    document.querySelectorAll(".lang-btn").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
+    });
+    renderCohort();
+    notifyHeight();
+  }
+
+  function notifyHeight() {
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({ type: "t3-chart-height", chart: "chart3", height: document.documentElement.scrollHeight }, "*");
+    }
+  }
+
+  document.querySelectorAll(".mode-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      mode = btn.getAttribute("data-mode");
+      document.querySelectorAll(".mode-btn").forEach(function (b) { b.classList.toggle("active", b === btn); });
+      renderCohort();
+      notifyHeight();
+    });
+  });
+
+  document.querySelectorAll(".lang-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      lang = btn.getAttribute("data-lang");
+      applyLang();
+    });
+  });
+
+  window.addEventListener("resize", notifyHeight);
+  applyLang();
+})();
+</script>
+</body>
+</html>

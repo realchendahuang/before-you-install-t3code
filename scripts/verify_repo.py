@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Verify repository links, formatting hygiene, and external HTTPS URL coverage."""
+"""Verify repository links, heading/HTML anchors, evidence coverage, formatting hygiene, and URL parity."""
 
 from __future__ import annotations
 
@@ -7,6 +7,8 @@ import argparse
 import json
 import re
 import sys
+import unicodedata
+import urllib.parse
 from dataclasses import dataclass, field
 from pathlib import Path
 
@@ -39,10 +41,24 @@ EXPECTED_I18N_FILES = (
     "docs/i18n/README.hi.md",
 )
 
+# Exact-match allowlist for self-repo GitHub Pages and CI workflow/badge URLs so
+# COMPLETE-SOURCE-INDEX.md remains strictly reserved for primary audit citations.
+SELF_PORTAL_URLS = frozenset(
+    {
+        "https://realchendahuang.github.io/before-you-install-t3code",
+        "https://realchendahuang.github.io/before-you-install-t3code/",
+        "https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml",
+        "https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml/badge.svg",
+        "https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/pages.yml",
+    }
+)
+
 FENCED_CODE_RE = re.compile(
     r"(?ms)^[ \t]{0,3}(`{3,}|~{3,})[^\n]*\n.*?^[ \t]{0,3}\1[ \t]*$"
 )
 INLINE_CODE_RE = re.compile(r"`+[^`\n]+?`+")
+ATX_HEADING_RE = re.compile(r"(?m)^[ \t]{0,3}#{1,6}[ \t]+(.+?)[ \t]*#*[ \t]*$")
+HTML_ID_RE = re.compile(r"""\bid\s*=\s*(?:"([^"]+)"|'([^']+)')""", re.IGNORECASE)
 MD_LINK_RE = re.compile(r"!?\[[^\]]*\]\(([^()\n]+(?:\([^()\n]*\)[^()\n]*)*)\)")
 HTML_ATTR_RE = re.compile(r"""(?:href|src)\s*=\s*(?:"([^"]+)"|'([^']+)')""", re.IGNORECASE)
 HTTPS_URL_RE = re.compile(r"https://[^\s<>)\"'\`\]，。；！？、…]+")
@@ -57,7 +73,9 @@ class VerificationReport:
 
     markdown_files: list[str] = field(default_factory=list)
     relative_links_checked: int = 0
+    anchors_checked: int = 0
     broken_links: list[str] = field(default_factory=list)
+    broken_anchors: list[str] = field(default_factory=list)
     pending_i18n_links: list[str] = field(default_factory=list)
     missing_dossiers: list[str] = field(default_factory=list)
     missing_i18n_files: list[str] = field(default_factory=list)
@@ -70,16 +88,21 @@ class VerificationReport:
     dossier_urls_not_in_index: list[str] = field(default_factory=list)
     i18n_url_parity: dict[str, dict[str, int | list[str]]] = field(default_factory=dict)
     evidence_counts: dict[str, int] = field(default_factory=dict)
+    evidence_referenced: int = 0
+    unreferenced_evidence: list[str] = field(default_factory=list)
     allow_missing_i18n: bool = False
 
     def error_count(self) -> int:
         errors = (
             len(self.broken_links)
+            + len(self.broken_anchors)
             + len(self.missing_dossiers)
             + len(self.tco_hits)
             + len(self.escaped_dollar_hits)
             + len(self.highlight_hits)
             + len(self.missing_in_source_index)
+            + len(self.dossier_urls_not_in_index)
+            + len(self.unreferenced_evidence)
         )
         if not self.allow_missing_i18n:
             errors += len(self.missing_i18n_files)
@@ -105,6 +128,48 @@ def line_number_at(text: str, pos: int) -> int:
     return text.count("\n", 0, pos) + 1
 
 
+def github_heading_slug(raw_heading: str) -> str:
+    """Compute a GitHub-style Unicode heading slug preserving L/M/N, '-', '_', and spaces->'-'."""
+    text = re.sub(r"<[^>]+>", "", raw_heading)
+    text = re.sub(r"!\[([^\]]*)\]\([^)]*\)", r"\1", text)
+    text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)
+    text = text.replace("`", "").replace("*", "")
+
+    out: list[str] = []
+    for ch in text.strip().lower():
+        if ch == " ":
+            out.append("-")
+        elif ch in ("-", "_"):
+            out.append(ch)
+        else:
+            cat = unicodedata.category(ch)
+            if cat[0] in ("L", "M", "N"):
+                out.append(ch)
+    return "".join(out)
+
+
+def collect_document_anchors(raw_text: str) -> set[str]:
+    """Collect GitHub heading slugs (with duplicate suffixes) and HTML id attributes."""
+    no_fenced = strip_fenced_only(raw_text)
+    anchors: set[str] = set()
+    slug_counts: dict[str, int] = {}
+
+    for m in ATX_HEADING_RE.finditer(no_fenced):
+        base = github_heading_slug(m.group(1))
+        if not base:
+            continue
+        idx = slug_counts.get(base, 0)
+        slug_counts[base] = idx + 1
+        anchors.add(base if idx == 0 else f"{base}-{idx}")
+
+    for m in HTML_ID_RE.finditer(no_fenced):
+        attr_id = m.group(1) if m.group(1) is not None else m.group(2)
+        if attr_id:
+            anchors.add(attr_id)
+
+    return anchors
+
+
 def extract_https_urls(text: str) -> set[str]:
     """Return unique canonicalized https:// URLs found in markdown text."""
     urls: set[str] = set()
@@ -125,12 +190,10 @@ def clean_link_target(raw: str) -> str:
     return target
 
 
-def is_external_or_anchor(target: str) -> bool:
+def is_external_scheme(target: str) -> bool:
     lower = target.lower()
-    return (
-        not target
-        or target.startswith("#")
-        or lower.startswith(("http://", "https://", "mailto:", "tel:", "data:", "javascript:"))
+    return not target or lower.startswith(
+        ("http://", "https://", "mailto:", "tel:", "data:", "javascript:")
     )
 
 
@@ -143,8 +206,20 @@ def collect_markdown_files(repo_root: Path) -> list[Path]:
     return sorted(files)
 
 
+def collect_evidence_files(repo_root: Path) -> set[str]:
+    evidence_dir = repo_root / "evidence"
+    if not evidence_dir.is_dir():
+        return set()
+    return {
+        p.relative_to(repo_root).as_posix()
+        for p in evidence_dir.rglob("*")
+        if p.is_file()
+    }
+
+
 def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport:
     report = VerificationReport(allow_missing_i18n=allow_missing_i18n)
+    repo_resolved = repo_root.resolve()
     i18n_expected_set = {(repo_root / rel).resolve() for rel in EXPECTED_I18N_FILES}
 
     for rel in EXPECTED_DOSSIERS:
@@ -171,12 +246,24 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
             else 0,
         }
 
+    all_evidence_files = collect_evidence_files(repo_root)
+    referenced_evidence: set[str] = set()
+
     md_files = collect_markdown_files(repo_root)
     report.markdown_files = [p.relative_to(repo_root).as_posix() for p in md_files]
 
+    doc_texts: dict[Path, str] = {}
+    doc_anchors: dict[Path, set[str]] = {}
+    for md_path in md_files:
+        raw_text = md_path.read_text(encoding="utf-8")
+        resolved_md = md_path.resolve()
+        doc_texts[resolved_md] = raw_text
+        doc_anchors[resolved_md] = collect_document_anchors(raw_text)
+
     for md_path in md_files:
         rel_doc = md_path.relative_to(repo_root).as_posix()
-        raw_text = md_path.read_text(encoding="utf-8")
+        resolved_md = md_path.resolve()
+        raw_text = doc_texts[resolved_md]
         no_fenced = strip_fenced_only(raw_text)
         prose_only = strip_code(raw_text)
 
@@ -194,7 +281,7 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
             snippet = m.group(0)[:60]
             report.highlight_hits.append(f"{rel_doc}:{ln}: {snippet}")
 
-        # (a) Relative Markdown and HTML links/images
+        # (a) Relative Markdown and HTML links/images + internal #anchors
         targets: list[tuple[int, str]] = []
         for m in MD_LINK_RE.finditer(prose_only):
             targets.append((line_number_at(prose_only, m.start()), clean_link_target(m.group(1))))
@@ -203,15 +290,31 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
             targets.append((line_number_at(prose_only, m.start()), clean_link_target(attr_val)))
 
         for ln, target in targets:
-            if is_external_or_anchor(target):
+            if is_external_scheme(target):
                 continue
-            rel_part = target.split("#", 1)[0].split("?", 1)[0]
+
+            if "#" in target:
+                path_part, raw_fragment = target.split("#", 1)
+                fragment = urllib.parse.unquote(raw_fragment.strip())
+            else:
+                path_part, fragment = target, ""
+
+            rel_part = path_part.split("?", 1)[0]
+
             if not rel_part:
+                # Same-file #anchor reference
+                if fragment:
+                    report.anchors_checked += 1
+                    if fragment not in doc_anchors[resolved_md]:
+                        report.broken_anchors.append(
+                            f"{rel_doc}:{ln}: missing anchor -> #{fragment}"
+                        )
                 continue
+
             report.relative_links_checked += 1
             resolved = (md_path.parent / rel_part).resolve()
             try:
-                resolved.relative_to(repo_root.resolve())
+                rel_from_root = resolved.relative_to(repo_resolved)
             except ValueError:
                 report.broken_links.append(
                     f"{rel_doc}:{ln}: escapes repository root -> {target}"
@@ -220,12 +323,28 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
 
             if not resolved.exists():
                 if allow_missing_i18n and resolved in i18n_expected_set:
-                    rel_target = resolved.relative_to(repo_root.resolve()).as_posix()
-                    report.pending_i18n_links.append(f"{rel_doc}:{ln} -> {rel_target}")
+                    report.pending_i18n_links.append(
+                        f"{rel_doc}:{ln} -> {rel_from_root.as_posix()}"
+                    )
                 else:
                     report.broken_links.append(f"{rel_doc}:{ln}: missing target -> {target}")
+                continue
 
-    # (c) External HTTPS URL coverage against README.md / COMPLETE-SOURCE-INDEX.md
+            rel_posix = rel_from_root.as_posix()
+            if rel_posix in all_evidence_files:
+                referenced_evidence.add(rel_posix)
+
+            if fragment and resolved in doc_anchors:
+                report.anchors_checked += 1
+                if fragment not in doc_anchors[resolved]:
+                    report.broken_anchors.append(
+                        f"{rel_doc}:{ln}: missing anchor in {rel_posix} -> #{fragment}"
+                    )
+
+    report.evidence_referenced = len(referenced_evidence)
+    report.unreferenced_evidence = sorted(all_evidence_files - referenced_evidence)
+
+    # (c) External HTTPS URL coverage against README.md / COMPLETE-SOURCE-INDEX.md / docs/dossiers/*.md
     readme_path = repo_root / "README.md"
     source_index_path = repo_root / "docs" / "COMPLETE-SOURCE-INDEX.md"
     base_urls = (
@@ -240,15 +359,19 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
     )
     report.base_readme_urls = len(base_urls)
     report.source_index_urls = len(index_urls)
-    report.missing_in_source_index = sorted(base_urls - index_urls)
+    report.missing_in_source_index = sorted(base_urls - index_urls - SELF_PORTAL_URLS)
 
-    # Check if dossiers introduce external URLs absent from COMPLETE-SOURCE-INDEX.md (advisory)
+    # Check ALL docs/dossiers/*.md against COMPLETE-SOURCE-INDEX.md
+    dossier_paths = { (repo_root / rel).resolve() for rel in EXPECTED_DOSSIERS }
+    dossiers_dir = repo_root / "docs" / "dossiers"
+    if dossiers_dir.is_dir():
+        dossier_paths |= {p.resolve() for p in dossiers_dir.glob("*.md")}
+
     dossier_urls: set[str] = set()
-    for rel in EXPECTED_DOSSIERS:
-        p = repo_root / rel
+    for p in sorted(dossier_paths):
         if p.is_file():
             dossier_urls |= extract_https_urls(strip_fenced_only(p.read_text(encoding="utf-8")))
-    report.dossier_urls_not_in_index = sorted(dossier_urls - index_urls)
+    report.dossier_urls_not_in_index = sorted(dossier_urls - index_urls - SELF_PORTAL_URLS)
 
     # Check i18n translation parity against base README.md
     for rel in EXPECTED_I18N_FILES:
@@ -267,15 +390,18 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
 
 def format_report(report: VerificationReport) -> str:
     mode = "wave1 (--allow-missing-i18n)" if report.allow_missing_i18n else "strict"
+    total_evidence = sum(report.evidence_counts.values())
     lines: list[str] = [
         f"=== Repository Verification Report [{mode}] ===",
         f"Markdown files scanned : {len(report.markdown_files)}",
         f"Relative links checked : {report.relative_links_checked}",
+        f"Internal anchors check : {report.anchors_checked}",
         (
             "Evidence inventory     : "
             f"root={report.evidence_counts.get('root', 0)}, "
             f"extra={report.evidence_counts.get('extra', 0)}, "
-            f"charts={report.evidence_counts.get('charts', 0)}"
+            f"charts={report.evidence_counts.get('charts', 0)} "
+            f"(referenced={report.evidence_referenced}/{total_evidence})"
         ),
         f"Base README HTTPS URLs : {report.base_readme_urls}",
         f"Source Index HTTPS URLs: {report.source_index_urls}",
@@ -291,20 +417,16 @@ def format_report(report: VerificationReport) -> str:
 
     add_section("Missing dossiers", report.missing_dossiers)
     add_section("Broken relative links/images", report.broken_links)
+    add_section("Broken heading/HTML anchors", report.broken_anchors)
+    add_section("Unreferenced evidence/ assets", report.unreferenced_evidence)
     add_section("Shortened t.co links", report.tco_hits)
     add_section("Escaped dollar artifacts (\\$)", report.escaped_dollar_hits)
     add_section("Unrendered ==highlight== markers", report.highlight_hits)
     add_section("Base README URLs missing in COMPLETE-SOURCE-INDEX.md", report.missing_in_source_index)
-
-    if report.dossier_urls_not_in_index:
-        lines.append(
-            f"[INFO] Dossier HTTPS URLs not in COMPLETE-SOURCE-INDEX.md ({len(report.dossier_urls_not_in_index)}):"
-        )
-        for u in report.dossier_urls_not_in_index[:25]:
-            lines.append(f"  - {u}")
-        if len(report.dossier_urls_not_in_index) > 25:
-            lines.append(f"  ... and {len(report.dossier_urls_not_in_index) - 25} more")
-        lines.append("")
+    add_section(
+        "Dossier HTTPS URLs missing in COMPLETE-SOURCE-INDEX.md",
+        report.dossier_urls_not_in_index,
+    )
 
     i18n_label = "PENDING-WAVE2" if report.allow_missing_i18n else "ERROR"
     if report.missing_i18n_files:
@@ -374,8 +496,12 @@ def main() -> int:
                     "errors": report.error_count(),
                     "markdown_files": report.markdown_files,
                     "relative_links_checked": report.relative_links_checked,
+                    "anchors_checked": report.anchors_checked,
                     "evidence_counts": report.evidence_counts,
+                    "evidence_referenced": report.evidence_referenced,
+                    "unreferenced_evidence": report.unreferenced_evidence,
                     "broken_links": report.broken_links,
+                    "broken_anchors": report.broken_anchors,
                     "missing_dossiers": report.missing_dossiers,
                     "missing_i18n_files": report.missing_i18n_files,
                     "pending_i18n_links": report.pending_i18n_links,

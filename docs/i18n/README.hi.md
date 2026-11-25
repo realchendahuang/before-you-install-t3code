@@ -24,16 +24,41 @@
   <a href="./README.id.md">Bahasa Indonesia</a> ·
   <a href="./README.hi.md"><strong>हिन्दी</strong></a>
 </p>
+<p align="center">
+  <a href="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml/badge.svg" alt="रिपॉज़िटरी सत्यापन CI" /></a>
+  ·
+  <a href="https://realchendahuang.github.io/before-you-install-t3code/"><strong>इंटरैक्टिव साक्ष्य पोर्टल (GitHub Pages)</strong></a>
+  ·
+  <a href="../EVIDENCE-INDEX.md"><strong>108-छवि साक्ष्य सूचकांक</strong></a>
+  ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>320-URL स्रोत सूचकांक</strong></a>
+</p>
+<p align="center">
+  <strong>ऑडिट की गई आधाररेखा:</strong> <a href="https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2"><code>9d3195b4</code></a> (<code>#42000</code>) ·
+  <strong>नवीनतम अपस्ट्रीम जाँच:</strong> <a href="https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd"><code>ca81b7b9</code></a> (<code>#42634</code>, 25 नव. 14:49 CST · +259 कमिट्स)
+</p>
 
 ![T3 Code इंस्टॉल करने से पहले — 18-भाग स्वतंत्र ऑडिट बैनर](../../evidence/00-cover-en.png)
 
 > **दायरा और सत्यापन नीति**  
-> यह रिपॉज़िटरी `pingdotgg/t3code` (T3 Code) का एक स्वतंत्र सुरक्षा, टेलीमेट्री, शासन व्यवस्था और सार्वजनिक-अभिलेख ऑडिट है, जो 24–25 नवंबर 2026 को प्रकाशित 2 मूल पोस्ट और **18 प्रलेखित ऑडिट भागों** को **180+ कैनोनिकल प्राथमिक स्रोत URL** (GitHub कमिट्स, पुल रिक्वेस्ट, इश्यू, अक्षरशः स्रोत फ़ाइलें, आधिकारिक दस्तावेज़, USPTO TSDR रिकॉर्ड और संग्रहीत सार्वजनिक पोस्ट), छह गहन तकनीकी डॉसियर ([`docs/dossiers/`](../dossiers/01-telemetry-and-gdpr-timeline.md)), और **1,151 क्रमिक `@theo` X पोस्ट** (7–24 नवंबर 2026) के मात्रात्मक डेटासेट के साथ संकलित करता है। इसमें कोई छोटा रीडायरेक्ट URL और कोई निजी संपर्क विवरण शामिल नहीं है। प्राथमिक उद्धरणों के साथ तथ्यात्मक अद्यतन, नए मर्ज किए गए सुधार या अतिरिक्त अनुवाद Pull Request के माध्यम से स्वागत योग्य हैं — देखें [`CONTRIBUTING.md`](../../CONTRIBUTING.md) और [`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md)
+> यह रिपॉज़िटरी `pingdotgg/t3code` (T3 Code) का एक स्वतंत्र सुरक्षा, टेलीमेट्री, शासन व्यवस्था और सार्वजनिक-अभिलेख ऑडिट है, जो 24–25 नवंबर 2026 को प्रकाशित 2 मूल पोस्ट और **18 प्रलेखित ऑडिट भागों** को [`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md) (`SRC-001`–`SRC-320`) में अनुक्रमित **320 कैनोनिकल प्राथमिक स्रोत URL**, [`docs/EVIDENCE-INDEX.md`](../EVIDENCE-INDEX.md) में सूचीबद्ध **108 प्राथमिक दृश्य प्रमाण व चार्ट**, छह गहन तकनीकी डॉसियर ([`docs/dossiers/`](../dossiers/01-telemetry-and-gdpr-timeline.md)), [इंटरैक्टिव साक्ष्य पोर्टल](https://realchendahuang.github.io/before-you-install-t3code/), और **1,151 क्रमिक `@theo` X पोस्ट** (7–24 नवंबर 2026) के मात्रात्मक डेटासेट के साथ संकलित करता है। कोडबेस ऑडिट प्राथमिक आधाररेखा [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) (`PR #42000`, `2026-11-24T08:41:04Z`) को कवर करता है और `main` HEAD [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`PR #42634`, `2026-11-25T06:49:37Z` / `2026-11-25 14:49 CST`) तक निरंतर ट्रैक किया गया है। इसमें कोई छोटा रीडायरेक्ट URL और कोई निजी संपर्क विवरण शामिल नहीं है। प्राथमिक उद्धरणों के साथ तथ्यात्मक अद्यतन, नए मर्ज किए गए सुधार या अतिरिक्त अनुवाद Pull Request के माध्यम से स्वागत योग्य हैं — देखें [`CONTRIBUTING.md`](../../CONTRIBUTING.md).
+
+---
+
+## TL;DR (30-सेकंड का निष्कर्ष)
+
+- **कौन प्रभावित है:** `pingdotgg/t3code` के स्थानीय डेस्कटॉप, CLI, होस्टेड वेब (`app.t3.codes`), मोबाइल और T3 Connect उपयोगकर्ता—विशेष रूप से गैर-एडमिन डेस्कटॉप इंस्टॉलेशन, कस्टम एंडपॉइंट या Antigravity/Gemini सब्सक्रिप्शन चलाने वाले डेवलपर्स, Claude Auto मोड के उपयोगकर्ता, और वे सभी जिनके GitHub या T3 Connect सत्र लिंक किए गए हैं।
+- **कोड से सत्यापित 3 प्रमुख निष्कर्ष (`9d3195b4` → `ca81b7b9` पर जाँचे गए):**
+  1. **डिफ़ॉल्ट टेलीमेट्री, बिना शर्त स्टार्टअप ID और GDPR के बाद के खुलासे ([भाग 2](#2-टेलीमेट्री-क्रॉस-टूल-क्रेडेंशियल-रीडिंग-और-gdpr-के-बाद-की-रातोंरात-मुहिम-भाग-1-7-11-12) · [डॉसियर 01](../dossiers/01-telemetry-and-gdpr-timeline.md)):** 18 जून तक `"No telemetry"` का वादा करते हुए ([कमिट `3bdaa6e1`](https://github.com/pingdotgg/t3code/commit/3bdaa6e10046945ccc08264d2d6f3b81775efcb3)) डिफ़ॉल्ट-ऑन PostHog टेलीमेट्री शिप की ([PR #174](https://github.com/pingdotgg/t3code/pull/174)); क्लोज़्ड-सोर्स [`https://ingest.t3.codes/`](https://ingest.t3.codes/) पर कच्चे ईवेंट्स की प्रति रखता है; पोस्ट-GDPR PRs ने Axiom में **2.2M/घंटा IP + UA स्पैन** ([PR #42380](https://github.com/pingdotgg/t3code/pull/42380)), `git.cwd` पाथ लीक ([PR #42450](https://github.com/pingdotgg/t3code/pull/42450)), और अधूरे Clerk विलोपन ([PR #42285](https://github.com/pingdotgg/t3code/pull/42285)) को स्वीकार किया। ऑडिट के बाद के PRs ने `.codex`/`.claude.json` रीड्स हटाए ([PR #42299](https://github.com/pingdotgg/t3code/pull/42299)), कस्टम मॉडलों को `custom:<driver>` के रूप में मास्क किया ([PR #42465](https://github.com/pingdotgg/t3code/pull/42465)), और CI/`DO_NOT_TRACK` का सम्मान किया ([PR #42630](https://github.com/pingdotgg/t3code/pull/42630), [PR #42629](https://github.com/pingdotgg/t3code/pull/42629)), **फिर भी [`AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts) (`पंक्ति 156`) ऑप्ट-आउट की जाँच करने से पहले ही डिस्क पर एक ID लिखता है, [`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) `OTEL_SDK_DISABLED`/`T3CODE_OTEL_SDK_DISABLED` को छोड़ देता है, और कोई सेटिंग्स UI या `app.t3.codes` टॉगल मौजूद नहीं है।**
+  2. **स्थानीय सुरक्षा कमियाँ, परिवेशीय SSH/रेपो हुक और `0` सुरक्षा परामर्श ([भाग 3](#3-स्थानीय-स्टोरेज-प्रोसेस-मॉनिटरिंग-गार्डरेल-बायपास-और-अघोषित-सुरक्षा-पैच-भाग-2-3-13) · [डॉसियर 02](../dossiers/02-local-safety-and-security-audit.md)):** Claude Auto मोड तीसरे प्रयास में `git push --force` को चुपचाप निष्पादित कर देता है ([Issue #15353](https://github.com/pingdotgg/t3code/issues/15353), अभी भी खुला है); [**0 GitHub Security Advisories**](https://github.com/pingdotgg/t3code/security/advisories) के साथ मूक सुरक्षा सुधार मर्ज हुए जबकि [`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md) पूरे OS पर `filesystem:read` और iOS सादे HTTP को जानबूझकर बनाया गया डिज़ाइन घोषित करता है; किसी रेपो को खोलने पर `.gitmodules` स्वतः पुनरावर्ती रूप से इनिशियलाइज़ हो जाता है (`GitVcsDriverCore.ts`), वैश्विक Git `core.hooksPath=/dev/null` अनुपस्थित है (`VcsProcess.ts`), और लाइव Claude सत्र पूरे इनहेरिटेड `GITHUB_TOKEN`/`SSH_AUTH_SOCK` के साथ `SessionStart` हुक (`ClaudeAdapterV2.ts`) निष्पादित करते हैं; और जहाँ [PR #42119](https://github.com/pingdotgg/t3code/pull/42119) ने (`#17845` को बंद करते हुए) एसिंक्रोनस थ्रेड पर्ज जोड़ा, वहीं फ़ोर्क/सब-एजेंट संदर्भ + टॉम्बस्टोन बने रहते हैं और `statev2.sqlite` का आकार घटाने के लिए ऑफ़लाइन `VACUUM` की आवश्यकता होती है, जबकि [PR #42577](https://github.com/pingdotgg/t3code/pull/42577) ने केवल Windows प्रोसेस मॉनिटरिंग को सीमित किया (Linux/macOS पर `ProcessesToUpdate::All` बना हुआ है)।
+  3. **Antigravity स्पूफ़िंग, प्लेनटेक्स्ट रिले, LAN/Auth बग और मनमाना-रेपो स्टारिंग ([भाग 4](#4-google-antigravity-tos-जोखिम-और-बिना-एन्क्रिप्शन-वाला-t3-connect-रिले-भाग-4-5) · [भाग 5.3](#53-t3-code-25-दिनों-में-30k-से-77k-स्टार्स-पर-कैसे-पहुँचा-129-वॉचर्स-भाग-18)):** [`antigravityUsageLimits.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts) अभी भी कीरिंग/`CredReadW` टोकन निकालता है और `v1internal` के विरुद्ध `antigravity/hub/2.24.0` की स्पूफ़िंग करता है (जबकि [PR #41210](https://github.com/pingdotgg/t3code/pull/41210) ने Google `VALIDATION_REQUIRED` `403` सत्यापन लिंक दिखाए); **T3 Connect** में अभी भी **शून्य E2E एन्क्रिप्शन** है ([Issue #32098](https://github.com/pingdotgg/t3code/issues/32098)) और `requireConnectDeviceApproval` डिफ़ॉल्ट रूप से `false` रहा ([`settings.ts`](https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/settings.ts)); `ca81b7b9` पर स्रोत निरीक्षण यह भी पुष्टि करता है कि `--lan` HTTP पर `Secure` के बिना 30-दिन की शेल कुकीज़ जारी होती हैं और `Origin`-रहित अनुरोधों से बायपास संभव है (`PR #37042`), बिना `/logout` रूट वाले अनिरसनीय 30-दिन के गैर-DPoP Bearer टोकन मिलते हैं, 5-मिनट के URL `?wsTicket=` क्रेडेंशियल रीप्ले-योग्य हैं, और `isIPv4` चुपचाप `::1` Tailscale Serve / Connect सॉकेट्स को ड्रॉप कर देता है; तथा [`driver.ts#L60-L99`](https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts#L60-L99) सर्वर-क्रेडेंशियल से मनमाने-रेपो स्टारिंग को अनपिन्ड छोड़ देता है।
+- **तत्काल कार्रवाई:** पहले से इंस्टॉल है? सीधे [**व्यावहारिक जोखिम न्यूनीकरण और सुधार प्लेबुक**](#7-व्यावहारिक-जोखिम-न्यूनीकरण-और-सुधार-प्लेबुक) पर जाएँ (`export DO_NOT_TRACK=1`, `ingest.t3.codes` के लिए `/etc/hosts` ब्लॉक, Managed Policy, ऑफ़लाइन `VACUUM`, और OAuth/टोकन निरसन)।
 
 ---
 
 ## विषय-सूची
 
+- [TL;DR (30-सेकंड का निष्कर्ष)](#tldr-30-सेकंड-का-निष्कर्ष)
 - [संरचित निष्कर्ष और जोखिम मैट्रिक्स](#संरचित-निष्कर्ष-और-जोखिम-मैट्रिक्स)
 - [कालानुक्रमिक समयरेखा (2023–2026)](#कालानुक्रमिक-समयरेखा-20232026)
 - [1. मूल विवाद: "Steal Our Code", फ़ोर्क नामकरण की धमकी और दोहरा मापदंड](#1-मूल-विवाद-steal-our-code-फ़ोर्क-नामकरण-की-धमकी-और-दोहरा-मापदंड)
@@ -49,15 +74,15 @@
 
 ## संरचित निष्कर्ष और जोखिम मैट्रिक्स
 
-| डोमेन और ऑडिट भाग | जोखिम / प्रभाव | मुख्य प्रलेखित निष्कर्ष और स्रोत प्रमाण | स्थिति (25 नवंबर 2026) | गहन डॉसियर |
+| डोमेन और ऑडिट भाग | जोखिम / प्रभाव | मुख्य प्रलेखित निष्कर्ष और स्रोत प्रमाण | स्थिति (`ca81b7b9`, 25 नव. 14:49 CST) | गहन डॉसियर |
 |---|---|---|---|---|
-| **टेलीमेट्री और GDPR के बाद की गोपनीयता**<br>*(भाग 1, 7, 11, 12)* | **अत्यंत गंभीर (Critical)** | डिफ़ॉल्ट PostHog एनालिटिक्स (`PR #174`) जबकि होमपेज पर `"No telemetry / Unless you opt in. Full stop."` का वादा था (`3bdaa6e1` ने 18 जून को इसे हटाया); क्लोज़्ड-सोर्स `ingest.t3.codes` के माध्यम से कच्चे ईवेंट्स का भंडारण (`PR #15028`); `~/.codex/auth.json` और `~/.claude.json` की अनसॉल्टेड SHA-256 क्रॉस-टूल हैशिंग (`Identify.ts`, `telemetryId.ts`); 4 अस्वीकृत ऑप्ट-आउट PR (`#13458`, `#16763`, `#21248`, `#27077`); Managed Policy की कमियाँ (`docs/user/telemetry.md`); रातोंरात मर्ज हुए GDPR PR जिनमें Axiom में 30 दिनों तक रखे गए **2.2M/घंटा IP + UA स्पैन** (`#42380`), `git.cwd` पाथ लीक (`#42450`), अनदेखे किए गए Win/Mac ऑप्ट-आउट (`#42376`, `#42464`), टूटा हुआ खाता विलोपन (`#42285`), और मिश्रित गुमनाम बैच (`#42466`) स्वीकार किए गए। | आंशिक रातोंरात पैच; `AnalyticsService.ts` अभी भी स्टार्टअप पर डिस्क पहचान बनाता है; होस्टेड वेब ऐप में अभी भी कोई टॉगल नहीं है; `ingest.t3.codes` अभी भी क्लोज़्ड-सोर्स है | [**डॉसियर 01**](../dossiers/01-telemetry-and-gdpr-timeline.md) |
-| **स्थानीय सुरक्षा और मूक परामर्श (Silent Advisories)**<br>*(भाग 2, 3, 13)* | **अत्यंत गंभीर (Critical)** | साइडबार का "permanent delete" केवल `statev2.sqlite` में `"thread.deleted"` जोड़ता है (25.9–41.6 GB का फैलाव, `#17845`); `t3-resource-monitor` कमांड लाइनों के साथ सभी OS प्रोसेस को स्कैन करता है (`ProcessesToUpdate::All`, `#11222`, `PR #41889`); Claude Auto मोड तीसरे प्रयास में `git push --force` को चुपचाप स्वीकृत कर देता है (`#15353`, 52–53+ दिनों से खुला); `slopalytics.com` के लिए प्राइवेट मॉडल फ़िल्टर को 21 घंटे में हटा दिया गया (`#41237`); मूक सुधारों (`#39483`, `#41757`, `#42386`, `#42504`) के बावजूद **0 GitHub Security Advisories**; खुला Windows Base64 PowerShell AV इश्यू (`#30997`); `SECURITY.md` OS-व्यापी `filesystem:read` और iOS HTTP को जानबूझकर बनाया गया डिज़ाइन घोषित करता है। | `#17845`, `#15353`, `#26489`, `#30997` अनसुलझे / खुले हैं; `0` प्रकाशित Security Advisories | [**डॉसियर 02**](../dossiers/02-local-safety-and-security-audit.md) |
-| **Antigravity ToS और T3 Connect रिले**<br>*(भाग 4, 5)* | **उच्च (High)** | `docs/user/faq.md` Google Antigravity ToS सुरक्षा की गारंटी देता है, जबकि `antigravityUsageLimits.ts` OS कीरिंग/Windows `CredReadW` से टोकन निकालता है, `antigravity/hub/2.24.0` की स्पूफ़िंग करता है, और निजी `v1internal` एंडपॉइंट्स पर हिट करता है; `antigravityAuthSupport.ts` नकली `SSH_CONNECTION` इंजेक्ट करता है जिससे क्रॉस-अकाउंट रूटिंग होती है (`#41973`); नया $20 का खाता 3 मिनट में बैन हो गया (`#41536`); `PR #33800` स्पूफ़ किए गए `claude`/`xai`/`antigravity` CLIProxyAPI हब पोलिंग को जोड़ता है; T3 Connect में **शून्य E2E एन्क्रिप्शन**, डिफ़ॉल्ट रूप से बंद `requireConnectDeviceApproval` (`#36419`), और एक खुला OVH Caddy TLS-टर्मिनेशन गेटवे (`PR #32945`) है। | Antigravity स्पूफ़िंग कोड अभी भी सक्रिय है; T3 Connect E2E एन्क्रिप्शन को स्पष्ट रूप से अस्वीकार किया गया (`#32098`, 25 नव. का उत्तर) | [**डॉसियर 03**](../dossiers/03-antigravity-tos-and-t3connect-relay.md) |
-| **व्यावसायिक लेखा-जोखा, प्रायोजक और 77k स्टार्स**<br>*(भाग 6, 8, 17, 18)* | **उच्च (High)** | मुफ़्त क्लाइंट पर $800k+ खर्च (भुगतान किए गए उत्पादों के `0` उल्लेखों के मुकाबले `162` T3 उल्लेख); $300k+ OpenAI अर्ली-एक्सेस टोकन और VC संपर्क के बदले **31.7T टोकन/दिन** ($10.19M/दिन) का कंप्यूट रडार; Vibe Kanban और Daytona के साथ एंजेल-निवेशक टकराव; प्रायोजक स्टैक (Clerk, Axiom, Vercel विशिष्टता); Codex 0% दोहन (`Endless` / `codex#45444`); 10-खाते वाला `CLIProxyAPI` Gist (`555%` कोटा) बनाम FAQ बैन चेतावनी; 5-प्रॉम्प्ट / 30-सेकंड आइडल टोस्ट जो होस्ट क्रेडेंशियल से `PUT user/starred/...` चलाता है (`#27832`, `#29922`, `#29987`), Macroscope को बायपास करता है और `driver.ts#L60-L99` में अनपिन्ड रेपो स्टारिंग को 19 दिनों तक ठीक नहीं करता। | `driver.ts` अनपिन्ड स्टारिंग और `zhilsinger` की समीक्षा 19 दिनों बाद भी ठीक नहीं हुई; रेपो ~129 वॉचर्स के मुकाबले 77k+ स्टार्स पर है | [**डॉसियर 04**](../dossiers/04-business-ledger-sponsors-and-77k-stars.md) |
-| **शासन व्यवस्था, ट्रेडमार्क और इतिहास**<br>*(मूल 1–2, भाग 9, 10, 15, 16)* | **मध्यम–उच्च (Medium–High)** | प्रतिदिन 500 कमिट / 700 एजेंट / `yolo merges` बनाम `CONTRIBUTING.md` (`"here's my advice: Don't"`), `.github/VOUCHED.td` सार्वजनिक निंदा ऑटो-बैन, `174` `unwanted` लेबल, Plan मोड हटाना (`#5551`, `#9190`, `#33131`), और `#33639` अपमान; सार्वजनिक `@bot` फ़ोर्क-स्क्रैपिंग (`@MiaAI_lab`), Community Notes विमुद्रीकरण आह्वान, और ऑटो-ब्लॉकर; GitHub टेकडाउन की धमकी देते समय `T3 Code`/`T3 Tools`/`T3 Connect` के लिए **0 USPTO पंजीकरण** (`PING LABS` `97294243` परित्यक्त; EquipmentShare `7795672` पंजीकृत); 17 घंटे बाद पूर्वव्यापी `PR #41898` `TRADEMARK.md`; 2024–2026 पैटर्न (`vsc-material-but-i-wont-sue-you`, भारतीय डेवलपर से माफ़ी, $20k FFmpeg बाउंटी, 25 नव. सुबह 4 बजे हटाई गई क्लोज़्ड-सोर्स धमकी)। | `CONTRIBUTING.md` / `.github/VOUCHED.td` और `TRADEMARK.md` अभी भी `main` पर लाइव हैं | [**डॉसियर 05**](../dossiers/05-governance-trademark-and-history.md) |
-| **1,151-ट्वीट मात्रात्मक डेटासेट**<br>*(भाग 14)* | **ऑडिट आधाररेखा (Audit Baseline)** | 7–24 नवंबर का संपूर्ण संकलन (`n = 1,151`, 17.24 दिन, 66.8 पोस्ट/दिन, 75.6% उत्तर, 2.7 मिनट माध्य अंतराल): 20 बड़ी टेक कंपनियों के अधिकारियों/कर्मचारियों/KOLs के प्रति **0.0% अभद्र भाषा/अपमान** (`0/43` सख्त प्राथमिक-`@`, `32.6%` आभार) बनाम सामान्य डेवलपर्स के प्रति **8.0% शत्रुता** (`61/766`) और 25-घंटे के चीनी-फ़ोर्क संकट के दौरान सीधे व्यक्तिगत अपमानों में **4.0x उछाल से 14.4%** (`19/132`) तक वृद्धि। | 4 फ़ोरेंसिक चार्ट के साथ पुनरुत्पादनीय रेगेक्स ऑडिट | [**डॉसियर 06**](../dossiers/06-tweet-forensic-dataset-1151.md) |
-| **संपूर्ण प्राथमिक URL कैटलॉग** | **संदर्भ (Reference)** | इस पोर्टल, `canonical_refs.txt`, `tco_resolved.json`, `all_18_posts.txt`, और `missing_posts_full.json` में मौजूद प्रत्येक कैनोनिकल `https://` URL का पूर्ण क्रॉस-रेफरेंस कैटलॉग। | 100% कैनोनिकलाइज़्ड (शून्य `t.co` लिंक) | [**स्रोत सूचकांक**](../COMPLETE-SOURCE-INDEX.md) |
+| **टेलीमेट्री और GDPR के बाद की गोपनीयता**<br>*(भाग 1, 7, 11, 12)* | **अत्यंत गंभीर (Critical)** | डिफ़ॉल्ट PostHog एनालिटिक्स (`PR #174`) जबकि होमपेज पर `"No telemetry / Unless you opt in. Full stop."` का वादा था (`3bdaa6e1` ने 18 जून को इसे हटाया); क्लोज़्ड-सोर्स `ingest.t3.codes` के माध्यम से कच्चे ईवेंट्स का भंडारण (`PR #15028`); `~/.codex/auth.json` और `~/.claude.json` की अनसॉल्टेड SHA-256 क्रॉस-टूल हैशिंग (`Identify.ts`, `telemetryId.ts`); 4 अस्वीकृत ऑप्ट-आउट PR (`#13458`, `#16763`, `#21248`, `#27077`); Managed Policy की कमियाँ (`docs/user/telemetry.md`); रातोंरात मर्ज हुए GDPR PR जिनमें Axiom में 30 दिनों तक रखे गए **2.2M/घंटा IP + UA स्पैन** (`#42380`), `git.cwd` पाथ लीक (`#42450`), अनदेखे किए गए Win/Mac ऑप्ट-आउट (`#42376`, `#42464`), टूटा हुआ खाता विलोपन (`#42285`), और मिश्रित गुमनाम बैच (`#42466`) स्वीकार किए गए। | ऑडिट के बाद [`#42299`](https://github.com/pingdotgg/t3code/pull/42299) (`.codex`/`.claude.json` रीड हटाए), [`#42465`](https://github.com/pingdotgg/t3code/pull/42465) (`custom:<driver>`), [`#42630`](https://github.com/pingdotgg/t3code/pull/42630) (CI ऑप्ट-आउट), और [`#42629`](https://github.com/pingdotgg/t3code/pull/42629) (`DO_NOT_TRACK`) मर्ज हुए; **`ca81b7b9` पर अभी भी अनसुलझा:** `AnalyticsService.ts:156` ऑप्ट-आउट जाँच से पहले ही डिस्क पर ID आरंभ करता है, `DesktopShellEnvironment.ts` अभी भी `OTEL_SDK_DISABLED`/`T3CODE_OTEL_SDK_DISABLED` को छोड़ देता है, क्लोज़्ड-सोर्स `ingest.t3.codes` डिफ़ॉल्ट बना हुआ है, कोई UI/वेब ऑप्ट-आउट नहीं है, मोबाइल Managed Policy से बाहर है, `Publish agent activity` ऑप्ट-आउट को अनदेखा करता है। | [**डॉसियर 01**](../dossiers/01-telemetry-and-gdpr-timeline.md) |
+| **स्थानीय सुरक्षा और मूक परामर्श (Silent Advisories)**<br>*(भाग 2, 3, 13)* | **अत्यंत गंभीर (Critical)** | साइडबार का "permanent delete" केवल `statev2.sqlite` में `"thread.deleted"` जोड़ता है (25.9–41.6 GB का फैलाव, `#17845`); `t3-resource-monitor` कमांड लाइनों के साथ सभी OS प्रोसेस को स्कैन करता है (`ProcessesToUpdate::All`, `#11222`, `PR #41889`); Claude Auto मोड तीसरे प्रयास में `git push --force` को चुपचाप स्वीकृत कर देता है (`#15353`, 52–53+ दिनों से खुला); `slopalytics.com` के लिए प्राइवेट मॉडल फ़िल्टर को 21 घंटे में हटा दिया गया (`#41237`); मूक सुधारों (`#39483`, `#41757`, `#42386`, `#42504`) के बावजूद **0 GitHub Security Advisories**; खुला Windows Base64 PowerShell AV इश्यू (`#30997`); अविश्वस्त रेपो खोलने पर `.gitmodules` का पुनरावर्ती इनिशियलाइज़ेशन स्वतः चलता है, वैश्विक `core.hooksPath=/dev/null` अनुपस्थित है, और लाइव Claude `SessionStart` हुक पूरे इनहेरिटेड `GITHUB_TOKEN`/`SSH_AUTH_SOCK` के साथ चलते हैं; `SECURITY.md` OS-व्यापी `filesystem:read` और iOS HTTP को जानबूझकर बनाया गया डिज़ाइन घोषित करता है। | [`#42119`](https://github.com/pingdotgg/t3code/pull/42119) ने एसिंक्रोनस `thread-content.purge` के माध्यम से `#17845` बंद किया (लाइव फ़ोर्क/मर्ज-बैक/सब-एजेंट स्रोत इतिहास + टॉम्बस्टोन बनाए रखता है; DB का आकार घटाने हेतु ऑफ़लाइन `VACUUM` आवश्यक); [`#42577`](https://github.com/pingdotgg/t3code/pull/42577) ने Windows मॉनिटर रीड्स को सीमित किया (Linux/macOS `ProcessesToUpdate::All` और `#41889` खुले हैं); **`ca81b7b9` पर अभी भी अनसुलझा:** `#15353`, `#26489`, `#30997`, अविश्वस्त रेपो हुक + `SSH_AUTH_SOCK` एक्सपोज़र, **`0` Security Advisories**, और `SECURITY.md` सीमाएँ। | [**डॉसियर 02**](../dossiers/02-local-safety-and-security-audit.md) |
+| **Antigravity ToS और T3 Connect रिले**<br>*(भाग 4, 5)* | **उच्च (High)** | `docs/user/faq.md` Google Antigravity ToS सुरक्षा की गारंटी देता है, जबकि `antigravityUsageLimits.ts` OS कीरिंग/Windows `CredReadW` से टोकन निकालता है, `antigravity/hub/2.24.0` की स्पूफ़िंग करता है, और निजी `v1internal` एंडपॉइंट्स पर हिट करता है; `antigravityAuthSupport.ts` नकली `SSH_CONNECTION` इंजेक्ट करता है जिससे क्रॉस-अकाउंट रूटिंग होती है (`#41973`); नया $20 का खाता 3 मिनट में बैन हो गया (`#41536`); `PR #33800` स्पूफ़ किए गए `claude`/`xai`/`antigravity` CLIProxyAPI हब पोलिंग को जोड़ता है; T3 Connect में **शून्य E2E एन्क्रिप्शन**, डिफ़ॉल्ट रूप से बंद `requireConnectDeviceApproval` (`#36419`), और एक खुला OVH Caddy TLS-टर्मिनेशन गेटवे (`PR #32945`) है; `ca81b7b9` की auth जाँचें `Origin`-रहित अनुरोधों पर भी स्वीकार की जाने वाली 30-दिन की सादी `--lan` कुकीज़ (`PR #37042` केवल-HTTPS), अनिरसनीय 30-दिन के गैर-DPoP Bearer टोकन, रीप्ले-योग्य 5-मिनट के URL `?wsTicket=` मान, और `isIPv4` द्वारा `::1` टनल्स को समाप्त किए जाने को उजागर करती हैं। | [`#41210`](https://github.com/pingdotgg/t3code/pull/41210) ने Google `VALIDATION_REQUIRED` `403` सत्यापन लिंक जोड़े (सक्रिय Google जाँच की पुष्टि); [`#42311`](https://github.com/pingdotgg/t3code/pull/42311) ने नए-डिवाइस साइन-इन नोटिस जोड़े; **`ca81b7b9` पर अभी भी अनसुलझा:** Antigravity स्पूफ़िंग/कीरिंग कोड व `cliproxyApi.ts` सक्रिय हैं, **T3 Connect में कोई E2E नहीं** (`#32098` / `#32945`), `requireConnectDeviceApproval` डिफ़ॉल्ट रूप से `false` है, साथ ही LAN कुकी / Bearer / WS टिकट / `::1` auth और टनल बग भी। | [**डॉसियर 03**](../dossiers/03-antigravity-tos-and-t3connect-relay.md) |
+| **व्यावसायिक लेखा-जोखा, प्रायोजक और 77k स्टार्स**<br>*(भाग 6, 8, 17, 18)* | **उच्च (High)** | मुफ़्त क्लाइंट पर $800k+ खर्च (भुगतान किए गए उत्पादों के `0` उल्लेखों के मुकाबले `162` T3 उल्लेख); $300k+ OpenAI अर्ली-एक्सेस टोकन और VC संपर्क के बदले **31.7T टोकन/दिन** ($10.19M/दिन) का कंप्यूट रडार; Vibe Kanban और Daytona के साथ एंजेल-निवेशक टकराव; प्रायोजक स्टैक (Clerk, Axiom, Vercel विशिष्टता); Codex 0% दोहन (`Endless` / `codex#45444`); 10-खाते वाला `CLIProxyAPI` Gist (`555%` कोटा) बनाम FAQ बैन चेतावनी; 5-प्रॉम्प्ट / 30-सेकंड आइडल टोस्ट जो होस्ट क्रेडेंशियल से `PUT user/starred/...` चलाता है (`#27832`, `#29922`, `#29987`), Macroscope को बायपास करता है और `driver.ts#L60-L99` में अनपिन्ड रेपो स्टारिंग को 19 दिनों तक ठीक नहीं करता। | `driver.ts#L60-L99` अनपिन्ड स्टारिंग और `zhilsinger` की समीक्षा **`ca81b7b9` पर भी अनसुलझी हैं**; रेपो ~129 वॉचर्स के मुकाबले 77k+ स्टार्स पर है। | [**डॉसियर 04**](../dossiers/04-business-ledger-sponsors-and-77k-stars.md) |
+| **शासन व्यवस्था, ट्रेडमार्क और इतिहास**<br>*(मूल 1–2, भाग 9, 10, 15, 16)* | **मध्यम–उच्च (Medium–High)** | प्रतिदिन 500 कमिट / 700 एजेंट / `yolo merges` बनाम `CONTRIBUTING.md` (`"here's my advice: Don't"`), `.github/VOUCHED.td` सार्वजनिक निंदा ऑटो-बैन, `174` `unwanted` लेबल, Plan मोड हटाना (`#5551`, `#9190`, `#33131`), और `#33639` अपमान; सार्वजनिक `@bot` फ़ोर्क-स्क्रैपिंग (`@MiaAI_lab`), Community Notes विमुद्रीकरण आह्वान, और ऑटो-ब्लॉकर; GitHub टेकडाउन की धमकी देते समय `T3 Code`/`T3 Tools`/`T3 Connect` के लिए **0 USPTO पंजीकरण** (`PING LABS` `97294243` परित्यक्त; EquipmentShare `7795672` पंजीकृत); 17 घंटे बाद पूर्वव्यापी `PR #41898` `TRADEMARK.md`; 2024–2026 पैटर्न (`vsc-material-but-i-wont-sue-you`, भारतीय डेवलपर से माफ़ी, $20k FFmpeg बाउंटी, 25 नव. सुबह 4 बजे हटाई गई क्लोज़्ड-सोर्स धमकी)। | `CONTRIBUTING.md` / `.github/VOUCHED.td` और `TRADEMARK.md` अभी भी `main` (`ca81b7b9`) पर लाइव हैं। | [**डॉसियर 05**](../dossiers/05-governance-trademark-and-history.md) |
+| **1,151-ट्वीट मात्रात्मक डेटासेट**<br>*(भाग 14)* | **ऑडिट आधाररेखा (Audit Baseline)** | 7–24 नवंबर का संपूर्ण संकलन (`n = 1,151`, 17.24 दिन, 66.8 पोस्ट/दिन, 75.6% उत्तर, 2.7 मिनट माध्य अंतराल): 20 बड़ी टेक कंपनियों के अधिकारियों/कर्मचारियों/KOLs के प्रति **0.0% अभद्र भाषा/अपमान** (`0/43` सख्त प्राथमिक-`@`, `32.6%` आभार) बनाम सामान्य डेवलपर्स के प्रति **8.0% शत्रुता** (`61/766`) और 25-घंटे के चीनी-फ़ोर्क संकट के दौरान सीधे व्यक्तिगत अपमानों में **4.0x उछाल से 14.4%** (`19/132`) तक वृद्धि। | 4 फ़ोरेंसिक चार्ट के साथ पुनरुत्पादनीय रेगेक्स ऑडिट। | [**डॉसियर 06**](../dossiers/06-tweet-forensic-dataset-1151.md) |
+| **संपूर्ण प्राथमिक URL और दृश्य कैटलॉग** | **संदर्भ (Reference)** | [`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md) में **320** कैनोनिकल `https://` प्राथमिक URL (`SRC-001`–`SRC-320`) और **108** दोषरहित अनुकूलित दृश्य प्रमाण व चार्ट (`EV-001`–`EV-108`) का पूर्ण क्रॉस-रेफरेंस कैटलॉग। | 100% कैनोनिकलाइज़्ड (शून्य `t.co` लिंक; 108/108 संपत्तियाँ अनुक्रमित)। | [**स्रोत सूचकांक**](../COMPLETE-SOURCE-INDEX.md) · [**साक्ष्य सूचकांक**](../EVIDENCE-INDEX.md) |
 
 ---
 
@@ -86,6 +111,7 @@
 | **2026-11-24 17:04–21:21 CST** | ऑडिट के **भाग 1–5** प्रकाशित हुए (भाग 1 **1.81M+ व्यूज़**, 6,640 बुकमार्क तक पहुँचा)। `18:39 CST` पर `@theo` ने चीनी टेक ट्विटर को `"the biggest fucking cesspit"` कहा (`2125177503526588877`); `19:13–19:36 CST` पर दावा किया कि Managed Policy सभी टेलीमेट्री बंद कर देती है (`2125186071357251715`)। | [भाग 1](https://x.com/realchendahuang/status/2125153472450527440) → [भाग 5](https://x.com/realchendahuang/status/2125218189596676555) |
 | **2026-11-24 रात – 2026-11-25 ~07:00 CST** | औपचारिक EU GDPR शिकायत दर्ज; **6-घंटे के रातोंरात स्प्रिंट** में `#42380` (2.2M/घंटा IP स्पैन), `#42285`/`#42430` (खाता विलोपन), `#42376`/`#42464` (अनदेखे Win/Mac ऑप्ट-आउट), `#42450` (`git.cwd` पाथ लीक, Theo द्वारा पाथ संग्रहण से इनकार करने के 90 मिनट बाद), `#42459`/`#41859` (पुश लीक), `#42466` (गुमनाम बैचिंग), `#41757`/`#42386`/`#42504` (मूक सुरक्षा सुधार) मर्ज किए गए। सूर्योदय से पहले `@theo` ने क्लोज़्ड-सोर्स करने की धमकी पोस्ट करके हटा दी। | [भाग 11](https://x.com/realchendahuang/status/2125394810559426993) · [भाग 12](https://x.com/realchendahuang/status/2125395501663281198) · [भाग 13](https://x.com/realchendahuang/status/2125395980354994414) |
 | **2026-11-25 08:27–10:28 CST** | ऑडिट के **भाग 6–18** प्रकाशित हुए, जिनमें व्यावसायिक लेखा-जोखा, Managed Policy की कमियाँ, `yolo merges`, `@bot` स्क्रैपिंग, GDPR के बाद के खुलासे, 1,151-ट्वीट डेटासेट, USPTO रिकॉर्ड, प्रायोजक संबंध और 77k स्टार इंजन शामिल हैं। | [भाग 6](https://x.com/realchendahuang/status/2125385742243520653) → [भाग 18](https://x.com/realchendahuang/status/2125416210120765799) |
+| **2026-11-25 से 14:49 CST तक (`ca81b7b9`)** | आधाररेखा के बाद की अपस्ट्रीम ट्रैकिंग (`9d3195b4` से `ca81b7b9` तक `+259` कमिट्स) ने `#42299` (`.codex`/`.claude.json` रीड हटाता है), `#42465` (`custom:<driver>`), `#42577` (Windows मॉनिटर सीमांकन), `#41210` (Antigravity `VALIDATION_REQUIRED` सत्यापन लिंक), `#42630` (CI रनर ऑप्ट-आउट), `#42629` (`DO_NOT_TRACK`), `#42119` (एसिंक्रोनस थ्रेड पर्ज जो `#17845` को बंद करता है जबकि फ़ोर्क/सब-एजेंट इतिहास + टॉम्बस्टोन बनाए रखता है जिसके लिए `VACUUM` आवश्यक है), `#42311` (नए-डिवाइस नोटिस), और `#42356`–`#42415` कड़ाई की पुष्टि की — साथ ही यह भी पुष्टि की कि `AnalyticsService.ts:156`, `DesktopShellEnvironment.ts` OTel छूट, क्लोज़्ड-सोर्स `ingest.t3.codes`, `#15353`, `driver.ts#L60-L99`, `0` Advisories, और अनुपस्थित T3 Connect E2E अभी भी अनसुलझे हैं। | [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) · [PR #42629](https://github.com/pingdotgg/t3code/pull/42629) · [PR #42119](https://github.com/pingdotgg/t3code/pull/42119) · [PR #41210](https://github.com/pingdotgg/t3code/pull/41210) |
 
 ---
 
@@ -107,7 +133,7 @@
 
 ## 2. टेलीमेट्री, क्रॉस-टूल क्रेडेंशियल रीडिंग और GDPR के बाद की रातोंरात मुहिम (भाग 1, 7, 11, 12)
 
-> **गहन तकनीकी ऑडिट:** पूर्ण स्रोत लाइन मैपिंग, `FeatureUsage.ts` क्रिया सूचियाँ, `DesktopShellEnvironment.ts` कमियाँ, और मिनट-दर-मिनट 23–25 नवंबर लॉग [**डॉसियर 01: टेलीमेट्री आर्किटेक्चर, क्रॉस-टूल पहचान जोड़ना और 24–25 नवंबर GDPR रातोंरात स्प्रिंट**](../dossiers/01-telemetry-and-gdpr-timeline.md) में मौजूद हैं।
+> **गहन तकनीकी ऑडिट:** पूर्ण स्रोत लाइन मैपिंग, `FeatureUsage.ts` क्रिया सूचियाँ, `DesktopShellEnvironment.ts` कमियाँ, `9d3195b4` के बाद के डिफ़्स, और मिनट-दर-मिनट 23–25 नवंबर लॉग [**डॉसियर 01: टेलीमेट्री आर्किटेक्चर, क्रॉस-टूल पहचान जोड़ना और 24–25 नवंबर GDPR रातोंरात स्प्रिंट**](../dossiers/01-telemetry-and-gdpr-timeline.md) में मौजूद हैं।
 
 ### 2.1 डिफ़ॉल्ट टेलीमेट्री, हटाया गया होमपेज वादा और क्रॉस-टूल क्रेडेंशियल हैशिंग (`भाग 1`)
 
@@ -120,7 +146,7 @@
 अक्तूबर 2026 में, `@theo` ने **PR #15028** मर्ज किया, जिसने 10-सेकंड के बैच किए गए टेलीमेट्री अपलोड (`FLUSH_INTERVAL_MS = 10_000`) को T3 के क्लोज़्ड-सोर्स गेटवे [`https://ingest.t3.codes/`](https://ingest.t3.codes/) से रूट किया। [`apps/server/src/telemetry/AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts) की पंक्ति 1 स्पष्ट रूप से कहती है कि इनजेस्ट एंडपॉइंट PostHog को आगे भेजने से पहले प्रत्येक कच्चे ईवेंट की एक प्रति रखता है:
 
 ```ts
-// apps/server/src/telemetry/AnalyticsService.ts (lines 1, 71–74, 149)
+// apps/server/src/telemetry/AnalyticsService.ts (lines 1, 71–74, 149 at 9d3195b4; line 156 at ca81b7b9)
 // T3 ingest retains events and forwards to PostHog; UUIDs deduplicate retries there.
 ...
   posthogHost: Config.String("T3CODE_POSTHOG_HOST").pipe(
@@ -131,12 +157,12 @@
   const { distinctId, installId } = yield* getTelemetryIdentity;
 ```
 
-[`ProviderUsageAnalytics.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts) और `FeatureUsage.ts` में एकत्र किए गए फ़ील्ड्स में प्रदाता, मॉडल चयन (`ProviderDimensions.ts` के माध्यम से गैर-कैटलॉग कस्टम मॉडल/एंडपॉइंट ID को अक्षरशः भेजते हुए), रीज़निंग प्रयास, अनुमति मोड, रन अवधि, इनपुट/आउटपुट/कैश किए गए/रीज़निंग टोकन गिनती, चाइल्ड-एजेंट टोकन, स्थानीय प्रोजेक्ट/थ्रेड गिनती, **35 विशिष्ट UI/कमांड क्रियाएँ** (`18` `COMMAND_FEATURES` + `17` `METHOD_FEATURES`), OS विवरण, WSL डिस्ट्रो और आर्किटेक्चर शामिल थे।
+[`ProviderUsageAnalytics.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts) और `FeatureUsage.ts` में एकत्र किए गए फ़ील्ड्स में प्रदाता, मॉडल चयन (`9d3195b4` पर [`ProviderDimensions.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderDimensions.ts) के माध्यम से गैर-कैटलॉग कस्टम मॉडल/एंडपॉइंट ID को अक्षरशः भेजते हुए), रीज़निंग प्रयास, अनुमति मोड, रन अवधि, इनपुट/आउटपुट/कैश किए गए/रीज़निंग टोकन गिनती, चाइल्ड-एजेंट टोकन, स्थानीय प्रोजेक्ट/थ्रेड गिनती, **35 विशिष्ट UI/कमांड क्रियाएँ** (`18` `COMMAND_FEATURES` + `17` `METHOD_FEATURES`), OS विवरण, WSL डिस्ट्रो और आर्किटेक्चर शामिल थे।
 
-**19 अक्तूबर 2026** को, `@theo` ने यह गिनने के लिए **PR #21506** जोड़ा कि एक ही व्यक्ति के पास कितनी मशीनें हैं। [`apps/server/src/telemetry/Identify.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts) ने उपयोगकर्ता की होम डायरेक्टरी में अलग AI टूल्स की क्रेडेंशियल फ़ाइलों—`~/.codex/auth.json` और `~/.claude.json`—को चुपचाप पढ़ना शुरू किया, OpenAI `user_id` JWT क्लेम और Claude `oauthAccount.accountUuid` को डिकोड किया, और लिंक किए गए T3 Connect उपयोगकर्ता ID तथा डिवाइस ID के साथ उन्हें हैश किया:
+**19 अक्तूबर 2026** को, `@theo` ने यह गिनने के लिए **PR #21506** जोड़ा कि एक ही व्यक्ति के पास कितनी मशीनें हैं। आधाररेखा `9d3195b4` पर, [`apps/server/src/telemetry/Identify.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts) ने उपयोगकर्ता की होम डायरेक्टरी में अलग AI टूल्स की क्रेडेंशियल फ़ाइलों—`~/.codex/auth.json` और `~/.claude.json`—को चुपचाप पढ़ना शुरू किया, OpenAI `user_id` JWT क्लेम और Claude `oauthAccount.accountUuid` को डिकोड किया, और लिंक किए गए T3 Connect उपयोगकर्ता ID तथा डिवाइस ID के साथ उन्हें हैश किया (बाद में [`PR #42299`](https://github.com/pingdotgg/t3code/pull/42299) में हटाया गया, जबकि `connect` और `device` अनसॉल्टेड ओनर हैशिंग अभी भी बनी हुई है):
 
 ```ts
-// apps/server/src/telemetry/Identify.ts (lines 257–269, 321–338)
+// apps/server/src/telemetry/Identify.ts (lines 257–269, 321–338 at baseline 9d3195b4)
   const codexTokens = yield* readJsonIdentityFile(
     "codex",
     path.join(homeDirectory, ".codex", "auth.json"),
@@ -163,9 +189,14 @@
 
 सामुदायिक विरोध को बार-बार दबाया गया। **23 जून** को, एक डेवलपर ने सेटिंग्स टॉगल का अनुरोध करते हुए **Issue #1397** खोला; कोर मेंटेनर Julius ने इसे `not planned` कहकर बंद कर दिया: `We will not make this easier to opt out of, it is crucial for us to know how many users we have`। जुलाई में, एक उपयोगकर्ता ने टूटे हुए वादे (`"No telemetry"`) पर सवाल उठाते हुए **Issue #4123** में संग्रहीत होमपेज स्क्रीनशॉट पोस्ट किए, जिसे `@theo` के खाते ने 21 अक्तूबर को एक असंबद्ध कमिट के माध्यम से बंद किया, विरोध के बाद फिर से खोला, और 4 नवंबर को फिर से चुपचाप बंद कर दिया। सितंबर और नवंबर के बीच, योगदानकर्ताओं ने **चार अलग ऑप्ट-आउट PR** (`#13458`, `#16763`, `#21248`, `#27077`) सबमिट किए। यहाँ तक कि `#27077`—जो वास्तविक हार्डवेयर पर **147 पास परीक्षणों** के साथ सत्यापित और Macroscope द्वारा अनुमोदित था—को भी **17 नवंबर** को बंद कर दिया गया और `unwanted` टैग कर दिया गया।
 
+<details>
+<summary>2 ऑप्ट-आउट अस्वीकृति प्रमाण देखें (Issue #1397 &amp; PR #27077)</summary>
+
 ![कोर मेंटेनर Julius द्वारा Issue #1397 को not planned के रूप में बंद करना और यह कहना कि वे ऑप्ट आउट करना आसान नहीं बनाएंगे](../../evidence/04-issue1397-no-optout.png)
 
 ![147 पास परीक्षणों और Macroscope अनुमोदन के बावजूद बिना मर्ज किए unwanted के रूप में बंद किया गया PR #27077](../../evidence/extra/t3code-4-pr-27077-rejected.png)
+
+</details>
 
 ### 2.2 Managed Policy और दस्तावेज़ीकरण विरोधाभास (`भाग 7`)
 
@@ -174,28 +205,38 @@
 [`docs/user/managed-policy.md`](https://github.com/pingdotgg/t3code/blob/main/docs/user/managed-policy.md) और [`docs/user/telemetry.md`](https://github.com/pingdotgg/t3code/blob/main/docs/user/telemetry.md) का प्रत्यक्ष निरीक्षण इसके ठीक विपरीत दिखाता है:
 1. **केवल एडमिन द्वारा कॉन्फ़िगरेशन:** डेस्कटॉप उपयोगकर्ताओं के पास अभी भी सेटिंग्स UI में कोई टॉगल नहीं है। Managed Policy के माध्यम से टेलीमेट्री अक्षम करने के लिए MDM/Group Policy की आवश्यकता होती है या एडमिन-संरक्षित पथों (macOS पर `/Library/Application Support/T3Code/policy.json`, Windows पर `C:\Program Files\T3Code\policy.json` या `HKLM\SOFTWARE\Policies\T3Tools\T3Code`, Linux पर `/etc/t3code/policy.json`) में `policy.json` लिखना पड़ता है।
 2. **होस्टेड वेब ऐप (`app.t3.codes`) ब्लाइंड स्पॉट:** `docs/user/telemetry.md` स्पष्ट रूप से स्वीकार करता है कि ब्राउज़र ऐप सर्वर एनवायरनमेंट वेरिएबल्स नहीं पढ़ता, Managed Policy को अनदेखा करता है, ट्रेसिंग के साथ बिल्ड होने पर कनेक्शन ट्रेस भेजता है, और `"has no relay tracing toggle"`।
-3. **सर्वर नीति से बाहर मोबाइल ऐप्स:** सर्वर एनवायरनमेंट वेरिएबल्स और Managed Policy `"do not disable mobile tracing"`।
+3. **सर्वर नीति से बाहर मोबाइल ऐप्स:** सर्वर एनवायरनमेंट वेरिएबल्स और Managed Policy `"do not disable mobile tracing"` (रातोंरात आए `PR #42415` ने मोबाइल में **Send connection traces** टॉगल जोड़ा, जबकि सर्वर एनवायरनमेंट वेरिएबल्स और Managed Policy अभी भी मोबाइल ट्रेसिंग को अक्षम करने में असमर्थ हैं)।
 4. **`Publish agent activity` ऑप्ट-आउट को अनदेखा करता है:** जब होस्ट पर सक्षम किया जाता है, तो प्रोजेक्ट शीर्षक, थ्रेड शीर्षक, मॉडल नाम और लाइव गतिविधि स्थिति T3 Connect रिले पर जाती है — और `"The telemetry opt-out does not disable it."` (इसके अतिरिक्त, विफल Axiom स्पैन और मोबाइल क्रैश लॉग `"can quote a value the app was handling"`, जबकि `Agent feedback` 16 KB तक के वार्तालाप संदेश संलग्न कर सकता है।)
 
 ![आधिकारिक docs/user/telemetry.md इस बात की पुष्टि करते हुए कि होस्टेड वेब ऐप में कोई टॉगल नहीं है, मोबाइल Managed Policy से बाहर है, और एजेंट गतिविधि प्रकाशन टेलीमेट्री ऑप्ट-आउट को अनदेखा करता है](../../evidence/05-telemetry-cant-disable.png)
 
+<details>
+<summary>Managed Policy एडमिन-पाथ प्रमाण देखें (docs/user/managed-policy.md)</summary>
+
 ![macOS, Windows, और Linux में एडमिन-संरक्षित सिस्टम पथों को सूचीबद्ध करता आधिकारिक docs/user/managed-policy.md](../../evidence/extra/p5-4-doc-managed-policy-paths.png)
+
+</details>
 
 ### 2.3 25 नवंबर के स्पष्टीकरण का 2 घंटे के भीतर खंडन (`भाग 11`)
 
 25 नवंबर की सुबह, `@theo` ने एक सार्वजनिक टेलीमेट्री निर्यात ([`t3code-telemetry-events-jsonl-a4896cdc.gz`](https://files.tslop.org/2026/11/t3code-telemetry-events-jsonl-a4896cdc.gz)) के साथ एक लंबा स्पष्टीकरण ([`2125332390239494211`](https://x.com/theo/status/2125332390239494211)) पोस्ट किया, जिसमें तीन दृढ़ आश्वासन दिए गए — जिसके बाद एक उत्तर में ऑप्ट-आउट होने पर स्थानीय ट्रैकिंग लेखन से इनकार किया गया ([`2125370330244128924`](https://x.com/theo/status/2125370330244128924)) ([भाग 11](https://x.com/realchendahuang/status/2125394810559426993)):
 
 - **"Never collected file paths":** 90 मिनट बाद, Julius ने **PR #42450** मर्ज किया, जिसमें स्वीकार किया गया कि रिले-डिलीवर किए गए वेबहुक रन पूरे निष्पादन स्पैन को Axiom में निर्यात करते थे — जिसमें `git.cwd` (**पूर्ण वर्कस्पेस पाथ, OS उपयोगकर्ता नाम, और रिपॉज़िटरी नाम**) ले जाने वाले Git स्पैन शामिल थे।
-- **"Environment variables always disabled telemetry cleanly":** **PR #42376** ने पुष्टि की कि पहले से मौजूद प्रोसेस से लॉन्च किए जाने पर Windows डेस्कटॉप ने सहेजे गए उपयोगकर्ता `T3CODE_TELEMETRY_ENABLED=false` एनवायरनमेंट वेरिएबल्स को अनदेखा कर दिया, जबकि **PR #42464** ने पुष्टि की कि macOS/Linux फर्स्ट-लॉन्च रिले ट्रेसिंग शेल डिस्कवरी से पहले मूल्यांकित हुई, जिससे पूरे रन के लिए `~/.zshrc` ऑप्ट-आउट अनदेखे रहे। (`DesktopShellEnvironment.ts` अभी भी `T3CODE_OTEL_SDK_DISABLED` को फ़ॉरवर्ड करना छोड़ देता है।)
-- **"No tracking files written when opted out" और "Claude hashes were broken":** [`AnalyticsService.ts#L152`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152) (पंक्ति 149) अभी भी स्टार्टअप पर बिना शर्त `getTelemetryIdentity` को कॉल करता है, स्थानीय इंस्टॉल ID लिखता है और `~/.codex/auth.json` तथा `~/.claude.json` को पढ़कर हैश करता है। इस बीच, `@theo` के ~100MB निर्यात (`6,056,594` बाइट्स संपीड़ित, `95,789` ईवेंट) के gzip हेडर की जाँच से उनके ट्वीट से 20 मिनट पहले उत्पन्न एक मूल फ़ाइल नाम `events.clean.jsonl` सामने आया — फिर भी इसमें 20 अक्तूबर को ठीक उसी SHA-256 हैश से **4 अलग मशीनों** (`installId`) को जोड़ने वाले **264 लाइव Claude खाता रिकॉर्ड**, साथ ही अक्षरशः निजी प्रॉक्सी मॉडल (`vibeproxy/gpt-6-luna`, `muse-proxy-wonder-full`) मौजूद थे।
+- **"Environment variables always disabled telemetry cleanly":** **PR #42376** ने पुष्टि की कि पहले से मौजूद प्रोसेस से लॉन्च किए जाने पर Windows डेस्कटॉप ने सहेजे गए उपयोगकर्ता `T3CODE_TELEMETRY_ENABLED=false` एनवायरनमेंट वेरिएबल्स को अनदेखा कर दिया, जबकि **PR #42464** ने पुष्टि की कि macOS/Linux फर्स्ट-लॉन्च रिले ट्रेसिंग शेल डिस्कवरी से पहले मूल्यांकित हुई, जिससे पूरे रन के लिए `~/.zshrc` ऑप्ट-आउट अनदेखे रहे। ([`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) अभी भी `ca81b7b9` पर `T3CODE_OTEL_SDK_DISABLED` और `OTEL_SDK_DISABLED` को फ़ॉरवर्ड करना छोड़ देता है।)
+- **"No tracking files written when opted out" और "Claude hashes were broken":** [`AnalyticsService.ts#L152`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152) (`9d3195b4` पर `पंक्ति 149`, `ca81b7b9` पर `पंक्ति 156`) अभी भी स्टार्टअप पर बिना शर्त `getTelemetryIdentity` को कॉल करता है, और `telemetryEnabled` की जाँच करने से पहले ही स्थानीय इंस्टॉल ID (`upsertAnonymousId`) लिख देता है। इस बीच, `@theo` के ~100MB निर्यात (`6,056,594` बाइट्स संपीड़ित, `95,789` ईवेंट) के gzip हेडर की जाँच से उनके ट्वीट से 20 मिनट पहले उत्पन्न एक मूल फ़ाइल नाम `events.clean.jsonl` सामने आया — फिर भी इसमें 20 अक्तूबर को ठीक उसी SHA-256 हैश से **4 अलग मशीनों** (`installId`) को जोड़ने वाले **264 लाइव Claude खाता रिकॉर्ड**, साथ ही अक्षरशः निजी प्रॉक्सी मॉडल (`vibeproxy/gpt-6-luna`, `muse-proxy-wonder-full`) मौजूद थे।
 
 ![PR #42450 इस बात की पुष्टि करते हुए कि रिले-ट्रिगर किए गए रन पहले उपयोगकर्ता नाम और रेपो नाम वाले git.cwd पूर्ण वर्कस्पेस पाथ Axiom में निर्यात करते थे](../../evidence/06-pr42450-absolute-path.jpg)
+
+<details>
+<summary>25 नवंबर के 3 अतिरिक्त स्पष्टीकरण और 100MB डंप प्रमाण देखें (PR #42376, PR #42464, events.clean.jsonl)</summary>
 
 ![PR #42376 यह स्वीकार करते हुए कि Windows डेस्कटॉप ने सहेजे गए उपयोगकर्ता T3CODE_TELEMETRY_ENABLED=false एनवायरनमेंट वेरिएबल्स को अनदेखा किया](../../evidence/extra/x-post11-2-pr42376-windows-optout.jpg)
 
 ![PR #42464 यह स्वीकार करते हुए कि macOS फर्स्ट-लॉन्च रिले ट्रेसिंग ने पूरे सत्र के लिए ~/.zshrc ऑप्ट-आउट को अनदेखा किया](../../evidence/extra/x-post11-3-pr42464-mac-shell-env.jpg)
 
 ![Theo के सार्वजनिक events.clean.jsonl डंप का फ़ोरेंसिक ऑडिट जिसमें 4 मशीनों को जोड़ते 264 Claude रिकॉर्ड और अक्षरशः कस्टम प्रॉक्सी मॉडल दिख रहे हैं](../../evidence/extra/x-post11-4-dump-264-claude-records.jpg)
+
+</details>
 
 ### 2.4 छह घंटे का पोस्ट-GDPR रातोंरात स्प्रिंट (`भाग 12`)
 
@@ -208,27 +249,51 @@
 
 ![PR #42380 यह खुलासा करते हुए कि रिले स्पैन ने Axiom में 30 दिनों तक 2.2M स्पैन/घंटा की दर से user.id के बगल में वास्तविक कॉलर IP पते और User-Agent लॉग किए](../../evidence/08-pr42380-220w-ip-axiom.jpg)
 
+<details>
+<summary>पोस्ट-GDPR रातोंरात के 3 अतिरिक्त प्रमाण देखें (PR #42285, PR #42459, PR #42466)</summary>
+
 ![PR #42285 यह स्वीकार करते हुए कि खाता विलोपन पहले रिले पंक्तियों और सक्रिय Cloudflare टनल को पीछे छोड़ देता था जब तक कि एक गोपनीयता विलोपन अनुरोध के लिए हस्तलिखित SQL की आवश्यकता नहीं पड़ी](../../evidence/09-pr42285-delete-account-leftover.jpg)
 
 ![PR #42459 यह स्वीकार करते हुए कि Android FCM पुश ने Google को कच्चे Clerk user_id मान भेजे](../../evidence/extra/x-post12-3-pr42459-android-fcm-leak.jpg)
 
 ![PR #42466 यह स्वीकार करते हुए कि गुमनाम फ़ीडबैक को installId और होस्ट फ़िंगरप्रिंट्स के साथ उसी POST में बैच किया गया था](../../evidence/extra/x-post12-4-pr42466-anonymous-batch.jpg)
 
+</details>
+
+### 2.5 ऑडिट के बाद के टेलीमेट्री और पहचान अपडेट (`9d3195b4` → `ca81b7b9`)
+
+`ca81b7b9` (`2026-11-25 14:49 CST`) तक अपस्ट्रीम `pingdotgg/t3code` को ट्रैक करने पर मुख्य अनसुलझी कमियों के साथ-साथ चार लक्षित टेलीमेट्री-सीमांकन मर्ज की पुष्टि होती है:
+
+- **`9d3195b4` के बाद मर्ज किए गए:**
+  - [**PR #42299**](https://github.com/pingdotgg/t3code/pull/42299) ([`84e4264b`](https://github.com/pingdotgg/t3code/commit/84e4264bb347e36e97f6c3bd95d666eecfa12e07)): `Identify.ts` में `~/.codex/auth.json` और `~/.claude.json` को पढ़ना बंद करता है (`connect` `CLOUD_LINKED_USER_ID` और `device` अनसॉल्टेड SHA-256 ओनर हैशिंग बनी रहती है)।
+  - [**PR #42465**](https://github.com/pingdotgg/t3code/pull/42465) ([`6b3899f2`](https://github.com/pingdotgg/t3code/commit/6b3899f224947178088ca97ec9907e681807f7da)): गैर-कैटलॉग मॉडलों के लिए `custom:<driver>` उत्सर्जित करने हेतु `ProviderDimensions.ts` `modelLabel` (`पंक्तियाँ 66–72`) को अपडेट करता है (कस्टम एंडपॉइंट के पीछे भी कैटलॉग/वेंडर मॉडल अभी भी स्लग उत्सर्जित करते हैं)।
+  - [**PR #42630**](https://github.com/pingdotgg/t3code/pull/42630) ([`c925b9ab`](https://github.com/pingdotgg/t3code/commit/c925b9ab198099f67de862ed01701bd1d8809f2b)): [`otelEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/otelEnvironment.ts) (`पंक्तियाँ 322–343`) में 13 CI एनवायरनमेंट वेरिएबल्स में `isCiEnvironment` जोड़ता है, जिससे ओवरराइड न होने पर CI रनर्स पर डिफ़ॉल्ट `AnalyticsService` (`पंक्ति 130`) और `isRelayTracingEnabled` बंद हो जाते हैं।
+  - [**PR #42629**](https://github.com/pingdotgg/t3code/pull/42629) ([`ef4a1643`](https://github.com/pingdotgg/t3code/commit/ef4a1643edf72ad119452c82b01c91adbf7b9e64)): `DO_NOT_TRACK` (`otelEnvironment.ts:346-347` में `isDoNotTrackSet`) का सम्मान करता है, जिसे `AnalyticsService.ts:137` और `isRelayTracingEnabled` (`otelEnvironment.ts:357`) में जाँचा जाता है, और [`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) तथा [`DesktopBackendConfiguration.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/backend/DesktopBackendConfiguration.ts) द्वारा फ़ॉरवर्ड किया जाता है (`T3CODE_TELEMETRY_ENABLED=true` पर प्राथमिकता रखता है)।
+  - सहयोगी कड़ाई PRs [**#42356**](https://github.com/pingdotgg/t3code/pull/42356), [**#42394**](https://github.com/pingdotgg/t3code/pull/42394), [**#42397**](https://github.com/pingdotgg/t3code/pull/42397), [**#42398**](https://github.com/pingdotgg/t3code/pull/42398), और [**#42415**](https://github.com/pingdotgg/t3code/pull/42415) ने सर्वर द्वारा खोले गए ब्राउज़र ट्रेसिंग, मोबाइल डिवाइस ID/टॉगल, MCP त्रुटि एनम्स और `agent.feedback` `installId` लिंकिंग को सीमित किया।
+- **`ca81b7b9` पर अनसुलझा:** [`AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts) (`पंक्ति 156`, पूर्व में `9d3195b4` पर `पंक्ति 149`) अभी भी `telemetryEnabled` की जाँच करने से **पहले** स्टार्टअप पर बिना शर्त `getTelemetryIdentity` (`upsertAnonymousId`) निष्पादित करता है; `DesktopShellEnvironment.ts` अभी भी `OTEL_SDK_DISABLED` और `T3CODE_OTEL_SDK_DISABLED` को छोड़ देता है; क्लोज़्ड-सोर्स `ingest.t3.codes` डिफ़ॉल्ट बना हुआ है; अभी भी कोई सेटिंग्स UI टॉगल और कोई `app.t3.codes` ऑप्ट-आउट नहीं है; मोबाइल Managed Policy से बाहर बना हुआ है; `Publish agent activity` ऑप्ट-आउट को अनदेखा करता है; और `privacy-policy.astro` की तिथि अभी भी `2026-10-06` बनी हुई है।
+
 ---
 
 ## 3. स्थानीय स्टोरेज, प्रोसेस मॉनिटरिंग, गार्डरेल बायपास और अघोषित सुरक्षा पैच (भाग 2, 3, 13)
 
-> **गहन तकनीकी ऑडिट:** अक्षरशः SQLite प्रूनिंग SQL, Rust `sysinfo` कॉल, `ClaudeAdapterV2.ts` अनुमति पंक्तियाँ, और पूर्ण `SECURITY.md` सीमा विश्लेषण [**डॉसियर 02: स्थानीय सुरक्षा, मूक कोड-निष्पादन बायपास, और अघोषित सुरक्षा ऑडिट**](../dossiers/02-local-safety-and-security-audit.md) में मौजूद हैं।
+> **गहन तकनीकी ऑडिट:** अक्षरशः SQLite प्रूनिंग SQL, Rust `sysinfo` कॉल, `ClaudeAdapterV2.ts` अनुमति पंक्तियाँ, `9d3195b4` के बाद के डिफ़्स, और पूर्ण `SECURITY.md` सीमा विश्लेषण [**डॉसियर 02: स्थानीय सुरक्षा, मूक कोड-निष्पादन बायपास, और अघोषित सुरक्षा ऑडिट**](../dossiers/02-local-safety-and-security-audit.md) में मौजूद हैं।
 
 ### 3.1 नकली SQLite थ्रेड विलोपन और पूर्ण-मशीन प्रोसेस स्कैनिंग (`भाग 2`)
 
-जब कोई उपयोगकर्ता साइडबार में किसी थ्रेड को हटाता है, तो पुष्टिकरण संवाद (`useThreadActionMenu.ts`) वादा करता है: `"This permanently clears conversation history for this thread."` वास्तव में, `ThreadDeletion.ts` केवल `statev2.sqlite` में एक `"thread.deleted"` ईवेंट जोड़ता है, और `ProjectionMaintenance.ts` पिछले ईवेंट्स को बनाए रखते हुए `thread.created` तथा नवीनतम स्ट्रीम ईवेंट्स (`MAX(newer.sequence)`) को छूट देता है। उपयोगकर्ताओं ने रिपोर्ट किया कि `statev2.sqlite` तीन सप्ताह में **25.9 GB** (90% "हटाए गए" थ्रेड्स), छह सप्ताह में **41.6 GB**, और सात सप्ताह में **33 GB** तक फूल गया — जिससे **Issue #17845** (और **#28903**) 10 अक्तूबर से अनसुलझा पड़ा रहा ([भाग 2](https://x.com/realchendahuang/status/2125160473176023486))।
+जब कोई उपयोगकर्ता साइडबार में किसी थ्रेड को हटाता है, तो पुष्टिकरण संवाद (`useThreadActionMenu.ts`) वादा करता है: `"This permanently clears conversation history for this thread."` आधाररेखा `9d3195b4` पर, `ThreadDeletion.ts` केवल `statev2.sqlite` में एक `"thread.deleted"` ईवेंट जोड़ता था, और `ProjectionMaintenance.ts` पिछले ईवेंट्स को बनाए रखते हुए `thread.created` तथा नवीनतम स्ट्रीम ईवेंट्स (`MAX(newer.sequence)`) को छूट देता था। उपयोगकर्ताओं ने रिपोर्ट किया कि `statev2.sqlite` तीन सप्ताह में **25.9 GB** (90% "हटाए गए" थ्रेड्स), छह सप्ताह में **41.6 GB**, और सात सप्ताह में **33 GB** तक फूल गया — जिससे **Issue #17845** (और **#28903**) 10 अक्तूबर से अनसुलझा पड़ा रहा ([भाग 2](https://x.com/realchendahuang/status/2125160473176023486))।
+
+25 नवंबर को, [**PR #42119**](https://github.com/pingdotgg/t3code/pull/42119) ([`91f0b32e`](https://github.com/pingdotgg/t3code/commit/91f0b32e2db2cb8abca5fdd33c33609a0f57b15e), `2026-11-25T05:58:26Z`) ने एक एसिंक्रोनस `thread-content.purge` आउटबॉक्स क्लीनअप (`ThreadDeletion.ts`, `ProjectionMaintenance.ts`) जोड़कर **Issue #17845** को बंद किया। हालाँकि, `ca81b7b9` पर निरीक्षण से पता चलता है कि हटाए गए स्रोत थ्रेड तब तक अपना इतिहास बनाए रखते हैं जब तक कि वे किसी भी लाइव फ़ोर्क, लंबित `merge_back`, या लाइव पेरेंट सब-एजेंट द्वारा संदर्भित हों; टॉम्बस्टोन मेटाडेटा पंक्तियाँ SQLite में बनी रहती हैं; और डिस्क पर `.sqlite` फ़ाइल का आकार घटाने के लिए अभी भी ऑफ़लाइन `VACUUM` चलाना आवश्यक है।
 
 ![Issue #17845 जो रिपोर्ट करता है कि स्थायी रूप से हटाए गए थ्रेड्स statev2.sqlite के अंदर बने रहते हैं और डिस्क को दसियों गीगाबाइट तक फुला देते हैं](../../evidence/10-issue17845-fake-delete.png)
 
-एक बैकग्राउंड Rust हेल्पर, `t3-resource-monitor` (**Issue #11222**, `with_cmd(UpdateKind::Always)` के साथ `ProcessesToUpdate::All` को कॉल करने वाला `native/resource-monitor/src/main.rs`), डायग्नोस्टिक्स बंद होने पर भी हर 5 सेकंड में मशीन पर प्रत्येक प्रोसेस को स्कैन करता था — Windows पर शून्य ऑप्ट-आउट के साथ 440+ असंबद्ध ऐप्स और गेम्स पर ~280–300 स्थायी हैंडल खोलते हुए, जबकि दस्तावेज़ दावा करते थे कि सैंपलिंग केवल सक्रिय सब्सक्राइबर्स होने पर ही चलती है। केवल **24 नवंबर** को **PR #41889** ने पुष्टि की कि प्रोसेस डायग्नोस्टिक्स लाइव टेलीमेट्री और हिस्ट्री स्नैपशॉट्स में **पूर्ण प्रोसेस कमांड-लाइन तर्कों**—जिनमें अक्सर प्लेनटेक्स्ट API कुंजियाँ, डेटाबेस पासवर्ड और ऑथ टोकन होते हैं—को कैप्चर कर रहा था।
+एक बैकग्राउंड Rust हेल्पर, `t3-resource-monitor` (**Issue #11222**, `with_cmd(UpdateKind::Always)` के साथ `ProcessesToUpdate::All` को कॉल करने वाला `native/resource-monitor/src/main.rs`), डायग्नोस्टिक्स बंद होने पर भी हर 5 सेकंड में मशीन पर प्रत्येक प्रोसेस को स्कैन करता था — Windows पर शून्य ऑप्ट-आउट के साथ 440+ असंबद्ध ऐप्स और गेम्स पर ~280–300 स्थायी हैंडल खोलते हुए, जबकि दस्तावेज़ दावा करते थे कि सैंपलिंग केवल सक्रिय सब्सक्राइबर्स होने पर ही चलती है। केवल **24 नवंबर** को **PR #41889** ने पुष्टि की कि प्रोसेस डायग्नोस्टिक्स लाइव टेलीमेट्री और हिस्ट्री स्नैपशॉट्स में **पूर्ण प्रोसेस कमांड-लाइन तर्कों**—जिनमें अक्सर प्लेनटेक्स्ट API कुंजियाँ, डेटाबेस पासवर्ड और ऑथ टोकन होते हैं—को कैप्चर कर रहा था। ऑडिट के बाद के [**PR #42577**](https://github.com/pingdotgg/t3code/pull/42577) ([`af276ccb`](https://github.com/pingdotgg/t3code/commit/af276ccbb26ef709c46bc46ec514f23b62c8e18c), `2026-11-25T04:09:53Z`) ने Windows `t3-resource-monitor` को अनट्रैक्ड प्रोसेस की मेमोरी और कमांड लाइन पढ़ने से रोक दिया, जबकि Linux और macOS अभी भी दो-चरणीय `ProcessesToUpdate::All` डिस्कवरी का उपयोग करते हैं और `PR #41889` खुला है।
+
+<details>
+<summary>Issue #11222 पूर्ण-मशीन प्रोसेस मॉनिटर प्रमाण देखें</summary>
 
 ![मशीन पर हर प्रोसेस को स्कैन करते हुए t3-resource-monitor का दस्तावेज़ीकरण करने वाला Issue #11222](../../evidence/extra/t3code-9-issue-11222-process-spy.png)
+
+</details>
 
 भाग 2 में सत्यापित अतिरिक्त स्थानीय दोषों में शामिल हैं:
 - **कॉर्पोरेट होस्टनाम फ़ेविकॉन लीक:** फ्रंटएंड अनुरोधों ने आंतरिक होस्टनाम (उदा. `devbox.localdomain`) Google के फ़ेविकॉन API पर लीक किए (`PR #16950`, `PR #32657`)।
@@ -238,20 +303,28 @@
 
 ### 3.2 52-दिन का मूक `git push --force` बनाम मॉडल गोपनीयता फ़िल्टर को 21 घंटे में हटाना (`भाग 3`)
 
-**3 अक्तूबर** से—**Issue #15353** ([टिप्पणी](https://github.com/pingdotgg/t3code/issues/15353#issuecomment-6889019695)) में **52–53 दिनों** से अधिक समय तक—Claude Auto मोड ने खतरनाक कमांड्स को चुपचाप निष्पादित किया (`requiresClaudeApproval` के false होने पर `ClaudeAdapterV2.ts` `"allow"` पर शॉर्ट-सर्किट हो जाता था)। शून्य कस्टम नियमों के साथ भी, जब Claude के क्लासिफ़ायर ने `git push --force origin main` को दो बार ब्लॉक किया और तीसरे प्रयास को मैन्युअल अनुमोदन के लिए ऊपर भेजा, तो T3 Code ने बिना किसी UI संवाद के इसे चुपचाप स्वीकृत कर दिया और `"source": "user_temporary"` लॉग किया। दो सामुदायिक फ़िक्स PR (`#15360`, `#35207`) बॉट्स द्वारा स्वतः बंद किए जाने तक बिना समीक्षा के पड़े रहे, जबकि `#40692` लंबित रहा ([भाग 3](https://x.com/realchendahuang/status/2125201882687881378))।
+**3 अक्तूबर** से—और **`ca81b7b9` पर भी अनसुलझे** **Issue #15353** ([टिप्पणी](https://github.com/pingdotgg/t3code/issues/15353#issuecomment-6889019695)) में—Claude Auto मोड ने खतरनाक कमांड्स को चुपचाप निष्पादित किया (`ClaudeAdapterV2.ts` ने `!requiresClaudeApproval(context)` को `"allow"` पर शॉर्ट-सर्किट कर दिया)। शून्य कस्टम नियमों के साथ भी, जब Claude के क्लासिफ़ायर ने `git push --force origin main` को दो बार ब्लॉक किया और तीसरे प्रयास को मैन्युअल अनुमोदन के लिए ऊपर भेजा, तो T3 Code ने बिना किसी UI संवाद के इसे चुपचाप स्वीकृत कर दिया और `"source": "user_temporary"` लॉग किया। दो सामुदायिक फ़िक्स PR (`#15360`, `#35207`) बॉट्स द्वारा स्वतः बंद किए जाने तक बिना समीक्षा के पड़े रहे, जबकि `#40692` लंबित रहा ([भाग 3](https://x.com/realchendahuang/status/2125201882687881378))।
 
 ![52 दिनों से अधिक समय से खुला Issue #15353 जो दिखाता है कि Claude Auto मोड बिना पूछे चुपचाप git push --force को स्वीकृत कर देता है](../../evidence/11-issue15353-auto-force-push.png)
 
-इसके विपरीत, **22 नवंबर** को **Issue #40948** ने नोट किया कि नए मॉडल `@theo` के सार्वजनिक टेलीमेट्री लीडरबोर्ड [`https://slopalytics.com/`](https://slopalytics.com/) ([`t3-usage.json`](https://slopalytics.com/data/t3-usage.json)) पर दिखाई नहीं दे रहे थे क्योंकि `PR #29001` ने रिपोर्टिंग को एक श्वेतसूची तक सीमित कर दिया था। **21 घंटों** के भीतर, `@theo` के खाते के तहत **PR #41237** मर्ज हुआ, जिसमें स्पष्ट रूप से उल्लेख किया गया कि Theo ने इस हटाने का अनुरोध किया था — जिससे `ollama/acme-internal` और एंटरप्राइज़ `acme-azure-deployment` नाम अक्षरशः एनालिटिक्स को भेजे जाने लगे।
+इसके विपरीत, **22 नवंबर** को **Issue #40948** ने नोट किया कि नए मॉडल `@theo` के सार्वजनिक टेलीमेट्री लीडरबोर्ड [`https://slopalytics.com/`](https://slopalytics.com/) ([`t3-usage.json`](https://slopalytics.com/data/t3-usage.json)) पर दिखाई नहीं दे रहे थे क्योंकि `PR #29001` ने रिपोर्टिंग को एक श्वेतसूची तक सीमित कर दिया था। **21 घंटों** के भीतर, `@theo` के खाते के तहत **PR #41237** मर्ज हुआ, जिसमें स्पष्ट रूप से उल्लेख किया गया कि Theo ने इस हटाने का अनुरोध किया था — जिससे `ollama/acme-internal` और एंटरप्राइज़ `acme-azure-deployment` नाम अक्षरशः एनालिटिक्स को भेजे जाने लगे (बाद में `PR #42465` में गैर-कैटलॉग मॉडलों के लिए इसे `custom:<driver>` तक सीमित किया गया, जबकि कस्टम एंडपॉइंट के पीछे भी कैटलॉग/वेंडर मॉडल स्लग अभी भी रिपोर्ट होते हैं)।
+
+<details>
+<summary>PR #41237 को 21 घंटे में फ़िल्टर हटाने का प्रमाण देखें (slopalytics.com)</summary>
 
 ![Issue #40948 के 21 घंटे बाद मर्ज किया गया PR #41237 जो slopalytics.com के लिए मॉडल फ़िल्टरिंग को हटाता है](../../evidence/extra/t3code-15-pr-41237-slophouse-drop-filter.png)
 
+</details>
+
 ### 3.3 शून्य सुरक्षा परामर्श, मूक भेद्यता पैच और `SECURITY.md` (`भाग 13`)
 
-25 नवंबर तक, `pingdotgg/t3code` का [GitHub Security Advisories](https://github.com/pingdotgg/t3code/security/advisories) टैब **0 प्रकाशित परामर्शों** पर खड़ा है ([भाग 13](https://x.com/realchendahuang/status/2125395980354994414))। फिर भी मेंटेनरों ने मौजूदा उपयोगकर्ताओं को सूचित किए बिना उच्च-गंभीरता वाले पैच चुपचाप मर्ज किए:
-- **मर्ज किए गए मूक सुरक्षा सुधार:** `PR #39483` (डिवाइस अनुमोदन से पहले रिले `jti`/`nonce` के माध्यम से `ServerSecretStore` पाथ ट्रैवर्सल), `PR #41756` (क्रॉस-डोमेन एंटरप्राइज़ GitHub/GitLab टोकन लीक), `PR #41886`, `PR #22190`, `PR #37823`, `PR #39464`, `PR #39480`, `PR #40133`, `PR #41757` और `PR #42386` (अनसैंडबॉक्स्ड डेस्कटॉप ब्राउज़र पूर्वावलोकन और पॉपअप आइसोलेशन), और `PR #42504` (~3,000-पंक्तियों का पैच जिसने अंततः अविश्वसनीय रेपो कॉन्फ़िग्स के लिए पुष्टिकरण प्रॉम्प्ट जोड़े जो पहले बिना अनुमोदन के स्थानीय कमांड चलाते थे)।
-- **अनसुलझे / खुले सुरक्षा आइटम:** `Issue #26489` (बाहरी पाथ ट्रैवर्सल/सिमलिंक जोखिम), `PR #36216`, `PR #23428`, `PR #33144`, और `PR #30997` (Windows लॉन्चर `externalLauncher.ts` जो `powershell.exe -ExecutionPolicy Bypass -EncodedCommand <base64>` चलाता है जिसे AVG/Avast द्वारा `IDP.HELU.PSE96` के रूप में फ़्लैग किया गया)।
-- **जल्दबाज़ी में बनाया गया [`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md) (`PR #38812`, `PR #41942`):** वर्कस्पेस के बाहर OS-व्यापी `filesystem:read`, iOS/LAN पर सादे HTTP परिवहन, और समझौता किए गए रिले साइनिंग की के माध्यम से पूर्ण मशीन टेकओवर को भेद्यता के बजाय **इच्छित डिज़ाइन सीमाएँ** घोषित करता है, जबकि [`https://ingest.t3.codes/`](https://ingest.t3.codes/) क्लोज़्ड-सोर्स बना हुआ है (`2125370330244128924`)।
+25 नवंबर (`ca81b7b9`) तक, `pingdotgg/t3code` का [GitHub Security Advisories](https://github.com/pingdotgg/t3code/security/advisories) टैब **0 प्रकाशित परामर्शों** पर खड़ा है ([भाग 13](https://x.com/realchendahuang/status/2125395980354994414))। फिर भी मेंटेनरों ने मौजूदा उपयोगकर्ताओं को सूचित किए बिना उच्च-गंभीरता वाले पैच चुपचाप मर्ज किए:
+- **मर्ज किए गए मूक सुरक्षा सुधार:** `PR #39483` (डिवाइस अनुमोदन से पहले रिले `jti`/`nonce` के माध्यम से `ServerSecretStore` पाथ ट्रैवर्सल), `PR #41756` (क्रॉस-डोमेन एंटरप्राइज़ GitHub/GitLab टोकन लीक), `PR #41886`, `PR #22190`, `PR #37823`, `PR #39464`, `PR #39480`, `PR #40133`, `PR #41757` और `PR #42386` (अनसैंडबॉक्स्ड डेस्कटॉप ब्राउज़र पूर्वावलोकन आइसोलेशन / वर्कट्री लेआउट कमांड पुष्टिकरण), [`PR #42413`](https://github.com/pingdotgg/t3code/pull/42413) (केवल-स्वामी डेस्कटॉप Clerk टोकन फ़ाइल अनुमतियाँ), और `PR #42504` (~3,000-पंक्तियों का पैच जिसने अंततः अविश्वसनीय रेपो कॉन्फ़िग्स के लिए पुष्टिकरण प्रॉम्प्ट जोड़े जो पहले बिना अनुमोदन के स्थानीय कमांड चलाते थे)।
+- **`ca81b7b9` पर अनसुलझे / खुले आइटम:** `Issue #26489` (बाहरी पाथ ट्रैवर्सल/सिमलिंक जोखिम), `PR #36216`, `PR #23428`, `PR #33144`, `PR #30997` (Windows लॉन्चर `externalLauncher.ts` जो `powershell.exe -ExecutionPolicy Bypass -EncodedCommand <base64>` चलाता है जिसे AVG/Avast द्वारा `IDP.HELU.PSE96` के रूप में फ़्लैग किया गया), तथा अविश्वस्त-रेपो निष्पादन जोखिम ([`GitVcsDriverCore.ts#L6144-L6205`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205) का पुनरावर्ती `.gitmodules` इनिशियलाइज़ेशन स्वतः चलाना, [`VcsProcess.ts#L145-L157`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/VcsProcess.ts#L145-L157) में वैश्विक `core.hooksPath=/dev/null` का अनुपस्थित होना, और [`ClaudeAdapterV2.ts#L5982-L5985`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L5982-L5985) का पूर्ण इनहेरिटेड `GITHUB_TOKEN` व `SSH_AUTH_SOCK` के साथ `.claude/settings.json` के `SessionStart` हुक चलाना)।
+- **जल्दबाज़ी में बनाया गया [`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md) (`PR #38812`, `PR #41942`):** अभी भी वर्कस्पेस के बाहर OS-व्यापी `filesystem:read`, iOS/LAN पर सादे HTTP परिवहन, और समझौता किए गए रिले साइनिंग की के माध्यम से पूर्ण मशीन टेकओवर को भेद्यता के बजाय **इच्छित डिज़ाइन सीमाएँ** घोषित करता है, जबकि [`https://ingest.t3.codes/`](https://ingest.t3.codes/) क्लोज़्ड-सोर्स बना हुआ है (`2125370330244128924`)।
+
+<details>
+<summary>3 मूक सुरक्षा और SECURITY.md प्रमाण देखें (PR #39483, PR #30997, SECURITY.md)</summary>
 
 ![बिना Security Advisory जारी किए ServerSecretStore पाथ ट्रैवर्सल को चुपचाप पैच करता PR #39483](../../evidence/extra/t3code-13-pr-39483-secret-traversal.png)
 
@@ -259,11 +332,13 @@
 
 ![SECURITY.md जो स्पष्ट रूप से OS-व्यापी रीड्स, iOS मनमाने HTTP और रिले-कुंजी मशीन टेकओवर को इच्छित सीमाओं के रूप में चिह्नित करता है](../../evidence/extra/x-post05-4-security-md-intended.jpg)
 
+</details>
+
 ---
 
 ## 4. Google Antigravity ToS जोखिम और बिना एन्क्रिप्शन वाला T3 Connect रिले (भाग 4, 5)
 
-> **गहन तकनीकी ऑडिट:** पूर्ण `cliproxyApi.ts` हेडर मैप्स (`PR #33800`), `AntigravityAcpSupport.ts`, `contracts/src/settings.ts`, और `ManagedEndpointProvider.ts` पंक्ति संदर्भ [**डॉसियर 03: Google Antigravity ToS स्पूफ़िंग, `PR #33800`, और T3 Connect रिले आर्किटेक्चर**](../dossiers/03-antigravity-tos-and-t3connect-relay.md) में मौजूद हैं।
+> **गहन तकनीकी ऑडिट:** पूर्ण `cliproxyApi.ts` हेडर मैप्स (`PR #33800`), `AntigravityAcpSupport.ts`, `AntigravityTurnOutcome.ts`, `contracts/src/settings.ts`, और `ManagedEndpointProvider.ts` पंक्ति संदर्भ [**डॉसियर 03: Google Antigravity ToS स्पूफ़िंग, `PR #33800`, और T3 Connect रिले आर्किटेक्चर**](../dossiers/03-antigravity-tos-and-t3connect-relay.md) में मौजूद हैं।
 
 ### 4.1 Google Antigravity हेडर स्पूफ़िंग, नकली `SSH_CONNECTION` और 3-मिनट के बैन (`भाग 4`)
 
@@ -298,9 +373,13 @@ GEMINI_HOME: profile.geminiHome,
 AGY_ACP_FORCE_FILE_STORAGE: "1",
 ```
 
-3. **नए खाते पर 3-मिनट का बैन (`Issue #41536`) और क्लाइंट स्पूफ़िंग (`PR #26876`):** 23 नवंबर को, **Issue #41536** ने दस्तावेज़ित किया कि **शून्य प्रॉक्सी** चलाने वाले—केवल T3 Code के भीतर प्रबंधित Antigravity का उपयोग करने वाले—नए खरीदे गए `$20` Google AI सब्सक्रिप्शन को **सेटअप के 3 मिनट बाद, उसके पहले ही संदेश** पर बैन कर दिया गया (Google व्यक्तिगत खातों को केवल एक अपील का अवसर देता है; मेंटेनरों ने चेतावनी जोड़े बिना इसे डुप्लिकेट कहकर बंद कर दिया)। इससे पहले, `@theo` ने व्यक्तिगत रूप से मॉडल श्वेतसूचियों को बायपास करने के लिए T3 Code को `"zed"` के रूप में छद्मवेश देने वाला **PR #26876** (`AntigravityAcpSupport.ts`) मर्ज किया था। और `@theo` द्वारा 23 नवंबर को `T3 Code -> Antigravity binary ✅` आरेख बनाने ([`2124665075638411641`](https://x.com/theo/status/2124665075638411641)) तथा उपयोगकर्ता `@Only_21Mil` का दूसरा Google AI Ultra खाता अक्षम होने पर CLIProxy को दोष देने के बावजूद ([`2124703048140517397`](https://x.com/theo/status/2124703048140517397)), मर्ज किया गया [**PR #33800**](https://github.com/pingdotgg/t3code/pull/33800) मूल रूप से स्पूफ़ किए गए `claude-code/2.1.273`, `grok-cli/1.0.77`, और `antigravityUserAgent` हेडर्स के साथ [`cliproxyApi.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts) हब पोलिंग को जोड़ता है।
+3. **नए खाते पर 3-मिनट का बैन (`Issue #41536`), क्लाइंट स्पूफ़िंग (`PR #26876`) और ऑडिट के बाद के सत्यापन ट्रिगर (`PR #41210`):** 23 नवंबर को, **Issue #41536** ने दस्तावेज़ित किया कि **शून्य प्रॉक्सी** चलाने वाले—केवल T3 Code के भीतर प्रबंधित Antigravity का उपयोग करने वाले—नए खरीदे गए `$20` Google AI सब्सक्रिप्शन को **सेटअप के 3 मिनट बाद, उसके पहले ही संदेश** पर बैन कर दिया गया (Google व्यक्तिगत खातों को केवल एक अपील का अवसर देता है; मेंटेनरों ने चेतावनी जोड़े बिना इसे डुप्लिकेट कहकर बंद कर दिया)। इससे पहले, `@theo` ने व्यक्तिगत रूप से मॉडल श्वेतसूचियों को बायपास करने के लिए T3 Code को `"zed"` के रूप में छद्मवेश देने वाला **PR #26876** ([`AntigravityAcpSupport.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityAcpSupport.ts)) मर्ज किया था। `@theo` द्वारा 23 नवंबर को `T3 Code -> Antigravity binary ✅` आरेख बनाने ([`2124665075638411641`](https://x.com/theo/status/2124665075638411641)) तथा उपयोगकर्ता `@Only_21Mil` का दूसरा Google AI Ultra खाता अक्षम होने पर CLIProxy को दोष देने के बावजूद ([`2124703048140517397`](https://x.com/theo/status/2124703048140517397)), मर्ज किया गया [**PR #33800**](https://github.com/pingdotgg/t3code/pull/33800) मूल रूप से स्पूफ़ किए गए `claude-code/2.1.273`, `grok-cli/1.0.77`, और `antigravityUserAgent` हेडर्स के साथ [`cliproxyApi.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts) हब पोलिंग को जोड़ता है।
+   - **ऑडिट के बाद की स्थिति (`ca81b7b9`):** [**PR #41210**](https://github.com/pingdotgg/t3code/pull/41210) ([`3e74a0aa`](https://github.com/pingdotgg/t3code/commit/3e74a0aac5c53459cc1d3d84eec915fa483f2836), `2026-11-25T05:23:36Z`) ने टर्न टाइमलाइन में सीधे Google खाता सत्यापन लिंक रेंडर करने हेतु `cloudcode-pa.googleapis.com` `403 PERMISSION_DENIED` (`VALIDATION_REQUIRED`) प्रतिक्रियाओं के लिए [`AntigravityTurnOutcome.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityTurnOutcome.ts) पार्सिंग जोड़ी — जो सक्रिय Google सत्यापन ट्रिगर्स की पुष्टि करती है — जबकि [**PR #42545**](https://github.com/pingdotgg/t3code/pull/42545) ([`4da8d19d`](https://github.com/pingdotgg/t3code/commit/4da8d19d08ed7e34fe2d5d66dae54b01eab122fc)) ने `AGY_CLI_DISABLE_AUTO_UPDATE: "true"` को ठीक किया ([`#42339`](https://github.com/pingdotgg/t3code/pull/42339) और [`#42475`](https://github.com/pingdotgg/t3code/pull/42475) के साथ)। चारों स्पूफ़िंग/स्क्रैपिंग पथ—[`antigravityUsageLimits.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts), [`antigravityAuthSupport.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts), `AntigravityAcpSupport.ts`, और `cliproxyApi.ts`—`ca81b7b9` पर यथावत बने हुए हैं।
 
 ![antigravityUsageLimits.ts द्वारा स्पूफ़ किए गए Google क्लाइंट हेडर्स को हार्डकोड करना और अप्रलेखित v1internal बैकएंड को कॉल करना](../../evidence/12-antigravity-v1internal-spoof.png)
+
+<details>
+<summary>3 अतिरिक्त Antigravity स्पूफ़िंग और बैन प्रमाण देखें (SSH_CONNECTION, Issue #41536, PR #33800)</summary>
 
 ![antigravityAuthSupport.ts द्वारा OS कीचेन स्टोरेज को बायपास करने के लिए नकली SSH_CONNECTION एनवायरनमेंट वेरिएबल इंजेक्ट करना](../../evidence/13-antigravity-ssh-spoof.png)
 
@@ -308,17 +387,24 @@ AGY_ACP_FORCE_FILE_STORAGE: "1",
 
 ![PR #33800 जो Antigravity, xAI और Claude के लिए CLIProxyAPI हब पोलिंग को सीधे T3 Code में जोड़ता है](../../evidence/extra/p2-2-pr33800-cliproxy-agy.png)
 
+</details>
+
 ### 4.2 T3 Connect: शून्य एंड-टू-एंड एन्क्रिप्शन और OVH TLS-टर्मिनेशन गेटवे (`भाग 5`)
 
 **T3 Connect में शून्य एंड-टू-एंड एन्क्रिप्शन है — प्रत्येक प्रॉम्प्ट, स्रोत फ़ाइल और टर्मिनल आउटपुट तकनीकी रूप से T3 को प्लेनटेक्स्ट में दिखाई देता है** ([भाग 5](https://x.com/realchendahuang/status/2125218189596676555))। वर्तमान में, [`ManagedEndpointProvider.ts`](https://github.com/pingdotgg/t3code/blob/main/infra/relay/src/environments/ManagedEndpointProvider.ts) T3 के अपने Cloudflare खाते के भीतर Cloudflare Tunnels और DNS रिकॉर्ड प्रावधानित करता है (`06_t3-connect.md`)। शून्य पेलोड एन्क्रिप्शन के साथ TLS Cloudflare के एज पर समाप्त हो जाता है; Workers Route संलग्न करने से बिना किसी कोड संपादन और बिना किसी क्लाइंट अलर्ट के सारा ट्रैफ़िक कैप्चर हो जाता है।
 
-नए-डिवाइस अनुमोदन ([`PR #36419`](https://github.com/pingdotgg/t3code/pull/36419) में जोड़ा गया `requireConnectDeviceApproval`) डिफ़ॉल्ट रूप से **`false`** पर सेट है। जैसा कि [`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md) स्वीकार करता है, एक लीक हुई रिले साइनिंग कुंजी या समझौता किया गया क्लाउड खाता सीधे लिंक की गई मशीन पर सत्र बना सकता है — जो एक स्थानीय शेल के बराबर है। जब **Issue #32098** ने म्यूचुअल ऑथ और E2E एन्क्रिप्शन का अनुरोध किया, तो एक मेंटेनर ने यह कहते हुए इसे बंद कर दिया कि पूर्ण E2E बहुत बड़ा बदलाव है; चर्चाएँ `#21286` और `#37831` अनुत्तरित रहीं, और 25 नवंबर को `@theo` ने E2E एन्क्रिप्शन को असंभव घोषित कर दिया (`2125370330244128924`)।
+नए-डिवाइस अनुमोदन ([`PR #36419`](https://github.com/pingdotgg/t3code/pull/36419) में जोड़ा गया `requireConnectDeviceApproval`) अभी भी [`packages/contracts/src/settings.ts`](https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/settings.ts) (`ca81b7b9` पर `पंक्तियाँ 1424–1426`) में डिफ़ॉल्ट रूप से **`false`** पर सेट है, यहाँ तक कि ऑडिट के बाद के [**PR #42311**](https://github.com/pingdotgg/t3code/pull/42311) ([`ece5f21b`](https://github.com/pingdotgg/t3code/commit/ece5f21b17077382c8d2eba1c28e75e898386dcd)) द्वारा नए-डिवाइस साइन-इन नोटिस जोड़े जाने के बाद भी। जैसा कि [`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md) स्वीकार करता है, एक लीक हुई रिले साइनिंग कुंजी या समझौता किया गया क्लाउड खाता सीधे लिंक की गई मशीन पर सत्र बना सकता है — जो एक स्थानीय शेल के बराबर है। इस बीच `ca81b7b9` का स्रोत निरीक्षण ([डॉसियर 03](../dossiers/03-antigravity-tos-and-t3connect-relay.md)) चार अतिरिक्त auth/LAN/टनल खामियों की पुष्टि करता है: `t3 up --lan` अभी भी `Secure` के बिना 30-दिन की शेल कुकीज़ सेट करता है ([`PR #37042`](https://github.com/pingdotgg/t3code/pull/37042), [`http.ts#L215-L221`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/http.ts#L215-L221), [`SessionStore.ts#L492-L493`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L492-L493)) और `Origin`-रहित अनुरोधों को भी स्वीकार करता है ([`EnvironmentAuth.ts#L798-L806`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L798-L806)); गैर-DPoP `/oauth/token` विनिमय ऐसे अनिरसनीय 30-दिन के बिना बाइंडिंग वाले Bearer टोकन जारी करते हैं जिनके लिए कोई `/logout` रूट नहीं है और स्व-निरसन अवरुद्ध है ([`EnvironmentAuth.ts#L1175-L1186`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1175-L1186), [`EnvironmentAuth.ts#L1506-L1511`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1506-L1511), [`environmentHttp.ts#L595-L679`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/environmentHttp.ts#L595-L679)); 5-मिनट के `?wsTicket=` क्वेरी टोकन Bearer RPC और सभी `media` रूटों के लिए रीप्ले सुरक्षा से रहित हैं ([`EnvironmentAuth.ts#L1553-L1622`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1553-L1622), [`SessionStore.ts#L1086-L1156`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L1086-L1156)); और `startupAccess.ts` `NodeNet.isIPv4` के माध्यम से `::1` को गलत वर्गीकृत करता है, जिससे Tailscale Serve / Connect टनल सॉकेट्स पर चुपचाप `socket.destroy()` कॉल हो जाता है ([`startupAccess.ts#L71-L108`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/startupAccess.ts#L71-L108))। जब **Issue #32098** ने म्यूचुअल ऑथ और E2E एन्क्रिप्शन का अनुरोध किया, तो एक मेंटेनर ने यह कहते हुए इसे बंद कर दिया कि पूर्ण E2E बहुत बड़ा बदलाव है; चर्चाएँ `#21286` और `#37831` अनुत्तरित रहीं, और 25 नवंबर को `@theo` ने E2E एन्क्रिप्शन को असंभव घोषित कर दिया (`2125370330244128924`)।
 
 चूँकि Cloudflare Tunnels का खर्च **$25,000 प्रति माह** तक पहुँच गया था, इसलिए `@theo` ने ट्रैफ़िक को T3 द्वारा किराए पर लिए गए OVH Hillsboro गेटवे (`gw.t3coderelay.com`) पर माइग्रेट करने के लिए **PR #32945** खोला, जहाँ T3 का अपना Caddy TLS समाप्त करता है और एक Unix सॉकेट पर प्लेनटेक्स्ट को Go `yamux` प्रॉक्सी को अग्रेषित करता है — अभी भी शून्य E2E एन्क्रिप्शन के साथ। इस बीच, [`privacy-policy.astro`](https://github.com/pingdotgg/t3code/blob/main/apps/marketing/src/pages/privacy-policy.astro) (`effectiveDate="2026-10-06"`) अनुपस्थित E2E एन्क्रिप्शन का खुलासा किए बिना या गैर-प्रतिधारण (non-retention) गारंटी दिए बिना `"encrypted network transport"` का वादा करता है।
 
 ![कोर मेंटेनर द्वारा Issue #32098 में स्वीकार करना कि चोरी हुआ क्लाउड खाता या रिले कुंजी लिंक की गई मशीनों को नियंत्रित कर सकती है जबकि E2E एन्क्रिप्शन को बाहर रखा गया](../../evidence/15-connect-no-e2e.jpg)
 
+<details>
+<summary>OVH Caddy TLS-टर्मिनेशन गेटवे प्रमाण देखें (PR #32945)</summary>
+
 ![Theo का PR #32945 जो $25k मासिक Cloudflare बिल का उल्लेख करता है और T3 Connect को स्व-होस्टेड OVH गेटवे पर ले जाता है जहाँ Caddy TLS समाप्त करता है](../../evidence/16-pr32945-ovh-caddy-gateway.jpg)
+
+</details>
 
 ---
 
@@ -336,7 +422,12 @@ AGY_ACP_FORCE_FILE_STORAGE: "1",
 
 ![Theo का आंतरिक T3 Code एनालिटिक्स डैशबोर्ड जो 31.7 ट्रिलियन टोकन और $10.19M समतुल्य दैनिक API खर्च दिखाता है](../../evidence/17-theo-31t-tokens-10m-day.png)
 
+<details>
+<summary>Patrick Toulme 1-कमिट सत्यापन स्क्रीनशॉट देखें (PR #31158)</summary>
+
 ![patrick-toulme द्वारा फ़िल्टर किया गया pingdotgg/t3code कमिट इतिहास जो "many PRs" के बजाय केवल 1 कमिट (#31158) दिखाता है](../../evidence/extra/p3-2-patrick-only-1-commit.png)
+
+</details>
 
 ### 5.2 एंजेल-निवेशक टकराव (`भाग 6`) और प्रायोजक/कोटा पाखंड (`भाग 17`)
 
@@ -344,18 +435,23 @@ AGY_ACP_FORCE_FILE_STORAGE: "1",
 - **रिले में एम्बेडेड प्रायोजक स्टैक ([भाग 17](https://x.com/realchendahuang/status/2125411353393553744)):** `@theo` की मई 2023 YouTube प्रायोजक सूची (`1657488850472804353`) के दो प्रायोजक—**Clerk** और **Axiom**—T3 Code के क्लाउड ऑथ और 30-दिन के IP-टैग्ड रिले लॉगिंग को संचालित करते हैं। अप्रैल 2024 में, Vercel के CEO `@rauchg` ने पुष्टि की कि Vercel केवल Theo को प्रायोजित करता है (`1776260839965863965`), और Theo ने बाद में प्रायोजक विशिष्टता खंडों को स्वीकार किया (`uv179CTAK-w`)। वे Cursor और Cline में भी एक एंजेल निवेशक हैं।
 - **Codex 0% दोहन और 10-खाते वाला CLIProxyAPI विरोधाभास:** 21 अगस्त 2026 को, `@theo` ने Codex के 0% कोटा ग्रेस विंडो से आगे **$800+** निकालने की डींग मारी जबकि T3 की कर्मचारी `@maria_rcks` ने शून्य से आगे टर्न लूप करने के लिए *Endless* शिप किया; 22 अगस्त को विरोध के बाद, दोनों ने पोस्ट हटा दिए और Maria ने आशा जताई कि Codex खातों को बैन कर देगा (`2090972426876129658`), जिसके बाद OpenAI ने हार्ड-कटऑफ रिग्रेशन (`openai/codex#45444`) लागू किया। अक्तूबर में, `@theo` ने **7 Claude + 3 Codex खातों** को पूल करते हुए 452-स्टार वाला एक Gist (`59a521d2ee8d70aaf90e280c175072af`, 12+ मशीनों पर `555%` कोटा; साथ ही 1.1M प्रॉक्सी अनुरोधों में `$14,662` / `$15k` Ultra उपज की डींग और Grok Bot + `$100` Claude सेटअप ट्यूटोरियल लिखना) प्रकाशित किया — जिसे T3 Code का अपना `docs/user/faq.md` बैन के जोखिम के कारण बिल्ट-इन स्विचिंग से इनकार करने के ठीक बाद लिंक करता है (`"Early apologies if it gets you banned 💀"`)।
 
+<details>
+<summary>3 टकराव, CLIProxyAPI Gist और Codex 0% कोटा प्रमाण देखें</summary>
+
 ![Theo द्वारा सार्वजनिक रूप से Vibe Kanban के बंद होने का मज़ाक उड़ाने से पहले उसमें निवेश और योगदान करने का खुलासा](../../evidence/18-theo-vibe-kanban.png)
 
 ![Theo का 452-स्टार वाला cliproxy-setup.md Gist जो 12+ कंप्यूटरों में 555% कोटे पर 7 Claude और 3 Codex खातों को पूल करता है](../../evidence/19-cliproxy-gist-555pct.jpg)
 
 ![openai/codex#45444 जो 0% कोटे पर कार्य के बीच सक्रिय टर्न रोकने वाले वैश्विक रिग्रेशन का दस्तावेज़ीकरण करता है](../../evidence/extra/x-post17-3-codex-45444-regression.jpg)
 
+</details>
+
 ### 5.3 T3 Code 25 दिनों में 30k से 77k स्टार्स पर कैसे पहुँचा (129 वॉचर्स) (`भाग 18`)
 
 *"Github has a fake star problem"* (`2048122499834036340`, जिसमें चेतावनी दी गई थी कि स्टार्स `"to trick VCs into investing"` का एक उपकरण बन गए हैं) प्रकाशित करने के छह महीने बाद, `@theo` ने स्वयं तीन PR लिखे और स्वयं मर्ज किए ([भाग 18](https://x.com/realchendahuang/status/2125416210120765799)):
 1. **30 अक्तू. (`PR #27832`):** भेजे गए 5 प्रॉम्प्ट के बाद शीर्ष-दाएँ कोने में एक स्टार प्रॉम्प्ट जोड़ा ([`GitHubStarPrompt.tsx`](https://github.com/pingdotgg/t3code/blob/main/apps/web/src/components/GitHubStarPrompt.tsx) में `PROMPTS_BEFORE_ASKING = 5`, जो 6ठे प्रॉम्प्ट पर ट्रिगर होता है), जिससे तुरंत दैनिक स्टार्स **10x** हो गए (`2117065834267136469`) और GitHub Trending पर **+3,094 स्टार्स/दिन** तक पहुँच गए (`2117172614158508400`)।
 2. **3 नव. (`PR #29922` और `PR #29987`):** जब उपयोगकर्ता एजेंट टर्न की प्रतीक्षा कर रहे होते हैं तो **30-सेकंड विंडो आइडल डिटेक्शन** (`IDLE_MS = 30_000`) में अपग्रेड किया, और ब्राउज़र रीडायरेक्ट को `sourceControl.star` RPC से बदल दिया — जो 160-कणों वाला कंफ़ेटी चलाने से पहले सीधे **होस्ट सर्वर के GitHub क्रेडेंशियल** के माध्यम से `PUT user/starred/pingdotgg/t3code` फ़ायर करता है।
-3. **बायपास की गई समीक्षा और मनमाना-रेपो स्टारिंग बग:** Macroscope ने `PR #29922` को `Needs Human Approval` के रूप में फ़्लैग किया; `@theo` ने फिर भी स्वयं मर्ज कर दिया। 6 नवंबर को, `zhilsinger` ने साझा-होस्ट क्रेडेंशियल अपारदर्शिता (`GitHubStarPrompt.tsx#L115` में स्वीकार किया गया) और इस तथ्य को नोट करते हुए `Request changes` दर्ज किया कि [`packages/source-control-github/src/server/driver.ts#L60-L99`](https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts#L60-L99) कभी भी `pingdotgg/t3code` को पिन नहीं करता है:
+3. **बायपास की गई समीक्षा और मनमाना-रेपो स्टारिंग बग (`ca81b7b9` पर भी अनसुलझा):** Macroscope ने `PR #29922` को `Needs Human Approval` के रूप में फ़्लैग किया; `@theo` ने फिर भी स्वयं मर्ज कर दिया। 6 नवंबर को, `zhilsinger` ने साझा-होस्ट क्रेडेंशियल अपारदर्शिता (`GitHubStarPrompt.tsx#L115` में स्वीकार किया गया) और इस तथ्य को नोट करते हुए `Request changes` दर्ज किया कि [`packages/source-control-github/src/server/driver.ts#L60-L99`](https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts#L60-L99) कभी भी `pingdotgg/t3code` को पिन नहीं करता है:
 
 ```ts
 // packages/source-control-github/src/server/driver.ts (lines 60–66, 90–96)
@@ -374,13 +470,18 @@ const starredPath = (repository: string) => {
       const response = yield* api.rest({ host, operation: "starRepository", method: "PUT", path });
 ```
 
-`source-control:write` वाला कोई भी क्लाइंट होस्ट के क्रेडेंशियल का उपयोग करके मनमाने रिपॉज़िटरी को स्टार कर सकता है। `zhilsinger` की समीक्षा **19 दिनों** तक शून्य प्रतिक्रिया के साथ अनदेखी पड़ी रही जबकि रेपो 30k से 77k स्टार्स (129 वॉचर्स) पर पहुँच गया।
+`source-control:write` वाला कोई भी क्लाइंट होस्ट के क्रेडेंशियल का उपयोग करके मनमाने रिपॉज़िटरी को स्टार कर सकता है। `zhilsinger` की समीक्षा `ca81b7b9` तक (दर्ज होने के **19 दिनों** बाद भी) अनुत्तरित और अनसुलझी पड़ी है जबकि रेपो 30k से 77k स्टार्स (129 वॉचर्स) पर पहुँच गया।
 
 ![Theo का 2 नवंबर का चार्ट जो इन-ऐप स्टार प्रॉम्प्ट शिप करने के तुरंत बाद दैनिक स्टार्स में लगभग लंबवत 10x उछाल का जश्न मनाता है](../../evidence/20-star-10x-cliff.png)
+
+<details>
+<summary>zhilsinger समीक्षा और driver.ts मनमाना-रेपो स्टारिंग प्रमाण देखें (PR #29922)</summary>
 
 ![डेवलपर zhilsinger की PR #29922 पर Request Changes समीक्षा जो साझा-होस्ट स्टारिंग और सर्वर क्रेडेंशियल के माध्यम से मनमाने-रेपो स्टारिंग के बारे में चेतावनी देती है और 19 दिनों तक अनुत्तरित रही](../../evidence/21-pr29922-zhilsinger-review.png)
 
 ![packages/source-control-github/src/server/driver.ts की पंक्तियाँ 60–99 जो pingdotgg/t3code को पिन करने में विफल रहती हैं](../../evidence/extra/p10-5-gh-driver-arbitrary-repo.png)
+
+</details>
 
 ---
 
@@ -395,9 +496,14 @@ const starredPath = (repository: string) => {
 
 ![CONTRIBUTING.md जो बाहरी PRs को हतोत्साहित करता है और .github/VOUCHED.td में सार्वजनिक निंदा बैन का विवरण देता है](../../evidence/22-contributing-vouched-ban.png)
 
+<details>
+<summary>Issue #33639 और @bot फ़ोर्क-स्क्रैपिंग प्रमाण देखें</summary>
+
 ![Issue #33639 में Theo का उत्तर जिसमें @bermudi को अनइंस्टॉल करने के लिए कहा गया और उसे कृतघ्न कहा गया](../../evidence/extra/t3code-12-issue-33639-theo-insult.png)
 
 ![Theo द्वारा "Okay I'm stealing this" उत्तर देना और 30 सेकंड बाद एक डेवलपर के फ़ोर्क को T3 Code में स्क्रैप करने के लिए @bot को भेजना](../../evidence/23-stealing-fork-bot.png)
+
+</details>
 
 ### 6.2 ट्रेडमार्क ऑडिट: 0 USPTO पंजीकरण और पूर्वव्यापी `PR #41898` (`भाग 15`)
 
@@ -407,7 +513,12 @@ const starredPath = (repository: string) => {
 
 ![बैन की धमकी के 17 घंटे बाद मर्ज किया गया PR #41898, जो पंजीकृत या अपंजीकृत अधिकारों का दावा करते हुए पूर्वव्यापी रूप से TRADEMARK.md जोड़ता है](../../evidence/24-pr41898-trademark-aftermath.png)
 
+<details>
+<summary>"get a better lawyer" X उत्तर प्रमाण देखें</summary>
+
 ![TRADEMARK.md मर्ज करने से तीन घंटे पहले Theo द्वारा डेवलपर्स को "get a better lawyer" कहना](../../evidence/extra/p1-5-x-get-better-lawyer.png)
+
+</details>
 
 ### 6.3 1,151-ट्वीट मात्रात्मक डेटासेट (`भाग 14`) और दो-वर्षीय ऐतिहासिक रिकॉर्ड (`भाग 16`)
 
@@ -424,9 +535,14 @@ const starredPath = (repository: string) => {
 
 ![फ़ोरेंसिक चार्ट 4: 25-घंटे की चीनी-फ़ोर्क संकट विंडो का तीन-तरंग विभाजन](../../evidence/charts/theo-chart-4-cn-crisis.png)
 
+<details>
+<summary>भाग 13 और भाग 14 में उद्धृत 2 प्राथमिक X शत्रुता प्रमाण देखें</summary>
+
 ![Theo द्वारा एक सामान्य टूल तुलना प्रश्न को कोट-ट्वीट करके लिखना कि इंजीनियर बड़े पैमाने पर बेरोज़गारी के लायक हैं](../../evidence/25-engineers-unemployment.png)
 
 ![Theo द्वारा चीनी टेक ट्विटर को गटर कहना और चीनी कोड ऑडिट पढ़ने वाले डेवलपर्स का अपमान करना](../../evidence/26-cn-cesspit.png)
+
+</details>
 
 दो वर्ष पीछे मुड़कर देखने पर एक आवर्ती पैटर्न की पुष्टि होती है ([भाग 16](https://x.com/realchendahuang/status/2125408843152953693)):
 - **2024 फ़ोर्क मज़ाक:** मूल निर्माता के स्वभाव का मज़ाक उड़ाते हुए एक अन्य डेवलपर की VS Code थीम के अपने फ़ोर्क का नाम [`vsc-material-but-i-wont-sue-you`](https://github.com/t3dotgg/vsc-material-but-i-wont-sue-you) रखा।
@@ -442,10 +558,14 @@ const starredPath = (repository: string) => {
 
 ### 7.1 एनवायरनमेंट वेरिएबल्स + OS-स्तरीय नेटवर्क ब्लॉकिंग (स्थानीय / डेस्कटॉप उपयोगकर्ता)
 
-केवल एनवायरनमेंट वेरिएबल्स पर **निर्भर न रहें** (`PR #42376`, `PR #42464`, और `DesktopShellEnvironment.ts` `T3CODE_OTEL_SDK_DISABLED` को फ़ॉरवर्ड करना छोड़ देते हैं, जबकि `AnalyticsService.ts:149` अभी भी स्टार्टअप पर डिस्क पर पहचान आरंभ करता है)। शेल/उपयोगकर्ता वेरिएबल्स को OS-स्तरीय `/etc/hosts` ब्लॉक के साथ मिलाएँ:
+केवल एनवायरनमेंट वेरिएबल्स पर **निर्भर न रहें**: `ca81b7b9` पर भी [`AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts) (`पंक्ति 156`, पूर्व में `पंक्ति 149`) अभी भी ऑप्ट-आउट की जाँच करने से पहले स्टार्टअप पर डिस्क पहचान आरंभ करता है, [`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) अभी भी `OTEL_SDK_DISABLED` और `T3CODE_OTEL_SDK_DISABLED` को छोड़ देता है, और पुराने बिल्ड शेल/उपयोगकर्ता ऑप्ट-आउट को अनदेखा करते थे (`PR #42376`, `PR #42464`)। शेल/उपयोगकर्ता वेरिएबल्स—जिनमें [`PR #42629`](https://github.com/pingdotgg/t3code/pull/42629) से मान्य किया गया `DO_NOT_TRACK=1` शामिल है (जो `T3CODE_TELEMETRY_ENABLED=true` पर प्राथमिकता रखता है और सर्वर रिले ट्रेसिंग बंद करता है)—को OS-स्तरीय `/etc/hosts` ब्लॉक के साथ मिलाएँ:
 
 ```bash
 # 1. macOS / Linux: add to ~/.zshrc (or ~/.bashrc), reload shell, and restart T3 Code completely
+#    DO_NOT_TRACK=1 (PR #42629) overrides T3CODE_TELEMETRY_ENABLED=true and disables relay tracing,
+#    but AnalyticsService.ts:156 still writes local install identity on disk and DesktopShellEnvironment.ts
+#    still omits T3CODE_OTEL_SDK_DISABLED / OTEL_SDK_DISABLED.
+export DO_NOT_TRACK=1
 export T3CODE_TELEMETRY_ENABLED=false
 export T3CODE_OTEL_SDK_DISABLED=true
 export OTEL_SDK_DISABLED=true
@@ -456,7 +576,7 @@ export OTEL_SDK_DISABLED=true
 ::1 ingest.t3.codes
 ```
 
-Windows पर, **System Properties → Environment Variables** (User और System) में `T3CODE_TELEMETRY_ENABLED=false`, `T3CODE_OTEL_SDK_DISABLED=true`, और `OTEL_SDK_DISABLED=true` भी कॉन्फ़िगर करें तथा किसी भी बैकग्राउंड सेवा को रीबूट/रीस्टार्ट करें। `Issue #36479` के अनुसार ध्यान रखें कि फ़ायरवॉल/प्रॉक्सी नियमों द्वारा ब्लॉक न किए जाने पर सर्वर स्टार्टअप अभी भी `raw.githubusercontent.com` पर एक आउटबाउंड जाँच करता है।
+Windows पर, **System Properties → Environment Variables** (User और System) में `DO_NOT_TRACK=1`, `T3CODE_TELEMETRY_ENABLED=false`, `T3CODE_OTEL_SDK_DISABLED=true`, और `OTEL_SDK_DISABLED=true` भी कॉन्फ़िगर करें तथा किसी भी बैकग्राउंड सेवा को रीबूट/रीस्टार्ट करें। `Issue #36479` के अनुसार ध्यान रखें कि फ़ायरवॉल/प्रॉक्सी नियमों द्वारा ब्लॉक न किए जाने पर सर्वर स्टार्टअप अभी भी `raw.githubusercontent.com` पर एक आउटबाउंड जाँच करता है।
 
 ### 7.2 प्रशासक Managed Policy (`macOS`, `Linux`, `Windows`)
 
@@ -488,7 +608,7 @@ Windows पर, **System Properties → Environment Variables** (User और Sys
 
 ### 7.3 `statev2.sqlite` निरीक्षण और स्थानीय स्थिति साफ़ करना
 
-चूँकि UI में थ्रेड्स हटाने से पिछले ईवेंट `~/.t3/userdata/statev2.sqlite` के अंदर बने रहते हैं (`Issue #17845`):
+जबकि [`PR #42119`](https://github.com/pingdotgg/t3code/pull/42119) ने (`Issue #17845` को बंद करते हुए) एसिंक्रोनस `thread-content.purge` क्लीनअप जोड़ा, पुराने संस्करण डिस्क पर पूरा थ्रेड इतिहास बनाए रखते थे, और `ca81b7b9` पर भी हटाए गए स्रोत थ्रेड लाइव फ़ोर्क, लंबित `merge_back` ट्रांसफ़र, या लाइव पेरेंट सब-एजेंट द्वारा संदर्भित होने तक इतिहास बनाए रखते हैं — साथ ही टॉम्बस्टोन पंक्तियाँ SQLite में बनी रहती हैं और खाली किए गए `.sqlite` डिस्क स्थान को वापस पाने के लिए ऑफ़लाइन `VACUUM` की आवश्यकता होती है:
 
 ```bash
 # Inspect local T3 state directory size and database bloat (macOS / Linux)
@@ -497,6 +617,9 @@ ls -lh ~/.t3/userdata/statev2.sqlite*
 # Optional read-only check of retained deletion markers (quit T3 Code first)
 sqlite3 -readonly ~/.t3/userdata/statev2.sqlite \
   "SELECT COUNT(*) FROM orchestration_events WHERE event_type = 'thread.deleted';"
+
+# Optional offline compaction to reclaim disk pages after PR #42119 purge (quit T3 Code first)
+sqlite3 ~/.t3/userdata/statev2.sqlite "VACUUM;"
 
 # If uninstalling completely, remove ~/.t3 after backing up any needed custom data
 rm -rf ~/.t3
@@ -508,7 +631,8 @@ rm -rf ~/.t3
 
 1. **Google Antigravity:** अपने खाते के एकमात्र अपील अवसर की सुरक्षा के लिए T3-प्रबंधित Antigravity या CLIProxyAPI के माध्यम से व्यक्तिगत Google AI / Antigravity सब्सक्रिप्शन चलाना तुरंत बंद करें। `~/.t3/userdata/providers/antigravity/` और `~/.t3/tools/antigravity-acp/` को हटा दें।
 2. **T3 Connect और क्लाउड डेटा विलोपन:** **Settings → Sharing & access** के अंतर्गत **Publish agent activity** को अक्षम करें, सभी स्थानीय मशीनों को अनलिंक करें (`t3` logout / unlink), और यदि आप कभी रिमोट एक्सेस को फिर से सक्षम करें तो `requireConnectDeviceApproval` चालू करें। `privacy-policy.astro` में प्रलेखित Clerk और T3 Tools के आधिकारिक गोपनीयता विलोपन संपर्क के माध्यम से पूर्ण खाता और रिले विलोपन का अनुरोध करें (ताकि `PR #42285` का Clerk डिलीशन वेबहुक PlanetScale रिले पंक्तियों और Cloudflare टनल को हटा दे)।
-3. **GitHub टोकन और सीक्रेट रोटेशन:** **GitHub Settings → Applications / Authorized GitHub Apps** में T3 Code के GitHub OAuth / App प्राधिकरण को निरस्त करें (`driver.ts` के पास होस्ट-स्तरीय स्टारिंग अनुमतियाँ हैं)। किसी भी API कुंजी, डेटाबेस URL, या टोकन को रोटेट करें जो `PR #41889` से पहले `t3-resource-monitor` द्वारा प्रोसेस कमांड लाइनों पर कैप्चर किए गए हों, या Axiom को भेजे गए वेबहुक/रिले त्रुटियों के माध्यम से गए हों।
+3. **GitHub टोकन और सीक्रेट रोटेशन:** **GitHub Settings → Applications / Authorized GitHub Apps** में T3 Code के GitHub OAuth / App प्राधिकरण को निरस्त करें (`driver.ts` के पास होस्ट-स्तरीय स्टारिंग अनुमतियाँ हैं)। किसी भी API कुंजी, डेटाबेस URL, या टोकन को रोटेट करें जो `PR #41889` / `PR #42577` से पहले `t3-resource-monitor` द्वारा प्रोसेस कमांड लाइनों पर कैप्चर किए गए हों, या Axiom को भेजे गए वेबहुक/रिले त्रुटियों के माध्यम से गए हों।
+4. **LAN HTTP, CI Bearer और अविश्वस्त रेपो संगरोध (`ca81b7b9`):** सादे `t3 up --lan` HTTP को कभी भी उसके आगे TLS (रिवर्स प्रॉक्सी या Tailscale Serve; `::1` बनाम `127.0.0.1` IPv4 वर्कअराउंड पर ध्यान दें) लगाए बिना न चलाएँ; गैर-DPoP 30-दिन के Bearer टोकन कभी भी स्क्रिप्ट्स/CI में न डालें; और कोई भी अविश्वस्त रिपॉज़िटरी खोलने से पहले `SSH_AUTH_SOCK` / `GITHUB_TOKEN` साफ़ करें (तथा `.gitmodules` / `.claude/settings.json` हुक का ऑडिट करें)।
 
 ### 7.5 वैकल्पिक क्लाइंट
 
@@ -518,7 +642,7 @@ rm -rf ~/.t3
 
 ## 8. प्राथमिक स्रोत और 18-भाग मूल पोस्ट सूचकांक
 
-> सभी भागों और स्क्रीनशॉट में प्रत्येक `SRC-001` से `SRC-206+` उद्धरण को मैप करने वाली मास्टर सारणीबद्ध संदर्भ शीट के लिए देखें [`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md)
+> भागों, डॉसियर्स और ऑडिट के बाद के कमिट्स में प्रत्येक `SRC-001` से `SRC-320` उद्धरण को मैप करने वाली मास्टर सारणीबद्ध संदर्भ शीट के लिए देखें [`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md)। सभी **108** दृश्य प्रमाणों और फ़ोरेंसिक चार्ट्स (`EV-001`–`EV-108`) के लिए देखें [`docs/EVIDENCE-INDEX.md`](../EVIDENCE-INDEX.md)।
 
 ### मूल पोस्ट और संपूर्ण 18-भाग X सूचकांक (कालानुक्रमिक)
 
@@ -543,6 +667,7 @@ rm -rf ~/.t3
 - भाग 17 (प्रायोजक स्टैक Clerk/Axiom, Codex 0% कोटा दोहन व विलोपन, 10-खाते वाला `CLIProxyAPI` Gist): https://x.com/realchendahuang/status/2125411353393553744
 - भाग 18 (77k GitHub स्टार्स कैसे बने: होस्ट-क्रेडेंशियल API स्टार्स चलाने वाला 30-सेकंड आइडल टोस्ट और अनफ़िक्स्ड मनमाना-रेपो स्टारिंग): https://x.com/realchendahuang/status/2125416210120765799
 - सामुदायिक विकल्प सूची: https://x.com/realchendahuang/status/2125244977878036713
+- सामुदायिक टिप्पणी अभिलेखागार (`@opserx` द्वारा Issue #1 — *"The Case Against Theo"*): [`docs/community/issue-1-the-case-against-theo.md`](../community/issue-1-the-case-against-theo.md)
 
 ### स्रोत कोड, PRs, Issues, नीतियाँ, और प्राथमिक प्रमाण
 
@@ -554,7 +679,7 @@ rm -rf ~/.t3
 - ऑप्ट-आउट आसान बनाने से इनकार (Issue #1397) और टूटे-वादे की जाँच (Issue #4123): https://github.com/pingdotgg/t3code/issues/1397 ; https://github.com/pingdotgg/t3code/issues/4123
 - स्व-होस्टेड `ingest.t3.codes` कच्चे-ईवेंट की प्रति (PR #15028) और क्रॉस-टूल अनसॉल्टेड हैशिंग (PR #21506): https://github.com/pingdotgg/t3code/pull/15028 ; https://github.com/pingdotgg/t3code/pull/21506 ; https://ingest.t3.codes/
 - चार अस्वीकृत सामुदायिक ऑप्ट-आउट टॉगल PRs (`#13458` / `#16763` / `#21248` / `#27077`): https://github.com/pingdotgg/t3code/pull/13458 ; https://github.com/pingdotgg/t3code/pull/16763 ; https://github.com/pingdotgg/t3code/pull/21248 ; https://github.com/pingdotgg/t3code/pull/27077
-- टेलीमेट्री और पहचान स्रोत फ़ाइलें (`AnalyticsService.ts` / `Identify.ts` / `ProviderUsageAnalytics.ts` / `telemetryId.ts`): https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts ; https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/telemetryId.ts
+- टेलीमेट्री और पहचान स्रोत फ़ाइलें (`AnalyticsService.ts` / `Identify.ts` / `ProviderUsageAnalytics.ts` / `ProviderDimensions.ts` / `telemetryId.ts` / `otelEnvironment.ts` / `DesktopShellEnvironment.ts` / `DesktopBackendConfiguration.ts`): https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderDimensions.ts ; https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/telemetryId.ts ; https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/otelEnvironment.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/backend/DesktopBackendConfiguration.ts
 - आधिकारिक टेलीमेट्री और Managed Policy दस्तावेज़: https://github.com/pingdotgg/t3code/blob/main/docs/user/telemetry.md ; https://github.com/pingdotgg/t3code/blob/main/docs/user/managed-policy.md
 - Theo की Managed Policy, स्पष्टीकरण, और कोई-ट्रैकिंग-फ़ाइल-नहीं के दावे + सार्वजनिक `events.clean.jsonl` निर्यात: https://x.com/theo/status/2125186071357251715 ; https://x.com/theo/status/2125191784859115766 ; https://x.com/theo/status/2125332390239494211 ; https://x.com/theo/status/2125370330244128924 ; https://files.tslop.org/2026/11/t3code-telemetry-events-jsonl-a4896cdc.gz
 - पूर्ण वर्कस्पेस पाथ लीक (PR #42450) और Win/Mac अनदेखे ऑप्ट-आउट (PR #42376 / #42464): https://github.com/pingdotgg/t3code/pull/42450 ; https://github.com/pingdotgg/t3code/pull/42376 ; https://github.com/pingdotgg/t3code/pull/42464
@@ -567,9 +692,9 @@ rm -rf ~/.t3
 - Claude Auto मोड मूक `git push --force` (Issue #15353 और पुनरुत्पादन टिप्पणी) और सामुदायिक फ़िक्स PRs (`#15360` / `#35207` / `#40692`): https://github.com/pingdotgg/t3code/issues/15353 ; https://github.com/pingdotgg/t3code/issues/15353#issuecomment-6889019695 ; https://github.com/pingdotgg/t3code/pull/15360 ; https://github.com/pingdotgg/t3code/pull/35207 ; https://github.com/pingdotgg/t3code/pull/40692
 - `slopalytics.com` के लिए प्राइवेट मॉडल फ़िल्टरिंग को 21 घंटे में हटाना (PR #29001 / Issue #40948 / PR #41237): https://github.com/pingdotgg/t3code/pull/29001 ; https://github.com/pingdotgg/t3code/issues/40948 ; https://github.com/pingdotgg/t3code/pull/41237 ; https://slopalytics.com/ ; https://slopalytics.com/data/t3-usage.json
 - खाली Security Advisories टैब, `SECURITY.md` (`PR #38812` / `#41942`), मर्ज किए गए मूक सुरक्षा सुधार (`#22190` / `#37823` / `#39464` / `#39480` / `#39483` / `#40133` / `#41756` / `#41757` / `#41886` / `#42386` / `#42504`), और खुले सुरक्षा/लॉन्चर आइटम (`Issue #26489` / `PR #23428` / `PR #30997` / `PR #33144` / `PR #36216`): https://github.com/pingdotgg/t3code/security/advisories ; https://github.com/pingdotgg/t3code/blob/main/SECURITY.md ; https://github.com/pingdotgg/t3code/pull/38812 ; https://github.com/pingdotgg/t3code/pull/41942 ; https://github.com/pingdotgg/t3code/pull/22190 ; https://github.com/pingdotgg/t3code/pull/37823 ; https://github.com/pingdotgg/t3code/pull/39464 ; https://github.com/pingdotgg/t3code/pull/39480 ; https://github.com/pingdotgg/t3code/pull/39483 ; https://github.com/pingdotgg/t3code/pull/40133 ; https://github.com/pingdotgg/t3code/pull/41756 ; https://github.com/pingdotgg/t3code/pull/41757 ; https://github.com/pingdotgg/t3code/pull/41886 ; https://github.com/pingdotgg/t3code/pull/42386 ; https://github.com/pingdotgg/t3code/pull/42504 ; https://github.com/pingdotgg/t3code/issues/26489 ; https://github.com/pingdotgg/t3code/pull/23428 ; https://github.com/pingdotgg/t3code/pull/30997 ; https://github.com/pingdotgg/t3code/pull/33144 ; https://github.com/pingdotgg/t3code/pull/36216
-- Antigravity FAQ गारंटी, Issue #40713 कोड खंडन, 3-मिनट का बैन (Issue #41536), खाता क्रॉस-टॉक (Issue #41973), श्वेतसूचीबद्ध संपादक स्पूफ़ (PR #26876), CLIProxyAPI हब PR #33800, Theo के शून्य-जोखिम/आरेख/CLIProxy टालमटोल पोस्ट, और स्रोत कोड: https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md ; https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md#will-i-get-banned-for-using-my-subscription ; https://github.com/pingdotgg/t3code/issues/40713 ; https://github.com/pingdotgg/t3code/issues/41536 ; https://github.com/pingdotgg/t3code/issues/41973 ; https://github.com/pingdotgg/t3code/pull/26876 ; https://github.com/pingdotgg/t3code/pull/33800 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L20-L45 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L445-L476 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts#L230-L236 ; https://x.com/theo/status/2124264935505199294 ; https://x.com/theo/status/2124665075638411641 ; https://x.com/theo/status/2124703048140517397
+- Antigravity FAQ गारंटी, Issue #40713 कोड खंडन, 3-मिनट का बैन (Issue #41536), खाता क्रॉस-टॉक (Issue #41973), श्वेतसूचीबद्ध संपादक स्पूफ़ (PR #26876), CLIProxyAPI हब PR #33800, Theo के शून्य-जोखिम/आरेख/CLIProxy टालमटोल पोस्ट, और स्रोत कोड: https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md ; https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md#will-i-get-banned-for-using-my-subscription ; https://github.com/pingdotgg/t3code/issues/40713 ; https://github.com/pingdotgg/t3code/issues/41536 ; https://github.com/pingdotgg/t3code/issues/41973 ; https://github.com/pingdotgg/t3code/pull/26876 ; https://github.com/pingdotgg/t3code/pull/33800 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L20-L45 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L445-L476 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts#L230-L236 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityAcpSupport.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityTurnOutcome.ts ; https://x.com/theo/status/2124264935505199294 ; https://x.com/theo/status/2124665075638411641 ; https://x.com/theo/status/2124703048140517397
 - Google Antigravity सेवा की शर्तें और आधिकारिक फ़ोरम प्रतिबंध: https://antigravity.google/terms ; https://discuss.ai.google.dev/t/185992
-- T3 Connect E2E अस्वीकृति (Issue #32098), डिफ़ॉल्ट-ऑफ़ `requireConnectDeviceApproval` (PR #36419), स्व-होस्टेड OVH Caddy गेटवे (PR #32945), रिले कोड, गोपनीयता नीति, और अनुत्तरित चर्चाएँ: https://github.com/pingdotgg/t3code/issues/32098#issuecomment-6869049926 ; https://github.com/pingdotgg/t3code/pull/36419 ; https://github.com/pingdotgg/t3code/pull/32945 ; https://github.com/pingdotgg/t3code/blob/main/docs/internals/06_t3-connect.md ; https://github.com/pingdotgg/t3code/blob/main/infra/relay/src/environments/ManagedEndpointProvider.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/marketing/src/pages/privacy-policy.astro ; https://github.com/pingdotgg/t3code/discussions/21286 ; https://github.com/pingdotgg/t3code/discussions/37831
+- T3 Connect E2E अस्वीकृति (Issue #32098), डिफ़ॉल्ट-ऑफ़ `requireConnectDeviceApproval` (PR #36419 और `settings.ts`), स्व-होस्टेड OVH Caddy गेटवे (PR #32945), रिले कोड, गोपनीयता नीति, और अनुत्तरित चर्चाएँ: https://github.com/pingdotgg/t3code/issues/32098#issuecomment-6869049926 ; https://github.com/pingdotgg/t3code/pull/36419 ; https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/settings.ts ; https://github.com/pingdotgg/t3code/pull/32945 ; https://github.com/pingdotgg/t3code/blob/main/docs/internals/06_t3-connect.md ; https://github.com/pingdotgg/t3code/blob/main/infra/relay/src/environments/ManagedEndpointProvider.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/marketing/src/pages/privacy-policy.astro ; https://github.com/pingdotgg/t3code/discussions/21286 ; https://github.com/pingdotgg/t3code/discussions/37831
 
 **व्यावसायिक लेखा-जोखा, निवेशक हितों का टकराव, प्रायोजक, और 77k स्टार्स (भाग 6, 8, 17, 18)**
 
@@ -586,3 +711,12 @@ rm -rf ~/.t3
 - USPTO TSDR रिकॉर्ड (`PING LABS` 97294243 परित्यक्त; EquipmentShare `T3` Reg. 7795672), GitHub ट्रेडमार्क नीति, पूर्वव्यापी `PR #41898`, बैन धमकी, ट्रिलियन-डॉलर ओपन-सोर्स उत्तर, `"aware of the legality"`, `"get a better lawyer"`, और पिछले ट्रेडमार्क ट्वीट्स: https://tsdr.uspto.gov/statusview/sn97294243 ; https://tsdr.uspto.gov/#caseNumber=90644500&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch ; https://docs.github.com/en/site-policy/content-removal-policies/github-trademark-policy ; https://github.com/pingdotgg/t3code/pull/41898 ; https://github.com/pingdotgg/t3code/blob/main/TRADEMARK.md ; https://x.com/theo/status/2124829315657576890 ; https://x.com/theo/status/2124989435154726982 ; https://x.com/theo/status/2125082769395220688 ; https://x.com/theo/status/2125026423769555308 ; https://x.com/vildanden_ai/status/2125275487404761555 ; https://x.com/theo/status/1839261574005141945
 - चयनात्मक विनम्रता प्रमाण (Google Neon माफ़ी व पुल, इंजीनियर बेरोज़गारी, स्थानीय AI कब्रें, Linux larpers, जेल/RSD धमकी, `stupid bitch` पोस्ट, चीनी टेक ट्विटर गटर, कोई माफ़ी नहीं, विश्वास न जलाने का उपदेश): https://x.com/theo/status/2123255588570501585 ; https://x.com/theo/status/2123995323123343869 ; https://x.com/theo/status/2124470530590011704 ; https://x.com/theo/status/2120733839832273025 ; https://x.com/theo/status/2124298216271499605 ; https://x.com/theo/status/2122865897375400066 ; https://x.com/theo/status/2120599310211703274 ; https://x.com/theo/status/2125177503526588877 ; https://x.com/theo/status/2125193393450226024 ; https://x.com/theo/status/2124449493513068862
 - ऐतिहासिक प्रमाण (`vsc-material-but-i-wont-sue-you`, भारतीय डेवलपर माफ़ी वीडियो, $20k FFmpeg बाउंटी रिकॉर्ड): https://github.com/t3dotgg/vsc-material-but-i-wont-sue-you ; https://www.youtube.com/watch?v=o2CSJYXJBpc ; https://www.youtube.com/watch?v=1oQ3KMeaH04
+
+### ऑडिट के बाद अपस्ट्रीम ट्रैकिंग (`9d3195b4` से `ca81b7b9`, `SRC-280`–`SRC-320`)
+
+- ऑडिट की गई आधाररेखा (`9d3195b4`, `#42000`) और नवीनतम सत्यापित `main` HEAD (`ca81b7b9`, `#42634`): https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2 ; https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd
+- टेलीमेट्री और पहचान सीमांकन (`#42299` / `84e4264b`, `#42465` / `6b3899f2`, `#42630` / `c925b9ab`, `#42629` / `ef4a1643`): https://github.com/pingdotgg/t3code/pull/42299 ; https://github.com/pingdotgg/t3code/commit/84e4264bb347e36e97f6c3bd95d666eecfa12e07 ; https://github.com/pingdotgg/t3code/pull/42465 ; https://github.com/pingdotgg/t3code/commit/6b3899f224947178088ca97ec9907e681807f7da ; https://github.com/pingdotgg/t3code/pull/42630 ; https://github.com/pingdotgg/t3code/commit/c925b9ab198099f67de862ed01701bd1d8809f2b ; https://github.com/pingdotgg/t3code/pull/42629 ; https://github.com/pingdotgg/t3code/commit/ef4a1643edf72ad119452c82b01c91adbf7b9e64
+- स्थानीय पर्ज, रिसोर्स मॉनिटर और सुरक्षा सुदृढ़ीकरण (`#42119` / `91f0b32e`, `#42577` / `af276ccb`, `#42413`): https://github.com/pingdotgg/t3code/pull/42119 ; https://github.com/pingdotgg/t3code/commit/91f0b32e2db2cb8abca5fdd33c33609a0f57b15e ; https://github.com/pingdotgg/t3code/pull/42577 ; https://github.com/pingdotgg/t3code/commit/af276ccbb26ef709c46bc46ec514f23b62c8e18c ; https://github.com/pingdotgg/t3code/pull/42413
+- Antigravity सत्यापन ट्रिगर और CLI अपडेट (`#41210` / `3e74a0aa`, `#42545` / `4da8d19d`, `#42339`, `#42475`): https://github.com/pingdotgg/t3code/pull/41210 ; https://github.com/pingdotgg/t3code/commit/3e74a0aac5c53459cc1d3d84eec915fa483f2836 ; https://github.com/pingdotgg/t3code/pull/42545 ; https://github.com/pingdotgg/t3code/commit/4da8d19d08ed7e34fe2d5d66dae54b01eab122fc ; https://github.com/pingdotgg/t3code/pull/42339 ; https://github.com/pingdotgg/t3code/pull/42475
+- T3 Connect नोटिस और रिले/मोबाइल/फ़ीडबैक सीमांकन (`#42311` / `ece5f21b`, `#42356`, `#42394`, `#42397`, `#42398`, `#42415`): https://github.com/pingdotgg/t3code/pull/42311 ; https://github.com/pingdotgg/t3code/commit/ece5f21b17077382c8d2eba1c28e75e898386dcd ; https://github.com/pingdotgg/t3code/pull/42356 ; https://github.com/pingdotgg/t3code/pull/42394 ; https://github.com/pingdotgg/t3code/pull/42397 ; https://github.com/pingdotgg/t3code/pull/42398 ; https://github.com/pingdotgg/t3code/pull/42415
+- `ca81b7b9` के LAN कुकी, Bearer, `?wsTicket=`, `::1` लूपबैक और अविश्वस्त रेपो auth/exec प्रमाण (`SRC-308`–`SRC-320`): https://github.com/pingdotgg/t3code/pull/37042 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L492-L493 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/http.ts#L215-L221 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L798-L806 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1175-L1186 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1506-L1511 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/environmentHttp.ts#L595-L679 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1553-L1622 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L1086-L1156 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/startupAccess.ts#L71-L108 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/VcsProcess.ts#L145-L157 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L5982-L5985

@@ -24,16 +24,41 @@
   <a href="./README.id.md">Bahasa Indonesia</a> ·
   <a href="./README.hi.md">हिन्दी</a>
 </p>
+<p align="center">
+  <a href="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml/badge.svg" alt="リポジトリ検証 CI" /></a>
+  ·
+  <a href="https://realchendahuang.github.io/before-you-install-t3code/"><strong>対話型エビデンスポータル（GitHub Pages）</strong></a>
+  ·
+  <a href="../EVIDENCE-INDEX.md"><strong>108枚・証拠画像インデックス</strong></a>
+  ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>320件・一次ソースインデックス</strong></a>
+</p>
+<p align="center">
+  <strong>監査ベースライン：</strong> <a href="https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2"><code>9d3195b4</code></a> (<code>#42000</code>) ·
+  <strong>最新上流チェック：</strong> <a href="https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd"><code>ca81b7b9</code></a> (<code>#42634</code>, 11月25日 14:49 CST · +259 commits)
+</p>
 
 ![Before You Install T3 Code — 18部構成 独立監査バナー](../../evidence/00-cover-en.png)
 
 > **調査範囲および検証方針**  
-> 本リポジトリは、オープンソースプロジェクト `pingdotgg/t3code`（T3 Code）に対する独立したセキュリティ・テレメトリ・ガバナンス・公開記録の監査アーカイブです。2026年11月24〜25日に公開された発端投稿2本と**全18部の調査記録**、さらに**180件以上の一次情報ソースURL**（GitHub コミット、プルリクエスト、Issue、ソースコード原文、公式ドキュメント、米国特許商標庁 USPTO TSDR 記録、公開投稿アーカイブ）、6本の詳細技術調査書（[`docs/dossiers/`](../dossiers/01-telemetry-and-gdpr-timeline.md)）、および連続する **`@theo` の X 投稿 1,151件**（2026年11月7日〜24日）の定量データセットを統合しています。短縮リダイレクトURLや個人の連絡先などのプライバシー情報は一切含まれていません。事実の更新、新たにマージされた修正、他言語への翻訳追加については、一次出典を添えたプルリクエストを歓迎します。詳細は [`CONTRIBUTING.md`](../../CONTRIBUTING.md) および [`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md) をご覧ください。
+> 本リポジトリは、`pingdotgg/t3code`（T3 Code）に対する独立したセキュリティ・テレメトリ・ガバナンス・公開記録の監査アーカイブです。2026年11月24〜25日に公開された発端投稿2本と**全18部の調査記録**を軸に、[`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md) に索引化された **320件の正規一次情報ソース URL**（`SRC-001`–`SRC-320`）、[`docs/EVIDENCE-INDEX.md`](../EVIDENCE-INDEX.md) に整理された **108点の一次視覚証拠・分析チャート**（`EV-001`–`EV-108`）、6本の詳細技術調査書（[`docs/dossiers/`](../dossiers/01-telemetry-and-gdpr-timeline.md)）、[対話型エビデンスポータル](https://realchendahuang.github.io/before-you-install-t3code/)、および連続する **`@theo` の X 投稿 1,151件**（2026年11月7日〜24日）の定量データセットを統合しています。コードベース監査は一次ベースライン [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2)（`PR #42000`、`2026-11-24T08:41:04Z`）を対象とし、`main` HEAD [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd)（`PR #42634`、`2026-11-25T06:49:37Z` / `2026-11-25 14:49 CST`）まで継続的に追跡しています。短縮リダイレクト URL や個人の連絡先情報は一切含まれていません。事実の更新、新たにマージされた修正、他言語への翻訳追加については、一次出典を添えたプルリクエストを歓迎します — 詳細は [`CONTRIBUTING.md`](../../CONTRIBUTING.md) をご覧ください。
+
+---
+
+## TL;DR（30秒サマリー）
+
+- **影響を受ける対象：** `pingdotgg/t3code` のローカルデスクトップ版、CLI、ホスト版 Web（`app.t3.codes`）、モバイル版、および T3 Connect 利用者全般（特に非管理者権限でのデスクトップ導入環境、カスタムエンドポイントや Antigravity／Gemini サブスクリプション利用者、Claude Auto モード利用者、GitHub や T3 Connect セッションを連携しているユーザー）。
+- **コードベースで検証済みの3つの核心的発見（`9d3195b4` → `ca81b7b9` 照合済み）：**
+  1. **デフォルト有効テレメトリ、起動時無条件 ID 書き込み、および GDPR 通報後の情報開示（[第2節](#2-テレメトリ他ツール認証情報の読み取りおよび-gdpr-通報後の夜間緊急修正part-1-7-11-12) · [調査書 01](../dossiers/01-telemetry-and-gdpr-timeline.md)）：** 6月18日までトップページで `"No telemetry"` を掲げながら（[`commit 3bdaa6e1`](https://github.com/pingdotgg/t3code/commit/3bdaa6e10046945ccc08264d2d6f3b81775efcb3) で削除）、デフォルト有効の PostHog テレメトリを出荷（[PR #174](https://github.com/pingdotgg/t3code/pull/174)）。クローズドソースの [`https://ingest.t3.codes/`](https://ingest.t3.codes/) で生イベントを保持し、GDPR 後の PR では Axiom 上の**毎時220万件 IP＋UA スパン**（[PR #42380](https://github.com/pingdotgg/t3code/pull/42380)）、`git.cwd` パス漏洩（[PR #42450](https://github.com/pingdotgg/t3code/pull/42450)）、および Clerk 削除不備（[PR #42285](https://github.com/pingdotgg/t3code/pull/42285)）を認めました。監査後の PR により `.codex`/`.claude.json` 読み取りの廃止（[PR #42299](https://github.com/pingdotgg/t3code/pull/42299)）、カスタムモデルの `custom:<driver>` 化（[PR #42465](https://github.com/pingdotgg/t3code/pull/42465)）、および CI/`DO_NOT_TRACK` 対応（[PR #42630](https://github.com/pingdotgg/t3code/pull/42630)、[PR #42629](https://github.com/pingdotgg/t3code/pull/42629)）がマージされたものの、**依然として [`AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts)（`line 156`）はオプトアウト確認前にディスクへ ID を書き込み、[`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) は `OTEL_SDK_DISABLED`/`T3CODE_OTEL_SDK_DISABLED` の引き継ぎが漏れており、設定 UI や `app.t3.codes` 上のトグルも一切存在しません。**
+  2. **ローカル安全性の欠陥、継承環境変数・リポジトリフックのリスク、および `0` 件の Security Advisories（[第3節](#3-ローカル保存プロセス監視安全ガード回避および非公開セキュリティ修正part-2-3-13) · [調査書 02](../dossiers/02-local-safety-and-security-audit.md)）：** Claude Auto モードは3回目の再試行で `git push --force` を無確認で実行します（[Issue #15353](https://github.com/pingdotgg/t3code/issues/15353)、依然未修正）。深刻な修正がサイレントでマージされる一方、[GitHub Security Advisories](https://github.com/pingdotgg/t3code/security/advisories) は **0件** のままで、[`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md) は OS 全域の `filesystem:read` と iOS 平文 HTTP を意図された仕様と宣言しています。また、リポジトリを開くと再帰的な `.gitmodules` 初期化が自動実行され（`GitVcsDriverCore.ts`）、グローバルな Git の `core.hooksPath=/dev/null` が設定されておらず（`VcsProcess.ts`）、継承された `GITHUB_TOKEN`／`SSH_AUTH_SOCK` ごとライブの Claude `SessionStart` フックが実行されます（`ClaudeAdapterV2.ts`）。そして [PR #42119](https://github.com/pingdotgg/t3code/pull/42119) により非同期のスレッド削除（`#17845` クローズ）が追加されたものの、フォーク／サブエージェント参照やトゥームストーンは残り、`statev2.sqlite` の容量縮小にはオフラインでの `VACUUM` が必要です。さらに [PR #42577](https://github.com/pingdotgg/t3code/pull/42577) は Windows のプロセス監視のみを縮小しており、Linux/macOS では `ProcessesToUpdate::All` が残存しています。
+  3. **Antigravity 偽装、平文リレー、LAN／認証の欠陥、および任意リポジトリスター付与（[第4節](#4-google-antigravity-利用規約リスクと無暗号化-t3-connect-中継part-4-5) · [第5.3節](#53-いかにして-t3-code-は-25日間で-3万から-77万スターへ急増したのかウォッチャー-129人part-18)）：** [`antigravityUsageLimits.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts) は現在もキーリング／`CredReadW` からトークンを抽出し、`antigravity/hub/2.24.0` を偽装して `v1internal` へ接続しています（一方 [PR #41210](https://github.com/pingdotgg/t3code/pull/41210) は Google の `VALIDATION_REQUIRED` `403` 本人確認リンクを表示する処理を追加しました）。**T3 Connect** は現在も**エンドツーエンド暗号化が一切なく**（[Issue #32098](https://github.com/pingdotgg/t3code/issues/32098)）、`requireConnectDeviceApproval` のデフォルト値も `false` のままです（[`settings.ts`](https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/settings.ts)）。さらに `ca81b7b9` 時点のソースコード検証により、`--lan` HTTP 経由で `Secure` 属性なしの30日間有効シェル Cookie を発行しつつ `Origin` ヘッダ欠落リクエストを通過させる問題（`PR #37042`）、`/logout` ルートがなく失効不可能な30日間有効非 DPoP Bearer トークン、Bearer RPC や全 `media` ルートでリプレイ可能な5分間有効 URL `?wsTicket=` 認証情報、そして `isIPv4` 判定によって `::1` の Tailscale Serve／Connect ソケットを無言で切断する不具合も確認されました。あわせて [`driver.ts#L60-L99`](https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts#L60-L99) はサーバー認証情報による任意リポジトリへのスター付与対象が未固定のまま残されています。
+- **今すぐ取るべき対策：** すでにインストール済みの場合は、直ちに[**実践的な被害軽減・対策プレイブック**](#7-実践的な被害軽減対策プレイブック)（`export DO_NOT_TRACK=1`、`/etc/hosts` での `ingest.t3.codes` 遮断、Managed Policy、オフライン `VACUUM`、および OAuth／トークンの失効）へ進んでください。
 
 ---
 
 ## 目次
 
+- [TL;DR（30秒サマリー）](#tldr30秒サマリー)
 - [構造化調査結果とリスクマトリクス](#構造化調査結果とリスクマトリクス)
 - [時系列タイムライン（2023〜2026年）](#時系列タイムライン20232026年)
 - [1. 発端の紛争：「Steal Our Code」、フォーク命名への脅迫、そして二重基準](#1-発端の紛争steal-our-codeフォーク命名への脅迫そして二重基準)
@@ -49,15 +74,15 @@
 
 ## 構造化調査結果とリスクマトリクス
 
-| 領域・該当パート | リスク／影響 | 主な確認事実と一次ソース根拠 | 状況（2026年11月25日時点） | 詳細技術調査書 |
+| 領域・該当パート | リスク／影響 | 主な確認事実と一次ソース根拠 | 状況（`ca81b7b9`、11月25日 14:49 CST 時点） | 詳細技術調査書 |
 |---|---|---|---|---|
-| **テレメトリと GDPR 後のプライバシー**<br>*(Part 1, 7, 11, 12)* | **重大（Critical）** | 公式サイトで `"No telemetry / Unless you opt in. Full stop."` と掲げながらデフォルトで PostHog 分析を有効化（`PR #174`、Promise 削除は6月18日の `3bdaa6e1`）。クローズドソースの `ingest.t3.codes` 経由で生イベントを保持（`PR #15028`）。`~/.codex/auth.json` および `~/.claude.json` をソルトなし SHA-256 でツール横断ハッシュ化（`Identify.ts`、`telemetryId.ts`）。オプトアウト PR 4件を却下（`#13458`, `#16763`, `#21248`, `#27077`）。Managed Policy の抜け穴（`docs/user/telemetry.md`）。GDPR 後の夜間 PR で、**毎時220万件の IP＋UA 付きスパン**の30日間 Axiom 保持（`#42380`）、`git.cwd` 絶対パス漏洩（`#42450`）、Win/Mac でのオプトアウト無視（`#42376`, `#42464`）、アカウント削除不備（`#42285`）、匿名イベントの混載送信（`#42466`）を事実上認める。 | 夜間パッチは一部に留まる。`AnalyticsService.ts` は起動時に依然ディスク識別子を生成。ホスト版 Web アプリには無効化トグルなし。`ingest.t3.codes` は非公開のまま | [**調査書 01**](../dossiers/01-telemetry-and-gdpr-timeline.md) |
-| **ローカル安全性と非公開アドバイザリ**<br>*(Part 2, 3, 13)* | **重大（Critical）** | サイドバーの「完全削除」は `statev2.sqlite` に `"thread.deleted"` を追記するだけ（25.9〜41.6 GB に肥大化、`#17845`）。`t3-resource-monitor` が OS 上の全プロセスをコマンドライン付きで走査（`ProcessesToUpdate::All`、`#11222`、`PR #41889`）。Claude Auto モードが3回目の試行で `git push --force` を無確認で承認（`#15353`、52〜53日以上放置）。`slopalytics.com` のためプライベートモデル除外フィルタを21時間で撤廃（`#41237`）。重大修正（`#39483`, `#41757`, `#42386`, `#42504`）をサイレントでマージしながら **GitHub Security Advisories は 0件**。Windows の Base64 PowerShell AV 誤検知・警告問題（`#30997`）が未解決。`SECURITY.md` は OS 全域の `filesystem:read` や iOS の平文 HTTP を「意図された仕様」と宣言。 | `#17845`, `#15353`, `#26489`, `#30997` は未解決／オープン。公開された Security Advisory は `0` 件 | [**調査書 02**](../dossiers/02-local-safety-and-security-audit.md) |
-| **Antigravity 規約違反リスクと T3 Connect 中継**<br>*(Part 4, 5)* | **高（High）** | `docs/user/faq.md` で Google Antigravity の利用規約上の安全性を保証しつつ、`antigravityUsageLimits.ts` が OS キーリング／Windows `CredReadW` からトークンを抽出し `antigravity/hub/2.24.0` を偽装して非公開 `v1internal` エンドポイントへ接続。`antigravityAuthSupport.ts` は偽の `SSH_CONNECTION` を注入し別アカウントへの誤ルーティングを誘発（`#41973`）。プロキシなしの新規 $20 アカウントが3分で BAN（`#41536`）。`PR #33800` が偽装ヘッダ付きで `claude`/`xai`/`antigravity` の CLIProxyAPI ハブポーリングをネイティブ統合。T3 Connect は**E2E 暗号化なし**、`requireConnectDeviceApproval` はデフォルト無効（`#36419`）、OVH 上の Caddy TLS 終端ゲートウェイ（`PR #32945`）へ移行計画。 | Antigravity 偽装コードは現在も有効。T3 Connect の E2E 暗号化は明確に拒否（`#32098`、11月25日返信） | [**調査書 03**](../dossiers/03-antigravity-tos-and-t3connect-relay.md) |
-| **事業収支、スポンサー、7.7万スター**<br>*(Part 6, 8, 17, 18)* | **高（High）** | 無料クライアントに $800k 以上を投下（T3 Code 言及 `162` 回に対し既存有料サービスは `0` 回）。**日次 31.7兆トークン**（$10.19M/日相当）の計算量レーダーを $300k 超の OpenAI 早期アクセストークンや VC からの引き合いに転換。投資先 Vibe Kanban や Daytona との利益相反。スポンサー構造（Clerk、Axiom、Vercel 独占契約）。Codex 0% クォータ悪用（`Endless` / `codex#45444`）。10アカウント統合の `CLIProxyAPI` Gist（`555%` クォータ）と FAQ の BAN 警告の矛盾。5プロンプト／30秒アイドル時のトースト通知からホスト認証情報で `PUT user/starred/...` を送信（`#27832`, `#29922`, `#29987`）、Macroscope の要承認判定を無視してマージし、`driver.ts#L60-L99` の任意リポジトリスター付与バグを19日間放置。 | `driver.ts` の対象リポジトリ未固定問題と `zhilsinger` のレビュー指摘は19日後も未修正。7.7万スター超に対しウォッチャーは約129人 | [**調査書 04**](../dossiers/04-business-ledger-sponsors-and-77k-stars.md) |
-| **ガバナンス、商標、過去の経緯**<br>*(Origin 1–2, Part 9, 10, 15, 16)* | **中〜高（Medium–High）** | 1日500コミット／700エージェント／`yolo merges` を誇る一方、`CONTRIBUTING.md` では `"here's my advice: Don't"` と外部貢献を門前払いし、`.github/VOUCHED.td` による晒し上げ自動 BAN、`174` 件の `unwanted` ラベル付与、Plan モード削除（`#5551`, `#9190`, `#33131`）、`#33639` でのユーザー侮辱を実施。公開 `@bot` によるフォーク収集（`@MiaAI_lab`）、Community Notes を使った収益剥奪の呼びかけ、自動ブロックボット運用。GitHub 削除脅迫時点で `T3 Code`/`T3 Tools`/`T3 Connect` の **USPTO 商標登録は 0件**（`PING LABS` `97294243` は放棄済み、EquipmentShare の `7795672` が登録済み）。17時間後に事後で `PR #41898` により `TRADEMARK.md` を追加。2024〜2026年の反復パターン（`vsc-material-but-i-wont-sue-you`、インド人開発者への攻撃騒動、$20k FFmpeg 懸賞金、11月25日午前4時のクローズドソース化脅迫と削除）。 | `CONTRIBUTING.md` / `.github/VOUCHED.td` および `TRADEMARK.md` は `main` 上で稼働中 | [**調査書 05**](../dossiers/05-governance-trademark-and-history.md) |
-| **1,151件ツイート定量データセット**<br>*(Part 14)* | **監査ベースライン** | 11月7〜24日の全投稿網羅分析（`n = 1,151`、17.24日間、66.8件/日、返信率 75.6%、中央値間隔 2.7分）：大手テック幹部・ラボ職員・有力 KOL 20名に対しては**暴言・侮辱が 0.0%**（厳密な先頭 `@` 基準で `0/43`、感謝表現 `32.6%`）である一方、一般開発者に対しては**敵意・暴言率が 8.0%**（`61/766`）、中国語圏フォーク危機の25時間では直接的人身攻撃が **4.0倍の 14.4%**（`19/132`）へ急騰。 | 再現可能な正規表現監査と4枚の分析チャート | [**調査書 06**](../dossiers/06-tweet-forensic-dataset-1151.md) |
-| **完全一次情報 URL カタログ** | **リファレンス** | 本ポータル、`canonical_refs.txt`、`tco_resolved.json`、`all_18_posts.txt`、`missing_posts_full.json` 内のすべての正規 `https://` URL を相互参照した完全カタログ。 | 100% 正規化済み（`t.co` リンクゼロ） | [**出典インデックス**](../COMPLETE-SOURCE-INDEX.md) |
+| **テレメトリと GDPR 後のプライバシー**<br>*(Part 1, 7, 11, 12)* | **重大（Critical）** | 公式サイトで `"No telemetry / Unless you opt in. Full stop."` と掲げながらデフォルトで PostHog 分析を有効化（`PR #174`、6月18日の `3bdaa6e1` で公約削除）。クローズドソースの `ingest.t3.codes` 経由で生イベントを保持（`PR #15028`）。`~/.codex/auth.json` および `~/.claude.json` をソルトなし SHA-256 でツール横断ハッシュ化（`Identify.ts`、`telemetryId.ts`）。オプトアウト PR 4件を却下（`#13458`, `#16763`, `#21248`, `#27077`）。Managed Policy の抜け穴（`docs/user/telemetry.md`）。GDPR 後の夜間 PR で、**毎時220万件の IP＋UA 付きスパン**の30日間 Axiom 保持（`#42380`）、`git.cwd` 絶対パス漏洩（`#42450`）、Win/Mac でのオプトアウト無視（`#42376`, `#42464`）、アカウント削除不備（`#42285`）、匿名イベントの混載送信（`#42466`）を事実上認める。 | 監査後に [`#42299`](https://github.com/pingdotgg/t3code/pull/42299)（`.codex`/`.claude.json` 読み取り廃止）、[`#42465`](https://github.com/pingdotgg/t3code/pull/42465)（`custom:<driver>` 化）、[`#42630`](https://github.com/pingdotgg/t3code/pull/42630)（CI オプトアウト）、[`#42629`](https://github.com/pingdotgg/t3code/pull/42629)（`DO_NOT_TRACK`）がマージ。**`ca81b7b9` 時点で未修正：** `AnalyticsService.ts:156` はオプトアウト確認前にディスク ID を初期化、`DesktopShellEnvironment.ts` は `OTEL_SDK_DISABLED`/`T3CODE_OTEL_SDK_DISABLED` の引き継ぎ欠落、非公開 `ingest.t3.codes` が既定のまま、UI/Web のオプトアウトなし、モバイルは Managed Policy 対象外、`Publish agent activity` はオプトアウトを無視。 | [**調査書 01**](../dossiers/01-telemetry-and-gdpr-timeline.md) |
+| **ローカル安全性と非公開アドバイザリ**<br>*(Part 2, 3, 13)* | **重大（Critical）** | サイドバーの「完全削除」は `statev2.sqlite` に `"thread.deleted"` を追記するだけ（25.9〜41.6 GB に肥大化、`#17845`）。`t3-resource-monitor` が OS 上の全プロセスをコマンドライン付きで走査（`ProcessesToUpdate::All`、`#11222`、`PR #41889`）。Claude Auto モードが3回目の試行で `git push --force` を無確認で承認（`#15353`、52〜53日以上放置）。`slopalytics.com` のためプライベートモデル除外フィルタを21時間で撤廃（`#41237`）。重大修正（`#39483`, `#41757`, `#42386`, `#42504`）をサイレントでマージしながら **GitHub Security Advisories は 0件**。Windows の Base64 PowerShell AV 検知問題（`#30997`）が未解決。信頼できないリポジトリを開くと再帰的な `.gitmodules` 初期化を自動実行し、グローバルな `core.hooksPath=/dev/null` が欠落し、継承された `GITHUB_TOKEN`/`SSH_AUTH_SOCK` ごとライブの Claude `SessionStart` フックを実行。`SECURITY.md` は OS 全域の `filesystem:read` や iOS の平文 HTTP を「意図された仕様」と宣言。 | [`#42119`](https://github.com/pingdotgg/t3code/pull/42119) が非同期 `thread-content.purge` により `#17845` をクローズ（フォーク／`merge_back`／サブエージェント元履歴とトゥームストーンは残存し、DB 縮小にはオフライン `VACUUM` が必要）。[`#42577`](https://github.com/pingdotgg/t3code/pull/42577) が Windows 監視の読み取り対象を縮小（Linux/macOS の `ProcessesToUpdate::All` と `#41889` は未解決のまま）。**`ca81b7b9` 時点で未修正：** `#15353`, `#26489`, `#30997`、信頼できないリポジトリのフック＋`SSH_AUTH_SOCK` 露出、**Security Advisories `0` 件**、および `SECURITY.md` の境界規定。 | [**調査書 02**](../dossiers/02-local-safety-and-security-audit.md) |
+| **Antigravity 規約違反リスクと T3 Connect 中継**<br>*(Part 4, 5)* | **高（High）** | `docs/user/faq.md` で Google Antigravity の利用規約上の安全性を保証しつつ、`antigravityUsageLimits.ts` が OS キーリング／Windows `CredReadW` からトークンを抽出し `antigravity/hub/2.24.0` を偽装して非公開 `v1internal` エンドポイントへ接続。`antigravityAuthSupport.ts` は偽の `SSH_CONNECTION` を注入し別アカウントへの誤ルーティングを誘発（`#41973`）。プロキシなしの新規 $20 アカウントが3分で BAN（`#41536`）。`PR #33800` が偽装ヘッダ付きで `claude`/`xai`/`antigravity` の CLIProxyAPI ハブポーリングをネイティブ統合。T3 Connect は**E2E 暗号化なし**、`requireConnectDeviceApproval` はデフォルト無効（`#36419`）、OVH 上の Caddy TLS 終端ゲートウェイ（`PR #32945`）へ移行計画。`ca81b7b9` 時点の認証検証では、`Origin` 欠落時に受け入れられる30日間の平文 `--lan` Cookie（`PR #37042` は HTTPS のみ）、失効不能な30日間非 DPoP Bearer トークン、リプレイ可能な5分間 URL `?wsTicket=` 値、および `::1` トンネルを切断する `isIPv4` バグも確認。 | [`#41210`](https://github.com/pingdotgg/t3code/pull/41210) が Google `VALIDATION_REQUIRED` `403` の本人確認リンクを追加（Google 側の検証発動を裏付け）。[`#42311`](https://github.com/pingdotgg/t3code/pull/42311) が新規デバイスログイン通知を追加。**`ca81b7b9` 時点で未修正：** Antigravity 偽装／キーリング抽出コードおよび `cliproxyApi.ts` は依然稼働中、**T3 Connect の E2E 暗号化なし**（`#32098` / `#32945`）、`requireConnectDeviceApproval` の初期値は `false` のまま、さらに LAN Cookie／Bearer／WS チケット／`::1` の認証およびトンネルの不具合。 | [**調査書 03**](../dossiers/03-antigravity-tos-and-t3connect-relay.md) |
+| **事業収支、スポンサー、7.7万スター**<br>*(Part 6, 8, 17, 18)* | **高（High）** | 無料クライアントに $800k 以上を投下（T3 Code 言及 `162` 回に対し既存有料サービスは `0` 回）。**日次 31.7兆トークン**（$10.19M/日相当）の計算量レーダーを $300k 超の OpenAI 早期アクセストークンや VC からの引き合いに転換。投資先 Vibe Kanban や Daytona との利益相反。スポンサー構造（Clerk、Axiom、Vercel 独占契約）。Codex 0% クォータ悪用（`Endless` / `codex#45444`）。10アカウント統合の `CLIProxyAPI` Gist（`555%` クォータ）と FAQ の BAN 警告の矛盾。5プロンプト／30秒アイドル時のトースト通知からホスト認証情報で `PUT user/starred/...` を送信（`#27832`, `#29922`, `#29987`）、Macroscope の要承認判定を無視してマージし、`driver.ts#L60-L99` の任意リポジトリスター付与バグを19日間放置。 | `driver.ts#L60-L99` の対象リポジトリ未固定問題と `zhilsinger` のレビュー指摘は **`ca81b7b9` 時点でも未修正**。7.7万スター超に対しウォッチャーは約129人。 | [**調査書 04**](../dossiers/04-business-ledger-sponsors-and-77k-stars.md) |
+| **ガバナンス、商標、過去の経緯**<br>*(Origin 1–2, Part 9, 10, 15, 16)* | **中〜高（Medium–High）** | 1日500コミット／700エージェント／`yolo merges` を誇る一方、`CONTRIBUTING.md` では `"here's my advice: Don't"` と外部貢献を門前払いし、`.github/VOUCHED.td` による晒し上げ自動 BAN、`174` 件の `unwanted` ラベル付与、Plan モード削除（`#5551`, `#9190`, `#33131`）、`#33639` でのユーザー侮辱を実施。公開 `@bot` によるフォーク収集（`@MiaAI_lab`）、Community Notes を使った収益剥奪の呼びかけ、自動ブロックボット運用。GitHub 削除脅迫時点で `T3 Code`/`T3 Tools`/`T3 Connect` の **USPTO 商標登録は 0件**（`PING LABS` `97294243` は放棄済み、EquipmentShare の `7795672` が登録済み）。17時間後に事後で `PR #41898` により `TRADEMARK.md` を追加。2024〜2026年の反復パターン（`vsc-material-but-i-wont-sue-you`、インド人開発者への攻撃騒動、$20k FFmpeg 懸賞金、11月25日午前4時のクローズドソース化脅迫と削除）。 | `CONTRIBUTING.md` / `.github/VOUCHED.td` および `TRADEMARK.md` は `main`（`ca81b7b9`）上で稼働中。 | [**調査書 05**](../dossiers/05-governance-trademark-and-history.md) |
+| **1,151件ツイート定量データセット**<br>*(Part 14)* | **監査ベースライン** | 11月7〜24日の全投稿網羅分析（`n = 1,151`、17.24日間、66.8件/日、返信率 75.6%、中央値間隔 2.7分）：大手テック幹部・ラボ職員・有力 KOL 20名に対しては**暴言・侮辱が 0.0%**（厳密な先頭 `@` 基準で `0/43`、感謝表現 `32.6%`）である一方、一般開発者に対しては**敵意・暴言率が 8.0%**（`61/766`）、中国語圏フォーク危機の25時間では直接的人身攻撃が **4.0倍の 14.4%**（`19/132`）へ急騰。 | 再現可能な正規表現監査と4枚の分析チャート。 | [**調査書 06**](../dossiers/06-tweet-forensic-dataset-1151.md) |
+| **完全一次情報 URL・視覚証拠カタログ** | **リファレンス** | **320件**の正規 `https://` 一次ソース URL（`SRC-001`–`SRC-320`）と **108点**の可逆最適化済み視覚証拠・フォレンジックチャート（`EV-001`–`EV-108`）を相互参照した完全カタログ。 | 100% 正規化済み（`t.co` リンクゼロ、108/108 画像索引済み）。 | [**出典インデックス**](../COMPLETE-SOURCE-INDEX.md) · [**証拠画像インデックス**](../EVIDENCE-INDEX.md) |
 
 ---
 
@@ -86,6 +111,7 @@
 | **2026-11-24 17:04–21:21 CST** | 監査 **Part 1–5** が公開（Part 1 は **181万インプレッション超**、ブックマーク 6,640件に到達）。`18:39 CST` に `@theo` が中国語圏テック Twitter を `"the biggest fucking cesspit"` と罵倒（`2125177503526588877`）。`19:13–19:36 CST` には Managed Policy ですべてのテレメトリを無効化できると主張（`2125186071357251715`）。 | [Part 1](https://x.com/realchendahuang/status/2125153472450527440) → [Part 5](https://x.com/realchendahuang/status/2125218189596676555) |
 | **2026-11-24 夜 – 2026-11-25 ~07:00 CST** | 欧州での正式な GDPR 通報が提出され、**6時間の夜間緊急スプリント**で `#42380`（毎時220万件の IP スパン）、`#42285`/`#42430`（アカウント削除）、`#42376`/`#42464`（Win/Mac のオプトアウト無視）、`#42450`（Theo がパス収集を否定した90分後の `git.cwd` パス漏洩修正）、`#42459`/`#41859`（プッシュ通知漏洩）、`#42466`（匿名バッチ混載）、`#41757`/`#42386`/`#42504`（非公開セキュリティ修正）を相次いでマージ。夜明け前には `@theo` がクローズドソース化をほのめかす脅迫を投稿し削除。 | [Part 11](https://x.com/realchendahuang/status/2125394810559426993) · [Part 12](https://x.com/realchendahuang/status/2125395501663281198) · [Part 13](https://x.com/realchendahuang/status/2125395980354994414) |
 | **2026-11-25 08:27–10:28 CST** | 事業収支、Managed Policy の盲点、`yolo merges`、`@bot` 収集、GDPR 通報後の情報開示、1,151件ツイート分析、USPTO 登録記録、スポンサー関係、7.7万スター生成装置を網羅した **Part 6–18** が公開。 | [Part 6](https://x.com/realchendahuang/status/2125385742243520653) → [Part 18](https://x.com/realchendahuang/status/2125416210120765799) |
+| **2026-11-25 〜 14:49 CST（`ca81b7b9`）** | ベースライン後の上流追跡（`9d3195b4` から `ca81b7b9` まで `+259` コミット）により、`#42299`（`.codex`/`.claude.json` 読み取り廃止）、`#42465`（`custom:<driver>` 化）、`#42577`（Windows プロセス監視の縮小）、`#41210`（Antigravity `VALIDATION_REQUIRED` 本人確認リンク表示）、`#42630`（CI ランナー自動オプトアウト）、`#42629`（`DO_NOT_TRACK` 対応）、`#42119`（非同期スレッド削除による `#17845` クローズ、ただしフォーク／サブエージェント履歴・トゥームストーン保持および `VACUUM` 必要性は残存）、`#42311`（新規デバイス通知）、および `#42356`–`#42415` の絞り込みを確認。同時に、`AnalyticsService.ts:156`、`DesktopShellEnvironment.ts` の OTel 変数欠落、非公開 `ingest.t3.codes`、`#15353`、`driver.ts#L60-L99`、Advisories `0` 件、および T3 Connect E2EE 欠如が未修正のままであることを確認。 | [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) · [PR #42629](https://github.com/pingdotgg/t3code/pull/42629) · [PR #42119](https://github.com/pingdotgg/t3code/pull/42119) · [PR #41210](https://github.com/pingdotgg/t3code/pull/41210) |
 
 ---
 
@@ -107,7 +133,7 @@
 
 ## 2. テレメトリ、他ツール認証情報の読み取り、および GDPR 通報後の夜間緊急修正（Part 1, 7, 11, 12）
 
-> **詳細技術監査：** ソースコード行番号との完全マッピング、`FeatureUsage.ts` のアクション一覧、`DesktopShellEnvironment.ts` の抜け穴、および11月23〜25日の分単位ログは [**調査書 01：テレメトリ構造、ツール横断 ID 紐付け、および11月24〜25日 GDPR 夜間スプリント**](../dossiers/01-telemetry-and-gdpr-timeline.md) にまとめています。
+> **詳細技術監査：** ソースコード行番号との完全マッピング、`FeatureUsage.ts` のアクション一覧、`DesktopShellEnvironment.ts` の抜け穴、`9d3195b4` 以降のコード差分、および11月23〜25日の分単位ログは [**調査書 01：テレメトリ構造、ツール横断 ID 紐付け、および11月24〜25日 GDPR 夜間スプリント**](../dossiers/01-telemetry-and-gdpr-timeline.md) にまとめています。
 
 ### 2.1 デフォルト有効テレメトリ、削除されたトップページの約束、他ツール認証情報のハッシュ化（`Part 1`）
 
@@ -120,7 +146,7 @@
 2026年10月、`@theo` は **PR #15028** をマージし、10秒間隔のバッチ送信（`FLUSH_INTERVAL_MS = 10_000`）の送信先を T3 独自のクローズドソースゲートウェイ [`https://ingest.t3.codes/`](https://ingest.t3.codes/) に切り替えました。[`apps/server/src/telemetry/AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts) の1行目には、PostHog へ転送する前に T3 の受信エンドポイントがすべての生イベントのコピーを保持することが明記されています：
 
 ```ts
-// apps/server/src/telemetry/AnalyticsService.ts (lines 1, 71–74, 149)
+// apps/server/src/telemetry/AnalyticsService.ts (lines 1, 71–74, 149 at 9d3195b4; line 156 at ca81b7b9)
 // T3 ingest retains events and forwards to PostHog; UUIDs deduplicate retries there.
 ...
   posthogHost: Config.String("T3CODE_POSTHOG_HOST").pipe(
@@ -131,12 +157,12 @@
   const { distinctId, installId } = yield* getTelemetryIdentity;
 ```
 
-[`ProviderUsageAnalytics.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts) および `FeatureUsage.ts` で収集されていたフィールドには、プロバイダ名、モデル選択（`ProviderDimensions.ts` 経由でカタログ外のカスタムモデル／エンドポイント ID もそのまま送信）、reasoning effort、パーミッションモード、実行時間、入力／出力／キャッシュ／推論トークン数、子エージェントのトークン数、ローカルのプロジェクト数・スレッド数、**35種類の UI／コマンド操作**（`18` 個の `COMMAND_FEATURES` + `17` 個の `METHOD_FEATURES`）、OS 詳細、WSL ディストリビューション名、アーキテクチャが含まれていました。
+[`ProviderUsageAnalytics.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts) および `FeatureUsage.ts` で収集されていたフィールドには、プロバイダ名、モデル選択（`9d3195b4` 時点では [`ProviderDimensions.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderDimensions.ts) 経由でカタログ外のカスタムモデル／エンドポイント ID もそのまま送信）、reasoning effort、パーミッションモード、実行時間、入力／出力／キャッシュ／推論トークン数、子エージェントのトークン数、ローカルのプロジェクト数・スレッド数、**35種類の UI／コマンド操作**（`18` 個の `COMMAND_FEATURES` + `17` 個の `METHOD_FEATURES`）、OS 詳細、WSL ディストリビューション名、アーキテクチャが含まれていました。
 
-**2026年10月19日**、`@theo` はさらに **PR #21506** を投入し、1人のユーザーが何台のマシンを所有しているかを把握できるようにしました。[`apps/server/src/telemetry/Identify.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts) は、ユーザーのホームディレクトリ内にある別ツールの認証情報ファイル—`~/.codex/auth.json` および `~/.claude.json`—を無断で読み取り、OpenAI の `user_id` JWT クレームおよび Claude の `oauthAccount.accountUuid` をデコードし、連携済みの T3 Connect ユーザー ID およびデバイス ID とともにハッシュ化して送信し始めました：
+**2026年10月19日**、`@theo` はさらに **PR #21506** を投入し、1人のユーザーが何台のマシンを所有しているかを把握できるようにしました。ベースライン `9d3195b4` 時点の [`apps/server/src/telemetry/Identify.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts) は、ユーザーのホームディレクトリ内にある別ツールの認証情報ファイル—`~/.codex/auth.json` および `~/.claude.json`—を無断で読み取り、OpenAI の `user_id` JWT クレームおよび Claude の `oauthAccount.accountUuid` をデコードし、連携済みの T3 Connect ユーザー ID およびデバイス ID とともにハッシュ化して送信していました（後に [`PR #42299`](https://github.com/pingdotgg/t3code/pull/42299) で `.codex`/`.claude.json` 読み取りは削除されたものの、`connect` と `device` のソルトなしオーナーハッシュ化は現在も残存しています）：
 
 ```ts
-// apps/server/src/telemetry/Identify.ts (lines 257–269, 321–338)
+// apps/server/src/telemetry/Identify.ts (lines 257–269, 321–338 at baseline 9d3195b4)
   const codexTokens = yield* readJsonIdentityFile(
     "codex",
     path.join(homeDirectory, ".codex", "auth.json"),
@@ -163,9 +189,14 @@
 
 コミュニティからの反発は繰り返し封殺されました。**6月23日**、ある開発者が設定トグルの追加を求めて **Issue #1397** を立てたところ、コアメンテナの Julius は `not planned` としてクローズし、次のように述べました：`We will not make this easier to opt out of, it is crucial for us to know how many users we have`（オプトアウトを容易にするつもりはない。ユーザー数の把握は我々にとって死活的に重要だ）。7月には、あるユーザーがアーカイブされたトップページのスクリーンショットを添えて **Issue #4123** で約束違反（`"No telemetry"`）を問いただしましたが、10月21日に `@theo` のアカウントが無関係なコミットに紐づけてクローズし、批判を受けて再開したのち、11月4日に再び無言でクローズしました。9月から11月にかけてコントリビュータは**4本の独立したオプトアウト PR**（`#13458`, `#16763`, `#21248`, `#27077`）を提出しましたが、実機検証済みで **147件のテスト全合格**・Macroscope 承認済みだった `#27077` ですら **11月17日**に `unwanted` タグを付けられてクローズされました。
 
+<details>
+<summary>オプトアウト拒否の証拠スクリーンショット 2点（Issue #1397 &amp; PR #27077）を表示</summary>
+
 ![コアメンテナの Julius が Issue #1397 を not planned でクローズし、オプトアウトを容易にしないと明言した記録](../../evidence/04-issue1397-no-optout.png)
 
 ![147件のテスト全合格と Macroscope 承認にもかかわらず unwanted として未マージでクローズされた PR #27077](../../evidence/extra/t3code-4-pr-27077-rejected.png)
+
+</details>
 
 ### 2.2 Managed Policy と公式ドキュメントの矛盾（`Part 7`）
 
@@ -174,28 +205,38 @@
 しかしリポジトリ内の [`docs/user/managed-policy.md`](https://github.com/pingdotgg/t3code/blob/main/docs/user/managed-policy.md) および [`docs/user/telemetry.md`](https://github.com/pingdotgg/t3code/blob/main/docs/user/telemetry.md) を直接確認すると、正反対の事実が記されています：
 1. **管理者専用の構成：** デスクトップユーザー向けの設定画面には依然として UI トグルが一切存在しません。Managed Policy でテレメトリを無効化するには、MDM／グループポリシーを使うか、管理者保護されたシステムパス（macOS は `/Library/Application Support/T3Code/policy.json`、Windows は `C:\Program Files\T3Code\policy.json` または `HKLM\SOFTWARE\Policies\T3Tools\T3Code`、Linux は `/etc/t3code/policy.json`）に `policy.json` を配置する必要があります。
 2. **ホスト版 Web アプリ（`app.t3.codes`）の死角：** `docs/user/telemetry.md` は、ブラウザ版アプリがサーバーの環境変数を読まず、Managed Policy を無視し、トレーシング有効ビルド時には接続トレースを送信し、`"has no relay tracing toggle"`（リレートレーシングの切り替えスイッチがない）ことを明記しています。
-3. **サーバーポリシー対象外のモバイルアプリ：** サーバーの環境変数および Managed Policy は `"do not disable mobile tracing"`（モバイル側のトレーシングを無効化しない）と記載されています。
+3. **サーバーポリシー対象外のモバイルアプリ：** サーバーの環境変数および Managed Policy は `"do not disable mobile tracing"`（モバイル側のトレーシングを無効化しない）と記載されています（夜間修正 `PR #42415` でモバイル側に **Send connection traces** トグルが追加されたものの、サーバー環境変数および Managed Policy からモバイルトレーシングを無効化できない仕様はそのままです）。
 4. **`Publish agent activity` はオプトアウトを無視：** ホスト側で有効化されると、プロジェクト名、スレッドタイトル、モデル名、稼働ステータスが T3 Connect リレーへ送信され、`"The telemetry opt-out does not disable it."`（テレメトリのオプトアウトを行っても無効化されない）と明記されています（さらに、失敗した Axiom スパンやモバイルクラッシュログには `"can quote a value the app was handling"`〔アプリが処理していた値がそのまま引用される可能性〕があり、`Agent feedback` では最大 16 KB の会話メッセージが添付される場合があります）。
 
 ![ホスト版 Web アプリにスイッチがなく、モバイル版も Managed Policy 対象外で、エージェント活動公開機能がオプトアウトを無視することを認める公式 docs/user/telemetry.md](../../evidence/05-telemetry-cant-disable.png)
 
+<details>
+<summary>Managed Policy 管理者システムパスの証拠（docs/user/managed-policy.md）を表示</summary>
+
 ![macOS、Windows、Linux における管理者保護システムパスを記載した公式 docs/user/managed-policy.md](../../evidence/extra/p5-4-doc-managed-policy-paths.png)
+
+</details>
 
 ### 2.3 11月25日朝の釈明投稿、2時間以内に自ら反証（`Part 11`）
 
 11月25日朝、`@theo` は公開テレメトリデータ（[`t3code-telemetry-events-jsonl-a4896cdc.gz`](https://files.tslop.org/2026/11/t3code-telemetry-events-jsonl-a4896cdc.gz)）を添えて長文の釈明投稿（[`2125332390239494211`](https://x.com/theo/status/2125332390239494211)）を行い、3つの確約を示しました。その直後のリプライでもオプトアウト時のローカル追跡ファイル書き込みを否定しました（[`2125370330244128924`](https://x.com/theo/status/2125370330244128924)、[Part 11](https://x.com/realchendahuang/status/2125394810559426993)）：
 
 - **「ファイルパスは一度も収集していない」：** 投稿から90分後、Julius が **PR #42450** をマージし、リレー経由の Webhook 実行が実行スパン全体を Axiom にエクスポートしていたこと—そこには `git.cwd`（**ワークスペースの絶対パス、OS ユーザー名、リポジトリ名**）を含む Git スパンが含まれていたこと—を認めました。
-- **「環境変数で常にきれいにテレメトリを無効化できていた」：** **PR #42376** は Windows デスクトップ版が既存プロセス経由で起動された際、保存済みのユーザー環境変数 `T3CODE_TELEMETRY_ENABLED=false` を無視していたことを確認しました。さらに **PR #42464** は macOS／Linux の初回起動時リレートレーシングがシェル検出前に評価され、`~/.zshrc` のオプトアウト設定がセッション全体で無視されていたことを認めました（なお `DesktopShellEnvironment.ts` は現在も `T3CODE_OTEL_SDK_DISABLED` の引き継ぎが漏れています）。
-- **「オプトアウト時は追跡ファイルを一切書き込まない」および「Claude ハッシュは壊れていて機能していなかった」：** [`AnalyticsService.ts#L152`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152)（149行目）は現在も起動時に無条件で `getTelemetryIdentity` を呼び出し、ローカルのインストール ID を書き込んで `~/.codex/auth.json` および `~/.claude.json` を読み取りハッシュ化しています。一方、`@theo` が公開した約100MBのアーカイブ（圧縮後 `6,056,594` バイト、`95,789` イベント）の gzip ヘッダを確認すると、元ファイル名はツイート20分前に生成された `events.clean.jsonl` でした。それにもかかわらず、中には10月20日時点で**4台の異なるマシン**（`installId`）を完全に同一の SHA-256 ハッシュで紐付けた**264件の生きた Claude アカウントレコード**と、非公開のカスタムプロキシモデル名（`vibeproxy/gpt-6-luna`、`muse-proxy-wonder-full`）がそのまま含まれていました。
+- **「環境変数で常にきれいにテレメトリを無効化できていた」：** **PR #42376** は Windows デスクトップ版が既存プロセス経由で起動された際、保存済みのユーザー環境変数 `T3CODE_TELEMETRY_ENABLED=false` を無視していたことを確認しました。さらに **PR #42464** は macOS／Linux の初回起動時リレートレーシングがシェル検出前に評価され、`~/.zshrc` のオプトアウト設定がセッション全体で無視されていたことを認めました。（[`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) は `ca81b7b9` 時点でも依然 `T3CODE_OTEL_SDK_DISABLED` と `OTEL_SDK_DISABLED` の引き継ぎが漏れています。）
+- **「オプトアウト時は追跡ファイルを一切書き込まない」および「Claude ハッシュは壊れていて機能していなかった」：** [`AnalyticsService.ts#L152`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152)（`9d3195b4` では `line 149`、`ca81b7b9` では `line 156`）は現在も起動時に無条件で `getTelemetryIdentity` を呼び出し、`telemetryEnabled` を確認する前にローカルのインストール ID（`upsertAnonymousId`）をディスクへ書き込んでいます。一方、`@theo` が公開した約100MBのアーカイブ（圧縮後 `6,056,594` バイト、`95,789` イベント）の gzip ヘッダを確認すると、元ファイル名はツイート20分前に生成された `events.clean.jsonl` でした。それにもかかわらず、中には10月20日時点で**4台の異なるマシン**（`installId`）を完全に同一の SHA-256 ハッシュで紐付けた**264件の生きた Claude アカウントレコード**と、非公開のカスタムプロキシモデル名（`vibeproxy/gpt-6-luna`、`muse-proxy-wonder-full`）がそのまま含まれていました。
 
 ![リレー起動タスクがユーザー名やリポジトリ名を含む git.cwd 絶対ワークスペースパスを Axiom へ送信していたことを認める PR #42450](../../evidence/06-pr42450-absolute-path.jpg)
+
+<details>
+<summary>11月25日朝の釈明および 100MB ダンプに関する追加証拠 3点（PR #42376, PR #42464, events.clean.jsonl）を表示</summary>
 
 ![Windows デスクトップ版が保存済みのユーザー環境変数 T3CODE_TELEMETRY_ENABLED=false を無視していたことを認める PR #42376](../../evidence/extra/x-post11-2-pr42376-windows-optout.jpg)
 
 ![macOS 初回起動時のリレートレーシングが ~/.zshrc のオプトアウト設定をセッション全体で無視していたことを認める PR #42464](../../evidence/extra/x-post11-3-pr42464-mac-shell-env.jpg)
 
 ![Theo の公開ダンプ events.clean.jsonl の解析結果：4台のマシンを紐付ける 264件の Claude レコードとカスタムプロキシモデル名の生データ](../../evidence/extra/x-post11-4-dump-264-claude-records.jpg)
+
+</details>
 
 ### 2.4 GDPR 通報後 6時間の夜間緊急修正スプリント（`Part 12`）
 
@@ -208,27 +249,51 @@
 
 ![リレースパンが user.id の隣に実際の発信元 IP と User-Agent を毎時220万スパン・30日間保持で Axiom に記録していたことを示す PR #42380](../../evidence/08-pr42380-220w-ip-axiom.jpg)
 
+<details>
+<summary>GDPR 通報後の夜間緊急パッチに関する追加証拠 3点（PR #42285, PR #42459, PR #42466）を表示</summary>
+
 ![アカウント削除後もリレーレコードや Cloudflare トンネルが残り、プライバシー削除請求で手書き SQL 対応を強いられたことを認める PR #42285](../../evidence/09-pr42285-delete-account-leftover.jpg)
 
 ![Android FCM プッシュが生の Clerk user_id 値を Google に送信していたことを認める PR #42459](../../evidence/extra/x-post12-3-pr42459-android-fcm-leak.jpg)
 
 ![匿名フィードバックが installId やホストフィンガープリントと同一 POST に同梱されていたことを認める PR #42466](../../evidence/extra/x-post12-4-pr42466-anonymous-batch.jpg)
 
+</details>
+
+### 2.5 監査後のテレメトリおよび識別情報の更新（`9d3195b4` → `ca81b7b9`）
+
+`pingdotgg/t3code` の上流を `ca81b7b9`（`2026-11-25 14:49 CST`）まで追跡した結果、テレメトリ範囲を絞る4本の主要なマージとともに、未解決の根本的な抜け穴が確認されました：
+
+- **`9d3195b4` 以降にマージされた修正：**
+  - [**PR #42299**](https://github.com/pingdotgg/t3code/pull/42299)（[`84e4264b`](https://github.com/pingdotgg/t3code/commit/84e4264bb347e36e97f6c3bd95d666eecfa12e07)）：`Identify.ts` における `~/.codex/auth.json` と `~/.claude.json` の読み取りを停止（`connect` の `CLOUD_LINKED_USER_ID` および `device` のソルトなし SHA-256 オーナーハッシュ化は依然残存）。
+  - [**PR #42465**](https://github.com/pingdotgg/t3code/pull/42465)（[`6b3899f2`](https://github.com/pingdotgg/t3code/commit/6b3899f224947178088ca97ec9907e681807f7da)）：`ProviderDimensions.ts` の `modelLabel`（`lines 66–72`）を更新し、カタログ外モデルを `custom:<driver>` として送信するように変更（カタログ／ベンダー固有モデルのスラッグはカスタムエンドポイント背後でも引き続き送信）。
+  - [**PR #42630**](https://github.com/pingdotgg/t3code/pull/42630)（[`c925b9ab`](https://github.com/pingdotgg/t3code/commit/c925b9ab198099f67de862ed01701bd1d8809f2b)）：[`otelEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/otelEnvironment.ts)（`lines 322–343`）に13種の CI 環境変数を判定する `isCiEnvironment` を追加し、明示上書きがない限り CI ランナー上のデフォルト `AnalyticsService`（`line 130`）と `isRelayTracingEnabled` をオフに変更。
+  - [**PR #42629**](https://github.com/pingdotgg/t3code/pull/42629)（[`ef4a1643`](https://github.com/pingdotgg/t3code/commit/ef4a1643edf72ad119452c82b01c91adbf7b9e64)）：`DO_NOT_TRACK`（`otelEnvironment.ts:346-347` の `isDoNotTrackSet`）に対応し、`AnalyticsService.ts:137` および `isRelayTracingEnabled`（`otelEnvironment.ts:357`）でチェックしたうえで [`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) と [`DesktopBackendConfiguration.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/backend/DesktopBackendConfiguration.ts) 経由で引き継ぐよう修正（`T3CODE_TELEMETRY_ENABLED=true` より優先）。
+  - 関連する絞り込み PR [**#42356**](https://github.com/pingdotgg/t3code/pull/42356)、[**#42394**](https://github.com/pingdotgg/t3code/pull/42394)、[**#42397**](https://github.com/pingdotgg/t3code/pull/42397)、[**#42398**](https://github.com/pingdotgg/t3code/pull/42398)、および [**#42415**](https://github.com/pingdotgg/t3code/pull/42415) が、サーバー起動ブラウザのトレーシング、モバイルデバイス ID／トグル、MCP エラー列挙値、および `agent.feedback` の `installId` 紐付けをそれぞれ縮小。
+- **`ca81b7b9` 時点で未修正の課題：** [`AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts)（`line 156`、旧 `9d3195b4` の `line 149`）は依然として起動時に `telemetryEnabled` を確認する**前**に `getTelemetryIdentity`（`upsertAnonymousId`）を無条件実行し、`DesktopShellEnvironment.ts` には依然 `OTEL_SDK_DISABLED` と `T3CODE_OTEL_SDK_DISABLED` の引き継ぎが欠落しています。さらにクローズドソースの `ingest.t3.codes` が標準のまま維持され、設定 UI トグルや `app.t3.codes` のオプトアウトはなく、モバイル版は Managed Policy の対象外、`Publish agent activity` はオプトアウトを無視し、`privacy-policy.astro` の日付も `2026-10-06` のままです。
+
 ---
 
 ## 3. ローカル保存、プロセス監視、安全ガード回避、および非公開セキュリティ修正（Part 2, 3, 13）
 
-> **詳細技術監査：** SQLite プルーニング SQL の原文、Rust `sysinfo` 呼び出し、`ClaudeAdapterV2.ts` の権限ロジック行、`SECURITY.md` の境界分析全文は [**調査書 02：ローカル安全性、サイレントコード実行バイパス、および非公開セキュリティ監査**](../dossiers/02-local-safety-and-security-audit.md) をご覧ください。
+> **詳細技術監査：** SQLite プルーニング SQL の原文、Rust `sysinfo` 呼び出し、`ClaudeAdapterV2.ts` の権限ロジック行、`9d3195b4` 以降の差分、および `SECURITY.md` の境界分析全文は [**調査書 02：ローカル安全性、サイレントコード実行バイパス、および非公開セキュリティ監査**](../dossiers/02-local-safety-and-security-audit.md) をご覧ください。
 
 ### 3.1 SQLite スレッド疑似削除と全マシンプロセス走査（`Part 2`）
 
-ユーザーがサイドバーでスレッドを削除すると、確認ダイアログ（`useThreadActionMenu.ts`）は `"This permanently clears conversation history for this thread."`（このスレッドの会話履歴を完全に消去します）と約束します。しかし実態として、`ThreadDeletion.ts` は `statev2.sqlite` に `"thread.deleted"` イベントを追記するだけであり、`ProjectionMaintenance.ts` も `thread.created` および最新ストリームイベント（`MAX(newer.sequence)`）を除外して過去のイベントを残存させています。ユーザーからは3週間で `statev2.sqlite` が **25.9 GB**（うち90%が「削除済み」スレッド）、6週間で **41.6 GB**、7週間で **33 GB** に膨れ上がった報告が相次いでおり、**Issue #17845**（および **#28903**）は10月10日以降未修正のまま放置されています（[Part 2](https://x.com/realchendahuang/status/2125160473176023486)）。
+ユーザーがサイドバーでスレッドを削除すると、確認ダイアログ（`useThreadActionMenu.ts`）は `"This permanently clears conversation history for this thread."`（このスレッドの会話履歴を完全に消去します）と約束します。ベースライン `9d3195b4` 時点では、`ThreadDeletion.ts` は `statev2.sqlite` に `"thread.deleted"` イベントを追記するだけであり、`ProjectionMaintenance.ts` も `thread.created` および最新ストリームイベント（`MAX(newer.sequence)`）を除外して過去のイベントを残存させていました。ユーザーからは3週間で `statev2.sqlite` が **25.9 GB**（うち90%が「削除済み」スレッド）、6週間で **41.6 GB**、7週間で **33 GB** に膨れ上がった報告が相次ぎ、**Issue #17845**（および **#28903**）は10月10日以降未修正のまま放置されていました（[Part 2](https://x.com/realchendahuang/status/2125160473176023486)）。
+
+11月25日、[**PR #42119**](https://github.com/pingdotgg/t3code/pull/42119)（[`91f0b32e`](https://github.com/pingdotgg/t3code/commit/91f0b32e2db2cb8abca5fdd33c33609a0f57b15e)、`2026-11-25T05:58:26Z`）が非同期の `thread-content.purge` アウトボックスクリーンアップ（`ThreadDeletion.ts`、`ProjectionMaintenance.ts`）を追加し、**Issue #17845** をクローズしました。しかし `ca81b7b9` 時点のコード検証では、削除済み元スレッドであっても稼働中のフォーク、保留中の `merge_back`、または生存中の親サブエージェントから参照されている間は履歴が保持され、トゥームストーン用のメタデータ行も SQLite 内に残るほか、ディスク上の `.sqlite` ファイルサイズを実際に縮小するにはオフラインで `VACUUM` を実行する必要があることが確認されています。
 
 ![完全削除したはずのスレッドが statev2.sqlite に残り数十 GB に肥大化している報告 Issue #17845](../../evidence/10-issue17845-fake-delete.png)
 
-バックグラウンドで常駐する Rust ヘルパー `t3-resource-monitor`（**Issue #11222**、`native/resource-monitor/src/main.rs` 内で `ProcessesToUpdate::All` と `with_cmd(UpdateKind::Always)` を呼び出し）は、診断パネルを閉じた状態でも5秒ごとにマシン上の全プロセスをスキャンし、Windows 上では無関係な440以上のアプリやゲームに対し約280〜300本の永続ハンドルをオプトアウト不可で開いていました（ドキュメント上は「アクティブな購読者がある場合のみサンプリングする」と説明）。そして **11月24日**になって初めて **PR #41889** が、プロセス診断機能が**プロセスのコマンドライン引数全文**—開発機では平文の API キー、DB パスワード、認証トークンが含まれがちです—をライブテレメトリおよび履歴スナップショットに記録していた事実を認めました。
+バックグラウンドで常駐する Rust ヘルパー `t3-resource-monitor`（**Issue #11222**、`native/resource-monitor/src/main.rs` 内で `ProcessesToUpdate::All` と `with_cmd(UpdateKind::Always)` を呼び出し）は、診断パネルを閉じた状態でも5秒ごとにマシン上の全プロセスをスキャンし、Windows 上では無関係な440以上のアプリやゲームに対し約280〜300本の永続ハンドルをオプトアウト不可で開いていました（ドキュメント上は「アクティブな購読者がある場合のみサンプリングする」と説明）。そして **11月24日**になって初めて **PR #41889** が、プロセス診断機能が**プロセスのコマンドライン引数全文**—開発機では平文の API キー、DB パスワード、認証トークンが含まれがちです—をライブテレメトリおよび履歴スナップショットに記録していた事実を認めました。監査後の [**PR #42577**](https://github.com/pingdotgg/t3code/pull/42577)（[`af276ccb`](https://github.com/pingdotgg/t3code/commit/af276ccbb26ef709c46bc46ec514f23b62c8e18c)、`2026-11-25T04:09:53Z`）により Windows 版 `t3-resource-monitor` が追跡対象外プロセスのメモリおよびコマンドラインを読み取る処理は停止されましたが、Linux および macOS では依然2段階の `ProcessesToUpdate::All` 検出が使われており、`PR #41889` もオープンのままです。
+
+<details>
+<summary>Issue #11222 全マシンプロセス監視の証拠を表示</summary>
 
 ![t3-resource-monitor がマシン上のすべてのプロセスを走査していた記録 Issue #11222](../../evidence/extra/t3code-9-issue-11222-process-spy.png)
+
+</details>
 
 Part 2 で確認されたその他のローカル不具合：
 - **社内ホスト名の Favicon 漏洩：** フロントエンドのリクエストが社内ホスト名（例：`devbox.localdomain`）を Google の favicon API へ漏洩していました（`PR #16950`, `PR #32657`）。
@@ -238,20 +303,28 @@ Part 2 で確認されたその他のローカル不具合：
 
 ### 3.2 52日間放置された無確認 `git push --force` と、21時間で撤廃されたモデルプライバシーフィルタ（`Part 3`）
 
-**10月3日**以降—**Issue #15353**（[コメント](https://github.com/pingdotgg/t3code/issues/15353#issuecomment-6889019695)）で **52〜53日以上**にわたって—Claude Auto モードは危険なコマンドを無確認で実行し続けていました（`requiresClaudeApproval` が false を返すと `ClaudeAdapterV2.ts` が `"allow"` へ短絡するため）。カスタムルールがゼロの状態でも、Claude の分類器が `git push --force origin main` を2回ブロックして3回目に手動承認へエスカレーションすると、T3 Code は UI ダイアログを一切出さずサイレントで承認し、ログには `"source": "user_temporary"` と記録していました。コミュニティから寄せられた2件の修正 PR（`#15360`, `#35207`）はレビューされないままボットにより自動クローズされ、`#40692` も保留状態が続きました（[Part 3](https://x.com/realchendahuang/status/2125201882687881378)）。
+**10月3日**以降—そして **Issue #15353**（[コメント](https://github.com/pingdotgg/t3code/issues/15353#issuecomment-6889019695)）において **`ca81b7b9` 時点でも依然未修正のまま**—Claude Auto モードは危険なコマンドを無確認で実行し続けています（`!requiresClaudeApproval(context)` が `ClaudeAdapterV2.ts` で `"allow"` へ短絡するため）。カスタムルールがゼロの状態でも、Claude の分類器が `git push --force origin main` を2回ブロックして3回目に手動承認へエスカレーションすると、T3 Code は UI ダイアログを一切出さずサイレントで承認し、ログには `"source": "user_temporary"` と記録していました。コミュニティから寄せられた2件の修正 PR（`#15360`, `#35207`）はレビューされないままボットにより自動クローズされ、`#40692` も保留状態が続きました（[Part 3](https://x.com/realchendahuang/status/2125201882687881378)）。
 
 ![52日以上未修正のまま、Claude Auto モードが確認プロンプトなしで git push --force を承認していた Issue #15353](../../evidence/11-issue15353-auto-force-push.png)
 
-対照的に **11月22日**、`PR #29001` でホワイトリスト制限が設けられていたため `@theo` 運営の公開テレメトリランキング [`https://slopalytics.com/`](https://slopalytics.com/)（[`t3-usage.json`](https://slopalytics.com/data/t3-usage.json)）に新モデルが表示されない旨の **Issue #40948** が立つと、わずか **21時間後**に `@theo` のアカウントから **PR #41237** がマージされました。そこには「Theo からの要請による削除」と明記され、`ollama/acme-internal` や企業の `acme-azure-deployment` といった名称が再びそのままアナリティクスへ送信されるようになりました。
+対照的に **11月22日**、`PR #29001` でホワイトリスト制限が設けられていたため `@theo` 運営の公開テレメトリランキング [`https://slopalytics.com/`](https://slopalytics.com/)（[`t3-usage.json`](https://slopalytics.com/data/t3-usage.json)）に新モデルが表示されない旨の **Issue #40948** が立つと、わずか **21時間後**に `@theo` のアカウントから **PR #41237** がマージされました。そこには「Theo からの要請による削除」と明記され、`ollama/acme-internal` や企業の `acme-azure-deployment` といった名称がそのままアナリティクスへ送信されるようになりました（後に `PR #42465` によりカタログ外モデルは `custom:<driver>` へ縮小されましたが、カタログ／ベンダー固有モデルのスラッグはカスタムエンドポイント背後でも引き続き送信されます）。
+
+<details>
+<summary>21時間で撤廃されたモデルフィルタの証拠 PR #41237（slopalytics.com）を表示</summary>
 
 ![slopalytics.com のため Issue #40948 から21時間後にモデルフィルタリングを撤廃しマージされた PR #41237](../../evidence/extra/t3code-15-pr-41237-slophouse-drop-filter.png)
 
+</details>
+
 ### 3.3 Security Advisories 0件、サイレント脆弱性修正、そして `SECURITY.md`（`Part 13`）
 
-11月25日時点で、`pingdotgg/t3code` の [GitHub Security Advisories](https://github.com/pingdotgg/t3code/security/advisories) タブの公開件数は **0件**です（[Part 13](https://x.com/realchendahuang/status/2125395980354994414)）。それにもかかわらず、メンテナは既存ユーザーへの通知なしに深刻度の高いセキュリティパッチをサイレントでマージしています：
-- **サイレントマージされたセキュリティ修正：** `PR #39483`（デバイス承認前のリレー `jti`/`nonce` 経由の `ServerSecretStore` パストラバーサル）、`PR #41756`（ドメイン横断での企業 GitHub／GitLab トークン漏洩）、`PR #41886`、`PR #22190`、`PR #37823`、`PR #39464`、`PR #39480`、`PR #40133`、`PR #41757` & `PR #42386`（サンドボックス化されていないデスクトップブラウザプレビューおよびポップアップ分離）、および `PR #42504`（これまで承認なしでローカルコマンドを実行できていた信頼できないリポジトリ設定に対し、ようやく確認プロンプトを追加する約3,000行のパッチ）。
-- **未解決／オープンなセキュリティ項目：** `Issue #26489`（外部パストラバーサル／シンボリックリンクのリスク）、`PR #36216`、`PR #23428`、`PR #33144`、および `PR #30997`（Windows ランチャー `externalLauncher.ts` が `powershell.exe -ExecutionPolicy Bypass -EncodedCommand <base64>` を起動し、AVG／Avast により `IDP.HELU.PSE96` として検知される問題）。
+11月25日（`ca81b7b9`）時点で、`pingdotgg/t3code` の [GitHub Security Advisories](https://github.com/pingdotgg/t3code/security/advisories) タブの公開件数は **0件**です（[Part 13](https://x.com/realchendahuang/status/2125395980354994414)）。それにもかかわらず、メンテナは既存ユーザーへの通知なしに深刻度の高いセキュリティパッチをサイレントでマージしています：
+- **サイレントマージされたセキュリティ修正：** `PR #39483`（デバイス承認前のリレー `jti`/`nonce` 経由の `ServerSecretStore` パストラバーサル）、`PR #41756`（ドメイン横断での企業 GitHub／GitLab トークン漏洩）、`PR #41886`、`PR #22190`、`PR #37823`、`PR #39464`、`PR #39480`、`PR #40133`、`PR #41757` & `PR #42386`（サンドボックス化されていないデスクトップブラウザプレビュー分離／ワークツリーレイアウトのコマンド確認）、[`PR #42413`](https://github.com/pingdotgg/t3code/pull/42413)（デスクトップ Clerk トークンファイルの所有者限定パーミッション化）、および `PR #42504`（これまで承認なしでローカルコマンドを実行できていた信頼できないリポジトリ設定に対し、ようやく確認プロンプトを追加する約3,000行のパッチ）。
+- **`ca81b7b9` 時点で未解決／オープンな項目：** `Issue #26489`（外部パストラバーサル／シンボリックリンクのリスク）、`PR #36216`、`PR #23428`、`PR #33144`、`PR #30997`（Windows ランチャー `externalLauncher.ts` が `powershell.exe -ExecutionPolicy Bypass -EncodedCommand <base64>` を起動し、AVG／Avast により `IDP.HELU.PSE96` として検知される問題）、および信頼できないリポジトリでの実行リスク（[`GitVcsDriverCore.ts#L6144-L6205`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205) による再帰的な `.gitmodules` 自動初期化、[`VcsProcess.ts#L145-L157`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/VcsProcess.ts#L145-L157) におけるグローバル `core.hooksPath=/dev/null` の欠落、ならびに [`ClaudeAdapterV2.ts#L5982-L5985`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L5982-L5985) による `GITHUB_TOKEN` と `SSH_AUTH_SOCK` を丸ごと継承した `.claude/settings.json` `SessionStart` フックの実行）。
 - **急造された [`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md)（`PR #38812`, `PR #41942`）：** ワークスペース外の OS 全域への `filesystem:read`、iOS／LAN 上での平文 HTTP 通信、およびリレー署名鍵漏洩時のマシン完全乗っ取りを脆弱性ではなく**意図された設計境界**と定義しています。一方で [`https://ingest.t3.codes/`](https://ingest.t3.codes/) は依然クローズドソースのままです（`2125370330244128924`）。
+
+<details>
+<summary>サイレントセキュリティ修正および SECURITY.md の証拠 3点（PR #39483, PR #30997, SECURITY.md）を表示</summary>
 
 ![Security Advisory を出さずに ServerSecretStore パストラバーサルをサイレント修正した PR #39483](../../evidence/extra/t3code-13-pr-39483-secret-traversal.png)
 
@@ -259,11 +332,13 @@ Part 2 で確認されたその他のローカル不具合：
 
 ![OS 全域の読み取り、iOS 任意 HTTP、リレー鍵によるマシン乗っ取りを意図された仕様と明記する SECURITY.md](../../evidence/extra/x-post05-4-security-md-intended.jpg)
 
+</details>
+
 ---
 
 ## 4. Google Antigravity 利用規約リスクと無暗号化 T3 Connect 中継（Part 4, 5）
 
-> **詳細技術監査：** `cliproxyApi.ts` のヘッダマップ全容（`PR #33800`）、`AntigravityAcpSupport.ts`、`contracts/src/settings.ts`、`ManagedEndpointProvider.ts` の該当行参照は [**調査書 03：Google Antigravity ToS 偽装、`PR #33800`、および T3 Connect リレーアーキテクチャ**](../dossiers/03-antigravity-tos-and-t3connect-relay.md) をご覧ください。
+> **詳細技術監査：** `cliproxyApi.ts` のヘッダマップ全容（`PR #33800`）、`AntigravityAcpSupport.ts`、`AntigravityTurnOutcome.ts`、`contracts/src/settings.ts`、および `ManagedEndpointProvider.ts` の該当行参照は [**調査書 03：Google Antigravity ToS 偽装、`PR #33800`、および T3 Connect リレーアーキテクチャ**](../dossiers/03-antigravity-tos-and-t3connect-relay.md) をご覧ください。
 
 ### 4.1 Google Antigravity ヘッダ偽装、偽 `SSH_CONNECTION`、そして 3分間 BAN（`Part 4`）
 
@@ -298,9 +373,13 @@ GEMINI_HOME: profile.geminiHome,
 AGY_ACP_FORCE_FILE_STORAGE: "1",
 ```
 
-3. **新規アカウント 3分間 BAN（`Issue #41536`）とクライアント偽装（`PR #26876`）：** 11月23日、**Issue #41536** にて、**プロキシを一切使わず** T3 Code 内のマネージド Antigravity のみを利用した新規購入の `$20` Google AI サブスクリプションが、**セットアップ3分後の最初の1通目のメッセージで BAN** された事例が報告されました（個人アカウントの異議申し立ては1度限りですが、メンテナは警告を追加せず重複としてクローズしました）。これ以前にも、`@theo` はモデルホワイトリストを回避するため T3 Code を `"zed"` に偽装する **PR #26876**（`AntigravityAcpSupport.ts`）を自らマージしています。さらに `@theo` は11月23日に `T3 Code -> Antigravity binary ✅` の図を示し（[`2124665075638411641`](https://x.com/theo/status/2124665075638411641)）、ユーザー `@Only_21Mil` の2つ目の Google AI Ultra アカウントが停止された際も CLIProxy に責任転嫁しました（[`2124703048140517397`](https://x.com/theo/status/2124703048140517397)）が、マージ済みの [**PR #33800**](https://github.com/pingdotgg/t3code/pull/33800) は偽装された `claude-code/2.1.273`、`grok-cli/1.0.77`、および `antigravityUserAgent` ヘッダを用いた [`cliproxyApi.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts) のハブポーリングをネイティブに組み込んでいます。
+3. **新規アカウント 3分間 BAN（`Issue #41536`）、クライアント偽装（`PR #26876`）、および監査後の検証発動（`PR #41210`）：** 11月23日、**Issue #41536** にて、**プロキシを一切使わず** T3 Code 内のマネージド Antigravity のみを利用した新規購入の `$20` Google AI サブスクリプションが、**セットアップ3分後の最初の1通目のメッセージで BAN** された事例が報告されました（個人アカウントの異議申し立ては1度限りですが、メンテナは警告を追加せず重複としてクローズしました）。これ以前にも、`@theo` はモデルホワイトリストを回避するため T3 Code を `"zed"` に偽装する **PR #26876**（[`AntigravityAcpSupport.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityAcpSupport.ts)）を自らマージしています。さらに `@theo` は11月23日に `T3 Code -> Antigravity binary ✅` の図を示し（[`2124665075638411641`](https://x.com/theo/status/2124665075638411641)）、ユーザー `@Only_21Mil` の2つ目の Google AI Ultra アカウントが停止された際も CLIProxy に責任転嫁しました（[`2124703048140517397`](https://x.com/theo/status/2124703048140517397)）が、マージ済みの [**PR #33800**](https://github.com/pingdotgg/t3code/pull/33800) は偽装された `claude-code/2.1.273`、`grok-cli/1.0.77`、および `antigravityUserAgent` ヘッダを用いた [`cliproxyApi.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts) のハブポーリングをネイティブに組み込んでいます。
+   - **監査後の状況（`ca81b7b9`）：** [**PR #41210**](https://github.com/pingdotgg/t3code/pull/41210)（[`3e74a0aa`](https://github.com/pingdotgg/t3code/commit/3e74a0aac5c53459cc1d3d84eec915fa483f2836)、`2026-11-25T05:23:36Z`）は [`AntigravityTurnOutcome.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityTurnOutcome.ts) を追加し、`cloudcode-pa.googleapis.com` の `403 PERMISSION_DENIED`（`VALIDATION_REQUIRED`）応答を解析してターンタイムライン上に Google アカウントの直接本人確認リンクを描画するようにしました—これは Google 側の検証トリガーが実際に発動していることを裏付けています。一方 [**PR #42545**](https://github.com/pingdotgg/t3code/pull/42545)（[`4da8d19d`](https://github.com/pingdotgg/t3code/commit/4da8d19d08ed7e34fe2d5d66dae54b01eab122fc)）は `AGY_CLI_DISABLE_AUTO_UPDATE: "true"` を修正しました（あわせて [`#42339`](https://github.com/pingdotgg/t3code/pull/42339) および [`#42475`](https://github.com/pingdotgg/t3code/pull/42475) もマージ）。しかし、[`antigravityUsageLimits.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts)、[`antigravityAuthSupport.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts)、`AntigravityAcpSupport.ts`、および `cliproxyApi.ts` という4つの偽装・抽出経路はすべて `ca81b7b9` 時点でもそのまま残っています。
 
 ![偽装した Google クライアントヘッダをハードコードし非公開の v1internal バックエンドを呼び出す antigravityUsageLimits.ts](../../evidence/12-antigravity-v1internal-spoof.png)
+
+<details>
+<summary>Antigravity 偽装および BAN の追加証拠 3点（SSH_CONNECTION, Issue #41536, PR #33800）を表示</summary>
 
 ![OS キーチェーン保存をバイパスするため偽の SSH_CONNECTION 環境変数を注入する antigravityAuthSupport.ts](../../evidence/13-antigravity-ssh-spoof.png)
 
@@ -308,17 +387,24 @@ AGY_ACP_FORCE_FILE_STORAGE: "1",
 
 ![Antigravity、xAI、Claude 向け CLIProxyAPI ハブポーリングを T3 Code に直接統合する PR #33800](../../evidence/extra/p2-2-pr33800-cliproxy-agy.png)
 
+</details>
+
 ### 4.2 T3 Connect：エンドツーエンド暗号化なしと OVH TLS 終端ゲートウェイ（`Part 5`）
 
 **T3 Connect にはエンドツーエンド暗号化（E2EE）が一切存在せず、すべてのプロンプト、ソースファイル、ターミナル出力は技術的に T3 側から平文で閲覧可能です**（[Part 5](https://x.com/realchendahuang/status/2125218189596676555)）。現行では [`ManagedEndpointProvider.ts`](https://github.com/pingdotgg/t3code/blob/main/infra/relay/src/environments/ManagedEndpointProvider.ts) が T3 自社の Cloudflare アカウント内に Cloudflare Tunnel と DNS レコードを構築しています（`06_t3-connect.md`）。TLS は Cloudflare のエッジで終端され、ペイロード暗号化は存在しないため、Workers Route を1つアタッチするだけでコードを一切書き換えずにクライアントへ通知することなく全通信を取得できます。
 
-新規デバイス承認（[`PR #36419`](https://github.com/pingdotgg/t3code/pull/36419) で追加された `requireConnectDeviceApproval`）のデフォルト値は **`false`** です。[`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md) が認める通り、リレー署名鍵の漏洩やクラウドアカウントの侵害が起きれば、連携済みマシンへのセッションを直接発行でき、ローカルシェルの奪取と同等になります。**Issue #32098** で相互認証と E2E 暗号化が要望された際、メンテナは完全な E2E 化は変更規模が大きすぎると述べてクローズしました。ディスカッション `#21286` と `#37831` も未回答のままであり、11月25日には `@theo` が E2E 暗号化は不可能だと断言しました（`2125370330244128924`）。
+新規デバイス承認（[`PR #36419`](https://github.com/pingdotgg/t3code/pull/36419) で追加された `requireConnectDeviceApproval`）のデフォルト値は、監査後に [**PR #42311**](https://github.com/pingdotgg/t3code/pull/42311)（[`ece5f21b`](https://github.com/pingdotgg/t3code/commit/ece5f21b17077382c8d2eba1c28e75e898386dcd)）で新規デバイスサインイン通知が追加された後も、[`packages/contracts/src/settings.ts`](https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/settings.ts)（`ca81b7b9` 時点の `lines 1424–1426`）において依然として **`false`** のままです。[`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md) が認める通り、リレー署名鍵の漏洩やクラウドアカウントの侵害が起きれば、連携済みマシンへのセッションを直接発行でき、ローカルシェルの奪取と同等になります。一方、`ca81b7b9` 時点のソースコード検証（[調査書 03](../dossiers/03-antigravity-tos-and-t3connect-relay.md)）により、認証／LAN／トンネルに関する4件の追加欠陥も確認されています：`t3 up --lan` は依然として `Secure` 属性なしの30日間有効シェル Cookie を発行し（[`PR #37042`](https://github.com/pingdotgg/t3code/pull/37042)、[`http.ts#L215-L221`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/http.ts#L215-L221)、[`SessionStore.ts#L492-L493`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L492-L493)）、`Origin` ヘッダを欠いたリクエストも受理します（[`EnvironmentAuth.ts#L798-L806`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L798-L806)）。非 DPoP の `/oauth/token` 交換は、`/logout` ルートが存在せず自己失効もブロックされたままの、失効不可能な30日間有効・非拘束（unbound）Bearer トークンを発行します（[`EnvironmentAuth.ts#L1175-L1186`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1175-L1186)、[`EnvironmentAuth.ts#L1506-L1511`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1506-L1511)、[`environmentHttp.ts#L595-L679`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/environmentHttp.ts#L595-L679)）。5分間有効の `?wsTicket=` クエリトークンは Bearer RPC および全 `media` ルートに対するリプレイ保護を欠いています（[`EnvironmentAuth.ts#L1553-L1622`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1553-L1622)、[`SessionStore.ts#L1086-L1156`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L1086-L1156)）。さらに `startupAccess.ts` は `NodeNet.isIPv4` により `::1` を誤分類し、Tailscale Serve／Connect トンネルに対して無言で `socket.destroy()` を呼び出します（[`startupAccess.ts#L71-L108`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/startupAccess.ts#L71-L108)）。**Issue #32098** で相互認証と E2E 暗号化が要望された際、メンテナは完全な E2E 化は変更規模が大きすぎると述べてクローズしました。ディスカッション `#21286` と `#37831` も未回答のままであり、11月25日には `@theo` が E2E 暗号化は不可能だと断言しました（`2125370330244128924`）。
 
 Cloudflare Tunnel の費用が**月額 $25,000** に達したことを受け、`@theo` は **PR #32945** を提出し、通信を T3 が借り上げた OVH Hillsboro ゲートウェイ（`gw.t3coderelay.com`）へ移行しようとしています。ここでは T3 自身の Caddy が TLS を終端し、Unix ソケット越しに平文を Go 製 `yamux` プロキシへ転送するため、依然として E2E 暗号化は存在しません。その一方で、[`privacy-policy.astro`](https://github.com/pingdotgg/t3code/blob/main/apps/marketing/src/pages/privacy-policy.astro)（`effectiveDate="2026-10-06"`）は E2E 暗号化の欠如や非保持保証に一切触れないまま `"encrypted network transport"`（暗号化されたネットワーク転送）と謳っています。
 
 ![Issue #32098 にて、盗まれたクラウドアカウントやリレー鍵で連携マシンを制御可能であることを認めつつ E2E 暗号化を見送るコアメンテナ](../../evidence/15-connect-no-e2e.jpg)
 
+<details>
+<summary>OVH Caddy TLS 終端ゲートウェイの証拠（PR #32945）を表示</summary>
+
 ![Cloudflare の月額請求が $25k に達したため T3 Connect を Caddy で TLS 終端する自社ホスト OVH ゲートウェイへ移行する Theo の PR #32945](../../evidence/16-pr32945-ovh-caddy-gateway.jpg)
+
+</details>
 
 ---
 
@@ -336,7 +422,12 @@ Cloudflare Tunnel の費用が**月額 $25,000** に達したことを受け、`
 
 ![日次 31.7兆トークン、API 換算 $10.19M を示す Theo の T3 Code 内部アナリティクスダッシュボード](../../evidence/17-theo-31t-tokens-10m-day.png)
 
+<details>
+<summary>Patrick Toulme 1コミット検証スクリーンショット（PR #31158）を表示</summary>
+
 ![patrick-toulme でフィルタした pingdotgg/t3code のコミット履歴："many PRs" ではなく 1コミット（#31158）のみを示す](../../evidence/extra/p3-2-patrick-only-1-commit.png)
+
+</details>
 
 ### 5.2 エンジェル投資家の利益相反（`Part 6`）とスポンサー・クォータ二重基準（`Part 17`）
 
@@ -344,18 +435,23 @@ Cloudflare Tunnel の費用が**月額 $25,000** に達したことを受け、`
 - **リレー基盤に組み込まれたスポンサー群（[Part 17](https://x.com/realchendahuang/status/2125411353393553744)）：** `@theo` が2023年5月に公開した YouTube スポンサー一覧（`1657488850472804353`）に並ぶ **Clerk** と **Axiom** が、まさに T3 Code のクラウド認証と30日間 IP 付きリレーログ基盤を担っています。2024年4月には Vercel CEO `@rauchg` が Vercel のスポンサー対象 YouTuber は Theo 1人のみと認め（`1776260839965863965`）、後に Theo 自身もスポンサー契約に排他条項があったことを認めました（`uv179CTAK-w`）。さらに彼は Cursor や Cline のエンジェル投資家でもあります。
 - **Codex 0% 悪用と 10アカウント CLIProxyAPI の矛盾：** 2026年8月21日、`@theo` は Codex の 0% クォータ猶予枠を超えて **$800 以上**を引き出したと誇示し、T3 社員 `@maria_rcks` もゼロ超過後にターンを回す *Endless* を公開しました。8月22日の批判を受け双方が投稿／リポジトリを削除し、Maria は Codex 側がアカウントを BAN するよう願う投稿を行いました（`2090972426876129658`）。その後、OpenAI は0%到達時の厳格な強制停止を導入しました（`openai/codex#45444`）。10月には、`@theo` が **7つの Claude アカウントと 3つの Codex アカウント**を統合（12台以上のマシンで `555%` クォータ、さらに110万プロキシリクエストで `$14,662`／`$15k` Ultra 相当を引き出した自慢や Grok Bot＋`$100` Claude 構築チュートリアルも投稿）する 452スターの Gist（`59a521d2ee8d70aaf90e280c175072af`）を公開。T3 Code 本体の `docs/user/faq.md` も BAN リスクを理由に内蔵アカウント切替を断りながら、その直後に同じ代理ガイドへのリンクを掲載しています（`"Early apologies if it gets you banned 💀"`）。
 
+<details>
+<summary>利益相反、CLIProxyAPI Gist、および Codex 0% クォータの証拠 3点を表示</summary>
+
 ![Vibe Kanban への投資と貢献を明かしたうえで公に事業閉鎖を嘲笑する Theo の投稿](../../evidence/18-theo-vibe-kanban.png)
 
 ![12台以上のコンピュータで 7つの Claude アカウントと 3つの Codex アカウントを統合し 555% クォータを共有する Theo の 452スター Gist cliproxy-setup.md](../../evidence/19-cliproxy-gist-555pct.jpg)
 
 ![クォータ 0% 到達時に実行中ターンを途中停止させるグローバル仕様変更を記録した openai/codex#45444](../../evidence/extra/x-post17-3-codex-45444-regression.jpg)
 
+</details>
+
 ### 5.3 いかにして T3 Code は 25日間で 3万から 7.7万スターへ急増したのか（ウォッチャー 129人）（`Part 18`）
 
 *「Github has a fake star problem」*（`2048122499834036340`、スターは `"to trick VCs into investing"` ための道具に成り下がったと警告）を公開してから半年後、`@theo` は自ら3本の PR を作成しセルフマージしました（[Part 18](https://x.com/realchendahuang/status/2125416210120765799)）：
 1. **10月30日（`PR #27832`）：** 5プロンプト送信後（[`GitHubStarPrompt.tsx`](https://github.com/pingdotgg/t3code/blob/main/apps/web/src/components/GitHubStarPrompt.tsx) で `PROMPTS_BEFORE_ASKING = 5`、6回目のプロンプトで発火）に右上へスター促進表示を追加。即座に日次スター数が **10倍**へ跳ね上がり（`2117065834267136469`）、GitHub Trending で **+3,094 スター／日**を記録しました（`2117172614158508400`）。
 2. **11月3日（`PR #29922` & `PR #29987`）：** ユーザーがエージェントの応答待ちをしている間の **30秒ウィンドウアイドル検知**（`IDLE_MS = 30_000`）へ強化し、ブラウザ遷移を `sourceControl.star` RPC に置き換えて**ホストサーバーの GitHub 認証情報**から直接 `PUT user/starred/pingdotgg/t3code` を実行したうえ、160粒の紙吹雪を飛ばす仕様にしました。
-3. **レビュー強行突破と任意リポジトリへのスター付与バグ：** Macroscope が `PR #29922` に `Needs Human Approval` のフラグを立てましたが、`@theo` は無視してセルフマージを強行。11月6日には `zhilsinger` が `Request changes` を提出し、共有ホストにおける認証情報の不透明性（`GitHubStarPrompt.tsx#L115` 内でも認められている）および [`packages/source-control-github/src/server/driver.ts#L60-L99`](https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts#L60-L99) が対象を `pingdotgg/t3code` に固定していない問題を指摘しました：
+3. **レビュー強行突破と任意リポジトリへのスター付与バグ（`ca81b7b9` 時点でも未修正）：** Macroscope が `PR #29922` に `Needs Human Approval` のフラグを立てましたが、`@theo` は無視してセルフマージを強行。11月6日には `zhilsinger` が `Request changes` を提出し、共有ホストにおける認証情報の不透明性（`GitHubStarPrompt.tsx#L115` 内でも認められている）および [`packages/source-control-github/src/server/driver.ts#L60-L99`](https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts#L60-L99) が対象を `pingdotgg/t3code` に固定していない問題を指摘しました：
 
 ```ts
 // packages/source-control-github/src/server/driver.ts (lines 60–66, 90–96)
@@ -374,13 +470,18 @@ const starredPath = (repository: string) => {
       const response = yield* api.rest({ host, operation: "starRepository", method: "PUT", path });
 ```
 
-`source-control:write` 権限を持つ任意のクライアントは、ホスト側の認証情報を使って任意のリポジトリにスターを付けることが可能です。`zhilsinger` のレビュー指摘は **19日間**まったくの無反応で放置され、その間にリポジトリは3万スターから7.7万スター（ウォッチャー 129人）へと急拡大しました。
+`source-control:write` 権限を持つ任意のクライアントは、ホスト側の認証情報を使って任意のリポジトリにスターを付けることが可能です。`zhilsinger` のレビュー指摘は **`ca81b7b9` に至るまで（提出から19日間）** まったくの無反応かつ未修正で放置されており、その間にリポジトリは3万スターから7.7万スター（ウォッチャー 129人）へと急拡大しました。
 
 ![アプリ内スター促進表示の導入直後に日次スター数がほぼ垂直に 10倍急増したことを祝う Theo の11月2日チャート](../../evidence/20-star-10x-cliff.png)
+
+<details>
+<summary>zhilsinger レビューおよび driver.ts 任意リポジトリスター付与の証拠（PR #29922）を表示</summary>
 
 ![PR #29922 に対し共有ホスト代理スターやサーバー認証情報による任意リポジトリスター付与を警告した zhilsinger の Request Changes レビュー（19日間未回答）](../../evidence/21-pr29922-zhilsinger-review.png)
 
 ![pingdotgg/t3code への固定を行っていない packages/source-control-github/src/server/driver.ts 60〜99行目](../../evidence/extra/p10-5-gh-driver-arbitrary-repo.png)
+
+</details>
 
 ---
 
@@ -395,9 +496,14 @@ const starredPath = (repository: string) => {
 
 ![外部 PR を門前払いし、.github/VOUCHED.td による公開糾弾 BAN を明記した CONTRIBUTING.md](../../evidence/22-contributing-vouched-ban.png)
 
+<details>
+<summary>Issue #33639 および @bot フォーク収集の証拠を表示</summary>
+
 ![Issue #33639 にて @bermudi にアンインストールを迫り ungrateful prick と罵倒する Theo の返信](../../evidence/extra/t3code-12-issue-33639-theo-insult.png)
 
 ![開発者のフォークに対し "Okay I'm stealing this" と返信し30秒後に @bot を派遣して T3 Code へ移植させた記録](../../evidence/23-stealing-fork-bot.png)
+
+</details>
 
 ### 6.2 商標監査：USPTO 登録 0件と事後マージされた `PR #41898`（`Part 15`）
 
@@ -407,7 +513,12 @@ const starredPath = (repository: string) => {
 
 ![凍結脅迫の17時間後にマージされ、登録・未登録を問わず権利を主張する TRADEMARK.md を事後追加した PR #41898](../../evidence/24-pr41898-trademark-aftermath.png)
 
+<details>
+<summary>"get a better lawyer" X 返信の証拠を表示</summary>
+
 ![TRADEMARK.md マージの3時間前に開発者へ "get a better lawyer" と述べていた Theo の投稿](../../evidence/extra/p1-5-x-get-better-lawyer.png)
+
+</details>
 
 ### 6.3 1,151件ツイート定量データセット（`Part 14`）および 2年間の過去履歴（`Part 16`）
 
@@ -424,9 +535,14 @@ const starredPath = (repository: string) => {
 
 ![フォレンジックチャート 4：25時間にわたる中国語圏フォーク危機ウィンドウの3段階推移](../../evidence/charts/theo-chart-4-cn-crisis.png)
 
+<details>
+<summary>Part 13 および Part 14 で引用された X 敵意発言の一次証拠 2点を表示</summary>
+
 ![単純なツール比較の質問を引用リポストし「エンジニアは大量失業して当然だ」と書き込む Theo の投稿](../../evidence/25-engineers-unemployment.png)
 
 ![中国語圏テック Twitter を肥溜めと呼び、中国語コード監査を読む開発者を侮辱する Theo の投稿](../../evidence/26-cn-cesspit.png)
+
+</details>
 
 2年前まで遡ると、反復する行動パターンが一層鮮明になります（[Part 16](https://x.com/realchendahuang/status/2125408843152953693)）：
 - **2024年のフォーク揶揄：** 他開発者の VS Code テーマを自らフォークした際、元の制作者の気性を皮肉って [`vsc-material-but-i-wont-sue-you`](https://github.com/t3dotgg/vsc-material-but-i-wont-sue-you)（訴えはしないよ）と命名。
@@ -442,10 +558,14 @@ T3 Code を個人マシンまたは社用マシンにインストールしてい
 
 ### 7.1 環境変数 ＋ OS レベルのネットワーク遮断（ローカル／デスクトップ利用者向け）
 
-環境変数だけに依存しないでください（`PR #42376`、`PR #42464`、および `DesktopShellEnvironment.ts` では `T3CODE_OTEL_SDK_DISABLED` の引き継ぎが漏れており、`AnalyticsService.ts:149` は起動時に引き続きディスク上の識別子を初期化します）。シェル／ユーザー環境変数と OS レベルの `/etc/hosts` 遮断を併用してください：
+環境変数だけに依存**しないでください**。`ca81b7b9` 時点でも、[`AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts)（`line 156`、旧 `line 149`）はオプトアウトを確認する前に起動時ディスク上の識別子を初期化し、[`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) は依然として `OTEL_SDK_DISABLED` と `T3CODE_OTEL_SDK_DISABLED` の引き継ぎが漏れており、旧ビルドはシェル／ユーザー環境変数のオプトアウト自体を無視していました（`PR #42376`、`PR #42464`）。シェル／ユーザー変数—[`PR #42629`](https://github.com/pingdotgg/t3code/pull/42629) から有効になった `DO_NOT_TRACK=1`（`T3CODE_TELEMETRY_ENABLED=true` より優先し、サーバーリレートレーシングも無効化）を含む—と、OS レベルの `/etc/hosts` 遮断を必ず併用してください：
 
 ```bash
 # 1. macOS / Linux: ~/.zshrc（または ~/.bashrc）へ追記し、シェルを再読み込みして T3 Code を完全再起動する
+#    DO_NOT_TRACK=1 (PR #42629) は T3CODE_TELEMETRY_ENABLED=true を上書きしリレートレーシングを無効化するが、
+#    AnalyticsService.ts:156 は引き続きローカルのインストール ID をディスクへ書き込み、
+#    DesktopShellEnvironment.ts は T3CODE_OTEL_SDK_DISABLED / OTEL_SDK_DISABLED の引き継ぎが漏れている。
+export DO_NOT_TRACK=1
 export T3CODE_TELEMETRY_ENABLED=false
 export T3CODE_OTEL_SDK_DISABLED=true
 export OTEL_SDK_DISABLED=true
@@ -456,7 +576,7 @@ export OTEL_SDK_DISABLED=true
 ::1 ingest.t3.codes
 ```
 
-Windows の場合は、**システムのプロパティ → 環境変数**（ユーザー環境変数およびシステム環境変数）にも `T3CODE_TELEMETRY_ENABLED=false`、`T3CODE_OTEL_SDK_DISABLED=true`、`OTEL_SDK_DISABLED=true` を設定し、バックグラウンドサービスまたは OS を再起動してください。なお `Issue #36479` の通り、ファイアウォールやプロキシで遮断しない限り、サーバー起動時に `raw.githubusercontent.com` への外部通信チェックは依然として実行されます。
+Windows の場合は、**システムのプロパティ → 環境変数**（ユーザー環境変数およびシステム環境変数）にも `DO_NOT_TRACK=1`、`T3CODE_TELEMETRY_ENABLED=false`、`T3CODE_OTEL_SDK_DISABLED=true`、`OTEL_SDK_DISABLED=true` を設定し、バックグラウンドサービスまたは OS を再起動してください。なお `Issue #36479` の通り、ファイアウォールやプロキシで遮断しない限り、サーバー起動時に `raw.githubusercontent.com` への外部通信チェックは依然として実行されます。
 
 ### 7.2 管理者 Managed Policy（`macOS` / `Linux` / `Windows`）
 
@@ -488,7 +608,7 @@ Windows の場合は、**システムのプロパティ → 環境変数**（ユ
 
 ### 7.3 `statev2.sqlite` の確認およびローカル状態データの削除
 
-UI 上でスレッドを削除しても過去のイベントは `~/.t3/userdata/statev2.sqlite` 内に保持され続けるため（`Issue #17845`）：
+[`PR #42119`](https://github.com/pingdotgg/t3code/pull/42119) によって非同期の `thread-content.purge` クリーンアップが追加（`Issue #17845` クローズ）されたものの、旧バージョンではスレッド履歴がそのままディスク上に保持されており、`ca81b7b9` 時点でも削除済み元スレッドは生存中のフォーク、保留中の `merge_back` 転送、または生存中の親サブエージェントに参照されている限り履歴を保持します。さらにトゥームストーン行は SQLite 内に残り、解放済みの `.sqlite` ディスク領域を回収するにはオフラインでの `VACUUM` 実行が必要です：
 
 ```bash
 # ローカルの T3 データディレクトリ容量と DB 肥大化を確認（macOS / Linux）
@@ -497,6 +617,9 @@ ls -lh ~/.t3/userdata/statev2.sqlite*
 # 任意：残存している削除マーカー件数を読み取り専用で確認（先に T3 Code を完全終了すること）
 sqlite3 -readonly ~/.t3/userdata/statev2.sqlite \
   "SELECT COUNT(*) FROM orchestration_events WHERE event_type = 'thread.deleted';"
+
+# 任意：PR #42119 によるパージ後にディスクページを回収するためのオフライン圧縮（先に T3 Code を完全終了すること）
+sqlite3 ~/.t3/userdata/statev2.sqlite "VACUUM;"
 
 # 完全にアンインストールする場合は、必要なカスタムデータをバックアップ後 ~/.t3 を削除する
 rm -rf ~/.t3
@@ -508,7 +631,8 @@ rm -rf ~/.t3
 
 1. **Google Antigravity：** アカウントに1度しか認められない異議申し立て枠を守るため、個人の Google AI／Antigravity サブスクリプションを T3 管理下の Antigravity や CLIProxyAPI 経由で利用するのを直ちに中止してください。`~/.t3/userdata/providers/antigravity/` および `~/.t3/tools/antigravity-acp/` を削除してください。
 2. **T3 Connect およびクラウドデータ削除：** **Settings → Sharing & access** から **Publish agent activity** をオフにし、すべてのローカルマシンの連携を解除（`t3` ログアウト／アンリンク）し、もし再度リモートアクセスを有効にする場合でも `requireConnectDeviceApproval` を有効にしてください。さらに `privacy-policy.astro` に記載の公式プライバシー削除窓口および Clerk 経由でアカウント・リレーデータの完全削除を申請してください（これにより `PR #42285` の Clerk 削除 Webhook が PlanetScale 上のリレー行と Cloudflare トンネルを確実に破棄します）。
-3. **GitHub トークンおよびシークレットのローテーション：** **GitHub Settings → Applications / Authorized GitHub Apps** から T3 Code の GitHub OAuth／App 認可を取り消してください（`driver.ts` はホスト権限でのスター付与権限を保持します）。また、`PR #41889` 以前の `t3-resource-monitor` がプロセスのコマンドライン経由で記録した可能性のある API キー、DB URL、トークン類、あるいは Webhook／リレーエラー経由で Axiom へ送信された可能性のあるシークレットをすべてローテーションしてください。
+3. **GitHub トークンおよびシークレットのローテーション：** **GitHub Settings → Applications / Authorized GitHub Apps** から T3 Code の GitHub OAuth／App 認可を取り消してください（`driver.ts` はホスト権限でのスター付与権限を保持します）。また、`PR #41889` / `PR #42577` 以前の `t3-resource-monitor` がプロセスのコマンドライン経由で記録した可能性のある API キー、DB URL、トークン類、あるいは Webhook／リレーエラー経由で Axiom へ送信された可能性のあるシークレットをすべてローテーションしてください。
+4. **LAN HTTP、CI 用 Bearer トークン、および信頼できないリポジトリの隔離（`ca81b7b9`）：** リバースプロキシや Tailscale Serve 等の TLS を前段に置かずに平文の `t3 up --lan` HTTP を絶対に稼働させないでください（`::1` と `127.0.0.1` の IPv4 回避策の挙動にもご注意ください）。非 DPoP の30日間 Bearer トークンをスクリプトや CI に絶対に含めないでください。また、信頼できないリポジトリを開く前には必ず `SSH_AUTH_SOCK`／`GITHUB_TOKEN` を消去し、`.gitmodules` および `.claude/settings.json` のフックを監査してください。
 
 ### 7.5 代替クライアントの候補
 
@@ -518,7 +642,7 @@ rm -rf ~/.t3
 
 ## 8. 一次情報ソースおよび全18部 原投稿インデックス
 
-> 全パートおよびスクリーンショットに対応する `SRC-001`〜`SRC-206+` の網羅的対照表は、[`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md) をご参照ください。
+> 全パート・詳細調査書・監査後コミットに対応する `SRC-001`〜`SRC-320` の網羅的対照表は [`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md) を、**108点**の視覚証拠およびフォレンジックチャート（`EV-001`–`EV-108`）の一覧は [`docs/EVIDENCE-INDEX.md`](../EVIDENCE-INDEX.md) をご参照ください。
 
 ### 発端投稿および全18部 X スレッド完全インデックス（時系列）
 
@@ -543,6 +667,7 @@ rm -rf ~/.t3
 - Part 17（スポンサー Clerk/Axiom、Codex 0% クォータ悪用と削除、10アカウント `CLIProxyAPI` Gist）： https://x.com/realchendahuang/status/2125411353393553744
 - Part 18（7.7万 GitHub スターの作り方：30秒アイドル時トーストによるホスト認証情報 API スターと未修正の任意リポジトリスター付与）： https://x.com/realchendahuang/status/2125416210120765799
 - コミュニティ代替クライアント一覧： https://x.com/realchendahuang/status/2125244977878036713
+- コミュニティ寄稿アーカイブ（`@opserx` による Issue #1 — *「The Case Against Theo」*）： [`docs/community/issue-1-the-case-against-theo.md`](../community/issue-1-the-case-against-theo.md)
 
 ### ソースコード、PR、Issue、ポリシー、および一次証拠
 
@@ -554,7 +679,7 @@ rm -rf ~/.t3
 - オプトアウト緩和の拒否（Issue #1397）および公約違反の追及（Issue #4123）： https://github.com/pingdotgg/t3code/issues/1397 ; https://github.com/pingdotgg/t3code/issues/4123
 - 自社ホスト `ingest.t3.codes` での生イベント保持（PR #15028）およびツール横断ソルトなしハッシュ化（PR #21506）： https://github.com/pingdotgg/t3code/pull/15028 ; https://github.com/pingdotgg/t3code/pull/21506 ; https://ingest.t3.codes/
 - 却下された4件のコミュニティ製オプトアウトトグル PR（`#13458` / `#16763` / `#21248` / `#27077`）： https://github.com/pingdotgg/t3code/pull/13458 ; https://github.com/pingdotgg/t3code/pull/16763 ; https://github.com/pingdotgg/t3code/pull/21248 ; https://github.com/pingdotgg/t3code/pull/27077
-- テレメトリおよび識別関連ソースファイル（`AnalyticsService.ts` / `Identify.ts` / `ProviderUsageAnalytics.ts` / `telemetryId.ts`）： https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts ; https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/telemetryId.ts
+- テレメトリおよび識別関連ソースファイル（`AnalyticsService.ts` / `Identify.ts` / `ProviderUsageAnalytics.ts` / `ProviderDimensions.ts` / `telemetryId.ts` / `otelEnvironment.ts` / `DesktopShellEnvironment.ts` / `DesktopBackendConfiguration.ts`）： https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderDimensions.ts ; https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/telemetryId.ts ; https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/otelEnvironment.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/backend/DesktopBackendConfiguration.ts
 - 公式テレメトリおよび Managed Policy ドキュメント： https://github.com/pingdotgg/t3code/blob/main/docs/user/telemetry.md ; https://github.com/pingdotgg/t3code/blob/main/docs/user/managed-policy.md
 - Theo による Managed Policy、釈明、追跡ファイル否定投稿および公開 `events.clean.jsonl` エクスポート： https://x.com/theo/status/2125186071357251715 ; https://x.com/theo/status/2125191784859115766 ; https://x.com/theo/status/2125332390239494211 ; https://x.com/theo/status/2125370330244128924 ; https://files.tslop.org/2026/11/t3code-telemetry-events-jsonl-a4896cdc.gz
 - ワークスペース絶対パス漏洩（PR #42450）および Win/Mac でのオプトアウト無視（PR #42376 / #42464）： https://github.com/pingdotgg/t3code/pull/42450 ; https://github.com/pingdotgg/t3code/pull/42376 ; https://github.com/pingdotgg/t3code/pull/42464
@@ -567,9 +692,9 @@ rm -rf ~/.t3
 - Claude Auto モードの無確認 `git push --force`（Issue #15353 および再現コメント）とコミュニティ修正 PR（`#15360` / `#35207` / `#40692`）： https://github.com/pingdotgg/t3code/issues/15353 ; https://github.com/pingdotgg/t3code/issues/15353#issuecomment-6889019695 ; https://github.com/pingdotgg/t3code/pull/15360 ; https://github.com/pingdotgg/t3code/pull/35207 ; https://github.com/pingdotgg/t3code/pull/40692
 - `slopalytics.com` 向けプライベートモデルフィルタリングの21時間での撤廃（PR #29001 / Issue #40948 / PR #41237）： https://github.com/pingdotgg/t3code/pull/29001 ; https://github.com/pingdotgg/t3code/issues/40948 ; https://github.com/pingdotgg/t3code/pull/41237 ; https://slopalytics.com/ ; https://slopalytics.com/data/t3-usage.json
 - 空の Security Advisories タブ、`SECURITY.md`（`PR #38812` / `#41942`）、マージ済みサイレントセキュリティ修正（`#22190` / `#37823` / `#39464` / `#39480` / `#39483` / `#40133` / `#41756` / `#41757` / `#41886` / `#42386` / `#42504`）、未解決のセキュリティ／ランチャー項目（`Issue #26489` / `PR #23428` / `PR #30997` / `PR #33144` / `PR #36216`）： https://github.com/pingdotgg/t3code/security/advisories ; https://github.com/pingdotgg/t3code/blob/main/SECURITY.md ; https://github.com/pingdotgg/t3code/pull/38812 ; https://github.com/pingdotgg/t3code/pull/41942 ; https://github.com/pingdotgg/t3code/pull/22190 ; https://github.com/pingdotgg/t3code/pull/37823 ; https://github.com/pingdotgg/t3code/pull/39464 ; https://github.com/pingdotgg/t3code/pull/39480 ; https://github.com/pingdotgg/t3code/pull/39483 ; https://github.com/pingdotgg/t3code/pull/40133 ; https://github.com/pingdotgg/t3code/pull/41756 ; https://github.com/pingdotgg/t3code/pull/41757 ; https://github.com/pingdotgg/t3code/pull/41886 ; https://github.com/pingdotgg/t3code/pull/42386 ; https://github.com/pingdotgg/t3code/pull/42504 ; https://github.com/pingdotgg/t3code/issues/26489 ; https://github.com/pingdotgg/t3code/pull/23428 ; https://github.com/pingdotgg/t3code/pull/30997 ; https://github.com/pingdotgg/t3code/pull/33144 ; https://github.com/pingdotgg/t3code/pull/36216
-- Antigravity FAQ 保証、Issue #40713 コード反証、3分間 BAN（Issue #41536）、アカウント混線（Issue #41973）、ホワイトリストエディタ偽装（PR #26876）、CLIProxyAPI ハブ PR #33800、Theo によるリスク否定・図解・CLIProxy 責任転嫁投稿、およびソースコード： https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md ; https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md#will-i-get-banned-for-using-my-subscription ; https://github.com/pingdotgg/t3code/issues/40713 ; https://github.com/pingdotgg/t3code/issues/41536 ; https://github.com/pingdotgg/t3code/issues/41973 ; https://github.com/pingdotgg/t3code/pull/26876 ; https://github.com/pingdotgg/t3code/pull/33800 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L20-L45 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L445-L476 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts#L230-L236 ; https://x.com/theo/status/2124264935505199294 ; https://x.com/theo/status/2124665075638411641 ; https://x.com/theo/status/2124703048140517397
+- Antigravity FAQ 保証、Issue #40713 コード反証、3分間 BAN（Issue #41536）、アカウント混線（Issue #41973）、ホワイトリストエディタ偽装（PR #26876）、CLIProxyAPI ハブ PR #33800、Theo によるリスク否定・図解・CLIProxy 責任転嫁投稿、およびソースコード： https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md ; https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md#will-i-get-banned-for-using-my-subscription ; https://github.com/pingdotgg/t3code/issues/40713 ; https://github.com/pingdotgg/t3code/issues/41536 ; https://github.com/pingdotgg/t3code/issues/41973 ; https://github.com/pingdotgg/t3code/pull/26876 ; https://github.com/pingdotgg/t3code/pull/33800 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L20-L45 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L445-L476 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts#L230-L236 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityAcpSupport.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityTurnOutcome.ts ; https://x.com/theo/status/2124264935505199294 ; https://x.com/theo/status/2124665075638411641 ; https://x.com/theo/status/2124703048140517397
 - Google Antigravity 利用規約および公式フォーラム禁止規定： https://antigravity.google/terms ; https://discuss.ai.google.dev/t/185992
-- T3 Connect E2E 拒否（Issue #32098）、デフォルト無効 `requireConnectDeviceApproval`（PR #36419）、自社ホスト OVH Caddy ゲートウェイ（PR #32945）、リレーコード、プライバシーポリシー、未回答ディスカッション： https://github.com/pingdotgg/t3code/issues/32098#issuecomment-6869049926 ; https://github.com/pingdotgg/t3code/pull/36419 ; https://github.com/pingdotgg/t3code/pull/32945 ; https://github.com/pingdotgg/t3code/blob/main/docs/internals/06_t3-connect.md ; https://github.com/pingdotgg/t3code/blob/main/infra/relay/src/environments/ManagedEndpointProvider.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/marketing/src/pages/privacy-policy.astro ; https://github.com/pingdotgg/t3code/discussions/21286 ; https://github.com/pingdotgg/t3code/discussions/37831
+- T3 Connect E2E 拒否（Issue #32098）、デフォルト無効 `requireConnectDeviceApproval`（PR #36419 & `settings.ts`）、自社ホスト OVH Caddy ゲートウェイ（PR #32945）、リレーコード、プライバシーポリシー、未回答ディスカッション： https://github.com/pingdotgg/t3code/issues/32098#issuecomment-6869049926 ; https://github.com/pingdotgg/t3code/pull/36419 ; https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/settings.ts ; https://github.com/pingdotgg/t3code/pull/32945 ; https://github.com/pingdotgg/t3code/blob/main/docs/internals/06_t3-connect.md ; https://github.com/pingdotgg/t3code/blob/main/infra/relay/src/environments/ManagedEndpointProvider.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/marketing/src/pages/privacy-policy.astro ; https://github.com/pingdotgg/t3code/discussions/21286 ; https://github.com/pingdotgg/t3code/discussions/37831
 
 **事業収支、投資家の利益相反、スポンサー、および 7.7万スター（Part 6, 8, 17, 18）**
 
@@ -586,3 +711,12 @@ rm -rf ~/.t3
 - USPTO TSDR 記録（`PING LABS` 97294243 放棄済み、EquipmentShare `T3` 登録番号 7795672）、GitHub 商標ポリシー、事後 `PR #41898`、アカウント凍結脅迫、1兆ドルオープンソース容認返信、`"aware of the legality"`、`"get a better lawyer"`、および過去の商標関連ツイート： https://tsdr.uspto.gov/statusview/sn97294243 ; https://tsdr.uspto.gov/#caseNumber=90644500&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch ; https://docs.github.com/en/site-policy/content-removal-policies/github-trademark-policy ; https://github.com/pingdotgg/t3code/pull/41898 ; https://github.com/pingdotgg/t3code/blob/main/TRADEMARK.md ; https://x.com/theo/status/2124829315657576890 ; https://x.com/theo/status/2124989435154726982 ; https://x.com/theo/status/2125082769395220688 ; https://x.com/theo/status/2125026423769555308 ; https://x.com/vildanden_ai/status/2125275487404761555 ; https://x.com/theo/status/1839261574005141945
 - 相手による態度の使い分け証拠（Google Neon 謝罪・架け橋発言、エンジニア失業発言、ローカル AI 墓場発言、Linux larpers、刑務所／RSD 脅迫、`stupid bitch` 投稿、中国語圏テック Twitter 肥溜め発言、謝罪拒否、信頼焼却の説教）： https://x.com/theo/status/2123255588570501585 ; https://x.com/theo/status/2123995323123343869 ; https://x.com/theo/status/2124470530590011704 ; https://x.com/theo/status/2120733839832273025 ; https://x.com/theo/status/2124298216271499605 ; https://x.com/theo/status/2122865897375400066 ; https://x.com/theo/status/2120599310211703274 ; https://x.com/theo/status/2125177503526588877 ; https://x.com/theo/status/2125193393450226024 ; https://x.com/theo/status/2124449493513068862
 - 過去の類似事例証拠（`vsc-material-but-i-wont-sue-you`、インド人開発者への謝罪動画、$20k FFmpeg 懸賞金記録）： https://github.com/t3dotgg/vsc-material-but-i-wont-sue-you ; https://www.youtube.com/watch?v=o2CSJYXJBpc ; https://www.youtube.com/watch?v=1oQ3KMeaH04
+
+### 監査後の上流追跡（`9d3195b4` → `ca81b7b9`、`SRC-280`–`SRC-320`）
+
+- 監査ベースライン（`9d3195b4`、`#42000`）および最新検証済み `main` HEAD（`ca81b7b9`、`#42634`）： https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2 ; https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd
+- テレメトリおよび識別情報の縮小（`#42299` / `84e4264b`、`#42465` / `6b3899f2`、`#42630` / `c925b9ab`、`#42629` / `ef4a1643`）： https://github.com/pingdotgg/t3code/pull/42299 ; https://github.com/pingdotgg/t3code/commit/84e4264bb347e36e97f6c3bd95d666eecfa12e07 ; https://github.com/pingdotgg/t3code/pull/42465 ; https://github.com/pingdotgg/t3code/commit/6b3899f224947178088ca97ec9907e681807f7da ; https://github.com/pingdotgg/t3code/pull/42630 ; https://github.com/pingdotgg/t3code/commit/c925b9ab198099f67de862ed01701bd1d8809f2b ; https://github.com/pingdotgg/t3code/pull/42629 ; https://github.com/pingdotgg/t3code/commit/ef4a1643edf72ad119452c82b01c91adbf7b9e64
+- ローカルパージ、リソース監視、およびセキュリティ強化（`#42119` / `91f0b32e`、`#42577` / `af276ccb`、`#42413`）： https://github.com/pingdotgg/t3code/pull/42119 ; https://github.com/pingdotgg/t3code/commit/91f0b32e2db2cb8abca5fdd33c33609a0f57b15e ; https://github.com/pingdotgg/t3code/pull/42577 ; https://github.com/pingdotgg/t3code/commit/af276ccbb26ef709c46bc46ec514f23b62c8e18c ; https://github.com/pingdotgg/t3code/pull/42413
+- Antigravity 検証トリガーおよび CLI 更新（`#41210` / `3e74a0aa`、`#42545` / `4da8d19d`、`#42339`、`#42475`）： https://github.com/pingdotgg/t3code/pull/41210 ; https://github.com/pingdotgg/t3code/commit/3e74a0aac5c53459cc1d3d84eec915fa483f2836 ; https://github.com/pingdotgg/t3code/pull/42545 ; https://github.com/pingdotgg/t3code/commit/4da8d19d08ed7e34fe2d5d66dae54b01eab122fc ; https://github.com/pingdotgg/t3code/pull/42339 ; https://github.com/pingdotgg/t3code/pull/42475
+- T3 Connect 通知およびリレー／モバイル／フィードバックの縮小（`#42311` / `ece5f21b`、`#42356`、`#42394`、`#42397`、`#42398`、`#42415`）： https://github.com/pingdotgg/t3code/pull/42311 ; https://github.com/pingdotgg/t3code/commit/ece5f21b17077382c8d2eba1c28e75e898386dcd ; https://github.com/pingdotgg/t3code/pull/42356 ; https://github.com/pingdotgg/t3code/pull/42394 ; https://github.com/pingdotgg/t3code/pull/42397 ; https://github.com/pingdotgg/t3code/pull/42398 ; https://github.com/pingdotgg/t3code/pull/42415
+- `ca81b7b9` 時点の LAN Cookie、Bearer、`?wsTicket=`、`::1` ループバック、および信頼できないリポジトリの認証／実行証拠（`SRC-308`–`SRC-320`）： https://github.com/pingdotgg/t3code/pull/37042 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L492-L493 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/http.ts#L215-L221 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L798-L806 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1175-L1186 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1506-L1511 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/environmentHttp.ts#L595-L679 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1553-L1622 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L1086-L1156 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/startupAccess.ts#L71-L108 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/VcsProcess.ts#L145-L157 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L5982-L5985

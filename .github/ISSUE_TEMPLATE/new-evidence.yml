@@ -1,0 +1,45 @@
+name: New Primary Evidence
+description: Submit a new primary-source finding about pingdotgg/t3code backed by canonical URLs and reproducible source lines.
+title: "[Evidence]: "
+labels:
+  - evidence
+body:
+  - type: markdown
+    attributes:
+      value: |
+        All submissions must follow [CONTRIBUTING.md](https://github.com/realchendahuang/before-you-install-t3code/blob/main/CONTRIBUTING.md): verifiable primary sources only, canonical `https://` URLs (zero X redirect shortlinks), and zero private personal information.
+  - type: input
+    id: target-domain
+    attributes:
+      label: Target File / Domain
+      description: Which domain or target dossier/index does this evidence belong to?
+      placeholder: "e.g., Telemetry & GDPR (Dossier 01), Local Safety (Dossier 02), Antigravity / T3 Connect (Dossier 03), Business / Stars (Dossier 04), Governance (Dossier 05)"
+    validations:
+      required: true
+  - type: textarea
+    id: primary-source-urls
+    attributes:
+      label: Primary Source URLs
+      description: List direct canonical https:// URLs (GitHub commits, PRs, issues, blob line links, official docs, USPTO TSDR, or archived public records). Never use X redirect shortlinks.
+      placeholder: |
+        - https://github.com/pingdotgg/t3code/blob/main/...
+        - https://github.com/pingdotgg/t3code/pull/...
+    validations:
+      required: true
+  - type: textarea
+    id: reproducible-steps
+    attributes:
+      label: Reproducible Steps / Lines
+      description: Provide exact file paths, line ranges, commit SHAs, or reproducible CLI/runtime steps demonstrating the behavior.
+      placeholder: |
+        1. Inspect `<file>#L<start>-L<end>` at commit `<sha>`
+        2. Run or observe ...
+    validations:
+      required: true
+  - type: checkboxes
+    id: ground-rules
+    attributes:
+      label: Verification Standards
+      options:
+        - label: All claims are directly backed by public primary records without speculation or private personal data.
+          required: true

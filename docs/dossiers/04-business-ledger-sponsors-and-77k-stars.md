@@ -3,7 +3,9 @@
 # Dossier 04: The Business Ledger, Investor Conflicts, Sponsor Stack & The 77k-Star Engine
 
 > **Covers:** Audit Parts 6, 8, 17, and 18  
-> **Primary Record Scope:** Public X timeline (`@theo`, `n = 1,151`, Nov 7–24, 2026), historical X/YouTube receipts (2023–2026), USPTO/Gist records, and `pingdotgg/t3code` source code (`packages/source-control-github/src/server/driver.ts`, `apps/web/src/components/GitHubStarPrompt.tsx`, `apps/server/src/usage/cliproxyApi.ts`, `infra/relay/src/Config.ts`, `infra/relay/src/observability.ts`, `docs/user/faq.md`).
+> **Primary Record Scope:** Public X timeline (`@theo`, `n = 1,151`, Nov 7–24, 2026), historical X/YouTube receipts (2023–2026), USPTO/Gist records, and `pingdotgg/t3code` source code (`packages/source-control-github/src/server/driver.ts`, `apps/web/src/components/GitHubStarPrompt.tsx`, `apps/server/src/usage/cliproxyApi.ts`, `infra/relay/src/Config.ts`, `infra/relay/src/observability.ts`, `docs/user/faq.md`).  
+> **Audited Upstream Snapshot:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) (`PR #42000`, `2026-11-24T08:41:04Z` / `2026-11-24 16:41:04 CST`)  
+> **Post-Audit Upstream Re-Audit:** [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`PR #42634`, `2026-11-25T06:49:37Z` / `2026-11-25 14:49:37 CST`, `259` commits ahead of `9d3195b4`) — `driver.ts#L60-L99`, `GitHubStarPrompt.tsx`, and `PR #29922`'s `zhilsinger` `Request changes` review remain unchanged and unfixed.
 
 ---
 

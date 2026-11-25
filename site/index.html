@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Before You Install T3 Code — 18-Part Independent Forensic Audit</title>
+  <meta name="description" content="Independent security, telemetry, governance, trademark, and 1,151-tweet quantitative audit of pingdotgg/t3code with 108 visual receipts and mitigation playbooks." />
+
+  <!-- OpenGraph & Social Metadata (zero tracking) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Before You Install T3 Code — 18-Part Independent Forensic Audit" />
+  <meta property="og:description" content="Independent telemetry, local safety, Antigravity ToS, T3 Connect, trademark, and 1,151-tweet audit of pingdotgg/t3code backed by 108 visual receipts." />
+  <meta property="og:url" content="https://realchendahuang.github.io/before-you-install-t3code/" />
+  <meta property="og:image" content="https://realchendahuang.github.io/before-you-install-t3code/evidence/00-cover-en.png" />
+  <meta property="og:image:alt" content="Before You Install T3 Code — 18-Part Independent Audit Banner" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Before You Install T3 Code — 18-Part Independent Audit" />
+  <meta name="twitter:description" content="18 documented audit parts, 6 technical dossiers, 1,151-tweet dataset, and 108 verifiable primary receipts." />
+  <meta name="twitter:image" content="https://realchendahuang.github.io/before-you-install-t3code/evidence/00-cover-en.png" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b1120'/%3E%3Ccircle cx='16' cy='16' r='8' fill='%23f43f5e'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="site-nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span>Before You Install T3 Code</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary sections">
+        <a href="#tldr">30s TL;DR</a>
+        <a href="#risk-matrix">Risk Matrix</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#forensic-charts">1,151-Tweet Charts</a>
+        <a href="#receipts">108 Receipts</a>
+        <a href="#mitigation">Mitigation Playbook</a>
+      </nav>
+      <a class="nav-cta" href="https://github.com/realchendahuang/before-you-install-t3code" target="_blank" rel="noopener noreferrer">GitHub Repo ↗</a>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <!-- SECTION 1: Hero + 30s TL;DR + 18-Language Quick-Jump Bar -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow-pill">Baseline 9d3195b4 · Upstream Re-Audit ca81b7b9 (Nov 25 14:49 CST)</div>
+          <h1 id="hero-title">Before You Install T3 Code</h1>
+          <p class="hero-lead">
+            Evidence-backed security, telemetry, governance, trademark, and quantitative audit of
+            <code>pingdotgg/t3code</code> — consolidating 2 origin posts, <strong>18 documented audit parts</strong>,
+            6 technical dossiers, <strong>320 canonical primary URLs</strong> (<code>SRC-001</code>..<code>SRC-320</code>),
+            <strong>108 visual receipts</strong>, and a <strong>1,151-post</strong> X corpus.
+            Zero shortened redirect links and zero external trackers.
+          </p>
+          <div class="hero-metrics">
+            <div class="metric-pill alert"><strong>2</strong> Critical Domains</div>
+            <div class="metric-pill blue"><strong>320</strong> Source URLs</div>
+            <div class="metric-pill"><strong>6</strong> Deep Dossiers</div>
+            <div class="metric-pill"><strong>108</strong> Visual Receipts</div>
+            <div class="metric-pill alert"><strong>0</strong> Security Advisories</div>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#risk-matrix">Inspect Risk Matrix ↓</a>
+            <a class="btn btn-danger" href="#mitigation">Hardening Playbook ↓</a>
+            <a class="btn" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/EVIDENCE-INDEX.md" target="_blank" rel="noopener noreferrer">Evidence Index (108) ↗</a>
+            <a class="btn" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/COMPLETE-SOURCE-INDEX.md" target="_blank" rel="noopener noreferrer">Source Index (320) ↗</a>
+          </div>
+        </div>
+
+        <div id="heroCoverCard" class="cover-card" tabindex="0" role="button" aria-label="Zoom 18-Part Audit Cover Banner">
+          <img src="./evidence/00-cover-en.png" alt="Before You Install T3 Code — 18-Part Independent Audit Banner" />
+          <div class="cover-caption">
+            <span>evidence/00-cover-en.png</span>
+            <span>Click to inspect full resolution 🔍</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 30-Second TL;DR Summary -->
+      <div id="tldr" class="tldr-box">
+        <div class="tldr-head">
+          <h2>30-Second TL;DR Executive Summary</h2>
+          <span>Baseline <code>9d3195b4</code> re-audited through <code>ca81b7b9</code> (259 upstream commits · Nov 25 14:49 CST)</span>
+        </div>
+        <div class="tldr-grid">
+          <article class="tldr-item">
+            <span class="tldr-tag crit">Critical · Privacy</span>
+            <h3>Default Telemetry &amp; 2.2M/hr IP Spans</h3>
+            <p>
+              Default PostHog telemetry shipped Mar 6 (<code>PR #174</code>) while homepage promised <em>"No telemetry"</em>.
+              Post-GDPR PRs admitted <strong>2.2M/hr IP + UA logs</strong> in Axiom (<code>#42380</code>) &amp; <code>git.cwd</code> leaks (<code>#42450</code>).
+              Post-audit <code>#42299</code>/<code>#42629</code> dropped <code>.codex</code>/<code>.claude.json</code> reads and added <code>DO_NOT_TRACK</code>, yet <code>AnalyticsService.ts:156</code> still writes disk ID at startup and <code>ingest.t3.codes</code> stays closed-source.
+            </p>
+          </article>
+          <article class="tldr-item">
+            <span class="tldr-tag crit">Critical · Local</span>
+            <h3>Fake Delete &amp; 52-Day Force Push</h3>
+            <p>
+              Deleted threads bloated <code>statev2.sqlite</code> to 41.6 GB (<code>#17845</code>); <code>#42119</code> later added async purge (still retains fork/subagent refs + tombstones, needs offline <code>VACUUM</code>). Auto mode silent <code>git push --force</code> (<code>#15353</code>), recursive repo <code>.gitmodules</code> + <code>SessionStart</code> hooks with inherited <code>SSH_AUTH_SOCK</code>/<code>GITHUB_TOKEN</code>, and <strong>0 Security Advisories</strong> remain at <code>ca81b7b9</code>.
+            </p>
+          </article>
+          <article class="tldr-item">
+            <span class="tldr-tag high">High · Auth &amp; Relay</span>
+            <h3>Antigravity Spoofing, Plaintext Relay &amp; LAN/Auth Flaws</h3>
+            <p>
+              <code>antigravityUsageLimits.ts</code> spoofs <code>antigravity/hub/2.24.0</code> against <code>v1internal</code> while <code>#41210</code> confirms Google <code>VALIDATION_REQUIRED</code> blocks. T3 Connect has <strong>zero E2E encryption</strong> (<code>#32098</code>), and <code>ca81b7b9</code> source exposes 30-day plaintext <code>--lan</code> shell cookies + missing-<code>Origin</code> bypass, unrevocable 30-day non-DPoP Bearer tokens, replayable 5-min <code>?wsTicket=</code> URLs, and <code>::1</code> tunnel drops.
+            </p>
+          </article>
+          <article class="tldr-item">
+            <span class="tldr-tag high">High · Ledger</span>
+            <h3>$800k Spend &amp; 77k-Star Funnel</h3>
+            <p>
+              <code>ingest.t3.codes</code> powered a <strong>31.7T-token/day ($10.19M/day)</strong> radar traded for OpenAI tokens &amp; VC reachouts. A 5-prompt/30s-idle toast fires host-credential <code>PUT user/starred/...</code> with unpinned <code>driver.ts#L60-L99</code> (still unfixed at <code>ca81b7b9</code>).
+            </p>
+          </article>
+          <article class="tldr-item">
+            <span class="tldr-tag base">Baseline · Corpus</span>
+            <h3>0 USPTO Marks &amp; 1,151-Tweet Split</h3>
+            <p>
+              <strong>0 registrations</strong> for <code>T3 Code</code> when threatening GitHub takedown (retroactive <code>TRADEMARK.md</code> merged 17h later). Across <strong>1,151 tweets</strong>: <strong>0.0%</strong> VIP profanity vs. <strong>8.0%</strong> developer hostility and <strong>14.4%</strong> crisis insults.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <!-- 18-Language Quick-Jump Pill Bar -->
+      <nav class="lang-bar" aria-label="18-language documentation editions">
+        <div class="lang-group">
+          <span class="lang-label">UN Official Languages (6):</span>
+          <a class="lang-pill primary" href="https://github.com/realchendahuang/before-you-install-t3code" target="_blank" rel="noopener noreferrer">English (Root)</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.zh-CN.md" target="_blank" rel="noopener noreferrer">简体中文</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.fr.md" target="_blank" rel="noopener noreferrer">Français</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.es.md" target="_blank" rel="noopener noreferrer">Español</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.ru.md" target="_blank" rel="noopener noreferrer">Русский</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.ar.md" target="_blank" rel="noopener noreferrer">العربية</a>
+        </div>
+        <div class="lang-group">
+          <span class="lang-label">Global Community Editions (12):</span>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.zh-TW.md" target="_blank" rel="noopener noreferrer">繁體中文</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.ja.md" target="_blank" rel="noopener noreferrer">日本語</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.ko.md" target="_blank" rel="noopener noreferrer">한국어</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.de.md" target="_blank" rel="noopener noreferrer">Deutsch</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.pt-BR.md" target="_blank" rel="noopener noreferrer">Português</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.it.md" target="_blank" rel="noopener noreferrer">Italiano</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.nl.md" target="_blank" rel="noopener noreferrer">Nederlands</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.pl.md" target="_blank" rel="noopener noreferrer">Polski</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.tr.md" target="_blank" rel="noopener noreferrer">Türkçe</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.vi.md" target="_blank" rel="noopener noreferrer">Tiếng Việt</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.id.md" target="_blank" rel="noopener noreferrer">Bahasa Indonesia</a>
+          <a class="lang-pill" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/i18n/README.hi.md" target="_blank" rel="noopener noreferrer">हिन्दी</a>
+        </div>
+      </nav>
+    </section>
+
+    <!-- SECTION 2: Interactive Risk Matrix -->
+    <section id="risk-matrix" class="section" aria-labelledby="risk-heading">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Structured Findings · Baseline 9d3195b4 → ca81b7b9</div>
+          <h2 id="risk-heading">Interactive Risk Matrix &amp; Dossiers</h2>
+          <p class="section-desc">
+            Filter verified findings by severity, inspect post-audit upstream status through <code>ca81b7b9</code> (Nov 25, 2026 14:49 CST), or open the 6 deep technical dossiers,
+            <a href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/EVIDENCE-INDEX.md" target="_blank" rel="noopener noreferrer">Evidence Index (108) ↗</a>, and
+            <a href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/COMPLETE-SOURCE-INDEX.md" target="_blank" rel="noopener noreferrer">Complete Source Index (320) ↗</a>.
+          </p>
+        </div>
+        <div class="pill-bar" role="group" aria-label="Filter risk matrix by severity">
+          <button type="button" class="filter-pill active" data-risk-filter="all" aria-pressed="true">All (7)</button>
+          <button type="button" class="filter-pill" data-risk-filter="critical" aria-pressed="false">Critical (2)</button>
+          <button type="button" class="filter-pill" data-risk-filter="high" aria-pressed="false">High (2)</button>
+          <button type="button" class="filter-pill" data-risk-filter="medium-high" aria-pressed="false">Medium-High (1)</button>
+          <button type="button" class="filter-pill" data-risk-filter="baseline" aria-pressed="false">Baseline (2)</button>
+        </div>
+      </div>
+      <div id="riskGrid" class="risk-grid"></div>
+    </section>
+
+    <!-- SECTION 2B: Key Milestones & Post-Audit Upstream Timeline -->
+    <section id="timeline" class="section" aria-labelledby="timeline-heading">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Chronological &amp; Upstream Tracking</div>
+          <h2 id="timeline-heading">Audit &amp; Post-Audit Timeline (2026 · 9d3195b4 → ca81b7b9)</h2>
+          <p class="section-desc">Key repository events from default PostHog enablement through the Nov 24–25 overnight GDPR sprint and the latest upstream re-audit at <code>ca81b7b9</code> (259 commits past baseline).</p>
+        </div>
+      </div>
+      <div class="timeline-shell">
+        <div class="timeline-table-wrap">
+          <table class="timeline-table">
+            <thead>
+              <tr>
+                <th>Date / Window</th>
+                <th>Milestone</th>
+                <th>Verified Code / Upstream Outcome</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="timeline-date">2026-03-06 → 06-18</div>
+                  <span class="timeline-tag warn">Baseline</span>
+                </td>
+                <td>Default PostHog Telemetry &amp; Deleted Promise</td>
+                <td><a href="https://github.com/pingdotgg/t3code/pull/174" target="_blank" rel="noopener noreferrer">PR #174</a> enables default PostHog telemetry without UI toggle; commit <a href="https://github.com/pingdotgg/t3code/commit/3bdaa6e10046945ccc08264d2d6f3b81775efcb3" target="_blank" rel="noopener noreferrer"><code>3bdaa6e1</code></a> silently removes <em>"No telemetry / Unless you opt in. Full stop."</em> on Jun 18.</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="timeline-date">2026-10 → 11-06</div>
+                  <span class="timeline-tag">Ingestion &amp; Funnel</span>
+                </td>
+                <td>Closed-Source Ingest, Cross-Tool Hashing &amp; Star Toast</td>
+                <td><a href="https://github.com/pingdotgg/t3code/pull/15028" target="_blank" rel="noopener noreferrer">PR #15028</a> routes raw events to <code>ingest.t3.codes</code>; <a href="https://github.com/pingdotgg/t3code/pull/21506" target="_blank" rel="noopener noreferrer">PR #21506</a> reads <code>~/.codex/auth.json</code> &amp; <code>~/.claude.json</code>; <a href="https://github.com/pingdotgg/t3code/pull/29922" target="_blank" rel="noopener noreferrer">PR #29922</a> adds 30s-idle server-credential starring (<code>driver.ts#L60-L99</code> unfixed).</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="timeline-date">2026-11-23 → 11-24</div>
+                  <span class="timeline-tag warn">Snapshot 9d3195b4</span>
+                </td>
+                <td>Fork Dispute, 18-Part Audit &amp; Overnight GDPR Blitz</td>
+                <td>17h after fork ban threat, <a href="https://github.com/pingdotgg/t3code/pull/41898" target="_blank" rel="noopener noreferrer">PR #41898</a> adds <code>TRADEMARK.md</code>; EU GDPR filing triggers 6h overnight sprint revealing 2.2M/hr IP spans (<code>#42380</code>), <code>git.cwd</code> leaks (<code>#42450</code>), ignored opt-outs (<code>#42376</code>/<code>#42464</code>), and broken deletion (<code>#42285</code>). Baseline <a href="https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2" target="_blank" rel="noopener noreferrer"><code>9d3195b4</code></a> captured.</td>
+              </tr>
+              <tr class="is-post">
+                <td>
+                  <div class="timeline-date">2026-11-24 20:46Z → 23:10Z</div>
+                  <span class="timeline-tag post">Post-Audit</span>
+                </td>
+                <td><code>#42299</code> Drops Codex/Claude File Reads; <code>#42465</code> Masks Non-Catalog Models</td>
+                <td><a href="https://github.com/pingdotgg/t3code/pull/42299" target="_blank" rel="noopener noreferrer">PR #42299</a> stops reading <code>.codex</code>/<code>.claude.json</code> in <code>Identify.ts</code> (still hashes Connect/device IDs); <a href="https://github.com/pingdotgg/t3code/pull/42465" target="_blank" rel="noopener noreferrer">PR #42465</a> masks non-catalog models as <code>custom:&lt;driver&gt;</code> (catalog slugs still sent).</td>
+              </tr>
+              <tr class="is-post">
+                <td>
+                  <div class="timeline-date">2026-11-25 04:09Z → 05:58Z</div>
+                  <span class="timeline-tag post">Post-Audit</span>
+                </td>
+                <td>Windows Monitor Scope, Google Verification Links &amp; Async SQLite Purge</td>
+                <td><a href="https://github.com/pingdotgg/t3code/pull/42577" target="_blank" rel="noopener noreferrer">PR #42577</a> narrows Windows <code>resource-monitor</code> reads; <a href="https://github.com/pingdotgg/t3code/pull/41210" target="_blank" rel="noopener noreferrer">PR #41210</a> links Google <code>VALIDATION_REQUIRED</code> verification on failed Antigravity turns; <a href="https://github.com/pingdotgg/t3code/pull/42119" target="_blank" rel="noopener noreferrer">PR #42119</a> adds async <code>thread-content.purge</code> (keeps fork/subagent history + tombstones; needs offline <code>VACUUM</code>).</td>
+              </tr>
+              <tr class="is-post">
+                <td>
+                  <div class="timeline-date">2026-11-25 05:27Z → 06:49Z</div>
+                  <span class="timeline-tag post">Latest ca81b7b9</span>
+                </td>
+                <td>CI Opt-Out (<code>#42630</code>), <code>DO_NOT_TRACK</code> (<code>#42629</code>) &amp; Remaining Gaps</td>
+                <td><a href="https://github.com/pingdotgg/t3code/pull/42630" target="_blank" rel="noopener noreferrer">PR #42630</a> turns default telemetry off in CI; <a href="https://github.com/pingdotgg/t3code/pull/42629" target="_blank" rel="noopener noreferrer">PR #42629</a> honors <code>DO_NOT_TRACK=1</code>. Verified at HEAD <a href="https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd" target="_blank" rel="noopener noreferrer"><code>ca81b7b9</code></a> (14:49 CST): <code>AnalyticsService.ts:156</code> startup ID write, closed <code>ingest.t3.codes</code>, <code>#15353</code>, <code>driver.ts#L60-L99</code>, <code>0</code> Security Advisories, and unencrypted T3 Connect remain.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Interactive 1,151-Tweet Forensic Charts -->
+    <section id="forensic-charts" class="section" aria-labelledby="charts-heading">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Quantitative Corpus · n = 1,151 (Nov 7–24, 2026)</div>
+          <h2 id="charts-heading">1,151-Tweet Forensic Charts</h2>
+          <p class="section-desc">Explore interactive dark-themed visualizations (with built-in EN / 中文 toggle and hover inspection) directly inside the portal with zero third-party scripts.</p>
+        </div>
+      </div>
+
+      <div class="charts-shell">
+        <div class="chart-tabs" role="tablist" aria-label="Forensic charts">
+          <button type="button" class="chart-tab active" role="tab" aria-selected="true" data-chart-tab="chart1">01 · Corpus &amp; Product Focus</button>
+          <button type="button" class="chart-tab" role="tab" aria-selected="false" data-chart-tab="chart2">02 · Circadian &amp; Daily Cadence</button>
+          <button type="button" class="chart-tab" role="tab" aria-selected="false" data-chart-tab="chart3">03 · Selective Politeness Split</button>
+          <button type="button" class="chart-tab" role="tab" aria-selected="false" data-chart-tab="chart4">04 · 25-Hour Crisis Timeline</button>
+        </div>
+        <div class="chart-toolbar">
+          <span id="chartDesc">Chart 1 · Corpus Structure &amp; Product Focus</span>
+          <div class="chart-toolbar-links">
+            <button type="button" class="btn btn-sm" id="chartPngBtn" data-png="./evidence/charts/theo-chart-1-overview.png">Inspect Archived PNG 🔍</button>
+            <a id="chartStandaloneLink" class="btn btn-sm" href="./charts/theo-chart-1-overview.html" target="_blank" rel="noopener noreferrer">Open Standalone Chart ↗</a>
+            <a class="btn btn-sm btn-primary" href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md" target="_blank" rel="noopener noreferrer">Dossier 06 ↗</a>
+          </div>
+        </div>
+        <iframe id="chartFrame" class="chart-frame" title="Interactive 1,151-Tweet Forensic Chart" src="./charts/theo-chart-1-overview.html" loading="lazy"></iframe>
+      </div>
+    </section>
+
+    <!-- SECTION 4: Filterable 108-Receipt Evidence Lightbox Gallery -->
+    <section id="receipts" class="section" aria-labelledby="receipts-heading">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Primary Evidence Archive</div>
+          <h2 id="receipts-heading">108-Receipt Evidence Lightbox Gallery</h2>
+          <p class="section-desc">
+            Search by keyword, source file, PR/Issue number, or filter by audit part. Click any screenshot to open the zoomable lightbox, or browse the
+            <a href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/EVIDENCE-INDEX.md" target="_blank" rel="noopener noreferrer">complete 108-asset Markdown catalog (<code>docs/EVIDENCE-INDEX.md</code>) ↗</a>.
+          </p>
+        </div>
+      </div>
+
+      <div class="gallery-controls">
+        <div class="search-row">
+          <div class="search-input-wrap">
+            <input id="gallerySearch" class="search-input" type="search" placeholder="Search 108 receipts (e.g. 42450, Identify.ts, antigravity, wsTicket, SSH_AUTH_SOCK, driver.ts)..." aria-label="Search evidence receipts" />
+          </div>
+          <div id="galleryCount" class="gallery-count">Showing 108 of 108 receipts</div>
+        </div>
+        <div id="partPills" class="part-pills" role="group" aria-label="Filter receipts by audit part"></div>
+      </div>
+
+      <div id="galleryGrid" class="gallery-grid"></div>
+    </section>
+
+    <!-- SECTION 5: Quick Mitigation Playbook Copy-Paste Tabs -->
+    <section id="mitigation" class="section" aria-labelledby="mitigation-heading">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Defense-in-Depth Remediation · Updated for ca81b7b9</div>
+          <h2 id="mitigation-heading">Quick Mitigation Playbook</h2>
+          <p class="section-desc">
+            While <code>PR #42629</code> added <code>DO_NOT_TRACK=1</code> support, <code>DesktopShellEnvironment.ts</code> still omits <code>T3CODE_OTEL_SDK_DISABLED</code>/<code>OTEL_SDK_DISABLED</code> and <code>AnalyticsService.ts:156</code> still writes a startup ID unconditionally. Combine env vars, host blocks, Managed Policy, SQLite <code>VACUUM</code>, and token revocation.
+          </p>
+        </div>
+      </div>
+
+      <div class="playbook-shell">
+        <div class="playbook-tabs" role="tablist" aria-label="Mitigation platforms">
+          <button type="button" class="playbook-tab active" role="tab" aria-selected="true" data-playbook-tab="unix">macOS / Linux</button>
+          <button type="button" class="playbook-tab" role="tab" aria-selected="false" data-playbook-tab="windows">Windows</button>
+          <button type="button" class="playbook-tab" role="tab" aria-selected="false" data-playbook-tab="policy">Managed Policy</button>
+        </div>
+
+        <!-- Tab 1: macOS / Linux -->
+        <div class="playbook-panel active" data-playbook-panel="unix">
+          <h3>1. Environment Opt-Out (<code>DO_NOT_TRACK=1</code>) + OS-Level Hosts Block (macOS / Linux)</h3>
+          <p>Export <code>DO_NOT_TRACK=1</code> (honored via <code>PR #42629</code>, overrides <code>T3CODE_TELEMETRY_ENABLED=true</code>) alongside legacy flags in <code>~/.zshrc</code> or <code>~/.bashrc</code>, block <code>ingest.t3.codes</code> in <code>/etc/hosts</code>, and restart T3 Code completely.</p>
+          <div class="code-block-wrap">
+            <div class="code-block-head">
+              <span>~/.zshrc + /etc/hosts</span>
+              <button type="button" class="copy-btn" data-copy-target="codeUnixEnv">Copy</button>
+            </div>
+            <pre id="codeUnixEnv"># Add to ~/.zshrc (or ~/.bashrc), reload shell, and restart T3 Code
+export DO_NOT_TRACK=1                 # PR #42629: stops events &amp; relay tracing (wins over T3CODE_TELEMETRY_ENABLED=true)
+export T3CODE_TELEMETRY_ENABLED=false
+export T3CODE_OTEL_SDK_DISABLED=true
+export OTEL_SDK_DISABLED=true
+
+# Block closed-source ingestion gateway in /etc/hosts (still required: AnalyticsService.ts:156 writes ID before check)
+sudo sh -c 'printf "\n127.0.0.1 ingest.t3.codes\n::1 ingest.t3.codes\n" &gt;&gt; /etc/hosts'</pre>
+          </div>
+
+          <h3>2. Inspect statev2.sqlite Bloat, Run Offline <code>VACUUM</code> &amp; Purge Antigravity State</h3>
+          <p>Even after <code>PR #42119</code> added async <code>thread-content.purge</code> (closing <code>#17845</code>), source threads with live forks/merge-backs/subagents and tombstones remain, and reclaiming disk space requires an offline <code>VACUUM</code>. Quit T3 Code first.</p>
+          <div class="code-block-wrap" style="margin-bottom:0;">
+            <div class="code-block-head">
+              <span>SQLite Audit, VACUUM &amp; Cleanup</span>
+              <button type="button" class="copy-btn" data-copy-target="codeUnixState">Copy</button>
+            </div>
+            <pre id="codeUnixState"># Inspect local SQLite database size and retained deleted-thread markers
+ls -lh ~/.t3/userdata/statev2.sqlite*
+sqlite3 -readonly ~/.t3/userdata/statev2.sqlite \
+  "SELECT COUNT(*) FROM orchestration_events WHERE event_type = 'thread.deleted';"
+
+# Compact statev2.sqlite offline after PR #42119 purge (quit T3 Code completely first)
+sqlite3 ~/.t3/userdata/statev2.sqlite "VACUUM;"
+
+# Remove T3-managed Antigravity auth/tool directories (protects Google account appeal)
+rm -rf ~/.t3/userdata/providers/antigravity/ ~/.t3/tools/antigravity-acp/
+
+# Full uninstall cleanup (back up any custom data first)
+rm -rf ~/.t3</pre>
+          </div>
+        </div>
+
+        <!-- Tab 2: Windows -->
+        <div class="playbook-panel" data-playbook-panel="windows">
+          <h3>1. Persistent User/System Env Vars (<code>DO_NOT_TRACK=1</code>) + Windows Hosts Block</h3>
+          <p><code>PR #42629</code> forwards <code>DO_NOT_TRACK=1</code> through Windows profiles and backend configuration, while <code>DesktopShellEnvironment.ts</code> still omits <code>OTEL_SDK_DISABLED</code>. Set all flags, block <code>ingest.t3.codes</code>, and reboot/restart background processes.</p>
+          <div class="code-block-wrap">
+            <div class="code-block-head">
+              <span>PowerShell (Run as Administrator)</span>
+              <button type="button" class="copy-btn" data-copy-target="codeWinPs">Copy</button>
+            </div>
+            <pre id="codeWinPs"># Set User &amp; Machine telemetry opt-out variables (including DO_NOT_TRACK=1 from PR #42629)
+@("User", "Machine") | ForEach-Object {
+  [Environment]::SetEnvironmentVariable("DO_NOT_TRACK", "1", $_)
+  [Environment]::SetEnvironmentVariable("T3CODE_TELEMETRY_ENABLED", "false", $_)
+  [Environment]::SetEnvironmentVariable("T3CODE_OTEL_SDK_DISABLED", "true", $_)
+  [Environment]::SetEnvironmentVariable("OTEL_SDK_DISABLED", "true", $_)
+}
+
+# Block ingest.t3.codes in C:\Windows\System32\drivers\etc\hosts
+$hosts = "$env:SystemRoot\System32\drivers\etc\hosts"
+Add-Content -Path $hosts -Value "`r`n127.0.0.1 ingest.t3.codes`r`n::1 ingest.t3.codes"</pre>
+          </div>
+
+          <h3>2. Windows State Directory, SQLite <code>VACUUM</code>, GitHub OAuth &amp; Secret Rotation</h3>
+          <p>Inspect <code>%USERPROFILE%\.t3\userdata\</code> (compact <code>statev2.sqlite</code> offline with <code>VACUUM;</code> per <code>#42119</code>), disable T3 Connect, and revoke GitHub permissions (<code>driver.ts</code> holds host-level starring scope).</p>
+          <div class="code-block-wrap" style="margin-bottom:0;">
+            <div class="code-block-head">
+              <span>PowerShell State Cleanup</span>
+              <button type="button" class="copy-btn" data-copy-target="codeWinClean">Copy</button>
+            </div>
+            <pre id="codeWinClean"># Inspect local T3 userdata directory (statev2.sqlite, anonymous-id, secrets)
+Get-ChildItem "$env:USERPROFILE\.t3\userdata"
+
+# Optional (quit T3 Code first; requires sqlite3.exe): reclaim disk space after PR #42119 purge
+# sqlite3 "$env:USERPROFILE\.t3\userdata\statev2.sqlite" "VACUUM;"
+
+# Remove T3-managed Antigravity auth/tool directories
+Remove-Item -Recurse -Force "$env:USERPROFILE\.t3\userdata\providers\antigravity" -ErrorAction SilentlyContinue
+Remove-Item -Recurse -Force "$env:USERPROFILE\.t3\tools\antigravity-acp" -ErrorAction SilentlyContinue
+
+# Next: Revoke T3 Code in GitHub Settings -&gt; Applications / Authorized GitHub Apps
+# Next: Rotate API keys/tokens previously passed via CLI args (PR #41889)</pre>
+          </div>
+        </div>
+
+        <!-- Tab 3: Managed Policy -->
+        <div class="playbook-panel" data-playbook-panel="policy">
+          <h3>Administrator Managed Policy (<code>policy.json</code>)</h3>
+          <p>Deploy as root/Administrator into the OS-protected location below, then validate with <code>t3 policy check policy.json</code> and <code>t3 policy show</code>.</p>
+          <table class="policy-table">
+            <thead>
+              <tr>
+                <th>OS</th>
+                <th>Native Policy / MDM / Registry</th>
+                <th>Admin-Protected File Path</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>macOS</strong></td>
+                <td>Device Configuration Profile for <code>com.t3tools.t3code</code> (user profiles ignored)</td>
+                <td><code>/Library/Application Support/T3Code/policy.json</code></td>
+              </tr>
+              <tr>
+                <td><strong>Linux / WSL</strong></td>
+                <td>Deploy separately inside each WSL distro</td>
+                <td><code>/etc/t3code/policy.json</code></td>
+              </tr>
+              <tr>
+                <td><strong>Windows</strong></td>
+                <td>GPO (<code>t3code.admx</code>) or <code>REG_SZ Policy</code> under <code>HKLM\SOFTWARE\Policies\T3Tools\T3Code</code></td>
+                <td><code>C:\Program Files\T3Code\policy.json</code></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="code-block-wrap">
+            <div class="code-block-head">
+              <span>policy.json (Hardened Lockdown)</span>
+              <button type="button" class="copy-btn" data-copy-target="codePolicyJson">Copy</button>
+            </div>
+            <pre id="codePolicyJson">{
+  "schemaVersion": 1,
+  "organization": "Local Hardening Policy",
+  "limits": {
+    "maxRuntimeMode": "auto-accept-edits",
+    "clients": ["desktop"],
+    "connect": false,
+    "webhookTasks": false,
+    "browserCookieImport": false,
+    "previewTunnel": false,
+    "telemetry": false
+  }
+}</pre>
+          </div>
+
+          <div class="warn-callout">
+            <strong>Documented Blind Spots at <code>ca81b7b9</code> (<code>docs/user/telemetry.md</code> &amp; <code>AnalyticsService.ts:156</code>):</strong> Managed Policy does <strong>not</strong> disable relay tracing on hosted <code>app.t3.codes</code>, does <strong>not</strong> disable mobile app tracing, and does <strong>not</strong> turn off <code>Publish agent activity</code> if enabled—and startup still writes <code>anonymousIdPath</code> on disk before checking policy/<code>DO_NOT_TRACK</code>. Disable <em>Publish agent activity</em> under <em>Settings → Sharing &amp; access</em>, unlink local machines, and request Clerk + relay deletion per <code>PR #42285</code>.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Before You Install T3 Code</strong> · Independent Security, Telemetry &amp; Public-Record Audit (<code>pingdotgg/t3code</code> · Baseline <code>9d3195b4</code>, Re-Audit <code>ca81b7b9</code>). Zero tracking, zero third-party analytics, zero shortened URLs.
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/realchendahuang/before-you-install-t3code" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+        <a href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/EVIDENCE-INDEX.md" target="_blank" rel="noopener noreferrer">Evidence Index (108)</a>
+        <a href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/COMPLETE-SOURCE-INDEX.md" target="_blank" rel="noopener noreferrer">Source Index (320)</a>
+        <a href="https://github.com/realchendahuang/before-you-install-t3code/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Contributing</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightboxModal" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightboxTitle">
+    <div class="lightbox-dialog">
+      <div class="lightbox-head">
+        <div class="lightbox-badges">
+          <span id="lightboxPart" class="sev-badge sev-baseline">Origin</span>
+          <span id="lightboxPath" class="metric-pill" style="padding:3px 9px; font-size:12px; font-family:var(--mono);">evidence/...</span>
+          <span id="lightboxCounter" style="font-size:12.5px; color:var(--muted); font-weight:700;">1 / 108</span>
+        </div>
+        <div class="lightbox-actions">
+          <button type="button" id="lightboxPrevBtn" class="icon-btn" aria-label="Previous receipt">← Prev</button>
+          <button type="button" id="lightboxNextBtn" class="icon-btn" aria-label="Next receipt">Next →</button>
+          <button type="button" id="lightboxZoomBtn" class="icon-btn">Zoom 100%</button>
+          <button type="button" id="lightboxCloseBtn" class="icon-btn" aria-label="Close modal">Close ✕</button>
+        </div>
+      </div>
+      <div id="lightboxStage" class="lightbox-stage">
+        <img id="lightboxImg" src="" alt="" />
+      </div>
+      <div class="lightbox-foot">
+        <h3 id="lightboxTitle">Receipt Title</h3>
+        <p id="lightboxCaption">Receipt description</p>
+        <div id="lightboxLinks" class="lightbox-links"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>

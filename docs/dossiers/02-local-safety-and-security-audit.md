@@ -7,6 +7,9 @@
 > 2. Host OS process scanning (`native/resource-monitor` + `NativeTelemetryClient.ts`, `Issue #11222`, `PR #41889`) and Part 2 local/network/power bugs.
 > 3. Claude Auto mode silent `git push --force` execution (`Issue #15353`, `ClaudeAdapterV2.ts`) and telemetry filter regression (`PR #41237`).
 > 4. `0` published GitHub Security Advisories vs. merged silent security patches (`ServerSecretStore.ts`, `WebviewPreferences.ts`), open hardening PRs (`externalLauncher.ts`), `SECURITY.md` explicit trust-boundary admissions, and maintainer response (`Issue #33639`).
+>
+> **Audited Upstream Snapshot:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) (`PR #42000`, `2026-11-24T08:41:04Z` / `2026-11-24 16:41:04 CST`)  
+> **Post-Audit Upstream Re-Audit:** [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`PR #42634`, `2026-11-25T06:49:37Z` / `2026-11-25 14:49:37 CST`, `259` commits ahead of `9d3195b4`)
 
 ---
 
@@ -234,39 +237,68 @@ Instead of addressing safety/architecture questions through formal advisories or
 
 ---
 
-## 5. Primary References
+## 5. Post-Audit Upstream Tracking (9d3195b4 to ca81b7b9)
+
+- **SQLite Thread Deletion ([`PR #42119`](https://github.com/pingdotgg/t3code/pull/42119) / [`91f0b32e`](https://github.com/pingdotgg/t3code/commit/91f0b32e2db2cb8abca5fdd33c33609a0f57b15e), `2026-11-25T05:58:26Z`, closed `Issue #17845`):** Adds an asynchronous `thread-content.purge` outbox effect (`ThreadDeletion.ts:239-244`) and `purgeThreads` (`ProjectionMaintenance.ts:294-520`) that deletes rows across `DELETED_THREAD_CONTENT_TABLES`, deletes non-head `orchestration_events`, and scrubs `thread.created`/`thread.deleted` titles to a tombstone while removing `guestShare`. Remaining limits in code: deleted source threads keep their history while any live run-forked child, pending `merge_back` transfer, or live parent subagent still references them (`lines 291-347`), tombstone metadata rows stay in SQLite, and reclaiming `.sqlite` file size still requires an offline `VACUUM`.
+- **Windows `t3-resource-monitor` Scope ([`PR #42577`](https://github.com/pingdotgg/t3code/pull/42577) / [`af276ccb`](https://github.com/pingdotgg/t3code/commit/af276ccbb26ef709c46bc46ec514f23b62c8e18c), `2026-11-25T04:09:53Z`):** Stops Windows `t3-resource-monitor` from reading memory and command lines of untracked processes (while still enumerating process PID/PPID/names via `CreateToolhelp32Snapshot`). Linux and macOS still use two-stage `ProcessesToUpdate::All` discovery, and `PR #41889` remains **Open**.
+- **Desktop Clerk Token File Permissions & Worktree Approvals:** [`PR #42413`](https://github.com/pingdotgg/t3code/pull/42413) (`c18d6c96`) enforces owner-only mode for desktop Clerk token files, and [`PR #42386`](https://github.com/pingdotgg/t3code/pull/42386) (`924d9c1f`) requires user approval before running worktree layout commands (distinct from `PR #41757` desktop preview sandboxing and `PR #42504` MCP app bridge handover).
+- **Unfixed at `ca81b7b9`:** `Issue #15353` (Claude Auto `git push --force`) remains **Open** and `ClaudeAdapterV2.ts` (`lines 3748-3749, 3911-3916, 13045-13050`) still short-circuits `!requiresClaudeApproval(context)` to `"allow"`. GitHub Security Advisories remain at **`0`**, `SECURITY.md` trust assumptions (`filesystem:read` whole OS account, iOS arbitrary loads, compromised relay signing key) remain unchanged, and `PR #30997` (`externalLauncher.ts`) plus `Issue #26489` remain **Open**.
+
+### 5.1 Untrusted Repository Execution & Ambient `SSH_AUTH_SOCK` / `GITHUB_TOKEN` Inheritance (`ca81b7b9`)
+
+Opening an untrusted repository in T3 Code executes repository-controlled hooks and submodules while child processes inherit ambient host environment credentials:
+
+1. **Recursive Submodule Execution on Worktree Creation ([`GitVcsDriverCore.ts#L6144-L6205`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205)):** When `.gitmodules` is present, creating a worktree automatically runs `git submodule update --init --recursive` without prompting, allowing a checked-out repo to specify arbitrary submodule URLs and remotes.
+2. **General Git Invocation Lacks Global `core.hooksPath=/dev/null` ([`VcsProcess.ts#L145-L157`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/VcsProcess.ts#L145-L157)):** While `VcsProcess.ts` clears six `GIT_*` repo-selector variables and passes `-c safe.bareRepository=explicit`, `maintenance.auto=false`, and `gc.auto=0`, it does **not** disable git hooks globally (`core.hooksPath=/dev/null` is confined to checkout-cache initialization in `worktreeCheckoutCache.ts`).
+3. **Live Claude `SessionStart` Repo Hooks ([`ClaudeAdapterV2.ts#L5982-L5985`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L5982-L5985)):** Only capability probes set `disableAllHooks: true`; live Claude sessions load `settingSources: ["user", "project", "local"]` (`line 2693`) and execute `.claude/settings.json` `SessionStart` hooks synchronously (`lines 5982-5985, 6057`).
+4. **Full Host `process.env` Blast Radius (`GITHUB_TOKEN` & `SSH_AUTH_SOCK`):** Child processes spawned via `processRunner.ts` / `HostProcess.ts` inherit full host `process.env`, including `GITHUB_TOKEN` and `SSH_AUTH_SOCK`. Even though repo children run under the local OS user account, passing `SSH_AUTH_SOCK` expands the blast radius from one checkout to **every remote repository and server accessible by that SSH agent key**.
+
+![GitVcsDriverCore.ts — Automatic recursive submodule init on worktree creation](../../evidence/extra/ca81b7b9-a6-submodule-recursive.png)
+
+---
+
+## 6. Primary References
 
 ### Local Checkout Files Inspected (`scratch/t3code/`)
 - `apps/web/src/hooks/useThreadActionMenu.ts` (lines 348–354)
-- `apps/server/src/orchestration-v2/ThreadDeletion.ts` (lines 56–67)
-- `apps/server/src/orchestration-v2/ProjectionMaintenance.ts` (lines 41–42, 121–139)
+- `apps/server/src/orchestration-v2/ThreadDeletion.ts` (lines 56–67, 239–244)
+- `apps/server/src/orchestration-v2/ProjectionMaintenance.ts` (lines 41–42, 121–139, 294–520)
 - `native/resource-monitor/src/main.rs` (lines 24, 445–449, 597–604)
 - `apps/server/src/resourceTelemetry/NativeTelemetryClient.ts` (lines 44, 264–280)
-- `apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts` (lines 3748–3749, 3793–3798, 3911–3916, 13040–13046)
-- `apps/server/src/telemetry/ProviderDimensions.ts` (lines 48–50)
+- `apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts` (lines 2693, 3748–3749, 3793–3798, 3911–3916, 5982–5985, 6057, 13045–13050 at `ca81b7b9`)
+- `apps/server/src/vcs/GitVcsDriverCore.ts` (lines 6144–6205 at `ca81b7b9`)
+- `apps/server/src/vcs/VcsProcess.ts` (lines 145–157, 260–268 at `ca81b7b9`)
+- `apps/server/src/telemetry/ProviderDimensions.ts` (lines 66–72 at `ca81b7b9`)
 - `apps/server/src/auth/ServerSecretStore.ts` (lines 185–188)
 - `apps/desktop/src/preview/WebviewPreferences.ts` (lines 2–3)
 - `apps/server/src/process/externalLauncher.ts` (lines 71, 243)
-- `SECURITY.md` (lines 37, 66–67, 84–88, 101–102)
+- `SECURITY.md` (lines 18–20, 37, 66–67, 84–88, 101–102)
 - `docs/internals/04_environment-auth.md`
-- `packages/contracts/src/settings.ts` (lines 1418–1420)
+- `packages/contracts/src/settings.ts` (lines 1424–1426 at `ca81b7b9`)
 
 ### Primary Issues, Pull Requests & Advisories Cited
+- Baseline & Post-Audit Upstream Snapshots: https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2 ; https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd
+- Untrusted Repo Execution & Ambient Env (`ca81b7b9`):
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/VcsProcess.ts#L145-L157
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L5982-L5985
 - Advisories: https://github.com/pingdotgg/t3code/security/advisories (`0` published advisories)
 - SQLite & Process Monitor & Power/Network (Part 2):
-  - https://github.com/pingdotgg/t3code/issues/17845 (fake thread deletion)
+  - https://github.com/pingdotgg/t3code/issues/17845 (fake thread deletion, closed `2026-11-25T05:58:29Z` by `PR #42119`)
+  - https://github.com/pingdotgg/t3code/pull/42119 ; https://github.com/pingdotgg/t3code/commit/91f0b32e2db2cb8abca5fdd33c33609a0f57b15e (Merged — async `thread-content.purge` cleanup)
   - https://github.com/pingdotgg/t3code/issues/11222 (`t3-resource-monitor` full-host scan)
-  - https://github.com/pingdotgg/t3code/pull/41889 (`resource-monitor` PR)
+  - https://github.com/pingdotgg/t3code/pull/41889 (`resource-monitor` PR — still Open)
+  - https://github.com/pingdotgg/t3code/pull/42577 ; https://github.com/pingdotgg/t3code/commit/af276ccbb26ef709c46bc46ec514f23b62c8e18c (Merged — Windows `resource-monitor` memory/cmd narrowing)
   - https://github.com/pingdotgg/t3code/pull/16950 / https://github.com/pingdotgg/t3code/pull/32657 (Google favicon leak)
   - https://github.com/pingdotgg/t3code/issues/36479 (mandatory `raw.githubusercontent.com` fetch)
   - https://github.com/pingdotgg/t3code/pull/21806 / https://github.com/pingdotgg/t3code/pull/27322 (WSL/Tailscale approval & policy bypasses)
   - https://github.com/pingdotgg/t3code/issues/7338 / https://github.com/pingdotgg/t3code/issues/24649 (`1.7x` Claude 5h quota burn)
   - https://github.com/pingdotgg/t3code/issues/3143 / https://github.com/pingdotgg/t3code/issues/40581 (`136x` power draw / `60W` GPU / `18W` after tab close)
 - Auto Force-Push & Telemetry Filter (Part 3):
-  - https://github.com/pingdotgg/t3code/issues/15353 (`git push --force origin main` silent acceptance)
+  - https://github.com/pingdotgg/t3code/issues/15353 (`git push --force origin main` silent acceptance — still Open)
   - https://github.com/pingdotgg/t3code/pull/15360, https://github.com/pingdotgg/t3code/pull/35207 (auto-closed), https://github.com/pingdotgg/t3code/pull/40692
   - https://github.com/pingdotgg/t3code/pull/41237 (Merged — `slopalytics.com` 21h filter drop)
 - Silent Security Fixes, Open/Closed PRs & Maintainer Response (Part 13):
-  - Merged security fixes: https://github.com/pingdotgg/t3code/pull/39483 (`ServerSecretStore.ts`), https://github.com/pingdotgg/t3code/pull/41757, https://github.com/pingdotgg/t3code/pull/42386, https://github.com/pingdotgg/t3code/pull/42504, https://github.com/pingdotgg/t3code/pull/22190, https://github.com/pingdotgg/t3code/pull/37823, https://github.com/pingdotgg/t3code/pull/39464, https://github.com/pingdotgg/t3code/pull/39480, https://github.com/pingdotgg/t3code/pull/40133, https://github.com/pingdotgg/t3code/pull/41756, https://github.com/pingdotgg/t3code/pull/41886
+  - Merged security fixes: https://github.com/pingdotgg/t3code/pull/39483 (`ServerSecretStore.ts`), https://github.com/pingdotgg/t3code/pull/41757, https://github.com/pingdotgg/t3code/pull/42386, https://github.com/pingdotgg/t3code/pull/42413, https://github.com/pingdotgg/t3code/pull/42504, https://github.com/pingdotgg/t3code/pull/22190, https://github.com/pingdotgg/t3code/pull/37823, https://github.com/pingdotgg/t3code/pull/39464, https://github.com/pingdotgg/t3code/pull/39480, https://github.com/pingdotgg/t3code/pull/40133, https://github.com/pingdotgg/t3code/pull/41756, https://github.com/pingdotgg/t3code/pull/41886
   - Open / unmerged security items: https://github.com/pingdotgg/t3code/pull/30997 (PowerShell `-ExecutionPolicy Bypass -EncodedCommand`), https://github.com/pingdotgg/t3code/issues/26489 (open local security defect), https://github.com/pingdotgg/t3code/pull/36216, https://github.com/pingdotgg/t3code/pull/23428, https://github.com/pingdotgg/t3code/pull/33144
   - Maintainer conduct & rejected community PRs: https://github.com/pingdotgg/t3code/issues/33639, https://github.com/pingdotgg/t3code/pull/41572 (closed context-meter UI PR)

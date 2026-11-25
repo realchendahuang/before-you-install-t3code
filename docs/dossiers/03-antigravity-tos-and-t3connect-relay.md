@@ -7,6 +7,9 @@
 > 2. Source-code spoofing across `antigravityUsageLimits.ts`, `antigravityAuthSupport.ts`, `AntigravityAcpSupport.ts`, and `cliproxyApi.ts` (`PR #33800`).
 > 3. Fresh-account bans (`Issue #41536`), maintainer denial & `schlessera` rebuttal (`Issue #40713`), and Theo's public contradictions regarding CLIProxyAPI.
 > 4. T3 Connect remote relay: zero E2E encryption (`Issue #32098`, `Nov 25` post `2125370330244128924`), default-off `requireConnectDeviceApproval` (`packages/contracts/src/settings.ts`), `ManagedEndpointProvider.ts`, `privacy-policy.astro` omissions, and the OVH Hillsboro Caddy/Unix-socket gateway (`PR #32945`).
+>
+> **Audited Upstream Snapshot:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) (`PR #42000`, `2026-11-24T08:41:04Z` / `2026-11-24 16:41:04 CST`)  
+> **Post-Audit Upstream Re-Audit:** [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`PR #42634`, `2026-11-25T06:49:37Z` / `2026-11-25 14:49:37 CST`, `259` commits ahead of `9d3195b4`)
 
 ---
 
@@ -183,21 +186,91 @@ Open pull request **`PR #32945`** (*"feat(connect): Labs beta links machines thr
 
 ---
 
-## 3. Primary References
+## 3. Post-Audit Upstream Tracking (9d3195b4 to ca81b7b9)
+
+Re-auditing `pingdotgg/t3code` from baseline [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) (`2026-11-24T08:41:04Z`) through `main` HEAD [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`2026-11-25T06:49:37Z`) shows upstream adapting to active Google account-verification triggers while leaving Antigravity spoofing and T3 Connect relay encryption gaps untouched.
+
+### 3.1 Antigravity: `PR #41210` Confirms Active Google Verification Triggers While Spoofing Remains
+
+- **Direct Verification Link on Failed Turns ([`PR #41210`](https://github.com/pingdotgg/t3code/pull/41210) / [`3e74a0aa`](https://github.com/pingdotgg/t3code/commit/3e74a0aac5c53459cc1d3d84eec915fa483f2836), `2026-11-25T05:23:36Z`):**
+  - `apps/server/src/provider/acp/AntigravityTurnOutcome.ts` (`lines 29–51, 157–197, 243–254`) now parses HTTP `403 PERMISSION_DENIED` JSON `google.rpc.ErrorInfo` responses from `cloudcode-pa.googleapis.com` carrying `reason: "VALIDATION_REQUIRED"` and `metadata.validation_url`, returning `"Verify your Google account, then retry this turn."` (`code: "VALIDATION_REQUIRED"`) and rendering a direct verification link in `apps/web/src/components/chat/TimelineWorkEntryRow.tsx`.
+  - **Evidentiary significance:** Building dedicated error parsing and UI verification links for `cloudcode-pa.googleapis.com` `VALIDATION_REQUIRED` `403` blocks directly confirms that Google's anti-abuse/verification triggers are firing on real Antigravity turns inside T3 Code—contradicting `docs/user/faq.md` assurances and `@theo`'s `"zero risk"` statement ([`2124264935505199294`](https://x.com/theo/status/2124264935505199294)).
+- **Companion Post-`9d3195b4` Antigravity Commits:**
+  - [**`PR #42545`**](https://github.com/pingdotgg/t3code/pull/42545) / [`4da8d19d`](https://github.com/pingdotgg/t3code/commit/4da8d19d08ed7e34fe2d5d66dae54b01eab122fc) (`2026-11-25T03:09:49Z`) changed `AGY_CLI_DISABLE_AUTO_UPDATE` in `antigravityAuthSupport.ts:238` from `"1"` to `"true"` after discovering `"1"` allowed the interactive CLI to keep self-updating.
+  - [**`PR #42339`**](https://github.com/pingdotgg/t3code/pull/42339) (`8261b232`) preserved `'Resets in'` timing text on quota failures; [**`PR #42475`**](https://github.com/pingdotgg/t3code/pull/42475) (`5d020754`) surfaced broken Antigravity setup errors during model refresh.
+- **Unchanged Spoofing & Scraping Paths at `ca81b7b9`:**
+  1. [`apps/server/src/provider/antigravityUsageLimits.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts) (`lines 20–26, 201, 238, 450–454`): still hardcodes `antigravity/hub/2.24.0`, extracts `"gemini:antigravity"` credentials from Windows `CredReadW` or OS keyring, and calls `${endpoint}/v1internal:${operation}` directly.
+  2. [`apps/server/src/provider/antigravityAuthSupport.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts) (`lines 230–238`): still injects fake `SSH_CONNECTION: baseEnv.SSH_CONNECTION || "127.0.0.1 0 127.0.0.1 0"` on `oauth-personal` (`Issue #41973` remains open).
+  3. [`apps/server/src/provider/acp/AntigravityAcpSupport.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityAcpSupport.ts) (`lines 76, 108–113`): still retains the `{ name: "zed", version: "0.0.0" }` fallback below `1.5.1`.
+  4. [`apps/server/src/usage/cliproxyApi.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts) (`lines 298–375`): still polls CLIProxyAPI hubs with spoofed `claude-code/2.1.273`, `grok-cli/1.0.77`, and `antigravityUserAgent` headers.
+
+### 3.2 T3 Connect Relay Status at `ca81b7b9`
+
+- **End-to-End Encryption (`Issue #32098`) Remains Absent:** `Issue #32098` remains closed without E2E encryption, `PR #32945` (OVH Hillsboro gateway) remains **Open**, and `SECURITY.md` (`lines 101–102`) continues to state that a compromised relay signing key can mint sessions for linked environments.
+- **`requireConnectDeviceApproval` Still Defaults to `false`:** In [`packages/contracts/src/settings.ts`](https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/settings.ts) (`lines 1424–1426` at `ca81b7b9`), `requireConnectDeviceApproval` remains `Schema.withDecodingDefault(Effect.succeed(false))`. [**`PR #42311`**](https://github.com/pingdotgg/t3code/pull/42311) ([`ece5f21b`](https://github.com/pingdotgg/t3code/commit/ece5f21b17077382c8d2eba1c28e75e898386dcd), `2026-11-24T18:44:13Z`) added UI notices when a new T3 Connect device signs in (`packages/client-runtime/src/connectDeviceNotices.ts`), but did not switch approval enforcement on by default.
+- **Hosted Web App & Privacy Policy:** While [**`PR #42356`**](https://github.com/pingdotgg/t3code/pull/42356) (`dc7b8802`) made server-opened browsers honor server opt-outs and stripped address/message/stack attributes from relay spans, `docs/user/telemetry.md` (`lines 91–92`) still confirms `app.t3.codes` has no tracing toggle, and `privacy-policy.astro` (`lines 24–25`) remains dated `2026-10-06`.
+
+### 3.3 LAN Cookie, Unbound Bearer, Replayable WS Ticket & IPv6 Loopback Bugs (`ca81b7b9`)
+
+Deep source verification against `pingdotgg/t3code` HEAD `ca81b7b9` confirms four live authentication, transport, and tunnel-availability defects alongside the previously fixed secret-store traversal (`PR #39483`; see [Dossier 02](./02-local-safety-and-security-audit.md)):
+
+1. **P1 — 30-Day Plaintext `--lan` Session Cookie & Missing-`Origin` Bypass ([`SessionStore.ts#L492-L493`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L492-L493), [`http.ts#L215-L221`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/http.ts#L215-L221), [`EnvironmentAuth.ts#L798-L806`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L798-L806)):**
+   - `DEFAULT_SESSION_TTL` is `Duration.days(30)` (`SessionStore.ts#L492`), and `SECURITY.md` defines a full-scope session as equivalent to the host OS user's terminal shell.
+   - [`PR #37042`](https://github.com/pingdotgg/t3code/pull/37042) (`39fcae52`, Nov 15) added the `Secure` attribute only when `url.protocol === "https:"`; under `t3 up --lan` plain HTTP, the cookie still crosses the LAN in cleartext without `Secure`.
+   - `isBrowserOriginAllowed` (`EnvironmentAuth.ts#L800-L819`) unconditionally returns `true` when `origin === undefined`, so anyone capturing one LAN packet can replay the cookie in a non-browser script without an `Origin` header for 30 days with zero UI errors.
+   ![http.ts — Plaintext --lan cookie still omits Secure after PR #37042](../../evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png)
+   ![EnvironmentAuth.ts — Missing Origin header unconditionally accepted](../../evidence/extra/ca81b7b9-a1-cookie-origin-bypass.png)
+   ![SessionStore.ts — 30-day session TTL and 5-minute WebSocket ticket TTL](../../evidence/extra/ca81b7b9-a1-a4-a5-ttl-and-wsclaims.png)
+
+2. **P2 — 30-Day Unbound Bearer Without DPoP, Missing `/logout` & Blocked Self-Revocation ([`EnvironmentAuth.ts#L1175-L1186`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1175-L1186), [`EnvironmentAuth.ts#L1506-L1511`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1506-L1511), [`environmentHttp.ts#L595-L679`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/environmentHttp.ts#L595-L679)):**
+   - `/oauth/token` drops TTL to 1 hour only when `proofKeyThumbprint` (DPoP) is present; otherwise it falls back to a 30-day unbound `bearer-access-token` that commonly lands in scripts or CI secrets.
+   - `environmentHttp.ts` exposes no logout route, and `revokeClientSession` blocks self-revocation (`ServerAuthForbiddenOperationError` / `current_session_revoke_not_allowed`), requiring a separate session or local CLI to revoke a token.
+   ![EnvironmentAuth.ts — Unbound 30-day Bearer fallback and blocked self-revocation](../../evidence/extra/ca81b7b9-a5-30d-bearer-and-no-self-revoke.png)
+
+3. **P2 — URL-Borne `?wsTicket=` Replayable for 5 Minutes ([`EnvironmentAuth.ts#L1553-L1622`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1553-L1622), [`SessionStore.ts#L1086-L1156`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L1086-L1156)):**
+   - WebSocket tickets carry a 5-minute TTL (`SessionStore.ts#L493`) and travel inside the `?wsTicket=` query string (`EnvironmentAuth.ts#L1588-L1591`), persisting in reverse-proxy logs and packet captures.
+   - `verifyWebSocketToken` checks signature, expiry, audience, and session revocation, with no single-use `jti` replay table. While DPoP-bound `rpc` tickets verify proof-of-possession, Bearer-issued `rpc` tickets and **all `media` route tickets** can be replayed repeatedly within 5 minutes.
+   ![EnvironmentAuth.ts — URL wsTicket transport and non-DPoP/media replay window](../../evidence/extra/ca81b7b9-a4-ws-ticket-reuse-url.png)
+
+4. **P2 — `::1` Misclassified by `NodeNet.isIPv4` Silently Kills Tailscale Serve / Connect ([`startupAccess.ts#L71-L108`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/startupAccess.ts#L71-L108)):**
+   - `startupAccess.ts#L39` explicitly permits `"::1"` in `isLoopbackHost`, but `isPrivateNetworkAddress` (`lines 71–74`) evaluates `NodeNet.isIPv4(ipv4)`. Pure IPv6 `::1` returns `false`, causing `closeNonPrivateNetworkConnections` to call `socket.destroy()` on valid local Tailscale Serve and T3 Connect tunnel connections.
+   ![startupAccess.ts — NodeNet.isIPv4 rejects IPv6 ::1 loopback sockets via socket.destroy()](../../evidence/extra/ca81b7b9-a3-ipv6-loopback-killed.png)
+
+---
+
+## 4. Primary References
 
 ### Local Checkout Files Inspected (`scratch/t3code/`)
 - `docs/user/faq.md` (Antigravity ToS safety guarantee)
 - `apps/server/src/provider/antigravityUsageLimits.ts` (lines 20–25, 201, 238, 450–454)
-- `apps/server/src/provider/antigravityAuthSupport.ts` (lines 230–237)
-- `apps/server/src/provider/acp/AntigravityAcpSupport.ts` (lines 75, 107–112)
+- `apps/server/src/provider/antigravityAuthSupport.ts` (lines 230–238)
+- `apps/server/src/provider/acp/AntigravityAcpSupport.ts` (lines 75–76, 107–113)
+- `apps/server/src/provider/acp/AntigravityTurnOutcome.ts` (lines 29–51, 157–197, 243–254)
 - `apps/server/src/usage/cliproxyApi.ts` (lines 298–375)
-- `packages/contracts/src/settings.ts` (lines 1418–1420)
+- `packages/contracts/src/settings.ts` (lines 1418–1420 at `9d3195b4`; lines 1424–1426 at `ca81b7b9`)
+- `apps/server/src/auth/SessionStore.ts` (lines 492–493, 513–521, 1086–1156 at `ca81b7b9`)
+- `apps/server/src/auth/http.ts` (lines 141, 215–221 at `ca81b7b9`)
+- `apps/server/src/auth/EnvironmentAuth.ts` (lines 798–819, 1175–1186, 1506–1511, 1553–1622 at `ca81b7b9`)
+- `packages/contracts/src/environmentHttp.ts` (lines 595–679 at `ca81b7b9`)
+- `apps/server/src/startupAccess.ts` (lines 39, 71–108 at `ca81b7b9`)
 - `infra/relay/src/environments/ManagedEndpointProvider.ts` (lines 1288–1296, 1365–1373, 1417–1423)
 - `apps/marketing/src/pages/privacy-policy.astro` (lines 24–25, 366, 395–398)
 - `docs/internals/06_t3-connect.md`
-- `SECURITY.md` (lines 101–102)
+- `SECURITY.md` (lines 18–20, 101–102)
 
 ### Primary Issues, Pull Requests, Policies & Posts Cited
+- Baseline & Post-Audit Upstream Snapshots: https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2 ; https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd
+- LAN Auth, Bearer, WebSocket & IPv6 Loopback (`ca81b7b9`):
+  - https://github.com/pingdotgg/t3code/pull/37042 (`Secure` flag added only for HTTPS URLs)
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L492-L493
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/http.ts#L215-L221
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L798-L806
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1175-L1186
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1506-L1511
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/environmentHttp.ts#L595-L679
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1553-L1622
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L1086-L1156
+  - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/startupAccess.ts#L71-L108
 - Google Policy Enforcement: https://discuss.ai.google.dev/t/185992
 - Antigravity Spoofing, Rebuttals & Bans (Part 4 + `PR #33800`):
   - https://github.com/pingdotgg/t3code/pull/26876 (Merged — `zed` spoof prior to Antigravity `1.5.1`)
@@ -205,9 +278,15 @@ Open pull request **`PR #32945`** (*"feat(connect): Labs beta links machines thr
   - https://github.com/pingdotgg/t3code/issues/40713 (maintainer denial & `schlessera` rebuttal)
   - https://github.com/pingdotgg/t3code/issues/41536 (`@Allmight97` 3-minute fresh-account disable)
   - https://github.com/pingdotgg/t3code/issues/41973 (cross-account leak linked to `SSH_CONNECTION` profile spoofing)
+  - https://github.com/pingdotgg/t3code/pull/41210 ; https://github.com/pingdotgg/t3code/commit/3e74a0aac5c53459cc1d3d84eec915fa483f2836 (Merged — direct Google account verification links on `VALIDATION_REQUIRED` `403` turns)
+  - https://github.com/pingdotgg/t3code/pull/42545 ; https://github.com/pingdotgg/t3code/commit/4da8d19d08ed7e34fe2d5d66dae54b01eab122fc (Merged — `AGY_CLI_DISABLE_AUTO_UPDATE: "true"`)
+  - https://github.com/pingdotgg/t3code/pull/42339 ; https://github.com/pingdotgg/t3code/pull/42475 (Post-audit Antigravity error/quota handling)
+  - https://x.com/theo/status/2124264935505199294 (`"zero risk to using Gemini subs in T3 Code"`)
 - T3 Connect Relay & E2E Encryption (Part 5):
   - https://github.com/pingdotgg/t3code/issues/32098 (`juliusmarminge` E2E exclusion confirmation)
   - https://github.com/pingdotgg/t3code/pull/36419 (Merged — opt-in `requireConnectDeviceApproval`)
+  - https://github.com/pingdotgg/t3code/pull/42311 ; https://github.com/pingdotgg/t3code/commit/ece5f21b17077382c8d2eba1c28e75e898386dcd (Merged — new T3 Connect device sign-in notices)
+  - https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/settings.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityTurnOutcome.ts
   - https://github.com/pingdotgg/t3code/discussions/21286, https://github.com/pingdotgg/t3code/discussions/37831
   - https://github.com/pingdotgg/t3code/pull/32945 (Open — `$25k/mo` Cloudflare bill, OVH Hillsboro `gw.t3coderelay.com` Caddy + Go Unix-socket gateway)
   - https://x.com/theo/status/2125370330244128924 (Nov 25 post stating E2E encryption is impossible)

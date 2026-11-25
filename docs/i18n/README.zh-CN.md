@@ -24,16 +24,41 @@
   <a href="./README.id.md">Bahasa Indonesia</a> ·
   <a href="./README.hi.md">हिन्दी</a>
 </p>
+<p align="center">
+  <a href="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml/badge.svg" alt="仓库校验 CI" /></a>
+  ·
+  <a href="https://realchendahuang.github.io/before-you-install-t3code/"><strong>交互式证据门户（GitHub Pages）</strong></a>
+  ·
+  <a href="../EVIDENCE-INDEX.md"><strong>108 张证据图总索引</strong></a>
+  ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>320 条一手来源总索引</strong></a>
+</p>
+<p align="center">
+  <strong>审计基线：</strong> <a href="https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2"><code>9d3195b4</code></a>（<code>#42000</code>）·
+  <strong>最新上游复核：</strong> <a href="https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd"><code>ca81b7b9</code></a>（<code>#42634</code>，11 月 25 日 14:49 CST · 新增 +259 个提交）
+</p>
 
 ![安装 T3 Code 之前 — 18 弹独立审计横幅](../../evidence/00-cover-zh.png)
 
-> **范围与核验说明**  
-> 本仓库是对 `pingdotgg/t3code`（T3 Code）的独立安全、遥测、社区治理与公开记录审计档案库，完整整理了 2026 年 11 月 24–25 日发布的 **2 篇导火索原帖与 18 弹有据可查的审计记录**，以及 **180+ 条权威一手原始链接**（GitHub Commit、PR、Issue、源码原文件、官方文档、USPTO TSDR 商标检索记录与存档公开推文）、六份深度技术卷宗（[`docs/dossiers/`](../dossiers/01-telemetry-and-gdpr-timeline.md)）和覆盖 **1,151 条连续 `@theo` X 推文**（2026 年 11 月 7–24 日）的量化数据集。仓库不包含任何短链跳转与私人联系方式。如发现事实更新、官方新合并修复或愿补充译本，欢迎附一手出处提交 Pull Request——详见 [`CONTRIBUTING.md`](../../CONTRIBUTING.md) 与 [`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md)。
+> **范围与核验原则**  
+> 本仓库是对 `pingdotgg/t3code`（T3 Code）的独立安全、遥测、社区治理与公开记录审计档案库，完整整理了 2026 年 11 月 24–25 日发布的 2 篇导火索原帖与 **18 弹有据可查的审计记录**，以及收录于 [`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md) 的 **320 条规范化一手原始链接**（`SRC-001`–`SRC-320`）、编目于 [`docs/EVIDENCE-INDEX.md`](../EVIDENCE-INDEX.md) 的 **108 张一手视觉凭证与取证图表**、六份深度技术卷宗（[`docs/dossiers/`](../dossiers/01-telemetry-and-gdpr-timeline.md)）、[交互式证据门户](https://realchendahuang.github.io/before-you-install-t3code/)，以及覆盖 **1,151 条连续 `@theo` X 推文**（2026 年 11 月 7–24 日）的量化数据集。本次代码库审计涵盖主基线 [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2)（`PR #42000`，`2026-11-24T08:41:04Z`），并持续追踪至 `main` 分支最新提交 [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd)（`PR #42634`，`2026-11-25T06:49:37Z` / `2026-11-25 14:49 CST`）。仓库不包含任何短链跳转与私人联系方式。如发现事实更新、官方新合并修复或愿补充译本，欢迎附一手出处提交 Pull Request——详见 [`CONTRIBUTING.md`](../../CONTRIBUTING.md)。
+
+---
+
+## TL;DR（30 秒结论速览）
+
+- **受影响对象：** `pingdotgg/t3code` 的本地桌面端、命令行（CLI）、托管网页端（`app.t3.codes`）、移动端以及 T3 Connect 用户——尤其是无管理员权限的桌面安装用户、使用自定义模型/代理端点的开发者、绑定 Antigravity/Gemini 订阅的账号、Claude Auto 模式使用者，以及关联了 GitHub 或 T3 Connect 会话的所有用户。
+- **3 项经源码核实的核心发现（对照 `9d3195b4` → `ca81b7b9`）：**
+  1. **默认开启遥测、启动无条件落盘身份与 GDPR 后自爆披露（[第 2 节](#2-遥测跨工具凭证读取与-gdpr-举报后通宵补丁第-171112-弹) · [卷宗 01](../dossiers/01-telemetry-and-gdpr-timeline.md)）：** 在 6 月 18 日前（[`commit 3bdaa6e1`](https://github.com/pingdotgg/t3code/commit/3bdaa6e10046945ccc08264d2d6f3b81775efcb3)）官网仍写着 `"No telemetry"` 的同时默认启用 PostHog 遥测（[PR #174](https://github.com/pingdotgg/t3code/pull/174)）；通过闭源网关 [`https://ingest.t3.codes/`](https://ingest.t3.codes/) 留存原始事件拷贝；GDPR 举报后的通宵 PR 自承 Axiom 每小时记录 **220 万条含 IP 与 UA 跨度**（[PR #42380](https://github.com/pingdotgg/t3code/pull/42380)）、`git.cwd` 路径泄露（[PR #42450](https://github.com/pingdotgg/t3code/pull/42450)）以及 Clerk 删号未删库（[PR #42285](https://github.com/pingdotgg/t3code/pull/42285)）。审计后虽合入撤除 `.codex`/`.claude.json` 读取（[PR #42299](https://github.com/pingdotgg/t3code/pull/42299)）、将自定义模型脱敏为 `custom:<driver>`（[PR #42465](https://github.com/pingdotgg/t3code/pull/42465)）以及响应 CI/`DO_NOT_TRACK`（[PR #42630](https://github.com/pingdotgg/t3code/pull/42630)、[PR #42629](https://github.com/pingdotgg/t3code/pull/42629)），**但截至 `ca81b7b9`，[`AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts)（`第 156 行`）仍会在检查退出开关前先向磁盘写入本地身份，[`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) 仍漏传 `OTEL_SDK_DISABLED`/`T3CODE_OTEL_SDK_DISABLED`，且软件内至今没有任何设置界面开关或 `app.t3.codes` 退出按钮。**
+  2. **本地安全缺口、环境 SSH/仓库钩子与 `0` 条安全公告（[第 3 节](#3-本地存储进程监控护栏绕过与未披露安全补丁第-2313-弹) · [卷宗 02](../dossiers/02-local-safety-and-security-audit.md)）：** Claude Auto 模式会在第 3 次重试时静默放行 `git push --force`（[Issue #15353](https://github.com/pingdotgg/t3code/issues/15353)，至今未修）；多个高危安全补丁在 [**0 条 GitHub 安全公告**](https://github.com/pingdotgg/t3code/security/advisories) 的情况下静默合入，而 [`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md) 将全盘 `filesystem:read` 与 iOS 明文 HTTP 划为“有意设计”；打开仓库时会自动递归初始化 `.gitmodules`（[`GitVcsDriverCore.ts#L6144-L6205`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205)）、[`VcsProcess.ts#L145-L157`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/VcsProcess.ts#L145-L157) 缺少全局 Git `core.hooksPath=/dev/null`，并带着完整继承的 `GITHUB_TOKEN` 与 `SSH_AUTH_SOCK` 直接运行 `.claude/settings.json` 中的 Claude `SessionStart` 钩子（[`ClaudeAdapterV2.ts#L5982-L5985`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L5982-L5985)）；尽管 [PR #42119](https://github.com/pingdotgg/t3code/pull/42119) 新增了异步线程清理（并关闭 `#17845`），但被分支/子代理引用的历史与墓碑行仍留在库中、缩减 `statev2.sqlite` 体积仍需离线执行 `VACUUM`；而 [PR #42577](https://github.com/pingdotgg/t3code/pull/42577) 仅收窄了 Windows 进程监控范围（Linux/macOS 仍保留 `ProcessesToUpdate::All`）。
+  3. **Antigravity 伪装、明文中继、局域网/鉴权缺陷与任意仓库点星（[第 4 节](#4-google-antigravity-服务条款风险与未加密的-t3-connect-中继第-45-弹) · [第 5.3 节](#53-t3-code-如何在-25-天内从-3-万星冲到-77-万星仅-129-名-watcher第-18-弹)）：** [`antigravityUsageLimits.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts) 仍在提取系统钥匙串/`CredReadW` 令牌并伪装 `antigravity/hub/2.24.0` 直连 `v1internal`（[PR #41210](https://github.com/pingdotgg/t3code/pull/41210) 甚至新增解析 Google `VALIDATION_REQUIRED` `403` 验证链接）；**T3 Connect** 依然 **零端到端加密**（[Issue #32098](https://github.com/pingdotgg/t3code/issues/32098)）且 `requireConnectDeviceApproval` 默认仍为 `false`（[`settings.ts`](https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/settings.ts)）；针对 `ca81b7b9` 的源码复核还证实四类鉴权/局域网/隧道缺陷：`t3 up --lan` 明文 HTTP 在 [PR #37042](https://github.com/pingdotgg/t3code/pull/37042) 之后仍下发不带 `Secure` 标记的 30 天 Shell Cookie（[`http.ts#L215-L221`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/http.ts#L215-L221)、[`SessionStore.ts#L492-L493`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L492-L493)），并放行缺少 `Origin` 头的请求（[`EnvironmentAuth.ts#L798-L806`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L798-L806)）；非 DPoP 的 `/oauth/token` 交换会签发无 `/logout` 路由、阻断自行吊销且不可吊销的 30 天未绑定 Bearer 令牌（[`EnvironmentAuth.ts#L1175-L1186`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1175-L1186)、[`EnvironmentAuth.ts#L1506-L1511`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1506-L1511)、[`environmentHttp.ts#L595-L679`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/environmentHttp.ts#L595-L679)）；URL 中 5 分钟有效的 `?wsTicket=` 凭据对 Bearer RPC 与全部 `media` 路由均缺乏防重放保护（[`EnvironmentAuth.ts#L1553-L1622`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1553-L1622)、[`SessionStore.ts#L1086-L1156`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L1086-L1156)）；以及 [`startupAccess.ts#L71-L108`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/startupAccess.ts#L71-L108) 通过 `NodeNet.isIPv4` 误判 `::1`，静默调用 `socket.destroy()` 掐断 Tailscale Serve / Connect 隧道套接字；同时 [`driver.ts#L60-L99`](https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts#L60-L99) 动用宿主机凭据对任意仓库点星的未锁定漏洞依然未修。
+- **立即采取行动：** 已经安装了 T3 Code？请直接跳至 [**可执行止损与修复操作手册**](#7-可执行止损与修复操作手册)（配置 `export DO_NOT_TRACK=1`、用 `/etc/hosts` 屏蔽 `ingest.t3.codes`、部署 Managed Policy、执行离线 `VACUUM` 并吊销 OAuth 与访问令牌）。
 
 ---
 
 ## 目录
 
+- [TL;DR（30 秒结论速览）](#tldr30-秒结论速览)
 - [结构化发现与风险矩阵](#结构化发现与风险矩阵)
 - [时间线总览（2023–2026）](#时间线总览20232026)
 - [1. 起因争议：“偷我们的代码”、Fork 命名威胁与双标](#1-起因争议偷我们的代码fork-命名威胁与双标)
@@ -49,15 +74,15 @@
 
 ## 结构化发现与风险矩阵
 
-| 审计域与对应弹数 | 风险 / 影响 | 核心查证发现与一手出处 | 状态（2026 年 11 月 25 日） | 深度卷宗 |
+| 审计域与对应弹数 | 风险 / 影响 | 核心查证发现与一手出处 | 状态（`ca81b7b9`，11 月 25 日 14:49 CST） | 深度卷宗 |
 |---|---|---|---|---|
-| **遥测与 GDPR 举报后隐私**<br>*（第 1、7、11、12 弹）* | **严重** | 官网挂着 `"No telemetry / Unless you opt in. Full stop."` 承诺期间默认启用 PostHog 分析（`PR #174`，`3bdaa6e1` 于 6 月 18 日删去承诺）；通过闭源网关 `ingest.t3.codes` 留存原始事件拷贝（`PR #15028`）；对 `~/.codex/auth.json` 与 `~/.claude.json` 做无盐 SHA-256 跨工具哈希归因（`Identify.ts`、`telemetryId.ts`）；连拒 4 个关闭开关 PR（`#13458`、`#16763`、`#21248`、`#27077`）；Managed Policy 存在盲区（`docs/user/telemetry.md`）；通宵 GDPR 补丁承认 Axiom 每小时留存 **220 万条含 IP 与 UA 追踪跨度** 达 30 天（`#42380`）、泄露 `git.cwd` 路径（`#42450`）、Win/Mac 无视关闭设置（`#42376`、`#42464`）、删号不删库（`#42285`）以及匿名反馈混包发送（`#42466`）。 | 仅合并部分通宵补丁；`AnalyticsService.ts` 启动仍生成磁盘身份；托管网页端仍无开关；`ingest.t3.codes` 仍保持闭源 | [**卷宗 01**](../dossiers/01-telemetry-and-gdpr-timeline.md) |
-| **本地安全与静默安全公告**<br>*（第 2、3、13 弹）* | **严重** | 侧边栏“永久删除”仅在 `statev2.sqlite` 追加 `"thread.deleted"`（膨胀至 25.9–41.6 GB，`#17845`）；`t3-resource-monitor` 扫描全机进程及命令行参数（`ProcessesToUpdate::All`，`#11222`，`PR #41889`）；Claude Auto 模式第 3 次尝试静默放行 `git push --force`（`#15353`，悬而未决 52–53+ 天）；仅用 21 小时就撤除 `slopalytics.com` 私有模型过滤（`#41237`）；虽然静默合入安全补丁（`#39483`、`#41757`、`#42386`、`#42504`），但 **GitHub 安全公告为 0**；Windows Base64 PowerShell 触发杀软报毒悬而未决（`#30997`）；`SECURITY.md` 声称全盘 `filesystem:read` 与 iOS 明文 HTTP 属有意设计。 | `#17845`、`#15353`、`#26489`、`#30997` 仍未解决/未关闭；已发布安全公告数为 `0` | [**卷宗 02**](../dossiers/02-local-safety-and-security-audit.md) |
-| **Antigravity ToS 与 T3 Connect 中继**<br>*（第 4、5 弹）* | **高** | `docs/user/faq.md` 担保符合 Google Antigravity 服务条款，但 `antigravityUsageLimits.ts` 提取系统钥匙串/Windows `CredReadW` 令牌、伪造 `antigravity/hub/2.24.0` 头并直连私有 `v1internal` 接口；`antigravityAuthSupport.ts` 注入假 `SSH_CONNECTION` 引发跨账号串号（`#41973`）；全新 20 美元账号 3 分钟封号（`#41536`）；`PR #33800` 原生接入伪造请求头的 `claude`/`xai`/`antigravity` CLIProxyAPI 轮询；T3 Connect **零端到端加密**，默认关闭 `requireConnectDeviceApproval`（`#36419`），并准备迁往自建 OVH Caddy TLS 终结网关（`PR #32945`）。 | Antigravity 伪装代码依然生效；T3 Connect 端到端加密被明确拒绝（`#32098`，11 月 25 日回复） | [**卷宗 03**](../dossiers/03-antigravity-tos-and-t3connect-relay.md) |
-| **商业账本、赞助商与 7.7 万星**<br>*（第 6、8、17、18 弹）* | **高** | 自掏 80 万美元以上做免费客户端（提及 T3 `162` 次，老付费产品 `0` 次）；以日跑 **31.7 万亿 token**（1,019 万美元/天）算力雷达换取 30 万美元以上 OpenAI 内测额度与投资人接洽；天使投资与 Vibe Kanban、Daytona 业务重叠；绑定赞助商（Clerk、Axiom、Vercel 排他条款）；Codex 0% 额度漏洞利用（`Endless` / `codex#45444`）；10 账号 `CLIProxyAPI` Gist（`555%` 额度）与 FAQ 封号警告双标；5 条 prompt / 发呆 30 秒弹窗动用主机凭据发 `PUT user/starred/...`（`#27832`、`#29922`、`#29987`），绕过 Macroscope 审查并放任 `driver.ts#L60-L99` 未锁死仓库名漏洞 19 天未修。 | `driver.ts` 任意点星漏洞与 `zhilsinger` 审查意见 19 天未修复；仓库达 7.7 万+ 星而 watcher 约 129 人 | [**卷宗 04**](../dossiers/04-business-ledger-sponsors-and-77k-stars.md) |
-| **治理、商标记录与历史言行**<br>*（导火索 1–2，第 9、10、15、16 弹）* | **中高** | 日均 500 commits / 700 agents / `yolo merges`，但 `CONTRIBUTING.md` 开篇劝退（`"here's my advice: Don't"`）、`.github/VOUCHED.td` 点名拉黑自动秒关、打出 `174` 个 `unwanted` 标签、砍掉 Plan mode（`#5551`、`#9190`、`#33131`）并在 `#33639` 辱骂用户；公开派 `@bot` 扒人 Fork（`@MiaAI_lab`）、号召 Community Notes 断人收益并挂自动拉黑脚本；威胁封号时 `T3 Code`/`T3 Tools`/`T3 Connect` **USPTO 注册商标为 0**（`PING LABS` `97294243` 已废弃；EquipmentShare `7795672` 已注册）；17 小时后事后合入 `PR #41898` 补写 `TRADEMARK.md`；2024–2026 惯常模式（`vsc-material-but-i-wont-sue-you`、印度开发者网暴事件、2 万美元 FFmpeg 悬赏、11 月 25 日凌晨 4 点发推威胁闭源后删推）。 | `CONTRIBUTING.md` / `.github/VOUCHED.td` 与 `TRADEMARK.md` 仍在 `main` 分支生效 | [**卷宗 05**](../dossiers/05-governance-trademark-and-history.md) |
-| **1,151 条推文量化数据集**<br>*（第 14 弹）* | **审计基线** | 11 月 7–24 日全量连续语料（`n = 1,151`，17.24 天，日均 66.8 条，回复占 75.6%，间隔中位数 2.7 分钟）：对 20 位大厂高管/员工/头部 KOL **粗口与人身攻击率为 0.0%**（严格首位 `@` 口径 `0/43`，致谢占 `32.6%`），对普通开发者 **敌意率达 8.0%**（`61/766`），在 25 小时中文二改风波窗口内直接人身攻击率 **暴涨 4.0 倍至 14.4%**（`19/132`）。 | 可复现正则统计审计及 4 张取证图表 | [**卷宗 06**](../dossiers/06-tweet-forensic-dataset-1151.md) |
-| **完整一手 URL 总目录** | **总索引** | 本主页、`canonical_refs.txt`、`tco_resolved.json`、`all_18_posts.txt` 与 `missing_posts_full.json` 全部权威 `https://` 链接交叉对照总表。 | 100% 规范化直链（零 `t.co` 短链） | [**来源总索引**](../COMPLETE-SOURCE-INDEX.md) |
+| **遥测与 GDPR 举报后隐私**<br>*（第 1、7、11、12 弹）* | **严重** | 官网挂着 `"No telemetry / Unless you opt in. Full stop."` 承诺期间默认启用 PostHog 分析（`PR #174`，`3bdaa6e1` 于 6 月 18 日删去承诺）；通过闭源网关 `ingest.t3.codes` 留存原始事件拷贝（`PR #15028`）；对 `~/.codex/auth.json` 与 `~/.claude.json` 做无盐 SHA-256 跨工具哈希归因（`Identify.ts`、`telemetryId.ts`）；连拒 4 个关闭开关 PR（`#13458`、`#16763`、`#21248`、`#27077`）；Managed Policy 存在盲区（`docs/user/telemetry.md`）；通宵 GDPR 补丁承认 Axiom 每小时留存 **220 万条含 IP 与 UA 追踪跨度** 达 30 天（`#42380`）、泄露 `git.cwd` 路径（`#42450`）、Win/Mac 无视关闭设置（`#42376`、`#42464`）、删号不删库（`#42285`）以及匿名反馈混包发送（`#42466`）。 | 审计后合并 [`#42299`](https://github.com/pingdotgg/t3code/pull/42299)（停止读取 `.codex`/`.claude.json`）、[`#42465`](https://github.com/pingdotgg/t3code/pull/42465)（`custom:<driver>`）、[`#42630`](https://github.com/pingdotgg/t3code/pull/42630)（CI 禁用）与 [`#42629`](https://github.com/pingdotgg/t3code/pull/42629)（`DO_NOT_TRACK`）；**截至 `ca81b7b9` 仍未修复：** `AnalyticsService.ts:156` 启动仍先写本地 ID 再校验开关、`DesktopShellEnvironment.ts` 仍漏传 `OTEL_SDK_DISABLED`/`T3CODE_OTEL_SDK_DISABLED`、`ingest.t3.codes` 仍保持闭源、设置 UI 与网页端仍无开关、移动端不受 Managed Policy 管控、`Publish agent activity` 仍无视关闭设置。 | [**卷宗 01**](../dossiers/01-telemetry-and-gdpr-timeline.md) |
+| **本地安全与静默安全公告**<br>*（第 2、3、13 弹）* | **严重** | 侧边栏“永久删除”仅在 `statev2.sqlite` 追加 `"thread.deleted"`（膨胀至 25.9–41.6 GB，`#17845`）；`t3-resource-monitor` 扫描全机进程及命令行参数（`ProcessesToUpdate::All`，`#11222`，`PR #41889`）；Claude Auto 模式第 3 次尝试静默放行 `git push --force`（`#15353`，悬而未决 52–53+ 天）；仅用 21 小时就撤除 `slopalytics.com` 私有模型过滤（`#41237`）；虽然静默合入安全补丁（`#39483`、`#41757`、`#42386`、`#42504`），但 **GitHub 安全公告为 0**；Windows Base64 PowerShell 触发杀软报毒悬而未决（`#30997`）；打开未受信任仓库时会自动递归执行 `git submodule update --init --recursive`（[`GitVcsDriverCore.ts#L6144-L6205`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205)）、[`VcsProcess.ts#L145-L157`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/VcsProcess.ts#L145-L157) 缺少全局 `core.hooksPath=/dev/null`，并带着完整继承的 `GITHUB_TOKEN` 与 `SSH_AUTH_SOCK` 直接触发 `.claude/settings.json` 的 `SessionStart` 钩子（[`ClaudeAdapterV2.ts#L5982-L5985`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L5982-L5985)）；`SECURITY.md` 声称全盘 `filesystem:read` 与 iOS 明文 HTTP 属有意设计。 | [`#42119`](https://github.com/pingdotgg/t3code/pull/42119) 新增异步 `thread-content.purge` 清理并关闭 `#17845`（仍保留活跃分支/回并/子代理关联的源线程历史及墓碑行，释放磁盘需离线 `VACUUM`）；[`#42577`](https://github.com/pingdotgg/t3code/pull/42577) 仅收窄 Windows 监控读取（Linux/macOS 仍用 `ProcessesToUpdate::All`，`#41889` 仍未合入）；**截至 `ca81b7b9` 仍未修复：** `#15353`、`#26489`、`#30997`、未受信任仓库钩子与 `SSH_AUTH_SOCK` 暴露风险、**`0` 条安全公告**与 `SECURITY.md` 边界声明。 | [**卷宗 02**](../dossiers/02-local-safety-and-security-audit.md) |
+| **Antigravity ToS 与 T3 Connect 中继**<br>*（第 4、5 弹）* | **高** | `docs/user/faq.md` 担保符合 Google Antigravity 服务条款，但 `antigravityUsageLimits.ts` 提取系统钥匙串/Windows `CredReadW` 令牌、伪造 `antigravity/hub/2.24.0` 头并直连私有 `v1internal` 接口；`antigravityAuthSupport.ts` 注入假 `SSH_CONNECTION` 引发跨账号串号（`#41973`）；全新 20 美元账号 3 分钟封号（`#41536`）；`PR #33800` 原生接入伪造请求头的 `claude`/`xai`/`antigravity` CLIProxyAPI 轮询；T3 Connect **零端到端加密**，默认关闭 `requireConnectDeviceApproval`（`#36419`），并准备迁往自建 OVH Caddy TLS 终结网关（`PR #32945`）；`ca81b7b9` 鉴权排查还暴露了四类缺陷：`t3 up --lan` 仍下发不带 `Secure` 的 30 天 Shell Cookie（[PR #37042](https://github.com/pingdotgg/t3code/pull/37042) 仅限 HTTPS，[`http.ts#L215-L221`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/http.ts#L215-L221)、[`SessionStore.ts#L492-L493`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L492-L493)）且放行缺失 `Origin` 的请求（[`EnvironmentAuth.ts#L798-L806`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L798-L806)）、非 DPoP `/oauth/token` 签发不可吊销的 30 天未绑定 Bearer 令牌（[`EnvironmentAuth.ts#L1175-L1186`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1175-L1186)、[`EnvironmentAuth.ts#L1506-L1511`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1506-L1511)、[`environmentHttp.ts#L595-L679`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/environmentHttp.ts#L595-L679)）、`?wsTicket=` 5 分钟令牌可重放（[`EnvironmentAuth.ts#L1553-L1622`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1553-L1622)、[`SessionStore.ts#L1086-L1156`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L1086-L1156)），以及 `isIPv4` 误判 `::1` 导致 `socket.destroy()` 掐断隧道（[`startupAccess.ts#L71-L108`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/startupAccess.ts#L71-L108)）。 | [`#41210`](https://github.com/pingdotgg/t3code/pull/41210) 新增 Google `VALIDATION_REQUIRED` `403` 账号验证链接解析（侧面印证触发风控核验）；[`#42311`](https://github.com/pingdotgg/t3code/pull/42311) 新增新设备登录通知；**截至 `ca81b7b9` 仍未修复：** Antigravity 伪装/钥匙串提取与 `cliproxyApi.ts` 仍在生效、**无 T3 Connect 端到端加密**（`#32098` / `#32945`），`requireConnectDeviceApproval` 默认仍为 `false`，另有局域网 Cookie / Bearer / WS 票据 / `::1` 鉴权与隧道缺陷。 | [**卷宗 03**](../dossiers/03-antigravity-tos-and-t3connect-relay.md) |
+| **商业账本、赞助商与 7.7 万星**<br>*（第 6、8、17、18 弹）* | **高** | 自掏 80 万美元以上做免费客户端（提及 T3 `162` 次，老付费产品 `0` 次）；以日跑 **31.7 万亿 token**（1,019 万美元/天）算力雷达换取 30 万美元以上 OpenAI 内测额度与投资人接洽；天使投资与 Vibe Kanban、Daytona 业务重叠；绑定赞助商（Clerk、Axiom、Vercel 排他条款）；Codex 0% 额度漏洞利用（`Endless` / `codex#45444`）；10 账号 `CLIProxyAPI` Gist（`555%` 额度）与 FAQ 封号警告双标；5 条 prompt / 发呆 30 秒弹窗动用主机凭据发 `PUT user/starred/...`（`#27832`、`#29922`、`#29987`），绕过 Macroscope 审查并放任 `driver.ts#L60-L99` 未锁死仓库名漏洞 19 天未修。 | `driver.ts#L60-L99` 任意点星漏洞与 `zhilsinger` 审查意见在 **`ca81b7b9` 仍未修复**；仓库达 7.7 万+ 星而 watcher 约 129 人。 | [**卷宗 04**](../dossiers/04-business-ledger-sponsors-and-77k-stars.md) |
+| **治理、商标记录与历史言行**<br>*（导火索 1–2，第 9、10、15、16 弹）* | **中高** | 日均 500 commits / 700 agents / `yolo merges`，但 `CONTRIBUTING.md` 开篇劝退（`"here's my advice: Don't"`）、`.github/VOUCHED.td` 点名拉黑自动秒关、打出 `174` 个 `unwanted` 标签、砍掉 Plan mode（`#5551`、`#9190`、`#33131`）并在 `#33639` 辱骂用户；公开派 `@bot` 扒人 Fork（`@MiaAI_lab`）、号召 Community Notes 断人收益并挂自动拉黑脚本；威胁封号时 `T3 Code`/`T3 Tools`/`T3 Connect` **USPTO 注册商标为 0**（`PING LABS` `97294243` 已废弃；EquipmentShare `7795672` 已注册）；17 小时后事后合入 `PR #41898` 补写 `TRADEMARK.md`；2024–2026 惯常模式（`vsc-material-but-i-wont-sue-you`、印度开发者网暴事件、2 万美元 FFmpeg 悬赏、11 月 25 日凌晨 4 点发推威胁闭源后删推）。 | `CONTRIBUTING.md` / `.github/VOUCHED.td` 与 `TRADEMARK.md` 仍在 `main` 分支（`ca81b7b9`）生效。 | [**卷宗 05**](../dossiers/05-governance-trademark-and-history.md) |
+| **1,151 条推文量化数据集**<br>*（第 14 弹）* | **审计基线** | 11 月 7–24 日全量连续语料（`n = 1,151`，17.24 天，日均 66.8 条，回复占 75.6%，间隔中位数 2.7 分钟）：对 20 位大厂高管/员工/头部 KOL **粗口与人身攻击率为 0.0%**（严格首位 `@` 口径 `0/43`，致谢占 `32.6%`），对普通开发者 **敌意率达 8.0%**（`61/766`），在 25 小时中文二改风波窗口内直接人身攻击率 **暴涨 4.0 倍至 14.4%**（`19/132`）。 | 可复现正则统计审计及 4 张取证图表。 | [**卷宗 06**](../dossiers/06-tweet-forensic-dataset-1151.md) |
+| **完整一手 URL 与视觉凭证目录** | **总索引** | 交叉索引 **320** 条规范化 `https://` 一手原始链接（`SRC-001`–`SRC-320`）与 **108** 张无损优化视觉凭证及取证图表（`EV-001`–`EV-108`）。 | 100% 规范化直链（零 `t.co` 短链；108/108 资产编目就绪）。 | [**来源总索引**](../COMPLETE-SOURCE-INDEX.md) · [**证据总索引**](../EVIDENCE-INDEX.md) |
 
 ---
 
@@ -86,6 +111,7 @@
 | **2026-11-24 17:04–21:21 CST** | 审计 **第 1–5 弹** 发布（第 1 弹突破 **181 万阅读**、6,640 收藏）。`18:39 CST`，`@theo` 辱骂中文技术推特为 `"the biggest fucking cesspit"`（`2125177503526588877`）；`19:13–19:36 CST` 声称 Managed Policy 可关闭全部遥测（`2125186071357251715`）。 | [第 1 弹](https://x.com/realchendahuang/status/2125153472450527440) → [第 5 弹](https://x.com/realchendahuang/status/2125218189596676555) |
 | **2026-11-24 夜间 – 2026-11-25 ~07:00 CST** | 正式欧盟 GDPR 举报递交；**6 小时通宵冲刺** 合并 `#42380`（220 万条/小时含 IP 跨度）、`#42285`/`#42430`（账号删除残留）、`#42376`/`#42464`（Win/Mac 无视关闭环境变量）、`#42450`（`git.cwd` 路径泄露，就在 Theo 否认收集路径 90 分钟后）、`#42459`/`#41859`（推送泄露）、`#42466`（匿名混包）、`#41757`/`#42386`/`#42504`（静默安全补丁）。黎明前 `@theo` 发推威胁闭源后又自行删推。 | [第 11 弹](https://x.com/realchendahuang/status/2125394810559426993) · [第 12 弹](https://x.com/realchendahuang/status/2125395501663281198) · [第 13 弹](https://x.com/realchendahuang/status/2125395980354994414) |
 | **2026-11-25 08:27–10:28 CST** | 审计 **第 6–18 弹** 发布，完整揭露商业账本、Managed Policy 盲区、`yolo merges`、`@bot` 扒代码、GDPR 后自爆细节、1,151 条推文数据集、USPTO 商标记录、赞助商利益绑定与 7.7 万星增长引擎。 | [第 6 弹](https://x.com/realchendahuang/status/2125385742243520653) → [第 18 弹](https://x.com/realchendahuang/status/2125416210120765799) |
+| **2026-11-25 截至 14:49 CST（`ca81b7b9`）** | 基线后上游追踪（`9d3195b4` 至 `ca81b7b9` 共 `+259` 个提交）核实已合入 `#42299`（停止读取 `.codex`/`.claude.json`）、`#42465`（`custom:<driver>`）、`#42577`（收窄 Windows 进程监控）、`#41210`（Antigravity `VALIDATION_REQUIRED` 验证链接）、`#42630`（CI 运行器默认禁用）、`#42629`（`DO_NOT_TRACK`）、`#42119`（异步线程清理并关闭 `#17845`，但仍保留分支/子代理关联历史与墓碑行且需离线 `VACUUM`）、`#42311`（新设备登录提醒）以及 `#42356`–`#42415` 收紧；同时确认 `AnalyticsService.ts:156`、`DesktopShellEnvironment.ts` 漏传 OTel 变量、闭源 `ingest.t3.codes`、`#15353`、`driver.ts#L60-L99`、`0` 条安全公告及缺失 T3 Connect 端到端加密等问题仍未修复。 | [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) · [PR #42629](https://github.com/pingdotgg/t3code/pull/42629) · [PR #42119](https://github.com/pingdotgg/t3code/pull/42119) · [PR #41210](https://github.com/pingdotgg/t3code/pull/41210) |
 
 ---
 
@@ -107,7 +133,7 @@
 
 ## 2. 遥测、跨工具凭证读取与 GDPR 举报后通宵补丁（第 1、7、11、12 弹）
 
-> **深度技术审计：** 完整源码行号对照、`FeatureUsage.ts` 埋点行为清单、`DesktopShellEnvironment.ts` 漏洞细节以及 11 月 23–25 日逐分钟时间线，请参阅 [**卷宗 01：遥测架构、跨工具身份缝合与 11 月 24–25 日 GDPR 通宵冲刺**](../dossiers/01-telemetry-and-gdpr-timeline.md)。
+> **深度技术审计：** 完整源码行号对照、`FeatureUsage.ts` 埋点行为清单、`DesktopShellEnvironment.ts` 漏洞细节、`9d3195b4` 之后的 diff 以及 11 月 23–25 日逐分钟时间线，请参阅 [**卷宗 01：遥测架构、跨工具身份缝合与 11 月 24–25 日 GDPR 通宵冲刺**](../dossiers/01-telemetry-and-gdpr-timeline.md)。
 
 ### 2.1 默认遥测、被删除的官网承诺与跨工具凭证哈希（`第 1 弹`）
 
@@ -120,7 +146,7 @@
 2026 年 10 月，`@theo` 合并 **PR #15028**，将每 10 秒打包一次的遥测上报（`FLUSH_INTERVAL_MS = 10_000`）切向 T3 自建的闭源网关 [`https://ingest.t3.codes/`](https://ingest.t3.codes/)。[`apps/server/src/telemetry/AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts) 第 1 行明确写着，该接收端点会在转发给 PostHog 之前自行留存每条原始事件的拷贝：
 
 ```ts
-// apps/server/src/telemetry/AnalyticsService.ts (lines 1, 71–74, 149)
+// apps/server/src/telemetry/AnalyticsService.ts (lines 1, 71–74, 149 at 9d3195b4; line 156 at ca81b7b9)
 // T3 ingest retains events and forwards to PostHog; UUIDs deduplicate retries there.
 ...
   posthogHost: Config.String("T3CODE_POSTHOG_HOST").pipe(
@@ -131,12 +157,12 @@
   const { distinctId, installId } = yield* getTelemetryIdentity;
 ```
 
-[`ProviderUsageAnalytics.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts) 与 `FeatureUsage.ts` 采集的字段涵盖服务商、模型选择（通过 `ProviderDimensions.ts` 将非内置列表的自定义模型与端点 ID 原样上传）、推理强度、权限模式、运行时长、输入/输出/缓存/推理 token 数量、子代理 token 消耗、本地项目与线程数、**35 种界面与命令操作**（`18` 个 `COMMAND_FEATURES` + `17` 个 `METHOD_FEATURES`）、操作系统详情、WSL 发行版及处理器架构。
+[`ProviderUsageAnalytics.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts) 与 `FeatureUsage.ts` 采集的字段涵盖服务商、模型选择（在 `9d3195b4` 时通过 [`ProviderDimensions.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderDimensions.ts) 将非内置列表的自定义模型与端点 ID 原样上传）、推理强度、权限模式、运行时长、输入/输出/缓存/推理 token 数量、子代理 token 消耗、本地项目与线程数、**35 种界面与命令操作**（`18` 个 `COMMAND_FEATURES` + `17` 个 `METHOD_FEATURES`）、操作系统详情、WSL 发行版及处理器架构。
 
-**2026 年 10 月 19 日**，`@theo` 紧接着合入 **PR #21506**，理由是现有统计无法知道同一个人拥有几台机器。[`apps/server/src/telemetry/Identify.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts) 开始静默读取用户家目录下其他 AI 编程工具的凭证文件——`~/.codex/auth.json` 与 `~/.claude.json`——解码其中的 OpenAI `user_id` JWT 声明与 Claude `oauthAccount.accountUuid`，连同已绑定的 T3 Connect 用户 ID 与设备 ID 一并做哈希上传：
+**2026 年 10 月 19 日**，`@theo` 紧接着合入 **PR #21506**，理由是现有统计无法知道同一个人拥有几台机器。在基线 `9d3195b4` 中，[`apps/server/src/telemetry/Identify.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts) 静默读取用户家目录下其他 AI 编程工具的凭证文件——`~/.codex/auth.json` 与 `~/.claude.json`——解码其中的 OpenAI `user_id` JWT 声明与 Claude `oauthAccount.accountUuid`，连同已绑定的 T3 Connect 用户 ID 与设备 ID 一并做哈希上传（后在 [`PR #42299`](https://github.com/pingdotgg/t3code/pull/42299) 中撤除了对 `.codex`/`.claude.json` 的读取，但 `connect` 与 `device` 的无盐归属哈希至今仍在保留）：
 
 ```ts
-// apps/server/src/telemetry/Identify.ts (lines 257–269, 321–338)
+// apps/server/src/telemetry/Identify.ts (lines 257–269, 321–338 at baseline 9d3195b4)
   const codexTokens = yield* readJsonIdentityFile(
     "codex",
     path.join(homeDirectory, ".codex", "auth.json"),
@@ -163,9 +189,14 @@
 
 面对社区质疑，维护团队屡次强硬压制。**6 月 23 日**，一名开发者开设 **Issue #1397** 请求增加设置开关；核心维护者 Julius 直接以 `not planned` 关帖，并表示：`We will not make this easier to opt out of, it is crucial for us to know how many users we have`。7 月，有用户在 **Issue #4123** 贴出官网历史归档截图质问违背“零遥测”承诺，`@theo` 的账号于 10 月 21 日借无关提交顺手关闭，遭群嘲后重开，又于 11 月 4 日悄然关死。9 月至 11 月期间，社区贡献者先后提交了 **4 个独立的关闭开关 PR**（`#13458`、`#16763`、`#21248`、`#27077`）。即便 `#27077` 经过实机验证、**147 项测试全部通过** 且获 Macroscope 批准，依然在 **11 月 17 日** 被打上 `unwanted` 标签强行关闭。
 
+<details>
+<summary>展开查看 2 张拒绝遥测退出开关凭证（Issue #1397 与 PR #27077）</summary>
+
 ![核心维护者 Julius 将 Issue #1397 标为 not planned 关闭，明确表示不会让关闭遥测变得更容易](../../evidence/04-issue1397-no-optout.png)
 
 ![PR #27077 尽管跑通 147 项测试且获 Macroscope 批准，仍被标为 unwanted 未合并关闭](../../evidence/extra/t3code-4-pr-27077-rejected.png)
+
+</details>
 
 ### 2.2 Managed Policy 与官方文档自相矛盾（`第 7 弹`）
 
@@ -174,28 +205,38 @@
 直接核对仓库内的 [`docs/user/managed-policy.md`](https://github.com/pingdotgg/t3code/blob/main/docs/user/managed-policy.md) 与 [`docs/user/telemetry.md`](https://github.com/pingdotgg/t3code/blob/main/docs/user/telemetry.md)，事实恰恰相反：
 1. **仅限管理员路径配置：** 桌面端依然没有任何设置界面开关。通过 Managed Policy 禁用遥测，必须依赖 MDM/组策略，或用管理员权限将 `policy.json` 写入受系统保护的路径（macOS 为 `/Library/Application Support/T3Code/policy.json`，Windows 为 `C:\Program Files\T3Code\policy.json` 或 `HKLM\SOFTWARE\Policies\T3Tools\T3Code`，Linux 为 `/etc/t3code/policy.json`）。
 2. **托管网页端（`app.t3.codes`）盲区：** `docs/user/telemetry.md` 明确承认浏览器网页版不读取服务端环境变量、无视 Managed Policy，在带追踪配置构建时会发送连接追踪，且 `"has no relay tracing toggle"`（没有中继追踪开关）。
-3. **移动端不受服务端策略控制：** 服务端环境变量与 Managed Policy `"do not disable mobile tracing"`（无法关闭移动端追踪）。
+3. **移动端不受服务端策略控制：** 服务端环境变量与 Managed Policy `"do not disable mobile tracing"`（通宵 `PR #42415` 虽为移动端增加了 **Send connection traces** 开关，但仍未解决服务端环境变量和 Managed Policy 无法禁用移动端追踪的问题）。
 4. **`Publish agent activity` 无视关闭开关：** 只要在主机端启用该选项，项目标题、线程标题、模型名称与实时活动状态就会发往 T3 Connect 中继——且 `"The telemetry opt-out does not disable it."`（此外，失败的 Axiom 追踪片段与移动端崩溃日志 `"can quote a value the app was handling"`，而 `Agent feedback` 还可附带高达 16 KB 的对话消息。）
 
 ![官方 docs/user/telemetry.md 确认托管网页端无开关、移动端不受 Managed Policy 控制，且发布代理活动状态无视遥测退出设置](../../evidence/05-telemetry-cant-disable.png)
 
+<details>
+<summary>展开查看 Managed Policy 管理员路径截图凭证（docs/user/managed-policy.md）</summary>
+
 ![官方 docs/user/managed-policy.md 列出 macOS、Windows 与 Linux 下需管理员权限的系统路径](../../evidence/extra/p5-4-doc-managed-policy-paths.png)
+
+</details>
 
 ### 2.3 11 月 25 日澄清长文两小时内遭逐条拆穿（`第 11 弹`）
 
 11 月 25 日上午，`@theo` 发布了一篇长文澄清（[`2125332390239494211`](https://x.com/theo/status/2125332390239494211)）并公开一份遥测导出的压缩包（[`t3code-telemetry-events-jsonl-a4896cdc.gz`](https://files.tslop.org/2026/11/t3code-telemetry-events-jsonl-a4896cdc.gz)），高调作出三项保证——随后还在回复中否认退出遥测后会在本地写入追踪文件（[`2125370330244128924`](https://x.com/theo/status/2125370330244128924)）（[第 11 弹](https://x.com/realchendahuang/status/2125394810559426993)）：
 
 - **“从未收集文件路径”：** 仅仅 90 分钟后，Julius 合并 **PR #42450**，承认此前通过中继下发的 webhook 任务会把完整执行追踪导出至 Axiom——其中包括携带 `git.cwd`（**工作区绝对路径、操作系统用户名与仓库名称**）的 Git 追踪跨度。
-- **“环境变量一直都能干净地关闭遥测”：** **PR #42376** 承认 Windows 桌面端从已有进程启动时会无视用户保存的 `T3CODE_TELEMETRY_ENABLED=false` 环境变量；**PR #42464** 则承认 macOS/Linux 首次启动时的中继追踪会在加载登录 shell 环境前完成初始化，导致整轮运行期间完全无视 `~/.zshrc` 中的关闭配置（`DesktopShellEnvironment.ts` 至今仍漏掉转发 `T3CODE_OTEL_SDK_DISABLED`）。
-- **“退出后不写任何追踪文件”与“Claude 哈希功能原本是坏的”：** [`AnalyticsService.ts#L152`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152)（第 149 行）至今仍在启动时无条件调用 `getTelemetryIdentity`，写入本地安装 ID 并读取/哈希 `~/.codex/auth.json` 与 `~/.claude.json`。与此同时，检查 `@theo` 公开的约 100MB 导出包（压缩后 `6,056,594` 字节，含 `95,789` 条事件）的 gzip 文件头即可发现，其原始文件名为发推前 20 分钟刚生成的 `events.clean.jsonl`——即便经过清洗，里面仍保留了 **264 条活生生的 Claude 账号记录**，在 10 月 20 日将 **4 台不同机器**（`installId`）精确关联到同一个 SHA-256 哈希，且原样暴露了未过滤的私有代理模型名（如 `vibeproxy/gpt-6-luna`、`muse-proxy-wonder-full`）。
+- **“环境变量一直都能干净地关闭遥测”：** **PR #42376** 承认 Windows 桌面端从已有进程启动时会无视用户保存的 `T3CODE_TELEMETRY_ENABLED=false` 环境变量；**PR #42464** 则承认 macOS/Linux 首次启动时的中继追踪会在加载登录 shell 环境前完成初始化，导致整轮运行期间完全无视 `~/.zshrc` 中的关闭配置。（截至 `ca81b7b9`，[`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) 依然漏掉转发 `T3CODE_OTEL_SDK_DISABLED` 与 `OTEL_SDK_DISABLED`。）
+- **“退出后不写任何追踪文件”与“Claude 哈希功能原本是坏的”：** [`AnalyticsService.ts#L152`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152)（`9d3195b4` 为第 149 行，`ca81b7b9` 为第 156 行）至今仍在启动时无条件调用 `getTelemetryIdentity`，在检查 `telemetryEnabled` 之前先将本地安装 ID 写入磁盘（`upsertAnonymousId`）。与此同时，检查 `@theo` 公开的约 100MB 导出包（压缩后 `6,056,594` 字节，含 `95,789` 条事件）的 gzip 文件头即可发现，其原始文件名为发推前 20 分钟刚生成的 `events.clean.jsonl`——即便经过清洗，里面仍保留了 **264 条活生生的 Claude 账号记录**，在 10 月 20 日将 **4 台不同机器**（`installId`）精确关联到同一个 SHA-256 哈希，且原样暴露了未过滤的私有代理模型名（`vibeproxy/gpt-6-luna`、`muse-proxy-wonder-full`）。
 
 ![PR #42450 确认此前由中继触发的运行会向 Axiom 导出包含用户名与仓库名的 git.cwd 绝对工作区路径](../../evidence/06-pr42450-absolute-path.jpg)
+
+<details>
+<summary>展开查看另外 3 张 11 月 25 日澄清与 100MB 导出包取证截图（PR #42376、PR #42464、events.clean.jsonl）</summary>
 
 ![PR #42376 承认 Windows 桌面端此前无视用户保存的 T3CODE_TELEMETRY_ENABLED=false 环境变量](../../evidence/extra/x-post11-2-pr42376-windows-optout.jpg)
 
 ![PR #42464 承认 macOS 首次启动时的中继追踪会在整次会话中无视 ~/.zshrc 关闭配置](../../evidence/extra/x-post11-3-pr42464-mac-shell-env.jpg)
 
 ![对 Theo 公开的 events.clean.jsonl 数据包取证，显示 264 条 Claude 记录将 4 台机器串号并漏出原始自定义代理模型名](../../evidence/extra/x-post11-4-dump-264-claude-records.jpg)
+
+</details>
 
 ### 2.4 GDPR 举报后 6 小时通宵大补丁（`第 12 弹`）
 
@@ -208,27 +249,51 @@
 
 ![PR #42380 披露中继追踪每小时向 Axiom 发送 220 万条把真实 IP 与 User-Agent 贴在 user.id 旁的日志并留存 30 天](../../evidence/08-pr42380-220w-ip-axiom.jpg)
 
+<details>
+<summary>展开查看另外 3 张 GDPR 举报后通宵自爆补丁截图（PR #42285、PR #42459、PR #42466）</summary>
+
 ![PR #42285 承认此前注销账号不会清除中继记录或活跃 Cloudflare 隧道，收到隐私删除请求只能手写 SQL 处理](../../evidence/09-pr42285-delete-account-leftover.jpg)
 
 ![PR #42459 承认 Android FCM 推送每次都将明文 Clerk user_id 发送给 Google](../../evidence/extra/x-post12-3-pr42459-android-fcm-leak.jpg)
 
 ![PR #42466 承认所谓匿名反馈与 installId 及主机指纹混在同一次 POST 中发送](../../evidence/extra/x-post12-4-pr42466-anonymous-batch.jpg)
 
+</details>
+
+### 2.5 审计后遥测与身份归因更新（`9d3195b4` → `ca81b7b9`）
+
+持续追踪上游 `pingdotgg/t3code` 至 `ca81b7b9`（`2026-11-25 14:49 CST`），证实官方合并了四项定向收窄遥测的提交，但核心遗留缺口依然存在：
+
+- **`9d3195b4` 之后已合入：**
+  - [**PR #42299**](https://github.com/pingdotgg/t3code/pull/42299)（[`84e4264b`](https://github.com/pingdotgg/t3code/commit/84e4264bb347e36e97f6c3bd95d666eecfa12e07)）：在 `Identify.ts` 中停止读取 `~/.codex/auth.json` 与 `~/.claude.json`（不过 `connect` 的 `CLOUD_LINKED_USER_ID` 与 `device` 的无盐 SHA-256 归属哈希依然保留）。
+  - [**PR #42465**](https://github.com/pingdotgg/t3code/pull/42465)（[`6b3899f2`](https://github.com/pingdotgg/t3code/commit/6b3899f224947178088ca97ec9907e681807f7da)）：修改 `ProviderDimensions.ts` 的 `modelLabel`（`第 66–72 行`），将非内置目录模型替换为 `custom:<driver>`（但官方目录/厂商模型即便走自定义端点依然会原样上报模型名）。
+  - [**PR #42630**](https://github.com/pingdotgg/t3code/pull/42630)（[`c925b9ab`](https://github.com/pingdotgg/t3code/commit/c925b9ab198099f67de862ed01701bd1d8809f2b)）：在 [`otelEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/otelEnvironment.ts)（`第 322–343 行`）新增覆盖 13 个 CI 环境变量的 `isCiEnvironment`，若无显式覆盖，则在 CI 环境默认关闭 `AnalyticsService`（`第 130 行`）与 `isRelayTracingEnabled`。
+  - [**PR #42629**](https://github.com/pingdotgg/t3code/pull/42629)（[`ef4a1643`](https://github.com/pingdotgg/t3code/commit/ef4a1643edf72ad119452c82b01c91adbf7b9e64)）：开始响应 `DO_NOT_TRACK`（`otelEnvironment.ts:346-347` 的 `isDoNotTrackSet`），同时作用于 `AnalyticsService.ts:137` 与 `isRelayTracingEnabled`（`otelEnvironment.ts:357`），并经由 [`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) 与 [`DesktopBackendConfiguration.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/backend/DesktopBackendConfiguration.ts) 向下透传（优先级高于 `T3CODE_TELEMETRY_ENABLED=true`）。
+  - 配套收紧 PR [**#42356**](https://github.com/pingdotgg/t3code/pull/42356)、[**#42394**](https://github.com/pingdotgg/t3code/pull/42394)、[**#42397**](https://github.com/pingdotgg/t3code/pull/42397)、[**#42398**](https://github.com/pingdotgg/t3code/pull/42398) 与 [**#42415**](https://github.com/pingdotgg/t3code/pull/42415) 分别收窄了服务端打开浏览器的追踪、移动端设备 ID/开关、MCP 错误枚举以及 `agent.feedback` 与 `installId` 的关联。
+- **截至 `ca81b7b9` 仍未修复：** [`AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts)（`第 156 行`，即基线 `9d3195b4` 第 149 行）仍会在校验 `telemetryEnabled` **之前**于启动时无条件执行 `getTelemetryIdentity`（`upsertAnonymousId`）；`DesktopShellEnvironment.ts` 依然遗漏转发 `OTEL_SDK_DISABLED` 与 `T3CODE_OTEL_SDK_DISABLED`；闭源 `ingest.t3.codes` 仍是默认接收端；桌面端设置 UI 开关与 `app.t3.codes` 退出按钮依旧为零；移动端仍不受 Managed Policy 约束；`Publish agent activity` 依然无视遥测退出设置；`privacy-policy.astro` 的生效日期依然停留在 `2026-10-06`。
+
 ---
 
 ## 3. 本地存储、进程监控、护栏绕过与未披露安全补丁（第 2、3、13 弹）
 
-> **深度技术审计：** 逐字 SQLite 裁剪查询、Rust `sysinfo` 调用细节、`ClaudeAdapterV2.ts` 权限放行代码行以及完整 `SECURITY.md` 边界分析，请参阅 [**卷宗 02：本地安全、静默代码执行绕过与未披露安全审计**](../dossiers/02-local-safety-and-security-audit.md)。
+> **深度技术审计：** 逐字 SQLite 裁剪查询、Rust `sysinfo` 调用细节、`ClaudeAdapterV2.ts` 权限放行代码行、`9d3195b4` 之后的 diff 以及完整 `SECURITY.md` 边界分析，请参阅 [**卷宗 02：本地安全、静默代码执行绕过与未披露安全审计**](../dossiers/02-local-safety-and-security-audit.md)。
 
 ### 3.1 SQLite 假删除与全机进程扫描（`第 2 弹`）
 
-用户在侧边栏删除对话线程时，确认弹窗（`useThreadActionMenu.ts`）承诺 `"This permanently clears conversation history for this thread."`（将永久清除该线程的对话历史）。而实际上，`ThreadDeletion.ts` 仅向 `statev2.sqlite` 追加一条 `"thread.deleted"` 事件，而 `ProjectionMaintenance.ts` 会豁免 `thread.created` 与流中最新事件（`MAX(newer.sequence)`），导致历史事件全数保留。用户反馈 `statev2.sqlite` 在三周内膨胀至 **25.9 GB**（90% 为“已删除”线程）、六周涨到 **41.6 GB**、七周达到 **33 GB**——**Issue #17845**（及 **#28903**）自 10 月 10 日以来始终未修（[第 2 弹](https://x.com/realchendahuang/status/2125160473176023486)）。
+用户在侧边栏删除对话线程时，确认弹窗（`useThreadActionMenu.ts`）承诺 `"This permanently clears conversation history for this thread."`（将永久清除该线程的对话历史）。在基线 `9d3195b4` 中，`ThreadDeletion.ts` 仅向 `statev2.sqlite` 追加一条 `"thread.deleted"` 事件，而 `ProjectionMaintenance.ts` 又豁免 `thread.created` 与流中最新事件（`MAX(newer.sequence)`），导致历史事件全数保留。用户反馈 `statev2.sqlite` 在三周内膨胀至 **25.9 GB**（90% 为“已删除”线程）、六周涨到 **41.6 GB**、七周达到 **33 GB**——**Issue #17845**（及 **#28903**）自 10 月 10 日以来长期未修（[第 2 弹](https://x.com/realchendahuang/status/2125160473176023486)）。
+
+11 月 25 日，[**PR #42119**](https://github.com/pingdotgg/t3code/pull/42119)（[`91f0b32e`](https://github.com/pingdotgg/t3code/commit/91f0b32e2db2cb8abca5fdd33c33609a0f57b15e)，`2026-11-25T05:58:26Z`）通过新增异步 `thread-content.purge` 清理队列（`ThreadDeletion.ts`、`ProjectionMaintenance.ts`）关闭了 **Issue #17845**。但在 `ca81b7b9` 复核显示：只要已删除的源线程仍被任何活跃分支（fork）、待处理 `merge_back` 或活跃父级子代理引用，其历史仍会继续保留；墓碑元数据行依然留在 SQLite 中；且要想真正缩减磁盘上的 `.sqlite` 文件体积，仍须由用户手动离线执行 `VACUUM`。
 
 ![Issue #17845 反馈被“永久删除”的线程仍留在 statev2.sqlite 中，导致磁盘膨胀数十 GB](../../evidence/10-issue17845-fake-delete.png)
 
-后台常驻 Rust 辅助进程 `t3-resource-monitor`（**Issue #11222**，`native/resource-monitor/src/main.rs` 调用 `ProcessesToUpdate::All` 与 `with_cmd(UpdateKind::Always)`）即便在诊断面板关闭时，依然每 5 秒扫描本机所有进程——在 Windows 上无视开关对 440 多个无关应用和游戏打开约 280–300 个持久句柄，而文档却宣称仅在存在活跃订阅者时采样。直到 **11 月 24 日**，**PR #41889** 才确认进程诊断一直在将 **完整进程命令行参数**（往往包含明文 API Key、数据库密码和鉴权令牌）录进实时遥测与历史快照。
+后台常驻 Rust 辅助进程 `t3-resource-monitor`（**Issue #11222**，`native/resource-monitor/src/main.rs` 调用 `ProcessesToUpdate::All` 与 `with_cmd(UpdateKind::Always)`）即便在诊断面板关闭时，依然每 5 秒扫描本机所有进程——在 Windows 上无视开关对 440 多个无关应用和游戏打开约 280–300 个持久句柄，而文档却宣称仅在存在活跃订阅者时采样。直到 **11 月 24 日**，**PR #41889** 才确认进程诊断一直在将 **完整进程命令行参数**（往往包含明文 API Key、数据库密码和鉴权令牌）录进实时遥测与历史快照。审计后合入的 [**PR #42577**](https://github.com/pingdotgg/t3code/pull/42577)（[`af276ccb`](https://github.com/pingdotgg/t3code/commit/af276ccbb26ef709c46bc46ec514f23b62c8e18c)，`2026-11-25T04:09:53Z`）虽停止在 Windows 上读取未追踪进程的内存与命令行，但 Linux 与 macOS 仍沿用两阶段 `ProcessesToUpdate::All` 全机扫描，且 `PR #41889` 仍未合并。
+
+<details>
+<summary>展开查看 Issue #11222 全机进程监控截图凭证</summary>
 
 ![Issue #11222 记录 t3-resource-monitor 扫描整台机器上的所有进程](../../evidence/extra/t3code-9-issue-11222-process-spy.png)
+
+</details>
 
 第 2 弹核实的其他本地缺陷还包括：
 - **内网主机名 Favicon 泄露：** 前端请求曾将企业内部主机名（如 `devbox.localdomain`）发往 Google favicon 接口（`PR #16950`、`PR #32657`）。
@@ -238,20 +303,28 @@
 
 ### 3.2 拖延 52 天的静默 `git push --force` vs. 21 小时撤除模型隐私过滤（`第 3 弹`）
 
-自 **10 月 3 日** 起——**Issue #15353** 悬而未决超过 **52–53 天**（[实测评论](https://github.com/pingdotgg/t3code/issues/15353#issuecomment-6889019695)）——Claude Auto 模式会静默放行高危命令（当 `requiresClaudeApproval` 返回 false 时，`ClaudeAdapterV2.ts` 直接短路放行 `"allow"`）。即便未配置任何自定义规则，在 Claude 安全分类器连续两次拦截 `git push --force origin main` 并在第三次转交人工审批时，T3 Code 仍在不弹任何界面提示的情况下静默替用户同意，并在日志里记为 `"source": "user_temporary"`。社区提交的两份修复 PR（`#15360`、`#35207`）被长期晾置直至机器人自动关闭，`#40692` 也一直处于待定状态（[第 3 弹](https://x.com/realchendahuang/status/2125201882687881378)）。
+自 **10 月 3 日** 起——且在 **`ca81b7b9` 依然未修**——**Issue #15353**（[实测评论](https://github.com/pingdotgg/t3code/issues/15353#issuecomment-6889019695)）显示 Claude Auto 模式会静默放行高危命令（当 `requiresClaudeApproval` 返回 false 时，`ClaudeAdapterV2.ts` 直接短路放行 `"allow"`）。即便未配置任何自定义规则，在 Claude 安全分类器连续两次拦截 `git push --force origin main` 并在第三次转交人工审批时，T3 Code 仍在不弹任何界面提示的情况下静默替用户同意，并在日志里记为 `"source": "user_temporary"`。社区提交的两份修复 PR（`#15360`、`#35207`）被长期晾置直至机器人自动关闭，`#40692` 也一直处于待定状态（[第 3 弹](https://x.com/realchendahuang/status/2125201882687881378)）。
 
 ![Issue #15353 挂满 52 天以上未修，显示 Claude Auto 模式在不弹任何提示的情况下静默放行 git push --force](../../evidence/11-issue15353-auto-force-push.png)
 
-形成鲜明对比的是 **11 月 22 日**：**Issue #40948** 反馈 `@theo` 的公开遥测榜单 [`https://slopalytics.com/`](https://slopalytics.com/)（[`t3-usage.json`](https://slopalytics.com/data/t3-usage.json)）没有显示新模型，原因是 `PR #29001` 曾用白名单限制上报范围。仅隔 **21 小时**，`@theo` 账号名下便合并 **PR #41237**，明文写明是 Theo 要求删除过滤——从此将 `ollama/acme-internal` 与企业 `acme-azure-deployment` 等私有模型名原样上报给统计后端。
+形成鲜明对比的是 **11 月 22 日**：**Issue #40948** 反馈 `@theo` 的公开遥测榜单 [`https://slopalytics.com/`](https://slopalytics.com/)（[`t3-usage.json`](https://slopalytics.com/data/t3-usage.json)）没有显示新模型，原因是 `PR #29001` 曾用白名单限制上报范围。仅隔 **21 小时**，`@theo` 账号名下便合并 **PR #41237**，明文写明是 Theo 要求删除过滤——从此将 `ollama/acme-internal` 与企业 `acme-azure-deployment` 等私有模型名原样上报给统计后端（后来 `PR #42465` 才将非内置目录模型脱敏为 `custom:<driver>`，但厂商目录内模型名在走自定义端点时仍会上报）。
+
+<details>
+<summary>展开查看 PR #41237 仅用 21 小时撤除过滤器的截图凭证（slopalytics.com）</summary>
 
 ![Issue #40948 提出仅 21 小时后便合并 PR #41237，撤除面向 slopalytics.com 的模型白名单过滤](../../evidence/extra/t3code-15-pr-41237-slophouse-drop-filter.png)
 
+</details>
+
 ### 3.3 零条安全公告、静默高危补丁与 `SECURITY.md`（`第 13 弹`）
 
-截至 11 月 25 日，`pingdotgg/t3code` 的 [GitHub Security Advisories](https://github.com/pingdotgg/t3code/security/advisories) 页面依然只有 **0 条已发布安全公告**（[第 13 弹](https://x.com/realchendahuang/status/2125395980354994414)）。但维护者实际上在未通知任何老用户的情况下静默合并了一系列高危修复：
-- **已合入的静默安全修复：** `PR #39483`（设备审批前经由中继 `jti`/`nonce` 触发 `ServerSecretStore` 路径穿越）、`PR #41756`（企业 GitHub/GitLab 令牌跨域名泄露）、`PR #41886`、`PR #22190`、`PR #37823`、`PR #39464`、`PR #39480`、`PR #40133`、`PR #41757` 与 `PR #42386`（桌面内置浏览器预览页未开沙箱与弹窗隔离），以及 `PR #42504`（约 3,000 行大补丁，终于为陌生仓库配置增加确认弹窗——此前打开陌生仓库配置可免审批直接在本地执行命令）。
-- **未解决 / 仍处于打开状态的安全议题：** `Issue #26489`（外部路径穿越/符号链接风险）、`PR #36216`、`PR #23428`、`PR #33144` 以及 `PR #30997`（Windows 启动器 `externalLauncher.ts` 执行 `powershell.exe -ExecutionPolicy Bypass -EncodedCommand <base64>` 触发 AVG/Avast 报毒 `IDP.HELU.PSE96`）。
-- **匆忙补写的 [`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md)（`PR #38812`、`PR #41942`）：** 将读取工作区之外的全盘文件（`filesystem:read`）、iOS/局域网明文 HTTP 传输，以及中继签名密钥泄露即可完全接管机器，全部定性为**有意为之的设计边界**而非漏洞，同时 [`https://ingest.t3.codes/`](https://ingest.t3.codes/) 至今拒绝开源（`2125370330244128924`）。
+截至 11 月 25 日（`ca81b7b9`），`pingdotgg/t3code` 的 [GitHub Security Advisories](https://github.com/pingdotgg/t3code/security/advisories) 页面依然只有 **0 条已发布安全公告**（[第 13 弹](https://x.com/realchendahuang/status/2125395980354994414)）。但维护者实际上在未通知任何老用户的情况下静默合并了一系列高危修复：
+- **已合入的静默安全修复：** `PR #39483`（设备审批前经由中继 `jti`/`nonce` 触发 `ServerSecretStore` 路径穿越）、`PR #41756`（企业 GitHub/GitLab 令牌跨域名泄露）、`PR #41886`、`PR #22190`、`PR #37823`、`PR #39464`、`PR #39480`、`PR #40133`、`PR #41757` 与 `PR #42386`（桌面内置浏览器预览页未开沙箱隔离 / worktree 布局命令确认）、[`PR #42413`](https://github.com/pingdotgg/t3code/pull/42413)（收紧桌面端 Clerk 令牌文件仅限所有者读写权限），以及 `PR #42504`（约 3,000 行大补丁，终于为陌生仓库配置增加确认弹窗——此前打开陌生仓库配置可免审批直接在本地执行命令）。
+- **截至 `ca81b7b9` 仍未解决 / 仍处于打开状态：** `Issue #26489`（外部路径穿越/符号链接风险）、`PR #36216`、`PR #23428`、`PR #33144`、`PR #30997`（Windows 启动器 `externalLauncher.ts` 执行 `powershell.exe -ExecutionPolicy Bypass -EncodedCommand <base64>` 触发 AVG/Avast 报毒 `IDP.HELU.PSE96`），以及未受信任仓库执行风险（[`GitVcsDriverCore.ts#L6144-L6205`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205) 自动递归执行 `.gitmodules` 初始化、[`VcsProcess.ts#L145-L157`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/VcsProcess.ts#L145-L157) 缺少全局 `core.hooksPath=/dev/null`，以及 [`ClaudeAdapterV2.ts#L5982-L5985`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L5982-L5985) 带着完整继承的 `GITHUB_TOKEN` 与 `SSH_AUTH_SOCK` 运行 `.claude/settings.json` 中的 `SessionStart` 钩子）。
+- **匆忙补写的 [`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md)（`PR #38812`、`PR #41942`）：** 至今仍将读取工作区之外的全盘文件（`filesystem:read`）、iOS/局域网明文 HTTP 传输，以及中继签名密钥泄露即可完全接管机器，全部定性为**有意为之的设计边界**而非漏洞，同时 [`https://ingest.t3.codes/`](https://ingest.t3.codes/) 依然保持闭源（`2125370330244128924`）。
+
+<details>
+<summary>展开查看 3 张静默安全修补与 SECURITY.md 截图凭证（PR #39483、PR #30997、SECURITY.md）</summary>
 
 ![PR #39483 在未发布任何安全公告的情况下静默修复 ServerSecretStore 路径穿越漏洞](../../evidence/extra/t3code-13-pr-39483-secret-traversal.png)
 
@@ -259,11 +332,13 @@
 
 ![SECURITY.md 明确将全盘读取、iOS 任意 HTTP 与中继密钥失守接管机器划为有意设计边界](../../evidence/extra/x-post05-4-security-md-intended.jpg)
 
+</details>
+
 ---
 
 ## 4. Google Antigravity 服务条款风险与未加密的 T3 Connect 中继（第 4、5 弹）
 
-> **深度技术审计：** 完整 `cliproxyApi.ts` 请求头映射（`PR #33800`）、`AntigravityAcpSupport.ts`、`contracts/src/settings.ts` 与 `ManagedEndpointProvider.ts` 源码行号，请参阅 [**卷宗 03：Google Antigravity 条款伪装、`PR #33800` 与 T3 Connect 中继架构**](../dossiers/03-antigravity-tos-and-t3connect-relay.md)。
+> **深度技术审计：** 完整 `cliproxyApi.ts` 请求头映射（`PR #33800`）、`AntigravityAcpSupport.ts`、`AntigravityTurnOutcome.ts`、`contracts/src/settings.ts` 与 `ManagedEndpointProvider.ts` 源码行号，请参阅 [**卷宗 03：Google Antigravity 条款伪装、`PR #33800` 与 T3 Connect 中继架构**](../dossiers/03-antigravity-tos-and-t3connect-relay.md)。
 
 ### 4.1 Google Antigravity 请求头伪装、假 `SSH_CONNECTION` 与 3 分钟封号（`第 4 弹`）
 
@@ -283,6 +358,7 @@ HttpClientRequest.post(`${endpoint}/v1internal:${operation}`).pipe(
     Authorization: `Bearer ${accessToken}`,
     "User-Agent": antigravityUserAgent(platform, architecture),
   }),
+);
 ```
 
 2. **注入假 `SSH_CONNECTION` 引发账号串号（[`antigravityAuthSupport.ts#L230-L236`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts#L230-L236)）：** 由于 Google CLI 将单次登录隔离在系统钥匙串内，T3 故意注入伪造的 `SSH_CONNECTION` 环境变量诱骗 CLI 将明文令牌落盘到本地目录。11 月 24 日 Google 更新 CLI 移除该降级路径后，**Issue #41973** 实测确认发送给账号 A 的提示词在无任何提示的情况下静默路由到了账号 B：
@@ -298,9 +374,13 @@ GEMINI_HOME: profile.geminiHome,
 AGY_ACP_FORCE_FILE_STORAGE: "1",
 ```
 
-3. **全新账号 3 分钟封号（`Issue #41536`）与客户端冒充（`PR #26876`）：** 11 月 23 日，**Issue #41536** 记录了一名刚购买 `$20` Google AI 订阅、**全程未使用任何代理**——仅在 T3 Code 内使用托管 Antigravity 的新账号——在配置完 **仅 3 分钟、发出第一条消息时即遭封禁**（Google 对个人账号仅提供一次申诉机会，但维护者直接将其标为重复问题关闭，未添加任何警告）。更早之前，`@theo` 曾亲自合并 **PR #26876**，将 T3 Code 伪装成 `"zed"`（`AntigravityAcpSupport.ts`）以绕过模型白名单限制。此外，尽管 `@theo` 在 11 月 23 日画了一张 `T3 Code -> Antigravity binary ✅` 示意图（[`2124665075638411641`](https://x.com/theo/status/2124665075638411641)）并在用户 `@Only_21Mil` 第二个 Google AI Ultra 账号被封时甩锅给 CLIProxy（[`2124703048140517397`](https://x.com/theo/status/2124703048140517397)），仓库已合并的 [**PR #33800**](https://github.com/pingdotgg/t3code/pull/33800) 本身就通过 [`cliproxyApi.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts) 原生接入了带伪造 `claude-code/2.1.273`、`grok-cli/1.0.77` 与 `antigravityUserAgent` 请求头的 CLIProxyAPI 中心轮询。
+3. **全新账号 3 分钟封号（`Issue #41536`）、客户端冒充（`PR #26876`）与审计后核验触发（`PR #41210`）：** 11 月 23 日，**Issue #41536** 记录了一名刚购买 `$20` Google AI 订阅、**全程未使用任何代理**——仅在 T3 Code 内使用托管 Antigravity 的新账号——在配置完 **仅 3 分钟、发出第一条消息时即遭封禁**（Google 对个人账号仅提供一次申诉机会，但维护者直接将其标为重复问题关闭，未添加任何警告）。更早之前，`@theo` 曾亲自合并 **PR #26876**，将 T3 Code 伪装成 `"zed"`（[`AntigravityAcpSupport.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityAcpSupport.ts)）以绕过模型白名单限制。此外，尽管 `@theo` 在 11 月 23 日画了一张 `T3 Code -> Antigravity binary ✅` 示意图（[`2124665075638411641`](https://x.com/theo/status/2124665075638411641)）并在用户 `@Only_21Mil` 第二个 Google AI Ultra 账号被封时甩锅给 CLIProxy（[`2124703048140517397`](https://x.com/theo/status/2124703048140517397)），仓库已合并的 [**PR #33800**](https://github.com/pingdotgg/t3code/pull/33800) 本身就通过 [`cliproxyApi.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts) 原生接入了带伪造 `claude-code/2.1.273`、`grok-cli/1.0.77` 与 `antigravityUserAgent` 请求头的 CLIProxyAPI 中心轮询。
+   - **审计后状态（`ca81b7b9`）：** [**PR #41210**](https://github.com/pingdotgg/t3code/pull/41210)（[`3e74a0aa`](https://github.com/pingdotgg/t3code/commit/3e74a0aac5c53459cc1d3d84eec915fa483f2836)，`2026-11-25T05:23:36Z`）在 [`AntigravityTurnOutcome.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityTurnOutcome.ts) 中新增对 `cloudcode-pa.googleapis.com` 返回 `403 PERMISSION_DENIED`（`VALIDATION_REQUIRED`）响应的解析，以在界面中直接渲染 Google 账号验证链接——反向印证了 Google 正在主动触发账号核验风控；同时 [**PR #42545**](https://github.com/pingdotgg/t3code/pull/42545)（[`4da8d19d`](https://github.com/pingdotgg/t3code/commit/4da8d19d08ed7e34fe2d5d66dae54b01eab122fc)）修复了 `AGY_CLI_DISABLE_AUTO_UPDATE: "true"`（配套还有 [`#42339`](https://github.com/pingdotgg/t3code/pull/42339) 与 [`#42475`](https://github.com/pingdotgg/t3code/pull/42475)）。上述全部四条伪装与抓取链路——[`antigravityUsageLimits.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts)、[`antigravityAuthSupport.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts)、`AntigravityAcpSupport.ts` 与 `cliproxyApi.ts`——在 `ca81b7b9` 仍原封不动处于激活状态。
 
 ![antigravityUsageLimits.ts 硬编码伪造 Google 客户端请求头并直连未公开的 v1internal 后端](../../evidence/12-antigravity-v1internal-spoof.png)
+
+<details>
+<summary>展开查看另外 3 张 Antigravity 伪装与封号截图凭证（SSH_CONNECTION、Issue #41536、PR #33800）</summary>
 
 ![antigravityAuthSupport.ts 注入假 SSH_CONNECTION 环境变量绕过系统钥匙串存储](../../evidence/13-antigravity-ssh-spoof.png)
 
@@ -308,17 +388,24 @@ AGY_ACP_FORCE_FILE_STORAGE: "1",
 
 ![PR #33800 将针对 Antigravity、xAI 与 Claude 的 CLIProxyAPI 轮询直接集成进 T3 Code](../../evidence/extra/p2-2-pr33800-cliproxy-agy.png)
 
+</details>
+
 ### 4.2 T3 Connect：零端到端加密与 OVH TLS 终结网关（`第 5 弹`）
 
 **T3 Connect 全程没有任何端到端加密——用户的每条提示词、源代码文件与终端输出在技术上均对 T3 明文可见**（[第 5 弹](https://x.com/realchendahuang/status/2125218189596676555)）。现行方案由 [`ManagedEndpointProvider.ts`](https://github.com/pingdotgg/t3code/blob/main/infra/relay/src/environments/ManagedEndpointProvider.ts) 在 T3 自有的 Cloudflare 账号下创建 Cloudflare Tunnel 与 DNS 记录（`06_t3-connect.md`）。TLS 在 Cloudflare 边缘即被解包，载荷完全未加密；只需在 Cloudflare 后台挂一条 Workers Route 即可抓取全部流量，无需修改任何开源代码，客户端也不会收到任何告警。
 
-新设备审批（[`PR #36419`](https://github.com/pingdotgg/t3code/pull/36419) 加入的 `requireConnectDeviceApproval`）默认设为 **`false`**。正如 [`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md) 所承认，中继签名密钥一旦泄露或云端账号被盗，攻击者便可直接向已绑定机器签发会话——等同于直接获得本地 shell 权限。当 **Issue #32098** 要求引入双向认证与端到端加密时，一名维护者以“完整端到端加密改动过大”为由关帖；社区讨论 `#21286` 与 `#37831` 至今无人答复；11 月 25 日 `@theo` 更是直接宣称端到端加密根本不可能做到（`2125370330244128924`）。
+新设备审批（[`PR #36419`](https://github.com/pingdotgg/t3code/pull/36419) 加入的 `requireConnectDeviceApproval`）在 [`packages/contracts/src/settings.ts`](https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/settings.ts)（`ca81b7b9` 第 1424–1426 行）中默认仍为 **`false`**——即便审计后的 [**PR #42311**](https://github.com/pingdotgg/t3code/pull/42311)（[`ece5f21b`](https://github.com/pingdotgg/t3code/commit/ece5f21b17077382c8d2eba1c28e75e898386dcd)）仅增加了新设备登录提醒通知。正如 [`SECURITY.md`](https://github.com/pingdotgg/t3code/blob/main/SECURITY.md) 所承认，中继签名密钥一旦泄露或云端账号被盗，攻击者便可直接向已绑定机器签发会话——等同于直接获得本地 shell 权限。与此同时，`ca81b7b9` 的源码复核（[卷宗 03](../dossiers/03-antigravity-tos-and-t3connect-relay.md)）确认了另外四类鉴权/局域网/隧道缺陷：`t3 up --lan` 在 [PR #37042](https://github.com/pingdotgg/t3code/pull/37042) 之后仍会下发不带 `Secure` 标记的 30 天 Shell Cookie（[`http.ts#L215-L221`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/http.ts#L215-L221)、[`SessionStore.ts#L492-L493`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L492-L493)），并接受省略 `Origin` 头的请求（[`EnvironmentAuth.ts#L798-L806`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L798-L806)）；非 DPoP 的 `/oauth/token` 交换会签发无 `/logout` 路由、阻断自行吊销且不可吊销的 30 天未绑定 Bearer 令牌（[`EnvironmentAuth.ts#L1175-L1186`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1175-L1186)、[`EnvironmentAuth.ts#L1506-L1511`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1506-L1511)、[`environmentHttp.ts#L595-L679`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/environmentHttp.ts#L595-L679)）；5 分钟有效的 `?wsTicket=` 查询令牌对 Bearer RPC 与全部 `media` 路由均缺乏防重放保护（[`EnvironmentAuth.ts#L1553-L1622`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1553-L1622)、[`SessionStore.ts#L1086-L1156`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L1086-L1156)）；`startupAccess.ts` 又通过 `NodeNet.isIPv4` 误判 `::1`，静默对 Tailscale Serve / Connect 隧道调用 `socket.destroy()`（[`startupAccess.ts#L71-L108`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/startupAccess.ts#L71-L108)）。当 **Issue #32098** 要求引入双向认证与端到端加密时，一名维护者以“完整端到端加密改动过大”为由关帖；社区讨论 `#21286` 与 `#37831` 至今无人答复；11 月 25 日 `@theo` 更是直接宣称端到端加密根本不可能做到（`2125370330244128924`）。
 
 由于 Cloudflare Tunnel 费用飙升至 **每月 25,000 美元**，`@theo` 提出了 **PR #32945**，拟将流量迁移至 T3 租用的 OVH Hillsboro 自建网关（`gw.t3coderelay.com`），由 T3 自管的 Caddy 终结 TLS 后通过 Unix socket 明文转发给 Go `yamux` 代理——依然没有任何端到端加密。与此同时，[`privacy-policy.astro`](https://github.com/pingdotgg/t3code/blob/main/apps/marketing/src/pages/privacy-policy.astro)（`effectiveDate="2026-10-06"`）仅泛泛承诺 `"encrypted network transport"`，对缺少端到端加密和不做非留存保证只字不提。
 
 ![核心维护者在 Issue #32098 中承认云账号或中继密钥失守即可控制关联机器，同时把端到端加密排除在计划外](../../evidence/15-connect-no-e2e.jpg)
 
+<details>
+<summary>展开查看 OVH Caddy TLS 终结网关截图凭证（PR #32945）</summary>
+
 ![Theo 提交的 PR #32945 披露 Cloudflare 月费达 2.5 万美元，拟迁往 Caddy 终结 TLS 的自建 OVH 网关](../../evidence/16-pr32945-ovh-caddy-gateway.jpg)
+
+</details>
 
 ---
 
@@ -336,7 +423,12 @@ AGY_ACP_FORCE_FILE_STORAGE: "1",
 
 ![Theo 的 T3 Code 内部监控看板显示单日跑出 31.7 万亿 token、等效 1,019 万美元 API 消耗](../../evidence/17-theo-31t-tokens-10m-day.png)
 
+<details>
+<summary>展开查看 Patrick Toulme 仅 1 个提交核验截图（PR #31158）</summary>
+
 ![按 patrick-toulme 过滤的 pingdotgg/t3code 提交历史显示仅有 1 个提交（#31158），而非其声称的“许多 PR”](../../evidence/extra/p3-2-patrick-only-1-commit.png)
+
+</details>
 
 ### 5.2 天使投资人利益冲突（`第 6 弹`）与赞助商/额度双标（`第 17 弹`）
 
@@ -344,18 +436,23 @@ AGY_ACP_FORCE_FILE_STORAGE: "1",
 - **中继基础设施深度绑定个人赞助商（[第 17 弹](https://x.com/realchendahuang/status/2125411353393553744)）：** `@theo` 2023 年 5 月公开的 YouTube 赞助商名单（`1657488850472804353`）中的两家——**Clerk** 与 **Axiom**——直接构成了 T3 Code 的云端鉴权与 30 天含 IP 日志系统。2024 年 4 月 Vercel CEO `@rauchg` 证实全网仅赞助 Theo 一人（`1776260839965863965`），Theo 后来也承认赞助合同附带排他条款（`uv179CTAK-w`）。此外，他还是 Cursor 和 Cline 的天使投资人。
 - **Codex 0% 漏洞白嫖与 10 账号 CLIProxyAPI 双标：** 2026 年 8 月 21 日，`@theo` 炫耀利用 Codex 0% 额度宽限机制额外跑出 **$800+** 用量，而 T3 员工 `@maria_rcks` 更是发布了绕过工具 *Endless*；8 月 22 日遭舆论批评后双方均删帖删库，Maria 还发文希望 Codex 封号（`2090972426876129658`），紧接着便引发 OpenAI 收紧为 0% 立即硬截断（`openai/codex#45444`）。10 月，`@theo` 发布了至今获 452 星的 Gist（`59a521d2ee8d70aaf90e280c175072af`），演示聚合 **7 个 Claude + 3 个 Codex 账号**（在 12 台以上机器间共享 `555%` 额度；他还曾炫耀经由 110 万次代理请求刷出 `$14,662` / `$15k` Ultra 收益，并撰写 Grok Bot + `$100` Claude 教程）——而 T3 Code 自己的 `docs/user/faq.md` 刚以封号风险为由拒绝内置多号切换，下一行便直接挂出了这篇教程链接（`"Early apologies if it gets you banned 💀"`）。
 
+<details>
+<summary>展开查看 3 张利益冲突、CLIProxyAPI Gist 与 Codex 0% 额度取证截图</summary>
+
 ![Theo 自曝曾为 Vibe Kanban 投资人兼贡献者，随后在对方倒闭后公开拿其失败开涮](../../evidence/18-theo-vibe-kanban.png)
 
 ![Theo 获 452 星的 cliproxy-setup.md Gist，将 7 个 Claude 与 3 个 Codex 账号聚合供 12 台以上电脑共享 555% 额度](../../evidence/19-cliproxy-gist-555pct.jpg)
 
 ![openai/codex#45444 记录了额度归零时直接强行中止进行中回合的全局回退问题](../../evidence/extra/x-post17-3-codex-45444-regression.jpg)
 
+</details>
+
 ### 5.3 T3 Code 如何在 25 天内从 3 万星冲到 7.7 万星（仅 129 名 Watcher）（`第 18 弹`）
 
 在发布《*Github has a fake star problem*》（`2048122499834036340`，警告 GitHub Star 沦为 `"to trick VCs into investing"` 的工具）六个月后，`@theo` 自提自合了三个 PR（[第 18 弹](https://x.com/realchendahuang/status/2125416210120765799)）：
 1. **10 月 30 日（`PR #27832`）：** 在发送 5 条提示词后于右上角弹出讨星提示（[`GitHubStarPrompt.tsx`](https://github.com/pingdotgg/t3code/blob/main/apps/web/src/components/GitHubStarPrompt.tsx) 中设置 `PROMPTS_BEFORE_ASKING = 5`，第 6 次触发），当日新增星标立刻 **翻了 10 倍**（`2117065834267136469`），冲上 GitHub Trending 并录得 **+3,094 星/天**（`2117172614158508400`）。
 2. **11 月 3 日（`PR #29922` 与 `PR #29987`）：** 升级为 **窗口 30 秒无操作检测**（`IDLE_MS = 30_000`），专挑用户等待 Agent 执行发呆时弹窗；同时将原本的浏览器跳转替换为 `sourceControl.star` RPC——直接动用 **宿主机服务端的 GitHub 凭据** 发出 `PUT user/starred/pingdotgg/t3code`，随后放出 160 颗粒子礼花。
-3. **绕过代码审查与任意仓库点星漏洞：** Macroscope 曾将 `PR #29922` 标为 `Needs Human Approval`，但 `@theo` 直接自行点击合并。11 月 6 日，`zhilsinger` 提交 `Request changes`，指出共享主机凭据不透明（`GitHubStarPrompt.tsx#L115` 注释对此也有承认），且 [`packages/source-control-github/src/server/driver.ts#L60-L99`](https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts#L60-L99) 根本没有把目标仓库写死为 `pingdotgg/t3code`：
+3. **绕过代码审查与任意仓库点星漏洞（截至 `ca81b7b9` 仍未修复）：** Macroscope 曾将 `PR #29922` 标为 `Needs Human Approval`，但 `@theo` 直接自行点击合并。11 月 6 日，`zhilsinger` 提交 `Request changes`，指出共享主机凭据不透明（`GitHubStarPrompt.tsx#L115` 注释对此也有承认），且 [`packages/source-control-github/src/server/driver.ts#L60-L99`](https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts#L60-L99) 根本没有把目标仓库写死为 `pingdotgg/t3code`：
 
 ```ts
 // packages/source-control-github/src/server/driver.ts (lines 60–66, 90–96)
@@ -374,13 +471,18 @@ const starredPath = (repository: string) => {
       const response = yield* api.rest({ host, operation: "starRepository", method: "PUT", path });
 ```
 
-任何拥有 `source-control:write` 权限的客户端，均可借用宿主机的凭据给任意仓库点星。`zhilsinger` 的审查意见被晾置 **19 天**、零回复，期间仓库从 3 万星一路飙升至 7.7 万星（仅 129 名 Watcher）。
+任何拥有 `source-control:write` 权限的客户端，均可借用宿主机的凭据给任意仓库点星。截至 `ca81b7b9`，`zhilsinger` 的审查意见仍无人回应、漏洞依然未修（提交至今已 **19 天**），期间仓库从 3 万星一路飙升至 7.7 万星（仅 129 名 Watcher）。
 
 ![Theo 于 11 月 2 日晒出上线应用内讨星弹窗后日增星标近乎垂直拉升 10 倍的曲线图](../../evidence/20-star-10x-cliff.png)
+
+<details>
+<summary>展开查看 zhilsinger 审查意见与 driver.ts 任意仓库点星漏洞截图（PR #29922）</summary>
 
 ![开发者 zhilsinger 在 PR #29922 下提交 Request Changes 警告共享主机代点星及任意仓库点星问题，19 天无人回复](../../evidence/21-pr29922-zhilsinger-review.png)
 
 ![packages/source-control-github/src/server/driver.ts 第 60–99 行未锁定目标仓库 pingdotgg/t3code](../../evidence/extra/p10-5-gh-driver-arbitrary-repo.png)
+
+</details>
 
 ---
 
@@ -391,23 +493,33 @@ const starredPath = (repository: string) => {
 ### 6.1 内部开发狂飙 vs. 对外敌意（`第 9 弹`）与公开扒 Fork（`第 10 弹`）
 
 - **日均 500 次提交与 `yolo merges` vs. `CONTRIBUTING.md`（[第 9 弹](https://x.com/realchendahuang/status/2125392916369871309)）：** `@theo` 自述日常保持 **500 commits/day**（`2120741101250515322`）、同时运行 **700 个 agent**，Julius 挂着 agent 循环批量合并 PR，坦承 `"my yolo merges breaking shit sometimes"`（`2119951615679672513`），甚至表示不惜把机器弄炸以换取 `"free content"`（`2119993037971730879`）。但面对外部用户与贡献者，**PR #5551** 把 Plan mode 埋进角落（`"Reality check for those upset"`，10 踩），**PR #9190** 藏起上下文进度环（16 踩，全仓最高），**PR #33131** 配着荒诞的 AI 摘要删光 Plan mode，**Issue #33639** 直接回怼抱怨的用户 `"uninstall our software"` / `"ungrateful prick"`（次日清晨还拒关了 **PR #41572**），`CONTRIBUTING.md` 开篇即写 `"here's my advice: Don't"` 并配合模型封锁与 `.github/VOUCHED.td` 公开点名拉黑机制（全仓累计 174 个 `unwanted` 标签），而在 X 上提交贡献的用户或被训斥未关注他（`2120821423438778667`）、或被威胁撤回 `/btw`（`2120853340078874923`）、或被告知画箭头的截图比提 PR 强得多（`2123754193530053110`）。
-- **公开指挥 `@bot` 扒 Fork vs. 嘲讽竞品（[第 10 弹](https://x.com/realchendahuang/status/2125393641665671593)）：** 11 月 8 日，`@theo` 对 `@MiaAI_lab` 展示的二改功能回复 `"Okay I'm stealing this"`，30 秒后便在公开回复里呼叫 `@bot` 通过 Opus 5.5 在 `beebox` 上扒取她的 Fork 代码移植进 T3 Code（`2119240810202034645`）；11 月 13 日再次派 `@bot` 拆解吸纳竞品中获赞的功能（`2121017649652269120`）。然而到了 11 月 24 日，Claude Code Desktop 新增侧边栏标签页却遭他发文讽刺（`2124987957803446311`）。面对批评者，他不仅公开号召粉丝用 Community Notes `"demonetize them"`（断掉对方创作者收益，`2120238923884696025`），还亲口证实自己运行着 X 自动拉黑脚本（11 月 24 日单日拉黑约 100 个账号，`2125077510941802509`）。
+- **公开指挥 `@bot` 扒 Fork vs. 嘲讽竞品（[第 10 弹](https://x.com/realchendahuang/status/2125393641665671593)）：** 11 月 8 日，`@theo` 对 `@MiaAI_lab` 展示的二改功能回复 `"Okay I'm stealing this"`，30 秒后便在公开回复里呼叫 `@bot` 通过 Opus 5.5 在 `beebox` 上扒取她的 Fork 代码移植进 T3 Code（`2119240810202034645`）；11 月 13 日他再次派 `@bot` 拆解吸纳竞品中获赞的功能（`2121017649652269120`）。然而到了 11 月 24 日，Claude Code Desktop 新增侧边栏标签页却遭他发文讽刺（`2124987957803446311`）。面对批评者，他不仅公开号召粉丝用 Community Notes `"demonetize them"`（断掉对方创作者收益，`2120238923884696025`），还亲口证实自己运行着 X 自动拉黑脚本（11 月 24 日单日拉黑约 100 个账号，`2125077510941802509`）。
 
 ![CONTRIBUTING.md 劝退外部 PR，并明文规定可通过 .github/VOUCHED.td 公开点名封杀](../../evidence/22-contributing-vouched-ban.png)
 
+<details>
+<summary>展开查看 Issue #33639 与 @bot 扒取 Fork 截图凭证</summary>
+
 ![Theo 在 Issue #33639 中要求 @bermudi 卸载软件并辱骂其为忘恩负义的混蛋](../../evidence/extra/t3code-12-issue-33639-theo-insult.png)
 
-![Theo 回复 "Okay I'm stealing this"，30 秒后公开派 @bot 扒取开发者 Fork 移植到 T3 Code](../../evidence/23-stealing-fork-bot.png)
+![Theo 回复 "Okay I'm stealing this"，30 秒后公开派 @bot 爬取开发者 Fork 移植到 T3 Code](../../evidence/23-stealing-fork-bot.png)
+
+</details>
 
 ### 6.2 商标审计：0 条 USPTO 注册记录与事后补写的 `PR #41898`（`第 15 弹`）
 
-顺着 `@vildanden_ai` 提供的线索（`2125275487404761555`）查询美国专利商标局（USPTO）TSDR 数据库可见：`T3 Code`、`T3 Tools` 与 `T3 Connect` 全部为 **0 条注册记录**（[第 15 弹](https://x.com/realchendahuang/status/2125408163273080950)）。T3 Tools Inc. 历史上唯一提交过的商标申请（`PING LABS`，序列号 [`97294243`](https://tsdr.uspto.gov/statusview/sn97294243)）已于 2025 年 2 月遭到最终驳回，并于 2025 年 5 月 19 日被标记为 `ABANDONED`；而软件/SaaS 所在第 42 类与第 9 类 `T3` 商标则由其他公司持有（`EquipmentShare` 注册号 `7795672` / 序列号 [`90644500`](https://tsdr.uspto.gov/#caseNumber=90644500&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch)；`ESG Operations` 注册号 `3324707`）。
+顺着 `@vildanden_ai` 提供的线索（`2125275487404761555`）查询美国专利商标局（USPTO）TSDR 数据库可见：`T3 Code`、`T3 Tools` 与 `T3 Connect` 全部为 **0 条注册记录**（[第 15 弹](https://x.com/realchendahuang/status/2125408163273080950)）。T3 Tools Inc. 历史上唯一提交过的商标申请（`PING LABS`，序列号 [`97294243`](https://tsdr.uspto.gov/statusview/sn97294243)）已于 2025 年 2 月遭到最终驳回，并于 2025 年 5 月 19 日被标记为 `ABANDONED`；而软件/SaaS 所在第 42 类及第 9 类 `T3` 商标则由其他公司持有（`EquipmentShare` 注册号 `7795672` / 序列号 [`90644500`](https://tsdr.uspto.gov/#caseNumber=90644500&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch)；`ESG Operations` 注册号 `3324707`）。
 
 依据 [GitHub 官方商标政策](https://docs.github.com/en/site-policy/content-removal-policies/github-trademark-policy)，商业公司提交商标下架申诉必须具结伪证罪法律责任提供联邦或国际注册商标编号（未注册商标例外仅适用于政府机构及非营利组织）。在 `@theo` 威胁封禁 `@DDdxx666` GitHub 账号的那一刻，他连 GitHub 举报表单的必填项都填不出来。直到 **17 小时后**（11 月 24 日 `12:21 BJ`），`@theo` 才合并 **PR #41898** 事后补写 `TRADEMARK.md`（声称 `"whether registered or unregistered"`），并在 94 秒后立即引用该文件（`2125082769395220688`）——而早在 2024 年 9 月他曾嘲讽 WordPress 发起 `"unenforceable trademark dispute"`（`1839261574005141945`），就在 11 月 24 日合并前 3 小时还向开发者喊话 `"get a better lawyer"`（`2125026423769555308`）。
 
 ![威胁封号 17 小时后才合并的 PR #41898，事后追加 TRADEMARK.md 宣称无论是否注册均归己有](../../evidence/24-pr41898-trademark-aftermath.png)
 
+<details>
+<summary>展开查看 "get a better lawyer" 原推截图凭证</summary>
+
 ![Theo 在合并 TRADEMARK.md 前三小时向开发者喊话 "get a better lawyer"](../../evidence/extra/p1-5-x-get-better-lawyer.png)
+
+</details>
 
 ### 6.3 1,151 条推文量化数据集（`第 14 弹`）与两年历史惯例（`第 16 弹`）
 
@@ -420,19 +532,24 @@ const starredPath = (repository: string) => {
 
 ![取证图表 2：24 小时 PST 作息节律（233 条深夜发推）与 17 天每日发帖柱状分布](../../evidence/charts/theo-chart-2-rhythm.png)
 
-![取证图表 3：选择性礼貌——对大厂 VIP 0.0% 粗口 vs. 对普通开发者 8.0% 敌意与危机期 14.4% 暴涨](../../evidence/charts/theo-chart-3-double-standard.png)
+![取证图表 3：看人下菜碟实锤（中文版权力不对称对照图）——对大厂 VIP 0.0% 粗口 vs. 对普通开发者 8.0% 敌意与中文区危机期 14.4% 暴涨](../../evidence/25-double-standard-chart-zh.png)
 
 ![取证图表 4：25 小时中文二改风波窗口三波段攻击密度拆解](../../evidence/charts/theo-chart-4-cn-crisis.png)
+
+<details>
+<summary>展开查看第 13 与第 14 弹引用的 2 张 X 敌意原推截图凭证</summary>
 
 ![Theo 转发一个普通工具对比提问帖并配文称工程师活该迎来大规模失业](../../evidence/25-engineers-unemployment.png)
 
 ![Theo 公开辱骂中文技术推特是粪坑，并辱骂阅读中文源码审计的开发者脑死亡](../../evidence/26-cn-cesspit.png)
 
+</details>
+
 把视野拉回过去两年，同样可以看到反复重演的模式（[第 16 弹](https://x.com/realchendahuang/status/2125408843152953693)）：
 - **2024 年 Fork 嘲讽：** 将自己 Fork 别人的 VS Code 主题起名为 [`vsc-material-but-i-wont-sue-you`](https://github.com/t3dotgg/vsc-material-but-i-wont-sue-you)，并在其中嘲讽原作者脾气差。
 - **2024 年印度开发者网暴事件与道歉：** 因其针对印度教程频道的视频引发群体骚扰，他发布 [`I screwed up.`](https://www.youtube.com/watch?v=o2CSJYXJBpc) 公开谴责按国籍攻击他人的行为——两年后便亲自炮轰中文技术推特。
 - **2025 年 10 月 FFmpeg 悬赏：** 对着镜头爆粗口并出价 **$20,000** 悬赏逼迫一名 FFmpeg 维护者离职（[记录](https://www.youtube.com/watch?v=1oQ3KMeaH04)），随后在 Windscribe 反出价 2.1 万美元、VLC 公开反对以及 FFmpeg 邮件列表谴责后删视频撤悬赏。
-- **2026 年 11 月 25 日（约凌晨 4:00）发推威胁闭源后删推：** 当晚因争议发推威胁将 T3 Code 转为闭源，称用户不配用开源软件；点赞破 3,000 后，在天亮前悄悄删掉了这条推文。
+- **2026 年 11 月 25 日（约凌晨 4:00）发推威胁闭源后删推：** 当晚因争议发推威胁将 T3 Code 转为闭源，称用户不配享有开源软件；点赞破 3,000 后，在天亮前悄悄删掉了这条推文。
 
 ---
 
@@ -442,10 +559,14 @@ const starredPath = (repository: string) => {
 
 ### 7.1 环境变量 + 系统级网络阻断（本地 / 桌面端用户）
 
-切勿**仅**依赖环境变量（`PR #42376`、`PR #42464` 以及 `DesktopShellEnvironment.ts` 至今仍漏掉转发 `T3CODE_OTEL_SDK_DISABLED`，且 `AnalyticsService.ts:149` 启动时仍会生成本地身份）。请将 Shell/系统环境变量与操作系统级 `/etc/hosts` 拦截配合使用：
+切勿**仅**依赖环境变量：即便截至 `ca81b7b9`，[`AnalyticsService.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts)（`第 156 行`，原第 149 行）仍会在校验退出开关之前先在启动时初始化磁盘身份，[`DesktopShellEnvironment.ts`](https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts) 仍漏掉转发 `OTEL_SDK_DISABLED` 与 `T3CODE_OTEL_SDK_DISABLED`，且旧版本存在无视 Shell/用户环境变量的问题（`PR #42376`、`PR #42464`）。请将 Shell/系统环境变量——包括自 [`PR #42629`](https://github.com/pingdotgg/t3code/pull/42629) 起受支持的 `DO_NOT_TRACK=1`（优先级高于 `T3CODE_TELEMETRY_ENABLED=true` 并可关闭服务端中继追踪）——与操作系统级 `/etc/hosts` 拦截配合使用：
 
 ```bash
 # 1. macOS / Linux：写入 ~/.zshrc（或 ~/.bashrc），重载 Shell 并彻底重启 T3 Code
+#    DO_NOT_TRACK=1（PR #42629）可覆盖 T3CODE_TELEMETRY_ENABLED=true 并停用中继追踪，
+#    但 AnalyticsService.ts:156 仍会在磁盘写入本地安装身份，且 DesktopShellEnvironment.ts
+#    至今仍漏传 T3CODE_OTEL_SDK_DISABLED / OTEL_SDK_DISABLED。
+export DO_NOT_TRACK=1
 export T3CODE_TELEMETRY_ENABLED=false
 export T3CODE_OTEL_SDK_DISABLED=true
 export OTEL_SDK_DISABLED=true
@@ -456,7 +577,7 @@ export OTEL_SDK_DISABLED=true
 ::1 ingest.t3.codes
 ```
 
-在 Windows 上，还请在 **系统属性 → 环境变量**（同时配置用户变量与系统变量）中设置 `T3CODE_TELEMETRY_ENABLED=false`、`T3CODE_OTEL_SDK_DISABLED=true` 与 `OTEL_SDK_DISABLED=true`，并重启后台服务或电脑。另请注意 `Issue #36479`：除非通过防火墙/代理规则阻断，否则服务端启动时仍会向 `raw.githubusercontent.com` 发起一次外联网检查。
+在 Windows 上，还请在 **系统属性 → 环境变量**（同时配置用户变量与系统变量）中设置 `DO_NOT_TRACK=1`、`T3CODE_TELEMETRY_ENABLED=false`、`T3CODE_OTEL_SDK_DISABLED=true` 与 `OTEL_SDK_DISABLED=true`，并重启后台服务或电脑。另请注意 `Issue #36479`：除非通过防火墙/代理规则阻断，否则服务端启动时仍会向 `raw.githubusercontent.com` 发起一次外联网检查。
 
 ### 7.2 管理员 Managed Policy（`macOS`、`Linux`、`Windows`）
 
@@ -488,15 +609,18 @@ export OTEL_SDK_DISABLED=true
 
 ### 7.3 `statev2.sqlite` 排查与本地状态清理
 
-由于在界面中删除线程仍会在 `~/.t3/userdata/statev2.sqlite` 内保留历史事件（`Issue #17845`）：
+虽然 [`PR #42119`](https://github.com/pingdotgg/t3code/pull/42119) 新增了异步 `thread-content.purge` 清理机制（关闭了 `Issue #17845`），但旧版本仍会在磁盘完整保留历史，且即便截至 `ca81b7b9`，凡是被活跃分支（fork）、待处理 `merge_back` 或活跃父级子代理引用的已删除源线程仍会保留历史内容，墓碑行也依然留在 SQLite 内，且真正回收已释放的 `.sqlite` 磁盘空间必须执行一次离线 `VACUUM`：
 
 ```bash
-# 检查本地 T3 状态目录体积与数据库膨胀情况（macOS / Linux）
+# 检查本机 T3 状态目录体积与数据库膨胀情况（macOS / Linux）
 ls -lh ~/.t3/userdata/statev2.sqlite*
 
 # 可选：只读检查保留的删除标记条数（请先退出 T3 Code）
 sqlite3 -readonly ~/.t3/userdata/statev2.sqlite \
   "SELECT COUNT(*) FROM orchestration_events WHERE event_type = 'thread.deleted';"
+
+# 可选：在 PR #42119 清理之后执行离线压缩以回收磁盘页空间（请先退出 T3 Code）
+sqlite3 ~/.t3/userdata/statev2.sqlite "VACUUM;"
 
 # 若决定彻底卸载，请在备份所需的自定义数据后删除 ~/.t3
 rm -rf ~/.t3
@@ -508,7 +632,8 @@ rm -rf ~/.t3
 
 1. **Google Antigravity：** 立即停止在 T3 托管的 Antigravity 或 CLIProxyAPI 中运行个人 Google AI / Antigravity 订阅，以免浪费账号唯一的一次申诉机会。清理 `~/.t3/userdata/providers/antigravity/` 与 `~/.t3/tools/antigravity-acp/`。
 2. **T3 Connect 与云端数据删除：** 前往 **Settings → Sharing & access** 关闭 **Publish agent activity**，解除全部本地机器绑定（`t3` logout / unlink），若日后确需重开远程访问，务必启用 `requireConnectDeviceApproval`。通过 `privacy-policy.astro` 记载的 Clerk 与 T3 Tools 官方隐私删除渠道提交全量删号与中继记录清除请求（确保触发 `PR #42285` 的 Clerk 删除 webhook 清除 PlanetScale 中继记录与 Cloudflare 隧道）。
-3. **GitHub 令牌与密钥轮换：** 前往 **GitHub Settings → Applications / Authorized GitHub Apps** 吊销 T3 Code 的 GitHub OAuth / App 授权（`driver.ts` 持有宿主级别的点星权限）。并轮换一切可能在 `PR #41889` 修复前经进程命令行被 `t3-resource-monitor` 捕获、或经 webhook/中继报错发往 Axiom 的 API Key、数据库 URL 与各类令牌。
+3. **GitHub 令牌与密钥轮换：** 前往 **GitHub Settings → Applications / Authorized GitHub Apps** 吊销 T3 Code 的 GitHub OAuth / App 授权（`driver.ts` 持有宿主级别的点星权限）。并轮换一切可能在 `PR #41889` / `PR #42577` 修复前经进程命令行被 `t3-resource-monitor` 捕获、或经 webhook/中继报错发往 Axiom 的 API Key、数据库 URL 与各类令牌。
+4. **局域网明文 HTTP、CI Bearer 令牌与未受信任仓库隔离（`ca81b7b9`）：** 绝不要在未前置 TLS（反向代理或 Tailscale Serve；并留意改用 `127.0.0.1` 避开 `::1` 的 IPv4 误判绕行方案）的情况下直接暴露明文 `t3 up --lan` HTTP；绝不把非 DPoP 的 30 天 Bearer 令牌写进脚本或 CI；打开任何未受信任仓库前，先清空 `SSH_AUTH_SOCK` / `GITHUB_TOKEN`，并检查其中的 `.gitmodules` 与 `.claude/settings.json` 钩子。
 
 ### 7.5 替代客户端参考
 
@@ -518,7 +643,7 @@ rm -rf ~/.t3
 
 ## 8. 一手来源与 18 弹原帖总索引
 
-> 如需查阅按 `SRC-001` 至 `SRC-206+` 编号对照每弹及截图的完整汇总表格，请参阅 [`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md)。
+> 如需查阅按 `SRC-001` 至 `SRC-320` 编号对照每弹、六份卷宗与审计后提交的完整汇总表格，请参阅 [`docs/COMPLETE-SOURCE-INDEX.md`](../COMPLETE-SOURCE-INDEX.md)。如需查阅全部 **108** 张视觉凭证与取证图表（`EV-001`–`EV-108`），请参阅 [`docs/EVIDENCE-INDEX.md`](../EVIDENCE-INDEX.md)。
 
 ### 导火索与 18 弹原帖总索引（按发布时间顺序）
 
@@ -543,6 +668,7 @@ rm -rf ~/.t3
 - 第 17 弹（赞助商 Clerk/Axiom 绑定、Codex 0% 额度白嫖删帖与 10 账号 `CLIProxyAPI` Gist）：https://x.com/realchendahuang/status/2125411353393553744
 - 第 18 弹（7.7 万 GitHub Star 真相：30 秒发呆弹窗动用主机凭据发 API 点星与未锁死任意仓库点星）：https://x.com/realchendahuang/status/2125416210120765799
 - 社区替代客户端汇总帖：https://x.com/realchendahuang/status/2125244977878036713
+- 社区投稿评论归档（`@opserx` 提交的 Issue #1——《*The Case Against Theo*》）：[`docs/community/issue-1-the-case-against-theo.md`](../community/issue-1-the-case-against-theo.md)
 
 ### 源码、PR、Issue、官方政策与一手原始凭证
 
@@ -554,7 +680,7 @@ rm -rf ~/.t3
 - 拒绝降低退出难度（Issue #1397）与虚假承诺质问（Issue #4123）：https://github.com/pingdotgg/t3code/issues/1397 ; https://github.com/pingdotgg/t3code/issues/4123
 - 自建 `ingest.t3.codes` 留存原始事件拷贝（PR #15028）与跨工具无盐哈希（PR #21506）：https://github.com/pingdotgg/t3code/pull/15028 ; https://github.com/pingdotgg/t3code/pull/21506 ; https://ingest.t3.codes/
 - 四个遭拒的社区遥测开关 PR（`#13458` / `#16763` / `#21248` / `#27077`）：https://github.com/pingdotgg/t3code/pull/13458 ; https://github.com/pingdotgg/t3code/pull/16763 ; https://github.com/pingdotgg/t3code/pull/21248 ; https://github.com/pingdotgg/t3code/pull/27077
-- 遥测与身份归因核心源码（`AnalyticsService.ts` / `Identify.ts` / `ProviderUsageAnalytics.ts` / `telemetryId.ts`）：https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts ; https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/telemetryId.ts
+- 遥测与身份归因核心源码（`AnalyticsService.ts` / `Identify.ts` / `ProviderUsageAnalytics.ts` / `ProviderDimensions.ts` / `telemetryId.ts` / `otelEnvironment.ts` / `DesktopShellEnvironment.ts` / `DesktopBackendConfiguration.ts`）：https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts#L152 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderUsageAnalytics.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/ProviderDimensions.ts ; https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/telemetryId.ts ; https://github.com/pingdotgg/t3code/blob/main/packages/shared/src/otelEnvironment.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/shell/DesktopShellEnvironment.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/desktop/src/backend/DesktopBackendConfiguration.ts
 - 官方遥测与 Managed Policy 文档：https://github.com/pingdotgg/t3code/blob/main/docs/user/telemetry.md ; https://github.com/pingdotgg/t3code/blob/main/docs/user/managed-policy.md
 - Theo 的 Managed Policy、澄清声明及否认本地写入追踪文件原推 + 公开 `events.clean.jsonl` 导出包：https://x.com/theo/status/2125186071357251715 ; https://x.com/theo/status/2125191784859115766 ; https://x.com/theo/status/2125332390239494211 ; https://x.com/theo/status/2125370330244128924 ; https://files.tslop.org/2026/11/t3code-telemetry-events-jsonl-a4896cdc.gz
 - 工作区绝对路径泄露（PR #42450）与 Win/Mac 无视退出环境变量（PR #42376 / #42464）：https://github.com/pingdotgg/t3code/pull/42450 ; https://github.com/pingdotgg/t3code/pull/42376 ; https://github.com/pingdotgg/t3code/pull/42464
@@ -567,9 +693,9 @@ rm -rf ~/.t3
 - Claude Auto 模式静默放行 `git push --force`（Issue #15353 与复现评论）及社区修复 PR（`#15360` / `#35207` / `#40692`）：https://github.com/pingdotgg/t3code/issues/15353 ; https://github.com/pingdotgg/t3code/issues/15353#issuecomment-6889019695 ; https://github.com/pingdotgg/t3code/pull/15360 ; https://github.com/pingdotgg/t3code/pull/35207 ; https://github.com/pingdotgg/t3code/pull/40692
 - 21 小时撤除面向 `slopalytics.com` 的私有模型过滤（PR #29001 / Issue #40948 / PR #41237）：https://github.com/pingdotgg/t3code/pull/29001 ; https://github.com/pingdotgg/t3code/issues/40948 ; https://github.com/pingdotgg/t3code/pull/41237 ; https://slopalytics.com/ ; https://slopalytics.com/data/t3-usage.json
 - 空置的安全公告页面、`SECURITY.md`（`PR #38812` / `#41942`）、已合入静默安全补丁（`#22190` / `#37823` / `#39464` / `#39480` / `#39483` / `#40133` / `#41756` / `#41757` / `#41886` / `#42386` / `#42504`）与待处理安全/启动器议题（`Issue #26489` / `PR #23428` / `PR #30997` / `PR #33144` / `PR #36216`）：https://github.com/pingdotgg/t3code/security/advisories ; https://github.com/pingdotgg/t3code/blob/main/SECURITY.md ; https://github.com/pingdotgg/t3code/pull/38812 ; https://github.com/pingdotgg/t3code/pull/41942 ; https://github.com/pingdotgg/t3code/pull/22190 ; https://github.com/pingdotgg/t3code/pull/37823 ; https://github.com/pingdotgg/t3code/pull/39464 ; https://github.com/pingdotgg/t3code/pull/39480 ; https://github.com/pingdotgg/t3code/pull/39483 ; https://github.com/pingdotgg/t3code/pull/40133 ; https://github.com/pingdotgg/t3code/pull/41756 ; https://github.com/pingdotgg/t3code/pull/41757 ; https://github.com/pingdotgg/t3code/pull/41886 ; https://github.com/pingdotgg/t3code/pull/42386 ; https://github.com/pingdotgg/t3code/pull/42504 ; https://github.com/pingdotgg/t3code/issues/26489 ; https://github.com/pingdotgg/t3code/pull/23428 ; https://github.com/pingdotgg/t3code/pull/30997 ; https://github.com/pingdotgg/t3code/pull/33144 ; https://github.com/pingdotgg/t3code/pull/36216
-- Antigravity FAQ 担保、Issue #40713 源码拆穿、3 分钟封号（Issue #41536）、账号串号（Issue #41973）、白名单编辑器伪装（PR #26876）、CLIProxyAPI 中心 PR #33800、Theo 零风险/架构图/CLIProxy 甩锅推文及核心源码：https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md ; https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md#will-i-get-banned-for-using-my-subscription ; https://github.com/pingdotgg/t3code/issues/40713 ; https://github.com/pingdotgg/t3code/issues/41536 ; https://github.com/pingdotgg/t3code/issues/41973 ; https://github.com/pingdotgg/t3code/pull/26876 ; https://github.com/pingdotgg/t3code/pull/33800 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L20-L45 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L445-L476 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts#L230-L236 ; https://x.com/theo/status/2124264935505199294 ; https://x.com/theo/status/2124665075638411641 ; https://x.com/theo/status/2124703048140517397
+- Antigravity FAQ 担保、Issue #40713 源码拆穿、3 分钟封号（Issue #41536）、账号串号（Issue #41973）、白名单编辑器伪装（PR #26876）、CLIProxyAPI 中心 PR #33800、Theo 零风险/架构图/CLIProxy 甩锅推文及核心源码：https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md ; https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md#will-i-get-banned-for-using-my-subscription ; https://github.com/pingdotgg/t3code/issues/40713 ; https://github.com/pingdotgg/t3code/issues/41536 ; https://github.com/pingdotgg/t3code/issues/41973 ; https://github.com/pingdotgg/t3code/pull/26876 ; https://github.com/pingdotgg/t3code/pull/33800 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L20-L45 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L445-L476 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts#L230-L236 ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityAcpSupport.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/acp/AntigravityTurnOutcome.ts ; https://x.com/theo/status/2124264935505199294 ; https://x.com/theo/status/2124665075638411641 ; https://x.com/theo/status/2124703048140517397
 - Google Antigravity 服务条款与官方论坛明令禁止：https://antigravity.google/terms ; https://discuss.ai.google.dev/t/185992
-- T3 Connect 拒绝端到端加密（Issue #32098）、默认关闭 `requireConnectDeviceApproval`（PR #36419）、自建 OVH Caddy 网关（PR #32945）、中继源码、隐私政策与零回复讨论：https://github.com/pingdotgg/t3code/issues/32098#issuecomment-6869049926 ; https://github.com/pingdotgg/t3code/pull/36419 ; https://github.com/pingdotgg/t3code/pull/32945 ; https://github.com/pingdotgg/t3code/blob/main/docs/internals/06_t3-connect.md ; https://github.com/pingdotgg/t3code/blob/main/infra/relay/src/environments/ManagedEndpointProvider.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/marketing/src/pages/privacy-policy.astro ; https://github.com/pingdotgg/t3code/discussions/21286 ; https://github.com/pingdotgg/t3code/discussions/37831
+- T3 Connect 拒绝端到端加密（Issue #32098）、默认关闭 `requireConnectDeviceApproval`（PR #36419 与 `settings.ts`）、自建 OVH Caddy 网关（PR #32945）、中继源码、隐私政策与零回复讨论：https://github.com/pingdotgg/t3code/issues/32098#issuecomment-6869049926 ; https://github.com/pingdotgg/t3code/pull/36419 ; https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/settings.ts ; https://github.com/pingdotgg/t3code/pull/32945 ; https://github.com/pingdotgg/t3code/blob/main/docs/internals/06_t3-connect.md ; https://github.com/pingdotgg/t3code/blob/main/infra/relay/src/environments/ManagedEndpointProvider.ts ; https://github.com/pingdotgg/t3code/blob/main/apps/marketing/src/pages/privacy-policy.astro ; https://github.com/pingdotgg/t3code/discussions/21286 ; https://github.com/pingdotgg/t3code/discussions/37831
 
 **商业账本、投资人冲突、赞助商与 7.7 万星（第 6、8、17、18 弹）**
 
@@ -586,3 +712,12 @@ rm -rf ~/.t3
 - USPTO TSDR 记录（`PING LABS` 97294243 已废弃；EquipmentShare `T3` 注册号 7795672）、GitHub 商标政策、事后补写 `PR #41898`、封号威胁、万亿美金开源回复、`"aware of the legality"`、`"get a better lawyer"` 与过往商标推文：https://tsdr.uspto.gov/statusview/sn97294243 ; https://tsdr.uspto.gov/#caseNumber=90644500&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch ; https://docs.github.com/en/site-policy/content-removal-policies/github-trademark-policy ; https://github.com/pingdotgg/t3code/pull/41898 ; https://github.com/pingdotgg/t3code/blob/main/TRADEMARK.md ; https://x.com/theo/status/2124829315657576890 ; https://x.com/theo/status/2124989435154726982 ; https://x.com/theo/status/2125082769395220688 ; https://x.com/theo/status/2125026423769555308 ; https://x.com/vildanden_ai/status/2125275487404761555 ; https://x.com/theo/status/1839261574005141945
 - 选择性礼貌一手凭证（Google Neon 道歉与庆幸未烧断桥、骂工程师活该失业、在本地 AI 坟头跳舞、Linux larpers、威胁送进监狱并嘲讽 RSD、`stupid bitch` 推文、骂中文技术推特粪坑、拒绝道歉与说教不要烧掉信任）：https://x.com/theo/status/2123255588570501585 ; https://x.com/theo/status/2123995323123343869 ; https://x.com/theo/status/2124470530590011704 ; https://x.com/theo/status/2120733839832273025 ; https://x.com/theo/status/2124298216271499605 ; https://x.com/theo/status/2122865897375400066 ; https://x.com/theo/status/2120599310211703274 ; https://x.com/theo/status/2125177503526588877 ; https://x.com/theo/status/2125193393450226024 ; https://x.com/theo/status/2124449493513068862
 - 历史凭证（`vsc-material-but-i-wont-sue-you`、印度开发者道歉视频、2 万美元 FFmpeg 悬赏记录）：https://github.com/t3dotgg/vsc-material-but-i-wont-sue-you ; https://www.youtube.com/watch?v=o2CSJYXJBpc ; https://www.youtube.com/watch?v=1oQ3KMeaH04
+
+### 审计后上游追踪（`9d3195b4` 至 `ca81b7b9`，`SRC-280`–`SRC-320`）
+
+- 审计基线（`9d3195b4`，`#42000`）与最新已核实 `main` HEAD（`ca81b7b9`，`#42634`）：https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2 ; https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd
+- 遥测与身份归因收窄（`#42299` / `84e4264b`、`#42465` / `6b3899f2`、`#42630` / `c925b9ab`、`#42629` / `ef4a1643`）：https://github.com/pingdotgg/t3code/pull/42299 ; https://github.com/pingdotgg/t3code/commit/84e4264bb347e36e97f6c3bd95d666eecfa12e07 ; https://github.com/pingdotgg/t3code/pull/42465 ; https://github.com/pingdotgg/t3code/commit/6b3899f224947178088ca97ec9907e681807f7da ; https://github.com/pingdotgg/t3code/pull/42630 ; https://github.com/pingdotgg/t3code/commit/c925b9ab198099f67de862ed01701bd1d8809f2b ; https://github.com/pingdotgg/t3code/pull/42629 ; https://github.com/pingdotgg/t3code/commit/ef4a1643edf72ad119452c82b01c91adbf7b9e64
+- 本地清理、资源监控与安全加固（`#42119` / `91f0b32e`、`#42577` / `af276ccb`、`#42413`）：https://github.com/pingdotgg/t3code/pull/42119 ; https://github.com/pingdotgg/t3code/commit/91f0b32e2db2cb8abca5fdd33c33609a0f57b15e ; https://github.com/pingdotgg/t3code/pull/42577 ; https://github.com/pingdotgg/t3code/commit/af276ccbb26ef709c46bc46ec514f23b62c8e18c ; https://github.com/pingdotgg/t3code/pull/42413
+- Antigravity 验证风控触发与 CLI 更新（`#41210` / `3e74a0aa`、`#42545` / `4da8d19d`、`#42339`、`#42475`）：https://github.com/pingdotgg/t3code/pull/41210 ; https://github.com/pingdotgg/t3code/commit/3e74a0aac5c53459cc1d3d84eec915fa483f2836 ; https://github.com/pingdotgg/t3code/pull/42545 ; https://github.com/pingdotgg/t3code/commit/4da8d19d08ed7e34fe2d5d66dae54b01eab122fc ; https://github.com/pingdotgg/t3code/pull/42339 ; https://github.com/pingdotgg/t3code/pull/42475
+- T3 Connect 登录提醒与中继/移动端/反馈收窄（`#42311` / `ece5f21b`、`#42356`、`#42394`、`#42397`、`#42398`、`#42415`）：https://github.com/pingdotgg/t3code/pull/42311 ; https://github.com/pingdotgg/t3code/commit/ece5f21b17077382c8d2eba1c28e75e898386dcd ; https://github.com/pingdotgg/t3code/pull/42356 ; https://github.com/pingdotgg/t3code/pull/42394 ; https://github.com/pingdotgg/t3code/pull/42397 ; https://github.com/pingdotgg/t3code/pull/42398 ; https://github.com/pingdotgg/t3code/pull/42415
+- `ca81b7b9` 局域网 Cookie、Bearer 令牌、`?wsTicket=`、`::1` 回环与未受信任仓库鉴权/执行凭证（`SRC-308`–`SRC-320`）：https://github.com/pingdotgg/t3code/pull/37042 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L492-L493 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/http.ts#L215-L221 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L798-L806 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1175-L1186 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1506-L1511 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/environmentHttp.ts#L595-L679 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1553-L1622 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L1086-L1156 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/startupAccess.ts#L71-L108 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/VcsProcess.ts#L145-L157 ; https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L5982-L5985
