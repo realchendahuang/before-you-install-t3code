@@ -1134,8 +1134,128 @@
     filteredReceipts: EVIDENCE_RECEIPTS.slice(),
     lightboxIdx: -1,
     lightboxExtra: null,
-    zoomed: false
+    zoomed: false,
+    lang: "en",
+    theme: document.documentElement.classList.contains("dark") ? "dark" : "light"
   };
+
+  var UI_I18N = {
+    zh: {
+      brandTitle: "安装 T3 Code 之前",
+      navVerdict: "核心结论",
+      navFindings: "风险矩阵",
+      navTimeline: "时间线",
+      navCharts: "取证图表",
+      navReceipts: "108 张实证",
+      navMitigation: "止损手册",
+      navRepo: "GitHub 仓库",
+      subbarPath: "独立审计档案 / pingdotgg/t3code",
+      subbarStatus: "审计基线 9d3195b4 → 上游复核 ca81b7b9（11 月 25 日 14:49 CST · +259 提交）",
+      heroKicker: "源码、遥测、安全与公开记录独立审计",
+      heroTitle: "安装 T3 Code 之前",
+      heroLead:
+        "针对 <code>pingdotgg/t3code</code> 的独立源码、遥测、治理、商标与量化审计档案 —— 完整汇总 2 篇导火索原帖、18 弹审计报告、6 份深度技术卷宗、320 条一手规范化链接、108 张原始实证截图与 1,151 条连续 X 推文数据集。",
+      metaRiskLabel: "高危审计域",
+      metaRiskValue: "2 项严重 · 2 项高危 · 0 条安全公告",
+      metaArchiveLabel: "一手实证规模",
+      metaArchiveValue: "320 条原始链接 · 108 张实证 · 6 份卷宗",
+      metaCommitLabel: "上游源码追踪",
+      metaCommitValue: "9d3195b4 (#42000) → ca81b7b9 (#42634)",
+      ctaMatrix: "查看风险矩阵",
+      ctaMitigation: "2 分钟止损手册",
+      ctaEvidence: "108 张证据总表",
+      ctaSources: "320 条来源总表",
+      coverInspect: "点击查看原图",
+      tldrTitle: "30 秒结论速览",
+      tldrMeta: "主基线 <code>9d3195b4</code> 复核至 <code>ca81b7b9</code>（新增 259 提交 · 11 月 25 日 14:49 CST）",
+      tldr1Tag: "严重 · 遥测隐私",
+      tldr1Title: "默认开启遥测与每小时 220 万条 IP 跨度",
+      tldr1Body:
+        "3 月 6 日（<code>PR #174</code>）在官网宣称“无遥测”期间默认启用 PostHog。GDPR 后通宵 PR 自承 Axiom 每小时记录 220 万条 IP+UA（<code>#42380</code>）与 <code>git.cwd</code> 路径泄露（<code>#42450</code>）。即便合入 <code>#42299</code> 与 <code>#42629</code>（<code>DO_NOT_TRACK</code>），<code>AnalyticsService.ts:156</code> 启动仍先写盘且 <code>ingest.t3.codes</code> 维持闭源。",
+      tldr2Tag: "严重 · 本地安全",
+      tldr2Title: "SQLite 假删除与 52 天静默强推",
+      tldr2Body:
+        "删除对话仅追加标记使 <code>statev2.sqlite</code> 膨至 41.6 GB（<code>#17845</code>）；<code>#42119</code> 补上异步清理后仍留存分支/子代理历史与墓碑行，瘦身仍需离线 <code>VACUUM</code>。Auto 模式静默 <code>git push --force</code>（<code>#15353</code>）、未受信任仓库自动初始化 <code>.gitmodules</code> 与 <code>SessionStart</code> 钩子以及 0 条安全公告均未解决。",
+      tldr3Tag: "高危 · 鉴权与中继",
+      tldr3Title: "Antigravity 请求头伪装与明文中继",
+      tldr3Body:
+        "<code>antigravityUsageLimits.ts</code> 伪造 <code>antigravity/hub/2.24.0</code> 直连 <code>v1internal</code>，<code>#41210</code> 反证 Google <code>VALIDATION_REQUIRED</code> 风控拦截。T3 Connect 零端到端加密（<code>#32098</code>），<code>ca81b7b9</code> 另存 <code>--lan</code> 明文 Cookie、不可吊销 30 天 Bearer、可重放 <code>?wsTicket=</code> 与 <code>::1</code> 断连缺陷。",
+      tldr4Tag: "高危 · 商业账本",
+      tldr4Title: "80 万美元投入与 7.7 万星漏斗",
+      tldr4Body:
+        "<code>ingest.t3.codes</code> 撑起日跑 31.7 万亿 token（$10.19M/天）算力雷达，换取 OpenAI 免费额度与 VC 接洽。发呆 30 秒弹窗动用宿主机凭据发 <code>PUT user/starred/...</code>，<code>driver.ts#L60-L99</code> 任意仓库点星漏洞至今未修。",
+      tldr5Tag: "审计基线 · 语料",
+      tldr5Title: "0 条 USPTO 商标与 1,151 推文双标",
+      tldr5Body:
+        "威胁封号时 <code>T3 Code</code> 在 USPTO 注册商标为 0（17 小时后补写 <code>TRADEMARK.md</code>）。1,151 条连续推文统计：对大厂 VIP 粗口率 0.0% vs. 普通开发者 8.0% 敌意与危机期 14.4% 人身攻击。",
+      langUnLabel: "联合国官方语言（6）：",
+      langCommunityLabel: "全球社区语言版本（12）：",
+      riskSub: "跨 9d3195b4 至 ca81b7b9 结构化查证",
+      riskHeading: "风险矩阵与六份深度卷宗",
+      riskDesc:
+        "按风险等级筛选查证结果、核对截至 <code>ca81b7b9</code>（11 月 25 日 14:49 CST）的上游修复进展，或直接打开 6 份深度技术卷宗、<a href=\"https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/EVIDENCE-INDEX.md\" target=\"_blank\" rel=\"noopener noreferrer\">108 张证据总索引</a>与<a href=\"https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/COMPLETE-SOURCE-INDEX.md\" target=\"_blank\" rel=\"noopener noreferrer\">320 条一手来源总索引</a>。",
+      filterAll: "全部 (7)",
+      filterCrit: "严重 (2)",
+      filterHigh: "高危 (2)",
+      filterMed: "中高 (1)",
+      filterBase: "基线 (2)",
+      timelineSub: "时间轴与上游源码复核",
+      timelineHeading: "审计与上游修复时间线",
+      timelineDesc: "从默认启用 PostHog、11 月 24–25 日通宵 GDPR 补丁战到最新 <code>ca81b7b9</code>（基线后 +259 提交）的关键节点。",
+      tlColDate: "日期 / 窗口",
+      tlColMilestone: "关键里程碑",
+      tlColOutcome: "源码核实与上游结果",
+      tl1Title: "默认 PostHog 遥测与静默删除官网承诺",
+      tl2Title: "闭源上报网关、跨工具哈希与求星弹窗",
+      tl3Title: "Fork 命名风波、18 弹审计与通宵 GDPR 补丁",
+      tl4Title: "#42299 撤除 Codex/Claude 读取；#42465 脱敏自定义模型",
+      tl5Title: "收窄 Windows 进程监控、Google 验证链接与异步 SQLite 清理",
+      tl6Title: "CI 自动关闭 (#42630)、DO_NOT_TRACK (#42629) 与遗留缺口",
+      chartsSub: "量化语料库 · n = 1,151（2026 年 11 月 7–24 日）",
+      chartsHeading: "1,151 条推文交互式取证图表",
+      chartsDesc: "在页面内直接探索四张可交互取证图表，支持一键切换中英文、随主站同步浅/深色主题与悬停读数。",
+      chartTab1: "语料结构与产品重心",
+      chartTab2: "24 小时作息与日频波动",
+      chartTab3: "选择性礼貌双标实锤",
+      chartTab4: "25 小时中文区危机拆解",
+      chartInspectPng: "查看归档 PNG 原图",
+      chartOpenStandalone: "独立页面打开",
+      chartDossier: "阅读卷宗 06",
+      receiptsSub: "一手视觉实证总库",
+      receiptsHeading: "108 张实证截图检索画廊",
+      receiptsDesc:
+        "按关键词、源码文件名、PR 或 Issue 编号即时检索，或按审计弹数筛选。点击任意实证卡片即可全屏放大核验，也可查阅 <a href=\"https://github.com/realchendahuang/before-you-install-t3code/blob/main/docs/EVIDENCE-INDEX.md\" target=\"_blank\" rel=\"noopener noreferrer\">108 项完整 Markdown 编目（<code>docs/EVIDENCE-INDEX.md</code>）</a>。",
+      mitigationSub: "面向 ca81b7b9 的纵深止损与清理指引",
+      mitigationHeading: "快速止损操作手册",
+      mitigationDesc:
+        "尽管 <code>PR #42629</code> 已支持 <code>DO_NOT_TRACK=1</code>，但 <code>DesktopShellEnvironment.ts</code> 仍漏传 <code>OTEL_SDK_DISABLED</code> 且 <code>AnalyticsService.ts:156</code> 启动仍先写盘。请结合环境变量、hosts 拉黑、Managed Policy、离线 <code>VACUUM</code> 与令牌吊销综合处理。",
+      pbTabPolicy: "管理员 Managed Policy",
+      pbUnix1Title: "1. 环境变量关闭（<code>DO_NOT_TRACK=1</code>）与系统层 hosts 阻断",
+      pbUnix1Desc: "在 <code>~/.zshrc</code> 或 <code>~/.bashrc</code> 中同时导出 <code>DO_NOT_TRACK=1</code>（<code>PR #42629</code>）与旧版关闭变量，并在 <code>/etc/hosts</code> 拦截 <code>ingest.t3.codes</code>，随后彻底重启 T3 Code。",
+      pbUnix2Title: "2. 排查 statev2.sqlite 膨胀、运行离线 <code>VACUUM</code> 并清除 Antigravity 目录",
+      pbUnix2Desc: "即使 <code>PR #42119</code> 补了异步清理，被分支/子代理引用的历史与墓碑行仍留在库中，释放磁盘空间必须先退出 T3 Code 再跑离线 <code>VACUUM</code>。",
+      pbWin1Title: "1. 持久化用户/系统环境变量（<code>DO_NOT_TRACK=1</code>）与 Windows hosts 拦截",
+      pbWin1Desc: "以管理员身份运行 PowerShell 写入全部关闭变量并拉黑 <code>ingest.t3.codes</code>，完成后重启电脑或后台进程。",
+      pbWin2Title: "2. Windows 状态目录清理、SQLite <code>VACUUM</code> 与 GitHub OAuth 吊销",
+      pbWin2Desc: "核查 <code>%USERPROFILE%\\.t3\\userdata\\</code>，清理 Antigravity 目录，并在 GitHub 设置中吊销 T3 Code 应用授权。",
+      pbPolTitle: "管理员受管策略（<code>policy.json</code>）",
+      pbPolDesc: "以 root 或管理员权限部署至下方受保护路径，再用 <code>t3 policy check policy.json</code> 与 <code>t3 policy show</code> 校验。",
+      pbColMdm: "原生策略 / MDM / 注册表",
+      pbColPath: "管理员受保护路径",
+      pbWarnCallout:
+        "<strong><code>ca81b7b9</code> 已确认盲区（<code>docs/user/telemetry.md</code> 与 <code>AnalyticsService.ts:156</code>）：</strong> Managed Policy 无法关闭托管网页端 <code>app.t3.codes</code> 与移动端追踪，也不会关闭已启用的 <code>Publish agent activity</code>，且启动仍先写盘。请手动在 <em>Settings → Sharing &amp; access</em> 关闭该项、解绑机器并申请 Clerk 删号。",
+      footerColophon:
+        "CC0 1.0 公有领域 · pingdotgg/t3code 独立安全、遥测与公开记录审计档案（基线 9d3195b4 → 上游 ca81b7b9）。零统计埋点、零第三方追踪脚本、零短链跳转。",
+      footerGroupDossiers: "六份深度技术卷宗",
+      footerGroupIndexes: "总索引与实证图表",
+      footerGroupRepo: "仓库与自动门禁",
+      footerScopeTitle: "核验与勘误原则",
+      footerScopeBody:
+        "本站每一项结论均锚定可公开查证的 Git 提交、PR、Issue、官方文档、USPTO 商标库或归档原图。欢迎附一手出处通过 Pull Request 提交事实更新与上游修复同步。"
+    }
+  };
+
+  var EN_SNAPSHOT = {};
 
   function escapeHtml(str) {
     return String(str)
@@ -1145,42 +1265,123 @@
       .replace(/"/g, "&quot;");
   }
 
-  /* 1. Risk Matrix */
+  var RISK_MATRIX_ZH = {
+    "telemetry-gdpr": {
+      domain: "遥测与 GDPR 举报后隐私",
+      severityLabel: "严重",
+      findings:
+        "官网挂着「No telemetry / Unless you opt in. Full stop.」期间默认启用 PostHog（PR #174，3bdaa6e1 于 6 月 18 日删去承诺）；原始事件留存于闭源 ingest.t3.codes（PR #15028）；无盐 SHA-256 跨工具读取 ~/.codex/auth.json 与 ~/.claude.json（Identify.ts）；连拒 4 个退出 PR（#13458、#16763、#21248、#27077）；Managed Policy 存在盲区；GDPR 后通宵 PR 自承 Axiom 每小时留存 220 万条 IP+UA 跨度达 30 天（#42380）、git.cwd 绝对路径泄露（#42450）、Win/Mac 退出失效（#42376、#42464）、删号不删库（#42285）及匿名反馈混包（#42466）。",
+      status:
+        "PR #42299 已停止读取 .codex/.claude.json，#42465 将非目录模型脱敏为 custom:<driver>，#42630 与 #42629 响应 CI 及 DO_NOT_TRACK=1；但 AnalyticsService.ts:156 启动仍先写盘，DesktopShellEnvironment.ts 漏传 OTEL_SDK_DISABLED，app.t3.codes 无开关，ingest.t3.codes 维持闭源。",
+      dossierTitle: "卷宗 01 · 遥测与 GDPR"
+    },
+    "local-safety": {
+      domain: "本地安全与静默安全公告",
+      severityLabel: "严重",
+      findings:
+        "侧边栏「永久删除」仅追加 thread.deleted 使 statev2.sqlite 膨至 25.9–41.6 GB（#17845）；t3-resource-monitor 扫描全机进程与命令行参数（#11222、PR #41889）；Claude Auto 第 3 次重试静默放行 git push --force（#15353，悬置 52+ 天）；21 小时撤除 slopalytics.com 模型过滤（#41237）；高危补丁静默合入但 GitHub 安全公告为 0；Windows Base64 PowerShell 报毒未修（#30997）；打开未受信任仓库自动递归初始化 .gitmodules、缺全局 core.hooksPath=/dev/null 并带 GITHUB_TOKEN/SSH_AUTH_SOCK 运行 SessionStart 钩子。",
+      status:
+        "PR #42119 新增异步清理（但活跃分支/子代理关联历史与墓碑行仍留存，瘦身需离线 VACUUM）；#42577 仅收窄 Windows 监控（Linux/macOS 维持 ProcessesToUpdate::All）；#15353、#26489、#30997、仓库钩子风险与 0 条安全公告仍未解决。",
+      dossierTitle: "卷宗 02 · 本地安全与公告"
+    },
+    "antigravity-connect": {
+      domain: "Antigravity 服务条款与 T3 Connect 中继",
+      severityLabel: "高危",
+      findings:
+        "官方 FAQ 担保合乎 Google Antigravity 服务条款，但 antigravityUsageLimits.ts 提取系统钥匙串/Windows CredReadW 令牌并伪造 antigravity/hub/2.24.0 直连 v1internal；antigravityAuthSupport.ts 注入假 SSH_CONNECTION 引发跨号串流（#41973）；全新 $20 账号 3 分钟封号（#41536）；PR #33800 原生接入 CLIProxyAPI 伪装轮询；T3 Connect 零端到端加密（#32098）并计划迁往 OVH Caddy 明文网关（#32945）；ca81b7b9 另存 --lan 明文 Cookie、不可吊销 30 天 Bearer、可重放 ?wsTicket= 与 ::1 断连。",
+      status:
+        "PR #41210 新增 Google VALIDATION_REQUIRED 验证链接（反证风控触发）；全部 Antigravity 伪装与提取路径、零端到端加密、默认关闭 requireConnectDeviceApproval 以及局域网/Bearer/WS/::1 缺陷仍在生效。",
+      dossierTitle: "卷宗 03 · Antigravity 与中继"
+    },
+    "business-77k": {
+      domain: "商业账本、赞助商与 7.7 万星漏斗",
+      severityLabel: "高危",
+      findings:
+        "自掏 $800k+ 打造免费客户端（提及 T3 162 次 vs 老付费业务 0 次）；日跑 31.7 万亿 token（$10.19M/天）算力雷达换取 $300k+ OpenAI 内测额度与 VC 接洽；天使投资与 Vibe Kanban、Daytona 冲突；Clerk/Axiom 赞助底座与 Vercel 排他条款；Codex 0% 薅羊毛与 10 账号 CLIProxyAPI Gist（555% 额度）；发呆 30 秒弹窗动用宿主机凭据发 PUT user/starred/...（#27832、#29922、#29987），绕过 Macroscope 审查并放任 driver.ts#L60-L99 任意点星漏洞 19 天未修。",
+      status:
+        "ca81b7b9 实测 driver.ts#L60-L99 任意仓库点星与 zhilsinger 审查意见仍未处理；仓库达 7.7 万+ 星而 watcher 仅约 129 人。",
+      dossierTitle: "卷宗 04 · 商业与 7.7 万星"
+    },
+    "governance-trademark": {
+      domain: "社区治理、商标记录与历史言行",
+      severityLabel: "中高",
+      findings:
+        "内部日均 500 commits / 700 agents / yolo merges，对外却以 CONTRIBUTING.md 劝退（\"here's my advice: Don't\"）、.github/VOUCHED.td 拉黑秒关、174 个 unwanted 标签、删除 Plan mode（#5551、#9190、#33131）并在 #33639 辱骂用户；公开派 @bot 扒人 Fork（@MiaAI_lab）并挂自动拉黑脚本；威胁封号时 T3 Code 在 USPTO 注册商标为 0，17 小时后补写 TRADEMARK.md（#41898）；延续 2024–2026 多次风波模式。",
+      status:
+        "CONTRIBUTING.md、.github/VOUCHED.td 与事后补写的 TRADEMARK.md 仍在 main（ca81b7b9）生效。",
+      dossierTitle: "卷宗 05 · 治理与商标"
+    },
+    "tweet-dataset": {
+      domain: "1,151 条连续推文量化数据集",
+      severityLabel: "审计基线",
+      findings:
+        "11 月 7–24 日连续语料全量分析（n = 1,151，17.24 天，日均 66.8 条，回复占 75.6%，间隔中位数 2.7 分钟）：对 20 位大厂高管/实验室员工/头部 KOL 针对性粗口与人身攻击率为 0.0%（0/43，礼貌致谢 32.6%），对普通开发者敌意率升至 8.0%（61/766），中文二改 25 小时危机窗口直接人身攻击暴涨 4.0 倍至 14.4%（19/132）。",
+      status:
+        "可复现正则审计（9d3195b4 / ca81b7b9），附 4 张可交互图表与归档静态 PNG。",
+      dossierTitle: "卷宗 06 · 1,151 推文数据集"
+    },
+    "source-index": {
+      domain: "320 条一手 URL 与 108 项视觉总目",
+      severityLabel: "总索引",
+      findings:
+        "完整交叉编目 README.md、6 份深度卷宗与 ca81b7b9 审计后追踪引用的全部 320 条规范化 https:// 原始链接（SRC-001..SRC-320），配套 108 张无损优化视觉凭证总表（EV-001..EV-108）。",
+      status:
+        "100% 规范化直链（零 t.co 短链）且 108/108 视觉资产全覆盖编目。",
+      dossierTitle: "完整来源总表 (320)",
+      extraUrlTitle: "证据图总表 (108)"
+    }
+  };
+
+  /* 1. Risk Matrix (Anthropic Editorial Dispatch Cards) */
   function renderRiskMatrix() {
     var grid = document.getElementById("riskGrid");
     if (!grid) return;
 
+    var isZh = state.lang === "zh";
     var items = RISK_MATRIX.filter(function (row) {
       return state.riskFilter === "all" || row.severity === state.riskFilter;
     });
 
     grid.innerHTML = items
       .map(function (row) {
+        var zh = isZh ? RISK_MATRIX_ZH[row.id] : null;
+        var domain = zh ? zh.domain : row.domain;
+        var sevLabel = zh ? zh.severityLabel : row.severityLabel;
+        var findings = zh ? zh.findings : row.findings;
+        var status = zh ? zh.status : row.status;
+        var dossierTitle = zh ? zh.dossierTitle : row.dossierTitle;
+        var extraTitle = zh && zh.extraUrlTitle ? zh.extraUrlTitle : (row.extraUrlTitle || "Reference");
         var spanCls = row.fullSpan && state.riskFilter === "all" ? " full-span" : "";
         var sevCls = "sev-" + row.severity;
+        var swatchCls = "swatch-" + row.severity;
         var primaryPart = row.partFilters[0] || "All";
         var extraBtn = row.extraUrl
-          ? '<a class="btn btn-sm" href="' + escapeHtml(row.extraUrl) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(row.extraUrlTitle || "Reference") + " ↗</a>"
+          ? '<a class="btn btn-sm claude-spring-press" href="' + escapeHtml(row.extraUrl) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(extraTitle) + "</a>"
           : "";
+        var statusPrefix = isZh ? "上游复核（ca81b7b9 · 11 月 25 日 14:49 CST）：" : "Status at ca81b7b9 (Nov 25, 14:49 CST): ";
+        var filterBtnLabel = isZh ? "筛选相关实证 (" + primaryPart + ")" : "Filter receipts (" + primaryPart + ")";
         return (
           '<article class="risk-card' + spanCls + '">' +
             '<div>' +
+              '<div class="dispatch-swatch-bar ' + swatchCls + '" aria-hidden="true">' +
+                '<div class="s1"></div><div class="s2"></div><div class="s3"></div>' +
+              "</div>" +
               '<div class="risk-top">' +
                 '<div>' +
-                  '<h3 class="risk-domain">' + escapeHtml(row.domain) + "</h3>" +
+                  '<h3 class="risk-domain">' + escapeHtml(domain) + "</h3>" +
                   '<div class="risk-parts">' + escapeHtml(row.partsLabel) + "</div>" +
                 "</div>" +
-                '<span class="sev-badge ' + sevCls + '">' + escapeHtml(row.severityLabel) + "</span>" +
+                '<span class="sev-badge ' + sevCls + '">' + escapeHtml(sevLabel) + "</span>" +
               "</div>" +
-              '<p class="risk-findings" style="margin-top:10px;">' + escapeHtml(row.findings) + "</p>" +
+              '<p class="risk-findings" style="margin-top:12px;">' + escapeHtml(findings) + "</p>" +
             "</div>" +
             '<div>' +
-              '<div class="risk-status"><strong>Status (ca81b7b9 · Nov 25 14:49 CST):</strong> ' + escapeHtml(row.status) + "</div>" +
-              '<div class="risk-actions" style="margin-top:10px;">' +
-                '<button type="button" class="btn btn-sm js-jump-receipts" data-part="' + escapeHtml(primaryPart) + '">Filter Receipts (' + escapeHtml(primaryPart) + ") →</button>" +
-                '<div style="display:flex;flex-wrap:wrap;gap:8px;">' +
+              '<div class="risk-status"><strong>' + escapeHtml(statusPrefix) + "</strong>" + escapeHtml(status) + "</div>" +
+              '<div class="risk-actions" style="margin-top:12px;">' +
+                '<button type="button" class="btn btn-sm btn-stone claude-spring-press js-jump-receipts" data-part="' + escapeHtml(primaryPart) + '">' + escapeHtml(filterBtnLabel) + "</button>" +
+                '<div class="risk-actions-right">' +
                   extraBtn +
-                  '<a class="btn btn-sm btn-primary" href="' + escapeHtml(row.dossierUrl) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(row.dossierTitle) + " ↗</a>" +
+                  '<a class="btn btn-sm btn-primary claude-spring-press" href="' + escapeHtml(row.dossierUrl) + '" target="_blank" rel="noopener noreferrer">' + escapeHtml(dossierTitle) + "</a>" +
                 "</div>" +
               "</div>" +
             "</div>" +
@@ -1399,12 +1600,13 @@
     if (capEl) capEl.textContent = item.caption;
 
     if (linksEl) {
-      var html = '<a href="' + escapeHtml(item.path) + '" target="_blank" rel="noopener noreferrer">Open Raw Image ↗</a>';
+      var isZh = state.lang === "zh";
+      var html = '<a href="' + escapeHtml(item.path) + '" target="_blank" rel="noopener noreferrer">' + (isZh ? "打开原图" : "Open raw image") + "</a>";
       if (item.dossier) {
-        html += '<a href="' + escapeHtml(item.dossier) + '" target="_blank" rel="noopener noreferrer">Read Related Dossier ↗</a>';
+        html += '<a href="' + escapeHtml(item.dossier) + '" target="_blank" rel="noopener noreferrer">' + (isZh ? "阅读关联卷宗" : "Read related dossier") + "</a>";
       }
       if (item.sourceUrl) {
-        html += '<a href="' + escapeHtml(item.sourceUrl) + '" target="_blank" rel="noopener noreferrer">Canonical Primary Source ↗</a>';
+        html += '<a href="' + escapeHtml(item.sourceUrl) + '" target="_blank" rel="noopener noreferrer">' + (isZh ? "查看一手原出处" : "Canonical primary source") + "</a>";
       }
       linksEl.innerHTML = html;
     }
@@ -1437,7 +1639,7 @@
     if (!stage) return;
     state.zoomed = !state.zoomed;
     stage.classList.toggle("zoomed", state.zoomed);
-    if (btn) btn.textContent = state.zoomed ? "Fit Screen" : "Zoom 100%";
+    if (btn) btn.textContent = state.zoomed ? "Fit screen" : "Zoom 100%";
   }
 
   function initGalleryAndLightbox() {
@@ -1454,15 +1656,15 @@
 
     var coverCard = document.getElementById("heroCoverCard");
     if (coverCard) {
-      coverCard.addEventListener("click", function () {
+      var openCover = function () {
         state.filteredReceipts = EVIDENCE_RECEIPTS.slice();
-        openLightboxIndex(0);
-      });
+        openLightboxIndex(state.lang === "zh" ? 1 : 0);
+      };
+      coverCard.addEventListener("click", openCover);
       coverCard.addEventListener("keydown", function (e) {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
-          state.filteredReceipts = EVIDENCE_RECEIPTS.slice();
-          openLightboxIndex(0);
+          openCover();
         }
       });
     }
@@ -1498,7 +1700,7 @@
   function copyText(text, btn) {
     var finish = function () {
       var orig = btn.textContent;
-      btn.textContent = "Copied ✓";
+      btn.textContent = state.lang === "zh" ? "已复制" : "Copied";
       btn.classList.add("copied");
       setTimeout(function () {
         btn.textContent = orig;
@@ -1547,12 +1749,146 @@
     });
   }
 
+  /* 5. Claude Polarity Toggle, Bilingual Switch & Signature Footer Accordions */
+  function syncChartFrame() {
+    var frame = document.getElementById("chartFrame");
+    if (!frame || !frame.contentWindow) return;
+    try {
+      frame.contentWindow.postMessage(
+        { type: "t3-theme", theme: state.theme, lang: state.lang },
+        "*"
+      );
+    } catch (e) { /* ignore cross-origin */ }
+  }
+
+  function applyTheme(theme) {
+    state.theme = theme === "dark" ? "dark" : "light";
+    var isDark = state.theme === "dark";
+    document.documentElement.classList.toggle("dark", isDark);
+    try { localStorage.setItem("byit3-theme", state.theme); } catch (e) {}
+
+    var btn = document.getElementById("themeToggleBtn");
+    var sun = document.getElementById("themeIconSun");
+    var moon = document.getElementById("themeIconMoon");
+    var label = document.getElementById("themeToggleLabel");
+    if (btn) btn.setAttribute("aria-pressed", isDark ? "true" : "false");
+    if (sun) sun.style.display = isDark ? "" : "none";
+    if (moon) moon.style.display = isDark ? "none" : "";
+    if (label) {
+      if (state.lang === "zh") {
+        label.textContent = isDark ? "浅色" : "深色";
+      } else {
+        label.textContent = isDark ? "Light" : "Dark";
+      }
+    }
+    syncChartFrame();
+  }
+
+  function initThemeToggle() {
+    try {
+      var qpTheme = new URLSearchParams(window.location.search).get("theme");
+      if (qpTheme === "dark" || qpTheme === "light") state.theme = qpTheme;
+    } catch (e) {}
+    applyTheme(state.theme);
+    var btn = document.getElementById("themeToggleBtn");
+    if (btn) {
+      btn.addEventListener("click", function () {
+        applyTheme(state.theme === "dark" ? "light" : "dark");
+      });
+    }
+    var frame = document.getElementById("chartFrame");
+    if (frame) {
+      frame.addEventListener("load", syncChartFrame);
+    }
+  }
+
+  function applyLanguage(lang) {
+    state.lang = lang === "zh" ? "zh" : "en";
+    var isZh = state.lang === "zh";
+    document.documentElement.lang = isZh ? "zh-CN" : "en";
+    document.body.classList.toggle("tn-prose-cjk", isZh);
+    try { localStorage.setItem("byit3-lang", state.lang); } catch (e) {}
+
+    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+      var key = el.getAttribute("data-i18n");
+      if (!key) return;
+      if (!(key in EN_SNAPSHOT)) {
+        EN_SNAPSHOT[key] = el.innerHTML;
+      }
+      if (isZh && UI_I18N.zh[key]) {
+        el.innerHTML = UI_I18N.zh[key];
+      } else if (key in EN_SNAPSHOT) {
+        el.innerHTML = EN_SNAPSHOT[key];
+      }
+    });
+
+    var langLabel = document.getElementById("langToggleLabel");
+    if (langLabel) langLabel.textContent = isZh ? "EN" : "中文";
+
+    var coverImg = document.getElementById("heroCoverImg");
+    var coverPath = document.getElementById("heroCoverPath");
+    if (coverImg) {
+      coverImg.src = isZh ? "./evidence/00-cover-zh.png" : "./evidence/00-cover-en.png";
+    }
+    if (coverPath) {
+      coverPath.textContent = isZh ? "evidence/00-cover-zh.png" : "evidence/00-cover-en.png";
+    }
+
+    var search = document.getElementById("gallerySearch");
+    if (search) {
+      search.placeholder = isZh
+        ? "搜索 108 张实证（如 42450、Identify.ts、antigravity、wsTicket、SSH_AUTH_SOCK、driver.ts）..."
+        : "Search 108 receipts (e.g. 42450, Identify.ts, antigravity, wsTicket, SSH_AUTH_SOCK, driver.ts)...";
+    }
+
+    applyTheme(state.theme);
+    renderRiskMatrix();
+    syncChartFrame();
+  }
+
+  function initLanguageToggle() {
+    var savedLang = "en";
+    try {
+      var qpLang = new URLSearchParams(window.location.search).get("lang");
+      var stored = localStorage.getItem("byit3-lang");
+      if (qpLang === "zh" || qpLang === "en") savedLang = qpLang;
+      else if (stored === "zh" || stored === "en") savedLang = stored;
+    } catch (e) {}
+
+    applyLanguage(savedLang);
+    var btn = document.getElementById("langToggleBtn");
+    if (btn) {
+      btn.addEventListener("click", function () {
+        applyLanguage(state.lang === "zh" ? "en" : "zh");
+      });
+    }
+  }
+
+  function initFooterAccordions() {
+    var triggers = document.querySelectorAll("[data-acc-trigger]");
+    triggers.forEach(function (trigger) {
+      trigger.addEventListener("click", function () {
+        var key = trigger.getAttribute("data-acc-trigger");
+        var isOpen = trigger.getAttribute("aria-expanded") === "true";
+        triggers.forEach(function (t) {
+          var k = t.getAttribute("data-acc-trigger");
+          var nextOpen = k === key ? !isOpen : false;
+          t.setAttribute("aria-expanded", nextOpen ? "true" : "false");
+          var panel = document.querySelector('[data-acc-panel="' + k + '"]');
+          if (panel) panel.setAttribute("data-open", nextOpen ? "true" : "false");
+        });
+      });
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     initRiskFilters();
-    renderRiskMatrix();
     initCharts();
     setActiveChart("chart1");
     initGalleryAndLightbox();
     initPlaybook();
+    initThemeToggle();
+    initLanguageToggle();
+    initFooterAccordions();
   });
 })();
