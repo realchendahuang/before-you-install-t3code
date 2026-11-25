@@ -53,6 +53,8 @@
 
 ---
 
+[交互式 T3 Code 危害图谱](../../site/threat-map.html)：可离线打开的审计基线与复核状态图。
+
 ## TL;DR（30 秒结论速览）
 
 > [!IMPORTANT]

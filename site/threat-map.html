@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>T3 Code 危害架构与修复状态交互图谱（审计基线 9d3195b4 → ca81b7b9）</title>
+  <style>
+    :root {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface-2: #1f2630;
+      --border: #30363d;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #58a6ff;
+
+      --sev-critical: #f85149;
+      --sev-critical-bg: rgba(248, 81, 73, 0.14);
+      --sev-high: #fb8500;
+      --sev-high-bg: rgba(251, 133, 0, 0.14);
+      --sev-med: #e3b341;
+      --sev-med-bg: rgba(227, 179, 65, 0.14);
+
+      --st-open: #ff7b72;
+      --st-open-bg: rgba(248, 81, 73, 0.16);
+      --st-partial: #58a6ff;
+      --st-partial-bg: rgba(88, 166, 255, 0.16);
+
+      --edge-default: #30363d;
+      --edge-dim: rgba(48, 54, 61, 0.35);
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    [data-theme="light"] {
+      --bg: #f6f8fa;
+      --surface: #ffffff;
+      --surface-2: #f0f3f6;
+      --border: #d0d7de;
+      --text: #1f2328;
+      --text-muted: #59636e;
+      --accent: #0969da;
+
+      --sev-critical: #cf222e;
+      --sev-critical-bg: rgba(207, 34, 46, 0.1);
+      --sev-high: #bc4c00;
+      --sev-high-bg: rgba(188, 76, 0, 0.1);
+      --sev-med: #9a6700;
+      --sev-med-bg: rgba(154, 103, 0, 0.12);
+
+      --st-open: #cf222e;
+      --st-open-bg: rgba(207, 34, 46, 0.1);
+      --st-partial: #0969da;
+      --st-partial-bg: rgba(9, 105, 218, 0.1);
+
+      --edge-default: #c5ced8;
+      --edge-dim: rgba(197, 206, 216, 0.35);
+      --shadow: 0 6px 20px rgba(31, 35, 40, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.55;
+    }
+
+    .app {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 16px;
+    }
+
+    .title-block h1 {
+      margin: 0 0 6px 0;
+      font-size: 21px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    .subtitle {
+      margin: 0;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+
+    .subtitle code {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 1px 6px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 12px;
+      color: var(--text);
+    }
+
+    .stats-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .stat-chip {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 6px 12px;
+      font-size: 12px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .stat-chip strong {
+      font-size: 14px;
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 16px;
+    }
+
+    .filter-groups {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .filter-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .filter-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-right: 4px;
+    }
+
+    .btn {
+      appearance: none;
+      background: var(--surface-2);
+      color: var(--text);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 5px 11px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+
+    .btn:hover {
+      border-color: var(--accent);
+    }
+
+    .btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #ffffff;
+    }
+
+    .btn-ghost {
+      background: transparent;
+    }
+
+    .action-btns {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .workspace {
+      display: grid;
+      grid-template-columns: minmax(0, 1.85fr) minmax(320px, 1fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    @media (max-width: 1080px) {
+      .workspace {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .canvas-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px;
+      box-shadow: var(--shadow);
+      overflow-x: auto;
+    }
+
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      padding: 4px 6px 10px 6px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 8px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    .legend-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    svg#threat-map {
+      width: 100%;
+      min-width: 780px;
+      height: auto;
+      display: block;
+      user-select: none;
+    }
+
+    .edge {
+      fill: none;
+      stroke: var(--edge-default);
+      stroke-width: 1.8;
+      transition: stroke 0.2s ease, stroke-width 0.2s ease, opacity 0.2s ease;
+    }
+
+    .edge.dimmed {
+      stroke: var(--edge-dim);
+      opacity: 0.35;
+    }
+
+    .edge.highlighted {
+      stroke-width: 2.8;
+      opacity: 1;
+    }
+
+    .node-group {
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+    }
+
+    .node-group.dimmed {
+      opacity: 0.26;
+    }
+
+    .node-group:focus {
+      outline: none;
+    }
+
+    .node-bg {
+      fill: var(--surface-2);
+      stroke: var(--border);
+      stroke-width: 1.2;
+      transition: stroke 0.18s ease, stroke-width 0.18s ease, fill 0.18s ease;
+    }
+
+    .node-group:hover .node-bg {
+      stroke: var(--accent);
+      stroke-width: 1.8;
+    }
+
+    .node-group.selected .node-bg {
+      stroke: var(--accent);
+      stroke-width: 2.2;
+    }
+
+    .node-title {
+      fill: var(--text);
+      font-size: 12.5px;
+      font-weight: 600;
+    }
+
+    .node-sub {
+      fill: var(--text-muted);
+      font-size: 11px;
+    }
+
+    .root-bg {
+      fill: var(--surface-2);
+      stroke: var(--sev-critical);
+      stroke-width: 2;
+    }
+
+    .inspector {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+      position: sticky;
+      top: 16px;
+    }
+
+    .inspector-header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 8px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      border: 1px solid transparent;
+    }
+
+    .badge-sev-严重 {
+      color: var(--sev-critical);
+      background: var(--sev-critical-bg);
+      border-color: rgba(248, 81, 73, 0.35);
+    }
+
+    .badge-sev-高危 {
+      color: var(--sev-high);
+      background: var(--sev-high-bg);
+      border-color: rgba(251, 133, 0, 0.35);
+    }
+
+    .badge-sev-中高危 {
+      color: var(--sev-med);
+      background: var(--sev-med-bg);
+      border-color: rgba(227, 179, 65, 0.35);
+    }
+
+    .badge-st-仍未修复 {
+      color: var(--st-open);
+      background: var(--st-open-bg);
+    }
+
+    .badge-st-部分修复 {
+      color: var(--st-partial);
+      background: var(--st-partial-bg);
+    }
+
+    .badge-domain {
+      color: var(--text-muted);
+      background: var(--surface-2);
+      border-color: var(--border);
+    }
+
+    .inspector h2 {
+      margin: 0;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+
+    .detail-section {
+      margin-bottom: 14px;
+    }
+
+    .detail-section:last-child {
+      margin-bottom: 0;
+    }
+
+    .detail-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      margin-bottom: 5px;
+    }
+
+    .detail-text {
+      margin: 0;
+      font-size: 13.5px;
+      color: var(--text);
+    }
+
+    .evidence-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: 4px;
+    }
+
+    .evidence-tag {
+      display: inline-block;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 11.5px;
+      padding: 3px 7px;
+      border-radius: 5px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a.evidence-tag:hover {
+      border-color: var(--accent);
+      text-decoration: underline;
+    }
+
+    span.evidence-tag {
+      color: var(--text);
+    }
+
+    .mitigation-box {
+      background: var(--surface-2);
+      border-left: 3px solid var(--accent);
+      border-radius: 6px;
+      padding: 10px 12px;
+      font-size: 13px;
+    }
+
+    .child-links {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      margin-top: 6px;
+    }
+
+    .child-link-btn {
+      text-align: left;
+      width: 100%;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 10px;
+      color: var(--text);
+      font-size: 12.5px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .child-link-btn:hover {
+      border-color: var(--accent);
+    }
+
+    footer {
+      margin-top: 18px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--text-muted);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="title-block">
+        <h1>T3 Code 危害架构与修复状态交互图谱</h1>
+        <p class="subtitle">
+          基于 <code>realchendahuang/before-you-install-t3code</code> 独立审计数据 ·
+          基线 <code>9d3195b4 (#42000)</code> → 复核至 <code>ca81b7b9 (#42634)</code>
+        </p>
+      </div>
+      <div class="stats-bar" id="stats-bar"></div>
+    </header>
+
+    <section class="controls" aria-label="图谱筛选器">
+      <div class="filter-groups">
+        <div class="filter-group" id="severity-filters">
+          <span class="filter-label">危险等级：</span>
+          <button class="btn active" data-val="全部">全部</button>
+          <button class="btn" data-val="严重">严重</button>
+          <button class="btn" data-val="高危">高危</button>
+          <button class="btn" data-val="中高危">中高危</button>
+        </div>
+        <div class="filter-group" id="status-filters">
+          <span class="filter-label">修复状态：</span>
+          <button class="btn active" data-val="全部">全部</button>
+          <button class="btn" data-val="仍未修复">仍未修复</button>
+          <button class="btn" data-val="部分修复">部分修复</button>
+        </div>
+      </div>
+      <div class="action-btns">
+        <button class="btn btn-ghost" id="reset-btn">重置视图</button>
+        <button class="btn btn-ghost" id="theme-btn" aria-label="切换深浅主题">切换浅色</button>
+      </div>
+    </section>
+
+    <main class="workspace">
+      <div class="canvas-card">
+        <div class="legend">
+          <div class="legend-items">
+            <span class="legend-item"><span class="dot" style="background: var(--sev-critical)"></span>严重</span>
+            <span class="legend-item"><span class="dot" style="background: var(--sev-high)"></span>高危</span>
+            <span class="legend-item"><span class="dot" style="background: var(--sev-med)"></span>中高危</span>
+            <span class="legend-item" style="margin-left:8px;">点击任意节点查看源码证据与止损方案，悬停高亮传导链路</span>
+          </div>
+          <span id="match-counter">当前命中：12 / 12 项风险</span>
+        </div>
+        <svg id="threat-map" viewBox="0 0 960 760" role="img" aria-label="T3 Code 危害传导路径图谱"></svg>
+      </div>
+
+      <aside class="inspector" id="inspector" aria-live="polite"></aside>
+    </main>
+
+    <footer>
+      <span>数据来源：<a href="https://github.com/realchendahuang/before-you-install-t3code" target="_blank" rel="noopener noreferrer">realchendahuang/before-you-install-t3code</a>（审计证据库）</span>
+      <span>单文件零外部依赖 · 无外链请求 · 支持离线直接打开与 GitHub Pages 静态部署</span>
+    </footer>
+  </div>
+
+  <script>
+    (function () {
+      const REPO = "https://github.com/pingdotgg/t3code";
+
+      const ROOT_NODE = {
+        id: "root",
+        title: "T3 Code 客户端",
+        subtitle: "pingdotgg/t3code",
+        meta: "基线 9d3195b4 → ca81b7b9",
+        severity: "严重",
+        status: "仍未修复",
+        impact:
+          "开源 AI 编程客户端默认开启指向闭源服务端（ingest.t3.codes）的遥测采集，存在多项本地安全与权限旁路漏洞（GitHub 安全公告栏始终为 0 条），伪装 Google Antigravity 协议引发封号风险，且 T3 Connect 远程中继全程无端到端加密。截至 ca81b7b9（PR #42634），虽在欧盟 GDPR 举报后通宵修补了部分高关注泄露点，但核心架构级风险仍在主干生效。",
+        affected:
+          "非管理员桌面用户、含内网地址或 SSH_AUTH_SOCK / GITHUB_TOKEN 环境变量的企业开发者、Google AI / Antigravity 付费订阅者、Claude Auto 模式用户、T3 Connect / --lan 与关联 GitHub 账号用户。",
+        mitigation:
+          "若暂不卸载：配置 DO_NOT_TRACK=1、T3CODE_TELEMETRY_ENABLED=false、T3CODE_OTEL_SDK_DISABLED=true，并在系统 hosts 中将 ingest.t3.codes 指向 127.0.0.1。若已卸载：手动清理本地 statev2.sqlite（或离线执行 VACUUM），停用托管版 Antigravity 与 T3 Connect，并检查撤销 Google / GitHub 相关授权。",
+        evidence: [
+          { label: "基线快照 9d3195b4", url: REPO + "/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2" },
+          { label: "最新复核 ca81b7b9", url: REPO + "/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd" },
+          { label: "0 条安全公告", url: REPO + "/security/advisories" }
+        ]
+      };
+
+      const DOMAINS = [
+        {
+          id: "d1",
+          title: "1. 隐私与遥测合规",
+          severity: "严重",
+          dossier: "Dossier 01",
+          summary: "官网曾长期承诺零遥测却默认开启采集；闭源网关留存原始事件，GDPR 举报后连夜补丁仍残留启动先写 ID、环境变量漏传及移动端/活动发布死角。"
+        },
+        {
+          id: "d2",
+          title: "2. 本地安全与代码执行",
+          severity: "严重",
+          dossier: "Dossier 02",
+          summary: "覆盖本地磁盘假删除、全机进程命令行扫描、Claude Auto 强推旁路、陌生仓库自动执行 Git Hooks 与 0 公告静默修补高危漏洞。"
+        },
+        {
+          id: "d3",
+          title: "3. Antigravity 封号风险",
+          severity: "高危",
+          dossier: "Dossier 03",
+          summary: "违背官网合规担保，直接提取系统钥匙串与凭据管理器令牌并伪装官方客户端直连内部接口，导致付费主号快速封禁与静默串号。"
+        },
+        {
+          id: "d4",
+          title: "4. T3 Connect 与局域网认证",
+          severity: "高危",
+          dossier: "Dossier 03",
+          summary: "远程隧道与自建网关均无端到端加密，代码与终端输出对服务端透明；局域网模式与令牌认证机制存在多项高危绕过与不可吊销缺陷。"
+        },
+        {
+          id: "d5",
+          title: "5. GitHub 凭据与商业漏斗",
+          severity: "高危",
+          dossier: "Dossier 04",
+          summary: "投入 80 万美元以免费客户端换取每日 31.7 万亿 Token 实时算力雷达，并通过服务端凭据直接调 API 讨星，存在任意仓库代点星漏洞。"
+        },
+        {
+          id: "d6",
+          title: "6. 治理失控与合规双标",
+          severity: "中高危",
+          dossier: "Dossier 05–06",
+          summary: "高频 Yolo Merge 与黑名单劝退外部贡献并存；在 0 条 USPTO 注册商标情况下挥舞封号大棒；1,151 条推文揭示对大厂与普通开发者的悬殊态度。"
+        }
+      ];
+
+      const THREATS = [
+        {
+          id: "t1",
+          domainId: "d1",
+          title: "闭源遥测网关与启动先写 ID",
+          severity: "严重",
+          status: "仍未修复",
+          impact:
+            "AnalyticsService.ts 第 156 行在检查用户退出设置之前即无条件向磁盘写入追踪 ID；DesktopShellEnvironment.ts 遗漏转发 OTEL_SDK_DISABLED 与 T3CODE_OTEL_SDK_DISABLED；负责留存原始事件拷贝的 ingest.t3.codes 至今闭源，且桌面端与 app.t3.codes 网页端均无 UI 关闭开关。",
+          affected: "所有桌面端与网页端普通用户（尤其是无法修改系统级 Managed Policy 的非管理员用户）。",
+          mitigation: "在环境变量中设置 DO_NOT_TRACK=1，并直接在系统 hosts 文件写入 127.0.0.1 ingest.t3.codes 物理阻断上报出口。",
+          evidence: [
+            { label: "AnalyticsService.ts", url: REPO + "/blob/ca81b7b9/apps/server/src/telemetry/AnalyticsService.ts#L152" },
+            { label: "PR #15028", url: REPO + "/pull/15028" },
+            { label: "Issue #1397", url: REPO + "/issues/1397" },
+            { label: "PR #27077 (unwanted)", url: REPO + "/pull/27077" }
+          ]
+        },
+        {
+          id: "t2",
+          domainId: "d1",
+          title: "跨工具哈希追踪与 Axiom IP 日志",
+          severity: "严重",
+          status: "部分修复",
+          impact:
+            "此前读取 ~/.codex/auth.json 与 ~/.claude.json 做无盐 SHA-256 哈希跨设备串人；中继服务每小时向第三方 Axiom 发送约 220 万条附带真实 IP 与 User-Agent 的日志并保存 30 天；自动化追踪泄露本地绝对路径与用户名（git.cwd）；注销账号不删库。虽经 PR #42299/#42380/#42450 等应急修补，但移动端及 Publish agent activity 上报仍不受退出开关控制。",
+          affected: "同时使用 Codex / Claude Code 的开发者、使用远程中继与移动端的用户。",
+          mitigation: "关闭 Publish agent activity，检查并彻底清理 T3 Connect 云端关联记录，勿轻信单一环境变量关闭选项。",
+          evidence: [
+            { label: "PR #21506", url: REPO + "/pull/21506" },
+            { label: "PR #42380 (IP日志)", url: REPO + "/pull/42380" },
+            { label: "PR #42450 (git.cwd)", url: REPO + "/pull/42450" },
+            { label: "PR #42285 (假注销)", url: REPO + "/pull/42285" },
+            { label: "PR #42299 (应急修复)", url: REPO + "/pull/42299" }
+          ]
+        },
+        {
+          id: "t3",
+          domainId: "d2",
+          title: "陌生仓库 Git Hooks 与环境变量暴露",
+          severity: "严重",
+          status: "仍未修复",
+          impact:
+            "最新主干 ca81b7b9 审计确认：创建工作树时会递归初始化子模块；通用 Git 调用未全局禁用 hooks。Claude 会话可加载项目设置和 SessionStart hooks，子进程可能继承宿主机的 SSH_AUTH_SOCK 与 GITHUB_TOKEN。具体风险取决于操作流程、项目配置和本机权限。",
+          affected: "审计第三方代码、参与开源协作或本机配置有 SSH Agent 与 GITHUB_TOKEN 的开发者。",
+          mitigation: "切勿使用 T3 Code 打开任何来源不明或未经审计的外部 Git 仓库；在隔离容器或无敏感凭据环境中运行 AI 编程工具。",
+          evidence: [
+            { label: "ca81b7b9 主干核查", url: REPO + "/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd" },
+            { label: "Git 子模块初始化源码", url: REPO + "/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205" },
+            { label: "Claude 会话 hooks 源码", url: REPO + "/blob/ca81b7b9/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L5982-L5985" }
+          ]
+        },
+        {
+          id: "t4",
+          domainId: "d2",
+          title: "Claude Auto 模式静默放行强推代码",
+          severity: "严重",
+          status: "仍未修复",
+          impact:
+            "开启 Claude Auto 模式时，高危命令（如 git push --force）被安全分类器拦截并转入人工确认弹窗阶段后，T3 Code 会静默替用户自动批准放行，并在日志中记为用户亲自临时授权。该问题悬置超过 52 天，社区提交的现成修复 PR（#15360、#35207）被晾置直至自动关闭。",
+          affected: "在生产或多人协作仓库中启用 Claude Auto 模式的开发者。",
+          mitigation: "立即禁用 T3 Code 内的 Claude Auto 模式，并在远程 Git 仓库开启受保护分支（Protected Branches）强制禁止强推。",
+          evidence: [
+            { label: "Issue #15353", url: REPO + "/issues/15353" },
+            { label: "PR #15360", url: REPO + "/pull/15360" },
+            { label: "PR #35207", url: REPO + "/pull/35207" }
+          ]
+        },
+        {
+          id: "t5",
+          domainId: "d2",
+          title: "SQLite 假删除与全机进程扫描",
+          severity: "严重",
+          status: "部分修复",
+          impact:
+            "侧边栏“永久删除”未从 statev2.sqlite 清除数据，导致本地磁盘被撑爆至 25.9 GB–41.6 GB；后台 t3-resource-monitor 每 5 秒枚举全机进程且曾将含明文 API Key/密码的完整命令行参数录入遥测与快照。PR #42119 新增异步清理但仍留墓碑与子代理历史（需离线 VACUUM）；PR #42577 仅收窄 Windows 扫描，macOS/Linux 维持全量扫描。",
+          affected: "本地运行含敏感环境变量/命令行参数的开发机用户、磁盘空间紧张的长期用户。",
+          mitigation: "卸载后手动删除 statev2.sqlite；若继续使用，关闭软件后手动执行 sqlite3 statev2.sqlite 'VACUUM;' 回收空间。",
+          evidence: [
+            { label: "Issue #17845", url: REPO + "/issues/17845" },
+            { label: "Issue #11222", url: REPO + "/issues/11222" },
+            { label: "PR #41889", url: REPO + "/pull/41889" },
+            { label: "PR #42119", url: REPO + "/pull/42119" },
+            { label: "PR #42577", url: REPO + "/pull/42577" }
+          ]
+        },
+        {
+          id: "t6",
+          domainId: "d2",
+          title: "0 条安全公告的静默漏洞修补",
+          severity: "严重",
+          status: "仍未修复",
+          impact:
+            "仓库持续静默合入路径穿越（#39483）、企业 Token 跨域名泄露、内置浏览器预览页未开桌面沙箱隔离（#41757）、工作树布局命令缺少审批（#42386）等高危漏洞补丁，但 GitHub Security Advisories 始终保持 0 条公告，未通过 CVE 或版本安全通告提醒存量用户升级；反将多项危险边界写入 SECURITY.md 视为有意为之。",
+          affected: "未每日紧盯主干 commit 记录的存量桌面端及企业用户。",
+          mitigation: "切勿将其作为可信主力开发环境；若企业内部已有部署，应将其纳入高风险供应链清单并评估替换。",
+          evidence: [
+            { label: "Security Advisories (0)", url: REPO + "/security/advisories" },
+            { label: "SECURITY.md", url: REPO + "/blob/ca81b7b9/SECURITY.md" },
+            { label: "PR #39483", url: REPO + "/pull/39483" },
+            { label: "PR #41757", url: REPO + "/pull/41757" },
+            { label: "PR #42386", url: REPO + "/pull/42386" }
+          ]
+        },
+        {
+          id: "t7",
+          domainId: "d3",
+          title: "钥匙串窃取与官方客户端伪装",
+          severity: "高危",
+          status: "仍未修复",
+          impact:
+            "尽管官网 FAQ 担保完全合规，源码 antigravityUsageLimits.ts 实际直接从系统钥匙串与 Windows 凭据管理器（CredReadW）提取 Google 登录令牌，硬编码伪装 antigravity/hub/2.24.0 官方请求头直连内部接口 v1internal；此前还曾伪装白名单编辑器（#26876）。已导致新购 20 美元账号 3 分钟被封，PR #41210 新增 403 验证链接反向印证风控持续触发。",
+          affected: "在 T3 Code 中绑定个人 Google AI / Antigravity 付费订阅的用户。",
+          mitigation: "立即停用 T3 托管版 Antigravity，改用 Google 官方 Antigravity CLI，避免个人主账号遭不可逆封禁。",
+          evidence: [
+            { label: "antigravityUsageLimits.ts", url: REPO + "/blob/ca81b7b9/apps/server/src/provider/antigravityUsageLimits.ts#L445-L476" },
+            { label: "Issue #40713", url: REPO + "/issues/40713" },
+            { label: "Issue #41536 (3分钟封号)", url: REPO + "/issues/41536" },
+            { label: "PR #26876", url: REPO + "/pull/26876" }
+          ]
+        },
+        {
+          id: "t8",
+          domainId: "d3",
+          title: "假 SSH_CONNECTION 引发跨号串流",
+          severity: "高危",
+          status: "仍未修复",
+          impact:
+            "为绕过官方命令行单机钥匙串锁并实现多号并发，antigravityAuthSupport.ts 故意注入伪造的 SSH_CONNECTION 环境变量，欺骗官方 CLI 以为身处远程服务器而将令牌明文落盘至 T3 目录。Google 更新移除降级逻辑后，直接引发账号 A 的请求在零提示下全部路由至账号 B 的严重串号事故。",
+          affected: "在 T3 Code 内配置多个 Google 账号或托管版 Antigravity 的用户。",
+          mitigation: "撤销关联 Google 账号的第三方 OAuth 授权，并手动清理 T3 目录下残留的落盘凭证文件。",
+          evidence: [
+            { label: "antigravityAuthSupport.ts", url: REPO + "/blob/ca81b7b9/apps/server/src/provider/antigravityAuthSupport.ts#L230-L236" },
+            { label: "Issue #41973 (静默串号)", url: REPO + "/issues/41973" }
+          ]
+        },
+        {
+          id: "t9",
+          domainId: "d4",
+          title: "无端到端加密的明文中继网关",
+          severity: "高危",
+          status: "仍未修复",
+          impact:
+            "手机远程连接本机的 T3 Connect 全程无端到端加密，现行 Cloudflare Tunnel 及规划中的自建 OVH Caddy 网关（PR #32945）均在服务端明文解包 TLS，用户的代码、对话与终端输出对 T3 技术上完全透明；且新设备审批（requireConnectDeviceApproval）默认关闭，中继密钥一旦泄露等同交出本机 Shell。",
+          affected: "开启 T3 Connect 进行手机远程操控电脑的个人与企业开发者。",
+          mitigation: "立即关闭 T3 Connect 并断开后台关联的 Cloudflare 隧道；远程开发请改用自建 WireGuard / Tailscale + SSH 方案。",
+          evidence: [
+            { label: "Issue #32098 (拒绝E2E)", url: REPO + "/issues/32098" },
+            { label: "PR #32945 (OVH明文网关)", url: REPO + "/pull/32945" },
+            { label: "06_t3-connect.md", url: REPO + "/blob/ca81b7b9/docs/internals/06_t3-connect.md" }
+          ]
+        },
+        {
+          id: "t10",
+          domainId: "d4",
+          title: "局域网明文 Cookie 与不可吊销令牌",
+          severity: "高危",
+          status: "仍未修复",
+          impact:
+            "ca81b7b9 代码审计进一步确认四项认证硬伤：--lan 模式签发 30 天明文 Cookie 且存在缺失 Origin 校验绕过（#37042）；30 天非 DPoP Bearer Token 无 /logout 吊销接口；部分 ?wsTicket= 令牌在 5 分钟内可重放；以及 isIPv4 校验误拦截 ::1 本地 IPv6 隧道。",
+          affected: "在公司局域网、公共 Wi-Fi 或多设备环境中开启 --lan 参数的用户。",
+          mitigation: "严禁启用 --lan 模式或将服务端口暴露于非环回网卡；如曾使用，立即轮换本机所有相关访问令牌。",
+          evidence: [
+            { label: "PR #37042 (--lan)", url: REPO + "/pull/37042" },
+            { label: "ca81b7b9 审计复核", url: REPO + "/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd" }
+          ]
+        },
+        {
+          id: "t11",
+          domainId: "d5",
+          title: "服务端凭据任意仓库代点星漏洞",
+          severity: "高危",
+          status: "仍未修复",
+          impact:
+            "客户端在用户发满 5 条 Prompt 且窗口发呆 30 秒后弹出讨星提示，点击后绕过浏览器直接动用服务端本机登录的 GitHub 凭据调用 PUT user/starred/...（25 天内从 3 万星冲至 7.7 万星，同期 Watchers 仅约 129）。driver.ts 第 60–99 行未锁定目标仓库为 pingdotgg/t3code，导致任何带写权限客户端可借主机凭据给任意仓库点星，共享服务器上更会误用机主账号。",
+          affected: "在共享开发机、远程服务器或本机已授权 GitHub 凭据的 T3 Code 用户。",
+          mitigation: "检查并回收提供给 T3 Code 或关联开发环境的 GitHub Token 写权限，核查个人 GitHub Star 异常记录。",
+          evidence: [
+            { label: "PR #29922", url: REPO + "/pull/29922" },
+            { label: "driver.ts#L60-L99", url: REPO + "/blob/ca81b7b9/packages/source-control-github/src/server/driver.ts#L60-L99" }
+          ]
+        },
+        {
+          id: "t12",
+          domainId: "d6",
+          title: "黑名单治库、无证商标与选择性敌意",
+          severity: "中高危",
+          status: "仍未修复",
+          impact:
+            "内部日均 500 commits 与 Yolo Merge 频发破坏，对外却以 CONTRIBUTING.md 劝退 PR、用 .github/VOUCHED.td 自动封禁异议者；威胁举报封禁 MIT 二改作者时 USPTO 注册商标为 0 条，17 小时后才仓促补写 TRADEMARK.md（#41898）；1,151 条公开推文量化统计显示对大厂高管粗口率 0.0%，对普通开发者敌意率 8.0%，危机窗口飙升至 14.4%。",
+          affected: "基于 MIT 协议做衍生开发的社区作者、外部贡献者与评估开源供应链稳定性的团队。",
+          mitigation: "充分评估单点维护者治理风险与协议执行不确定性，优先选用治理透明、遵循标准安全披露流程的替代客户端。",
+          evidence: [
+            { label: "CONTRIBUTING.md", url: REPO + "/blob/ca81b7b9/CONTRIBUTING.md" },
+            { label: ".github/VOUCHED.td", url: REPO + "/blob/ca81b7b9/.github/VOUCHED.td" },
+            { label: "PR #41898 (TRADEMARK)", url: REPO + "/pull/41898" },
+            { label: "Issue #33639", url: REPO + "/issues/33639" }
+          ]
+        }
+      ];
+
+      const SEV_COLORS = {
+        "严重": "var(--sev-critical)",
+        "高危": "var(--sev-high)",
+        "中高危": "var(--sev-med)"
+      };
+
+      const state = {
+        severity: "全部",
+        status: "全部",
+        selectedId: "t1",
+        hoveredId: null
+      };
+
+      const svgNS = "http://www.w3.org/2000/svg";
+      const svg = document.getElementById("threat-map");
+      const inspector = document.getElementById("inspector");
+      const statsBar = document.getElementById("stats-bar");
+      const matchCounter = document.getElementById("match-counter");
+
+      function el(tag, attrs, parent) {
+        const node = document.createElementNS(svgNS, tag);
+        if (attrs) {
+          for (const [k, v] of Object.entries(attrs)) {
+            node.setAttribute(k, String(v));
+          }
+        }
+        if (parent) parent.appendChild(node);
+        return node;
+      }
+
+      function computeLayout() {
+        const leafStartY = 26;
+        const leafH = 48;
+        const leafGap = 12;
+        const leafX = 528;
+        const leafW = 408;
+
+        const domainX = 256;
+        const domainW = 216;
+        const domainH = 54;
+
+        const rootX = 22;
+        const rootW = 180;
+        const rootH = 104;
+
+        const leafPos = {};
+        THREATS.forEach((t, idx) => {
+          const y = leafStartY + idx * (leafH + leafGap);
+          leafPos[t.id] = { x: leafX, y, w: leafW, h: leafH, cy: y + leafH / 2 };
+        });
+
+        const domainPos = {};
+        DOMAINS.forEach((d) => {
+          const children = THREATS.filter((t) => t.domainId === d.id);
+          const first = leafPos[children[0].id];
+          const last = leafPos[children[children.length - 1].id];
+          const cy = (first.cy + last.cy) / 2;
+          domainPos[d.id] = { x: domainX, y: cy - domainH / 2, w: domainW, h: domainH, cy };
+        });
+
+        const rootCy = 380;
+        const rootPos = { x: rootX, y: rootCy - rootH / 2, w: rootW, h: rootH, cy: rootCy };
+
+        return { rootPos, domainPos, leafPos };
+      }
+
+      const layout = computeLayout();
+
+      function matchesFilter(threat) {
+        const sevOk = state.severity === "全部" || threat.severity === state.severity;
+        const stOk = state.status === "全部" || threat.status === state.status;
+        return sevOk && stOk;
+      }
+
+      function getHighlightedSet() {
+        const activeId = state.hoveredId || state.selectedId;
+        const nodes = new Set();
+        const edges = new Set();
+        if (!activeId) return { nodes, edges };
+
+        if (activeId === "root") {
+          nodes.add("root");
+          DOMAINS.forEach((d) => {
+            const matchedChildren = THREATS.filter((t) => t.domainId === d.id && matchesFilter(t));
+            if (matchedChildren.length > 0) {
+              nodes.add(d.id);
+              edges.add("root->" + d.id);
+              matchedChildren.forEach((t) => {
+                nodes.add(t.id);
+                edges.add(d.id + "->" + t.id);
+              });
+            }
+          });
+          return { nodes, edges };
+        }
+
+        const domain = DOMAINS.find((d) => d.id === activeId);
+        if (domain) {
+          nodes.add("root");
+          nodes.add(domain.id);
+          edges.add("root->" + domain.id);
+          THREATS.filter((t) => t.domainId === domain.id && matchesFilter(t)).forEach((t) => {
+            nodes.add(t.id);
+            edges.add(domain.id + "->" + t.id);
+          });
+          return { nodes, edges };
+        }
+
+        const threat = THREATS.find((t) => t.id === activeId);
+        if (threat) {
+          nodes.add("root");
+          nodes.add(threat.domainId);
+          nodes.add(threat.id);
+          edges.add("root->" + threat.domainId);
+          edges.add(threat.domainId + "->" + threat.id);
+        }
+        return { nodes, edges };
+      }
+
+      function bezierPath(x1, y1, x2, y2) {
+        const dx = (x2 - x1) * 0.52;
+        return `M ${x1} ${y1} C ${x1 + dx} ${y1}, ${x2 - dx} ${y2}, ${x2} ${y2}`;
+      }
+
+      function renderStats() {
+        const total = THREATS.length;
+        const openCount = THREATS.filter((t) => t.status === "仍未修复").length;
+        const partialCount = THREATS.filter((t) => t.status === "部分修复").length;
+        const criticalCount = THREATS.filter((t) => t.severity === "严重").length;
+
+        statsBar.innerHTML = "";
+        const items = [
+          { color: "var(--sev-critical)", label: "严重危害", val: criticalCount },
+          { color: "var(--st-open)", label: "仍未修复", val: openCount },
+          { color: "var(--st-partial)", label: "部分修复", val: partialCount },
+          { color: "var(--accent)", label: "风险总计", val: total }
+        ];
+        items.forEach((it) => {
+          const div = document.createElement("div");
+          div.className = "stat-chip";
+          const dot = document.createElement("span");
+          dot.className = "dot";
+          dot.style.background = it.color;
+          const strong = document.createElement("strong");
+          strong.textContent = it.val;
+          const span = document.createElement("span");
+          span.textContent = it.label;
+          div.append(dot, strong, span);
+          statsBar.appendChild(div);
+        });
+      }
+
+      function renderDiagram() {
+        svg.innerHTML = "";
+
+        const matchedThreats = THREATS.filter(matchesFilter);
+        const matchedIds = new Set(matchedThreats.map((t) => t.id));
+        const matchedDomainIds = new Set(matchedThreats.map((t) => t.domainId));
+        matchCounter.textContent = `当前命中：${matchedThreats.length} / ${THREATS.length} 项风险`;
+
+        const hl = getHighlightedSet();
+        const edgeLayer = el("g", { id: "edges" }, svg);
+        const nodeLayer = el("g", { id: "nodes" }, svg);
+
+        // Root -> Domains edges
+        DOMAINS.forEach((d) => {
+          const p1 = layout.rootPos;
+          const p2 = layout.domainPos[d.id];
+          const edgeKey = "root->" + d.id;
+          const isMatched = matchedDomainIds.has(d.id);
+          const isHl = hl.edges.has(edgeKey);
+          const path = el(
+            "path",
+            {
+              d: bezierPath(p1.x + p1.w, p1.cy, p2.x, p2.cy),
+              class: "edge" + (!isMatched ? " dimmed" : "") + (isHl ? " highlighted" : "")
+            },
+            edgeLayer
+          );
+          if (isHl) path.style.stroke = SEV_COLORS[d.severity];
+        });
+
+        // Domains -> Threats edges
+        THREATS.forEach((t) => {
+          const p1 = layout.domainPos[t.domainId];
+          const p2 = layout.leafPos[t.id];
+          const edgeKey = t.domainId + "->" + t.id;
+          const isMatched = matchedIds.has(t.id);
+          const isHl = hl.edges.has(edgeKey);
+          const path = el(
+            "path",
+            {
+              d: bezierPath(p1.x + p1.w, p1.cy, p2.x, p2.cy),
+              class: "edge" + (!isMatched ? " dimmed" : "") + (isHl ? " highlighted" : "")
+            },
+            edgeLayer
+          );
+          if (isHl) path.style.stroke = SEV_COLORS[t.severity];
+        });
+
+        // Root node
+        const rp = layout.rootPos;
+        const rootG = el(
+          "g",
+          {
+            class: "node-group" + (state.selectedId === "root" ? " selected" : ""),
+            tabindex: "0",
+            role: "button",
+            "aria-label": ROOT_NODE.title
+          },
+          nodeLayer
+        );
+        el("rect", { x: rp.x, y: rp.y, width: rp.w, height: rp.h, rx: 12, class: "root-bg" }, rootG);
+        el("rect", { x: rp.x, y: rp.y, width: rp.w, height: 6, rx: 3, fill: "var(--sev-critical)" }, rootG);
+        const rTitle = el("text", { x: rp.x + rp.w / 2, y: rp.y + 38, "text-anchor": "middle", class: "node-title", style: "font-size:14.5px" }, rootG);
+        rTitle.textContent = ROOT_NODE.title;
+        const rSub1 = el("text", { x: rp.x + rp.w / 2, y: rp.y + 59, "text-anchor": "middle", class: "node-sub" }, rootG);
+        rSub1.textContent = ROOT_NODE.subtitle;
+        const rSub2 = el("text", { x: rp.x + rp.w / 2, y: rp.y + 82, "text-anchor": "middle", class: "node-sub", style: "fill:var(--sev-critical);font-weight:600" }, rootG);
+        rSub2.textContent = "ca81b7b9 · 6 大风险域";
+        bindNodeEvents(rootG, "root");
+
+        // Domain nodes
+        DOMAINS.forEach((d) => {
+          const dp = layout.domainPos[d.id];
+          const isMatched = matchedDomainIds.has(d.id);
+          const count = THREATS.filter((t) => t.domainId === d.id && matchedIds.has(t.id)).length;
+          const totalInDomain = THREATS.filter((t) => t.domainId === d.id).length;
+
+          const g = el(
+            "g",
+            {
+              class: "node-group" + (!isMatched ? " dimmed" : "") + (state.selectedId === d.id ? " selected" : ""),
+              tabindex: "0",
+              role: "button",
+              "aria-label": d.title
+            },
+            nodeLayer
+          );
+          el("rect", { x: dp.x, y: dp.y, width: dp.w, height: dp.h, rx: 9, class: "node-bg" }, g);
+          el("rect", { x: dp.x, y: dp.y, width: 5, height: dp.h, rx: 2, fill: SEV_COLORS[d.severity] }, g);
+
+          const txt = el("text", { x: dp.x + 15, y: dp.y + 24, class: "node-title" }, g);
+          txt.textContent = d.title;
+
+          const sub = el("text", { x: dp.x + 15, y: dp.y + 42, class: "node-sub" }, g);
+          sub.textContent = `${d.severity} · ${d.dossier} · ${count}/${totalInDomain} 项`;
+
+          bindNodeEvents(g, d.id);
+        });
+
+        // Threat leaf nodes
+        THREATS.forEach((t) => {
+          const lp = layout.leafPos[t.id];
+          const isMatched = matchedIds.has(t.id);
+          const g = el(
+            "g",
+            {
+              class: "node-group" + (!isMatched ? " dimmed" : "") + (state.selectedId === t.id ? " selected" : ""),
+              tabindex: "0",
+              role: "button",
+              "aria-label": t.title
+            },
+            nodeLayer
+          );
+          el("rect", { x: lp.x, y: lp.y, width: lp.w, height: lp.h, rx: 8, class: "node-bg" }, g);
+          el("rect", { x: lp.x, y: lp.y, width: 5, height: lp.h, rx: 2, fill: SEV_COLORS[t.severity] }, g);
+
+          const txt = el("text", { x: lp.x + 14, y: lp.y + 21, class: "node-title" }, g);
+          txt.textContent = t.title;
+
+          const sub = el("text", { x: lp.x + 14, y: lp.y + 38, class: "node-sub" }, g);
+          sub.textContent = t.evidence.slice(0, 3).map((e) => e.label).join(" · ");
+
+          // Status pill
+          const pillW = 66;
+          const pillH = 22;
+          const pillX = lp.x + lp.w - pillW - 10;
+          const pillY = lp.y + (lp.h - pillH) / 2;
+          const isOpen = t.status === "仍未修复";
+          el(
+            "rect",
+            {
+              x: pillX,
+              y: pillY,
+              width: pillW,
+              height: pillH,
+              rx: 11,
+              fill: isOpen ? "var(--st-open-bg)" : "var(--st-partial-bg)"
+            },
+            g
+          );
+          const pillTxt = el(
+            "text",
+            {
+              x: pillX + pillW / 2,
+              y: pillY + 14.5,
+              "text-anchor": "middle",
+              style: `font-size:10.5px;font-weight:600;fill:${isOpen ? "var(--st-open)" : "var(--st-partial)"}`
+            },
+            g
+          );
+          pillTxt.textContent = t.status;
+
+          bindNodeEvents(g, t.id);
+        });
+      }
+
+      function bindNodeEvents(g, id) {
+        g.addEventListener("mouseenter", () => {
+          state.hoveredId = id;
+          renderDiagram();
+        });
+        g.addEventListener("mouseleave", () => {
+          state.hoveredId = null;
+          renderDiagram();
+        });
+        g.addEventListener("click", () => {
+          state.selectedId = id;
+          renderDiagram();
+          renderInspector();
+        });
+        g.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            state.selectedId = id;
+            renderDiagram();
+            renderInspector();
+          }
+        });
+      }
+
+      function createBadge(text, cls) {
+        const s = document.createElement("span");
+        s.className = "badge " + cls;
+        s.textContent = text;
+        return s;
+      }
+
+      function renderInspector() {
+        inspector.innerHTML = "";
+        const id = state.selectedId;
+
+        if (id === "root") {
+          renderDetailView({
+            title: ROOT_NODE.title + "（总览）",
+            badges: [
+              { text: ROOT_NODE.severity, cls: "badge-sev-严重" },
+              { text: "主干核心风险仍生效", cls: "badge-st-仍未修复" },
+              { text: ROOT_NODE.meta, cls: "badge-domain" }
+            ],
+            impact: ROOT_NODE.impact,
+            affected: ROOT_NODE.affected,
+            evidence: ROOT_NODE.evidence,
+            mitigation: ROOT_NODE.mitigation
+          });
+          return;
+        }
+
+        const domain = DOMAINS.find((d) => d.id === id);
+        if (domain) {
+          const children = THREATS.filter((t) => t.domainId === domain.id);
+          const header = document.createElement("div");
+          header.className = "inspector-header";
+          const badges = document.createElement("div");
+          badges.className = "badges";
+          badges.append(
+            createBadge(domain.severity, "badge-sev-" + domain.severity),
+            createBadge(domain.dossier, "badge-domain"),
+            createBadge(`包含 ${children.length} 项风险`, "badge-domain")
+          );
+          const h2 = document.createElement("h2");
+          h2.textContent = domain.title;
+          header.append(badges, h2);
+          inspector.appendChild(header);
+
+          const sec1 = document.createElement("div");
+          sec1.className = "detail-section";
+          sec1.innerHTML = '<div class="detail-label">风险域概述</div>';
+          const p = document.createElement("p");
+          p.className = "detail-text";
+          p.textContent = domain.summary;
+          sec1.appendChild(p);
+          inspector.appendChild(sec1);
+
+          const sec2 = document.createElement("div");
+          sec2.className = "detail-section";
+          sec2.innerHTML = '<div class="detail-label">下属具体危害节点（点击切入详情）</div>';
+          const list = document.createElement("div");
+          list.className = "child-links";
+          children.forEach((c) => {
+            const btn = document.createElement("button");
+            btn.className = "child-link-btn";
+            const left = document.createElement("span");
+            left.textContent = c.title;
+            const right = createBadge(c.status, "badge-st-" + c.status);
+            btn.append(left, right);
+            btn.addEventListener("click", () => {
+              state.selectedId = c.id;
+              renderDiagram();
+              renderInspector();
+            });
+            list.appendChild(btn);
+          });
+          sec2.appendChild(list);
+          inspector.appendChild(sec2);
+          return;
+        }
+
+        const threat = THREATS.find((t) => t.id === id) || THREATS[0];
+        const parentDomain = DOMAINS.find((d) => d.id === threat.domainId);
+        renderDetailView({
+          title: threat.title,
+          badges: [
+            { text: threat.severity, cls: "badge-sev-" + threat.severity },
+            { text: threat.status, cls: "badge-st-" + threat.status },
+            { text: parentDomain ? parentDomain.title : "", cls: "badge-domain" }
+          ],
+          impact: threat.impact,
+          affected: threat.affected,
+          evidence: threat.evidence,
+          mitigation: threat.mitigation
+        });
+      }
+
+      function renderDetailView(data) {
+        const header = document.createElement("div");
+        header.className = "inspector-header";
+        const badges = document.createElement("div");
+        badges.className = "badges";
+        data.badges.forEach((b) => badges.appendChild(createBadge(b.text, b.cls)));
+        const h2 = document.createElement("h2");
+        h2.textContent = data.title;
+        header.append(badges, h2);
+        inspector.appendChild(header);
+
+        const sections = [
+          { label: "实际危害与技术事实", text: data.impact },
+          { label: "受影响人群", text: data.affected }
+        ];
+        sections.forEach((s) => {
+          const sec = document.createElement("div");
+          sec.className = "detail-section";
+          const lbl = document.createElement("div");
+          lbl.className = "detail-label";
+          lbl.textContent = s.label;
+          const p = document.createElement("p");
+          p.className = "detail-text";
+          p.textContent = s.text;
+          sec.append(lbl, p);
+          inspector.appendChild(sec);
+        });
+
+        const evSec = document.createElement("div");
+        evSec.className = "detail-section";
+        const evLbl = document.createElement("div");
+        evLbl.className = "detail-label";
+        evLbl.textContent = "一手源码 / PR / Issue 证据";
+        const evList = document.createElement("div");
+        evList.className = "evidence-list";
+        data.evidence.forEach((ev) => {
+          if (ev.url) {
+            const a = document.createElement("a");
+            a.className = "evidence-tag";
+            a.href = ev.url;
+            a.target = "_blank";
+            a.rel = "noopener noreferrer";
+            a.textContent = ev.label + " ↗";
+            evList.appendChild(a);
+          } else {
+            const sp = document.createElement("span");
+            sp.className = "evidence-tag";
+            sp.textContent = ev.label;
+            evList.appendChild(sp);
+          }
+        });
+        evSec.append(evLbl, evList);
+        inspector.appendChild(evSec);
+
+        const mitSec = document.createElement("div");
+        mitSec.className = "detail-section";
+        const mitLbl = document.createElement("div");
+        mitLbl.className = "detail-label";
+        mitLbl.textContent = "止损与应对建议";
+        const box = document.createElement("div");
+        box.className = "mitigation-box";
+        box.textContent = data.mitigation;
+        mitSec.append(mitLbl, box);
+        inspector.appendChild(mitSec);
+      }
+
+      // Bind filter buttons
+      document.querySelectorAll("#severity-filters .btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll("#severity-filters .btn").forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          state.severity = btn.dataset.val;
+          renderDiagram();
+        });
+      });
+
+      document.querySelectorAll("#status-filters .btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document.querySelectorAll("#status-filters .btn").forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          state.status = btn.dataset.val;
+          renderDiagram();
+        });
+      });
+
+      document.getElementById("reset-btn").addEventListener("click", () => {
+        state.severity = "全部";
+        state.status = "全部";
+        state.selectedId = "root";
+        state.hoveredId = null;
+        document.querySelectorAll("#severity-filters .btn, #status-filters .btn").forEach((b) => {
+          b.classList.toggle("active", b.dataset.val === "全部");
+        });
+        renderDiagram();
+        renderInspector();
+      });
+
+      const themeBtn = document.getElementById("theme-btn");
+      themeBtn.addEventListener("click", () => {
+        const html = document.documentElement;
+        const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+        html.setAttribute("data-theme", next);
+        themeBtn.textContent = next === "dark" ? "切换浅色" : "切换深色";
+      });
+
+      renderStats();
+      renderDiagram();
+      renderInspector();
+    })();
+  </script>
+</body>
+</html>

@@ -56,6 +56,8 @@
 ## TL;DR (30-Second Verdict)
 
 > [!IMPORTANT]
+[Interactive T3 Code threat map (中文)](./site/threat-map.html) — a standalone, offline-capable visualization of the audit baseline and follow-up.
+
 > **Bottom Line:** `pingdotgg/t3code` shipped default-on telemetry routed through a closed-source server (`ingest.t3.codes`), left multiple critical local-safety and auth gaps open alongside **0 published GitHub Security Advisories**, spoofed Google Antigravity headers against ToS, and runs T3 Connect with **zero end-to-end encryption**. Post-audit patches through `ca81b7b9` closed several high-profile leaks, **but core architectural risks remain active today**.
 >
 > **Who is most affected:** Non-admin desktop users, corporate developers with internal endpoints or `SSH_AUTH_SOCK`/`GITHUB_TOKEN` in their environment, Google Antigravity / Gemini subscribers, Claude Auto mode users, and anyone using T3 Connect, `--lan`, or linked GitHub accounts.
