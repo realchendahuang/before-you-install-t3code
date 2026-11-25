@@ -335,17 +335,22 @@
               <button type="button" class="copy-btn" data-copy-target="codeUnixEnv">Copy</button>
             </div>
             <pre id="codeUnixEnv"># Add to ~/.zshrc (or ~/.bashrc), reload shell, and restart T3 Code
-export DO_NOT_TRACK=1                 # PR #42629: stops events &amp; relay tracing (wins over T3CODE_TELEMETRY_ENABLED=true)
+export DO_NOT_TRACK=1                 # PR #42629 (v0.1.12): stops events &amp; relay tracing (wins over T3CODE_TELEMETRY_ENABLED=true)
 export T3CODE_TELEMETRY_ENABLED=false
 export T3CODE_OTEL_SDK_DISABLED=true
 export OTEL_SDK_DISABLED=true
 
-# Block closed-source ingestion gateway in /etc/hosts (still required: AnalyticsService.ts:156 writes ID before check)
-sudo sh -c 'printf "\n127.0.0.1 ingest.t3.codes\n::1 ingest.t3.codes\n" &gt;&gt; /etc/hosts'</pre>
+# macOS GUI launch race mitigation (ensures Finder/Dock launches inherit flags before shell discovery)
+launchctl setenv DO_NOT_TRACK 1
+launchctl setenv T3CODE_TELEMETRY_ENABLED false
+
+# Block closed-source ingestion gateway + build-injected Axiom OTLP relay host in /etc/hosts
+# (Do NOT block daily-cloudcode-pa.googleapis.com: official Google agy CLI depends on it)
+sudo sh -c 'printf "\n127.0.0.1 ingest.t3.codes\n::1 ingest.t3.codes\n127.0.0.1 us-east-1.aws.edge.axiom.co\n::1 us-east-1.aws.edge.axiom.co\n" &gt;&gt; /etc/hosts'</pre>
           </div>
 
           <h3>2. Inspect statev2.sqlite Bloat, Run Offline <code>VACUUM</code> &amp; Purge Antigravity State</h3>
-          <p>Even after <code>PR #42119</code> added async <code>thread-content.purge</code> (closing <code>#17845</code>), source threads with live forks/merge-backs/subagents and tombstones remain, and reclaiming disk space requires an offline <code>VACUUM</code>. Quit T3 Code first.</p>
+          <p><code>PR #42119</code> shipped in <code>v0.1.12</code> (adding async <code>thread-content.purge</code>). On <code>v0.1.11</code> or earlier, running <code>VACUUM;</code> alone deletes zero soft-deleted messages or <code>FTS5</code> indexes—upgrade first or purge <code>deleted_at IS NOT NULL</code> rows offline before compacting. Quit T3 Code first.</p>
           <div class="code-block-wrap" style="margin-bottom:0;">
             <div class="code-block-head">
               <span>SQLite Audit, VACUUM &amp; Cleanup</span>
@@ -384,9 +389,10 @@ rm -rf ~/.t3</pre>
   [Environment]::SetEnvironmentVariable("OTEL_SDK_DISABLED", "true", $_)
 }
 
-# Block ingest.t3.codes in C:\Windows\System32\drivers\etc\hosts
+# Block ingest.t3.codes + build-injected Axiom OTLP relay host in C:\Windows\System32\drivers\etc\hosts
+# (Do NOT block daily-cloudcode-pa.googleapis.com: official Google agy CLI depends on it)
 $hosts = "$env:SystemRoot\System32\drivers\etc\hosts"
-Add-Content -Path $hosts -Value "`r`n127.0.0.1 ingest.t3.codes`r`n::1 ingest.t3.codes"</pre>
+Add-Content -Path $hosts -Value "`r`n127.0.0.1 ingest.t3.codes`r`n::1 ingest.t3.codes`r`n127.0.0.1 us-east-1.aws.edge.axiom.co`r`n::1 us-east-1.aws.edge.axiom.co"</pre>
           </div>
 
           <h3>2. Windows State Directory, SQLite <code>VACUUM</code>, GitHub OAuth &amp; Secret Rotation</h3>
@@ -463,7 +469,7 @@ Remove-Item -Recurse -Force "$env:USERPROFILE\.t3\tools\antigravity-acp" -ErrorA
           </div>
 
           <div class="warn-callout">
-            <strong>Documented Blind Spots at <code>ca81b7b9</code> (<code>docs/user/telemetry.md</code> &amp; <code>AnalyticsService.ts:156</code>):</strong> Managed Policy does <strong>not</strong> disable relay tracing on hosted <code>app.t3.codes</code>, does <strong>not</strong> disable mobile app tracing, and does <strong>not</strong> turn off <code>Publish agent activity</code> if enabled—and startup still writes <code>anonymousIdPath</code> on disk before checking policy/<code>DO_NOT_TRACK</code>. Disable <em>Publish agent activity</em> under <em>Settings → Sharing &amp; access</em>, unlink local machines, and request Clerk + relay deletion per <code>PR #42285</code>.
+            <strong>Documented Blind Spots &amp; Strict Schema Fail-Closed Rule (<code>v0.1.12</code> / <code>ca81b7b9</code>):</strong> <code>managedPolicyFile.ts</code> decodes <code>policy.json</code> with <code>{ onExcessProperty: "error" }</code> and requires non-empty <code>"organization"</code>—omitting it or adding unknown keys causes T3 Code to refuse startup until fixed. Managed Policy still does <strong>not</strong> disable relay tracing on hosted <code>app.t3.codes</code>, does <strong>not</strong> disable mobile app tracing, and does <strong>not</strong> turn off <code>Publish agent activity</code> (<code>AgentAwarenessRelay.ts</code> still sends <code>projectTitle</code>, <code>threadTitle</code>, <code>headline</code>/<code>detail</code>, and <code>modelTitle</code>)—and startup still writes <code>anonymousIdPath</code> on disk before checking policy/<code>DO_NOT_TRACK</code>. Disable <em>Publish agent activity</em> under <em>Settings → Sharing &amp; access</em>, unlink local machines, and request Clerk + relay deletion per <code>PR #42285</code>.
           </div>
         </div>
       </div>
