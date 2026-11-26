@@ -1,0 +1,226 @@
+@import url("../tokens.css");
+
+:root {
+  --bg: var(--claude-bg);
+  --surface: var(--claude-bg-elevated);
+  --surface-2: var(--claude-bg-card);
+  --border: var(--claude-border);
+  --text: var(--claude-ink);
+  --muted: var(--claude-ink-secondary);
+  --dim: var(--claude-ink-muted);
+  --blue: var(--claude-mineral);
+  --blue-bg: color-mix(in srgb, var(--claude-cactus) 36%, var(--claude-bg));
+  --red: var(--claude-error);
+  --red-bg: color-mix(in srgb, var(--claude-peach) 42%, var(--claude-bg));
+  --amber: var(--claude-clay-hover);
+  --slate: var(--claude-ink-muted);
+}
+
+.dark {
+  --bg: var(--claude-bg);
+  --surface: var(--claude-bg-card);
+  --surface-2: var(--claude-bg-elevated);
+  --border: var(--claude-border);
+  --text: var(--claude-ink);
+  --muted: var(--claude-ink-secondary);
+  --dim: var(--claude-ink-muted);
+  --blue: var(--claude-mineral);
+  --blue-bg: color-mix(in srgb, var(--claude-mineral) 16%, var(--claude-bg));
+  --red: #e06d62;
+  --red-bg: color-mix(in srgb, var(--claude-error) 16%, var(--claude-bg));
+  --amber: var(--claude-clay);
+  --slate: var(--claude-gray-450);
+}
+
+body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  font-family: var(--claude-font-sans) !important;
+  padding: 16px !important;
+}
+
+.canvas {
+  background: var(--surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--claude-radius-xl) !important;
+  box-shadow: none !important;
+}
+
+.top-accent {
+  height: 3px !important;
+  background: var(--claude-clay) !important;
+}
+
+.eyebrow {
+  text-transform: none !important;
+  letter-spacing: 0 !important;
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: var(--dim) !important;
+}
+
+.title {
+  font-family: var(--claude-font-serif) !important;
+  font-weight: 500 !important;
+  letter-spacing: normal !important;
+  line-height: 1.2 !important;
+  color: var(--text) !important;
+}
+
+.title .blue,
+.title .red {
+  color: inherit !important;
+}
+
+.pill,
+.lang-btn,
+.mode-btn {
+  border-radius: var(--claude-radius-pill) !important;
+  font-family: var(--claude-font-sans) !important;
+  font-weight: 500 !important;
+}
+
+.lang-btn.active,
+.mode-btn.active {
+  background: var(--claude-btn-primary-bg) !important;
+  color: var(--claude-btn-primary-fg) !important;
+  border-color: var(--claude-btn-primary-bg) !important;
+}
+
+.kpi,
+.card,
+.ev-card,
+.fact-box,
+.group-block,
+.wave-card,
+.quote-card,
+.tooltip {
+  background: var(--surface-2) !important;
+  border-color: var(--border) !important;
+  color: var(--text) !important;
+}
+
+.kpi:hover,
+.wave-card:hover {
+  transform: none !important;
+  border-color: var(--claude-border-primary) !important;
+}
+
+.kpi.highlight,
+.group-block.safe {
+  background: var(--blue-bg) !important;
+  border-color: color-mix(in srgb, var(--claude-mineral) 36%, var(--border)) !important;
+}
+
+.kpi.alert,
+.fact-box.hot,
+.group-block.danger {
+  background: var(--red-bg) !important;
+  border-color: color-mix(in srgb, var(--claude-error) 34%, var(--border)) !important;
+}
+
+.bar-track,
+.focus-bar-wrap,
+.g-track,
+.h-track {
+  background: var(--claude-bg-subtle) !important;
+}
+
+.g-track.zero-track {
+  background: var(--blue-bg) !important;
+  border-color: color-mix(in srgb, var(--claude-mineral) 45%, var(--border)) !important;
+}
+
+.inspector,
+.callout {
+  background: var(--claude-bg-subtle) !important;
+  border-left: 3px solid var(--claude-clay) !important;
+  color: var(--text) !important;
+}
+
+.inspector-stats {
+  color: var(--claude-clay-ink) !important;
+}
+
+.focus-item {
+  border-bottom-color: var(--border) !important;
+}
+
+.bar-row:hover,
+.bar-row.active {
+  background: var(--claude-bg-subtle) !important;
+  border-color: var(--claude-border-strong) !important;
+}
+
+.ev-tag.blue {
+  background: var(--blue-bg) !important;
+  color: var(--blue) !important;
+}
+
+.ev-tag.slate {
+  background: var(--claude-bg-subtle) !important;
+  color: var(--muted) !important;
+}
+
+.ev-tag.red {
+  background: var(--red-bg) !important;
+  color: var(--red) !important;
+}
+
+#g2val,
+.g-big {
+  color: var(--text) !important;
+}
+
+.group-block.safe .g-big {
+  color: var(--blue) !important;
+}
+
+.group-block.danger .g-big {
+  color: var(--red) !important;
+}
+
+.group-block.danger .g-fill {
+  background: var(--red) !important;
+}
+
+.group-block:not(.safe):not(.danger) .g-fill {
+  background: var(--claude-gray-550) !important;
+}
+
+svg text {
+  fill: var(--muted) !important;
+}
+
+svg line[stroke="#1e293b"],
+svg line[stroke="#24324a"],
+svg line[stroke="#334155"] {
+  stroke: var(--border) !important;
+}
+
+svg rect[fill="#060a13"],
+svg rect[fill="#090e1a"],
+svg rect[fill="#0f1e36"],
+svg rect[fill="#111827"],
+svg rect[fill="#162033"] {
+  fill: var(--surface) !important;
+}
+
+svg rect[fill="#38bdf8"] {
+  fill: var(--claude-mineral) !important;
+}
+
+svg rect[fill="#f43f5e"],
+svg rect[fill="#fb7185"] {
+  fill: var(--red) !important;
+}
+
+svg rect[fill="#f59e0b"],
+svg rect[fill="#fbbf24"] {
+  fill: var(--claude-clay) !important;
+}
+
+svg rect[fill="#475569"],
+svg rect[fill="#64748b"] {
+  fill: var(--claude-gray-450) !important;
+}

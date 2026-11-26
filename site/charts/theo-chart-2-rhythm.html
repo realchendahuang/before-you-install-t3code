@@ -106,6 +106,10 @@
     .canvas { padding: 18px 14px; }
   }
 </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500&family=Noto+Sans+SC:wght@400;500&display=swap" />
+  <link rel="stylesheet" href="./claude-chart-theme.css" />
 </head>
 <body>
 <div class="canvas">
@@ -402,6 +406,26 @@
 
   window.addEventListener("resize", notifyHeight);
   applyLang();
+})();
+</script>
+<script>
+(function () {
+  function syncThemeAndLang(data) {
+    if (!data || data.type !== "t3-theme") return;
+    if (data.theme === "dark" || data.theme === "light") {
+      document.documentElement.classList.toggle("dark", data.theme === "dark");
+    }
+    if (data.lang === "zh" || data.lang === "en") {
+      var btn = document.querySelector('.lang-btn[data-lang="' + data.lang + '"]');
+      if (btn && !btn.classList.contains("active")) btn.click();
+    }
+  }
+  window.addEventListener("message", function (e) { syncThemeAndLang(e.data); });
+  try {
+    if (localStorage.getItem("byit3-theme") === "dark") {
+      document.documentElement.classList.add("dark");
+    }
+  } catch (e) {}
 })();
 </script>
 </body>
