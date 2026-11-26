@@ -542,6 +542,19 @@
     setupScrollSpy();
   }
 
+  // Scroll only the sidebar's own box (never the page) so the active link stays in view.
+  function keepNavLinkVisible(link) {
+    var nav = $("sidebarNav");
+    if (!link || !nav || nav.scrollHeight <= nav.clientHeight) return;
+    var navRect = nav.getBoundingClientRect();
+    var linkRect = link.getBoundingClientRect();
+    var pad = 48;
+    if (linkRect.top < navRect.top + pad || linkRect.bottom > navRect.bottom - pad) {
+      var target = nav.scrollTop + (linkRect.top - navRect.top) - nav.clientHeight / 2 + linkRect.height / 2;
+      nav.scrollTo({ top: Math.max(0, target), behavior: "smooth" });
+    }
+  }
+
   function setupScrollSpy() {
     if (state.observer) state.observer.disconnect();
     if (!("IntersectionObserver" in window)) return;
@@ -550,14 +563,21 @@
 
     state.observer = new IntersectionObserver(
       function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            var id = entry.target.getAttribute("data-case-id");
-            document.querySelectorAll(".sidebar-link").forEach(function (a) {
-              a.classList.toggle("active", a.getAttribute("data-nav-case") === id);
-            });
-          }
+        if (!entries.some(function (e) { return e.isIntersecting; })) return;
+        // Active = last card whose top has passed the reading line (18% from top).
+        var line = window.innerHeight * 0.18 + 1;
+        var current = cards[0];
+        cards.forEach(function (el) {
+          if (el.getBoundingClientRect().top <= line) current = el;
         });
+        var id = current.getAttribute("data-case-id");
+        var activeLink = null;
+        document.querySelectorAll(".sidebar-link").forEach(function (a) {
+          var on = a.getAttribute("data-nav-case") === id;
+          a.classList.toggle("active", on);
+          if (on) activeLink = a;
+        });
+        keepNavLinkVisible(activeLink);
       },
       { rootMargin: "-18% 0px -68% 0px", threshold: 0 }
     );
