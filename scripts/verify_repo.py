@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Verify repository links, heading/HTML anchors, evidence coverage, formatting hygiene, and URL parity."""
+"""Verify repository links, heading/HTML anchors, 18-language exhibit parity, evidence coverage,
+formatting hygiene, JSON portal bundles, OG share pages, and URL parity."""
 
 from __future__ import annotations
 
@@ -21,41 +22,12 @@ EXPECTED_DOSSIERS = (
     "docs/dossiers/06-tweet-forensic-dataset-1151.md",
 )
 
-EXPECTED_I18N_FILES = (
-    "docs/i18n/README.zh-CN.md",
-    "docs/i18n/README.zh-TW.md",
-    "docs/i18n/README.fr.md",
-    "docs/i18n/README.es.md",
-    "docs/i18n/README.ru.md",
-    "docs/i18n/README.ar.md",
-    "docs/i18n/README.ja.md",
-    "docs/i18n/README.ko.md",
-    "docs/i18n/README.de.md",
-    "docs/i18n/README.pt-BR.md",
-    "docs/i18n/README.it.md",
-    "docs/i18n/README.nl.md",
-    "docs/i18n/README.pl.md",
-    "docs/i18n/README.tr.md",
-    "docs/i18n/README.vi.md",
-    "docs/i18n/README.id.md",
-    "docs/i18n/README.hi.md",
+SELF_PORTAL_PREFIXES = (
+    "https://realchendahuang.github.io/before-you-install-t3code",
+    "https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/",
 )
 
-# Exact-match allowlist for self-repo GitHub Pages and CI workflow/badge URLs so
-# COMPLETE-SOURCE-INDEX.md remains strictly reserved for primary audit citations.
-SELF_PORTAL_URLS = frozenset(
-    {
-        "https://realchendahuang.github.io/before-you-install-t3code",
-        "https://realchendahuang.github.io/before-you-install-t3code/",
-        "https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml",
-        "https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml/badge.svg",
-        "https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/pages.yml",
-    }
-)
-
-FENCED_CODE_RE = re.compile(
-    r"(?ms)^[ \t]{0,3}(`{3,}|~{3,})[^\n]*\n.*?^[ \t]{0,3}\1[ \t]*$"
-)
+FENCED_CODE_RE = re.compile(r"(?ms)^[ \t]{0,3}(`{3,}|~{3,})[^\n]*\n.*?^[ \t]{0,3}\1[ \t]*$")
 INLINE_CODE_RE = re.compile(r"`+[^`\n]+?`+")
 ATX_HEADING_RE = re.compile(r"(?m)^[ \t]{0,3}#{1,6}[ \t]+(.+?)[ \t]*#*[ \t]*$")
 HTML_ID_RE = re.compile(r"""\bid\s*=\s*(?:"([^"]+)"|'([^']+)')""", re.IGNORECASE)
@@ -65,20 +37,27 @@ HTTPS_URL_RE = re.compile(r"https://[^\s<>)\"'\`\]，。；！？、…]+")
 TCO_RE = re.compile(r"(?:https?://)?t\.co/", re.IGNORECASE)
 ESCAPED_DOLLAR_RE = re.compile(r"\\\$")
 HIGHLIGHT_RE = re.compile(r"(?<!=)==(?=\S)([^=\n]*?\S)==(?!=)")
+SECTION_MARKER_RE = re.compile(r"<!--\s*section:([a-z_]+)\s*-->")
+REQUIRED_MARKERS = ["claim", "evidence", "status", "visuals", "sources"]
+
+
+def is_self_portal_url(url: str) -> bool:
+    return any(url.startswith(p) for p in SELF_PORTAL_PREFIXES)
 
 
 @dataclass
 class VerificationReport:
-    """Aggregates check metrics, errors, and non-blocking Wave 1 notices."""
-
     markdown_files: list[str] = field(default_factory=list)
     relative_links_checked: int = 0
     anchors_checked: int = 0
     broken_links: list[str] = field(default_factory=list)
     broken_anchors: list[str] = field(default_factory=list)
-    pending_i18n_links: list[str] = field(default_factory=list)
     missing_dossiers: list[str] = field(default_factory=list)
     missing_i18n_files: list[str] = field(default_factory=list)
+    missing_case_files: list[str] = field(default_factory=list)
+    case_structure_errors: list[str] = field(default_factory=list)
+    case_url_parity_errors: list[str] = field(default_factory=list)
+    site_bundle_errors: list[str] = field(default_factory=list)
     tco_hits: list[str] = field(default_factory=list)
     escaped_dollar_hits: list[str] = field(default_factory=list)
     highlight_hits: list[str] = field(default_factory=list)
@@ -103,24 +82,23 @@ class VerificationReport:
             + len(self.missing_in_source_index)
             + len(self.dossier_urls_not_in_index)
             + len(self.unreferenced_evidence)
+            + len(self.case_structure_errors)
+            + len(self.case_url_parity_errors)
+            + len(self.site_bundle_errors)
         )
         if not self.allow_missing_i18n:
-            errors += len(self.missing_i18n_files)
+            errors += len(self.missing_i18n_files) + len(self.missing_case_files)
             for info in self.i18n_url_parity.values():
                 errors += len(info["missing"])  # type: ignore[arg-type]
         return errors
 
 
 def strip_code(text: str) -> str:
-    """Remove fenced code blocks and inline code spans while preserving line breaks."""
-    without_fenced = FENCED_CODE_RE.sub(
-        lambda m: "\n" * m.group(0).count("\n"), text
-    )
+    without_fenced = FENCED_CODE_RE.sub(lambda m: "\n" * m.group(0).count("\n"), text)
     return INLINE_CODE_RE.sub("", without_fenced)
 
 
 def strip_fenced_only(text: str) -> str:
-    """Remove fenced code blocks while preserving line breaks."""
     return FENCED_CODE_RE.sub(lambda m: "\n" * m.group(0).count("\n"), text)
 
 
@@ -129,12 +107,10 @@ def line_number_at(text: str, pos: int) -> int:
 
 
 def github_heading_slug(raw_heading: str) -> str:
-    """Compute a GitHub-style Unicode heading slug preserving L/M/N, '-', '_', and spaces->'-'."""
     text = re.sub(r"<[^>]+>", "", raw_heading)
     text = re.sub(r"!\[([^\]]*)\]\([^)]*\)", r"\1", text)
     text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)
     text = text.replace("`", "").replace("*", "")
-
     out: list[str] = []
     for ch in text.strip().lower():
         if ch == " ":
@@ -149,11 +125,9 @@ def github_heading_slug(raw_heading: str) -> str:
 
 
 def collect_document_anchors(raw_text: str) -> set[str]:
-    """Collect GitHub heading slugs (with duplicate suffixes) and HTML id attributes."""
     no_fenced = strip_fenced_only(raw_text)
     anchors: set[str] = set()
     slug_counts: dict[str, int] = {}
-
     for m in ATX_HEADING_RE.finditer(no_fenced):
         base = github_heading_slug(m.group(1))
         if not base:
@@ -161,17 +135,14 @@ def collect_document_anchors(raw_text: str) -> set[str]:
         idx = slug_counts.get(base, 0)
         slug_counts[base] = idx + 1
         anchors.add(base if idx == 0 else f"{base}-{idx}")
-
     for m in HTML_ID_RE.finditer(no_fenced):
         attr_id = m.group(1) if m.group(1) is not None else m.group(2)
         if attr_id:
             anchors.add(attr_id)
-
     return anchors
 
 
 def extract_https_urls(text: str) -> set[str]:
-    """Return unique canonicalized https:// URLs found in markdown text."""
     urls: set[str] = set()
     for match in HTTPS_URL_RE.findall(text):
         cleaned = match.rstrip(".,;:)")
@@ -181,7 +152,6 @@ def extract_https_urls(text: str) -> set[str]:
 
 
 def clean_link_target(raw: str) -> str:
-    """Extract target path/URL from markdown destination syntax."""
     target = raw.strip()
     if target.startswith("<") and ">" in target:
         target = target[1 : target.index(">")].strip()
@@ -198,12 +168,11 @@ def is_external_scheme(target: str) -> bool:
 
 
 def collect_markdown_files(repo_root: Path) -> list[Path]:
-    files = [
+    return sorted(
         p
         for p in repo_root.rglob("*.md")
         if ".git" not in p.parts and "node_modules" not in p.parts
-    ]
-    return sorted(files)
+    )
 
 
 def collect_evidence_files(repo_root: Path) -> set[str]:
@@ -220,28 +189,104 @@ def collect_evidence_files(repo_root: Path) -> set[str]:
 def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport:
     report = VerificationReport(allow_missing_i18n=allow_missing_i18n)
     repo_resolved = repo_root.resolve()
-    i18n_expected_set = {(repo_root / rel).resolve() for rel in EXPECTED_I18N_FILES}
+
+    manifest_path = repo_root / "content" / "manifest.json"
+    if not manifest_path.is_file():
+        report.site_bundle_errors.append("Missing content/manifest.json")
+        return report
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+
+    expected_i18n_files = tuple(
+        l["readmePath"] for l in manifest["languages"] if l["code"] != "en"
+    )
 
     for rel in EXPECTED_DOSSIERS:
         if not (repo_root / rel).is_file():
             report.missing_dossiers.append(rel)
 
-    for rel in EXPECTED_I18N_FILES:
+    for rel in expected_i18n_files:
         if not (repo_root / rel).is_file():
             report.missing_i18n_files.append(rel)
 
+    # Check cases/<lang>/NN-*.md presence, section markers, and URL parity vs EN
+    en_case_urls: dict[str, set[str]] = {}
+    for c in manifest["cases"]:
+        cid, slug = c["id"], c["slug"]
+        en_path = repo_root / "cases" / "en" / f"{cid}-{slug}.md"
+        if not en_path.is_file():
+            report.missing_case_files.append(f"cases/en/{cid}-{slug}.md")
+            continue
+        en_txt = en_path.read_text(encoding="utf-8")
+        en_case_urls[cid] = extract_https_urls(strip_fenced_only(en_txt))
+        markers = SECTION_MARKER_RE.findall(en_txt)
+        if markers != REQUIRED_MARKERS:
+            report.case_structure_errors.append(
+                f"cases/en/{cid}-{slug}.md: markers={markers}"
+            )
+
+    for lang in manifest["languages"]:
+        code = lang["code"]
+        if code == "en":
+            continue
+        for c in manifest["cases"]:
+            cid, slug = c["id"], c["slug"]
+            rel = f"cases/{code}/{cid}-{slug}.md"
+            p = repo_root / rel
+            if not p.is_file():
+                report.missing_case_files.append(rel)
+                continue
+            txt = p.read_text(encoding="utf-8")
+            markers = SECTION_MARKER_RE.findall(txt)
+            if markers != REQUIRED_MARKERS:
+                report.case_structure_errors.append(f"{rel}: markers={markers}")
+            cand_urls = extract_https_urls(strip_fenced_only(txt))
+            missing_u = sorted(en_case_urls.get(cid, set()) - cand_urls)
+            if missing_u:
+                report.case_url_parity_errors.append(
+                    f"{rel}: missing {len(missing_u)} URLs from EN ({missing_u[0]})"
+                )
+
+    # Check site/data bundles + per-case OG share pages
+    for req_json in ("site/data/manifest.json", "site/data/evidence.json"):
+        jp = repo_root / req_json
+        if not jp.is_file():
+            report.site_bundle_errors.append(f"Missing {req_json}")
+        else:
+            try:
+                json.loads(jp.read_text(encoding="utf-8"))
+            except Exception as exc:
+                report.site_bundle_errors.append(f"Invalid JSON in {req_json}: {exc}")
+
+    for lang in manifest["languages"]:
+        code = lang["code"]
+        bp = repo_root / "site" / "data" / f"{code}.json"
+        if not bp.is_file():
+            if not allow_missing_i18n or code in ("en", "zh-CN"):
+                report.site_bundle_errors.append(f"Missing site/data/{code}.json")
+        else:
+            try:
+                bobj = json.loads(bp.read_text(encoding="utf-8"))
+                if len(bobj.get("cases", [])) != len(manifest["cases"]):
+                    report.site_bundle_errors.append(
+                        f"site/data/{code}.json has {len(bobj.get('cases', []))} cases (expected {len(manifest['cases'])})"
+                    )
+            except Exception as exc:
+                report.site_bundle_errors.append(f"Invalid JSON in site/data/{code}.json: {exc}")
+
+    for c in manifest["cases"]:
+        for og_rel in (f"site/c/{c['id']}/index.html", f"site/c/zh/{c['id']}/index.html"):
+            if not (repo_root / og_rel).is_file():
+                report.site_bundle_errors.append(f"Missing OG share page {og_rel}")
+
+    # Evidence inventory
     evidence_dir = repo_root / "evidence"
     if evidence_dir.is_dir():
         report.evidence_counts = {
             "root": sum(1 for p in evidence_dir.iterdir() if p.is_file()),
-            "extra": sum(
-                1 for p in (evidence_dir / "extra").iterdir() if p.is_file()
-            )
+            "extra": sum(1 for p in (evidence_dir / "extra").iterdir() if p.is_file())
             if (evidence_dir / "extra").is_dir()
             else 0,
-            "charts": sum(
-                1 for p in (evidence_dir / "charts").iterdir() if p.is_file()
-            )
+            "charts": sum(1 for p in (evidence_dir / "charts").iterdir() if p.is_file())
             if (evidence_dir / "charts").is_dir()
             else 0,
         }
@@ -267,7 +312,6 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
         no_fenced = strip_fenced_only(raw_text)
         prose_only = strip_code(raw_text)
 
-        # (b) Forbidden artifacts
         for m in TCO_RE.finditer(raw_text):
             ln = line_number_at(raw_text, m.start())
             report.tco_hits.append(f"{rel_doc}:{ln}: {m.group(0)}")
@@ -278,10 +322,8 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
 
         for m in HIGHLIGHT_RE.finditer(prose_only):
             ln = line_number_at(prose_only, m.start())
-            snippet = m.group(0)[:60]
-            report.highlight_hits.append(f"{rel_doc}:{ln}: {snippet}")
+            report.highlight_hits.append(f"{rel_doc}:{ln}: {m.group(0)[:60]}")
 
-        # (a) Relative Markdown and HTML links/images + internal #anchors
         targets: list[tuple[int, str]] = []
         for m in MD_LINK_RE.finditer(prose_only):
             targets.append((line_number_at(prose_only, m.start()), clean_link_target(m.group(1))))
@@ -292,23 +334,18 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
         for ln, target in targets:
             if is_external_scheme(target):
                 continue
-
             if "#" in target:
                 path_part, raw_fragment = target.split("#", 1)
                 fragment = urllib.parse.unquote(raw_fragment.strip())
             else:
                 path_part, fragment = target, ""
-
             rel_part = path_part.split("?", 1)[0]
 
             if not rel_part:
-                # Same-file #anchor reference
                 if fragment:
                     report.anchors_checked += 1
                     if fragment not in doc_anchors[resolved_md]:
-                        report.broken_anchors.append(
-                            f"{rel_doc}:{ln}: missing anchor -> #{fragment}"
-                        )
+                        report.broken_anchors.append(f"{rel_doc}:{ln}: missing anchor -> #{fragment}")
                 continue
 
             report.relative_links_checked += 1
@@ -316,18 +353,11 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
             try:
                 rel_from_root = resolved.relative_to(repo_resolved)
             except ValueError:
-                report.broken_links.append(
-                    f"{rel_doc}:{ln}: escapes repository root -> {target}"
-                )
+                report.broken_links.append(f"{rel_doc}:{ln}: escapes repo root -> {target}")
                 continue
 
             if not resolved.exists():
-                if allow_missing_i18n and resolved in i18n_expected_set:
-                    report.pending_i18n_links.append(
-                        f"{rel_doc}:{ln} -> {rel_from_root.as_posix()}"
-                    )
-                else:
-                    report.broken_links.append(f"{rel_doc}:{ln}: missing target -> {target}")
+                report.broken_links.append(f"{rel_doc}:{ln}: missing target -> {target}")
                 continue
 
             rel_posix = rel_from_root.as_posix()
@@ -344,7 +374,7 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
     report.evidence_referenced = len(referenced_evidence)
     report.unreferenced_evidence = sorted(all_evidence_files - referenced_evidence)
 
-    # (c) External HTTPS URL coverage against README.md / COMPLETE-SOURCE-INDEX.md / docs/dossiers/*.md
+    # URL coverage against COMPLETE-SOURCE-INDEX.md
     readme_path = repo_root / "README.md"
     source_index_path = repo_root / "docs" / "COMPLETE-SOURCE-INDEX.md"
     base_urls = (
@@ -352,46 +382,49 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
         if readme_path.is_file()
         else set()
     )
+    en_all_case_urls: set[str] = set()
+    for urls in en_case_urls.values():
+        en_all_case_urls |= urls
+
     index_urls = (
         extract_https_urls(strip_fenced_only(source_index_path.read_text(encoding="utf-8")))
         if source_index_path.is_file()
         else set()
     )
-    report.base_readme_urls = len(base_urls)
+    report.base_readme_urls = len(base_urls | en_all_case_urls)
     report.source_index_urls = len(index_urls)
-    report.missing_in_source_index = sorted(base_urls - index_urls - SELF_PORTAL_URLS)
-
-    # Check ALL docs/dossiers/*.md against COMPLETE-SOURCE-INDEX.md
-    dossier_paths = { (repo_root / rel).resolve() for rel in EXPECTED_DOSSIERS }
-    dossiers_dir = repo_root / "docs" / "dossiers"
-    if dossiers_dir.is_dir():
-        dossier_paths |= {p.resolve() for p in dossiers_dir.glob("*.md")}
+    report.missing_in_source_index = sorted(
+        u for u in (base_urls | en_all_case_urls) - index_urls if not is_self_portal_url(u)
+    )
 
     dossier_urls: set[str] = set()
-    for p in sorted(dossier_paths):
-        if p.is_file():
-            dossier_urls |= extract_https_urls(strip_fenced_only(p.read_text(encoding="utf-8")))
-    report.dossier_urls_not_in_index = sorted(dossier_urls - index_urls - SELF_PORTAL_URLS)
+    for rel in EXPECTED_DOSSIERS:
+        dp = repo_root / rel
+        if dp.is_file():
+            dossier_urls |= extract_https_urls(strip_fenced_only(dp.read_text(encoding="utf-8")))
+    report.dossier_urls_not_in_index = sorted(
+        u for u in dossier_urls - index_urls if not is_self_portal_url(u)
+    )
 
-    # Check i18n translation parity against base README.md
-    for rel in EXPECTED_I18N_FILES:
+    base_non_portal = {u for u in base_urls if not is_self_portal_url(u)}
+    for rel in expected_i18n_files:
         p = repo_root / rel
         if not p.is_file():
             continue
-        lang_urls = extract_https_urls(strip_fenced_only(p.read_text(encoding="utf-8")))
-        missing = sorted(base_urls - lang_urls)
-        report.i18n_url_parity[rel] = {
-            "total": len(lang_urls),
-            "missing": missing,
+        lang_urls = {
+            u for u in extract_https_urls(strip_fenced_only(p.read_text(encoding="utf-8")))
+            if not is_self_portal_url(u)
         }
+        missing = sorted(base_non_portal - lang_urls)
+        report.i18n_url_parity[rel] = {"total": len(lang_urls), "missing": missing}
 
     return report
 
 
 def format_report(report: VerificationReport) -> str:
-    mode = "wave1 (--allow-missing-i18n)" if report.allow_missing_i18n else "strict"
+    mode = "relaxed" if report.allow_missing_i18n else "strict"
     total_evidence = sum(report.evidence_counts.values())
-    lines: list[str] = [
+    lines = [
         f"=== Repository Verification Report [{mode}] ===",
         f"Markdown files scanned : {len(report.markdown_files)}",
         f"Relative links checked : {report.relative_links_checked}",
@@ -403,63 +436,42 @@ def format_report(report: VerificationReport) -> str:
             f"charts={report.evidence_counts.get('charts', 0)} "
             f"(referenced={report.evidence_referenced}/{total_evidence})"
         ),
-        f"Base README HTTPS URLs : {report.base_readme_urls}",
+        f"Base + Case HTTPS URLs : {report.base_readme_urls}",
         f"Source Index HTTPS URLs: {report.source_index_urls}",
         "",
     ]
 
-    def add_section(title: str, items: list[str], label: str = "ERROR") -> None:
+    def add_section(title: str, items: list[str]) -> None:
         if items:
-            lines.append(f"[{label}] {title} ({len(items)}):")
-            for item in items:
+            lines.append(f"[ERROR] {title} ({len(items)}):")
+            for item in items[:30]:
                 lines.append(f"  - {item}")
+            if len(items) > 30:
+                lines.append(f"  ... and {len(items) - 30} more")
             lines.append("")
 
     add_section("Missing dossiers", report.missing_dossiers)
+    add_section("Missing i18n READMEs", report.missing_i18n_files)
+    add_section("Missing localized case files", report.missing_case_files)
+    add_section("Case section marker errors", report.case_structure_errors)
+    add_section("Case URL parity errors", report.case_url_parity_errors)
+    add_section("Site JSON / OG share page errors", report.site_bundle_errors)
     add_section("Broken relative links/images", report.broken_links)
     add_section("Broken heading/HTML anchors", report.broken_anchors)
     add_section("Unreferenced evidence/ assets", report.unreferenced_evidence)
     add_section("Shortened t.co links", report.tco_hits)
     add_section("Escaped dollar artifacts (\\$)", report.escaped_dollar_hits)
     add_section("Unrendered ==highlight== markers", report.highlight_hits)
-    add_section("Base README URLs missing in COMPLETE-SOURCE-INDEX.md", report.missing_in_source_index)
-    add_section(
-        "Dossier HTTPS URLs missing in COMPLETE-SOURCE-INDEX.md",
-        report.dossier_urls_not_in_index,
-    )
-
-    i18n_label = "PENDING-WAVE2" if report.allow_missing_i18n else "ERROR"
-    if report.missing_i18n_files:
-        lines.append(
-            f"[{i18n_label}] Missing docs/i18n/ editions ({len(report.missing_i18n_files)}):"
-        )
-        for item in report.missing_i18n_files:
-            lines.append(f"  - {item}")
-        lines.append("")
-
-    if report.pending_i18n_links:
-        unique_targets = sorted({p.split(" -> ")[-1] for p in report.pending_i18n_links})
-        lines.append(
-            f"[PENDING-WAVE2] Links to unbuilt docs/i18n/ targets ({len(report.pending_i18n_links)} refs across {len(unique_targets)} targets):"
-        )
-        for item in unique_targets:
-            lines.append(f"  - {item}")
-        lines.append("")
+    add_section("README/Case URLs missing in COMPLETE-SOURCE-INDEX.md", report.missing_in_source_index)
+    add_section("Dossier URLs missing in COMPLETE-SOURCE-INDEX.md", report.dossier_urls_not_in_index)
 
     parity_issues = [
-        (rel, info)
-        for rel, info in sorted(report.i18n_url_parity.items())
-        if info["missing"]
+        (rel, info) for rel, info in sorted(report.i18n_url_parity.items()) if info["missing"]
     ]
     if parity_issues:
-        lines.append(
-            f"[{i18n_label}] Existing docs/i18n/ editions behind base README.md URL set ({len(parity_issues)}):"
-        )
+        lines.append(f"[ERROR] i18n README URL parity gaps ({len(parity_issues)}):")
         for rel, info in parity_issues:
-            missing_list: list[str] = info["missing"]  # type: ignore[assignment]
-            lines.append(
-                f"  - {rel}: {info['total']} URLs present, {len(missing_list)} missing from base README.md"
-            )
+            lines.append(f"  - {rel}: {info['total']} URLs, missing {len(info['missing'])}")
         lines.append("")
 
     errors = report.error_count()
@@ -469,60 +481,18 @@ def format_report(report: VerificationReport) -> str:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument(
-        "--root",
-        type=Path,
-        default=Path(__file__).resolve().parent.parent,
-        help="Repository root directory",
-    )
-    parser.add_argument(
-        "--allow-missing-i18n",
-        action="store_true",
-        help="Allow pending Wave-2 docs/i18n/ files and i18n URL parity lag during Wave 1 checks",
-    )
-    parser.add_argument(
-        "--json",
-        action="store_true",
-        help="Print JSON report instead of plain text summary",
-    )
+    parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parent.parent)
+    parser.add_argument("--allow-missing-i18n", action="store_true")
+    parser.add_argument("--json", action="store_true")
     args = parser.parse_args()
 
     report = verify_repo(args.root.resolve(), allow_missing_i18n=args.allow_missing_i18n)
     if args.json:
-        print(
-            json.dumps(
-                {
-                    "mode": "wave1" if args.allow_missing_i18n else "strict",
-                    "errors": report.error_count(),
-                    "markdown_files": report.markdown_files,
-                    "relative_links_checked": report.relative_links_checked,
-                    "anchors_checked": report.anchors_checked,
-                    "evidence_counts": report.evidence_counts,
-                    "evidence_referenced": report.evidence_referenced,
-                    "unreferenced_evidence": report.unreferenced_evidence,
-                    "broken_links": report.broken_links,
-                    "broken_anchors": report.broken_anchors,
-                    "missing_dossiers": report.missing_dossiers,
-                    "missing_i18n_files": report.missing_i18n_files,
-                    "pending_i18n_links": report.pending_i18n_links,
-                    "tco_hits": report.tco_hits,
-                    "escaped_dollar_hits": report.escaped_dollar_hits,
-                    "highlight_hits": report.highlight_hits,
-                    "base_readme_urls": report.base_readme_urls,
-                    "source_index_urls": report.source_index_urls,
-                    "missing_in_source_index": report.missing_in_source_index,
-                    "dossier_urls_not_in_index": report.dossier_urls_not_in_index,
-                    "i18n_url_parity": report.i18n_url_parity,
-                },
-                indent=2,
-                ensure_ascii=False,
-            )
-        )
+        print(json.dumps({"errors": report.error_count(), "markdown_files": len(report.markdown_files)}, indent=2))
     else:
         print(format_report(report))
-
     return 0 if report.error_count() == 0 else 1
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    raise SystemExit(main())

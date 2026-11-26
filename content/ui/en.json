@@ -1,0 +1,202 @@
+{
+  "langCode": "en",
+  "siteTitle": "Before You Install T3 Code",
+  "siteSubtitle": "An independent, evidence-first public record of pingdotgg/t3code — documenting racial double standards, deceptive telemetry, critical security flaws, and commercial manipulation.",
+  "metaDescription": "20 verified exhibits (#00–#19), 109 primary visual receipts, 327 canonical URLs, and 1,151 analyzed X posts documenting pingdotgg/t3code and @theo across 18 languages.",
+  "heroKicker": "Independent Public-Record Investigation · 18 Languages",
+  "heroThesis": "No telemetry. No racial discrimination. Every claim below is anchored to verbatim public statements, repository commits, pull requests, USPTO filings, and archived screenshots.",
+  "stats": {
+    "casesLabel": "Verified exhibits",
+    "casesValue": "20 Exhibits (#00–#19)",
+    "receiptsLabel": "Primary evidence",
+    "receiptsValue": "109 Visual Receipts · 327 Canonical URLs",
+    "upstreamLabel": "Upstream check",
+    "upstreamValue": "9d3195b4 → ca81b7b9 (+259 commits)",
+    "advisoriesLabel": "Security advisories",
+    "advisoriesValue": "0 Published GitHub Advisories"
+  },
+  "cta": {
+    "openPortal": "Open Interactive Visual Investigation (18 Languages)",
+    "readCases": "Read Exhibits #00–#19",
+    "hardening": "2-Minute Hardening",
+    "evidenceArchive": "109 Visual Receipts",
+    "sourceIndex": "327 Primary Sources",
+    "githubRepo": "GitHub Repository",
+    "inspectCover": "Inspect full resolution",
+    "viewExhibit": "Open full exhibit",
+    "readOnWeb": "Interactive card",
+    "copyShareLink": "Copy exhibit link",
+    "copied": "Copied",
+    "shareOnX": "Share on X",
+    "openOriginalPost": "Original X post",
+    "openDossier": "Deep technical dossier",
+    "viewAllReceipts": "Filter related receipts",
+    "expandAll": "Expand full text",
+    "collapseAll": "Compact view",
+    "showMoreReceipts": "Show additional receipts"
+  },
+  "nav": {
+    "overview": "Story Arc",
+    "exhibits": "20 Exhibits",
+    "charts": "1,151-Tweet Charts",
+    "community": "Community Reports",
+    "gallery": "109 Receipts",
+    "mitigation": "Hardening"
+  },
+  "viewModes": {
+    "byTheme": "By 4 Themes",
+    "chronological": "Chronological (#00→#19)"
+  },
+  "statusLabels": {
+    "all": "All",
+    "open": "Unfixed",
+    "partial": "Partially Patched",
+    "record": "Public Record"
+  },
+  "severityLabels": {
+    "critical": "Critical",
+    "high": "High",
+    "medium": "Medium-High",
+    "record": "Baseline Record"
+  },
+  "storyArcHeading": "How It Happened in 60 Seconds",
+  "storyArcLead": "A single naming dispute over a community MIT fork uncovered a pattern of racial double standards, hidden telemetry, silent security patches, and unfixed architectural risks.",
+  "storyArc": [
+    {
+      "step": "01",
+      "window": "Nov 23, 2026",
+      "title": "The discriminatory spark",
+      "body": "After a user mistook a Chinese developer's free MIT fork for official T3 Code, @theo called it a \"Chinese knockoff\" and \"Temu3 Code\" and threatened a GitHub account ban — despite holding 0 USPTO trademarks and publicly welcoming trillion-dollar US labs copying MIT code 11 hours later."
+    },
+    {
+      "step": "02",
+      "window": "Nov 24, 2026",
+      "title": "Opening the source code",
+      "body": "Line-by-line inspection of pingdotgg/t3code revealed default-on PostHog telemetry shipped behind a \"No telemetry\" homepage promise, closed-source event retention at ingest.t3.codes, unsalted SHA-256 reads of ~/.codex and ~/.claude.json, 41.6 GB fake SQLite deletion, a 52-day silent git push --force bug, Google Antigravity header spoofing, and zero-E2E plaintext T3 Connect."
+    },
+    {
+      "step": "03",
+      "window": "Nov 24–25 Overnight",
+      "title": "2.26M+ views, EU GDPR filing & 6-hour panic blitz",
+      "body": "Part 1 crossed 2.26 million views and triggered an EU GDPR complaint. Emergency overnight PRs inadvertently admitted 2.2M/hr IP + User-Agent logs kept 30 days in Axiom, absolute git.cwd workspace path leaks, broken account deletion, and ignored Windows/macOS opt-outs."
+    },
+    {
+      "step": "04",
+      "window": "Nov 25 (`ca81b7b9`) & Ongoing",
+      "title": "What remains open today",
+      "body": "Tracking +259 commits through ca81b7b9 confirmed partial telemetry patches — alongside unfixed startup ID writes, zero UI toggle, 0 GitHub Security Advisories, unpinned arbitrary-repo starring, plaintext 30-day --lan shell cookies, unrevocable Bearer tokens, and untrusted-repo SSH_AUTH_SOCK exposure (#19)."
+    }
+  ],
+  "acts": {
+    "act1": {
+      "label": "Part I",
+      "title": "Racial Discrimination, Double Standards & Pattern",
+      "summary": "From \"Chinese knockoff\" and \"Temu3 Code\" takedown threats with 0 USPTO trademarks to a 1,151-tweet quantitative split (0.0% VIP profanity vs. 8.0% developer hostility vs. 14.4% anti-Chinese crisis surge) and a two-year recurring history."
+    },
+    "act2": {
+      "label": "Part II",
+      "title": "Deceptive Telemetry & Privacy Violations",
+      "summary": "How \"No telemetry. Full stop.\" concealed default PostHog uploads, closed-source ingest.t3.codes retention, cross-tool credential hashing, Managed Policy blind spots, and 2.2M/hr IP-tagged Axiom logs."
+    },
+    "act3": {
+      "label": "Part III",
+      "title": "Product Defects & Critical Security Flaws",
+      "summary": "41.6 GB fake SQLite deletion, 5-second OS process scanning, 52-day silent git push --force, Google Antigravity ToS spoofing causing 3-minute bans, zero-E2E plaintext T3 Connect, 0 Security Advisories, and ca81b7b9 LAN/Bearer/SSH_AUTH_SOCK vulnerabilities."
+    },
+    "act4": {
+      "label": "Part IV",
+      "title": "Commercial Manipulation & Community Bullying",
+      "summary": "The $800k+ / 31.7T-token daily compute radar, angel-investor conflicts (Vibe Kanban, Daytona), sponsor stack overlaps, 30-second-idle host-credential starring driving 77k stars, @bot fork-scraping, and .github/VOUCHED.td bans."
+    }
+  },
+  "sectionLabels": {
+    "claim": "What Was Claimed",
+    "evidence": "What the Evidence Shows",
+    "status": "Upstream Status (ca81b7b9)",
+    "visuals": "Visual Evidence",
+    "sources": "Primary Sources"
+  },
+  "charts": {
+    "heading": "1,151-Tweet Quantitative Evidence",
+    "lead": "Exhaustive dataset of every @theo X post from November 7–24, 2026 (n = 1,151, 66.8 posts/day, 75.6% replies). Interactive charts update automatically with light/dark polarity.",
+    "tabs": {
+      "chart1": "Corpus & product focus",
+      "chart2": "Circadian cadence",
+      "chart3": "Selective politeness split",
+      "chart4": "25-hour crisis surge"
+    },
+    "inspectPng": "Inspect archived PNG",
+    "openStandalone": "Open full chart",
+    "readDossier": "Read Dossier 06"
+  },
+  "community": {
+    "heading": "Community Reports & Independent Commentary",
+    "lead": "The 20 numbered exhibits (#00–#19) strictly contain publicly verifiable code, pull requests, official filings, and archived public posts. Community submissions and private-message allegations are separated here for evidentiary clarity.",
+    "issue1Title": "Issue #1 · \"The Case Against Theo\" (@opserx)",
+    "issue1Body": "Verbatim archive of community commentary submitted to this repository on Nov 25, 2026, paired with primary-source precision notes on PR #42450 and PR #41237.",
+    "issue1Link": "Read archived Issue #1",
+    "dmTitle": "Private-Message Complaints & Ongoing Submissions",
+    "dmBody": "Multiple developers have sent private accounts of their experiences with @theo and T3 Code. To uphold strict verification standards, private reports remain segregated from the primary #00–#19 exhibit record unless independently corroborated by public artifacts. Submit verifiable findings or upstream fix confirmations via Pull Request or GitHub Issue.",
+    "dmLink": "Submission & verification policy"
+  },
+  "gallery": {
+    "heading": "Complete 109-Receipt Visual Archive",
+    "lead": "Search every archived screenshot, code capture, and forensic chart by PR number, file name, or keyword. Click any receipt to inspect at full resolution.",
+    "searchPlaceholder": "Search 109 receipts (e.g. 42450, Identify.ts, antigravity, wsTicket, SSH_AUTH_SOCK, driver.ts)...",
+    "showing": "Showing {shown} of {total} receipts",
+    "allParts": "All (109)",
+    "empty": "No receipts match your search query."
+  },
+  "mitigation": {
+    "heading": "2-Minute Hardening & Cleanup Playbook",
+    "lead": "If T3 Code is already installed on your machine, do not rely on environment variables alone — AnalyticsService.ts:156 writes a local ID before checking opt-outs and DesktopShellEnvironment.ts omits OTEL_SDK_DISABLED. Combine environment flags, OS hosts blocking, offline SQLite compaction, and token revocation.",
+    "tabs": {
+      "unix": "macOS / Linux",
+      "windows": "Windows",
+      "policy": "Managed Policy"
+    },
+    "copy": "Copy",
+    "copied": "Copied",
+    "steps": [
+      "Export DO_NOT_TRACK=1 and legacy telemetry kill switches, AND sinkhole ingest.t3.codes in /etc/hosts.",
+      "Quit T3 Code, inspect statev2.sqlite, run offline VACUUM;, or remove ~/.t3 completely.",
+      "Stop running personal Google AI / Antigravity accounts via T3-managed directories to protect your single appeal.",
+      "Disable Publish agent activity, unlink T3 Connect machines, request Clerk + relay deletion, and revoke T3 Code's GitHub OAuth app.",
+      "Never expose plaintext t3 up --lan without TLS, avoid 30-day non-DPoP Bearer tokens in CI, and scrub SSH_AUTH_SOCK / GITHUB_TOKEN before opening untrusted repos."
+    ],
+    "alternativesTitle": "Community-Recommended Alternatives",
+    "alternativesBody": "Developers highlighted Mirasim (@Mirasim_ADE), Paseo (@paseo_sh), Paradev (@ParadevAI), Cloudroom, Conductor, Emdash, and Orca. Before adopting any client, verify default-off telemetry, true local deletion, official CLI delegation without header spoofing, and client-side E2E encryption."
+  },
+  "readme": {
+    "unLanguages": "UN Official Languages",
+    "communityLanguages": "Global Community Editions",
+    "quickNav": "All 20 Verified Exhibits (#00–#19)",
+    "quickNavNote": "Every exhibit below links to its dedicated, table-free localized exhibit file in this repository and its shareable visual card on the web portal. Ongoing tracking will continue sequentially (#20, #21, ...).",
+    "featuredVisuals": "Key Visual Receipts",
+    "deepArchive": "Deep Technical Dossiers & Master Indexes",
+    "deepArchiveNote": "For line-by-line source code diffs, verbatim SQL, and complete cross-referenced catalogs, explore the preserved reference archives:",
+    "howToUpdate": "Continuous Tracking & Contributions",
+    "howToUpdateBody": "This repository is actively maintained. Factual corrections, newly merged upstream fixes with commit/PR proof, or new primary evidence are welcome via Pull Request or GitHub Issue — see CONTRIBUTING.md."
+  },
+  "footer": {
+    "colophon": "CC0 1.0 Public Domain · Independent Public-Record Investigation of pingdotgg/t3code (9d3195b4 → ca81b7b9). Zero telemetry, zero analytics, zero racial discrimination.",
+    "groupDossiers": "Deep Technical Dossiers (6)",
+    "groupIndexes": "Master Indexes & Community",
+    "groupRepo": "Repository & Verification",
+    "scopeTitle": "Editorial & Verification Standard",
+    "scopeBody": "Every exhibit (#00–#19) is anchored to canonical public commits, pull requests, issues, official docs, USPTO TSDR records, or verbatim screenshots archived in Git. Zero shortened redirect URLs and zero private contact information."
+  },
+  "controls": {
+    "language": "Language",
+    "themeDark": "Dark",
+    "themeLight": "Light",
+    "menu": "Exhibits",
+    "prev": "Prev",
+    "next": "Next",
+    "zoom100": "Zoom 100%",
+    "fit": "Fit",
+    "close": "Close",
+    "openSource": "Open primary source",
+    "openDossier": "Open technical dossier"
+  }
+}

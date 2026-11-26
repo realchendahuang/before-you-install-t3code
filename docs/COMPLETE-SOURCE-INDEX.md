@@ -381,3 +381,9 @@
 | Ref | Source | Contributor | Direct URL | Archive & Notes |
 |---|---|---|---|---|
 | `SRC-321` | Community Issue #1 | `@opserx` | https://github.com/realchendahuang/before-you-install-t3code/issues/1 | Verbatim archive of *"The Case Against Theo"* (`2026-11-25T06:53:49Z`), stored at [`docs/community/issue-1-the-case-against-theo.md`](./community/issue-1-the-case-against-theo.md) with primary-source precision notes on `PR #42450` and `PR #41237`. |
+| `SRC-322` | Part 19 (`ca81b7b9`) | X Post (ZH, 2026-11-25 15:38 CST) | https://x.com/realchendahuang/status/2125494234614788390 | Part 19 primary security audit post covering `--lan` plaintext 30-day shell cookies, unrevocable 30-day Bearer tokens, replayable `?wsTicket=`, `::1` loopback drops, and untrusted-repo `SSH_AUTH_SOCK`/`GITHUB_TOKEN` exposure at `ca81b7b9`. |
+| `SRC-323` | Part 19 (`ca81b7b9`) | X Post (EN, 2026-11-25 15:39 CST) | https://x.com/realchendahuang/status/2125494623640465525 | English edition of Part 19 security audit covering `ca81b7b9` LAN/Bearer/WebSocket/untrusted-repo vulnerabilities. |
+| `SRC-324` | Origin Context | X Reply (2026-11-24) | https://x.com/realchendahuang/status/2125064674307985520 | Prior pattern record citing `@theo`'s insults toward an apologizing developer and his *Stop Killing Games* consumer backlash. |
+| `SRC-325` | Origin Context | X Reply (2026-11-24) | https://x.com/realchendahuang/status/2125066387647513072 | Prior YouTube public record documenting discrepancies between public statements and private messages. |
+| `SRC-326` | Origin Context | X Reply (2026-11-24) | https://x.com/realchendahuang/status/2125066552785711291 | Prior 2024 record of `@theo` publicly mocking Rails creator DHH's email client UI for engagement. |
+| `SRC-327` | Origin Context | X Reply (2026-11-24) | https://x.com/realchendahuang/status/2125066677188702698 | T3 Code's own FAQ acknowledging inspiration from Codex Desktop, Conductor, Claude Desktop, and Cursor. |

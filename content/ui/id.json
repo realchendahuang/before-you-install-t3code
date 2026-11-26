@@ -1,0 +1,202 @@
+{
+  "langCode": "id",
+  "siteTitle": "Sebelum Anda Memasang T3 Code",
+  "siteSubtitle": "Catatan publik independen yang mengutamakan bukti atas pingdotgg/t3code — mendokumentasikan standar ganda rasial, telemetri yang menyesatkan, cacat keamanan kritis, dan manipulasi komersial.",
+  "metaDescription": "20 bukti terverifikasi (#00–#19), 109 bukti visual primer, 327 URL kanonik, dan 1.151 unggahan X yang dianalisis, mendokumentasikan pingdotgg/t3code dan @theo dalam 18 bahasa.",
+  "heroKicker": "Investigasi Catatan Publik Independen · 18 Bahasa",
+  "heroThesis": "Tanpa telemetri. Tanpa diskriminasi rasial. Setiap klaim di bawah ini berpangkal pada pernyataan publik yang verbatim, commit repositori, pull request, berkas USPTO, dan tangkapan layar yang diarsipkan.",
+  "stats": {
+    "casesLabel": "Bukti terverifikasi",
+    "casesValue": "20 Bukti (#00–#19)",
+    "receiptsLabel": "Bukti primer",
+    "receiptsValue": "109 Bukti Visual · 327 URL Kanonik",
+    "upstreamLabel": "Pemeriksaan upstream",
+    "upstreamValue": "9d3195b4 → ca81b7b9 (+259 commit)",
+    "advisoriesLabel": "Advisori keamanan",
+    "advisoriesValue": "0 Advisori GitHub yang Diterbitkan"
+  },
+  "cta": {
+    "openPortal": "Buka Investigasi Visual Interaktif (18 Bahasa)",
+    "readCases": "Baca Bukti #00–#19",
+    "hardening": "Pengerasan 2 Menit",
+    "evidenceArchive": "109 Bukti Visual",
+    "sourceIndex": "327 Sumber Primer",
+    "githubRepo": "Repositori GitHub",
+    "inspectCover": "Periksa pada resolusi penuh",
+    "viewExhibit": "Buka bukti lengkap",
+    "readOnWeb": "Kartu interaktif",
+    "copyShareLink": "Salin tautan bukti",
+    "copied": "Tersalin",
+    "shareOnX": "Bagikan di X",
+    "openOriginalPost": "Unggahan X asli",
+    "openDossier": "Dossier teknis mendalam",
+    "viewAllReceipts": "Saring bukti terkait",
+    "expandAll": "Tampilkan teks lengkap",
+    "collapseAll": "Tampilan ringkas",
+    "showMoreReceipts": "Tampilkan bukti lainnya"
+  },
+  "nav": {
+    "overview": "Alur Cerita",
+    "exhibits": "20 Bukti",
+    "charts": "Bagan 1.151 Tweet",
+    "community": "Laporan Komunitas",
+    "gallery": "109 Bukti",
+    "mitigation": "Pengerasan"
+  },
+  "viewModes": {
+    "byTheme": "Menurut 4 Tema",
+    "chronological": "Kronologis (#00→#19)"
+  },
+  "statusLabels": {
+    "all": "Semua",
+    "open": "Belum Diperbaiki",
+    "partial": "Sebagian Ditambal",
+    "record": "Catatan Publik"
+  },
+  "severityLabels": {
+    "critical": "Kritis",
+    "high": "Tinggi",
+    "medium": "Sedang-Tinggi",
+    "record": "Catatan Dasar"
+  },
+  "storyArcHeading": "Bagaimana Ini Terjadi dalam 60 Detik",
+  "storyArcLead": "Satu sengketa penamaan atas fork MIT komunitas mengungkap pola standar ganda rasial, telemetri tersembunyi, tambalan keamanan senyap, dan risiko arsitektural yang belum diperbaiki.",
+  "storyArc": [
+    {
+      "step": "01",
+      "window": "23 Nov 2026",
+      "title": "Percikan diskriminatif",
+      "body": "Setelah seorang pengguna keliru mengira fork MIT gratis milik pengembang Tiongkok sebagai T3 Code resmi, @theo menyebutnya \"tiruan Tiongkok\" dan \"Temu3 Code\" serta mengancam akan memblokir akun GitHub — padahal ia tidak memegang satu pun merek dagang USPTO dan secara terbuka menyambut laboratorium AS bernilai triliunan dolar yang menyalin kode MIT 11 jam kemudian."
+    },
+    {
+      "step": "02",
+      "window": "24 Nov 2026",
+      "title": "Membuka kode sumber",
+      "body": "Pemeriksaan baris demi baris atas pingdotgg/t3code mengungkap telemetri PostHog yang aktif secara bawaan di balik janji halaman depan \"Tanpa telemetri\", retensi peristiwa sumber tertutup di ingest.t3.codes, pembacaan SHA-256 tanpa salt atas ~/.codex dan ~/.claude.json, penghapusan SQLite palsu sebesar 41,6 GB, bug git push --force senyap selama 52 hari, pemalsuan header Google Antigravity, dan T3 Connect teks polos tanpa E2E."
+    },
+    {
+      "step": "03",
+      "window": "Semalam 24–25 Nov",
+      "title": "2,26 juta+ tayangan, pengaduan GDPR UE & gempuran panik 6 jam",
+      "body": "Bagian 1 melewati 2,26 juta tayangan dan memicu pengaduan GDPR UE. PR darurat tengah malam tanpa sengaja mengakui log IP + User-Agent 2,2 juta/jam yang disimpan 30 hari di Axiom, kebocoran jalur workspace absolut git.cwd, penghapusan akun yang rusak, dan pengabaian opt-out Windows/macOS."
+    },
+    {
+      "step": "04",
+      "window": "25 Nov (`ca81b7b9`) & Berlanjut",
+      "title": "Yang masih terbuka hari ini",
+      "body": "Pelacakan +259 commit hingga ca81b7b9 mengonfirmasi tambalan telemetri sebagian — disertai penulisan ID saat startup yang belum diperbaiki, tidak ada tombol di UI, 0 Advisori Keamanan GitHub, pemberian bintang ke repositori sembarang tanpa pin, cookie shell --lan teks polos berumur 30 hari, token Bearer yang tak dapat dicabut, dan paparan SSH_AUTH_SOCK pada repositori tak tepercaya (#19)."
+    }
+  ],
+  "acts": {
+    "act1": {
+      "label": "Bagian I",
+      "title": "Diskriminasi Rasial, Standar Ganda & Pola",
+      "summary": "Dari ancaman penurunan \"tiruan Tiongkok\" dan \"Temu3 Code\" tanpa satu pun merek dagang USPTO, hingga pemilahan kuantitatif 1.151 tweet (0,0% makian terhadap VIP vs. 8,0% permusuhan terhadap pengembang vs. 14,4% lonjakan krisis anti-Tiongkok) dan riwayat berulang selama dua tahun."
+    },
+    "act2": {
+      "label": "Bagian II",
+      "title": "Telemetri Menyesatkan & Pelanggaran Privasi",
+      "summary": "Bagaimana \"Tanpa telemetri. Titik.\" menyembunyikan unggahan PostHog bawaan, retensi ingest.t3.codes yang sumber tertutup, hashing kredensial lintas alat, titik buta Managed Policy, dan log Axiom bertanda IP sebanyak 2,2 juta/jam."
+    },
+    "act3": {
+      "label": "Bagian III",
+      "title": "Cacat Produk & Cacat Keamanan Kritis",
+      "summary": "Penghapusan SQLite palsu 41,6 GB, pemindaian proses OS setiap 5 detik, git push --force senyap selama 52 hari, pemalsuan ToS Google Antigravity yang menyebabkan larangan 3 menit, T3 Connect teks polos tanpa E2E, 0 Advisori Keamanan, dan kerentanan LAN/Bearer/SSH_AUTH_SOCK pada ca81b7b9."
+    },
+    "act4": {
+      "label": "Bagian IV",
+      "title": "Manipulasi Komersial & Intimidasi Komunitas",
+      "summary": "Radar komputasi harian senilai $800 ribu+ / 31,7 triliun token, konflik angel investor (Vibe Kanban, Daytona), tumpang tindih tumpukan sponsor, pemberian bintang dengan kredensial host setelah 30 detik menganggur yang mendorong 77 ribu bintang, penggarukan fork oleh @bot, dan larangan .github/VOUCHED.td."
+    }
+  },
+  "sectionLabels": {
+    "claim": "Apa yang Diklaim",
+    "evidence": "Apa yang Ditunjukkan Bukti",
+    "status": "Status Upstream (ca81b7b9)",
+    "visuals": "Bukti Visual",
+    "sources": "Sumber Primer"
+  },
+  "charts": {
+    "heading": "Bukti Kuantitatif 1.151 Tweet",
+    "lead": "Kumpulan data menyeluruh atas setiap unggahan X @theo dari 7–24 November 2026 (n = 1.151, 66,8 unggahan/hari, 75,6% balasan). Bagan interaktif diperbarui otomatis mengikuti polaritas terang/gelap.",
+    "tabs": {
+      "chart1": "Korpus & fokus produk",
+      "chart2": "Irama sirkadian",
+      "chart3": "Pemilahan kesopanan selektif",
+      "chart4": "Lonjakan krisis 25 jam"
+    },
+    "inspectPng": "Periksa PNG yang diarsipkan",
+    "openStandalone": "Buka bagan lengkap",
+    "readDossier": "Baca Dossier 06"
+  },
+  "community": {
+    "heading": "Laporan Komunitas & Komentar Independen",
+    "lead": "Ke-20 bukti bernomor (#00–#19) secara ketat memuat kode, pull request, berkas resmi, dan unggahan publik terarsip yang dapat diverifikasi publik. Kiriman komunitas dan tuduhan dari pesan pribadi dipisahkan di sini demi kejelasan pembuktian.",
+    "issue1Title": "Issue #1 · \"Kasus terhadap Theo\" (@opserx)",
+    "issue1Body": "Arsip verbatim komentar komunitas yang dikirimkan ke repositori ini pada 25 Nov 2026, disertai catatan presisi bersumber primer atas PR #42450 dan PR #41237.",
+    "issue1Link": "Baca Issue #1 yang diarsipkan",
+    "dmTitle": "Keluhan via Pesan Pribadi & Kiriman Berkelanjutan",
+    "dmBody": "Sejumlah pengembang telah mengirimkan kesaksian pribadi tentang pengalaman mereka dengan @theo dan T3 Code. Untuk menjaga standar verifikasi yang ketat, laporan pribadi tetap dipisahkan dari catatan bukti primer #00–#19 kecuali dikonfirmasi secara independen oleh artefak publik. Kirimkan temuan yang dapat diverifikasi atau konfirmasi perbaikan upstream melalui Pull Request atau GitHub Issue.",
+    "dmLink": "Kebijakan pengiriman & verifikasi"
+  },
+  "gallery": {
+    "heading": "Arsip Visual Lengkap 109 Bukti",
+    "lead": "Telusuri setiap tangkapan layar terarsip, tangkapan kode, dan bagan forensik berdasarkan nomor PR, nama berkas, atau kata kunci. Klik bukti mana pun untuk memeriksanya pada resolusi penuh.",
+    "searchPlaceholder": "Cari 109 bukti (mis. 42450, Identify.ts, antigravity, wsTicket, SSH_AUTH_SOCK, driver.ts)...",
+    "showing": "Menampilkan {shown} dari {total} bukti",
+    "allParts": "Semua (109)",
+    "empty": "Tidak ada bukti yang cocok dengan kueri pencarian Anda."
+  },
+  "mitigation": {
+    "heading": "Panduan Pengerasan & Pembersihan 2 Menit",
+    "lead": "Jika T3 Code sudah terpasang di mesin Anda, jangan bergantung pada variabel lingkungan saja — AnalyticsService.ts:156 menulis ID lokal sebelum memeriksa opt-out dan DesktopShellEnvironment.ts menghilangkan OTEL_SDK_DISABLED. Gabungkan flag lingkungan, pemblokiran hosts di tingkat OS, pemadatan SQLite secara offline, dan pencabutan token.",
+    "tabs": {
+      "unix": "macOS / Linux",
+      "windows": "Windows",
+      "policy": "Managed Policy"
+    },
+    "copy": "Salin",
+    "copied": "Tersalin",
+    "steps": [
+      "Ekspor DO_NOT_TRACK=1 dan sakelar mati telemetri lama, DAN lakukan sinkhole pada ingest.t3.codes di /etc/hosts.",
+      "Keluar dari T3 Code, periksa statev2.sqlite, jalankan VACUUM; secara offline, atau hapus ~/.t3 sepenuhnya.",
+      "Berhenti menjalankan akun Google AI / Antigravity pribadi melalui direktori yang dikelola T3 untuk melindungi satu-satunya kesempatan banding Anda.",
+      "Nonaktifkan Publish agent activity, putuskan tautan mesin T3 Connect, minta penghapusan data Clerk + relay, dan cabut aplikasi OAuth GitHub milik T3 Code.",
+      "Jangan pernah mengekspos t3 up --lan teks polos tanpa TLS, hindari token Bearer non-DPoP berumur 30 hari di CI, dan bersihkan SSH_AUTH_SOCK / GITHUB_TOKEN sebelum membuka repositori tak tepercaya."
+    ],
+    "alternativesTitle": "Alternatif yang Direkomendasikan Komunitas",
+    "alternativesBody": "Para pengembang menyoroti Mirasim (@Mirasim_ADE), Paseo (@paseo_sh), Paradev (@ParadevAI), Cloudroom, Conductor, Emdash, dan Orca. Sebelum mengadopsi klien mana pun, verifikasi telemetri yang mati secara bawaan, penghapusan lokal yang sesungguhnya, delegasi CLI resmi tanpa pemalsuan header, dan enkripsi E2E di sisi klien."
+  },
+  "readme": {
+    "unLanguages": "Bahasa Resmi PBB",
+    "communityLanguages": "Edisi Komunitas Global",
+    "quickNav": "Semua 20 Bukti Terverifikasi (#00–#19)",
+    "quickNavNote": "Setiap bukti di bawah ini tertaut ke berkas bukti terlokalisasi khusus yang tanpa tabel di repositori ini serta kartu visual yang dapat dibagikan di portal web. Pelacakan berkelanjutan akan berlanjut secara berurutan (#20, #21, ...).",
+    "featuredVisuals": "Bukti Visual Utama",
+    "deepArchive": "Dossier Teknis Mendalam & Indeks Induk",
+    "deepArchiveNote": "Untuk diff kode sumber baris demi baris, SQL verbatim, dan katalog lengkap dengan rujukan silang, telusuri arsip referensi yang terpelihara:",
+    "howToUpdate": "Pelacakan Berkelanjutan & Kontribusi",
+    "howToUpdateBody": "Repositori ini dipelihara secara aktif. Koreksi faktual, perbaikan upstream yang baru digabungkan dengan bukti commit/PR, atau bukti primer baru dipersilakan melalui Pull Request atau GitHub Issue — lihat CONTRIBUTING.md."
+  },
+  "footer": {
+    "colophon": "CC0 1.0 Domain Publik · Investigasi Catatan Publik Independen atas pingdotgg/t3code (9d3195b4 → ca81b7b9). Nol telemetri, nol analitik, nol diskriminasi rasial.",
+    "groupDossiers": "Dossier Teknis Mendalam (6)",
+    "groupIndexes": "Indeks Induk & Komunitas",
+    "groupRepo": "Repositori & Verifikasi",
+    "scopeTitle": "Standar Editorial & Verifikasi",
+    "scopeBody": "Setiap bukti (#00–#19) berpangkal pada commit publik kanonik, pull request, issue, dokumen resmi, catatan USPTO TSDR, atau tangkapan layar verbatim yang diarsipkan di Git. Nol URL pengalihan yang dipendekkan dan nol informasi kontak pribadi."
+  },
+  "controls": {
+    "language": "Bahasa",
+    "themeDark": "Gelap",
+    "themeLight": "Terang",
+    "menu": "Bukti",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "zoom100": "Zoom 100%",
+    "fit": "Pas",
+    "close": "Tutup",
+    "openSource": "Buka sumber primer",
+    "openDossier": "Buka dossier teknis"
+  }
+}

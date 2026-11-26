@@ -1,0 +1,202 @@
+{
+  "langCode": "de",
+  "siteTitle": "Bevor Sie T3 Code installieren",
+  "siteSubtitle": "Ein unabhängiger, evidenzbasierter öffentlicher Beleg zu pingdotgg/t3code — dokumentiert rassistische Doppelstandards, irreführende Telemetrie, kritische Sicherheitslücken und kommerzielle Manipulation.",
+  "metaDescription": "20 verifizierte Exponate (#00–#19), 109 primäre Bildbelege, 327 kanonische URLs und 1.151 ausgewertete X-Posts, die pingdotgg/t3code und @theo in 18 Sprachen dokumentieren.",
+  "heroKicker": "Unabhängige Untersuchung im öffentlichen Interesse · 18 Sprachen",
+  "heroThesis": "Keine Telemetrie. Keine rassistische Diskriminierung. Jede der folgenden Aussagen ist an wörtlich zitierte öffentliche Äußerungen, Repository-Commits, Pull Requests, USPTO-Einreichungen und archivierte Screenshots gebunden.",
+  "stats": {
+    "casesLabel": "Verifizierte Exponate",
+    "casesValue": "20 Exponate (#00–#19)",
+    "receiptsLabel": "Primärbelege",
+    "receiptsValue": "109 Bildbelege · 327 kanonische URLs",
+    "upstreamLabel": "Upstream-Abgleich",
+    "upstreamValue": "9d3195b4 → ca81b7b9 (+259 commits)",
+    "advisoriesLabel": "Sicherheits-Advisories",
+    "advisoriesValue": "0 veröffentlichte GitHub-Advisories"
+  },
+  "cta": {
+    "openPortal": "Interaktive visuelle Untersuchung öffnen (18 Sprachen)",
+    "readCases": "Exponate #00–#19 lesen",
+    "hardening": "Härtung in 2 Minuten",
+    "evidenceArchive": "109 Bildbelege",
+    "sourceIndex": "327 Primärquellen",
+    "githubRepo": "GitHub-Repository",
+    "inspectCover": "In voller Auflösung ansehen",
+    "viewExhibit": "Vollständiges Exponat öffnen",
+    "readOnWeb": "Interaktive Karte",
+    "copyShareLink": "Link zum Exponat kopieren",
+    "copied": "Kopiert",
+    "shareOnX": "Auf X teilen",
+    "openOriginalPost": "Originalbeitrag auf X",
+    "openDossier": "Technisches Dossier",
+    "viewAllReceipts": "Zugehörige Belege filtern",
+    "expandAll": "Volltext ausklappen",
+    "collapseAll": "Kompakte Ansicht",
+    "showMoreReceipts": "Weitere Belege anzeigen"
+  },
+  "nav": {
+    "overview": "Erzählbogen",
+    "exhibits": "20 Exponate",
+    "charts": "Diagramme zu 1.151 Tweets",
+    "community": "Community-Berichte",
+    "gallery": "109 Belege",
+    "mitigation": "Härtung"
+  },
+  "viewModes": {
+    "byTheme": "Nach 4 Themen",
+    "chronological": "Chronologisch (#00→#19)"
+  },
+  "statusLabels": {
+    "all": "Alle",
+    "open": "Unbehoben",
+    "partial": "Teilweise gepatcht",
+    "record": "Öffentlicher Beleg"
+  },
+  "severityLabels": {
+    "critical": "Kritisch",
+    "high": "Hoch",
+    "medium": "Mittel bis hoch",
+    "record": "Referenzbeleg"
+  },
+  "storyArcHeading": "Wie es kam — in 60 Sekunden",
+  "storyArcLead": "Ein einzelner Namensstreit um einen MIT-Fork aus der Community legte ein Muster offen: rassistische Doppelstandards, versteckte Telemetrie, stilles Nachbessern bei der Sicherheit und unbehobene architektonische Risiken.",
+  "storyArc": [
+    {
+      "step": "01",
+      "window": "23. Nov. 2026",
+      "title": "Der diskriminierende Auslöser",
+      "body": "Nachdem ein Nutzer den kostenlosen MIT-Fork eines chinesischen Entwicklers für offiziellen T3 Code hielt, nannte @theo ihn einen „Chinese knockoff“ und „Temu3 Code“ und drohte mit der Sperrung des GitHub-Kontos — obwohl er 0 USPTO-Marken hält und elf Stunden später öffentlich US-Labore im Billionen-Dollar-Bereich willkommen hieß, die MIT-Code kopieren."
+    },
+    {
+      "step": "02",
+      "window": "24. Nov. 2026",
+      "title": "Der Blick in den Quellcode",
+      "body": "Die zeilenweise Prüfung von pingdotgg/t3code brachte standardmäßig aktive PostHog-Telemetrie zutage, die hinter dem Versprechen „No telemetry“ auf der Startseite ausgeliefert wurde; dazu Closed-Source-Aufbewahrung von Events bei ingest.t3.codes, ungesalzene SHA-256-Lesezugriffe auf ~/.codex und ~/.claude.json, eine nur vorgetäuschte Löschung von 41,6 GB SQLite-Daten, einen 52 Tage lang unbemerkten git push --force-Bug, Header-Spoofing für Google Antigravity und ein T3 Connect ohne jede E2E-Verschlüsselung im Klartext."
+    },
+    {
+      "step": "03",
+      "window": "24.–25. Nov., über Nacht",
+      "title": "Über 2,26 Mio. Aufrufe, GDPR-Beschwerde und eine sechsstündige Eilaktion",
+      "body": "Teil 1 überschritt 2,26 Millionen Aufrufe und löste eine GDPR-Beschwerde in der EU aus. Nächtliche Eil-PRs räumten versehentlich ein, dass IP- und User-Agent-Logs mit 2,2 Mio. Einträgen pro Stunde 30 Tage lang in Axiom gespeichert werden, dass absolute Workspace-Pfade aus git.cwd nach außen gelangen, dass die Kontolöschung defekt ist und dass Opt-outs unter Windows und macOS ignoriert werden."
+    },
+    {
+      "step": "04",
+      "window": "25. Nov. (`ca81b7b9`) und laufend",
+      "title": "Was heute offen bleibt",
+      "body": "Die Verfolgung von +259 Commits bis ca81b7b9 bestätigte teilweise Telemetrie-Patches — zugleich blieben unkorrigiert: ID-Schreibvorgänge beim Start, kein Schalter in der Oberfläche, 0 GitHub Security Advisories, das ungeprüfte Sternen beliebiger Repositories, 30 Tage gültige --lan-Shell-Cookies im Klartext, nicht widerrufbare Bearer-Tokens und die Exposition von SSH_AUTH_SOCK bei nicht vertrauenswürdigen Repositories (#19)."
+    }
+  ],
+  "acts": {
+    "act1": {
+      "label": "Teil I",
+      "title": "Rassistische Diskriminierung, Doppelstandards und System",
+      "summary": "Von „Chinese knockoff“ und „Temu3 Code“ samt Sperrdrohung bei 0 USPTO-Marken bis zu einer quantitativen Auswertung von 1.151 Tweets (0,0 % vulgäre Sprache bei VIPs vs. 8,0 % Feindseligkeit gegenüber Entwicklern vs. 14,4 % Anstieg antichinesischer Krisenrhetorik) und einer über zwei Jahre wiederkehrenden Geschichte."
+    },
+    "act2": {
+      "label": "Teil II",
+      "title": "Irreführende Telemetrie und Datenschutzverstöße",
+      "summary": "Wie „No telemetry. Full stop.“ standardmäßige PostHog-Uploads verbarg, die Closed-Source-Aufbewahrung bei ingest.t3.codes, das Hashing von Zugangsdaten über verschiedene Tools hinweg, blinde Flecken der Managed Policy und Axiom-Logs mit 2,2 Mio. IP-markierten Einträgen pro Stunde."
+    },
+    "act3": {
+      "label": "Teil III",
+      "title": "Produktmängel und kritische Sicherheitslücken",
+      "summary": "Vorgetäuschte Löschung von 41,6 GB SQLite-Daten, Scannen von OS-Prozessen im Fünf-Sekunden-Takt, 52 Tage unbemerkter git push --force, ToS-Spoofing für Google Antigravity mit dreiminütigen Sperren als Folge, T3 Connect ohne E2E-Verschlüsselung im Klartext, 0 Security Advisories und die LAN-/Bearer-/SSH_AUTH_SOCK-Schwachstellen in ca81b7b9."
+    },
+    "act4": {
+      "label": "Teil IV",
+      "title": "Kommerzielle Manipulation und Druck auf die Community",
+      "summary": "Der Radar für tägliche Rechenleistung von über 800.000 US-Dollar bzw. 31,7 Billionen Tokens, Interessenkonflikte mit Angel-Investoren (Vibe Kanban, Daytona), Überschneidungen im Sponsor-Stack, das Sternen von Host-Zugangsdaten nach 30 Sekunden Leerlauf als Treiber für 77.000 Stars, Fork-Scraping per @bot und Sperren über .github/VOUCHED.td."
+    }
+  },
+  "sectionLabels": {
+    "claim": "Was behauptet wurde",
+    "evidence": "Was die Belege zeigen",
+    "status": "Upstream-Status (ca81b7b9)",
+    "visuals": "Visuelle Belege",
+    "sources": "Primärquellen"
+  },
+  "charts": {
+    "heading": "Quantitative Auswertung von 1.151 Tweets",
+    "lead": "Vollständiger Datensatz aller X-Posts von @theo vom 7. bis 24. November 2026 (n = 1.151, 66,8 Posts pro Tag, 75,6 % Antworten). Die interaktiven Diagramme passen sich automatisch an helles und dunkles Design an.",
+    "tabs": {
+      "chart1": "Korpus und Produktfokus",
+      "chart2": "Tagesrhythmus",
+      "chart3": "Selektive Höflichkeit",
+      "chart4": "25-Stunden-Krisenanstieg"
+    },
+    "inspectPng": "Archiviertes PNG ansehen",
+    "openStandalone": "Vollständiges Diagramm öffnen",
+    "readDossier": "Dossier 06 lesen"
+  },
+  "community": {
+    "heading": "Community-Berichte und unabhängiger Kommentar",
+    "lead": "Die 20 nummerierten Exponate (#00–#19) enthalten ausschließlich öffentlich überprüfbaren Code, Pull Requests, amtliche Einreichungen und archivierte öffentliche Posts. Community-Einsendungen und Aussagen aus privaten Nachrichten werden hier aus Gründen der Beweiskraft getrennt geführt.",
+    "issue1Title": "Issue #1 · „The Case Against Theo“ (@opserx)",
+    "issue1Body": "Wörtliches Archiv der Community-Kommentare, die am 25. November 2026 in diesem Repository eingereicht wurden, ergänzt um quellengenaue Anmerkungen zu PR #42450 und PR #41237.",
+    "issue1Link": "Archiviertes Issue #1 lesen",
+    "dmTitle": "Beschwerden aus privaten Nachrichten und laufende Einsendungen",
+    "dmBody": "Mehrere Entwickler haben private Berichte über ihre Erfahrungen mit @theo und T3 Code geschickt. Um strengen Prüfstandards zu genügen, bleiben private Meldungen vom primären Exponatbestand #00–#19 getrennt, solange sie nicht durch öffentliche Artefakte unabhängig bestätigt sind. Überprüfbare Befunde oder Bestätigungen von Upstream-Korrekturen können per Pull Request oder GitHub Issue eingereicht werden.",
+    "dmLink": "Richtlinie für Einsendungen und Prüfung"
+  },
+  "gallery": {
+    "heading": "Vollständiges Bildarchiv mit 109 Belegen",
+    "lead": "Durchsuchen Sie jeden archivierten Screenshot, jede Codeaufnahme und jedes forensische Diagramm nach PR-Nummer, Dateiname oder Stichwort. Klicken Sie auf einen Beleg, um ihn in voller Auflösung zu sehen.",
+    "searchPlaceholder": "109 Belege durchsuchen (z. B. 42450, Identify.ts, antigravity, wsTicket, SSH_AUTH_SOCK, driver.ts)...",
+    "showing": "{shown} von {total} Belegen angezeigt",
+    "allParts": "Alle (109)",
+    "empty": "Keine Belege entsprechen Ihrer Suche."
+  },
+  "mitigation": {
+    "heading": "Härtung und Bereinigung in zwei Minuten",
+    "lead": "Wenn T3 Code bereits auf Ihrem Rechner installiert ist, verlassen Sie sich nicht allein auf Umgebungsvariablen — AnalyticsService.ts:156 schreibt eine lokale ID, bevor Opt-outs geprüft werden, und DesktopShellEnvironment.ts lässt OTEL_SDK_DISABLED aus. Kombinieren Sie Umgebungsflags, das Blockieren über die Hosts-Datei des Betriebssystems, Offline-VACUUM der SQLite-Datenbank und den Widerruf von Tokens.",
+    "tabs": {
+      "unix": "macOS / Linux",
+      "windows": "Windows",
+      "policy": "Verwaltete Richtlinie"
+    },
+    "copy": "Kopieren",
+    "copied": "Kopiert",
+    "steps": [
+      "DO_NOT_TRACK=1 und die alten Telemetrie-Kill-Switches setzen UND ingest.t3.codes in /etc/hosts ins Leere leiten.",
+      "T3 Code beenden, statev2.sqlite prüfen, offline VACUUM; ausführen oder ~/.t3 vollständig entfernen.",
+      "Keine persönlichen Google-AI-/Antigravity-Konten mehr über von T3 verwaltete Verzeichnisse betreiben, um Ihren einzigen Einspruch zu schützen.",
+      "Publish agent activity deaktivieren, T3-Connect-Rechner trennen, Löschung bei Clerk und beim Relay beantragen und die GitHub-OAuth-App von T3 Code widerrufen.",
+      "t3 up --lan niemals ohne TLS im Klartext exponieren, 30 Tage gültige Bearer-Tokens ohne DPoP in CI vermeiden und SSH_AUTH_SOCK / GITHUB_TOKEN bereinigen, bevor Sie nicht vertrauenswürdige Repositories öffnen."
+    ],
+    "alternativesTitle": "Von der Community empfohlene Alternativen",
+    "alternativesBody": "Entwickler hoben Mirasim (@Mirasim_ADE), Paseo (@paseo_sh), Paradev (@ParadevAI), Cloudroom, Conductor, Emdash und Orca hervor. Prüfen Sie vor der Wahl eines Clients, ob Telemetrie standardmäßig aus ist, ob lokale Daten wirklich gelöscht werden, ob die offizielle CLI ohne Header-Spoofing delegiert und ob clientseitige E2E-Verschlüsselung besteht."
+  },
+  "readme": {
+    "unLanguages": "Offizielle UN-Sprachen",
+    "communityLanguages": "Globale Community-Ausgaben",
+    "quickNav": "Alle 20 verifizierten Exponate (#00–#19)",
+    "quickNavNote": "Jedes der folgenden Exponate verweist auf seine eigene, tabellenfreie lokalisierte Exponatdatei in diesem Repository und auf seine teilbare visuelle Karte im Webportal. Die laufende Dokumentation wird fortlaufend ergänzt (#20, #21, ...).",
+    "featuredVisuals": "Zentrale Bildbelege",
+    "deepArchive": "Technische Tiefendossiers und Hauptindizes",
+    "deepArchiveNote": "Zeilenweise Quellcode-Diffs, wörtliches SQL und vollständige, querverwiesene Kataloge finden Sie in den erhaltenen Referenzarchiven:",
+    "howToUpdate": "Laufende Dokumentation und Beiträge",
+    "howToUpdateBody": "Dieses Repository wird aktiv gepflegt. Sachliche Korrekturen, neu zusammengeführte Upstream-Korrekturen mit Commit-/PR-Nachweis oder neue Primärbelege sind per Pull Request oder GitHub Issue willkommen — siehe CONTRIBUTING.md."
+  },
+  "footer": {
+    "colophon": "CC0 1.0 Gemeinfreiheit · Unabhängige Untersuchung im öffentlichen Interesse zu pingdotgg/t3code (9d3195b4 → ca81b7b9). Keine Telemetrie, keine Analysen, keine rassistische Diskriminierung.",
+    "groupDossiers": "Technische Tiefendossiers (6)",
+    "groupIndexes": "Hauptindizes und Community",
+    "groupRepo": "Repository und Prüfung",
+    "scopeTitle": "Redaktioneller und Prüfstandard",
+    "scopeBody": "Jedes Exponat (#00–#19) stützt sich auf kanonische öffentliche Commits, Pull Requests, Issues, offizielle Dokumentation, USPTO-TSDR-Datensätze oder wörtlich in Git archivierte Screenshots. Keine verkürzten Redirect-URLs und keine privaten Kontaktdaten."
+  },
+  "controls": {
+    "language": "Sprache",
+    "themeDark": "Dunkel",
+    "themeLight": "Hell",
+    "menu": "Exponate",
+    "prev": "Zurück",
+    "next": "Weiter",
+    "zoom100": "Zoom 100 %",
+    "fit": "Einpassen",
+    "close": "Schließen",
+    "openSource": "Primärquelle öffnen",
+    "openDossier": "Technisches Dossier öffnen"
+  }
+}

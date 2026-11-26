@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>#19 · `ca81b7b9` 重大认证与代码执行漏洞：局域网 30 天明文 Shell、不可吊销令牌与 `SSH_AUTH_SOCK` 裸奔 — 安装 T3 Code 之前</title>
+  <meta name="description" content="锁定最新上游提交 `ca81b7b9`（11 月 25 日 14:49 CST）逐行核验，证实五项现网高危安全与底层缺陷：同局域网抓一个包即可白拿一个月完整终端控制权、30 天裸 Bearer 无法自注销、5 分钟可重放 `?wsTicket=`、`isIPv4` 掐断 `::1` 隧道，以及打开陌生仓库直接把整机 `SSH_AUTH_SOCK` 与 `GITHUB_TOKEN` 暴露出去。" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="安装 T3 Code 之前" />
+  <meta property="og:title" content="#19 · `ca81b7b9` 重大认证与代码执行漏洞：局域网 30 天明文 Shell、不可吊销令牌与 `SSH_AUTH_SOCK` 裸奔 — 安装 T3 Code 之前" />
+  <meta property="og:description" content="锁定最新上游提交 `ca81b7b9`（11 月 25 日 14:49 CST）逐行核验，证实五项现网高危安全与底层缺陷：同局域网抓一个包即可白拿一个月完整终端控制权、30 天裸 Bearer 无法自注销、5 分钟可重放 `?wsTicket=`、`isIPv4` 掐断 `::1` 隧道，以及打开陌生仓库直接把整机 `SSH_AUTH_SOCK` 与 `GITHUB_TOKEN` 暴露出去。" />
+  <meta property="og:url" content="https://realchendahuang.github.io/before-you-install-t3code/c/zh/19/" />
+  <meta property="og:image" content="https://realchendahuang.github.io/before-you-install-t3code/evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="#19 · `ca81b7b9` 重大认证与代码执行漏洞：局域网 30 天明文 Shell、不可吊销令牌与 `SSH_AUTH_SOCK` 裸奔 — 安装 T3 Code 之前" />
+  <meta name="twitter:description" content="锁定最新上游提交 `ca81b7b9`（11 月 25 日 14:49 CST）逐行核验，证实五项现网高危安全与底层缺陷：同局域网抓一个包即可白拿一个月完整终端控制权、30 天裸 Bearer 无法自注销、5 分钟可重放 `?wsTicket=`、`isIPv4` 掐断 `::1` 隧道，以及打开陌生仓库直接把整机 `SSH_AUTH_SOCK` 与 `GITHUB_TOKEN` 暴露出去。" />
+  <meta name="twitter:image" content="https://realchendahuang.github.io/before-you-install-t3code/evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png" />
+  <meta http-equiv="refresh" content="0; url=../../../?lang=zh-CN&amp;case=19#case-19" />
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #faf9f5;
+      color: #141413;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "PingFang SC", "Noto Sans SC", sans-serif;
+      padding: 24px;
+    }
+    main {
+      max-width: 60ch;
+      background: #f5f4ed;
+      border: 1px solid #e8e6dc;
+      border-radius: 12px;
+      padding: 24px;
+    }
+    h1 { font-size: 1.25rem; font-weight: 500; margin: 0 0 12px; }
+    p { color: #5e5d59; line-height: 1.65; margin: 0 0 16px; }
+    a { color: #141413; font-weight: 500; }
+  </style>
+  <script>window.location.replace("../../../?lang=zh-CN&case=19#case-19");</script>
+</head>
+<body>
+  <main>
+    <h1>#19 · `ca81b7b9` 重大认证与代码执行漏洞：局域网 30 天明文 Shell、不可吊销令牌与 `SSH_AUTH_SOCK` 裸奔 — 安装 T3 Code 之前</h1>
+    <p>锁定最新上游提交 `ca81b7b9`（11 月 25 日 14:49 CST）逐行核验，证实五项现网高危安全与底层缺陷：同局域网抓一个包即可白拿一个月完整终端控制权、30 天裸 Bearer 无法自注销、5 分钟可重放 `?wsTicket=`、`isIPv4` 掐断 `::1` 隧道，以及打开陌生仓库直接把整机 `SSH_AUTH_SOCK` 与 `GITHUB_TOKEN` 暴露出去。</p>
+    <p><a href="../../../?lang=zh-CN&amp;case=19#case-19">打开可视化调查主站（支持 18 语种切换）</a></p>
+  </main>
+</body>
+</html>
