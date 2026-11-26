@@ -891,7 +891,7 @@
     window.addEventListener("message", function (e) {
       if (e.data && e.data.type === "t3-chart-height" && typeof e.data.height === "number") {
         var frame = $("chartFrame");
-        if (frame) frame.style.minHeight = Math.max(520, e.data.height + 24) + "px";
+        if (frame) frame.style.height = Math.max(520, e.data.height + 4) + "px";
       }
     });
 

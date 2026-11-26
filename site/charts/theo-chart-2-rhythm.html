@@ -385,7 +385,7 @@
 
   function notifyHeight() {
     if (window.parent && window.parent !== window) {
-      window.parent.postMessage({ type: "t3-chart-height", chart: "chart2", height: document.documentElement.scrollHeight }, "*");
+      window.parent.postMessage({ type: "t3-chart-height", chart: "chart2", height: Math.ceil(document.body.getBoundingClientRect().height) }, "*");
     }
   }
 
