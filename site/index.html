@@ -449,7 +449,7 @@ sudo sh -c 'printf "\n127.0.0.1 ingest.t3.codes\n::1 ingest.t3.codes\n127.0.0.1 
             </div>
 
             <h3 data-i18n="pbUnix2Title">2. Inspect statev2.sqlite bloat, run offline <code>VACUUM</code>, and purge Antigravity state</h3>
-            <p data-i18n="pbUnix2Desc"><code>PR #42119</code> shipped in <code>v0.1.12</code> (adding async <code>thread-content.purge</code>). On <code>v0.1.11</code> or earlier, running <code>VACUUM;</code> alone deletes zero soft-deleted messages or <code>FTS5</code> indexes—upgrade first or purge <code>deleted_at IS NOT NULL</code> rows offline before compacting. Quit T3 Code first.</p>
+            <p data-i18n="pbUnix2Desc"><code>PR #42119</code> shipped in <code>v0.1.12</code> (adding async <code>thread-content.purge</code>). On <code>v0.1.11</code> or earlier, running <code>VACUUM;</code> alone erases zero soft-deleted messages, <code>orchestration_events</code> history, or <code>FTS5</code> indexes—either upgrade to <code>v0.1.12+</code> first so <code>thread-content.purge</code> cleans both projection tables and event-store payloads before running offline <code>VACUUM;</code>, or remove <code>statev2.sqlite</code> / <code>~/.t3</code> completely. Quit T3 Code first.</p>
             <div class="code-block-wrap" style="margin-bottom:0;">
               <div class="code-block-head">
                 <span>SQLite Audit, VACUUM &amp; Cleanup</span>

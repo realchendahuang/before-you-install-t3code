@@ -1233,7 +1233,7 @@
       pbUnix1Title: "1. 环境变量关闭（<code>DO_NOT_TRACK=1</code>）与系统层 hosts 阻断",
       pbUnix1Desc: "在 <code>~/.zshrc</code> 或 <code>~/.bashrc</code> 中同时导出 <code>DO_NOT_TRACK=1</code>（<code>PR #42629</code> / <code>v0.1.12</code>）与旧版关闭变量（macOS 同步执行 <code>launchctl setenv</code>），并在 <code>/etc/hosts</code> 同时拦截 <code>ingest.t3.codes</code> 与构建期注入的 <code>us-east-1.aws.edge.axiom.co</code>，随后彻底重启 T3 Code。",
       pbUnix2Title: "2. 排查 statev2.sqlite 膨胀、运行离线 <code>VACUUM</code> 并清除 Antigravity 目录",
-      pbUnix2Desc: "<code>PR #42119</code> 随 <code>v0.1.12</code> 发布。<code>v0.1.11</code> 及更早版本单独跑 <code>VACUUM;</code> 不会删除任何软删除对话或 <code>FTS5</code> 索引——请先升级或离线清理 <code>deleted_at IS NOT NULL</code> 记录后再退出 T3 Code 压缩。",
+      pbUnix2Desc: "<code>PR #42119</code> 随 <code>v0.1.12</code> 发布。<code>v0.1.11</code> 及更早版本单独跑 <code>VACUUM;</code> 不会清除软删除对话、<code>orchestration_events</code> 事件流或 <code>FTS5</code> 索引——请先升级到 <code>v0.1.12+</code> 让 <code>thread-content.purge</code> 同步清理投影表与事件存储后再离线 <code>VACUUM;</code>，或直接备份设置后删除 <code>statev2.sqlite</code> / <code>~/.t3</code>。",
       pbWin1Title: "1. 持久化用户/系统环境变量（<code>DO_NOT_TRACK=1</code>）与 Windows hosts 拦截",
       pbWin1Desc: "以管理员身份运行 PowerShell 写入全部关闭变量并同时拉黑 <code>ingest.t3.codes</code> 与 <code>us-east-1.aws.edge.axiom.co</code>，完成后重启电脑或后台进程。",
       pbWin2Title: "2. Windows 状态目录清理、SQLite <code>VACUUM</code> 与 GitHub OAuth 吊销",
