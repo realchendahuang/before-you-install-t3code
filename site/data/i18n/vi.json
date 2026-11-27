@@ -16,7 +16,7 @@
     "all": "Tất cả",
     "prev": "Trước",
     "next": "Tiếp",
-    "navStory": "Story Comic"
+    "navStory": "Truyện tranh"
   },
   "home": {
     "pageTitle": "Temu3 Code · Không theo dõi. Chỉ có bằng chứng.",
@@ -131,7 +131,10 @@
     "storyKicker": "TRUYỆN TRANH SONG NGỮ · PODCAST (EN/中文) · BỘ STICKER",
     "storySub": "Theo dõi diễn biến 96 giờ qua bộ truyện tranh song ngữ kèm podcast NotebookLM, tặng thêm bộ sticker nền trong suốt miễn phí cho Discord, Slack, Telegram và WeChat.",
     "storyReadBtn": "Đọc truyện & nghe podcast →",
-    "storyZipBtn": "Tải bộ sticker"
+    "storyZipBtn": "Tải bộ sticker",
+    "storyTitle": "96 Giờ Sau Một Cú Chặn",
+    "storyZipHint": "CC0 1.0 · English & 简体中文 · Không telemetry",
+    "storyEpPill": "Tập 1 → Tập 8"
   },
   "memes": {
     "pageTitle": "Meme Temu3 · Thẻ CC0, sticker, GIF & truyện tranh",
@@ -160,13 +163,27 @@
       "classic": "BÀI ĐĂNG",
       "comics": "TRUYỆN TRANH",
       "community": "CỘNG ĐỒNG",
-      "parody": "CHẾ"
+      "parody": "CHẾ",
+      "stickers": "NHÃN DÁN",
+      "creative": "SÁNG TẠO",
+      "story": "TRUYỆN"
     },
     "tabParodies": "Chế",
     "stickerZipBtn": "Tải bộ sticker",
     "tabStickers": "Sticker",
     "stickerBannerTitle": "Bộ sticker rage comic nền trong suốt",
-    "storyBannerTitle": "Thích đọc truyện dọc + nghe podcast NotebookLM hơn?"
+    "storyBannerTitle": "Thích đọc truyện dọc + nghe podcast NotebookLM hơn?",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabCreative": "Gói Sáng Tạo",
+    "tabStory": "Truyện Tranh",
+    "tabReceipts": "Biên Lai",
+    "copyGifBtn": "Sao chép URL GIF",
+    "downloadGifBtn": "Lưu GIF",
+    "copiedGifToast": "Đã sao chép link GIF động.",
+    "stickerBannerDesc": "Thư mục RGBA đã căn sẵn cỡ cho Discord & Slack (128px), Telegram (512px WebP/PNG) và WeChat (240px) + bảng ảnh quảng bá 4×7 X.",
+    "promoSheetBtn": "Bảng ảnh 4×7 ↗",
+    "storyBannerDesc": "Mở trình đọc /story/ riêng để chuyển ngay English / 简体中文 và nghe tổng quan song ngữ.",
+    "openStoryReader": "Mở trình đọc /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Lưu trữ công khai (2023–2026)",
@@ -319,5 +336,28 @@
     "originP1": "Ngày 23/11/2026, mười phút sau khi gọi bản fork MIT miễn phí của một dev Trung Quốc là \"Chinese knockoff\", @theo đặt luôn tên cho tụi mình trên X: \"Temu3 Code\" (84 nghìn lượt xem).",
     "originP2": "Khi một founder chẳng có nhãn hiệu USPTO nào đưa bạn một cái tên miễn phí, cứ lấy. Tụi mình đăng ký temu3code.com, đặt toàn bộ hồ sơ công khai ở đây, và bỏ PostHog ra ngoài. Cảm ơn vì cái tên, Theo. Mọi thứ ở đây là CC0 1.0, cứ fork thoải mái.",
     "originCta": "Xem bài của @theo ↗"
+  },
+  "story": {
+    "pageTitle": "96 Giờ Sau Một Cú Chặn · Truyện Tranh Song Ngữ & Podcast · Temu3 Code",
+    "title": "96 Giờ Sau Một Cú Chặn",
+    "podcastTitle": "NotebookLM Podcast",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "Phóng to",
+    "receiptBtn": "Biên lai",
+    "ctaZip": "Bộ nhãn dán ZIP",
+    "ctaMemes": "Mọi meme →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "Đang tải...",
+    "epPill": "Tập {n}",
+    "episodes": {
+      "ep01": "Cách nhau 11 giờ",
+      "ep02": "Cú nhấp chặn tệ nhất",
+      "ep03": "'Không telemetry. Chấm hết.'",
+      "ep04": "Thuốc tây công hiệu nhanh",
+      "ep05": "Về hưu sau 3,5 giờ",
+      "ep06": "89 lượt xem & 'Sợ hãi là động lực tốt'",
+      "ep07": "Chào, tôi là Zed (+ 11 trình duyệt)",
+      "ep08": "'thôi, làm trong slophouse dễ hơn'"
+    }
   }
 }

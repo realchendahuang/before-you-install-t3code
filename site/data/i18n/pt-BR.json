@@ -16,7 +16,7 @@
     "all": "Tudo",
     "prev": "Anterior",
     "next": "Próximo",
-    "navStory": "Story Comic"
+    "navStory": "Quadrinho"
   },
   "home": {
     "pageTitle": "Temu3 Code · Zero telemetria. Só provas.",
@@ -131,7 +131,10 @@
     "storyKicker": "QUADRINHO BILÍNGUE · PODCAST (EN/中文) · PACOTE DE FIGURINHAS",
     "storySub": "Acompanhe a linha do tempo das 96 horas num quadrinho bilíngue com podcast de áudio no NotebookLM, mais um pacote de figurinhas transparentes de graça pra Discord, Slack, Telegram e WeChat.",
     "storyReadBtn": "Ler o quadrinho e ouvir →",
-    "storyZipBtn": "Baixar pacote de figurinhas"
+    "storyZipBtn": "Baixar pacote de figurinhas",
+    "storyTitle": "As 96 Horas Após Um Bloqueio",
+    "storyZipHint": "CC0 1.0 · Inglês e 简体中文 · Zero telemetria",
+    "storyEpPill": "Ep. 1 → Ep. 8"
   },
   "memes": {
     "pageTitle": "Memes do Temu3 · Cartas CC0, figurinhas, GIFs e quadrinhos",
@@ -160,13 +163,27 @@
       "classic": "POST",
       "comics": "QUADRINHO",
       "community": "COMUNIDADE",
-      "parody": "PARÓDIA"
+      "parody": "PARÓDIA",
+      "stickers": "FIGURINHA",
+      "creative": "CRIATIVO",
+      "story": "HISTÓRIA"
     },
     "tabParodies": "Paródias",
     "stickerZipBtn": "Baixar pacote de figurinhas",
     "tabStickers": "Figurinhas",
     "stickerBannerTitle": "Pacote de figurinhas de rage comic com fundo transparente",
-    "storyBannerTitle": "Prefere ler o quadrinho na vertical e ouvir o podcast do NotebookLM?"
+    "storyBannerTitle": "Prefere ler o quadrinho na vertical e ouvir o podcast do NotebookLM?",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabCreative": "Pacote Criativo",
+    "tabStory": "Quadrinhos",
+    "tabReceipts": "Comprovantes",
+    "copyGifBtn": "Copiar URL do GIF",
+    "downloadGifBtn": "Salvar GIF",
+    "copiedGifToast": "Link do GIF animado copiado.",
+    "stickerBannerDesc": "Pastas RGBA pré-dimensionadas para Discord e Slack (128px), Telegram (512px WebP/PNG) e WeChat (240px) + folha de contato promocional 4×7 para o X.",
+    "promoSheetBtn": "Folha de Contato 4×7 ↗",
+    "storyBannerDesc": "Abra o leitor dedicado /story/ para alternar na hora entre inglês e 简体中文 e ouvir o resumo em áudio bilíngue.",
+    "openStoryReader": "Abrir Leitor /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Arquivo público (2023–2026)",
@@ -319,5 +336,28 @@
     "originP1": "Em 23 de nov de 2026, dez minutos depois de chamar o fork MIT gratuito de um dev chinês de \"Chinese knockoff\", o @theo nos deu o nome no X: \"Temu3 Code\" (84 mil visualizações).",
     "originP2": "Quando um fundador com zero marcas registradas no USPTO te entrega um nome de graça, você aceita. Registramos o temu3code.com, colocamos todos os registros públicos aqui e deixamos o PostHog de fora. Valeu pelo nome, Theo. Tudo aqui é CC0 1.0, então faz fork à vontade.",
     "originCta": "Ver o post do @theo ↗"
+  },
+  "story": {
+    "pageTitle": "As 96 Horas Após Um Bloqueio · Quadrinhos e Podcast Bilíngues · Temu3 Code",
+    "title": "As 96 Horas Após Um Bloqueio",
+    "podcastTitle": "Podcast NotebookLM",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "Ampliar",
+    "receiptBtn": "Comprovante",
+    "ctaZip": "Pacote de Figurinhas ZIP",
+    "ctaMemes": "Todos os Memes →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "Carregando...",
+    "epPill": "Ep.{n}",
+    "episodes": {
+      "ep01": "11 Horas de Distância",
+      "ep02": "O Pior Clique de Bloqueio",
+      "ep03": "'Sem Telemetria. Ponto Final.'",
+      "ep04": "A Medicina Ocidental Age Rápido",
+      "ep05": "A Aposentadoria de 3,5 Horas",
+      "ep06": "89 Visualizações e 'O Medo É um Bom Incentivo'",
+      "ep07": "Oi, Sou o Zed (+ 11 Navegadores)",
+      "ep08": "'deixa, é mais fácil no slophouse'"
+    }
   }
 }

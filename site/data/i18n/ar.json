@@ -16,7 +16,7 @@
     "all": "الكل",
     "prev": "السابق",
     "next": "التالي",
-    "navStory": "Story Comic"
+    "navStory": "القصة المصورة"
   },
   "home": {
     "pageTitle": "Temu3 Code · لا تتبّع، فقط الأدلة",
@@ -131,7 +131,10 @@
     "storyKicker": "كوميك ثنائي اللغة · بودكاست (إنجليزي/صيني) · حزمة ملصقات",
     "storySub": "تابع أحداث الـ96 ساعة في كوميك ثنائي اللغة مع بودكاست صوتي من NotebookLM، بالإضافة إلى حزمة ملصقات شفافة مجانية لـ Discord وSlack وTelegram وWeChat.",
     "storyReadBtn": "اقرأ الكوميك واستمع →",
-    "storyZipBtn": "حمّل حزمة الملصقات"
+    "storyZipBtn": "حمّل حزمة الملصقات",
+    "storyTitle": "الـ96 ساعة بعد حظر واحد",
+    "storyZipHint": "CC0 1.0 · الإنجليزية و简体中文 · بلا أي تتبّع",
+    "storyEpPill": "ح 1 → ح 8"
   },
   "memes": {
     "pageTitle": "ميمز Temu3 · بطاقات CC0 وملصقات وGIF وكوميكس",
@@ -160,13 +163,27 @@
       "classic": "منشور",
       "comics": "قصة مصورة",
       "community": "مجتمع",
-      "parody": "ساخرة"
+      "parody": "ساخرة",
+      "stickers": "ملصق",
+      "creative": "إبداعي",
+      "story": "قصة"
     },
     "tabParodies": "محاكاة ساخرة",
     "stickerZipBtn": "حمّل حزمة الملصقات",
     "tabStickers": "الملصقات",
     "stickerBannerTitle": "حزمة ملصقات شفافة بستايل كوميك الغضب",
-    "storyBannerTitle": "تفضل تقرأ الكوميك عموديًا مع بودكاست NotebookLM؟"
+    "storyBannerTitle": "تفضل تقرأ الكوميك عموديًا مع بودكاست NotebookLM؟",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabCreative": "حزمة إبداعية",
+    "tabStory": "كوميكس القصة",
+    "tabReceipts": "الإيصالات",
+    "copyGifBtn": "نسخ رابط GIF",
+    "downloadGifBtn": "حفظ GIF",
+    "copiedGifToast": "تم نسخ رابط الـGIF المتحرك.",
+    "stickerBannerDesc": "مجلدات RGBA بمقاسات جاهزة لـDiscord وSlack (128px)، وTelegram (512px WebP/PNG)، وWeChat (240px) + ورقة تواصل ترويجية 4×7 X.",
+    "promoSheetBtn": "ورقة تواصل 4×7 ↗",
+    "storyBannerDesc": "افتح قارئ /story/ المخصص للتبديل الفوري بين الإنجليزية و简体中文 مع ملخص صوتي ثنائي اللغة.",
+    "openStoryReader": "افتح قارئ /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · أرشيف عام (2023 إلى 2026)",
@@ -319,5 +336,28 @@
     "originP1": "في 23 نوفمبر 2026، وبعد عشر دقائق من وصف نسخة MIT مجانية لمطور صيني بأنها \"Chinese knockoff\"، أعطانا @theo الاسم على X: \"Temu3 Code\" (84 ألف مشاهدة).",
     "originP2": "حين يمنحك مؤسس لا يملك أي علامات تجارية أمريكية اسماً مجانياً، تأخذه. سجّلنا temu3code.com، ووضعنا كل السجلات العامة هنا، واستبعدنا PostHog. شكراً على الاسم يا Theo. كل شيء هنا بترخيص CC0 1.0، فاعمل نسخة كما تشاء.",
     "originCta": "شاهد منشور @theo ↗"
+  },
+  "story": {
+    "pageTitle": "الـ96 ساعة بعد حظر واحد · كوميكس وبودكاست ثنائي اللغة · Temu3 Code",
+    "title": "الـ96 ساعة بعد حظر واحد",
+    "podcastTitle": "بودكاست NotebookLM",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "تكبير",
+    "receiptBtn": "إيصال",
+    "ctaZip": "حزمة ملصقات ZIP",
+    "ctaMemes": "كل الميمز →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "جارٍ التحميل...",
+    "epPill": "ح.{n}",
+    "episodes": {
+      "ep01": "11 ساعة بينهما",
+      "ep02": "أسوأ ضغطة حظر",
+      "ep03": "«لا تتبّع. نقطة.»",
+      "ep04": "الدواء الغربي سريع المفعول",
+      "ep05": "تقاعد الـ3.5 ساعة",
+      "ep06": "89 مشاهدة و«الخوف حافز جيد»",
+      "ep07": "مرحبًا، أنا Zed (+ 11 متصفحًا)",
+      "ep08": "«nvm أسهل في slophouse»"
+    }
   }
 }

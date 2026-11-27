@@ -16,7 +16,7 @@
     "all": "Tümü",
     "prev": "Önceki",
     "next": "Sonraki",
-    "navStory": "Story Comic"
+    "navStory": "Çizgi Roman"
   },
   "home": {
     "pageTitle": "Temu3 Code · Sıfır telemetri. Sadece kanıt.",
@@ -131,7 +131,10 @@
     "storyKicker": "İKİ DİLLİ ÇİZGİ ROMAN · PODCAST (EN/Çince) · ÇIKARTMA PAKETİ",
     "storySub": "96 saatlik zaman çizelgesini NotebookLM sesli podcast'iyle birlikte iki dilli çizgi romanda takip et, üstüne Discord, Slack, Telegram ve WeChat için ücretsiz şeffaf çıkartma paketi.",
     "storyReadBtn": "Çizgi Romanı Oku ve Dinle →",
-    "storyZipBtn": "Çıkartma Paketini İndir"
+    "storyZipBtn": "Çıkartma Paketini İndir",
+    "storyTitle": "Tek Engelden Sonraki 96 Saat",
+    "storyZipHint": "CC0 1.0 · İngilizce & 简体中文 · Sıfır telemetri",
+    "storyEpPill": "Böl. 1 → Böl. 8"
   },
   "memes": {
     "pageTitle": "Temu3 Meme'leri · CC0 Kartlar, Çıkartmalar, GIF'ler ve Çizgi Romanlar",
@@ -160,13 +163,27 @@
       "classic": "GÖNDERİ",
       "comics": "KARİKATÜR",
       "community": "TOPLULUK",
-      "parody": "PARODİ"
+      "parody": "PARODİ",
+      "stickers": "ÇIKARTMA",
+      "creative": "YARATICI",
+      "story": "HİKÂYE"
     },
     "tabParodies": "Parodiler",
     "stickerZipBtn": "Çıkartma Paketini İndir",
     "tabStickers": "Çıkartmalar",
     "stickerBannerTitle": "Şeffaf Rage-Comic Çıkartma Paketi",
-    "storyBannerTitle": "Dikey çizgi roman okumayı ve NotebookLM Podcast'i mi tercih edersin?"
+    "storyBannerTitle": "Dikey çizgi roman okumayı ve NotebookLM Podcast'i mi tercih edersin?",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabCreative": "Yaratıcı Paket",
+    "tabStory": "Hikâye Çizgi Roman",
+    "tabReceipts": "Fişler",
+    "copyGifBtn": "GIF URL Kopyala",
+    "downloadGifBtn": "GIF Kaydet",
+    "copiedGifToast": "Hareketli GIF bağlantısı kopyalandı.",
+    "stickerBannerDesc": "Discord & Slack (128px), Telegram (512px WebP/PNG) ve WeChat (240px) için hazır boyutlu RGBA klasörleri + 4×7 X tanıtım kontak sayfası.",
+    "promoSheetBtn": "4×7 Kontak Sayfası ↗",
+    "storyBannerDesc": "Anında İngilizce / 简体中文 geçişi ve iki dilli ses özeti için özel /story/ okuyucusunu açın.",
+    "openStoryReader": "/story/ Okuyucusunu Aç →"
   },
   "mail": {
     "pageTitle": "Tmail · Kamuya açık arşiv (2023–2026)",
@@ -319,5 +336,28 @@
     "originP1": "23 Kasım 2026'da @theo, Çinli bir geliştiricinin ücretsiz MIT fork'una \"Chinese knockoff\" dedikten on dakika sonra X'te bize ismi verdi: \"Temu3 Code\" (84 bin görüntülenme).",
     "originP2": "ABD'de tescilli markası olmayan bir kurucu sana bedava isim veriyorsa alırsın. temu3code.com'u aldık, tüm kamuya açık kayıtları buraya koyduk ve PostHog'u dışarıda bıraktık. İsim için teşekkürler Theo. Buradaki her şey CC0 1.0, fork'lamak serbest.",
     "originCta": "@theo'nun gönderisini gör ↗"
+  },
+  "story": {
+    "pageTitle": "Tek Engelden Sonraki 96 Saat · İki Dilli Çizgi Roman & Podcast · Temu3 Code",
+    "title": "Tek Engelden Sonraki 96 Saat",
+    "podcastTitle": "NotebookLM Podcast",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "Yakınlaştır",
+    "receiptBtn": "Fiş",
+    "ctaZip": "Çıkartma Paketi ZIP",
+    "ctaMemes": "Tüm Memeler →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "Yükleniyor...",
+    "epPill": "Böl.{n}",
+    "episodes": {
+      "ep01": "Arada 11 Saat",
+      "ep02": "En Kötü Blok Tıklaması",
+      "ep03": "'Telemetri Yok. Bu Kadar.'",
+      "ep04": "Batı Tıbbı Hızlı İşler",
+      "ep05": "3,5 Saatlik Emeklilik",
+      "ep06": "89 Görüntüleme & 'Korku İyi Bir Teşviktir'",
+      "ep07": "Merhaba, Ben Zed (+ 11 Tarayıcı)",
+      "ep08": "'boşver, slophouse'ta yapmak daha kolay'"
+    }
   }
 }

@@ -16,7 +16,7 @@
     "all": "Wszystko",
     "prev": "Poprzedni",
     "next": "Następny",
-    "navStory": "Story Comic"
+    "navStory": "Komiks"
   },
   "home": {
     "pageTitle": "Temu3 Code · Zero telemetrii. Same dowody.",
@@ -131,7 +131,10 @@
     "storyKicker": "DWUJĘZYCZNY KOMIKS · PODCAST (EN/中文) · PAKIET NAKLEJEK",
     "storySub": "Śledź oś czasu 96 godzin w dwujęzycznym komiksie z podcastem audio NotebookLM, a do tego darmowy pakiet przezroczystych naklejek do Discorda, Slacka, Telegrama i WeChata.",
     "storyReadBtn": "Czytaj komiks i słuchaj →",
-    "storyZipBtn": "Pobierz pakiet naklejek"
+    "storyZipBtn": "Pobierz pakiet naklejek",
+    "storyTitle": "96 godzin po jednej blokadzie",
+    "storyZipHint": "CC0 1.0 · angielski i 简体中文 · zero telemetrii",
+    "storyEpPill": "Odc. 1 → Odc. 8"
   },
   "memes": {
     "pageTitle": "Memy Temu3 · Karty CC0, naklejki, GIF-y i komiksy",
@@ -160,13 +163,27 @@
       "classic": "POST",
       "comics": "KOMIKS",
       "community": "SPOŁECZNOŚĆ",
-      "parody": "PARODIA"
+      "parody": "PARODIA",
+      "stickers": "NAKLEJKI",
+      "creative": "KREATYWNE",
+      "story": "HISTORIA"
     },
     "tabParodies": "Parodie",
     "stickerZipBtn": "Pobierz pakiet naklejek",
     "tabStickers": "Naklejki",
     "stickerBannerTitle": "Pakiet przezroczystych naklejek rage comic",
-    "storyBannerTitle": "Wolisz czytać komiks pionowo + podcast NotebookLM?"
+    "storyBannerTitle": "Wolisz czytać komiks pionowo + podcast NotebookLM?",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabCreative": "Pakiet kreatywny",
+    "tabStory": "Komiksy fabularne",
+    "tabReceipts": "Paragony",
+    "copyGifBtn": "Kopiuj URL GIF",
+    "downloadGifBtn": "Zapisz GIF",
+    "copiedGifToast": "Skopiowano link do animowanego GIF-a.",
+    "stickerBannerDesc": "Foldery RGBA w gotowych rozmiarach dla Discorda i Slacka (128 px), Telegrama (512 px WebP/PNG) i WeChat (240 px) + stykówka promocyjna 4×7 na X.",
+    "promoSheetBtn": "Stykówka 4×7 ↗",
+    "storyBannerDesc": "Otwórz dedykowaną czytelnię /story/, by natychmiast przełączać między angielskim a 简体中文 i odsłuchać dwujęzyczny przegląd audio.",
+    "openStoryReader": "Otwórz czytelnię /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Publiczne archiwum (2023–2026)",
@@ -319,5 +336,28 @@
     "originP1": "23 listopada 2026, dziesięć minut po nazwaniu darmowego forka na MIT chińskiego dewelopera \"Chinese knockoff\", @theo dał nam nazwę na X: \"Temu3 Code\" (84 tys. wyświetleń).",
     "originP2": "Skoro założyciel bez żadnych znaków towarowych w US daje ci darmową nazwę, to się ją bierze. Zarejestrowaliśmy temu3code.com, wrzuciliśmy tu wszystkie publiczne zapisy i pominęliśmy PostHog. Dzięki za nazwę, Theo. Wszystko tutaj jest na CC0 1.0, więc forkujcie.",
     "originCta": "Zobacz post @theo ↗"
+  },
+  "story": {
+    "pageTitle": "96 godzin po jednej blokadzie · dwujęzyczny komiks i podcast · Temu3 Code",
+    "title": "96 godzin po jednej blokadzie",
+    "podcastTitle": "Podcast NotebookLM",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "Powiększ",
+    "receiptBtn": "Paragon",
+    "ctaZip": "ZIP z naklejkami",
+    "ctaMemes": "Wszystkie memy →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "Ładowanie...",
+    "epPill": "Odc.{n}",
+    "episodes": {
+      "ep01": "11 godzin różnicy",
+      "ep02": "Najgorszy klik w blokadę",
+      "ep03": "'Zero telemetrii. Kropka.'",
+      "ep04": "Zachodnia medycyna działa szybko",
+      "ep05": "3,5-godzinna emerytura",
+      "ep06": "89 wyświetleń i „Strach to dobra zachęta”",
+      "ep07": "Cześć, jestem Zed (+ 11 przeglądarek)",
+      "ep08": "'nvm, łatwiej zrobić w slophouse'"
+    }
   }
 }

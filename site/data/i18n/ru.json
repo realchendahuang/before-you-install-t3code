@@ -16,7 +16,7 @@
     "all": "Все",
     "prev": "Назад",
     "next": "Далее",
-    "navStory": "Story Comic"
+    "navStory": "Комикс"
   },
   "home": {
     "pageTitle": "Temu3 Code · Ноль телеметрии. Только факты.",
@@ -131,7 +131,10 @@
     "storyKicker": "ДВУЯЗЫЧНЫЙ КОМИКС · ПОДКАСТ (EN/中文) · ПАК СТИКЕРОВ",
     "storySub": "Следите за хронологией 96 часов в двуязычном комиксе с аудиоподкастом NotebookLM, плюс бесплатный пак прозрачных стикеров для Discord, Slack, Telegram и WeChat.",
     "storyReadBtn": "Читать комикс и слушать →",
-    "storyZipBtn": "Скачать пак стикеров"
+    "storyZipBtn": "Скачать пак стикеров",
+    "storyTitle": "96 часов после одного блока",
+    "storyZipHint": "CC0 1.0 · Английский и 简体中文 · Без телеметрии",
+    "storyEpPill": "Эп. 1 → Эп. 8"
   },
   "memes": {
     "pageTitle": "Мемы Temu3 · CC0 карточки, стикеры, GIF и комиксы",
@@ -160,13 +163,27 @@
       "classic": "ПОСТ",
       "comics": "КОМИКС",
       "community": "СООБЩЕСТВО",
-      "parody": "ПАРОДИЯ"
+      "parody": "ПАРОДИЯ",
+      "stickers": "СТИКЕР",
+      "creative": "КРЕАТИВ",
+      "story": "ИСТОРИЯ"
     },
     "tabParodies": "Пародии",
     "stickerZipBtn": "Скачать пак стикеров",
     "tabStickers": "Стикеры",
     "stickerBannerTitle": "Пак прозрачных стикеров в стиле рэйдж-комикса",
-    "storyBannerTitle": "Хотите читать комикс вертикально и слушать подкаст NotebookLM?"
+    "storyBannerTitle": "Хотите читать комикс вертикально и слушать подкаст NotebookLM?",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabCreative": "Креатив-пак",
+    "tabStory": "Комиксы",
+    "tabReceipts": "Чеки",
+    "copyGifBtn": "Копировать GIF",
+    "downloadGifBtn": "Скачать GIF",
+    "copiedGifToast": "Ссылка на анимированный GIF скопирована.",
+    "stickerBannerDesc": "Готовые папки RGBA для Discord и Slack (128px), Telegram (512px WebP/PNG) и WeChat (240px) + промо-лист 4×7 X.",
+    "promoSheetBtn": "Контактный лист 4×7 ↗",
+    "storyBannerDesc": "Откройте отдельную читалку /story/ для мгновенного переключения English / 简体中文 и двуязычного аудиообзора.",
+    "openStoryReader": "Открыть /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Публичный архив (2023–2026)",
@@ -319,5 +336,28 @@
     "originP1": "23 ноября 2026 года, через десять минут после того, как назвал бесплатный MIT-форк китайского разработчика \"Chinese knockoff\", @theo сам дал нам имя в X: \"Temu3 Code\" (84 тыс. просмотров).",
     "originP2": "Когда основатель с нулём американских товарных знаков сам дарит тебе имя, его берут. Мы зарегистрировали temu3code.com, выложили сюда все публичные записи и не стали ставить PostHog. Спасибо за имя, Theo. Всё здесь под CC0 1.0, так что форкайте.",
     "originCta": "Пост @theo ↗"
+  },
+  "story": {
+    "pageTitle": "96 часов после одного блока · Двуязычный комикс и подкаст · Temu3 Code",
+    "title": "96 часов после одного блока",
+    "podcastTitle": "NotebookLM Podcast",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "Zoom",
+    "receiptBtn": "Чек",
+    "ctaZip": "Стикеры ZIP",
+    "ctaMemes": "Все мемы →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "Загрузка...",
+    "epPill": "Эп.{n}",
+    "episodes": {
+      "ep01": "11 часов разницы",
+      "ep02": "Худший клик по блоку",
+      "ep03": "«Никакой телеметрии. Точка.»",
+      "ep04": "Западная медицина работает быстро",
+      "ep05": "Увольнение на 3,5 часа",
+      "ep06": "89 просмотров и «страх — хороший стимул»",
+      "ep07": "Привет, я Zed (+ 11 браузеров)",
+      "ep08": "«nvm, в slophouse проще»"
+    }
   }
 }

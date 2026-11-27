@@ -16,7 +16,7 @@
     "all": "सभी",
     "prev": "पिछला",
     "next": "अगला",
-    "navStory": "Story Comic"
+    "navStory": "कॉमिक"
   },
   "home": {
     "pageTitle": "Temu3 Code · कोई ट्रैकिंग नहीं, सिर्फ़ सबूत",
@@ -131,7 +131,10 @@
     "storyKicker": "द्विभाषी कॉमिक · पॉडकास्ट (EN/中文) · स्टिकर पैक",
     "storySub": "NotebookLM ऑडियो पॉडकास्ट के साथ द्विभाषी कॉमिक में 96 घंटे की टाइमलाइन फॉलो करें और Discord, Slack, Telegram और WeChat के लिए मुफ्त ट्रांसपेरेंट स्टिकर पैक पाएं।",
     "storyReadBtn": "कॉमिक पढ़ें और सुनें →",
-    "storyZipBtn": "स्टिकर पैक डाउनलोड करें"
+    "storyZipBtn": "स्टिकर पैक डाउनलोड करें",
+    "storyTitle": "एक ब्लॉक के बाद के 96 घंटे",
+    "storyZipHint": "CC0 1.0 · अंग्रेज़ी और 简体中文 · कोई टेलीमेट्री नहीं",
+    "storyEpPill": "एपि. 1 → एपि. 8"
   },
   "memes": {
     "pageTitle": "Temu3 मीम्स · CC0 कार्ड, स्टिकर, GIF और कॉमिक",
@@ -160,13 +163,27 @@
       "classic": "पोस्ट",
       "comics": "कॉमिक",
       "community": "कम्युनिटी",
-      "parody": "पैरोडी"
+      "parody": "पैरोडी",
+      "stickers": "स्टिकर",
+      "creative": "क्रिएटिव",
+      "story": "कहानी"
     },
     "tabParodies": "पैरोडी",
     "stickerZipBtn": "स्टिकर पैक डाउनलोड करें",
     "tabStickers": "स्टिकर",
     "stickerBannerTitle": "ट्रांसपेरेंट रेज कॉमिक स्टिकर पैक",
-    "storyBannerTitle": "क्या आपको वर्टिकल कॉमिक पढ़ना और NotebookLM पॉडकास्ट सुनना पसंद है?"
+    "storyBannerTitle": "क्या आपको वर्टिकल कॉमिक पढ़ना और NotebookLM पॉडकास्ट सुनना पसंद है?",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabCreative": "क्रिएटिव पैक",
+    "tabStory": "कहानी कॉमिक्स",
+    "tabReceipts": "रसीदें",
+    "copyGifBtn": "GIF URL कॉपी करें",
+    "downloadGifBtn": "GIF सेव करें",
+    "copiedGifToast": "एनिमेटेड GIF लिंक कॉपी हुआ।",
+    "stickerBannerDesc": "Discord और Slack (128px), Telegram (512px WebP/PNG), और WeChat (240px) के लिए पहले से साइज़ किए गए RGBA फ़ोल्डर + 4×7 X प्रोमो कॉन्टैक्ट शीट।",
+    "promoSheetBtn": "4×7 कॉन्टैक्ट शीट ↗",
+    "storyBannerDesc": "तुरंत अंग्रेज़ी / 简体中文 बदलने और द्विभाषी ऑडियो अवलोकन के लिए समर्पित /story/ रीडर खोलें।",
+    "openStoryReader": "/story/ रीडर खोलें →"
   },
   "mail": {
     "pageTitle": "Tmail · सार्वजनिक आर्काइव (2023 से 2026)",
@@ -319,5 +336,28 @@
     "originP1": "23 नवंबर 2026 को, एक चीनी डेवलपर के फ्री MIT फोर्क को \"Chinese knockoff\" कहने के दस मिनट बाद, @theo ने X पर हमें नाम दिया: \"Temu3 Code\" (84 हज़ार व्यूज़).",
     "originP2": "जब एक फाउंडर के पास USPTO ट्रेडमार्क शून्य हों और वो मुफ़्त नाम दे दे, तो लेना ही पड़ता है. हमने temu3code.com रजिस्टर किया, सारे सार्वजनिक रिकॉर्ड यहाँ रखे, और PostHog को बाहर रखा. नाम के लिए शुक्रिया, Theo. यहाँ सब कुछ CC0 1.0 है, तो फोर्क कर लो.",
     "originCta": "@theo की पोस्ट देखो ↗"
+  },
+  "story": {
+    "pageTitle": "एक ब्लॉक के बाद के 96 घंटे · द्विभाषी कॉमिक और पॉडकास्ट · Temu3 Code",
+    "title": "एक ब्लॉक के बाद के 96 घंटे",
+    "podcastTitle": "NotebookLM पॉडकास्ट",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "ज़ूम",
+    "receiptBtn": "रसीद",
+    "ctaZip": "स्टिकर पैक ZIP",
+    "ctaMemes": "सभी मीम्स →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "लोड हो रहा है...",
+    "epPill": "एपि.{n}",
+    "episodes": {
+      "ep01": "11 घंटे की दूरी",
+      "ep02": "सबसे बुरा ब्लॉक क्लिक",
+      "ep03": "'कोई टेलीमेट्री नहीं। पूर्ण विराम।'",
+      "ep04": "पश्चिमी दवा जल्दी असर करती है",
+      "ep05": "3.5 घंटे की रिटायरमेंट",
+      "ep06": "89 व्यूज़ और 'डर एक अच्छा प्रोत्साहन है'",
+      "ep07": "नमस्ते, मैं Zed हूँ (+ 11 ब्राउज़र)",
+      "ep08": "'छोड़ो, slophouse में करना ज़्यादा आसान'"
+    }
   }
 }

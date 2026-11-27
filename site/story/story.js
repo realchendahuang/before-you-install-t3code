@@ -7,16 +7,15 @@
   let episodes = [];
   let podcasts = { en: null, zh: null };
   let stickerZipUrl = "https://cdn.temu3code.com/stickers/theo-rage-stickers-pack.zip";
-
-  let comicLang = isZhLang(lang) ? "zh" : "en";
-  let comicLangManual = false;
-  let podLang = isZhLang(lang) ? "zh" : "en";
-  let podLangManual = false;
   let lbIndex = -1;
   let observer = null;
 
   function isZhLang(code) {
     return code === "zh-CN" || code === "zh-TW";
+  }
+
+  function mediaLang() {
+    return isZhLang(lang) ? "zh" : "en";
   }
 
   function t(path, fallback = "") {
@@ -80,40 +79,38 @@
     }
   }
 
-  function getEpAsset(ep, preferredLang) {
-    const pick = preferredLang === "zh" ? (ep.zh || ep.en) : (ep.en || ep.zh);
-    const actualLang = (preferredLang === "zh" && ep.zh) ? "zh" : (ep.en ? "en" : "zh");
+  function getEpAsset(ep) {
+    const wantZh = mediaLang() === "zh";
+    const pick = wantZh ? (ep.zh || ep.en) : (ep.en || ep.zh);
+    const actualLang = (wantZh && ep.zh) ? "zh" : (ep.en ? "en" : "zh");
     return { asset: pick, actualLang };
+  }
+
+  function getEpTitle(ep) {
+    const fallback = isZhLang(lang) ? (ep.titleZh || ep.titleEn) : (ep.titleEn || ep.titleZh);
+    return t(`story.episodes.${ep.id}`, fallback);
+  }
+
+  function getEpPillLabel(ep) {
+    return I18N.fmt(t("story.epPill", "Ep.{n}"), { n: ep.num });
   }
 
   function renderPodcast() {
     const card = document.getElementById("podcastCard");
-    const btnEn = document.getElementById("podTrackEn");
-    const btnZh = document.getElementById("podTrackZh");
     const audio = document.getElementById("podcastAudio");
     const meta = document.getElementById("podMeta");
     const dl = document.getElementById("podDownloadBtn");
     if (!card || !audio) return;
 
-    const hasEn = Boolean(podcasts.en && podcasts.en.url);
-    const hasZh = Boolean(podcasts.zh && podcasts.zh.url);
-    if (!hasEn && !hasZh) {
+    const want = mediaLang();
+    const track = (want === "zh" ? podcasts.zh : podcasts.en) || podcasts.en || podcasts.zh;
+    const actual = track === podcasts.zh ? "zh" : "en";
+    if (!track || !track.url) {
       card.hidden = true;
       return;
     }
 
     card.hidden = false;
-    if (btnEn) btnEn.hidden = !hasEn;
-    if (btnZh) btnZh.hidden = !hasZh;
-
-    if (podLang === "zh" && !hasZh) podLang = "en";
-    if (podLang === "en" && !hasEn) podLang = "zh";
-
-    if (btnEn) btnEn.classList.toggle("is-active", podLang === "en");
-    if (btnZh) btnZh.classList.toggle("is-active", podLang === "zh");
-
-    const track = podcasts[podLang];
-    if (!track) return;
 
     if (audio.getAttribute("data-src") !== track.url) {
       audio.pause();
@@ -129,35 +126,16 @@
 
     if (dl) {
       dl.href = track.url;
-      dl.setAttribute("download", podLang === "zh" ? "temu3code-96h-zh.mp3" : "temu3code-96h-en.mp3");
-    }
-  }
-
-  function syncComicLangButtons() {
-    const hasAnyZh = episodes.some((ep) => Boolean(ep.zh && ep.zh.url));
-    const hasAnyEn = episodes.some((ep) => Boolean(ep.en && ep.en.url));
-    if (comicLang === "zh" && !hasAnyZh) comicLang = "en";
-    if (comicLang === "en" && !hasAnyEn) comicLang = "zh";
-
-    const btnEn = document.getElementById("comicLangEn");
-    const btnZh = document.getElementById("comicLangZh");
-    if (btnEn) {
-      btnEn.hidden = !hasAnyEn;
-      btnEn.classList.toggle("is-active", comicLang === "en");
-    }
-    if (btnZh) {
-      btnZh.hidden = !hasAnyZh;
-      btnZh.classList.toggle("is-active", comicLang === "zh");
+      dl.setAttribute("download", actual === "zh" ? "temu3code-96h-zh.mp3" : "temu3code-96h-en.mp3");
     }
   }
 
   function renderPills() {
     const nav = document.getElementById("epJumpPills");
     if (!nav) return;
-    const isZhUi = comicLang === "zh" || isZhLang(lang);
     nav.innerHTML = episodes
       .map((ep, idx) => {
-        const label = isZhUi ? `第${ep.num}话` : `Ep.${ep.num}`;
+        const label = getEpPillLabel(ep);
         return `<a class="ep-pill${idx === 0 ? " is-active" : ""}" href="#${escapeHtml(ep.id)}" data-ep-pill="${escapeHtml(ep.id)}">${escapeHtml(label)}</a>`;
       })
       .join("");
@@ -185,16 +163,14 @@
   }
 
   function renderEpisodes() {
-    syncComicLangButtons();
     renderPills();
     const host = document.getElementById("storyReader");
     if (!host) return;
     if (!episodes.length) {
-      host.innerHTML = `<div class="story-cta-box"><p class="story-cta-sub">${escapeHtml(t("story.loadingEmpty", "Story episodes are loading..."))}</p></div>`;
+      host.innerHTML = `<div class="story-cta-box"><p class="pod-meta">${escapeHtml(t("story.loadingEmpty", "Loading..."))}</p></div>`;
       return;
     }
 
-    const useZhText = comicLang === "zh";
     const zoomTxt = t("story.zoomBtn", "Zoom");
     const copyTxt = t("memes.copyBtn", "Copy PNG");
     const dlTxt = t("memes.downloadBtn", "Save");
@@ -203,9 +179,9 @@
 
     host.innerHTML = episodes
       .map((ep, idx) => {
-        const { asset } = getEpAsset(ep, comicLang);
+        const { asset } = getEpAsset(ep);
         if (!asset || !asset.url) return "";
-        const title = useZhText ? ep.titleZh : ep.titleEn;
+        const title = getEpTitle(ep);
         const epNum = String(ep.num).padStart(2, "0");
         const shareMsg = encodeURIComponent(`${title} · temu3code.com/story/#${ep.id}`);
         const shareUrl = encodeURIComponent(`https://temu3code.com/story/#${ep.id}`);
@@ -240,23 +216,15 @@
   function updateLightbox() {
     if (lbIndex < 0 || lbIndex >= episodes.length) return;
     const ep = episodes[lbIndex];
-    const { asset, actualLang } = getEpAsset(ep, comicLang);
+    const { asset } = getEpAsset(ep);
     if (!asset) return;
-    const useZhText = actualLang === "zh";
-    const title = useZhText ? `第 ${ep.num} 话 · ${ep.titleZh}` : `Ep. ${ep.num} · ${ep.titleEn}`;
+    const title = `${getEpPillLabel(ep)} · ${getEpTitle(ep)}`;
 
     document.getElementById("lbCounter").textContent = `${lbIndex + 1} / ${episodes.length}`;
     document.getElementById("lbTitle").textContent = title;
     const img = document.getElementById("lbImg");
     img.src = asset.url;
     img.alt = title;
-
-    const langToggle = document.getElementById("lbLangToggle");
-    if (langToggle) {
-      const hasBoth = Boolean(ep.en && ep.zh);
-      langToggle.hidden = !hasBoth;
-      langToggle.textContent = actualLang === "zh" ? "Switch to EN" : "切换简体中文";
-    }
 
     const shareMsg = encodeURIComponent(`${title} · temu3code.com/story/#${ep.id}`);
     const shareUrl = encodeURIComponent(`https://temu3code.com/story/#${ep.id}`);
@@ -304,9 +272,6 @@
     bundle = await I18N.loadBundle(lang, "../data/");
     if (!bundle) return;
 
-    if (!comicLangManual) comicLang = isZhLang(lang) ? "zh" : "en";
-    if (!podLangManual) podLang = isZhLang(lang) ? "zh" : "en";
-
     const pt = t("story.pageTitle");
     if (pt) document.title = pt;
 
@@ -322,13 +287,6 @@
 
   async function init() {
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
-
-    const params = new URLSearchParams(window.location.search);
-    const reqComic = params.get("comic");
-    if (reqComic === "en" || reqComic === "zh") {
-      comicLang = reqComic;
-      comicLangManual = true;
-    }
 
     try {
       const res = await fetch("../data/memes.json?v=3");
@@ -355,47 +313,23 @@
     }
   }
 
-  document.querySelectorAll("[data-comic-lang]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      comicLang = btn.getAttribute("data-comic-lang") || "en";
-      comicLangManual = true;
-      renderEpisodes();
-      if (lbIndex >= 0) updateLightbox();
-    });
-  });
-
-  document.querySelectorAll("[data-pod-lang]").forEach((btn) => {
-    btn.addEventListener("click", () => {
-      podLang = btn.getAttribute("data-pod-lang") || "en";
-      podLangManual = true;
-      renderPodcast();
-    });
-  });
-
   document.getElementById("storyReader").addEventListener("click", (e) => {
     const openBtn = e.target.closest("[data-open-lb]");
     if (openBtn) { openLightbox(Number(openBtn.getAttribute("data-open-lb"))); return; }
     const copyBtn = e.target.closest("[data-copy-idx]");
     if (copyBtn) {
       const ep = episodes[Number(copyBtn.getAttribute("data-copy-idx"))];
-      if (ep) { const { asset } = getEpAsset(ep, comicLang); if (asset) copyImageAsPng(asset.url); }
+      if (ep) { const { asset } = getEpAsset(ep); if (asset) copyImageAsPng(asset.url); }
       return;
     }
     const dlBtn = e.target.closest("[data-dl-idx]");
     if (dlBtn) {
       const ep = episodes[Number(dlBtn.getAttribute("data-dl-idx"))];
       if (ep) {
-        const { asset, actualLang } = getEpAsset(ep, comicLang);
+        const { asset, actualLang } = getEpAsset(ep);
         if (asset) downloadImage(asset.url, `temu3-${ep.id}-${actualLang}.webp`);
       }
     }
-  });
-
-  document.getElementById("lbLangToggle").addEventListener("click", () => {
-    comicLang = comicLang === "zh" ? "en" : "zh";
-    comicLangManual = true;
-    renderEpisodes();
-    updateLightbox();
   });
 
   document.querySelectorAll("[data-lb-close]").forEach((el) => el.addEventListener("click", closeLightbox));
@@ -406,12 +340,12 @@
 
   document.getElementById("lbCopyBtn").addEventListener("click", () => {
     const ep = episodes[lbIndex];
-    if (ep) { const { asset } = getEpAsset(ep, comicLang); if (asset) copyImageAsPng(asset.url); }
+    if (ep) { const { asset } = getEpAsset(ep); if (asset) copyImageAsPng(asset.url); }
   });
   document.getElementById("lbDownloadBtn").addEventListener("click", () => {
     const ep = episodes[lbIndex];
     if (ep) {
-      const { asset, actualLang } = getEpAsset(ep, comicLang);
+      const { asset, actualLang } = getEpAsset(ep);
       if (asset) downloadImage(asset.url, `temu3-${ep.id}-${actualLang}.webp`);
     }
   });

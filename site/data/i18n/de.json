@@ -16,7 +16,7 @@
     "all": "Alle",
     "prev": "Zurück",
     "next": "Weiter",
-    "navStory": "Story Comic"
+    "navStory": "Story-Comic"
   },
   "home": {
     "pageTitle": "Temu3 Code · Keine Telemetrie. Nur Beweise.",
@@ -131,7 +131,10 @@
     "storyKicker": "ZWEISPRACHIGER COMIC · PODCAST (EN/中文) · STICKER-PAKET",
     "storySub": "Die 96 Stunden als zweisprachiger Comic mit NotebookLM-Podcast, dazu ein kostenloses Sticker-Paket mit transparentem Hintergrund für Discord, Slack, Telegram und WeChat.",
     "storyReadBtn": "Comic lesen & Podcast hören →",
-    "storyZipBtn": "Sticker-Paket herunterladen"
+    "storyZipBtn": "Sticker-Paket herunterladen",
+    "storyTitle": "Die 96 Stunden nach einem Block",
+    "storyZipHint": "CC0 1.0 · Englisch & 简体中文 · Keine Telemetrie",
+    "storyEpPill": "Ep. 1 → Ep. 8"
   },
   "memes": {
     "pageTitle": "Temu3 Memes · CC0-Karten, Sticker, GIFs & Comics",
@@ -160,13 +163,27 @@
       "classic": "POST",
       "comics": "COMIC",
       "community": "COMMUNITY",
-      "parody": "PARODIE"
+      "parody": "PARODIE",
+      "stickers": "STICKER",
+      "creative": "KREATIV",
+      "story": "STORY"
     },
     "tabParodies": "Parodien",
     "stickerZipBtn": "Sticker-Paket herunterladen",
     "tabStickers": "Sticker",
     "stickerBannerTitle": "Sticker-Paket mit transparenten Rage-Comics",
-    "storyBannerTitle": "Lieber vertikal Comic lesen und NotebookLM-Podcast hören?"
+    "storyBannerTitle": "Lieber vertikal Comic lesen und NotebookLM-Podcast hören?",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabCreative": "Kreativ-Paket",
+    "tabStory": "Story-Comics",
+    "tabReceipts": "Belege",
+    "copyGifBtn": "GIF-URL kopieren",
+    "downloadGifBtn": "GIF speichern",
+    "copiedGifToast": "Animierten GIF-Link kopiert.",
+    "stickerBannerDesc": "Vorbemessene RGBA-Ordner für Discord & Slack (128px), Telegram (512px WebP/PNG) und WeChat (240px) + 4×7 X-Promo-Kontaktbogen.",
+    "promoSheetBtn": "4×7 Kontaktbogen ↗",
+    "storyBannerDesc": "Öffne den eigenen /story/-Reader für sofortiges Umschalten zwischen Englisch / 简体中文 und zweisprachige Audio-Übersicht.",
+    "openStoryReader": "/story/-Reader öffnen →"
   },
   "mail": {
     "pageTitle": "Tmail · Öffentliches Archiv (2023–2026)",
@@ -319,5 +336,28 @@
     "originP1": "Am 23. Nov. 2026 gab uns @theo auf X den Namen \"Temu3 Code\" (84 Tsd. Aufrufe), zehn Minuten nachdem er den kostenlosen MIT-Fork eines chinesischen Entwicklers als \"Chinese knockoff\" bezeichnet hatte.",
     "originP2": "Wenn dir ein Gründer ohne USPTO-Marken einen kostenlosen Namen schenkt, nimmst du ihn. Wir haben temu3code.com registriert, alle öffentlichen Belege hier abgelegt und PostHog weggelassen. Danke für den Namen, Theo. Alles hier ist CC0 1.0, also forkt es einfach.",
     "originCta": "@theos Beitrag ansehen ↗"
+  },
+  "story": {
+    "pageTitle": "Die 96 Stunden nach einem Block · Zweisprachiger Comic & Podcast · Temu3 Code",
+    "title": "Die 96 Stunden nach einem Block",
+    "podcastTitle": "NotebookLM-Podcast",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "Zoom",
+    "receiptBtn": "Beleg",
+    "ctaZip": "Sticker-Paket ZIP",
+    "ctaMemes": "Alle Memes →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "Lädt...",
+    "epPill": "Ep.{n}",
+    "episodes": {
+      "ep01": "11 Stunden getrennt",
+      "ep02": "Der schlimmste Block-Klick",
+      "ep03": "'Keine Telemetrie. Punkt.'",
+      "ep04": "Schulmedizin wirkt schnell",
+      "ep05": "Die 3,5-Stunden-Pensionierung",
+      "ep06": "89 Aufrufe & 'Angst ist ein guter Anreiz'",
+      "ep07": "Hi, ich bin Zed (+ 11 Browser)",
+      "ep08": "'nvm leichter in slophouse zu machen'"
+    }
   }
 }

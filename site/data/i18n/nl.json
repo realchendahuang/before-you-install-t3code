@@ -16,7 +16,7 @@
     "all": "Alles",
     "prev": "Vorige",
     "next": "Volgende",
-    "navStory": "Story Comic"
+    "navStory": "Strip"
   },
   "home": {
     "pageTitle": "Temu3 Code · Geen telemetrie. Alleen bewijs.",
@@ -131,7 +131,10 @@
     "storyKicker": "TWEETALIGE STRIP · PODCAST (EN/中文) · STICKERSET",
     "storySub": "Volg de tijdlijn van 96 uur in een tweetalige strip met een NotebookLM-audiopodcast, plus een gratis transparante stickerset voor Discord, Slack, Telegram en WeChat.",
     "storyReadBtn": "Lees de strip & luister →",
-    "storyZipBtn": "Download de stickerset"
+    "storyZipBtn": "Download de stickerset",
+    "storyTitle": "De 96 uur na één blokkade",
+    "storyZipHint": "CC0 1.0 · Engels & Vereenvoudigd Chinees · Geen telemetrie",
+    "storyEpPill": "Afl. 1 → Afl. 8"
   },
   "memes": {
     "pageTitle": "Temu3-memes · CC0-kaarten, stickers, GIF's & strips",
@@ -160,13 +163,27 @@
       "classic": "POST",
       "comics": "STRIP",
       "community": "COMMUNITY",
-      "parody": "PARODIE"
+      "parody": "PARODIE",
+      "stickers": "STICKER",
+      "creative": "CREATIEF",
+      "story": "VERHAAL"
     },
     "tabParodies": "Parodieën",
     "stickerZipBtn": "Download de stickerset",
     "tabStickers": "Stickers",
     "stickerBannerTitle": "Transparante ragecomic-stickerset",
-    "storyBannerTitle": "Liever strips verticaal lezen + NotebookLM-podcast?"
+    "storyBannerTitle": "Liever strips verticaal lezen + NotebookLM-podcast?",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabCreative": "Creatief pakket",
+    "tabStory": "Verhaalstrips",
+    "tabReceipts": "Bewijs",
+    "copyGifBtn": "Kopieer GIF-URL",
+    "downloadGifBtn": "GIF opslaan",
+    "copiedGifToast": "Link naar geanimeerde GIF gekopieerd.",
+    "stickerBannerDesc": "Vooraf geschaalde RGBA-mappen voor Discord & Slack (128px), Telegram (512px WebP/PNG) en WeChat (240px) + 4×7 X-promocontactvel.",
+    "promoSheetBtn": "4×7-contactvel ↗",
+    "storyBannerDesc": "Open de aparte /story/-lezer om direct te wisselen tussen Engels / Vereenvoudigd Chinees, met tweetalig audio-overzicht.",
+    "openStoryReader": "Open /story/-lezer →"
   },
   "mail": {
     "pageTitle": "Tmail · Publiek archief (2023-2026)",
@@ -319,5 +336,28 @@
     "originP1": "Op 23 nov 2026 noemde @theo de gratis MIT-fork van een Chinese ontwikkelaar een \"Chinese knockoff\". Tien minuten later gaf hij ons op X de naam: \"Temu3 Code\" (84k weergaven).",
     "originP2": "Als een oprichter met nul Amerikaanse handelsmerken je een gratis naam geeft, dan neem je die. We registreerden temu3code.com, zetten alle openbare gegevens hier neer en lieten PostHog weg. Bedankt voor de naam, Theo. Alles hier is CC0 1.0, dus fork gerust.",
     "originCta": "Bekijk de post van @theo ↗"
+  },
+  "story": {
+    "pageTitle": "De 96 uur na één blokkade · Tweetalige strip & podcast · Temu3 Code",
+    "title": "De 96 uur na één blokkade",
+    "podcastTitle": "NotebookLM-podcast",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "Zoom",
+    "receiptBtn": "Bewijs",
+    "ctaZip": "Stickerpakket ZIP",
+    "ctaMemes": "Alle memes →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "Laden...",
+    "epPill": "Afl.{n}",
+    "episodes": {
+      "ep01": "11 uur uit elkaar",
+      "ep02": "De ergste blokkeerklik",
+      "ep03": "'Geen telemetrie. Punt.'",
+      "ep04": "Westerse medicatie werkt snel",
+      "ep05": "Het pensioen van 3,5 uur",
+      "ep06": "89 weergaven & 'Angst is een goede prikkel'",
+      "ep07": "Hoi, ik ben Zed (+ 11 browsers)",
+      "ep08": "'nvm, makkelijker in slophouse'"
+    }
   }
 }

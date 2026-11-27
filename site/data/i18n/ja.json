@@ -16,7 +16,7 @@
     "all": "すべて",
     "prev": "前へ",
     "next": "次へ",
-    "navStory": "Story Comic"
+    "navStory": "漫画"
   },
   "home": {
     "pageTitle": "Temu3 Code · テレメトリなし、証拠だけ",
@@ -131,7 +131,10 @@
     "storyKicker": "バイリンガル漫画 · ポッドキャスト（EN/中文） · ステッカーパック",
     "storySub": "96時間の流れを、NotebookLM の音声ポッドキャスト付きバイリンガル漫画で追えます。Discord、Slack、Telegram、WeChat で使える無料の透過ステッカーパックも付いてきます。",
     "storyReadBtn": "漫画を読んでポッドキャストを聴く →",
-    "storyZipBtn": "ステッカーパックをダウンロード"
+    "storyZipBtn": "ステッカーパックをダウンロード",
+    "storyTitle": "1ブロック後の96時間",
+    "storyZipHint": "CC0 1.0 · 日本語 & 简体中文 · テレメトリなし",
+    "storyEpPill": "第1話 → 第8話"
   },
   "memes": {
     "pageTitle": "Temu3 ミーム · CC0 カード、ステッカー、GIF、漫画",
@@ -160,13 +163,27 @@
       "classic": "投稿",
       "comics": "コミック",
       "community": "コミュニティ",
-      "parody": "パロディ"
+      "parody": "パロディ",
+      "stickers": "ステッカー",
+      "creative": "クリエイティブ",
+      "story": "ストーリー"
     },
     "tabParodies": "パロディ",
     "stickerZipBtn": "ステッカーパックをダウンロード",
     "tabStickers": "ステッカー",
     "stickerBannerTitle": "背景透過のレイジコミックステッカー集",
-    "storyBannerTitle": "縦読み漫画と NotebookLM ポッドキャストのほうがいい？"
+    "storyBannerTitle": "縦読み漫画と NotebookLM ポッドキャストのほうがいい？",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabCreative": "クリエイティブ集",
+    "tabStory": "ストーリー漫画",
+    "tabReceipts": "証拠",
+    "copyGifBtn": "GIF URLをコピー",
+    "downloadGifBtn": "GIFを保存",
+    "copiedGifToast": "アニメGIFのリンクをコピーしました。",
+    "stickerBannerDesc": "Discord & Slack（128px）、Telegram（512px WebP/PNG）、WeChat（240px）向けにサイズ調整済みのRGBAフォルダ＋4×7 Xプロモ用コンタクトシート。",
+    "promoSheetBtn": "4×7 コンタクトシート ↗",
+    "storyBannerDesc": "専用の /story/ リーダーを開けば、日本語 / 简体中文 を即切り替え、バイリンガル音声概要も再生できます。",
+    "openStoryReader": "/story/ リーダーを開く →"
   },
   "mail": {
     "pageTitle": "Tmail · 公開アーカイブ（2023〜2026）",
@@ -319,5 +336,28 @@
     "originP1": "2026年11月23日、中国の開発者による無料のMITフォークを「Chinese knockoff」と呼んだ10分後、@theoはXで名前をくれた。「Temu3 Code」だ（8.4万回表示）。",
     "originP2": "米国商標を1件も持たない創業者から名前を無料でもらえたら、使うしかない。temu3code.comを取得し、公開記録をここにまとめ、PostHogは外した。名前をありがとう、Theo。ここにあるものはすべてCC0 1.0なので、自由にフォークしていい。",
     "originCta": "@theoの投稿を見る ↗"
+  },
+  "story": {
+    "pageTitle": "1ブロック後の96時間 · バイリンガル漫画＆ポッドキャスト · Temu3 Code",
+    "title": "1ブロック後の96時間",
+    "podcastTitle": "NotebookLM ポッドキャスト",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "拡大",
+    "receiptBtn": "証拠",
+    "ctaZip": "ステッカー ZIP",
+    "ctaMemes": "全ミーム →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "読み込み中...",
+    "epPill": "第{n}話",
+    "episodes": {
+      "ep01": "11時間の隔たり",
+      "ep02": "最悪のブロッククリック",
+      "ep03": "「テレメトリなし。以上。」",
+      "ep04": "西洋医学は効くのが早い",
+      "ep05": "3.5時間の引退",
+      "ep06": "89回再生と「恐怖は良い動機」",
+      "ep07": "こんにちは、Zedです（+ 11ブラウザ）",
+      "ep08": "「やっぱslophouseの方が楽」"
+    }
   }
 }

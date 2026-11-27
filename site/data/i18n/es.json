@@ -16,7 +16,7 @@
     "all": "Todo",
     "prev": "Anterior",
     "next": "Siguiente",
-    "navStory": "Story Comic"
+    "navStory": "Cómic"
   },
   "home": {
     "pageTitle": "Temu3 Code · Cero telemetría. Solo pruebas.",
@@ -131,7 +131,10 @@
     "storyKicker": "CÓMIC BILINGÜE · PODCAST (EN/中文) · PACK DE STICKERS",
     "storySub": "Sigue la cronología de las 96 horas en un cómic bilingüe con un podcast de audio de NotebookLM, más un pack de stickers transparentes gratis para Discord, Slack, Telegram y WeChat.",
     "storyReadBtn": "Leer el cómic y escuchar →",
-    "storyZipBtn": "Descargar pack de stickers"
+    "storyZipBtn": "Descargar pack de stickers",
+    "storyTitle": "Las 96 horas tras un bloqueo",
+    "storyZipHint": "CC0 1.0 · Inglés y chino simplificado · Cero telemetría",
+    "storyEpPill": "Ep. 1 → Ep. 8"
   },
   "memes": {
     "pageTitle": "Memes de Temu3 · Cartas CC0, stickers, GIF y cómics",
@@ -160,13 +163,27 @@
       "classic": "PUBLICACIÓN",
       "comics": "CÓMIC",
       "community": "COMUNIDAD",
-      "parody": "PARODIA"
+      "parody": "PARODIA",
+      "stickers": "CALCOMANÍA",
+      "creative": "CREATIVO",
+      "story": "HISTORIA"
     },
     "tabParodies": "Parodias",
     "stickerZipBtn": "Descargar pack de stickers",
     "tabStickers": "Stickers",
     "stickerBannerTitle": "Pack de stickers de rage comic con fondo transparente",
-    "storyBannerTitle": "¿Prefieres leer el cómic en vertical y escuchar el podcast de NotebookLM?"
+    "storyBannerTitle": "¿Prefieres leer el cómic en vertical y escuchar el podcast de NotebookLM?",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabCreative": "Pack creativo",
+    "tabStory": "Cómics de la historia",
+    "tabReceipts": "Recibos",
+    "copyGifBtn": "Copiar URL GIF",
+    "downloadGifBtn": "Guardar GIF",
+    "copiedGifToast": "Enlace del GIF animado copiado.",
+    "stickerBannerDesc": "Carpetas RGBA ya dimensionadas para Discord y Slack (128 px), Telegram (512 px WebP/PNG) y WeChat (240 px) + hoja de contactos 4×7 para X.",
+    "promoSheetBtn": "Hoja de contactos 4×7 ↗",
+    "storyBannerDesc": "Abre el lector dedicado /story/ para cambiar al instante entre inglés y chino simplificado y escuchar el resumen de audio bilingüe.",
+    "openStoryReader": "Abrir lector /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Archivo público (2023 a 2026)",
@@ -319,5 +336,28 @@
     "originP1": "El 23 de nov de 2026, diez minutos después de llamar \"Chinese knockoff\" al fork MIT gratuito de un desarrollador chino, @theo nos dio el nombre en X: \"Temu3 Code\" (84 mil vistas).",
     "originP2": "Cuando un fundador con cero marcas registradas en la USPTO te regala un nombre, lo coges. Registramos temu3code.com, pusimos aquí todos los registros públicos y dejamos PostHog fuera. Gracias por el nombre, Theo. Todo esto es CC0 1.0, así que haz fork cuando quieras.",
     "originCta": "Ver la publicación de @theo ↗"
+  },
+  "story": {
+    "pageTitle": "Las 96 horas tras un bloqueo · Cómic y podcast bilingües · Temu3 Code",
+    "title": "Las 96 horas tras un bloqueo",
+    "podcastTitle": "Podcast NotebookLM",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "Zoom",
+    "receiptBtn": "Recibo",
+    "ctaZip": "Pack de stickers ZIP",
+    "ctaMemes": "Todos los memes →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "Cargando...",
+    "epPill": "Ep.{n}",
+    "episodes": {
+      "ep01": "11 horas de distancia",
+      "ep02": "El peor clic de bloqueo",
+      "ep03": "'Sin telemetría. Punto.'",
+      "ep04": "La medicina occidental actúa rápido",
+      "ep05": "La jubilación de 3,5 horas",
+      "ep06": "89 visitas y 'el miedo es un buen incentivo'",
+      "ep07": "Hola, soy Zed (+ 11 navegadores)",
+      "ep08": "'olvídalo, es más fácil en slophouse'"
+    }
   }
 }
