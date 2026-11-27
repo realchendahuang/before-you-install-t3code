@@ -903,7 +903,7 @@
   async function openThreadMemesModal(th) {
     if (!state.memes) {
       try {
-        const res = await fetch(`${state.dataPrefix}memes.json`);
+        const res = await fetch(`${state.dataPrefix}memes.json?v=2`);
         if (res.ok) {
           const obj = await res.json();
           state.memes = Array.isArray(obj.items) ? obj.items : [];
@@ -920,9 +920,11 @@
       .slice(0, 6)
       .map((m) => {
         const title = isZh() ? m.titleZh : m.titleEn;
+        const note = isZh() ? m.noteZh : m.noteEn;
         return `<a href="../memes/#${encodeURIComponent(m.id)}" style="display:flex;flex-direction:column;gap:6px;padding:8px;border:1px solid #dadce0;border-radius:10px;text-decoration:none;color:#202124;background:#fff;">
           <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" style="width:100%;height:auto;border-radius:6px;display:block;" loading="lazy" />
           <strong style="font-size:12.5px;line-height:1.35;">${escapeHtml(title)}</strong>
+          ${note ? `<span style="font-size:11.5px;line-height:1.45;color:#5f6368;">${escapeHtml(note)}</span>` : ""}
           <span style="font-size:11px;color:#0b57d0;">${escapeHtml(t("copyInMemes"))}</span>
         </a>`;
       })

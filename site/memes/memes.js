@@ -80,7 +80,7 @@
     return allItems.filter((it) => {
       if (activeSeries !== "all" && it.series !== activeSeries) return false;
       if (!q) return true;
-      return `${it.id} #${it.exhibit} ${it.titleEn} ${it.titleZh} ${it.series}`.toLowerCase().includes(q);
+      return `${it.id} #${it.exhibit} ${it.titleEn} ${it.titleZh} ${it.noteEn || ""} ${it.noteZh || ""} ${it.series}`.toLowerCase().includes(q);
     });
   }
 
@@ -103,6 +103,7 @@
     grid.innerHTML = visibleItems
       .map((it, idx) => {
         const title = isZh() ? it.titleZh : it.titleEn;
+        const note = isZh() ? it.noteZh : it.noteEn;
         const sLabel = t(`memes.series.${it.series}`, it.series.toUpperCase());
         return `<article class="meme-card${it.series === "sins" ? " is-sin" : ""}">
           <button type="button" class="meme-media-btn" data-open-lb="${idx}" aria-label="${escapeHtml(title)}">
@@ -116,6 +117,7 @@
               <span class="ex-tag">#${escapeHtml(it.exhibit)}</span>
             </div>
             <h3 class="meme-title">${escapeHtml(title)}</h3>
+            ${note ? `<p class="meme-note">${escapeHtml(note)}</p>` : ""}
             <div class="meme-actions">
               <button type="button" class="act-btn act-primary" data-copy-idx="${idx}">${escapeHtml(copyTxt)}</button>
               <button type="button" class="act-btn" data-dl-idx="${idx}">${escapeHtml(dlTxt)}</button>
@@ -145,6 +147,8 @@
     badgeEl.className = `badge badge-${it.series}`;
     badgeEl.textContent = `${t(`memes.series.${it.series}`, it.series)} · #${it.exhibit}`;
     document.getElementById("lbTitle").textContent = title;
+    const noteEl = document.getElementById("lbNote");
+    if (noteEl) noteEl.textContent = (isZh() ? it.noteZh : it.noteEn) || "";
     const img = document.getElementById("lbImg");
     img.src = it.url;
     img.alt = title;
@@ -203,7 +207,7 @@
   async function init() {
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
     try {
-      const res = await fetch("../data/memes.json");
+      const res = await fetch("../data/memes.json?v=2");
       const data = await res.json();
       allItems = Array.isArray(data.items) ? data.items : [];
     } catch (_) {

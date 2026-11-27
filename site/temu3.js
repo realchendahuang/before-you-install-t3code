@@ -215,13 +215,17 @@
     viralGrid.innerHTML = featuredViral
       .map((m, idx) => {
         const title = isZh() ? m.titleZh : m.titleEn;
+        const note = isZh() ? m.noteZh : m.noteEn;
         return `<article class="mm-viral-card">
           <button type="button" class="mm-viral-thumb" data-viral-idx="${idx}" aria-label="${escapeHtml(title)}">
             <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" loading="lazy" />
           </button>
           <div class="mm-viral-body">
-            <span class="mm-viral-title">${escapeHtml(title)}</span>
-            <a class="mm-viral-link" href="./mail/?thread=${encodeURIComponent(m.thread)}">#${escapeHtml(m.exhibit)} →</a>
+            <div class="mm-viral-top">
+              <span class="mm-viral-title">${escapeHtml(title)}</span>
+              <a class="mm-viral-link" href="./mail/?thread=${encodeURIComponent(m.thread)}">#${escapeHtml(m.exhibit)} →</a>
+            </div>
+            ${note ? `<p class="mm-viral-note">${escapeHtml(note)}</p>` : ""}
           </div>
         </article>`;
       })
@@ -250,10 +254,12 @@
     if (counter) counter.textContent = `${lbIndex + 1} / ${lbItems.length}`;
     if (copyBtn) copyBtn.textContent = t("home.mmCopyPng", "Copy PNG");
 
+    const noteEl = document.getElementById("lbNote");
     if (lbMode === "memes") {
       const m = lbItems[lbIndex];
       const title = isZh() ? m.titleZh : m.titleEn;
       document.getElementById("lbTitle").textContent = title;
+      if (noteEl) noteEl.textContent = (isZh() ? m.noteZh : m.noteEn) || "";
       img.src = m.url;
       img.alt = title;
       xLink.href = `./memes/#${encodeURIComponent(m.id)}`;
@@ -271,6 +277,7 @@
     const r = lbItems[lbIndex];
     const title = t(`home.xrTitles.${r.id}`, r.id);
     document.getElementById("lbTitle").textContent = title;
+    if (noteEl) noteEl.textContent = "";
     img.src = r.src;
     img.alt = title;
     xLink.href = r.url;
@@ -341,7 +348,7 @@
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
     await applyLanguage(lang);
     try {
-      const res = await fetch("./data/memes.json");
+      const res = await fetch("./data/memes.json?v=2");
       if (res.ok) {
         const data = await res.json();
         memeCatalog = Array.isArray(data.items) ? data.items : [];

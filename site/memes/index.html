@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="./memes.css?v=5" />
+  <link rel="stylesheet" href="./memes.css?v=6" />
 </head>
 <body>
   <header class="nav-header">
@@ -117,16 +117,19 @@
         <button type="button" id="lbNext" class="lb-nav lb-next" aria-label="Next">›</button>
       </div>
       <div class="lb-foot">
-        <div class="lb-mobile-nav">
-          <button type="button" id="lbPrevMobile" class="act-btn" aria-label="Previous">‹</button>
-          <button type="button" id="lbNextMobile" class="act-btn" aria-label="Next">›</button>
-        </div>
-        <div class="lb-actions">
-          <button type="button" id="lbDrawAgainBtn" class="act-btn act-gold" hidden>🎲 <span data-i18n="memes.drawAgain">Draw Another</span></button>
-          <button type="button" id="lbCopyBtn" class="act-btn act-primary" data-i18n="memes.copyBtn">Copy PNG</button>
-          <button type="button" id="lbDownloadBtn" class="act-btn" data-i18n="memes.downloadBtn">Save</button>
-          <a id="lbShareX" class="act-btn" href="#" target="_blank" rel="noopener noreferrer" data-i18n="memes.shareX">Share on X ↗</a>
-          <a id="lbReceiptLink" class="act-btn act-cobalt" href="#" data-i18n="memes.verifyReceipt">View Source →</a>
+        <p id="lbNote" class="lb-note"></p>
+        <div class="lb-foot-row">
+          <div class="lb-mobile-nav">
+            <button type="button" id="lbPrevMobile" class="act-btn" aria-label="Previous">‹</button>
+            <button type="button" id="lbNextMobile" class="act-btn" aria-label="Next">›</button>
+          </div>
+          <div class="lb-actions">
+            <button type="button" id="lbDrawAgainBtn" class="act-btn act-gold" hidden>🎲 <span data-i18n="memes.drawAgain">Draw Another</span></button>
+            <button type="button" id="lbCopyBtn" class="act-btn act-primary" data-i18n="memes.copyBtn">Copy PNG</button>
+            <button type="button" id="lbDownloadBtn" class="act-btn" data-i18n="memes.downloadBtn">Save</button>
+            <a id="lbShareX" class="act-btn" href="#" target="_blank" rel="noopener noreferrer" data-i18n="memes.shareX">Share on X ↗</a>
+            <a id="lbReceiptLink" class="act-btn act-cobalt" href="#" data-i18n="memes.verifyReceipt">View Source →</a>
+          </div>
         </div>
       </div>
     </div>
@@ -135,6 +138,6 @@
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
   <script src="../data/i18n.js?v=8"></script>
-  <script src="./memes.js?v=4"></script>
+  <script src="./memes.js?v=5"></script>
 </body>
 </html>

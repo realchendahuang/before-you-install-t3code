@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="./temu3.css?v=13" />
+  <link rel="stylesheet" href="./temu3.css?v=14" />
 </head>
 <body>
   <header class="nav-header">
@@ -307,16 +307,19 @@
         <button type="button" id="lbNext" class="xr-lb-nav xr-lb-next" aria-label="Next">›</button>
       </div>
       <div class="xr-lb-foot">
-        <div class="xr-lb-mobile-nav">
-          <button type="button" id="lbPrevMobile" class="xr-btn" aria-label="Previous">‹</button>
-          <button type="button" id="lbNextMobile" class="xr-btn" aria-label="Next">›</button>
-        </div>
-        <div class="xr-lb-actions">
-          <button type="button" id="lbCopyPngBtn" class="xr-btn xr-btn-copy" data-i18n="home.mmCopyPng">Copy PNG</button>
-          <button type="button" id="lbDrawAgainBtn" class="xr-btn xr-btn-gold" hidden>🎲 <span data-i18n="home.mmDrawAgain">Draw Another</span></button>
-          <a id="lbXLink" class="xr-btn xr-btn-x" href="#" target="_blank" rel="noopener noreferrer">Original post ↗</a>
-          <a id="lbMailLink" class="xr-btn" href="#">Tmail →</a>
-          <a id="lbRawLink" class="xr-btn" href="#" target="_blank" rel="noopener noreferrer">Full image ↗</a>
+        <p id="lbNote" class="xr-lb-note"></p>
+        <div class="xr-lb-foot-row">
+          <div class="xr-lb-mobile-nav">
+            <button type="button" id="lbPrevMobile" class="xr-btn" aria-label="Previous">‹</button>
+            <button type="button" id="lbNextMobile" class="xr-btn" aria-label="Next">›</button>
+          </div>
+          <div class="xr-lb-actions">
+            <button type="button" id="lbCopyPngBtn" class="xr-btn xr-btn-copy" data-i18n="home.mmCopyPng">Copy PNG</button>
+            <button type="button" id="lbDrawAgainBtn" class="xr-btn xr-btn-gold" hidden>🎲 <span data-i18n="home.mmDrawAgain">Draw Another</span></button>
+            <a id="lbXLink" class="xr-btn xr-btn-x" href="#" target="_blank" rel="noopener noreferrer">Original post ↗</a>
+            <a id="lbMailLink" class="xr-btn" href="#">Tmail →</a>
+            <a id="lbRawLink" class="xr-btn" href="#" target="_blank" rel="noopener noreferrer">Full image ↗</a>
+          </div>
         </div>
       </div>
     </div>
@@ -325,6 +328,6 @@
   <div id="homeToast" class="toast" role="status" aria-live="polite" hidden></div>
 
   <script src="./data/i18n.js?v=8"></script>
-  <script src="./temu3.js?v=11"></script>
+  <script src="./temu3.js?v=12"></script>
 </body>
 </html>
