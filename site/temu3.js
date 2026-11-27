@@ -25,21 +25,21 @@
           badgeKey: "home.winC1Badge",
           metaKey: "home.winC1Meta",
           href: "https://x.com/theo/status/2124829315657576890",
-          html: "“Temu3 Code” · “Not consider. Do it right now or I'm going to contact GitHub and have your account taken down.”"
+          textKey: "home.winC1Text"
         },
         {
           badgeClass: "win-badge-green",
           badgeKey: "home.winC2Badge",
           metaKey: "home.winC2Meta",
           href: "https://x.com/theo/status/2124989435154726982",
-          html: "“Nah. Open source is open source, even if a trillion dollar company uses it!”"
+          textKey: "home.winC2Text"
         },
         {
           badgeClass: "win-badge-amber",
           badgeKey: "home.winC3Badge",
           metaKey: "home.winC3Meta",
           href: "https://x.com/theo/status/2119240810202034645",
-          html: "“Okay I'm stealing this” → <code>@bot find her fork and see how portable this is... implement it.</code>"
+          textKey: "home.winC3Text"
         }
       ]
     },
@@ -135,13 +135,12 @@
       .map((c) => {
         const badge = escapeHtml(t(c.badgeKey, ""));
         const meta = escapeHtml(t(c.metaKey, ""));
-        const body = c.html ? c.html : escapeHtml(t(c.textKey, ""));
-        const pAttr = c.html ? ' dir="ltr"' : "";
+        const body = escapeHtml(t(c.textKey, ""));
         const inner = `<div class="win-msg-head">
           <span class="${c.badgeClass}">${badge}</span>
           <span class="muted">${meta}</span>
         </div>
-        <p${pAttr}>${body}</p>`;
+        <p>${body}</p>`;
         if (c.href) {
           return `<a class="win-msg-card" href="${escapeHtml(c.href)}" target="_blank" rel="noopener noreferrer">${inner}</a>`;
         }

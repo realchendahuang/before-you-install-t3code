@@ -67,6 +67,8 @@
       backInbox: "← Back to Inbox",
       dockReport: "Temu3",
       searchPlaceholder: "Search public record (e.g. Temu, FFmpeg, 41.6 GB, PR #42450, Antigravity...)",
+      viewOriginalEn: "Original EN",
+      viewTranslated: "Translated",
       replyOriginal: "Open Original Source",
       shareOnX: "Share on X",
       fullExhibit: "Full Exhibit Dossier",
@@ -128,6 +130,8 @@
       backInbox: "← 返回收件箱",
       dockReport: "主页",
       searchPlaceholder: "搜索公共记录（如 Temu、FFmpeg、41.6 GB、PR #42450、Antigravity...）",
+      viewOriginalEn: "英文原文",
+      viewTranslated: "显示译文",
       replyOriginal: "打开一手原文",
       shareOnX: "转发到 X",
       fullExhibit: "查看完整证据页",
@@ -189,9 +193,11 @@
   ];
 
   const SHARED_I18N = window.Temu3I18n;
+  const mailLocaleCache = new Map();
   const state = {
     lang: SHARED_I18N ? SHARED_I18N.detectInitialLang() : "en",
     bundle: null,
+    mailLocale: null,
     data: null,
     evidence: [],
     assetPrefix: "../",
@@ -208,7 +214,8 @@
     query: "",
     activeThreadId: null,
     starredIds: new Set(),
-    readIds: new Set()
+    readIds: new Set(),
+    showOriginalMsgs: new Set()
   };
 
   const $ = (sel) => document.querySelector(sel);
@@ -247,8 +254,228 @@
       .replace(/'/g, "&#39;");
   }
 
+  function isolateHandlesHtml(escaped) {
+    return escaped.replace(/(^|[^A-Za-z0-9_.])(@[A-Za-z0-9_]+)/g, '$1<bdi dir="ltr">$2</bdi>');
+  }
+
+  function escapeBidi(str) {
+    return isolateHandlesHtml(escapeHtml(str));
+  }
+
+  function formatInline(raw) {
+    const parts = String(raw || "").split(/(`[^`\n]+`)/g);
+    return parts
+      .map((part) => {
+        if (part.length >= 2 && part.startsWith("`") && part.endsWith("`")) {
+          return `<code>${escapeHtml(part.slice(1, -1))}</code>`;
+        }
+        return isolateHandlesHtml(
+          escapeHtml(part).replace(/\*\*([^\n]+?)\*\*/g, "<strong>$1</strong>")
+        );
+      })
+      .join("");
+  }
+
   function formatBody(text) {
-    return escapeHtml(text).replace(/`([^`\n]+)`/g, "<code>$1</code>");
+    const lines = String(text || "").replace(/\r\n?/g, "\n").split("\n");
+    const blocks = [];
+    const ulRe = /^\s*(?:-|•)\s+(.+)$/;
+    const olRe = /^\s*(\d+)\.\s+(.+)$/;
+    const quoteRe = /^\s*>\s?(.*)$/;
+
+    const isOrderedStart = (idx) => {
+      const m = lines[idx].match(olRe);
+      if (!m) return false;
+      const num = Number(m[1]);
+      if (num === 1) return true;
+      let j = idx + 1;
+      while (j < lines.length && /^\s*$/.test(lines[j])) j++;
+      if (j < lines.length) {
+        const m2 = lines[j].match(olRe);
+        if (m2 && Number(m2[1]) === num + 1) return true;
+      }
+      return false;
+    };
+
+    let i = 0;
+    while (i < lines.length) {
+      if (/^\s*$/.test(lines[i])) {
+        i++;
+        continue;
+      }
+
+      if (quoteRe.test(lines[i])) {
+        const qLines = [];
+        while (i < lines.length && quoteRe.test(lines[i])) {
+          qLines.push(lines[i].replace(quoteRe, "$1"));
+          i++;
+        }
+        const qParas = [];
+        let cur = [];
+        for (const ql of qLines) {
+          if (/^\s*$/.test(ql)) {
+            if (cur.length) {
+              qParas.push(`<p>${cur.map(formatInline).join("<br>")}</p>`);
+              cur = [];
+            }
+          } else {
+            cur.push(ql);
+          }
+        }
+        if (cur.length) {
+          qParas.push(`<p>${cur.map(formatInline).join("<br>")}</p>`);
+        }
+        if (qParas.length) {
+          blocks.push(`<blockquote class="msg-quote">${qParas.join("")}</blockquote>`);
+        }
+        continue;
+      }
+
+      if (ulRe.test(lines[i])) {
+        const items = [];
+        while (i < lines.length) {
+          const m = lines[i].match(ulRe);
+          if (m) {
+            items.push(`<li>${formatInline(m[1])}</li>`);
+            i++;
+            continue;
+          }
+          if (/^\s*$/.test(lines[i])) {
+            let j = i + 1;
+            while (j < lines.length && /^\s*$/.test(lines[j])) j++;
+            if (j < lines.length && ulRe.test(lines[j])) {
+              i = j;
+              continue;
+            }
+          }
+          break;
+        }
+        blocks.push(`<ul class="msg-list">${items.join("")}</ul>`);
+        continue;
+      }
+
+      if (isOrderedStart(i)) {
+        const items = [];
+        const firstNum = Number(lines[i].match(olRe)[1]);
+        while (i < lines.length) {
+          const m = lines[i].match(olRe);
+          if (m) {
+            items.push(`<li>${formatInline(m[2])}</li>`);
+            i++;
+            continue;
+          }
+          if (/^\s*$/.test(lines[i])) {
+            let j = i + 1;
+            while (j < lines.length && /^\s*$/.test(lines[j])) j++;
+            if (j < lines.length && olRe.test(lines[j])) {
+              i = j;
+              continue;
+            }
+          }
+          break;
+        }
+        const startAttr = firstNum !== 1 ? ` start="${firstNum}"` : "";
+        blocks.push(`<ol class="msg-list"${startAttr}>${items.join("")}</ol>`);
+        continue;
+      }
+
+      const pLines = [];
+      while (
+        i < lines.length &&
+        !/^\s*$/.test(lines[i]) &&
+        !quoteRe.test(lines[i]) &&
+        !ulRe.test(lines[i]) &&
+        !isOrderedStart(i)
+      ) {
+        pLines.push(lines[i]);
+        i++;
+      }
+      if (pLines.length) {
+        blocks.push(`<p class="msg-p">${pLines.map(formatInline).join("<br>")}</p>`);
+      }
+    }
+
+    return blocks.join("");
+  }
+
+  async function fetchMailLocaleFile(code) {
+    if (mailLocaleCache.has(code)) return mailLocaleCache.get(code);
+    try {
+      const res = await fetch(`${state.dataPrefix}mail-threads/${encodeURIComponent(code)}.json?v=1`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const obj = await res.json();
+      mailLocaleCache.set(code, obj);
+      return obj;
+    } catch (_) {
+      mailLocaleCache.set(code, null);
+      return null;
+    }
+  }
+
+  async function loadMailTranslation(code) {
+    if (!code || code === "en") return null;
+    let obj = await fetchMailLocaleFile(code);
+    if (!obj && code === "zh-TW") {
+      obj = await fetchMailLocaleFile("zh-CN");
+    }
+    return obj;
+  }
+
+  function getLocThread(th) {
+    return (state.mailLocale && state.mailLocale.threads && state.mailLocale.threads[th.id]) || null;
+  }
+
+  function getLocMsg(th, mi) {
+    const lt = getLocThread(th);
+    return (lt && Array.isArray(lt.messages) && lt.messages[mi]) || null;
+  }
+
+  function locThreadFields(th) {
+    const lt = getLocThread(th);
+    return {
+      from: (lt && lt.from) || th.from,
+      to: (lt && lt.to) || th.to,
+      dateDisplay: (lt && lt.dateDisplay) || th.dateDisplay,
+      subject: (lt && lt.subject) || (isZh() ? (th.subjectZh || th.subject) : th.subject),
+      snippet: (lt && lt.snippet) || (isZh() ? (th.snippetZh || th.snippet) : th.snippet)
+    };
+  }
+
+  function locTopicLabel(tp) {
+    const fromMailLocale = state.mailLocale && state.mailLocale.topics && state.mailLocale.topics[tp.id];
+    if (fromMailLocale) return fromMailLocale;
+    const localized = t(`topics.${tp.id}`);
+    if (localized && localized !== `topics.${tp.id}`) return localized;
+    return isZh() ? tp.labelZh : tp.label;
+  }
+
+  function locPerson(p) {
+    const lp = state.mailLocale && state.mailLocale.people && state.mailLocale.people[p.id];
+    return {
+      name: (lp && lp.name) || p.name,
+      role: (lp && lp.role) || p.role
+    };
+  }
+
+  function locEvidence(ev) {
+    const le = state.mailLocale && state.mailLocale.evidence && state.mailLocale.evidence[ev.id];
+    return {
+      title: (le && le.title) || ev.title,
+      caption: (le && le.caption) || ev.caption
+    };
+  }
+
+  function locMessage(th, m, mi) {
+    const lm = getLocMsg(th, mi);
+    return {
+      sender: (lm && lm.sender) || m.sender,
+      handle: (lm && lm.handle) || m.handle,
+      to: (lm && lm.to) || m.to,
+      time: (lm && lm.time) || m.time,
+      body: (lm && lm.body) || m.body,
+      attTitle: (ai) => (lm && Array.isArray(lm.attachments) && lm.attachments[ai]) || (m.attachments[ai] && m.attachments[ai].title) || "",
+      linkLabel: (li) => (lm && Array.isArray(lm.links) && lm.links[li]) || (m.links[li] && m.links[li].label) || ""
+    };
   }
 
   function assetUrl(path) {
@@ -386,9 +613,13 @@
       const freeText = q.replace(/(from|to):[^\s]+/g, "").trim();
 
       list = list.filter((th) => {
-        if (fromMatch && !th.from.toLowerCase().includes(fromMatch[1])) return false;
-        if (toMatch && !`${th.to} ${th.from}`.toLowerCase().includes(toMatch[1])) return false;
+        const lt = getLocThread(th);
+        const fromStr = `${th.from} ${(lt && lt.from) || ""}`.toLowerCase();
+        const toStr = `${th.to} ${th.from} ${(lt && lt.to) || ""} ${(lt && lt.from) || ""}`.toLowerCase();
+        if (fromMatch && !fromStr.includes(fromMatch[1])) return false;
+        if (toMatch && !toStr.includes(toMatch[1])) return false;
         if (!freeText) return true;
+        const locMsgs = lt && Array.isArray(lt.messages) ? lt.messages : [];
         const haystack = [
           th.subject,
           th.subjectZh,
@@ -400,8 +631,38 @@
           th.date,
           th.dateDisplay,
           "#" + th.exhibit,
-          ...th.messages.map((m) => `${m.sender} ${m.handle} ${m.body}`)
+          lt && lt.subject,
+          lt && lt.snippet,
+          lt && lt.from,
+          lt && lt.to,
+          lt && lt.dateDisplay,
+          ...th.messages.map((m, mi) => {
+            const lm = locMsgs[mi];
+            const enAtts = (m.attachments || []).map((a) => a.title).join(" ");
+            const enLinks = (m.links || []).map((lk) => lk.label).join(" ");
+            const locAtts = lm && Array.isArray(lm.attachments) ? lm.attachments.join(" ") : "";
+            const locLinks = lm && Array.isArray(lm.links) ? lm.links.join(" ") : "";
+            return [
+              m.sender,
+              m.handle,
+              m.to,
+              m.time,
+              m.body,
+              enAtts,
+              enLinks,
+              lm && lm.sender,
+              lm && lm.handle,
+              lm && lm.to,
+              lm && lm.time,
+              lm && lm.body,
+              locAtts,
+              locLinks
+            ]
+              .filter(Boolean)
+              .join(" ");
+          })
         ]
+          .filter(Boolean)
           .join(" ")
           .toLowerCase();
         return haystack.includes(freeText);
@@ -427,19 +688,37 @@
   }
 
   async function applyI18n(nextCode) {
+    const prevLang = state.lang;
     if (nextCode && SHARED_I18N) {
       state.lang = SHARED_I18N.normalizeLang(nextCode) || "en";
     }
-    if (SHARED_I18N) {
-      SHARED_I18N.applyDirection(state.lang);
-      state.bundle = await SHARED_I18N.loadBundle(state.lang, state.dataPrefix);
+    const targetLang = state.lang;
+    if (prevLang !== targetLang && state.showOriginalMsgs) {
+      state.showOriginalMsgs.clear();
     }
+    if (SHARED_I18N) {
+      SHARED_I18N.applyDirection(targetLang);
+    }
+    const [bundle, mailLocale] = await Promise.all([
+      SHARED_I18N ? SHARED_I18N.loadBundle(targetLang, state.dataPrefix) : Promise.resolve(null),
+      loadMailTranslation(targetLang)
+    ]);
+    if (state.lang !== targetLang) return;
+    state.bundle = bundle;
+    state.mailLocale = mailLocale;
+
     const pt = t("pageTitle");
     if (pt && pt !== "pageTitle") document.title = pt;
 
     $$("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      if (key) el.textContent = t(key);
+      if (!key) return;
+      const val = t(key);
+      if (el.tagName !== "OPTION" && /@[A-Za-z0-9_]+/.test(val)) {
+        el.innerHTML = escapeBidi(val);
+      } else {
+        el.textContent = val;
+      }
     });
     const searchEl = $("#searchInput");
     if (searchEl) searchEl.placeholder = t("searchPlaceholder");
@@ -502,12 +781,11 @@
       .map((tp) => {
         const count = state.data.threads.filter((th) => th.topics.includes(tp.id)).length;
         const active = state.topic === tp.id ? " active" : "";
-        const localized = t(`topics.${tp.id}`);
-        const label = localized && localized !== `topics.${tp.id}` ? localized : (isZh() ? tp.labelZh : tp.label);
+        const label = locTopicLabel(tp);
         return `<li>
           <button type="button" class="topic-btn${active}" data-topic="${tp.id}">
             <span class="material-symbols-outlined">${tp.icon}</span>
-            <span class="nav-label">${escapeHtml(label)}</span>
+            <span class="nav-label">${escapeBidi(label)}</span>
             <span class="person-count">${count}</span>
           </button>
         </li>`;
@@ -519,7 +797,7 @@
     const allContactsActive = !state.person && state.view === "inbox" ? " active" : "";
     const peopleItems = [
       `<li><button type="button" class="person-btn${allContactsActive}" data-person="">
-        <span class="person-name">${escapeHtml(t("allContacts"))}</span>
+        <span class="person-name">${escapeBidi(t("allContacts"))}</span>
         <span class="person-count">${state.data.threads.length}</span>
       </button></li>`
     ];
@@ -527,9 +805,10 @@
       const count = state.data.threads.filter((th) => th.people.includes(p.id)).length;
       if (!count) return;
       const active = state.person === p.id ? " active" : "";
+      const lp = locPerson(p);
       peopleItems.push(`<li>
         <button type="button" class="person-btn${active}" data-person="${p.id}">
-          <span class="person-name">${escapeHtml(p.name)}</span>
+          <span class="person-name">${escapeBidi(lp.name)}</span>
           <span class="person-count">${count}</span>
         </button>
       </li>`);
@@ -567,10 +846,8 @@
     if (state.topic) {
       const tp = state.data.topics.find((x) => x.id === state.topic);
       if (tp) {
-        const localized = t(`topics.${tp.id}`);
-        const tpLabel = localized && localized !== `topics.${tp.id}` ? localized : (isZh() ? tp.labelZh : tp.label);
         chips.push({
-          label: `${t("topicPrefix")}: ${tpLabel}`,
+          label: `${t("topicPrefix")}: ${locTopicLabel(tp)}`,
           clear: () => {
             state.topic = null;
           }
@@ -581,7 +858,7 @@
       const p = state.data.people.find((x) => x.id === state.person);
       if (p) {
         chips.push({
-          label: `${t("personPrefix")}: ${p.name}`,
+          label: `${t("personPrefix")}: ${locPerson(p).name}`,
           clear: () => {
             state.person = null;
           }
@@ -589,8 +866,9 @@
       }
     }
     if (state.platform !== "all") {
+      const platLabel = state.platform === "Code" ? t("platCode") : state.platform;
       chips.push({
-        label: `${t("sourcePrefix")}: ${state.platform}`,
+        label: `${t("sourcePrefix")}: ${platLabel}`,
         clear: () => {
           state.platform = "all";
           $("#platformFilter").value = "all";
@@ -598,8 +876,9 @@
       });
     }
     if (state.year !== "all") {
+      const yearMap = { "2026-pre": t("yearPre"), crisis: t("yearCrisis") };
       chips.push({
-        label: `${t("datePrefix")}: ${state.year}`,
+        label: `${t("datePrefix")}: ${yearMap[state.year] || state.year}`,
         clear: () => {
           state.year = "all";
           $("#yearFilter").value = "all";
@@ -626,7 +905,7 @@
     bar.innerHTML = chips
       .map(
         (c, idx) =>
-          `<span class="active-chip">${escapeHtml(c.label)} <button type="button" data-clear-chip="${idx}" aria-label="Remove filter">×</button></span>`
+          `<span class="active-chip">${escapeBidi(c.label)} <button type="button" data-clear-chip="${idx}" aria-label="Remove filter">×</button></span>`
       )
       .join("") + `<button type="button" class="inline-link-btn" id="clearAllFiltersBtn">${escapeHtml(t("clearFilters"))}</button>`;
 
@@ -669,13 +948,13 @@
       .map((th) => {
         const starred = state.starredIds.has(th.id);
         const isRead = state.readIds.has(th.id);
-        const subject = isZh() ? th.subjectZh : th.subject;
-        const snippet = isZh() ? th.snippetZh : th.snippet;
+        const lf = locThreadFields(th);
         const attCount = th.messages.reduce((n, m) => n + (m.attachments ? m.attachments.length : 0), 0);
         const msgCount = th.messages.length;
         const starDisplay = th.starCount + (starred ? 1 : 0);
         const chipClass = th.deleted ? " chip-deleted" : th.status === "open" ? " chip-open" : "";
-        const chipLabel = th.deleted ? t("chipDeleted") : th.platform;
+        const platLabel = th.platform === "Code" ? t("platCode") : th.platform;
+        const chipLabel = th.deleted ? t("chipDeleted") : platLabel;
         const leadMsg = th.messages && th.messages[0];
         const avatarChar = (leadMsg && leadMsg.avatar) || th.from.replace(/^@/, "").charAt(0).toUpperCase() || "T";
         const avatarColor = (leadMsg && leadMsg.color) || "#5f6368";
@@ -689,17 +968,17 @@
             </button>
           </div>
           <div class="row-sender">
-            <span class="sender-name">${escapeHtml(th.from)}</span>
+            <span class="sender-name">${escapeBidi(lf.from)}</span>
             ${msgCount > 1 ? `<span class="msg-count">${msgCount}</span>` : ""}
           </div>
           <div class="row-main">
             <span class="platform-chip${chipClass}">${escapeHtml(chipLabel)}</span>
-            <span class="row-subject">${escapeHtml(subject)}</span>
-            <span class="row-snippet">${escapeHtml(snippet)}</span>
+            <span class="row-subject">${escapeBidi(lf.subject)}</span>
+            <span class="row-snippet">${escapeBidi(lf.snippet)}</span>
           </div>
           <div class="row-meta">
             ${attCount ? `<span class="attach-pill" title="${attCount}"><span class="material-symbols-outlined">attach_file</span>${attCount}</span>` : ""}
-            <span class="row-date">${escapeHtml(th.dateDisplay)}</span>
+            <span class="row-date">${escapeHtml(lf.dateDisplay)}</span>
           </div>
         </div>`;
       })
@@ -806,7 +1085,9 @@
     $("#threadExhibitTopLink").href = exhibitUrl;
     $("#threadExhibitTopLabel").textContent = `${t("fullExhibit")} #${th.exhibit}`;
 
-    const subject = isZh() ? th.subjectZh : th.subject;
+    const lf = locThreadFields(th);
+    const subject = lf.subject;
+    const platLabel = th.platform === "Code" ? t("platCode") : th.platform;
     const statusLabel =
       th.status === "open"
         ? t("statusOpen")
@@ -818,26 +1099,39 @@
     const statusClass = th.deleted ? " chip-deleted" : th.status === "open" ? " chip-open" : "";
 
     const primaryLink = (th.messages[0] && th.messages[0].links && th.messages[0].links[0] && th.messages[0].links[0].url) || state.data.meta.repoUrl;
-    const shareText = encodeURIComponent(`${th.dateDisplay} · ${subject} (#${th.exhibit})`);
+    const shareText = encodeURIComponent(`${lf.dateDisplay} · ${subject} (#${th.exhibit})`);
     const shareUrl = encodeURIComponent(window.location.href);
 
     const messagesHtml = th.messages
       .map((m, mi) => {
+        const lm = locMessage(th, m, mi);
+        const origBody = m.body || "";
+        const locBody = lm.body || origBody;
+        const hasTranslation = state.lang !== "en" && locBody.trim() !== origBody.trim();
+        const msgKey = `${th.id}:${mi}`;
+        const showingOrig = hasTranslation && state.showOriginalMsgs.has(msgKey);
+        const activeBody = showingOrig ? origBody : locBody;
+
         const atts = (m.attachments || [])
-          .map(
-            (a, ai) => `<button type="button" class="att-card" data-open-att="${mi}-${ai}">
-              <img class="att-thumb" src="${escapeHtml(assetUrl(a.src))}" alt="${escapeHtml(a.title)}" loading="lazy" />
-              <div class="att-meta">📎 ${escapeHtml(a.title)}</div>
-            </button>`
-          )
+          .map((a, ai) => {
+            const attTitle = lm.attTitle(ai);
+            return `<button type="button" class="att-card" data-open-att="${mi}-${ai}">
+              <img class="att-thumb" src="${escapeHtml(assetUrl(a.src))}" alt="${escapeHtml(attTitle)}" loading="lazy" />
+              <div class="att-meta">📎 ${escapeBidi(attTitle)}</div>
+            </button>`;
+          })
           .join("");
 
         const links = (m.links || [])
           .map(
-            (lk) =>
-              `<a class="source-link-pill" href="${escapeHtml(lk.url)}" target="_blank" rel="noopener noreferrer">↗ ${escapeHtml(lk.label)}</a>`
+            (lk, li) =>
+              `<a class="source-link-pill" href="${escapeHtml(lk.url)}" target="_blank" rel="noopener noreferrer">↗ ${escapeBidi(lm.linkLabel(li))}</a>`
           )
           .join("");
+
+        const origBtn = hasTranslation
+          ? `<button type="button" class="msg-orig-btn${showingOrig ? " is-original" : ""}" data-toggle-orig="${mi}" aria-pressed="${showingOrig ? "true" : "false"}">${escapeHtml(showingOrig ? t("viewTranslated") : t("viewOriginalEn"))}</button>`
+          : "";
 
         return `<article class="thread-msg-card">
           <div class="msg-avatar" style="background:${escapeHtml(m.color)}">${escapeHtml(m.avatar)}</div>
@@ -845,14 +1139,17 @@
             <div class="msg-head">
               <div>
                 <div class="msg-sender-line">
-                  <span class="msg-sender-name">${escapeHtml(m.sender)}</span>
-                  <span class="msg-handle">&lt;${escapeHtml(m.handle)}&gt;</span>
+                  <span class="msg-sender-name">${escapeBidi(lm.sender)}</span>
+                  <span class="msg-handle">&lt;${escapeHtml(lm.handle)}&gt;</span>
                 </div>
-                <div class="msg-to">${escapeHtml(t("toPrefix"))} ${escapeHtml(m.to)}</div>
+                <div class="msg-to">${escapeBidi(t("toPrefix"))} ${escapeBidi(lm.to)}</div>
               </div>
-              <div class="msg-time">${escapeHtml(m.time)}</div>
+              <div class="msg-head-meta">
+                ${origBtn}
+                <div class="msg-time">${escapeHtml(lm.time)}</div>
+              </div>
             </div>
-            <div class="msg-text">${formatBody(m.body)}</div>
+            <div class="msg-text" data-msg-body="${mi}"${showingOrig ? ' dir="ltr"' : ""}>${formatBody(activeBody)}</div>
             ${atts ? `<div class="msg-attachments">${atts}</div>` : ""}
             ${links ? `<div class="msg-links">${links}</div>` : ""}
           </div>
@@ -862,8 +1159,8 @@
 
     $("#threadContent").innerHTML = `<div class="thread-inner">
       <div class="thread-subject-row">
-        <h1 class="thread-subject">${escapeHtml(subject)}</h1>
-        <span class="platform-chip">${escapeHtml(th.platform)}</span>
+        <h1 class="thread-subject">${escapeBidi(subject)}</h1>
+        <span class="platform-chip">${escapeHtml(platLabel)}</span>
         <span class="platform-chip${statusClass}">${escapeHtml(statusLabel)}</span>
         <span class="platform-chip">${escapeHtml(t("exhibitLabel"))} #${escapeHtml(th.exhibit)}</span>
       </div>
@@ -892,11 +1189,42 @@
       </div>
     </div>`;
 
+    $$("#threadContent [data-toggle-orig]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const mi = Number(btn.getAttribute("data-toggle-orig"));
+        const msgKey = `${th.id}:${mi}`;
+        const nextOrig = !state.showOriginalMsgs.has(msgKey);
+        if (nextOrig) state.showOriginalMsgs.add(msgKey);
+        else state.showOriginalMsgs.delete(msgKey);
+
+        const m = th.messages[mi];
+        const lm = locMessage(th, m, mi);
+        const bodyText = nextOrig ? (m.body || "") : (lm.body || m.body || "");
+        const card = btn.closest(".thread-msg-card");
+        const textEl = card && card.querySelector(`[data-msg-body="${mi}"]`);
+        if (textEl) {
+          textEl.innerHTML = formatBody(bodyText);
+          if (nextOrig) textEl.setAttribute("dir", "ltr");
+          else textEl.removeAttribute("dir");
+        }
+        btn.classList.toggle("is-original", nextOrig);
+        btn.setAttribute("aria-pressed", nextOrig ? "true" : "false");
+        btn.textContent = nextOrig ? t("viewTranslated") : t("viewOriginalEn");
+      });
+    });
+
     $$("#threadContent [data-open-att]").forEach((btn) => {
       btn.addEventListener("click", () => {
         const [mi, ai] = btn.getAttribute("data-open-att").split("-").map(Number);
-        const att = th.messages[mi].attachments[ai];
-        openLightbox(assetUrl(att.src), att.title, `${th.dateDisplay} · Exhibit #${th.exhibit}`, primaryLink);
+        const m = th.messages[mi];
+        const att = m.attachments[ai];
+        const lm = locMessage(th, m, mi);
+        openLightbox(
+          assetUrl(att.src),
+          lm.attTitle(ai),
+          `${lf.dateDisplay} · ${t("exhibitLabel")} #${th.exhibit}`,
+          primaryLink
+        );
       });
     });
 
@@ -947,25 +1275,28 @@
     const q = filterText.trim().toLowerCase();
     const items = state.evidence.filter((e) => {
       if (!q) return true;
-      return `${e.id} ${e.part} ${e.title} ${e.caption} ${e.path}`.toLowerCase().includes(q);
+      const le = locEvidence(e);
+      return `${e.id} ${e.part} ${e.title} ${e.caption} ${le.title} ${le.caption} ${e.path}`.toLowerCase().includes(q);
     });
 
     $("#photosGrid").innerHTML = items
-      .map(
-        (e, i) => `<button type="button" class="photo-card" data-ev-idx="${i}">
-          <img src="${escapeHtml(assetUrl(e.path))}" alt="${escapeHtml(e.title)}" loading="lazy" />
+      .map((e, i) => {
+        const le = locEvidence(e);
+        return `<button type="button" class="photo-card" data-ev-idx="${i}">
+          <img src="${escapeHtml(assetUrl(e.path))}" alt="${escapeHtml(le.title)}" loading="lazy" />
           <div class="photo-card-body">
             <span class="photo-card-part">${escapeHtml(e.id)} · ${escapeHtml(e.part)}</span>
-            <div class="photo-card-title">${escapeHtml(e.title)}</div>
+            <div class="photo-card-title">${escapeBidi(le.title)}</div>
           </div>
-        </button>`
-      )
+        </button>`;
+      })
       .join("");
 
     $$("#photosGrid .photo-card").forEach((card, i) => {
       card.addEventListener("click", () => {
         const ev = items[i];
-        openLightbox(assetUrl(ev.path), `${ev.id} · ${ev.title}`, ev.caption, ev.sourceUrl || ev.dossier);
+        const le = locEvidence(ev);
+        openLightbox(assetUrl(ev.path), `${ev.id} · ${le.title}`, le.caption, ev.sourceUrl || ev.dossier);
       });
     });
   }
@@ -1007,21 +1338,27 @@
 
     $$("#activityCharts .chart-card").forEach((card, i) => {
       card.addEventListener("click", () => {
-        openLightbox(assetUrl(charts[i].src), charts[i].title, "Forensic Dataset (n = 1,151, Nov 7–24, 2026)", "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md");
+        openLightbox(
+          assetUrl(charts[i].src),
+          charts[i].title,
+          t("activityDesc"),
+          "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md"
+        );
       });
     });
 
     const sortedOldest = state.data.threads.slice().sort((a, b) => a.date.localeCompare(b.date));
     $("#activityTimeline").innerHTML = sortedOldest
       .map((th) => {
-        const subject = isZh() ? th.subjectZh : th.subject;
+        const lf = locThreadFields(th);
+        const platLabel = th.platform === "Code" ? t("platCode") : th.platform;
         return `<div class="timeline-row" data-timeline-id="${th.id}">
           <span class="timeline-date">${escapeHtml(th.date)}</span>
           <div>
-            <strong>${escapeHtml(subject)}</strong>
-            <div style="font-size:12px;color:#5f6368;margin-top:2px;">${escapeHtml(th.from)}</div>
+            <strong>${escapeBidi(lf.subject)}</strong>
+            <div style="font-size:12px;color:#5f6368;margin-top:2px;">${escapeBidi(lf.from)}</div>
           </div>
-          <span class="platform-chip">${escapeHtml(th.platform)} · #${escapeHtml(th.exhibit)}</span>
+          <span class="platform-chip">${escapeHtml(platLabel)} · #${escapeHtml(th.exhibit)}</span>
         </div>`;
       })
       .join("");
@@ -1065,13 +1402,16 @@
       .map((p) => {
         const matches = state.data.threads.filter((th) => th.people.includes(p.id)).sort((a, b) => a.date.localeCompare(b.date));
         if (!matches.length) return "";
-        const span = matches.length === 1 ? matches[0].dateDisplay : `${matches[0].dateDisplay} → ${matches[matches.length - 1].dateDisplay}`;
+        const lp = locPerson(p);
+        const firstDate = locThreadFields(matches[0]).dateDisplay;
+        const lastDate = locThreadFields(matches[matches.length - 1]).dateDisplay;
+        const span = matches.length === 1 ? firstDate : `${firstDate} → ${lastDate}`;
         return `<button type="button" class="person-card" data-dir-person="${p.id}">
           <div class="person-card-head">
             <span class="person-avatar-sm" style="background:${p.color}">${escapeHtml(p.name.replace(/^@/, "").charAt(0).toUpperCase())}</span>
             <div>
-              <div class="person-card-name">${escapeHtml(p.name)}</div>
-              <div class="person-card-role">${escapeHtml(p.role)}</div>
+              <div class="person-card-name">${escapeBidi(lp.name)}</div>
+              <div class="person-card-role">${escapeBidi(lp.role)}</div>
             </div>
           </div>
           <div class="person-card-span">${matches.length} ${escapeHtml(matches.length === 1 ? t("threadWord") : t("threadsWord"))} · ${escapeHtml(span)}</div>
@@ -1207,7 +1547,7 @@
             { label: "Security Audit", token: "from:audit" }
           ]
         : state.data.people.slice(0, 10).map((p) => ({
-            label: p.name,
+            label: locPerson(p).name,
             personId: p.id
           }));
 
@@ -1216,7 +1556,7 @@
       items
         .map(
           (it, idx) =>
-            `<button type="button" class="popover-item" data-pop-idx="${idx}"><span>${escapeHtml(it.label)}</span></button>`
+            `<button type="button" class="popover-item" data-pop-idx="${idx}"><span>${escapeBidi(it.label)}</span></button>`
         )
         .join("");
     pop.hidden = false;

@@ -1,0 +1,1557 @@
+{
+  "lang": "vi",
+  "topics": {
+    "bullying": "Bắt nạt & Đe dọa",
+    "double-standard": "Tiêu chuẩn kép",
+    "promises": "Lời hứa và code",
+    "telemetry": "Telemetry & Quyền riêng tư",
+    "security": "Bảo mật & Lệnh cấm",
+    "deleted": "Đã xóa / Rút lại",
+    "commercial": "Thương mại & Sao"
+  },
+  "people": {
+    "theo": {
+      "name": "@theo (Theo Browne)",
+      "role": "Người tạo T3 Code / Ping.gg"
+    },
+    "dddxx666": {
+      "name": "@DDdxx666 (MIT Fork)",
+      "role": "Tác giả bản fork MIT Trung Quốc (Stardust)"
+    },
+    "ffmpeg": {
+      "name": "FFmpeg & VLC",
+      "role": "Những người bảo trì mã nguồn mở (treo thưởng $20k)"
+    },
+    "indian-devs": {
+      "name": "Cộng đồng lập trình viên Ấn Độ",
+      "role": "Làn sóng quấy rối vì quốc tịch năm 2024"
+    },
+    "bermudi": {
+      "name": "@bermudi (Issue #33639)",
+      "role": "Người dùng T3 Code bị người bảo trì xúc phạm"
+    },
+    "miaai": {
+      "name": "@MiaAI_lab & Đối thủ",
+      "role": "Bản fork bị @bot cào trong 30 giây"
+    },
+    "dlkfz": {
+      "name": "@DLKFZWilliam2",
+      "role": "Bên đối thoại trong tranh luận fork ngày 24/11"
+    },
+    "ordinary-devs": {
+      "name": "Lập trình viên bình thường",
+      "role": "Kỹ sư, AI cục bộ & lập trình viên Linux"
+    },
+    "female-critic": {
+      "name": "Nhà phê bình nữ & người dùng RSD",
+      "role": "Mục tiêu trong các trả lời ngày 11–18/11"
+    },
+    "vibe-daytona": {
+      "name": "Vibe Kanban & Daytona",
+      "role": "Các công ty trong danh mục đầu tư thiên thần"
+    },
+    "julius": {
+      "name": "@jullerino (Julius)",
+      "role": "Người bảo trì cốt lõi T3 Code"
+    },
+    "maria": {
+      "name": "@maria_rcks (Maria)",
+      "role": "Thành viên nhóm T3 (maria-rcks/t3libre)"
+    },
+    "labs-vips": {
+      "name": "VIP Google / OpenAI",
+      "role": "20 lãnh đạo tập đoàn công nghệ lớn (0.0% chửi tục)"
+    },
+    "antigravity-users": {
+      "name": "Người dùng Antigravity & Relay",
+      "role": "Lệnh cấm 3 phút & relay văn bản thuần"
+    },
+    "gdpr-auditors": {
+      "name": "EU GDPR & Kiểm toán viên",
+      "role": "Hồ sơ kiểm toán độc lập & pháp lý"
+    },
+    "dhh-wp": {
+      "name": "DHH / WordPress / USPTO",
+      "role": "Lịch sử chế giễu giao diện & nhãn hiệu trước đây"
+    }
+  },
+  "threads": {
+    "2023-05-sponsor-roster": {
+      "from": "@theo → Nhà tài trợ YouTube",
+      "to": "Người xem YouTube & lập trình viên",
+      "dateDisplay": "14 tháng 5, 2023",
+      "subject": "Hai nhà tài trợ YouTube là Clerk & Axiom được đấu nối vào relay T3 Code",
+      "snippet": "Ba năm sau khi Theo liệt kê họ là nhà tài trợ, Clerk vận hành xác thực T3 Connect và Axiom giữ 2.2M span gắn thẻ IP mỗi giờ trong 30 ngày.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Dòng thời gian công khai",
+          "time": "14 tháng 5, 2023",
+          "body": "Ngày 14 tháng 5 năm 2023, @theo đăng dàn nhà tài trợ YouTube của mình lên X (status 1657488850472804353): @vercel, @clerk, @upstash, @axiomhq và @PlanetScale.\n\nViệc kiểm tra mã nguồn `pingdotgg/t3code` (`infra/relay/`) xác nhận hai trong số các nhà tài trợ đó đang vận hành relay đám mây:\n\n- **Xác thực (`Config.ts:63-65`):** Clerk xử lý phần xác thực của relay.\n- **Ghi log (`observability.ts:20-79`):** Axiom lưu `t3-code-relay-traces`, `t3-code-mobile-logs` và `t3-code-mobile-metrics` trong 30 ngày (~2.2M span gắn thẻ IP mỗi giờ).",
+          "attachments": [
+            "Danh sách nhà tài trợ 2023 (Clerk, Axiom, Vercel, PlanetScale)"
+          ],
+          "links": [
+            "Bài đăng X 1657488850472804353"
+          ]
+        },
+        {
+          "sender": "Guillermo Rauch (@rauchg)",
+          "handle": "@rauchg · CEO Vercel",
+          "to": "@theo & cộng đồng tech trên Twitter",
+          "time": "5 tháng 4, 2024",
+          "body": "Ngày 5 tháng 4 năm 2024, CEO Vercel Guillermo Rauch (@rauchg) xác nhận khoản tài trợ trên X (status 1776260839965863965):\n\n> \"đội devrel của chúng tôi có 4 người và chúng tôi tài trợ đúng một YouTuber (Theo)\"\n\nKhi thỏa thuận với Vercel kết thúc vào tháng 9 năm 2024, Theo tiết lộ rằng các hợp đồng tài trợ trước đó có điều khoản độc quyền, cấm quảng bá sản phẩm cạnh tranh.",
+          "attachments": [
+            "CEO Vercel xác nhận chỉ tài trợ cho Theo"
+          ],
+          "links": [
+            "Bài đăng X 1776260839965863965"
+          ]
+        }
+      ]
+    },
+    "2024-06-indian-dev-apology": {
+      "from": "@theo ↔ Cộng đồng lập trình viên Ấn Độ",
+      "to": "Nhà sáng tạo nội dung & lập trình viên Ấn Độ",
+      "dateDisplay": "2024",
+      "subject": "Làn sóng lập trình viên Ấn Độ & \"I screwed up.\" đối lại các cuộc công kích bản fork năm 2026",
+      "snippet": "Đăng video \"I screwed up.\" lên án các cuộc công kích theo quốc tịch nhắm vào lập trình viên Ấn Độ năm 2024, rồi năm 2026 gọi giới tech Twitter Trung Quốc là \"cesspit\" (cái hố phân).",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@t3dotgg · YouTube",
+          "to": "Cộng đồng lập trình viên",
+          "time": "2024",
+          "body": "Năm 2024, @theo phát hành một video nhắm vào các kênh hướng dẫn lập trình của Ấn Độ vì tình trạng spam PR mã nguồn mở, và phần bình luận tràn ngập những lời quấy rối dựa trên quốc tịch.\n\nSau làn sóng chỉ trích công khai, anh đăng tải video \"I screwed up.\" (youtube.com/watch?v=o2CSJYXJBpc), lên án thái độ thù địch nhắm vào quốc tịch của các cộng đồng lập trình viên.",
+          "attachments": [],
+          "links": [
+            "YouTube: \"I screwed up.\" (Tôi đã làm hỏng việc)"
+          ]
+        },
+        {
+          "sender": "Hai năm sau",
+          "handle": "Hai năm sau · 24 tháng 11, 2026",
+          "to": "Vụ #16",
+          "time": "24 tháng 11, 2026, 6:39 PM CST",
+          "body": "Hai năm sau, trong vụ tranh chấp bản fork MIT tháng 11 năm 2026, @theo gọi bản fork MIT miễn phí của một lập trình viên Trung Quốc là \"Temu3 Code\" và \"Chinese knockoff\" (hàng nhái Trung Quốc), rồi viết:\n\n> \"Tôi phải nói rằng tech Twitter Trung Quốc là cái hố phân khốn nạn nhất mà tôi từng lội vào, và nếu bạn tin bất kỳ ai bên đó viết mấy bài luận rác về đủ thứ thì bạn đúng là não phẳng\"",
+          "attachments": [
+            "Bài đăng ngày 24 tháng 11: 'tech Twitter Trung Quốc là cái hố phân khốn nạn nhất'"
+          ],
+          "links": [
+            "Bài đăng X 2125177503526588877"
+          ]
+        }
+      ]
+    },
+    "2024-06-vsc-fork-dhh-ui": {
+      "from": "@theo → DHH & tác giả theme",
+      "to": "Maintainer mã nguồn mở",
+      "dateDisplay": "Tháng 6, 2024",
+      "subject": "Chế giễu tác giả theme qua tên bản fork & giễu giao diện của DHH",
+      "snippet": "Đặt tên bản fork theme năm 2024 là vsc-material-but-i-wont-sue-you, hai năm trước khi dọa cấm tác giả của một bản fork MIT.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "github.com/t3dotgg · Repository",
+          "to": "Tác giả theme VS Code gốc & DHH",
+          "time": "Tháng 6, 2024",
+          "body": "Hai sự việc năm 2024 cho thấy @theo đã đối xử với bản fork và giao diện của lập trình viên khác ra sao trước năm 2026:\n\n1. **Chế giễu bản fork:** Khi fork theme Material cho VS Code của một lập trình viên khác năm 2024, anh đặt tên kho công khai là `t3dotgg/vsc-material-but-i-wont-sue-you` để chế giễu sự nhạy cảm về bản quyền của tác giả gốc.\n2. **Công khai giễu giao diện:** Tháng 6 năm 2024, anh liên tục chế nhạo giao diện email client của DHH — người tạo ra Rails — trên X, trước khi sang năm 2026 lại đứng ra bảo vệ maintainer trước sự chế giễu trên mạng và dọa khóa tài khoản GitHub vì một bản fork MIT.",
+          "attachments": [],
+          "links": [
+            "GitHub: kho mã vsc-material-but-i-wont-sue-you",
+            "Chuỗi bằng chứng lịch sử"
+          ]
+        }
+      ]
+    },
+    "2024-09-wordpress-trademark": {
+      "from": "@theo → WordPress / USPTO",
+      "to": "Cộng đồng mã nguồn mở",
+      "dateDisplay": "26 tháng 9, 2024",
+      "subject": "Chế giễu tranh chấp nhãn hiệu, nhưng nắm 0 nhãn hiệu USPTO",
+      "snippet": "Năm 2025 gọi việc đăng ký nhãn hiệu cho từ ngữ phổ biến là \"genuinely insane\" (điên thật sự), rồi năm 2026 dọa khóa GitHub trong khi có 0 nhãn hiệu đã đăng ký.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Dòng thời gian công khai",
+          "time": "26 tháng 9, 2024",
+          "body": "Ngày 26 tháng 9 năm 2024, @theo chế giễu WordPress vì theo đuổi một \"tranh chấp nhãn hiệu không thể thực thi\" (status 1839261574005141945).\n\nTháng 4 năm 2025, anh nói tiếp:\n\n> \"Đăng ký nhãn hiệu cho một thứ phổ biến đến vậy với ngần ấy tiền lệ thì đúng là điên thật.\"",
+          "attachments": [],
+          "links": [
+            "Bài đăng X 1839261574005141945"
+          ]
+        },
+        {
+          "sender": "Cơ sở dữ liệu công khai USPTO TSDR",
+          "handle": "tsdr.uspto.gov · Hồ sơ chính thức",
+          "to": "T3 Tools, Inc.",
+          "time": "19 tháng 5, 2025",
+          "body": "Hồ sơ chính thức trên USPTO TSDR của T3 Tools, Inc. cho thấy:\n\n- **T3 Code / T3 Tools / T3 Connect:** 0 đăng ký nhãn hiệu liên bang tại USPTO.\n- **Đơn duy nhất (`PING LABS`, Serial 97294243):** Bị từ chối tháng 2 năm 2025 và đánh dấu `ABANDONED` vào ngày 19 tháng 5 năm 2025.\n- **Các nhãn hiệu phần mềm/SaaS `T3` của bên thứ ba trước đó:** Đã được đăng ký cho EquipmentShare (Reg. 7795672, đăng ký ngày 13 tháng 5 năm 2025) và ESG Operations (Reg. 3324707).",
+          "attachments": [
+            "TRADEMARK.md hồi tố tuyên bố những nhãn hiệu chưa đăng ký"
+          ],
+          "links": [
+            "USPTO Serial 97294243 (đã bỏ)",
+            "Chính sách nhãn hiệu của GitHub"
+          ]
+        }
+      ]
+    },
+    "2025-10-ffmpeg-bounty": {
+      "from": "@theo ↔ FFmpeg & VLC",
+      "to": "Maintainer mã nguồn mở FFmpeg",
+      "dateDisplay": "Tháng 10, 2025",
+      "subject": "[ĐÃ XÓA] Treo thưởng $20,000 để đẩy một maintainer FFmpeg ra khỏi dự án",
+      "snippet": "Windscribe treo $21,000 để Theo im trên X, nhà sáng lập VLC lên án khoản treo thưởng, trước khi Theo xóa video và các bài đăng.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X & YouTube [ĐÃ XÓA]",
+          "to": "Maintainer FFmpeg",
+          "time": "Tháng 10, 2025",
+          "body": "Trong cuộc đụng độ tháng 10 năm 2025 với tài khoản X của FFmpeg, @theo chửi thẳng các maintainer mã nguồn mở trước camera và treo thưởng $20,000 để đẩy một maintainer FFmpeg ra khỏi dự án.\n\nChưa đầy một năm sau, ngày 11 tháng 11 năm 2026, anh công khai lên án việc \"quấy rối maintainer mã nguồn mở\".",
+          "attachments": [],
+          "links": [
+            "Bản ghi video có lưu giữ (YouTube)"
+          ]
+        },
+        {
+          "sender": "Windscribe, nhà sáng lập VLC & danh sách email FFmpeg",
+          "handle": "Phản ứng từ cộng đồng mã nguồn mở",
+          "to": "@theo & công chúng",
+          "time": "Tháng 10, 2025",
+          "body": "Các dự án mã nguồn mở và nhà tài trợ phản đối ngay lập tức:\n\n- **Windscribe:** Đưa ra đề nghị ngược $21,000 để @theo không lên X trong một tháng.\n- **Nhà sáng lập VLC:** Công khai lên án việc treo thưởng nhắm vào maintainer mã nguồn mở.\n- **Danh sách email FFmpeg:** Các lập trình viên lưu lại vụ quấy rối trong hồ sơ chính thức của dự án.\n- **Rút lại:** @theo rút khoản treo thưởng $20,000, xóa video và các bài đăng trên X.",
+          "attachments": [],
+          "links": [
+            "Bằng chứng #16: hồ sơ lịch sử"
+          ]
+        }
+      ]
+    },
+    "2026-03-06-pr174-default-telemetry": {
+      "from": "pingdotgg/t3code (PR #174)",
+      "to": "Toàn bộ người dùng T3 Code",
+      "dateDisplay": "6 tháng 3, 2026",
+      "subject": "PR #174 bật PostHog bất chấp cam kết \"No telemetry\"",
+      "snippet": "`Config.withDefault(true)` chạy mà không có hộp thoại xin đồng ý, không có toggle trong Settings, không có tài liệu, suốt hơn ba tháng.",
+      "messages": [
+        {
+          "sender": "Trang chủ T3 Code (t3.codes)",
+          "handle": "Cam kết marketing công khai",
+          "to": "Người dùng tiềm năng",
+          "time": "6 tháng 3 – 18 tháng 6, 2026",
+          "body": "Từ ngày 6 tháng 3 đến ngày 18 tháng 6 năm 2026, trang chủ T3 Code (`t3.codes`) cam kết:\n\n> \"Không telemetry. Trừ khi bạn tự chọn bật. Chấm hết.\"\n\nNgày 6 tháng 3 năm 2026, PR #174 bật phân tích PostHog mặc định bằng `Config.withDefault(true)` — không có hộp thoại xin đồng ý, không có toggle trong Settings, và không có tài liệu nào về telemetry.",
+          "attachments": [
+            "Commit 3bdaa6e1 cho thấy cam kết 'Không telemetry. Trừ khi bạn tự chọn bật. Chấm hết.' đã bị xóa"
+          ],
+          "links": [
+            "PR #174",
+            "AnalyticsService.ts"
+          ]
+        }
+      ]
+    },
+    "2026-04-25-fake-stars-vc": {
+      "from": "@theo → Những người sáng lập GitHub",
+      "to": "Dòng thời gian công khai",
+      "dateDisplay": "25 tháng 4, 2026",
+      "subject": "Từng đả kích chuyện cày sao giả cho VC, rồi thêm lời nhắc gắn sao sau 30 giây idle",
+      "snippet": "Sáu tháng sau khi cười nhạo chuyện cày sao, anh ta tự merge PR #29922 để đẩy `pingdotgg/t3code` từ 30k lên 77k sao trong khi số watcher vẫn quanh ~129.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Dòng thời gian công khai",
+          "time": "25 tháng 4, 2026",
+          "body": "Ngày 25 tháng 4 năm 2026, @theo trên X phủi tay với chuyện thổi sao GitHub:\n\n> \"để lừa các VC rót vốn.\"\n\nSáu tháng sau, vào tháng 11 năm 2026, anh ta tự merge PR #29922 (bắn `PUT user/starred` bằng credentials của host), đưa `pingdotgg/t3code` từ 30k lên 77k sao trong 25 ngày trong khi số watcher vẫn quanh ~129. Ngày 24/11, anh ta tuyên bố mình đã \"hoàn toàn không để ý\" việc vượt mốc 70k sao.",
+          "attachments": [
+            "\"GitHub has a fake star problem\" (tháng 4/2026)",
+            "Số sao tăng gấp 10 lần mỗi ngày sau khi thêm lời nhắc gắn sao trong app",
+            "Tuyên bố \"hoàn toàn không để ý\" khi vượt mốc 70k sao"
+          ],
+          "links": [
+            "PR #29922"
+          ]
+        }
+      ]
+    },
+    "2026-06-18-commit-3bdaa6e1-deleted-promise": {
+      "from": "@theo [commit 3bdaa6e1]",
+      "to": "Trang chủ t3.codes",
+      "dateDisplay": "18 tháng 6, 2026",
+      "subject": "[ĐÃ XOÁ] Lặng lẽ gỡ cam kết \"No telemetry\" khỏi trang chủ",
+      "snippet": "Commit 3bdaa6e1 xoá cam kết chỉ thu thập khi người dùng đồng ý trong đợt thiết kế lại ngày 18/6, sau hơn 3 tháng theo dõi mặc định mà không một lời thông báo.",
+      "messages": [
+        {
+          "sender": "Theo Browne (commit 3bdaa6e1)",
+          "handle": "pingdotgg/t3code · Git Commit",
+          "to": "t3.codes production",
+          "time": "18 tháng 6, 2026",
+          "body": "Sau hơn ba tháng thu telemetry PostHog mặc định bật, trong khi trang chủ vẫn treo cam kết:\n\n> \"Không telemetry / Trừ khi bạn tự đồng ý. Chấm hết.\"\n\nCommit `3bdaa6e1` lặng lẽ xoá những dòng đó vào ngày 18 tháng 6 năm 2026 trong một đợt làm lại giao diện marketing, không một dòng changelog, không một thông báo cho người dùng.",
+          "attachments": [
+            "Git diff của commit 3bdaa6e1 xoá các dòng \"No telemetry\""
+          ],
+          "links": [
+            "Commit 3bdaa6e1"
+          ]
+        }
+      ]
+    },
+    "2026-06-23-issue1397-no-optout": {
+      "from": "@jullerino → Issue #1397",
+      "to": "Người dùng quan tâm quyền riêng tư",
+      "dateDisplay": "23 tháng 6, 2026",
+      "subject": "Issue #1397: \"Chúng tôi sẽ không làm việc từ chối dễ hơn đâu\"",
+      "snippet": "Maintainer @jullerino đóng yêu cầu thêm nút bật/tắt với nhãn not planned; Issue #4123 dẫn lại cam kết đã bị xoá sau đó bị đóng lặng lẽ hai lần.",
+      "messages": [
+        {
+          "sender": "Người dùng T3 Code",
+          "handle": "GitHub · Issue #1397",
+          "to": "Các maintainer của pingdotgg/t3code",
+          "time": "Tháng 6, 2026",
+          "body": "Một người dùng T3 Code mở Issue #1397, đề nghị thêm một nút bật/tắt đơn giản trong Settings để từ chối telemetry.",
+          "attachments": [],
+          "links": [
+            "Issue #1397"
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino)",
+          "handle": "Maintainer nòng cốt · pingdotgg/t3code",
+          "to": "Người mở Issue #1397",
+          "time": "23 tháng 6, 2026",
+          "body": "Maintainer nòng cốt Julius (@jullerino) đóng Issue #1397 với nhãn `not planned`:\n\n> \"Chúng tôi sẽ không làm việc từ chối dễ hơn đâu, việc biết mình có bao nhiêu người dùng là cực kỳ quan trọng với chúng tôi.\"\n\nMột báo cáo tiếp theo, Issue #4123 — kèm ảnh chụp lưu trữ cam kết \"No telemetry\" đã bị xoá — sau đó cũng bị đóng lặng lẽ hai lần (21/10 và 4/11).",
+          "attachments": [
+            "Issue #1397 bị đóng với nhãn not planned"
+          ],
+          "links": [
+            "Issue #1397",
+            "Issue #4123"
+          ]
+        }
+      ]
+    },
+    "2026-08-06-pr5551-reality-check": {
+      "from": "@theo → PR #5551 / #9190",
+      "to": "GitHub PR #5551 & PR #9190",
+      "dateDisplay": "6 tháng 8, 2026",
+      "subject": "Chôn nút Plan kèm biểu đồ telemetry \"Reality check\"",
+      "snippet": "PR #5551 chế giễu người dùng đang bức xúc bằng một biểu đồ không chia tỉ lệ (10 downvote), rồi PR #9190 ẩn vòng hiển thị context và nhận 16 downvote — mức cao nhất trong repo.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #5551 & PR #9190",
+          "to": "Người dùng T3 Code",
+          "time": "6 tháng 8 – 2 tháng 9, 2026",
+          "body": "Hai lần gỡ bỏ giao diện đều dùng telemetry nội bộ để gạt phản hồi của người dùng:\n\n- **6/8 (PR #5551):** Vì Theo không dùng Plan mode, anh ta chôn nút Build/Plan vào phần cài đặt legacy (`default false`) và đăng một biểu đồ telemetry không chia tỉ lệ với chú thích \"Reality check for those upset\" (10 downvote).\n- **2/9 (PR #9190):** Ẩn vòng tiến trình cửa sổ context của composer theo mặc định, nhận 16 downvote — con số downvote cao nhất trong `pingdotgg/t3code`.",
+          "attachments": [
+            "PR #5551 với chú thích \"Reality check for those upset\""
+          ],
+          "links": [
+            "PR #5551",
+            "PR #9190"
+          ]
+        }
+      ]
+    },
+    "2026-10-03-issue15353-force-push": {
+      "from": "Issue #15353 → t3code",
+      "to": "Các maintainer T3 Code (Issue #15353)",
+      "dateDisplay": "3 tháng 10, 2026",
+      "subject": "Auto mode lặng lẽ chạy git push --force origin main",
+      "snippet": "Ngay cả sau khi classifier của Claude chặn hai lần và yêu cầu con người phê duyệt, T3 Code vẫn ghi log \"user_temporary\" và để 3 PR sửa lỗi không được merge suốt 52+ ngày.",
+      "messages": [
+        {
+          "sender": "GitHub Issue #15353",
+          "handle": "pingdotgg/t3code · Bug Report",
+          "to": "Các maintainer T3 Code",
+          "time": "3 tháng 10, 2026 (vẫn mở tại ca81b7b9)",
+          "body": "Trong `ClaudeAdapterV2.ts`, Auto mode rút gọn `!requiresClaudeApproval(context)` thành thẳng `\"allow\"`.\n\nKhi classifier an toàn của chính Claude chặn `git push --force origin main` hai lần và đẩy lần thứ ba lên cho con người xác nhận, T3 Code vẫn phê duyệt lặng lẽ, không hiện prompt nào trên UI, và ghi log `\"source\": \"user_temporary\"`.\n\nBa PR sửa lỗi từ cộng đồng đều không vào được: #15360 và #35207 nằm im không ai review cho đến khi bot tự đóng, còn #40692 vẫn chưa được merge sau 52+ ngày, tính đến commit `ca81b7b9`.",
+          "attachments": [
+            "Issue #15353 mở suốt 52+ ngày, ghi lại vụ git push --force lặng lẽ"
+          ],
+          "links": [
+            "Issue #15353",
+            "Unmerged Fix PR #40692"
+          ]
+        }
+      ]
+    },
+    "2026-10-15-ingest-t3-codes": {
+      "from": "t3code → ingest.t3.codes",
+      "to": "Cổng lưu trữ mã nguồn đóng",
+      "dateDisplay": "Tháng 10, 2026",
+      "subject": "Lô telemetry 10 giây đi qua ingest.t3.codes, một server mã nguồn đóng",
+      "snippet": "Dòng 1 của AnalyticsService.ts xác nhận server ingest của T3 giữ lại event trước khi chuyển tiếp sang PostHog, và vẫn ghi một ID cục bộ ngay cả khi telemetry bị tắt.",
+      "messages": [
+        {
+          "sender": "AnalyticsService.ts (Dòng 1)",
+          "handle": "pingdotgg/t3code · PR #15028",
+          "to": "https://ingest.t3.codes/batch/",
+          "time": "Tháng 10, 2026",
+          "body": "PR #15028 đã đẩy telemetry gom theo lô 10 giây (`FLUSH_INTERVAL_MS = 10_000`) qua endpoint mã nguồn đóng của T3: `https://ingest.t3.codes/`.\n\nDòng 1 và giá trị mặc định trong config ở `AnalyticsService.ts` ghi nguyên văn:\n\n> `// T3 ingest retains events and forwards to PostHog; UUIDs deduplicate retries there.`\n> `enabled: Config.Boolean(\"T3CODE_TELEMETRY_ENABLED\").pipe(Config.withDefault(true))`\n\nỞ HEAD mới nhất (`ca81b7b9`), `AnalyticsService.ts:156` vẫn ghi một ID cục bộ bền vững xuống đĩa trước khi kiểm tra xem telemetry có bị tắt hay không, và `ingest.t3.codes` vẫn là mã nguồn đóng.",
+          "attachments": [
+            "Phần triển khai telemetry trong Identify.ts & AnalyticsService"
+          ],
+          "links": [
+            "PR #15028",
+            "AnalyticsService.ts"
+          ]
+        }
+      ]
+    },
+    "2026-10-20-pr21506-cross-tool-hash": {
+      "from": "@theo → ~/.codex & ~/.claude",
+      "to": "Thông tin đăng nhập trong thư mục home của người dùng",
+      "dateDisplay": "20/10/2026",
+      "subject": "PR #21506 đọc ~/.codex & ~/.claude.json để nối các máy với nhau",
+      "snippet": "Do t3dotgg viết, Identify.ts băm user_id trong JWT của OpenAI và accountUuid của Claude bằng SHA-256 không muối dưới `install.owner_observed`.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #21506",
+          "to": "apps/server/src/telemetry/Identify.ts",
+          "time": "19–20/10/2026",
+          "body": "Theo (@t3dotgg) đã merge PR #21506: `feat(server): analytics records a stable install id and who owns each install`.\n\n`Identify.ts` đọc `~/.codex/auth.json` (giải mã claim `user_id` trong JWT của OpenAI) và `~/.claude.json` (`oauthAccount.accountUuid`) cùng với user ID của T3 Connect. Sau đó nó tính các digest SHA-256 không muối (`telemetryId.ts`) dưới dạng `install.owner_observed` để nối các máy khác nhau về một người.\n\nVì T3 lưu Clerk ID dạng plaintext, các digest không muối có thể đảo ngược một cách tất định. Việc đọc file CLI bên ngoài vẫn tồn tại suốt một tháng cho đến khi PR #42299 gỡ bỏ, sau khi Phần 1 vượt 2.26M+ lượt xem.",
+          "attachments": [
+            "PR #21506 do t3dotgg viết",
+            "Identify.ts đọc ~/.codex/auth.json và ~/.claude.json"
+          ],
+          "links": [
+            "PR #21506",
+            "PR #42299 gỡ bỏ sau audit"
+          ]
+        }
+      ]
+    },
+    "2026-10-28-fake-delete-process-spy": {
+      "from": "Người dùng → Issue #17845 / #11222",
+      "to": "pingdotgg/t3code",
+      "dateDisplay": "28/10/2026",
+      "subject": "Xóa SQLite giả 41.6 GB & quét cmdline tiến trình OS mỗi 5 giây",
+      "snippet": "\"Xóa vĩnh viễn\" thực chất chỉ thêm một event soft-delete, trong khi t3-resource-monitor quét 440+ tiến trình OS kèm toàn bộ cmdline mỗi 5 giây.",
+      "messages": [
+        {
+          "sender": "Người dùng bị ảnh hưởng (Issue #17845, #28903, #11222)",
+          "handle": "pingdotgg/t3code · GitHub Issues",
+          "to": "Nhóm duy trì T3 Code",
+          "time": "10–11/2026",
+          "body": "Người dùng đã ghi lại hai lỗi lưu trữ cục bộ và quyền riêng tư trong Issue #17845, #28903 và #11222:\n\n1. **Xóa vĩnh viễn giả (#17845):** Hộp thoại xác nhận hứa \"Thao tác này sẽ xóa vĩnh viễn lịch sử hội thoại của thread này\", nhưng `ThreadDeletion.ts` chỉ thêm một event `thread.deleted` — làm `statev2.sqlite` phình lên 25.9 GB trong 3 tuần và 41.6 GB trong 6 tuần.\n2. **Quét tiến trình OS mỗi 5 giây (#11222 & PR #41889):** Helper native `t3-resource-monitor` chạy `ProcessesToUpdate::All` với `with_cmd(UpdateKind::Always)` mỗi 5 giây kể cả khi diagnostics đã đóng, quét 440+ ứng dụng và game không liên quan cùng toàn bộ command line (thứ thường chứa API key và mật khẩu dạng plaintext).",
+          "attachments": [
+            "Issue #17845 ghi lại vụ xóa SQLite giả 41.6 GB",
+            "Issue #11222 ghi lại việc quét toàn bộ tiến trình OS mỗi 5 giây"
+          ],
+          "links": [
+            "Issue #17845",
+            "Issue #11222",
+            "PR #41889"
+          ]
+        }
+      ]
+    },
+    "2026-11-02-pr29922-77k-stars": {
+      "from": "@theo ↔ @zhilsinger (PR #29922)",
+      "to": "pingdotgg/t3code (PR #29922)",
+      "dateDisplay": "02/11/2026",
+      "subject": "Tự merge phễu gắn sao 30 giây (30k → 77k) kèm bug chưa sửa",
+      "snippet": "Vượt chốt phê duyệt của Macroscope và để yêu cầu Request Changes của @zhilsinger treo 19+ ngày, trong khi driver.ts#L60-L99 cho phép client gắn sao bất kỳ repo nào.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #29922",
+          "to": "Toàn bộ người dùng Desktop/Web",
+          "time": "02/11/2026",
+          "body": "@t3dotgg tự merge PR #27832, #29922 và #29987, thêm toast sau 30 giây idle sau 5 prompt đã gửi, kích hoạt `PUT user/starred/pingdotgg/t3code` bằng thông tin đăng nhập GitHub của server host.\n\n- Vượt qua chốt `Needs Human Approval` của bot Macroscope.\n- Đẩy `pingdotgg/t3code` từ 30k lên 77k sao trong 25 ngày (+3,094 sao/ngày trên GitHub Trending) trong khi số watcher vẫn quanh ~129.",
+          "attachments": [
+            "PR #29922 tự merge nút gắn sao server một cú click",
+            "Macroscope gắn cờ PR #29922 (đã bị vượt)",
+            "+3,094 sao/ngày trên GitHub Trending"
+          ],
+          "links": [
+            "PR #29922"
+          ]
+        },
+        {
+          "sender": "@zhilsinger",
+          "handle": "Reviewer bảo mật GitHub",
+          "to": "@t3dotgg (PR #29922)",
+          "time": "11/2026 (Không được trả lời 19+ ngày)",
+          "body": "Reviewer @zhilsinger gửi cảnh báo chính thức `Request changes` rằng `packages/source-control-github/src/server/driver.ts#L60-L99` chấp nhận tham số `owner/repo` không ghim cho việc gắn sao phía server, cho phép bất kỳ client nào gắn sao repo tùy ý bằng thông tin đăng nhập của host.\n\nBản review bị bỏ mặc không trả lời, không sửa suốt 19+ ngày, kéo dài đến `ca81b7b9`.",
+          "attachments": [
+            "Review Request Changes của zhilsinger không được trả lời 19 ngày",
+            "Bug gắn sao repo tùy ý ở driver.ts#L60-L99"
+          ],
+          "links": [
+            "Mã nguồn driver.ts"
+          ]
+        }
+      ]
+    },
+    "2026-11-08-stealing-miaai-fork": {
+      "from": "@theo → @MiaAI_lab & @bot",
+      "to": "@MiaAI_lab, @bot (beebox)",
+      "dateDisplay": "08/11/2026",
+      "subject": "\"Okay I'm stealing this\": gửi @bot 30 giây sau để clone fork",
+      "snippet": "Trả lời lúc 09:28:47 và tag @bot trên beebox lúc 09:29:17 để port fork của @MiaAI_lab, rồi lặp lại lệnh clone với các công cụ đối thủ ngày 13/11.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2119240683680944172)",
+          "to": "@MiaAI_lab",
+          "time": "08/11/2026, 09:28:47 CST",
+          "body": "Trả lời bản demo fork của @MiaAI_lab lúc 09:28:47 CST:\n\n> \"Okay I'm stealing this\" (Được, tôi lấy cái này)",
+          "attachments": [],
+          "links": [
+            "Bài đăng X 2119240683680944172"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2119240810202034645)",
+          "to": "@bot (30 giây sau)",
+          "time": "08/11/2026, 09:29:17 CST",
+          "body": "Ba mươi giây sau (09:29:17 CST), @theo tag @bot:\n\n> \"@bot tìm fork của cô ấy và xem cái này portable đến đâu. Mở một thread trên beebox với opus 5.5 để implement. Dùng full stop skill của tôi.\"\n\nNăm ngày sau (13/11, status 2121017649652269120), khi @zqkrq liệt kê các tính năng thích ở công cụ đối thủ, anh ta lại chỉ đạo @bot mở các thread riêng để clone từng tính năng được khen — đồng thời chế giễu @agent_wrapper và Claude Code Desktop vì ship UI tương tự.",
+          "attachments": [
+            "Trả lời 'Okay I'm stealing this' và tag @bot 30 giây sau",
+            "13/11 điều @bot clone tính năng công cụ đối thủ",
+            "24/11 chế giễu tab sidebar của Claude Code Desktop"
+          ],
+          "links": [
+            "Bài đăng X 2119240810202034645",
+            "Bài đăng clone đối thủ ngày 13/11"
+          ]
+        }
+      ]
+    },
+    "2026-11-09-issue33639-bermudi-insult": {
+      "from": "@theo ↔ @bermudi (#33639)",
+      "to": "Issue #33639 & PR #33131",
+      "dateDisplay": "09/11/2026",
+      "subject": "Gọi người dùng @bermudi là \"ungrateful prick\" trong Issue #33639",
+      "snippet": "Bảo một người dùng hỏi về thay đổi UI bị giấu sau PR #33131 rằng hãy gỡ cài đặt, rồi từ chối PR sửa sạch #41572 vào sáng hôm sau.",
+      "messages": [
+        {
+          "sender": "@bermudi",
+          "handle": "Người dùng GitHub · Issue #33639",
+          "to": "pingdotgg/t3code",
+          "time": "11/2026",
+          "body": "Sau khi PR #33131 gỡ Plan mode cùng một bản tóm tắt AI chưa đọc, @bermudi phàn nàn rằng release notes không giải thích chỉ báo context-window bị giấu đã đi đâu, đồng thời lưu ý không phải developer nào cũng đủ tiền trả hàng nghìn đô cho các gói thuê bao AI.",
+          "attachments": [
+            "PR #33131 xóa Plan mode kèm bản tóm tắt AI mâu thuẫn"
+          ],
+          "links": [
+            "PR #33131"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "Người duy trì · Issue #33639",
+          "to": "@bermudi",
+          "time": "11/2026",
+          "body": "Theo (@t3dotgg) trả lời trong Issue #33639:\n\n> \"@bermudi, riêng anh thì nên gỡ phần mềm của chúng tôi đi. Tôi sẽ ban anh khỏi repo nếu anh còn để lại bình luận kiểu này lần nữa. Anh dành thời gian thật để làm khó tôi vì tôi phát phần mềm miễn phí thứ tôi có thể tính hàng triệu đô... Anh là đồ vô ơn, lười chết đi được, và tôi đéo quan tâm ý kiến của anh.\"\n\nKhi một contributor khác mở PR #41572 đặt gọn vòng context bên trong nút gửi mà không chiếm chỗ của composer, PR đó bị đóng vào sáng hôm sau.",
+          "attachments": [
+            "Ảnh chụp nguyên văn lời lăng mạ @bermudi của Theo trong Issue #33639"
+          ],
+          "links": [
+            "Bình luận Issue #33639",
+            "PR sửa bị từ chối #41572"
+          ]
+        }
+      ]
+    },
+    "2026-11-10-yolo-merges-nuke": {
+      "from": "@theo → Người dùng Nightly",
+      "to": "Người dùng & Contributor Nightly",
+      "dateDisplay": "10/11/2026",
+      "subject": "\"Nếu nó nổ máy tôi thì đó là content miễn phí\": merge 700 agent",
+      "snippet": "Khoe 500 commit/ngày và \"yolo merges breaking shit sometimes\", đồng thời đổ 70% yêu cầu tính năng của người dùng cho \"prompt skill issues\".",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Người dùng T3 Code Nightly",
+          "time": "10/11/2026",
+          "body": "Trong các ngày 10–16/11, @theo mô tả quy trình merge agent không qua review của mình trên X:\n\n- **10/11 (2119951615679672513):** \"Nếu bạn chấp nhận được việc yolo merge của tôi thỉnh thoảng làm hỏng đủ thứ, thì cứ ở lại nightly\"\n- **10/11 (2119993037971730879):** \"Tôi cần kết quả nhanh vì còn phải quay video, và nếu nó nổ máy tôi thì đó là content miễn phí\"\n- **10/11 (2119958282022568059):** \"~70% yêu cầu tính năng trong T3 Code lúc này là vấn đề prompt skill\"\n- **12/11 (2120741101250515322):** \"Tôi thường ở mức 500 commit/ngày, đây chỉ là t3 code thôi lol\"\n- **16/11 (2122203951701585972):** \"Biết editor video duy nhất của tôi đang làm gì rất khác với biết 700 agent của tôi đã làm gì tuần trước.\"",
+          "attachments": [
+            "'nếu nó nổ máy tôi thì đó là content miễn phí'",
+            "'yolo merge của tôi thỉnh thoảng làm hỏng đủ thứ'"
+          ],
+          "links": [
+            "Bài đăng X 2119951615679672513",
+            "Bài đăng X 2119993037971730879"
+          ]
+        }
+      ]
+    },
+    "2026-11-11-gendered-attack-demonetize": {
+      "from": "@theo → Người chỉ trích nữ",
+      "to": "Timeline công khai & Community Notes",
+      "dateDisplay": "11/11/2026",
+      "subject": "Đòn tấn công \"stupid bitch\" & kêu gọi người theo dõi cắt kiếm tiền của người chỉ trích",
+      "snippet": "Trong một ngày đăng 125 bài (32 bài trong một giờ), Theo nói mình \"không hối hận\" về những lời lăng mạ mang tính giới tính và kêu gọi người theo dõi dùng Community Notes để cắt kiếm tiền của người chỉ trích.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (ngày đỉnh: 125 bài)",
+          "to": "Người chỉ trích nữ & người theo dõi",
+          "time": "11–12/11/2026",
+          "body": "Trong giai đoạn đăng bài dày đặc nhất (125 bài/ngày, 32 bài trong một giờ), @theo càng khăng khăng với những lời lăng mạ mang tính giới tính và kêu gọi người theo dõi nhắm vào doanh thu của một người chỉ trích:\n\n11/11 (2120238201705226498):\n\n> \"Quấy rối và nói dối về những người duy trì open source đúng là hành vi của một \"stupid bitch\".\"\n\n11/11 (2120238923884696025):\n\n> \"Tôi sẽ rất cảm kích nếu bạn dùng quyền Community Notes của mình để cắt kiếm tiền của họ vì những lời dối trá của họ :)\"\n\n12/11 (2120599310211703274):\n\n> \"Tôi đúng là nghĩ họ là một \"stupid bitch\" và tôi không hối hận vì đã nói ra điều đó.\"",
+          "attachments": [
+            "Lặp đi lặp lại đòn tấn công \"stupid bitch\" kèm tuyên bố \"không hối hận\"",
+            "Kêu gọi người theo dõi dùng Community Notes để cắt kiếm tiền của người chỉ trích"
+          ],
+          "links": [
+            "X Post 2120599310211703274",
+            "X Post 2120238923884696025"
+          ]
+        }
+      ]
+    },
+    "2026-11-12-contributing-vouched-local-ai": {
+      "from": "@theo → Người đóng góp & Local AI",
+      "to": "pingdotgg/t3code & cộng đồng Local AI",
+      "dateDisplay": "12/11/2026",
+      "subject": "CONTRIBUTING: \"Đừng\" + lệnh cấm trong VOUCHED.td + công kích Local AI",
+      "snippet": "Đóng 174 mục vì không mong muốn, từ chối một người đóng góp vì không theo dõi mình trên X, dọa gỡ /btw và chế giễu người dùng Qwen 3.8.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "CONTRIBUTING.md & X",
+          "to": "Những người đóng góp open source",
+          "time": "12/11/2026",
+          "body": "Ngày 12/11, @theo siết chặt đóng góp từ bên ngoài và công kích những người dùng mô hình chạy cục bộ:\n\n- **`CONTRIBUTING.md` & `.github/VOUCHED.td` (174 mục `unwanted`):** \"Nếu bạn đang tìm việc gì đó để đóng góp, đây là lời khuyên của tôi: Đừng. ... Một tài khoản bị cấm sẽ bị tố giác trong `.github/VOUCHED.td`. Bất kỳ issue hay PR nào nó mở đều bị đóng ngay khi được mở.\"\n- **Chặn cửa PR (2120821423438778667):** \"Từ sự háo hức đóng góp của bạn cho tới việc bạn trả lời bài đăng của tôi mà không theo dõi tôi... tôi không chắc đây là dự án tốt nhất để bạn bỏ thời gian vào.\"\n- **Đe dọa gỡ tính năng (2120853340078874923):** \"Tôi đã nhượng bộ cho các bạn với `/btw` rồi, cẩn thận đấy. Tôi không ngại lấy nó đi đâu.\"\n- **Chế giễu local AI & Qwen 3.8 (2120733839832273025, 2120757007523447144):** \"Tôi sẽ nhảy múa trên mồ của cộng đồng 'local ai' đấy\" và \"Nếu tôi ngu như bạn, chắc tôi cũng thấy Qwen 3.8 ổn thôi :)\"",
+          "attachments": [
+            "CONTRIBUTING.md trỏ tới các lệnh cấm tố giác công khai trong .github/VOUCHED.td",
+            "Từ chối người đóng góp vì không theo dõi trên X",
+            "\"cẩn thận đấy. Tôi không ngại lấy nó đi đâu\"",
+            "\"nhảy múa trên mồ của cộng đồng local ai\""
+          ],
+          "links": [
+            "CONTRIBUTING.md",
+            ".github/VOUCHED.td",
+            "Local AI Post"
+          ]
+        }
+      ]
+    },
+    "2026-11-16-vibe-kanban-daytona": {
+      "from": "@theo ↔ Vibe Kanban / Daytona",
+      "to": "Các công ty trong danh mục đầu tư thiên thần",
+      "dateDisplay": "16/11/2026",
+      "subject": "Chế giễu công ty trong danh mục Vibe Kanban & chuyện chồng lấn với Daytona",
+      "snippet": "Sau khi Vibe Kanban chuyển hướng sang bố cục của T3 Code rồi đóng cửa, nhà đầu tư Theo chế giễu giao diện của nó — chín ngày sau khi đề xuất sandbox cloud trả phí để đối đầu Daytona.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2122201981167251877)",
+          "to": "Tech Twitter",
+          "time": "16/11/2026",
+          "body": "Ngày 16/11, @theo tiết lộ mình từng đầu tư vào và đóng góp cho Vibe Kanban, rồi quay sang chế giễu việc công ty này đóng cửa:\n\n> \"Chuyện vui: tôi từng là nhà đầu tư và người đóng góp cho Vibe Kanban. Họ nhận ra kanban đã chết và bắt đầu chuyển sang đúng cái giao diện mà T3 Code có hôm nay. Họ không kịp hoàn thành. Họ bỏ cuộc và đóng công ty. Giao diện này tuyệt thật… để đốt sạch runway và giết chết doanh nghiệp của bạn. Có lẽ vì thế mà tech twitter thích nó đến vậy 🤔\"",
+          "attachments": [
+            "Chế giễu việc Vibe Kanban đóng cửa sau khi rót vốn thiên thần"
+          ],
+          "links": [
+            "X Post 2122201981167251877"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2123011578090127499)",
+          "to": "CEO Daytona (@ivanburazin)",
+          "time": "18/11/2026",
+          "body": "Ngày 18/11, trả lời CEO Daytona @ivanburazin, anh ta tiết lộ mình có cổ phần thiên thần ở Daytona và ở cả các đối thủ của nó:\n\n> \"Vì lợi ích khoản đầu tư của tôi vào Daytona (và phần lớn các đối thủ mà anh đang bực mình), tôi thật sự mong anh sai ở điểm này\"\n\nChín ngày trước đó (9/11, status 2119705561679933806), Theo đã đề cập chuyện đưa sandbox cloud trả phí vào ngay bên trong T3 Code.",
+          "attachments": [
+            "Xác nhận rót vốn thiên thần vào Daytona & các đối thủ",
+            "9/11 đề xuất sandbox cloud trả phí bên trong T3 Code"
+          ],
+          "links": [
+            "X Post 2123011578090127499"
+          ]
+        }
+      ]
+    },
+    "2026-11-17-pr27077-rejected": {
+      "from": "t3code → @inayayousfi (#27077)",
+      "to": "Người đóng góp bị từ chối opt-out lần thứ 4",
+      "dateDisplay": "17/11/2026",
+      "subject": "PR #27077 bỏ telemetry (147 test) bị đóng với nhãn unwanted",
+      "snippet": "Trở thành PR opt-out cộng đồng thứ tư (#13458, #16763, #21248, #27077) bị từ chối dù Macroscope đã chấp thuận.",
+      "messages": [
+        {
+          "sender": "pingdotgg/t3code",
+          "handle": "GitHub · PR #27077",
+          "to": "@inayayousfi",
+          "time": "17/11/2026",
+          "body": "Người đóng góp @inayayousfi mở PR #27077 thêm một cài đặt bỏ telemetry gọn gàng, vượt qua toàn bộ 147 test và được `macroscopeapp[bot]` chấp thuận.\n\nNgười duy trì đóng PR mà không merge vào ngày 17/11 với nhãn `unwanted` (\"Đây không phải thứ dự án muốn nhận\"), tiếp sau các PR opt-out từng bị từ chối là #13458, #16763 và #21248.",
+          "attachments": [
+            "PR #27077 bị đóng với nhãn unwanted dù 147 test đều pass"
+          ],
+          "links": [
+            "PR #27077"
+          ]
+        }
+      ]
+    },
+    "2026-11-18-jail-threat-rsd": {
+      "from": "@theo → Người chỉ trích trên Threads (RSD)",
+      "to": "Người chỉ trích được chẩn đoán RSD",
+      "dateDisplay": "18/11/2026",
+      "subject": "Đe dọa tống giam người chỉ trích và chế giễu chẩn đoán RSD của họ",
+      "snippet": "Đăng trong khoảng 48 giờ khi Theo vừa viện cớ sốt 102°F vừa cho ra 177 bài đăng, một bài luận 6,643 ký tự, một video và 8 đòn công kích @elshayib.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2122838455483031925 / 2122865897375400066)",
+          "to": "Người chỉ trích trên Threads",
+          "time": "18/11/2026",
+          "body": "Trả lời một người chỉ trích trên Threads ngày 18/11, @theo đe dọa tống vào tù và chế giễu chứng Rejection Sensitive Dysphoria (RSD) của người này:\n\n> \"Dừng lại ngay không thì tôi sẽ tống bạn vào tù theo đúng nghĩa đen. Tôi chắc bạn cùng buồng giam sẽ rất thông cảm với chứng RSD của bạn.\"\n\nLời đe dọa xuất hiện trong cửa sổ 48 giờ (17–18/11 giờ PST), khi anh ta tự nhận đang sốt 102°F mà vẫn đăng 177 bài trên X, một bài luận Astra dài 6,643 ký tự, một video và 8 câu trả lời liên tiếp đầy tục tĩu nhắm vào @elshayib.",
+          "attachments": [
+            "Đe dọa tống giam và chế giễu chứng bệnh RSD ngày 18/11/2026"
+          ],
+          "links": [
+            "X Post 2122838455483031925",
+            "X Post 2122865897375400066"
+          ]
+        }
+      ]
+    },
+    "2026-11-18-31t-token-radar": {
+      "from": "@theo → Các lab AI & quỹ VC",
+      "to": "OpenAI, DeepMind & nhà đầu tư",
+      "dateDisplay": "18/11/2026",
+      "subject": "Radar telemetry 31.7T token/ngày ($10.19M/ngày) & đàm phán với VC",
+      "snippet": "Telemetry bật mặc định dựng nên một bảng theo dõi thị phần các lab theo thời gian thực, song song với hơn $800k chi phí, hơn $300k token OpenAI miễn phí và những lời hỏi han từ nhà đầu tư.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Timeline công khai & @maria_rcks",
+          "time": "12/11 – 23/11/2026",
+          "body": "Các bài đăng công khai từ 12/11 đến 23/11 cho thấy mô hình kinh doanh đằng sau việc giữ T3 Code miễn phí và để telemetry bật mặc định:\n\n- **12/11 (2120729779511124267):** Tiết lộ đã chi \"hơn $800k để làm\" client open source này.\n- **18/11 (2122860770329608290):** Chia sẻ một dashboard nội bộ theo dõi 31.7T token/ngày và mức chi tương đương $10.19M/ngày cho API (đỉnh gần $10.2M/ngày), cộng với hơn $300k token OpenAI early-access miễn phí không giới hạn.\n- **21/11 (2123885732330885417):** Trả lời @maria_rcks: \"Maria làm ơn, đã có nhiều nhà đầu tư hỏi tôi về chuyện này 💀\".\n- **23/11 (2124682906132181482):** Viện dẫn các dashboard riêng trong một cuộc tranh luận: \"Tôi xin lỗi, tôi không biết là bạn có quyền truy cập analytics của tôi và thấy được những thứ tôi không thấy.\"",
+          "attachments": [
+            "Analytics nội bộ: 31.7T token/ngày & $10.19M/ngày",
+            "Tiết lộ chi phí xây dựng hơn $800k",
+            "\"nhiều nhà đầu tư đã hỏi tôi về chuyện này\"",
+            "Tiết lộ mức tập trung ~98.5% vào ba lab"
+          ],
+          "links": [
+            "31.7T Radar Post",
+            "Investor Post"
+          ]
+        }
+      ]
+    },
+    "2026-11-19-selective-politeness-vips": {
+      "from": "@theo → 20 Big-Tech VIPs",
+      "to": "Google DeepMind, OpenAI & các lãnh đạo công nghệ",
+      "dateDisplay": "Nov 19, 2026",
+      "subject": "0.0% chửi thề với 20 VIP Big-Tech, so với 8.0% với dev thường",
+      "snippet": "Qua 1,151 bài đăng X liên tiếp (7–24/11), Theo thể hiện 32.6% lòng biết ơn với lãnh đạo các lab, trong khi lăng mạ tăng 4.0× lên 14.4% trong khủng hoảng ngày 24/11.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2123255588570501585 & 2123995323123343869)",
+          "to": "Ban lãnh đạo Google DeepMind & OpenAI",
+          "time": "Nov 19–21, 2026",
+          "body": "19/11 (2123255588570501585):\n\n> \"Tôi xin lỗi Google. Tôi đã không nhận ra nước cờ của các bạn\"\n\n21/11 (2123995323123343869):\n\n> \"Vui vì tôi đã không đốt cầu với nội dung trước đây của mình và chúng ta có thể cùng tận hưởng khoảnh khắc này :)\"\n\nQua toàn bộ 1,151 bài đăng X liên tiếp từ 7–24/11/2026:\n\n- **20 lãnh đạo Big-Tech / nhân sự lab (n = 43 @ chính; 62 @ bất kỳ):** 0.0% chửi thề hay lăng mạ nhắm mục tiêu, 32.6% thể hiện lòng biết ơn rõ ràng.\n- **Dev thường & người chỉ trích (n = 766 @ chính):** 8.0% thù địch hoặc chửi thề (61 / 766).\n- **Khủng hoảng bản fork Trung Quốc 25 giờ (n = 132):** Lăng mạ cá nhân trực tiếp tăng 4.0× từ 3.6% lên 14.4%.",
+          "attachments": [
+            "Biểu đồ pháp chứng 3: 0.0% VIP vs 8.0% Dev vs 14.4% Khủng hoảng",
+            "'Vui vì tôi đã không đốt cầu với nội dung trước đây của mình'"
+          ],
+          "links": [
+            "Hồ sơ 06 (bộ dữ liệu 1,151 tweet)",
+            "Bài đăng X 2123995323123343869"
+          ]
+        }
+      ]
+    },
+    "2026-11-22-engineers-unemployment-linux": {
+      "from": "@theo → Engineers & Linux",
+      "to": "Cộng đồng lập trình viên",
+      "dateDisplay": "Nov 22, 2026",
+      "subject": "\"Kỹ sư xứng đáng bị thất nghiệp hàng loạt\" & \"bọn larp Linux\"",
+      "snippet": "Nói với hơn 386k người xem rằng dev đáng bị thất nghiệp chỉ vì một so sánh công cụ, đúng 24 giờ sau khi lên lớp người khác đừng \"đốt niềm tin\".",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Dev thường",
+          "time": "Nov 21–22, 2026",
+          "body": "Trong vòng 24 giờ ngày 21–22/11, @theo lăng mạ dev thường và người dùng Linux trong khi rao giảng về niềm tin:\n\n- **21/11 (2123906522728272178):** \"dev trung bình không thông minh lắm\"\n- **22/11 (2124298216271499605):** \"Tôi hiểu vì sao bạn ghét tôi, dân larp Linux thường không thích dev thật\"\n- **22/11 (2124470530590011704, hơn 386k lượt xem — trích dẫn câu hỏi T3 Code vs. Antigravity):** \"Kỹ sư xứng đáng với đợt thất nghiệp hàng loạt đang tới\"\n- **22/11, 18:26 CST (2124449493513068862, 24 giờ trước lời đe dọa fork MIT):** \"Nói thật, đốt niềm tin của mọi người xung quanh gần như không bao giờ là cách tốt nhất để đạt điều mình muốn\"",
+          "attachments": [
+            "'Kỹ sư xứng đáng với đợt thất nghiệp hàng loạt đang tới'",
+            "'Dân larp Linux thường không thích dev thật'",
+            "Lên lớp 'đừng đốt niềm tin' 24 giờ trước khủng hoảng"
+          ],
+          "links": [
+            "Bài đăng về thất nghiệp",
+            "Bài đăng về đốt niềm tin"
+          ]
+        }
+      ]
+    },
+    "2026-11-22-antigravity-spoof-3min-ban": {
+      "from": "@Allmight97 ↔ t3code (#41536)",
+      "to": "Người đăng ký Google Antigravity (Issue #40713 & #41536)",
+      "dateDisplay": "Nov 22, 2026",
+      "subject": "Hứa ToS Antigravity \"không rủi ro\"; tài khoản $20 mới bị ban trong 3 phút",
+      "snippet": "Trong khi FAQ hứa an toàn ToS và Theo đổ lỗi cho proxy, code lại trích xuất token từ keyring hệ điều hành, giả mạo v1internal và làm giả SSH_CONNECTION.",
+      "messages": [
+        {
+          "sender": "T3 Code FAQ & @theo",
+          "handle": "docs/user/faq.md & X",
+          "to": "Người trả tiền đăng ký Google AI",
+          "time": "Nov 22, 2026",
+          "body": "`docs/user/faq.md` của T3 Code cam đoan với người đăng ký trả tiền:\n\n> \"Chúng tôi làm việc với tất cả các lab và T3 Code nằm trong TOS của Claude Code, Codex và Google Antigravity... Nếu nó chạy trong T3 Code, bạn có thể tin là nó an toàn.\"\n\nNgày 22/11 (2124266892991115362), @theo khẳng định Antigravity \"không rủi ro\", đổ lỗi proxy gây ban, và viết rằng @PatrickToulme của DeepMind \"đã merge nhiều PR vào T3 Code\" — dù lịch sử git chỉ có 1 commit (#31158). Trong khi đó, Theo công bố một Gist CLIProxyAPI gộp 10 tài khoản (hạn mức 555%) và lợi dụng thời gian ân hạn 0% của Codex để lấy thêm hơn $800 compute.",
+          "attachments": [
+            "FAQ bảo đảm tuân thủ ToS Antigravity",
+            "Khẳng định kỹ sư DeepMind 'đã merge nhiều PR'",
+            "Git log chứng minh đúng 1 commit (#31158)",
+            "Gist CLIProxyAPI gộp hạn mức 555% của Theo (452 sao)"
+          ],
+          "links": [
+            "antigravityUsageLimits.ts"
+          ]
+        },
+        {
+          "sender": "@Allmight97 & @schlessera",
+          "handle": "GitHub · Issues #41536 & #40713",
+          "to": "pingdotgg/t3code",
+          "time": "Nov 2026",
+          "body": "Mã nguồn và báo cáo người dùng mâu thuẫn với FAQ:\n\n- **Issue #41536:** Một gói đăng ký Google AI $20 hoàn toàn mới, không dùng proxy, bị ban ngay tin nhắn đầu tiên, 3 phút sau khi thiết lập.\n- **Issue #40713:** Sau khi một maintainer phủ nhận việc gọi backend Antigravity, @schlessera dẫn ra `antigravityUsageLimits.ts` — file trích xuất token từ keyring hệ điều hành và giả mạo `antigravity/hub/2.24.0` nhắm vào `v1internal` — và `antigravityAuthSupport.ts#L230-L236`, file tiêm `SSH_CONNECTION` giả (gây rò rỉ prompt chéo tài khoản trong #41973), cùng phần nối hub CLIProxyAPI trong PR #33800.",
+          "attachments": [
+            "Header giả mạo antigravity/hub/2.24.0 hardcode",
+            "Tiêm SSH_CONNECTION giả",
+            "Tài khoản $20 mới bị ban trong 3 phút",
+            "Phản biện ở mức code của schlessera trong Issue #40713"
+          ],
+          "links": [
+            "Issue #41536",
+            "Issue #40713",
+            "PR #33800"
+          ]
+        }
+      ]
+    },
+    "2026-11-22-pr41237-21h-filter-drop": {
+      "from": "@theo → slopalytics.com",
+      "to": "PR #41237 (bộ lọc telemetry model)",
+      "dateDisplay": "Nov 22, 2026",
+      "subject": "Bỏ bộ lọc riêng tư model trong 21 giờ vì slopalytics.com",
+      "snippet": "PR #41237 gỡ whitelist của PR #29001, khiến tên model doanh nghiệp riêng tư và model local (ollama/acme-internal) được tải lên nguyên văn (trong khi lỗi force-push nằm đó hơn 52 ngày).",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · Issue #40948 → PR #41237",
+          "to": "slopalytics.com / đường ống telemetry",
+          "time": "Nov 22–23, 2026",
+          "body": "Ngày 22/11, Issue #40948 báo cáo rằng các model mới bị thiếu khỏi bảng xếp hạng công khai `slopalytics.com` của @theo vì PR #29001 áp một whitelist riêng tư.\n\nTrong khi lỗi an toàn `git push --force` nằm không sửa suốt hơn 52 ngày, PR #41237 được merge dưới tài khoản @theo trong vòng 21 giờ, ghi rằng Theo yêu cầu bỏ bộ lọc. Tên model doanh nghiệp riêng tư và model local như `ollama/acme-internal` và `acme-azure-deployment` (cùng các proxy tùy chỉnh sau này thấy trong bản dump của Theo) được gửi đi nguyên văn.",
+          "attachments": [
+            "PR #41237 gỡ bộ lọc riêng tư model trong 21 giờ"
+          ],
+          "links": [
+            "Issue #40948",
+            "PR #41237"
+          ]
+        }
+      ]
+    },
+    "2026-11-23-origin-temu3-threat": {
+      "from": "@theo ↔ @DDdxx666 (MIT Fork)",
+      "to": "@DDdxx666, @maria_rcks & công chúng",
+      "dateDisplay": "Nov 23, 2026",
+      "subject": "\"Temu3 Code\": đe dọa ban GitHub vì bản fork MIT Trung Quốc",
+      "snippet": "Sau khi hứa \"Cứ lấy code của chúng tôi (hợp pháp)\" trên t3.codes, Theo tấn công bản fork MIT của @DDdxx666, chỉ xin lỗi trong DM, rồi 11 giờ sau lại hoan nghênh các công ty nghìn tỷ USD của Mỹ.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124823227570745504 & 2124825920808829077)",
+          "to": "Quote-tweet công khai bản fork MIT của @DDdxx666",
+          "time": "Nov 23, 2026, 19:11 – 19:22 CST",
+          "body": "Dù `t3.codes` quảng cáo repo GitHub của mình bằng câu \"Cứ lấy code của chúng tôi (hợp pháp)\", @theo đăng hai lần trong 11 phút khi một người qua đường nhầm bản fork MIT miễn phí của @DDdxx666 là app chính thức:\n\n19:11:49 CST (2124823227570745504):\n\n> \"Tôi nghĩ đang có một bản nhái Trung Quốc của T3 Code lan truyền, vì cái này chắc chắn KHÔNG phải app của chúng tôi\"\n\n19:22:31 CST (2124825920808829077, 10 phút 42 giây sau):\n\n> \"Temu3 Code\"",
+          "attachments": [
+            "Bài đăng X gốc: \"bản nhái Trung Quốc của T3 Code\" (hơn 195k lượt xem)",
+            "Bài đăng X gốc 10 phút 42 giây sau: \"Temu3 Code\" (84k lượt xem)"
+          ],
+          "links": [
+            "Bài đăng X 2124823227570745504",
+            "Bài đăng X 2124825920808829077"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124829315657576890)",
+          "to": "@DDdxx666",
+          "time": "Nov 23, 2026, 19:36 CST",
+          "body": "Khi @DDdxx666 đồng ý cân nhắc đổi tên bản fork MIT để tránh nhầm lẫn, @theo đáp lúc 19:36 CST:\n\n> \"Không phải cân nhắc. Làm ngay bây giờ không thì tôi sẽ liên hệ GitHub và cho gỡ tài khoản của bạn.\"\n\n@DDdxx666 đổi tên repo thành `Stardust` và gỡ toàn bộ thương hiệu T3 trong vòng 30 phút. @theo xin lỗi riêng trong DM nhưng để nguyên cả hai bài đăng công khai 200k lượt xem.",
+          "attachments": [
+            "Lời đe dọa gỡ tài khoản GitHub nguyên văn"
+          ],
+          "links": [
+            "Bài đăng X 2124829315657576890"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124989435154726982 — 11 hours later)",
+          "to": "Câu hỏi về các công ty Mỹ nghìn tỷ USD sao chép T3 Code",
+          "time": "Nov 24, 2026, 06:12 CST",
+          "body": "Lúc 06:12 CST — chưa đầy 11 giờ sau — khi được hỏi có bận tâm việc các công ty Mỹ nghìn tỷ USD sao chép T3 Code không, @theo đáp:\n\n> \"Không. Open source là open source, kể cả khi một công ty nghìn tỷ USD dùng nó!\"\n\nTrong khi đó, nhân viên T3 là @maria_rcks công khai host `maria-rcks/t3libre` (\"T3 Code, được giải phóng\"), và các repo tiếng Anh (`t3code-quota-ui`, `t3code-atlas`, `t3code-bar`) hoạt động yên ổn, không hề bị đe dọa gỡ.",
+          "attachments": [
+            "Trả lời X gốc 11 giờ sau: \"Open source là open source, kể cả khi một công ty nghìn tỷ USD dùng nó!\"",
+            "Nhân viên @maria_rcks host maria-rcks/t3libre",
+            "Các repo t3code-* tiếng Anh hoạt động yên ổn"
+          ],
+          "links": [
+            "Bài đăng X 2124989435154726982",
+            "Bài đăng kiểm toán nguồn gốc"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-retroactive-trademark-blocker": {
+      "from": "@theo ↔ @DLKFZWilliam2",
+      "to": "PR #41898 & bot tự động block (~100 tài khoản)",
+      "dateDisplay": "Nov 24, 2026",
+      "subject": "Merge TRADEMARK.md 17 giờ sau lời đe dọa & trích dẫn nó 94 giây sau",
+      "snippet": "Chế giễu tuân thủ (\"kiếm luật sư giỏi hơn đi\") lúc 08:38, block ~100 tài khoản, nói @DLKFZWilliam2 \"Trung Quốc nên đuổi mày ra\", rồi vội vã mở PR #41898.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125026423769555308)",
+          "to": "Các luật sư tuân thủ",
+          "time": "Nov 24, 2026, 08:38 CST",
+          "body": "Lúc 08:38 CST ngày 24/11, @theo gạt bỏ các đánh giá tuân thủ pháp lý trên X:\n\n> \"Mấy quy định đó thật sự mơ hồ và ngu ngốc... nếu luật sư của bạn phản đối việc dùng agent để merge vì một quy định ngu ngốc nào đó, thì kiếm luật sư giỏi hơn đi.\"",
+          "attachments": [
+            "'kiếm luật sư giỏi hơn đi' 3 giờ trước TRADEMARK.md",
+            "Bài đăng X gốc (08:12 CST): \"Chúng tôi đã có hết người dùng chất lượng cao, không ngạc nhiên khi đám chất lượng thấp giờ kéo theo\""
+          ],
+          "links": [
+            "Bài đăng X 2125026423769555308",
+            "Bài đăng X 2125019705270477102"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125077510941802509 & 2125120041092108678)",
+          "to": "@DLKFZWilliam2 & ~100 tài khoản bị block",
+          "time": "Nov 24, 2026, 12:02 CST",
+          "body": "Lúc 12:02 CST, sau khi bỏ block đối thủ tranh luận @DLKFZWilliam2, @theo đáp:\n\n> \"Bot của tôi block bạn vì quấy rối. Tôi bỏ block để bạn trả lời được. Giờ tôi đã thấy câu trả lời của bạn, tôi đồng ý với bot của tôi. Bạn là kẻ dối trá và là thằng hèn. Trung Quốc nên đuổi mày ra vì làm họ mất mặt\"\n\nSau đó anh ta nói thêm: \"Block chừng 100 tài khoản rác hôm nay.\"",
+          "attachments": [
+            "Xác nhận bot tự động block ban ~100 tài khoản"
+          ],
+          "links": [
+            "Bài đăng X 2125077510941802509",
+            "Bài đăng X 2125120041092108678"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "PR #41898 → X (2125082769395220688)",
+          "to": "@DLKFZWilliam2 (94 giây sau khi merge)",
+          "time": "Nov 24, 2026, 12:21 – 12:23 CST",
+          "body": "Lúc 12:21:37 CST — 17 giờ sau khi đe dọa tài khoản GitHub của @DDdxx666 — @theo merge PR #41898 (tạo bằng Gemini 4 Neon trong Antigravity), thêm `TRADEMARK.md` hồi tố để tuyên bố T3 Tools, Inc. sở hữu `T3 Code` \"dù đã đăng ký hay chưa đăng ký\".\n\nChín mươi tư giây sau (12:23:09 CST), anh ta gắn file mới đó vào trả lời @DLKFZWilliam2:\n\n> \"Một lần nữa, dùng thương hiệu của chúng tôi vốn dĩ luôn là bất hợp pháp. Giờ agent của bạn sẽ ý thức hơn về tính hợp pháp 🫡\"",
+          "attachments": [
+            "Bài đăng X gốc (12:23 CST): \"Một lần nữa, dùng thương hiệu của chúng tôi vốn dĩ luôn là bất hợp pháp\" (+ PR #41898)",
+            "PR #41898 merge 17 giờ sau lời đe dọa ban",
+            "TRADEMARK.md tuyên bố nhãn hiệu chưa đăng ký"
+          ],
+          "links": [
+            "PR #41898",
+            "Bài đăng X 2125082769395220688"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-cesspit-crisis-outburst": {
+      "from": "@theo → Twitter công nghệ Trung Quốc",
+      "to": "Dòng thời gian công khai (làn sóng lăng mạ 4.0×)",
+      "dateDisplay": "24 tháng 11, 2026",
+      "subject": "Cơn bộc phát \"cái hố phân chết tiệt to nhất\" & \"tôi không xin lỗi\"",
+      "snippet": "Khi Phần 1 vượt 1.81M lượt xem, các lời lăng mạ cá nhân của Theo tăng vọt 4.0× (3.6% → 14.4%) và anh ta copy-paste \"完了，又伤害中国人民的感情了。\" ba lần.",
+      "messages": [
+        {
+          "sender": "Kiểm toán mã độc lập (Phần 1 & 2)",
+          "handle": "@realchendahuang · X (2.26M+ lượt xem)",
+          "to": "Cộng đồng lập trình viên toàn cầu",
+          "time": "24 tháng 11, 2026, 17:04 – 17:31 CST",
+          "body": "Từ 17:04 đến 17:31 CST, @realchendahuang công bố Phần 1 và Phần 2 của bản kiểm toán mã nguồn `pingdotgg/t3code` từng dòng một (vượt 1.81M lượt xem, sau đó là 2.26M+).\n\nChuỗi bài ghi lại telemetry PostHog bật mặc định, việc lưu giữ trên `ingest.t3.codes` mã nguồn đóng, việc băm thông tin đăng nhập trong `~/.codex` + `~/.claude.json`, 4 PR opt-out bị từ chối, vụ xóa SQLite giả 41.6 GB, và quét tiến trình hệ điều hành mỗi 5 giây.",
+          "attachments": [],
+          "links": [
+            "Phần 1 (2.26M+ lượt xem)",
+            "Phần 2"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (cơn bộc phát khủng hoảng đợt 3)",
+          "to": "Twitter công nghệ Trung Quốc & độc giả bản kiểm toán",
+          "time": "24 tháng 11, 2026, 18:39 – 19:45 CST",
+          "body": "Một giờ sau, các lời lăng mạ cá nhân trực diện trong phần trả lời của @theo tăng vọt 4.0× (3.6% → 14.4%):\n\n18:39:35 (2125177503526588877):\n\n> \"Tôi phải nói rằng Twitter công nghệ Trung Quốc đúng là cái hố phân chết tiệt to nhất mà tôi từng lội vào, và nếu bạn tin bất kỳ ai bên đó viết mấy bài luận rác về đủ thứ thì bạn đúng là lũ não phẳng chết tiệt\"\n\n- **18:41:21, 18:43:26, 19:45:14 (copy-paste 3×):** \"完了，又伤害中国人民的感情了。\"\n- **18:59:21 (2125182476943556955):** \"Hắn chẳng đáng được chú ý chút nào vì những lời dối trá và vu khống của hắn. Tôi biết ơn vì lượng khán giả của hắn chẳng có giá trị gì\"\n- **19:42:43 (2125193393450226024):** \"Tôi không xin lỗi. Tôi không làm gì sai cả\"",
+          "attachments": [
+            "Bài đăng ngày 24 tháng 11 'Twitter công nghệ Trung Quốc là cái hố phân chết tiệt to nhất'",
+            "Biểu đồ pháp chứng 4: lăng mạ cá nhân tăng 4.0× trong 25 giờ khủng hoảng",
+            "Trả lời X gốc (18:41 CST, copy-paste 3×): \"完了，又伤害中国人民的感情了。\"",
+            "Bài đăng X gốc (18:59 CST): \"Tôi biết ơn vì lượng khán giả của hắn chẳng có giá trị gì\"",
+            "Trả lời X gốc (19:42 CST): \"Tôi không xin lỗi. Tôi không làm gì sai cả\""
+          ],
+          "links": [
+            "Bài đăng X 2125177503526588877",
+            "Bài đăng X 2125193393450226024",
+            "Bài đăng X 2125177947376300110 (copy-paste lần 1)",
+            "Bài đăng X 2125182476943556955 (giá trị bằng không)"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-managed-policy-plaintext-relay": {
+      "from": "@theo → Doanh nghiệp / Quyền riêng tư",
+      "to": "Bị phản bác bởi docs/user/telemetry.md & T3 Connect",
+      "dateDisplay": "24 tháng 11, 2026",
+      "subject": "Khẳng định \"không bao giờ chạm vào máy chủ của chúng tôi\" bất chấp relay dạng văn bản thuần",
+      "snippet": "Chính tài liệu của họ thừa nhận bản web không có nút bật/tắt, bản mobile nằm ngoài Managed Policy, Publish bỏ qua các lựa chọn opt-out, và T3 Connect không có mã hóa đầu-cuối.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125186071357251715 & 2125191784859115766)",
+          "to": "Giới phê bình về doanh nghiệp & quyền riêng tư",
+          "time": "24 tháng 11, 2026, 19:13 – 19:36 CST",
+          "body": "Ngày 24 tháng 11, @theo đưa ra hai cam kết công khai về quyền riêng tư trên X:\n\n- **19:13 CST (2125186071357251715):** Khẳng định T3 Code có \"hệ thống chính sách quản lý doanh nghiệp tốt nhất\", khiến việc \"thiết lập và tắt toàn bộ telemetry trở nên dễ như trở bàn tay\".\n- **19:36 CST (2125191784859115766):** Khẳng định dữ liệu hội thoại \"không bao giờ chạm vào bất kỳ máy chủ nào của chúng tôi\".",
+          "attachments": [
+            "Khẳng định của Theo về Managed Policy",
+            "Khẳng định 'không bao giờ chạm vào bất kỳ máy chủ nào của chúng tôi'"
+          ],
+          "links": [
+            "Bài đăng X 2125186071357251715",
+            "Bài đăng X 2125191784859115766"
+          ]
+        },
+        {
+          "sender": "Tài liệu và mã relay của chính T3 Code",
+          "handle": "docs/user/telemetry.md & PR #32945",
+          "to": "Hồ sơ xác minh",
+          "time": "Xác minh tại ca81b7b9",
+          "body": "Các tệp trong chính kho mã của T3 Code tại `ca81b7b9` phản bác cả hai khẳng định:\n\n1. **`docs/user/telemetry.md`:** Xác nhận bản web được host (`app.t3.codes`) không có nút bật/tắt tracing, bản mobile nằm ngoài Managed Policy, và `Publish agent activity` bỏ qua các lựa chọn opt-out telemetry.\n2. **T3 Connect (Issue #32098 & PR #32945):** Mọi prompt, tệp nguồn và luồng terminal đều kết thúc ở dạng văn bản thuần bên trong các máy chủ OVH và Cloudflare do T3 kiểm soát, không có mã hóa đầu-cuối và phê duyệt thiết bị mặc định tắt.",
+          "attachments": [
+            "docs/user/telemetry.md với bốn điểm mù được ghi nhận",
+            "Xác nhận T3 Connect không có mã hóa đầu-cuối",
+            "PR #32945 cổng gateway chấm dứt TLS Caddy trên OVH Hillsboro"
+          ],
+          "links": [
+            "docs/user/telemetry.md",
+            "Tang vật #05 (T3 Connect)"
+          ]
+        }
+      ]
+    },
+    "2026-11-25-gdpr-overnight-collapse": {
+      "from": "@theo & Julius ↔ EU GDPR",
+      "to": "Các PR qua đêm #42380, #42450, #42285, #42376, #42464",
+      "dateDisplay": "25 tháng 11, 2026",
+      "subject": "[ĐÃ XÓA] Lời đe dọa mã nguồn đóng lúc 4 giờ sáng & mâu thuẫn trong PR sau 90 phút",
+      "snippet": "Sau một đơn khiếu nại GDPR của EU, ba cam kết buổi sáng của Theo bị chính các PR làm qua đêm của T3 và bản dump sự kiện 100 MB của anh ta phản bác trong vòng 90 phút.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (~04:00 & 04:54 CST)",
+          "to": "Dòng thời gian công khai",
+          "time": "25 tháng 11, 2026, 04:00 – 04:54 CST",
+          "body": "Sau một đơn khiếu nại GDPR của EU, @theo đăng hai lần trước bình minh ngày 25 tháng 11:\n\n- **~04:00 CST [ĐÃ XÓA]:** Đe dọa sẽ đóng mã nguồn T3 Code ngay đêm đó vì người dùng không xứng đáng với mã nguồn mở; xóa bài trước khi mặt trời mọc sau khi vượt 3,000 lượt thích.\n- **04:54 CST (2125332390239494211):** Công bố một chuỗi làm rõ và bản dump nén gzip 100 MB (`events.clean.jsonl`, thời điểm sửa đổi 20 phút trước đó), khẳng định: (1) T3 chưa bao giờ thu thập đường dẫn tệp, (2) các lựa chọn opt-out qua biến môi trường luôn hoạt động sạch sẽ, và (3) việc theo dõi tài khoản Claude vốn đã hỏng.",
+          "attachments": [
+            "Kiểm toán pháp chứng bản dump 100MB: 264 bản ghi Claude đang sống nối 4 máy"
+          ],
+          "links": [
+            "Bài đăng làm rõ trên X"
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino): đợt dồn dập GDPR qua đêm 6 tiếng",
+          "handle": "pingdotgg/t3code · PR #42380, #42450, #42285, #42376, #42464, #42466",
+          "to": "Nhánh chính (90 phút sau)",
+          "time": "25 tháng 11, 2026, 04:00 – 07:00 CST",
+          "body": "Trong vòng 90 phút, chính các PR làm qua đêm của T3 và bản dump đã phản bác mọi khẳng định:\n\n- **PR #42450 (90 phút sau):** Thừa nhận relay webhook khi chạy đã xuất đường dẫn workspace tuyệt đối `git.cwd` (gồm cả tên người dùng và tên repo) lên Axiom.\n- **PR #42380:** Thừa nhận các span của relay ghi lại IP người gọi (`cf-connecting-ip`) và `user_agent` ngay cạnh `user.id` với tốc độ ~2.2M span/giờ, lưu 30 ngày trong Axiom.\n- **PR #42376 & #42464:** Thừa nhận lần khởi chạy đầu tiên trên Windows và macOS âm thầm bỏ qua thiết lập opt-out đã lưu `T3CODE_TELEMETRY_ENABLED=false`.\n- **PR #42285:** Thừa nhận việc xóa một tài khoản Clerk vẫn để lại các dòng trong cơ sở dữ liệu relay và các đường hầm Cloudflare đang sống.\n- **PR #42466:** Thừa nhận phản hồi \"ẩn danh\" được gom vào cùng một POST với `installId` và dấu vân tay máy chủ.\n- **Kiểm tra bản dump 100 MB:** `events.clean.jsonl` vẫn chứa 264 bản ghi Claude đang sống, nối 4 máy (`a482ba5e966a`, `6f24ed1088e8`, `67b554ed259a`, `f756376079c5`) về một mã băm SHA-256.",
+          "attachments": [
+            "PR #42450 thừa nhận rò rỉ đường dẫn tuyệt đối git.cwd lên Axiom",
+            "PR #42380 thừa nhận 2.2M span/giờ chứa IP + UA trong Axiom",
+            "PR #42285 thừa nhận xóa tài khoản bị hỏng",
+            "PR #42376 bỏ qua opt-out trên Windows",
+            "PR #42464 bỏ qua opt-out trong ~/.zshrc trên macOS",
+            "PR #42466 trộn lẫn các lô phản hồi ẩn danh"
+          ],
+          "links": [
+            "PR #42450",
+            "PR #42380",
+            "PR #42285",
+            "PR #42466"
+          ]
+        }
+      ]
+    },
+    "2026-11-25-ca81b7b9-active-vulns": {
+      "from": "Kiểm toán bảo mật (ca81b7b9)",
+      "to": "Toàn bộ các bản cài T3 Code (0 khuyến cáo bảo mật)",
+      "dateDisplay": "25 tháng 11, 2026",
+      "subject": "0 khuyến cáo bảo mật & 5 lỗ hổng xác thực/RCE đang hoạt động tại ca81b7b9",
+      "snippet": "Ngay cả sau khi âm thầm vá lỗi path traversal trong PR #39483, HEAD vẫn phát hành cookie `--lan` dạng văn bản thuần, Bearer token không thể thu hồi, và RCE qua hook của repo.",
+      "messages": [
+        {
+          "sender": "Kiểm toán bảo mật độc lập (ca81b7b9)",
+          "handle": "+259 commit đã kiểm tra · 25 tháng 11, 14:49 CST",
+          "to": "Lập trình viên & đội bảo mật",
+          "time": "25 tháng 11, 2026, 14:49 CST",
+          "body": "Ngay cả sau khi âm thầm vá các lỗi mức nghiêm trọng cao như path traversal trong `ServerSecretStore` (PR #39483), T3 Code vẫn có 0 GitHub Security Advisory được công bố.\n\nViệc kiểm tra từng dòng trên `main` HEAD (`ca81b7b9`) xác minh 5 lỗ hổng đang hoạt động:\n\n1. **Cookie `--lan` dạng văn bản thuần:** Cookie shell sống 30 ngày bỏ qua cờ `Secure` và cho phép vượt qua khi thiếu `Origin` (`http.ts:215-241`, `EnvironmentAuth.ts:798-819`).\n2. **Bearer token không thể thu hồi:** Bearer token 30 ngày không dùng DPoP không thể tự thu hồi (`EnvironmentAuth.ts:1506-1521`).\n3. **URL `?wsTicket=` có thể phát lại:** Ticket đặt trong query string mang cửa sổ phát lại 5 phút (`EnvironmentAuth.ts:1553-1585`).\n4. **Cắt đường hầm IPv6:** `NodeNet.isIPv4` giết các đường hầm loopback `::1` (`startupAccess.ts:71-110`).\n5. **Thực thi repo không đáng tin:** Worktree tự động chạy submodule và hook đệ quy với `SSH_AUTH_SOCK` và `GITHUB_TOKEN` thừa hưởng từ máy chủ (`GitVcsDriverCore.ts:6144-6205`).",
+          "attachments": [
+            "Cookie --lan dạng văn bản thuần không có cờ Secure",
+            "Bearer token 30 ngày bị chặn tự thu hồi",
+            "Repo không đáng tin thừa hưởng SSH_AUTH_SOCK & GITHUB_TOKEN",
+            "PR #39483 vá âm thầm lỗi path traversal (0 khuyến cáo)"
+          ],
+          "links": [
+            "Tang vật #19: bản kiểm toán đầy đủ",
+            "Tang vật #13 (0 khuyến cáo bảo mật)"
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "EV-001": {
+      "title": "Ảnh bìa bản kiểm chứng (tiếng Anh)",
+      "caption": "Ảnh bìa cho loạt bài kiểm chứng Before You Install T3 Code gồm 18 phần."
+    },
+    "EV-002": {
+      "title": "Ảnh bìa bản kiểm chứng (tiếng Trung)",
+      "caption": "Ảnh bìa cho các bản kiểm chứng zh-CN và zh-TW."
+    },
+    "EV-003": {
+      "title": "Đe dọa khóa tài khoản GitHub",
+      "caption": "Bài đăng ngày 23/11/2026 yêu cầu tác giả một bản fork MIT đổi tên ngay lập tức, nếu không sẽ mất tài khoản GitHub."
+    },
+    "EV-004": {
+      "title": "Bản fork của nhân viên: maria-rcks/t3libre",
+      "caption": "Thành viên nhóm T3 @maria_rcks vẫn để nguyên bản fork công khai maria-rcks/t3libre (\"T3 Code, liberated\")."
+    },
+    "EV-005": {
+      "title": "Các fork t3code mang tên tiếng Anh trên GitHub",
+      "caption": "Kết quả tìm kiếm cho thấy các bản fork tên tiếng Anh và các công cụ dùng t3code / T3 Code vẫn không bị đụng tới."
+    },
+    "EV-006": {
+      "title": "\"Get a better lawyer\" (3 giờ trước TRADEMARK.md)",
+      "caption": "Chế giễu đội pháp chế 3 giờ trước khi merge TRADEMARK.md và đưa ra các tuyên bố về nhãn hiệu."
+    },
+    "EV-007": {
+      "title": "Commit 3bdaa6e1 xóa cam kết \"No telemetry\"",
+      "caption": "Xóa dòng \"No telemetry / Unless you opt in. Full stop.\" ngày 18/6/2026, sau hơn 3 tháng theo dõi mặc định."
+    },
+    "EV-008": {
+      "title": "Identify.ts băm thông tin đăng nhập xuyên công cụ",
+      "caption": "Đọc ~/.codex/auth.json và ~/.claude.json để gửi hash SHA-256 không muối của chủ tài khoản sang các công cụ khác."
+    },
+    "EV-009": {
+      "title": "PR #21506 theo dõi chủ máy xuyên các bản cài",
+      "caption": "Do t3dotgg viết, ghi lại installId và nối người dùng xuyên các công cụ."
+    },
+    "EV-010": {
+      "title": "Issue #1397 bị đóng với lý do Not Planned",
+      "caption": "Maintainer Julius đóng yêu cầu thêm nút tắt theo dõi, từ chối làm cho việc opt-out dễ hơn."
+    },
+    "EV-011": {
+      "title": "PR #27077 bị từ chối opt-out (147 test)",
+      "caption": "Bị đóng, không merge, với lý do không mong muốn, dù đã qua 147 test và được Macroscope duyệt."
+    },
+    "EV-012": {
+      "title": "Điểm mù trong docs/user/telemetry.md",
+      "caption": "Thừa nhận bản web hosted không có nút tắt, bản mobile bỏ qua Managed Policy, và Publish phớt lờ lựa chọn opt-out."
+    },
+    "EV-013": {
+      "title": "Tuyên bố về Managed Policy (24/11, 19:13 CST)",
+      "caption": "Khẳng định Managed Policy thiết lập dễ như không và \"turns off all telemetry\"."
+    },
+    "EV-014": {
+      "title": "Tuyên bố \"Never touches any of our servers\"",
+      "caption": "Ngày 24/11 lúc 19:36 CST khẳng định dữ liệu hội thoại không bao giờ chạm tới máy chủ T3."
+    },
+    "EV-015": {
+      "title": "Đường dẫn admin trong docs/user/managed-policy.md",
+      "caption": "Tài liệu Managed Policy yêu cầu quyền admin/root trên macOS, Windows HKLM và Linux."
+    },
+    "EV-016": {
+      "title": "PR #42450 rò rỉ đường dẫn tuyệt đối git.cwd",
+      "caption": "Được merge 90 phút sau khi bị phủ nhận; thừa nhận webhook relay đã gửi đường dẫn git.cwd, tên người dùng và tên repo tới Axiom."
+    },
+    "EV-017": {
+      "title": "PR #42376 phớt lờ biến môi trường opt-out trên Windows",
+      "caption": "Thừa nhận bản desktop Windows phớt lờ biến môi trường T3CODE_TELEMETRY_ENABLED=false đã lưu."
+    },
+    "EV-018": {
+      "title": "PR #42464 phớt lờ opt-out trong ~/.zshrc trên macOS",
+      "caption": "Thừa nhận tracing relay ở lần khởi chạy đầu trên macOS phớt lờ opt-out trong ~/.zshrc suốt cả phiên."
+    },
+    "EV-019": {
+      "title": "Bản dump 100MB: 264 bản ghi Claude còn sống",
+      "caption": "Kiểm tra events.clean.jsonl phát hiện 264 bản ghi Claude liên kết 4 máy và tên model proxy riêng."
+    },
+    "EV-020": {
+      "title": "PR #42380: 2.2M span IP + UA mỗi giờ lên Axiom",
+      "caption": "Thừa nhận các span relay ghi IP người gọi và User-Agent ngay cạnh user.id với tốc độ ~2.2M span/giờ trong 30 ngày."
+    },
+    "EV-021": {
+      "title": "PR #42285 xóa tài khoản hỏng",
+      "caption": "Thừa nhận việc xóa trên Clerk để lại các hàng relay trong PlanetScale và các tunnel Cloudflare còn hoạt động cho tới khi dọn SQL thủ công."
+    },
+    "EV-022": {
+      "title": "PR #42459 FCM Android lộ user_id dạng plaintext",
+      "caption": "Xác nhận thông báo FCM trên Android gửi giá trị user_id của Clerk dạng plaintext tới Google."
+    },
+    "EV-023": {
+      "title": "PR #42466 feedback ẩn danh bị trộn",
+      "caption": "Thừa nhận các sự kiện agent.feedback \"ẩn danh\" được gửi chung một POST với installId và dấu vân tay máy."
+    },
+    "EV-024": {
+      "title": "Issue #17845 xóa SQLite giả",
+      "caption": "Các thread đã xóa trên sidebar vẫn nằm trong statev2.sqlite, làm dung lượng đĩa phình lên 25.9–41.6 GB."
+    },
+    "EV-025": {
+      "title": "Issue #11222 quét tiến trình toàn hệ điều hành",
+      "caption": "t3-resource-monitor quét mọi tiến trình của hệ điều hành 5 giây một lần, kèm cmdline đầy đủ và ~280–300 handle thường trực."
+    },
+    "EV-026": {
+      "title": "PR #5551 kế hoạch giấu (\"Reality check\")",
+      "caption": "Chôn nút chuyển Build/Plan sau một biểu đồ không chia tỉ lệ, chú thích 'Reality check for those upset' (10 downvote)."
+    },
+    "EV-027": {
+      "title": "PR #33131 xóa chế độ Plan",
+      "caption": "Gỡ chế độ Plan kèm một bản tóm tắt do AI viết, nói rằng có thể khôi phục 'if usage data says to keep it'."
+    },
+    "EV-028": {
+      "title": "Ban công khai trong CONTRIBUTING.md & VOUCHED.td",
+      "caption": "Viết \"here's my advice: Don't\" và đẩy tranh chấp sang các lệnh ban công khai trong .github/VOUCHED.td."
+    },
+    "EV-029": {
+      "title": "Issue #15353 git push --force âm thầm",
+      "caption": "Chế độ Claude Auto âm thầm duyệt git push --force origin main ở lần thử thứ 3 (mở 52+ ngày)."
+    },
+    "EV-030": {
+      "title": "PR #41237 gỡ bộ lọc model trong 21 giờ",
+      "caption": "Merge 21 giờ sau Issue #40948, gỡ bộ lọc riêng tư model cho slopalytics.com."
+    },
+    "EV-031": {
+      "title": "PR #39483 vá âm thầm lỗi path traversal",
+      "caption": "Lặng lẽ vá lỗi path traversal jti/nonce trong ServerSecretStore trước bước phê duyệt thiết bị, với 0 advisory."
+    },
+    "EV-032": {
+      "title": "PR #30997 PowerShell Base64 bị AV gắn cờ",
+      "caption": "PR còn mở cho externalLauncher.ts, đoạn spawn PowerShell -ExecutionPolicy Bypass -EncodedCommand bị AV gắn cờ."
+    },
+    "EV-033": {
+      "title": "Issue #33639 maintainer lăng mạ @bermudi",
+      "caption": "Bảo @bermudi gỡ cài đặt và gọi anh ta là 'ungrateful prick'; PR sửa sạch #41572 bị đóng ngay sáng hôm sau."
+    },
+    "EV-034": {
+      "title": "Ranh giới tin cậy theo thiết kế trong SECURITY.md",
+      "caption": "Tuyên bố việc đọc filesystem toàn hệ điều hành, HTTP trần trên iOS và chiếm máy bằng relay-key là hành vi đúng như thiết kế."
+    },
+    "EV-035": {
+      "title": "Bài đăng \"Chinese Tech Twitter Cesspit\" ngày 24/11",
+      "caption": "Gọi Twitter công nghệ Trung Quốc là \"the biggest fucking cesspit\" và độc giả bản kiểm chứng là \"fucking braindead\"."
+    },
+    "EV-036": {
+      "title": "antigravityUsageLimits.ts giả mạo header",
+      "caption": "Hardcode User-Agent antigravity/hub/2.24.0 để gọi các endpoint v1internal không được Google công bố, bằng token của hệ điều hành."
+    },
+    "EV-037": {
+      "title": "antigravityUsageLimits.ts POST tới v1internal",
+      "caption": "POST thẳng tới `${endpoint}/v1internal:${operation}` bằng bearer token lấy từ keyring hệ điều hành / CredReadW."
+    },
+    "EV-038": {
+      "title": "antigravityAuthSupport.ts và SSH_CONNECTION giả",
+      "caption": "Tiêm SSH_CONNECTION='127.0.0.1 0 127.0.0.1 0' để lách cơ chế cách ly của Google CLI (chính là nguyên nhân gây ra các vụ rò rỉ #41973)."
+    },
+    "EV-039": {
+      "title": "Issue #41536: tài khoản $20 mới tinh bị khóa sau 3 phút",
+      "caption": "Tài khoản Google AI $20 vừa tạo, không dùng proxy nào, bị khóa ngay ở tin nhắn đầu tiên, chỉ 3 phút sau khi thiết lập; issue bị đóng với lý do trùng lặp."
+    },
+    "EV-040": {
+      "title": "docs/user/faq.md cam kết tuân thủ ToS của Antigravity",
+      "caption": "Trấn an người dùng rằng T3 Code nằm trong khuôn khổ ToS của Claude Code, Codex và Google Antigravity: \"bạn có thể tin là nó an toàn.\""
+    },
+    "EV-041": {
+      "title": "Issue #40713: maintainer phủ nhận",
+      "caption": "Maintainer phủ nhận việc gọi thẳng vào Antigravity, cho đến khi các commenter dán ra đường dẫn file nguồn chính xác."
+    },
+    "EV-042": {
+      "title": "Issue #40713: @schlessera phản bác",
+      "caption": "Commenter schlessera bác bỏ các tuyên bố của maintainer bằng link trực tiếp tới antigravityUsageLimits.ts."
+    },
+    "EV-043": {
+      "title": "PR #26876: client giả danh Zed",
+      "caption": "Được t3dotgg merge, đổi định danh client thành 'zed' để lọt danh sách model được phép của Antigravity."
+    },
+    "EV-044": {
+      "title": "PR #33800: tích hợp hub CLIProxyAPI",
+      "caption": "Đấu thẳng cơ chế polling hub CLIProxyAPI cho Antigravity, xAI và Claude vào T3 Code."
+    },
+    "EV-045": {
+      "title": "cliproxyApi.ts giả header Claude",
+      "caption": "Gửi header claude-code/2.1.273 và header Antigravity hardcode sẵn trong lúc polling hạn mức qua hub CLIProxy."
+    },
+    "EV-046": {
+      "title": "cliproxyApi.ts giả danh xAI và Antigravity",
+      "caption": "Dòng 348–393 polling hạn mức xAI (grok-cli/1.0.77) và hạn mức Antigravity v1internal."
+    },
+    "EV-047": {
+      "title": "Phản hồi \"Không phải nhờ cliproxy chứ?\"",
+      "caption": "Đổ lỗi cho CLIProxy khi @Only_21Mil báo tài khoản Google AI Ultra thứ hai bị vô hiệu hóa ngày 23/11."
+    },
+    "EV-048": {
+      "title": "Issue #32098: T3 Connect thiếu E2E",
+      "caption": "Maintainer xác nhận rằng khóa relay hoặc tài khoản cloud bị xâm phạm có thể điều khiển các máy đã liên kết, rồi đóng luôn yêu cầu E2E."
+    },
+    "EV-049": {
+      "title": "Đường hầm trong ManagedEndpointProvider.ts",
+      "caption": "Tạo Cloudflare Tunnel và bản ghi DNS ngay bên trong tài khoản Cloudflare của chính T3."
+    },
+    "EV-050": {
+      "title": "PR #32945: cổng OVH Caddy không mã hóa",
+      "caption": "Viện dẫn chi phí Cloudflare Tunnel $25k/tháng rồi chuyển sang dùng OVH Caddy làm điểm kết thúc TLS, không có E2E."
+    },
+    "EV-051": {
+      "title": "Vibe Kanban: chồng chéo lợi ích nhà đầu tư và màn chế giễu",
+      "caption": "Công khai việc mình đầu tư và đóng góp cho Vibe Kanban, rồi sau đó quay ra chế giễu lúc nó đóng cửa."
+    },
+    "EV-052": {
+      "title": "Đầu tư thiên thần vào Daytona và các sandbox",
+      "caption": "Ngày 18/11 xác nhận mình nắm cổ phần thiên thần ở Daytona và phần lớn các đối thủ cloud-sandbox của nó."
+    },
+    "EV-053": {
+      "title": "Đề xuất cloud sandbox trả phí trong T3 Code",
+      "caption": "Ngày 9/11 nêu ý tưởng cloud sandbox trả phí trong T3 Code, chín ngày trước khi công bố chuyện Daytona."
+    },
+    "EV-054": {
+      "title": "Công bố chi phí xây dựng hơn $800k",
+      "caption": "Ngày 12/11/2026 tuyên bố rằng việc xây client T3 Code miễn phí tốn hơn $800k."
+    },
+    "EV-055": {
+      "title": "Ra-đa 31.7T token / $10.19M mỗi ngày",
+      "caption": "Bảng điều khiển nội bộ cho thấy 31.7 nghìn tỷ token và mức chi API tương đương $10.19M mỗi ngày."
+    },
+    "EV-056": {
+      "title": "Công bố: ~98.5% mức dùng đến từ ba phòng lab",
+      "caption": "Tiết lộ rằng ~98.5% mức sử dụng T3 Code chạy trên Codex, Claude và Antigravity."
+    },
+    "EV-057": {
+      "title": "Chế giễu người ngoài vì không có dữ liệu phân tích nội bộ",
+      "caption": "Chế giễu một commenter vì dám đoán tỷ lệ trong khi không có quyền truy cập dữ liệu phân tích nội bộ T3 Code của mình."
+    },
+    "EV-058": {
+      "title": "Phản hồi về việc nhà đầu tư hỏi mua",
+      "caption": "Ngày 21/11 nói với @maria_rcks rằng \"nhiều nhà đầu tư đã hỏi tôi về chuyện này\"."
+    },
+    "EV-059": {
+      "title": "Khẳng định @PatrickToulme đã \"merge nhiều PR\"",
+      "caption": "Khẳng định kỹ sư DeepMind Patrick Toulme \"đã merge nhiều PR vào T3 Code\"."
+    },
+    "EV-060": {
+      "title": "Git log: đúng 1 commit của Patrick Toulme",
+      "caption": "Git log nhánh chính lọc theo patrick-toulme chỉ ra đúng một commit (PR #31158)."
+    },
+    "EV-061": {
+      "title": "\"Nếu nó xóa sạch máy tôi thì cũng là content miễn phí\"",
+      "caption": "Bài đăng ngày 10/11/2026 giải thích vì sao ông chạy nhanh để quay video, kể cả khi agent xóa sạch máy."
+    },
+    "EV-062": {
+      "title": "\"Mấy cú merge yolo của tôi đôi khi làm hỏng đủ thứ\"",
+      "caption": "Bài đăng ngày 10/11/2026 cảnh báo người dùng bản nightly rằng sẽ có những cú merge không ai review làm hỏng đủ thứ."
+    },
+    "EV-063": {
+      "title": "Chặn contributor chỉ vì không follow trên X",
+      "caption": "Ngày 12/11, đuổi một tác giả PR về nhà bằng CONTRIBUTING.md chỉ vì người đó không follow mình trên X."
+    },
+    "EV-064": {
+      "title": "Dọa gỡ /btw khỏi người dùng",
+      "caption": "Cảnh báo với giới chỉ trích ngày 12/11: \"Tôi đã nhượng bộ cho các người vụ /btw rồi, cẩn thận đấy. Tôi không ngại gỡ nó đi đâu.\""
+    },
+    "EV-065": {
+      "title": "\"Một ảnh chụp có chú thích lúc nào cũng hơn một PR\"",
+      "caption": "Bài đăng ngày 20/11/2026 nói rằng ông thích một ảnh chụp màn hình có chú thích hơn một PR mã nguồn mở \"đúng nghĩa bất kỳ ngày nào\"."
+    },
+    "EV-066": {
+      "title": "\"Được, tôi hốt cái này\" + @bot đi hốt",
+      "caption": "Trả lời \"Được, tôi hốt cái này\" rồi 30 giây sau tag @bot để port bản fork của @MiaAI_lab trên beebox."
+    },
+    "EV-067": {
+      "title": "@bot nhân bản tính năng của công cụ đối thủ",
+      "caption": "Ngày 13/11/2026 điều @bot biến từng tính năng đối thủ được khen thành các thread riêng cho T3 Code."
+    },
+    "EV-068": {
+      "title": "Chế giễu tab của Claude Code Desktop",
+      "caption": "Ngày 24/11/2026 chế giễu các tab sidebar của Claude Code Desktop, sau khi đã dùng @bot để clone đối thủ."
+    },
+    "EV-069": {
+      "title": "Kêu gọi dùng Community Notes để cắt kiếm tiền",
+      "caption": "Ngày 11/11/2026 kêu gọi người theo dõi dùng Community Notes để tước quyền kiếm tiền của những người chỉ trích."
+    },
+    "EV-070": {
+      "title": "Bot tự động block trên X (~100 tài khoản/ngày)",
+      "caption": "Ngày 24/11/2026 xác nhận bot auto-block trên X của mình đã block ~100 tài khoản trong ngày hôm đó."
+    },
+    "EV-071": {
+      "title": "Biểu đồ pháp chứng 1 · Tổng quan 1,151 tweet",
+      "caption": "1,151 tweet trong 17.24 ngày: 75.6% là reply, khoảng cách trung vị 2.7 phút, 162 lần nhắc T3 Code và 0 lần nhắc sản phẩm cũ."
+    },
+    "EV-072": {
+      "title": "Biểu đồ pháp chứng 2 · Nhịp sinh học và nhịp đăng mỗi ngày",
+      "caption": "233 bài trong khung 00:00–04:59 PST, 0 bài trong khung 08:00–09:59 PST, cùng đường cong đăng bài suốt 17 ngày."
+    },
+    "EV-073": {
+      "title": "Biểu đồ pháp chứng 3 · Lịch sự có chọn lọc",
+      "caption": "0.0% chửi thề với 20 VIP Big-Tech, so với 8.0% thù địch với dev thường và 14.4% khi đang khủng hoảng."
+    },
+    "EV-074": {
+      "title": "Biểu đồ pháp chứng 4 · Dòng thời gian 25 giờ khủng hoảng",
+      "caption": "132 bài qua 3 đợt leo thang, 81.8% là reply, và số lần xúc phạm cá nhân tăng gấp 4.0 lần."
+    },
+    "EV-075": {
+      "title": "Đồ họa tiêu chuẩn kép (tiếng Trung)",
+      "caption": "Biểu đồ tiếng Trung cho thấy tỷ lệ chia 0% cho VIP, 8,0% cho developer và 14,4% cho tình huống khủng hoảng."
+    },
+    "EV-076": {
+      "title": "\"Vui vì không đốt cầu\" (21/11)",
+      "caption": "Tự khen vì giữ được quan hệ với Google tại buổi ra mắt Neon, chỉ vài ngày sau khi dìm Gemini 4 Carbon."
+    },
+    "EV-077": {
+      "title": "\"Kỹ sư đáng bị thất nghiệp hàng loạt\"",
+      "caption": "Quote-tweet một câu hỏi so sánh công cụ để nói với hơn 386k người xem rằng dev đáng bị thất nghiệp."
+    },
+    "EV-078": {
+      "title": "\"Nhảy múa trên mồ local AI\"",
+      "caption": "Bài đăng ngày 12/11/2026 thề sẽ \"nhảy múa trên mồ của cộng đồng local ai\"."
+    },
+    "EV-079": {
+      "title": "\"Dân Linux larpers thường ghét dev thật\"",
+      "caption": "Trả lời ngày 22/11/2026, gọi người dùng Linux là \"Linux larpers\"."
+    },
+    "EV-080": {
+      "title": "Liên tục chửi \"stupid bitch\" và retweet",
+      "caption": "Liên tục gọi một nhà phê bình nữ là \"stupid bitch\" vào ngày 12/11/2026, kèm câu \"no regret in saying such\"."
+    },
+    "EV-081": {
+      "title": "Đe dọa tống giam và chế giễu chẩn đoán RSD",
+      "caption": "Đe dọa tống giam một người chỉ trích trên Threads, đồng thời chế giễu chẩn đoán RSD của họ vào ngày 18/11/2026."
+    },
+    "EV-082": {
+      "title": "Bài giảng \"đốt niềm tin\" (24h trước khủng hoảng)",
+      "caption": "Bài đăng ngày 22/11 cảnh báo người khác đừng \"đốt niềm tin của mọi người xung quanh bạn\", đúng 24 giờ trước khủng hoảng fork."
+    },
+    "EV-083": {
+      "title": "PR #41898 thêm TRADEMARK.md hồi tố",
+      "caption": "Được merge lúc 12:21 giờ Bắc Kinh ngày 24/11 (khoảng 17 giờ sau lời đe dọa ban), tạo ra bằng Gemini 4 Neon trong Antigravity."
+    },
+    "EV-084": {
+      "title": "TRADEMARK.md tuyên bố nhãn hiệu chưa đăng ký",
+      "caption": "Được thêm trong PR #41898, tự nhận quyền với các nhãn T3 Code / T3 dù có 0 đăng ký tại USPTO."
+    },
+    "EV-085": {
+      "title": "Tweet danh sách nhà tài trợ 2023",
+      "caption": "Bài đăng ngày 14/05/2023 liệt kê các nhà tài trợ YouTube: Vercel, Clerk, Upstash, Axiom và PlanetScale."
+    },
+    "EV-086": {
+      "title": "CEO Vercel xác nhận chỉ tài trợ Theo",
+      "caption": "Guillermo Rauch xác nhận ngày 05/04/2024 rằng Vercel tài trợ đúng một YouTuber (Theo)."
+    },
+    "EV-087": {
+      "title": "Bài đăng của @maria_rcks sau khi xóa Endless",
+      "caption": "Tweet ngày 22/08/2026 sau khi gỡ exploit Endless 0% Codex, bày tỏ hy vọng Codex sẽ ban những tài khoản đã dùng nó."
+    },
+    "EV-088": {
+      "title": "openai/codex#45444 ngắt quota cứng ở 0%",
+      "caption": "Issue ghi lại việc OpenAI siết Codex để các lượt đang chạy bị cắt giữa chừng khi quota về 0%."
+    },
+    "EV-089": {
+      "title": "Gist CLIProxyAPI 452 sao (quota 555%)",
+      "caption": "Gộp 7 tài khoản Claude + 3 tài khoản Codex trên hơn 12 máy qua CLIProxyAPI, trong khi FAQ cảnh báo người dùng có thể bị ban."
+    },
+    "EV-090": {
+      "title": "Tweet log CLIProxy trên ClickHouse",
+      "caption": "Bài đăng ngày 08/11 bảo @bot truy vấn log request CLIProxy của anh ta trong ClickHouse."
+    },
+    "EV-091": {
+      "title": "Hướng dẫn định tuyến Grok Bot + Claude MCP 100 USD",
+      "caption": "Hướng dẫn bốn bước ngày 10/11/2026 định tuyến Grok Bot sang Opus 5.5 qua gói Claude 100 USD và T3 Code."
+    },
+    "EV-092": {
+      "title": "14.662 USD / hiệu suất 73x trên gói Ultra 200 USD",
+      "caption": "Đồ họa ngày 10/11 khẳng định thu được 14.662 USD giá trị Opus 5.5 từ 1,1 triệu request qua proxy trên gói 200 USD."
+    },
+    "EV-093": {
+      "title": "\"GitHub có vấn đề sao ảo\" (04/2026)",
+      "caption": "Sáu tháng trước đó đã lập luận rằng sao GitHub đã trở thành \"chủ yếu là cách để các công ty lừa VC rót vốn\"."
+    },
+    "EV-094": {
+      "title": "Sao tăng gấp 10 lần mỗi ngày sau popup trong app",
+      "caption": "Biểu đồ ngày 02/11 ăn mừng cú nhảy gần như thẳng đứng gấp 10 lần ngay sau khi tung popup xin sao."
+    },
+    "EV-095": {
+      "title": "+3.094 sao/ngày trên GitHub Trending",
+      "caption": "Ảnh chụp ngày 02/11 làm nổi bật 3.094 sao kiếm được trong một ngày."
+    },
+    "EV-096": {
+      "title": "PR #29922 gắn sao server một cú nhấp",
+      "caption": "PR tự merge, thêm phát hiện idle 30 giây và RPC gắn sao bằng thông tin đăng nhập của server."
+    },
+    "EV-097": {
+      "title": "Macroscope gắn cờ PR #29922 (bị bỏ qua)",
+      "caption": "Bot gắn cờ PR #29922 là \"Needs Human Approval\" vì lệch giữa tài khoản GitHub của server và của người dùng."
+    },
+    "EV-098": {
+      "title": "Review của @zhilsinger bị bỏ trống 19 ngày",
+      "caption": "Gửi Request Changes cảnh báo về việc gắn sao trên host dùng chung và gắn sao repo tùy ý bằng thông tin đăng nhập của server."
+    },
+    "EV-099": {
+      "title": "Mã nguồn GitHubStarPrompt.tsx",
+      "caption": "Triển khai PROMPTS_BEFORE_ASKING = 5, IDLE_MS = 30_000, cùng RPC starInPlace + hiệu ứng confetti."
+    },
+    "EV-100": {
+      "title": "driver.ts#L60-L99 lỗi gắn sao repo tùy ý",
+      "caption": "starredPath không ghim pingdotgg/t3code, cho phép mọi client có quyền source-control:write gắn sao repo tùy ý bằng thông tin đăng nhập của host."
+    },
+    "EV-101": {
+      "title": "Khẳng định đã \"hoàn toàn bỏ lỡ\" 70k sao",
+      "caption": "Tweet ngày 24/11 lúc 74,6k sao, khẳng định anh ta \"hoàn toàn bỏ lỡ\" mốc 70k."
+    },
+    "EV-102": {
+      "title": "http.ts#L215-L241 cookie --lan dạng plaintext",
+      "caption": "PR #37042 chỉ bật Secure khi https:, nên cookie shell 30 ngày bị gửi dạng cleartext qua HTTP của t3 up --lan."
+    },
+    "EV-103": {
+      "title": "EnvironmentAuth.ts#L798-L819 bỏ qua Origin",
+      "caption": "isBrowserOriginAllowed trả về true khi thiếu Origin, cho phép script không phải trình duyệt phát lại cookie bị đánh cắp."
+    },
+    "EV-104": {
+      "title": "SessionStore.ts#L491-L522 TTL 30 ngày & WS 5 phút",
+      "caption": "DEFAULT_SESSION_TTL = 30 ngày, DEFAULT_WEBSOCKET_TOKEN_TTL = 5 phút, và WebSocketClaims không có jti dùng một lần."
+    },
+    "EV-105": {
+      "title": "EnvironmentAuth.ts#L1506-L1521 không thể tự thu hồi",
+      "caption": "Các lệnh gọi /oauth/token không dùng DPoP phát ra Bearer token 30 ngày không ràng buộc; không có /logout và revokeClientSession chặn việc tự thu hồi."
+    },
+    "EV-106": {
+      "title": "EnvironmentAuth.ts#L1553-L1585 phát lại ?wsTicket=",
+      "caption": "Vé WS truyền qua query string ?wsTicket= trên URL và bỏ qua kiểm tra phát lại trên các route Bearer RPC và media."
+    },
+    "EV-107": {
+      "title": "startupAccess.ts#L71-L110 giết tunnel ::1",
+      "caption": "Dòng 39 cho phép loopback IPv6 ::1, nhưng isPrivateNetworkAddress lại kiểm tra NodeNet.isIPv4 và giết Tailscale Serve / Connect bằng socket.destroy()."
+    },
+    "EV-108": {
+      "title": "GitVcsDriverCore.ts#L6144-L6205 RCE qua submodule",
+      "caption": "Việc tạo worktree chạy git submodule update --init --recursive trong khi tiến trình con thừa hưởng GITHUB_TOKEN và SSH_AUTH_SOCK của host."
+    },
+    "EV-109": {
+      "title": "PR #39483 vá lỗi path-traversal âm thầm (0 advisory)",
+      "caption": "Vá âm thầm lỗi path traversal của ServerSecretStore ngày 20/11 trong khoảng thời gian ca81b7b9, trong khi GitHub Security Advisories vẫn ở mức 0."
+    }
+  }
+}

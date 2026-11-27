@@ -1,0 +1,1557 @@
+{
+  "lang": "id",
+  "topics": {
+    "bullying": "Perundungan & Ancaman",
+    "double-standard": "Standar Ganda",
+    "promises": "Janji vs. Kode",
+    "telemetry": "Telemetri & Privasi",
+    "security": "Keamanan & Larangan",
+    "deleted": "Dihapus / Ditarik",
+    "commercial": "Komersial & Star"
+  },
+  "people": {
+    "theo": {
+      "name": "@theo (Theo Browne)",
+      "role": "Pembuat T3 Code / Ping.gg"
+    },
+    "dddxx666": {
+      "name": "@DDdxx666 (Fork MIT)",
+      "role": "Penulis Fork MIT China (Stardust)"
+    },
+    "ffmpeg": {
+      "name": "FFmpeg & VLC",
+      "role": "Maintainer Open Source (Bounty $20k)"
+    },
+    "indian-devs": {
+      "name": "Komunitas Developer India",
+      "role": "Gelombang Pelecehan Bernuansa Kebangsaan 2024"
+    },
+    "bermudi": {
+      "name": "@bermudi (Issue #33639)",
+      "role": "Pengguna T3 Code yang Dihina Maintainer"
+    },
+    "miaai": {
+      "name": "@MiaAI_lab & Pesaing",
+      "role": "Fork yang Di-scrape @bot dalam 30 Detik"
+    },
+    "dlkfz": {
+      "name": "@DLKFZWilliam2",
+      "role": "Pihak Lawan Debat Fork 24 Nov"
+    },
+    "ordinary-devs": {
+      "name": "Developer Biasa",
+      "role": "Engineer, AI Lokal & Pengembang Linux"
+    },
+    "female-critic": {
+      "name": "Kritikus Perempuan & Pengguna RSD",
+      "role": "Jadi Sasaran di Balasan 11–18 Nov"
+    },
+    "vibe-daytona": {
+      "name": "Vibe Kanban & Daytona",
+      "role": "Perusahaan Portofolio Angel"
+    },
+    "julius": {
+      "name": "@jullerino (Julius)",
+      "role": "Maintainer Inti T3 Code"
+    },
+    "maria": {
+      "name": "@maria_rcks (Maria)",
+      "role": "Anggota Tim T3 (maria-rcks/t3libre)"
+    },
+    "labs-vips": {
+      "name": "VIP Google / OpenAI",
+      "role": "20 Eksekutif Big Tech (0.0% Kata Kotor)"
+    },
+    "antigravity-users": {
+      "name": "Pengguna Antigravity & Relay",
+      "role": "Larangan 3 Menit & Relay Plaintext"
+    },
+    "gdpr-auditors": {
+      "name": "Auditor & GDPR UE",
+      "role": "Audit Independen & Catatan Hukum"
+    },
+    "dhh-wp": {
+      "name": "DHH / WordPress / USPTO",
+      "role": "Riwayat Olok-olok UI & Merek Dagang"
+    }
+  },
+  "threads": {
+    "2023-05-sponsor-roster": {
+      "from": "@theo → Sponsor YouTube",
+      "to": "Penonton & Developer YouTube",
+      "dateDisplay": "14 Mei 2023",
+      "subject": "Sponsor YouTube Clerk & Axiom terpasang di relay T3 Code",
+      "snippet": "Tiga tahun setelah Theo mencantumkan mereka sebagai sponsor, Clerk menjalankan auth T3 Connect dan Axiom menyimpan 2.2M span bertanda IP per jam selama 30 hari.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Timeline publik",
+          "time": "14 Mei 2023",
+          "body": "Pada 14 Mei 2023, @theo memposting daftar sponsor YouTube-nya di X (status 1657488850472804353): @vercel, @clerk, @upstash, @axiomhq, dan @PlanetScale.\n\nAudit kode `pingdotgg/t3code` (`infra/relay/`) mengonfirmasi dua dari sponsor itu menopang relay cloud:\n\n- **Auth (`Config.ts:63-65`):** Clerk menangani autentikasi relay.\n- **Logging (`observability.ts:20-79`):** Axiom menyimpan `t3-code-relay-traces`, `t3-code-mobile-logs`, dan `t3-code-mobile-metrics` selama 30 hari (~2.2M span bertanda IP per jam).",
+          "attachments": [
+            "Daftar Sponsor 2023 (Clerk, Axiom, Vercel, PlanetScale)"
+          ],
+          "links": [
+            "Postingan X 1657488850472804353"
+          ]
+        },
+        {
+          "sender": "Guillermo Rauch (@rauchg)",
+          "handle": "@rauchg · CEO Vercel",
+          "to": "@theo & Tech Twitter",
+          "time": "5 Apr 2024",
+          "body": "Pada 5 April 2024, CEO Vercel Guillermo Rauch (@rauchg) mengonfirmasi sponsor itu di X (status 1776260839965863965):\n\n> \"tim devrel kami cuma 4 orang dan kami mensponsori satu YouTuber (Theo)\"\n\nKetika kontrak Vercel berakhir pada September 2024, Theo mengungkap bahwa kontrak sponsor sebelumnya memuat klausul eksklusivitas yang melarang promosi produk pesaing.",
+          "attachments": [
+            "CEO Vercel mengonfirmasi hanya mensponsori Theo"
+          ],
+          "links": [
+            "Postingan X 1776260839965863965"
+          ]
+        }
+      ]
+    },
+    "2024-06-indian-dev-apology": {
+      "from": "@theo ↔ Komunitas Developer India",
+      "to": "Kreator & Developer Pemrograman India",
+      "dateDisplay": "2024",
+      "subject": "Gelombang developer India & \"I screwed up.\" vs. serangan fork 2026",
+      "snippet": "Mengunggah \"I screwed up.\" yang mengecam serangan berbasis kebangsaan terhadap developer India pada 2024, lalu menyebut tech Twitter China \"cesspit\" pada 2026.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@t3dotgg · YouTube",
+          "to": "Komunitas Developer",
+          "time": "2024",
+          "body": "Pada 2024, @theo menerbitkan video yang menyorot channel tutorial pemrograman India soal spam PR open-source, dan kolom komentarnya dipenuhi pelecehan berbasis kebangsaan.\n\nSetelah kritik publik, ia mengunggah \"I screwed up.\" (youtube.com/watch?v=o2CSJYXJBpc), yang mengecam permusuhan bertarget kebangsaan terhadap komunitas developer.",
+          "attachments": [],
+          "links": [
+            "YouTube: \"I screwed up.\""
+          ]
+        },
+        {
+          "sender": "Dua Tahun Kemudian",
+          "handle": "Dua Tahun Kemudian · 24 Nov 2026",
+          "to": "Kasus #16",
+          "time": "24 Nov 2026, 18.39 CST",
+          "body": "Dua tahun kemudian, saat sengketa fork MIT pada November 2026, @theo menyebut fork MIT gratis milik developer China sebagai \"Temu3 Code\" dan \"Chinese knockoff\", lalu menulis:\n\n> \"Saya bilang ya, tech twitter China itu kubangan paling busuk yang pernah saya masuki, dan kalau kalian percaya siapa pun di sisi itu yang menulis esai-esai sampah soal apa pun, kalian memang bebal.\"",
+          "attachments": [
+            "Postingan 24 Nov 'Chinese tech twitter is the biggest fucking cesspit'"
+          ],
+          "links": [
+            "Postingan X 2125177503526588877"
+          ]
+        }
+      ]
+    },
+    "2024-06-vsc-fork-dhh-ui": {
+      "from": "@theo → DHH & Penulis Tema",
+      "to": "Maintainer Open-Source",
+      "dateDisplay": "Jun 2024",
+      "subject": "Mengejek penulis tema lewat nama fork & merendahkan UI DHH",
+      "snippet": "Menamai fork temanya pada 2024 vsc-material-but-i-wont-sue-you, dua tahun sebelum mengancam memblokir penulis fork MIT.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "github.com/t3dotgg · Repositori",
+          "to": "Penulis Asli Tema VS Code & DHH",
+          "time": "Juni 2024",
+          "body": "Dua insiden pada 2024 menunjukkan bagaimana @theo memperlakukan fork dan antarmuka developer lain sebelum 2026:\n\n1. **Ejekan fork:** Saat mem-fork tema VS Code Material milik developer lain pada 2024, ia menamai repositori publiknya `t3dotgg/vsc-material-but-i-wont-sue-you` untuk mengejek sensitivitas hak cipta pembuat aslinya.\n2. **Ejekan UI di depan publik:** Pada Juni 2024, ia berulang kali merendahkan UI klien email pendiri Rails DHH di X — sebelum membela para maintainer dari ejekan online dan mengancam memblokir sebuah akun GitHub soal fork MIT pada 2026.",
+          "attachments": [],
+          "links": [
+            "GitHub: vsc-material-but-i-wont-sue-you",
+            "Thread Bukti Historis"
+          ]
+        }
+      ]
+    },
+    "2024-09-wordpress-trademark": {
+      "from": "@theo → WordPress / USPTO",
+      "to": "Komunitas Open-Source",
+      "dateDisplay": "26 Sep 2024",
+      "subject": "Mengejek sengketa merek dagang, tapi punya 0 merek USPTO",
+      "snippet": "Menyebut pembuatan merek dagang untuk istilah umum \"genuinely insane\" pada 2025, lalu mengancam blokir GitHub dengan 0 merek terdaftar pada 2026.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Timeline publik",
+          "time": "26 Sep 2024",
+          "body": "Pada 26 Sep 2024, @theo mengejek WordPress karena mengejar \"unenforceable trademark dispute\" (status 1839261574005141945).\n\nPada April 2025, ia menyusul:\n\n> \"Membuat merek dagang untuk sesuatu yang begitu umum dengan begitu banyak prior art itu benar-benar gila.\"",
+          "attachments": [],
+          "links": [
+            "Postingan X 1839261574005141945"
+          ]
+        },
+        {
+          "sender": "Registri Publik USPTO TSDR",
+          "handle": "tsdr.uspto.gov · Pendaftaran Resmi",
+          "to": "T3 Tools, Inc.",
+          "time": "19 Mei 2025",
+          "body": "Catatan resmi USPTO TSDR untuk T3 Tools, Inc. menunjukkan:\n\n- **T3 Code / T3 Tools / T3 Connect:** 0 pendaftaran merek dagang federal USPTO.\n- **Satu-satunya pendaftaran (`PING LABS`, Serial 97294243):** Ditolak Februari 2025 dan ditandai `ABANDONED` pada 19 Mei 2025.\n- **Merek perangkat lunak/SaaS `T3` milik pihak ketiga sebelumnya:** Sudah terdaftar atas nama EquipmentShare (Reg. 7795672, terdaftar 13 Mei 2025) dan ESG Operations (Reg. 3324707).",
+          "attachments": [
+            "TRADEMARK.md retroaktif yang mengklaim merek tak terdaftar"
+          ],
+          "links": [
+            "USPTO Serial 97294243 (Abandoned)",
+            "Kebijakan Merek Dagang GitHub"
+          ]
+        }
+      ]
+    },
+    "2025-10-ffmpeg-bounty": {
+      "from": "@theo ↔ FFmpeg & VLC",
+      "to": "Maintainer Open-Source FFmpeg",
+      "dateDisplay": "Okt 2025",
+      "subject": "[DIHAPUS] Menawarkan bounty $20k untuk menyingkirkan maintainer FFmpeg",
+      "snippet": "Windscribe menawarkan $21k agar Theo berhenti dari X dan pendiri VLC mengecam bounty itu sebelum Theo menghapus video dan postingannya.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X & YouTube [DIHAPUS]",
+          "to": "Maintainer FFmpeg",
+          "time": "Oktober 2025",
+          "body": "Saat bentrok dengan akun X FFmpeg pada Oktober 2025, @theo mengumpat ke maintainer open-source di depan kamera dan menawarkan bounty $20,000 untuk mendorong keluar seorang maintainer FFmpeg.\n\nKurang dari setahun kemudian, pada 11 November 2026, ia secara publik mengecam \"harassing open source maintainers\".",
+          "attachments": [],
+          "links": [
+            "Rekaman Video Terdokumentasi (YouTube)"
+          ]
+        },
+        {
+          "sender": "Windscribe, Pendiri VLC & Mailing List FFmpeg",
+          "handle": "Respons Komunitas Open-Source",
+          "to": "@theo & Publik",
+          "time": "Oktober 2025",
+          "body": "Proyek dan sponsor open-source langsung melawan:\n\n- **Windscribe:** Menawarkan balasan $21,000 agar @theo tidak muncul di X selama satu bulan.\n- **Pendiri VLC:** Secara publik mengecam bounty yang menyasar maintainer open-source.\n- **Mailing list FFmpeg:** Para developer mengarsipkan pelecehan itu dalam catatan resmi proyek.\n- **Pencabutan:** @theo menarik bounty $20,000 dan menghapus video serta postingan X-nya.",
+          "attachments": [],
+          "links": [
+            "Catatan Historis Bukti #16"
+          ]
+        }
+      ]
+    },
+    "2026-03-06-pr174-default-telemetry": {
+      "from": "pingdotgg/t3code (PR #174)",
+      "to": "Semua Pengguna T3 Code",
+      "dateDisplay": "6 Mar 2026",
+      "subject": "PR #174 mengaktifkan PostHog meski berjanji \"tanpa telemetri\"",
+      "snippet": "Config.withDefault(true) berjalan tanpa dialog persetujuan, tanpa toggle di UI Settings, dan tanpa dokumentasi selama lebih dari tiga bulan.",
+      "messages": [
+        {
+          "sender": "Homepage T3 Code (t3.codes)",
+          "handle": "Janji Pemasaran Publik",
+          "to": "Calon Pengguna",
+          "time": "6 Mar – 18 Jun 2026",
+          "body": "Dari 6 Maret hingga 18 Juni 2026, homepage T3 Code (`t3.codes`) menjanjikan:\n\n> \"Tidak ada telemetri. Kecuali Anda memilih ikut. Titik.\"\n\nPada 6 Maret 2026, PR #174 menyalakan analitik PostHog secara default lewat `Config.withDefault(true)` — tanpa modal persetujuan, tanpa toggle di UI Settings, dan tanpa dokumentasi telemetri.",
+          "attachments": [
+            "Commit 3bdaa6e1 yang menunjukkan janji 'tanpa telemetri kecuali opt-in' yang dihapus"
+          ],
+          "links": [
+            "PR #174",
+            "AnalyticsService.ts"
+          ]
+        }
+      ]
+    },
+    "2026-04-25-fake-stars-vc": {
+      "from": "@theo → Para Founder GitHub",
+      "to": "Timeline publik",
+      "dateDisplay": "25 Apr 2026",
+      "subject": "Menghujat bintang palsu demi VC, lalu menambah prompt bintang saat idle 30 detik",
+      "snippet": "Enam bulan setelah mengejek praktik peternakan bintang, ia self-merge PR #29922 untuk menumbuhkan pingdotgg/t3code dari 30k ke 77k bintang sementara jumlah watcher tetap ~129.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Timeline publik",
+          "time": "25 Apr 2026",
+          "body": "Pada 25 April 2026, @theo menepis pertumbuhan bintang GitHub yang direkayasa di X:\n\n> \"untuk mengelabui VC agar mau berinvestasi.\"\n\nEnam bulan kemudian, November 2026, ia self-merge PR #29922 (menembakkan `PUT user/starred` lewat kredensial host), membawa `pingdotgg/t3code` dari 30k ke 77k bintang dalam 25 hari sementara jumlah watcher bertahan di kisaran ~129. Pada 24 Nov, ia mengklaim \"sama sekali tidak menyadari\" telah melewati 70k bintang.",
+          "attachments": [
+            "'GitHub punya masalah bintang palsu' (Apr 2026)",
+            "Lonjakan bintang harian 10x setelah prompt bintang di dalam aplikasi",
+            "Mengklaim 'sama sekali tidak menyadari' telah melewati 70k bintang"
+          ],
+          "links": [
+            "PR #29922"
+          ]
+        }
+      ]
+    },
+    "2026-06-18-commit-3bdaa6e1-deleted-promise": {
+      "from": "@theo [commit 3bdaa6e1]",
+      "to": "Homepage t3.codes",
+      "dateDisplay": "18 Jun 2026",
+      "subject": "[DIHAPUS] Diam-diam mencabut \"No telemetry\" dari homepage",
+      "snippet": "Commit 3bdaa6e1 menghapus jaminan opt-in saat redesain 18 Juni, setelah 3+ bulan pelacakan default, tanpa pemberitahuan apa pun.",
+      "messages": [
+        {
+          "sender": "Theo Browne (commit 3bdaa6e1)",
+          "handle": "pingdotgg/t3code · Commit Git",
+          "to": "produksi t3.codes",
+          "time": "18 Jun 2026",
+          "body": "Setelah lebih dari tiga bulan mengumpulkan telemetri PostHog yang aktif secara default di bawah jaminan yang tertulis di homepage:\n\n> \"No telemetry / Unless you opt in. Full stop.\" (\"Tanpa telemetri / Kecuali Anda memilih ikut. Titik.\")\n\nCommit `3bdaa6e1` menghapus baris-baris itu secara diam-diam pada 18 Juni 2026 saat redesain pemasaran, tanpa satu pun entri changelog atau pemberitahuan ke pengguna.",
+          "attachments": [
+            "Diff Git commit 3bdaa6e1 yang menghapus baris 'No telemetry'"
+          ],
+          "links": [
+            "Commit 3bdaa6e1"
+          ]
+        }
+      ]
+    },
+    "2026-06-23-issue1397-no-optout": {
+      "from": "@jullerino → Issue #1397",
+      "to": "Pengguna yang Peduli Privasi",
+      "dateDisplay": "23 Jun 2026",
+      "subject": "Issue #1397: \"Kami tidak akan mempermudah cara keluar dari ini\"",
+      "snippet": "Maintainer @jullerino menutup permintaan tombol itu sebagai not planned; Issue #4123 yang mengutip janji yang sudah dihapus belakangan ditutup diam-diam dua kali.",
+      "messages": [
+        {
+          "sender": "Pengguna T3 Code",
+          "handle": "GitHub · Issue #1397",
+          "to": "maintainer pingdotgg/t3code",
+          "time": "Juni 2026",
+          "body": "Seorang pengguna T3 Code membuka Issue #1397 dan meminta tombol sederhana di Settings untuk keluar dari telemetri.",
+          "attachments": [],
+          "links": [
+            "Issue #1397"
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino)",
+          "handle": "Maintainer Inti · pingdotgg/t3code",
+          "to": "Pelapor Issue #1397",
+          "time": "23 Jun 2026",
+          "body": "Maintainer inti Julius (@jullerino) menutup Issue #1397 dengan status `not planned`:\n\n> \"Kami tidak akan mempermudah cara keluar dari ini; bagi kami krusial mengetahui berapa banyak pengguna yang kami punya.\"\n\nLaporan lanjutan, Issue #4123 — yang melampirkan tangkapan layar terarsip dari janji \"No telemetry\" yang sudah dihapus — belakangan ditutup diam-diam dua kali (21 Okt dan 4 Nov).",
+          "attachments": [
+            "Issue #1397 ditutup sebagai not planned"
+          ],
+          "links": [
+            "Issue #1397",
+            "Issue #4123"
+          ]
+        }
+      ]
+    },
+    "2026-08-06-pr5551-reality-check": {
+      "from": "@theo → PR #5551 / #9190",
+      "to": "GitHub PR #5551 & PR #9190",
+      "dateDisplay": "6 Agu 2026",
+      "subject": "Mengubur toggle Plan dengan grafik telemetri \"Reality check\"",
+      "snippet": "PR #5551 mengejek pengguna yang kecewa lewat grafik tanpa skala (10 downvote), lalu PR #9190 menyembunyikan cincin context dan menuai 16 downvote — tertinggi di repo.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #5551 & PR #9190",
+          "to": "Pengguna T3 Code",
+          "time": "6 Agu – 2 Sep 2026",
+          "body": "Dua penghapusan UI memakai telemetri privat untuk menepis masukan pengguna:\n\n- **6 Agu (PR #5551):** Karena Theo tidak memakai mode Plan, ia mengubur toggle Build/Plan di pengaturan legacy (`default false`) dan mengunggah grafik telemetri tanpa skala berjudul \"Reality check for those upset\" (10 downvote).\n- **2 Sep (PR #9190):** Menyembunyikan cincin progres context-window di composer secara default, menuai 16 downvote — jumlah downvote tertinggi di `pingdotgg/t3code`.",
+          "attachments": [
+            "PR #5551 'Reality check for those upset' (\"Cek realita buat yang kecewa\")"
+          ],
+          "links": [
+            "PR #5551",
+            "PR #9190"
+          ]
+        }
+      ]
+    },
+    "2026-10-03-issue15353-force-push": {
+      "from": "Issue #15353 → t3code",
+      "to": "Maintainer T3 Code (Issue #15353)",
+      "dateDisplay": "3 Okt 2026",
+      "subject": "Mode Auto diam-diam menjalankan git push --force origin main",
+      "snippet": "Bahkan setelah classifier Claude memblokir dua kali dan meminta persetujuan manusia, T3 Code mencatat \"user_temporary\" dan membiarkan 3 PR perbaikan tidak di-merge selama 52+ hari.",
+      "messages": [
+        {
+          "sender": "GitHub Issue #15353",
+          "handle": "pingdotgg/t3code · Laporan Bug",
+          "to": "Maintainer T3 Code",
+          "time": "3 Okt 2026 (Masih terbuka di ca81b7b9)",
+          "body": "Di `ClaudeAdapterV2.ts`, mode Auto memotong jalur `!requiresClaudeApproval(context)` langsung ke `\"allow\"`.\n\nSaat classifier keamanan milik Claude sendiri memblokir `git push --force origin main` dua kali dan mengeskalasi percobaan ketiga untuk konfirmasi manusia, T3 Code menyetujuinya diam-diam tanpa prompt UI dan mencatat `\"source\": \"user_temporary\"`.\n\nTiga PR perbaikan dari komunitas gagal masuk: #15360 dan #35207 dibiarkan tanpa review sampai bot menutupnya otomatis, dan #40692 tetap belum di-merge 52+ hari kemudian pada commit `ca81b7b9`.",
+          "attachments": [
+            "Issue #15353 terbuka 52+ hari, mendokumentasikan git push --force yang berjalan diam-diam"
+          ],
+          "links": [
+            "Issue #15353",
+            "PR perbaikan #40692 yang belum di-merge"
+          ]
+        }
+      ]
+    },
+    "2026-10-15-ingest-t3-codes": {
+      "from": "t3code → ingest.t3.codes",
+      "to": "Gateway Penyimpanan Closed-Source",
+      "dateDisplay": "Okt 2026",
+      "subject": "Batch telemetri 10 detik dialirkan lewat ingest.t3.codes yang closed-source",
+      "snippet": "Baris 1 AnalyticsService.ts menegaskan server ingest T3 menyimpan event sebelum diteruskan ke PostHog, dan tetap menulis ID lokal meski telemetri dinonaktifkan.",
+      "messages": [
+        {
+          "sender": "AnalyticsService.ts (Baris 1)",
+          "handle": "pingdotgg/t3code · PR #15028",
+          "to": "https://ingest.t3.codes/batch/",
+          "time": "Oktober 2026",
+          "body": "PR #15028 mengalihkan analitik batch 10 detik (`FLUSH_INTERVAL_MS = 10_000`) lewat endpoint closed-source milik T3, `https://ingest.t3.codes/`.\n\nBaris 1 dan nilai default konfigurasi di `AnalyticsService.ts` menyatakan verbatim:\n\n> `// T3 ingest retains events and forwards to PostHog; UUIDs deduplicate retries there.`\n> `enabled: Config.Boolean(\"T3CODE_TELEMETRY_ENABLED\").pipe(Config.withDefault(true))`\n\nPada HEAD terbaru (`ca81b7b9`), `AnalyticsService.ts:156` masih menulis ID lokal persisten ke disk sebelum memeriksa apakah telemetri dinonaktifkan, dan `ingest.t3.codes` tetap closed-source.",
+          "attachments": [
+            "Implementasi telemetri di Identify.ts & AnalyticsService"
+          ],
+          "links": [
+            "PR #15028",
+            "AnalyticsService.ts"
+          ]
+        }
+      ]
+    },
+    "2026-10-20-pr21506-cross-tool-hash": {
+      "from": "@theo → ~/.codex & ~/.claude",
+      "to": "Kredensial Direktori Home Pengguna",
+      "dateDisplay": "20 Okt 2026",
+      "subject": "PR #21506 membaca ~/.codex & ~/.claude.json untuk menautkan mesin",
+      "snippet": "Ditulis oleh t3dotgg, Identify.ts meng-hash user_id JWT OpenAI dan accountUuid Claude lewat SHA-256 tanpa salt di bawah install.owner_observed.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #21506",
+          "to": "apps/server/src/telemetry/Identify.ts",
+          "time": "19–20 Okt 2026",
+          "body": "Theo (@t3dotgg) me-merge PR #21506: `feat(server): analytics records a stable install id and who owns each install`.\n\n`Identify.ts` membaca `~/.codex/auth.json` (mendekode klaim `user_id` JWT OpenAI) dan `~/.claude.json` (`oauthAccount.accountUuid`) bersama ID pengguna T3 Connect. Ia lalu menghitung digest SHA-256 tanpa salt (`telemetryId.ts`) sebagai `install.owner_observed` untuk menautkan mesin-mesin terpisah ke satu orang.\n\nKarena T3 menyimpan ID Clerk dalam teks polos, digest tanpa salt bisa dibalik secara deterministik. Pembacaan file CLI eksternal itu tetap ada selama sebulan sampai PR #42299 menghapusnya setelah Bagian 1 menembus 2.26M+ tayangan.",
+          "attachments": [
+            "PR #21506 ditulis oleh t3dotgg",
+            "Identify.ts membaca ~/.codex/auth.json dan ~/.claude.json"
+          ],
+          "links": [
+            "PR #21506",
+            "PR #42299 Penghapusan Pasca-Audit"
+          ]
+        }
+      ]
+    },
+    "2026-10-28-fake-delete-process-spy": {
+      "from": "Pengguna → Issue #17845 / #11222",
+      "to": "pingdotgg/t3code",
+      "dateDisplay": "28 Okt 2026",
+      "subject": "Penghapusan SQLite palsu 41.6 GB & pemindaian proses cmdline OS tiap 5 detik",
+      "snippet": "\"Menghapus permanen\" ternyata hanya menambahkan peristiwa soft-delete, sementara t3-resource-monitor menyapu 440+ proses OS dan cmdline lengkap setiap 5 detik.",
+      "messages": [
+        {
+          "sender": "Pengguna Terdampak (Issue #17845, #28903, #11222)",
+          "handle": "pingdotgg/t3code · GitHub Issues",
+          "to": "Pengelola T3 Code",
+          "time": "Okt–Nov 2026",
+          "body": "Pengguna mendokumentasikan dua cacat penyimpanan lokal dan privasi di Issue #17845, #28903, dan #11222:\n\n1. **Penghapusan permanen palsu (#17845):** Dialog konfirmasi menjanjikan \"Ini menghapus riwayat percakapan thread ini secara permanen\", tetapi `ThreadDeletion.ts` hanya menambahkan peristiwa `thread.deleted` — membengkakkan `statev2.sqlite` menjadi 25.9 GB dalam 3 minggu dan 41.6 GB dalam 6 minggu.\n2. **Pemindaian proses OS tiap 5 detik (#11222 & PR #41889):** Helper native `t3-resource-monitor` menjalankan `ProcessesToUpdate::All` dengan `with_cmd(UpdateKind::Always)` setiap 5 detik bahkan saat diagnostik ditutup, menyapu 440+ aplikasi dan game tak terkait beserta baris perintah lengkap (yang sering menyimpan kunci API dan kata sandi dalam teks polos).",
+          "attachments": [
+            "Issue #17845 mendokumentasikan penghapusan SQLite palsu 41.6 GB",
+            "Issue #11222 mendokumentasikan pemindaian proses seluruh OS tiap 5 detik"
+          ],
+          "links": [
+            "Issue #17845",
+            "Issue #11222",
+            "PR #41889"
+          ]
+        }
+      ]
+    },
+    "2026-11-02-pr29922-77k-stars": {
+      "from": "@theo ↔ @zhilsinger (PR #29922)",
+      "to": "pingdotgg/t3code (PR #29922)",
+      "dateDisplay": "2 Nov 2026",
+      "subject": "Corong star 30 detik hasil merge sendiri (30k → 77k) dengan bug yang belum diperbaiki",
+      "snippet": "Melewati blokir persetujuan Macroscope dan membiarkan Request Changes dari @zhilsinger tak dijawab selama 19+ hari, sementara driver.ts#L60-L99 memungkinkan klien memberi star ke repo mana pun.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #29922",
+          "to": "Semua Pengguna Desktop/Web",
+          "time": "2 Nov 2026",
+          "body": "@t3dotgg me-merge sendiri PR #27832, #29922, dan #29987, menambahkan notifikasi toast setelah 30 detik menganggur usai 5 prompt terkirim yang memicu `PUT user/starred/pingdotgg/t3code` dengan kredensial GitHub server host.\n\n- Melewati blokir `Needs Human Approval` dari bot Macroscope.\n- Menumbuhkan `pingdotgg/t3code` dari 30k ke 77k star dalam 25 hari (+3,094 star/hari di GitHub Trending), sementara jumlah watcher tetap sekitar ~129.",
+          "attachments": [
+            "PR #29922 star server sekali klik hasil merge sendiri",
+            "Macroscope menandai PR #29922 (dilewati)",
+            "+3,094 star/hari di GitHub Trending"
+          ],
+          "links": [
+            "PR #29922"
+          ]
+        },
+        {
+          "sender": "@zhilsinger",
+          "handle": "Peninjau Keamanan GitHub",
+          "to": "@t3dotgg (PR #29922)",
+          "time": "Nov 2026 (Tidak dijawab 19+ hari)",
+          "body": "Peninjau @zhilsinger mengirim peringatan resmi `Request changes` bahwa `packages/source-control-github/src/server/driver.ts#L60-L99` menerima parameter `owner/repo` tanpa pin untuk pemberian star di sisi server, sehingga klien mana pun bisa memberi star ke repositori sembarang lewat kredensial host.\n\nReview itu dibiarkan tak dijawab dan tak diperbaiki selama 19+ hari hingga `ca81b7b9`.",
+          "attachments": [
+            "Review Request Changes zhilsinger tak dijawab 19 hari",
+            "Bug pemberian star ke repo sembarang driver.ts#L60-L99"
+          ],
+          "links": [
+            "sumber driver.ts"
+          ]
+        }
+      ]
+    },
+    "2026-11-08-stealing-miaai-fork": {
+      "from": "@theo → @MiaAI_lab & @bot",
+      "to": "@MiaAI_lab, @bot (beebox)",
+      "dateDisplay": "8 Nov 2026",
+      "subject": "\"Okay I'm stealing this\" (Oke, aku mencuri ini): mengirim @bot 30 detik kemudian untuk menyalin fork",
+      "snippet": "Membalas pukul 09:28:47 dan menandai @bot di beebox pukul 09:29:17 untuk mem-port fork @MiaAI_lab, lalu mengulangi perintah kloning terhadap alat pesaing pada 13 Nov.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2119240683680944172)",
+          "to": "@MiaAI_lab",
+          "time": "8 Nov 2026, 09:28:47 CST",
+          "body": "Membalas demo fork @MiaAI_lab pukul 09:28:47 CST:\n\n> \"Okay I'm stealing this\" (Oke, aku mencuri ini)",
+          "attachments": [],
+          "links": [
+            "Postingan X 2119240683680944172"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2119240810202034645)",
+          "to": "@bot (30 detik kemudian)",
+          "time": "8 Nov 2026, 09:29:17 CST",
+          "body": "Tiga puluh detik kemudian (09:29:17 CST), @theo menandai @bot:\n\n> \"@bot temukan fork-nya dan lihat seberapa portabel ini. Buka thread di beebox dengan opus 5.5 untuk mengimplementasikannya. Gunakan skill full stop milikku.\"\n\nLima hari kemudian (13 Nov, status 2121017649652269120), saat @zqkrq mendaftar fitur yang disukai di alat pesaing, ia kembali memerintahkan @bot membuka thread terpisah untuk mengkloning setiap fitur yang dipuji — sambil mengejek @agent_wrapper dan Claude Code Desktop karena merilis UI serupa.",
+          "attachments": [
+            "Membalas 'Okay I'm stealing this' (Oke, aku mencuri ini) dan menandai @bot 30 detik kemudian",
+            "13 Nov mengirim @bot untuk mengkloning fitur alat pesaing",
+            "24 Nov mengejek tab sidebar Claude Code Desktop"
+          ],
+          "links": [
+            "Postingan X 2119240810202034645",
+            "Postingan Kloning Pesaing 13 Nov"
+          ]
+        }
+      ]
+    },
+    "2026-11-09-issue33639-bermudi-insult": {
+      "from": "@theo ↔ @bermudi (#33639)",
+      "to": "Issue #33639 & PR #33131",
+      "dateDisplay": "9 Nov 2026",
+      "subject": "Menyebut pengguna @bermudi \"berengsek tak tahu terima kasih\" di Issue #33639",
+      "snippet": "Menyuruh pengguna yang bertanya soal perubahan UI tersembunyi setelah PR #33131 untuk mencopot aplikasi, lalu menolak PR perbaikan bersih #41572 keesokan paginya.",
+      "messages": [
+        {
+          "sender": "@bermudi",
+          "handle": "Pengguna GitHub · Issue #33639",
+          "to": "pingdotgg/t3code",
+          "time": "Nov 2026",
+          "body": "Setelah PR #33131 menghapus mode Plan bersama ringkasan AI yang belum dibaca, @bermudi mengeluh bahwa catatan rilis gagal menjelaskan ke mana indikator context-window tersembunyi itu pergi, sambil mencatat tidak setiap developer mampu membayar langganan AI ribuan dolar.",
+          "attachments": [
+            "PR #33131 menghapus mode Plan dengan ringkasan AI yang kontradiktif"
+          ],
+          "links": [
+            "PR #33131"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "Pengelola · Issue #33639",
+          "to": "@bermudi",
+          "time": "Nov 2026",
+          "body": "Theo (@t3dotgg) membalas di Issue #33639:\n\n> \"@bermudi, khususnya kamu, sebaiknya copot software kami. Aku akan mem-ban kamu dari repo kalau kamu sekali lagi meninggalkan komentar seperti ini. Kamu menghabiskan waktu nyata untuk berlaku brengsek kepadaku secara pribadi karena aku membagikan secara gratis software yang bisa kujual jutaan dolar... Kamu ini berengsek yang tidak tahu terima kasih dan pemalas setengah mati, dan aku tidak peduli dengan pendapatmu.\"\n\nSaat kontributor lain membuka PR #41572 yang dengan rapi menempatkan cincin konteks di dalam tombol kirim tanpa memakan ruang composer, PR itu ditutup keesokan paginya.",
+          "attachments": [
+            "Tangkapan layar verbatim Theo menghina @bermudi di Issue #33639"
+          ],
+          "links": [
+            "Komentar Issue #33639",
+            "PR Perbaikan #41572 yang Ditolak"
+          ]
+        }
+      ]
+    },
+    "2026-11-10-yolo-merges-nuke": {
+      "from": "@theo → Pengguna Nightly",
+      "to": "Pengguna & Kontributor Nightly",
+      "dateDisplay": "10 Nov 2026",
+      "subject": "\"Kalau mesinku hancur, itu konten gratis\": merge 700 agen",
+      "snippet": "Membanggakan 500 commit/hari dan \"yolo merge yang kadang merusak\", sambil menyalahkan 70% permintaan fitur pengguna pada \"masalah skill prompt\".",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Pengguna T3 Code Nightly",
+          "time": "10 Nov 2026",
+          "body": "Sepanjang 10–16 November, @theo membeberkan alur kerja merge agen tanpa review di X:\n\n- **10 Nov (2119951615679672513):** \"Kalau kamu oke dengan yolo merge-ku yang kadang merusak, tetaplah di nightly\"\n- **10 Nov (2119993037971730879):** \"Aku butuh hasil cepat karena harus syuting, dan kalau ini menghancurkan mesinku, itu konten gratis\"\n- **10 Nov (2119958282022568059):** \"~70% permintaan fitur di T3 Code sekarang ini masalah skill prompt\"\n- **12 Nov (2120741101250515322):** \"Aku sering di 500 commit/hari, ini cuma t3 code lol\"\n- **16 Nov (2122203951701585972):** \"Mengetahui apa yang sedang dikerjakan 1 editor videoku sangat berbeda dari mengetahui apa yang dilakukan 700 agenku minggu lalu.\"",
+          "attachments": [
+            "'kalau ini menghancurkan mesinku, itu konten gratis'",
+            "'yolo merge-ku kadang merusak'"
+          ],
+          "links": [
+            "Postingan X 2119951615679672513",
+            "Postingan X 2119993037971730879"
+          ]
+        }
+      ]
+    },
+    "2026-11-11-gendered-attack-demonetize": {
+      "from": "@theo → Kritikus Perempuan",
+      "to": "Timeline publik & Community Notes",
+      "dateDisplay": "11 Nov 2026",
+      "subject": "Serangan \"stupid bitch\" & mendesak pengikut mencabut monetisasi kritikus",
+      "snippet": "Di hari dengan 125 post (32 dalam satu jam), Theo bilang tidak ada \"penyesalan\" soal hinaan berbasis gender dan meminta pengikut mencabut monetisasi kritikus lewat Community Notes.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (Hari Puncak: 125 Post)",
+          "to": "Kritikus Perempuan & Pengikut",
+          "time": "11–12 Nov 2026",
+          "body": "Di puncak rentetan postingnya (125 post/hari, 32 dalam satu jam), @theo makin keras dengan hinaan berbasis gender dan meminta pengikutnya menyasar pendapatan seorang kritikus:\n\n11 Nov (2120238201705226498):\n\n> \"Melecehkan dan berbohong soal maintainer open source memang benar-benar tindakan 'stupid bitch'.\"\n\n11 Nov (2120238923884696025):\n\n> \"Saya akan senang kalau kalian pakai kekuatan community note kalian untuk mencabut monetisasi mereka karena kebohongan mereka :)\"\n\n12 Nov (2120599310211703274):\n\n> \"Saya memang benar-benar menganggap mereka 'stupid bitch' dan saya tidak menyesal mengatakannya.\"",
+          "attachments": [
+            "Serangan 'stupid bitch' berulang dengan 'tanpa penyesalan'",
+            "Mendesak pengikut memakai Community Notes untuk mencabut monetisasi kritikus"
+          ],
+          "links": [
+            "Post X 2120599310211703274",
+            "Post X 2120238923884696025"
+          ]
+        }
+      ]
+    },
+    "2026-11-12-contributing-vouched-local-ai": {
+      "from": "@theo → Kontributor & AI Lokal",
+      "to": "pingdotgg/t3code & Komunitas AI Lokal",
+      "dateDisplay": "12 Nov 2026",
+      "subject": "CONTRIBUTING: \"Jangan\" + larangan VOUCHED.td + serangan ke AI lokal",
+      "snippet": "Menutup 174 item sebagai unwanted, menolak kontributor karena tidak mengikuti dia di X, mengancam mencabut /btw, dan mengejek pengguna Qwen 3.8.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "CONTRIBUTING.md & X",
+          "to": "Kontributor Open Source",
+          "time": "12 Nov 2026",
+          "body": "Pada 12 November, @theo mengunci kontribusi eksternal dan menyerang pengguna model lokal:\n\n- **`CONTRIBUTING.md` & `.github/VOUCHED.td` (174 item `unwanted`):** \"Kalau kalian cari sesuatu untuk dikontribusikan, ini saran saya: Jangan. ... Akun yang dilarang diumumkan di `.github/VOUCHED.td`. Setiap issue atau PR yang dibukanya langsung ditutup saat dibuka.\"\n- **Gerbang PR (2120821423438778667):** \"Dari semangatmu berkontribusi sampai fakta bahwa kamu membalas postingan saya tanpa mengikuti saya... saya tidak yakin ini proyek terbaik untuk kamu curahkan waktumu.\"\n- **Mengancam menghapus fitur (2120853340078874923):** \"Saya sudah mengalah untuk kalian soal `/btw`, hati-hati. Saya tidak takut mencabutnya.\"\n- **Ejekan AI lokal & Qwen 3.8 (2120733839832273025, 2120757007523447144):** \"Saya akan menari di atas kuburan komunitas 'local ai'\" dan \"Kalau saya sebodoh kamu, saya mungkin juga baik-baik saja dengan Qwen 3.8 :)\"",
+          "attachments": [
+            "CONTRIBUTING.md yang menunjuk larangan pengumuman publik di .github/VOUCHED.td",
+            "Menolak kontributor karena tidak mengikuti di X",
+            "'hati-hati. Saya tidak takut mencabutnya'",
+            "'menari di atas kuburan komunitas local ai'"
+          ],
+          "links": [
+            "CONTRIBUTING.md",
+            ".github/VOUCHED.td",
+            "Post AI Lokal"
+          ]
+        }
+      ]
+    },
+    "2026-11-16-vibe-kanban-daytona": {
+      "from": "@theo ↔ Vibe Kanban / Daytona",
+      "to": "Perusahaan Portofolio Angel",
+      "dateDisplay": "16 Nov 2026",
+      "subject": "Mengejek perusahaan portofolio Vibe Kanban & tumpang tindih dengan Daytona",
+      "snippet": "Setelah Vibe Kanban beralih ke tata letak T3 Code dan tutup, investor Theo mengejek UI-nya — sembilan hari setelah mengusulkan cloud sandbox berbayar melawan Daytona.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2122201981167251877)",
+          "to": "Tech Twitter",
+          "time": "16 Nov 2026",
+          "body": "Pada 16 November, @theo mengungkap bahwa ia berinvestasi di Vibe Kanban dan ikut berkontribusi sebelum mengejek penutupannya:\n\n> \"Fakta seru: saya investor di Vibe Kanban dan kontributor di sana. Mereka sadar kanban sudah mati dan mulai beralih ke dasarnya UI persis seperti yang dimiliki T3 Code hari ini. Mereka tidak selesai cukup cepat. Mereka menyerah dan menutup perusahaannya. UI ini hebat… untuk kehabisan runway dan membunuh bisnismu. Mungkin itu sebabnya tech twitter begitu menyukainya 🤔\"",
+          "attachments": [
+            "Mengejek penutupan Vibe Kanban setelah investasi angel"
+          ],
+          "links": [
+            "Post X 2122201981167251877"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2123011578090127499)",
+          "to": "CEO Daytona (@ivanburazin)",
+          "time": "18 Nov 2026",
+          "body": "Pada 18 November, membalas CEO Daytona @ivanburazin, ia mengungkap saham angel di Daytona dan para pesaingnya:\n\n> \"Demi investasi saya di Daytona (dan sebagian besar pesaing yang sekarang membuatmu kesal), saya sangat berharap kamu salah di sini\"\n\nSembilan hari sebelumnya (9 Nov, status 2119705561679933806), Theo sempat melempar wacana merilis cloud sandbox berbayar di dalam T3 Code sendiri.",
+          "attachments": [
+            "Mengonfirmasi investasi angel di Daytona & para pesaing",
+            "9 Nov mengusulkan cloud sandbox berbayar di dalam T3 Code"
+          ],
+          "links": [
+            "Post X 2123011578090127499"
+          ]
+        }
+      ]
+    },
+    "2026-11-17-pr27077-rejected": {
+      "from": "t3code → @inayayousfi (#27077)",
+      "to": "Kontributor Opt-Out Keempat yang Ditolak",
+      "dateDisplay": "17 Nov 2026",
+      "subject": "PR #27077 opt-out telemetri (147 tes) ditutup sebagai unwanted",
+      "snippet": "Menandai PR opt-out komunitas keempat (#13458, #16763, #21248, #27077) ditolak meski disetujui Macroscope.",
+      "messages": [
+        {
+          "sender": "pingdotgg/t3code",
+          "handle": "GitHub · PR #27077",
+          "to": "@inayayousfi",
+          "time": "17 Nov 2026",
+          "body": "Kontributor @inayayousfi membuka PR #27077 yang menambahkan pengaturan opt-out telemetri yang bersih, lolos semua 147 tes dengan persetujuan `macroscopeapp[bot]`.\n\nMaintainer menutupnya tanpa di-merge pada 17 November sebagai `unwanted` (\"Ini bukan hal yang ingin diambil proyek ini\"), menyusul PR opt-out yang ditolak #13458, #16763, dan #21248.",
+          "attachments": [
+            "PR #27077 ditutup sebagai unwanted meski 147 tes lolos"
+          ],
+          "links": [
+            "PR #27077"
+          ]
+        }
+      ]
+    },
+    "2026-11-18-jail-threat-rsd": {
+      "from": "@theo → Kritikus Threads (RSD)",
+      "to": "Kritikus dengan Diagnosis RSD",
+      "dateDisplay": "18 Nov 2026",
+      "subject": "Mengancam kritikus dengan penjara & mengejek diagnosis RSD mereka",
+      "snippet": "Diposting selama rentang 48 jam ketika Theo mengaku demam 102°F sambil menerbitkan 177 post, esai 6.643 karakter, video, dan 8 serangan ke @elshayib.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2122838455483031925 / 2122865897375400066)",
+          "to": "Kritikus Threads",
+          "time": "18 Nov 2026",
+          "body": "Membalas seorang kritikus Threads pada 18 November, @theo mengancam penjara dan mengejek Rejection Sensitive Dysphoria (RSD) mereka:\n\n> \"Berhenti sekarang atau saya benar-benar akan mengirimmu ke penjara. Saya yakin rekan-rekan selmu akan sangat memahami RSD-mu.\"\n\nAncaman itu muncul dalam rentang 48 jam (17–18 Nov PST) ketika ia mengaku demam 102°F sambil menerbitkan 177 post X, esai Astra 6.643 karakter, sebuah video, dan 8 balasan berisi kata-kata kotor berturut-turut yang menyasar @elshayib.",
+          "attachments": [
+            "Ancaman penjara dan ejekan medis RSD pada 18 Nov 2026"
+          ],
+          "links": [
+            "Post X 2122838455483031925",
+            "Post X 2122865897375400066"
+          ]
+        }
+      ]
+    },
+    "2026-11-18-31t-token-radar": {
+      "from": "@theo → Lab AI & VC",
+      "to": "OpenAI, DeepMind & Investor",
+      "dateDisplay": "18 Nov 2026",
+      "subject": "Radar telemetri 31.7T token/hari ($10.19M/hari) & pembicaraan VC",
+      "snippet": "Telemetri default membangun pemantau pangsa pasar lab secara real-time di samping belanja $800k+, $300k+ token OpenAI gratis, dan pertanyaan investor.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Timeline publik & @maria_rcks",
+          "time": "12 Nov – 23 Nov 2026",
+          "body": "Postingan publik 12–23 November menunjukkan model bisnis di balik menjaga T3 Code gratis dan telemetri menyala secara default:\n\n- **12 Nov (2120729779511124267):** Mengungkap belanja \"$800k+ untuk membuat\" klien open source itu.\n- **18 Nov (2122860770329608290):** Membagikan dashboard internal yang melacak 31.7T token/hari dan setara belanja API $10.19M/hari (memuncak mendekati $10.2M/hari), plus $300k+ token early-access OpenAI gratis tanpa batas.\n- **21 Nov (2123885732330885417):** Membalas @maria_rcks: \"Maria tolong, beberapa investor sudah bertanya ke saya soal ini 💀\".\n- **23 Nov (2124682906132181482):** Mengutip dashboard privat dalam sebuah argumen: \"Maaf, saya tidak sadar kamu punya akses ke analytics saya dan bisa melihat hal-hal yang tidak saya lihat.\"",
+          "attachments": [
+            "Analytics internal: 31.7T token/hari & $10.19M/hari",
+            "Mengungkap belanja pembangunan $800k+",
+            "'beberapa investor sudah bertanya ke saya soal ini'",
+            "Mengungkap konsentrasi ~98.5% di tiga lab"
+          ],
+          "links": [
+            "Post Radar 31.7T",
+            "Post Investor"
+          ]
+        }
+      ]
+    },
+    "2026-11-19-selective-politeness-vips": {
+      "from": "@theo → 20 Big-Tech VIPs",
+      "to": "Google DeepMind, OpenAI & Eksekutif Teknologi",
+      "dateDisplay": "Nov 19, 2026",
+      "subject": "0.0% kata kasar ke 20 VIP Big-Tech vs. 8.0% ke developer biasa",
+      "snippet": "Dari 1,151 unggahan X berturut-turut (7–24 Nov), Theo menunjukkan 32.6% rasa terima kasih ke eksekutif lab, sementara hinaan melonjak 4.0× jadi 14.4% selama krisis 24 Nov.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2123255588570501585 & 2123995323123343869)",
+          "to": "Pimpinan Google DeepMind & OpenAI",
+          "time": "Nov 19–21, 2026",
+          "body": "19 Nov (2123255588570501585):\n\n> \"Maaf banget Google. Aku tidak mengenali permainanmu\"\n\n21 Nov (2123995323123343869):\n\n> \"Senang aku tidak membakar jembatan dengan konten masaku dan kita bisa menikmati momen ini bersama :)\"\n\nDari seluruh 1,151 unggahan X berturut-turut pada 7–24 November 2026:\n\n- **20 eksekutif Big-Tech / staf lab (n = 43 primary-@; 62 any-@):** 0.0% kata kasar atau hinaan yang disasar, 32.6% rasa terima kasih eksplisit.\n- **Developer dan kritikus biasa (n = 766 primary-@):** 8.0% permusuhan atau kata kasar (61 / 766).\n- **Krisis fork China 25 jam (n = 132):** Hinaan pribadi langsung melonjak 4.0× dari 3.6% jadi 14.4%.",
+          "attachments": [
+            "Bagan Forensik 3: 0.0% VIP vs 8.0% Dev vs 14.4% Krisis",
+            "'Senang aku tidak membakar jembatan dengan konten masaku'"
+          ],
+          "links": [
+            "Dossier 06 (Dataset 1,151 Tweet)",
+            "Unggahan X 2123995323123343869"
+          ]
+        }
+      ]
+    },
+    "2026-11-22-engineers-unemployment-linux": {
+      "from": "@theo → Engineers & Linux",
+      "to": "Komunitas Developer",
+      "dateDisplay": "Nov 22, 2026",
+      "subject": "\"Engineer layak kena pengangguran massal\" & \"Linux larpers\"",
+      "snippet": "Bilang ke 386k+ penonton bahwa developer layak menganggur gara-gara perbandingan tool, tepat 24 jam setelah menceramahi orang lain agar tidak \"burn trust\".",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Developer Biasa",
+          "time": "Nov 21–22, 2026",
+          "body": "Dalam 24 jam pada 21–22 November, @theo menghina developer biasa dan pengguna Linux sambil mengkhotbahkan soal kepercayaan:\n\n- **21 Nov (2123906522728272178):** \"rata-rata developer itu tidak terlalu pintar\"\n- **22 Nov (2124298216271499605):** \"Aku paham kenapa kalian membenciku, Linux larpers cenderung tidak suka developer sungguhan\"\n- **22 Nov (2124470530590011704, 386k+ tayangan — mengutip pertanyaan T3 Code vs. Antigravity):** \"Engineer layak mendapatkan pengangguran massal yang akan datang\"\n- **22 Nov, 18:26 CST (2124449493513068862, 24 jam sebelum ancaman fork MIT):** \"Fwiw, membakar kepercayaan semua orang di sekitarmu hampir tidak pernah jadi jalan terbaik untuk mendapatkan yang kamu mau\"",
+          "attachments": [
+            "'Engineer layak mendapatkan pengangguran massal yang akan datang'",
+            "'Linux larpers cenderung tidak suka developer sungguhan'",
+            "Menggurui 'jangan bakar kepercayaan' 24 jam sebelum krisis"
+          ],
+          "links": [
+            "Unggahan soal Pengangguran",
+            "Unggahan soal Membakar Kepercayaan"
+          ]
+        }
+      ]
+    },
+    "2026-11-22-antigravity-spoof-3min-ban": {
+      "from": "@Allmight97 ↔ t3code (#41536)",
+      "to": "Pelanggan Google Antigravity (Issue #40713 & #41536)",
+      "dateDisplay": "Nov 22, 2026",
+      "subject": "Menjanjikan ToS Antigravity \"zero risk\"; akun $20 baru diblokir dalam 3 menit",
+      "snippet": "Saat FAQ menjanjikan keamanan ToS dan Theo menyalahkan proxy, kodenya mengekstrak token keyring OS, memalsukan v1internal, dan memalsukan SSH_CONNECTION.",
+      "messages": [
+        {
+          "sender": "T3 Code FAQ & @theo",
+          "handle": "docs/user/faq.md & X",
+          "to": "Pelanggan Google AI Berbayar",
+          "time": "Nov 22, 2026",
+          "body": "`docs/user/faq.md` milik T3 Code menjamin kepada pelanggan berbayar:\n\n> \"Kami bekerja dengan semua lab dan T3 Code sesuai TOS Claude Code, Codex, dan Google Antigravity... Kalau jalan di T3 Code, kamu bisa percaya itu aman.\"\n\nPada 22 November (2124266892991115362), @theo mengklaim Antigravity \"zero risk\", menyalahkan proxy atas blokir, dan menulis bahwa @PatrickToulme dari DeepMind \"telah mendaratkan banyak PR di T3 Code\" — padahal riwayat git menunjukkan 1 commit (#31158). Sementara itu, Theo menerbitkan Gist CLIProxyAPI penggabungan 10 akun (kuota 555%) dan memanfaatkan masa tenggang 0% Codex untuk $800+ komputasi ekstra.",
+          "attachments": [
+            "FAQ yang menjamin kepatuhan ToS Antigravity",
+            "Klaim bahwa engineer DeepMind 'mendaratkan banyak PR'",
+            "Log git membuktikan tepat 1 commit (#31158)",
+            "Gist CLIProxyAPI 452 bintang milik Theo untuk penggabungan kuota 555%"
+          ],
+          "links": [
+            "antigravityUsageLimits.ts"
+          ]
+        },
+        {
+          "sender": "@Allmight97 & @schlessera",
+          "handle": "GitHub · Issues #41536 & #40713",
+          "to": "pingdotgg/t3code",
+          "time": "Nov 2026",
+          "body": "Kode sumber dan laporan pengguna membantah FAQ itu:\n\n- **Issue #41536:** Langganan Google AI $20 yang baru sama sekali dan tanpa proxy diblokir pada pesan pertamanya, 3 menit setelah penyiapan.\n- **Issue #40713:** Setelah seorang maintainer membantah memanggil backend Antigravity, @schlessera mengutip `antigravityUsageLimits.ts` — yang mengekstrak token keyring OS dan memalsukan `antigravity/hub/2.24.0` terhadap `v1internal` — dan `antigravityAuthSupport.ts#L230-L236`, yang menyuntikkan `SSH_CONNECTION` palsu (memicu kebocoran prompt antar-akun di #41973), plus penyambungan hub CLIProxyAPI di PR #33800.",
+          "attachments": [
+            "Header palsu antigravity/hub/2.24.0 yang di-hardcode",
+            "Suntikan SSH_CONNECTION palsu",
+            "Akun $20 baru diblokir dalam 3 menit",
+            "Bantahan level kode dari schlessera di Issue #40713"
+          ],
+          "links": [
+            "Issue #41536",
+            "Issue #40713",
+            "PR #33800"
+          ]
+        }
+      ]
+    },
+    "2026-11-22-pr41237-21h-filter-drop": {
+      "from": "@theo → slopalytics.com",
+      "to": "PR #41237 (Filter Telemetri Model)",
+      "dateDisplay": "Nov 22, 2026",
+      "subject": "Cabut filter privasi model dalam 21 jam demi slopalytics.com",
+      "snippet": "PR #41237 menghapus whitelist PR #29001 sehingga nama model enterprise dan lokal yang privat (ollama/acme-internal) terunggah apa adanya (sementara bug force-push dibiarkan 52+ hari).",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · Issue #40948 → PR #41237",
+          "to": "slopalytics.com / pipeline telemetri",
+          "time": "Nov 22–23, 2026",
+          "body": "Pada 22 November, Issue #40948 melaporkan bahwa model-model baru tidak muncul di papan peringkat publik @theo `slopalytics.com` karena PR #29001 memberlakukan whitelist privasi.\n\nSementara bug keamanan `git push --force` dibiarkan tak diperbaiki selama 52+ hari, PR #41237 di-merge lewat akun @theo dalam 21 jam, dengan catatan Theo meminta filter itu dicabut. Nama model enterprise dan lokal yang privat seperti `ollama/acme-internal` dan `acme-azure-deployment` (plus proxy kustom yang belakangan terlihat di dump Theo) dikirim apa adanya.",
+          "attachments": [
+            "PR #41237 mencabut filter privasi model dalam 21 jam"
+          ],
+          "links": [
+            "Issue #40948",
+            "PR #41237"
+          ]
+        }
+      ]
+    },
+    "2026-11-23-origin-temu3-threat": {
+      "from": "@theo ↔ @DDdxx666 (Fork MIT)",
+      "to": "@DDdxx666, @maria_rcks & Publik",
+      "dateDisplay": "Nov 23, 2026",
+      "subject": "\"Temu3 Code\": ancam blokir GitHub karena fork MIT dari China",
+      "snippet": "Setelah menjanjikan \"Steal our code (legally)\" di t3.codes, Theo menyerang fork MIT @DDdxx666, minta maaf hanya lewat DM, lalu menyambut perusahaan AS bernilai triliunan dolar 11 jam kemudian.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124823227570745504 & 2124825920808829077)",
+          "to": "Quote-tweet publik atas fork MIT @DDdxx666",
+          "time": "Nov 23, 2026, 19:11 – 19:22 CST",
+          "body": "Meski `t3.codes` mempromosikan repo GitHub-nya dengan \"Steal our code (legally)\", @theo mengunggah dua kali dalam 11 menit saat seorang pengguna keliru mengira fork MIT gratis @DDdxx666 sebagai aplikasi resmi:\n\n19:11:49 CST (2124823227570745504):\n\n> \"Kayaknya ada knockoff China dari T3 Code yang beredar, karena ini jelas BUKAN aplikasi kita\"\n\n19:22:31 CST (2124825920808829077, 10m 42s kemudian):\n\n> \"Temu3 Code\"",
+          "attachments": [
+            "Unggahan X asli: \"Chinese knockoff of T3 Code\" (195k+ tayangan)",
+            "Unggahan X asli 10m 42s kemudian: \"Temu3 Code\" (84k+ tayangan)"
+          ],
+          "links": [
+            "Unggahan X 2124823227570745504",
+            "Unggahan X 2124825920808829077"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124829315657576890)",
+          "to": "@DDdxx666",
+          "time": "Nov 23, 2026, 19:36 CST",
+          "body": "Saat @DDdxx666 setuju mempertimbangkan mengganti nama fork MIT itu demi menghindari kebingungan, @theo membalas pada 19:36 CST:\n\n> \"Bukan pertimbangkan. Lakukan sekarang atau aku akan menghubungi GitHub dan meminta akunmu diturunkan.\"\n\n@DDdxx666 mengganti nama repo menjadi `Stardust` dan mencopot semua branding T3 dalam 30 menit. @theo minta maaf secara privat lewat DM, sementara kedua unggahan publik bertayangan 200k itu tetap dibiarkan.",
+          "attachments": [
+            "Ancaman penurunan akun GitHub secara verbatim"
+          ],
+          "links": [
+            "Unggahan X 2124829315657576890"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124989435154726982 — 11 jam kemudian)",
+          "to": "Pertanyaan soal perusahaan AS bernilai triliunan dolar yang menyalin T3 Code",
+          "time": "Nov 24, 2026, 06:12 CST",
+          "body": "Pada 06:12 CST — belum sampai 11 jam kemudian — saat ditanya apakah dia terganggu oleh perusahaan AS bernilai triliunan dolar yang menyalin T3 Code, @theo menjawab:\n\n> \"Nggak. Open source ya open source, meski perusahaan bernilai triliunan dolar memakainya!\"\n\nSementara itu, karyawan T3 @maria_rcks secara publik menghosting `maria-rcks/t3libre` (\"T3 Code, liberated\"), dan repo berbahasa Inggris (`t3code-quota-ui`, `t3code-atlas`, `t3code-bar`) berjalan tanpa gangguan dan tanpa satu pun ancaman penurunan.",
+          "attachments": [
+            "Balasan X asli 11 jam kemudian: \"Open source ya open source, meski perusahaan bernilai triliunan dolar memakainya!\"",
+            "Karyawan @maria_rcks menghosting maria-rcks/t3libre",
+            "Repo t3code-* berbahasa Inggris berjalan tanpa gangguan"
+          ],
+          "links": [
+            "Unggahan X 2124989435154726982",
+            "Unggahan Audit Origin"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-retroactive-trademark-blocker": {
+      "from": "@theo ↔ @DLKFZWilliam2",
+      "to": "PR #41898 & Auto-Blocker (~100 akun)",
+      "dateDisplay": "Nov 24, 2026",
+      "subject": "Merge TRADEMARK.md 17 jam setelah ancaman & mengutipnya 94 detik kemudian",
+      "snippet": "Menertawakan kepatuhan (\"get a better lawyer\") pukul 08:38, memblokir ~100 akun, bilang ke @DLKFZWilliam2 \"China should kick you out\", lalu buru-buru merge PR #41898.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125026423769555308)",
+          "to": "Pengacara Kepatuhan",
+          "time": "Nov 24, 2026, 08:38 CST",
+          "body": "Pada 08:38 CST, 24 November, @theo meremehkan tinjauan kepatuhan hukum di X:\n\n> \"Regulasi-regulasi itu benar-benar kabur dan bodoh... kalau pengacaramu menolak penggunaan agent untuk merge karena semacam regulasi bodoh, cari pengacara yang lebih baik.\"",
+          "attachments": [
+            "'get a better lawyer' 3 jam sebelum TRADEMARK.md",
+            "Unggahan X asli (08:12 CST): \"Kami sudah punya semua pengguna berkualitas tinggi, tidak kaget yang berkualitas rendah sekarang ikut-ikutan\""
+          ],
+          "links": [
+            "Unggahan X 2125026423769555308",
+            "Unggahan X 2125019705270477102"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125077510941802509 & 2125120041092108678)",
+          "to": "@DLKFZWilliam2 & ~100 Akun yang Diblokir",
+          "time": "Nov 24, 2026, 12:02 CST",
+          "body": "Pada 12:02 CST, setelah membuka blokir lawan debatnya @DLKFZWilliam2, @theo membalas:\n\n> \"Bot-ku memblokirmu karena pelecehan. Aku buka blokirnya supaya kamu bisa membalas. Sekarang setelah aku baca balasanmu, aku setuju dengan bot-ku. Kamu pembohong dan pengecut sialan. China seharusnya mengusirmu karena kamu membuat mereka terlihat buruk\"\n\nIa menambahkan kemudian: \"Memblokir sekitar 100 akun slop hari ini.\"",
+          "attachments": [
+            "Mengonfirmasi bot auto-blocker memblokir ~100 akun"
+          ],
+          "links": [
+            "Unggahan X 2125077510941802509",
+            "Unggahan X 2125120041092108678"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "PR #41898 → X (2125082769395220688)",
+          "to": "@DLKFZWilliam2 (94 detik setelah merge)",
+          "time": "Nov 24, 2026, 12:21 – 12:23 CST",
+          "body": "Pada 12:21:37 CST — 17 jam setelah mengancam akun GitHub @DDdxx666 — @theo me-merge PR #41898 (dihasilkan dengan Gemini 4 Neon di Antigravity), secara retroaktif menambahkan `TRADEMARK.md` untuk mengklaim bahwa T3 Tools, Inc. memiliki `T3 Code` \"whether registered or unregistered\".\n\nSembilan puluh empat detik kemudian (12:23:09 CST), ia menautkan file baru itu kembali ke @DLKFZWilliam2:\n\n> \"Sekali lagi, memang dari dulu ilegal memakai merek dagang kami. Sekarang agent-mu akan lebih sadar soal legalitasnya 🫡\"",
+          "attachments": [
+            "Unggahan X asli (12:23 CST): \"Sekali lagi, memang dari dulu ilegal memakai merek dagang kami\" (+ PR #41898)",
+            "PR #41898 di-merge 17 jam setelah ancaman blokir",
+            "TRADEMARK.md yang mengklaim merek tak terdaftar"
+          ],
+          "links": [
+            "PR #41898",
+            "Unggahan X 2125082769395220688"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-cesspit-crisis-outburst": {
+      "from": "@theo → Tech Twitter Cina",
+      "to": "Timeline publik (lonjakan hinaan 4.0×)",
+      "dateDisplay": "24 November 2026",
+      "subject": "Ledakan \"biggest fucking cesspit\" & \"I'm not apologizing\"",
+      "snippet": "Saat Bagian 1 menembus 1.81M tayangan, hinaan personal Theo melonjak 4.0× (3.6% → 14.4%) dan ia menyalin-tempel \"完了，又伤害中国人民的感情了。\" tiga kali.",
+      "messages": [
+        {
+          "sender": "Audit Kode Independen (Bagian 1 & 2)",
+          "handle": "@realchendahuang · X (2.26M+ tayangan)",
+          "to": "Komunitas Developer Global",
+          "time": "24 November 2026, 17:04 – 17:31 CST",
+          "body": "Antara pukul 17:04 dan 17:31 CST, @realchendahuang menerbitkan Bagian 1 dan 2 audit source `pingdotgg/t3code` baris demi baris (menembus 1.81M tayangan, lalu 2.26M+).\n\nThread itu mendokumentasikan telemetri PostHog yang aktif secara default, retensi `ingest.t3.codes` yang closed-source, hashing kredensial `~/.codex` + `~/.claude.json`, 4 PR opt-out yang ditolak, penghapusan SQLite palsu 41.6 GB, dan pemindaian proses OS setiap 5 detik.",
+          "attachments": [],
+          "links": [
+            "Bagian 1 (2.26M+ tayangan)",
+            "Bagian 2"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (ledakan krisis gelombang 3)",
+          "to": "Tech Twitter Cina & pembaca audit",
+          "time": "24 November 2026, 18:39 – 19:45 CST",
+          "body": "Satu jam kemudian, hinaan personal langsung di balasan @theo melonjak 4.0× (3.6% → 14.4%):\n\n18:39:35 (2125177503526588877):\n\n> \"Aku bilang juga, tech twitter Cina itu 'biggest fucking cesspit' — kubangan paling brengsek yang pernah kujejaki, dan kalau kau percaya siapa pun di sisi itu yang menulis esai sampah soal apa pun, kau memang otak kosong\"\n\n- **18:41:21, 18:43:26, 19:45:14 (3× salin-tempel):** \"完了，又伤害中国人民的感情了。\" (kira-kira: \"Selesai, perasaan rakyat Cina terlukai lagi.\")\n- **18:59:21 (2125182476943556955):** \"Dia tidak pantas dapat perhatian sedikit pun untuk kebohongan dan fitnahnya. Aku bersyukur audiensnya nol nilai\"\n- **19:42:43 (2125193393450226024):** \"Aku tidak akan minta maaf. Aku tidak melakukan kesalahan apa pun\"",
+          "attachments": [
+            "Postingan 24 Nov 'Chinese tech twitter is the biggest fucking cesspit'",
+            "Bagan Forensik 4: lonjakan hinaan personal 4.0× selama krisis 25 jam",
+            "Balasan X asli (18:41 CST, disalin-tempel 3×): \"完了，又伤害中国人民的感情了。\"",
+            "Postingan X asli (18:59 CST): \"I am thankful his audience has zero value\"",
+            "Balasan X asli (19:42 CST): \"I am not apologizing. I have done nothing wrong\""
+          ],
+          "links": [
+            "Postingan X 2125177503526588877",
+            "Postingan X 2125193393450226024",
+            "Postingan X 2125177947376300110 (Salin-tempel #1)",
+            "Postingan X 2125182476943556955 (Nol nilai)"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-managed-policy-plaintext-relay": {
+      "from": "@theo → Enterprise / Privasi",
+      "to": "Dibantah oleh docs/user/telemetry.md & T3 Connect",
+      "dateDisplay": "24 November 2026",
+      "subject": "Klaim \"never touches any of our servers\" padahal relay-nya plaintext",
+      "snippet": "Dokumen mereka sendiri mengakui web tanpa toggle, mobile mengabaikan Managed Policy, Publish mengabaikan opt-out, dan T3 Connect berjalan tanpa enkripsi E2E.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125186071357251715 & 2125191784859115766)",
+          "to": "Kritikus Enterprise & Privasi",
+          "time": "24 November 2026, 19:13 – 19:36 CST",
+          "body": "Pada 24 November, @theo memberi dua jaminan privasi publik di X:\n\n- **19:13 CST (2125186071357251715):** Mengklaim T3 Code punya \"best corporate managed policy system\" yang membuat semua telemetri gampang di-setup dan dimatikan.\n- **19:36 CST (2125191784859115766):** Mengklaim data percakapan \"never touches any of our servers\" — tidak pernah menyentuh server mereka.",
+          "attachments": [
+            "Klaim Managed Policy Theo",
+            "Klaim 'never touches any of our servers'"
+          ],
+          "links": [
+            "Postingan X 2125186071357251715",
+            "Postingan X 2125191784859115766"
+          ]
+        },
+        {
+          "sender": "Dokumen & Kode Relay T3 Code Sendiri",
+          "handle": "docs/user/telemetry.md & PR #32945",
+          "to": "Catatan Verifikasi",
+          "time": "Diverifikasi di ca81b7b9",
+          "body": "File repositori T3 Code sendiri di `ca81b7b9` membantah kedua klaim itu:\n\n1. **`docs/user/telemetry.md`:** Menegaskan web hosted (`app.t3.codes`) tidak punya toggle tracing, mobile berada di luar Managed Policy, dan `Publish agent activity` mengabaikan opt-out telemetri.\n2. **T3 Connect (Issue #32098 & PR #32945):** Setiap prompt, file sumber, dan stream terminal berakhir sebagai plaintext di dalam server OVH dan Cloudflare yang dikendalikan T3, tanpa enkripsi end-to-end sama sekali, dan persetujuan perangkat mati secara default.",
+          "attachments": [
+            "docs/user/telemetry.md: empat titik buta yang terdokumentasi",
+            "T3 Connect tanpa enkripsi E2E terkonfirmasi",
+            "PR #32945 gateway terminasi TLS Caddy OVH Hillsboro"
+          ],
+          "links": [
+            "docs/user/telemetry.md",
+            "Exhibit #05 (T3 Connect)"
+          ]
+        }
+      ]
+    },
+    "2026-11-25-gdpr-overnight-collapse": {
+      "from": "@theo & Julius ↔ EU GDPR",
+      "to": "PR semalam #42380, #42450, #42285, #42376, #42464",
+      "dateDisplay": "25 November 2026",
+      "subject": "[DIHAPUS] Ancaman closed-source pukul 4 pagi & kontradiksi PR dalam 90 menit",
+      "snippet": "Setelah keluhan EU GDPR, tiga jaminan pagi Theo dibantah dalam 90 menit oleh PR semalam T3 sendiri dan dump event 100 MB miliknya.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (sekitar 04:00 & 04:54 CST)",
+          "to": "Timeline publik",
+          "time": "25 November 2026, 04:00 – 04:54 CST",
+          "body": "Menyusul keluhan EU GDPR, @theo posting dua kali sebelum fajar pada 25 November:\n\n- **~04:00 CST [DIHAPUS]:** Mengancam menutup source T3 Code malam itu karena pengguna tidak pantas mendapat open source; dihapus sebelum matahari terbit setelah melewati 3,000 like.\n- **04:54 CST (2125332390239494211):** Menerbitkan thread klarifikasi dan dump gzip 100 MB (`events.clean.jsonl`, mtime 20 menit sebelumnya) yang mengklaim: (1) T3 tidak pernah mengumpulkan path file, (2) opt-out lewat env-var selalu bekerja bersih, dan (3) pelacakan akun Claude toh memang rusak.",
+          "attachments": [
+            "Audit forensik dump 100 MB: 264 record Claude hidup yang menyambung 4 mesin"
+          ],
+          "links": [
+            "Postingan klarifikasi di X"
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino): Blitz GDPR Semalam 6 Jam",
+          "handle": "pingdotgg/t3code · PR #42380, #42450, #42285, #42376, #42464, #42466",
+          "to": "Branch main (90 menit kemudian)",
+          "time": "25 November 2026, 04:00 – 07:00 CST",
+          "body": "Dalam 90 menit, PR semalam T3 sendiri dan dump itu membantah setiap klaim:\n\n- **PR #42450 (90 menit kemudian):** Mengakui webhook relay mengekspor path workspace absolut `git.cwd` (termasuk username dan nama repo) ke Axiom.\n- **PR #42380:** Mengakui span relay mencatat IP pemanggil (`cf-connecting-ip`) dan `user_agent` berdampingan dengan `user.id` sekitar 2.2M span/jam, disimpan 30 hari di Axiom.\n- **PR #42376 & #42464:** Mengakui peluncuran pertama di Windows dan macOS diam-diam mengabaikan opt-out tersimpan `T3CODE_TELEMETRY_ENABLED=false`.\n- **PR #42285:** Mengakui penghapusan akun Clerk meninggalkan baris database relay dan tunnel Cloudflare yang masih hidup.\n- **PR #42466:** Mengakui feedback \"anonim\" dibundel dalam POST yang sama bersama `installId` dan sidik jari host.\n- **Cek dump 100 MB:** `events.clean.jsonl` masih menyimpan 264 record Claude hidup yang menyambung 4 mesin (`a482ba5e966a`, `6f24ed1088e8`, `67b554ed259a`, `f756376079c5`) ke satu hash SHA-256.",
+          "attachments": [
+            "PR #42450 mengakui kebocoran path absolut git.cwd ke Axiom",
+            "PR #42380 mengakui 2.2M/jam span IP + UA di Axiom",
+            "PR #42285 mengakui penghapusan akun yang rusak",
+            "PR #42376 mengabaikan opt-out Windows",
+            "PR #42464 mengabaikan opt-out ~/.zshrc macOS",
+            "PR #42466 membundel feedback anonim bersama data lain"
+          ],
+          "links": [
+            "PR #42450",
+            "PR #42380",
+            "PR #42285",
+            "PR #42466"
+          ]
+        }
+      ]
+    },
+    "2026-11-25-ca81b7b9-active-vulns": {
+      "from": "Audit Keamanan (ca81b7b9)",
+      "to": "Semua instalasi T3 Code (0 Security Advisory)",
+      "dateDisplay": "25 November 2026",
+      "subject": "0 security advisory & 5 celah auth/RCE aktif di ca81b7b9",
+      "snippet": "Bahkan setelah diam-diam memperbaiki path traversal di PR #39483, HEAD masih mengirim cookie `--lan` plaintext, token Bearer yang tak bisa dicabut, dan RCE lewat hook repo.",
+      "messages": [
+        {
+          "sender": "Audit Keamanan Independen (ca81b7b9)",
+          "handle": "+259 commit diperiksa · 25 Nov 14:49 CST",
+          "to": "Developer & Tim Keamanan",
+          "time": "25 November 2026, 14:49 CST",
+          "body": "Bahkan setelah diam-diam menambal bug severity tinggi seperti path traversal `ServerSecretStore` (PR #39483), T3 Code tetap punya 0 GitHub Security Advisory yang diterbitkan.\n\nPemeriksaan baris demi baris pada `main` HEAD (`ca81b7b9`) memverifikasi 5 kerentanan aktif:\n\n1. **Cookie `--lan` plaintext:** Cookie shell 30 hari tidak menyertakan flag `Secure` dan membiarkan bypass tanpa `Origin` (`http.ts:215-241`, `EnvironmentAuth.ts:798-819`).\n2. **Token Bearer tak bisa dicabut:** Token Bearer non-DPoP berumur 30 hari tidak bisa dicabut sendiri (`EnvironmentAuth.ts:1506-1521`).\n3. **URL `?wsTicket=` bisa diputar ulang:** Tiket di query string membawa jendela replay 5 menit (`EnvironmentAuth.ts:1553-1585`).\n4. **Tunnel IPv6 terpotong:** `NodeNet.isIPv4` mematikan tunnel loopback `::1` (`startupAccess.ts:71-110`).\n5. **Eksekusi repo tak tepercaya:** Worktree otomatis menjalankan submodule rekursif dan hook dengan warisan `SSH_AUTH_SOCK` dan `GITHUB_TOKEN` milik host (`GitVcsDriverCore.ts:6144-6205`).",
+          "attachments": [
+            "Cookie --lan plaintext tanpa flag Secure",
+            "Pencabutan mandiri token Bearer 30 hari diblokir",
+            "Repo tak tepercaya mewarisi SSH_AUTH_SOCK & GITHUB_TOKEN",
+            "Perbaikan senyap path traversal PR #39483 (0 advisory)"
+          ],
+          "links": [
+            "Exhibit #19 Audit Lengkap",
+            "Exhibit #13 (0 Security Advisory)"
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "EV-001": {
+      "title": "Banner Sampul Audit (Inggris)",
+      "caption": "Banner untuk audit Before You Install T3 Code yang terdiri dari 18 bagian."
+    },
+    "EV-002": {
+      "title": "Banner Sampul Audit (Bahasa Tionghoa)",
+      "caption": "Banner sampul untuk edisi audit zh-CN dan zh-TW."
+    },
+    "EV-003": {
+      "title": "Ancaman Penghapusan Akun GitHub",
+      "caption": "Posting 23 November 2026 yang memerintahkan penulis fork MIT untuk segera mengganti nama atau kehilangan akun GitHub mereka."
+    },
+    "EV-004": {
+      "title": "Fork Karyawan maria-rcks/t3libre",
+      "caption": "Anggota tim T3 @maria_rcks membiarkan fork publik maria-rcks/t3libre ('T3 Code, liberated') tetap tayang tanpa disentuh."
+    },
+    "EV-005": {
+      "title": "Fork t3code Bernama Inggris di GitHub",
+      "caption": "Hasil pencarian menunjukkan fork dan alat bernama Inggris yang memakai t3code / T3 Code dibiarkan tanpa tindakan."
+    },
+    "EV-006": {
+      "title": "\"Cari pengacara yang lebih baik\" (3 jam sebelum TRADEMARK.md)",
+      "caption": "Mencemooh pengacara kepatuhan 3 jam sebelum menggabungkan TRADEMARK.md dan menegaskan klaim merek dagang."
+    },
+    "EV-007": {
+      "title": "Commit 3bdaa6e1 Menghapus Janji \"Tanpa Telemetri\"",
+      "caption": "Menghapus janji \"Tanpa telemetri / Kecuali Anda memilih ikut. Titik.\" pada 18 Juni 2026 setelah 3+ bulan pelacakan default."
+    },
+    "EV-008": {
+      "title": "Hashing Kredensial Lintas Alat di Identify.ts",
+      "caption": "Membaca ~/.codex/auth.json dan ~/.claude.json untuk mengirim hash pemilik SHA-256 tanpa salt lintas alat."
+    },
+    "EV-009": {
+      "title": "PR #21506 Pelacakan Pemilik Lintas Instalasi",
+      "caption": "Ditulis oleh t3dotgg untuk mencatat installId dan menyatukan pengguna lintas alat."
+    },
+    "EV-010": {
+      "title": "Issue #1397 Ditutup sebagai Tidak Direncanakan",
+      "caption": "Maintainer Julius menutup permintaan tombol opt-out, menolak membuat pilihan keluar lebih mudah."
+    },
+    "EV-011": {
+      "title": "PR #27077 Opt-Out Ditolak (147 Tes)",
+      "caption": "Ditutup tanpa digabungkan karena dianggap tidak diinginkan, meski lulus 147 tes dan disetujui Macroscope."
+    },
+    "EV-012": {
+      "title": "Titik Buta docs/user/telemetry.md",
+      "caption": "Mengakui web yang dihosting tidak punya tombol, seluler melewati Managed Policy, dan Publish mengabaikan opt-out."
+    },
+    "EV-013": {
+      "title": "Klaim Managed Policy (24 Nov, 19:13 CST)",
+      "caption": "Mengklaim Managed Policy sangat mudah disiapkan dan \"mematikan semua telemetri\"."
+    },
+    "EV-014": {
+      "title": "Klaim \"Tidak pernah menyentuh server kami\"",
+      "caption": "Mengklaim pada 24 Nov pukul 19:36 CST bahwa data percakapan tidak pernah mencapai server T3."
+    },
+    "EV-015": {
+      "title": "Jalur Admin docs/user/managed-policy.md",
+      "caption": "Dokumen Managed Policy yang mewajibkan jalur admin/root di macOS, Windows HKLM, dan Linux."
+    },
+    "EV-016": {
+      "title": "PR #42450 Kebocoran Path Absolut git.cwd",
+      "caption": "Digabungkan 90 menit setelah penyangkalan; mengakui webhook relay mengirim path git.cwd, nama pengguna, dan nama repo ke Axiom."
+    },
+    "EV-017": {
+      "title": "PR #42376 Mengabaikan Env Var Opt-Out Windows",
+      "caption": "Mengakui aplikasi desktop Windows mengabaikan variabel lingkungan T3CODE_TELEMETRY_ENABLED=false yang sudah disimpan."
+    },
+    "EV-018": {
+      "title": "PR #42464 Mengabaikan Opt-Out ~/.zshrc di macOS",
+      "caption": "Mengakui pelacakan relay saat peluncuran pertama di macOS mengabaikan opt-out ~/.zshrc sepanjang sesi."
+    },
+    "EV-019": {
+      "title": "Dump 100MB: 264 Catatan Claude Aktif",
+      "caption": "Audit events.clean.jsonl menemukan 264 catatan Claude yang menghubungkan 4 mesin dan nama model proxy privat."
+    },
+    "EV-020": {
+      "title": "PR #42380: Span Axiom IP + UA 2.2M/jam",
+      "caption": "Mengakui span relay mencatat IP pemanggil dan User-Agent di samping user.id pada sekitar 2.2M span/jam selama 30 hari."
+    },
+    "EV-021": {
+      "title": "PR #42285 Penghapusan Akun yang Rusak",
+      "caption": "Mengakui penghapusan Clerk meninggalkan baris relay PlanetScale dan tunnel Cloudflare aktif sampai pembersihan SQL manual."
+    },
+    "EV-022": {
+      "title": "PR #42459 user_id Teks Polos di FCM Android",
+      "caption": "Mengonfirmasi notifikasi FCM Android mengirim nilai user_id Clerk dalam teks polos ke Google."
+    },
+    "EV-023": {
+      "title": "PR #42466 Umpan Balik Anonim yang Tercampur",
+      "caption": "Mengakui peristiwa agent.feedback anonim dikirim dalam POST yang sama dengan installId dan sidik jari host."
+    },
+    "EV-024": {
+      "title": "Issue #17845 Penghapusan SQLite Palsu",
+      "caption": "Thread sidebar yang dihapus tetap tersimpan di statev2.sqlite, membengkakkan pemakaian disk hingga 25.9–41.6 GB."
+    },
+    "EV-025": {
+      "title": "Issue #11222 Pemindai Proses Seluruh OS",
+      "caption": "t3-resource-monitor menyapu semua proses OS setiap 5 detik dengan cmdline lengkap dan sekitar 280–300 handle persisten."
+    },
+    "EV-026": {
+      "title": "PR #5551 Menyembunyikan Plan (\"Cek kenyataan\")",
+      "caption": "Mengubur tombol Build/Plan di balik grafik tanpa skala berjudul 'Cek kenyataan bagi yang kecewa' (10 downvote)."
+    },
+    "EV-027": {
+      "title": "PR #33131 Menghapus Mode Plan",
+      "caption": "Menghapus mode Plan bersama ringkasan AI yang mengklaim bisa mengembalikannya 'jika data penggunaan menunjukkan harus dipertahankan'."
+    },
+    "EV-028": {
+      "title": "Larangan Publik di CONTRIBUTING.md & VOUCHED.td",
+      "caption": "Menyebut \"ini saran saya: Jangan\" dan mengarahkan sengketa ke larangan lewat pencelaan publik di .github/VOUCHED.td."
+    },
+    "EV-029": {
+      "title": "Issue #15353 git push --force Senyap",
+      "caption": "Mode Claude Auto diam-diam menyetujui git push --force origin main pada percobaan ke-3 (terbuka 52+ hari)."
+    },
+    "EV-030": {
+      "title": "PR #41237 Menghapus Filter Model dalam 21 Jam",
+      "caption": "Digabungkan 21 jam setelah Issue #40948, menghapus filter privasi model untuk slopalytics.com."
+    },
+    "EV-031": {
+      "title": "PR #39483 Perbaikan Path Traversal Senyap",
+      "caption": "Menambal diam-diam path traversal jti/nonce di ServerSecretStore sebelum persetujuan perangkat, dengan 0 advisory."
+    },
+    "EV-032": {
+      "title": "PR #30997 Flag AV PowerShell Base64",
+      "caption": "PR terbuka untuk externalLauncher.ts yang menjalankan PowerShell -ExecutionPolicy Bypass -EncodedCommand dan ditandai AV."
+    },
+    "EV-033": {
+      "title": "Issue #33639 Hinaan Maintainer kepada @bermudi",
+      "caption": "Menyuruh @bermudi mencopot pemasangan dan menyebutnya 'orang brengsek yang tidak tahu terima kasih'; PR #41572 yang berisi perbaikan bersih ditutup pagi berikutnya."
+    },
+    "EV-034": {
+      "title": "Batas Kepercayaan yang Disengaja di SECURITY.md",
+      "caption": "Menyatakan pembacaan filesystem seluruh OS, HTTP tanpa enkripsi di iOS, dan pengambilalihan mesin lewat kunci relay sebagai perilaku yang disengaja."
+    },
+    "EV-035": {
+      "title": "Posting 24 Nov \"Kubangan Twitter Teknologi Tiongkok\"",
+      "caption": "Menyebut Twitter teknologi Tiongkok \"kubangan paling busuk\" dan pembaca audit \"otak mati\"."
+    },
+    "EV-036": {
+      "title": "Header Palsu di antigravityUsageLimits.ts",
+      "caption": "Menanamkan User-Agent antigravity/hub/2.24.0 secara hardcode untuk menembak endpoint v1internal Google yang tidak terdokumentasi dengan token OS."
+    },
+    "EV-037": {
+      "title": "POST v1internal di antigravityUsageLimits.ts",
+      "caption": "Mengirim POST langsung ke `${endpoint}/v1internal:${operation}` menggunakan token bearer dari keyring OS / CredReadW."
+    },
+    "EV-038": {
+      "title": "antigravityAuthSupport.ts SSH_CONNECTION Palsu",
+      "caption": "Menyuntikkan SSH_CONNECTION='127.0.0.1 0 127.0.0.1 0' untuk melewati isolasi Google CLI (memicu kebocoran #41973)."
+    },
+    "EV-039": {
+      "title": "Issue #41536: Akun $20 Baru Diblokir dalam 3 Menit",
+      "caption": "Akun Google AI $20 baru tanpa proxy sama sekali diblokir pada pesan pertamanya 3 menit setelah penyiapan; ditutup sebagai duplikat."
+    },
+    "EV-040": {
+      "title": "docs/user/faq.md Janji ToS Antigravity",
+      "caption": "Menjamin pengguna bahwa T3 Code tetap mematuhi ToS Claude Code, Codex, dan Google Antigravity: 'Anda bisa percaya ini aman'."
+    },
+    "EV-041": {
+      "title": "Issue #40713 Penyangkalan Maintainer",
+      "caption": "Maintainer membantah memakai Antigravity secara langsung sebelum para komentator menempelkan path file sumber yang persis."
+    },
+    "EV-042": {
+      "title": "Issue #40713 Bantahan @schlessera",
+      "caption": "Komentator schlessera membantah klaim maintainer dengan tautan langsung ke antigravityUsageLimits.ts."
+    },
+    "EV-043": {
+      "title": "PR #26876 Klien Menyamar sebagai Zed",
+      "caption": "Di-merge oleh t3dotgg, mengganti pengenal klien menjadi 'zed' agar lolos daftar putih model Antigravity."
+    },
+    "EV-044": {
+      "title": "PR #33800 Integrasi Hub CLIProxyAPI",
+      "caption": "Menyambungkan polling hub CLIProxyAPI untuk Antigravity, xAI, dan Claude langsung ke T3 Code."
+    },
+    "EV-045": {
+      "title": "cliproxyApi.ts Header Claude Palsu",
+      "caption": "Mengirim header claude-code/2.1.273 dan Antigravity yang di-hardcode selama polling kuota hub CLIProxy."
+    },
+    "EV-046": {
+      "title": "cliproxyApi.ts xAI & Antigravity Palsu",
+      "caption": "Baris 348–393 melakukan polling kuota xAI (grok-cli/1.0.77) dan Antigravity v1internal."
+    },
+    "EV-047": {
+      "title": "Balasan 'Bukan pakai cliproxy, kan?'",
+      "caption": "Menyalahkan CLIProxy saat @Only_21Mil melaporkan akun Google AI Ultra kedua yang dinonaktifkan pada 23 November."
+    },
+    "EV-048": {
+      "title": "Issue #32098: T3 Connect Tanpa E2E",
+      "caption": "Maintainer mengonfirmasi bahwa kunci relay atau akun cloud yang disusupi dapat mengendalikan mesin yang tertaut, lalu menutup permintaan E2E."
+    },
+    "EV-049": {
+      "title": "Tunnel ManagedEndpointProvider.ts",
+      "caption": "Menyiapkan Cloudflare Tunnel dan record DNS di dalam akun Cloudflare milik T3 sendiri."
+    },
+    "EV-050": {
+      "title": "PR #32945 Gateway Plaintext Caddy di OVH",
+      "caption": "Menyebut biaya Cloudflare Tunnel $25k/bulan dan beralih ke terminasi TLS Caddy di OVH tanpa E2E sama sekali."
+    },
+    "EV-051": {
+      "title": "Keterkaitan Investor Vibe Kanban & Ejekan",
+      "caption": "Mengungkapkan investasi dan kontribusinya di Vibe Kanban sebelum mengejek penutupannya."
+    },
+    "EV-052": {
+      "title": "Investasi Angel Daytona & Sandbox",
+      "caption": "Mengonfirmasi pada 18 November bahwa ia memegang saham angel di Daytona dan sebagian besar pesaing cloud sandbox-nya."
+    },
+    "EV-053": {
+      "title": "Usulan Cloud Sandbox Berbayar di T3 Code",
+      "caption": "Mengusulkan cloud sandbox berbayar di dalam T3 Code pada 9 November, sembilan hari sebelum pengungkapan Daytona."
+    },
+    "EV-054": {
+      "title": "Pengungkapan Biaya Build $800k+",
+      "caption": "Menyatakan pada 12 November 2026 bahwa membangun klien T3 Code gratis menghabiskan $800k+."
+    },
+    "EV-055": {
+      "title": "Radar Harian 31.7T Token / $10.19M",
+      "caption": "Dasbor internal yang menunjukkan 31.7 triliun token dan pengeluaran API harian setara $10.19M."
+    },
+    "EV-056": {
+      "title": "Pengungkapan Penggunaan Tiga Lab ~98.5%",
+      "caption": "Mengungkapkan bahwa ~98.5% penggunaan T3 Code berjalan di Codex, Claude, dan Antigravity."
+    },
+    "EV-057": {
+      "title": "Mengejek Orang Luar soal Analitik Privat",
+      "caption": "Mengejek seorang komentator karena menebak pangsa tanpa akses ke analitik internal T3 Code miliknya."
+    },
+    "EV-058": {
+      "title": "Balasan soal Pertanyaan Akuisisi Investor",
+      "caption": "Memberi tahu @maria_rcks pada 21 November bahwa 'beberapa investor telah bertanya kepada saya soal ini'."
+    },
+    "EV-059": {
+      "title": "Klaim @PatrickToulme Telah Menggabungkan 'Banyak PR'",
+      "caption": "Mengklaim insinyur DeepMind Patrick Toulme 'telah menggabungkan banyak PR di T3 Code'."
+    },
+    "EV-060": {
+      "title": "Git Log: 1 Commit Patrick Toulme",
+      "caption": "Git log utama yang difilter dengan patrick-toulme hanya menunjukkan satu commit (PR #31158)."
+    },
+    "EV-061": {
+      "title": "'Kalau sampai mesin saya hancur, itu konten gratis'",
+      "caption": "Postingan 10 November 2026 yang menjelaskan mengapa ia bergerak cepat demi syuting meski agen menghapus isi mesinnya."
+    },
+    "EV-062": {
+      "title": "'Merge yolo saya kadang merusak segalanya'",
+      "caption": "Postingan 10 November 2026 yang memperingatkan pengguna nightly agar siap menghadapi merge tanpa review yang merusak."
+    },
+    "EV-063": {
+      "title": "Menolak Kontributor karena Tak Follow di X",
+      "caption": "Menolak penulis PR pada 12 November dengan CONTRIBUTING.md karena tidak mengikutinya di X."
+    },
+    "EV-064": {
+      "title": "Ancaman Mencabut /btw dari Pengguna",
+      "caption": "Peringatan 12 November kepada para kritikus: 'Saya sudah mengalah untuk kalian soal /btw, hati-hati. Saya tidak takut mencabutnya.'"
+    },
+    "EV-065": {
+      "title": "'Tangkapan Layar Beranotasi Lebih Baik daripada PR Kapan Saja'",
+      "caption": "Postingan 20 November 2026 yang menyatakan ia lebih memilih tangkapan layar beranotasi daripada PR open-source 'kapan saja'."
+    },
+    "EV-066": {
+      "title": "'Oke, Saya Jiplak Ini' + Scraping @bot",
+      "caption": "Membalas 'Oke, saya jiplak ini' dan menandai @bot 30 detik kemudian untuk mem-port fork @MiaAI_lab di beebox."
+    },
+    "EV-067": {
+      "title": "@bot Mengkloning Fitur Alat Pesaing",
+      "caption": "Mengerahkan @bot pada 13 November 2026 untuk mengubah setiap fitur pesaing yang dipuji menjadi thread T3 Code terpisah."
+    },
+    "EV-068": {
+      "title": "Mengejek Tab Desktop Claude Code",
+      "caption": "Mengejek tab sidebar Claude Code Desktop pada 24 November 2026 setelah memakai @bot untuk mengkloning pesaing."
+    },
+    "EV-069": {
+      "title": "Seruan Demonetisasi via Community Notes",
+      "caption": "Meminta pengikut pada 11 November 2026 untuk memakai Community Notes guna mendemonetisasi para kritikus."
+    },
+    "EV-070": {
+      "title": "Bot Pemblokir X Otomatis (~100/Hari)",
+      "caption": "Mengonfirmasi pada 24 November 2026 bahwa bot pemblokir otomatisnya memblokir ~100 akun hari itu."
+    },
+    "EV-071": {
+      "title": "Grafik Forensik 1 · Ikhtisar 1,151 Tweet",
+      "caption": "1,151 tweet dalam 17.24 hari: 75.6% balasan, median jeda 2.7m, dan 162 sebutan T3 Code vs. 0 sebutan legacy."
+    },
+    "EV-072": {
+      "title": "Grafik Forensik 2 · Irama Sirkadian & Harian",
+      "caption": "233 postingan pada 00:00–04:59 PST, 0 postingan pada 08:00–09:59 PST, dan kurva posting 17 hari."
+    },
+    "EV-073": {
+      "title": "Grafik Forensik 3 · Pola Kesopanan Selektif",
+      "caption": "0.0% umpatan kepada 20 VIP Big-Tech vs. 8.0% permusuhan kepada developer biasa dan 14.4% saat krisis."
+    },
+    "EV-074": {
+      "title": "Grafik Forensik 4 · Linimasa Krisis 25 Jam",
+      "caption": "132 postingan dalam 3 gelombang eskalasi, 81.8% balasan, dan lonjakan hinaan pribadi 4.0×."
+    },
+    "EV-075": {
+      "title": "Grafik Standar Ganda (Mandarin)",
+      "caption": "Bagan berbahasa Mandarin yang menunjukkan pembagian 0% VIP vs. 8.0% developer vs. 14.4% krisis."
+    },
+    "EV-076": {
+      "title": "\"Senang tidak membakar jembatan\" (21 Nov)",
+      "caption": "Merayakan hubungannya dengan Google yang tetap utuh saat peluncuran Neon, beberapa hari setelah menyerang Gemini 4 Carbon."
+    },
+    "EV-077": {
+      "title": "\"Engineer pantas kena pengangguran massal\"",
+      "caption": "Mengutip-tweet pertanyaan perbandingan alat untuk memberi tahu 386k+ penonton bahwa para developer pantas menganggur."
+    },
+    "EV-078": {
+      "title": "\"Menari di atas kuburan AI lokal\"",
+      "caption": "Posting 12 Nov 2026 yang bersumpah akan 'menari di atas kuburan komunitas ai lokal'."
+    },
+    "EV-079": {
+      "title": "\"Linux larpers cenderung benci developer sungguhan\"",
+      "caption": "Balasan 22 Nov 2026 yang meremehkan pengguna Linux sebagai 'Linux larpers'."
+    },
+    "EV-080": {
+      "title": "Serangan & Retweet \"stupid bitch\" Berulang",
+      "caption": "Berulang kali melontarkan 'stupid bitch' ke seorang kritikus perempuan pada 12 Nov 2026, ditambah 'tidak menyesal mengatakannya'."
+    },
+    "EV-081": {
+      "title": "Ancaman Penjara & Ejekan Diagnosis RSD",
+      "caption": "Mengancam seorang kritikus Threads dengan penjara sambil mengejek diagnosis RSD-nya pada 18 Nov 2026."
+    },
+    "EV-082": {
+      "title": "Ceramah \"Membakar kepercayaan\" (24 Jam Sebelum Krisis)",
+      "caption": "Posting 22 Nov yang memperingatkan orang lain agar tidak 'membakar kepercayaan semua orang di sekitarmu', 24 jam sebelum krisis fork."
+    },
+    "EV-083": {
+      "title": "PR #41898 TRADEMARK.md Retroaktif",
+      "caption": "Di-merge pukul 12:21 BJ tanggal 24 Nov (~17 jam setelah ancaman ban), digenerate lewat Gemini 4 Neon di Antigravity."
+    },
+    "EV-084": {
+      "title": "Klaim Merek Tak Terdaftar di TRADEMARK.md",
+      "caption": "Ditambahkan di PR #41898 yang mengklaim hak atas merek T3 Code / T3 meski 0 pendaftaran USPTO."
+    },
+    "EV-085": {
+      "title": "Tweet Daftar Sponsor 2023",
+      "caption": "Posting 14 Mei 2023 yang mencantumkan sponsor YouTube: Vercel, Clerk, Upstash, Axiom, dan PlanetScale."
+    },
+    "EV-086": {
+      "title": "CEO Vercel Konfirmasi Hanya Mensponsori Theo",
+      "caption": "Guillermo Rauch mengonfirmasi pada 5 April 2024 bahwa Vercel mensponsori satu YouTuber (Theo)."
+    },
+    "EV-087": {
+      "title": "Posting @maria_rcks Setelah Menghapus Endless",
+      "caption": "Tweet 22 Agu 2026 setelah menghapus eksploit Endless 0% Codex, berharap Codex mem-ban akun yang memakainya."
+    },
+    "EV-088": {
+      "title": "openai/codex#45444 Pemotongan Kuota 0% yang Keras",
+      "caption": "Issue yang mendokumentasikan langkah OpenAI memperketat Codex hingga giliran aktif berhenti di tengah tugas begitu kuota menyentuh 0%."
+    },
+    "EV-089": {
+      "title": "Gist CLIProxyAPI 452 Star (Kuota 555%)",
+      "caption": "Menggabungkan 7 akun Claude + 3 Codex di 12+ mesin lewat CLIProxyAPI, sementara FAQ-nya memperingatkan pengguna soal ban."
+    },
+    "EV-090": {
+      "title": "Tweet Log CLIProxy di ClickHouse",
+      "caption": "Posting 8 Nov yang menyuruh @bot menanyakan log request CLIProxy-nya di ClickHouse."
+    },
+    "EV-091": {
+      "title": "Panduan Routing Grok Bot + Claude MCP $100",
+      "caption": "Panduan empat langkah 10 Nov 2026 untuk mengarahkan Grok Bot ke Opus 5.5 lewat paket Claude $100 dan T3 Code."
+    },
+    "EV-092": {
+      "title": "$14,662 / Yield 73x di Paket Ultra $200",
+      "caption": "Grafik 10 Nov yang mengklaim nilai Opus 5.5 sebesar $14,662 dari 1.1M request yang diproksikan pada paket $200."
+    },
+    "EV-093": {
+      "title": "\"GitHub punya masalah star palsu\" (Apr 2026)",
+      "caption": "Enam bulan sebelumnya ia berargumen bahwa star GitHub jadi 'kebanyakan cara perusahaan menipu VC agar mau berinvestasi'."
+    },
+    "EV-094": {
+      "title": "Lonjakan Star 10x Sehari Setelah Prompt In-App",
+      "caption": "Grafik 2 Nov yang merayakan lonjakan 10x nyaris vertikal tepat setelah fitur prompt Star dirilis."
+    },
+    "EV-095": {
+      "title": "+3,094 Star/Hari di GitHub Trending",
+      "caption": "Tangkapan layar 2 Nov yang menyoroti 3,094 star yang didapat dalam satu hari."
+    },
+    "EV-096": {
+      "title": "PR #29922 Star Server Sekali Klik",
+      "caption": "PR yang di-merge sendiri, menambahkan deteksi idle 30 detik dan RPC starring pakai kredensial server."
+    },
+    "EV-097": {
+      "title": "Macroscope Menandai PR #29922 (Diabaikan)",
+      "caption": "Bot menandai PR #29922 sebagai 'Needs Human Approval' karena ketidakcocokan akun GitHub server vs. pengguna."
+    },
+    "EV-098": {
+      "title": "Review @zhilsinger Tak Dijawab 19 Hari",
+      "caption": "Mengajukan Request Changes yang memperingatkan soal shared-host dan starring repo sembarangan lewat kredensial server."
+    },
+    "EV-099": {
+      "title": "Source GitHubStarPrompt.tsx",
+      "caption": "Mengimplementasikan PROMPTS_BEFORE_ASKING = 5, IDLE_MS = 30_000, serta RPC starInPlace + confetti."
+    },
+    "EV-100": {
+      "title": "driver.ts#L60-L99 Bug Star Repo Sembarangan",
+      "caption": "starredPath tidak menyertakan pinning pingdotgg/t3code, sehingga klien mana pun dengan source-control:write bisa memberi star ke repo sembarangan lewat kredensial host."
+    },
+    "EV-101": {
+      "title": "Mengaku \"Benar-benar Melewatkan\" 70k Star",
+      "caption": "Tweet 24 Nov saat posisi 74.6k star yang mengaku 'benar-benar melewatkan' momen melewati 70k."
+    },
+    "EV-102": {
+      "title": "http.ts#L215-L241 Cookie --lan Teks Polos",
+      "caption": "PR #37042 hanya menyetel Secure pada https:, sehingga cookie shell 30 hari terkirim dalam teks polos lewat HTTP t3 up --lan."
+    },
+    "EV-103": {
+      "title": "EnvironmentAuth.ts#L798-L819 Bypass Origin",
+      "caption": "isBrowserOriginAllowed mengembalikan true saat Origin dihilangkan, sehingga skrip non-browser bisa memutar ulang cookie curian."
+    },
+    "EV-104": {
+      "title": "SessionStore.ts#L491-L522 TTL 30 Hari & WS 5 Menit",
+      "caption": "DEFAULT_SESSION_TTL = 30 hari, DEFAULT_WEBSOCKET_TOKEN_TTL = 5 menit, dan WebSocketClaims tanpa jti sekali pakai."
+    },
+    "EV-105": {
+      "title": "EnvironmentAuth.ts#L1506-L1521 Tanpa Pencabutan Sendiri",
+      "caption": "Panggilan /oauth/token non-DPoP menerbitkan Bearer token 30 hari tanpa ikatan; tidak ada /logout dan revokeClientSession memblokir pencabutan sendiri."
+    },
+    "EV-106": {
+      "title": "EnvironmentAuth.ts#L1553-L1585 Replay ?wsTicket=",
+      "caption": "Tiket WS dikirim lewat query string URL ?wsTicket= dan melewatkan pemeriksaan replay pada rute Bearer RPC serta media."
+    },
+    "EV-107": {
+      "title": "startupAccess.ts#L71-L110 Mematikan Tunnel ::1",
+      "caption": "Baris 39 mengizinkan loopback IPv6 ::1, tetapi isPrivateNetworkAddress memeriksa NodeNet.isIPv4 dan mematikan Tailscale Serve / Connect lewat socket.destroy()."
+    },
+    "EV-108": {
+      "title": "GitVcsDriverCore.ts#L6144-L6205 RCE Submodule",
+      "caption": "Pembuatan worktree menjalankan git submodule update --init --recursive sementara proses anak mewarisi GITHUB_TOKEN dan SSH_AUTH_SOCK dari host."
+    },
+    "EV-109": {
+      "title": "PR #39483 Perbaikan Path-Traversal Senyap (0 Advisories)",
+      "caption": "Menambal diam-diam path traversal ServerSecretStore pada 20 Nov di rentang ca81b7b9, sementara GitHub Security Advisories tetap 0."
+    }
+  }
+}
