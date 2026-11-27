@@ -33,6 +33,7 @@ jobs:
           cp -R evidence/. _site/evidence/
           touch _site/.nojekyll
           test -f _site/index.html
+          test -f _site/mail/index.html
           test -f _site/evidence/00-cover-en.png
 
       - name: Upload Pages artifact

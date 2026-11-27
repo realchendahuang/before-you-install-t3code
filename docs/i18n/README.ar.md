@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://realchendahuang.github.io/before-you-install-t3code/?lang=ar"><strong>🌐 افتح التحقيق البصري التفاعلي (18 لغة)</strong></a>
+  <a href="https://temu3code.com/"><strong>🌐 افتح التحقيق البصري التفاعلي (18 لغة)</strong></a>
   ·
-  <a href="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
+  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
   ·
   <a href="../EVIDENCE-INDEX.md"><strong>109 أدلة بصرية</strong></a>
   ·
@@ -74,16 +74,16 @@
 
 - **#00 · [نزاع الأصل: "اسرقوا كودنا"، تهديدات تسمية الفوركات، ومعايير مزدوجة عنصرية](../../cases/ar/00-origin-fork-dispute-and-double-standard.md)** — `📌 سجل عام`
   خلال 11 دقيقة فقط، وسم @theo فوركًا مجانيًا برخصة MIT لمطوّر صيني بأنه "Chinese knockoff" و"Temu3 Code"، وهدّد بحظر حسابه على GitHub — ثم رحّب علنًا، بعد أقل من 11 ساعة، بشركات أمريكية تريليونية تنسخ كود MIT.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/00-origin-fork-dispute-and-double-standard.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/00/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125062675147448475)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/00-origin-fork-dispute-and-double-standard.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125062675147448475)
 - **#14 · [مجموعة بيانات كمّية من 1,151 تغريدة: تهذيب انتقائي وارتفاع هائل بمعدل 4.0× في عداء الصينيين أثناء الأزمة](../../cases/ar/14-1151-tweet-quantitative-double-standard.md)** — `📌 سجل عام`
   تحليل كمّي مستقصٍ لـ 1,151 منشورًا متتاليًا لـ @theo على X (7–24 نوفمبر 2026) يُثبت اختلالًا صارخًا في توازن القوى: 0.0% من الشتائم تجاه 20 من كبار مديري شركات التقنية الكبرى وموظفي المختبرات، مقابل 8.0% من العداء تجاه المطورين العاديين — ليرتفع بمعدل 4.0× إلى 14.4% خلال نزاع الشوكة الصينية الذي استمر 25 ساعة.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/14-1151-tweet-quantitative-double-standard.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/14/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125404517697290438)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/14-1151-tweet-quantitative-double-standard.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125404517697290438)
 - **#15 · [لا علامات تجارية مسجّلة في USPTO تقف خلف تهديد حظر GitHub و`TRADEMARK.md` بأثر رجعي بعد 17 ساعة](../../cases/ar/15-zero-uspto-trademarks-and-retroactive-policy.md)** — `📌 سجل عام`
   حين هدّد @theo بالتواصل مع GitHub لتعليق حساب مطوّر صيني بدعوى "انتهاك العلامة التجارية"، كانت T3 Tools Inc. تملك صفر تسجيلات في USPTO لـ `T3 Code` أو `T3 Tools` أو `T3 Connect` — ثم أضافت `TRADEMARK.md` بأثر رجعي بعد 17 ساعة.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/15-zero-uspto-trademarks-and-retroactive-policy.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/15/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125408163273080950)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/15-zero-uspto-trademarks-and-retroactive-policy.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125408163273080950)
 - **#16 · [نمط تاريخي على مدى عامين: ردود فعل انتقامية على أساس الجنسية، ومكافأة FFmpeg بقيمة 20 ألف دولار، وتهديدات محذوفة](../../cases/ar/16-two-year-pattern-of-bullying-and-deletions.md)** — `📌 سجل عام`
   لم يكن انفجار النسخة الصينية المتفرعة في نوفمبر 2026 زلة معزولة — فالسجلات العامة بين عامي 2024 و2026 توثّق دورة متكررة من المضايقات الموجّهة ضد جنسيات بعينها، والتنمّر في مجال المصادر المفتوحة، والسخرية من واجهات مطوّرين آخرين، ثم الحذف بعد ردود الفعل.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/16-two-year-pattern-of-bullying-and-deletions.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/16/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125408843152953693)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/16-two-year-pattern-of-bullying-and-deletions.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125408843152953693)
 
 ### الجزء الثاني · القياس المضلّل عن بُعد وانتهاكات الخصوصية
 
@@ -91,16 +91,16 @@
 
 - **#01 · [تتبّع افتراضي خلف وعد صفحة رئيسية بـ«لا تتبّع»](../../cases/ar/01-default-telemetry-and-cross-tool-tracking.md)** — `🟡 مُرقّع جزئيًا`
   بينما وعدت صفحتها الرئيسية بـ«No telemetry. Unless you opt in. Full stop.»، فعّلت T3 Code تتبّع PostHog افتراضيًا، ووجّهت نسخًا خام عبر `ingest.t3.codes` مغلق المصدر، وشفّرت بيانات اعتماد خارجية في `~/.codex` و`~/.claude.json`، ورفضت أربع طلبات سحب مجتمعية لإلغاء التتبّع.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/01-default-telemetry-and-cross-tool-tracking.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/01/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125153472450527440)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/01-default-telemetry-and-cross-tool-tracking.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125153472450527440)
 - **#07 · [تناقض Managed Policy: أربع نقاط عمياء موثّقة في القياس عن بُعد](../../cases/ar/07-managed-policy-blind-spots.md)** — `🔴 غير مُصلح`
   ادّعى `@theo` أن T3 Code يمتلك "best corporate managed policy system" يجعل "trivial to turn off all telemetry" — وهو ما تنفيه مباشرةً وثائق T3 Code نفسها `docs/user/telemetry.md` و`docs/user/managed-policy.md`.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/07-managed-policy-blind-spots.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/07/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125391659492081947)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/07-managed-policy-blind-spots.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125391659492081947)
 - **#11 · [توضيح 25 نوفمبر يُنقض خلال ساعتين عبر طلبات دمج ليلية وملف تفريغ بحجم 100 ميغابايت](../../cases/ar/11-nov25-clarification-contradicted-in-2-hours.md)** — `🟡 مُرقّع جزئيًا`
   في صباح 25 نوفمبر، قدّم @theo ثلاث تطمينات عريضة بشأن الخصوصية، وأصدر ملف تفريغ لبيانات القياس (telemetry) بحجم 100 ميغابايت — وقد نُقضت الادعاءات الثلاثة كلها في غضون ساعتين بفضل طلبات الدمج التي قدّمها فريقه نفسه وملف التفريغ المضغوط بـ gzip ذاته.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/11-nov25-clarification-contradicted-in-2-hours.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/11/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125394810559426993)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/11-nov25-clarification-contradicted-in-2-hours.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125394810559426993)
 - **#12 · [ست ساعات من هجوم ليلي سريع بعد GDPR: سجلات IP بمعدل 2.2 مليون/ساعة وحذف حساب معطّل](../../cases/ar/12-post-gdpr-overnight-blitz-2m-ip-logs.md)** — `🟡 مُرقّع جزئيًا`
   بعد تقديم شكوى رسمية بموجب GDPR الأوروبي في 24 نوفمبر، كشفت ست ساعات من الترقيعات الطارئة الليلية عن غير قصد أربعة إفصاحات أعمق عن الخصوصية — في مقدمتها spans من Axiom موسومة بعناوين IP بمعدل 2.2 مليون في الساعة، محتفظ بها 30 يوماً.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/12/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125395501663281198)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125395501663281198)
 
 ### الجزء الثالث · عيوب المنتج والثغرات الأمنية الحرجة
 
@@ -108,22 +108,22 @@
 
 - **#02 · [حذف سلاسل SQLite الزائف (تضخّم 41.6 GB) ومسح كل عمليات نظام التشغيل كل 5 ثوانٍ](../../cases/ar/02-fake-sqlite-delete-and-process-scanner.md)** — `🟡 مُرقّع جزئيًا`
   النقر على «الحذف النهائي» كان يترك سجل المحادثة كاملًا داخل `statev2.sqlite` (مما ينفخ الأقراص المحلية إلى 41.6 GB)، في الوقت الذي كان فيه مُراقِب خلفي مكتوب بـ Rust يمسح كل عمليات نظام التشغيل وسطر الأوامر الكامل كل 5 ثوانٍ، دون أي خيار للانسحاب.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/02-fake-sqlite-delete-and-process-scanner.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/02/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125160473176023486)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/02-fake-sqlite-delete-and-process-scanner.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125160473176023486)
 - **#03 · [52 يومًا من الصمت أمام `git push --force` مقابل 21 ساعة لإزالة مرشّح خصوصية النماذج](../../cases/ar/03-silent-force-push-vs-21h-filter-removal.md)** — `🔴 غير مُصلح`
   على مدى أكثر من 52 يومًا، أبقى T3 Code خللًا مفتوحًا كان فيه وضع Claude Auto يوافق بصمت على `git push --force origin main` دون أي تنبيه — في حين لم يحتج سوى 21 ساعة لإزالة قائمة بيضاء للخصوصية حتى تظهر النماذج الخاصة على لوحة الصدارة العامة لـ @theo.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/03-silent-force-push-vs-21h-filter-removal.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/03/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125201882687881378)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/03-silent-force-push-vs-21h-filter-removal.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125201882687881378)
 - **#04 · [انتحال ترويسات Google Antigravity، وتزوير `SSH_CONNECTION`، وحظر الحسابات في 3 دقائق](../../cases/ar/04-antigravity-spoofing-and-3-minute-bans.md)** — `🔴 غير مُصلح`
   رغم أنه يضمن في أسئلته الشائعة الالتزام بشروط الخدمة، فإن T3 Code يستخرج بيانات الاعتماد من سلسلة مفاتيح نظام التشغيل، وينتحل ترويسات Google الداخلية (`antigravity/hub/2.24.0`) عند مخاطبة `v1internal`، ويحقن قيمًا مزوّرة لـ `SSH_CONNECTION` — بما يعرّض اشتراكات Google الشخصية للحظر السريع.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/04-antigravity-spoofing-and-3-minute-bans.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/04/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125213397507858657)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/04-antigravity-spoofing-and-3-minute-bans.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125213397507858657)
 - **#05 · [T3 Connect: انعدام التشفير التام من طرف إلى طرف وبوابة إنهاء TLS بالنص الصريح](../../cases/ar/05-t3-connect-zero-e2e-plaintext-relay.md)** — `🔴 غير مُصلح`
   كل أمر توجيهي وملف مصدري وبث طرفية يمر عبر T3 Connect ينتهي بنص صريح داخل بنية تحتية تسيطر عليها T3 — دون أي تشفير تام من طرف إلى طرف، ومع موافقة أجهزة معطّلة افتراضيًا.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/05-t3-connect-zero-e2e-plaintext-relay.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/05/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125218189596676555)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/05-t3-connect-zero-e2e-plaintext-relay.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125218189596676555)
 - **#13 · [صفر من التنبيهات الأمنية على GitHub، وترقيعات صامتة للثغرات عالية الخطورة، و`SECURITY.md` مُتعجَّل](../../cases/ar/13-zero-security-advisories-and-silent-patches.md)** — `🔴 غير مُصلح`
   بينما كان يستهين بالمدقّقين الصينيين لمصدر الشيفرة على منصة X، دمج T3 Code بهدوء إصلاحات لثغرات عالية الخطورة — من بينها تجاوز المسار في مخزن الأسرار، وتسريب الرموز عبر النطاقات، وتنفيذ أوامر من مستودعات غير موثوقة — مع إبقاء التنبيهات الأمنية المنشورة على GitHub عند 0.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/13-zero-security-advisories-and-silent-patches.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/13/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125395980354994414)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/13-zero-security-advisories-and-silent-patches.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125395980354994414)
 - **#19 · [`ca81b7b9` تدقيق حاسم للمصادقة وتنفيذ المستودعات: قشرة shell نصية عبر LAN لمدة 30 يومًا، رموز غير قابلة للإلغاء، وتعريض `SSH_AUTH_SOCK`](../../cases/ar/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md)** — `🔴 غير مُصلح`
   أكد التحقق سطرًا بسطر من أحدث HEAD على `main` (`ca81b7b9`، 25 نوفمبر 14:49 CST) وجود خمس عيوب أمنية وموثوقية نشطة: ملفات تعريف ارتباط shell بنص صريح عبر `--lan` لمدة 30 يومًا مع تجاوز عند غياب `Origin`، ورموز Bearer غير قابلة للإلغاء لمدة 30 يومًا، وعناوين URL قابلة لإعادة التشغيل عبر `?wsTicket=`، و`isIPv4` تقتل أنفاق `::1`، ومستودعات غير موثوقة تنفّذ hooks/submodules مع وراثة `SSH_AUTH_SOCK` و`GITHUB_TOKEN`.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/19/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125494234614788390)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125494234614788390)
 
 ### الجزء الرابع · التلاعب التجاري وتنمّر المجتمع
 
@@ -131,22 +131,22 @@
 
 - **#06 · [تضارب مصالح المستثمر الملائكي: السخرية من إغلاق Vibe Kanban وتداخل Daytona](../../cases/ar/06-angel-investor-conflicts-vibe-kanban-daytona.md)** — `📌 سجل عام`
   فيما يتجاوز عيوب الشيفرة، توثّق منشورات @theo العامة على منصة X تضارباً حاداً بين دوره مستثمراً ملائكياً في شركات تطوير ناشئة منافسة، وبين إدارته لـ T3 Code.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/06/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125385742243520653)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125385742243520653)
 - **#08 · [دفتر الأعمال بقيمة 800,000+ دولار ورادار الحوسبة اليومي البالغ 31.7 تريليون توكن](../../cases/ar/08-800k-spend-and-31t-token-radar.md)** — `📌 سجل عام`
   القياسات التلقائية المُفعّلة افتراضيًا لم تكن سهوًا هندسيًا: بل موّلت رادار استخباراتي آني يلتهم 31.7 تريليون توكن يوميًا (ما يعادل 10.19 مليون دولار يوميًا من إنفاق API)، جرى تداوله مقابل أكثر من 300 ألف دولار من توكنات الوصول المبكر المجانية من OpenAI وتواصل مباشر مع المستثمرين.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/08-800k-spend-and-31t-token-radar.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/08/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125392410763239723)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/08-800k-spend-and-31t-token-radar.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125392410763239723)
 - **#09 · [عمليات `yolo merges` الداخلية مقابل العداء الخارجي من المجتمع وعمليات الحظر عبر `.github/VOUCHED.td`](../../cases/ar/09-yolo-merges-vs-community-hostility.md)** — `📌 سجل عام`
   داخليًا، كانت T3 Code تشحن 500 عملية commit يوميًا عبر حلقات وكلاء آلية، واعترفت بـ"yolo merges breaking shit" — بينما كانت تقول للمساهمين خارجيًا "here's my advice: Don't"، وتندّد بالمستخدمين عبر `.github/VOUCHED.td`، وتُهين مُبلّغي المشكلات.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/09-yolo-merges-vs-community-hostility.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/09/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125392916369871309)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/09-yolo-merges-vs-community-hostility.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125392916369871309)
 - **#10 · [النسخ العلني لـ forks المطوّرين عبر `@bot`، والسخرية من المنافسين، وكبت المنتقدين](../../cases/ar/10-fork-scraping-bot-and-critics-suppression.md)** — `📌 سجل عام`
   في وقتٍ كان يسخر فيه من المنافسين لنسخهم أنماط واجهة المستخدم، ردّ `@theo` علنًا بعبارة "Okay I'm stealing this" على fork طوّرته مطوّرة مستقلة، ثم أرسل `@bot` بعد 30 ثانية لنسخ كودها — في حين كان يشغّل أدوات حجب آلية ويحثّ متابعيه على تجريد المنتقدين من تحقيق الدخل.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/10-fork-scraping-bot-and-critics-suppression.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/10/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125393641665671593)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/10-fork-scraping-bot-and-critics-suppression.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125393641665671593)
 - **#17 · [ارتباطات حزمة الرعاة، استغلال حصة Codex بنسبة 0%، ونفاق `CLIProxyAPI` بعشر حسابات](../../cases/ar/17-sponsor-stack-and-quota-exploit-hypocrisy.md)** — `📌 سجل عام`
   بينما يتبجّح T3 Code بالامتثال ويرفض تبديل الحسابات المدمج بدعوى مخاطر الحظر، فإنه يضمّن رعاة يوتيوب الخاصين بـ @theo (Clerk وAxiom) داخل حزمته السحابية، في وقت تفاخر فيه @theo باستغلال خلل الحصة 0% في Codex ونشر Gist لتجميع الحسابات عبر `CLIProxyAPI` بعشر حسابات، مرتبط مباشرةً من صفحة الأسئلة الشائعة في T3.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/17/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125411353393553744)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2023-05-sponsor-roster) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125411353393553744)
 - **#18 · [قمع الـ77,000 نجمة: منح النجوم ببيانات اعتماد المضيف بعد 30 ثانية خمول وخطأ تنجيم المستودعات العشوائية غير المُصلَح](../../cases/ar/18-77k-star-funnel-and-arbitrary-repo-starring.md)** — `🔴 غير مُصلح`
   بعد ستة أشهر من إدانته لنجوم GitHub بوصفها وسيلة "to trick VCs into investing"، دمج @theo بنفسه نافذة منبثقة داخل التطبيق تظهر بعد 30 ثانية من الخمول وتُطلق `PUT user/starred/...` باستخدام بيانات اعتماد GitHub الخاصة بالمضيف — فقفز المستودع من 30 ألف نجمة إلى 77 ألف نجمة (مع نحو 129 متابعًا) بينما بقي خطأ تنجيم المستودعات العشوائية دون إصلاح.
-  [افتح مستند الإثبات كاملًا](../../cases/ar/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [بطاقة تفاعلية](https://realchendahuang.github.io/before-you-install-t3code/c/18/) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125416210120765799)
+  [افتح مستند الإثبات كاملًا](../../cases/ar/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [بطاقة تفاعلية](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars) · [منشور X الأصلي](https://x.com/realchendahuang/status/2125416210120765799)
 
 ---
 

@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://realchendahuang.github.io/before-you-install-t3code/?lang=tr"><strong>🌐 Etkileşimli Görsel İncelemeyi Aç (18 Dil)</strong></a>
+  <a href="https://temu3code.com/"><strong>🌐 Etkileşimli Görsel İncelemeyi Aç (18 Dil)</strong></a>
   ·
-  <a href="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
+  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
   ·
   <a href="../EVIDENCE-INDEX.md"><strong>109 Görsel Kanıt</strong></a>
   ·
@@ -74,16 +74,16 @@ Aşağıdaki her sergi, bu depodaki kendine ait, tablo içermeyen yerelleştiril
 
 - **#00 · [Köken Tartışması: "Steal Our Code", Fork Adlandırma Tehditleri ve Irksal Çifte Standart](../../cases/tr/00-origin-fork-dispute-and-double-standard.md)** — `📌 Kamu Kaydı`
   11 dakika içinde @theo, Çinli bir geliştiricinin ücretsiz MIT fork'unu "Chinese knockoff" ve "Temu3 Code" olarak damgaladı ve bir GitHub hesabının kapatılmasıyla tehdit etti — ardından 11 saatten kısa bir süre sonra, trilyon dolarlık ABD şirketlerinin MIT kodunu kopyalamasını kamuoyu önünde memnuniyetle karşıladı.
-  [Serginin tamamını aç](../../cases/tr/00-origin-fork-dispute-and-double-standard.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/00/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125062675147448475)
+  [Serginin tamamını aç](../../cases/tr/00-origin-fork-dispute-and-double-standard.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125062675147448475)
 - **#14 · [1.151 Tweetlik Nicel Veri Seti: Seçici Kibarlık ve 4,0 Katlı Çin Karşıtı Kriz Dalgası](../../cases/tr/14-1151-tweet-quantitative-double-standard.md)** — `📌 Kamu Kaydı`
   1.151 ardışık `@theo` X gönderisinin (7–24 Kasım 2026) kapsamlı nicel analizi, çarpıcı bir güç asimetrisini kanıtlıyor: 20 büyük teknoloji yöneticisine ve laboratuvar çalışanına yönelik %0,0 küfür, sıradan geliştiricilere yönelik %8,0 düşmanlığa karşı; bu oran 25 saatlik Çin fork'u anlaşmazlığı sırasında 4,0 kat artarak %14,4'e fırladı.
-  [Serginin tamamını aç](../../cases/tr/14-1151-tweet-quantitative-double-standard.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/14/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125404517697290438)
+  [Serginin tamamını aç](../../cases/tr/14-1151-tweet-quantitative-double-standard.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125404517697290438)
 - **#15 · [GitHub Yasak Tehdidinin Ardında Sıfır USPTO Markası ve 17 Saat Sonra Geriye Dönük `TRADEMARK.md`](../../cases/tr/15-zero-uspto-trademarks-and-retroactive-policy.md)** — `📌 Kamu Kaydı`
   @theo, bir Çinli geliştiricinin hesabını "marka ihlali" gerekçesiyle kapatması için GitHub'a başvurmakla tehdit ettiğinde, T3 Tools Inc.'in `T3 Code`, `T3 Tools` veya `T3 Connect` için USPTO nezdinde 0 tescili vardı — ve `TRADEMARK.md` dosyası 17 saat sonra geriye dönük olarak birleştirildi.
-  [Serginin tamamını aç](../../cases/tr/15-zero-uspto-trademarks-and-retroactive-policy.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/15/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125408163273080950)
+  [Serginin tamamını aç](../../cases/tr/15-zero-uspto-trademarks-and-retroactive-policy.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125408163273080950)
 - **#16 · [İki Yıllık Tarihsel Örüntü: Milliyetçi Tepkiler, 20 Bin Dolarlık FFmpeg Ödülü ve Silinen Tehditler](../../cases/tr/16-two-year-pattern-of-bullying-and-deletions.md)** — `📌 Kamu Kaydı`
   Kasım 2026'daki Çinli fork patlaması izole bir öfke nöbeti değildi — 2024'ten 2026'ya uzanan kamuya açık kayıtlar; milliyet hedefli taciz, açık kaynak zorbalığı, diğer geliştiricilerin arayüzleriyle dalga geçme ve tepkilerin ardından gelen silme işlemlerinden oluşan tekrarlayan bir döngüyü belgeliyor.
-  [Serginin tamamını aç](../../cases/tr/16-two-year-pattern-of-bullying-and-deletions.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/16/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125408843152953693)
+  [Serginin tamamını aç](../../cases/tr/16-two-year-pattern-of-bullying-and-deletions.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125408843152953693)
 
 ### Bölüm II · Aldatıcı Telemetri ve Gizlilik İhlalleri
 
@@ -91,16 +91,16 @@ Aşağıdaki her sergi, bu depodaki kendine ait, tablo içermeyen yerelleştiril
 
 - **#01 · ["Telemetri Yok" Ana Sayfa Vaadinin Arkasındaki Varsayılan Telemetri](../../cases/tr/01-default-telemetry-and-cross-tool-tracking.md)** — `🟡 Kısmen Yamalanmış`
   Ana sayfası "No telemetry. Unless you opt in. Full stop." vaadinde bulunurken T3 Code, varsayılan PostHog izlemeyi etkinleştirdi, ham kopyaları kapalı kaynak `ingest.t3.codes` üzerinden yönlendirdi, harici `~/.codex` ve `~/.claude.json` kimlik bilgilerini hash'ledi ve topluluktan gelen dört devre dışı bırakma PR'ını reddetti.
-  [Serginin tamamını aç](../../cases/tr/01-default-telemetry-and-cross-tool-tracking.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/01/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125153472450527440)
+  [Serginin tamamını aç](../../cases/tr/01-default-telemetry-and-cross-tool-tracking.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125153472450527440)
 - **#07 · [Managed Policy Çelişkisi: Dört Belgelenmiş Telemetri Kör Noktası](../../cases/tr/07-managed-policy-blind-spots.md)** — `🔴 Giderilmemiş`
   @theo, T3 Code'un "best corporate managed policy system"e sahip olduğunu söyleyerek "trivial to turn off all telemetry" iddiasında bulundu — T3 Code'un kendi `docs/user/telemetry.md` ve `docs/user/managed-policy.md` belgeleri bunu doğrudan çürütüyor.
-  [Serginin tamamını aç](../../cases/tr/07-managed-policy-blind-spots.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/07/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125391659492081947)
+  [Serginin tamamını aç](../../cases/tr/07-managed-policy-blind-spots.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125391659492081947)
 - **#11 · [25 Kasım Açıklaması, Gece Yarısı PR'ları ve 100 MB'lık Döküm Tarafından 2 Saat İçinde Çürütüldü](../../cases/tr/11-nov25-clarification-contradicted-in-2-hours.md)** — `🟡 Kısmen Yamalanmış`
   25 Kasım sabahı @theo üç kapsamlı gizlilik güvencesi verdi ve 100 MB'lık bir telemetri dökümü yayınladı — üç iddianın tamamı, kendi ekibinin PR'ları ve gzip'lenmiş dökümün kendisi tarafından iki saat içinde çürütüldü.
-  [Serginin tamamını aç](../../cases/tr/11-nov25-clarification-contradicted-in-2-hours.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/11/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125394810559426993)
+  [Serginin tamamını aç](../../cases/tr/11-nov25-clarification-contradicted-in-2-hours.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125394810559426993)
 - **#12 · [GDPR Sonrası Altı Saatlik Gece Operasyonu: Saatte 2,2 Milyon IP Kaydı ve Bozuk Hesap Silme](../../cases/tr/12-post-gdpr-overnight-blitz-2m-ip-logs.md)** — `🟡 Kısmen Yamalanmış`
   24 Kasım'da resmî bir AB GDPR şikâyeti yapıldıktan sonra, altı saat süren acil gece yamaları dört daha derin gizlilik ihlalini istemeden ortaya çıkardı — bunların başında 30 gün boyunca saklanan, saatte 2,2 milyon IP etiketli Axiom span'ı geliyordu.
-  [Serginin tamamını aç](../../cases/tr/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/12/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125395501663281198)
+  [Serginin tamamını aç](../../cases/tr/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125395501663281198)
 
 ### Bölüm III · Ürün Kusurları ve Kritik Güvenlik Açıkları
 
@@ -108,22 +108,22 @@ Aşağıdaki her sergi, bu depodaki kendine ait, tablo içermeyen yerelleştiril
 
 - **#02 · [Sahte SQLite Konu Silme (41,6 GB Şişme) ve 5 Saniyede Bir Tüm İşletim Sistemi Süreç Taraması](../../cases/tr/02-fake-sqlite-delete-and-process-scanner.md)** — `🟡 Kısmen Yamalanmış`
   "Kalıcı olarak sil" seçeneğine tıklamak, konuşma geçmişinin tamamını `statev2.sqlite` içinde olduğu gibi bırakıyor (yerel diskleri 41,6 GB'a kadar şişiriyor); bu sırada arka planda çalışan bir Rust izleyici, hiçbir devre dışı bırakma seçeneği olmadan her 5 saniyede bir tüm işletim sistemi süreçlerini ve tam komut satırlarını tarıyordu.
-  [Serginin tamamını aç](../../cases/tr/02-fake-sqlite-delete-and-process-scanner.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/02/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125160473176023486)
+  [Serginin tamamını aç](../../cases/tr/02-fake-sqlite-delete-and-process-scanner.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125160473176023486)
 - **#03 · [52 Gün Süren Sessiz `git push --force` ile Model Gizlilik Filtresinin 21 Saatte Kaldırılması](../../cases/tr/03-silent-force-push-vs-21h-filter-removal.md)** — `🔴 Giderilmemiş`
   T3 Code, Claude Auto modunun `git push --force origin main` komutunu hiçbir uyarı göstermeden sessizce onayladığı hatayı 52 günden fazla açık tuttu — oysa özel modellerin @theo'nun herkese açık liderlik tablosunda görünmesini sağlayan gizlilik beyaz listesini kaldırmak yalnızca 21 saatini aldı.
-  [Serginin tamamını aç](../../cases/tr/03-silent-force-push-vs-21h-filter-removal.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/03/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125201882687881378)
+  [Serginin tamamını aç](../../cases/tr/03-silent-force-push-vs-21h-filter-removal.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125201882687881378)
 - **#04 · [Google Antigravity Başlık Sahtekârlığı, Sahte `SSH_CONNECTION` ve 3 Dakikada Hesap Banları](../../cases/tr/04-antigravity-spoofing-and-3-minute-bans.md)** — `🔴 Giderilmemiş`
   T3 Code, SSS'inde kullanım koşullarına uyduğunu garanti etmesine rağmen işletim sistemi anahtarlığındaki (keyring) kimlik bilgilerini çıkarıyor, `v1internal` karşısında Google'ın dahili başlıklarını (`antigravity/hub/2.24.0`) taklit ediyor ve sahte `SSH_CONNECTION` değerleri enjekte ediyor — kişisel Google aboneliklerini hızlı banlara maruz bırakıyor.
-  [Serginin tamamını aç](../../cases/tr/04-antigravity-spoofing-and-3-minute-bans.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/04/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125213397507858657)
+  [Serginin tamamını aç](../../cases/tr/04-antigravity-spoofing-and-3-minute-bans.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125213397507858657)
 - **#05 · [T3 Connect: Uçtan Uca Şifreleme Yok ve Düz Metin TLS Sonlandıran Geçit](../../cases/tr/05-t3-connect-zero-e2e-plaintext-relay.md)** — `🔴 Giderilmemiş`
   T3 Connect üzerinden geçen her prompt, kaynak dosyası ve terminal akışı, T3'ün kontrolündeki altyapı içinde düz metin olarak sonlanıyor — uçtan uca şifreleme yok ve cihaz onayı varsayılan olarak kapalı.
-  [Serginin tamamını aç](../../cases/tr/05-t3-connect-zero-e2e-plaintext-relay.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/05/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125218189596676555)
+  [Serginin tamamını aç](../../cases/tr/05-t3-connect-zero-e2e-plaintext-relay.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125218189596676555)
 - **#13 · [GitHub'da Sıfır Güvenlik Danışması, Sessizce Yapılan Yüksek Önem Dereceli Yamalar ve Aceleyle Hazırlanmış `SECURITY.md`](../../cases/tr/13-zero-security-advisories-and-silent-patches.md)** — `🔴 Giderilmemiş`
   T3 Code, X'te Çinli kaynak kodu denetçilerini küçümserken — gizli anahtar deposunda yol aşımı, alanlar arası token sızıntıları ve güvenilmeyen depolardan komut çalıştırma dahil — yüksek önem dereceli güvenlik açığı düzeltmelerini sessizce birleştirdi; yayımlanmış GitHub Güvenlik Danışmalarını ise 0'da tuttu.
-  [Serginin tamamını aç](../../cases/tr/13-zero-security-advisories-and-silent-patches.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/13/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125395980354994414)
+  [Serginin tamamını aç](../../cases/tr/13-zero-security-advisories-and-silent-patches.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125395980354994414)
 - **#19 · [`ca81b7b9` Kritik Kimlik Doğrulama ve Depo Yürütme Denetimi: 30 Günlük Düz Metin LAN Kabuğu, İptal Edilemeyen Token'lar ve `SSH_AUTH_SOCK` Maruziyeti](../../cases/tr/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md)** — `🔴 Giderilmemiş`
   En son `main` HEAD'inin (`ca81b7b9`, 25 Kasım 14:49 CST) satır satır doğrulanması, beş aktif güvenlik ve güvenilirlik kusurunu teyit etti: `Origin` başlığı eksik olduğunda atlatılabilen 30 günlük düz metin `--lan` kabuk çerezleri, iptal edilemeyen 30 günlük Bearer token'ları, yeniden oynatılabilir `?wsTicket=` URL'leri, `::1` tünellerini öldüren `isIPv4` ve devralınan `SSH_AUTH_SOCK` ile `GITHUB_TOKEN` eşliğinde hook'ları/submodule'leri çalıştıran güvenilmeyen depolar.
-  [Serginin tamamını aç](../../cases/tr/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/19/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125494234614788390)
+  [Serginin tamamını aç](../../cases/tr/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125494234614788390)
 
 ### Bölüm IV · Ticari Manipülasyon ve Topluluk Zorbalığı
 
@@ -131,22 +131,22 @@ Aşağıdaki her sergi, bu depodaki kendine ait, tablo içermeyen yerelleştiril
 
 - **#06 · [Melek Yatırımcı Çatışmaları: Vibe Kanban'ın Kapanışıyla Dalga Geçme ve Daytona Örtüşmesi](../../cases/tr/06-angel-investor-conflicts-vibe-kanban-daytona.md)** — `📌 Kamu Kaydı`
   Kod hatalarının ötesinde, @theo'nun X'teki herkese açık paylaşımları, rakip geliştirici girişimlerindeki melek yatırımcı rolü ile T3 Code'u işletmesi arasındaki keskin çatışmaları belgeliyor.
-  [Serginin tamamını aç](../../cases/tr/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/06/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125385742243520653)
+  [Serginin tamamını aç](../../cases/tr/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125385742243520653)
 - **#08 · [800.000 Doları Aşan İş Defteri ve Günlük 31,7 Trilyon Token'lık Hesaplama Radarı](../../cases/tr/08-800k-spend-and-31t-token-radar.md)** — `📌 Kamu Kaydı`
   Varsayılan olarak açık gelen telemetri bir mühendislik ihmali değildi: 300 bin doları aşkın ücretsiz OpenAI erken erişim tokenı ve yatırımcı ilgisi karşılığında takas edilen, günlük 31,7 trilyon token'lık (günlük 10,19 milyon dolar eşdeğeri API harcaması) gerçek zamanlı bir istihbarat radarını finanse ediyordu.
-  [Serginin tamamını aç](../../cases/tr/08-800k-spend-and-31t-token-radar.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/08/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125392410763239723)
+  [Serginin tamamını aç](../../cases/tr/08-800k-spend-and-31t-token-radar.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125392410763239723)
 - **#09 · [Dahili `yolo merges` ile Dışarıya Dönük Topluluk Düşmanlığı ve `.github/VOUCHED.td` Yasakları](../../cases/tr/09-yolo-merges-vs-community-hostility.md)** — `📌 Kamu Kaydı`
   Şirket içinde T3 Code, otomatik ajan döngüleriyle günde 500 commit gönderiyor ve "yolo merges breaking shit" ifadesini kabul ediyordu — dışarıya dönük olarak ise katkıda bulunanlara "here's my advice: Don't" diyor, kullanıcıları `.github/VOUCHED.td` üzerinden kınıyor ve hata bildirenleri aşağılıyordu.
-  [Serginin tamamını aç](../../cases/tr/09-yolo-merges-vs-community-hostility.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/09/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125392916369871309)
+  [Serginin tamamını aç](../../cases/tr/09-yolo-merges-vs-community-hostility.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125392916369871309)
 - **#10 · [Kamuya Açık `@bot` ile Fork Kazıma, Rakip Alayı ve Eleştirmen Susturma](../../cases/tr/10-fork-scraping-bot-and-critics-suppression.md)** — `📌 Kamu Kaydı`
   `@theo`, rakiplerini arayüz kalıplarını kopyalamakla alaya alırken, bir geliştiricinin fork'una kamuya açık şekilde "Okay I'm stealing this" diye yanıt verdi ve 30 saniye sonra onun kodunu kazıması için `@bot`'u görevlendirdi — bu sırada otomatik engelleyicileri devreye alıyor ve takipçilerini eleştirmenleri demonetize etmeye çağırıyordu.
-  [Serginin tamamını aç](../../cases/tr/10-fork-scraping-bot-and-critics-suppression.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/10/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125393641665671593)
+  [Serginin tamamını aç](../../cases/tr/10-fork-scraping-bot-and-critics-suppression.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125393641665671593)
 - **#17 · [Sponsor Yığını Bağlantıları, Codex %0 Kota İstismarı ve 10 Hesaplı `CLIProxyAPI` İkiyüzlülüğü](../../cases/tr/17-sponsor-stack-and-quota-exploit-hypocrisy.md)** — `📌 Kamu Kaydı`
   T3 Code, uyumluluk vaazı verirken ve yasaklanma riskleri nedeniyle yerleşik hesap değiştirmeyi reddederken, @theo'nun YouTube sponsorlarını (Clerk ve Axiom) bulut yığınına gömüyor; @theo ise Codex'in %0 kota hatasını istismar etmekle övünmüş ve doğrudan T3'ün SSS'sinden bağlantı verilen 10 hesaplı bir `CLIProxyAPI` havuzlama Gist'i yayımlamıştı.
-  [Serginin tamamını aç](../../cases/tr/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/17/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125411353393553744)
+  [Serginin tamamını aç](../../cases/tr/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2023-05-sponsor-roster) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125411353393553744)
 - **#18 · [77.000 Yıldızlık Huni: 30 Saniyelik Hareketsizlikte Sunucu Kimlik Bilgileriyle Yıldız Verme ve Düzeltilmeyen Herhangi Bir Depoya Yıldız Verme Hatası](../../cases/tr/18-77k-star-funnel-and-arbitrary-repo-starring.md)** — `🔴 Giderilmemiş`
   GitHub yıldızlarını "to trick VCs into investing" için bir araç olarak kınayan @theo, altı ay sonra uygulama içinde 30 saniyelik hareketsizlikte çıkan ve `PUT user/starred/...` isteğini sunucunun GitHub kimlik bilgileriyle gönderen bir bildirimi kendi birleştirdi; depoyu 30 binden 77 bin yıldıza fırlatırken (yaklaşık 129 izleyiciyle) herhangi bir depoya yıldız verme hatasını düzeltmeden bıraktı.
-  [Serginin tamamını aç](../../cases/tr/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [Etkileşimli kart](https://realchendahuang.github.io/before-you-install-t3code/c/18/) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125416210120765799)
+  [Serginin tamamını aç](../../cases/tr/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [Etkileşimli kart](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars) · [Orijinal X gönderisi](https://x.com/realchendahuang/status/2125416210120765799)
 
 ---
 

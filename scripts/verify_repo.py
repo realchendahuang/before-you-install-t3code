@@ -23,8 +23,10 @@ EXPECTED_DOSSIERS = (
 )
 
 SELF_PORTAL_PREFIXES = (
+    "https://temu3code.com",
+    "https://github.com/realchendahuang/temu3code/actions/workflows/",
+    "https://realchendahuang.github.io/temu3code",
     "https://realchendahuang.github.io/before-you-install-t3code",
-    "https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/",
 )
 
 FENCED_CODE_RE = re.compile(r"(?ms)^[ \t]{0,3}(`{3,}|~{3,})[^\n]*\n.*?^[ \t]{0,3}\1[ \t]*$")
@@ -246,37 +248,39 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
                     f"{rel}: missing {len(missing_u)} URLs from EN ({missing_u[0]})"
                 )
 
-    # Check site/data bundles + per-case OG share pages
-    for req_json in ("site/data/manifest.json", "site/data/evidence.json"):
-        jp = repo_root / req_json
-        if not jp.is_file():
-            report.site_bundle_errors.append(f"Missing {req_json}")
-        else:
+    # Check canonical Temu3 + Tmail static site assets & threads.json attachments
+    for req_file in (
+        "site/index.html",
+        "site/temu3.css",
+        "site/temu3.js",
+        "site/mail/index.html",
+        "site/mail/styles.css",
+        "site/mail/app.js",
+        "site/mail/threads.json",
+        "site/memes/index.html",
+        "site/memes/memes.css",
+        "site/memes/memes.js",
+        "site/data/evidence.json",
+        "site/data/memes.json",
+    ):
+        fp = repo_root / req_file
+        if not fp.is_file():
+            report.site_bundle_errors.append(f"Missing {req_file}")
+        elif req_file.endswith(".json"):
             try:
-                json.loads(jp.read_text(encoding="utf-8"))
+                obj = json.loads(fp.read_text(encoding="utf-8"))
+                if req_file == "site/mail/threads.json":
+                    for th in obj.get("threads", []):
+                        for m in th.get("messages", []):
+                            for a in m.get("attachments", []):
+                                src = str(a.get("src", "")).lstrip("./")
+                                disk = (repo_root / "site" / src) if src.startswith("receipts/") else (repo_root / src)
+                                if not disk.is_file():
+                                    report.site_bundle_errors.append(
+                                        f"site/mail/threads.json ({th.get('id')}): missing attachment {src}"
+                                    )
             except Exception as exc:
-                report.site_bundle_errors.append(f"Invalid JSON in {req_json}: {exc}")
-
-    for lang in manifest["languages"]:
-        code = lang["code"]
-        bp = repo_root / "site" / "data" / f"{code}.json"
-        if not bp.is_file():
-            if not allow_missing_i18n or code in ("en", "zh-CN"):
-                report.site_bundle_errors.append(f"Missing site/data/{code}.json")
-        else:
-            try:
-                bobj = json.loads(bp.read_text(encoding="utf-8"))
-                if len(bobj.get("cases", [])) != len(manifest["cases"]):
-                    report.site_bundle_errors.append(
-                        f"site/data/{code}.json has {len(bobj.get('cases', []))} cases (expected {len(manifest['cases'])})"
-                    )
-            except Exception as exc:
-                report.site_bundle_errors.append(f"Invalid JSON in site/data/{code}.json: {exc}")
-
-    for c in manifest["cases"]:
-        for og_rel in (f"site/c/{c['id']}/index.html", f"site/c/zh/{c['id']}/index.html"):
-            if not (repo_root / og_rel).is_file():
-                report.site_bundle_errors.append(f"Missing OG share page {og_rel}")
+                report.site_bundle_errors.append(f"Invalid JSON in {req_file}: {exc}")
 
     # Evidence inventory
     evidence_dir = repo_root / "evidence"

@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://realchendahuang.github.io/before-you-install-t3code/?lang=hi"><strong>🌐 इंटरैक्टिव दृश्य जाँच खोलें (18 भाषाएँ)</strong></a>
+  <a href="https://temu3code.com/"><strong>🌐 इंटरैक्टिव दृश्य जाँच खोलें (18 भाषाएँ)</strong></a>
   ·
-  <a href="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
+  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
   ·
   <a href="../EVIDENCE-INDEX.md"><strong>109 दृश्य प्रमाण</strong></a>
   ·
@@ -74,16 +74,16 @@
 
 - **#00 · [मूल विवाद: "Steal Our Code", फोर्क के नामकरण पर धमकियाँ और नस्लीय दोहरे मानदंड](../../cases/hi/00-origin-fork-dispute-and-double-standard.md)** — `📌 सार्वजनिक अभिलेख`
   केवल 11 मिनट के भीतर, @theo ने एक चीनी डेवलपर के मुफ़्त MIT फोर्क को "Chinese knockoff" और "Temu3 Code" कहा और GitHub अकाउंट बंद कराने की धमकी दी — और फिर 11 घंटे से भी कम समय बाद खरबों डॉलर की अमेरिकी कंपनियों द्वारा MIT कोड की नकल करने का सार्वजनिक रूप से स्वागत किया।
-  [पूरा प्रदर्श खोलें](../../cases/hi/00-origin-fork-dispute-and-double-standard.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/00/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125062675147448475)
+  [पूरा प्रदर्श खोलें](../../cases/hi/00-origin-fork-dispute-and-double-standard.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125062675147448475)
 - **#14 · [1,151-ट्वीट मात्रात्मक डेटासेट: चुनिंदा विनम्रता और 4.0× चीन-विरोधी संकट उछाल](../../cases/hi/14-1151-tweet-quantitative-double-standard.md)** — `📌 सार्वजनिक अभिलेख`
   **7–24 नवंबर, 2026** की 1,151 लगातार `@theo` X पोस्टों का संपूर्ण मात्रात्मक विश्लेषण एक स्पष्ट शक्ति-असंतुलन साबित करता है: 20 बिग-टेक अधिकारियों और लैब कर्मचारियों के प्रति 0.0% अपशब्द बनाम आम डेवलपर्स के प्रति 8.0% शत्रुता — जो 25 घंटे के चीनी-फोर्क विवाद के दौरान 4.0× बढ़कर 14.4% हो गई।
-  [पूरा प्रदर्श खोलें](../../cases/hi/14-1151-tweet-quantitative-double-standard.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/14/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125404517697290438)
+  [पूरा प्रदर्श खोलें](../../cases/hi/14-1151-tweet-quantitative-double-standard.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125404517697290438)
 - **#15 · [GitHub बैन की धमकी के पीछे USPTO में शून्य ट्रेडमार्क, और 17 घंटे बाद पूर्वव्यापी `TRADEMARK.md`](../../cases/hi/15-zero-uspto-trademarks-and-retroactive-policy.md)** — `📌 सार्वजनिक अभिलेख`
   जब @theo ने "trademark infringement" के आधार पर एक चीनी डेवलपर का GitHub अकाउंट बंद कराने की धमकी दी, तब T3 Tools Inc. के पास `T3 Code`, `T3 Tools` या `T3 Connect` के लिए USPTO में 0 रजिस्ट्रेशन थे — और ठीक 17 घंटे बाद `TRADEMARK.md` पूर्वव्यापी रूप से merge कर दिया गया।
-  [पूरा प्रदर्श खोलें](../../cases/hi/15-zero-uspto-trademarks-and-retroactive-policy.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/15/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125408163273080950)
+  [पूरा प्रदर्श खोलें](../../cases/hi/15-zero-uspto-trademarks-and-retroactive-policy.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125408163273080950)
 - **#16 · [दो वर्षों का ऐतिहासिक पैटर्न: राष्ट्रीयता-आधारित बैकलैश, $20k FFmpeg बाउंटी और मिटाई गई धमकियाँ](../../cases/hi/16-two-year-pattern-of-bullying-and-deletions.md)** — `📌 सार्वजनिक अभिलेख`
   नवंबर 2026 का चीनी-फोर्क विवाद कोई अलग-थलग चूक नहीं था — 2024 से 2026 तक के सार्वजनिक रिकॉर्ड राष्ट्रीयता-लक्षित उत्पीड़न, ओपन-सोर्स बुलिंग, अन्य डेवलपर्स के UI का मज़ाक उड़ाने और बैकलैश के बाद की डिलीशन के एक दोहराए जाने वाले चक्र का दस्तावेज़ीकरण करते हैं।
-  [पूरा प्रदर्श खोलें](../../cases/hi/16-two-year-pattern-of-bullying-and-deletions.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/16/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125408843152953693)
+  [पूरा प्रदर्श खोलें](../../cases/hi/16-two-year-pattern-of-bullying-and-deletions.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125408843152953693)
 
 ### भाग II · भ्रामक टेलीमेट्री और गोपनीयता उल्लंघन
 
@@ -91,16 +91,16 @@
 
 - **#01 · [होमपेज पर "No Telemetry" के वादे के पीछे डिफ़ॉल्ट टेलीमेट्री](../../cases/hi/01-default-telemetry-and-cross-tool-tracking.md)** — `🟡 आंशिक रूप से पैच किया गया`
   जबकि इसके होमपेज ने "No telemetry. Unless you opt in. Full stop." का वादा किया था, T3 Code ने डिफ़ॉल्ट PostHog ट्रैकिंग सक्षम की, कच्ची प्रतियाँ क्लोज़्ड-सोर्स `ingest.t3.codes` के ज़रिए रूट कीं, बाहरी `~/.codex` और `~/.claude.json` क्रेडेंशियल्स को हैश किया, और समुदाय के चार ऑप्ट-आउट PR अस्वीकार किए।
-  [पूरा प्रदर्श खोलें](../../cases/hi/01-default-telemetry-and-cross-tool-tracking.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/01/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125153472450527440)
+  [पूरा प्रदर्श खोलें](../../cases/hi/01-default-telemetry-and-cross-tool-tracking.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125153472450527440)
 - **#07 · [मैनेज्ड पॉलिसी का विरोधाभास: चार प्रलेखित टेलीमेट्री ब्लाइंड स्पॉट](../../cases/hi/07-managed-policy-blind-spots.md)** — `🔴 अनसुधारित`
   @theo ने दावा किया था कि T3 Code के पास "best corporate managed policy system" है, जिससे "trivial to turn off all telemetry" हो जाता है — जिसका सीधा खंडन T3 Code के अपने `docs/user/telemetry.md` और `docs/user/managed-policy.md` से होता है।
-  [पूरा प्रदर्श खोलें](../../cases/hi/07-managed-policy-blind-spots.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/07/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125391659492081947)
+  [पूरा प्रदर्श खोलें](../../cases/hi/07-managed-policy-blind-spots.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125391659492081947)
 - **#11 · [25 नवंबर का स्पष्टीकरण रातों-रात आए PR और 100 MB डंप से 2 घंटे के भीतर खारिज](../../cases/hi/11-nov25-clarification-contradicted-in-2-hours.md)** — `🟡 आंशिक रूप से पैच किया गया`
   25 नवंबर की सुबह, @theo ने गोपनीयता के तीन व्यापक आश्वासन दिए और 100 MB का टेलीमेट्री डंप जारी किया — तीनों दावे दो घंटे के भीतर उनकी ही टीम के PR और उसी gzip किए गए डंप से खारिज हो गए।
-  [पूरा प्रदर्श खोलें](../../cases/hi/11-nov25-clarification-contradicted-in-2-hours.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/11/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125394810559426993)
+  [पूरा प्रदर्श खोलें](../../cases/hi/11-nov25-clarification-contradicted-in-2-hours.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125394810559426993)
 - **#12 · [जीडीपीआर के बाद छह घंटे की रातभर ब्लिट्ज़: 2.2 मिलियन/घंटा आईपी लॉग्स और टूटा हुआ अकाउंट डिलीशन](../../cases/hi/12-post-gdpr-overnight-blitz-2m-ip-logs.md)** — `🟡 आंशिक रूप से पैच किया गया`
   24 नवंबर को यूरोपीय संघ में औपचारिक जीडीपीआर शिकायत दर्ज होने के बाद, रातभर में लगाए गए छह घंटे के आपातकालीन पैचों ने अनजाने में चार और गहरे प्राइवेसी खुलासे सामने ला दिए — जिनमें सबसे बड़ा था 30 दिनों तक रखे गए, आईपी-टैग वाले 2.2 मिलियन प्रति घंटा Axiom स्पैन।
-  [पूरा प्रदर्श खोलें](../../cases/hi/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/12/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125395501663281198)
+  [पूरा प्रदर्श खोलें](../../cases/hi/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125395501663281198)
 
 ### भाग III · उत्पाद दोष और गंभीर सुरक्षा खामियाँ
 
@@ -108,22 +108,22 @@
 
 - **#02 · [नकली SQLite थ्रेड डिलीशन (41.6 GB का फुलाव) और 5 सेकंड में पूरे OS का प्रोसेस स्कैनिंग](../../cases/hi/02-fake-sqlite-delete-and-process-scanner.md)** — `🟡 आंशिक रूप से पैच किया गया`
   "हमेशा के लिए डिलीट करें" पर क्लिक करने से भी `statev2.sqlite` में पूरा बातचीत इतिहास बरकरार रहा (जिससे स्थानीय डिस्क 41.6 GB तक फूल गईं), जबकि एक बैकग्राउंड Rust मॉनिटर हर 5 सेकंड में हर OS प्रोसेस और पूरी कमांड लाइन को स्कैन करता रहा, बिना किसी ऑप्ट-आउट के।
-  [पूरा प्रदर्श खोलें](../../cases/hi/02-fake-sqlite-delete-and-process-scanner.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/02/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125160473176023486)
+  [पूरा प्रदर्श खोलें](../../cases/hi/02-fake-sqlite-delete-and-process-scanner.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125160473176023486)
 - **#03 · [52 दिनों तक ख़ामोश `git push --force` बनाम मॉडल प्राइवेसी फ़िल्टर हटाने में 21 घंटे](../../cases/hi/03-silent-force-push-vs-21h-filter-removal.md)** — `🔴 अनसुधारित`
   52+ दिनों तक T3 Code में एक बग खुला रहा जहाँ Claude Auto मोड बिना कोई प्रॉम्प्ट दिखाए ख़ामोशी से `git push --force origin main` मंज़ूर कर देता था — वहीं एक प्राइवेसी व्हाइटलिस्ट हटाने में उसे सिर्फ़ 21 घंटे लगे, ताकि निजी मॉडल @theo के सार्वजनिक लीडरबोर्ड पर दिखने लगें।
-  [पूरा प्रदर्श खोलें](../../cases/hi/03-silent-force-push-vs-21h-filter-removal.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/03/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125201882687881378)
+  [पूरा प्रदर्श खोलें](../../cases/hi/03-silent-force-push-vs-21h-filter-removal.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125201882687881378)
 - **#04 · [Google Antigravity हेडर स्पूफ़िंग, फ़र्ज़ी `SSH_CONNECTION` और 3 मिनट में अकाउंट बैन](../../cases/hi/04-antigravity-spoofing-and-3-minute-bans.md)** — `🔴 अनसुधारित`
   अपने FAQ में ToS अनुपालन की गारंटी देने के बावजूद, T3 Code OS कीरिंग से क्रेडेंशियल निकालता है, `v1internal` के सामने Google के इंटरनल हेडर (`antigravity/hub/2.24.0`) स्पूफ़ करता है, और फ़र्ज़ी `SSH_CONNECTION` वैल्यू इंजेक्ट करता है — जिससे निजी Google सब्सक्रिप्शन तेज़ी से बैन की चपेट में आ जाते हैं।
-  [पूरा प्रदर्श खोलें](../../cases/hi/04-antigravity-spoofing-and-3-minute-bans.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/04/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125213397507858657)
+  [पूरा प्रदर्श खोलें](../../cases/hi/04-antigravity-spoofing-and-3-minute-bans.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125213397507858657)
 - **#05 · [T3 Connect: शून्य एंड-टू-एंड एन्क्रिप्शन और प्लेनटेक्स्ट TLS-टर्मिनेशन गेटवे](../../cases/hi/05-t3-connect-zero-e2e-plaintext-relay.md)** — `🔴 अनसुधारित`
   T3 Connect से होकर गुज़रने वाला हर प्रॉम्प्ट, सोर्स फ़ाइल और टर्मिनल स्ट्रीम T3-नियंत्रित इंफ्रास्ट्रक्चर के भीतर प्लेनटेक्स्ट में समाप्त होता है — शून्य एंड-टू-एंड एन्क्रिप्शन और डिफ़ॉल्ट रूप से बंद डिवाइस अप्रूवल के साथ।
-  [पूरा प्रदर्श खोलें](../../cases/hi/05-t3-connect-zero-e2e-plaintext-relay.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/05/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125218189596676555)
+  [पूरा प्रदर्श खोलें](../../cases/hi/05-t3-connect-zero-e2e-plaintext-relay.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125218189596676555)
 - **#13 · [शून्य GitHub Security Advisories, चुपचाप दिए गए high-severity पैच और जल्दबाज़ी में लिखा `SECURITY.md`](../../cases/hi/13-zero-security-advisories-and-silent-patches.md)** — `🔴 अनसुधारित`
   X पर चीनी सोर्स-कोड ऑडिटरों को खारिज करते हुए T3 Code ने चुपचाप high-severity कमज़ोरियों के फ़िक्स merge किए — जिनमें secret-store path traversal, क्रॉस-डोमेन token लीक और अविश्वसनीय repo से कमांड चलना शामिल है — और प्रकाशित GitHub Security Advisories की संख्या 0 बनी रही।
-  [पूरा प्रदर्श खोलें](../../cases/hi/13-zero-security-advisories-and-silent-patches.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/13/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125395980354994414)
+  [पूरा प्रदर्श खोलें](../../cases/hi/13-zero-security-advisories-and-silent-patches.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125395980354994414)
 - **#19 · [`ca81b7b9` गंभीर प्रमाणीकरण एवं रेपो निष्पादन ऑडिट: 30-दिन का प्लेनटेक्स्ट LAN शेल, रद्द न किए जा सकने वाले टोकन और `SSH_AUTH_SOCK` का खुला जोखिम](../../cases/hi/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md)** — `🔴 अनसुधारित`
   नवीनतम `main` HEAD (`ca81b7b9`, 25 नवंबर 14:49 CST) की पंक्ति-दर-पंक्ति जाँच ने पाँच सक्रिय सुरक्षा और विश्वसनीयता दोषों की पुष्टि की: 30-दिन की प्लेनटेक्स्ट `--lan` शेल कुकीज़ जिनमें `Origin` अनुपस्थित होने पर बायपास मौजूद है, रद्द न किए जा सकने वाले 30-दिन के Bearer टोकन, रीप्ले-योग्य `?wsTicket=` URL, `isIPv4` द्वारा `::1` टनल का खात्मा, और अविश्वसनीय रेपोज़ द्वारा विरासत में मिले `SSH_AUTH_SOCK` व `GITHUB_TOKEN` के साथ हुक्स/सबमॉड्यूल चलाया जाना।
-  [पूरा प्रदर्श खोलें](../../cases/hi/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/19/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125494234614788390)
+  [पूरा प्रदर्श खोलें](../../cases/hi/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125494234614788390)
 
 ### भाग IV · व्यावसायिक हेरफेर और सामुदायिक धमकाना
 
@@ -131,22 +131,22 @@
 
 - **#06 · [एंजल-निवेशक हितों का टकराव: Vibe Kanban के बंद होने पर मज़ाक और Daytona से ओवरलैप](../../cases/hi/06-angel-investor-conflicts-vibe-kanban-daytona.md)** — `📌 सार्वजनिक अभिलेख`
   कोड में खामियों से आगे बढ़कर, @theo की सार्वजनिक X पोस्टें उनके प्रतिस्पर्धी डेवलपर स्टार्टअप्स में एंजल निवेशक की भूमिका और T3 Code चलाने के बीच के तीखे टकरावों को दर्ज करती हैं।
-  [पूरा प्रदर्श खोलें](../../cases/hi/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/06/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125385742243520653)
+  [पूरा प्रदर्श खोलें](../../cases/hi/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125385742243520653)
 - **#08 · [$800,000+ का बिज़नेस लेजर और 31.7-ट्रिलियन-टोकन प्रतिदिन का कंप्यूट रडार](../../cases/hi/08-800k-spend-and-31t-token-radar.md)** — `📌 सार्वजनिक अभिलेख`
   डिफ़ॉल्ट रूप से चालू टेलीमेट्री कोई इंजीनियरिंग चूक नहीं थी: इसने 31.7T टोकन/दिन ($10.19M/दिन के बराबर API खर्च) वाले एक रीयल-टाइम इंटेलिजेंस रडार को फंड किया, जिसे $300k+ के मुफ़्त OpenAI अर्ली-एक्सेस टोकन और निवेशकों तक पहुँच में बदला गया।
-  [पूरा प्रदर्श खोलें](../../cases/hi/08-800k-spend-and-31t-token-radar.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/08/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125392410763239723)
+  [पूरा प्रदर्श खोलें](../../cases/hi/08-800k-spend-and-31t-token-radar.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125392410763239723)
 - **#09 · [आंतरिक `yolo merges` बनाम बाहरी सामुदायिक शत्रुता और `.github/VOUCHED.td` प्रतिबंध](../../cases/hi/09-yolo-merges-vs-community-hostility.md)** — `📌 सार्वजनिक अभिलेख`
   भीतर की ओर, T3 Code ने स्वचालित एजेंट लूप के ज़रिए प्रतिदिन 500 कमिट शिप किए और खुद माना कि "yolo merges breaking shit" — जबकि बाहर की ओर योगदानकर्ताओं से कहा गया "here's my advice: Don't", उपयोगकर्ताओं को `.github/VOUCHED.td` के ज़रिए निंदित किया गया, और इश्यू दर्ज करने वालों का अपमान किया गया।
-  [पूरा प्रदर्श खोलें](../../cases/hi/09-yolo-merges-vs-community-hostility.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/09/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125392916369871309)
+  [पूरा प्रदर्श खोलें](../../cases/hi/09-yolo-merges-vs-community-hostility.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125392916369871309)
 - **#10 · [सार्वजनिक `@bot` से फ़ोर्क-स्क्रैपिंग, प्रतिद्वंद्वियों का उपहास और आलोचकों का दमन](../../cases/hi/10-fork-scraping-bot-and-critics-suppression.md)** — `📌 सार्वजनिक अभिलेख`
   प्रतिद्वंद्वियों द्वारा UI पैटर्न कॉपी करने का उपहास करते हुए, @theo ने एक डेवलपर के फ़ोर्क पर सार्वजनिक रूप से "Okay I'm stealing this" कहा और ठीक 30 सेकंड बाद उसका कोड स्क्रैप करने के लिए `@bot` भेज दिया — साथ ही ऑटो-ब्लॉकर तैनात किए और फ़ॉलोअर्स से आलोचकों का मॉनिटाइज़ेशन बंद कराने की अपील की।
-  [पूरा प्रदर्श खोलें](../../cases/hi/10-fork-scraping-bot-and-critics-suppression.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/10/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125393641665671593)
+  [पूरा प्रदर्श खोलें](../../cases/hi/10-fork-scraping-bot-and-critics-suppression.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125393641665671593)
 - **#17 · [स्पॉन्सर स्टैक बाइंडिंग्स, Codex 0% कोटा एक्सप्लॉइट और 10-अकाउंट `CLIProxyAPI` पाखंड](../../cases/hi/17-sponsor-stack-and-quota-exploit-hypocrisy.md)** — `📌 सार्वजनिक अभिलेख`
   अनुपालन का उपदेश देते हुए और बैन के जोखिम के चलते बिल्ट-इन अकाउंट स्विचिंग से इनकार करते हुए, T3 Code अपने क्लाउड स्टैक में @theo के YouTube स्पॉन्सर (Clerk और Axiom) एम्बेड करता है — जबकि @theo खुद Codex के 0% कोटा बग का फायदा उठाने का डींग मार चुका है और उसने 10-अकाउंट वाला `CLIProxyAPI` पूलिंग Gist प्रकाशित किया था, जिसका सीधा लिंक T3 के FAQ में दिया गया है।
-  [पूरा प्रदर्श खोलें](../../cases/hi/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/17/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125411353393553744)
+  [पूरा प्रदर्श खोलें](../../cases/hi/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2023-05-sponsor-roster) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125411353393553744)
 - **#18 · [77,000-स्टार का फ़नल: 30-सेकंड आइडल पर होस्ट-क्रेडेंशियल से स्टारिंग और अनफ़िक्स्ड आर्बिट्ररी-रेपो बग](../../cases/hi/18-77k-star-funnel-and-arbitrary-repo-starring.md)** — `🔴 अनसुधारित`
   GitHub स्टार्स को "to trick VCs into investing" का ज़रिया कहकर निंदा करने के छह महीने बाद, @theo ने खुद ही ऐप के अंदर एक 30-सेकंड-आइडल टोस्ट सेल्फ-मर्ज कर दिया, जो होस्ट के GitHub क्रेडेंशियल्स इस्तेमाल करके `PUT user/starred/...` फ़ायर करता है — और रेपो को 30k से 77k स्टार्स तक पहुँचा दिया (करीब ~129 वॉचर्स के साथ), जबकि एक आर्बिट्ररी-रेपो स्टारिंग बग अनफ़िक्स्ड ही रहा।
-  [पूरा प्रदर्श खोलें](../../cases/hi/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [इंटरैक्टिव कार्ड](https://realchendahuang.github.io/before-you-install-t3code/c/18/) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125416210120765799)
+  [पूरा प्रदर्श खोलें](../../cases/hi/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [इंटरैक्टिव कार्ड](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars) · [मूल X पोस्ट](https://x.com/realchendahuang/status/2125416210120765799)
 
 ---
 

@@ -123,7 +123,7 @@ def main() -> int:
     print(f"Created:\n  {en_path.relative_to(ROOT)}\n  {zh_path.relative_to(ROOT)}")
     print("Next steps:")
     print(f"  1. Edit both files, then run: python3 scripts/translate_i18n.py --only-case {args.id}")
-    print("  2. Rebuild all 18 READMEs + site data: python3 scripts/build_portal.py")
+    print("  2. Add the new thread to site/mail/threads.json and update READMEs if needed")
     print("  3. Verify repository integrity: python3 scripts/verify_repo.py")
     return 0
 

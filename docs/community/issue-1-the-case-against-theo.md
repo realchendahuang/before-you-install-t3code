@@ -3,7 +3,7 @@
 [← Back to README](../../README.md) · [Complete Source Index](../COMPLETE-SOURCE-INDEX.md) · [Contributing](../../CONTRIBUTING.md)
 
 > **Archive Provenance & Citation**
-> - **Original Submission:** [`realchendahuang/before-you-install-t3code#1`](https://github.com/realchendahuang/before-you-install-t3code/issues/1)
+> - **Original Submission:** [`realchendahuang/temu3code#1`](https://github.com/realchendahuang/temu3code/issues/1)
 > - **Author:** [`@opserx`](https://github.com/opserx)
 > - **Submitted At:** `2026-11-25T06:53:49Z` (`2026-11-25 14:53:49 CST`)
 > - **Editorial & Precision Note:** The text below is archived verbatim as submitted by `@opserx` in Issue #1 as a community synthesis of this repository's documented findings. For strict primary-source precision, note two technical clarifications verified in the main audit: (1) [`PR #42450`](https://github.com/pingdotgg/t3code/pull/42450) specifically addressed `git.cwd` absolute workspace path leaks inside telemetry payloads rather than general execution traces (see [Dossier 01](../dossiers/01-telemetry-and-gdpr-timeline.md)); and (2) [`PR #41237`](https://github.com/pingdotgg/t3code/pull/41237) resolved the 21-hour `slopalytics.com` model-filter drop documented in [Dossier 02](../dossiers/02-local-safety-and-security-audit.md#32-pr-41237-21-hour-slopalyticscom-filter-drop).

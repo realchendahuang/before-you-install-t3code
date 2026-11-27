@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://realchendahuang.github.io/before-you-install-t3code/?lang=zh-CN"><strong>🌐 打开可视化调查主站（支持 18 语种切换）</strong></a>
+  <a href="https://temu3code.com/"><strong>🌐 打开可视化调查主站（支持 18 语种切换）</strong></a>
   ·
-  <a href="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
+  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
   ·
   <a href="../EVIDENCE-INDEX.md"><strong>109 张原图档案馆</strong></a>
   ·
@@ -74,16 +74,16 @@
 
 - **#00 · [起因导火索：“偷我们的代码”、Fork 封号威胁与赤裸双标](../../cases/zh-CN/00-origin-fork-dispute-and-double-standard.md)** — `📌 事实留档`
   11 分钟内，@theo 连发两帖将一名中国开发者的免费 MIT 二改辱骂为「Chinese knockoff」「Temu3 Code」并威胁找 GitHub 封掉其账号；不到 11 小时后，他又公开表态欢迎万亿美元美国大厂照抄 MIT 代码。
-  [查看完整图文档案](../../cases/zh-CN/00-origin-fork-dispute-and-double-standard.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/00/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125062675147448475)
+  [查看完整图文档案](../../cases/zh-CN/00-origin-fork-dispute-and-double-standard.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat) · [查看 X 原帖](https://x.com/realchendahuang/status/2125062675147448475)
 - **#14 · [1,151 条连续推文量化铁证：对大厂 VIP 0.0% 粗口 vs 辱华危机期暴涨 4.0 倍](../../cases/zh-CN/14-1151-tweet-quantitative-double-standard.md)** — `📌 事实留档`
   对 2026 年 11 月 7 日至 24 日 @theo 全部 1,151 条连续推文做穷举量化审计，坐实了赤裸的权力看人下菜碟：面对 20 位大厂高管与员工 0.0% 粗口，面对普通开发者 8.0% 敌意，而在中文二改 25 小时窗口内人身攻击暴涨 4.0 倍至 14.4%。
-  [查看完整图文档案](../../cases/zh-CN/14-1151-tweet-quantitative-double-standard.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/14/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125404517697290438)
+  [查看完整图文档案](../../cases/zh-CN/14-1151-tweet-quantitative-double-standard.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips) · [查看 X 原帖](https://x.com/realchendahuang/status/2125404517697290438)
 - **#15 · [威胁 GitHub 封号时 USPTO 注册商标为 0，17 小时后紧急补写 `TRADEMARK.md`](../../cases/zh-CN/15-zero-uspto-trademarks-and-retroactive-policy.md)** — `📌 事实留档`
   当 @theo 威胁找 GitHub 封杀中国开发者账号并指控对方“侵犯商标”时，T3 Tools Inc. 名下对 `T3 Code`、`T3 Tools` 与 `T3 Connect` 的 USPTO 注册商标全部为 0——直到 17 小时后他才仓促补合了一份 `TRADEMARK.md`。
-  [查看完整图文档案](../../cases/zh-CN/15-zero-uspto-trademarks-and-retroactive-policy.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/15/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125408163273080950)
+  [查看完整图文档案](../../cases/zh-CN/15-zero-uspto-trademarks-and-retroactive-policy.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker) · [查看 X 原帖](https://x.com/realchendahuang/status/2125408163273080950)
 - **#16 · [两年反复惯犯实录：印度开发者网暴道歉、$20,000 FFmpeg 悬赏与凌晨威胁闭源后删推](../../cases/zh-CN/16-two-year-pattern-of-bullying-and-deletions.md)** — `📌 事实留档`
   2026 年 11 月针对中国开发者的辱骂绝非偶发失言——2024 至 2026 年的公开记录完整勾勒出一套反复上演的行为闭环：挑起国籍敌意、霸凌开源维护者、嘲讽他人界面博流量，事发后删帖撤回。
-  [查看完整图文档案](../../cases/zh-CN/16-two-year-pattern-of-bullying-and-deletions.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/16/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125408843152953693)
+  [查看完整图文档案](../../cases/zh-CN/16-two-year-pattern-of-bullying-and-deletions.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty) · [查看 X 原帖](https://x.com/realchendahuang/status/2125408843152953693)
 
 ### 第二卷 · 隐秘遥测与隐私欺骗
 
@@ -91,16 +91,16 @@
 
 - **#01 · [官网挂着「零遥测」承诺却默认全量上报、偷读跨工具凭证并连拒四个关闭开关 PR](../../cases/zh-CN/01-default-telemetry-and-cross-tool-tracking.md)** — `🟡 部分修补`
   在官网白纸黑字写着「No telemetry. Unless you opt in. Full stop.」期间，T3 Code 默认启用 PostHog 遥测并经闭源网关 `ingest.t3.codes` 留存原始数据，悄悄读取 `~/.codex` 与 `~/.claude.json` 做无盐哈希跨设备归因，还拒绝了社区白送的四个关闭开关 PR。
-  [查看完整图文档案](../../cases/zh-CN/01-default-telemetry-and-cross-tool-tracking.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/01/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125153472450527440)
+  [查看完整图文档案](../../cases/zh-CN/01-default-telemetry-and-cross-tool-tracking.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry) · [查看 X 原帖](https://x.com/realchendahuang/status/2125153472450527440)
 - **#07 · [Managed Policy 谎言：自吹“全行业最好一键关闭”，自家文档打脸四大盲区](../../cases/zh-CN/07-managed-policy-blind-spots.md)** — `🔴 仍未修复`
   @theo 宣称 T3 Code 拥有全行业最好的企业 Managed Policy、“轻而易举关闭全部遥测”，却被自家官方文档 `docs/user/telemetry.md` 与 `docs/user/managed-policy.md` 逐条证伪。
-  [查看完整图文档案](../../cases/zh-CN/07-managed-policy-blind-spots.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/07/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125391659492081947)
+  [查看完整图文档案](../../cases/zh-CN/07-managed-policy-blind-spots.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [查看 X 原帖](https://x.com/realchendahuang/status/2125391659492081947)
 - **#11 · [11 月 25 日澄清长文 2 小时内被自家通宵 PR 与 100 MB 导出包三连打脸](../../cases/zh-CN/11-nov25-clarification-contradicted-in-2-hours.md)** — `🟡 部分修补`
   11 月 25 日早晨，@theo 发长文拍胸脯作出三项隐私保证并放出 100 MB 遥测导出包——不到两小时，全部三项说法均被自家团队通宵合入的 PR 与导出包原始数据正面证伪。
-  [查看完整图文档案](../../cases/zh-CN/11-nov25-clarification-contradicted-in-2-hours.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/11/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125394810559426993)
+  [查看完整图文档案](../../cases/zh-CN/11-nov25-clarification-contradicted-in-2-hours.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [查看 X 原帖](https://x.com/realchendahuang/status/2125394810559426993)
 - **#12 · [欧盟 GDPR 举报后 6 小时通宵自爆：每小时 220 万条 IP 日志与删号不删库](../../cases/zh-CN/12-post-gdpr-overnight-blitz-2m-ip-logs.md)** — `🟡 部分修补`
   11 月 24 日晚有人向欧盟提起正式 GDPR 举报后，团队在 6 小时内通宵合入的一连串急救补丁，反手把藏得更深的四笔隐私旧账抖了个底朝天——其中仅 Axiom 一项就曾每小时记录 220 万条真实 IP 与 UA，保存整整 30 天。
-  [查看完整图文档案](../../cases/zh-CN/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/12/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125395501663281198)
+  [查看完整图文档案](../../cases/zh-CN/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [查看 X 原帖](https://x.com/realchendahuang/status/2125395501663281198)
 
 ### 第三卷 · 产品劣质与高危安全漏洞
 
@@ -108,22 +108,22 @@
 
 - **#02 · [SQLite 假“永久删除”撑爆 41.6 GB 硬盘与每 5 秒全机进程命令行扫描](../../cases/zh-CN/02-fake-sqlite-delete-and-process-scanner.md)** — `🟡 部分修补`
   侧边栏点击“永久删除”根本不删历史数据，导致本地 `statev2.sqlite` 膨胀至 41.6 GB；后台 Rust 监控程序每 5 秒无开关扫描全机所有进程与完整命令行参数。
-  [查看完整图文档案](../../cases/zh-CN/02-fake-sqlite-delete-and-process-scanner.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/02/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125160473176023486)
+  [查看完整图文档案](../../cases/zh-CN/02-fake-sqlite-delete-and-process-scanner.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy) · [查看 X 原帖](https://x.com/realchendahuang/status/2125160473176023486)
 - **#03 · [拖延 52 天不修的静默 `git push --force` vs 21 小时撤除隐私过滤](../../cases/zh-CN/03-silent-force-push-vs-21h-filter-removal.md)** — `🔴 仍未修复`
   会直接冲毁主分支的 Claude Auto 静默强推漏洞拖了 52 天以上无人修复；但为了让私有模型登上 @theo 的公开排行榜，团队仅用 21 小时就撤掉了模型隐私白名单。
-  [查看完整图文档案](../../cases/zh-CN/03-silent-force-push-vs-21h-filter-removal.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/03/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125201882687881378)
+  [查看完整图文档案](../../cases/zh-CN/03-silent-force-push-vs-21h-filter-removal.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push) · [查看 X 原帖](https://x.com/realchendahuang/status/2125201882687881378)
 - **#04 · [伪装 Google Antigravity 内部请求头、伪造 `SSH_CONNECTION` 与新号 3 分钟封禁](../../cases/zh-CN/04-antigravity-spoofing-and-3-minute-bans.md)** — `🔴 仍未修复`
   官网 FAQ 白纸黑字担保符合 Google Antigravity 服务条款；源码却提取系统钥匙串令牌、伪造 `antigravity/hub/2.24.0` 直连 `v1internal` 内部接口并注入假 `SSH_CONNECTION`，导致全新 $20 付费账号 3 分钟被封。
-  [查看完整图文档案](../../cases/zh-CN/04-antigravity-spoofing-and-3-minute-bans.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/04/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125213397507858657)
+  [查看完整图文档案](../../cases/zh-CN/04-antigravity-spoofing-and-3-minute-bans.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban) · [查看 X 原帖](https://x.com/realchendahuang/status/2125213397507858657)
 - **#05 · [T3 Connect 零端到端加密：所有提示词、源码与终端明文经过 T3 自有网关](../../cases/zh-CN/05-t3-connect-zero-e2e-plaintext-relay.md)** — `🔴 仍未修复`
   通过 T3 Connect 远程连电脑时，没有任何端到端加密——所有对话、源代码与终端输出都在 T3 控制的 Cloudflare 或 OVH Caddy 网关上明文终结，且新设备审批默认关闭。
-  [查看完整图文档案](../../cases/zh-CN/05-t3-connect-zero-e2e-plaintext-relay.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/05/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125218189596676555)
+  [查看完整图文档案](../../cases/zh-CN/05-t3-connect-zero-e2e-plaintext-relay.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [查看 X 原帖](https://x.com/realchendahuang/status/2125218189596676555)
 - **#13 · [GitHub 安全公告始终为 0，却静默修复多个高危漏洞并仓促改写 `SECURITY.md`](../../cases/zh-CN/13-zero-security-advisories-and-silent-patches.md)** — `🔴 仍未修复`
   一边把中文技术圈源码审计骂成“粪坑”，一边悄悄合入密钥目录路径穿越、跨域名令牌泄露、未隔离预览与陌生仓库自动执行等高危修复——却连一条提醒老用户升级的 GitHub Security Advisory 都不发。
-  [查看完整图文档案](../../cases/zh-CN/13-zero-security-advisories-and-silent-patches.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/13/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125395980354994414)
+  [查看完整图文档案](../../cases/zh-CN/13-zero-security-advisories-and-silent-patches.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [查看 X 原帖](https://x.com/realchendahuang/status/2125395980354994414)
 - **#19 · [`ca81b7b9` 重大认证与代码执行漏洞：局域网 30 天明文 Shell、不可吊销令牌与 `SSH_AUTH_SOCK` 裸奔](../../cases/zh-CN/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md)** — `🔴 仍未修复`
   锁定最新上游提交 `ca81b7b9`（11 月 25 日 14:49 CST）逐行核验，证实五项现网高危安全与底层缺陷：同局域网抓一个包即可白拿一个月完整终端控制权、30 天裸 Bearer 无法自注销、5 分钟可重放 `?wsTicket=`、`isIPv4` 掐断 `::1` 隧道，以及打开陌生仓库直接把整机 `SSH_AUTH_SOCK` 与 `GITHUB_TOKEN` 暴露出去。
-  [查看完整图文档案](../../cases/zh-CN/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/19/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125494234614788390)
+  [查看完整图文档案](../../cases/zh-CN/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [查看 X 原帖](https://x.com/realchendahuang/status/2125494234614788390)
 
 ### 第四卷 · 商业操弄、利益冲突与社区霸凌
 
@@ -131,22 +131,22 @@
 
 - **#06 · [天使投资人利益冲突：公开嘲讽被投企业 Vibe Kanban 倒闭与 Daytona 重叠](../../cases/zh-CN/06-angel-investor-conflicts-vibe-kanban-daytona.md)** — `📌 事实留档`
   除代码漏洞外，@theo 本人的公开推文暴露了其作为天使投资人与 T3 Code 作者之间的严重角色边界冲突。
-  [查看完整图文档案](../../cases/zh-CN/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/06/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125385742243520653)
+  [查看完整图文档案](../../cases/zh-CN/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona) · [查看 X 原帖](https://x.com/realchendahuang/status/2125385742243520653)
 - **#08 · [自掏 80 万美元的真实账本：日跑 31.7 万亿 Token（$10.19M/天）算力雷达](../../cases/zh-CN/08-800k-spend-and-31t-token-radar.md)** — `📌 事实留档`
   默认开启的遥测绝非“顺手统计人数”：它为 @theo 撑起了一台日跑 31.7 万亿 Token（折合日消耗 1,019 万美元 API）的实时行业雷达，并直接换取超 30 万美元 OpenAI 免费内测额度与 VC 接洽。
-  [查看完整图文档案](../../cases/zh-CN/08-800k-spend-and-31t-token-radar.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/08/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125392410763239723)
+  [查看完整图文档案](../../cases/zh-CN/08-800k-spend-and-31t-token-radar.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar) · [查看 X 原帖](https://x.com/realchendahuang/status/2125392410763239723)
 - **#09 · [内部日均 500 提交与 `yolo merges` vs 对外劝退贡献者、公开拉黑与辱骂用户](../../cases/zh-CN/09-yolo-merges-vs-community-hostility.md)** — `📌 事实留档`
   对内靠 700 个 Agent 每天狂推 500 个提交、自承 `yolo merges` 经常搞炸代码；对外却在 `CONTRIBUTING.md` 写“劝你别来”、用 `.github/VOUCHED.td` 公开拉黑、删核心功能并在 Issue 里直接辱骂反馈用户。
-  [查看完整图文档案](../../cases/zh-CN/09-yolo-merges-vs-community-hostility.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/09/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125392916369871309)
+  [查看完整图文档案](../../cases/zh-CN/09-yolo-merges-vs-community-hostility.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult) · [查看 X 原帖](https://x.com/realchendahuang/status/2125392916369871309)
 - **#10 · [公开派 `@bot` 30 秒扒社区女开发者 Fork 抄功能、却嘲讽竞品抄袭并动用拉黑机器人](../../cases/zh-CN/10-fork-scraping-bot-and-critics-suppression.md)** — `📌 事实留档`
   一边嘲讽竞品抄自己的界面设计，一边对独立开发者的 Fork 回一句「Okay I'm stealing this」并在 30 秒后公开派 `@bot` 扒取对方代码；对批评者则煽动打社区笔记断其收益，并启用自动批量拉黑机器人。
-  [查看完整图文档案](../../cases/zh-CN/10-fork-scraping-bot-and-critics-suppression.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/10/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125393641665671593)
+  [查看完整图文档案](../../cases/zh-CN/10-fork-scraping-bot-and-critics-suppression.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork) · [查看 X 原帖](https://x.com/realchendahuang/status/2125393641665671593)
 - **#17 · [赞助商深度绑定、带头白嫖 Codex 0% 漏洞与 10 账号 `CLIProxyAPI` 双标](../../cases/zh-CN/17-sponsor-stack-and-quota-exploit-hypocrisy.md)** — `📌 事实留档`
   嘴上讲技术中立与遵守条款、以封号风险拒绝内置切号；背地里 T3 云端架构绑着自家 YouTube 赞助商（Clerk/Axiom），本人更带头刷爆 Codex 0% 额度漏洞并公开发布 10 账号池化 `CLIProxyAPI` 教程直接挂进官方 FAQ。
-  [查看完整图文档案](../../cases/zh-CN/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/17/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125411353393553744)
+  [查看完整图文档案](../../cases/zh-CN/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2023-05-sponsor-roster) · [查看 X 原帖](https://x.com/realchendahuang/status/2125411353393553744)
 - **#18 · [25 天冲出 7.7 万星的秘密：发呆 30 秒弹窗动用宿主机 GitHub 凭据后台点星与未修漏洞](../../cases/zh-CN/18-77k-star-funnel-and-arbitrary-repo-starring.md)** — `🔴 仍未修复`
   痛批 GitHub Star 沦为“忽悠 VC 投资的工具”仅半年后，@theo 自写自合了发呆 30 秒弹窗并直接动用宿主机 `gh` CLI / `GH_TOKEN` 后台发 API 点星，25 天从 3 万星冲到 7.7 万星（仅约 129 名 watcher），更把任意仓库点星漏洞晾了 19 天未修。
-  [查看完整图文档案](../../cases/zh-CN/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [可视化证据卡](https://realchendahuang.github.io/before-you-install-t3code/c/zh/18/) · [查看 X 原帖](https://x.com/realchendahuang/status/2125416210120765799)
+  [查看完整图文档案](../../cases/zh-CN/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [可视化证据卡](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars) · [查看 X 原帖](https://x.com/realchendahuang/status/2125416210120765799)
 
 ---
 

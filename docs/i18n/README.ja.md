@@ -5,9 +5,9 @@
 </p>
 
 <p align="center">
-  <a href="https://realchendahuang.github.io/before-you-install-t3code/?lang=ja"><strong>🌐 インタラクティブな視覚調査を開く（18言語）</strong></a>
+  <a href="https://temu3code.com/"><strong>🌐 インタラクティブな視覚調査を開く（18言語）</strong></a>
   ·
-  <a href="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/before-you-install-t3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
+  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
   ·
   <a href="../EVIDENCE-INDEX.md"><strong>視覚証拠109点</strong></a>
   ·
@@ -74,16 +74,16 @@
 
 - **#00 · [起源をめぐる論争：「コードを盗め」、フォーク命名への脅迫、そして人種による二重基準](../../cases/ja/00-origin-fork-dispute-and-double-standard.md)** — `📌 公開記録`
   わずか11分のうちに、@theo は中国人開発者による無料のMITフォークを「Chinese knockoff」「Temu3 Code」とレッテル貼りし、GitHubアカウントの停止を脅した——そして11時間も経たないうちに、兆ドル規模の米国企業がMITコードをコピーすることを公に歓迎した。
-  [証拠全体を開く](../../cases/ja/00-origin-fork-dispute-and-double-standard.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/00/) · [Xの元投稿](https://x.com/realchendahuang/status/2125062675147448475)
+  [証拠全体を開く](../../cases/ja/00-origin-fork-dispute-and-double-standard.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat) · [Xの元投稿](https://x.com/realchendahuang/status/2125062675147448475)
 - **#14 · [1,151件のツイート定量データセット：選択的な丁寧さと4.0倍の反中クライシス急増](../../cases/ja/14-1151-tweet-quantitative-double-standard.md)** — `📌 公開記録`
   2026年11月7日〜24日の @theo の X 投稿1,151件（連続）を網羅的に定量分析した結果、極めて鮮明な権力の非対称性が証明された。ビッグテック幹部およびラボ関係者20名に対する暴言率は0.0%、一方で一般開発者への敵意は8.0%——さらに25時間に及ぶ中国フォーク論争の最中には4.0倍の14.4%へと急増した。
-  [証拠全体を開く](../../cases/ja/14-1151-tweet-quantitative-double-standard.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/14/) · [Xの元投稿](https://x.com/realchendahuang/status/2125404517697290438)
+  [証拠全体を開く](../../cases/ja/14-1151-tweet-quantitative-double-standard.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips) · [Xの元投稿](https://x.com/realchendahuang/status/2125404517697290438)
 - **#15 · [GitHub アカウント削除脅迫の背後に USPTO 商標登録ゼロ、そして 17 時間後の遡及的な `TRADEMARK.md`](../../cases/ja/15-zero-uspto-trademarks-and-retroactive-policy.md)** — `📌 公開記録`
   @theo が「商標侵害」を理由に GitHub に連絡して中国人開発者のアカウントを削除させると脅したとき、T3 Tools Inc. は `T3 Code`、`T3 Tools`、`T3 Connect` について USPTO の登録を 0 件しか持っておらず、しかも 17 時間後に `TRADEMARK.md` を遡及的にマージした。
-  [証拠全体を開く](../../cases/ja/15-zero-uspto-trademarks-and-retroactive-policy.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/15/) · [Xの元投稿](https://x.com/realchendahuang/status/2125408163273080950)
+  [証拠全体を開く](../../cases/ja/15-zero-uspto-trademarks-and-retroactive-policy.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker) · [Xの元投稿](https://x.com/realchendahuang/status/2125408163273080950)
 - **#16 · [2年にわたる歴史的パターン：国籍をめぐる反発、FFmpegへの2万ドル懸賞、削除された脅迫](../../cases/ja/16-two-year-pattern-of-bullying-and-deletions.md)** — `📌 公開記録`
   2026年11月に中国フォークをめぐって起きた爆発は、一度きりの失態ではなかった——2024年から2026年までの公開記録は、国籍を標的にした嫌がらせ、オープンソースを舞台にしたいじめ、他の開発者のUIを嘲笑う行為、そして反発後の削除という、繰り返されるサイクルを記録している。
-  [証拠全体を開く](../../cases/ja/16-two-year-pattern-of-bullying-and-deletions.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/16/) · [Xの元投稿](https://x.com/realchendahuang/status/2125408843152953693)
+  [証拠全体を開く](../../cases/ja/16-two-year-pattern-of-bullying-and-deletions.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty) · [Xの元投稿](https://x.com/realchendahuang/status/2125408843152953693)
 
 ### 第2部 · 欺瞞的なテレメトリーとプライバシー侵害
 
@@ -91,16 +91,16 @@
 
 - **#01 · [「テレメトリーなし」というホームページの約束の裏で有効化されていたデフォルトのテレメトリー](../../cases/ja/01-default-telemetry-and-cross-tool-tracking.md)** — `🟡 一部修正済み`
   ホームページで「No telemetry. Unless you opt in. Full stop.」と約束していたにもかかわらず、T3 Code はデフォルトで PostHog の追跡を有効化し、生のコピーをクローズドソースの `ingest.t3.codes` 経由で流し、外部の `~/.codex` と `~/.claude.json` の認証情報をハッシュ化し、さらにコミュニティによるオプトアウト PR 4件を拒否していた。
-  [証拠全体を開く](../../cases/ja/01-default-telemetry-and-cross-tool-tracking.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/01/) · [Xの元投稿](https://x.com/realchendahuang/status/2125153472450527440)
+  [証拠全体を開く](../../cases/ja/01-default-telemetry-and-cross-tool-tracking.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry) · [Xの元投稿](https://x.com/realchendahuang/status/2125153472450527440)
 - **#07 · [マネージドポリシーの矛盾：文書化された4つのテレメトリ盲点](../../cases/ja/07-managed-policy-blind-spots.md)** — `🔴 未修正`
   `@theo` は、T3 Code に「最高の企業向けマネージドポリシーシステム」があり、「すべてのテレメトリを切るのは簡単」だと主張した。しかしこれは、T3 Code 自身の `docs/user/telemetry.md` と `docs/user/managed-policy.md` によって真っ向から否定されている。
-  [証拠全体を開く](../../cases/ja/07-managed-policy-blind-spots.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/07/) · [Xの元投稿](https://x.com/realchendahuang/status/2125391659492081947)
+  [証拠全体を開く](../../cases/ja/07-managed-policy-blind-spots.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Xの元投稿](https://x.com/realchendahuang/status/2125391659492081947)
 - **#11 · [11月25日の説明、2時間以内に一夜のPR群と100MBダンプで矛盾が露呈](../../cases/ja/11-nov25-clarification-contradicted-in-2-hours.md)** — `🟡 一部修正済み`
   11月25日の朝、@theo はプライバシーに関する包括的な保証を3つ示し、100 MB のテレメトリーダンプを公開した。しかし、その3つの主張はいずれも2時間以内に、彼自身のチームによるPR群とgzip圧縮されたダンプそのものによって覆された。
-  [証拠全体を開く](../../cases/ja/11-nov25-clarification-contradicted-in-2-hours.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/11/) · [Xの元投稿](https://x.com/realchendahuang/status/2125394810559426993)
+  [証拠全体を開く](../../cases/ja/11-nov25-clarification-contradicted-in-2-hours.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Xの元投稿](https://x.com/realchendahuang/status/2125394810559426993)
 - **#12 · [GDPR施行後6時間の深夜緊急対応：毎時220万件のIPログと機能しないアカウント削除](../../cases/ja/12-post-gdpr-overnight-blitz-2m-ip-logs.md)** — `🟡 一部修正済み`
   11月24日にEU GDPRの正式な苦情申立てが提出された後、深夜に緊急パッチを6時間にわたって適用した結果、さらに深いプライバシー開示が4件、意図せず明るみに出た。その中心は、30日間保持されるIPタグ付きAxiomスパンが毎時220万件に達していたことだ。
-  [証拠全体を開く](../../cases/ja/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/12/) · [Xの元投稿](https://x.com/realchendahuang/status/2125395501663281198)
+  [証拠全体を開く](../../cases/ja/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Xの元投稿](https://x.com/realchendahuang/status/2125395501663281198)
 
 ### 第3部 · 製品欠陥と重大なセキュリティ欠陥
 
@@ -108,22 +108,22 @@
 
 - **#02 · [偽のSQLiteスレッド削除（41.6 GBの肥大化）と5秒ごとのOS全プロセススキャン](../../cases/ja/02-fake-sqlite-delete-and-process-scanner.md)** — `🟡 一部修正済み`
   「完全に削除」をクリックしても、会話履歴のすべてが `statev2.sqlite` の中にそのまま残っていた（ローカルディスクを41.6 GBまで肥大化）。一方、バックグラウンドのRust製モニターは、オプトアウトの手段が一切ないまま、5秒ごとにOSの全プロセスとコマンドライン全体をスキャンしていた。
-  [証拠全体を開く](../../cases/ja/02-fake-sqlite-delete-and-process-scanner.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/02/) · [Xの元投稿](https://x.com/realchendahuang/status/2125160473176023486)
+  [証拠全体を開く](../../cases/ja/02-fake-sqlite-delete-and-process-scanner.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy) · [Xの元投稿](https://x.com/realchendahuang/status/2125160473176023486)
 - **#03 · [52日間の沈黙の `git push --force` と、モデル・プライバシー・フィルターを外すまでの21時間](../../cases/ja/03-silent-force-push-vs-21h-filter-removal.md)** — `🔴 未修正`
   52日以上もの間、T3 Code は、Claude Auto モードがプロンプトを出さずに `git push --force origin main` を黙って承認してしまうバグをオープンのまま放置していた。一方で、プライバシー・ホワイトリストを撤廃し、プライベートなモデルが @theo の公開リーダーボードに表示されるようにするまでに要したのは、わずか21時間だった。
-  [証拠全体を開く](../../cases/ja/03-silent-force-push-vs-21h-filter-removal.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/03/) · [Xの元投稿](https://x.com/realchendahuang/status/2125201882687881378)
+  [証拠全体を開く](../../cases/ja/03-silent-force-push-vs-21h-filter-removal.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push) · [Xの元投稿](https://x.com/realchendahuang/status/2125201882687881378)
 - **#04 · [Google Antigravity のヘッダー偽装、偽造された `SSH_CONNECTION`、そして3分でのアカウントBAN](../../cases/ja/04-antigravity-spoofing-and-3-minute-bans.md)** — `🔴 未修正`
   FAQでToS遵守を保証しているにもかかわらず、T3 CodeはOSのキーリングから認証情報を抜き出し、Google内部向けヘッダー（`antigravity/hub/2.24.0`）を`v1internal`に対して偽装し、さらに偽の`SSH_CONNECTION`値を注入している——個人のGoogleサブスクリプションを急速なBANへと晒しながら。
-  [証拠全体を開く](../../cases/ja/04-antigravity-spoofing-and-3-minute-bans.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/04/) · [Xの元投稿](https://x.com/realchendahuang/status/2125213397507858657)
+  [証拠全体を開く](../../cases/ja/04-antigravity-spoofing-and-3-minute-bans.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban) · [Xの元投稿](https://x.com/realchendahuang/status/2125213397507858657)
 - **#05 · [T3 Connect：エンドツーエンド暗号化ゼロ、平文TLS終端ゲートウェイ](../../cases/ja/05-t3-connect-zero-e2e-plaintext-relay.md)** — `🔴 未修正`
   T3 Connectを経由するすべてのプロンプト、ソースファイル、ターミナルストリームは、T3が管理するインフラ内で平文のまま終端する——エンドツーエンド暗号化は皆無で、デバイス承認もデフォルトでオフだ。
-  [証拠全体を開く](../../cases/ja/05-t3-connect-zero-e2e-plaintext-relay.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/05/) · [Xの元投稿](https://x.com/realchendahuang/status/2125218189596676555)
+  [証拠全体を開く](../../cases/ja/05-t3-connect-zero-e2e-plaintext-relay.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Xの元投稿](https://x.com/realchendahuang/status/2125218189596676555)
 - **#13 · [GitHubセキュリティアドバイザリは0件、高深刻度修正は無言のまま、`SECURITY.md` は急ごしらえ](../../cases/ja/13-zero-security-advisories-and-silent-patches.md)** — `🔴 未修正`
   Xで中国語圏のソースコード監査者たちを一蹴する傍ら、T3 Codeは高深刻度の脆弱性修正——シークレットストアのパストラバーサル、クロスドメインのトークン漏洩、信頼できないリポジトリからのコマンド実行——を静かにマージし続け、公開済みのGitHubセキュリティアドバイザリは0件のまま据え置いていた。
-  [証拠全体を開く](../../cases/ja/13-zero-security-advisories-and-silent-patches.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/13/) · [Xの元投稿](https://x.com/realchendahuang/status/2125395980354994414)
+  [証拠全体を開く](../../cases/ja/13-zero-security-advisories-and-silent-patches.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Xの元投稿](https://x.com/realchendahuang/status/2125395980354994414)
 - **#19 · [`ca81b7b9` 認証・リポジトリ実行 重大監査：30日間の平文LANシェル、失効不能トークン、`SSH_AUTH_SOCK` 露出](../../cases/ja/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md)** — `🔴 未修正`
   最新の `main` HEAD（`ca81b7b9`、11月25日 14:49 CST）を一行ずつ検証した結果、現役のセキュリティおよび信頼性の欠陥が5件確認された。30日間有効な平文 `--lan` シェルクッキーと `Origin` 欠落時のバイパス、失効不能な30日間有効の Bearer トークン、再生可能な `?wsTicket=` URL、`::1` トンネルを破壊する `isIPv4`、そして信頼できないリポジトリが `SSH_AUTH_SOCK` と `GITHUB_TOKEN` を継承したままフックやサブモジュールを実行する問題である。
-  [証拠全体を開く](../../cases/ja/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/19/) · [Xの元投稿](https://x.com/realchendahuang/status/2125494234614788390)
+  [証拠全体を開く](../../cases/ja/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Xの元投稿](https://x.com/realchendahuang/status/2125494234614788390)
 
 ### 第4部 · 商業的操作とコミュニティへの威圧
 
@@ -131,22 +131,22 @@
 
 - **#06 · [エンジェル投資家の利益相反：Vibe Kanban終了の嘲笑とDaytonaとの重なり](../../cases/ja/06-angel-investor-conflicts-vibe-kanban-daytona.md)** — `📌 公開記録`
   コードの欠陥にとどまらず、@theoのX上の公開投稿は、競合する開発者向けスタートアップへのエンジェル投資家としての立場と、T3 Codeの運営との間の鋭い利益相反を記録している。
-  [証拠全体を開く](../../cases/ja/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/06/) · [Xの元投稿](https://x.com/realchendahuang/status/2125385742243520653)
+  [証拠全体を開く](../../cases/ja/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona) · [Xの元投稿](https://x.com/realchendahuang/status/2125385742243520653)
 - **#08 · [80万ドル超のビジネス台帳と1日31.7兆トークンの計算資源レーダー](../../cases/ja/08-800k-spend-and-31t-token-radar.md)** — `📌 公開記録`
   デフォルト有効のテレメトリはエンジニアリング上の見落としではなかった。それは、無料の OpenAI アーリーアクセストークン30万ドル超と投資家への働きかけと引き換えに運用されていた、1日31.7兆トークン（1日あたり1,019万ドル相当の API 支出）のリアルタイム情報レーダーを支えていた。
-  [証拠全体を開く](../../cases/ja/08-800k-spend-and-31t-token-radar.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/08/) · [Xの元投稿](https://x.com/realchendahuang/status/2125392410763239723)
+  [証拠全体を開く](../../cases/ja/08-800k-spend-and-31t-token-radar.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar) · [Xの元投稿](https://x.com/realchendahuang/status/2125392410763239723)
 - **#09 · [内部の `yolo merges` と、外部コミュニティへの敵意、そして `.github/VOUCHED.td` による追放](../../cases/ja/09-yolo-merges-vs-community-hostility.md)** — `📌 公開記録`
   内部では、T3 Code が自動エージェントループによって1日500コミットを出荷し、"yolo merges breaking shit" と自ら認めていた。その一方で外部には、コントリビューターに「here's my advice: Don't」と告げ、`.github/VOUCHED.td` でユーザーを告発し、Issue の報告者を侮辱していた。
-  [証拠全体を開く](../../cases/ja/09-yolo-merges-vs-community-hostility.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/09/) · [Xの元投稿](https://x.com/realchendahuang/status/2125392916369871309)
+  [証拠全体を開く](../../cases/ja/09-yolo-merges-vs-community-hostility.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult) · [Xの元投稿](https://x.com/realchendahuang/status/2125392916369871309)
 - **#10 · [公開 `@bot` によるフォークの無断取得、競合への嘲笑、批評家の抑圧](../../cases/ja/10-fork-scraping-bot-and-critics-suppression.md)** — `📌 公開記録`
   競合他社がUIパターンを模倣していると嘲笑する一方で、`@theo` は開発者のフォークに公開返信で「Okay I'm stealing this」と述べ、30秒後に `@bot` を送り込んで彼女のコードを無断取得した。さらに自動ブロッカーを導入し、フォロワーに批評家の収益化を停止させるよう促していた。
-  [証拠全体を開く](../../cases/ja/10-fork-scraping-bot-and-critics-suppression.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/10/) · [Xの元投稿](https://x.com/realchendahuang/status/2125393641665671593)
+  [証拠全体を開く](../../cases/ja/10-fork-scraping-bot-and-critics-suppression.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork) · [Xの元投稿](https://x.com/realchendahuang/status/2125393641665671593)
 - **#17 · [スポンサー企業のスタックへの依存、Codex 0%枠の悪用、そして10アカウント`CLIProxyAPI`の偽善](../../cases/ja/17-sponsor-stack-and-quota-exploit-hypocrisy.md)** — `📌 公開記録`
   コンプライアンスを唱え、BANリスクを理由に組み込みのアカウント切り替えを拒みながら、T3 Codeは@theoのYouTubeスポンサー（ClerkとAxiom）をクラウドスタックに組み込んでいる。一方で@theoはCodexの0%枠バグを悪用したと自慢し、T3のFAQから直接リンクされた10アカウントの`CLIProxyAPI`プーリングGistを公開していた。
-  [証拠全体を開く](../../cases/ja/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/17/) · [Xの元投稿](https://x.com/realchendahuang/status/2125411353393553744)
+  [証拠全体を開く](../../cases/ja/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2023-05-sponsor-roster) · [Xの元投稿](https://x.com/realchendahuang/status/2125411353393553744)
 - **#18 · [7万7,000スターの漏斗：30秒アイドル時にホスト認証情報でスターを付けさせる仕組みと、放置された任意リポジトリ・バグ](../../cases/ja/18-77k-star-funnel-and-arbitrary-repo-starring.md)** — `🔴 未修正`
   GitHubのスターを「to trick VCs into investing」の手段だと断じたあの投稿から6か月。@theo は、ホストのGitHub認証情報を使って `PUT user/starred/...` を発火させる、アプリ内の30秒アイドル・トーストを自らマージした。これでリポジトリは3万から7万7,000スターへと跳ね上がった（ウォッチャーは約129人）。一方、任意のリポジトリにスターを付けてしまうバグは未修正のまま残された。
-  [証拠全体を開く](../../cases/ja/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [インタラクティブカード](https://realchendahuang.github.io/before-you-install-t3code/c/18/) · [Xの元投稿](https://x.com/realchendahuang/status/2125416210120765799)
+  [証拠全体を開く](../../cases/ja/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [インタラクティブカード](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars) · [Xの元投稿](https://x.com/realchendahuang/status/2125416210120765799)
 
 ---
 
