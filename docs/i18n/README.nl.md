@@ -1,19 +1,19 @@
 # Temu3 Code · Voordat je T3 Code installeert
 
 <p align="center">
-  <em>20 gedocumenteerde zaken, 109 gearchiveerde screenshots en 3,5 jaar publieke posts en commits van pingdotgg/t3code. Nul telemetrie.</em>
+  <em>20 zaken, 109 screenshots en 3,5 jaar publieke posts en code van pingdotgg/t3code. Geen tracking.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=nl"><strong>🌐 temu3code.com</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=nl"><strong>✉ Tmail-inbox</strong></a> ·
-  <a href="https://temu3code.com/?lang=nl#x-receipts"><strong>📸 12 originele X-screenshots</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=nl"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=nl#x-receipts"><strong>📸 12 X-posts</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=nl"><strong>🃏 61 memes</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
   <a href="../EVIDENCE-INDEX.md"><strong>109 screenshots</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 bronnen</strong></a>
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 links</strong></a>
 </p>
 
 <p align="center">
@@ -52,9 +52,9 @@
 > [!TIP]
 > **Waarom "Temu3 Code"?**
 >
-> Op 23 november 2026, tien minuten nadat hij de gratis MIT-fork van een Chinese developer een "Chinese knockoff" noemde, gaf @theo ons de naam op X: "Temu3 Code" (84k weergaven).
+> Op 23 nov 2026 noemde @theo de gratis MIT-fork van een Chinese ontwikkelaar een "Chinese knockoff". Tien minuten later gaf hij ons op X de naam: "Temu3 Code" (84k weergaven).
 >
-> Een oprichter met nul USPTO-handelsmerken die gratis branding weggeeft, sla je niet af. We registreerden temu3code.com, zetten de publieke audit hier neer en lieten PostHog weg. Bedankt voor de naam, Theo. Alles hier is CC0 1.0, dus fork erop los. [Bekijk de naamgevingspost van @theo ↗](https://x.com/theo/status/2124825920808829077)
+> Als een oprichter met nul Amerikaanse handelsmerken je een gratis naam geeft, dan neem je die. We registreerden temu3code.com, zetten alle openbare gegevens hier neer en lieten PostHog weg. Bedankt voor de naam, Theo. Alles hier is CC0 1.0, dus fork gerust. [Bekijk de post van @theo ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

@@ -1,19 +1,19 @@
 # Temu3 Code · Before You Install T3 Code
 
 <p align="center">
-  <em>20 documented cases, 109 archived screenshots, and 3.5 years of public posts and commits from pingdotgg/t3code. Zero telemetry.</em>
+  <em>20 cases, 109 screenshots, and 3.5 years of public posts and code from pingdotgg/t3code. No tracking.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=en"><strong>🌐 temu3code.com</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=en"><strong>✉ Tmail Inbox</strong></a> ·
-  <a href="https://temu3code.com/?lang=en#x-receipts"><strong>📸 12 Original X Screenshots</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=en"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=en#x-receipts"><strong>📸 12 X Posts</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=en"><strong>🃏 61 Memes</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
   <a href="./docs/EVIDENCE-INDEX.md"><strong>109 Screenshots</strong></a> ·
-  <a href="./docs/COMPLETE-SOURCE-INDEX.md"><strong>327 Sources</strong></a>
+  <a href="./docs/COMPLETE-SOURCE-INDEX.md"><strong>327 Links</strong></a>
 </p>
 
 <p align="center">
@@ -54,7 +54,7 @@
 >
 > On Nov 23, 2026, ten minutes after calling a Chinese developer's free MIT fork a "Chinese knockoff," @theo gave us the name on X: "Temu3 Code" (84k views).
 >
-> A founder with zero USPTO trademarks handing out free branding is hard to turn down. We registered temu3code.com, put the public audit here, and left out PostHog. Thanks for the name, Theo. Everything here is CC0 1.0, so fork away. [View @theo's naming post ↗](https://x.com/theo/status/2124825920808829077)
+> When a founder with zero US trademarks hands you a free name, you take it. We registered temu3code.com, put all the public records here, and left out PostHog. Thanks for the name, Theo. Everything here is CC0 1.0, so fork away. [See @theo's post ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

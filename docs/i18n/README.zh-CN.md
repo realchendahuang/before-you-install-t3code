@@ -1,19 +1,19 @@
 # Temu3 Code · 安装 T3 Code 之前
 
 <p align="center">
-  <em>20 份独立取证、109 张原帖与源码截图，记录 pingdotgg/t3code 过去 3.5 年的公开言行与代码实情。零遥测。</em>
+  <em>20 件事、109 张截图，整理了 pingdotgg/t3code 过去三年半的公开言行和代码。不加任何追踪。</em>
 </p>
 
 <p align="center">
-  <a href="https://temu3code.com/?lang=zh-CN"><strong>🌐 temu3code.com 主站</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=zh-CN"><strong>✉ Tmail 邮件门</strong></a> ·
-  <a href="https://temu3code.com/?lang=zh-CN#x-receipts"><strong>📸 12 张一手 X 原图</strong></a> ·
-  <a href="https://temu3code.com/memes/?lang=zh-CN"><strong>🃏 61 张梗图库</strong></a>
+  <a href="https://temu3code.com/?lang=zh-CN"><strong>🌐 temu3code.com</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=zh-CN"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=zh-CN#x-receipts"><strong>📸 12 张 X 原帖</strong></a> ·
+  <a href="https://temu3code.com/memes/?lang=zh-CN"><strong>🃏 61 张梗图</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 张原图</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 条信源</strong></a>
+  <a href="../EVIDENCE-INDEX.md"><strong>109 张截图</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 条链接</strong></a>
 </p>
 
 <p align="center">
@@ -52,9 +52,9 @@
 > [!TIP]
 > **为什么叫「Temu3 Code」？**
 >
-> 2026 年 11 月 23 日，把一位中国开发者的免费 MIT Fork 叫成「Chinese knockoff」十分钟后，@theo 在 X 上顺手给了我们这个名字：「Temu3 Code」（8.4 万浏览）。
+> 2026 年 11 月 23 日，@theo 把一位中国开发者的免费 MIT Fork 叫成「Chinese knockoff」。十分钟后，他又在 X 上顺手给了我们这个名字：「Temu3 Code」（8.4 万浏览）。
 >
-> 一个名下连美国注册商标都没有的创始人白送的名字，不用可惜了。我们直接注册了 temu3code.com，把公开审计全搬进来，顺便把 PostHog 遥测删干净。多谢赐名，Theo。全站 CC0 1.0，欢迎随便 Fork，绝不找 GitHub 封号。 [看 @theo 赐名原帖 ↗](https://x.com/theo/status/2124825920808829077)
+> 一个连美国注册商标都没有的创始人白送的名字，不用白不用。我们直接注册了 temu3code.com，把公开记录全放进来，顺手把 PostHog 删干净。谢了 Theo。这里全部 CC0 1.0，随便 Fork，不找 GitHub 封号。 [看 @theo 原帖 ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

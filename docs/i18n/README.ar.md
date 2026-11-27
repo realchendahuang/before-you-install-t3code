@@ -1,19 +1,19 @@
 # Temu3 Code · قبل تثبيت T3 Code
 
 <p align="center">
-  <em>20 حالة موثّقة، و109 لقطات شاشة مؤرشفة، و3.5 سنوات من المنشورات العامة وعمليات commit من pingdotgg/t3code. صفر تتبّع.</em>
+  <em>20 حالة، 109 لقطات شاشة، و3.5 سنوات من المنشورات والأكواد العامة من pingdotgg/t3code. بلا تتبّع.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=ar"><strong>🌐 temu3code.com</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=ar"><strong>✉ صندوق Tmail</strong></a> ·
-  <a href="https://temu3code.com/?lang=ar#x-receipts"><strong>📸 12 لقطة شاشة أصلية من X</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=ar"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=ar#x-receipts"><strong>📸 12 منشور X</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=ar"><strong>🃏 61 ميم</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
   <a href="../EVIDENCE-INDEX.md"><strong>109 لقطات شاشة</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 مصدراً</strong></a>
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 رابطاً</strong></a>
 </p>
 
 <p align="center">
@@ -52,9 +52,9 @@
 > [!TIP]
 > **لماذا "Temu3 Code"؟**
 >
-> في 23 نوفمبر 2026، وبعد عشر دقائق من وصفه نسخة متفرعة مجانية برخصة MIT لمطوّر صيني بأنها "Chinese knockoff"، منحنا @theo الاسم على X: "Temu3 Code" (84 ألف مشاهدة).
+> في 23 نوفمبر 2026، وبعد عشر دقائق من وصف نسخة MIT مجانية لمطور صيني بأنها "Chinese knockoff"، أعطانا @theo الاسم على X: "Temu3 Code" (84 ألف مشاهدة).
 >
-> من الصعب رفض علامة مجانية من مؤسس يملك صفر علامات تجارية مسجلة لدى USPTO. سجّلنا temu3code.com، ونشرنا التدقيق العام هنا، واستبعدنا PostHog. شكراً على الاسم يا Theo. كل شيء هنا CC0 1.0، فانسخوه كما تشاؤون. [اعرض منشور التسمية من @theo ↗](https://x.com/theo/status/2124825920808829077)
+> حين يمنحك مؤسس لا يملك أي علامات تجارية أمريكية اسماً مجانياً، تأخذه. سجّلنا temu3code.com، ووضعنا كل السجلات العامة هنا، واستبعدنا PostHog. شكراً على الاسم يا Theo. كل شيء هنا بترخيص CC0 1.0، فاعمل نسخة كما تشاء. [شاهد منشور @theo ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

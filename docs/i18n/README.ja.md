@@ -1,19 +1,19 @@
-# Temu3 Code · T3 Code をインストールする前に
+# Temu3 Code · T3 Codeをインストールする前に
 
 <p align="center">
-  <em>記録済みの事例 20 件、アーカイブ済みスクリーンショット 109 枚、そして pingdotgg/t3code の 3.5 年分の公開投稿とコミット。テレメトリはゼロ。</em>
+  <em>20件の事例、109枚のスクリーンショット、pingdotgg/t3codeの3年半にわたる公開投稿とコード。トラッキングなし。</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=ja"><strong>🌐 temu3code.com</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=ja"><strong>✉ Tmail 受信箱</strong></a> ·
-  <a href="https://temu3code.com/?lang=ja#x-receipts"><strong>📸 X の元スクリーンショット 12 枚</strong></a> ·
-  <a href="https://temu3code.com/memes/?lang=ja"><strong>🃏 ミーム 61 枚</strong></a>
+  <a href="https://temu3code.com/mail/?lang=ja"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=ja#x-receipts"><strong>📸 Xの投稿12件</strong></a> ·
+  <a href="https://temu3code.com/memes/?lang=ja"><strong>🃏 ミーム61点</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>スクリーンショット 109 枚</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>出典 327 件</strong></a>
+  <a href="../EVIDENCE-INDEX.md"><strong>スクリーンショット109枚</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>リンク327件</strong></a>
 </p>
 
 <p align="center">
@@ -52,9 +52,9 @@
 > [!TIP]
 > **なぜ「Temu3 Code」なのか**
 >
-> 2026年11月23日、中国の開発者による無料の MIT フォークを「Chinese knockoff」と呼んでから 10 分後、@theo は X で私たちに名前を与えた。「Temu3 Code」である（8.4万回表示）。
+> 2026年11月23日、中国の開発者による無料のMITフォークを「Chinese knockoff」と呼んだ10分後、@theoはXで名前をくれた。「Temu3 Code」だ（8.4万回表示）。
 >
-> USPTO 商標を 1 件も持たない創業者が無料でブランド名をくれるなら、断る理由はない。私たちは temu3code.com を取得し、公開監査をここに置き、PostHog は入れなかった。名前をありがとう、Theo。ここにあるものはすべて CC0 1.0 なので、いくらでもフォークしてほしい。 [@theo の命名投稿を見る ↗](https://x.com/theo/status/2124825920808829077)
+> 米国商標を1件も持たない創業者から名前を無料でもらえたら、使うしかない。temu3code.comを取得し、公開記録をここにまとめ、PostHogは外した。名前をありがとう、Theo。ここにあるものはすべてCC0 1.0なので、自由にフォークしていい。 [@theoの投稿を見る ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

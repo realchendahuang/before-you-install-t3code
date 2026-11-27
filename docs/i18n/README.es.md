@@ -1,19 +1,19 @@
 # Temu3 Code · Antes de instalar T3 Code
 
 <p align="center">
-  <em>20 casos documentados, 109 capturas archivadas y 3,5 años de publicaciones y commits públicos de pingdotgg/t3code. Cero telemetría.</em>
+  <em>20 casos, 109 capturas y 3,5 años de publicaciones y código públicos de pingdotgg/t3code. Sin rastreo.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=es"><strong>🌐 temu3code.com</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=es"><strong>✉ Bandeja de Tmail</strong></a> ·
-  <a href="https://temu3code.com/?lang=es#x-receipts"><strong>📸 12 capturas originales de X</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=es"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=es#x-receipts"><strong>📸 12 publicaciones en X</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=es"><strong>🃏 61 memes</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
   <a href="../EVIDENCE-INDEX.md"><strong>109 capturas</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 fuentes</strong></a>
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 enlaces</strong></a>
 </p>
 
 <p align="center">
@@ -52,9 +52,9 @@
 > [!TIP]
 > **¿Por qué "Temu3 Code"?**
 >
-> El 23 de noviembre de 2026, diez minutos después de llamar "Chinese knockoff" al fork MIT gratuito de un desarrollador chino, @theo nos dio el nombre en X: "Temu3 Code" (84 mil vistas).
+> El 23 de nov de 2026, diez minutos después de llamar "Chinese knockoff" al fork MIT gratuito de un desarrollador chino, @theo nos dio el nombre en X: "Temu3 Code" (84 mil vistas).
 >
-> Un fundador con cero marcas registradas en la USPTO que regala branding no se rechaza fácilmente. Registramos temu3code.com, pusimos aquí la auditoría pública y dejamos fuera PostHog. Gracias por el nombre, Theo. Todo lo de aquí es CC0 1.0, así que haz fork sin problema. [Ver la publicación de @theo donde da el nombre ↗](https://x.com/theo/status/2124825920808829077)
+> Cuando un fundador con cero marcas registradas en la USPTO te regala un nombre, lo coges. Registramos temu3code.com, pusimos aquí todos los registros públicos y dejamos PostHog fuera. Gracias por el nombre, Theo. Todo esto es CC0 1.0, así que haz fork cuando quieras. [Ver la publicación de @theo ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

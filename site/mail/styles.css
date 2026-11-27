@@ -1154,6 +1154,10 @@ a:hover {
   position: relative;
 }
 
+.row-avatar {
+  display: none;
+}
+
 .row-controls {
   display: flex;
   align-items: center;
@@ -1271,6 +1275,11 @@ a:hover {
   min-width: 0;
 }
 
+.row-snippet::before {
+  content: "- ";
+  color: #9aa0a6;
+}
+
 .row-meta {
   display: flex;
   align-items: center;
@@ -1367,11 +1376,11 @@ a:hover {
   flex: 1;
   min-height: 0;
   overflow-y: auto;
-  padding: 20px 32px 96px 64px;
+  padding: 24px 36px 96px 64px;
 }
 
 .thread-inner {
-  max-width: 920px;
+  max-width: 780px;
 }
 
 .thread-subject-row {
@@ -1379,14 +1388,14 @@ a:hover {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 
 .thread-subject {
   margin: 0;
   font-size: 22px;
-  font-weight: 400;
-  line-height: 1.3;
+  font-weight: 500;
+  line-height: 1.35;
   color: var(--text-primary);
 }
 
@@ -1455,9 +1464,9 @@ a:hover {
 }
 
 .msg-text {
-  font-size: 14px;
-  line-height: 1.65;
-  color: #202124;
+  font-size: 15px;
+  line-height: 1.75;
+  color: #1f1f1f;
   white-space: pre-line;
   overflow-wrap: anywhere;
   word-break: break-word;
@@ -2309,28 +2318,48 @@ a:hover {
   }
 
   .email-row {
-    grid-template-columns: 48px minmax(0, 1fr) auto;
-    gap: 3px 6px;
-    padding: 10px 10px;
+    grid-template-columns: 40px minmax(0, 1fr) auto;
+    grid-template-rows: auto auto auto;
+    gap: 2px 12px;
+    padding: 13px 14px;
     align-items: start;
   }
 
-  .row-controls {
-    padding-top: 1px;
-  }
-
-  .star-btn {
-    padding: 2px;
-    font-size: 11px;
+  .row-avatar {
+    display: flex;
+    grid-column: 1;
+    grid-row: 1 / 4;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    flex-shrink: 0;
   }
 
   .row-sender {
-    font-size: 13px;
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .row-meta {
+    grid-column: 3;
+    grid-row: 1;
+    gap: 5px;
+    padding-top: 1px;
   }
 
   .row-date {
     min-width: 0;
-    font-size: 11px;
+    font-size: 11.5px;
+    font-weight: 500;
+    color: var(--text-muted);
   }
 
   .attach-pill {
@@ -2338,19 +2367,54 @@ a:hover {
   }
 
   .row-main {
-    flex-wrap: wrap;
-    row-gap: 4px;
-    overflow: visible;
+    display: contents;
+  }
+
+  .row-main .platform-chip {
+    display: none;
   }
 
   .row-subject {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    max-width: 100%;
     white-space: normal;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    line-height: 1.38;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-top: 1px;
+  }
+
+  .row-snippet {
+    display: block;
+    grid-column: 2;
+    grid-row: 3;
     font-size: 13px;
-    flex-basis: 100%;
+    line-height: 1.4;
+    color: var(--text-muted);
+    margin-top: 2px;
+  }
+
+  .row-snippet::before {
+    content: none;
+  }
+
+  .row-controls {
+    grid-column: 3;
+    grid-row: 3;
+    justify-content: flex-end;
+    padding-top: 1px;
+  }
+
+  .star-btn {
+    padding: 2px 3px;
+    font-size: 11.5px;
+  }
+
+  .star-btn .material-symbols-outlined {
+    font-size: 16px;
   }
 
   .thread-toolbar {
@@ -2370,27 +2434,28 @@ a:hover {
   }
 
   .thread-content {
-    padding: 14px 12px 96px;
+    padding: 16px 14px 96px;
   }
 
   .thread-subject {
-    font-size: 18px;
+    font-size: 19px;
+    line-height: 1.38;
   }
 
   .thread-msg-card {
     gap: 10px;
-    padding: 14px 0;
+    padding: 16px 0;
   }
 
   .msg-avatar {
-    width: 32px;
-    height: 32px;
-    font-size: 13px;
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
   }
 
   .msg-text {
-    font-size: 13.5px;
-    line-height: 1.6;
+    font-size: 14.5px;
+    line-height: 1.7;
   }
 
   .msg-attachments {

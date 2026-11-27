@@ -672,8 +672,12 @@
         const starDisplay = th.starCount + (starred ? 1 : 0);
         const chipClass = th.deleted ? " chip-deleted" : th.status === "open" ? " chip-open" : "";
         const chipLabel = th.deleted ? t("chipDeleted") : th.platform;
+        const leadMsg = th.messages && th.messages[0];
+        const avatarChar = (leadMsg && leadMsg.avatar) || th.from.replace(/^@/, "").charAt(0).toUpperCase() || "T";
+        const avatarColor = (leadMsg && leadMsg.color) || "#5f6368";
 
         return `<div class="email-row${isRead ? " is-read" : ""}" role="listitem" tabindex="0" data-thread-id="${th.id}">
+          <div class="row-avatar" style="background:${escapeHtml(avatarColor)}" aria-hidden="true">${escapeHtml(avatarChar)}</div>
           <div class="row-controls">
             <button type="button" class="star-btn${starred ? " is-starred" : ""}" data-star-id="${th.id}" aria-label="Star thread" title="Star">
               <span class="material-symbols-outlined">${starred ? "star" : "star_border"}</span>
@@ -687,10 +691,10 @@
           <div class="row-main">
             <span class="platform-chip${chipClass}">${escapeHtml(chipLabel)}</span>
             <span class="row-subject">${escapeHtml(subject)}</span>
-            <span class="row-snippet">— ${escapeHtml(snippet)}</span>
+            <span class="row-snippet">${escapeHtml(snippet)}</span>
           </div>
           <div class="row-meta">
-            ${attCount ? `<span class="attach-pill" title="${attCount} screenshots"><span class="material-symbols-outlined">attach_file</span>${attCount}</span>` : ""}
+            ${attCount ? `<span class="attach-pill" title="${attCount}"><span class="material-symbols-outlined">attach_file</span>${attCount}</span>` : ""}
             <span class="row-date">${escapeHtml(th.dateDisplay)}</span>
           </div>
         </div>`;

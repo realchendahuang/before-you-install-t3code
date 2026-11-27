@@ -235,8 +235,8 @@ section { padding: 80px 0; }
   margin: 0; font-size: clamp(23px, 3vw, 32px); font-weight: 600;
   line-height: 1.18; letter-spacing: -0.025em; color: #ffffff;
 }
-.origin-p { margin: 0; font-size: 15.5px; line-height: 1.65; color: #e4e4e7; }
-.origin-p-muted { color: var(--muted); }
+.origin-p { margin: 0; font-size: 16px; line-height: 1.72; color: #e4e4e7; }
+.origin-p-muted { color: #b4b4bc; }
 .origin-link {
   align-self: flex-start; margin-top: 4px; padding: 8px 14px; border-radius: 8px;
   background: rgba(75, 124, 243, 0.14); border: 1px solid rgba(75, 124, 243, 0.36);
@@ -313,8 +313,8 @@ section { padding: 80px 0; }
 }
 .fact-card:hover { border-color: rgba(255, 255, 255, 0.24); transform: translateY(-2px); }
 .fact-stat { font-family: var(--font-mono); font-size: 13px; font-weight: 600; }
-.fact-title { font-size: 15.5px; font-weight: 600; color: #ffffff; line-height: 1.35; }
-.fact-desc { margin: 0; font-size: 13.5px; color: var(--muted); line-height: 1.55; }
+.fact-title { font-size: 15.5px; font-weight: 600; color: #ffffff; line-height: 1.4; }
+.fact-desc { margin: 0; font-size: 14px; color: #b4b4bc; line-height: 1.65; }
 
 /* ---------- 19 SINS & MEMES ---------- */
 .sec-memes {

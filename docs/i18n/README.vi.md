@@ -1,19 +1,19 @@
 # Temu3 Code · Trước khi bạn cài T3 Code
 
 <p align="center">
-  <em>20 vụ việc có hồ sơ, 109 ảnh chụp lưu trữ và 3,5 năm bài đăng, commit công khai từ pingdotgg/t3code. Không telemetry.</em>
+  <em>20 vụ việc, 109 ảnh chụp, và 3,5 năm bài đăng công khai cùng code từ pingdotgg/t3code. Không tracking.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=vi"><strong>🌐 temu3code.com</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=vi"><strong>✉ Hộp thư Tmail</strong></a> ·
-  <a href="https://temu3code.com/?lang=vi#x-receipts"><strong>📸 12 ảnh chụp X gốc</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=vi"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=vi#x-receipts"><strong>📸 12 bài đăng X</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=vi"><strong>🃏 61 meme</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
   <a href="../EVIDENCE-INDEX.md"><strong>109 ảnh chụp</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 nguồn</strong></a>
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 liên kết</strong></a>
 </p>
 
 <p align="center">
@@ -50,11 +50,11 @@
 
 <!-- origin-story:start -->
 > [!TIP]
-> **Vì sao gọi là "Temu3 Code"?**
+> **Sao lại là "Temu3 Code"?**
 >
-> Ngày 23/11/2026, mười phút sau khi gọi bản fork MIT miễn phí của một developer Trung Quốc là "Chinese knockoff", @theo đặt tên cho chúng tôi trên X: "Temu3 Code" (84 nghìn lượt xem).
+> Ngày 23/11/2026, mười phút sau khi gọi bản fork MIT miễn phí của một dev Trung Quốc là "Chinese knockoff", @theo đặt luôn tên cho tụi mình trên X: "Temu3 Code" (84 nghìn lượt xem).
 >
-> Một founder không có nhãn hiệu USPTO nào mà tặng miễn phí thương hiệu thì khó mà từ chối. Chúng tôi đăng ký temu3code.com, đặt bản kiểm toán công khai ở đây, và bỏ PostHog ra ngoài. Cảm ơn vì cái tên, Theo. Mọi thứ ở đây đều là CC0 1.0, cứ fork thoải mái. [Xem bài đặt tên của @theo ↗](https://x.com/theo/status/2124825920808829077)
+> Khi một founder chẳng có nhãn hiệu USPTO nào đưa bạn một cái tên miễn phí, cứ lấy. Tụi mình đăng ký temu3code.com, đặt toàn bộ hồ sơ công khai ở đây, và bỏ PostHog ra ngoài. Cảm ơn vì cái tên, Theo. Mọi thứ ở đây là CC0 1.0, cứ fork thoải mái. [Xem bài của @theo ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 
