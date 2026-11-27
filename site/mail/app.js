@@ -215,7 +215,7 @@
   const $$ = (sel) => Array.from(document.querySelectorAll(sel));
 
   function isZh() {
-    return state.lang === "zh-CN" || state.lang === "zh-TW" || isZh();
+    return state.lang === "zh-CN" || state.lang === "zh-TW";
   }
 
   function t(key) {
