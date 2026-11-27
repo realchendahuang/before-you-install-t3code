@@ -50,6 +50,15 @@
 > - **فحص المنبع:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **تنبيهات أمنية:** 0 تنبيهات منشورة على GitHub
 
+
+<!-- origin-story:start -->
+> [!TIP]
+> **لماذا «Temu3 Code»؟**
+>
+> في 23 نوفمبر 2026 — بعد 10 دقائق فقط من وصف شوكة MIT مجانية لمطوّر صيني بأنها «Chinese knockoff» — تفضّل @theo Searches: نتHang tight?
+>
+> اسم مجاني من مؤسس بلا أي علامات تجارية مسجلة لدى USPTO أجدر ألا يُهدر — فسجّلنا temu3code.com، وأضفنا التدقيق العام، واستبعدنا تتبّع PostHog. شكرًا على استشارة التسمية المجانية، Theo. (CC0 1.0 — feel free to fork us back.) — [شاهد تغريدة @theo حول التسمية ↗](https://x.com/theo/status/2124825920808829077)
+<!-- origin-story:end -->
 ---
 
 ## كيف حدث ذلك في 60 ثانية

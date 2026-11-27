@@ -193,6 +193,33 @@ section { padding: 80px 0; }
 .sec-lead { margin: 14px 0 32px; max-width: 620px; font-size: 16px; color: var(--muted); }
 .sec-lead.center { margin-left: auto; margin-right: auto; }
 
+/* ---------- WHY TEMU3 CODE (NAME ORIGIN CARD) ---------- */
+.sec-origin { padding: 28px 0 68px; }
+.origin-card {
+  display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 36px; align-items: center;
+  padding: 32px; border-radius: 16px; background: var(--surface); border: 1px solid var(--border);
+}
+.origin-copy { display: flex; flex-direction: column; gap: 14px; }
+.origin-h2 {
+  margin: 0; font-size: clamp(24px, 3vw, 32px); font-weight: 600;
+  line-height: 1.18; letter-spacing: -0.025em; color: #ffffff;
+}
+.origin-p { margin: 0; font-size: 15.5px; line-height: 1.65; color: #e4e4e7; }
+.origin-p-muted { color: var(--muted); }
+.origin-link {
+  align-self: flex-start; margin-top: 4px; padding: 7px 13px; border-radius: 8px;
+  background: rgba(75, 124, 243, 0.14); border: 1px solid rgba(75, 124, 243, 0.36);
+  color: #bfdbfe; font-size: 13.5px; font-weight: 500; transition: background 140ms ease, color 140ms ease;
+}
+.origin-link:hover { background: var(--cobalt); border-color: var(--cobalt); color: #ffffff; }
+.origin-shot {
+  display: block; border-radius: 12px; overflow: hidden; background: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.14); box-shadow: 0 18px 46px rgba(0, 0, 0, 0.65);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+.origin-shot:hover { transform: translateY(-2px); border-color: rgba(255, 255, 255, 0.32); }
+.origin-shot img { display: block; width: 100%; height: auto; }
+
 /* ---------- X RECEIPTS (CLEAN CARDS) ---------- */
 .sec-x-receipts { border-top: 1px solid rgba(255, 255, 255, 0.06); }
 .xr-filters { display: flex; gap: 8px; flex-wrap: wrap; }
@@ -359,6 +386,7 @@ section { padding: 80px 0; }
 
 @media (max-width: 1024px) {
   .float-tile { display: none; }
+  .origin-card { grid-template-columns: 1fr; padding: 24px; gap: 24px; }
   .app-win-grid { grid-template-columns: 1fr; }
   .win-col-left, .win-col-right { border: none; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
   .xr-grid, .facts-grid, .mm-viral-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }

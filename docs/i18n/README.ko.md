@@ -50,6 +50,15 @@
 > - **업스트림 확인:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **보안 권고:** 게시된 GitHub 보안 권고 0건
 
+
+<!-- origin-story:start -->
+> [!TIP]
+> **왜 "Temu3 Code"인가?**
+>
+> 2026년 11월 23일 — 중국 개발자의 무료 MIT 포크를 "Chinese knockoff"이라고 발언한 지 정확히 10분 만에, @theo가 X에서 우리의 브랜드명을 관대하게 기증했습니다: "Temu3 Code" (8.4만 조회수).
+>
+> USPTO 출원商标가 0개인 창업자가 무료로 선물을 준 브랜드 이름을 버리기엔 아깝죠. 그래서 temu3code.com을 등록하고 공개 감사를 옮겨 놓았으며, PostHog 텔레메트리는 제외했습니다. 무료 명명 상담, Theo, 감사합니다. (CC0 1.0 — 우리를 다시 포크하셔도 됩니다.) — [@theo의 이름 짓기 트윗 보기 ↗](https://x.com/theo/status/2124825920808829077)
+<!-- origin-story:end -->
 ---
 
 ## 60초로 보는 사건 경과

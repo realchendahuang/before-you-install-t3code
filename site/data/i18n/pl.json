@@ -91,7 +91,11 @@
     "stealTitle": "„Ukradnij nasz kod (legalnie).”*",
     "stealSub": "*Serio. Domena publiczna CC0 1.0 — forknij nasze repo bez gróźb bana na GitHubie.",
     "stealFork": "Fork na GitHubie ↗",
-    "stealReports": "20 eksponatów na GitHubie ↗"
+    "stealReports": "20 eksponatów na GitHubie ↗",
+    "originTitle": "Dlaczego „Temu3 Code”?",
+    "originP1": "23 listopada 2026 r. — 10 minut po tym, jak nazwał darmowy fork MIT chińskiego dewelopera „Chinese knockoff” — @theo hojnie podarował naszą nazwę marki na X: „Temu3 Code” (84 tys. wyświetleń).",
+    "originP2": "Darmowe branding od założyciela z zerem znaków towarowych USPTO jest zbyt cenne, by je zmarnować — więc zarejestrowaliśmy temu3code.com, przenieśliśmy publiczny audyt i pominęliśmy telemetrię PostHog. Dziękujemy za darmową konsultację namingową, Theo. (CC0 1.0 — śmiało, forkuj nas z powrotem.)",
+    "originCta": "Zobacz tweet @theo o nazwie ↗"
   },
   "memes": {
     "pageTitle": "Arsenał memów Temu3 — 61 kart i memów CC0",
@@ -200,6 +204,10 @@
     "portalMemes": "61 memów",
     "portalEvidence": "109 paragonów",
     "portalSources": "327 źródeł",
-    "languagesLabel": "Języki (18):"
+    "languagesLabel": "Języki (18):",
+    "originTitle": "Dlaczego „Temu3 Code”?",
+    "originP1": "23 listopada 2026 r. — 10 minut po tym, jak nazwał darmowy fork MIT chińskiego dewelopera „Chinese knockoff” — @theo hojnie podarował naszą nazwę marki na X: „Temu3 Code” (84 tys. wyświetleń).",
+    "originP2": "Darmowe branding od założyciela z zerem znaków towarowych USPTO jest zbyt cenne, by je zmarnować — więc zarejestrowaliśmy temu3code.com, przenieśliśmy publiczny audyt i pominęliśmy telemetrię PostHog. Dziękujemy za darmową konsultację namingową, Theo. (CC0 1.0 — śmiało, forkuj nas z powrotem.)",
+    "originCta": "Zobacz tweet @theo o nazwie ↗"
   }
 }

@@ -50,6 +50,15 @@
 > - **Pemeriksaan upstream:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **Advisori keamanan:** 0 Advisori GitHub yang Diterbitkan
 
+
+<!-- origin-story:start -->
+> [!TIP]
+> **Kenapa "Temu3 Code"?**
+>
+> Pada 23 Nov 2026 — 10 menit setelah menyebut fork gratis dari developer China sebagai "Chinese knockoff" — @theo dengan murah hati memberikan nama brand kami di X: "Temu3 Code" (84k views).
+>
+> Gratisnya nama brand dari founder yang punya 0 USPTO trademarks terlalu bagus untuk disia-siakan — jadi kami mendaftarkan temu3code.com, memindahkan audit publik ke sana, dan tidak pasang telemetry PostHog. Terima kasih atas konsultasi penamaan gratis, Theo. (CC0 1.0 — silakan fork kami balik.) — [Lihat tweet penamaan @theo ↗](https://x.com/theo/status/2124825920808829077)
+<!-- origin-story:end -->
 ---
 
 ## Bagaimana Ini Terjadi dalam 60 Detik

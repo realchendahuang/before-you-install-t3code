@@ -91,7 +91,11 @@
     "stealTitle": "\"Kodumuzu çalın (yasal olarak).\"*",
     "stealSub": "*Gerçekten ciddiyiz. CC0 1.0 kamu malı — depomuzu sıfır GitHub yasak tehdidiyle fork'layın.",
     "stealFork": "GitHub'da Fork'la ↗",
-    "stealReports": "GitHub'da 20 Belge ↗"
+    "stealReports": "GitHub'da 20 Belge ↗",
+    "originTitle": "Neden \"Temu3 Code\"?",
+    "originP1": "23 Kasım 2026’da — bir Çinli geliştiricinin ücretsiz MIT çatalına \"Chinese knockoff\" dedikten tam 10 dakika sonra — @theo X’te marka adımızı cömertçe bağışladı: \"Temu3 Code\" (84 bin görüntülenme).",
+    "originP2": "USPTO’da markası olmayan bir kurucunun bedava isimlendirmesi değerini görmek için fazla iyi — bu yüzden temu3code.com’u kaydettik, kamu denetimini buraya taşıdık ve PostHog telemetrisini dışarıda bıraktık. Ücretsiz isimlendirme danışmanlığın için teşekkürler, Theo. (CC0 1.0 — istersen bizi geri çatallayın.)",
+    "originCta": "@theo’nun isimlendirme tweet’ini görüntüle ↗"
   },
   "memes": {
     "pageTitle": "Temu3 Mem Cephaneliği — 61 CC0 Kart ve Mem",
@@ -200,6 +204,10 @@
     "portalMemes": "61 Mem",
     "portalEvidence": "109 Kanıt",
     "portalSources": "327 Kaynak",
-    "languagesLabel": "Diller (18):"
+    "languagesLabel": "Diller (18):",
+    "originTitle": "Neden \"Temu3 Code\"?",
+    "originP1": "23 Kasım 2026’da — bir Çinli geliştiricinin ücretsiz MIT çatalına \"Chinese knockoff\" dedikten tam 10 dakika sonra — @theo X’te marka adımızı cömertçe bağışladı: \"Temu3 Code\" (84 bin görüntülenme).",
+    "originP2": "USPTO’da markası olmayan bir kurucunun bedava isimlendirmesi değerini görmek için fazla iyi — bu yüzden temu3code.com’u kaydettik, kamu denetimini buraya taşıdık ve PostHog telemetrisini dışarıda bıraktık. Ücretsiz isimlendirme danışmanlığın için teşekkürler, Theo. (CC0 1.0 — istersen bizi geri çatallayın.)",
+    "originCta": "@theo’nun isimlendirme tweet’ini görüntüle ↗"
   }
 }

@@ -50,6 +50,15 @@
 > - **Upstream kontrolü:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **Güvenlik bildirimleri:** Yayımlanmış 0 GitHub Güvenlik Bildirimi
 
+
+<!-- origin-story:start -->
+> [!TIP]
+> **Neden "Temu3 Code"?**
+>
+> 23 Kasım 2026’da — bir Çinli geliştiricinin ücretsiz MIT çatalına "Chinese knockoff" dedikten tam 10 dakika sonra — @theo X’te marka adımızı cömertçe bağışladı: "Temu3 Code" (84 bin görüntülenme).
+>
+> USPTO’da markası olmayan bir kurucunun bedava isimlendirmesi değerini görmek için fazla iyi — bu yüzden temu3code.com’u kaydettik, kamu denetimini buraya taşıdık ve PostHog telemetrisini dışarıda bıraktık. Ücretsiz isimlendirme danışmanlığın için teşekkürler, Theo. (CC0 1.0 — istersen bizi geri çatallayın.) — [@theo’nun isimlendirme tweet’ini görüntüle ↗](https://x.com/theo/status/2124825920808829077)
+<!-- origin-story:end -->
 ---
 
 ## 60 Saniyede Nasıl Oldu

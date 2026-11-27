@@ -50,6 +50,15 @@
 > - **Upstream-Abgleich:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **Sicherheits-Advisories:** 0 veröffentlichte GitHub-Advisories
 
+
+<!-- origin-story:start -->
+> [!TIP]
+> **Warum „Temu3 Code“?**
+>
+> Am 23. November 2026 — 10 Minuten nachdem er den kostenlosen MIT-Fork eines chinesischen Entwicklers als „Chinese knockoff“ bezeichnet hatte —Spendete @theo großzügig unseren Markennamen auf X: „Temu3 Code“ (84k Aufrufe).
+>
+> Kostenloses Branding von einem Gründer mit 0 USPTO-Marken ist zu gut, um es zu vergeuden — also haben wir temu3code.com registriert, das öffentliche Audit übernommen und die PostHog-Telemetrie weggelassen. Danke für die kostenlose Naming-Beratung, Theo. (CC0 1.0 — fork uns ruhig zurück.) — [@theos Naming-Tweet ansehen ↗](https://x.com/theo/status/2124825920808829077)
+<!-- origin-story:end -->
 ---
 
 ## Wie es kam — in 60 Sekunden

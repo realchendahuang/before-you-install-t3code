@@ -50,6 +50,15 @@
 > - **上流確認:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **セキュリティアドバイザリ:** GitHub公開アドバイザリ 0件
 
+
+<!-- origin-story:start -->
+> [!TIP]
+> **なぜ「Temu3 Code」なのか？**
+>
+> 2026年11月23日——ある中国開発者の無料MITフォークを「Chinese knockoff」と称してわずか10分後、@theoがXでブランド名を無償提供。「Temu3 Code」（84k views）。
+>
+> USPTOの商標を1件も保有していない創業者からNOMADEprovidediet branding intervention too good to waste — so we registered temu3code.com, moved the public audit in, and left out the PostHog telemetry. Thanks for the free naming consultation, Theo. (CC0 1.0 — feel free to fork us back.) — [@theoの命名ツイートを見る ↗](https://x.com/theo/status/2124825920808829077)
+<!-- origin-story:end -->
 ---
 
 ## 60秒でわかる経緯

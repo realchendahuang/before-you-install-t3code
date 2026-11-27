@@ -91,7 +91,11 @@
     "stealTitle": "\"Roba nuestro código (legalmente).\"*",
     "stealSub": "*Lo decimos en serio. Dominio público CC0 1.0 — haz fork de nuestro repo sin amenazas de veto en GitHub.",
     "stealFork": "Hacer fork en GitHub ↗",
-    "stealReports": "20 pruebas en GitHub ↗"
+    "stealReports": "20 pruebas en GitHub ↗",
+    "originTitle": "¿Por qué «Temu3 Code»?",
+    "originP1": "El 23 de noviembre de 2026 —10 minutos después de llamar «Chinese knockoff» al fork gratuito de un desarrollador chino bajo licencia MIT— @theo generosamente donó el nombre de nuestra marca en X: «Temu3 Code» (84 mil visitas).",
+    "originP2": "Una marca gratuita donada por un fundador con 0 patentes registradas en la USPTO es demasiado buena como para desperdiciarla, así que registramos temu3code.com, incorporamos la auditoría pública y omitimos la telemetría de PostHog. Gracias por el servicio de naming gratuito, Theo. (CC0 1.0: siéntete libre de bifurcarnos de vuelta).",
+    "originCta": "Ver el tuit de naming de @theo ↗"
   },
   "memes": {
     "pageTitle": "Arsenal de memes de Temu3 — 61 tarjetas y memes CC0",
@@ -200,6 +204,10 @@
     "portalMemes": "61 memes",
     "portalEvidence": "109 recibos",
     "portalSources": "327 fuentes",
-    "languagesLabel": "Idiomas (18):"
+    "languagesLabel": "Idiomas (18):",
+    "originTitle": "¿Por qué «Temu3 Code»?",
+    "originP1": "El 23 de noviembre de 2026 —10 minutos después de llamar «Chinese knockoff» al fork gratuito de un desarrollador chino bajo licencia MIT— @theo generosamente donó el nombre de nuestra marca en X: «Temu3 Code» (84 mil visitas).",
+    "originP2": "Una marca gratuita donada por un fundador con 0 patentes registradas en la USPTO es demasiado buena como para desperdiciarla, así que registramos temu3code.com, incorporamos la auditoría pública y omitimos la telemetría de PostHog. Gracias por el servicio de naming gratuito, Theo. (CC0 1.0: siéntete libre de bifurcarnos de vuelta).",
+    "originCta": "Ver el tuit de naming de @theo ↗"
   }
 }

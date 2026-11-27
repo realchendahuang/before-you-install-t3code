@@ -91,7 +91,11 @@
     "stealTitle": "「偷走我們的程式碼（合法）。」*",
     "stealSub": "*我們是認真的。CC0 1.0 公共領域 — fork 我們的儲存庫，零 GitHub 停權威脅。",
     "stealFork": "在 GitHub 上 Fork ↗",
-    "stealReports": "GitHub 上的 20 件展品 ↗"
+    "stealReports": "GitHub 上的 20 件展品 ↗",
+    "originTitle": "為什麼叫「Temu3 Code」？",
+    "originP1": "2026 年 11 月 23 日——在把一位中國開發者的免費 MIT fork 說成「Chinese knockoff」僅 10 分鐘後——@theo 就在 X 上「慷慨贈送」我們的品牌名稱：「Temu3 Code」（84k views）。",
+    "originP2": "一位連 0 項 USPTO 商標都沒有的創辦人免費送品牌，不拿白不拿——所以我們註冊了 temu3code.com、搬進公開稽核資料，而且沒有加入 PostHog 遙測。謝謝你免費的品牌命名諮詢，Theo。（CC0 1.0——歡迎反向 fork 我們。）",
+    "originCta": "查看 @theo 的命名推文 ↗"
   },
   "memes": {
     "pageTitle": "Temu3 迷因軍火庫 — 61 張 CC0 卡牌與迷因",
@@ -200,6 +204,10 @@
     "portalMemes": "61 張迷因",
     "portalEvidence": "109 份證據",
     "portalSources": "327 個來源",
-    "languagesLabel": "語言（18）："
+    "languagesLabel": "語言（18）：",
+    "originTitle": "為什麼叫「Temu3 Code」？",
+    "originP1": "2026 年 11 月 23 日——在把一位中國開發者的免費 MIT fork 說成「Chinese knockoff」僅 10 分鐘後——@theo 就在 X 上「慷慨贈送」我們的品牌名稱：「Temu3 Code」（84k views）。",
+    "originP2": "一位連 0 項 USPTO 商標都沒有的創辦人免費送品牌，不拿白不拿——所以我們註冊了 temu3code.com、搬進公開稽核資料，而且沒有加入 PostHog 遙測。謝謝你免費的品牌命名諮詢，Theo。（CC0 1.0——歡迎反向 fork 我們。）",
+    "originCta": "查看 @theo 的命名推文 ↗"
   }
 }

@@ -91,7 +91,11 @@
     "stealTitle": "「来偷我们的代码（合法地）。」*",
     "stealSub": "*我们真不威胁封号。CC0 1.0 公共领域——随便 Fork、随便镜像。",
     "stealFork": "去 GitHub Fork ↗",
-    "stealReports": "GitHub 20 份证据 ↗"
+    "stealReports": "GitHub 20 份证据 ↗",
+    "originTitle": "为什么叫「Temu3 Code」？",
+    "originP1": "2026 年 11 月 23 日，在给中国开发者的免费 MIT 开源 Fork 扣上「Chinese knockoff」帽子 10 分钟后，@theo 在 X 上亲自慷慨赐名：「Temu3 Code」（8.4 万浏览）。",
+    "originP2": "一位名下 0 件美国注册商标的创始人免费送上的联名品牌，不用实在太客气了——于是我们顺手注册了 temu3code.com，把整座公共审计档案馆搬了进来，还贴心地去掉了默认 PostHog 遥测。感谢 Theo 的免费品牌咨询（CC0 1.0，欢迎随时来 Fork，绝不找 GitHub 封号）。",
+    "originCta": "围观 @theo 赐名原帖 ↗"
   },
   "memes": {
     "pageTitle": "Temu3 梗图弹药库 — 61 张 CC0 收藏卡与梗图",
@@ -200,6 +204,10 @@
     "portalMemes": "61 张梗图库",
     "portalEvidence": "109 张原图",
     "portalSources": "327 条信源",
-    "languagesLabel": "全部 18 种语言："
+    "languagesLabel": "全部 18 种语言：",
+    "originTitle": "为什么叫「Temu3 Code」？",
+    "originP1": "2026 年 11 月 23 日，在给中国开发者的免费 MIT 开源 Fork 扣上「Chinese knockoff」帽子 10 分钟后，@theo 在 X 上亲自慷慨赐名：「Temu3 Code」（8.4 万浏览）。",
+    "originP2": "一位名下 0 件美国注册商标的创始人免费送上的联名品牌，不用实在太客气了——于是我们顺手注册了 temu3code.com，把整座公共审计档案馆搬了进来，还贴心地去掉了默认 PostHog 遥测。感谢 Theo 的免费品牌咨询（CC0 1.0，欢迎随时来 Fork，绝不找 GitHub 封号）。",
+    "originCta": "围观 @theo 赐名原帖 ↗"
   }
 }

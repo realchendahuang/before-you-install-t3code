@@ -50,6 +50,15 @@
 > - **程式碼追蹤:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **安全公告:** 0 條 GitHub Security Advisories
 
+
+<!-- origin-story:start -->
+> [!TIP]
+> **為什麼叫「Temu3 Code」？**
+>
+> 2026 年 11 月 23 日——在把一位中國開發者的免費 MIT fork 說成「Chinese knockoff」僅 10 分鐘後——@theo 就在 X 上「慷慨贈送」我們的品牌名稱：「Temu3 Code」（84k views）。
+>
+> 一位連 0 項 USPTO 商標都沒有的創辦人免費送品牌，不拿白不拿——所以我們註冊了 temu3code.com、搬進公開稽核資料，而且沒有加入 PostHog 遙測。謝謝你免費的品牌命名諮詢，Theo。（CC0 1.0——歡迎反向 fork 我們。） — [查看 @theo 的命名推文 ↗](https://x.com/theo/status/2124825920808829077)
+<!-- origin-story:end -->
 ---
 
 ## 60 秒看懂整起事件的來龍去脈

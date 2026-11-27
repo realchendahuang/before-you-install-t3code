@@ -91,7 +91,11 @@
     "stealTitle": "«اسرق شيفرتنا (قانونيًا).»*",
     "stealSub": "*نحن جادون. ملكية عامة CC0 1.0 — اعمل fork لمستودعنا دون أي تهديد بالحظر من GitHub.",
     "stealFork": "اعمل fork على GitHub ↗",
-    "stealReports": "20 مستندًا على GitHub ↗"
+    "stealReports": "20 مستندًا على GitHub ↗",
+    "originTitle": "لماذا «Temu3 Code»؟",
+    "originP1": "في 23 نوفمبر 2026 — بعد 10 دقائق فقط من وصف شوكة MIT مجانية لمطوّر صيني بأنها «Chinese knockoff» — تفضّل @theo Searches: نتHang tight?",
+    "originP2": "اسم مجاني من مؤسس بلا أي علامات تجارية مسجلة لدى USPTO أجدر ألا يُهدر — فسجّلنا temu3code.com، وأضفنا التدقيق العام، واستبعدنا تتبّع PostHog. شكرًا على استشارة التسمية المجانية، Theo. (CC0 1.0 — feel free to fork us back.)",
+    "originCta": "شاهد تغريدة @theo حول التسمية ↗"
   },
   "memes": {
     "pageTitle": "ترسانة ميمات Temu3 — 61 بطاقة وميمًا بترخيص CC0",
@@ -200,6 +204,10 @@
     "portalMemes": "61 ميمًا",
     "portalEvidence": "109 إيصالًا",
     "portalSources": "327 مصدرًا",
-    "languagesLabel": "اللغات (18):"
+    "languagesLabel": "اللغات (18):",
+    "originTitle": "لماذا «Temu3 Code»؟",
+    "originP1": "في 23 نوفمبر 2026 — بعد 10 دقائق فقط من وصف شوكة MIT مجانية لمطوّر صيني بأنها «Chinese knockoff» — تفضّل @theo Searches: نتHang tight?",
+    "originP2": "اسم مجاني من مؤسس بلا أي علامات تجارية مسجلة لدى USPTO أجدر ألا يُهدر — فسجّلنا temu3code.com، وأضفنا التدقيق العام، واستبعدنا تتبّع PostHog. شكرًا على استشارة التسمية المجانية، Theo. (CC0 1.0 — feel free to fork us back.)",
+    "originCta": "شاهد تغريدة @theo حول التسمية ↗"
   }
 }

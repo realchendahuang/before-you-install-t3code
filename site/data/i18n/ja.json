@@ -91,7 +91,11 @@
     "stealTitle": "「コードを盗め（合法的に）。」*",
     "stealSub": "*本気です。CC0 1.0 パブリックドメイン — GitHub の BAN 脅迫なしでフォークできます。",
     "stealFork": "GitHub でフォーク ↗",
-    "stealReports": "GitHub の展示20点 ↗"
+    "stealReports": "GitHub の展示20点 ↗",
+    "originTitle": "なぜ「Temu3 Code」なのか？",
+    "originP1": "2026年11月23日——ある中国開発者の無料MITフォークを「Chinese knockoff」と称してわずか10分後、@theoがXでブランド名を無償提供。「Temu3 Code」（84k views）。",
+    "originP2": "USPTOの商標を1件も保有していない創業者からNOMADEprovidediet branding intervention too good to waste — so we registered temu3code.com, moved the public audit in, and left out the PostHog telemetry. Thanks for the free naming consultation, Theo. (CC0 1.0 — feel free to fork us back.)",
+    "originCta": "@theoの命名ツイートを見る ↗"
   },
   "memes": {
     "pageTitle": "Temu3 ミーム兵器庫 — CC0 カード & ミーム61点",
@@ -200,6 +204,10 @@
     "portalMemes": "ミーム61点",
     "portalEvidence": "記録109件",
     "portalSources": "情報源327件",
-    "languagesLabel": "言語（18）："
+    "languagesLabel": "言語（18）：",
+    "originTitle": "なぜ「Temu3 Code」なのか？",
+    "originP1": "2026年11月23日——ある中国開発者の無料MITフォークを「Chinese knockoff」と称してわずか10分後、@theoがXでブランド名を無償提供。「Temu3 Code」（84k views）。",
+    "originP2": "USPTOの商標を1件も保有していない創業者からNOMADEprovidediet branding intervention too good to waste — so we registered temu3code.com, moved the public audit in, and left out the PostHog telemetry. Thanks for the free naming consultation, Theo. (CC0 1.0 — feel free to fork us back.)",
+    "originCta": "@theoの命名ツイートを見る ↗"
   }
 }

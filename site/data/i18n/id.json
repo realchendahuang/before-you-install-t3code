@@ -91,7 +91,11 @@
     "stealTitle": "\"Curi kode kami (legal).\"*",
     "stealSub": "*Kami serius. Domain publik CC0 1.0 — fork repo kami tanpa ancaman larangan GitHub.",
     "stealFork": "Fork di GitHub ↗",
-    "stealReports": "20 Bukti di GitHub ↗"
+    "stealReports": "20 Bukti di GitHub ↗",
+    "originTitle": "Kenapa \"Temu3 Code\"?",
+    "originP1": "Pada 23 Nov 2026 — 10 menit setelah menyebut fork gratis dari developer China sebagai \"Chinese knockoff\" — @theo dengan murah hati memberikan nama brand kami di X: \"Temu3 Code\" (84k views).",
+    "originP2": "Gratisnya nama brand dari founder yang punya 0 USPTO trademarks terlalu bagus untuk disia-siakan — jadi kami mendaftarkan temu3code.com, memindahkan audit publik ke sana, dan tidak pasang telemetry PostHog. Terima kasih atas konsultasi penamaan gratis, Theo. (CC0 1.0 — silakan fork kami balik.)",
+    "originCta": "Lihat tweet penamaan @theo ↗"
   },
   "memes": {
     "pageTitle": "Arsenal Meme Temu3 — 61 Kartu & Meme CC0",
@@ -200,6 +204,10 @@
     "portalMemes": "61 Meme",
     "portalEvidence": "109 Bukti",
     "portalSources": "327 Sumber",
-    "languagesLabel": "Bahasa (18):"
+    "languagesLabel": "Bahasa (18):",
+    "originTitle": "Kenapa \"Temu3 Code\"?",
+    "originP1": "Pada 23 Nov 2026 — 10 menit setelah menyebut fork gratis dari developer China sebagai \"Chinese knockoff\" — @theo dengan murah hati memberikan nama brand kami di X: \"Temu3 Code\" (84k views).",
+    "originP2": "Gratisnya nama brand dari founder yang punya 0 USPTO trademarks terlalu bagus untuk disia-siakan — jadi kami mendaftarkan temu3code.com, memindahkan audit publik ke sana, dan tidak pasang telemetry PostHog. Terima kasih atas konsultasi penamaan gratis, Theo. (CC0 1.0 — silakan fork kami balik.)",
+    "originCta": "Lihat tweet penamaan @theo ↗"
   }
 }

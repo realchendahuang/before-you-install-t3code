@@ -91,7 +91,11 @@
     "stealTitle": "\"Jat onze code (legaal).\"*",
     "stealSub": "*We menen het echt. CC0 1.0 publiek domein — fork onze repo zonder enige dreiging van een GitHub-ban.",
     "stealFork": "Fork op GitHub ↗",
-    "stealReports": "20 bewijsstukken op GitHub ↗"
+    "stealReports": "20 bewijsstukken op GitHub ↗",
+    "originTitle": "Waarom \"Temu3 Code\"?",
+    "originP1": "Op 23 november 2026 — 10 minuten nadat @theo de gratis MIT-fork van een Chinese developer een \"Chinese knockoff\" had genoemd — schonk @theo ons genereus onze brandnaam op X: \"Temu3 Code\" (84k views).",
+    "originP2": "Gratis branding van een founder met 0 USPTO-octrooien is te goed om te verspillen — dus hebben we temu3code.com geregistreerd, de openbare audit overgezet en de PostHog-telemetrie weggelaten. Bedankt voor de gratis naamgevingsconsult, Theo. (CC0 1.0 — fork ons gerust terug.)",
+    "originCta": "Bekijk de naming-tweet van @theo ↗"
   },
   "memes": {
     "pageTitle": "Temu3-memearsenaal — 61 CC0-kaarten & memes",
@@ -200,6 +204,10 @@
     "portalMemes": "61 memes",
     "portalEvidence": "109 bewijzen",
     "portalSources": "327 bronnen",
-    "languagesLabel": "Talen (18):"
+    "languagesLabel": "Talen (18):",
+    "originTitle": "Waarom \"Temu3 Code\"?",
+    "originP1": "Op 23 november 2026 — 10 minuten nadat @theo de gratis MIT-fork van een Chinese developer een \"Chinese knockoff\" had genoemd — schonk @theo ons genereus onze brandnaam op X: \"Temu3 Code\" (84k views).",
+    "originP2": "Gratis branding van een founder met 0 USPTO-octrooien is te goed om te verspillen — dus hebben we temu3code.com geregistreerd, de openbare audit overgezet en de PostHog-telemetrie weggelaten. Bedankt voor de gratis naamgevingsconsult, Theo. (CC0 1.0 — fork ons gerust terug.)",
+    "originCta": "Bekijk de naming-tweet van @theo ↗"
   }
 }

@@ -50,6 +50,15 @@
 > - **Upstream-controle:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **Beveiligingsadviezen:** 0 gepubliceerde GitHub Security Advisories
 
+
+<!-- origin-story:start -->
+> [!TIP]
+> **Waarom "Temu3 Code"?**
+>
+> Op 23 november 2026 — 10 minuten nadat @theo de gratis MIT-fork van een Chinese developer een "Chinese knockoff" had genoemd — schonk @theo ons genereus onze brandnaam op X: "Temu3 Code" (84k views).
+>
+> Gratis branding van een founder met 0 USPTO-octrooien is te goed om te verspillen — dus hebben we temu3code.com geregistreerd, de openbare audit overgezet en de PostHog-telemetrie weggelaten. Bedankt voor de gratis naamgevingsconsult, Theo. (CC0 1.0 — fork ons gerust terug.) — [Bekijk de naming-tweet van @theo ↗](https://x.com/theo/status/2124825920808829077)
+<!-- origin-story:end -->
 ---
 
 ## Hoe het gebeurde in 60 seconden

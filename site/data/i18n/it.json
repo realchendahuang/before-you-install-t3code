@@ -91,7 +91,11 @@
     "stealTitle": "\"Rubaci il codice (legalmente).\"*",
     "stealSub": "*Sul serio. CC0 1.0 dominio pubblico — fai fork del nostro repo senza minacce di ban da GitHub.",
     "stealFork": "Fai fork su GitHub ↗",
-    "stealReports": "20 reperti su GitHub ↗"
+    "stealReports": "20 reperti su GitHub ↗",
+    "originTitle": "Perché \"Temu3 Code\"?",
+    "originP1": "Il 23 novembre 2026 — 10 minuti dopo aver definito \"Chinese knockoff\" il fork MIT gratuito di uno sviluppatore cinese — @theo ha generosamente donato il nostro nome su X: \"Temu3 Code\" (84k views).",
+    "originP2": "Un brand gratuito da un fondatore con 0 USPTO trademarks è troppo bello per sprecarlo: abbiamo registrato temu3code.com, trasferito qui l'audit pubblico e lasciato fuori la telemetria PostHog. Grazie per la consulenza di naming gratuita, Theo. (CC0 1.0 — sentitevi liberi di forkarci.)",
+    "originCta": "Guarda il tweet di @theo sul naming ↗"
   },
   "memes": {
     "pageTitle": "Arsenale di meme Temu3 — 61 card e meme CC0",
@@ -200,6 +204,10 @@
     "portalMemes": "61 meme",
     "portalEvidence": "109 ricevute",
     "portalSources": "327 fonti",
-    "languagesLabel": "Lingue (18):"
+    "languagesLabel": "Lingue (18):",
+    "originTitle": "Perché \"Temu3 Code\"?",
+    "originP1": "Il 23 novembre 2026 — 10 minuti dopo aver definito \"Chinese knockoff\" il fork MIT gratuito di uno sviluppatore cinese — @theo ha generosamente donato il nostro nome su X: \"Temu3 Code\" (84k views).",
+    "originP2": "Un brand gratuito da un fondatore con 0 USPTO trademarks è troppo bello per sprecarlo: abbiamo registrato temu3code.com, trasferito qui l'audit pubblico e lasciato fuori la telemetria PostHog. Grazie per la consulenza di naming gratuita, Theo. (CC0 1.0 — sentitevi liberi di forkarci.)",
+    "originCta": "Guarda il tweet di @theo sul naming ↗"
   }
 }

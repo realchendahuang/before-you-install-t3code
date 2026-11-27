@@ -91,7 +91,11 @@
     "stealTitle": "\"Lấy mã của chúng tôi (hợp pháp).\"*",
     "stealSub": "*Chúng tôi nói thật. CC0 1.0 phạm vi công cộng — fork repo của chúng tôi, không sợ bị GitHub ban.",
     "stealFork": "Fork trên GitHub ↗",
-    "stealReports": "20 vật chứng trên GitHub ↗"
+    "stealReports": "20 vật chứng trên GitHub ↗",
+    "originTitle": "Vì sao là \"Temu3 Code\"?",
+    "originP1": "Ngày 23/11/2026 — 10 phút sau khi gọi bản fork MIT miễn phí của một nhà phát triển Trung Quốc là \"Chinese knockoff\" — @theo hào phóng tặng tên thương hiệu của chúng tôi trên X: \"Temu3 Code\" (84k lượt xem).",
+    "originP2": "Thương hiệu miễn phí từ một nhà sáng lập chưa đăng ký bất kỳ nhãn hiệu nào với USPTO thì quá tốt để bỏ phí — nên chúng tôi đã đăng ký temu3code.com, đưa toàn bộ public audit vào và bỏ luôn telemetry PostHog. Cảm ơn buổi tư vấn đặt tên miễn phí, Theo. (CC0 1.0 — muốn thì cứ fork ngược lại chúng tôi.)",
+    "originCta": "Xem tweet đặt tên của @theo ↗"
   },
   "memes": {
     "pageTitle": "Kho meme Temu3 — 61 thẻ CC0 & meme",
@@ -200,6 +204,10 @@
     "portalMemes": "61 meme",
     "portalEvidence": "109 bằng chứng",
     "portalSources": "327 nguồn",
-    "languagesLabel": "Ngôn ngữ (18):"
+    "languagesLabel": "Ngôn ngữ (18):",
+    "originTitle": "Vì sao là \"Temu3 Code\"?",
+    "originP1": "Ngày 23/11/2026 — 10 phút sau khi gọi bản fork MIT miễn phí của một nhà phát triển Trung Quốc là \"Chinese knockoff\" — @theo hào phóng tặng tên thương hiệu của chúng tôi trên X: \"Temu3 Code\" (84k lượt xem).",
+    "originP2": "Thương hiệu miễn phí từ một nhà sáng lập chưa đăng ký bất kỳ nhãn hiệu nào với USPTO thì quá tốt để bỏ phí — nên chúng tôi đã đăng ký temu3code.com, đưa toàn bộ public audit vào và bỏ luôn telemetry PostHog. Cảm ơn buổi tư vấn đặt tên miễn phí, Theo. (CC0 1.0 — muốn thì cứ fork ngược lại chúng tôi.)",
+    "originCta": "Xem tweet đặt tên của @theo ↗"
   }
 }

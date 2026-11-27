@@ -91,7 +91,11 @@
     "stealTitle": "\"우리 코드를 훔쳐가세요 (합법적으로).\"*",
     "stealSub": "*진심입니다. CC0 1.0 퍼블릭 도메인 — GitHub 차단 위협 없이 저장소를 포크하세요.",
     "stealFork": "GitHub에서 포크 ↗",
-    "stealReports": "GitHub에서 자료 20건 보기 ↗"
+    "stealReports": "GitHub에서 자료 20건 보기 ↗",
+    "originTitle": "왜 \"Temu3 Code\"인가?",
+    "originP1": "2026년 11월 23일 — 중국 개발자의 무료 MIT 포크를 \"Chinese knockoff\"이라고 발언한 지 정확히 10분 만에, @theo가 X에서 우리의 브랜드명을 관대하게 기증했습니다: \"Temu3 Code\" (8.4만 조회수).",
+    "originP2": "USPTO 출원商标가 0개인 창업자가 무료로 선물을 준 브랜드 이름을 버리기엔 아깝죠. 그래서 temu3code.com을 등록하고 공개 감사를 옮겨 놓았으며, PostHog 텔레메트리는 제외했습니다. 무료 명명 상담, Theo, 감사합니다. (CC0 1.0 — 우리를 다시 포크하셔도 됩니다.)",
+    "originCta": "@theo의 이름 짓기 트윗 보기 ↗"
   },
   "memes": {
     "pageTitle": "Temu3 밈 아senal — CC0 카드 및 밈 61개",
@@ -200,6 +204,10 @@
     "portalMemes": "밈 61개",
     "portalEvidence": "영수증 109건",
     "portalSources": "출처 327개",
-    "languagesLabel": "언어 (18개):"
+    "languagesLabel": "언어 (18개):",
+    "originTitle": "왜 \"Temu3 Code\"인가?",
+    "originP1": "2026년 11월 23일 — 중국 개발자의 무료 MIT 포크를 \"Chinese knockoff\"이라고 발언한 지 정확히 10분 만에, @theo가 X에서 우리의 브랜드명을 관대하게 기증했습니다: \"Temu3 Code\" (8.4만 조회수).",
+    "originP2": "USPTO 출원商标가 0개인 창업자가 무료로 선물을 준 브랜드 이름을 버리기엔 아깝죠. 그래서 temu3code.com을 등록하고 공개 감사를 옮겨 놓았으며, PostHog 텔레메트리는 제외했습니다. 무료 명명 상담, Theo, 감사합니다. (CC0 1.0 — 우리를 다시 포크하셔도 됩니다.)",
+    "originCta": "@theo의 이름 짓기 트윗 보기 ↗"
   }
 }
