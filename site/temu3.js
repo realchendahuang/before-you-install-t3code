@@ -67,6 +67,12 @@
   ];
 
   const I18N = window.Temu3I18n;
+  const INITIAL_SEO = {
+    title: document.title,
+    desc: document.querySelector('meta[name="description"]')?.getAttribute("content") || "",
+    ogTitle: document.querySelector('meta[property="og:title"]')?.getAttribute("content") || "",
+    ogDesc: document.querySelector('meta[property="og:description"]')?.getAttribute("content") || ""
+  };
   let lang = I18N.detectInitialLang();
   let bundle = null;
   let activePreviewIdx = 0;
@@ -340,14 +346,34 @@
     updateLightbox(false);
   }
 
+  function setMetaAttr(selector, val) {
+    const el = document.querySelector(selector);
+    if (el && val) el.setAttribute("content", val);
+  }
+
   async function applyLanguage(nextCode) {
     lang = I18N.normalizeLang(nextCode) || "en";
     I18N.applyDirection(lang);
     bundle = await I18N.loadBundle(lang, "./data/");
     if (!bundle) return;
 
-    const pt = t("home.pageTitle");
-    if (pt) document.title = pt;
+    if (lang === "en") {
+      document.title = INITIAL_SEO.title;
+      setMetaAttr('meta[name="description"]', INITIAL_SEO.desc);
+      setMetaAttr('meta[property="og:title"]', INITIAL_SEO.ogTitle);
+      setMetaAttr('meta[property="og:description"]', INITIAL_SEO.ogDesc);
+    } else {
+      const pt = t("home.pageTitle");
+      const pd = t("home.heroSub");
+      if (pt) {
+        document.title = pt;
+        setMetaAttr('meta[property="og:title"]', pt);
+      }
+      if (pd) {
+        setMetaAttr('meta[name="description"]', pd);
+        setMetaAttr('meta[property="og:description"]', pd);
+      }
+    }
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const v = t(el.getAttribute("data-i18n"));

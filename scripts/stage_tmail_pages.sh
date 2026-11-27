@@ -28,6 +28,12 @@ cat > "$OUT_DIR/_headers" <<'EOF'
   Cache-Control: public, max-age=86400, s-maxage=604800
 /data/*
   Cache-Control: public, max-age=300, s-maxage=3600
+/robots.txt
+  Cache-Control: public, max-age=3600
+/sitemap.xml
+  Cache-Control: public, max-age=3600
+/site.webmanifest
+  Cache-Control: public, max-age=3600
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer

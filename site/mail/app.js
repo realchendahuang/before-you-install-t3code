@@ -193,6 +193,12 @@
   ];
 
   const SHARED_I18N = window.Temu3I18n;
+  const INITIAL_SEO = {
+    title: document.title,
+    desc: document.querySelector('meta[name="description"]')?.getAttribute("content") || "",
+    ogTitle: document.querySelector('meta[property="og:title"]')?.getAttribute("content") || "",
+    ogDesc: document.querySelector('meta[property="og:description"]')?.getAttribute("content") || ""
+  };
   const mailLocaleCache = new Map();
   const state = {
     lang: SHARED_I18N ? SHARED_I18N.detectInitialLang() : "en",
@@ -687,6 +693,37 @@
     return list;
   }
 
+  function setMetaAttr(selector, val) {
+    const el = document.querySelector(selector);
+    if (el && val) el.setAttribute("content", val);
+  }
+
+  function updateMailMeta(title, desc) {
+    if (title) {
+      document.title = title;
+      setMetaAttr('meta[property="og:title"]', title);
+    }
+    if (desc) {
+      setMetaAttr('meta[name="description"]', desc);
+      setMetaAttr('meta[property="og:description"]', desc);
+    }
+  }
+
+  function applyInboxMeta() {
+    if (state.lang === "en") {
+      updateMailMeta(INITIAL_SEO.title, INITIAL_SEO.desc);
+      setMetaAttr('meta[property="og:title"]', INITIAL_SEO.ogTitle);
+      setMetaAttr('meta[property="og:description"]', INITIAL_SEO.ogDesc);
+    } else {
+      const pt = t("pageTitle");
+      const pd = t("aboutBody");
+      updateMailMeta(
+        pt && pt !== "pageTitle" ? pt : INITIAL_SEO.title,
+        pd && pd !== "aboutBody" ? pd : INITIAL_SEO.desc
+      );
+    }
+  }
+
   async function applyI18n(nextCode) {
     const prevLang = state.lang;
     if (nextCode && SHARED_I18N) {
@@ -707,8 +744,7 @@
     state.bundle = bundle;
     state.mailLocale = mailLocale;
 
-    const pt = t("pageTitle");
-    if (pt && pt !== "pageTitle") document.title = pt;
+    if (state.view !== "thread") applyInboxMeta();
 
     $$("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
@@ -1087,6 +1123,7 @@
 
     const lf = locThreadFields(th);
     const subject = lf.subject;
+    updateMailMeta(`${subject} · Tmail`, lf.snippet || INITIAL_SEO.desc);
     const platLabel = th.platform === "Code" ? t("platCode") : th.platform;
     const statusLabel =
       th.status === "open"
@@ -1186,6 +1223,10 @@
           <span class="material-symbols-outlined">style</span>
           <span>${escapeHtml(t("viewMemeCard"))}</span>
         </button>
+        <a class="gmail-reply-btn" href="./t/${encodeURIComponent(th.id)}/${isZh() ? "zh/" : ""}">
+          <span class="material-symbols-outlined">open_in_new</span>
+          <span>HTML</span>
+        </a>
       </div>
     </div>`;
 
@@ -1453,6 +1494,7 @@
     updateCounts();
     renderSidebar();
     updateDockAndPanes();
+    if (state.view !== "thread") applyInboxMeta();
     if (state.view === "inbox") renderEmailList();
     else if (state.view === "thread") renderThreadDetail();
     else if (state.view === "attachments") renderAttachmentsView($("#photosSearchInput").value || "");
