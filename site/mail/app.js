@@ -1075,7 +1075,8 @@
     $("#activityView").hidden = state.view !== "activity";
     $("#driveView").hidden = state.view !== "drive";
     $("#peopleView").hidden = state.view !== "people";
-    $("#overviewBanner").hidden = state.view !== "inbox";
+    const ov = $("#overviewBanner");
+    if (ov) ov.hidden = state.view !== "inbox";
 
     $$(".floating-dock .dock-btn[data-dock]").forEach((btn) => {
       const target = btn.getAttribute("data-dock");
