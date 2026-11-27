@@ -235,7 +235,7 @@
       "to": "Wszyscy użytkownicy T3 Code",
       "dateDisplay": "6 marca 2026",
       "subject": "PR #174 włączył PostHog wbrew obietnicy „No telemetry” („brak telemetrii”)",
-      "snippet": "`Config.withDefault(true)` działało bez okna zgody, bez przełącznika w interfejsie ustawień i bez dokumentacji przez ponad trzy miesiące.",
+      "snippet": "Config.withDefault(true) działało bez okna zgody, bez przełącznika w interfejsie ustawień i bez dokumentacji przez ponad trzy miesiące.",
       "messages": [
         {
           "sender": "Strona główna T3 Code (t3.codes)",
@@ -407,7 +407,7 @@
       "to": "Dane uwierzytelniające w katalogu domowym użytkownika",
       "dateDisplay": "20 paźdz. 2026",
       "subject": "PR #21506 czytał ~/.codex i ~/.claude.json, żeby powiązać maszyny",
-      "snippet": "Napisany przez t3dotgg `Identify.ts` hashował OpenAI JWT user_id i Claude accountUuid niesolonym SHA-256, zapisując wynik jako install.owner_observed.",
+      "snippet": "Napisany przez t3dotgg Identify.ts hashował OpenAI JWT user_id i Claude accountUuid niesolonym SHA-256, zapisując wynik jako install.owner_observed.",
       "messages": [
         {
           "sender": "Theo Browne (@t3dotgg)",

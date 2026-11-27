@@ -32,7 +32,7 @@
   --sidebar-w: 256px;
   --topbar-h: 64px;
   --radius-card: 16px;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Inter", Roboto, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Sans", "Apple SD Gothic Neo", "Geeza Pro", "Inter", Roboto, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
@@ -42,6 +42,18 @@
 
 [hidden] {
   display: none !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 html, body {
@@ -68,6 +80,15 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
 }
 
 .tmail-ico {
@@ -195,10 +216,12 @@ a:hover {
   flex: 1;
   min-width: 0;
   border: none;
-  outline: none;
   background: transparent;
   font-size: 15px;
   color: var(--text-primary);
+}
+.search-input:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .search-input::placeholder {
@@ -213,7 +236,7 @@ a:hover {
 }
 
 .search-chip {
-  height: 28px;
+  min-height: 32px;
   padding: 0 9px;
   border: none;
   border-radius: 14px;
@@ -923,7 +946,7 @@ a:hover {
 }
 
 .tool-btn {
-  height: 32px;
+  min-height: 36px;
   padding: 0 11px;
   border: 1px solid #dadce0;
   border-radius: 8px;
@@ -951,7 +974,7 @@ a:hover {
 
 .select-pill {
   position: relative;
-  height: 32px;
+  min-height: 36px;
   padding: 0 8px 0 9px;
   border: 1px solid #dadce0;
   border-radius: 8px;
@@ -973,13 +996,16 @@ a:hover {
 
 .select-pill select {
   border: none;
-  outline: none;
   background: transparent;
+  min-height: 30px;
   font-size: 12.5px;
   font-weight: 500;
   color: var(--text-primary);
   cursor: pointer;
   padding-inline-end: 4px;
+}
+.select-pill select:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .select-pill-highlight {
@@ -1172,7 +1198,8 @@ a:hover {
 .star-btn {
   border: none;
   background: transparent;
-  padding: 2px 4px;
+  min-height: 30px;
+  padding: 2px 5px;
   border-radius: 6px;
   color: #9aa0a6;
   display: inline-flex;
@@ -1272,6 +1299,15 @@ a:hover {
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: none;
+}
+
+a.row-subject {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+a.row-subject:hover {
+  text-decoration: underline;
 }
 
 .email-row.is-read .row-subject {
@@ -1636,7 +1672,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  padding: 4px 10px;
+  min-height: 32px;
+  padding: 5px 11px;
   border-radius: 999px;
   background: #f1f5fb;
   border: 1px solid #d2e3fc;
@@ -1721,8 +1758,11 @@ a:hover {
   border-radius: 19px;
   border: 1px solid #dadce0;
   background: var(--search-bg);
-  outline: none;
   font-size: 13px;
+}
+
+.subapp-search:focus:not(:focus-visible) {
+  outline: none;
 }
 
 .subapp-search:focus {
@@ -2089,6 +2129,8 @@ a:hover {
 }
 
 .lightbox-title {
+  flex: 1;
+  min-width: 0;
   font-size: 14px;
   font-weight: 600;
   overflow: hidden;
@@ -2100,6 +2142,94 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 8px;
+  flex-shrink: 0;
+}
+
+.lightbox-nav-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.modal-desc {
+  margin-top: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.modal-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.meme-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 12px;
+}
+
+.meme-modal-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+  text-decoration: none !important;
+  color: #202124;
+  background: #ffffff;
+}
+
+.meme-modal-card:hover {
+  border-color: var(--accent-blue);
+}
+
+.meme-modal-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: block;
+}
+
+.meme-modal-title {
+  font-size: 12.5px;
+  line-height: 1.35;
+}
+
+.meme-modal-note {
+  font-size: 11.5px;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.meme-modal-cta {
+  font-size: 11px;
+  color: var(--accent-blue);
+  margin-top: auto;
+}
+
+.timeline-from {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.drive-card-title {
+  font-size: 14px;
+}
+
+.drive-card-desc {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+.drive-card-cta {
+  font-size: 12px;
+  color: var(--accent-blue);
+  font-weight: 600;
+  margin-top: auto;
 }
 
 .lightbox-stage {
@@ -2407,12 +2537,12 @@ a:hover {
   }
 
   .tool-btn, .select-pill {
-    height: 32px;
+    min-height: 36px;
     flex-shrink: 0;
   }
 
   .select-pill select {
-    font-size: 12.5px;
+    font-size: 13px;
   }
 
   .pill-badge-new {
@@ -2539,8 +2669,14 @@ a:hover {
   }
 
   .star-btn {
-    padding: 2px 3px;
+    min-height: 34px;
+    padding: 4px 6px;
     font-size: 11.5px;
+  }
+
+  .source-link-pill {
+    min-height: 36px;
+    padding: 5px 12px;
   }
 
   .star-btn .tmail-ico {
@@ -2716,5 +2852,13 @@ a:hover {
     inset-inline: 12px;
     bottom: max(76px, calc(env(safe-area-inset-bottom) + 68px));
     text-align: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }

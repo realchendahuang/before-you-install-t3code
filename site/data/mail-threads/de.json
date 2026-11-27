@@ -304,7 +304,7 @@
       "to": "Datenschutzbewusste Nutzer",
       "dateDisplay": "23. Juni 2026",
       "subject": "Issue #1397: „Wir werden das Opt-out nicht einfacher machen“",
-      "snippet": "Maintainer @jullerino schloss die Bitte um einen Schalter als `not planned`; Issue #4123, das die gelöschte Zusage zitierte, wurde später zweimal stillschweigend geschlossen.",
+      "snippet": "Maintainer @jullerino schloss die Bitte um einen Schalter als not planned; Issue #4123, das die gelöschte Zusage zitierte, wurde später zweimal stillschweigend geschlossen.",
       "messages": [
         {
           "sender": "T3 Code Nutzer",
@@ -361,7 +361,7 @@
       "to": "T3 Code Maintainer (Issue #15353)",
       "dateDisplay": "3. Oktober 2026",
       "subject": "Auto-Modus führt still und leise git push --force origin main aus",
-      "snippet": "Selbst nachdem Claudes Classifier zweimal blockte und eine menschliche Freigabe anforderte, loggte T3 Code `user_temporary` und ließ 3 Fix-PRs 52+ Tage ungemergt.",
+      "snippet": "Selbst nachdem Claudes Classifier zweimal blockte und eine menschliche Freigabe anforderte, loggte T3 Code user_temporary und ließ 3 Fix-PRs 52+ Tage ungemergt.",
       "messages": [
         {
           "sender": "GitHub Issue #15353",
@@ -407,7 +407,7 @@
       "to": "Zugangsdaten im Nutzer-Home-Verzeichnis",
       "dateDisplay": "20. Okt. 2026",
       "subject": "PR #21506 las ~/.codex & ~/.claude.json, um Rechner zu verknüpfen",
-      "snippet": "Von t3dotgg verfasst: `Identify.ts` hashte OpenAIs JWT-`user_id` und Claude-`accountUuid` per ungesalzenem SHA-256 unter `install.owner_observed`.",
+      "snippet": "Von t3dotgg verfasst: Identify.ts hashte OpenAIs JWT-user_id und Claude-accountUuid per ungesalzenem SHA-256 unter install.owner_observed.",
       "messages": [
         {
           "sender": "Theo Browne (@t3dotgg)",
@@ -797,7 +797,7 @@
       "to": "Google-Antigravity-Abonnenten (Issues #40713 & #41536)",
       "dateDisplay": "22. Nov. 2026",
       "subject": "„Null Risiko“ bei Antigravity-ToS versprochen; frisches $20-Konto in 3 Min. gesperrt",
-      "snippet": "Während die FAQ ToS-Sicherheit versprach und Theo Proxys die Schuld gab, extrahierte der Code OS-Keyring-Tokens, spoofte `v1internal` und fälschte `SSH_CONNECTION`.",
+      "snippet": "Während die FAQ ToS-Sicherheit versprach und Theo Proxys die Schuld gab, extrahierte der Code OS-Keyring-Tokens, spoofte v1internal und fälschte SSH_CONNECTION.",
       "messages": [
         {
           "sender": "T3 Code FAQ & @theo",
@@ -1094,7 +1094,7 @@
       "to": "Alle T3 Code-Installationen (0 Security Advisories)",
       "dateDisplay": "25. November 2026",
       "subject": "0 Security Advisories & 5 aktive Auth-/RCE-Lücken bei ca81b7b9",
-      "snippet": "Selbst nach dem stillen Fix für Path Traversal in PR #39483 liefert HEAD weiterhin Klartext-Cookies für `--lan`, nicht widerrufbare Bearer-Token und RCE über Repo-Hooks.",
+      "snippet": "Selbst nach dem stillen Fix für Path Traversal in PR #39483 liefert HEAD weiterhin Klartext-Cookies für --lan, nicht widerrufbare Bearer-Token und RCE über Repo-Hooks.",
       "messages": [
         {
           "sender": "Unabhängiges Sicherheitsaudit (ca81b7b9)",

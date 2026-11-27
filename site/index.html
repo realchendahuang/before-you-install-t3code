@@ -25,6 +25,7 @@
   <meta name="twitter:image" content="https://temu3code.com/og-card.png" />
   <meta name="twitter:image:alt" content="Temu3 Code public audit banner for pingdotgg/t3code" />
 
+  <link rel="icon" href="./favicon.ico" sizes="32x32" />
   <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
   <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
   <link rel="manifest" href="./site.webmanifest" />
@@ -67,8 +68,10 @@
   <link rel="preconnect" href="https://cdn.temu3code.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
-  <link rel="stylesheet" href="./temu3.css?v=15" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" data-async-font />
+  <link rel="stylesheet" href="./temu3.css?v=16" />
+  <script defer src="./data/i18n.js?v=16"></script>
+  <script defer src="./temu3.js?v=20"></script>
 </head>
 <body>
   <header class="nav-header">
@@ -141,7 +144,7 @@
                 <rect x="3" y="5" width="18" height="14" rx="2" />
                 <path d="m3.5 7 8.5 6 8.5-6" />
               </svg>
-              <span data-i18n="home.ctaMail">Open Tmail Inbox</span>
+              <span data-i18n="home.ctaMail">Open Tmail</span>
             </a>
 
             <a class="hero-ghost-link" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">
@@ -156,29 +159,29 @@
           <div class="app-win-bar">
             <div class="win-brand">
               <span class="win-dot"></span>
-              <strong>Temu3</strong> <span class="muted" data-i18n="home.winTitle">Tmail Preview</span>
+              <strong>Temu3</strong> <span class="muted" data-i18n="home.winTitle">Tmail</span>
             </div>
-            <a class="win-open-pill" href="./mail/" data-i18n="home.winOpen">Open full inbox ↗</a>
+            <a class="win-open-pill" href="./mail/" data-i18n="home.winOpen">Open Tmail ↗</a>
           </div>
 
           <div class="app-win-grid">
             <div class="win-col-left" role="tablist" aria-label="Pinned records">
               <div class="win-list-label" data-i18n="home.winPinned">PINNED</div>
               <button type="button" class="win-thread-item is-active" role="tab" aria-selected="true" data-preview-idx="0">
-                <div class="win-th-top"><span>@theo ↔ @DDdxx666</span><span class="win-th-date">2026-11</span></div>
+                <div class="win-th-top"><span><bdi dir="ltr">@theo</bdi> ↔ <bdi dir="ltr">@DDdxx666</bdi></span><span class="win-th-date">2026-11</span></div>
                 <div class="win-th-sub" data-i18n="home.winT1Sub">"Temu3 Code" &amp; GitHub ban threat</div>
               </button>
               <button type="button" class="win-thread-item" role="tab" aria-selected="false" data-preview-idx="1">
                 <div class="win-th-top"><span>GDPR &amp; Axiom</span><span class="win-th-date">2026-11</span></div>
-                <div class="win-th-sub" data-i18n="home.winT2Sub">2.2M/hr IP logs &amp; git.cwd leak</div>
+                <div class="win-th-sub" data-i18n="home.winT2Sub">2.2M/hr IP logs &amp; folder path leak</div>
               </button>
               <button type="button" class="win-thread-item" role="tab" aria-selected="false" data-preview-idx="2">
-                <div class="win-th-top"><span>@theo ↔ FFmpeg</span><span class="win-th-date">2025-10</span></div>
+                <div class="win-th-top"><span><bdi dir="ltr">@theo</bdi> ↔ FFmpeg</span><span class="win-th-date">2025-10</span></div>
                 <div class="win-th-sub" data-i18n="home.winT3Sub">$20k FFmpeg bounty (deleted)</div>
               </button>
               <button type="button" class="win-thread-item" role="tab" aria-selected="false" data-preview-idx="3">
                 <div class="win-th-top"><span>ca81b7b9</span><span class="win-th-date">2026-11</span></div>
-                <div class="win-th-sub" data-i18n="home.winT4Sub">0 Advisories · 5 active ca81b7b9 flaws</div>
+                <div class="win-th-sub" data-i18n="home.winT4Sub">0 security advisories · 5 open bugs</div>
               </button>
             </div>
 
@@ -190,13 +193,13 @@
             </div>
 
             <div class="win-col-right">
-              <div class="win-list-label" data-i18n="home.winMetrics">VERIFIED</div>
+              <div class="win-list-label" data-i18n="home.winMetrics">BY THE NUMBERS</div>
               <div class="win-stats-grid">
                 <div class="win-stat-row"><span class="muted" data-i18n="home.mAdvisories">Security Advisories</span><span class="txt-red" data-i18n="home.mAdvisoriesVal">0</span></div>
-                <div class="win-stat-row"><span class="muted" data-i18n="home.mUspto">USPTO Trademarks</span><span class="txt-red" data-i18n="home.mUsptoVal">0</span></div>
+                <div class="win-stat-row"><span class="muted" data-i18n="home.mUspto">US Trademarks</span><span class="txt-red" data-i18n="home.mUsptoVal">0</span></div>
                 <div class="win-stat-row"><span class="muted" data-i18n="home.mHostility">VIP vs. Crisis Insults</span><span class="txt-amber" data-i18n="home.mHostilityVal">0% vs 14.4%</span></div>
                 <div class="win-stat-row"><span class="muted" data-i18n="home.mAxiom">Axiom IP Logs</span><span class="txt-red" data-i18n="home.mAxiomVal">2.2M / hr</span></div>
-                <div class="win-stat-row"><span class="muted" data-i18n="home.mOptOut">Settings Opt-Out UI</span><span class="txt-red" data-i18n="home.mOptOutVal">0 toggles</span></div>
+                <div class="win-stat-row"><span class="muted" data-i18n="home.mOptOut">Settings Opt-Out</span><span class="txt-red" data-i18n="home.mOptOutVal">0 toggles</span></div>
               </div>
             </div>
           </div>
@@ -214,15 +217,15 @@
               On Nov 23, 2026, ten minutes after calling a Chinese developer's free MIT fork a "Chinese knockoff," @theo gave us the name on X: "Temu3 Code" (84k views).
             </p>
             <p class="origin-p origin-p-muted" data-i18n="home.originP2">
-              A founder with zero USPTO trademarks handing out free branding is hard to turn down. We registered temu3code.com, put the public audit here, and left out PostHog. Thanks for the name, Theo. Everything here is CC0 1.0, so fork away.
+              When a founder with zero US trademarks hands you a free name, you take it. We registered temu3code.com, put all the public records here, and left out PostHog. Thanks for the name, Theo. Everything here is CC0 1.0, so fork away.
             </p>
             <a class="origin-link" href="https://x.com/theo/status/2124825920808829077" target="_blank" rel="noopener noreferrer" data-i18n="home.originCta">
-              View @theo's naming post ↗
+              See @theo's post ↗
             </a>
           </div>
 
           <a class="origin-shot" href="https://x.com/theo/status/2124825920808829077" target="_blank" rel="noopener noreferrer" aria-label="Original Temu3 Code tweet by @theo">
-            <img src="./receipts/x-2124825920808829077-temu3-code.webp" alt="@theo: Temu3 Code (Nov 23, 2026)" loading="lazy" />
+            <img src="./receipts/x-2124825920808829077-temu3-code.webp" alt="@theo: Temu3 Code (Nov 23, 2026)" width="610" height="372" loading="lazy" decoding="async" />
           </a>
         </div>
       </div>
@@ -232,12 +235,12 @@
     <section id="x-receipts" class="sec-x-receipts" aria-labelledby="xReceiptsTitle">
       <div class="container">
         <div class="sec-head-row">
-          <h2 id="xReceiptsTitle" class="sec-h2" data-i18n="home.xrTitle">Original X Screenshots</h2>
+          <h2 id="xReceiptsTitle" class="sec-h2" data-i18n="home.xrTitle">Original X Posts</h2>
           <div class="xr-filters" role="tablist">
             <button type="button" class="xr-filter is-active" data-xr-filter="all" data-i18n="home.xrFilterAll">All</button>
             <button type="button" class="xr-filter" data-xr-filter="origin" data-i18n="home.xrFilterOrigin">Fork &amp; Temu3</button>
             <button type="button" class="xr-filter" data-xr-filter="double-standard" data-i18n="home.xrFilterDouble">Double Standard</button>
-            <button type="button" class="xr-filter" data-xr-filter="hostility" data-i18n="home.xrFilterHostility">Hostility</button>
+            <button type="button" class="xr-filter" data-xr-filter="hostility" data-i18n="home.xrFilterHostility">Insults</button>
           </div>
         </div>
 
@@ -252,33 +255,33 @@
         <div class="facts-grid">
           <a class="fact-card" href="./mail/?thread=2026-03-06-pr174-default-telemetry">
             <span class="fact-stat txt-amber" data-i18n="home.f1Stat">PR #174</span>
-            <strong class="fact-title" data-i18n="home.f1Title">Default-on PostHog &amp; ~/.claude.json</strong>
-            <p class="fact-desc" data-i18n="home.f1Desc">Shipped telemetry default(true) and hashed external credentials while promising "No telemetry."</p>
+            <strong class="fact-title" data-i18n="home.f1Title">Default PostHog &amp; ~/.claude.json</strong>
+            <p class="fact-desc" data-i18n="home.f1Desc">Turned tracking on by default and hashed other tools' login files while promising "No telemetry."</p>
           </a>
           <a class="fact-card" href="./mail/?thread=2026-11-25-gdpr-overnight-collapse">
             <span class="fact-stat txt-red" data-i18n="home.f2Stat">2.2M / hr</span>
-            <strong class="fact-title" data-i18n="home.f2Title">Axiom IP &amp; git.cwd Leaks</strong>
-            <p class="fact-desc" data-i18n="home.f2Desc">Overnight GDPR patches exposed 30-day IP-tagged relay spans and absolute workspace paths.</p>
+            <strong class="fact-title" data-i18n="home.f2Title">Axiom IP &amp; Folder Path Leaks</strong>
+            <p class="fact-desc" data-i18n="home.f2Desc">Overnight fixes revealed 30-day IP logs in Axiom and full local folder paths (git.cwd).</p>
           </a>
           <a class="fact-card" href="./mail/?thread=2026-10-03-issue15353-force-push">
             <span class="fact-stat txt-red" data-i18n="home.f3Stat">52+ Days</span>
             <strong class="fact-title" data-i18n="home.f3Title">Silent git push --force</strong>
-            <p class="fact-desc" data-i18n="home.f3Desc">Issue #15353 sat open for 52+ days, while a model privacy filter was stripped in 21 hours.</p>
+            <p class="fact-desc" data-i18n="home.f3Desc">Issue #15353 sat open 52+ days, while a model privacy filter was removed in 21 hours.</p>
           </a>
           <a class="fact-card" href="./mail/?thread=2026-10-28-fake-delete-process-spy">
             <span class="fact-stat txt-amber" data-i18n="home.f4Stat">41.6 GB</span>
-            <strong class="fact-title" data-i18n="home.f4Title">Fake SQLite Delete &amp; Process Scanner</strong>
-            <p class="fact-desc" data-i18n="home.f4Desc">"Permanently delete" kept full history on disk, and a Rust task scanned all OS processes every 5s.</p>
+            <strong class="fact-title" data-i18n="home.f4Title">Fake Delete &amp; Process Scanner</strong>
+            <p class="fact-desc" data-i18n="home.f4Desc">"Permanently delete" left chats on disk, and a background task scanned every running process every 5s.</p>
           </a>
           <a class="fact-card" href="./mail/?thread=2026-11-22-antigravity-spoof-3min-ban">
             <span class="fact-stat txt-blue" data-i18n="home.f5Stat">3 Min</span>
             <strong class="fact-title" data-i18n="home.f5Title">Antigravity Header Spoofing Bans</strong>
-            <p class="fact-desc" data-i18n="home.f5Desc">Spoofed internal Google headers against v1internal, triggering rapid personal account bans.</p>
+            <p class="fact-desc" data-i18n="home.f5Desc">Faked internal Google headers against v1internal, getting fresh personal accounts banned in minutes.</p>
           </a>
           <a class="fact-card" href="./mail/?thread=2026-11-25-ca81b7b9-active-vulns">
             <span class="fact-stat txt-red" data-i18n="home.f6Stat">0 Advisories</span>
-            <strong class="fact-title" data-i18n="home.f6Title">5 Active ca81b7b9 Security Flaws</strong>
-            <p class="fact-desc" data-i18n="home.f6Desc">Plaintext 30-day --lan shell cookies, unrevocable Bearer tokens, and untrusted SSH_AUTH_SOCK.</p>
+            <strong class="fact-title" data-i18n="home.f6Title">5 Open Security Bugs in ca81b7b9</strong>
+            <p class="fact-desc" data-i18n="home.f6Desc">Plaintext 30-day --lan shell cookies, Bearer tokens you can't revoke, and exposed SSH_AUTH_SOCK.</p>
           </a>
         </div>
       </div>
@@ -289,10 +292,10 @@
       <div class="container">
         <div class="story-spot-card">
           <div class="story-spot-copy">
-            <span class="story-spot-kicker" data-i18n="home.storyKicker">BILINGUAL COMIC · PODCAST (EN/中文) · STICKER PACK</span>
+            <span class="story-spot-kicker" data-i18n="home.storyKicker">18-LANGUAGE COMIC · PODCAST · STICKER PACK</span>
             <h2 id="storySpotTitle" class="story-spot-h2" data-i18n="home.storyTitle">The 96 Hours After One Block</h2>
             <p class="story-spot-p" data-i18n="home.storySub">
-              Follow the 96-hour timeline in a bilingual comic with a NotebookLM audio podcast, plus a free transparent sticker pack for Discord, Slack, Telegram, and WeChat.
+              Follow the 96-hour timeline in an 18-language comic with native NotebookLM podcasts, plus a free transparent sticker pack for Discord, Slack, Telegram, and WeChat.
             </p>
             <div class="story-spot-actions">
               <a class="btn-cobalt btn-spot" href="./story/">
@@ -304,10 +307,10 @@
                 <span data-i18n="home.storyZipBtn">Download Sticker Pack</span>
               </a>
             </div>
-            <div class="story-spot-hint" data-i18n="home.storyZipHint">CC0 1.0 · English &amp; 简体中文 · Zero telemetry</div>
+            <div class="story-spot-hint" data-i18n="home.storyZipHint">CC0 1.0 · 18 languages · Zero telemetry</div>
           </div>
           <a class="story-spot-preview" href="./story/" aria-label="Open Story Comic">
-            <img id="homeStoryCoverImg" src="https://cdn.temu3code.com/memes/story/en/ep01_11_hours_apart.webp" alt="Ep. 1 · 11 Hours Apart" loading="lazy" />
+            <img id="homeStoryCoverImg" src="https://cdn.temu3code.com/memes/story/en/ep01_11_hours_apart.webp" alt="Ep. 1 · 11 Hours Apart" width="1024" height="1536" loading="lazy" decoding="async" />
             <span class="story-spot-pill" data-i18n="home.storyEpPill">Ep. 1 → Ep. 8</span>
           </a>
         </div>
@@ -337,7 +340,7 @@
     <section id="open" class="sec-open">
       <div class="container">
         <h2 class="sec-h2 center" data-i18n="home.stealTitle">"Steal our code (legally)."*</h2>
-        <p class="sec-lead center" data-i18n="home.stealSub">*Unlike T3 Code, we mean it. Everything here is CC0 1.0 public domain. Fork it with zero takedown threats.</p>
+        <p class="sec-lead center" data-i18n="home.stealSub">*We actually mean it. Everything here is CC0 1.0. Fork it without getting threatened.</p>
 
         <div class="term-card">
           <pre class="term-body"><span class="t-dim">$</span> gh repo fork pingdotgg/t3code
@@ -357,7 +360,7 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <span data-i18n="common.footer">CC0 1.0 · Independent public archive · Not affiliated with T3 Tools Inc.</span>
+      <span data-i18n="common.footer">CC0 1.0 · Public archive · Not affiliated with T3 Tools Inc.</span>
       <div class="footer-links">
         <a href="./story/" data-i18n="common.navStory">Story Comic</a>
         <a href="./memes/" data-i18n="common.navMemes">Memes</a>
@@ -394,7 +397,7 @@
           </div>
           <div class="xr-lb-actions">
             <button type="button" id="lbCopyPngBtn" class="xr-btn xr-btn-copy" data-i18n="home.mmCopyPng">Copy PNG</button>
-            <button type="button" id="lbDrawAgainBtn" class="xr-btn xr-btn-gold" hidden>🎲 <span data-i18n="home.mmDrawAgain">Draw Another</span></button>
+            <button type="button" id="lbDrawAgainBtn" class="xr-btn xr-btn-gold" hidden>🎲 <span data-i18n="home.mmDrawAgain">Draw Again</span></button>
             <a id="lbXLink" class="xr-btn xr-btn-x" href="#" target="_blank" rel="noopener noreferrer">Original post ↗</a>
             <a id="lbMailLink" class="xr-btn" href="#">Tmail →</a>
             <a id="lbRawLink" class="xr-btn" href="#" target="_blank" rel="noopener noreferrer">Full image ↗</a>
@@ -405,8 +408,5 @@
   </div>
 
   <div id="homeToast" class="toast" role="status" aria-live="polite" hidden></div>
-
-  <script src="./data/i18n.js?v=15"></script>
-  <script src="./temu3.js?v=19"></script>
 </body>
 </html>

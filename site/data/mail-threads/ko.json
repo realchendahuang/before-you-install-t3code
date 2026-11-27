@@ -235,7 +235,7 @@
       "to": "T3 Code 전체 사용자",
       "dateDisplay": "Mar 6, 2026",
       "subject": "PR #174, \"텔레메트리 없음\" 공언 깨고 PostHog 켰다",
-      "snippet": "`Config.withDefault(true)`가 동의 창도, 설정 UI 토글도, 문서도 없이 3개월 넘게 돌아갔다.",
+      "snippet": "Config.withDefault(true)가 동의 창도, 설정 UI 토글도, 문서도 없이 3개월 넘게 돌아갔다.",
       "messages": [
         {
           "sender": "T3 Code 홈페이지 (t3.codes)",
@@ -258,7 +258,7 @@
       "to": "공개 타임라인",
       "dateDisplay": "2026년 4월 25일",
       "subject": "VC 앞에서 가짜 스타를 비난하더니, 30초 유휴 스타 요청을 추가했다",
-      "snippet": "스타 파밍을 조롱한 지 6개월 뒤, 그는 PR #29922를 직접 셀프 머지해 `pingdotgg/t3code`를 3만 개에서 7만 7천 개로 키웠다. 그동안 watchers는 ~129에 머물렀다.",
+      "snippet": "스타 파밍을 조롱한 지 6개월 뒤, 그는 PR #29922를 직접 셀프 머지해 pingdotgg/t3code를 3만 개에서 7만 7천 개로 키웠다. 그동안 watchers는 ~129에 머물렀다.",
       "messages": [
         {
           "sender": "Theo Browne (@theo)",

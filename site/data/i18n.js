@@ -25,6 +25,82 @@
   const VALID_CODES = new Set(LANGUAGES.map((l) => l.code));
   const cache = new Map();
   const inFlight = new Map();
+  const memesCache = new Map();
+  const memesInFlight = new Map();
+
+  function activateAsyncFonts() {
+    document.querySelectorAll("link[data-async-font]").forEach((l) => {
+      if (l.media !== "print") return;
+      const enable = () => {
+        if (l.media === "print") l.media = "all";
+      };
+      if (l.sheet) {
+        enable();
+      } else {
+        l.addEventListener("load", enable, { once: true });
+        l.addEventListener("error", enable, { once: true });
+        if (document.readyState === "complete") {
+          enable();
+        } else {
+          window.addEventListener("load", enable, { once: true });
+        }
+      }
+    });
+  }
+  activateAsyncFonts();
+
+  function escapeHtml(str) {
+    return String(str || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function isolateHandlesHtml(escaped) {
+    return String(escaped || "").replace(/(^|[^A-Za-z0-9_.])(@[A-Za-z0-9_]+)/g, '$1<bdi dir="ltr">$2</bdi>');
+  }
+
+  function escapeBidi(str) {
+    return isolateHandlesHtml(escapeHtml(str));
+  }
+
+  function pickMemeText(item, langCode, overlay) {
+    if (!item) return { title: "", note: "" };
+    const code = normalizeLang(langCode) || "en";
+    if (code === "zh-CN") {
+      return { title: item.titleZh || item.titleEn || "", note: item.noteZh || item.noteEn || "" };
+    }
+    const ov = overlay && overlay[item.id];
+    if (code === "zh-TW") {
+      return {
+        title: (ov && ov.title) || item.titleZh || item.titleEn || "",
+        note: (ov && ov.note) || item.noteZh || item.noteEn || ""
+      };
+    }
+    return {
+      title: (ov && ov.title) || item.titleEn || "",
+      note: (ov && ov.note) || item.noteEn || ""
+    };
+  }
+
+  function trapFocus(dialogEl, e) {
+    if (!dialogEl || e.key !== "Tab") return;
+    const focusables = Array.from(
+      dialogEl.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])')
+    ).filter((el) => !el.hidden && el.offsetParent !== null);
+    if (!focusables.length) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && (document.activeElement === first || !dialogEl.contains(document.activeElement))) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
 
   function normalizeLang(raw) {
     if (!raw) return null;
@@ -89,7 +165,7 @@
     const pending = (async () => {
       try {
         const [res, enObj] = await Promise.all([
-          fetch(`${base}i18n/${norm}.json?v=13`),
+          fetch(`${base}i18n/${norm}.json?v=14`),
           norm !== "en" ? loadBundle("en", base) : Promise.resolve(null)
         ]);
         if (!res.ok) throw new Error("fetch failed");
@@ -107,6 +183,32 @@
       }
     })();
     inFlight.set(key, pending);
+    return pending;
+  }
+
+  async function loadMemesOverlay(code, dataBase) {
+    const norm = normalizeLang(code) || "en";
+    if (norm === "en" || norm === "zh-CN") return null;
+    const base = dataBase.endsWith("/") ? dataBase : dataBase + "/";
+    const key = `${base}::${norm}`;
+    if (memesCache.has(key)) return memesCache.get(key);
+    if (memesInFlight.has(key)) return memesInFlight.get(key);
+    const pending = (async () => {
+      try {
+        const res = await fetch(`${base}memes-i18n/${encodeURIComponent(norm)}.json?v=1`);
+        if (!res.ok) throw new Error("fetch failed");
+        const obj = await res.json();
+        const items = (obj && obj.items && typeof obj.items === "object") ? obj.items : null;
+        memesCache.set(key, items);
+        return items;
+      } catch (_) {
+        memesCache.set(key, null);
+        return null;
+      } finally {
+        memesInFlight.delete(key);
+      }
+    })();
+    memesInFlight.set(key, pending);
     return pending;
   }
 
@@ -161,6 +263,18 @@
       .t3-lang-wrap.is-open .t3-lang-trigger {
         background: rgba(255, 255, 255, 0.09);
         border-color: rgba(255, 255, 255, 0.26);
+      }
+      .t3-lang-trigger:focus-visible {
+        outline: 2px solid #93c5fd;
+        outline-offset: 2px;
+      }
+      .t3-lang-wrap.is-light .t3-lang-trigger:focus-visible {
+        outline: 2px solid #0b57d0;
+        outline-offset: 2px;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .t3-lang-trigger, .t3-lang-chev, .t3-lang-opt { transition: none; }
+        .t3-lang-menu { animation: none; }
       }
       .t3-lang-globe {
         width: 14px;
@@ -456,8 +570,14 @@
     normalizeLang,
     detectInitialLang,
     loadBundle,
+    loadMemesOverlay,
+    pickMemeText,
+    trapFocus,
     getKey,
     fmt,
+    escapeHtml,
+    isolateHandlesHtml,
+    escapeBidi,
     mountLangSelect,
     applyDirection
   };

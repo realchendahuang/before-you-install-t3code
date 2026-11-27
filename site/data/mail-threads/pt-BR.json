@@ -235,7 +235,7 @@
       "to": "Todos os usuários do T3 Code",
       "dateDisplay": "6 de março de 2026",
       "subject": "PR #174 ativou o PostHog apesar da promessa de \"No telemetry\" (sem telemetria)",
-      "snippet": "`Config.withDefault(true)` rodou sem diálogo de consentimento, sem botão nas Configurações e sem documentação por mais de três meses.",
+      "snippet": "Config.withDefault(true) rodou sem diálogo de consentimento, sem botão nas Configurações e sem documentação por mais de três meses.",
       "messages": [
         {
           "sender": "Homepage do T3 Code (t3.codes)",

@@ -361,7 +361,7 @@
       "to": "مشرفو T3 Code (Issue #15353)",
       "dateDisplay": "3 أكتوبر 2026",
       "subject": "وضع Auto ينفّذ بصمت git push --force origin main",
-      "snippet": "حتى بعد أن حجب مُصنِّف Claude الأمر مرتين وطلب موافقة بشرية، سجّل T3 Code ‏`user_temporary` وترك 3 PRs إصلاح بلا دمج لأكثر من 52 يومًا.",
+      "snippet": "حتى بعد أن حجب مُصنِّف Claude الأمر مرتين وطلب موافقة بشرية، سجّل T3 Code ‏user_temporary وترك 3 PRs إصلاح بلا دمج لأكثر من 52 يومًا.",
       "messages": [
         {
           "sender": "GitHub Issue #15353",

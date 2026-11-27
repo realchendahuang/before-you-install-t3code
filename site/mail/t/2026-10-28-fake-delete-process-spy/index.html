@@ -20,6 +20,8 @@
   <meta property="og:title" content="41.6 GB fake SQLite delete &amp; 5-second OS cmdline process scan" />
   <meta property="og:description" content="&quot;Permanently clears&quot; only appended a soft-delete event, while t3-resource-monitor swept 440+ OS processes and full cmdlines every 5s." />
   <meta property="og:image" content="https://temu3code.com/evidence/10-issue17845-fake-delete.png" />
+  <meta property="og:image:width" content="920" />
+  <meta property="og:image:height" content="840" />
   <meta property="article:published_time" content="2026-10-28" />
 
   <meta name="twitter:card" content="summary_large_image" />
@@ -30,10 +32,7 @@
 
   <link rel="icon" type="image/svg+xml" href="../../../favicon.svg" />
   <link rel="apple-touch-icon" href="../../../apple-touch-icon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600&display=swap" />
-  <link rel="stylesheet" href="../thread.css?v=2" />
+  <link rel="stylesheet" href="../thread.css?v=3" />
 
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "41.6 GB fake SQLite delete & 5-second OS cmdline process scan", "description": "\"Permanently clears\" only appended a soft-delete event, while t3-resource-monitor swept 440+ OS processes and full cmdlines every 5s.", "datePublished": "2026-10-28", "dateModified": "2026-10-28", "inLanguage": "en", "image": ["https://temu3code.com/evidence/10-issue17845-fake-delete.png", "https://temu3code.com/evidence/extra/t3code-9-issue-11222-process-spy.png"], "mainEntityOfPage": "https://temu3code.com/mail/t/2026-10-28-fake-delete-process-spy/", "license": "https://creativecommons.org/publicdomain/zero/1.0/", "author": {"@type": "Organization", "name": "Temu3 Code Public Archive", "url": "https://temu3code.com/"}, "publisher": {"@type": "Organization", "name": "Temu3 Code", "url": "https://temu3code.com/", "logo": {"@type": "ImageObject", "url": "https://temu3code.com/apple-touch-icon.png"}}}</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temu3code.com/"}, {"@type": "ListItem", "position": 2, "name": "Tmail", "item": "https://temu3code.com/mail/"}, {"@type": "ListItem", "position": 3, "name": "41.6 GB fake SQLite delete & 5-second OS cmdline process scan", "item": "https://temu3code.com/mail/t/2026-10-28-fake-delete-process-spy/"}]}</script>
@@ -100,7 +99,7 @@
 <p class="msg-p">Users documented two local storage and privacy defects across Issues #17845, #28903, and #11222:</p>
 <ol class="msg-list"><li><strong>Fake permanent delete (#17845):</strong> The confirmation dialog promised &quot;This permanently clears conversation history for this thread&quot;, yet <code>ThreadDeletion.ts</code> only appended a <code>thread.deleted</code> event — bloating <code>statev2.sqlite</code> to 25.9 GB in 3 weeks and 41.6 GB in 6 weeks.</li><li><strong>5-second OS process scan (#11222 &amp; PR #41889):</strong> Native helper <code>t3-resource-monitor</code> ran <code>ProcessesToUpdate::All</code> with <code>with_cmd(UpdateKind::Always)</code> every 5 seconds even when diagnostics were closed, sweeping 440+ unrelated apps and games along with full command lines (which often hold plaintext API keys and passwords).</li></ol>
     </div>
-    <div class="msg-attachments"><figure class="att-fig"><a href="../../../evidence/10-issue17845-fake-delete.png" target="_blank" rel="noopener noreferrer"><img src="../../../evidence/10-issue17845-fake-delete.png" alt="Issue #17845 documenting 41.6 GB fake SQLite deletion" loading="lazy" /></a><figcaption>Issue #17845 documenting 41.6 GB fake SQLite deletion</figcaption></figure><figure class="att-fig"><a href="../../../evidence/extra/t3code-9-issue-11222-process-spy.png" target="_blank" rel="noopener noreferrer"><img src="../../../evidence/extra/t3code-9-issue-11222-process-spy.png" alt="Issue #11222 documenting 5-second full-OS process scanning" loading="lazy" /></a><figcaption>Issue #11222 documenting 5-second full-OS process scanning</figcaption></figure></div>
+    <div class="msg-attachments"><figure class="att-fig"><a href="../../../evidence/10-issue17845-fake-delete.png" target="_blank" rel="noopener noreferrer"><img src="../../../evidence/10-issue17845-fake-delete.png" alt="Issue #17845 documenting 41.6 GB fake SQLite deletion" width="920" height="840" loading="lazy" decoding="async" /></a><figcaption>Issue #17845 documenting 41.6 GB fake SQLite deletion</figcaption></figure><figure class="att-fig"><a href="../../../evidence/extra/t3code-9-issue-11222-process-spy.png" target="_blank" rel="noopener noreferrer"><img src="../../../evidence/extra/t3code-9-issue-11222-process-spy.png" alt="Issue #11222 documenting 5-second full-OS process scanning" width="920" height="840" loading="lazy" decoding="async" /></a><figcaption>Issue #11222 documenting 5-second full-OS process scanning</figcaption></figure></div>
     <div class="msg-links"><a class="source-pill" href="https://github.com/pingdotgg/t3code/issues/17845" target="_blank" rel="noopener noreferrer">↗ Issue #17845</a><a class="source-pill" href="https://github.com/pingdotgg/t3code/issues/11222" target="_blank" rel="noopener noreferrer">↗ Issue #11222</a><a class="source-pill" href="https://github.com/pingdotgg/t3code/pull/41889" target="_blank" rel="noopener noreferrer">↗ PR #41889</a></div>
   </div>
 </article>

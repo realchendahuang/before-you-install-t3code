@@ -149,7 +149,7 @@
       "to": "Мейнтейнеры open-source",
       "dateDisplay": "июнь 2024",
       "subject": "Высмеял автора темы через имя форка и насмехался над интерфейсом DHH",
-      "snippet": "Назвал свой форк темы 2024 года `vsc-material-but-i-wont-sue-you` — за два года до угроз забанить автора MIT-форка.",
+      "snippet": "Назвал свой форк темы 2024 года vsc-material-but-i-wont-sue-you — за два года до угроз забанить автора MIT-форка.",
       "messages": [
         {
           "sender": "Тео Браун (@t3dotgg)",
@@ -235,7 +235,7 @@
       "to": "Все пользователи T3 Code",
       "dateDisplay": "6 марта 2026 г.",
       "subject": "PR #174 включил PostHog вопреки обещанию «без телеметрии»",
-      "snippet": "`Config.withDefault(true)` работал без диалога согласия, без переключателя в интерфейсе настроек и без документации более трёх месяцев.",
+      "snippet": "Config.withDefault(true) работал без диалога согласия, без переключателя в интерфейсе настроек и без документации более трёх месяцев.",
       "messages": [
         {
           "sender": "Домашняя страница T3 Code (t3.codes)",
@@ -407,7 +407,7 @@
       "to": "Учётные данные в домашней директории пользователя",
       "dateDisplay": "20 окт. 2026",
       "subject": "PR #21506 читал ~/.codex и ~/.claude.json, чтобы связывать машины",
-      "snippet": "Автор — t3dotgg. `Identify.ts` хешировал `user_id` из OpenAI JWT и `accountUuid` Claude несолёным SHA-256 под `install.owner_observed`.",
+      "snippet": "Автор — t3dotgg. Identify.ts хешировал user_id из OpenAI JWT и accountUuid Claude несолёным SHA-256 под install.owner_observed.",
       "messages": [
         {
           "sender": "Theo Browne (@t3dotgg)",
@@ -1094,7 +1094,7 @@
       "to": "Все установки T3 Code (0 Security Advisories)",
       "dateDisplay": "25 нояб. 2026",
       "subject": "0 security advisories и 5 живых дыр в аутентификации и RCE на ca81b7b9",
-      "snippet": "Даже после тихого фикса path traversal в PR #39483 в HEAD по-прежнему уходят cookies `--lan` открытым текстом, Bearer-токены не отзываются, а хуки репозитория дают RCE.",
+      "snippet": "Даже после тихого фикса path traversal в PR #39483 в HEAD по-прежнему уходят cookies --lan открытым текстом, Bearer-токены не отзываются, а хуки репозитория дают RCE.",
       "messages": [
         {
           "sender": "Независимый аудит безопасности (ca81b7b9)",

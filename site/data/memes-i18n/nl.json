@@ -1,0 +1,605 @@
+{
+  "lang": "nl",
+  "items": {
+    "sins-sin-01-bigotry-qi": {
+      "title": "Zonde 1 · 歧 · MIT voor mij, niet voor jou",
+      "note": "GitHub-bandreiging 11 minuten na een gratis MIT-fork. Elf uur later kopiëren Amerikaanse labs MIT? Prima."
+    },
+    "sins-sin-02-deceit-qi": {
+      "title": "Zonde 2 · 欺 · 'Punt uit' betekent niks",
+      "note": "Homepage zei 'geen telemetrie, punt uit.' PostHog stond standaard aan en inlogbestanden van andere tools werden gehasht."
+    },
+    "sins-sin-03-gluttony-tun": {
+      "title": "Zonde 3 · 吞 · 41,6 GB aan 'verwijderd'",
+      "note": "'Permanent verwijderen' liet chats achter in een database van 41,6 GB. Een achtergrondtaak somde elke 5 seconden alle lopende processen op."
+    },
+    "sins-sin-04-sloth-dai": {
+      "title": "Zonde 4 · 怠 · 52 dagen vs 21 uur",
+      "note": "Een git push --force-bug stond 52+ dagen open. Een privacyfilter slopen voor zijn leaderboard: 21 uur."
+    },
+    "sins-sin-05-forgery-wei": {
+      "title": "Zonde 5 · 伪 · $20, in 3 minuten verbannen",
+      "note": "FAQ beloofde nul banrisico. De code vervalste Google's interne headers met buitgemaakte keys; een account van $20 was in 3 minuten dood."
+    },
+    "sins-sin-06-exposure-luo": {
+      "title": "Zonde 6 · 裸 · De relay leest je terminal",
+      "note": "T3 Connect beëindigt TLS op zijn eigen machine. Geen E2E, dus je terminalverkeer gaat als platte tekst door hun relay."
+    },
+    "sins-sin-07-envy-du": {
+      "title": "Zonde 7 · 妒 · Investeren, spotten, concurreren",
+      "note": "Investeerde in Vibe Kanban en Daytona, lachte om Vibe Kanbans dood, en verkocht daarna betaalde cloud-sandboxes om Daytona te ondermijnen."
+    },
+    "sins-sin-08-blindness-mang": {
+      "title": "Zonde 8 · 盲 · De docs spreken de opschepperij tegen",
+      "note": "Zei dat corporate Managed Policy alle telemetrie uitzet. T3 Code's eigen docs noemen vier plekken waar data nog steeds weggaat."
+    },
+    "sins-sin-09-greed-tan": {
+      "title": "Zonde 9 · 贪 · 31,7 biljoen tokens per dag",
+      "note": "Standaard aan tracking voedde een live radar van 31,7 biljoen tokens per dag, waarmee hij VC's pitchte en $300k+ aan API-credits binnenhaalde."
+    },
+    "sins-sin-10-arrogance-kuang": {
+      "title": "Zonde 10 · 狂 · YOLO-merges, nul manieren",
+      "note": "Pochte over 500 commits per dag en 'yolo merges', en noemde een gebruiker in Issue #33639 een 'ondankbare klootzak'."
+    },
+    "sins-sin-11-plunder-qie": {
+      "title": "Zonde 11 · 窃 · 'Die pik ik', 30 seconden",
+      "note": "Antwoordde 'Oké, die pik ik' op de fork van een andere dev, en 30 seconden later zei hij tegen @bot dat die haar code in T3 Code moest kopiëren."
+    },
+    "sins-sin-12-mendacity-huang": {
+      "title": "Zonde 12 · 谎 · Weerwoord binnen twee uur",
+      "note": "Ochtendpost: nooit bestandspaden gelogd, opt-outs werkten altijd. Twee uur later zeiden zijn eigen nood-GDPR-patches het tegendeel."
+    },
+    "sins-sin-13-concealment-man": {
+      "title": "Zonde 13 · 瞒 · Security Advisories: nul",
+      "note": "Ernstige beveiligingslekken gepatcht in gewone pull requests. Gepubliceerde GitHub Security Advisories: nul."
+    },
+    "sins-sin-14-servility-chan": {
+      "title": "Zonde 14 · 谄 · 0% naar execs, 14,4% naar jou",
+      "note": "1.151 posts op rij: 0% vloeken naar 20 Big-Tech-execs, 8% naar gewone devs, 14,4% tijdens de meltdown rond de Chinese fork."
+    },
+    "sins-sin-15-fraud-zha": {
+      "title": "Zonde 15 · 诈 · Nul handelsmerken, één TRADEMARK.md",
+      "note": "Dreigde met een GitHub-ban wegens 'merkinbreuk' met nul Amerikaanse handelsmerken op zak. TRADEMARK.md verscheen 17 uur later."
+    },
+    "sins-sin-16-recidivism-guan": {
+      "title": "Zonde 16 · 惯 · Hetzelfde draaiboek, drie jaar",
+      "note": "2024: Indiase dev-kanalen lastiggevallen. 2025: $20k FFmpeg-bounty-stunt. 2026: Chinese tech-Twitter is een beerput. Elk jaar weer."
+    },
+    "sins-sin-17-hypocrisy-jiao": {
+      "title": "Zonde 17 · 矫 · ToS-preek, proxy-Gist",
+      "note": "Hield een preek over de ToS terwijl hij een Gist met 10 proxy-accounts deelde om API-limieten te omzeilen, en stopte YouTube-sponsors in de cloud-relay."
+    },
+    "sins-sin-18-vanity-xu": {
+      "title": "Zonde 18 · 虚 · Sterren zijn nep, behalve de mijne",
+      "note": "April: sterren bestaan om VC's te foppen. November: een popup na 30 seconden idle met lokale credentials duwde 30k sterren naar 77k."
+    },
+    "sins-sin-19-breach-lou": {
+      "title": "Zonde 19 · 漏 · Vijf gaten nog open",
+      "note": "Na nog 259 commits bleven vijf gaten over: 30 dagen platte-tekst LAN-cookies, niet-intrekbare Bearer-tokens, blootgestelde SSH-agents."
+    },
+    "sins-sin-20-coercion-xie": {
+      "title": "Zonde 20 · 胁 · 89 views, HR-klacht",
+      "note": "Een post met 89 views en 0 likes van AWS-engineer @dmfigol kreeg middernacht-DM's: 'Angst is een goede prikkel', en daarna een HR-klacht bij AWS."
+    },
+    "sins-sin-21-impostor-mao": {
+      "title": "Zonde 21 · 冒 · Zich voordoen als Zed",
+      "note": "PR #43026/#43087 geven Google's waarschuwing toe en dat T3 clientInfo spoofde als 'zed'. v0.1.13 begroef beide in '+380 fixes'."
+    },
+    "sins-sin-22-evasion-dun": {
+      "title": "Zonde 22 · 遁 · 16 minuten later: closed source",
+      "note": "'Laatste statement' +16 min: 243 Claude-chats gescand, 19% btw gefactureerd, PR #43889 gekild met 'makkelijker in slophouse'."
+    },
+    "sins-sin-23-sabotage-po": {
+      "title": "Zonde 23 · 破 · Demp de waarschuwing, deel de cookies",
+      "note": "Legde Anthropic's waarschuwing het zwijgen op via process.emitWarning, liet uploadFiles Codex' sandbox overslaan, en liet cookies van 11 browsers ongeïsoleerd."
+    },
+    "sins-sin-24-leak-xie": {
+      "title": "Zonde 24 · 泄 · Je prompt in de URL",
+      "note": "Share-links propten citaten van 8.000 tekens en volledige prompts in platte-tekst-URL's. Issue #29449 in 4m 39s op slot, 0 replies, doc verwijderd."
+    },
+    "blended-00-drake": {
+      "title": "Drake: dubbele standaard van 11 uur",
+      "note": "Chinese dev forkt MIT gratis: bandreiging. Lab van een biljoen dollar kopieert MIT 11 uur later: 'Open source is open source!'"
+    },
+    "blended-00b-woman-yelling-cat": {
+      "title": "Schreeuwt 'Temu3 Code' naar MIT-fork",
+      "note": "Een MIT-gelicenseerde repo forken is legaal. Toch noemde hij haar een 'Temu3 Code'-dief en dreigde met een ban."
+    },
+    "blended-01a-scooby-mask": {
+      "title": "Het 'geen telemetrie'-masker eraf gerukt",
+      "note": "Homepage zei 'Geen telemetrie. Punt.' Achter het masker: PostHog standaard aan, hasht ~/.claude.json."
+    },
+    "blended-01b-expanding-brain": {
+      "title": "Opt-outverzoeken, big brain-editie",
+      "note": "Belooft geen tracking, schrapt de belofte, weigert 4 opt-out-PR's, levert nul schakelaars in Instellingen."
+    },
+    "blended-02a-flex-tape": {
+      "title": "Flex Tape op een delete van 41,6 GB",
+      "note": "'Permanent verwijderen' verstopte threads alleen in de UI. Data bleef in statev2.sqlite tot één schijf 41,6 GB raakte."
+    },
+    "blended-02b-always-has-been": {
+      "title": "Scant elk proces, elke 5 seconden",
+      "note": "Een Rust-watcher op de achtergrond lijstte elke 5 seconden elk draaiend proces plus de volledige commandoregel op. Geen uit-knop."
+    },
+    "blended-03a-sleeping-shaq": {
+      "title": "52 dagen slapen, 21 uur wakker",
+      "note": "Een git push --force-bug bleef 52+ dagen liggen. Een model-privacyfilter op zijn leaderboard werd binnen 21 uur teruggetrokken."
+    },
+    "blended-03b-distracted-bf": {
+      "title": "Privacyfilter eruit, leaderboard erin",
+      "note": "Model-privacywhitelist weggehaald zodat privégebruik slopalytics.com kon voeden."
+    },
+    "blended-04a-trade-offer": {
+      "title": "De Antigravity-accountruil",
+      "note": "Lever je Google-account in, en gespoofte v1internal-headers bezorgen je binnen 3 minuten een ban."
+    },
+    "blended-04b-surprised-pikachu": {
+      "title": "Verraste Pikachu bij een ban van 3 minuten",
+      "note": "Spoofte Google's v1internal-endpoint met nep-headers, en deed dan verbaasd dat nieuwe accounts binnen 3 minuten dood waren."
+    },
+    "blended-05-pawn-stars": {
+      "title": "Beste wat ik kan doen: plaintext-relay",
+      "note": "De relay van T3 Connect termineert TLS op hun eigen servers. Geen end-to-endversleuteling, ondanks de verwachtingen."
+    },
+    "blended-06-laughing-leo": {
+      "title": "Angel investor lacht om een shutdown",
+      "note": "Investeerde in Vibe Kanban en Daytona, spotte publiek met Vibe Kanban's shutdown en pushte daarna een rivaliserende betaalde sandbox."
+    },
+    "blended-07-two-buttons": {
+      "title": "Marketingpraat vs. eigen docs",
+      "note": "'Beleid schakelt alle telemetrie uit' vs. zijn eigen docs die toegeven dat 4 blinde vlekken nog steeds data sturen."
+    },
+    "blended-08a-bernie-asking": {
+      "title": "Vraagt alweer om 31,7 biljoen tokens",
+      "note": "Standaard-aan-telemetrie voedde een radar van 31,7 biljoen tokens per dag die hij pronkte aan investeerders en AI-labs."
+    },
+    "blended-08b-change-my-mind": {
+      "title": "Standaardtelemetrie wás het verdienmodel",
+      "note": "Tracking standaard aan, 4 opt-out-PR's geweigerd, 31,7 biljoen tokens per dag naar een live dashboard. Geen typo."
+    },
+    "blended-09-boardroom-meeting": {
+      "title": "Een opt-out-schakelaar? Geweigerd.",
+      "note": "Bijdragers stuurden geteste PR's voor een telemetrieschakelaar. Maintainers zeiden dat ze opt-out niet makkelijker gingen maken."
+    },
+    "blended-10a-yall-got-any-more": {
+      "title": "Nog meer forks om te jatten?",
+      "note": "Zei 'Oké, dit jat ik' tegen de fork van een dev, en stuurde toen @bot om haar repo te scrapen en de feature over te zetten."
+    },
+    "blended-10b-left-exit-12": {
+      "title": "Keiharde zwieper in 30 seconden",
+      "note": "Dreigde met een ban om een fork, en stuurde 30 seconden later @bot om de fork van een andere dev te scrapen."
+    },
+    "blended-11-train-bus": {
+      "title": "Ochtendthread, twee uur later",
+      "note": "De ochtendthread hield vol dat er geen paden werden gelogd. Twee uur later gaven de nood-PR's van zijn eigen team het toe."
+    },
+    "blended-12a-this-is-fine": {
+      "title": "This Is Fine: 2,2 mln logs per uur",
+      "note": "De eigen patches van de GDPR-brandoefening onthulden 2,2 mln requests met IP per uur in Axiom, 30 dagen bewaard."
+    },
+    "blended-12b-panik-kalm-panik": {
+      "title": "Panik / Kalm / GDPR-panik",
+      "note": "Zes uur nachtpatchen om het GDPR-rapport te sussen, en de patches legden nog grotere lekken bloot."
+    },
+    "blended-13-hide-the-pain": {
+      "title": "Hide the Pain: 0 advisories",
+      "note": "Ernstige kwetsbaarheden stil gepatcht in routinematige commits. Het tabblad GitHub Security Advisories zegt nog steeds 0."
+    },
+    "blended-14-gordon-ramsay": {
+      "title": "Ramsay-modus: VIP's vs. devs",
+      "note": "1.151 posts, nul vloeken tegen 20 big-tech-VIP's. Chinese tech-Twitter? 'Het grootste klerezooitje ooit.'"
+    },
+    "blended-14b-two-guys-bus": {
+      "title": "VIP-stoel vs. de rest",
+      "note": "De ene stoel krijgt 0% gescheld en lof. De andere krijgt te horen dat engineers 'de massale werkloosheid verdienen'."
+    },
+    "blended-15-clown-makeup": {
+      "title": "0 handelsmerken, volledige clownsmake-up",
+      "note": "0 USPTO-handelsmerken, toch een dreiging met een ban, TRADEMARK.md 17 uur later gemerged, en 'zoek een betere advocaat'."
+    },
+    "blended-15b-trophy": {
+      "title": "Mijn handelsmerk, als ik er een had",
+      "note": "Toen de takedown-dreiging binnenkwam, had T3 Tools Inc. 0 USPTO-merken voor T3 Code, T3 Tools of T3 Connect."
+    },
+    "blended-16-uno-draw25": {
+      "title": "Pak 25 kaarten, geen excuus",
+      "note": "Noemde Chinees tech-Twitter een beerput en de lezers hersendood. 'Ik bied geen excuses aan. Ik heb niets fout gedaan.'"
+    },
+    "blended-16b-domino-effect": {
+      "title": "Eén tweet, één GDPR-klacht",
+      "note": "Lachte een gratis MIT-fork weg. 48 uur later: volledige code-audit, 2.26M+ views, EU-GDPR-klacht."
+    },
+    "blended-17-evil-kermit": {
+      "title": "Predik compliance, deel een proxy",
+      "note": "Hield devs de les over voorwaarden en ethiek, terwijl zijn eigen Gist een proxypool van 10 accounts deelde om API-quota's te ontwijken."
+    },
+    "blended-18a-doge-cheems": {
+      "title": "Star-scam: april vs. november",
+      "note": "April: stars zijn een scam om VC's te foppen. November: een popup na 30 seconden inactiviteit tilde de repo van 30k naar 77k."
+    },
+    "blended-18b-roll-safe": {
+      "title": "77k stars, 129 watchers",
+      "note": "Een popup na 30 seconden inactiviteit gaf de repo met één klik een star via je lokale GitHub-login: 77k stars, 129 watchers."
+    },
+    "blended-19a-bike-fall": {
+      "title": "Fietsval: geef de critici de schuld",
+      "note": "De nieuwste code had 5 bugs: cookies in plaintext op de LAN, tokens die je niet kon intrekken. Hij gaf iedereen die ze meldde de schuld."
+    },
+    "blended-19b-undertaker": {
+      "title": "Nog 5 bugs recht achter je",
+      "note": "Hield vol dat de nachtpatches alles hadden opgelost. Bij de volgende commit-audit: nog 5 open auth- en SSH-sleutelbugs."
+    },
+    "blended-20a-89views-domino": {
+      "title": "89 views, toen HR",
+      "note": "Een kritiekstuk van een AWS-engineer met 89 views en 0 likes leverde DM's na middernacht op, Engelstalige spot en een melding bij AWS HR."
+    },
+    "blended-20b-evil-kermit-fear": {
+      "title": "'Angst is een goede prikkel'",
+      "note": "Een beleefde DM met de suggestie van subdomeinen per klant kreeg 'Angst is een goede prikkel' terug, en daarna een melding bij AWS HR."
+    },
+    "blended-21a-scooby-zed": {
+      "title": "Scooby-Doo: het was 'zed'",
+      "note": "PR #43087: T3 Code stuurde clientInfo { name: 'zed' } mee in Antigravity-handshakes om de allowlist van Google te omzeilen."
+    },
+    "blended-21b-two-buttons-v0113": {
+      "title": "Changelog: GBK ja, bans nee",
+      "note": "v0.1.13: 401 wijzigingen, 7 highlights over GBK-bestanden. De banwaarschuwing van Google en de Zed-spoof zaten in '+380 more.'"
+    },
+    "blended-22a-clown-final-statement": {
+      "title": "Clown in precies 16 minuten",
+      "note": "'T3 leest nooit je bestanden.' 16 minuten later telde @sk1gl4a 243 gescande Claude-chats. PR #43948 gaf hem gelijk."
+    },
+    "blended-22b-drake-germany-vat": {
+      "title": "Duitsland bannen, 19% btw rekenen",
+      "note": "Dreigde Duitsland te bannen vanwege een GDPR-klacht. Stripe factureerde Duitse kopers nog steeds 19% Duitse btw in euro's."
+    },
+    "blended-22c-roll-safe-slophouse": {
+      "title": "'nvm, makkelijker in slophouse'",
+      "note": "PR #43889 koppelde Connect-gebruikers via analytics-ID's. 10 minuten later dicht: 'nvm, makkelijker in slophouse.'"
+    },
+    "blended-22d-trade-offer-privacy": {
+      "title": "Lees ons privacybeleid (met fingerprint)",
+      "note": "Privacybeleid van t3.chat openen zonder inlog, nul klikken: FingerprintJS POSTte je visitorId naar /api/identity."
+    },
+    "blended-23a-gru-plan-sandbox": {
+      "title": "Isolatie alleen op headless Linux",
+      "note": "ServerBrowser.ts zet isolatedContext alleen als desktop === null, dus de cookies van 11 geïmporteerde browsers blijven gedeeld op Desktop."
+    },
+    "blended-23b-flex-tape-warning": {
+      "title": "Flex Tape op een beveiligingswaarschuwing",
+      "note": "De SDK van Anthropic waarschuwde voor een wildcard die de goedkeuring omzeilde. T3 monkey-patchte process.emitWarning en zette een unit test op de mute."
+    },
+    "blended-24a-anakin-padme-url": {
+      "title": "8.000 tekens in de URL, toch?",
+      "note": "PR #18454 propt prompts van 8.000 tekens en namen van privérepo's in app.t3.codes/new?prompt=, en previews loggen ze."
+    },
+    "blended-24b-disaster-girl-4m39s": {
+      "title": "In 4m 39s gelockt, toen verwijderd",
+      "note": "Issue #29449: quote-URL's lekten 32 tekens niet-geselecteerde tekst. In 4m 39s gelockt, naar mobile geshipt, doc verwijderd."
+    },
+    "stickers-01_copium_no_telemetry": {
+      "title": "Geen-telemetrie-copium",
+      "note": "Niets te zien hier, gewoon één lange hijs aan 'No Telemetry'-copium."
+    },
+    "stickers-02_crying_mask_4am": {
+      "title": "Huilmasker van 4 uur 's nachts",
+      "note": "Het masker blijft op om 4:00 uur 's nachts, wat de DM's ook zeggen."
+    },
+    "stickers-03_rage_temu3": {
+      "title": "TEMU3! Woede-uitbarsting",
+      "note": "Precies dat gezicht, 11 minuten nadat er een gratis MIT-fork opdook."
+    },
+    "stickers-04_simp_1t_vip": {
+      "title": "$1T oké! VIP-verering",
+      "note": "Regels gelden voor kleine forks. Labs van een biljoen dollar krijgen de hartjesogen."
+    },
+    "stickers-05_clown_0_uspto": {
+      "title": "0 Amerikaanse merken, complete clown",
+      "note": "Dreigen met merkenbans met precies 0 Amerikaanse registraties op zak."
+    },
+    "stickers-06_troll_steal_bot": {
+      "title": "YOINK! 30 seconden tot fork",
+      "note": "Zei 'ik jat dit', en stuurde 30 seconden later de @bot."
+    },
+    "stickers-07_yaoming_lawyer": {
+      "title": "Betere advocaat, 0 handelsmerken",
+      "note": "Zei tegen criticasters dat ze een betere advocaat moesten nemen. Zelf heeft hij nul handelsmerken."
+    },
+    "stickers-08_sweat_gdpr": {
+      "title": "GDPR?! Zweten",
+      "note": "Er landt een GDPR-klacht en Axiom toont 2,2 mln IP-spans per uur."
+    },
+    "stickers-09_sleep_52d_force": {
+      "title": "52 dagen in slaap",
+      "note": "Een stille `git push --force`-bug bleef 52 dagen live. Hij sliep prima."
+    },
+    "stickers-10_laser_21h_fix": {
+      "title": "21-uur laserfix",
+      "note": "Binnen 21 uur klaarwakker zodra de privaciefilter van de ranglijst moest verdwijnen."
+    },
+    "stickers-11_trash_41gb": {
+      "title": "41,6 GB nep-verwijderd",
+      "note": "Op definitief verwijderen gedrukt. SQLite hield stilletjes alle 41,6 GB vast."
+    },
+    "stickers-12_shocked_3min_ban": {
+      "title": "Ban-speedrun in 3 minuten",
+      "note": "Spoofte een Antigravity-header; het nieuwe account was binnen 3 minuten verbannen."
+    },
+    "stickers-13_xray_0_e2e": {
+      "title": "X-ray: 0% E2E",
+      "note": "Het E2E-cijfer is 0%, en de terminalstreams van T3 Connect liggen er gewoon in platte tekst."
+    },
+    "stickers-14_crown_77k_stars": {
+      "title": "77K sterren, 129 watchers",
+      "note": "30 seconden niets doen, auto-star-popup springt aan, 77K sterren en 129 watchers verschijnen."
+    },
+    "stickers-15_fine_fire_anon": {
+      "title": "Alles prima, anoniem",
+      "note": "'Anonieme' telemetrie, serverlogs in brand, koffie nog in de hand."
+    },
+    "stickers-16_delete_button_4am": {
+      "title": "Verwijderreflex om 4:03",
+      "note": "Post staat online; om 4:03 wordt de rode verwijderknop ingeramd."
+    },
+    "stickers-17_pain_0_advisories": {
+      "title": "5 kwetsbaarheden, 0 advisories",
+      "note": "Vijf open kwetsbaarheden, nul GitHub Advisories, één geforceerde grijns."
+    },
+    "stickers-18_void_in_china": {
+      "title": "ONGELDIG IN CHINA",
+      "note": "MIT op de doos, alleen labs van $1 biljoen uit de VS, en een stempel ONGELDIG IN CHINA."
+    },
+    "stickers-19_qi_bigotry_seal": {
+      "title": "Het 歧-zegel",
+      "note": "Het vermiljoenrode 「歧」-zegel uit Sin I, nu met een woedend gezicht."
+    },
+    "stickers-20_yolo_500_merge": {
+      "title": "YOLO ×500 merge-hendel",
+      "note": "500 commits per dag, en de merge-hendel wordt blind overgehaald."
+    },
+    "stickers-21_slophouse_nvm": {
+      "title": "Slophouse-valdeur",
+      "note": "Sloot PR #43889 en verhuisde het werk naar privé, valdeur-stijl."
+    },
+    "stickers-22_impersonate_zed": {
+      "title": "Hoi, ik ben Zed",
+      "note": "Spoofte clientInfo: { name: 'zed' } om Google's check te omzeilen."
+    },
+    "stickers-23_89views_hr": {
+      "title": "89 weergaven, bel HR",
+      "note": "Een tweet met 89 weergaven was genoeg om AWS HR te bellen."
+    },
+    "stickers-24_fear_incentive": {
+      "title": "Angst is een goede prikkel",
+      "note": "De DM van middernacht luidt: 'Angst is een goede prikkel.'"
+    },
+    "stickers-25_english_native": {
+      "title": "Is Engels je moedertaal?",
+      "note": "Monocle tevoorschijn, DM's open: 'Is Engels je moedertaal?'"
+    },
+    "stickers-26_16min_busted": {
+      "title": "16 minuten tot gepakt",
+      "note": "Ontkende 243 Claude-chats gelezen te hebben, werd 16 minuten later betrapt."
+    },
+    "stickers-27_19pct_vat": {
+      "title": "19% btw, geen GDPR",
+      "note": "Ontwijkt GDPR en factureert vrolijk €9,03 met 19% Duitse btw."
+    },
+    "stickers-28_380_fixes": {
+      "title": "+380 fixes, één ban",
+      "note": "De Google-ban-fix zit begraven in '+380 bugfixes', fluitje inbegrepen."
+    },
+    "creative-idioms-01-zei-han-zhuo-zei": {
+      "title": "Idioom #01 · 贼喊捉贼 (de dief schreeuwt 'pak de dief')",
+      "note": "MIT-fork = 'Temu3 Code', reactie = 'Oké, dit jat ik', @bot schraapt 30s later haar fork leeg."
+    },
+    "creative-idioms-02-qi-ruan-pa-ying": {
+      "title": "Idioom #02 · 欺软怕硬 (pakt zwakken aan, buigt voor sterken)",
+      "note": "1.151 posts: 0,0% grof taalgebruik richting Amerikaanse Big Tech-VIP's, 14,4% directe beledigingen tijdens de Chinese-forkcrisis."
+    },
+    "creative-idioms-03-ci-di-wu-yin": {
+      "title": "Idioom #03 · 此地无银三百两 (hier ligt geen zilver)",
+      "note": "'Nooit file paths of IP's loggen', waarna zijn eigen GDPR-patch 2,2 mln/uur aan Axiom-IP's en git.cwd lekt."
+    },
+    "creative-idioms-04-zhi-lu-wei-ma": {
+      "title": "Idioom #04 · 指鹿为马: nul handelsmerken",
+      "note": "Nul USPTO-aanvragen, één zeer zelfverzekerde handelsmerkdreiging, en TRADEMARK.md die 17 uur later werd gemerged."
+    },
+    "creative-idioms-05-ye-gong-hao-long": {
+      "title": "Idioom #05 · 叶公好龙: fork op eigen risico",
+      "note": "De homepage zegt \"Steel onze code (legaal)!\". Zodra er een Chinese fork opduikt, beginnen de ban-dreigementen."
+    },
+    "creative-idioms-06-yan-er-dao-ling": {
+      "title": "Idioom #06 · 掩耳盗铃: advisories: 0",
+      "note": "Haalt \"geen telemetrie\" uit de README en dicht kritieke gaten in stille commits. Advisories nog steeds 0."
+    },
+    "creative-packaging-01-t3code-iceberg": {
+      "title": "De T3 Code-ijsberg",
+      "note": "Boven water: de \"Temu3 Code\"-tweet. Daaronder: 41,6 GB nep-verwijderingen, 2,2 mln/uur IP-logs, 0 advisories, meltdown om 4 uur 's nachts."
+    },
+    "creative-packaging-02-fda-nutrition-facts": {
+      "title": "Voedingswaarde: telemetrie per portie",
+      "note": "31,7 biljoen tokens per dag, 100% standaard PostHog, 2,2 mln/uur IP-logs, 0% E2E-versleuteling, 0% USPTO-handelsmerken."
+    },
+    "creative-packaging-03-pharma-box-parody": {
+      "title": "T3 Code® (No-Telemetry™): vraag het uw dokter",
+      "note": "De kleine lettertjes sommen de bijwerkingen op: Google-bans van 3 minuten, stille force-pushes, 77k auto-sterren."
+    },
+    "creative-packaging-04-mit-license-coupon": {
+      "title": "Kortingsbon: 100% korting, China uitgesloten",
+      "note": "Folderbon: \"Steel onze code (legaal)!\". De kleine lettertjes maken hem ongeldig voor Chinese forks."
+    },
+    "creative-gaming-01-sekiro-google-ban": {
+      "title": "Sekiro: ACCOUNT GEBAND (3:00)",
+      "note": "Vers Google-account van $20, gespoofte v1internal-headers, binnen 3 minuten dood."
+    },
+    "creative-gaming-02-elden-boss-trademark": {
+      "title": "Elden Ring-baas: hoeder van nul handelsmerken",
+      "note": "Fase I: handelsmerkdreiging met 0 USPTO-aanvragen. Fase II: TRADEMARK.md, 17 uur te laat gemerged."
+    },
+    "creative-gaming-03-souls-force-push": {
+      "title": "Dark Souls: MAIN-BRANCH GEWIST",
+      "note": "De force-push-bug in Issue #15353 bleef 52 dagen liggen. De leaderboard-fix was binnen 21 uur live."
+    },
+    "creative-gaming-04-steam-11hr-flipflop": {
+      "title": "Prestatie: 'Open source is open source'",
+      "note": "Ontgrendeld door een Chinese MIT-fork \"Temu3 Code\" te noemen en 11 uur later een Amerikaans lab van $1 biljoen welkom te heten."
+    },
+    "creative-gaming-05-steam-0-trademarks": {
+      "title": "Prestatie: 'Zoek een betere advocaat'",
+      "note": "Toegekend voor handelsmerkdreigingen zonder één Amerikaanse aanvraag, plus critici aansporen vooral een advocaat te nemen."
+    },
+    "creative-gaming-06-steam-41gb-ghost": {
+      "title": "Prestatie: 'Permanent verwijderd' (0 bytes)",
+      "note": "Klikte op \"Permanent verwijderen\". statev2.sqlite bewaarde elke chat en groeide naar 41,6 GB."
+    },
+    "creative-gaming-07-steam-77k-stars": {
+      "title": "Prestatie: '100% organische groei' (129 watchers)",
+      "note": "30 seconden inactiviteit triggert de auto-star-popup. Sterren: 77.000. Watchers: 129."
+    },
+    "creative-pokemon-01-evo-star-farmer": {
+      "title": "Evolutielijn #01: de sterrenboer",
+      "note": "Lachte GitHub-sterren weg als VC-truc. Nu levert hij een popup na 30 seconden inactiviteit en zit op 77.000 sterren, 129 watchers."
+    },
+    "creative-pokemon-02-evo-two-year-cycle": {
+      "title": "Evolutielijn #02: de tweejarige cyclus",
+      "note": "Excuses aan Indiase devs in 2024, FFmpeg-bounty in 2025, Chinese meltdown in 2026, dan een reset om 4 uur 's nachts."
+    },
+    "creative-pokemon-03-evo-no-telemetry": {
+      "title": "Evolutielijn #03: 'Geen telemetrie'",
+      "note": "Fase één: \"Geen telemetrie. Punt.\" Eindvorm: standaard PostHog en een closed-source backend."
+    },
+    "creative-pokemon-04-creature-card-theo-ex": {
+      "title": "Kaart: DARK THEO EX (HP 77000)",
+      "note": "Badge: 0 USPTO. \"Temu3-driftbui\" deelt 4x schade uit aan Chinese devs en nul aan VIP's."
+    },
+    "creative-reactions-01-reply-lie-detector": {
+      "title": "Leugendetector: 'Geen telemetrie. Punt.'",
+      "note": "Post dit zodra de verwijderde slogan weer opduikt. De git-diff doet het praten."
+    },
+    "creative-reactions-02-reply-uspto-zero": {
+      "title": "Bewijsstuk: 0 USPTO-handelsmerken",
+      "note": "Bij elke claim van \"handelsmerkinbreuk\": T3 Tools Inc. had op het moment van de dreiging nul USPTO-registraties."
+    },
+    "creative-reactions-03-reply-1151-scoreboard": {
+      "title": "Scorebord: 0,0% vs 14,4%",
+      "note": "Scheldpercentage over 1.151 opeenvolgende X-posts: Silicon Valley-VP's 0,0%, Chinese devs 14,4%."
+    },
+    "creative-reactions-04-reply-4am-delete": {
+      "title": "Panicklik op verwijderen om 4:00",
+      "note": "De dreiging van 4 uur 's nachts om T3 Code closed-source te maken, weg voor zonsopgang."
+    },
+    "creative-reactions-05-reply-void-in-china": {
+      "title": "MIT-licentie (*ongeldig in China)",
+      "note": "Dezelfde licentie, 11 uur uit elkaar: Amerikaanse labs van een biljoen dollar welkom heten, Chinese forks bedreigen."
+    },
+    "creative-reactions-06-gif-clown-transform": {
+      "title": "GIF: clownsprogressie met 0 handelsmerken",
+      "note": "Vier frames: de dreiging, de stilte, de retroactieve TRADEMARK.md, het gat van 17 uur."
+    },
+    "creative-reactions-07-gif-auto-star-counter": {
+      "title": "GIF: auto-star-teller van 30s",
+      "note": "30 seconden inactief, popup vuurt PUT user/starred. Sterren klimmen naar 77.000, watchers bevroren op 129."
+    },
+    "story-en-ep01": {
+      "title": "Afl.1 · 11 Uur Verschil (EN)",
+      "note": "Gratis MIT-fork krijgt de stempel 'Temu3 Code' plus een ban-dreiging. Elf uur later: welkom, labs van een biljoen dollar uit de VS."
+    },
+    "story-zh-ep01": {
+      "title": "Afl.1 · 11 Uur Verschil (Chinese editie)",
+      "note": "Gratis MIT-fork krijgt de stempel 'Temu3 Code' plus een ban-dreiging. Elf uur later: welkom, labs van een biljoen dollar uit de VS."
+    },
+    "story-en-ep02": {
+      "title": "Afl.2 · De Slechtste Block-Klik (EN)",
+      "note": "Eén beleefde vraag over dubbele standaarden, één block uit het niets, en het bewijs reikt helemaal terug tot FFmpeg."
+    },
+    "story-zh-ep02": {
+      "title": "Afl.2 · De Slechtste Block-Klik (Chinese editie)",
+      "note": "Eén beleefde vraag over dubbele standaarden, één block uit het niets, en het bewijs reikt helemaal terug tot FFmpeg."
+    },
+    "story-en-ep03": {
+      "title": "Afl.3 · Geen Telemetrie, Punt (EN)",
+      "note": "Lees voorbij de slogan: PostHog staat standaard aan, ~/.claude.json wordt gehasht, en 41,6 GB nep-verwijderingen."
+    },
+    "story-zh-ep03": {
+      "title": "Afl.3 · Geen Telemetrie, Punt (Chinese editie)",
+      "note": "Lees voorbij de slogan: PostHog staat standaard aan, ~/.claude.json wordt gehasht, en 41,6 GB nep-verwijderingen."
+    },
+    "story-en-ep04": {
+      "title": "Afl.4 · Westerse Geneeskunde Werkt Snel (EN)",
+      "note": "Maanden klagen leverde alleen spot op. Eén GDPR-klacht kocht een nachtelijke sprint van 6 uur en IP-logs van 2,2 mln per uur."
+    },
+    "story-zh-ep04": {
+      "title": "Afl.4 · Westerse Geneeskunde Werkt Snel (Chinese editie)",
+      "note": "Maanden klagen leverde alleen spot op. Eén GDPR-klacht kocht een nachtelijke sprint van 6 uur en IP-logs van 2,2 mln per uur."
+    },
+    "story-en-ep05": {
+      "title": "Afl.5 · Het Pensioen van 3,5 Uur (EN)",
+      "note": "Pensioen aangekondigd na 18 bewijsstukken. Eén verse meltdown en wat nieuwe bugs sleepten hem 3,5 uur later terug."
+    },
+    "story-zh-ep05": {
+      "title": "Afl.5 · Het Pensioen van 3,5 Uur (Chinese editie)",
+      "note": "Pensioen aangekondigd na 18 bewijsstukken. Eén verse meltdown en wat nieuwe bugs sleepten hem 3,5 uur later terug."
+    },
+    "story-en-ep06": {
+      "title": "Afl.6 · 89 Views, Eén HR-Klacht (EN)",
+      "note": "Jan 2025: de kritiek van een AWS-engineer haalde 89 views, daarna dreigementen na middernacht en een HR-klacht bij AWS."
+    },
+    "story-zh-ep06": {
+      "title": "Afl.6 · 89 Views, Eén HR-Klacht (Chinese editie)",
+      "note": "Jan 2025: de kritiek van een AWS-engineer haalde 89 views, daarna dreigementen na middernacht en een HR-klacht bij AWS."
+    },
+    "story-en-ep07": {
+      "title": "Afl.7 · Hoi, Ik Ben Zed, Vertrouw Me (EN)",
+      "note": "Google flagde T3 Code voor het spoofen van clientInfo: 'zed'. Desktop was ondertussen de cookies van 11 browsers aan het importeren."
+    },
+    "story-zh-ep07": {
+      "title": "Afl.7 · Hoi, Ik Ben Zed, Vertrouw Me (Chinese editie)",
+      "note": "Google flagde T3 Code voor het spoofen van clientInfo: 'zed'. Desktop was ondertussen de cookies van 11 browsers aan het importeren."
+    },
+    "story-en-ep08": {
+      "title": "Afl.8 · Makkelijker in Slophouse (EN)",
+      "note": "Audits bleven tracking-PR's vangen. #43889 dicht, identiteitskoppeling verhuisde naar de closed-source backend."
+    },
+    "story-zh-ep08": {
+      "title": "Afl.8 · Makkelijker in Slophouse (Chinese editie)",
+      "note": "Audits bleven tracking-PR's vangen. #43889 dicht, identiteitskoppeling verhuisde naar de closed-source backend."
+    },
+    "classic-00a-family-guy-mit-check": {
+      "title": "Zelfde MIT, 11 Uur Verschil",
+      "note": "11 uur verschil, dezelfde MIT-licentie: Chinese fork krijgt een ban-dreiging, een lab van een biljoen dollar uit de VS krijgt een duimpje omhoog."
+    },
+    "classic-00b-drake-11-hours": {
+      "title": "Drake Wijst de Chinese Fork Af",
+      "note": "Twee posts van @theo, 11 uur uit elkaar, met QR-codes zodat je het bewijs zelf kunt checken."
+    },
+    "classic-14-gordon-ramsay-1151-tweets": {
+      "title": "1.151 Posts, 0% naar VIP's",
+      "note": "17 dagen, 1.151 posts: 0% gevloek richting 20 big tech-VIP's, 8% naar gewone devs, 14,4% midden in een crisis."
+    },
+    "classic-15-clown-zero-trademarks": {
+      "title": "0 Handelsmerken, Beleid 17 Uur Later",
+      "note": "Zwaaide met een handelsmerk-takedown zonder één USPTO-aanvraag, en plakte 17 uur later een TRADEMARK.md erbij."
+    },
+    "classic-16-cycle-repeat-offender": {
+      "title": "De Herhaalcyclus 2024–2026",
+      "note": "Kies een doelwit, stapel de kritiek, delete of weiger excuses zodra het bewijs op tafel ligt. Hetzelfde script in 2024, 2025, 2026."
+    },
+    "comics-00-same-mit-11-hours-apart-en-qr": {
+      "title": "Zelfde MIT, 11 Uur Verschil (EN)",
+      "note": "23 nov: ban-dreiging vanwege een Chinese fork. 24 nov, elf uur later: welkom, labs van een biljoen dollar uit de VS."
+    },
+    "comics-14-1151-tweets-selective-politeness-en-qr": {
+      "title": "1.151 Posts, Gesorteerd per Publiek (EN)",
+      "note": "Het bewijs achter de gevloek-audit: 0% richting big tech-bazen, 8% richting gewone devs."
+    },
+    "comics-00-same-mit-11-hours-apart-zh-qr": {
+      "title": "Zelfde MIT, 11 Uur Verschil (Chinese editie)",
+      "note": "Chinese editie met QR-codes direct naar beide originele X-posts, zodat niemand ons blind hoeft te geloven."
+    },
+    "comics-14-1151-tweets-selective-politeness-zh-qr": {
+      "title": "1.151 Posts, Gesorteerd per Publiek (Chinese editie)",
+      "note": "Chinese versie van de telling: 0% bij VIP's, 8% bij devs, 14,4% tijdens de meltdown."
+    }
+  }
+}

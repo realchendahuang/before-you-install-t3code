@@ -15,8 +15,8 @@
       "role": "T3 Code / Ping.gg 作者"
     },
     "dddxx666": {
-      "name": "@DDdxx666（MIT 分叉）",
-      "role": "中文 MIT 分叉作者（Stardust）"
+      "name": "@DDdxx666（MIT Fork）",
+      "role": "中文 MIT Fork作者（Stardust）"
     },
     "ffmpeg": {
       "name": "FFmpeg 與 VLC",
@@ -235,7 +235,7 @@
       "to": "全體 T3 Code 使用者",
       "dateDisplay": "2026 年 3 月 6 日",
       "subject": "PR #174 違背「無遙測」承諾，預設開啟 PostHog",
-      "snippet": "`Config.withDefault(true)` 跑了三個多月：沒有同意彈窗，沒有設定開關，也沒有一行文件。",
+      "snippet": "Config.withDefault(true) 跑了三個多月：沒有同意彈窗，沒有設定開關，也沒有一行文件。",
       "messages": [
         {
           "sender": "T3 Code 首頁（t3.codes）",
@@ -406,8 +406,8 @@
       "from": "@theo → `~/.codex` 與 `~/.claude`",
       "to": "使用者家目錄裡的憑證",
       "dateDisplay": "2026 年 10 月 20 日",
-      "subject": "PR #21506 偷讀 `~/.codex` 和 `~/.claude.json`，把多台機器串成一個人",
-      "snippet": "由 t3dotgg 提交：`Identify.ts` 把 OpenAI JWT 的 `user_id` 和 Claude 的 `accountUuid` 做成無鹽 SHA-256 雜湊，塞進 `install.owner_observed`。",
+      "subject": "PR #21506 偷讀 ~/.codex 和 ~/.claude.json，把多台機器串成一個人",
+      "snippet": "由 t3dotgg 提交：Identify.ts 把 OpenAI JWT 的 user_id 和 Claude 的 accountUuid 做成無鹽 SHA-256 雜湊，塞進 install.owner_observed。",
       "messages": [
         {
           "sender": "Theo Browne（@t3dotgg）",
@@ -431,7 +431,7 @@
       "to": "pingdotgg/t3code",
       "dateDisplay": "2026 年 10 月 28 日",
       "subject": "41.6 GB 的假 SQLite 刪除 + 每 5 秒掃一遍全機命令列",
-      "snippet": "「永久清除」只追加了一條軟刪除事件；`t3-resource-monitor` 每 5 秒掃過 440 多個系統行程和完整命令列。",
+      "snippet": "「永久清除」只追加了一條軟刪除事件；t3-resource-monitor 每 5 秒掃過 440 多個系統行程和完整命令列。",
       "messages": [
         {
           "sender": "受影響使用者（Issue #17845、#28903、#11222）",
@@ -456,7 +456,7 @@
       "to": "pingdotgg/t3code（PR #29922）",
       "dateDisplay": "2026 年 11 月 2 日",
       "subject": "自合 30 秒刷星彈窗（3 萬 → 7.7 萬），漏洞原樣留著",
-      "snippet": "繞過 Macroscope 的審批攔截，@zhilsinger 的 Request Changes 晾了 19 天以上不理，`driver.ts#L60-L99` 讓用戶端能給任意倉庫點星。",
+      "snippet": "繞過 Macroscope 的審批攔截，@zhilsinger 的 Request Changes 晾了 19 天以上不理，driver.ts#L60-L99 讓用戶端能給任意倉庫點星。",
       "messages": [
         {
           "sender": "Theo Browne（@t3dotgg）",
@@ -661,7 +661,7 @@
           "handle": "@theo · X（2123011578090127499）",
           "to": "Daytona CEO（@ivanburazin）",
           "time": "2026 年 11 月 18 日",
-          "body": "11 月 18 日，他回覆 Daytona CEO @ivanburazin，公開自己在這家和它對手身上的天使股份：\n\n> 「看在我投了 Daytona（還有你現在正生氣的多数競爭對手）的份上，我真希望你在這裡說錯了」\n\n九天前（11 月 9 日，status 2119705561679933806），Theo 才剛提出要在 T3 Code 內部上線付費雲端沙箱。",
+          "body": "11 月 18 日，他回覆 Daytona CEO @ivanburazin，公開自己在這家和它對手身上的天使股份：\n\n> 「看在我投了 Daytona（還有你現在正生氣的多數競爭對手）的份上，我真希望你在這裡說錯了」\n\n九天前（11 月 9 日，status 2119705561679933806），Theo 才剛提出要在 T3 Code 內部上線付費雲端沙箱。",
           "attachments": [
             "確認對 Daytona 及競爭對手的天使投資",
             "11 月 9 日提議在 T3 Code 內做付費雲端沙箱"
@@ -779,7 +779,7 @@
           "handle": "@theo · X",
           "to": "一般開發者",
           "time": "2026 年 11 月 21–22 日",
-          "body": "11 月 21 日至 22 日的 24 小時內，@theo 一邊講信任，一邊罵一般開發者和 Linux 使用者：\n\n- **11 月 21 日 (2123906522728272178)：** “一般開發者不太聰明”\n- **11 月 22 日 (2124298216271499605)：** “我明白你為啥討厭我了，Linux coser 一向看不上真開發者”\n- **11 月 22 日 (2124470530590011704，38.6 萬+ 瀏覽——引用的是一條 T3 Code 對比 Antigravity 的提問)：** “工程師們活該迎來這波大規模失業”\n- **11 月 22 日 18:26 CST (2124449493513068862，距那場 MIT 分支威脅 24 小時)：** “說句實話，燒掉周圍所有人的信任，基本從來不是達成目的的好路子”",
+          "body": "11 月 21 日至 22 日的 24 小時內，@theo 一邊講信任，一邊罵一般開發者和 Linux 使用者：\n\n- **11 月 21 日 (2123906522728272178)：** “一般開發者不太聰明”\n- **11 月 22 日 (2124298216271499605)：** “我明白你為啥討厭我了，Linux coser 一向看不上真開發者”\n- **11 月 22 日 (2124470530590011704，38.6 萬+ 瀏覽——引用的是一條 T3 Code 對比 Antigravity 的提問)：** “工程師們活該迎來這波大規模失業”\n- **11 月 22 日 18:26 CST (2124449493513068862，距那場 MIT Fork威脅 24 小時)：** “說句實話，燒掉周圍所有人的信任，基本從來不是達成目的的好路子”",
           "attachments": [
             "“工程師們活該迎來這波大規模失業”原帖",
             "“Linux coser 一向看不上真開發者”原帖",
@@ -859,18 +859,18 @@
       ]
     },
     "2026-11-23-origin-temu3-threat": {
-      "from": "@theo ↔ @DDdxx666（MIT 分支）",
+      "from": "@theo ↔ @DDdxx666（MIT Fork）",
       "to": "@DDdxx666、@maria_rcks 及公眾",
       "dateDisplay": "2026 年 11 月 23 日",
-      "subject": "“Temu3 Code”：為一個中文 MIT 分支威脅封鎖 GitHub 帳號",
-      "snippet": "官網才剛寫“合法偷走我們的程式碼”，Theo 就開火 @DDdxx666 的 MIT 分支，只在私訊裡道歉，11 小時後又說歡迎兆美元美企來用。",
+      "subject": "“Temu3 Code”：為一個中文 MIT Fork威脅封鎖 GitHub 帳號",
+      "snippet": "官網才剛寫“合法偷走我們的程式碼”，Theo 就開火 @DDdxx666 的 MIT Fork，只在私訊裡道歉，11 小時後又說歡迎兆美元美企來用。",
       "messages": [
         {
           "sender": "Theo Browne (@theo)",
           "handle": "@theo · X (2124823227570745504 & 2124825920808829077)",
-          "to": "公開引用 @DDdxx666 的 MIT 分支",
+          "to": "公開引用 @DDdxx666 的 MIT Fork",
           "time": "2026 年 11 月 23 日 19:11 – 19:22 CST",
-          "body": "`t3.codes` 官網掛著自家 GitHub 儲存庫連結，旁邊寫著“Steal our code (legally)”（合法偷走我們的程式碼）。可當路人把 @DDdxx666 的免費 MIT 分支當成官方應用程式時，@theo 11 分鐘內連發兩帖：\n\n19:11:49 CST (2124823227570745504)：\n\n> “我覺得市面上流傳著一個 T3 Code 的中國山寨版，因為這玩意兒絕對不是我們的應用程式”\n\n19:22:31 CST (2124825920808829077，10 分 42 秒後)：\n\n> “Temu3 Code”",
+          "body": "`t3.codes` 官網掛著自家 GitHub 儲存庫連結，旁邊寫著“Steal our code (legally)”（合法偷走我們的程式碼）。可當路人把 @DDdxx666 的免費 MIT Fork當成官方應用程式時，@theo 11 分鐘內連發兩帖：\n\n19:11:49 CST (2124823227570745504)：\n\n> “我覺得市面上流傳著一個 T3 Code 的中國山寨版，因為這玩意兒絕對不是我們的應用程式”\n\n19:22:31 CST (2124825920808829077，10 分 42 秒後)：\n\n> “Temu3 Code”",
           "attachments": [
             "原帖：“T3 Code 的中國山寨版”（19.5 萬+ 瀏覽）",
             "10 分 42 秒後的原帖：“Temu3 Code”（8.4 萬+ 瀏覽）"
@@ -885,7 +885,7 @@
           "handle": "@theo · X (2124829315657576890)",
           "to": "@DDdxx666",
           "time": "2026 年 11 月 23 日 19:36 CST",
-          "body": "當 @DDdxx666 表示願意考慮給這個 MIT 分支改名、避免混淆，@theo 在 19:36 CST 回：\n\n> “不是考慮。現在就改，否則我去聯繫 GitHub 把你帳號封了。”\n\n@DDdxx666 30 分鐘內把儲存庫改名為 `Stardust`，並清掉了所有 T3 品牌標識。@theo 在私訊裡道了歉，但那兩條 20 萬瀏覽的公開帖一直掛著。",
+          "body": "當 @DDdxx666 表示願意考慮給這個 MIT Fork改名、避免混淆，@theo 在 19:36 CST 回：\n\n> “不是考慮。現在就改，否則我去聯繫 GitHub 把你帳號封了。”\n\n@DDdxx666 30 分鐘內把儲存庫改名為 `Stardust`，並清掉了所有 T3 品牌標識。@theo 在私訊裡道了歉，但那兩條 20 萬瀏覽的公開帖一直掛著。",
           "attachments": [
             "一字不差的 GitHub 封鎖帳號威脅"
           ],
@@ -977,7 +977,7 @@
           "handle": "@realchendahuang · X（226 萬+ 瀏覽）",
           "to": "全球開發者社群",
           "time": "2026 年 11 月 24 日 17:04 – 17:31 CST",
-          "body": "11 月 24 日 17:04 到 17:31 CST，@realchendahuang 連發 `pingdotgg/t3code` 原始碼逐行審計的第 1、2 部分（瀏覽量先後衝到 181 萬和 226 萬+）。\n\n貼文裡逐條記錄：預設開啟的 PostHog 遙測、`ingest.t3.codes` 閉源留存、對 `~/.codex` 與 `~/.claude.json` 憑證做雜湊、4 個被拒的退出 PR、41.6 GB 假 SQLite 刪除，以及每 5 秒一次的 OS 處理程序掃描。",
+          "body": "11 月 24 日 17:04 到 17:31 CST，@realchendahuang 連發 `pingdotgg/t3code` 原始碼逐行審計的第 1、2 部分（瀏覽量先後衝到 181 萬和 226 萬+）。\n\n貼文裡逐條記錄：預設開啟的 PostHog 遙測、`ingest.t3.codes` 閉源留存、對 `~/.codex` 與 `~/.claude.json` 憑證做雜湊、4 個被拒的退出 PR、41.6 GB 假 SQLite 刪除，以及每 5 秒一次的 OS 行程掃描。",
           "attachments": [],
           "links": [
             "第 1 部分（226 萬+ 瀏覽）",
@@ -1094,7 +1094,7 @@
       "to": "所有 T3 Code 安裝（0 條安全公告）",
       "dateDisplay": "2026 年 11 月 25 日",
       "subject": "0 條安全公告，ca81b7b9 上仍有 5 個未修的認證/RCE 漏洞",
-      "snippet": "就算悄悄修掉了 PR #39483 裡的路徑穿越，HEAD 上照樣帶著明文 `--lan` Cookie、不可自撤銷的 Bearer Token 和儲存庫鉤子遠端執行。",
+      "snippet": "就算悄悄修掉了 PR #39483 裡的路徑穿越，HEAD 上照樣帶著明文 --lan Cookie、不可自撤銷的 Bearer Token 和儲存庫鉤子遠端執行。",
       "messages": [
         {
           "sender": "獨立安全審計（ca81b7b9）",
@@ -1127,7 +1127,7 @@
     },
     "EV-003": {
       "title": "GitHub 帳號清除威脅",
-      "caption": "2026 年 11 月 23 日的貼文，命令 MIT 分叉作者立刻改名，否則就丟掉 GitHub 帳號。"
+      "caption": "2026 年 11 月 23 日的貼文，命令 MIT Fork作者立刻改名，否則就丟掉 GitHub 帳號。"
     },
     "EV-004": {
       "title": "員工分叉 maria-rcks/t3libre",
@@ -1214,8 +1214,8 @@
       "caption": "側邊欄裡刪掉的工作階段仍留在 statev2.sqlite，磁碟佔用漲到 25.9–41.6 GB。"
     },
     "EV-025": {
-      "title": "Issue #11222 全系統處理程序掃描",
-      "caption": "t3-resource-monitor 每 5 秒掃一遍全系統處理程序，取完整 cmdline，常駐約 280–300 個控制代碼。"
+      "title": "Issue #11222 全系統行程掃描",
+      "caption": "t3-resource-monitor 每 5 秒掃一遍全系統行程，取完整 cmdline，常駐約 280–300 個控制代碼。"
     },
     "EV-026": {
       "title": "PR #5551 隱藏 Plan 開關（「現實檢驗」）",
@@ -1347,7 +1347,7 @@
     },
     "EV-058": {
       "title": "投資人收購詢問的回覆",
-      "caption": "11 月 21 日對 @maria_rcks 說：「已经有好几个投资人问过我这事了。」"
+      "caption": "11 月 21 日對 @maria_rcks 說：「已經有好幾個投資人問過我這事了。」"
     },
     "EV-059": {
       "title": "聲稱 @PatrickToulme 合過「很多 PR」",
@@ -1358,11 +1358,11 @@
       "caption": "主分支 git log 按 patrick-toulme 過濾，只有一個提交（PR #31158）。"
     },
     "EV-061": {
-      "title": "「就算把我机器干废了，那也是免费素材」",
+      "title": "「就算把我機器搞廢了，那也是免費素材」",
       "caption": "2026 年 11 月 10 日的貼文，解釋為什麼為了拍影片寧可跑得飛快，哪怕 agent 把他的機器整廢。"
     },
     "EV-062": {
-      "title": "「我的 yolo 合并有时候确实会把东西搞坏」",
+      "title": "「我的 yolo 合併有時候確實會把東西搞壞」",
       "caption": "2026 年 11 月 10 日的貼文，提醒 nightly 使用者做好心理準備：未經審查的合併會把東西搞壞。"
     },
     "EV-063": {
@@ -1371,15 +1371,15 @@
     },
     "EV-064": {
       "title": "威脅從使用者手裡收回 /btw",
-      "caption": "11 月 12 日警告批評者：「我已经为你们让步做了 /btw，小心点。真要收回去我一点都不怕。」"
+      "caption": "11 月 12 日警告批評者：「我已經為你們讓步做了 /btw，小心點。真要收回去我一點都不怕。」"
     },
     "EV-065": {
-      "title": "「带标注的截图，什么时候都比一个 PR 强」",
-      "caption": "2026 年 11 月 20 日的貼文，說他寧可要一張帶標註的截圖，也不要一個開源 PR——「任何时候都一样」。"
+      "title": "「帶標註的截圖，什麼時候都比一個 PR 強」",
+      "caption": "2026 年 11 月 20 日的貼文，說他寧可要一張帶標註的截圖，也不要一個開源 PR——「任何時候都一樣」。"
     },
     "EV-066": {
-      "title": "「行，这个我偷了」+ 派 @bot 抓取",
-      "caption": "回了句「行，这个我偷了」，30 秒後 @ 上 @bot，把 @MiaAI_lab 在 beebox 上的 fork 搬過來。"
+      "title": "「行，這個我偷了」+ 派 @bot 抓取",
+      "caption": "回了句「行，這個我偷了」，30 秒後 @ 上 @bot，把 @MiaAI_lab 在 beebox 上的 fork 搬過來。"
     },
     "EV-067": {
       "title": "@bot 抄競品功能",
@@ -1423,7 +1423,7 @@
     },
     "EV-077": {
       "title": "「工程師就該大規模失業」",
-      "caption": "引用轉發一則工具比較的提問，當着 38.6 萬多觀眾的面說開發者活該失業。"
+      "caption": "引用轉發一則工具比較的提問，當著 38.6 萬多觀眾的面說開發者活該失業。"
     },
     "EV-078": {
       "title": "「在本地 AI 的墳頭蹦迪」",
@@ -1435,7 +1435,7 @@
     },
     "EV-080": {
       "title": "反覆「stupid bitch」辱罵並轉發",
-      "caption": "2026 年 11 月 12 日，對着一位女性批評者反覆罵「stupid bitch」，還補了一句「說這話我一點不後悔」。"
+      "caption": "2026 年 11 月 12 日，對著一位女性批評者反覆罵「stupid bitch」，還補了一句「說這話我一點不後悔」。"
     },
     "EV-081": {
       "title": "威脅送人進監獄，還嘲諷對方的 RSD",

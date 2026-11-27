@@ -8,6 +8,7 @@ import json
 import re
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE_DIR = ROOT / "site"
@@ -61,8 +62,8 @@ THREAD_CSS = """/* Static SEO Archive Thread Stylesheet — matches Tmail Materi
   --warn-bg: #fef7e0;
   --warn-ink: #8a5300;
   --chip-bg: #eceff1;
-  --font-sans: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 *, *::before, *::after {
@@ -87,6 +88,22 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 .topbar {
@@ -136,8 +153,8 @@ a:hover {
 .lang-switch {
   display: inline-flex;
   align-items: center;
-  height: 34px;
-  padding: 0 12px;
+  min-height: 36px;
+  padding: 6px 13px;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: var(--surface);
@@ -156,8 +173,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  height: 36px;
-  padding: 0 16px;
+  min-height: 36px;
+  padding: 6px 16px;
   border-radius: 18px;
   background: var(--accent-blue);
   color: #ffffff !important;
@@ -442,7 +459,8 @@ a:hover {
   align-items: center;
   gap: 4px;
   max-width: 100%;
-  padding: 4px 11px;
+  min-height: 36px;
+  padding: 6px 12px;
   border-radius: 999px;
   background: #f1f5fb;
   border: 1px solid #d2e3fc;
@@ -473,8 +491,8 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  height: 36px;
-  padding: 0 15px;
+  min-height: 36px;
+  padding: 6px 15px;
   border-radius: 18px;
   border: 1px solid #c4c7c5;
   background: #ffffff;
@@ -542,6 +560,21 @@ a:hover {
 }
 
 @media (max-width: 680px) {
+  .chip-exhibit,
+  .pn-card {
+    min-height: 36px;
+  }
+
+  .chip-exhibit {
+    padding: 6px 12px;
+  }
+
+  .breadcrumb a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+  }
+
   .thread-shell {
     padding: 16px;
     border-radius: 12px;
@@ -700,8 +733,31 @@ def format_body_html(text: str) -> str:
     return "\n".join(blocks)
 
 
+_IMAGE_DIM_CACHE: dict[str, tuple[int, int]] = {}
+
+
+def resolve_local_asset(src: str) -> Path:
+    rel = src.lstrip("./")
+    if rel.startswith("evidence/"):
+        return ROOT / rel
+    return SITE_DIR / rel
+
+
+def get_image_dimensions(src: str) -> tuple[int, int]:
+    rel = src.lstrip("./")
+    if rel not in _IMAGE_DIM_CACHE:
+        with Image.open(resolve_local_asset(rel)) as img:
+            _IMAGE_DIM_CACHE[rel] = img.size
+    return _IMAGE_DIM_CACHE[rel]
+
+
+def strip_md_code(text: str) -> str:
+    cleaned = re.sub(r"`([^`\n]*)`", r"\1", str(text or ""))
+    return cleaned.replace("`", "")
+
+
 def truncate_description(text: str, limit: int = 160) -> str:
-    clean = re.sub(r"\s+", " ", str(text or "").strip())
+    clean = re.sub(r"\s+", " ", strip_md_code(text).strip())
     if len(clean) <= limit:
         return clean
     cut = clean[: limit - 1]
@@ -711,13 +767,18 @@ def truncate_description(text: str, limit: int = 160) -> str:
 
 
 def make_page_title(subject: str, lang: str) -> str:
-    full = f"{subject} · Tmail · Temu3 Code"
-    if lang == "zh-CN" or len(full) <= 78:
+    clean = re.sub(r"\s+", " ", strip_md_code(subject).strip())
+    full = f"{clean} · Tmail · Temu3 Code"
+    if len(full) <= 68:
         return full
-    short = f"{subject} · Tmail"
-    if len(short) <= 78:
+    short = f"{clean} · Tmail"
+    if len(short) <= 70:
         return short
-    return short[:77].rstrip() + "…"
+    max_subj = 68 - len("… · Tmail")
+    cut = clean[:max_subj]
+    if " " in cut and cut.rfind(" ") > max_subj * 0.6:
+        cut = cut[: cut.rfind(" ")]
+    return cut.rstrip(" ,;:-—") + "… · Tmail"
 
 
 def status_label_and_class(th: dict, lang: str) -> tuple[str, str]:
@@ -753,15 +814,15 @@ def render_thread_html(
     zh_th = zh_bundle["threads"][tid]
     zh_topics = zh_bundle["topics"]
 
-    subject = zh_th["subject"] if is_zh else th["subject"]
-    snippet = zh_th["snippet"] if is_zh else th["snippet"]
+    subject = strip_md_code(zh_th["subject"] if is_zh else th["subject"])
+    snippet = strip_md_code(zh_th["snippet"] if is_zh else th["snippet"])
     from_str = zh_th["from"] if is_zh else th["from"]
     to_str = zh_th["to"] if is_zh else th["to"]
     date_disp = zh_th["dateDisplay"] if is_zh else th["dateDisplay"]
 
     root_rel = "../../../../" if is_zh else "../../../"
     mail_rel = "../../../" if is_zh else "../../"
-    css_href = "../../thread.css?v=2" if is_zh else "../thread.css?v=2"
+    css_href = "../../thread.css?v=3" if is_zh else "../thread.css?v=3"
     en_canonical = f"{BASE_URL}/mail/t/{tid}/"
     zh_canonical = f"{BASE_URL}/mail/t/{tid}/zh/"
     canonical_url = zh_canonical if is_zh else en_canonical
@@ -774,14 +835,18 @@ def render_thread_html(
     page_title = make_page_title(subject, lang)
     meta_desc = truncate_description(snippet, 160)
 
+    att_srcs: list[str] = []
     att_urls: list[str] = []
     for m in th["messages"]:
         for a in m.get("attachments", []):
             src = a["src"].lstrip("./")
             full_u = f"{BASE_URL}/{src}"
             if full_u not in att_urls:
+                att_srcs.append(src)
                 att_urls.append(full_u)
-    og_image = att_urls[0] if att_urls else f"{BASE_URL}/og-card.png"
+    og_src = att_srcs[0] if att_srcs else "og-card.png"
+    og_w, og_h = get_image_dimensions(og_src)
+    og_image = f"{BASE_URL}/{og_src}"
     ld_images = att_urls if att_urls else [og_image]
 
     exhibit = th["exhibit"]
@@ -869,12 +934,14 @@ def render_thread_html(
             figs: list[str] = []
             z_att_titles = zm.get("attachments", [])
             for ai, a in enumerate(atts):
-                a_title = z_att_titles[ai] if (is_zh and ai < len(z_att_titles)) else a["title"]
-                rel_src = root_rel + a["src"].lstrip("./")
+                a_title = strip_md_code(z_att_titles[ai] if (is_zh and ai < len(z_att_titles)) else a["title"])
+                att_src = a["src"].lstrip("./")
+                img_w, img_h = get_image_dimensions(att_src)
+                rel_src = root_rel + att_src
                 figs.append(
                     f'<figure class="att-fig">'
                     f'<a href="{esc(rel_src)}" target="_blank" rel="noopener noreferrer">'
-                    f'<img src="{esc(rel_src)}" alt="{esc(a_title)}" loading="lazy" />'
+                    f'<img src="{esc(rel_src)}" alt="{esc(a_title)}" width="{img_w}" height="{img_h}" loading="lazy" decoding="async" />'
                     f"</a>"
                     f"<figcaption>{esc(a_title)}</figcaption>"
                     f"</figure>"
@@ -920,8 +987,8 @@ def render_thread_html(
     next_href = (
         f"../../{next_th['id']}/zh/" if is_zh else f"../{next_th['id']}/"
     ) if next_th else ""
-    prev_subj = (zh_bundle["threads"][prev_th["id"]]["subject"] if is_zh else prev_th["subject"]) if prev_th else ""
-    next_subj = (zh_bundle["threads"][next_th["id"]]["subject"] if is_zh else next_th["subject"]) if next_th else ""
+    prev_subj = strip_md_code((zh_bundle["threads"][prev_th["id"]]["subject"] if is_zh else prev_th["subject"]) if prev_th else "")
+    next_subj = strip_md_code((zh_bundle["threads"][next_th["id"]]["subject"] if is_zh else next_th["subject"]) if next_th else "")
 
     prev_card = (
         f'<a class="pn-card" href="{esc(prev_href)}"><span class="pn-label">{"← 上一条" if is_zh else "← Previous"}</span><span class="pn-title">{esc(prev_subj)}</span></a>'
@@ -972,6 +1039,8 @@ def render_thread_html(
   <meta property="og:title" content="{esc(subject)}" />
   <meta property="og:description" content="{esc(meta_desc)}" />
   <meta property="og:image" content="{esc(og_image)}" />
+  <meta property="og:image:width" content="{og_w}" />
+  <meta property="og:image:height" content="{og_h}" />
   <meta property="article:published_time" content="{esc(th['date'])}" />
 
   <meta name="twitter:card" content="summary_large_image" />
@@ -982,9 +1051,6 @@ def render_thread_html(
 
   <link rel="icon" type="image/svg+xml" href="{esc(root_rel)}favicon.svg" />
   <link rel="apple-touch-icon" href="{esc(root_rel)}apple-touch-icon.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600&display=swap" />
   <link rel="stylesheet" href="{esc(css_href)}" />
 
   <script type="application/ld+json">{article_ld_json}</script>
@@ -1209,11 +1275,17 @@ def validate_outputs(threads_en: list[dict], memes_data: dict) -> None:
     for hp in html_files:
         raw = hp.read_text(encoding="utf-8")
         assert "t.co/" not in raw.lower(), f"t.co link found in {hp}"
+        assert "fonts.googleapis.com" not in raw and "Noto+Sans+SC" not in raw, f"External font link found in {hp}"
+        assert 'property="og:image:width"' in raw and 'property="og:image:height"' in raw, f"Missing og:image dimensions in {hp}"
+        for img_tag in re.findall(r"<img\b[^>]*>", raw):
+            assert 'width="' in img_tag and 'height="' in img_tag and 'decoding="async"' in img_tag, f"Missing img attrs in {hp}: {img_tag}"
         t_m = re.search(r"<title>([^<]+)</title>", raw)
         d_m = re.search(r'<meta name="description" content="([^"]*)"', raw)
         assert t_m and d_m, f"Missing title/description in {hp}"
         title_val = html.unescape(t_m.group(1))
         desc_val = html.unescape(d_m.group(1))
+        assert "`" not in title_val and "`" not in desc_val, f"Raw backtick in title/desc of {hp}"
+        assert len(title_val) <= 72, f"Title >72 chars ({len(title_val)}) in {hp}: {title_val!r}"
         assert title_val not in titles, f"Duplicate title {title_val!r} in {hp}"
         assert desc_val not in descs, f"Duplicate description {desc_val!r} in {hp}"
         assert len(desc_val) <= 160, f"Description >160 chars ({len(desc_val)}) in {hp}"

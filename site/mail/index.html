@@ -25,6 +25,7 @@
   <meta name="twitter:image" content="https://temu3code.com/og-card.png" />
   <meta name="twitter:image:alt" content="Tmail searchable public archive banner" />
 
+  <link rel="icon" href="../favicon.ico" sizes="32x32" />
   <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
   <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
   <link rel="manifest" href="../site.webmanifest" />
@@ -74,8 +75,10 @@
   <link rel="preconnect" href="https://cdn.temu3code.com" crossorigin />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
-  <link rel="stylesheet" href="./styles.css?v=9" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" data-async-font />
+  <link rel="stylesheet" href="./styles.css?v=10" />
+  <script defer src="../data/i18n.js?v=16"></script>
+  <script defer src="./app.js?v=20"></script>
 </head>
 <body>
   <div class="app-shell" id="appShell">
@@ -139,14 +142,14 @@
         </button>
         <button type="button" id="statsPillBtn" class="jemini-pill" title="1,151-Tweet Forensic Stats">
           <span class="sparkle-dot" aria-hidden="true">✦</span>
-          <span data-i18n="statsPill">1,151 Stats</span>
+          <span data-i18n="statsPill">1,151 Posts</span>
         </button>
         <div class="apps-wrap">
           <button type="button" id="appsLauncherBtn" class="icon-btn" aria-label="Audit Suite Apps" title="Audit Suite">
             <svg class="tmail-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="5" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="5" cy="19" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="19" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="19" r="1.5" fill="currentColor" stroke="none"/></svg>
           </button>
           <div id="appsLauncherMenu" class="apps-menu" hidden>
-            <div class="apps-menu-title" data-i18n="suiteTitle">Public Record Suite</div>
+            <div class="apps-menu-title" data-i18n="suiteTitle">Apps</div>
             <div class="apps-grid">
               <button type="button" class="app-tile" data-suite="inbox">
                 <span class="app-tile-icon tile-mail"><svg class="tmail-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></span>
@@ -192,8 +195,8 @@
           <div id="profileMenu" class="profile-menu" hidden>
             <div class="profile-email">public-record@temu3code.com</div>
             <div class="profile-big-avatar">T3</div>
-            <div class="profile-greeting" data-i18n="profileGreeting">Public Record Archive</div>
-            <div class="profile-sub" data-i18n="profileSub">Public posts, GitHub PRs, and archived screenshots for @theo / pingdotgg/t3code.</div>
+            <div class="profile-greeting" data-i18n="profileGreeting">Temu3 Archive</div>
+            <div class="profile-sub" data-i18n="profileSub">Public posts, GitHub PRs, and archived screenshots.</div>
             <div class="profile-actions">
               <a class="profile-btn" href="../" data-report-link data-i18n="openHome">Temu3 Home</a>
               <a class="profile-btn" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
@@ -212,7 +215,7 @@
         <div class="compose-wrap">
           <button type="button" id="composeBtn" class="compose-btn">
             <svg class="tmail-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
-            <span data-i18n="submitReceipt">Submit Receipt</span>
+            <span data-i18n="submitReceipt">Submit</span>
           </button>
         </div>
 
@@ -229,7 +232,7 @@
           </button>
           <button type="button" class="nav-row" data-folder="deleted">
             <svg class="tmail-ico nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3l18 18"/><path d="M10.6 10.6a2 2 0 0 0 2.8 2.8"/><path d="M9.9 4.2A10.4 10.4 0 0 1 12 4c5.5 0 9.5 4.2 10.5 8-.4 1.6-1.4 3.2-2.7 4.5M6.6 6.6C4.4 8 2.9 10 2.5 12c1 3.8 5 8 9.5 8 1.9 0 3.7-.6 5.2-1.5"/></svg>
-            <span class="nav-label" data-i18n="folderDeleted">Deleted / Retracted</span>
+            <span class="nav-label" data-i18n="folderDeleted">Deleted</span>
             <span class="nav-count" id="countDeleted">0</span>
           </button>
           <button type="button" class="nav-row" data-folder="sent">
@@ -244,7 +247,7 @@
           </button>
           <button type="button" class="nav-row" data-folder="activity">
             <svg class="tmail-ico nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>
-            <span class="nav-label" data-i18n="folderActivity">Daily Activity</span>
+            <span class="nav-label" data-i18n="folderActivity">Timeline</span>
           </button>
         </nav>
 
@@ -264,7 +267,7 @@
             <span class="section-title-text" data-i18n="peopleHeading">PEOPLE</span>
           </button>
           <div class="people-list-wrap" id="peopleListWrap">
-            <button type="button" class="browse-people-btn" id="browsePeopleBtn" data-i18n="browsePeople">Browse all people →</button>
+            <button type="button" class="browse-people-btn" id="browsePeopleBtn" data-i18n="browsePeople">All people →</button>
             <ul class="people-list" id="peopleList"></ul>
           </div>
         </div>
@@ -274,7 +277,7 @@
       <main class="main-card" id="mainCard" role="main">
         <!-- LIST VIEW CONTAINER -->
         <div id="listView" class="view-pane">
-          <h1 style="position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;">Tmail · Public Archive for T3 Code (pingdotgg/t3code)</h1>
+          <h1 class="sr-only">Tmail · Public Archive for T3 Code (pingdotgg/t3code)</h1>
           <!-- TOOLBAR -->
           <div class="list-toolbar">
             <div class="toolbar-left">
@@ -292,7 +295,7 @@
                   <option value="all" data-i18n="allPlatforms">All sources</option>
                   <option value="X">X (Twitter)</option>
                   <option value="GitHub">GitHub</option>
-                  <option value="Code" data-i18n="platCode">Source Code</option>
+                  <option value="Code" data-i18n="platCode">Code</option>
                   <option value="YouTube">YouTube</option>
                 </select>
               </div>
@@ -300,11 +303,11 @@
               <div class="select-pill">
                 <svg class="tmail-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h2M12 14h2M16 14h.01"/></svg>
                 <select id="yearFilter" aria-label="Filter by date range">
-                  <option value="all" data-i18n="allDates">2023–2026</option>
+                  <option value="all" data-i18n="allDates">All dates</option>
                   <option value="2023-2024">2023 – 2024</option>
                   <option value="2025">2025</option>
                   <option value="2026-pre" data-i18n="yearPre">2026 (Mar – Nov 22)</option>
-                  <option value="crisis" data-i18n="yearCrisis">Nov 23–25 Crisis</option>
+                  <option value="crisis" data-i18n="yearCrisis">Nov 23–25</option>
                 </select>
               </div>
 
@@ -352,7 +355,7 @@
               <div class="row-sender"><span class="sender-name">@theo &amp; Julius ↔ EU GDPR</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-11-25-gdpr-overnight-collapse/" style="color:inherit;text-decoration:none;">[DELETED] 4 AM closed-source threat &amp; 90m PR contradictions</a>
+                <a class="row-subject" href="./t/2026-11-25-gdpr-overnight-collapse/">[DELETED] 4 AM closed-source threat &amp; 90m PR contradictions</a>
                 <span class="row-snippet">After an EU GDPR complaint, Theo&#x27;s three morning assurances were refuted inside 90 minutes by T3&#x27;s own overnight PRs and his 100 MB event dump.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 25, 2026</span></div>
@@ -362,7 +365,7 @@
               <div class="row-sender"><span class="sender-name">Security Audit (ca81b7b9)</span></div>
               <div class="row-main">
                 <span class="platform-chip">Code</span>
-                <a class="row-subject" href="./t/2026-11-25-ca81b7b9-active-vulns/" style="color:inherit;text-decoration:none;">0 security advisories &amp; 5 active auth/RCE flaws at ca81b7b9</a>
+                <a class="row-subject" href="./t/2026-11-25-ca81b7b9-active-vulns/">0 security advisories &amp; 5 active auth/RCE flaws at ca81b7b9</a>
                 <span class="row-snippet">Even after quietly fixing path traversal in PR #39483, HEAD still ships plaintext --lan cookies, unrevocable Bearer tokens, and repo hook RCE.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 25, 2026</span></div>
@@ -372,7 +375,7 @@
               <div class="row-sender"><span class="sender-name">@theo ↔ @DLKFZWilliam2</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-24-retroactive-trademark-blocker/" style="color:inherit;text-decoration:none;">Merged TRADEMARK.md 17h after threat &amp; cited it 94s later</a>
+                <a class="row-subject" href="./t/2026-11-24-retroactive-trademark-blocker/">Merged TRADEMARK.md 17h after threat &amp; cited it 94s later</a>
                 <span class="row-snippet">Mocked compliance (&quot;get a better lawyer&quot;) at 08:38, blocked ~100 accounts, told @DLKFZWilliam2 &quot;China should kick you out&quot;, and rushed PR #41898.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 24, 2026</span></div>
@@ -382,7 +385,7 @@
               <div class="row-sender"><span class="sender-name">@theo → Chinese Tech Twitter</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-24-cesspit-crisis-outburst/" style="color:inherit;text-decoration:none;">&quot;Biggest fucking cesspit&quot; outburst &amp; &quot;I&#x27;m not apologizing&quot;</a>
+                <a class="row-subject" href="./t/2026-11-24-cesspit-crisis-outburst/">&quot;Biggest fucking cesspit&quot; outburst &amp; &quot;I&#x27;m not apologizing&quot;</a>
                 <span class="row-snippet">As Part 1 crossed 1.81M views, Theo&#x27;s personal insults jumped 4.0× (3.6% → 14.4%) and he copy-pasted &quot;完了，又伤害中国人民的感情了。&quot; three times.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 24, 2026</span></div>
@@ -392,7 +395,7 @@
               <div class="row-sender"><span class="sender-name">@theo → Enterprise / Privacy</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-24-managed-policy-plaintext-relay/" style="color:inherit;text-decoration:none;">Claimed &quot;never touches our servers&quot; despite plaintext relay</a>
+                <a class="row-subject" href="./t/2026-11-24-managed-policy-plaintext-relay/">Claimed &quot;never touches our servers&quot; despite plaintext relay</a>
                 <span class="row-snippet">Own docs admit web has no toggle, mobile ignores Managed Policy, Publish ignores opt-outs, and T3 Connect runs zero E2E encryption.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 24, 2026</span></div>
@@ -402,7 +405,7 @@
               <div class="row-sender"><span class="sender-name">@theo ↔ @DDdxx666 (MIT Fork)</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-23-origin-temu3-threat/" style="color:inherit;text-decoration:none;">&quot;Temu3 Code&quot;: threatened GitHub ban over Chinese MIT fork</a>
+                <a class="row-subject" href="./t/2026-11-23-origin-temu3-threat/">&quot;Temu3 Code&quot;: threatened GitHub ban over Chinese MIT fork</a>
                 <span class="row-snippet">After promising &quot;Steal our code (legally)&quot; on t3.codes, Theo attacked @DDdxx666&#x27;s MIT fork, apologized only in DMs, and welcomed trillion-dollar US firms 11h later.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 23, 2026</span></div>
@@ -412,7 +415,7 @@
               <div class="row-sender"><span class="sender-name">@theo → Engineers &amp; Linux</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-22-engineers-unemployment-linux/" style="color:inherit;text-decoration:none;">&quot;Engineers deserve mass unemployment&quot; &amp; &quot;Linux larpers&quot;</a>
+                <a class="row-subject" href="./t/2026-11-22-engineers-unemployment-linux/">&quot;Engineers deserve mass unemployment&quot; &amp; &quot;Linux larpers&quot;</a>
                 <span class="row-snippet">Told 386k+ viewers devs deserved unemployment over a tool comparison, exactly 24 hours after lecturing others not to &quot;burn trust&quot;.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 22, 2026</span></div>
@@ -422,7 +425,7 @@
               <div class="row-sender"><span class="sender-name">@Allmight97 ↔ t3code (#41536)</span></div>
               <div class="row-main">
                 <span class="platform-chip">Code</span>
-                <a class="row-subject" href="./t/2026-11-22-antigravity-spoof-3min-ban/" style="color:inherit;text-decoration:none;">Promised &quot;zero risk&quot; Antigravity ToS; fresh $20 banned in 3m</a>
+                <a class="row-subject" href="./t/2026-11-22-antigravity-spoof-3min-ban/">Promised &quot;zero risk&quot; Antigravity ToS; fresh $20 banned in 3m</a>
                 <span class="row-snippet">While FAQ promised ToS safety and Theo blamed proxies, code extracted OS keyring tokens, spoofed v1internal, and forged SSH_CONNECTION.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 22, 2026</span></div>
@@ -432,7 +435,7 @@
               <div class="row-sender"><span class="sender-name">@theo → slopalytics.com</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-11-22-pr41237-21h-filter-drop/" style="color:inherit;text-decoration:none;">Dropped model privacy filter in 21h for slopalytics.com</a>
+                <a class="row-subject" href="./t/2026-11-22-pr41237-21h-filter-drop/">Dropped model privacy filter in 21h for slopalytics.com</a>
                 <span class="row-snippet">PR #41237 removed PR #29001&#x27;s whitelist so private enterprise and local model names (ollama/acme-internal) uploaded verbatim (while force-push sat 52+ days).</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 22, 2026</span></div>
@@ -442,7 +445,7 @@
               <div class="row-sender"><span class="sender-name">@theo → 20 Big-Tech VIPs</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-19-selective-politeness-vips/" style="color:inherit;text-decoration:none;">0.0% profanity to 20 Big-Tech VIPs vs. 8.0% to ordinary devs</a>
+                <a class="row-subject" href="./t/2026-11-19-selective-politeness-vips/">0.0% profanity to 20 Big-Tech VIPs vs. 8.0% to ordinary devs</a>
                 <span class="row-snippet">Across 1,151 consecutive X posts (Nov 7–24), Theo showed 32.6% gratitude to lab execs while insults spiked 4.0× to 14.4% during the Nov 24 crisis.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 19, 2026</span></div>
@@ -452,7 +455,7 @@
               <div class="row-sender"><span class="sender-name">@theo → Threads Critic (RSD)</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-18-jail-threat-rsd/" style="color:inherit;text-decoration:none;">Threatened critic with jail &amp; mocked their RSD diagnosis</a>
+                <a class="row-subject" href="./t/2026-11-18-jail-threat-rsd/">Threatened critic with jail &amp; mocked their RSD diagnosis</a>
                 <span class="row-snippet">Posted during a 48-hour span in which Theo cited a 102°F fever while publishing 177 posts, a 6,643-char essay, a video, and 8 attacks on @elshayib.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 18, 2026</span></div>
@@ -462,7 +465,7 @@
               <div class="row-sender"><span class="sender-name">@theo → AI Labs &amp; VCs</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-18-31t-token-radar/" style="color:inherit;text-decoration:none;">31.7T tokens/day ($10.19M/day) telemetry radar &amp; VC talks</a>
+                <a class="row-subject" href="./t/2026-11-18-31t-token-radar/">31.7T tokens/day ($10.19M/day) telemetry radar &amp; VC talks</a>
                 <span class="row-snippet">Default telemetry built a real-time lab market-share monitor alongside $800k+ spend, $300k+ in free OpenAI tokens, and investor inquiries.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 18, 2026</span></div>
@@ -472,7 +475,7 @@
               <div class="row-sender"><span class="sender-name">t3code → @inayayousfi (#27077)</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-11-17-pr27077-rejected/" style="color:inherit;text-decoration:none;">PR #27077 telemetry opt-out (147 tests) closed as unwanted</a>
+                <a class="row-subject" href="./t/2026-11-17-pr27077-rejected/">PR #27077 telemetry opt-out (147 tests) closed as unwanted</a>
                 <span class="row-snippet">Marked the fourth community opt-out PR (#13458, #16763, #21248, #27077) rejected despite Macroscope approval.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 17, 2026</span></div>
@@ -482,7 +485,7 @@
               <div class="row-sender"><span class="sender-name">@theo ↔ Vibe Kanban / Daytona</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-16-vibe-kanban-daytona/" style="color:inherit;text-decoration:none;">Mocked portfolio firm Vibe Kanban &amp; overlapped Daytona</a>
+                <a class="row-subject" href="./t/2026-11-16-vibe-kanban-daytona/">Mocked portfolio firm Vibe Kanban &amp; overlapped Daytona</a>
                 <span class="row-snippet">After Vibe Kanban pivoted toward T3 Code&#x27;s layout and shut down, investor Theo mocked its UI — nine days after proposing paid cloud sandboxes against Daytona.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 16, 2026</span></div>
@@ -492,7 +495,7 @@
               <div class="row-sender"><span class="sender-name">@theo → Contributors &amp; Local AI</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-11-12-contributing-vouched-local-ai/" style="color:inherit;text-decoration:none;">CONTRIBUTING: &quot;Don&#x27;t&quot; + VOUCHED.td bans + Local AI attacks</a>
+                <a class="row-subject" href="./t/2026-11-12-contributing-vouched-local-ai/">CONTRIBUTING: &quot;Don&#x27;t&quot; + VOUCHED.td bans + Local AI attacks</a>
                 <span class="row-snippet">Closed 174 items as unwanted, rejected a contributor for not following him on X, threatened to yank /btw, and mocked Qwen 3.8 users.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 12, 2026</span></div>
@@ -502,7 +505,7 @@
               <div class="row-sender"><span class="sender-name">@theo → Female Critic</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-11-gendered-attack-demonetize/" style="color:inherit;text-decoration:none;">&quot;Stupid bitch&quot; attack &amp; urging followers to demonetize critic</a>
+                <a class="row-subject" href="./t/2026-11-11-gendered-attack-demonetize/">&quot;Stupid bitch&quot; attack &amp; urging followers to demonetize critic</a>
                 <span class="row-snippet">During a 125-post day (32 in one hour), Theo said he had &quot;no regret&quot; over gendered slurs and asked followers to demonetize critics via Community Notes.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 11, 2026</span></div>
@@ -512,7 +515,7 @@
               <div class="row-sender"><span class="sender-name">@theo → Nightly Users</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-10-yolo-merges-nuke/" style="color:inherit;text-decoration:none;">&quot;If it nukes my machine that&#x27;s free content&quot;: 700-agent merges</a>
+                <a class="row-subject" href="./t/2026-11-10-yolo-merges-nuke/">&quot;If it nukes my machine that&#x27;s free content&quot;: 700-agent merges</a>
                 <span class="row-snippet">Bragged about 500 commits/day and &quot;yolo merges breaking shit sometimes&quot; while blaming 70% of user feature requests on &quot;prompt skill issues&quot;.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 10, 2026</span></div>
@@ -522,7 +525,7 @@
               <div class="row-sender"><span class="sender-name">@theo ↔ @bermudi (#33639)</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-11-09-issue33639-bermudi-insult/" style="color:inherit;text-decoration:none;">Called user @bermudi an &quot;ungrateful prick&quot; in Issue #33639</a>
+                <a class="row-subject" href="./t/2026-11-09-issue33639-bermudi-insult/">Called user @bermudi an &quot;ungrateful prick&quot; in Issue #33639</a>
                 <span class="row-snippet">Told a user asking about hidden UI changes after PR #33131 to uninstall, then rejected a clean fix PR #41572 the next morning.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 9, 2026</span></div>
@@ -532,7 +535,7 @@
               <div class="row-sender"><span class="sender-name">@theo → @MiaAI_lab &amp; @bot</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-08-stealing-miaai-fork/" style="color:inherit;text-decoration:none;">&quot;Okay I&#x27;m stealing this&quot;: sent @bot 30s later to scrape fork</a>
+                <a class="row-subject" href="./t/2026-11-08-stealing-miaai-fork/">&quot;Okay I&#x27;m stealing this&quot;: sent @bot 30s later to scrape fork</a>
                 <span class="row-snippet">Replied at 09:28:47 and tagged @bot on beebox at 09:29:17 to port @MiaAI_lab&#x27;s fork, then repeated the cloning command against rival tools on Nov 13.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 8, 2026</span></div>
@@ -542,7 +545,7 @@
               <div class="row-sender"><span class="sender-name">@theo ↔ @zhilsinger (PR #29922)</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-11-02-pr29922-77k-stars/" style="color:inherit;text-decoration:none;">Self-merged 30s star funnel (30k → 77k) with unfixed bug</a>
+                <a class="row-subject" href="./t/2026-11-02-pr29922-77k-stars/">Self-merged 30s star funnel (30k → 77k) with unfixed bug</a>
                 <span class="row-snippet">Bypassed Macroscope&#x27;s approval block and left @zhilsinger&#x27;s Request Changes unanswered for 19+ days while driver.ts#L60-L99 lets clients star any repo.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 2, 2026</span></div>
@@ -552,7 +555,7 @@
               <div class="row-sender"><span class="sender-name">Users → Issues #17845 / #11222</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-10-28-fake-delete-process-spy/" style="color:inherit;text-decoration:none;">41.6 GB fake SQLite delete &amp; 5-second OS cmdline process scan</a>
+                <a class="row-subject" href="./t/2026-10-28-fake-delete-process-spy/">41.6 GB fake SQLite delete &amp; 5-second OS cmdline process scan</a>
                 <span class="row-snippet">&quot;Permanently clears&quot; only appended a soft-delete event, while t3-resource-monitor swept 440+ OS processes and full cmdlines every 5s.</span>
               </div>
               <div class="row-meta"><span class="row-date">Oct 28, 2026</span></div>
@@ -562,7 +565,7 @@
               <div class="row-sender"><span class="sender-name">@theo → ~/.codex &amp; ~/.claude</span></div>
               <div class="row-main">
                 <span class="platform-chip">Code</span>
-                <a class="row-subject" href="./t/2026-10-20-pr21506-cross-tool-hash/" style="color:inherit;text-decoration:none;">PR #21506 read ~/.codex &amp; ~/.claude.json to link machines</a>
+                <a class="row-subject" href="./t/2026-10-20-pr21506-cross-tool-hash/">PR #21506 read ~/.codex &amp; ~/.claude.json to link machines</a>
                 <span class="row-snippet">Authored by t3dotgg, Identify.ts hashed OpenAI JWT user_id and Claude accountUuid via unsalted SHA-256 under install.owner_observed.</span>
               </div>
               <div class="row-meta"><span class="row-date">Oct 20, 2026</span></div>
@@ -572,7 +575,7 @@
               <div class="row-sender"><span class="sender-name">t3code → ingest.t3.codes</span></div>
               <div class="row-main">
                 <span class="platform-chip">Code</span>
-                <a class="row-subject" href="./t/2026-10-15-ingest-t3-codes/" style="color:inherit;text-decoration:none;">10s telemetry batches route via closed-source ingest.t3.codes</a>
+                <a class="row-subject" href="./t/2026-10-15-ingest-t3-codes/">10s telemetry batches route via closed-source ingest.t3.codes</a>
                 <span class="row-snippet">Line 1 of AnalyticsService.ts confirms T3&#x27;s ingest server retains events before forwarding to PostHog, and still writes a local ID even when disabled.</span>
               </div>
               <div class="row-meta"><span class="row-date">Oct 2026</span></div>
@@ -582,7 +585,7 @@
               <div class="row-sender"><span class="sender-name">Issue #15353 → t3code</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-10-03-issue15353-force-push/" style="color:inherit;text-decoration:none;">Auto mode silently runs git push --force origin main</a>
+                <a class="row-subject" href="./t/2026-10-03-issue15353-force-push/">Auto mode silently runs git push --force origin main</a>
                 <span class="row-snippet">Even after Claude&#x27;s classifier blocked twice and requested human approval, T3 Code logged &quot;user_temporary&quot; and left 3 fix PRs unmerged for 52+ days.</span>
               </div>
               <div class="row-meta"><span class="row-date">Oct 3, 2026</span></div>
@@ -592,7 +595,7 @@
               <div class="row-sender"><span class="sender-name">@theo → PR #5551 / #9190</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-08-06-pr5551-reality-check/" style="color:inherit;text-decoration:none;">Buried Plan toggle with &quot;Reality check&quot; telemetry chart</a>
+                <a class="row-subject" href="./t/2026-08-06-pr5551-reality-check/">Buried Plan toggle with &quot;Reality check&quot; telemetry chart</a>
                 <span class="row-snippet">PR #5551 mocked upset users with an unscaled chart (10 downvotes), then PR #9190 hid the context ring and drew a repo-high 16 downvotes.</span>
               </div>
               <div class="row-meta"><span class="row-date">Aug 6, 2026</span></div>
@@ -602,7 +605,7 @@
               <div class="row-sender"><span class="sender-name">@jullerino → Issue #1397</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-06-23-issue1397-no-optout/" style="color:inherit;text-decoration:none;">Issue #1397: &quot;We will not make this easier to opt out of&quot;</a>
+                <a class="row-subject" href="./t/2026-06-23-issue1397-no-optout/">Issue #1397: &quot;We will not make this easier to opt out of&quot;</a>
                 <span class="row-snippet">Maintainer @jullerino closed the toggle request as not planned; Issue #4123 citing the deleted promise was later closed silently twice.</span>
               </div>
               <div class="row-meta"><span class="row-date">Jun 23, 2026</span></div>
@@ -612,7 +615,7 @@
               <div class="row-sender"><span class="sender-name">@theo [commit 3bdaa6e1]</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-06-18-commit-3bdaa6e1-deleted-promise/" style="color:inherit;text-decoration:none;">[DELETED] Silently stripped &quot;No telemetry&quot; from homepage</a>
+                <a class="row-subject" href="./t/2026-06-18-commit-3bdaa6e1-deleted-promise/">[DELETED] Silently stripped &quot;No telemetry&quot; from homepage</a>
                 <span class="row-snippet">Commit 3bdaa6e1 removed the opt-in guarantee during a June 18 redesign after 3+ months of default tracking, with zero notice.</span>
               </div>
               <div class="row-meta"><span class="row-date">Jun 18, 2026</span></div>
@@ -622,7 +625,7 @@
               <div class="row-sender"><span class="sender-name">@theo → GitHub Founders</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-04-25-fake-stars-vc/" style="color:inherit;text-decoration:none;">Slammed fake stars for VCs, then added 30s-idle star prompt</a>
+                <a class="row-subject" href="./t/2026-04-25-fake-stars-vc/">Slammed fake stars for VCs, then added 30s-idle star prompt</a>
                 <span class="row-snippet">Six months after mocking star farming, he self-merged PR #29922 to grow pingdotgg/t3code from 30k to 77k stars while watchers stayed ~129.</span>
               </div>
               <div class="row-meta"><span class="row-date">Apr 25, 2026</span></div>
@@ -632,7 +635,7 @@
               <div class="row-sender"><span class="sender-name">pingdotgg/t3code (PR #174)</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-03-06-pr174-default-telemetry/" style="color:inherit;text-decoration:none;">PR #174 enabled PostHog despite &quot;No telemetry&quot; pledge</a>
+                <a class="row-subject" href="./t/2026-03-06-pr174-default-telemetry/">PR #174 enabled PostHog despite &quot;No telemetry&quot; pledge</a>
                 <span class="row-snippet">Config.withDefault(true) ran with no consent dialog, no Settings UI toggle, and no docs for over three months.</span>
               </div>
               <div class="row-meta"><span class="row-date">Mar 6, 2026</span></div>
@@ -642,7 +645,7 @@
               <div class="row-sender"><span class="sender-name">@theo ↔ FFmpeg &amp; VLC</span></div>
               <div class="row-main">
                 <span class="platform-chip">YouTube</span>
-                <a class="row-subject" href="./t/2025-10-ffmpeg-bounty/" style="color:inherit;text-decoration:none;">[DELETED] Offered $20k bounty to oust an FFmpeg maintainer</a>
+                <a class="row-subject" href="./t/2025-10-ffmpeg-bounty/">[DELETED] Offered $20k bounty to oust an FFmpeg maintainer</a>
                 <span class="row-snippet">Windscribe offered $21k for Theo to stay off X and VLC&#x27;s founder condemned the bounty before Theo deleted the video and posts.</span>
               </div>
               <div class="row-meta"><span class="row-date">Oct 2025</span></div>
@@ -652,7 +655,7 @@
               <div class="row-sender"><span class="sender-name">@theo → WordPress / USPTO</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2024-09-wordpress-trademark/" style="color:inherit;text-decoration:none;">Mocked trademark disputes, yet holds 0 USPTO marks</a>
+                <a class="row-subject" href="./t/2024-09-wordpress-trademark/">Mocked trademark disputes, yet holds 0 USPTO marks</a>
                 <span class="row-snippet">Called trademarking common terms &quot;genuinely insane&quot; in 2025, then threatened a GitHub ban with 0 registered marks in 2026.</span>
               </div>
               <div class="row-meta"><span class="row-date">Sep 26, 2024</span></div>
@@ -662,7 +665,7 @@
               <div class="row-sender"><span class="sender-name">@theo → DHH &amp; Theme Author</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2024-06-vsc-fork-dhh-ui/" style="color:inherit;text-decoration:none;">Mocked theme author via fork name &amp; ridiculed DHH&#x27;s UI</a>
+                <a class="row-subject" href="./t/2024-06-vsc-fork-dhh-ui/">Mocked theme author via fork name &amp; ridiculed DHH&#x27;s UI</a>
                 <span class="row-snippet">Named his 2024 theme fork vsc-material-but-i-wont-sue-you, two years before threatening to ban an MIT fork author.</span>
               </div>
               <div class="row-meta"><span class="row-date">Jun 2024</span></div>
@@ -672,7 +675,7 @@
               <div class="row-sender"><span class="sender-name">@theo ↔ Indian Dev Community</span></div>
               <div class="row-main">
                 <span class="platform-chip">YouTube</span>
-                <a class="row-subject" href="./t/2024-06-indian-dev-apology/" style="color:inherit;text-decoration:none;">Indian dev wave &amp; &quot;I screwed up.&quot; vs. 2026 fork attacks</a>
+                <a class="row-subject" href="./t/2024-06-indian-dev-apology/">Indian dev wave &amp; &quot;I screwed up.&quot; vs. 2026 fork attacks</a>
                 <span class="row-snippet">Uploaded &quot;I screwed up.&quot; condemning nationality attacks against Indian devs in 2024, then labeled Chinese tech Twitter a &quot;cesspit&quot; in 2026.</span>
               </div>
               <div class="row-meta"><span class="row-date">2024</span></div>
@@ -682,7 +685,7 @@
               <div class="row-sender"><span class="sender-name">@theo → YouTube Sponsors</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2023-05-sponsor-roster/" style="color:inherit;text-decoration:none;">YouTube sponsors Clerk &amp; Axiom wired into T3 Code relay</a>
+                <a class="row-subject" href="./t/2023-05-sponsor-roster/">YouTube sponsors Clerk &amp; Axiom wired into T3 Code relay</a>
                 <span class="row-snippet">Three years after Theo listed them as sponsors, Clerk ran T3 Connect auth and Axiom kept 2.2M/hr IP-tagged spans for 30 days.</span>
               </div>
               <div class="row-meta"><span class="row-date">May 14, 2023</span></div>
@@ -711,7 +714,7 @@
             <div class="thread-toolbar-right">
               <a id="verifiedBadgeLink" class="verified-pill" href="https://github.com/realchendahuang/temu3code/blob/main/docs/COMPLETE-SOURCE-INDEX.md" target="_blank" rel="noopener noreferrer">
                 <svg class="tmail-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2 14.9 4.2 18.5 3.8 19.6 7.2 22.5 9.5 21.3 13 22.5 16.5 19.6 18.8 18.5 22.2 14.9 21.8 12 24 9.1 21.8 5.5 22.2 4.4 18.8 1.5 16.5 2.7 13 1.5 9.5 4.4 7.2 5.5 3.8 9.1 4.2Z" fill="currentColor" stroke="none"/><path d="m8.8 12.2 2.2 2.2 4.5-4.6" stroke="#ffffff" stroke-width="2.1"/></svg>
-                <span data-i18n="verifiedSource">Verified Primary Source</span>
+                <span data-i18n="verifiedSource">Sources</span>
               </a>
               <div class="thread-stepper">
                 <button type="button" id="prevThreadBtn" class="icon-btn icon-btn-sm" aria-label="Previous thread">
@@ -773,10 +776,10 @@
         <div id="peopleView" class="view-pane subapp-pane" hidden>
           <div class="subapp-head">
             <div>
-              <h2 class="subapp-title" data-i18n="peopleDirTitle">People &amp; Counterparties Directory</h2>
-              <p class="subapp-desc" data-i18n="peopleDirDesc">Click any person or community below to filter every documented interaction with @theo and pingdotgg/t3code.</p>
+              <h2 class="subapp-title" data-i18n="peopleDirTitle">People</h2>
+              <p class="subapp-desc" data-i18n="peopleDirDesc">Pick a person or group to filter threads.</p>
             </div>
-            <button type="button" class="tool-btn" id="peopleBackBtn" data-i18n="backInbox">← Back to Inbox</button>
+            <button type="button" class="tool-btn" id="peopleBackBtn" data-i18n="backInbox">← Inbox</button>
           </div>
           <div class="people-dir-grid" id="peopleDirGrid"></div>
         </div>
@@ -835,6 +838,15 @@
       <div class="lightbox-head">
         <span id="lightboxTitle" class="lightbox-title">Receipt</span>
         <div class="lightbox-actions">
+          <div id="lightboxNavGroup" class="lightbox-nav-group" hidden>
+            <button type="button" id="lightboxPrevBtn" class="icon-btn icon-btn-sm" aria-label="Previous image">
+              <svg class="tmail-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <span id="lightboxCounter" class="range-label"></span>
+            <button type="button" id="lightboxNextBtn" class="icon-btn icon-btn-sm" aria-label="Next image">
+              <svg class="tmail-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+          </div>
           <a id="lightboxSourceLink" class="tool-btn" href="#" target="_blank" rel="noopener noreferrer" hidden>Primary Source ↗</a>
           <button type="button" id="lightboxCloseBtn" class="icon-btn icon-btn-sm" aria-label="Close">
             <svg class="tmail-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
@@ -850,8 +862,5 @@
 
   <!-- TOAST -->
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
-
-  <script src="../data/i18n.js?v=15"></script>
-  <script src="./app.js?v=19"></script>
 </body>
 </html>

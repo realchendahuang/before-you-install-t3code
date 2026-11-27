@@ -15,7 +15,16 @@
   let storySubtitles = {};
   let stickerZipUrl = "https://cdn.temu3code.com/stickers/theo-rage-stickers-pack.zip";
   let lbIndex = -1;
+  let lbPrevFocus = null;
   let observer = null;
+  const BLANK_IMG = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+
+  function updateStickyNavOffset() {
+    const nav = document.querySelector(".nav-header");
+    if (!nav) return;
+    const h = Math.ceil(nav.getBoundingClientRect().height);
+    if (h > 0) document.documentElement.style.setProperty("--nav-h", `${h}px`);
+  }
 
   function isZhLang(code) {
     return code === "zh-CN" || code === "zh-TW";
@@ -26,11 +35,11 @@
   }
 
   function escapeHtml(s) {
-    return String(s || "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+    return I18N.escapeHtml(s);
+  }
+
+  function escapeBidi(s) {
+    return I18N.escapeBidi(s);
   }
 
   function showToast(msg) {
@@ -170,6 +179,7 @@
     }
 
     card.hidden = false;
+    audio.setAttribute("dir", "ltr");
 
     if (audio.getAttribute("data-src") !== track.url) {
       audio.pause();
@@ -282,11 +292,11 @@
         return `<article id="${escapeHtml(ep.id)}" class="ep-card">
           <div class="ep-head">
             <span class="ep-num">${escapeHtml(epNum)}</span>
-            <h2 class="ep-title">${escapeHtml(title)}</h2>
+            <h2 class="ep-title">${escapeBidi(title)}</h2>
           </div>
           <button type="button" class="ep-media-btn" data-open-lb="${idx}" aria-label="${escapeHtml(title)}">
             <div class="ep-img-frame">
-              <img src="${escapeHtml(asset.url)}" alt="${escapeHtml(title)}" width="${asset.width || 1024}" height="${asset.height || 1536}" loading="${idx === 0 ? "eager" : "lazy"}" crossorigin="anonymous" />
+              <img src="${escapeHtml(asset.url)}" alt="${escapeHtml(title)}" width="${asset.width || 1024}" height="${asset.height || 1536}" loading="${idx === 0 ? "eager" : "lazy"}"${idx === 0 ? ' fetchpriority="high"' : ' decoding="async"'} crossorigin="anonymous" />
             </div>
           </button>
           ${subsHtml}
@@ -315,8 +325,9 @@
     const title = `${getEpPillLabel(ep)} · ${getEpTitle(ep)}`;
 
     document.getElementById("lbCounter").textContent = `${lbIndex + 1} / ${episodes.length}`;
-    document.getElementById("lbTitle").textContent = title;
+    document.getElementById("lbTitle").innerHTML = escapeBidi(title);
     const img = document.getElementById("lbImg");
+    img.src = BLANK_IMG;
     img.src = asset.url;
     img.alt = title;
 
@@ -340,10 +351,13 @@
   function openLightbox(idx) {
     const lb = document.getElementById("storyLightbox");
     if (!lb || idx < 0 || idx >= episodes.length) return;
+    if (lb.hidden) lbPrevFocus = document.activeElement;
     lbIndex = idx;
     updateLightbox();
     lb.hidden = false;
     document.body.style.overflow = "hidden";
+    const closeBtn = lb.querySelector(".lb-close");
+    if (closeBtn) closeBtn.focus();
   }
 
   function closeLightbox() {
@@ -352,6 +366,8 @@
     lb.hidden = true;
     lbIndex = -1;
     document.body.style.overflow = "";
+    if (lbPrevFocus && typeof lbPrevFocus.focus === "function") lbPrevFocus.focus();
+    lbPrevFocus = null;
   }
 
   function stepLightbox(delta) {
@@ -391,8 +407,14 @@
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const v = t(el.getAttribute("data-i18n"));
-      if (v) el.textContent = v;
+      if (!v) return;
+      if (el.tagName !== "OPTION" && /@[A-Za-z0-9_]+/.test(v)) {
+        el.innerHTML = escapeBidi(v);
+      } else {
+        el.textContent = v;
+      }
     });
+    updateStickyNavOffset();
 
     if (!deferRender) {
       renderPodcast();
@@ -402,11 +424,18 @@
   }
 
   async function init() {
+    updateStickyNavOffset();
+    const nav = document.querySelector(".nav-header");
+    if (nav && typeof ResizeObserver !== "undefined") {
+      new ResizeObserver(updateStickyNavOffset).observe(nav);
+    }
+    window.addEventListener("resize", updateStickyNavOffset);
+
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
 
     const [memesRes, subsRes] = await Promise.all([
-      fetch("../data/memes.json?v=4").catch(() => null),
-      fetch("../data/story-subtitles.json?v=1").catch(() => null),
+      fetch("../data/memes.json?v=6").catch(() => null),
+      fetch("../data/story-subtitles.json?v=2").catch(() => null),
       applyLanguage(lang, true)
     ]);
 
@@ -517,6 +546,7 @@
     if (e.key === "Escape") closeLightbox();
     else if (e.key === "ArrowLeft") stepLightbox(-1);
     else if (e.key === "ArrowRight") stepLightbox(1);
+    else if (e.key === "Tab") I18N.trapFocus(document.querySelector("#storyLightbox .lb-dialog"), e);
   });
 
   init();

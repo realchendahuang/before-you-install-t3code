@@ -1094,7 +1094,7 @@
       "to": "Semua instalasi T3 Code (0 Security Advisory)",
       "dateDisplay": "25 November 2026",
       "subject": "0 security advisory & 5 celah auth/RCE aktif di ca81b7b9",
-      "snippet": "Bahkan setelah diam-diam memperbaiki path traversal di PR #39483, HEAD masih mengirim cookie `--lan` plaintext, token Bearer yang tak bisa dicabut, dan RCE lewat hook repo.",
+      "snippet": "Bahkan setelah diam-diam memperbaiki path traversal di PR #39483, HEAD masih mengirim cookie --lan plaintext, token Bearer yang tak bisa dicabut, dan RCE lewat hook repo.",
       "messages": [
         {
           "sender": "Audit Keamanan Independen (ca81b7b9)",

@@ -235,7 +235,7 @@
       "to": "Todos los usuarios de T3 Code",
       "dateDisplay": "6 de mar de 2026",
       "subject": "PR #174 activó PostHog pese a la promesa de \"No telemetry\" (\"sin telemetría\")",
-      "snippet": "`Config.withDefault(true)` se ejecutó sin diálogo de consentimiento, sin interruptor en Ajustes y sin documentación durante más de tres meses.",
+      "snippet": "Config.withDefault(true) se ejecutó sin diálogo de consentimiento, sin interruptor en Ajustes y sin documentación durante más de tres meses.",
       "messages": [
         {
           "sender": "Página principal de T3 Code (t3.codes)",
@@ -614,7 +614,7 @@
       "to": "pingdotgg/t3code y comunidad de IA local",
       "dateDisplay": "12 nov 2026",
       "subject": "CONTRIBUTING: \"No lo hagas\" + vetos en VOUCHED.td + ataques a la IA local",
-      "snippet": "Cerró 174 elementos por no ser deseados, rechazó a un colaborador por no seguirlo en X, amenazó con quitar `/btw` y se burló de los usuarios de Qwen 3.8.",
+      "snippet": "Cerró 174 elementos por no ser deseados, rechazó a un colaborador por no seguirlo en X, amenazó con quitar /btw y se burló de los usuarios de Qwen 3.8.",
       "messages": [
         {
           "sender": "Theo Browne (@theo)",
@@ -1094,7 +1094,7 @@
       "to": "Todas las instalaciones de T3 Code (0 avisos de seguridad)",
       "dateDisplay": "25 nov 2026",
       "subject": "0 avisos de seguridad y 5 fallos activos de autenticación/RCE en ca81b7b9",
-      "snippet": "Incluso tras corregir en silencio el path traversal en el PR #39483, HEAD sigue distribuyendo cookies `--lan` en texto plano, tokens Bearer sin revocación y RCE vía hooks de repositorio.",
+      "snippet": "Incluso tras corregir en silencio el path traversal en el PR #39483, HEAD sigue distribuyendo cookies --lan en texto plano, tokens Bearer sin revocación y RCE vía hooks de repositorio.",
       "messages": [
         {
           "sender": "Auditoría de seguridad independiente (ca81b7b9)",

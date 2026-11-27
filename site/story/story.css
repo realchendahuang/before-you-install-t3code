@@ -10,22 +10,25 @@
   --cobalt: #4b7cf3;
   --cobalt-hover: #5e8bf7;
   --gold: #f5b942;
-  --font-sans: -apple-system, BlinkMacSystemFont, "Inter", "Noto Sans SC", "Noto Sans JP", "Noto Sans KR", "Noto Sans Arabic", "Noto Sans Devanagari", system-ui, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Hiragino Sans", "Apple SD Gothic Neo", "Geeza Pro", "Kohinoor Devanagari", "Inter", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
-html[lang="ar"] { --font-sans: "Noto Sans Arabic", "Inter", system-ui, sans-serif; }
-html[lang="hi"] { --font-sans: "Noto Sans Devanagari", "Inter", system-ui, sans-serif; }
-html[lang="ja"] { --font-sans: "Noto Sans JP", "Inter", system-ui, sans-serif; }
-html[lang="ko"] { --font-sans: "Noto Sans KR", "Inter", system-ui, sans-serif; }
+html[lang="ar"] { --font-sans: "Geeza Pro", "SF Arabic", "Segoe UI", Tahoma, "Inter", system-ui, sans-serif; }
+html[lang="hi"] { --font-sans: "Kohinoor Devanagari", "Nirmala UI", "Devanagari Sangam MN", "Inter", system-ui, sans-serif; }
+html[lang="ja"] { --font-sans: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", "Meiryo", "Inter", system-ui, sans-serif; }
+html[lang="ko"] { --font-sans: "Apple SD Gothic Neo", "Malgun Gothic", "Nanum Gothic", "Inter", system-ui, sans-serif; }
 
 *, *::before, *::after { box-sizing: border-box; }
-html { background: var(--bg); color: var(--text); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+html { background: var(--bg); color: var(--text); scroll-behavior: smooth; -webkit-text-size-adjust: 100%; overflow-x: clip; }
 html, body {
   margin: 0; background: var(--bg); color: var(--text); font-family: var(--font-sans);
-  line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: hidden;
+  line-height: 1.55; -webkit-font-smoothing: antialiased; overflow-x: clip;
 }
 a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible, audio:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid #93c5fd; outline-offset: 2px;
+}
 
 .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 24px; }
 .reader-container { max-width: 860px; }
@@ -41,22 +44,14 @@ a { color: inherit; text-decoration: none; }
   display: flex; align-items: center; gap: 16px;
 }
 .brand { display: inline-flex; align-items: center; gap: 6px; font-size: 15.5px; letter-spacing: -0.02em; margin-inline-end: auto; flex-shrink: 0; }
-html[dir="rtl"] .brand { flex-direction: row-reverse; }
+[dir="rtl"] .brand { direction: ltr; unicode-bidi: isolate; }
 .brand-strong { font-weight: 700; color: #fff; }
 .brand-muted { color: var(--muted); }
 .nav-links { display: flex; align-items: center; gap: 18px; font-size: 13.5px; color: var(--muted); }
-.nav-link, .nav-star-link { white-space: nowrap; flex-shrink: 0; }
+.nav-link, .nav-star-link { white-space: nowrap; flex-shrink: 0; min-height: 36px; display: inline-flex; align-items: center; }
 .nav-link:hover, .nav-star-link:hover { color: #fff; }
 .nav-link.is-current { color: #fff; font-weight: 600; }
 .nav-star-link { color: #e5e5e5; font-weight: 500; }
-
-.lang-picker {
-  display: inline-flex; align-items: center; gap: 6px; padding: 4px 10px; border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.14); background: rgba(255, 255, 255, 0.04); color: #f5f5f5;
-  flex-shrink: 0;
-}
-.lang-select { background: transparent; border: 0; color: inherit; font: inherit; font-size: 12.5px; cursor: pointer; outline: none; max-width: 176px; }
-.lang-select option { background: #111114; color: #f5f5f5; }
 .ico-sm { width: 15px; height: 15px; flex-shrink: 0; }
 
 /* ---------- HERO ---------- */
@@ -86,20 +81,21 @@ html[dir="rtl"] .brand { flex-direction: row-reverse; }
 .pod-player-row { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 .pod-audio {
   flex: 1 1 280px; width: 100%; height: 40px; border-radius: 999px;
-  color-scheme: dark; outline: none;
+  color-scheme: dark;
 }
+[dir="rtl"] .pod-audio { direction: ltr; }
 .pod-dl-btn { min-height: 38px; padding: 0 13px; border-radius: 999px; }
 
 /* ---------- STICKY EPISODE JUMP BAR ---------- */
 .reader-bar {
-  position: sticky; top: 60px; z-index: 35;
+  position: sticky; top: var(--nav-h, 60px); z-index: 35;
   background: rgba(0, 0, 0, 0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid rgba(255, 255, 255, 0.08);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 .reader-bar-inner {
   display: flex; align-items: center; justify-content: center;
-  padding-top: 10px; padding-bottom: 10px;
+  padding-top: 8px; padding-bottom: 8px;
 }
 .ep-pills {
   display: flex; align-items: center; gap: 6px; overflow-x: auto; scrollbar-width: none;
@@ -107,7 +103,7 @@ html[dir="rtl"] .brand { flex-direction: row-reverse; }
 }
 .ep-pills::-webkit-scrollbar { display: none; }
 .ep-pill {
-  display: inline-flex; align-items: center; justify-content: center; height: 30px; padding: 0 11px;
+  display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 0 12px;
   border-radius: 999px; border: 1px solid var(--border); background: rgba(255, 255, 255, 0.03);
   color: var(--muted); font-family: var(--font-mono); font-size: 12px; font-weight: 500;
   white-space: nowrap; flex-shrink: 0; transition: border-color 140ms ease, background 140ms ease, color 140ms ease;
@@ -189,7 +185,7 @@ html[lang="hi"] .ep-sub-line { font-size: 13px; line-height: 1.65; }
 /* ---------- BUTTONS ---------- */
 .act-btn {
   display: inline-flex; align-items: center; justify-content: center; gap: 5px;
-  min-height: 34px; padding: 5px 11px; border-radius: 8px;
+  min-height: 36px; padding: 5px 12px; border-radius: 8px;
   border: 1px solid var(--border); background: rgba(255, 255, 255, 0.04); color: #e5e5e5;
   font: inherit; font-size: 12.5px; font-weight: 500; cursor: pointer; white-space: nowrap;
 }
@@ -287,8 +283,6 @@ html[lang="hi"] .ep-sub-line { font-size: 13px; line-height: 1.65; }
 @media (max-width: 640px) {
   .container { padding: 0 16px; }
   .nav-inner { flex-wrap: wrap; min-height: 0; padding: 8px 14px 0; row-gap: 6px; gap: 8px 10px; }
-  .lang-picker { padding: 4px 8px; }
-  .lang-select { max-width: 148px; font-size: 13px; }
   .nav-links {
     flex: 1 0 100%; margin: 2px -14px 0; padding: 8px 14px;
     border-top: 1px solid rgba(255, 255, 255, 0.07);
@@ -299,7 +293,7 @@ html[lang="hi"] .ep-sub-line { font-size: 13px; line-height: 1.65; }
 
   .story-hero { padding: 24px 0 16px; }
   .podcast-card { padding: 12px; }
-  .reader-bar { top: 84px; }
+  .reader-bar { top: var(--nav-h, 94px); }
   .reader-bar-inner { justify-content: flex-start; }
 
   .ep-head { padding: 14px 15px 12px; }
@@ -320,5 +314,14 @@ html[lang="hi"] .ep-sub-line { font-size: 13px; line-height: 1.65; }
   .lb-nav { display: none; }
   .lb-mobile-nav { display: inline-flex; }
   .lb-foot { padding: 10px 12px max(10px, env(safe-area-inset-bottom)); }
-  .act-btn { padding: 5px 9px; font-size: 12px; }
+  .act-btn { padding: 6px 10px; font-size: 12px; min-height: 36px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

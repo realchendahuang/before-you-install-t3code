@@ -2,18 +2,18 @@
   "use strict";
 
   const X_RECEIPTS = [
-    { id: "2124823227570745504", src: "./receipts/x-2124823227570745504-chinese-knockoff.webp", url: "https://x.com/theo/status/2124823227570745504", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
-    { id: "2124825920808829077", src: "./receipts/x-2124825920808829077-temu3-code.webp", url: "https://x.com/theo/status/2124825920808829077", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "hostility"] },
-    { id: "2124829315657576890", src: "./evidence/01-origin-theo-threat.png", url: "https://x.com/theo/status/2124829315657576890", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "hostility"] },
-    { id: "2124989435154726982", src: "./receipts/x-2124989435154726982-trillion-dollar-oss.webp", url: "https://x.com/theo/status/2124989435154726982", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
-    { id: "2125019705270477102", src: "./receipts/x-2125019705270477102-low-quality-users.webp", url: "https://x.com/theo/status/2125019705270477102", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "hostility"] },
-    { id: "2125082769395220688", src: "./receipts/x-2125082769395220688-always-illegal.webp", url: "https://x.com/theo/status/2125082769395220688", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "double-standard"] },
-    { id: "2125077510941802509", src: "./evidence/extra/p8-3-x-theo-autoblocker.png", url: "https://x.com/theo/status/2125077510941802509", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "hostility"] },
-    { id: "2125177503526588877", src: "./evidence/26-cn-cesspit.png", url: "https://x.com/theo/status/2125177503526588877", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
-    { id: "2125177947376300110", src: "./receipts/x-2125177947376300110-hurt-feelings-zh.webp", url: "https://x.com/theo/status/2125177947376300110", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
-    { id: "2125182476943556955", src: "./receipts/x-2125182476943556955-zero-value.webp", url: "https://x.com/theo/status/2125182476943556955", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
-    { id: "2125193393450226024", src: "./receipts/x-2125193393450226024-not-apologizing.webp", url: "https://x.com/theo/status/2125193393450226024", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
-    { id: "2119240810202034645", src: "./evidence/23-stealing-fork-bot.png", url: "https://x.com/theo/status/2119240810202034645", thread: "2026-11-08-stealing-miaai-fork", tags: ["double-standard"] }
+    { id: "2124823227570745504", src: "./receipts/x-2124823227570745504-chinese-knockoff.webp", w: 2440, h: 3668, url: "https://x.com/theo/status/2124823227570745504", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
+    { id: "2124825920808829077", src: "./receipts/x-2124825920808829077-temu3-code.webp", w: 610, h: 372, url: "https://x.com/theo/status/2124825920808829077", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "hostility"] },
+    { id: "2124829315657576890", src: "./evidence/01-origin-theo-threat.png", w: 1400, h: 1142, url: "https://x.com/theo/status/2124829315657576890", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "hostility"] },
+    { id: "2124989435154726982", src: "./receipts/x-2124989435154726982-trillion-dollar-oss.webp", w: 2440, h: 1428, url: "https://x.com/theo/status/2124989435154726982", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
+    { id: "2125019705270477102", src: "./receipts/x-2125019705270477102-low-quality-users.webp", w: 2440, h: 1428, url: "https://x.com/theo/status/2125019705270477102", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "hostility"] },
+    { id: "2125082769395220688", src: "./receipts/x-2125082769395220688-always-illegal.webp", w: 2440, h: 2996, url: "https://x.com/theo/status/2125082769395220688", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "double-standard"] },
+    { id: "2125077510941802509", src: "./evidence/extra/p8-3-x-theo-autoblocker.png", w: 2472, h: 1486, url: "https://x.com/theo/status/2125077510941802509", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "hostility"] },
+    { id: "2125177503526588877", src: "./evidence/26-cn-cesspit.png", w: 1400, h: 810, url: "https://x.com/theo/status/2125177503526588877", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
+    { id: "2125177947376300110", src: "./receipts/x-2125177947376300110-hurt-feelings-zh.webp", w: 2440, h: 968, url: "https://x.com/theo/status/2125177947376300110", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
+    { id: "2125182476943556955", src: "./receipts/x-2125182476943556955-zero-value.webp", w: 610, h: 328, url: "https://x.com/theo/status/2125182476943556955", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
+    { id: "2125193393450226024", src: "./receipts/x-2125193393450226024-not-apologizing.webp", w: 2440, h: 1448, url: "https://x.com/theo/status/2125193393450226024", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
+    { id: "2119240810202034645", src: "./evidence/23-stealing-fork-bot.png", w: 1400, h: 846, url: "https://x.com/theo/status/2119240810202034645", thread: "2026-11-08-stealing-miaai-fork", tags: ["double-standard"] }
   ];
 
   const PREVIEW_THREADS = [
@@ -75,6 +75,7 @@
   };
   let lang = I18N.detectInitialLang();
   let bundle = null;
+  let memesOverlay = null;
   let activePreviewIdx = 0;
   let activeFilter = "all";
   let visibleReceipts = X_RECEIPTS.slice();
@@ -84,21 +85,19 @@
   let lbIsSins = false;
   let lbItems = [];
   let lbIndex = -1;
+  let lbPrevFocus = null;
+  const BLANK_IMG = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
   function t(path, fallback = "") {
     return I18N.getKey(bundle, path) || fallback;
   }
 
   function escapeHtml(s) {
-    return String(s || "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+    return I18N.escapeHtml(s);
   }
 
-  function isZh() {
-    return lang === "zh-CN" || lang === "zh-TW";
+  function escapeBidi(s) {
+    return I18N.escapeBidi(s);
   }
 
   function showToast(msg) {
@@ -140,8 +139,8 @@
     host.innerHTML = item.cards
       .map((c) => {
         const badge = escapeHtml(t(c.badgeKey, ""));
-        const meta = escapeHtml(t(c.metaKey, ""));
-        const body = escapeHtml(t(c.textKey, ""));
+        const meta = escapeBidi(t(c.metaKey, ""));
+        const body = escapeBidi(t(c.textKey, ""));
         const inner = `<div class="win-msg-head">
           <span class="${c.badgeClass}">${badge}</span>
           <span class="muted">${meta}</span>
@@ -183,11 +182,11 @@
         return `<article class="xr-card">
           <button type="button" class="xr-thumb-btn" data-lb-idx="${idx}" aria-label="${escapeHtml(title)}">
             <div class="xr-thumb-frame">
-              <img src="${escapeHtml(r.src)}" alt="${escapeHtml(title)}" loading="lazy" />
+              <img src="${escapeHtml(r.src)}" alt="${escapeHtml(title)}" width="${r.w}" height="${r.h}" loading="lazy" decoding="async" />
             </div>
           </button>
           <div class="xr-card-body">
-            <h3 class="xr-card-title">${escapeHtml(title)}</h3>
+            <h3 class="xr-card-title">${escapeBidi(title)}</h3>
             <div class="xr-card-actions">
               <a class="xr-btn xr-btn-x" href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(openX)}</a>
               <a class="xr-btn" href="./mail/?thread=${encodeURIComponent(r.thread)}">${escapeHtml(openMail)}</a>
@@ -206,8 +205,13 @@
     const coverImg = document.getElementById("homeStoryCoverImg");
     if (coverImg && memeCatalogMeta && Array.isArray(memeCatalogMeta.storyEpisodes) && memeCatalogMeta.storyEpisodes.length) {
       const ep1 = memeCatalogMeta.storyEpisodes[0];
-      const pick = isZh() ? (ep1.zh || ep1.en) : (ep1.en || ep1.zh);
-      if (pick && pick.url) coverImg.src = pick.url;
+      const media = ep1.media || {};
+      const pick = media[lang] || (lang === "zh-TW" ? media["zh-CN"] : null) || media.en || ep1.en || ep1.zh;
+      if (pick && pick.url) {
+        coverImg.src = pick.url;
+        if (pick.width) coverImg.width = pick.width;
+        if (pick.height) coverImg.height = pick.height;
+      }
     }
     const zipBtn = document.getElementById("homeStoryZipBtn");
     if (zipBtn && memeCatalogMeta && memeCatalogMeta.stickerZipUrl) {
@@ -221,32 +225,35 @@
 
     rail.innerHTML = sins
       .map((m, idx) => {
-        const title = isZh() ? m.titleZh : m.titleEn;
+        const { title } = I18N.pickMemeText(m, lang, memesOverlay);
+        const w = Number(m.width) || 853;
+        const h = Number(m.height) || 1280;
         return `<button type="button" class="sin-rail-card" data-sin-idx="${idx}">
           <div class="sin-rail-img">
-            <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" loading="lazy" />
+            <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" width="${w}" height="${h}" loading="lazy" decoding="async" />
           </div>
-          <div class="sin-rail-title">${escapeHtml(title)}</div>
+          <div class="sin-rail-title">${escapeBidi(title)}</div>
         </button>`;
       })
       .join("");
 
     viralGrid.innerHTML = featuredViral
       .map((m, idx) => {
-        const title = isZh() ? m.titleZh : m.titleEn;
-        const note = isZh() ? m.noteZh : m.noteEn;
+        const { title, note } = I18N.pickMemeText(m, lang, memesOverlay);
+        const w = Number(m.width) || 1200;
+        const h = Number(m.height) || 1200;
         const srcHref = m.sourceUrl || `./mail/?thread=${encodeURIComponent(m.thread)}`;
         const srcAttrs = m.sourceUrl ? ' target="_blank" rel="noopener noreferrer"' : "";
         return `<article class="mm-viral-card">
           <button type="button" class="mm-viral-thumb" data-viral-idx="${idx}" aria-label="${escapeHtml(title)}">
-            <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" loading="lazy" />
+            <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" width="${w}" height="${h}" loading="lazy" decoding="async" />
           </button>
           <div class="mm-viral-body">
             <div class="mm-viral-top">
-              <span class="mm-viral-title">${escapeHtml(title)}</span>
+              <span class="mm-viral-title">${escapeBidi(title)}</span>
               <a class="mm-viral-link" href="${escapeHtml(srcHref)}"${srcAttrs}>#${escapeHtml(m.exhibit)} →</a>
             </div>
-            ${note ? `<p class="mm-viral-note">${escapeHtml(note)}</p>` : ""}
+            ${note ? `<p class="mm-viral-note">${escapeBidi(note)}</p>` : ""}
           </div>
         </article>`;
       })
@@ -278,9 +285,10 @@
     const noteEl = document.getElementById("lbNote");
     if (lbMode === "memes") {
       const m = lbItems[lbIndex];
-      const title = isZh() ? m.titleZh : m.titleEn;
-      document.getElementById("lbTitle").textContent = title;
-      if (noteEl) noteEl.textContent = (isZh() ? m.noteZh : m.noteEn) || "";
+      const { title, note } = I18N.pickMemeText(m, lang, memesOverlay);
+      document.getElementById("lbTitle").innerHTML = escapeBidi(title);
+      if (noteEl) noteEl.innerHTML = escapeBidi(note || "");
+      img.src = BLANK_IMG;
       img.src = m.url;
       img.alt = title;
       xLink.href = `./memes/#${encodeURIComponent(m.id)}`;
@@ -306,8 +314,9 @@
 
     const r = lbItems[lbIndex];
     const title = t(`home.xrTitles.${r.id}`, r.id);
-    document.getElementById("lbTitle").textContent = title;
+    document.getElementById("lbTitle").innerHTML = escapeBidi(title);
     if (noteEl) noteEl.textContent = "";
+    img.src = BLANK_IMG;
     img.src = r.src;
     img.alt = title;
     xLink.href = r.url;
@@ -326,10 +335,13 @@
     lbIsSins = isSins;
     lbItems = list || visibleReceipts;
     if (!lb || idx < 0 || idx >= lbItems.length) return;
+    if (lb.hidden) lbPrevFocus = document.activeElement;
     lbIndex = idx;
     updateLightbox(animate);
     lb.hidden = false;
     document.body.style.overflow = "hidden";
+    const closeBtn = lb.querySelector(".xr-lb-close");
+    if (closeBtn) closeBtn.focus();
   }
 
   function closeLightbox() {
@@ -338,6 +350,8 @@
     lb.hidden = true;
     lbIndex = -1;
     document.body.style.overflow = "";
+    if (lbPrevFocus && typeof lbPrevFocus.focus === "function") lbPrevFocus.focus();
+    lbPrevFocus = null;
   }
 
   function stepLightbox(delta) {
@@ -351,11 +365,17 @@
     if (el && val) el.setAttribute("content", val);
   }
 
-  async function applyLanguage(nextCode) {
-    lang = I18N.normalizeLang(nextCode) || "en";
+  async function applyLanguage(nextCode, deferMemes = false) {
+    const target = I18N.normalizeLang(nextCode) || "en";
+    lang = target;
     I18N.applyDirection(lang);
-    bundle = await I18N.loadBundle(lang, "./data/");
-    if (!bundle) return;
+    const [nextBundle, nextOverlay] = await Promise.all([
+      I18N.loadBundle(lang, "./data/"),
+      I18N.loadMemesOverlay(lang, "./data/")
+    ]);
+    if (lang !== target || !nextBundle) return;
+    bundle = nextBundle;
+    memesOverlay = nextOverlay;
 
     if (lang === "en") {
       document.title = INITIAL_SEO.title;
@@ -377,11 +397,16 @@
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const v = t(el.getAttribute("data-i18n"));
-      if (v) el.textContent = v;
+      if (!v) return;
+      if (el.tagName !== "OPTION" && /@[A-Za-z0-9_]+/.test(v)) {
+        el.innerHTML = escapeBidi(v);
+      } else {
+        el.textContent = v;
+      }
     });
     document.querySelectorAll("[data-i18n-html]").forEach((el) => {
       const v = t(el.getAttribute("data-i18n-html"));
-      if (v) el.innerHTML = v;
+      if (v) el.innerHTML = I18N.isolateHandlesHtml(v);
     });
     document.querySelectorAll("[data-i18n-tip]").forEach((el) => {
       const v = t(el.getAttribute("data-i18n-tip"));
@@ -390,24 +415,26 @@
 
     renderPreviewPane();
     renderXReceipts();
-    renderMemeShowcase();
-    if (lbIndex >= 0) updateLightbox(false);
+    if (!deferMemes) {
+      renderMemeShowcase();
+      if (lbIndex >= 0) updateLightbox(false);
+    }
   }
 
   async function init() {
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
     const [, res] = await Promise.all([
-      applyLanguage(lang),
-      fetch("./data/memes.json?v=5").catch(() => null)
+      applyLanguage(lang, true),
+      fetch("./data/memes.json?v=6").catch(() => null)
     ]);
     if (res && res.ok) {
       try {
         const data = await res.json();
         memeCatalogMeta = data;
         memeCatalog = Array.isArray(data.items) ? data.items : [];
-        renderMemeShowcase();
       } catch (_) {}
     }
+    renderMemeShowcase();
   }
 
   document.querySelectorAll("[data-preview-idx]").forEach((btn) => {
@@ -500,6 +527,7 @@
     if (e.key === "Escape") closeLightbox();
     else if (e.key === "ArrowLeft") stepLightbox(-1);
     else if (e.key === "ArrowRight") stepLightbox(1);
+    else if (e.key === "Tab") I18N.trapFocus(document.querySelector("#receiptLightbox .xr-lb-dialog"), e);
   });
 
   init();

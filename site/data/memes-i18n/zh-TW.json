@@ -1,0 +1,605 @@
+{
+  "lang": "zh-TW",
+  "items": {
+    "sins-sin-01-bigotry-qi": {
+      "title": "一宗罪 · 歧：同是 MIT，兩副嘴臉",
+      "note": "同一個 MIT：中國開發者 Fork 11 分鐘就被威脅封鎖帳號；美國大廠來抄，11 小時後他說開源隨便用。"
+    },
+    "sins-sin-02-deceit-qi": {
+      "title": "二宗罪 · 欺：說好不追蹤，預設全開",
+      "note": "官網寫死不追蹤，結果預設開 PostHog，還把別家工具的登入檔案拿去雜湊。"
+    },
+    "sins-sin-03-gluttony-tun": {
+      "title": "三宗罪 · 吞：刪除是假的，硬碟是真的",
+      "note": "點永久刪除其實沒刪，資料庫脹到 41.6 GB；後台每 5 秒掃一遍全機行程。"
+    },
+    "sins-sin-04-sloth-dai": {
+      "title": "四宗罪 · 怠：Bug 躺 52 天，刪過濾器 21 小時",
+      "note": "會靜默執行 git push --force 的 Bug 放了 52 天；為了讓榜單偷資料，刪隱私過濾只花 21 小時。"
+    },
+    "sins-sin-05-forgery-wei": {
+      "title": "五宗罪 · 偽：假請求標頭，3 分鐘封鎖帳號",
+      "note": "FAQ 說零封鎖風險，程式碼卻拿系統金鑰偽造 Google 內部請求標頭，20 美元新帳號 3 分鐘就沒了。"
+    },
+    "sins-sin-06-exposure-luo": {
+      "title": "六宗罪 · 裸：中繼看得到你的終端機",
+      "note": "T3 Connect 沒有端對端加密，終端機指令和輸出都明文過一遍官方中繼。"
+    },
+    "sins-sin-07-envy-du": {
+      "title": "七宗罪 · 妒：投你、笑你、搶你生意",
+      "note": "他投過 Vibe Kanban 和 Daytona，轉頭嘲諷前者倒閉，又在 T3 Code 裡推付費雲端沙盒搶後者生意。"
+    },
+    "sins-sin-08-blindness-mang": {
+      "title": "八宗罪 · 盲：吹一鍵關閉，文件打臉",
+      "note": "吹企業託管策略一鍵關掉全部追蹤，自家文件卻寫著還有 4 個地方照樣往外送資料。"
+    },
+    "sins-sin-09-greed-tan": {
+      "title": "九宗罪 · 貪：預設遙測就是商業雷達",
+      "note": "預設收集的資料匯成每天 31.7 兆 Token 的監控大盤，拿去談投資、還薅了 30 多萬美元的免費額度。"
+    },
+    "sins-sin-10-arrogance-kuang": {
+      "title": "十宗罪 · 狂：自己亂合，還罵提意見的",
+      "note": "日均 500 筆提交、靠 yolo merges 硬合程式碼，轉頭在 Issue #33639 把提回饋的使用者罵成忘恩負義的懶鬼。"
+    },
+    "sins-sin-11-plunder-qie": {
+      "title": "十一宗罪 · 竊：說完我要偷，30 秒後動手",
+      "note": "看到女開發者的好功能，公開回「我要偷這個了」，30 秒後叫 @bot 把對方 Fork 的原始碼抄進來。"
+    },
+    "sins-sin-12-mendacity-huang": {
+      "title": "十二宗罪 · 謊：上午澄清，兩小時後被打臉",
+      "note": "早上保證從沒收集檔案路徑、退出開關一直有效，不到兩小時自家緊急修補程式就把這些話全推翻。"
+    },
+    "sins-sin-13-concealment-man": {
+      "title": "十三宗罪 · 瞞：悄悄修漏洞，公告 0 份",
+      "note": "高危漏洞全塞進普通 PR 裡悄悄修，GitHub 上一份正式安全公告都沒發過。"
+    },
+    "sins-sin-14-servility-chan": {
+      "title": "十四宗罪 · 諂：對高層 0%，對開發者 8%",
+      "note": "連著 1,151 條推文：對 20 位大廠高層髒話率 0%，普通開發者 8%，中文 Fork 那 25 小時飆到 14.4%。"
+    },
+    "sins-sin-15-fraud-zha": {
+      "title": "十五宗罪 · 詐：0 件商標，17 小時後補文件",
+      "note": "拿商標侵權威脅封鎖帳號時，公司在美國商標局 0 件註冊商標，17 小時後才補了份 TRADEMARK.md。"
+    },
+    "sins-sin-16-recidivism-guan": {
+      "title": "十六宗罪 · 慣：2024 到 2026，年年重播",
+      "note": "2024 掛印度開發者，2025 拿 2 萬美元懸賞擠兌 FFmpeg，2026 罵中文科技圈是糞坑，三年一模一樣。"
+    },
+    "sins-sin-17-hypocrisy-jiao": {
+      "title": "十七宗罪 · 矯：嘴上講合規，背地薅代理",
+      "note": "嘴上大談合規版權，背地分享 10 帳號代理池腳本繞額度，還把 YouTube 贊助商塞進雲端中繼。"
+    },
+    "sins-sin-18-vanity-xu": {
+      "title": "十八宗罪 · 虛：罵完假星，自己刷到 7.7 萬",
+      "note": "4 月說 Star 是騙投資人的，11 月就合了 30 秒閒置彈窗，借本機登入憑證把星數從 3 萬刷到 7.7 萬。"
+    },
+    "sins-sin-19-breach-lou": {
+      "title": "十九宗罪 · 漏：最新程式碼還留著 5 個洞",
+      "note": "又補了幾百筆提交，最新程式碼仍有 5 個漏洞：30 天明文區域網路 Cookie、撤銷不了的 Token、暴露的 SSH 金鑰。"
+    },
+    "sins-sin-20-coercion-xie": {
+      "title": "二十宗罪 · 脅：89 次瀏覽換來 HR 投訴",
+      "note": "AWS 工程師 @dmfigol 一條 89 次瀏覽、0 個讚的吐槽，換來深夜私訊「恐懼是很好的激勵」和 HR 投訴。"
+    },
+    "sins-sin-21-impostor-mao": {
+      "title": "二十一宗罪 · 冒：冒充 Zed，藏進 380 項修復",
+      "note": "PR #43026/#43087 承認冒充過 Zed 並被 Google 警告；v0.1.13 把這兩個塞進「其餘 380 項修復」。"
+    },
+    "sins-sin-22-evasion-dun": {
+      "title": "二十二宗罪 · 遁：16 分鐘打臉，改去閉源後端",
+      "note": "聲明後 16 分鐘就被抓到掃了 243 個 Claude 工作階段、收了 19% 德國加值稅，PR #43889 關停改走閉源後端。"
+    },
+    "sins-sin-23-sabotage-po": {
+      "title": "二十三宗罪 · 破：靜音警告，11 個瀏覽器全交",
+      "note": "硬鉤 process.emitWarning 靜音 Anthropic 警告，上傳介面繞過 Codex 沙盒，11 個瀏覽器的 Cookie 全在未隔離的設定裡。"
+    },
+    "sins-sin-24-leak-xie": {
+      "title": "二十四宗罪 · 洩：正文進 URL，4 分 39 秒鎖單",
+      "note": "分享連結把 8,000 字私密對話和完整提示詞塞進明文 URL；Issue #29449 零回覆、4 分 39 秒鎖單，文件也刪了。"
+    },
+    "blended-00-drake": {
+      "title": "Drake 式雙標：11 小時兩張臉",
+      "note": "中國開發者免費 Fork：改名字不然封鎖帳號；11 小時後美國大廠抄同一份程式碼：開源就是開源，隨便用。"
+    },
+    "blended-00b-woman-yelling-cat": {
+      "title": "對著 MIT Fork 罵山寨",
+      "note": "MIT 協議白紙黑字允許 Fork，他卻衝上去罵山寨貨、還威脅封鎖帳號。"
+    },
+    "blended-01a-scooby-mask": {
+      "title": "撕開「絕不追蹤」那層面具",
+      "note": "首頁寫著絕不追蹤，掀開面具是預設開著的 PostHog，還順手雜湊了 ~/.claude.json。"
+    },
+    "blended-01b-expanding-brain": {
+      "title": "四步處理使用者想關追蹤的請求",
+      "note": "先承諾不追蹤，再刪掉承諾，然後連拒 4 個開關 PR，設定頁現在還是 0 個開關。"
+    },
+    "blended-02a-flex-tape": {
+      "title": "貼住 41.6 GB 的假刪除",
+      "note": "點了永久刪除只是介面隱藏，資料還躺在 statev2.sqlite 裡，有人硬碟被撐到 41.6 GB。"
+    },
+    "blended-02b-always-has-been": {
+      "title": "每 5 秒掃一次全機行程",
+      "note": "後台 Rust 任務每 5 秒掃一遍全機行程和完整命令列，還沒有關閉入口。"
+    },
+    "blended-03a-sleeping-shaq": {
+      "title": "Bug 睡 52 天，刪隱私 21 小時",
+      "note": "會強推覆蓋主分支的 Bug 躺了 52 天，輪到自家榜單要資料，21 小時就把隱私過濾刪了。"
+    },
+    "blended-03b-distracted-bf": {
+      "title": "拆了隱私白名單，餵自家榜單",
+      "note": "為了給 slopalytics 榜單餵資料，原本護著使用者模型隱私的白名單直接拆了。"
+    },
+    "blended-04a-trade-offer": {
+      "title": "你交帳號，我送 3 分鐘封鎖",
+      "note": "程式碼翻出鑰匙圈憑證、偽造 Google 內部請求標頭，帳號交出去 3 分鐘就封。"
+    },
+    "blended-04b-surprised-pikachu": {
+      "title": "偽造內部介面被秒封還裝意外",
+      "note": "拿著偽造請求標頭硬打 Google 私有介面，新帳號 3 分鐘被風控，還一臉意外。"
+    },
+    "blended-05-pawn-stars": {
+      "title": "要端對端加密？給你明文中繼",
+      "note": "以為遠端連終端是端對端加密，查完原始碼發現中繼伺服器上直接解密明文轉發。"
+    },
+    "blended-06-laughing-leo": {
+      "title": "投資人舉杯笑被投項目停服",
+      "note": "當過 Vibe Kanban 的天使投資人，轉頭公開笑它倒閉，還要在自家軟體裡賣同類沙盒。"
+    },
+    "blended-07-two-buttons": {
+      "title": "吹牛和自家文件二選一",
+      "note": "一邊吹企業策略能關掉所有上報，一邊自家文件承認還有 4 個關不掉的角落。"
+    },
+    "blended-08a-bernie-asking": {
+      "title": "再要一次 31.7 兆 Token",
+      "note": "大家預設上報的用量匯成每天 31.7 兆 Token 的雷達，成了他跟大廠談資源的籌碼。"
+    },
+    "blended-08b-change-my-mind": {
+      "title": "預設遙測不是手滑，是生意",
+      "note": "預設開追蹤、連拒 4 個關閉 PR、資料接進即時大盤，這不像寫錯一行程式碼。"
+    },
+    "blended-09-boardroom-meeting": {
+      "title": "提個關閉開關？扔出窗外",
+      "note": "社群把帶 147 項測試的遙測開關 PR 寫好了，維護者拒絕，還說不會讓退出更容易。"
+    },
+    "blended-10a-yall-got-any-more": {
+      "title": "再來點社群 Fork，30 秒扒走",
+      "note": "看到別人 Fork 裡的好功能，一句「我要偷這個了」，馬上叫機器人去扒倉庫。"
+    },
+    "blended-10b-left-exit-12": {
+      "title": "罵完 Fork，30 秒後扒人家 Fork",
+      "note": "別人 Fork 他就要找 GitHub 封鎖帳號，自己看到好點子 30 秒就派機器人扒走。"
+    },
+    "blended-11-train-bus": {
+      "title": "澄清兩小時，被自家 PR 撞飛",
+      "note": "上午發長文保證沒收路徑、開關好使，不到兩小時自家補丁把話全撞碎。"
+    },
+    "blended-12a-this-is-fine": {
+      "title": "火海喝咖啡：220 萬條日誌/小時",
+      "note": "歐盟 GDPR 舉報後連夜補鍋，補丁自己曝光中繼每小時往 Axiom 寫 220 萬條帶 IP 日誌，留 30 天。"
+    },
+    "blended-12b-panik-kalm-panik": {
+      "title": "舉報來了：慌、穩、更慌",
+      "note": "被歐盟舉報，連夜打 6 小時補丁以為穩了，結果補丁裡藏著更大的洩漏。"
+    },
+    "blended-13-hide-the-pain": {
+      "title": "漏洞偷偷修完，公告欄掛 0",
+      "note": "幾個高危漏洞都塞進日常提交裡悄悄改掉，GitHub 安全公告欄還乾乾淨淨掛著 0。"
+    },
+    "blended-14-gordon-ramsay": {
+      "title": "對矽谷大佬溫柔，對中文圈開噴",
+      "note": "1,151 條推文：對 20 位大廠高層零髒話，轉頭罵中文科技圈是最大糞坑。"
+    },
+    "blended-14b-two-guys-bus": {
+      "title": "大巴兩頭：高層席和工程師席",
+      "note": "高層那頭全是吹捧、0 髒話；工程師這頭聽到的是「活該大規模失業」。"
+    },
+    "blended-15-clown-makeup": {
+      "title": "0 件商標也敢維權四步曲",
+      "note": "拿商標侵權威脅封鎖帳號，美國商標局 0 件註冊，17 小時後補份 TRADEMARK.md，還讓人換個好一點的律師。"
+    },
+    "blended-15b-trophy": {
+      "title": "這裡擺我的美國商標，如果有的話",
+      "note": "發商標威脅時，公司名下 T3 Code、T3 Tools、T3 Connect 的美國註冊商標全是 0。"
+    },
+    "blended-16-uno-draw25": {
+      "title": "道歉不可能，抽 25 張牌",
+      "note": "把中文技術圈罵成糞坑、讀者罵成腦殘，最後一句「我沒做錯，絕不道歉」。"
+    },
+    "blended-16b-domino-effect": {
+      "title": "一條推文滾成 GDPR 檢舉",
+      "note": "就罵了句免費 MIT Fork，48 小時後就變成全網審原始碼、2.26M+ 瀏覽外加歐盟 GDPR 檢舉。"
+    },
+    "blended-17-evil-kermit": {
+      "title": "嘴上講合規，Gist 裡發代理池",
+      "note": "公開教育別人守規矩講合規，自己 Gist 上掛著 10 個帳號的代理池繞 API 額度。"
+    },
+    "blended-18a-doge-cheems": {
+      "title": "4 月罵刷星，11 月自己刷",
+      "note": "4 月說 Star 就是騙 VC 的，11 月自家軟體彈個 30 秒閒置窗，星數從 3 萬飆到 7.7 萬。"
+    },
+    "blended-18b-roll-safe": {
+      "title": "7.7 萬星，129 人追蹤",
+      "note": "閒置 30 秒就彈窗拿本機 GitHub 憑證一鍵點星，最後 7.7 萬星，追蹤才 129 人。"
+    },
+    "blended-19a-bike-fall": {
+      "title": "自己插棍摔車，怪中文圈",
+      "note": "最新程式碼被扒出明文區域網路 Cookie、沒法撤銷的 Token 等 5 個漏洞，他反手把鍋甩給爆料的人。"
+    },
+    "blended-19b-undertaker": {
+      "title": "剛吹完安全，背後又冒 5 個",
+      "note": "剛說連夜補完丁徹底安全，轉頭查最新提交，又冒出 5 個認證和 SSH 金鑰漏洞。"
+    },
+    "blended-20a-89views-domino": {
+      "title": "89 瀏覽吐槽，換來 HR 投訴",
+      "note": "AWS 工程師那條 89 瀏覽 0 讚的吐槽，換來深夜私訊、嘲笑口音，加一封 AWS HR 投訴。"
+    },
+    "blended-20b-evil-kermit-fear": {
+      "title": "私訊原話：恐懼是好的激勵",
+      "note": "對方私訊裡禮貌建議用獨立子網域，他回一句「恐懼是很好的激勵」，逼完道歉再告去 AWS HR。"
+    },
+    "blended-21a-scooby-zed": {
+      "title": "撕面具：握手時自稱 zed",
+      "note": "PR #43087 自己寫著：連 Antigravity 握手時報 clientInfo 名為 zed，就為蹭 Google 白名單。"
+    },
+    "blended-21b-two-buttons-v0113": {
+      "title": "亮點寫 GBK，封號警告塞進 380 項",
+      "note": "v0.1.13 共 401 項改動，置頂 7 條亮點講 GBK，Google 封號警告和冒充 Zed 全塞進「其餘 380 項」。"
+    },
+    "blended-22a-clown-final-statement": {
+      "title": "最終聲明 16 分鐘後被拆台",
+      "note": "剛保證從不讀本機檔案，16 分鐘後 @sk1gl4a 數出 243 個被掃描的 Claude 工作階段，第二天 PR #43948 自己認了。"
+    },
+    "blended-22b-drake-germany-vat": {
+      "title": "嘴上封鎖德國，照收 19% 加值稅",
+      "note": "威脅說歐盟再檢舉就封鎖德國，結果 Stripe 結帳頁照樣按歐元收德國買家 19% 加值稅。"
+    },
+    "blended-22c-roll-safe-slophouse": {
+      "title": "怕稽核？塞進閉源後端做",
+      "note": "PR #43889 剛開要給 Connect 使用者加追蹤 ID，10 分鐘後自己關掉：「算了，閉源 slophouse 後端做更省事」。"
+    },
+    "blended-22d-trade-offer-privacy": {
+      "title": "打開隱私政策頁，0 點擊先收指紋",
+      "note": "未登入打開自家隱私政策頁，一下沒點，FingerprintJS 已經跑完，指紋 POST 到 /api/identity。"
+    },
+    "blended-23a-gru-plan-sandbox": {
+      "title": "隔離只管無頭 Linux，桌面全裸",
+      "note": "原始碼裡 isolatedContext 只在 desktop === null 時開，桌面端匯入的 11 個瀏覽器 Cookie 全程和 AI 共享。"
+    },
+    "blended-23b-flex-tape-warning": {
+      "title": "不修權限，把 Anthropic 警告靜音",
+      "note": "Anthropic SDK 警告通配符繞過人工審批，T3 不改權限，反而改 process.emitWarning 靜音，還寫了單元測試。"
+    },
+    "blended-24a-anakin-padme-url": {
+      "title": "你沒把 8000 字 Prompt 塞網址吧",
+      "note": "自己提自己合的 PR #18454 把 8000 字 Prompt 和私有儲存庫名稱拼進公網 URL，貼到 Slack 就被預覽寫進日誌。"
+    },
+    "blended-24b-disaster-girl-4m39s": {
+      "title": "隱私 Bug 4 分 39 秒鎖單刪文件",
+      "note": "檢舉引用連結明文洩漏前後 32 字正文（Issue #29449），4 分 39 秒零回覆鎖單，還推上行動端、刪了文件。"
+    },
+    "stickers-01_copium_no_telemetry": {
+      "title": "吸氧：絕無遙測",
+      "note": "一口接一口猛吸「絕無遙測」，緩過來接著吹。"
+    },
+    "stickers-02_crying_mask_4am": {
+      "title": "凌晨 4 點的笑臉面具",
+      "note": "凌晨 4 點還在救火，面具必須焊在臉上。"
+    },
+    "stickers-03_rage_temu3": {
+      "title": "TEMU3! 經典破防",
+      "note": "看到免費 MIT Fork 後第 11 分鐘的標準表情。"
+    },
+    "stickers-04_simp_1t_vip": {
+      "title": "兆元大廠，怎麼都對",
+      "note": "小 Fork 講規矩，兆元大廠就兩眼放光。"
+    },
+    "stickers-05_clown_0_uspto": {
+      "title": "0 件註冊商標，照樣喊侵權",
+      "note": "手裡 0 件美國註冊商標，照樣喊侵權封號。"
+    },
+    "stickers-06_troll_steal_bot": {
+      "title": "30 秒，@bot 已扒完",
+      "note": "上一秒「我要偷了」，下一秒 30 秒派 @bot 扒走。"
+    },
+    "stickers-07_yaoming_lawyer": {
+      "title": "換個好律師，0 商標",
+      "note": "叫人「換個好一點的律師」，自己手裡 0 件商標。"
+    },
+    "stickers-08_sweat_gdpr": {
+      "title": "GDPR 來了，狂流汗",
+      "note": "歐盟 GDPR 檢舉一到，Axiom 裡每小時 220 萬筆 IP 日誌露餡。"
+    },
+    "stickers-09_sleep_52d_force": {
+      "title": "強推後睡滿 52 天",
+      "note": "靜默 git push --force 的高危 Bug 躺了 52 天，他睡得挺香。"
+    },
+    "stickers-10_laser_21h_fix": {
+      "title": "21 小時雷射眼修完",
+      "note": "為了榜單刪掉隱私過濾，21 小時雷射眼秒速合完。"
+    },
+    "stickers-11_trash_41gb": {
+      "title": "41.6 GB 假刪除",
+      "note": "按下永久刪除其實根本沒刪，SQLite 照單全收 41.6 GB。"
+    },
+    "stickers-12_shocked_3min_ban": {
+      "title": "3 分鐘封號速通",
+      "note": "偽造 Antigravity 請求標頭，新帳號 3 分鐘直接被封。"
+    },
+    "stickers-13_xray_0_e2e": {
+      "title": "0% 加密透視鏡",
+      "note": "端對端加密 0%，T3 Connect 終端串流全是明文。"
+    },
+    "stickers-14_crown_77k_stars": {
+      "title": "7.7 萬星，129 追蹤",
+      "note": "閒置 30 秒就彈窗求星，刷出 7.7 萬星、129 個追蹤。"
+    },
+    "stickers-15_fine_fire_anon": {
+      "title": "匿名日誌火海喝咖啡",
+      "note": "嘴上說匿名，機房日誌燒成火海，他還在喝咖啡。"
+    },
+    "stickers-16_delete_button_4am": {
+      "title": "凌晨 4:03 刪文手速",
+      "note": "凌晨 4:03，貼文剛發完就猛拍紅色刪除鍵。"
+    },
+    "stickers-17_pain_0_advisories": {
+      "title": "5 個洞，0 份公告",
+      "note": "5 個高危漏洞，0 份 GitHub 公告，只能強顏歡笑。"
+    },
+    "stickers-18_void_in_china": {
+      "title": "中國除外紅章",
+      "note": "MIT 開源，只給美國兆元級實驗室，反手蓋上「VOID IN CHINA」。"
+    },
+    "stickers-19_qi_bigotry_seal": {
+      "title": "朱紅「歧」字大印",
+      "note": "一宗罪的朱紅「歧」字大印，暴走版。"
+    },
+    "stickers-20_yolo_500_merge": {
+      "title": "日均 500 筆提交盲合",
+      "note": "一天 500 個提交，閉眼拉桿就是合。"
+    },
+    "stickers-21_slophouse_nvm": {
+      "title": "PR #43889 進暗門",
+      "note": "PR #43889 一關，活兒直接搬進私有儲存庫暗門。"
+    },
+    "stickers-22_impersonate_zed": {
+      "title": "紙板面具：我是 Zed",
+      "note": "貼上紙板面具假冒 Zed，拿 clientInfo 騙過 Google 驗證。"
+    },
+    "stickers-23_89views_hr": {
+      "title": "89 次瀏覽就喊 HR",
+      "note": "一則 89 次瀏覽的小貼文，直接打給 AWS HR 檢舉。"
+    },
+    "stickers-24_fear_incentive": {
+      "title": "恐懼是很好的激勵",
+      "note": "半夜私訊原話：「Fear is a good incentive」。"
+    },
+    "stickers-25_english_native": {
+      "title": "「英語是你母語嗎」",
+      "note": "單片眼鏡一戴，私訊質問：「英語是你母語嗎？」"
+    },
+    "stickers-26_16min_busted": {
+      "title": "16 分鐘當場打臉",
+      "note": "才剛否認讀過 243 則 Claude 對話，16 分鐘後就當場被抓包。"
+    },
+    "stickers-27_19pct_vat": {
+      "title": "19% 德國稅真香",
+      "note": "躲 GDPR 挺快，收 €9.03 德國 19% VAT 更快。"
+    },
+    "stickers-28_380_fixes": {
+      "title": "吹口哨藏封號雷",
+      "note": "吹著口哨，把 Google 封號修復塞進「+380 fixes」。"
+    },
+    "creative-idioms-01-zei-han-zhuo-zei": {
+      "title": "成語 #01：賊喊捉賊",
+      "note": "合法 MIT Fork 被罵山寨，他喊完「我要偷了」，30 秒後派機器人去扒她的 Fork。"
+    },
+    "creative-idioms-02-qi-ruan-pa-ying": {
+      "title": "成語 #02：欺軟怕硬",
+      "note": "1,151 則推文：對美國大廠高層飆髒話 0%，中文 Fork 衝突期飆到 14.4%。"
+    },
+    "creative-idioms-03-ci-di-wu-yin": {
+      "title": "成語 #03：此地無銀三百兩",
+      "note": "才剛說從不記錄路徑和 IP，自家 GDPR 補丁就洩漏出每小時 220 萬筆 IP 和路徑。"
+    },
+    "creative-idioms-04-zhi-lu-wei-ma": {
+      "title": "每日成語：指鹿為馬，0 件商標",
+      "note": "0 件美國商標照樣喊侵權，威脅封鎖帳號 17 小時後才補出 TRADEMARK.md。"
+    },
+    "creative-idioms-05-ye-gong-hao-long": {
+      "title": "每日成語：葉公好龍，說好的歡迎 Fork",
+      "note": "首頁寫著歡迎合法偷程式碼，真有人 Fork 了立刻威脅封鎖帳號。"
+    },
+    "creative-idioms-06-yan-er-dao-ling": {
+      "title": "每日成語：掩耳盜鈴，不發公告就沒洞",
+      "note": "README 刪掉絕不追蹤，高危漏洞混在普通提交裡改掉，公告數保持 0。"
+    },
+    "creative-packaging-01-t3code-iceberg": {
+      "title": "T3 Code 黑歷史冰山",
+      "note": "水面是 Temu3 那條推文，水下 41.6 GB 假刪除、每小時 220 萬 IP 日誌、0 條安全公告。"
+    },
+    "creative-packaging-02-fda-nutrition-facts": {
+      "title": "營養成分表：每份含遙測",
+      "note": "每天 31.7T token、預設 PostHog 100%、每小時 220 萬 IP 日誌、0% 加密、0 件商標。"
+    },
+    "creative-packaging-03-pharma-box-parody": {
+      "title": "處方藥廣告：T3 Code 無遙測版",
+      "note": "說明書小字寫著副作用：3 分鐘封鎖帳號、靜默強制推送、自動點星 7.7 萬。"
+    },
+    "creative-packaging-04-mit-license-coupon": {
+      "title": "超市優惠券：免費 MIT，中國除外",
+      "note": "大字寫著免費隨便偷程式碼，剪角小字寫著中國開發者不適用。"
+    },
+    "creative-gaming-01-sekiro-google-ban": {
+      "title": "隻狼：帳號封禁，3 分鐘通關",
+      "note": "剛儲值 20 美元的新帳號，偽造 Google 內部請求標頭，3 分鐘原地封鎖。"
+    },
+    "creative-gaming-02-elden-boss-trademark": {
+      "title": "艾爾登法環 Boss：零商標守護者",
+      "note": "一階段 0 件商標揮大錘威脅封鎖帳號，二階段才連夜補寫 TRADEMARK.md。"
+    },
+    "creative-gaming-03-souls-force-push": {
+      "title": "黑暗靈魂：主分支已蒸發",
+      "note": "會強制推送主分支的 Bug 掛了 52 天，改自家排行榜只花 21 小時。"
+    },
+    "creative-gaming-04-steam-11hr-flipflop": {
+      "title": "成就解鎖：開源就是開源",
+      "note": "先罵中國 Fork 是山寨貨，11 小時後改口力挺兆美元大廠隨便用。"
+    },
+    "creative-gaming-05-steam-0-trademarks": {
+      "title": "成就解鎖：換個好點的律師",
+      "note": "0 件註冊商標也敢威脅封鎖帳號，還反手叫人去換個更好的律師。"
+    },
+    "creative-gaming-06-steam-41gb-ghost": {
+      "title": "成就解鎖：永久刪除，0 位元組",
+      "note": "點完永久刪除，statev2.sqlite 一條聊天都沒少，漲到 41.6 GB。"
+    },
+    "creative-gaming-07-steam-77k-stars": {
+      "title": "成就解鎖：純自然成長，129 追蹤",
+      "note": "閒置 30 秒彈窗自動點星，星數 7.7 萬，追蹤 129。"
+    },
+    "creative-pokemon-01-evo-star-farmer": {
+      "title": "進化鏈 #01：刷星大帝",
+      "note": "當年罵 Star 是騙投資人的把戲，如今靠 30 秒彈窗刷到 7.7 萬星、129 追蹤。"
+    },
+    "creative-pokemon-02-evo-two-year-cycle": {
+      "title": "進化鏈 #02：兩年一輪迴",
+      "note": "2024 掛印度開發者道歉，2025 FFmpeg 懸賞，2026 中文圈破防，凌晨 4 點刪文重置。"
+    },
+    "creative-pokemon-03-evo-no-telemetry": {
+      "title": "進化鏈 #03：絕無遙測三段變身",
+      "note": "一階官網寫著絕無遙測，最終進化成預設 PostHog 上報加閉源後端。"
+    },
+    "creative-pokemon-04-creature-card-theo-ex": {
+      "title": "全圖閃卡：DARK THEO EX，HP 77000",
+      "note": "0 USPTO 徽章在手，Temu3 暴走對中文圈 4 倍傷害、對 VIP 歸零。"
+    },
+    "creative-reactions-01-reply-lie-detector": {
+      "title": "測謊機：絕無遙測，當場翻車",
+      "note": "那句絕無遙測再被搬出來就甩這張，git diff 自己會說話。"
+    },
+    "creative-reactions-02-reply-uspto-zero": {
+      "title": "鐵證：0 件美國註冊商標",
+      "note": "再有人說商標侵權就甩這張：威脅封鎖帳號時公司名下美國商標為 0。"
+    },
+    "creative-reactions-03-reply-1151-scoreboard": {
+      "title": "計分板：VIP 0%，中文圈 14.4%",
+      "note": "1,151 條推文裡的爆粗率：矽谷高階主管 0.0%，中文開發者 14.4%。"
+    },
+    "creative-reactions-04-reply-4am-delete": {
+      "title": "凌晨四點狂按刪除鍵",
+      "note": "凌晨 4 點威脅閉源，天亮前自己刪乾淨。"
+    },
+    "creative-reactions-05-reply-void-in-china": {
+      "title": "MIT 協議：中國區作廢",
+      "note": "同一份 MIT，11 小時內對美國大廠敞開、對中文開發者威脅封鎖帳號。"
+    },
+    "creative-reactions-06-gif-clown-transform": {
+      "title": "動圖：零商標小丑四連",
+      "note": "四格播完：先威脅封鎖帳號，17 小時後才補寫 TRADEMARK.md。"
+    },
+    "creative-reactions-07-gif-auto-star-counter": {
+      "title": "動圖：30 秒自動點星",
+      "note": "閒置 30 秒彈窗就發 PUT user/starred，星數衝到 77,000，追蹤凍在 129。"
+    },
+    "story-en-ep01": {
+      "title": "第 1 話 · 相隔 11 小時的變臉（英）",
+      "note": "免費 MIT Fork 被罵成「Temu3 Code」，還收到封鎖帳號的威脅；11 小時後卻對兆美元美國大廠熱烈歡迎。"
+    },
+    "story-zh-ep01": {
+      "title": "第 1 話 · 相隔 11 小時的變臉（中）",
+      "note": "免費 MIT Fork 被罵成「Temu3 Code」，還收到封鎖帳號的威脅；11 小時後卻對兆美元美國大廠熱烈歡迎。"
+    },
+    "story-en-ep02": {
+      "title": "第 2 話 · 最虧的一次封鎖（英）",
+      "note": "在留言區禮貌問一句是不是雙標就被秒封鎖，順手把 FFmpeg 的舊帳一起翻出來。"
+    },
+    "story-zh-ep02": {
+      "title": "第 2 話 · 最虧的一次封鎖（中）",
+      "note": "在留言區禮貌問一句是不是雙標就被秒封鎖，順手把 FFmpeg 的舊帳一起翻出來。"
+    },
+    "story-en-ep03": {
+      "title": "第 3 話 · 絕無遙測，句號（英）",
+      "note": "官網招牌寫著絕無遙測，原始碼裡 PostHog 預設開啟、登入檔案被雜湊，還有 41.6 GB 的假刪除。"
+    },
+    "story-zh-ep03": {
+      "title": "第 3 話 · 絕無遙測，句號（中）",
+      "note": "官網招牌寫著絕無遙測，原始碼裡 PostHog 預設開啟、登入檔案被雜湊，還有 41.6 GB 的假刪除。"
+    },
+    "story-en-ep04": {
+      "title": "第 4 話 · GDPR 一檢舉就見效（英）",
+      "note": "罵了幾個月沒人理，歐盟一檢舉就通宵 6 小時趕修補，還漏出每小時 220 萬筆 IP 日誌。"
+    },
+    "story-zh-ep04": {
+      "title": "第 4 話 · GDPR 一檢舉就見效（中）",
+      "note": "罵了幾個月沒人理，歐盟一檢舉就通宵 6 小時趕修補，還漏出每小時 220 萬筆 IP 日誌。"
+    },
+    "story-en-ep05": {
+      "title": "第 5 話 · 收山 3.5 小時又出山（英）",
+      "note": "寫完 18 彈宣布收山、回去寫程式碼，結果不到 3.5 小時，新八卦和漏洞自動送上門。"
+    },
+    "story-zh-ep05": {
+      "title": "第 5 話 · 收山 3.5 小時又出山（中）",
+      "note": "寫完 18 彈宣布收山、回去寫程式碼，結果不到 3.5 小時，新八卦和漏洞自動送上門。"
+    },
+    "story-en-ep06": {
+      "title": "第 6 話 · 89 次瀏覽換一張 HR 投訴（英）",
+      "note": "2025 年 1 月，AWS 工程師一則 89 次瀏覽的抱怨，換來深夜私訊威脅和一張 HR 投訴。"
+    },
+    "story-zh-ep06": {
+      "title": "第 6 話 · 89 次瀏覽換一張 HR 投訴（中）",
+      "note": "2025 年 1 月，AWS 工程師一則 89 次瀏覽的抱怨，換來深夜私訊威脅和一張 HR 投訴。"
+    },
+    "story-en-ep07": {
+      "title": "第 7 話 · 你好，我是 Zed（英）",
+      "note": "Google 點名 T3 Code 假冒 clientInfo: zed 直捅內部介面，桌面端還忙著匯入 11 個瀏覽器的 Cookie。"
+    },
+    "story-zh-ep07": {
+      "title": "第 7 話 · 你好，我是 Zed（中）",
+      "note": "Google 點名 T3 Code 假冒 clientInfo: zed 直捅內部介面，桌面端還忙著匯入 11 個瀏覽器的 Cookie。"
+    },
+    "story-en-ep08": {
+      "title": "第 8 話 · 挪進閉源更省事（英）",
+      "note": "開源儲存庫老被社群抓包，維護者乾脆關掉 PR #43889，把身分追蹤挪進閉源後端。"
+    },
+    "story-zh-ep08": {
+      "title": "第 8 話 · 挪進閉源更省事（中）",
+      "note": "開源儲存庫老被社群抓包，維護者乾脆關掉 PR #43889，把身分追蹤挪進閉源後端。"
+    },
+    "classic-00a-family-guy-mit-check": {
+      "title": "相隔 11 小時的 MIT 雙標",
+      "note": "同樣是 MIT 協議，相隔 11 小時：中國開發者收到封鎖帳號的威脅，兆美元美國大廠換來一句「開源就是開源」。"
+    },
+    "classic-00b-drake-11-hours": {
+      "title": "Drake 對照圖：附原帖 QR 碼",
+      "note": "兩則相隔 11 小時的原帖並排放著，附 QR 碼，自己掃碼核對，別聽我們轉述。"
+    },
+    "classic-14-gordon-ramsay-1151-tweets": {
+      "title": "1,151 則推文：看人下菜碟",
+      "note": "17 天 1,151 則推文實測：對 20 位大廠高層 0% 髒話，一般開發者 8%，危機期 14.4%。"
+    },
+    "classic-15-clown-zero-trademarks": {
+      "title": "0 件美國商標，17 小時後才補規則",
+      "note": "手上 0 件美國商標就拿來嚇人，17 小時後才偷偷給儲存庫補上 TRADEMARK.md。"
+    },
+    "classic-16-cycle-repeat-offender": {
+      "title": "2024 到 2026：三年同一個劇本",
+      "note": "挑靶子帶風向，鐵證一到就刪文或拒不道歉，2024、2025、2026 三年照抄同一套。"
+    },
+    "comics-00-same-mit-11-hours-apart-en-qr": {
+      "title": "短漫 #00（英）：11 小時兩副嘴臉",
+      "note": "11 月 23 日還在喊封殺中國 Fork，11 小時後轉頭歡迎兆美元美國大廠，協議還是那份協議。"
+    },
+    "comics-14-1151-tweets-selective-politeness-en-qr": {
+      "title": "短漫 #14（英）：髒話按對象分配",
+      "note": "1,151 則推文的髒話帳本：大廠高層 0%，一般開發者 8%，危機期漲到 14.4%。"
+    },
+    "comics-00-same-mit-11-hours-apart-zh-qr": {
+      "title": "短漫 #00（中）：11 小時兩副嘴臉",
+      "note": "中文版對照圖，兩個 QR 碼直接掃到原帖，不用聽我們轉述，自己看時間戳記。"
+    },
+    "comics-14-1151-tweets-selective-politeness-zh-qr": {
+      "title": "短漫 #14（中）：髒話按對象分配",
+      "note": "中文版 1,151 則統計圖：對高層 0%，對一般開發者 8%，危機期 14.4%。"
+    }
+  }
+}

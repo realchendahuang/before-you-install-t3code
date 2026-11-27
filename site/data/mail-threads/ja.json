@@ -235,7 +235,7 @@
       "to": "T3 Codeの全ユーザー",
       "dateDisplay": "2026年3月6日",
       "subject": "PR #174 が「テレメトリーなし」の公約をよそにPostHogを有効化",
-      "snippet": "`Config.withDefault(true)` が同意ダイアログも設定画面のトグルもドキュメントもないまま3か月以上稼働していた。",
+      "snippet": "Config.withDefault(true) が同意ダイアログも設定画面のトグルもドキュメントもないまま3か月以上稼働していた。",
       "messages": [
         {
           "sender": "T3 Code 公式サイト（t3.codes）",
@@ -258,7 +258,7 @@
       "to": "公開タイムライン",
       "dateDisplay": "2026年4月25日",
       "subject": "VC向けの偽スターを糾弾した直後、30秒アイドルでスター催促を追加",
-      "snippet": "スター稼ぎを嘲笑ってから6か月後、ウォッチャーが~129のままだった`pingdotgg/t3code`を30kから77kスターへ増やすため、PR #29922をセルフマージした。",
+      "snippet": "スター稼ぎを嘲笑ってから6か月後、ウォッチャーが~129のままだったpingdotgg/t3codeを30kから77kスターへ増やすため、PR #29922をセルフマージした。",
       "messages": [
         {
           "sender": "Theo Browne (@theo)",

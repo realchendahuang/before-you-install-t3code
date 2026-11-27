@@ -10,31 +10,30 @@
   };
   let lang = I18N.detectInitialLang();
   let bundle = null;
+  let memesOverlay = null;
   let catalogMeta = null;
   let allItems = [];
   let visibleItems = [];
   let activeSeries = "all";
   let query = "";
   let lbIndex = -1;
+  let lbPrevFocus = null;
+  const BLANK_IMG = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
   function t(path, fallback = "") {
     return I18N.getKey(bundle, path) || fallback;
   }
 
-  function isZh() {
-    return lang === "zh-CN" || lang === "zh-TW";
+  function escapeHtml(s) {
+    return I18N.escapeHtml(s);
+  }
+
+  function escapeBidi(s) {
+    return I18N.escapeBidi(s);
   }
 
   function isAnimatedGif(it) {
     return Boolean(it && (it.animated || it.mime === "image/gif" || /\.gif(\?|$)/i.test(it.url || "")));
-  }
-
-  function escapeHtml(s) {
-    return String(s || "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
   }
 
   function showToast(msg) {
@@ -117,7 +116,7 @@
       const promoUrl = catalogMeta.promoSheetUrl || "";
       const mb = catalogMeta.stickerZipBytes ? ` (${(catalogMeta.stickerZipBytes / (1024 * 1024)).toFixed(1)} MB)` : "";
       el.innerHTML = `<div class="sb-left">
-        ${promoUrl ? `<a class="sb-thumb" href="${escapeHtml(promoUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Sticker Contact Sheet"><img src="${escapeHtml(promoUrl)}" alt="Sticker Pack Promo Sheet" loading="lazy" /></a>` : ""}
+        ${promoUrl ? `<a class="sb-thumb" href="${escapeHtml(promoUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Sticker Contact Sheet"><img src="${escapeHtml(promoUrl)}" alt="Sticker Pack Promo Sheet" width="985" height="1600" loading="lazy" decoding="async" /></a>` : ""}
         <div>
           <div class="sb-title">${escapeHtml(t("memes.stickerBannerTitle", "Transparent Rage-Comic Sticker Pack"))}</div>
           <p class="sb-desc">${escapeHtml(t("memes.stickerBannerDesc", "Pre-sized RGBA folders for Discord & Slack (128px), Telegram (512px WebP/PNG), and WeChat (240px) + promo contact sheet."))}</p>
@@ -158,7 +157,8 @@
         return false;
       }
       if (!q) return true;
-      return `${it.id} #${it.exhibit} ${it.slug || ""} ${it.subseries || ""} ${it.titleEn} ${it.titleZh} ${it.noteEn || ""} ${it.noteZh || ""} ${it.series}`.toLowerCase().includes(q);
+      const loc = I18N.pickMemeText(it, lang, memesOverlay);
+      return `${it.id} #${it.exhibit} ${it.slug || ""} ${it.subseries || ""} ${it.titleEn} ${it.titleZh} ${it.noteEn || ""} ${it.noteZh || ""} ${loc.title} ${loc.note} ${it.series}`.toLowerCase().includes(q);
     });
   }
 
@@ -196,9 +196,9 @@
     const heights = new Array(colCount).fill(0);
     const colWidth = colCount === 1 ? 340 : colCount === 2 ? 360 : 340;
 
+    const denseScript = lang.startsWith("zh") || lang === "ja" || lang === "ko";
     visibleItems.forEach((it, idx) => {
-      const title = isZh() ? it.titleZh : it.titleEn;
-      const note = isZh() ? it.noteZh : it.noteEn;
+      const { title, note } = I18N.pickMemeText(it, lang, memesOverlay);
       const sLabel = t(`memes.series.${it.series}`, it.series.toUpperCase());
       const gif = isAnimatedGif(it);
       const cardCls = [
@@ -213,8 +213,8 @@
       const w = Number(it.width) || 900;
       const h = Number(it.height) || 900;
       const ratio = Math.min(2.2, Math.max(0.4, h / w));
-      const noteLines = note ? Math.ceil(note.length / (isZh() ? 22 : 42)) : 0;
-      const titleLines = title ? Math.ceil(title.length / (isZh() ? 18 : 34)) : 1;
+      const noteLines = note ? Math.ceil(note.length / (denseScript ? 22 : 42)) : 0;
+      const titleLines = title ? Math.ceil(title.length / (denseScript ? 18 : 34)) : 1;
       const estHeight = ratio * colWidth + 96 + titleLines * 21 + noteLines * 20;
 
       let bestCol = 0;
@@ -226,7 +226,7 @@
           <button type="button" class="meme-media-btn" data-open-lb="${idx}" aria-label="${escapeHtml(title)}">
             <div class="meme-img-frame">
               ${gif ? `<span class="gif-pill">GIF</span>` : ""}
-              <img src="${escapeHtml(it.url)}" alt="${escapeHtml(title)}" width="${w}" height="${h}" loading="lazy" crossorigin="anonymous" />
+              <img src="${escapeHtml(it.url)}" alt="${escapeHtml(title)}" width="${w}" height="${h}" loading="lazy" decoding="async" crossorigin="anonymous" />
             </div>
           </button>
           <div class="meme-body">
@@ -234,8 +234,8 @@
               <span class="badge badge-${escapeHtml(it.series)}">${escapeHtml(sLabel)}</span>
               <span class="ex-tag">${it.slug ? `:${escapeHtml(it.slug)}:` : `#${escapeHtml(it.exhibit)}`}</span>
             </div>
-            <h3 class="meme-title">${escapeHtml(title)}</h3>
-            ${note ? `<p class="meme-note">${escapeHtml(note)}</p>` : ""}
+            <h3 class="meme-title">${escapeBidi(title)}</h3>
+            ${note ? `<p class="meme-note">${escapeBidi(note)}</p>` : ""}
             <div class="meme-actions">
               <button type="button" class="act-btn act-primary" data-copy-idx="${idx}">${escapeHtml(gif ? copyGifTxt : copyPngTxt)}</button>
               <button type="button" class="act-btn" data-dl-idx="${idx}">${escapeHtml(gif ? dlGifTxt : dlTxt)}</button>
@@ -260,9 +260,8 @@
   function updateLightbox(animate = false) {
     if (lbIndex < 0 || lbIndex >= visibleItems.length) return;
     const it = visibleItems[lbIndex];
-    const title = isZh() ? it.titleZh : it.titleEn;
+    const { title, note } = I18N.pickMemeText(it, lang, memesOverlay);
     const gif = isAnimatedGif(it);
-    const sinsN = (catalogMeta && catalogMeta.counts && catalogMeta.counts.sins) || 22;
 
     const counter = document.getElementById("lbCounter");
     if (counter) counter.textContent = `${lbIndex + 1} / ${visibleItems.length}`;
@@ -270,12 +269,13 @@
     badgeEl.className = `badge badge-${it.series}`;
     const sLabel = t(`memes.series.${it.series}`, it.series);
     badgeEl.textContent = `${sLabel} · ${it.slug ? `:${it.slug}:` : `#${it.exhibit}`}`;
-    document.getElementById("lbTitle").textContent = title;
+    document.getElementById("lbTitle").innerHTML = escapeBidi(title);
     const noteEl = document.getElementById("lbNote");
-    if (noteEl) noteEl.textContent = (isZh() ? it.noteZh : it.noteEn) || "";
+    if (noteEl) noteEl.innerHTML = escapeBidi(note || "");
     const imgBox = document.getElementById("lbImgBox");
     if (imgBox) imgBox.classList.toggle("is-transparent", Boolean(it.transparent || it.series === "stickers"));
     const img = document.getElementById("lbImg");
+    img.src = BLANK_IMG;
     img.src = it.url;
     img.alt = title;
 
@@ -308,10 +308,13 @@
   function openLightbox(idx, animate = false) {
     const lb = document.getElementById("memeLightbox");
     if (!lb || idx < 0 || idx >= visibleItems.length) return;
+    if (lb.hidden) lbPrevFocus = document.activeElement;
     lbIndex = idx;
     updateLightbox(animate);
     lb.hidden = false;
     document.body.style.overflow = "hidden";
+    const closeBtn = lb.querySelector(".lb-close");
+    if (closeBtn) closeBtn.focus();
   }
 
   function closeLightbox() {
@@ -320,6 +323,11 @@
     lb.hidden = true;
     lbIndex = -1;
     document.body.style.overflow = "";
+    if (window.location.hash) {
+      try { history.replaceState(null, "", window.location.pathname + window.location.search); } catch (_) {}
+    }
+    if (lbPrevFocus && typeof lbPrevFocus.focus === "function") lbPrevFocus.focus();
+    lbPrevFocus = null;
   }
 
   function stepLightbox(delta) {
@@ -334,10 +342,16 @@
   }
 
   async function applyLanguage(nextCode, deferRender = false) {
-    lang = I18N.normalizeLang(nextCode) || "en";
+    const target = I18N.normalizeLang(nextCode) || "en";
+    lang = target;
     I18N.applyDirection(lang);
-    bundle = await I18N.loadBundle(lang, "../data/");
-    if (!bundle) return;
+    const [nextBundle, nextOverlay] = await Promise.all([
+      I18N.loadBundle(lang, "../data/"),
+      I18N.loadMemesOverlay(lang, "../data/")
+    ]);
+    if (lang !== target || !nextBundle) return;
+    bundle = nextBundle;
+    memesOverlay = nextOverlay;
 
     if (lang === "en") {
       document.title = INITIAL_SEO.title;
@@ -358,7 +372,12 @@
     }
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const v = t(el.getAttribute("data-i18n"));
-      if (v) el.textContent = v;
+      if (!v) return;
+      if (el.tagName !== "OPTION" && /@[A-Za-z0-9_]+/.test(v)) {
+        el.innerHTML = escapeBidi(v);
+      } else {
+        el.textContent = v;
+      }
     });
     const searchEl = document.getElementById("memeSearch");
     if (searchEl) searchEl.placeholder = t("memes.searchPlaceholder", searchEl.placeholder);
@@ -385,7 +404,7 @@
     }
 
     const [memesRes] = await Promise.all([
-      fetch("../data/memes.json?v=5").catch(() => null),
+      fetch("../data/memes.json?v=6").catch(() => null),
       applyLanguage(lang, true)
     ]);
     if (memesRes && memesRes.ok) {
@@ -493,6 +512,7 @@
     if (e.key === "Escape") closeLightbox();
     else if (e.key === "ArrowLeft") stepLightbox(-1);
     else if (e.key === "ArrowRight") stepLightbox(1);
+    else if (e.key === "Tab") I18N.trapFocus(document.querySelector("#memeLightbox .lb-dialog"), e);
   });
 
   let resizeTimer = null;

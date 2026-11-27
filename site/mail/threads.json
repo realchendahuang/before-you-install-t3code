@@ -18,13 +18,13 @@
     {
       "id": "double-standard",
       "label": "Double Standards",
-      "labelZh": "双标与歧视",
+      "labelZh": "双重标准",
       "icon": "balance"
     },
     {
       "id": "promises",
       "label": "Promises vs. Code",
-      "labelZh": "承诺 vs 代码",
+      "labelZh": "说一套做一套",
       "icon": "fact_check"
     },
     {
@@ -36,19 +36,19 @@
     {
       "id": "security",
       "label": "Security & Bans",
-      "labelZh": "安全漏洞与封号",
+      "labelZh": "漏洞与封号",
       "icon": "shield"
     },
     {
       "id": "deleted",
       "label": "Deleted / Retracted",
-      "labelZh": "删帖与撤回",
+      "labelZh": "已删帖",
       "icon": "visibility_off"
     },
     {
       "id": "commercial",
       "label": "Commercial & Stars",
-      "labelZh": "商业利益与刷星",
+      "labelZh": "商业与刷星",
       "icon": "trending_up"
     }
   ],

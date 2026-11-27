@@ -149,7 +149,7 @@
       "to": "Açık kaynak bakımcıları",
       "dateDisplay": "Haz 2024",
       "subject": "Tema yazarıyla fork adı üzerinden dalga geçti, DHH'nin arayüzünü alaya aldı",
-      "snippet": "2024'teki tema fork'una `vsc-material-but-i-wont-sue-you` adını verdi; iki yıl sonra bir MIT fork yazarını GitHub'dan banlamakla tehdit edecekti.",
+      "snippet": "2024'teki tema fork'una vsc-material-but-i-wont-sue-you adını verdi; iki yıl sonra bir MIT fork yazarını GitHub'dan banlamakla tehdit edecekti.",
       "messages": [
         {
           "sender": "Theo Browne (@t3dotgg)",
@@ -235,7 +235,7 @@
       "to": "Tüm T3 Code kullanıcıları",
       "dateDisplay": "6 Mar 2026",
       "subject": "PR #174, \"telemetri yok\" vaadine rağmen PostHog'u açtı",
-      "snippet": "`Config.withDefault(true)` üç aydan fazla bir süre onay penceresi, Ayarlar arayüzünde anahtar ve dokümantasyon olmadan çalıştı.",
+      "snippet": "Config.withDefault(true) üç aydan fazla bir süre onay penceresi, Ayarlar arayüzünde anahtar ve dokümantasyon olmadan çalıştı.",
       "messages": [
         {
           "sender": "T3 Code ana sayfası (t3.codes)",
@@ -258,7 +258,7 @@
       "to": "Herkese açık zaman tüneli",
       "dateDisplay": "25 Nisan 2026",
       "subject": "Yatırımcılar için sahte yıldızları yerden yere vurdu, sonra 30 saniye boşta kalanlara yıldız istemi ekledi",
-      "snippet": "Yıldız şişirmeyle dalga geçmesinden altı ay sonra, izleyici sayısı ~129'da kalırken `pingdotgg/t3code` deposunu 30k'dan 77k yıldıza taşımak için PR #29922'yi kendi onayıyla merge etti.",
+      "snippet": "Yıldız şişirmeyle dalga geçmesinden altı ay sonra, izleyici sayısı ~129'da kalırken pingdotgg/t3code deposunu 30k'dan 77k yıldıza taşımak için PR #29922'yi kendi onayıyla merge etti.",
       "messages": [
         {
           "sender": "Theo Browne (@theo)",

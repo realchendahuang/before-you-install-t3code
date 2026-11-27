@@ -255,6 +255,13 @@
     ogTitle: document.querySelector('meta[property="og:title"]')?.getAttribute("content") || "",
     ogDesc: document.querySelector('meta[property="og:description"]')?.getAttribute("content") || ""
   };
+  const BLANK_IMG = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+  const IMG_DIMS = {"evidence/00-cover-en.png":[1800,766],"evidence/00-cover-zh.png":[1800,766],"evidence/01-origin-theo-threat.png":[1400,1142],"evidence/02-no-telemetry-removed.png":[1200,900],"evidence/03-identify-codex-claude.png":[1000,980],"evidence/04-issue1397-no-optout.png":[900,760],"evidence/05-telemetry-cant-disable.png":[1400,1336],"evidence/06-pr42450-absolute-path.jpg":[1400,1144],"evidence/08-pr42380-220w-ip-axiom.jpg":[1400,1144],"evidence/09-pr42285-delete-account-leftover.jpg":[1400,1144],"evidence/10-issue17845-fake-delete.png":[920,840],"evidence/11-issue15353-auto-force-push.png":[1400,750],"evidence/12-antigravity-v1internal-spoof.png":[1400,750],"evidence/13-antigravity-ssh-spoof.png":[1400,750],"evidence/14-issue41536-fresh-ban.png":[1400,750],"evidence/15-connect-no-e2e.jpg":[1400,750],"evidence/16-pr32945-ovh-caddy-gateway.jpg":[1400,750],"evidence/17-theo-31t-tokens-10m-day.png":[1400,1214],"evidence/18-theo-vibe-kanban.png":[1400,1040],"evidence/19-cliproxy-gist-555pct.jpg":[1400,1120],"evidence/20-star-10x-cliff.png":[1400,1588],"evidence/21-pr29922-zhilsinger-review.png":[1400,1182],"evidence/22-contributing-vouched-ban.png":[960,840],"evidence/23-stealing-fork-bot.png":[1400,846],"evidence/24-pr41898-trademark-aftermath.png":[1400,766],"evidence/25-double-standard-chart-zh.png":[1400,934],"evidence/25-engineers-unemployment.png":[1400,1584],"evidence/26-cn-cesspit.png":[1400,810],"evidence/charts/theo-chart-1-overview.png":[2880,1920],"evidence/charts/theo-chart-2-rhythm.png":[2880,1920],"evidence/charts/theo-chart-3-double-standard.png":[2880,1920],"evidence/charts/theo-chart-4-cn-crisis.png":[2880,1920],"evidence/extra/ca81b7b9-a1-a4-a5-ttl-and-wsclaims.png":[1280,820],"evidence/extra/ca81b7b9-a1-cookie-origin-bypass.png":[1280,820],"evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png":[1512,810],"evidence/extra/ca81b7b9-a2-pr39483-silent-fix.png":[1512,810],"evidence/extra/ca81b7b9-a3-ipv6-loopback-killed.png":[1512,810],"evidence/extra/ca81b7b9-a4-ws-ticket-reuse-url.png":[1280,820],"evidence/extra/ca81b7b9-a5-30d-bearer-and-no-self-revoke.png":[1280,820],"evidence/extra/ca81b7b9-a6-submodule-recursive.png":[1512,810],"evidence/extra/p1-2b-trademark-md.png":[4240,4320],"evidence/extra/p1-3-maria-t3libre.png":[5840,3120],"evidence/extra/p1-4-github-t3code-search.png":[3312,4280],"evidence/extra/p1-5-x-get-better-lawyer.png":[2520,1952],"evidence/extra/p10-1-x-theo-apr25-trick-vcs.png":[2472,3045],"evidence/extra/p10-3-x-theo-nov2-trending.png":[2472,4686],"evidence/extra/p10-4a-pr29922-macroscope.png":[3392,1364],"evidence/extra/p10-5-gh-driver-arbitrary-repo.png":[4400,3328],"evidence/extra/p10-6-x-theo-nov24-missed-70k.png":[2472,4067],"evidence/extra/p2-1a-cliproxy-claude.png":[4560,1968],"evidence/extra/p2-1b-cliproxy-xai-agy.png":[4560,3728],"evidence/extra/p2-2-pr33800-cliproxy-agy.png":[6208,3400],"evidence/extra/p2-3-x-theo-cliproxy-clickhouse.png":[2520,1316],"evidence/extra/p2-4-x-theo-grokbot-tutorial.png":[2520,4513],"evidence/extra/p2-4b-x-theo-15k-ultra.png":[2520,3226],"evidence/extra/p2-5-x-theo-not-cliproxy.png":[2520,2682],"evidence/extra/p3-1-x-theo-patrick-many-prs.png":[2520,2146],"evidence/extra/p3-2-patrick-only-1-commit.png":[6176,2608],"evidence/extra/p3-3-pr29922-one-click-star.png":[6208,3400],"evidence/extra/p3-4-code-star-prompt.png":[4080,4624],"evidence/extra/p4-2-x-theo-daytona-investor.png":[2520,1106],"evidence/extra/p4-3-x-theo-paid-cloud-sandboxes.png":[2520,1796],"evidence/extra/p5-1-x-theo-managed-policy.png":[2472,1486],"evidence/extra/p5-2-x-theo-never-touches-servers.png":[2472,1561],"evidence/extra/p5-4-doc-managed-policy-paths.png":[4240,2960],"evidence/extra/p6-1-x-theo-800k-cost.png":[2472,1390],"evidence/extra/p6-3-x-theo-my-analytics.png":[2472,1294],"evidence/extra/p6-4-x-theo-investors.png":[2472,1362],"evidence/extra/p6-5-x-theo-98pct-usage.png":[2472,1102],"evidence/extra/p7-1-x-theo-nukes-machine.png":[2472,1102],"evidence/extra/p7-2-x-theo-yolo-merges.png":[2472,1258],"evidence/extra/p7-3-x-theo-unfollow-pr.png":[2472,2403],"evidence/extra/p7-4-x-theo-take-it-away.png":[2472,1066],"evidence/extra/p7-5-x-theo-pic-over-pr.png":[2472,1294],"evidence/extra/p8-2-x-theo-demonetize-cn.png":[2472,1198],"evidence/extra/p8-3-x-theo-autoblocker.png":[2472,1486],"evidence/extra/p8-4b-x-theo-copy-other-tools.png":[2472,1198],"evidence/extra/p8-4c-x-theo-mock-copying.png":[2472,3317],"evidence/extra/p9-1-x-theo-google-bridges.png":[2472,3018],"evidence/extra/p9-3-x-theo-local-ai-graves.png":[2472,1294],"evidence/extra/p9-4-x-theo-linux-larpers.png":[2472,1582],"evidence/extra/p9-5-x-theo-jail-rsd.png":[2472,3012],"evidence/extra/p9-5b-x-theo-stupid-bitch.png":[2472,1084],"evidence/extra/p9-7-x-theo-burning-trust.png":[2472,1102],"evidence/extra/t3code-12-issue-33639-theo-insult.png":[1512,810],"evidence/extra/t3code-13-pr-39483-secret-traversal.png":[1512,810],"evidence/extra/t3code-14-pr-30997-powershell-av.png":[1512,810],"evidence/extra/t3code-15-pr-41237-slophouse-drop-filter.png":[1512,810],"evidence/extra/t3code-16-faq-tos-guarantee.png":[1512,810],"evidence/extra/t3code-17-issue-40713-lie-and-bust.png":[1512,810],"evidence/extra/t3code-17b-issue-40713-schlessera-bust.png":[1512,810],"evidence/extra/t3code-18b-code-v1internal-call.png":[1512,810],"evidence/extra/t3code-20-pr-26876-spoof-zed.png":[1512,810],"evidence/extra/t3code-4-pr-27077-rejected.png":[900,680],"evidence/extra/t3code-5-pr-21506-theo-owner-tracking.png":[960,820],"evidence/extra/t3code-6-pr-5551-reality-check.png":[960,920],"evidence/extra/t3code-7-pr-33131-ai-brainrot.png":[920,740],"evidence/extra/t3code-9-issue-11222-process-spy.png":[920,840],"evidence/extra/x-post05-3-managed-endpoint-provider.jpg":[1512,810],"evidence/extra/x-post05-4-security-md-intended.jpg":[1512,810],"evidence/extra/x-post11-2-pr42376-windows-optout.jpg":[2048,1673],"evidence/extra/x-post11-3-pr42464-mac-shell-env.jpg":[2048,1673],"evidence/extra/x-post11-4-dump-264-claude-records.jpg":[1200,792],"evidence/extra/x-post12-3-pr42459-android-fcm-leak.jpg":[2048,1673],"evidence/extra/x-post12-4-pr42466-anonymous-batch.jpg":[2048,1673],"evidence/extra/x-post17-1-theo-youtube-sponsors.jpg":[1108,890],"evidence/extra/x-post17-2-maria-endless-deleted.jpg":[1108,894],"evidence/extra/x-post17-3-codex-45444-regression.jpg":[2048,1673],"evidence/extra/x-post17-5-rauchg-vercel-sponsor.jpg":[1108,794],"receipts/x-2124823227570745504-chinese-knockoff.webp":[2440,3668],"receipts/x-2124825920808829077-temu3-code.webp":[610,372],"receipts/x-2124989435154726982-trillion-dollar-oss.webp":[2440,1428],"receipts/x-2125019705270477102-low-quality-users.webp":[2440,1428],"receipts/x-2125082769395220688-always-illegal.webp":[2440,2996],"receipts/x-2125177947376300110-hurt-feelings-zh.webp":[2440,968],"receipts/x-2125182476943556955-zero-value.webp":[610,328],"receipts/x-2125193393450226024-not-apologizing.webp":[2440,1448]};
+  function imgDimAttrs(path) {
+    const clean = String(path || "").replace(/^\.?\//, "");
+    const d = IMG_DIMS[clean];
+    return d ? `width="${d[0]}" height="${d[1]}"` : "";
+  }
   const mailLocaleCache = new Map();
   const state = {
     lang: SHARED_I18N ? SHARED_I18N.detectInitialLang() : "en",
@@ -277,7 +284,11 @@
     activeThreadId: null,
     starredIds: new Set(),
     readIds: new Set(),
-    showOriginalMsgs: new Set()
+    showOriginalMsgs: new Set(),
+    lbGallery: null,
+    lbIndex: -1,
+    lbPrevFocus: null,
+    modalPrevFocus: null
   };
 
   const $ = (sel) => document.querySelector(sel);
@@ -308,6 +319,7 @@
   }
 
   function escapeHtml(str) {
+    if (SHARED_I18N && SHARED_I18N.escapeHtml) return SHARED_I18N.escapeHtml(str);
     return String(str || "")
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
@@ -317,6 +329,7 @@
   }
 
   function isolateHandlesHtml(escaped) {
+    if (SHARED_I18N && SHARED_I18N.isolateHandlesHtml) return SHARED_I18N.isolateHandlesHtml(escaped);
     return escaped.replace(/(^|[^A-Za-z0-9_.])(@[A-Za-z0-9_]+)/g, '$1<bdi dir="ltr">$2</bdi>');
   }
 
@@ -463,7 +476,7 @@
   async function fetchMailLocaleFile(code) {
     if (mailLocaleCache.has(code)) return mailLocaleCache.get(code);
     try {
-      const res = await fetch(`${state.dataPrefix}mail-threads/${encodeURIComponent(code)}.json?v=1`);
+      const res = await fetch(`${state.dataPrefix}mail-threads/${encodeURIComponent(code)}.json?v=2`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const obj = await res.json();
       mailLocaleCache.set(code, obj);
@@ -561,35 +574,43 @@
   }
 
   async function detectAssetPrefix() {
-    const isImageOk = async (url) => {
-      try {
-        const res = await fetch(url, { method: "HEAD" });
-        const ct = (res.headers.get("content-type") || "").toLowerCase();
-        return res.ok && ct.startsWith("image/");
-      } catch (_) {
-        return false;
-      }
-    };
-
     const p = window.location.pathname || "/";
-    const inSubdir = /\/(mail|inbox)(\/|$)/.test(p);
-
-    if (!inSubdir && (await isImageOk("./evidence/00-cover-en.png"))) {
+    if (/^\/?(index\.html)?$/.test(p)) {
       state.assetPrefix = "./";
       state.dataPrefix = "./data/";
       state.reportBase = "./";
-    } else if (await isImageOk("../evidence/00-cover-en.png")) {
+    } else if (/^\/(mail|inbox)(\/index\.html|\/)?$/.test(p)) {
       state.assetPrefix = "../";
-      state.dataPrefix = "../data/";
-      state.reportBase = "../";
-    } else if (await isImageOk("../../evidence/00-cover-en.png")) {
-      state.assetPrefix = "../../";
       state.dataPrefix = "../data/";
       state.reportBase = "../";
     } else {
-      state.assetPrefix = "../";
-      state.dataPrefix = "../data/";
-      state.reportBase = "../";
+      const isImageOk = async (url) => {
+        try {
+          const res = await fetch(url, { method: "HEAD" });
+          const ct = (res.headers.get("content-type") || "").toLowerCase();
+          return res.ok && ct.startsWith("image/");
+        } catch (_) {
+          return false;
+        }
+      };
+      const inSubdir = /\/(mail|inbox)(\/|$)/.test(p);
+      if (!inSubdir && (await isImageOk("./evidence/00-cover-en.png"))) {
+        state.assetPrefix = "./";
+        state.dataPrefix = "./data/";
+        state.reportBase = "./";
+      } else if (await isImageOk("../evidence/00-cover-en.png")) {
+        state.assetPrefix = "../";
+        state.dataPrefix = "../data/";
+        state.reportBase = "../";
+      } else if (await isImageOk("../../evidence/00-cover-en.png")) {
+        state.assetPrefix = "../../";
+        state.dataPrefix = "../data/";
+        state.reportBase = "../";
+      } else {
+        state.assetPrefix = "../";
+        state.dataPrefix = "../data/";
+        state.reportBase = "../";
+      }
     }
 
     $$("[data-report-link]").forEach((a) => {
@@ -1112,7 +1133,7 @@
     }
   }
 
-  function openThread(id) {
+  function openThread(id, opts = {}) {
     const th = state.data.threads.find((x) => x.id === id);
     if (!th) return;
     state.activeThreadId = id;
@@ -1121,8 +1142,15 @@
     saveRead();
     try {
       const url = new URL(window.location.href);
+      const prevThread = url.searchParams.get("thread");
       url.searchParams.set("thread", id);
-      window.history.replaceState({}, "", url.toString());
+      if (!opts.fromPopstate) {
+        if (opts.replace || prevThread === id) {
+          window.history.replaceState({ view: "thread", threadId: id }, "", url.toString());
+        } else {
+          window.history.pushState({ view: "thread", threadId: id }, "", url.toString());
+        }
+      }
     } catch (_) {}
     renderAll();
     $("#threadContent").scrollTop = 0;
@@ -1209,8 +1237,9 @@
         const atts = (m.attachments || [])
           .map((a, ai) => {
             const attTitle = lm.attTitle(ai);
+            const dims = imgDimAttrs(a.src);
             return `<button type="button" class="att-card" data-open-att="${mi}-${ai}">
-              <img class="att-thumb" src="${escapeHtml(assetUrl(a.src))}" alt="${escapeHtml(attTitle)}" loading="lazy" />
+              <img class="att-thumb" src="${escapeHtml(assetUrl(a.src))}" alt="${escapeHtml(attTitle)}" ${dims} loading="lazy" decoding="async" />
               <div class="att-meta">📎 ${escapeBidi(attTitle)}</div>
             </button>`;
           })
@@ -1311,18 +1340,28 @@
       });
     });
 
+    const threadGallery = [];
+    const attIndexMap = new Map();
+    (th.messages || []).forEach((msg, mIdx) => {
+      const lm = locMessage(th, msg, mIdx);
+      (msg.attachments || []).forEach((att, aIdx) => {
+        attIndexMap.set(`${mIdx}-${aIdx}`, threadGallery.length);
+        threadGallery.push({
+          src: assetUrl(att.src),
+          title: lm.attTitle(aIdx),
+          caption: `${lf.dateDisplay} · ${t("exhibitLabel")} #${th.exhibit}`,
+          sourceUrl: primaryLink
+        });
+      });
+    });
+
     $$("#threadContent [data-open-att]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        const [mi, ai] = btn.getAttribute("data-open-att").split("-").map(Number);
-        const m = th.messages[mi];
-        const att = m.attachments[ai];
-        const lm = locMessage(th, m, mi);
-        openLightbox(
-          assetUrl(att.src),
-          lm.attTitle(ai),
-          `${lf.dateDisplay} · ${t("exhibitLabel")} #${th.exhibit}`,
-          primaryLink
-        );
+        const key = btn.getAttribute("data-open-att");
+        const gIdx = attIndexMap.get(key) || 0;
+        const item = threadGallery[gIdx];
+        if (!item) return;
+        openLightbox(item.src, item.title, item.caption, item.sourceUrl, threadGallery, gIdx);
       });
     });
 
@@ -1331,39 +1370,48 @@
   }
 
   async function openThreadMemesModal(th) {
-    if (!state.memes) {
-      try {
-        const res = await fetch(`${state.dataPrefix}memes.json?v=4`);
-        if (res.ok) {
-          const obj = await res.json();
-          state.memes = Array.isArray(obj.items) ? obj.items : [];
-        } else {
+    const [_, overlay] = await Promise.all([
+      (async () => {
+        if (state.memes) return;
+        try {
+          const res = await fetch(`${state.dataPrefix}memes.json?v=6`);
+          if (res.ok) {
+            const obj = await res.json();
+            state.memes = Array.isArray(obj.items) ? obj.items : [];
+          } else {
+            state.memes = [];
+          }
+        } catch (_) {
           state.memes = [];
         }
-      } catch (_) {
-        state.memes = [];
-      }
-    }
+      })(),
+      SHARED_I18N && SHARED_I18N.loadMemesOverlay
+        ? SHARED_I18N.loadMemesOverlay(state.lang, state.dataPrefix)
+        : Promise.resolve(null)
+    ]);
     let matches = state.memes.filter((m) => m.exhibit === th.exhibit || m.thread === th.id);
     if (!matches.length) matches = state.memes.slice(0, 3);
     const cardsHtml = matches
       .slice(0, 6)
       .map((m) => {
-        const title = isZh() ? m.titleZh : m.titleEn;
-        const note = isZh() ? m.noteZh : m.noteEn;
-        return `<a href="../memes/#${encodeURIComponent(m.id)}" style="display:flex;flex-direction:column;gap:6px;padding:8px;border:1px solid #dadce0;border-radius:10px;text-decoration:none;color:#202124;background:#fff;">
-          <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" style="width:100%;height:auto;border-radius:6px;display:block;" loading="lazy" />
-          <strong style="font-size:12.5px;line-height:1.35;">${escapeHtml(title)}</strong>
-          ${note ? `<span style="font-size:11.5px;line-height:1.45;color:#5f6368;">${escapeHtml(note)}</span>` : ""}
-          <span style="font-size:11px;color:#0b57d0;">${escapeHtml(t("copyInMemes"))}</span>
+        const picked = SHARED_I18N && SHARED_I18N.pickMemeText
+          ? SHARED_I18N.pickMemeText(m, state.lang, overlay)
+          : { title: isZh() ? m.titleZh : m.titleEn, note: isZh() ? m.noteZh : m.noteEn };
+        const w = Number(m.width) || 900;
+        const h = Number(m.height) || 900;
+        return `<a class="meme-modal-card" href="../memes/#${encodeURIComponent(m.id)}">
+          <img src="${escapeHtml(m.url)}" alt="${escapeHtml(picked.title)}" width="${w}" height="${h}" loading="lazy" decoding="async" />
+          <strong class="meme-modal-title">${escapeBidi(picked.title)}</strong>
+          ${picked.note ? `<span class="meme-modal-note">${escapeBidi(picked.note)}</span>` : ""}
+          <span class="meme-modal-cta">${escapeHtml(t("copyInMemes"))}</span>
         </a>`;
       })
       .join("");
     openModal(
       `${t("viewMemeCard")} · #${th.exhibit}`,
-      `<p style="margin-top:0;font-size:13px;color:#5f6368;">${escapeHtml(t("memeModalDesc"))}</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;">${cardsHtml}</div>
-      <div style="margin-top:14px;display:flex;justify-content:flex-end;">
+      `<p class="modal-desc">${escapeHtml(t("memeModalDesc"))}</p>
+      <div class="meme-modal-grid">${cardsHtml}</div>
+      <div class="modal-actions">
         <a class="tool-btn" href="../memes/">${escapeHtml(t("openAllMemes"))}</a>
       </div>`
     );
@@ -1377,11 +1425,22 @@
       return `${e.id} ${e.part} ${e.title} ${e.caption} ${le.title} ${le.caption} ${e.path}`.toLowerCase().includes(q);
     });
 
+    const gallery = items.map((e) => {
+      const le = locEvidence(e);
+      return {
+        src: assetUrl(e.path),
+        title: `${e.id} · ${le.title}`,
+        caption: le.caption,
+        sourceUrl: e.sourceUrl || e.dossier
+      };
+    });
+
     $("#photosGrid").innerHTML = items
       .map((e, i) => {
         const le = locEvidence(e);
+        const dims = imgDimAttrs(e.path);
         return `<button type="button" class="photo-card" data-ev-idx="${i}">
-          <img src="${escapeHtml(assetUrl(e.path))}" alt="${escapeHtml(le.title)}" loading="lazy" />
+          <img src="${escapeHtml(assetUrl(e.path))}" alt="${escapeHtml(le.title)}" ${dims} loading="lazy" decoding="async" />
           <div class="photo-card-body">
             <span class="photo-card-part">${escapeHtml(e.id)} · ${escapeHtml(e.part)}</span>
             <div class="photo-card-title">${escapeBidi(le.title)}</div>
@@ -1392,9 +1451,9 @@
 
     $$("#photosGrid .photo-card").forEach((card, i) => {
       card.addEventListener("click", () => {
-        const ev = items[i];
-        const le = locEvidence(ev);
-        openLightbox(assetUrl(ev.path), `${ev.id} · ${le.title}`, le.caption, ev.sourceUrl || ev.dossier);
+        const item = gallery[i];
+        if (!item) return;
+        openLightbox(item.src, item.title, item.caption, item.sourceUrl, gallery, i);
       });
     });
   }
@@ -1425,23 +1484,27 @@
       { src: "evidence/charts/theo-chart-2-rhythm.png", title: t("tcalC4") }
     ];
 
+    const chartsGallery = charts.map((c) => ({
+      src: assetUrl(c.src),
+      title: c.title,
+      caption: t("activityDesc"),
+      sourceUrl: "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md"
+    }));
+
     $("#activityCharts").innerHTML = charts
       .map(
-        (c, i) => `<div class="chart-card" data-chart-idx="${i}">
-          <img src="${escapeHtml(assetUrl(c.src))}" alt="${escapeHtml(c.title)}" />
+        (c, i) => `<button type="button" class="chart-card" data-chart-idx="${i}">
+          <img src="${escapeHtml(assetUrl(c.src))}" alt="${escapeHtml(c.title)}" ${imgDimAttrs(c.src)} loading="lazy" decoding="async" />
           <div class="chart-card-cap">${escapeHtml(c.title)}</div>
-        </div>`
+        </button>`
       )
       .join("");
 
     $$("#activityCharts .chart-card").forEach((card, i) => {
       card.addEventListener("click", () => {
-        openLightbox(
-          assetUrl(charts[i].src),
-          charts[i].title,
-          t("activityDesc"),
-          "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md"
-        );
+        const item = chartsGallery[i];
+        if (!item) return;
+        openLightbox(item.src, item.title, item.caption, item.sourceUrl, chartsGallery, i);
       });
     });
 
@@ -1454,7 +1517,7 @@
           <span class="timeline-date">${escapeHtml(th.date)}</span>
           <div>
             <strong>${escapeBidi(lf.subject)}</strong>
-            <div style="font-size:12px;color:#5f6368;margin-top:2px;">${escapeBidi(lf.from)}</div>
+            <div class="timeline-from">${escapeBidi(lf.from)}</div>
           </div>
           <span class="platform-chip">${escapeHtml(platLabel)} · #${escapeHtml(th.exhibit)}</span>
         </div>`;
@@ -1475,22 +1538,22 @@
       const desc = locDesc && !locDesc.startsWith("dossiers.") ? locDesc : d.desc;
       return `<a class="drive-card" href="${d.url}" target="_blank" rel="noopener noreferrer">
         <span class="photo-card-part">DOSSIER ${d.num}</span>
-        <strong style="font-size:14px;">${escapeHtml(title)}</strong>
-        <span style="font-size:12.5px;color:#5f6368;">${escapeHtml(desc)}</span>
-        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">${openGh}</span>
+        <strong class="drive-card-title">${escapeHtml(title)}</strong>
+        <span class="drive-card-desc">${escapeHtml(desc)}</span>
+        <span class="drive-card-cta">${openGh}</span>
       </a>`;
     }).join("") + `
       <a class="drive-card" href="https://github.com/realchendahuang/temu3code/blob/main/docs/COMPLETE-SOURCE-INDEX.md" target="_blank" rel="noopener noreferrer">
         <span class="photo-card-part">INDEX</span>
-        <strong style="font-size:14px;">${escapeHtml(t("masterIndexTitle"))}</strong>
-        <span style="font-size:12.5px;color:#5f6368;">${escapeHtml(t("masterIndexDesc"))}</span>
-        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">${openGh}</span>
+        <strong class="drive-card-title">${escapeHtml(t("masterIndexTitle"))}</strong>
+        <span class="drive-card-desc">${escapeHtml(t("masterIndexDesc"))}</span>
+        <span class="drive-card-cta">${openGh}</span>
       </a>
       <a class="drive-card" href="https://github.com/realchendahuang/temu3code#2-minute-hardening--cleanup-playbook" target="_blank" rel="noopener noreferrer">
         <span class="photo-card-part">HARDENING</span>
-        <strong style="font-size:14px;">${escapeHtml(t("hardeningTitle"))}</strong>
-        <span style="font-size:12.5px;color:#5f6368;">${escapeHtml(t("hardeningDesc"))}</span>
-        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">${openGh}</span>
+        <strong class="drive-card-title">${escapeHtml(t("hardeningTitle"))}</strong>
+        <span class="drive-card-desc">${escapeHtml(t("hardeningDesc"))}</span>
+        <span class="drive-card-cta">${openGh}</span>
       </a>
     `;
   }
@@ -1576,11 +1639,16 @@
     renderAll();
   }
 
-  function clearUrlThreadParam() {
+  function clearUrlThreadParam(opts = {}) {
     try {
       const url = new URL(window.location.href);
+      if (!url.searchParams.has("thread")) return;
       url.searchParams.delete("thread");
-      window.history.replaceState({}, "", url.toString());
+      if (opts.push) {
+        window.history.pushState({ view: state.view }, "", url.toString());
+      } else {
+        window.history.replaceState({ view: state.view }, "", url.toString());
+      }
     } catch (_) {}
   }
 
@@ -1600,33 +1668,70 @@
     }
   }
 
-  function openLightbox(src, title, caption, sourceUrl) {
-    $("#lightboxImg").src = src;
-    $("#lightboxImg").alt = title || "";
-    $("#lightboxTitle").textContent = title || "Receipt";
-    $("#lightboxCaption").textContent = caption || "";
+  function renderLightboxItem(item) {
+    const img = $("#lightboxImg");
+    img.src = BLANK_IMG;
+    img.src = item.src;
+    img.alt = item.title || "";
+    $("#lightboxTitle").innerHTML = escapeBidi(item.title || "Receipt");
+    $("#lightboxCaption").innerHTML = escapeBidi(item.caption || "");
     const srcLink = $("#lightboxSourceLink");
-    if (sourceUrl) {
-      srcLink.href = sourceUrl;
+    if (item.sourceUrl) {
+      srcLink.href = item.sourceUrl;
       srcLink.hidden = false;
     } else {
       srcLink.hidden = true;
     }
-    $("#lightbox").hidden = false;
+    const navGroup = $("#lightboxNavGroup");
+    if (navGroup) {
+      const hasMulti = Array.isArray(state.lbGallery) && state.lbGallery.length > 1;
+      navGroup.hidden = !hasMulti;
+      if (hasMulti) {
+        $("#lightboxCounter").textContent = `${state.lbIndex + 1} / ${state.lbGallery.length}`;
+      }
+    }
+  }
+
+  function openLightbox(src, title, caption, sourceUrl, gallery = null, galleryIdx = 0) {
+    const lb = $("#lightbox");
+    if (lb.hidden) state.lbPrevFocus = document.activeElement;
+    state.lbGallery = Array.isArray(gallery) && gallery.length > 1 ? gallery : null;
+    state.lbIndex = state.lbGallery ? Math.max(0, Math.min(galleryIdx, state.lbGallery.length - 1)) : -1;
+    const item = state.lbGallery ? state.lbGallery[state.lbIndex] : { src, title, caption, sourceUrl };
+    renderLightboxItem(item);
+    lb.hidden = false;
+    $("#lightboxCloseBtn").focus();
+  }
+
+  function stepMailLightbox(delta) {
+    if (!state.lbGallery || !state.lbGallery.length) return;
+    state.lbIndex = (state.lbIndex + delta + state.lbGallery.length) % state.lbGallery.length;
+    renderLightboxItem(state.lbGallery[state.lbIndex]);
   }
 
   function closeLightbox() {
-    $("#lightbox").hidden = true;
+    const lb = $("#lightbox");
+    lb.hidden = true;
+    $("#lightboxImg").src = BLANK_IMG;
+    state.lbGallery = null;
+    state.lbIndex = -1;
+    if (state.lbPrevFocus && typeof state.lbPrevFocus.focus === "function") state.lbPrevFocus.focus();
+    state.lbPrevFocus = null;
   }
 
   function openModal(title, html) {
+    const ov = $("#modalOverlay");
+    if (ov.hidden) state.modalPrevFocus = document.activeElement;
     $("#modalTitle").textContent = title;
     $("#modalBody").innerHTML = html;
-    $("#modalOverlay").hidden = false;
+    ov.hidden = false;
+    $("#modalCloseBtn").focus();
   }
 
   function closeModal() {
     $("#modalOverlay").hidden = true;
+    if (state.modalPrevFocus && typeof state.modalPrevFocus.focus === "function") state.modalPrevFocus.focus();
+    state.modalPrevFocus = null;
   }
 
   function closeMobileSidebar() {
@@ -1689,7 +1794,7 @@
       t("submitTitle"),
       `<p>${escapeHtml(t("submitBody"))}</p>
       <pre>${escapeHtml(template)}</pre>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+      <div class="modal-actions">
         <a class="tool-btn" href="https://github.com/realchendahuang/temu3code/issues/new" target="_blank" rel="noopener noreferrer">${escapeHtml(t("submitIssueBtn"))}</a>
         <a class="tool-btn" href="https://github.com/realchendahuang/temu3code/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">${escapeHtml(t("submitGuideBtn"))}</a>
       </div>`
@@ -1700,7 +1805,7 @@
     openModal(
       t("aboutTitle"),
       `<p>${escapeHtml(t("aboutBody"))}</p>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+      <div class="modal-actions">
         <a class="tool-btn" href="${state.reportBase}">${escapeHtml(t("openHome"))}</a>
         <a class="tool-btn" href="../memes/">${escapeHtml(t("openAllMemes"))}</a>
         <a class="tool-btn" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">${escapeHtml(t("openOnGithub"))}</a>
@@ -1874,7 +1979,7 @@
     // Thread toolbar actions
     $("#backToInboxBtn").addEventListener("click", () => {
       state.view = "inbox";
-      clearUrlThreadParam();
+      clearUrlThreadParam({ push: true });
       renderAll();
     });
     $("#threadStarBtn").addEventListener("click", () => {
@@ -1919,13 +2024,44 @@
     $("#modalOverlay").addEventListener("click", (e) => {
       if (e.target === $("#modalOverlay")) closeModal();
     });
+    $("#lightboxPrevBtn").addEventListener("click", () => stepMailLightbox(-1));
+    $("#lightboxNextBtn").addEventListener("click", () => stepMailLightbox(1));
     $("#lightboxCloseBtn").addEventListener("click", closeLightbox);
     $("#lightbox").addEventListener("click", (e) => {
       if (e.target === $("#lightbox")) closeLightbox();
     });
 
+    // Browser history Back/Forward support for thread view <-> inbox
+    window.addEventListener("popstate", () => {
+      if (!state.data) return;
+      const deepThread = new URLSearchParams(window.location.search).get("thread");
+      if (deepThread && state.data.threads.some((x) => x.id === deepThread)) {
+        openThread(deepThread, { fromPopstate: true });
+      } else {
+        state.view = "inbox";
+        state.activeThreadId = null;
+        renderAll();
+      }
+    });
+
     // Global keyboard shortcuts (Gmail-style!)
     document.addEventListener("keydown", (e) => {
+      if (!$("#lightbox").hidden) {
+        if (e.key === "Escape") { e.preventDefault(); closeLightbox(); }
+        else if (e.key === "ArrowLeft") { e.preventDefault(); stepMailLightbox(-1); }
+        else if (e.key === "ArrowRight") { e.preventDefault(); stepMailLightbox(1); }
+        else if (e.key === "Tab" && SHARED_I18N && SHARED_I18N.trapFocus) {
+          SHARED_I18N.trapFocus($(".lightbox-card"), e);
+        }
+        return;
+      }
+      if (!$("#modalOverlay").hidden) {
+        if (e.key === "Escape") { e.preventDefault(); closeModal(); }
+        else if (e.key === "Tab" && SHARED_I18N && SHARED_I18N.trapFocus) {
+          SHARED_I18N.trapFocus($(".modal-card"), e);
+        }
+        return;
+      }
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
         e.preventDefault();
         $("#searchInput").focus();
@@ -1934,11 +2070,9 @@
       }
       const inInput = ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName);
       if (e.key === "Escape") {
-        if (!$("#lightbox").hidden) closeLightbox();
-        else if (!$("#modalOverlay").hidden) closeModal();
-        else if (state.view === "thread") {
+        if (state.view === "thread") {
           state.view = "inbox";
-          clearUrlThreadParam();
+          clearUrlThreadParam({ push: true });
           renderAll();
         }
         return;
@@ -1963,10 +2097,11 @@
     try {
       const [, threadsRes, evRes] = await Promise.all([
         detectAssetPrefix(),
-        fetch("./threads.json"),
-        fetch(`${state.dataPrefix}evidence.json`).catch(() => null),
+        fetch("./threads.json?v=2"),
+        fetch(`${state.dataPrefix}evidence.json?v=2`).catch(() => null),
         applyI18n(state.lang)
       ]);
+      if (!threadsRes.ok) throw new Error(`HTTP ${threadsRes.status}`);
       state.data = await threadsRes.json();
       if (evRes && evRes.ok) {
         state.evidence = await evRes.json();
@@ -1982,7 +2117,7 @@
       }
       const deepThread = params.get("thread");
       if (deepThread && state.data.threads.some((x) => x.id === deepThread)) {
-        openThread(deepThread);
+        openThread(deepThread, { replace: true });
       } else if (params.get("view") === "photos" || window.location.hash === "#photos") {
         state.view = "attachments";
         renderAll();

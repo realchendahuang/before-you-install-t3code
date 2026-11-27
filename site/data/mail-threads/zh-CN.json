@@ -15,8 +15,8 @@
       "role": "T3 Code / Ping.gg 作者"
     },
     "dddxx666": {
-      "name": "@DDdxx666（MIT 分叉）",
-      "role": "中文 MIT 分叉作者（Stardust）"
+      "name": "@DDdxx666（MIT Fork）",
+      "role": "中文 MIT Fork作者（Stardust）"
     },
     "ffmpeg": {
       "name": "FFmpeg 与 VLC",
@@ -235,7 +235,7 @@
       "to": "全体 T3 Code 用户",
       "dateDisplay": "2026 年 3 月 6 日",
       "subject": "PR #174 违背「无遥测」承诺，默认开启 PostHog",
-      "snippet": "`Config.withDefault(true)` 跑了三个多月：没有同意弹窗，没有设置开关，也没有一行文档。",
+      "snippet": "Config.withDefault(true) 跑了三个多月：没有同意弹窗，没有设置开关，也没有一行文档。",
       "messages": [
         {
           "sender": "T3 Code 主页（t3.codes）",
@@ -406,8 +406,8 @@
       "from": "@theo → `~/.codex` 与 `~/.claude`",
       "to": "用户家目录里的凭证",
       "dateDisplay": "2026 年 10 月 20 日",
-      "subject": "PR #21506 偷读 `~/.codex` 和 `~/.claude.json`，把多台机器串成一个人",
-      "snippet": "由 t3dotgg 提交：`Identify.ts` 把 OpenAI JWT 的 `user_id` 和 Claude 的 `accountUuid` 做成无盐 SHA-256 哈希，塞进 `install.owner_observed`。",
+      "subject": "PR #21506 偷读 ~/.codex 和 ~/.claude.json，把多台机器串成一个人",
+      "snippet": "由 t3dotgg 提交：Identify.ts 把 OpenAI JWT 的 user_id 和 Claude 的 accountUuid 做成无盐 SHA-256 哈希，塞进 install.owner_observed。",
       "messages": [
         {
           "sender": "Theo Browne（@t3dotgg）",
@@ -431,7 +431,7 @@
       "to": "pingdotgg/t3code",
       "dateDisplay": "2026 年 10 月 28 日",
       "subject": "41.6 GB 的假 SQLite 删除 + 每 5 秒扫一遍全机命令行",
-      "snippet": "「永久清除」只追加了一条软删除事件；`t3-resource-monitor` 每 5 秒扫过 440 多个系统进程和完整命令行。",
+      "snippet": "「永久清除」只追加了一条软删除事件；t3-resource-monitor 每 5 秒扫过 440 多个系统进程和完整命令行。",
       "messages": [
         {
           "sender": "受影响用户（Issue #17845、#28903、#11222）",
@@ -456,7 +456,7 @@
       "to": "pingdotgg/t3code（PR #29922）",
       "dateDisplay": "2026 年 11 月 2 日",
       "subject": "自合 30 秒刷星弹窗（3 万 → 7.7 万），漏洞原样留着",
-      "snippet": "绕过 Macroscope 的审批拦截，@zhilsinger 的 Request Changes 晾了 19 天以上不理，`driver.ts#L60-L99` 让客户端能给任意仓库点星。",
+      "snippet": "绕过 Macroscope 的审批拦截，@zhilsinger 的 Request Changes 晾了 19 天以上不理，driver.ts#L60-L99 让客户端能给任意仓库点星。",
       "messages": [
         {
           "sender": "Theo Browne（@t3dotgg）",
@@ -779,7 +779,7 @@
           "handle": "@theo · X",
           "to": "普通开发者",
           "time": "2026 年 11 月 21–22 日",
-          "body": "11 月 21 日至 22 日的 24 小时内，@theo 一边讲信任，一边骂普通开发者和 Linux 用户：\n\n- **11 月 21 日 (2123906522728272178)：** “普通开发者不太聪明”\n- **11 月 22 日 (2124298216271499605)：** “我明白你为啥讨厌我了，Linux coser 一向看不上真开发者”\n- **11 月 22 日 (2124470530590011704，38.6 万+ 浏览——引用的是一条 T3 Code 对比 Antigravity 的提问)：** “工程师们活该迎来这波大规模失业”\n- **11 月 22 日 18:26 CST (2124449493513068862，距那场 MIT 分支威胁 24 小时)：** “说句实话，烧掉周围所有人的信任，基本从来不是达成目的的好路子”",
+          "body": "11 月 21 日至 22 日的 24 小时内，@theo 一边讲信任，一边骂普通开发者和 Linux 用户：\n\n- **11 月 21 日 (2123906522728272178)：** “普通开发者不太聪明”\n- **11 月 22 日 (2124298216271499605)：** “我明白你为啥讨厌我了，Linux coser 一向看不上真开发者”\n- **11 月 22 日 (2124470530590011704，38.6 万+ 浏览——引用的是一条 T3 Code 对比 Antigravity 的提问)：** “工程师们活该迎来这波大规模失业”\n- **11 月 22 日 18:26 CST (2124449493513068862，距那场 MIT Fork威胁 24 小时)：** “说句实话，烧掉周围所有人的信任，基本从来不是达成目的的好路子”",
           "attachments": [
             "“工程师们活该迎来这波大规模失业”原帖",
             "“Linux coser 一向看不上真开发者”原帖",
@@ -859,18 +859,18 @@
       ]
     },
     "2026-11-23-origin-temu3-threat": {
-      "from": "@theo ↔ @DDdxx666（MIT 分支）",
+      "from": "@theo ↔ @DDdxx666（MIT Fork）",
       "to": "@DDdxx666、@maria_rcks 及公众",
       "dateDisplay": "2026 年 11 月 23 日",
-      "subject": "“Temu3 Code”：为一个中文 MIT 分支威胁封 GitHub 账号",
-      "snippet": "官网刚写“合法偷走我们的代码”，Theo 就开火 @DDdxx666 的 MIT 分支，只在私信里道歉，11 小时后又说欢迎万亿美元美企来用。",
+      "subject": "“Temu3 Code”：为一个中文 MIT Fork威胁封 GitHub 账号",
+      "snippet": "官网刚写“合法偷走我们的代码”，Theo 就开火 @DDdxx666 的 MIT Fork，只在私信里道歉，11 小时后又说欢迎万亿美元美企来用。",
       "messages": [
         {
           "sender": "Theo Browne (@theo)",
           "handle": "@theo · X (2124823227570745504 & 2124825920808829077)",
-          "to": "公开引用 @DDdxx666 的 MIT 分支",
+          "to": "公开引用 @DDdxx666 的 MIT Fork",
           "time": "2026 年 11 月 23 日 19:11 – 19:22 CST",
-          "body": "`t3.codes` 官网挂着自家 GitHub 仓库链接，旁边写着“Steal our code (legally)”（合法偷走我们的代码）。可当路人把 @DDdxx666 的免费 MIT 分支当成官方应用时，@theo 11 分钟内连发两帖：\n\n19:11:49 CST (2124823227570745504)：\n\n> “我觉得市面上流传着一个 T3 Code 的中国山寨版，因为这玩意儿绝对不是我们的应用”\n\n19:22:31 CST (2124825920808829077，10 分 42 秒后)：\n\n> “Temu3 Code”",
+          "body": "`t3.codes` 官网挂着自家 GitHub 仓库链接，旁边写着“Steal our code (legally)”（合法偷走我们的代码）。可当路人把 @DDdxx666 的免费 MIT Fork当成官方应用时，@theo 11 分钟内连发两帖：\n\n19:11:49 CST (2124823227570745504)：\n\n> “我觉得市面上流传着一个 T3 Code 的中国山寨版，因为这玩意儿绝对不是我们的应用”\n\n19:22:31 CST (2124825920808829077，10 分 42 秒后)：\n\n> “Temu3 Code”",
           "attachments": [
             "原帖：“T3 Code 的中国山寨版”（19.5 万+ 浏览）",
             "10 分 42 秒后的原帖：“Temu3 Code”（8.4 万+ 浏览）"
@@ -885,7 +885,7 @@
           "handle": "@theo · X (2124829315657576890)",
           "to": "@DDdxx666",
           "time": "2026 年 11 月 23 日 19:36 CST",
-          "body": "当 @DDdxx666 表示愿意考虑给这个 MIT 分支改名、避免混淆，@theo 在 19:36 CST 回：\n\n> “不是考虑。现在就改，否则我去联系 GitHub 把你账号封了。”\n\n@DDdxx666 30 分钟内把仓库改名为 `Stardust`，并清掉了所有 T3 品牌标识。@theo 在私信里道了歉，但那两条 20 万浏览的公开帖一直挂着。",
+          "body": "当 @DDdxx666 表示愿意考虑给这个 MIT Fork改名、避免混淆，@theo 在 19:36 CST 回：\n\n> “不是考虑。现在就改，否则我去联系 GitHub 把你账号封了。”\n\n@DDdxx666 30 分钟内把仓库改名为 `Stardust`，并清掉了所有 T3 品牌标识。@theo 在私信里道了歉，但那两条 20 万浏览的公开帖一直挂着。",
           "attachments": [
             "一字不差的 GitHub 封号威胁"
           ],
@@ -1094,7 +1094,7 @@
       "to": "所有 T3 Code 安装（0 条安全公告）",
       "dateDisplay": "2026 年 11 月 25 日",
       "subject": "0 条安全公告，ca81b7b9 上仍有 5 个未修的认证/RCE 漏洞",
-      "snippet": "就算悄悄修掉了 PR #39483 里的路径穿越，HEAD 上照样带着明文 `--lan` Cookie、不可自吊销的 Bearer Token 和仓库钩子远程执行。",
+      "snippet": "就算悄悄修掉了 PR #39483 里的路径穿越，HEAD 上照样带着明文 --lan Cookie、不可自吊销的 Bearer Token 和仓库钩子远程执行。",
       "messages": [
         {
           "sender": "独立安全审计（ca81b7b9）",
@@ -1127,7 +1127,7 @@
     },
     "EV-003": {
       "title": "GitHub 账号清退威胁",
-      "caption": "2026 年 11 月 23 日的帖子，命令 MIT 分叉作者立刻改名，否则就丢掉 GitHub 账号。"
+      "caption": "2026 年 11 月 23 日的帖子，命令 MIT Fork作者立刻改名，否则就丢掉 GitHub 账号。"
     },
     "EV-004": {
       "title": "员工分叉 maria-rcks/t3libre",

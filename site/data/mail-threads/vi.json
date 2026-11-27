@@ -235,7 +235,7 @@
       "to": "Toàn bộ người dùng T3 Code",
       "dateDisplay": "6 tháng 3, 2026",
       "subject": "PR #174 bật PostHog bất chấp cam kết \"No telemetry\"",
-      "snippet": "`Config.withDefault(true)` chạy mà không có hộp thoại xin đồng ý, không có toggle trong Settings, không có tài liệu, suốt hơn ba tháng.",
+      "snippet": "Config.withDefault(true) chạy mà không có hộp thoại xin đồng ý, không có toggle trong Settings, không có tài liệu, suốt hơn ba tháng.",
       "messages": [
         {
           "sender": "Trang chủ T3 Code (t3.codes)",
@@ -258,7 +258,7 @@
       "to": "Dòng thời gian công khai",
       "dateDisplay": "25 tháng 4, 2026",
       "subject": "Từng đả kích chuyện cày sao giả cho VC, rồi thêm lời nhắc gắn sao sau 30 giây idle",
-      "snippet": "Sáu tháng sau khi cười nhạo chuyện cày sao, anh ta tự merge PR #29922 để đẩy `pingdotgg/t3code` từ 30k lên 77k sao trong khi số watcher vẫn quanh ~129.",
+      "snippet": "Sáu tháng sau khi cười nhạo chuyện cày sao, anh ta tự merge PR #29922 để đẩy pingdotgg/t3code từ 30k lên 77k sao trong khi số watcher vẫn quanh ~129.",
       "messages": [
         {
           "sender": "Theo Browne (@theo)",
@@ -407,7 +407,7 @@
       "to": "Thông tin đăng nhập trong thư mục home của người dùng",
       "dateDisplay": "20/10/2026",
       "subject": "PR #21506 đọc ~/.codex & ~/.claude.json để nối các máy với nhau",
-      "snippet": "Do t3dotgg viết, Identify.ts băm user_id trong JWT của OpenAI và accountUuid của Claude bằng SHA-256 không muối dưới `install.owner_observed`.",
+      "snippet": "Do t3dotgg viết, Identify.ts băm user_id trong JWT của OpenAI và accountUuid của Claude bằng SHA-256 không muối dưới install.owner_observed.",
       "messages": [
         {
           "sender": "Theo Browne (@t3dotgg)",
@@ -1094,7 +1094,7 @@
       "to": "Toàn bộ các bản cài T3 Code (0 khuyến cáo bảo mật)",
       "dateDisplay": "25 tháng 11, 2026",
       "subject": "0 khuyến cáo bảo mật & 5 lỗ hổng xác thực/RCE đang hoạt động tại ca81b7b9",
-      "snippet": "Ngay cả sau khi âm thầm vá lỗi path traversal trong PR #39483, HEAD vẫn phát hành cookie `--lan` dạng văn bản thuần, Bearer token không thể thu hồi, và RCE qua hook của repo.",
+      "snippet": "Ngay cả sau khi âm thầm vá lỗi path traversal trong PR #39483, HEAD vẫn phát hành cookie --lan dạng văn bản thuần, Bearer token không thể thu hồi, và RCE qua hook của repo.",
       "messages": [
         {
           "sender": "Kiểm toán bảo mật độc lập (ca81b7b9)",

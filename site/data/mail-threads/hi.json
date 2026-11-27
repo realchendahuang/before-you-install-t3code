@@ -235,7 +235,7 @@
       "to": "सभी T3 Code उपयोगकर्ता",
       "dateDisplay": "6 मार्च, 2026",
       "subject": "PR #174 ने \"No telemetry\" के वादे के बावजूद PostHog सक्रिय किया",
-      "snippet": "`Config.withDefault(true)` बिना सहमति डायलॉग, बिना Settings UI टॉगल और बिना डॉक्स के तीन महीने से ज़्यादा चला।",
+      "snippet": "Config.withDefault(true) बिना सहमति डायलॉग, बिना Settings UI टॉगल और बिना डॉक्स के तीन महीने से ज़्यादा चला।",
       "messages": [
         {
           "sender": "T3 Code होमपेज (t3.codes)",
@@ -304,7 +304,7 @@
       "to": "प्राइवेसी के प्रति सजग यूज़र्स",
       "dateDisplay": "23 जून, 2026",
       "subject": "Issue #1397: \"हम इसे opt out करना आसान नहीं बनाएँगे\"",
-      "snippet": "मेंटेनर @jullerino ने टॉगल की माँग को `not planned` कहकर बंद कर दिया; हटाए गए वादे का हवाला देने वाला Issue #4123 बाद में दो बार चुपचाप बंद किया गया।",
+      "snippet": "मेंटेनर @jullerino ने टॉगल की माँग को not planned कहकर बंद कर दिया; हटाए गए वादे का हवाला देने वाला Issue #4123 बाद में दो बार चुपचाप बंद किया गया।",
       "messages": [
         {
           "sender": "T3 Code यूज़र",
