@@ -124,12 +124,7 @@
 
     if (meta) {
       const sizeMb = track.bytes ? `${(track.bytes / (1024 * 1024)).toFixed(1)} MB` : "";
-      const parts = [
-        podLang === "zh" ? track.titleZh : track.titleEn,
-        track.durationText || "",
-        sizeMb,
-      ].filter(Boolean);
-      meta.textContent = parts.join(" · ");
+      meta.textContent = [track.durationText || "", sizeMb].filter(Boolean).join(" · ");
     }
 
     if (dl) {
@@ -162,7 +157,7 @@
     const isZhUi = comicLang === "zh" || isZhLang(lang);
     nav.innerHTML = episodes
       .map((ep, idx) => {
-        const label = isZhUi ? `第${ep.num}集` : `Ep.${ep.num}`;
+        const label = isZhUi ? `第${ep.num}话` : `Ep.${ep.num}`;
         return `<a class="ep-pill${idx === 0 ? " is-active" : ""}" href="#${escapeHtml(ep.id)}" data-ep-pill="${escapeHtml(ep.id)}">${escapeHtml(label)}</a>`;
       })
       .join("");
@@ -208,22 +203,18 @@
 
     host.innerHTML = episodes
       .map((ep, idx) => {
-        const { asset, actualLang } = getEpAsset(ep, comicLang);
+        const { asset } = getEpAsset(ep, comicLang);
         if (!asset || !asset.url) return "";
-        const kicker = useZhText ? ep.kickerZh : ep.kickerEn;
         const title = useZhText ? ep.titleZh : ep.titleEn;
-        const summary = useZhText ? ep.summaryZh : ep.summaryEn;
-        const shareMsg = encodeURIComponent(`${title} · The 96 Hours After One Block · temu3code.com/story/#${ep.id}`);
+        const epNum = String(ep.num).padStart(2, "0");
+        const shareMsg = encodeURIComponent(`${title} · temu3code.com/story/#${ep.id}`);
         const shareUrl = encodeURIComponent(`https://temu3code.com/story/#${ep.id}`);
         const srcHref = ep.sourceUrl || `../mail/?thread=${encodeURIComponent(ep.thread)}`;
         const srcAttrs = ep.sourceUrl ? ' target="_blank" rel="noopener noreferrer"' : "";
         return `<article id="${escapeHtml(ep.id)}" class="ep-card">
           <div class="ep-head">
-            <div>
-              <div class="ep-kicker">${escapeHtml(kicker)}</div>
-              <h2 class="ep-title">${escapeHtml(title)}</h2>
-              <p class="ep-summary">${escapeHtml(summary)}</p>
-            </div>
+            <span class="ep-num">${escapeHtml(epNum)}</span>
+            <h2 class="ep-title">${escapeHtml(title)}</h2>
           </div>
           <button type="button" class="ep-media-btn" data-open-lb="${idx}" aria-label="${escapeHtml(title)}">
             <div class="ep-img-frame">
@@ -252,12 +243,10 @@
     const { asset, actualLang } = getEpAsset(ep, comicLang);
     if (!asset) return;
     const useZhText = actualLang === "zh";
-    const title = useZhText ? `第 ${ep.num} 集 · ${ep.titleZh}` : `Ep. ${ep.num} · ${ep.titleEn}`;
-    const note = useZhText ? ep.summaryZh : ep.summaryEn;
+    const title = useZhText ? `第 ${ep.num} 话 · ${ep.titleZh}` : `Ep. ${ep.num} · ${ep.titleEn}`;
 
     document.getElementById("lbCounter").textContent = `${lbIndex + 1} / ${episodes.length}`;
     document.getElementById("lbTitle").textContent = title;
-    document.getElementById("lbNote").textContent = note;
     const img = document.getElementById("lbImg");
     img.src = asset.url;
     img.alt = title;

@@ -55,39 +55,28 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- HERO ---------- */
 .story-hero {
-  padding: 46px 0 26px;
+  padding: 28px 0 18px;
   background: radial-gradient(ellipse 80% 55% at 50% 0%, rgba(75, 124, 243, 0.12), transparent 72%);
 }
-.hero-kicker {
-  display: inline-flex; align-items: center; gap: 8px; margin-bottom: 12px;
-  padding: 4px 10px; border-radius: 999px; font-family: var(--font-mono); font-size: 11px; font-weight: 600;
-  letter-spacing: 0.06em; color: #bfdbfe;
-  background: rgba(75, 124, 243, 0.14); border: 1px solid rgba(75, 124, 243, 0.34);
-}
 .hero-h1 {
-  margin: 0 0 12px; font-size: clamp(28px, 4.8vw, 46px); font-weight: 650;
-  line-height: 1.09; letter-spacing: -0.032em; color: #fff; text-wrap: balance;
+  margin: 0; font-size: clamp(24px, 4vw, 38px); font-weight: 650;
+  line-height: 1.12; letter-spacing: -0.03em; color: #fff; text-wrap: balance;
 }
-.hero-sub { margin: 0; max-width: 680px; font-size: 15.5px; line-height: 1.62; color: var(--muted); }
 
 /* ---------- PODCAST PLAYER CARD ---------- */
 .podcast-card[hidden] { display: none; }
 .podcast-card {
-  margin-top: 24px; padding: 18px 20px; border-radius: 15px;
+  margin-top: 16px; padding: 12px 14px; border-radius: 13px;
   background: linear-gradient(180deg, #101218, #0a0a0e);
-  border: 1px solid rgba(75, 124, 243, 0.32);
-  box-shadow: 0 16px 44px rgba(0, 0, 0, 0.55);
-  display: flex; flex-direction: column; gap: 14px;
+  border: 1px solid rgba(75, 124, 243, 0.3);
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.5);
+  display: flex; flex-direction: column; gap: 10px;
 }
-.pod-head { display: flex; align-items: center; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
-.pod-title-wrap { display: flex; align-items: center; gap: 12px; min-width: 0; }
-.pod-badge {
-  width: 40px; height: 40px; border-radius: 11px; flex-shrink: 0;
-  display: inline-flex; align-items: center; justify-content: center; font-size: 19px;
-  background: rgba(75, 124, 243, 0.16); border: 1px solid rgba(75, 124, 243, 0.36);
-}
-.pod-title { font-size: 14.5px; font-weight: 600; color: #fff; line-height: 1.35; }
-.pod-meta { font-size: 12.5px; color: var(--muted); font-family: var(--font-mono); margin-top: 2px; }
+.pod-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.pod-title-wrap { display: flex; align-items: center; gap: 8px; min-width: 0; flex-wrap: wrap; }
+.pod-badge { font-size: 16px; line-height: 1; flex-shrink: 0; }
+.pod-title { font-size: 13.5px; font-weight: 600; color: #fff; line-height: 1.3; }
+.pod-meta { font-size: 12px; color: var(--muted); font-family: var(--font-mono); }
 .pod-tracks {
   display: inline-flex; padding: 3px; border-radius: 10px;
   background: rgba(255, 255, 255, 0.04); border: 1px solid var(--border);
@@ -148,15 +137,16 @@ a { color: inherit; text-decoration: none; }
   overflow: hidden; box-shadow: 0 24px 64px rgba(0, 0, 0, 0.65);
 }
 .ep-head {
-  padding: 18px 22px 14px; border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; flex-wrap: wrap;
+  padding: 12px 18px; border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  display: flex; align-items: center; gap: 10px;
 }
-.ep-kicker {
-  font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 0.06em;
-  color: #fde68a; margin-bottom: 4px;
+.ep-num {
+  font-family: var(--font-mono); font-size: 12px; font-weight: 600; letter-spacing: 0.04em;
+  color: #fde68a; padding: 2px 7px; border-radius: 6px;
+  background: rgba(245, 185, 66, 0.12); border: 1px solid rgba(245, 185, 66, 0.28);
+  flex-shrink: 0;
 }
-.ep-title { margin: 0; font-size: clamp(19px, 2.5vw, 24px); font-weight: 650; letter-spacing: -0.02em; color: #fff; line-height: 1.25; }
-.ep-summary { margin: 8px 0 0; font-size: 14px; line-height: 1.62; color: #b4b4bc; max-width: 680px; }
+.ep-title { margin: 0; font-size: clamp(16px, 2vw, 19px); font-weight: 600; letter-spacing: -0.015em; color: #fff; line-height: 1.3; }
 
 .ep-media-btn {
   display: block; width: 100%; padding: 14px; border: 0; background: #070709;
@@ -215,16 +205,11 @@ a { color: inherit; text-decoration: none; }
 
 /* ---------- BOTTOM CTA BOX ---------- */
 .story-cta-box {
-  margin-top: 44px; padding: 30px 26px; border-radius: 18px;
-  background: linear-gradient(180deg, #111116, #09090c);
-  border: 1px solid rgba(255, 255, 255, 0.14); text-align: center;
-  display: flex; flex-direction: column; align-items: center; gap: 16px;
+  margin-top: 32px; padding: 18px; border-radius: 14px;
+  background: #0a0a0e; border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex; justify-content: center;
 }
-.story-cta-kicker { font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #fde68a; }
-.story-cta-h2 { margin: 4px 0 6px; font-size: clamp(20px, 3vw, 27px); font-weight: 650; letter-spacing: -0.025em; color: #fff; }
-.story-cta-sub { margin: 0 auto; max-width: 560px; font-size: 14.5px; color: var(--muted); }
-.story-cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 4px; }
-.story-cta-hint { font-family: var(--font-mono); font-size: 11.5px; color: var(--dim); }
+.story-cta-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
 
 /* ---------- FOOTER ---------- */
 .footer { border-top: 1px solid rgba(255, 255, 255, 0.08); padding: 26px 0 max(26px, env(safe-area-inset-bottom)); font-size: 13px; color: var(--dim); }
@@ -260,9 +245,8 @@ a { color: inherit; text-decoration: none; }
 .lb-nav:hover { background: var(--cobalt); border-color: var(--cobalt); }
 .lb-foot {
   padding: 12px 16px max(12px, env(safe-area-inset-bottom)); border-top: 1px solid rgba(255, 255, 255, 0.08);
-  background: #0c0c10; display: flex; flex-direction: column; gap: 10px;
+  background: #0c0c10;
 }
-.lb-note { margin: 0; font-size: 13px; line-height: 1.55; color: #d4d4d8; }
 .lb-foot-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
 .lb-mobile-nav { display: none; gap: 6px; }
 .lb-actions { display: flex; gap: 8px; flex-wrap: wrap; flex: 1; }

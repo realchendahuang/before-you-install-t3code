@@ -338,22 +338,15 @@
     "originCta": "See @theo's post ↗"
   },
   "story": {
-    "pageTitle": "The 96 Hours After One Block · 8-Episode Comic & Podcast · Temu3 Code",
-    "kicker": "8-EPISODE BILINGUAL COMIC · AUDIO PODCAST",
+    "pageTitle": "The 96 Hours After One Block · Temu3 Code",
     "title": "The 96 Hours After One Block",
-    "sub": "From an 11-minute MIT fork threat to 2.2M/hr IP logs, 89-view HR complaints, fake Zed headers, and \"slophouse\" — every panel backed by public commits and receipts.",
-    "podcastTitle": "Listen to the 96-Hour Story · NotebookLM Podcast",
-    "podcastSub": "Full bilingual deep-dive audio overview · zero tracking",
+    "podcastTitle": "NotebookLM Podcast",
     "podcastDownload": "MP3 ↓",
     "zoomBtn": "Zoom",
     "receiptBtn": "Receipt",
-    "ctaKicker": "KEEP EXPLORING · 100% CC0 1.0",
-    "ctaTitle": "Grab the Stickers, Browse the Memes, or Verify Every Receipt.",
-    "ctaSub": "Every comic panel links straight to archived public commits, PR diffs, and original posts. Zero telemetry, free to share anywhere.",
-    "ctaZip": "Free 28-Sticker ZIP",
-    "ctaMemes": "Browse All Memes →",
-    "ctaMail": "Open Tmail Receipts →",
-    "ctaZipHint": "Sticker pack ready for Discord · Slack · Telegram · WeChat",
-    "loadingEmpty": "Story episodes are loading..."
+    "ctaZip": "28-Sticker ZIP",
+    "ctaMemes": "All Memes →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "Loading..."
   }
 }

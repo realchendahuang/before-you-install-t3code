@@ -338,22 +338,15 @@
     "originCta": "看 @theo 原帖 ↗"
   },
   "story": {
-    "pageTitle": "被封鎖之後的九十六小時 · 8 話雙語連載漫畫與播客 · Temu3 Code",
-    "kicker": "8 話雙語連載漫畫 · NOTEBOOKLM 雙語播客",
+    "pageTitle": "被封鎖之後的九十六小時 · Temu3 Code",
     "title": "被封鎖之後的九十六小時",
-    "sub": "從 11 分鐘 MIT Fork 封號威脅，到每小時 220 萬 IP 日誌、89 瀏覽告到 AWS HR、冒充 Zed 握手與遁入閉源 Slophouse——每一格都有公開提交與原帖存檔。",
-    "podcastTitle": "收聽《96 小時始末》· NotebookLM 深度播客",
-    "podcastSub": "中英雙語完整音訊回顧 · 零追蹤直連播放",
-    "podcastDownload": "下載 MP3 ↓",
-    "zoomBtn": "放大看圖",
-    "receiptBtn": "看來源",
-    "ctaKicker": "繼續探索 · 全部 CC0 1.0 公開領域",
-    "ctaTitle": "打包帶走 28 枚貼圖、逛全部迷因，或到 Tmail 查核一手證據。",
-    "ctaSub": "每一格漫畫都能直達對應提交紀錄、PR Diff 與原帖存檔。零遙測，歡迎自由分享。",
-    "ctaZip": "免費下載 28 枚貼圖包 ZIP",
-    "ctaMemes": "逛全部迷因庫 →",
-    "ctaMail": "去 Tmail 查原始證據 →",
-    "ctaZipHint": "貼圖包已適配 Discord · Slack · Telegram · 微信",
-    "loadingEmpty": "正在載入連載章節..."
+    "podcastTitle": "NotebookLM 播客",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "放大",
+    "receiptBtn": "來源",
+    "ctaZip": "28 枚貼圖包 ZIP",
+    "ctaMemes": "全部迷因 →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "載入中..."
   }
 }

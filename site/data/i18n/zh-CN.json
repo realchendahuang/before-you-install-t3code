@@ -338,22 +338,15 @@
     "originCta": "看 @theo 原帖 ↗"
   },
   "story": {
-    "pageTitle": "被拉黑之后的九十六小时 · 8 话双语连载漫画与播客 · Temu3 Code",
-    "kicker": "8 话双语连载漫画 · NOTEBOOKLM 双语播客",
+    "pageTitle": "被拉黑之后的九十六小时 · Temu3 Code",
     "title": "被拉黑之后的九十六小时",
-    "sub": "从 11 分钟 MIT Fork 封号威胁，到每小时 220 万 IP 日志、89 浏览告到 AWS HR、冒充 Zed 握手与遁入闭源 Slophouse——每一格都有公开提交与原帖留档。",
-    "podcastTitle": "收听《96 小时始末》· NotebookLM 深度播客",
-    "podcastSub": "中英双语完整音频回顾 · 无追踪直连播放",
-    "podcastDownload": "下载 MP3 ↓",
-    "zoomBtn": "放大看图",
-    "receiptBtn": "看证据",
-    "ctaKicker": "继续探索 · 全部 CC0 1.0 公开领域",
-    "ctaTitle": "打包带走 28 枚表情包、逛全部梗图，或去 Tmail 核验一手铁证。",
-    "ctaSub": "每一格漫画都能直达对应提交记录、PR Diff 与原帖存档。零遥测，欢迎任意转发二创。",
-    "ctaZip": "免费下载 28 枚表情包 ZIP",
-    "ctaMemes": "逛全部梗图库 →",
-    "ctaMail": "去 Tmail 查原始证据 →",
-    "ctaZipHint": "表情包已适配 Discord · Slack · Telegram · 微信",
-    "loadingEmpty": "正在加载连载章节..."
+    "podcastTitle": "NotebookLM 播客",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "放大",
+    "receiptBtn": "证据",
+    "ctaZip": "28 枚表情包 ZIP",
+    "ctaMemes": "全部梗图 →",
+    "ctaMail": "Tmail →",
+    "loadingEmpty": "加载中..."
   }
 }
