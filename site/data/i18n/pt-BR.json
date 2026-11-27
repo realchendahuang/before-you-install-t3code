@@ -133,13 +133,13 @@
     "storyReadBtn": "Ler o quadrinho e ouvir →",
     "storyZipBtn": "Baixar pacote de figurinhas",
     "storyTitle": "As 96 Horas Após Um Bloqueio",
-    "storyZipHint": "CC0 1.0 · Inglês e 简体中文 · Zero telemetria",
+    "storyZipHint": "CC0 1.0 · 18 idiomas · Zero telemetria",
     "storyEpPill": "Ep. 1 → Ep. 8"
   },
   "memes": {
     "pageTitle": "Memes do Temu3 · Cartas CC0, figurinhas, GIFs e quadrinhos",
     "title": "Memes",
-    "sub": "Cartas de colecionador CC0, memes virais, figurinhas transparentes, GIFs e quadrinhos bilíngues. Clique em qualquer item pra copiar ou ver a fonte.",
+    "sub": "Cartões, memes, adesivos, GIFs e quadrinhos CC0 gratuitos. Clique em qualquer cartão para copiar ou verificar o comprovante.",
     "drawBtn": "Sortear um card",
     "drawAgain": "Sortear de novo",
     "submitBtn": "Enviar no GitHub ↗",
@@ -171,8 +171,8 @@
     "tabParodies": "Paródias",
     "stickerZipBtn": "Baixar pacote de figurinhas",
     "tabStickers": "Figurinhas",
-    "stickerBannerTitle": "Pacote de figurinhas de rage comic com fundo transparente",
-    "storyBannerTitle": "Prefere ler o quadrinho na vertical e ouvir o podcast do NotebookLM?",
+    "stickerBannerTitle": "Pacote de Adesivos Transparentes",
+    "storyBannerTitle": "Leia o quadrinho + ouça em 18 idiomas",
     "stickerZipSub": "Discord · Slack · Telegram · WeChat",
     "tabCreative": "Pacote Criativo",
     "tabStory": "Quadrinhos",
@@ -180,10 +180,10 @@
     "copyGifBtn": "Copiar URL do GIF",
     "downloadGifBtn": "Salvar GIF",
     "copiedGifToast": "Link do GIF animado copiado.",
-    "stickerBannerDesc": "Pastas RGBA pré-dimensionadas para Discord e Slack (128px), Telegram (512px WebP/PNG) e WeChat (240px) + folha de contato promocional 4×7 para o X.",
-    "promoSheetBtn": "Folha de Contato 4×7 ↗",
-    "storyBannerDesc": "Abra o leitor dedicado /story/ para alternar na hora entre inglês e 简体中文 e ouvir o resumo em áudio bilíngue.",
-    "openStoryReader": "Abrir Leitor /story/ →"
+    "stickerBannerDesc": "Pastas de PNG e WebP transparentes já no tamanho certo para Discord, Slack, Telegram e WeChat. 100% CC0.",
+    "promoSheetBtn": "Pré-visualizar folha ↗",
+    "storyBannerDesc": "Troque entre os 18 idiomas na barra superior para ver quadrinhos nativos, legendas dos quadros e podcasts do NotebookLM.",
+    "openStoryReader": "Abrir /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Arquivo público (2023–2026)",

@@ -133,13 +133,13 @@
     "storyReadBtn": "اقرأ الكوميك واستمع →",
     "storyZipBtn": "حمّل حزمة الملصقات",
     "storyTitle": "الـ96 ساعة بعد حظر واحد",
-    "storyZipHint": "CC0 1.0 · الإنجليزية و简体中文 · بلا أي تتبّع",
+    "storyZipHint": "CC0 1.0 · 18 لغة · بلا أي تتبّع",
     "storyEpPill": "ح 1 → ح 8"
   },
   "memes": {
     "pageTitle": "ميمز Temu3 · بطاقات CC0 وملصقات وGIF وكوميكس",
     "title": "ميمز",
-    "sub": "بطاقات تجميع CC0، وميمز منتشرة، وملصقات شفافة، وGIF، وكوميكس ثنائي اللغة. اضغط على أي عنصر لنسخه أو لمراجعة المصدر.",
+    "sub": "بطاقات وميمات وملصقات وصور GIF وقصص مصوّرة مجانية بترخيص CC0. انقر أي بطاقة لنسخها أو التحقق من الإيصال.",
     "drawBtn": "اسحب بطاقة عشوائية",
     "drawAgain": "اسحب مجدداً",
     "submitBtn": "أرسل على GitHub ↗",
@@ -171,8 +171,8 @@
     "tabParodies": "محاكاة ساخرة",
     "stickerZipBtn": "حمّل حزمة الملصقات",
     "tabStickers": "الملصقات",
-    "stickerBannerTitle": "حزمة ملصقات شفافة بستايل كوميك الغضب",
-    "storyBannerTitle": "تفضل تقرأ الكوميك عموديًا مع بودكاست NotebookLM؟",
+    "stickerBannerTitle": "حزمة ملصقات شفافة",
+    "storyBannerTitle": "اقرأ القصة المصوّرة واستمع بـ18 لغة",
     "stickerZipSub": "Discord · Slack · Telegram · WeChat",
     "tabCreative": "حزمة إبداعية",
     "tabStory": "كوميكس القصة",
@@ -180,10 +180,10 @@
     "copyGifBtn": "نسخ رابط GIF",
     "downloadGifBtn": "حفظ GIF",
     "copiedGifToast": "تم نسخ رابط الـGIF المتحرك.",
-    "stickerBannerDesc": "مجلدات RGBA بمقاسات جاهزة لـDiscord وSlack (128px)، وTelegram (512px WebP/PNG)، وWeChat (240px) + ورقة تواصل ترويجية 4×7 X.",
-    "promoSheetBtn": "ورقة تواصل 4×7 ↗",
-    "storyBannerDesc": "افتح قارئ /story/ المخصص للتبديل الفوري بين الإنجليزية و简体中文 مع ملخص صوتي ثنائي اللغة.",
-    "openStoryReader": "افتح قارئ /story/ →"
+    "stickerBannerDesc": "مجلدات شفافة بصيغتي PNG وWebP بمقاسات جاهزة لـ Discord وSlack وTelegram وWeChat. بترخيص CC0 بنسبة 100%.",
+    "promoSheetBtn": "معاينة الورقة ↗",
+    "storyBannerDesc": "بدّل أيًا من اللغات الـ18 من الشريط العلوي للحصول على قصص مصوّرة بلغتها الأصلية وترجمات اللوحات وبودكاست NotebookLM.",
+    "openStoryReader": "افتح /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · أرشيف عام (2023 إلى 2026)",

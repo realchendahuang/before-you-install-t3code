@@ -133,13 +133,13 @@
     "storyReadBtn": "Çizgi Romanı Oku ve Dinle →",
     "storyZipBtn": "Çıkartma Paketini İndir",
     "storyTitle": "Tek Engelden Sonraki 96 Saat",
-    "storyZipHint": "CC0 1.0 · İngilizce & 简体中文 · Sıfır telemetri",
+    "storyZipHint": "CC0 1.0 · 18 dil · Sıfır telemetri",
     "storyEpPill": "Böl. 1 → Böl. 8"
   },
   "memes": {
     "pageTitle": "Temu3 Meme'leri · CC0 Kartlar, Çıkartmalar, GIF'ler ve Çizgi Romanlar",
     "title": "Memler",
-    "sub": "CC0 koleksiyon kartları, viral memeler, şeffaf çıkartmalar, GIF'ler ve iki dilli çizgi romanlar. Kopyalamak ya da kaynağına bakmak için herhangi bir öğeye tıkla.",
+    "sub": "Ücretsiz CC0 kartlar, memeler, çıkartmalar, GIF'ler ve çizgi romanlar. Kopyalamak veya makbuzu doğrulamak için herhangi bir karta tıklayın.",
     "drawBtn": "Rastgele kart çek",
     "drawAgain": "Tekrar çek",
     "submitBtn": "GitHub'da gönder ↗",
@@ -171,8 +171,8 @@
     "tabParodies": "Parodiler",
     "stickerZipBtn": "Çıkartma Paketini İndir",
     "tabStickers": "Çıkartmalar",
-    "stickerBannerTitle": "Şeffaf Rage-Comic Çıkartma Paketi",
-    "storyBannerTitle": "Dikey çizgi roman okumayı ve NotebookLM Podcast'i mi tercih edersin?",
+    "stickerBannerTitle": "Şeffaf Çıkartma Paketi",
+    "storyBannerTitle": "Çizgi romanı oku + 18 dilde dinle",
     "stickerZipSub": "Discord · Slack · Telegram · WeChat",
     "tabCreative": "Yaratıcı Paket",
     "tabStory": "Hikâye Çizgi Roman",
@@ -180,10 +180,10 @@
     "copyGifBtn": "GIF URL Kopyala",
     "downloadGifBtn": "GIF Kaydet",
     "copiedGifToast": "Hareketli GIF bağlantısı kopyalandı.",
-    "stickerBannerDesc": "Discord & Slack (128px), Telegram (512px WebP/PNG) ve WeChat (240px) için hazır boyutlu RGBA klasörleri + 4×7 X tanıtım kontak sayfası.",
-    "promoSheetBtn": "4×7 Kontak Sayfası ↗",
-    "storyBannerDesc": "Anında İngilizce / 简体中文 geçişi ve iki dilli ses özeti için özel /story/ okuyucusunu açın.",
-    "openStoryReader": "/story/ Okuyucusunu Aç →"
+    "stickerBannerDesc": "Discord, Slack, Telegram ve WeChat için hazır, boyutları ayarlanmış şeffaf PNG ve WebP klasörleri. %100 CC0.",
+    "promoSheetBtn": "Sayfayı Önizle ↗",
+    "storyBannerDesc": "Yerel çizgi romanlar, panel altyazıları ve NotebookLM podcast'leri için üst çubuktan 18 dilden istediğinize geçin.",
+    "openStoryReader": "/story/ → Aç"
   },
   "mail": {
     "pageTitle": "Tmail · Kamuya açık arşiv (2023–2026)",

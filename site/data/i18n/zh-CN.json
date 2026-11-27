@@ -133,13 +133,13 @@
     "storySub": "高清双语连载漫画配 NotebookLM 播客，完整还原 96 小时风波始末，附赠透明底暴漫表情包，微信 / Discord / Slack / Telegram 直接可用。",
     "storyReadBtn": "看连载漫画与播客 →",
     "storyZipBtn": "免费下载表情包 ZIP",
-    "storyZipHint": "CC0 1.0 · 英文 & 简体中文双版 · 零追踪",
+    "storyZipHint": "CC0 1.0 · 18 种语言全覆盖 · 零追踪",
     "storyEpPill": "第 1 话 → 第 8 话"
   },
   "memes": {
     "pageTitle": "Temu3 梗图 · CC0 卡牌、表情包、GIF 与漫画",
     "title": "梗图",
-    "sub": "CC0 收藏卡、二创梗图、透明暴漫表情、GIF 动图和双语漫画，点开就能复制或看原帖。",
+    "sub": "全站 CC0 卡牌、梗图、表情包、动图和漫画，点开就能复制或直达原帖。",
     "drawBtn": "随机抽一张",
     "drawAgain": "再抽一张",
     "submitBtn": "去 GitHub 投稿 ↗",
@@ -178,12 +178,12 @@
     "copyGifBtn": "复制 GIF 链接",
     "downloadGifBtn": "保存 GIF",
     "copiedGifToast": "已复制动图 GIF 链接。",
-    "stickerBannerTitle": "透明底暴漫表情包合集",
-    "stickerBannerDesc": "已按平台尺寸分目录打包：Discord / Slack (128px)、Telegram (512px WebP/PNG)、微信 (240px)，附 4×7 全家福宣传图。",
-    "promoSheetBtn": "看 4×7 全家福 ↗",
-    "storyBannerTitle": "想竖屏连读漫画 + 听中英双语播客？",
-    "storyBannerDesc": "前往 /story/ 专属阅读页，一键切换简体中文 / English 漫画与 NotebookLM 双语音频。",
-    "openStoryReader": "打开 /story/ 连载阅读页 →"
+    "stickerBannerTitle": "透明表情包全套打包",
+    "stickerBannerDesc": "已按微信、Discord、Slack、Telegram 裁好透明底，CC0 随便拿去用。",
+    "promoSheetBtn": "看全家福 ↗",
+    "storyBannerTitle": "竖屏连读漫画 + 18 语原声播客",
+    "storyBannerDesc": "顶部一键切换 18 种语言：母语连载漫画、四格字幕与 NotebookLM 原声播客。",
+    "openStoryReader": "打开连载页 →"
   },
   "mail": {
     "pageTitle": "Tmail · 公开存档（2023–2026）",

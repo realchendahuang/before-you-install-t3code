@@ -133,13 +133,13 @@
     "storyReadBtn": "漫画を読んでポッドキャストを聴く →",
     "storyZipBtn": "ステッカーパックをダウンロード",
     "storyTitle": "1ブロック後の96時間",
-    "storyZipHint": "CC0 1.0 · 日本語 & 简体中文 · テレメトリなし",
+    "storyZipHint": "CC0 1.0 · 18言語 · テレメトリーゼロ",
     "storyEpPill": "第1話 → 第8話"
   },
   "memes": {
     "pageTitle": "Temu3 ミーム · CC0 カード、ステッカー、GIF、漫画",
     "title": "ミーム",
-    "sub": "CC0 のコレクターカード、バズったミーム、透過ステッカー、GIF、バイリンガル漫画。各項目をクリックすると、コピーや出典の確認ができます。",
+    "sub": "無料のCC0カード、ミーム、ステッカー、GIF、コミック。カードをクリックするとコピー、またはレシートを検証できます。",
     "drawBtn": "ランダムに1枚引く",
     "drawAgain": "もう一度引く",
     "submitBtn": "GitHubで投稿 ↗",
@@ -171,8 +171,8 @@
     "tabParodies": "パロディ",
     "stickerZipBtn": "ステッカーパックをダウンロード",
     "tabStickers": "ステッカー",
-    "stickerBannerTitle": "背景透過のレイジコミックステッカー集",
-    "storyBannerTitle": "縦読み漫画と NotebookLM ポッドキャストのほうがいい？",
+    "stickerBannerTitle": "透明ステッカーパック",
+    "storyBannerTitle": "コミックを読む + 18言語で聴く",
     "stickerZipSub": "Discord · Slack · Telegram · WeChat",
     "tabCreative": "クリエイティブ集",
     "tabStory": "ストーリー漫画",
@@ -180,10 +180,10 @@
     "copyGifBtn": "GIF URLをコピー",
     "downloadGifBtn": "GIFを保存",
     "copiedGifToast": "アニメGIFのリンクをコピーしました。",
-    "stickerBannerDesc": "Discord & Slack（128px）、Telegram（512px WebP/PNG）、WeChat（240px）向けにサイズ調整済みのRGBAフォルダ＋4×7 Xプロモ用コンタクトシート。",
-    "promoSheetBtn": "4×7 コンタクトシート ↗",
-    "storyBannerDesc": "専用の /story/ リーダーを開けば、日本語 / 简体中文 を即切り替え、バイリンガル音声概要も再生できます。",
-    "openStoryReader": "/story/ リーダーを開く →"
+    "stickerBannerDesc": "Discord、Slack、Telegram、WeChat にすぐ使える、サイズ調整済みの透明 PNG & WebP フォルダ。100% CC0。",
+    "promoSheetBtn": "シートをプレビュー ↗",
+    "storyBannerDesc": "トップバーで18言語を切り替えれば、各言語のコミック、パネル字幕、NotebookLM ポッドキャストを楽しめます。",
+    "openStoryReader": "/story/ を開く →"
   },
   "mail": {
     "pageTitle": "Tmail · 公開アーカイブ（2023〜2026）",

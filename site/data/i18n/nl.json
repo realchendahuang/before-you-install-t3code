@@ -133,13 +133,13 @@
     "storyReadBtn": "Lees de strip & luister →",
     "storyZipBtn": "Download de stickerset",
     "storyTitle": "De 96 uur na één blokkade",
-    "storyZipHint": "CC0 1.0 · Engels & Vereenvoudigd Chinees · Geen telemetrie",
+    "storyZipHint": "CC0 1.0 · 18 talen · Nul telemetrie",
     "storyEpPill": "Afl. 1 → Afl. 8"
   },
   "memes": {
     "pageTitle": "Temu3-memes · CC0-kaarten, stickers, GIF's & strips",
     "title": "Memes",
-    "sub": "CC0-verzamelkaarten, virale memes, transparante stickers, GIF's en tweetalige strips. Klik op een item om te kopiëren of de bron te bekijken.",
+    "sub": "Gratis CC0-kaarten, memes, stickers, GIF's en strips. Klik op een kaart om te kopiëren of het bewijs te controleren.",
     "drawBtn": "Trek een willekeurige kaart",
     "drawAgain": "Opnieuw trekken",
     "submitBtn": "Indienen op GitHub ↗",
@@ -171,8 +171,8 @@
     "tabParodies": "Parodieën",
     "stickerZipBtn": "Download de stickerset",
     "tabStickers": "Stickers",
-    "stickerBannerTitle": "Transparante ragecomic-stickerset",
-    "storyBannerTitle": "Liever strips verticaal lezen + NotebookLM-podcast?",
+    "stickerBannerTitle": "Transparant stickerpakket",
+    "storyBannerTitle": "Lees de strip + luister in 18 talen",
     "stickerZipSub": "Discord · Slack · Telegram · WeChat",
     "tabCreative": "Creatief pakket",
     "tabStory": "Verhaalstrips",
@@ -180,10 +180,10 @@
     "copyGifBtn": "Kopieer GIF-URL",
     "downloadGifBtn": "GIF opslaan",
     "copiedGifToast": "Link naar geanimeerde GIF gekopieerd.",
-    "stickerBannerDesc": "Vooraf geschaalde RGBA-mappen voor Discord & Slack (128px), Telegram (512px WebP/PNG) en WeChat (240px) + 4×7 X-promocontactvel.",
-    "promoSheetBtn": "4×7-contactvel ↗",
-    "storyBannerDesc": "Open de aparte /story/-lezer om direct te wisselen tussen Engels / Vereenvoudigd Chinees, met tweetalig audio-overzicht.",
-    "openStoryReader": "Open /story/-lezer →"
+    "stickerBannerDesc": "Vooraf ingestelde mapjes met transparante PNG en WebP, klaar voor Discord, Slack, Telegram en WeChat. 100% CC0.",
+    "promoSheetBtn": "Blad bekijken ↗",
+    "storyBannerDesc": "Wissel in de bovenbalk tussen de 18 talen voor native strips, ondertitels per paneel en NotebookLM-podcasts.",
+    "openStoryReader": "Open /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Publiek archief (2023-2026)",

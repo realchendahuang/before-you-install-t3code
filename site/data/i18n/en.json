@@ -133,13 +133,13 @@
     "storySub": "Follow the 96-hour timeline in a bilingual comic with a NotebookLM audio podcast, plus a free transparent sticker pack for Discord, Slack, Telegram, and WeChat.",
     "storyReadBtn": "Read Comic & Listen →",
     "storyZipBtn": "Download Sticker Pack",
-    "storyZipHint": "CC0 1.0 · English & 简体中文 · Zero telemetry",
+    "storyZipHint": "CC0 1.0 · 18 languages · Zero telemetry",
     "storyEpPill": "Ep. 1 → Ep. 8"
   },
   "memes": {
     "pageTitle": "Temu3 Memes · CC0 Cards, Stickers, GIFs & Comics",
     "title": "Memes",
-    "sub": "CC0 collector cards, viral memes, transparent stickers, GIFs, and bilingual comics. Click any item to copy or check the source.",
+    "sub": "Free CC0 cards, memes, stickers, GIFs, and comics. Click any card to copy or verify the receipt.",
     "drawBtn": "Draw a Random Card",
     "drawAgain": "Draw Again",
     "submitBtn": "Submit on GitHub ↗",
@@ -178,12 +178,12 @@
     "copyGifBtn": "Copy GIF URL",
     "downloadGifBtn": "Save GIF",
     "copiedGifToast": "Copied animated GIF link.",
-    "stickerBannerTitle": "Transparent Rage-Comic Sticker Pack",
-    "stickerBannerDesc": "Pre-sized RGBA folders for Discord & Slack (128px), Telegram (512px WebP/PNG), and WeChat (240px) + 4×7 X promo contact sheet.",
-    "promoSheetBtn": "4×7 Contact Sheet ↗",
-    "storyBannerTitle": "Prefer vertical comic reading + NotebookLM Podcast?",
-    "storyBannerDesc": "Open the dedicated /story/ reader for instant English / 简体中文 switching and bilingual audio overview.",
-    "openStoryReader": "Open /story/ Reader →"
+    "stickerBannerTitle": "Transparent Sticker Pack",
+    "stickerBannerDesc": "Pre-sized transparent PNG & WebP folders ready for Discord, Slack, Telegram, and WeChat. 100% CC0.",
+    "promoSheetBtn": "Preview Sheet ↗",
+    "storyBannerTitle": "Read the comic + listen in 18 languages",
+    "storyBannerDesc": "Switch any of the 18 languages from the top bar for native comics, panel subtitles, and NotebookLM podcasts.",
+    "openStoryReader": "Open /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Public Archive (2023–2026)",

@@ -133,13 +133,13 @@
     "storySub": "高畫質雙語連載漫畫搭配 NotebookLM Podcast，完整還原 96 小時風波始末，再送透明底暴走漫畫貼圖包，WeChat / Discord / Slack / Telegram 都能直接用。",
     "storyReadBtn": "看連載漫畫、聽 Podcast →",
     "storyZipBtn": "免費下載貼圖包 ZIP",
-    "storyZipHint": "CC0 1.0 · English & 中文雙版 · 零追蹤",
+    "storyZipHint": "CC0 1.0 · 18 種語言全覆蓋 · 零追蹤",
     "storyEpPill": "第 1 話 → 第 8 話"
   },
   "memes": {
     "pageTitle": "Temu3 梗圖 · CC0 卡牌、貼圖、GIF 與漫畫",
     "title": "迷因",
-    "sub": "CC0 收藏卡、二創梗圖、透明暴走漫畫貼圖、GIF 動圖和雙語漫畫，點開就能複製或看原帖。",
+    "sub": "全站 CC0 卡牌、迷因、貼圖、動圖與漫畫，點開就能複製或直達原帖。",
     "drawBtn": "隨機抽一張",
     "drawAgain": "再抽一張",
     "submitBtn": "到 GitHub 投稿 ↗",
@@ -178,12 +178,12 @@
     "copyGifBtn": "複製 GIF 連結",
     "downloadGifBtn": "儲存 GIF",
     "copiedGifToast": "已複製動圖 GIF 連結。",
-    "stickerBannerTitle": "透明底暴走漫畫貼圖包",
-    "stickerBannerDesc": "已依平台尺寸分資料夾打包：Discord / Slack (128px)、Telegram (512px WebP/PNG)、微信 (240px)，附 4×7 總覽圖。",
-    "promoSheetBtn": "看 4×7 總覽圖 ↗",
-    "storyBannerTitle": "想豎屏一路看漫畫 + 聽中英雙語 Podcast？",
-    "storyBannerDesc": "前往 /story/ 專屬閱讀頁，一鍵切換中文 / English 漫畫與 NotebookLM 雙語音訊。",
-    "openStoryReader": "開啟 /story/ 連載閱讀頁 →"
+    "stickerBannerTitle": "透明貼圖全套打包",
+    "stickerBannerDesc": "已依微信、Discord、Slack、Telegram 裁好透明底，CC0 隨便用。",
+    "promoSheetBtn": "看總覽圖 ↗",
+    "storyBannerTitle": "豎屏連讀漫畫 + 18 語原聲 Podcast",
+    "storyBannerDesc": "頂部一鍵切換 18 種語言：母語連載漫畫、四格字幕與 NotebookLM 原聲 Podcast。",
+    "openStoryReader": "開啟連載頁 →"
   },
   "mail": {
     "pageTitle": "Tmail · 公開存檔（2023–2026）",

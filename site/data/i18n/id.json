@@ -133,13 +133,13 @@
     "storyReadBtn": "Baca Komik & Dengar →",
     "storyZipBtn": "Unduh Paket Stiker",
     "storyTitle": "96 Jam Setelah Satu Blok",
-    "storyZipHint": "CC0 1.0 · Inggris & 简体中文 · Tanpa telemetri",
+    "storyZipHint": "CC0 1.0 · 18 bahasa · Tanpa telemetri",
     "storyEpPill": "Ep. 1 → Ep. 8"
   },
   "memes": {
     "pageTitle": "Meme Temu3 · Kartu CC0, Stiker, GIF & Komik",
     "title": "Meme",
-    "sub": "Kartu koleksi CC0, meme viral, stiker transparan, GIF, dan komik bilingual. Klik item mana pun untuk menyalin atau cek sumber aslinya.",
+    "sub": "Kartu, meme, stiker, GIF, dan komik CC0 gratis. Klik kartu mana pun untuk menyalin atau memverifikasi bukti.",
     "drawBtn": "Ambil Kartu Acak",
     "drawAgain": "Ambil Lagi",
     "submitBtn": "Kirim di GitHub ↗",
@@ -171,8 +171,8 @@
     "tabParodies": "Parodi",
     "stickerZipBtn": "Unduh Paket Stiker",
     "tabStickers": "Stiker",
-    "stickerBannerTitle": "Paket Stiker Komik Rage Transparan",
-    "storyBannerTitle": "Lebih suka baca komik vertikal + Podcast NotebookLM?",
+    "stickerBannerTitle": "Paket Stiker Transparan",
+    "storyBannerTitle": "Baca komik + dengarkan dalam 18 bahasa",
     "stickerZipSub": "Discord · Slack · Telegram · WeChat",
     "tabCreative": "Paket Kreatif",
     "tabStory": "Komik Cerita",
@@ -180,10 +180,10 @@
     "copyGifBtn": "Salin URL GIF",
     "downloadGifBtn": "Simpan GIF",
     "copiedGifToast": "Tautan GIF animasi disalin.",
-    "stickerBannerDesc": "Folder RGBA berukuran siap untuk Discord & Slack (128px), Telegram (512px WebP/PNG), dan WeChat (240px) + lembar kontak promo X 4×7.",
-    "promoSheetBtn": "Lembar Kontak 4×7 ↗",
-    "storyBannerDesc": "Buka pembaca /story/ khusus untuk beralih instan antara Inggris / 简体中文 dan ringkasan audio dua bahasa.",
-    "openStoryReader": "Buka Pembaca /story/ →"
+    "stickerBannerDesc": "Folder PNG & WebP transparan dengan ukuran siap pakai untuk Discord, Slack, Telegram, dan WeChat. 100% CC0.",
+    "promoSheetBtn": "Pratinjau Lembar ↗",
+    "storyBannerDesc": "Ganti bahasa dari 18 pilihan di bilah atas untuk komik asli, teks panel, dan podcast NotebookLM.",
+    "openStoryReader": "Buka /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Arsip Publik (2023-2026)",

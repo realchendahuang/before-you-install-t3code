@@ -133,13 +133,13 @@
     "storyReadBtn": "만화 보고 듣기 →",
     "storyZipBtn": "스티커 팩 다운로드",
     "storyTitle": "블록 하나 이후의 96시간",
-    "storyZipHint": "CC0 1.0 · 영어 & 중국어 간체 · 텔레메트리 없음",
+    "storyZipHint": "CC0 1.0 · 18개 언어 · 텔레메트리 없음",
     "storyEpPill": "1화 → 8화"
   },
   "memes": {
     "pageTitle": "Temu3 밈 · CC0 카드, 스티커, GIF, 만화",
     "title": "밈",
-    "sub": "CC0 수집 카드, 화제가 된 밈, 투명 스티커, GIF, 이중언어 만화까지. 아무 항목이나 클릭하면 복사하거나 원본을 확인할 수 있습니다.",
+    "sub": "무료 CC0 카드, 밈, 스티커, GIF, 만화. 카드를 클릭해 복사하거나 영수증을 검증하세요.",
     "drawBtn": "랜덤 카드 뽑기",
     "drawAgain": "다시 뽑기",
     "submitBtn": "GitHub에 제보 ↗",
@@ -171,8 +171,8 @@
     "tabParodies": "패러디",
     "stickerZipBtn": "스티커 팩 다운로드",
     "tabStickers": "스티커",
-    "stickerBannerTitle": "투명 배경 분노 만화 스티커 팩",
-    "storyBannerTitle": "세로로 만화 읽기 + NotebookLM 팟캐스트가 더 좋으신가요?",
+    "stickerBannerTitle": "투명 스티커 팩",
+    "storyBannerTitle": "만화 읽고 18개 언어로 듣기",
     "stickerZipSub": "Discord · Slack · Telegram · WeChat",
     "tabCreative": "창작 팩",
     "tabStory": "스토리 만화",
@@ -180,10 +180,10 @@
     "copyGifBtn": "GIF URL 복사",
     "downloadGifBtn": "GIF 저장",
     "copiedGifToast": "움직이는 GIF 링크를 복사했습니다.",
-    "stickerBannerDesc": "Discord & Slack(128px), Telegram(512px WebP/PNG), WeChat(240px)용으로 크기를 미리 맞춘 RGBA 폴더 + 4×7 X 홍보 콘택트 시트.",
-    "promoSheetBtn": "4×7 콘택트 시트 ↗",
-    "storyBannerDesc": "전용 /story/ 리더에서 영어 / 중국어 간체를 즉시 전환하고 이중언어 오디오 개요를 들어보세요.",
-    "openStoryReader": "/story/ 리더 열기 →"
+    "stickerBannerDesc": "Discord, Slack, Telegram, WeChat에 바로 쓸 수 있도록 크기를 맞춘 투명 PNG & WebP 폴더. 100% CC0.",
+    "promoSheetBtn": "시트 미리보기 ↗",
+    "storyBannerDesc": "상단 바에서 18개 언어 중 하나로 전환하면 해당 언어의 만화, 패널 자막, NotebookLM 팟캐스트를 이용할 수 있습니다.",
+    "openStoryReader": "/story/ 열기 →"
   },
   "mail": {
     "pageTitle": "Tmail · 공개 아카이브 (2023–2026)",

@@ -133,13 +133,13 @@
     "storyReadBtn": "Comic lesen & Podcast hören →",
     "storyZipBtn": "Sticker-Paket herunterladen",
     "storyTitle": "Die 96 Stunden nach einem Block",
-    "storyZipHint": "CC0 1.0 · Englisch & 简体中文 · Keine Telemetrie",
+    "storyZipHint": "CC0 1.0 · 18 Sprachen · Keine Telemetrie",
     "storyEpPill": "Ep. 1 → Ep. 8"
   },
   "memes": {
     "pageTitle": "Temu3 Memes · CC0-Karten, Sticker, GIFs & Comics",
     "title": "Memes",
-    "sub": "CC0-Sammelkarten, virale Memes, transparente Sticker, GIFs und zweisprachige Comics. Klick auf ein Element, um es zu kopieren oder die Quelle zu prüfen.",
+    "sub": "Kostenlose CC0-Karten, Memes, Sticker, GIFs und Comics. Klicke auf eine beliebige Karte, um sie zu kopieren oder den Nachweis zu prüfen.",
     "drawBtn": "Zufällige Karte ziehen",
     "drawAgain": "Nochmal ziehen",
     "submitBtn": "Auf GitHub einreichen ↗",
@@ -171,8 +171,8 @@
     "tabParodies": "Parodien",
     "stickerZipBtn": "Sticker-Paket herunterladen",
     "tabStickers": "Sticker",
-    "stickerBannerTitle": "Sticker-Paket mit transparenten Rage-Comics",
-    "storyBannerTitle": "Lieber vertikal Comic lesen und NotebookLM-Podcast hören?",
+    "stickerBannerTitle": "Transparentes Sticker-Paket",
+    "storyBannerTitle": "Comic lesen + in 18 Sprachen hören",
     "stickerZipSub": "Discord · Slack · Telegram · WeChat",
     "tabCreative": "Kreativ-Paket",
     "tabStory": "Story-Comics",
@@ -180,10 +180,10 @@
     "copyGifBtn": "GIF-URL kopieren",
     "downloadGifBtn": "GIF speichern",
     "copiedGifToast": "Animierten GIF-Link kopiert.",
-    "stickerBannerDesc": "Vorbemessene RGBA-Ordner für Discord & Slack (128px), Telegram (512px WebP/PNG) und WeChat (240px) + 4×7 X-Promo-Kontaktbogen.",
-    "promoSheetBtn": "4×7 Kontaktbogen ↗",
-    "storyBannerDesc": "Öffne den eigenen /story/-Reader für sofortiges Umschalten zwischen Englisch / 简体中文 und zweisprachige Audio-Übersicht.",
-    "openStoryReader": "/story/-Reader öffnen →"
+    "stickerBannerDesc": "Transparente PNG- & WebP-Ordner in passenden Größen – bereit für Discord, Slack, Telegram und WeChat. 100% CC0.",
+    "promoSheetBtn": "Vorschau ansehen ↗",
+    "storyBannerDesc": "Wechsle oben zwischen den 18 Sprachen: Comics in der jeweiligen Sprache, Untertitel pro Panel und NotebookLM-Podcasts.",
+    "openStoryReader": "/story/ öffnen →"
   },
   "mail": {
     "pageTitle": "Tmail · Öffentliches Archiv (2023–2026)",

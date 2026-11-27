@@ -133,13 +133,13 @@
     "storyReadBtn": "Leer el cómic y escuchar →",
     "storyZipBtn": "Descargar pack de stickers",
     "storyTitle": "Las 96 horas tras un bloqueo",
-    "storyZipHint": "CC0 1.0 · Inglés y chino simplificado · Cero telemetría",
+    "storyZipHint": "CC0 1.0 · 18 idiomas · Cero telemetría",
     "storyEpPill": "Ep. 1 → Ep. 8"
   },
   "memes": {
     "pageTitle": "Memes de Temu3 · Cartas CC0, stickers, GIF y cómics",
     "title": "Memes",
-    "sub": "Cartas de colección CC0, memes virales, stickers transparentes, GIF y cómics bilingües. Haz clic en cualquier elemento para copiarlo o ver la fuente.",
+    "sub": "Tarjetas, memes, stickers, GIFs y cómics CC0 gratis. Haz clic en cualquier tarjeta para copiar o verificar el recibo.",
     "drawBtn": "Sacar una carta al azar",
     "drawAgain": "Sacar otra",
     "submitBtn": "Enviar en GitHub ↗",
@@ -171,8 +171,8 @@
     "tabParodies": "Parodias",
     "stickerZipBtn": "Descargar pack de stickers",
     "tabStickers": "Stickers",
-    "stickerBannerTitle": "Pack de stickers de rage comic con fondo transparente",
-    "storyBannerTitle": "¿Prefieres leer el cómic en vertical y escuchar el podcast de NotebookLM?",
+    "stickerBannerTitle": "Pack de stickers transparentes",
+    "storyBannerTitle": "Lee el cómic + escúchalo en 18 idiomas",
     "stickerZipSub": "Discord · Slack · Telegram · WeChat",
     "tabCreative": "Pack creativo",
     "tabStory": "Cómics de la historia",
@@ -180,10 +180,10 @@
     "copyGifBtn": "Copiar URL GIF",
     "downloadGifBtn": "Guardar GIF",
     "copiedGifToast": "Enlace del GIF animado copiado.",
-    "stickerBannerDesc": "Carpetas RGBA ya dimensionadas para Discord y Slack (128 px), Telegram (512 px WebP/PNG) y WeChat (240 px) + hoja de contactos 4×7 para X.",
-    "promoSheetBtn": "Hoja de contactos 4×7 ↗",
-    "storyBannerDesc": "Abre el lector dedicado /story/ para cambiar al instante entre inglés y chino simplificado y escuchar el resumen de audio bilingüe.",
-    "openStoryReader": "Abrir lector /story/ →"
+    "stickerBannerDesc": "Carpetas de PNG y WebP transparentes ya dimensionadas para Discord, Slack, Telegram y WeChat. 100% CC0.",
+    "promoSheetBtn": "Ver hoja ↗",
+    "storyBannerDesc": "Cambia entre los 18 idiomas desde la barra superior para tener cómics nativos, subtítulos de viñetas y pódcasts de NotebookLM.",
+    "openStoryReader": "Abrir /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Archivo público (2023 a 2026)",

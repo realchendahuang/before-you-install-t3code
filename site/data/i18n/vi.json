@@ -133,13 +133,13 @@
     "storyReadBtn": "Đọc truyện & nghe podcast →",
     "storyZipBtn": "Tải bộ sticker",
     "storyTitle": "96 Giờ Sau Một Cú Chặn",
-    "storyZipHint": "CC0 1.0 · English & 简体中文 · Không telemetry",
+    "storyZipHint": "CC0 1.0 · 18 ngôn ngữ · Không telemetry",
     "storyEpPill": "Tập 1 → Tập 8"
   },
   "memes": {
     "pageTitle": "Meme Temu3 · Thẻ CC0, sticker, GIF & truyện tranh",
     "title": "Meme",
-    "sub": "Thẻ sưu tầm CC0, meme lan truyền, sticker nền trong suốt, GIF và truyện tranh song ngữ. Bấm vào mục nào cũng copy được hoặc xem nguồn.",
+    "sub": "Thẻ, meme, sticker, GIF và truyện tranh CC0 miễn phí. Nhấn vào bất kỳ thẻ nào để sao chép hoặc xác minh biên nhận.",
     "drawBtn": "Rút một thẻ ngẫu nhiên",
     "drawAgain": "Rút lại",
     "submitBtn": "Gửi trên GitHub ↗",
@@ -171,8 +171,8 @@
     "tabParodies": "Chế",
     "stickerZipBtn": "Tải bộ sticker",
     "tabStickers": "Sticker",
-    "stickerBannerTitle": "Bộ sticker rage comic nền trong suốt",
-    "storyBannerTitle": "Thích đọc truyện dọc + nghe podcast NotebookLM hơn?",
+    "stickerBannerTitle": "Bộ Sticker Nền Trong Suốt",
+    "storyBannerTitle": "Đọc truyện tranh + nghe bằng 18 ngôn ngữ",
     "stickerZipSub": "Discord · Slack · Telegram · WeChat",
     "tabCreative": "Gói Sáng Tạo",
     "tabStory": "Truyện Tranh",
@@ -180,10 +180,10 @@
     "copyGifBtn": "Sao chép URL GIF",
     "downloadGifBtn": "Lưu GIF",
     "copiedGifToast": "Đã sao chép link GIF động.",
-    "stickerBannerDesc": "Thư mục RGBA đã căn sẵn cỡ cho Discord & Slack (128px), Telegram (512px WebP/PNG) và WeChat (240px) + bảng ảnh quảng bá 4×7 X.",
-    "promoSheetBtn": "Bảng ảnh 4×7 ↗",
-    "storyBannerDesc": "Mở trình đọc /story/ riêng để chuyển ngay English / 简体中文 và nghe tổng quan song ngữ.",
-    "openStoryReader": "Mở trình đọc /story/ →"
+    "stickerBannerDesc": "Thư mục PNG & WebP trong suốt đã căn sẵn kích thước, dùng ngay cho Discord, Slack, Telegram và WeChat. 100% CC0.",
+    "promoSheetBtn": "Xem trước bảng ↗",
+    "storyBannerDesc": "Chuyển bất kỳ ngôn ngữ nào trong 18 ngôn ngữ từ thanh trên cùng để có truyện tranh bản ngữ, phụ đề từng khung và podcast NotebookLM.",
+    "openStoryReader": "Mở /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Lưu trữ công khai (2023–2026)",

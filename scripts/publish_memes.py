@@ -1490,17 +1490,26 @@ def main() -> int:
     out_items = []
     story_by_ep: dict[int, dict[str, dict]] = {}
 
+    polished_copy: dict[str, dict[str, str]] = {}
+    polished_path = MEMES_DIR / "copy_polished.json"
+    if polished_path.is_file():
+        try:
+            polished_copy = json.loads(polished_path.read_text(encoding="utf-8"))
+        except Exception:
+            polished_copy = {}
+
     for it in items:
         counts[it["series"]] = counts.get(it["series"], 0) + 1
+        ov = polished_copy.get(it["id"], {})
         rec = {
             "id": it["id"],
             "series": it["series"],
             "exhibit": it["exhibit"],
             "thread": it["thread"],
-            "titleEn": it["titleEn"],
-            "titleZh": it["titleZh"],
-            "noteEn": it["noteEn"],
-            "noteZh": it["noteZh"],
+            "titleEn": ov.get("titleEn") or it["titleEn"],
+            "titleZh": ov.get("titleZh") or it["titleZh"],
+            "noteEn": ov.get("noteEn") or it["noteEn"],
+            "noteZh": ov.get("noteZh") or it["noteZh"],
             "featured": it["featured"],
             "url": it["url"],
             "width": it["width"],

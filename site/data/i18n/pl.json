@@ -133,13 +133,13 @@
     "storyReadBtn": "Czytaj komiks i słuchaj →",
     "storyZipBtn": "Pobierz pakiet naklejek",
     "storyTitle": "96 godzin po jednej blokadzie",
-    "storyZipHint": "CC0 1.0 · angielski i 简体中文 · zero telemetrii",
+    "storyZipHint": "CC0 1.0 · 18 języków · Zero telemetrii",
     "storyEpPill": "Odc. 1 → Odc. 8"
   },
   "memes": {
     "pageTitle": "Memy Temu3 · Karty CC0, naklejki, GIF-y i komiksy",
     "title": "Memy",
-    "sub": "Karty kolekcjonerskie CC0, viralowe memy, przezroczyste naklejki, GIF-y i dwujęzyczne komiksy. Kliknij dowolny element, żeby skopiować lub sprawdzić źródło.",
+    "sub": "Darmowe karty, memy, naklejki, GIF-y i komiksy na licencji CC0. Kliknij dowolną kartę, aby skopiować lub zweryfikować potwierdzenie.",
     "drawBtn": "Wylosuj kartę",
     "drawAgain": "Losuj ponownie",
     "submitBtn": "Zgłoś na GitHubie ↗",
@@ -171,8 +171,8 @@
     "tabParodies": "Parodie",
     "stickerZipBtn": "Pobierz pakiet naklejek",
     "tabStickers": "Naklejki",
-    "stickerBannerTitle": "Pakiet przezroczystych naklejek rage comic",
-    "storyBannerTitle": "Wolisz czytać komiks pionowo + podcast NotebookLM?",
+    "stickerBannerTitle": "Pakiet przezroczystych naklejek",
+    "storyBannerTitle": "Przeczytaj komiks i posłuchaj w 18 językach",
     "stickerZipSub": "Discord · Slack · Telegram · WeChat",
     "tabCreative": "Pakiet kreatywny",
     "tabStory": "Komiksy fabularne",
@@ -180,10 +180,10 @@
     "copyGifBtn": "Kopiuj URL GIF",
     "downloadGifBtn": "Zapisz GIF",
     "copiedGifToast": "Skopiowano link do animowanego GIF-a.",
-    "stickerBannerDesc": "Foldery RGBA w gotowych rozmiarach dla Discorda i Slacka (128 px), Telegrama (512 px WebP/PNG) i WeChat (240 px) + stykówka promocyjna 4×7 na X.",
-    "promoSheetBtn": "Stykówka 4×7 ↗",
-    "storyBannerDesc": "Otwórz dedykowaną czytelnię /story/, by natychmiast przełączać między angielskim a 简体中文 i odsłuchać dwujęzyczny przegląd audio.",
-    "openStoryReader": "Otwórz czytelnię /story/ →"
+    "stickerBannerDesc": "Foldery z przezroczystymi plikami PNG i WebP w gotowych rozmiarach dla Discord, Slack, Telegram i WeChat. W 100% CC0.",
+    "promoSheetBtn": "Podejrzyj arkusz ↗",
+    "storyBannerDesc": "Przełącz dowolny z 18 języków na górnym pasku, aby zobaczyć komiksy w ojczystym języku, napisy na panelach i podcasty NotebookLM.",
+    "openStoryReader": "Otwórz /story/ →"
   },
   "mail": {
     "pageTitle": "Tmail · Publiczne archiwum (2023–2026)",

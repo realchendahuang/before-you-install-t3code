@@ -128,12 +128,12 @@
     if (activeSeries === "story") {
       el.innerHTML = `<div class="sb-left">
         <div>
-          <div class="sb-title">${escapeHtml(t("memes.storyBannerTitle", "Prefer vertical comic reading + NotebookLM Podcast?"))}</div>
-          <p class="sb-desc">${escapeHtml(t("memes.storyBannerDesc", "Open the dedicated /story/ reader for instant English / 简体中文 switching and bilingual audio overview."))}</p>
+          <div class="sb-title">${escapeHtml(t("memes.storyBannerTitle", "Read the comic + listen in 18 languages"))}</div>
+          <p class="sb-desc">${escapeHtml(t("memes.storyBannerDesc", "Switch any of the 18 languages from the top bar for native comics, panel subtitles, and NotebookLM podcasts."))}</p>
         </div>
       </div>
       <div class="sb-actions">
-        <a class="act-btn act-cobalt" href="../story/">${escapeHtml(t("memes.openStoryReader", "Open /story/ Reader →"))}</a>
+        <a class="act-btn act-cobalt" href="../story/">${escapeHtml(t("memes.openStoryReader", "Open /story/ →"))}</a>
       </div>`;
       el.hidden = false;
       return;
@@ -345,7 +345,7 @@
   async function init() {
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
     try {
-      const res = await fetch("../data/memes.json?v=4");
+      const res = await fetch("../data/memes.json?v=5");
       const data = await res.json();
       catalogMeta = data;
       allItems = Array.isArray(data.items) ? data.items : [];
