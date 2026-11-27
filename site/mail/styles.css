@@ -450,7 +450,7 @@ a:hover {
   font-weight: 500;
   cursor: pointer;
   outline: none;
-  max-width: 118px;
+  max-width: 164px;
 }
 .tile-gh { background: #24292f; }
 
@@ -2051,6 +2051,14 @@ a:hover {
 
   .jemini-pill {
     display: none;
+  }
+
+  .lang-picker-pill {
+    padding: 0 8px;
+  }
+
+  .tmail-lang-select {
+    max-width: 124px;
   }
 
   .workspace {

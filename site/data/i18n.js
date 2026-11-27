@@ -2,24 +2,24 @@
   "use strict";
 
   const LANGUAGES = [
-    { code: "en", name: "English", dir: "ltr" },
-    { code: "zh-CN", name: "简体中文", dir: "ltr" },
-    { code: "zh-TW", name: "繁體中文", dir: "ltr" },
-    { code: "fr", name: "Français", dir: "ltr" },
-    { code: "es", name: "Español", dir: "ltr" },
-    { code: "ru", name: "Русский", dir: "ltr" },
-    { code: "ar", name: "العربية", dir: "rtl" },
-    { code: "ja", name: "日本語", dir: "ltr" },
-    { code: "ko", name: "한국어", dir: "ltr" },
-    { code: "de", name: "Deutsch", dir: "ltr" },
-    { code: "pt-BR", name: "Português", dir: "ltr" },
-    { code: "it", name: "Italiano", dir: "ltr" },
-    { code: "nl", name: "Nederlands", dir: "ltr" },
-    { code: "pl", name: "Polski", dir: "ltr" },
-    { code: "tr", name: "Türkçe", dir: "ltr" },
-    { code: "vi", name: "Tiếng Việt", dir: "ltr" },
-    { code: "id", name: "Bahasa Indonesia", dir: "ltr" },
-    { code: "hi", name: "हिन्दी", dir: "ltr" }
+    { code: "en", flag: "🇺🇸", name: "English", dir: "ltr" },
+    { code: "zh-CN", flag: "🇨🇳", name: "简体中文", dir: "ltr" },
+    { code: "zh-TW", flag: "🇹🇼", name: "繁體中文", dir: "ltr" },
+    { code: "ja", flag: "🇯🇵", name: "日本語", dir: "ltr" },
+    { code: "ko", flag: "🇰🇷", name: "한국어", dir: "ltr" },
+    { code: "fr", flag: "🇫🇷", name: "Français", dir: "ltr" },
+    { code: "es", flag: "🇪🇸", name: "Español", dir: "ltr" },
+    { code: "de", flag: "🇩🇪", name: "Deutsch", dir: "ltr" },
+    { code: "pt-BR", flag: "🇧🇷", name: "Português", dir: "ltr" },
+    { code: "ru", flag: "🇷🇺", name: "Русский", dir: "ltr" },
+    { code: "ar", flag: "🇸🇦", name: "العربية", dir: "rtl" },
+    { code: "it", flag: "🇮🇹", name: "Italiano", dir: "ltr" },
+    { code: "nl", flag: "🇳🇱", name: "Nederlands", dir: "ltr" },
+    { code: "pl", flag: "🇵🇱", name: "Polski", dir: "ltr" },
+    { code: "tr", flag: "🇹🇷", name: "Türkçe", dir: "ltr" },
+    { code: "vi", flag: "🇻🇳", name: "Tiếng Việt", dir: "ltr" },
+    { code: "id", flag: "🇮🇩", name: "Bahasa Indonesia", dir: "ltr" },
+    { code: "hi", flag: "🇮🇳", name: "हिन्दी", dir: "ltr" }
   ];
 
   const VALID_CODES = new Set(LANGUAGES.map((l) => l.code));
@@ -41,18 +41,18 @@
   }
 
   function detectInitialLang() {
+    // 1. Explicit ?lang= query param applies only to the current view (never poisons localStorage).
     try {
       const p = new URLSearchParams(window.location.search).get("lang");
       const fromParam = normalizeLang(p);
-      if (fromParam) {
-        try { localStorage.setItem("temu3-lang", fromParam); } catch (_) {}
-        return fromParam;
-      }
+      if (fromParam) return fromParam;
     } catch (_) {}
+    // 2. Explicit user selection saved from the language dropdown.
     try {
       const saved = normalizeLang(localStorage.getItem("temu3-lang"));
       if (saved) return saved;
     } catch (_) {}
+    // 3. Browser preferred language list; falls back strictly to English ("en").
     try {
       const navList = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
       for (const n of navList) {
@@ -96,8 +96,9 @@
   function mountLangSelect(selectEl, initialCode, onChange) {
     if (!selectEl) return;
     selectEl.innerHTML = LANGUAGES.map(
-      (l) => `<option value="${l.code}">${l.name}</option>`
+      (l) => `<option value="${l.code}" lang="${l.code}">${l.flag} ${l.name}</option>`
     ).join("");
+    selectEl.title = "Language";
     selectEl.value = normalizeLang(initialCode) || "en";
     selectEl.addEventListener("change", () => {
       const next = normalizeLang(selectEl.value) || "en";
