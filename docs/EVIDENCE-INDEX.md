@@ -19,8 +19,8 @@
 
 | ID | Part | File | Dimensions & Size | Factual Description & Cited Location |
 |---|---|---|---|---|
-| `EV-001` | Banner (EN) | [`00-cover-en.png`](../evidence/00-cover-en.png) | `1800×766` · `420.8 KB` | English 18-Part Independent Audit cover banner (`README.md`). See [README](../README.md). |
-| `EV-002` | Chinese Edition | [`00-cover-zh.png`](../evidence/00-cover-zh.png) | `1800×766` · `424.8 KB` | Chinese edition audit cover banner (*T3 Code 18弹全档案 — 源码审计全记录*). Used in [`README.zh-CN.md`](./i18n/README.zh-CN.md). |
+| `EV-001` | Banner (EN) | [`00-cover-en.png`](../evidence/00-cover-en.png) | `1800×766` · `420.8 KB` | Legacy English 18-Part Audit cover banner (archived; removed from active READMEs). |
+| `EV-002` | Chinese Edition | [`00-cover-zh.png`](../evidence/00-cover-zh.png) | `1800×766` · `424.8 KB` | Legacy Chinese edition audit cover banner (archived; removed from active READMEs). |
 | `EV-003` | Origin 2 | [`01-origin-theo-threat.png`](../evidence/01-origin-theo-threat.png) | `1400×1142` · `365.2 KB` | `@theo`'s Nov 23, 2026 public reply threatening to contact GitHub to take down `@DDdxx666`'s account over the MIT fork name. Cited in [Case #00](../cases/en/00-origin-fork-dispute-and-double-standard.md) and [Dossier 05](./dossiers/05-governance-trademark-and-history.md). |
 | `EV-004` | Part 1 | [`02-no-telemetry-removed.png`](../evidence/02-no-telemetry-removed.png) | `1200×900` · `167.4 KB` | Commit `3bdaa6e1` (June 18, 2026) silently deleting `"No telemetry / Unless you opt in. Full stop."` from the homepage after 3+ months of default telemetry. Cited in [Case #01](../cases/en/01-default-telemetry-and-cross-tool-tracking.md) and [Dossier 01](./dossiers/01-telemetry-and-gdpr-timeline.md). |
 | `EV-005` | Part 1 | [`03-identify-codex-claude.png`](../evidence/03-identify-codex-claude.png) | `1000×980` · `185.9 KB` | `apps/server/src/telemetry/Identify.ts` reading `~/.codex/auth.json` and `~/.claude.json` to emit unsalted SHA-256 cross-tool owner hashes. Cited in [Case #01](../cases/en/01-default-telemetry-and-cross-tool-tracking.md) and [Dossier 01](./dossiers/01-telemetry-and-gdpr-timeline.md). |

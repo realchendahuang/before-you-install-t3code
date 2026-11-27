@@ -38,8 +38,6 @@
   <a href="./README.hi.md">हिन्दी</a>
 </p>
 
-![Antes de instalar o T3 Code](../../evidence/00-cover-en.png)
-
 > [!IMPORTANT]
 > **Investigação independente de registro público · 18 idiomas**
 >
@@ -49,7 +47,6 @@
 > - **Evidência primária:** 109 comprovantes visuais · 327 URLs canônicas
 > - **Verificação upstream:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **Avisos de segurança:** 0 GitHub Security Advisories publicados
-
 
 <!-- origin-story:start -->
 > [!TIP]

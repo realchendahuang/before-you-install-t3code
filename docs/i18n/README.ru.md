@@ -38,8 +38,6 @@
   <a href="./README.hi.md">हिन्दी</a>
 </p>
 
-![Прежде чем установить T3 Code](../../evidence/00-cover-en.png)
-
 > [!IMPORTANT]
 > **Независимое публичное расследование · 18 языков**
 >
@@ -49,7 +47,6 @@
 > - **Первичные доказательства:** 109 визуальных свидетельств · 327 канонических URL
 > - **Проверка upstream:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **Уведомления о безопасности:** 0 опубликованных GitHub Security Advisories
-
 
 <!-- origin-story:start -->
 > [!TIP]

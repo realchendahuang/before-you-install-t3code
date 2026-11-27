@@ -38,8 +38,6 @@
   <a href="./README.hi.md"><strong>हिन्दी</strong></a>
 </p>
 
-![T3 Code इंस्टॉल करने से पहले](../../evidence/00-cover-en.png)
-
 > [!IMPORTANT]
 > **स्वतंत्र सार्वजनिक-अभिलेख जाँच · 18 भाषाएँ**
 >
@@ -49,7 +47,6 @@
 > - **प्राथमिक साक्ष्य:** 109 दृश्य प्रमाण · 327 canonical URL
 > - **अपस्ट्रीम जाँच:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **सुरक्षा एडवाइज़री:** 0 प्रकाशित GitHub एडवाइज़री
-
 
 <!-- origin-story:start -->
 > [!TIP]

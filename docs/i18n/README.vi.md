@@ -38,8 +38,6 @@
   <a href="./README.hi.md">हिन्दी</a>
 </p>
 
-![Trước khi bạn cài T3 Code](../../evidence/00-cover-en.png)
-
 > [!IMPORTANT]
 > **Điều tra hồ sơ công khai độc lập · 18 ngôn ngữ**
 >
@@ -49,7 +47,6 @@
 > - **Chứng cứ sơ cấp:** 109 ảnh chứng cứ · 327 URL chuẩn
 > - **Kiểm tra upstream:** [`9d3195b4`](https://github.com/pingdotgg/t3code/commit/9d3195b49dfb0098e9fa592fe0ada5464206d1c2) → [`ca81b7b9`](https://github.com/pingdotgg/t3code/commit/ca81b7b97a1c4b91e5ac25768d0f6629f37732fd) (`+259` commits · 2026-11-25 14:49 CST)
 > - **Cảnh báo bảo mật:** 0 cảnh báo bảo mật GitHub được công bố
-
 
 <!-- origin-story:start -->
 > [!TIP]
