@@ -36,6 +36,29 @@ PROMO_MAX_DIM = 1600
 WEBP_QUALITY = 86
 STICKER_WEBP_QUALITY = 90
 STORY_WEBP_QUALITY = 88
+STORY_I18N_WEBP_QUALITY = 86
+PODCAST_MIN_BYTES = 50_000
+
+STORY_LANGUAGES = (
+    "en",
+    "zh-CN",
+    "zh-TW",
+    "ja",
+    "ko",
+    "fr",
+    "es",
+    "de",
+    "pt-BR",
+    "ru",
+    "ar",
+    "it",
+    "nl",
+    "pl",
+    "tr",
+    "vi",
+    "id",
+    "hi",
+)
 
 CASE_TO_THREAD = {
     "00": "2026-11-23-origin-temu3-threat",
@@ -1203,7 +1226,10 @@ def collect_sources() -> tuple[list[dict], list[dict]]:
                 )
             )
 
-    # 5. Bilingual 8-Episode 96-Hour Story Comics (1536px sharp speech bubbles: EN + ZH)
+    # 5. 18-Language 8-Episode 96-Hour Story Comics (1536px sharp speech bubbles)
+    # Keep gallery items[] strictly EN+ZH (counts["story"] == 16, total == 150);
+    # additional locales stage via extras[] into storyEpisodes[i]["media"].
+    story_i18n_dir = MEMES_DIR / "comic_96h_i18n"
     for ep_id, num, en_stem, zh_stem, kicker_en, kicker_zh in STORY_EPISODES_SPEC:
         ex, t_en, t_zh, n_en, n_zh = COMICS_96H_META.get(
             en_stem, ("00", f"Ep. {num}", f"第 {num} 话", "", "")
@@ -1246,6 +1272,25 @@ def collect_sources() -> tuple[list[dict], list[dict]]:
                     extra={"storyLang": "zh", "episode": num, "kickerEn": kicker_en, "kickerZh": kicker_zh},
                 )
             )
+        for s_lang in STORY_LANGUAGES:
+            if s_lang in ("en", "zh-CN"):
+                continue
+            i18n_src = story_i18n_dir / s_lang / f"{en_stem}_{s_lang}.png"
+            if i18n_src.is_file() and i18n_src.stat().st_size > 10_000:
+                extras.append({
+                    "kind": f"story_i18n_{s_lang}_{ep_id}",
+                    "assetGroup": "story_i18n",
+                    "episode": num,
+                    "epId": ep_id,
+                    "lang": s_lang,
+                    "srcPath": i18n_src,
+                    "r2Key": f"memes/story/{s_lang}/{en_stem}_{s_lang}.webp",
+                    "mode": "webp",
+                    "maxDim": STORY_MAX_DIM,
+                    "quality": STORY_I18N_WEBP_QUALITY,
+                    "contentType": "image/webp",
+                    "cacheControl": "public, max-age=31536000, immutable",
+                })
 
     # 6. Classic Receipt Memes
     classic_dir = MEMES_DIR / "classic_en"
@@ -1298,13 +1343,20 @@ def collect_sources() -> tuple[list[dict], list[dict]]:
                 )
             )
 
-    # 9. NotebookLM Podcasts (memes/podcasts/)
+    # 9. NotebookLM Podcasts across all 18 languages (memes/podcasts/)
     podcasts_dir = MEMES_DIR / "podcasts"
-    for p_lang, fname in (("en", "temu3code-96h-en.mp3"), ("zh", "temu3code-96h-zh.mp3")):
+    for p_lang in STORY_LANGUAGES:
+        if p_lang == "en":
+            fname = "temu3code-96h-en.mp3"
+        elif p_lang == "zh-CN":
+            fname = "temu3code-96h-zh.mp3"
+        else:
+            fname = f"temu3code-96h-{p_lang}.mp3"
         mp3_path = podcasts_dir / fname
-        if mp3_path.is_file() and mp3_path.stat().st_size > 10_000:
+        if mp3_path.is_file() and mp3_path.stat().st_size > PODCAST_MIN_BYTES:
             extras.append({
                 "kind": f"podcast_{p_lang}",
+                "assetGroup": "podcast",
                 "lang": p_lang,
                 "srcPath": mp3_path,
                 "r2Key": f"audio/{fname}",
@@ -1482,16 +1534,41 @@ def main() -> int:
     zip_meta = extras_by_kind.get("sticker_zip")
     promo_meta = extras_by_kind.get("promo_sheet")
 
+    story_i18n_by_ep: dict[int, dict[str, dict]] = {}
+    podcasts_by_lang: dict[str, dict] = {}
+    for e in extras:
+        grp = e.get("assetGroup")
+        if grp == "story_i18n":
+            story_i18n_by_ep.setdefault(e["episode"], {})[e["lang"]] = {
+                "url": e["url"],
+                "width": e["width"],
+                "height": e["height"],
+                "bytes": e["bytes"],
+            }
+        elif grp == "podcast":
+            podcasts_by_lang[e["lang"]] = e
+
     story_episodes = []
     for ep_id, num, en_stem, _zh_stem, kicker_en, kicker_zh in STORY_EPISODES_SPEC:
         ep_media = story_by_ep.get(num, {})
-        if not ep_media:
+        ep_i18n = story_i18n_by_ep.get(num, {})
+        if not ep_media and not ep_i18n:
             continue
         ex, raw_t_en, raw_t_zh, n_en, n_zh = COMICS_96H_META.get(
             en_stem, ("00", f"Ep. {num}", f"第 {num} 话", "", "")
         )
         clean_t_en = re.sub(r"^96h Comic Ep\.\d+:\s*", "", raw_t_en)
         clean_t_zh = re.sub(r"^96 小时连载第 \d+ 话：", "", raw_t_zh)
+
+        media_map: dict[str, dict] = {}
+        for s_lang in STORY_LANGUAGES:
+            if s_lang == "en" and ep_media.get("en"):
+                media_map["en"] = ep_media["en"]
+            elif s_lang == "zh-CN" and ep_media.get("zh"):
+                media_map["zh-CN"] = ep_media["zh"]
+            elif s_lang in ep_i18n:
+                media_map[s_lang] = ep_i18n[s_lang]
+
         ep_obj = {
             "num": num,
             "id": ep_id,
@@ -1505,26 +1582,26 @@ def main() -> int:
             "summaryZh": n_zh,
             "en": ep_media.get("en"),
             "zh": ep_media.get("zh"),
+            "media": media_map,
         }
         if ex in CASE_TO_SOURCE_URL:
             ep_obj["sourceUrl"] = CASE_TO_SOURCE_URL[ex]
         story_episodes.append(ep_obj)
 
-    podcasts: dict[str, dict | None] = {"en": None, "zh": None}
-    for p_lang, title_en, title_zh in (
-        ("en", "The 96 Hours After One Block (English · NotebookLM)", "一次拉黑之后的 96 小时（英文播客 · NotebookLM）"),
-        ("zh", "The 96 Hours After One Block (Chinese · NotebookLM)", "一次拉黑之后的 96 小时（中文播客 · NotebookLM）"),
-    ):
-        pm = extras_by_kind.get(f"podcast_{p_lang}")
-        if pm:
-            podcasts[p_lang] = {
-                "url": pm["url"],
-                "bytes": pm["bytes"],
-                "durationSec": pm.get("durationSec"),
-                "durationText": pm.get("durationText") or "",
-                "titleEn": title_en,
-                "titleZh": title_zh,
-            }
+    podcasts: dict[str, dict] = {}
+    for p_lang in STORY_LANGUAGES:
+        pm = podcasts_by_lang.get(p_lang)
+        if not pm:
+            continue
+        rec = {
+            "url": pm["url"],
+            "bytes": pm["bytes"],
+            "durationSec": pm.get("durationSec"),
+            "durationText": pm.get("durationText") or "",
+        }
+        podcasts[p_lang] = rec
+        if p_lang == "zh-CN":
+            podcasts["zh"] = dict(rec)
 
     payload = {
         "cdnBase": CDN_BASE,
@@ -1540,10 +1617,16 @@ def main() -> int:
     }
     OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
     OUT_JSON.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+    story_lang_counts: dict[str, int] = {}
+    for ep_obj in story_episodes:
+        for s_lang in ep_obj.get("media", {}):
+            story_lang_counts[s_lang] = story_lang_counts.get(s_lang, 0) + 1
+
     print(
         f"Wrote {OUT_JSON.relative_to(ROOT)} "
         f"(total={len(out_items)}, counts={counts}, episodes={len(story_episodes)}, "
-        f"podcasts={ {k: bool(v) for k, v in podcasts.items()} })"
+        f"storyLangs={story_lang_counts}, podcasts={list(podcasts.keys())})"
     )
     return 0
 

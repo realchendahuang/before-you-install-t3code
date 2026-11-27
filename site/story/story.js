@@ -5,17 +5,14 @@
   let lang = I18N.detectInitialLang();
   let bundle = null;
   let episodes = [];
-  let podcasts = { en: null, zh: null };
+  let podcasts = {};
+  let storySubtitles = {};
   let stickerZipUrl = "https://cdn.temu3code.com/stickers/theo-rage-stickers-pack.zip";
   let lbIndex = -1;
   let observer = null;
 
   function isZhLang(code) {
     return code === "zh-CN" || code === "zh-TW";
-  }
-
-  function mediaLang() {
-    return isZhLang(lang) ? "zh" : "en";
   }
 
   function t(path, fallback = "") {
@@ -80,10 +77,68 @@
   }
 
   function getEpAsset(ep) {
-    const wantZh = mediaLang() === "zh";
-    const pick = wantZh ? (ep.zh || ep.en) : (ep.en || ep.zh);
-    const actualLang = (wantZh && ep.zh) ? "zh" : (ep.en ? "en" : "zh");
-    return { asset: pick, actualLang };
+    const media = (ep && ep.media && typeof ep.media === "object") ? ep.media : {};
+    const enAsset = media.en || ep.en || null;
+    const zhCnAsset = media["zh-CN"] || ep.zh || null;
+
+    if (lang === "zh-CN") {
+      if (zhCnAsset && zhCnAsset.url) {
+        return { asset: zhCnAsset, actualLang: "zh-CN", isNativeComic: true };
+      }
+      return { asset: enAsset, actualLang: "en", isNativeComic: false };
+    }
+
+    if (lang === "zh-TW") {
+      const zhTwAsset = media["zh-TW"] || null;
+      if (zhTwAsset && zhTwAsset.url) {
+        return { asset: zhTwAsset, actualLang: "zh-TW", isNativeComic: true };
+      }
+      if (zhCnAsset && zhCnAsset.url) {
+        return { asset: zhCnAsset, actualLang: "zh-CN", isNativeComic: false };
+      }
+      return { asset: enAsset, actualLang: "en", isNativeComic: false };
+    }
+
+    const exactAsset = media[lang] || (lang === "en" ? ep.en : null);
+    if (exactAsset && exactAsset.url) {
+      return { asset: exactAsset, actualLang: lang, isNativeComic: true };
+    }
+
+    if (enAsset && enAsset.url) {
+      return { asset: enAsset, actualLang: "en", isNativeComic: false };
+    }
+    return { asset: zhCnAsset, actualLang: "zh-CN", isNativeComic: false };
+  }
+
+  function getPodcastTrack() {
+    const p = podcasts || {};
+    const enTrack = p.en || null;
+    const zhCnTrack = p["zh-CN"] || p.zh || null;
+
+    if (lang === "zh-CN") {
+      if (zhCnTrack && zhCnTrack.url) return { track: zhCnTrack, actualLang: "zh-CN" };
+    } else if (lang === "zh-TW") {
+      if (p["zh-TW"] && p["zh-TW"].url) return { track: p["zh-TW"], actualLang: "zh-TW" };
+      if (zhCnTrack && zhCnTrack.url) return { track: zhCnTrack, actualLang: "zh-CN" };
+    } else if (p[lang] && p[lang].url) {
+      return { track: p[lang], actualLang: lang };
+    }
+
+    if (enTrack && enTrack.url) return { track: enTrack, actualLang: "en" };
+    if (zhCnTrack && zhCnTrack.url) return { track: zhCnTrack, actualLang: "zh-CN" };
+    return { track: null, actualLang: "en" };
+  }
+
+  function getEpSubtitles(ep) {
+    const byLang = storySubtitles && storySubtitles[lang];
+    if (byLang && Array.isArray(byLang[ep.id]) && byLang[ep.id].length) {
+      return byLang[ep.id];
+    }
+    const enFallback = storySubtitles && storySubtitles.en;
+    if (enFallback && Array.isArray(enFallback[ep.id]) && enFallback[ep.id].length) {
+      return enFallback[ep.id];
+    }
+    return null;
   }
 
   function getEpTitle(ep) {
@@ -102,9 +157,7 @@
     const dl = document.getElementById("podDownloadBtn");
     if (!card || !audio) return;
 
-    const want = mediaLang();
-    const track = (want === "zh" ? podcasts.zh : podcasts.en) || podcasts.en || podcasts.zh;
-    const actual = track === podcasts.zh ? "zh" : "en";
+    const { track, actualLang } = getPodcastTrack();
     if (!track || !track.url) {
       card.hidden = true;
       return;
@@ -126,7 +179,7 @@
 
     if (dl) {
       dl.href = track.url;
-      dl.setAttribute("download", actual === "zh" ? "temu3code-96h-zh.mp3" : "temu3code-96h-en.mp3");
+      dl.setAttribute("download", `temu3code-96h-${actualLang}.mp3`);
     }
   }
 
@@ -162,6 +215,31 @@
     cards.forEach((c) => observer.observe(c));
   }
 
+  function renderSubtitlesBlock(ep, idx, panels, isOpenByDefault) {
+    if (!panels || !panels.length) return "";
+    const cells = panels
+      .map((panel, pIdx) => {
+        const pNum = String(panel.p || (pIdx + 1)).padStart(2, "0");
+        const tagHtml = panel.tag ? `<span class="ep-sub-tag">${escapeHtml(panel.tag)}</span>` : "";
+        const linesHtml = (Array.isArray(panel.lines) ? panel.lines : [])
+          .filter((ln) => ln !== null && ln !== undefined && String(ln).trim() !== "")
+          .map((ln) => `<p class="ep-sub-line">${escapeHtml(ln)}</p>`)
+          .join("");
+        return `<div class="ep-sub-panel">
+          <div class="ep-sub-head">
+            <span class="ep-sub-num">${escapeHtml(pNum)}</span>
+            ${tagHtml}
+          </div>
+          <div class="ep-sub-lines">${linesHtml}</div>
+        </div>`;
+      })
+      .join("");
+
+    return `<div id="subs-${escapeHtml(ep.id)}" class="ep-subs" data-ep-subs="${idx}"${isOpenByDefault ? "" : " hidden"}>
+      ${cells}
+    </div>`;
+  }
+
   function renderEpisodes() {
     renderPills();
     const host = document.getElementById("storyReader");
@@ -179,7 +257,7 @@
 
     host.innerHTML = episodes
       .map((ep, idx) => {
-        const { asset } = getEpAsset(ep);
+        const { asset, isNativeComic } = getEpAsset(ep);
         if (!asset || !asset.url) return "";
         const title = getEpTitle(ep);
         const epNum = String(ep.num).padStart(2, "0");
@@ -187,6 +265,14 @@
         const shareUrl = encodeURIComponent(`https://temu3code.com/story/#${ep.id}`);
         const srcHref = ep.sourceUrl || `../mail/?thread=${encodeURIComponent(ep.thread)}`;
         const srcAttrs = ep.sourceUrl ? ' target="_blank" rel="noopener noreferrer"' : "";
+
+        const panels = getEpSubtitles(ep);
+        const subsOpen = !isNativeComic && Boolean(panels);
+        const subsHtml = renderSubtitlesBlock(ep, idx, panels, subsOpen);
+        const ccBtnHtml = panels
+          ? `<button type="button" class="act-btn act-cc${subsOpen ? " is-active" : ""}" data-toggle-subs="${idx}" aria-controls="subs-${escapeHtml(ep.id)}" aria-expanded="${subsOpen ? "true" : "false"}" aria-label="CC">CC</button>`
+          : "";
+
         return `<article id="${escapeHtml(ep.id)}" class="ep-card">
           <div class="ep-head">
             <span class="ep-num">${escapeHtml(epNum)}</span>
@@ -197,12 +283,14 @@
               <img src="${escapeHtml(asset.url)}" alt="${escapeHtml(title)}" width="${asset.width || 1024}" height="${asset.height || 1536}" loading="${idx === 0 ? "eager" : "lazy"}" crossorigin="anonymous" />
             </div>
           </button>
+          ${subsHtml}
           <div class="ep-foot">
             <div class="ep-actions">
               <button type="button" class="act-btn" data-open-lb="${idx}">${escapeHtml(zoomTxt)}</button>
               <button type="button" class="act-btn act-primary" data-copy-idx="${idx}">${escapeHtml(copyTxt)}</button>
               <button type="button" class="act-btn" data-dl-idx="${idx}">${escapeHtml(dlTxt)}</button>
               <a class="act-btn" href="https://x.com/intent/tweet?text=${shareMsg}&url=${shareUrl}" target="_blank" rel="noopener noreferrer">${escapeHtml(shareTxt)}</a>
+              ${ccBtnHtml}
               <a class="act-btn act-cobalt" href="${escapeHtml(srcHref)}"${srcAttrs}>${escapeHtml(receiptTxt)} #${escapeHtml(ep.exhibit)} →</a>
             </div>
           </div>
@@ -288,21 +376,34 @@
   async function init() {
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
 
-    try {
-      const res = await fetch("../data/memes.json?v=3");
-      if (res.ok) {
-        const data = await res.json();
+    const [memesRes, subsRes] = await Promise.all([
+      fetch("../data/memes.json?v=4").catch(() => null),
+      fetch("../data/story-subtitles.json?v=1").catch(() => null),
+    ]);
+
+    if (memesRes && memesRes.ok) {
+      try {
+        const data = await memesRes.json();
         episodes = Array.isArray(data.storyEpisodes) ? data.storyEpisodes : [];
         if (data.podcasts && typeof data.podcasts === "object") {
-          podcasts = { en: data.podcasts.en || null, zh: data.podcasts.zh || null };
+          podcasts = { ...data.podcasts };
         }
         if (data.stickerZipUrl) {
           stickerZipUrl = data.stickerZipUrl;
           const zipBtn = document.getElementById("storyZipBtn");
           if (zipBtn) zipBtn.href = stickerZipUrl;
         }
-      }
-    } catch (_) {}
+      } catch (_) {}
+    }
+
+    if (subsRes && subsRes.ok) {
+      try {
+        const subsData = await subsRes.json();
+        if (subsData && typeof subsData === "object") {
+          storySubtitles = subsData;
+        }
+      } catch (_) {}
+    }
 
     await applyLanguage(lang);
 
@@ -314,6 +415,18 @@
   }
 
   document.getElementById("storyReader").addEventListener("click", (e) => {
+    const ccBtn = e.target.closest("[data-toggle-subs]");
+    if (ccBtn) {
+      const idx = ccBtn.getAttribute("data-toggle-subs");
+      const box = document.querySelector(`[data-ep-subs="${idx}"]`);
+      if (box) {
+        const willOpen = box.hidden;
+        box.hidden = !willOpen;
+        ccBtn.classList.toggle("is-active", willOpen);
+        ccBtn.setAttribute("aria-expanded", willOpen ? "true" : "false");
+      }
+      return;
+    }
     const openBtn = e.target.closest("[data-open-lb]");
     if (openBtn) { openLightbox(Number(openBtn.getAttribute("data-open-lb"))); return; }
     const copyBtn = e.target.closest("[data-copy-idx]");

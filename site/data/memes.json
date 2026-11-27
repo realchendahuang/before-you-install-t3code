@@ -37,6 +37,104 @@
         "width": 1024,
         "height": 1536,
         "bytes": 384414
+      },
+      "media": {
+        "en": {
+          "url": "https://cdn.temu3code.com/memes/story/en/ep01_11_hours_apart.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 393056
+        },
+        "zh-CN": {
+          "url": "https://cdn.temu3code.com/memes/story/zh/ep01_11_hours_apart_zh.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 384414
+        },
+        "zh-TW": {
+          "url": "https://cdn.temu3code.com/memes/story/zh-TW/ep01_11_hours_apart_zh-TW.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 358100
+        },
+        "ja": {
+          "url": "https://cdn.temu3code.com/memes/story/ja/ep01_11_hours_apart_ja.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 349584
+        },
+        "ko": {
+          "url": "https://cdn.temu3code.com/memes/story/ko/ep01_11_hours_apart_ko.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 341906
+        },
+        "fr": {
+          "url": "https://cdn.temu3code.com/memes/story/fr/ep01_11_hours_apart_fr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 368742
+        },
+        "es": {
+          "url": "https://cdn.temu3code.com/memes/story/es/ep01_11_hours_apart_es.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 363802
+        },
+        "de": {
+          "url": "https://cdn.temu3code.com/memes/story/de/ep01_11_hours_apart_de.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 366936
+        },
+        "pt-BR": {
+          "url": "https://cdn.temu3code.com/memes/story/pt-BR/ep01_11_hours_apart_pt-BR.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 361452
+        },
+        "ru": {
+          "url": "https://cdn.temu3code.com/memes/story/ru/ep01_11_hours_apart_ru.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 364670
+        },
+        "it": {
+          "url": "https://cdn.temu3code.com/memes/story/it/ep01_11_hours_apart_it.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 363806
+        },
+        "nl": {
+          "url": "https://cdn.temu3code.com/memes/story/nl/ep01_11_hours_apart_nl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 362176
+        },
+        "pl": {
+          "url": "https://cdn.temu3code.com/memes/story/pl/ep01_11_hours_apart_pl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 364330
+        },
+        "tr": {
+          "url": "https://cdn.temu3code.com/memes/story/tr/ep01_11_hours_apart_tr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 364356
+        },
+        "vi": {
+          "url": "https://cdn.temu3code.com/memes/story/vi/ep01_11_hours_apart_vi.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 359244
+        },
+        "id": {
+          "url": "https://cdn.temu3code.com/memes/story/id/ep01_11_hours_apart_id.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 361914
+        }
       }
     },
     {
@@ -61,6 +159,104 @@
         "width": 1024,
         "height": 1536,
         "bytes": 358462
+      },
+      "media": {
+        "en": {
+          "url": "https://cdn.temu3code.com/memes/story/en/ep02_worst_block_click.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 364492
+        },
+        "zh-CN": {
+          "url": "https://cdn.temu3code.com/memes/story/zh/ep02_worst_block_click_zh.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 358462
+        },
+        "zh-TW": {
+          "url": "https://cdn.temu3code.com/memes/story/zh-TW/ep02_worst_block_click_zh-TW.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 335894
+        },
+        "ja": {
+          "url": "https://cdn.temu3code.com/memes/story/ja/ep02_worst_block_click_ja.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 326446
+        },
+        "ko": {
+          "url": "https://cdn.temu3code.com/memes/story/ko/ep02_worst_block_click_ko.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 317680
+        },
+        "fr": {
+          "url": "https://cdn.temu3code.com/memes/story/fr/ep02_worst_block_click_fr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 336352
+        },
+        "es": {
+          "url": "https://cdn.temu3code.com/memes/story/es/ep02_worst_block_click_es.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 334272
+        },
+        "de": {
+          "url": "https://cdn.temu3code.com/memes/story/de/ep02_worst_block_click_de.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 341852
+        },
+        "pt-BR": {
+          "url": "https://cdn.temu3code.com/memes/story/pt-BR/ep02_worst_block_click_pt-BR.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 335464
+        },
+        "ru": {
+          "url": "https://cdn.temu3code.com/memes/story/ru/ep02_worst_block_click_ru.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 337910
+        },
+        "it": {
+          "url": "https://cdn.temu3code.com/memes/story/it/ep02_worst_block_click_it.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 334990
+        },
+        "nl": {
+          "url": "https://cdn.temu3code.com/memes/story/nl/ep02_worst_block_click_nl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 336512
+        },
+        "pl": {
+          "url": "https://cdn.temu3code.com/memes/story/pl/ep02_worst_block_click_pl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 336654
+        },
+        "tr": {
+          "url": "https://cdn.temu3code.com/memes/story/tr/ep02_worst_block_click_tr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 337008
+        },
+        "vi": {
+          "url": "https://cdn.temu3code.com/memes/story/vi/ep02_worst_block_click_vi.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 334576
+        },
+        "id": {
+          "url": "https://cdn.temu3code.com/memes/story/id/ep02_worst_block_click_id.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 335740
+        }
       }
     },
     {
@@ -85,6 +281,104 @@
         "width": 1024,
         "height": 1536,
         "bytes": 398596
+      },
+      "media": {
+        "en": {
+          "url": "https://cdn.temu3code.com/memes/story/en/ep03_no_telemetry_full_stop.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 394250
+        },
+        "zh-CN": {
+          "url": "https://cdn.temu3code.com/memes/story/zh/ep03_no_telemetry_full_stop_zh.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 398596
+        },
+        "zh-TW": {
+          "url": "https://cdn.temu3code.com/memes/story/zh-TW/ep03_no_telemetry_full_stop_zh-TW.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 386244
+        },
+        "ja": {
+          "url": "https://cdn.temu3code.com/memes/story/ja/ep03_no_telemetry_full_stop_ja.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 357078
+        },
+        "ko": {
+          "url": "https://cdn.temu3code.com/memes/story/ko/ep03_no_telemetry_full_stop_ko.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 348794
+        },
+        "fr": {
+          "url": "https://cdn.temu3code.com/memes/story/fr/ep03_no_telemetry_full_stop_fr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 367542
+        },
+        "es": {
+          "url": "https://cdn.temu3code.com/memes/story/es/ep03_no_telemetry_full_stop_es.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 373434
+        },
+        "de": {
+          "url": "https://cdn.temu3code.com/memes/story/de/ep03_no_telemetry_full_stop_de.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 368550
+        },
+        "pt-BR": {
+          "url": "https://cdn.temu3code.com/memes/story/pt-BR/ep03_no_telemetry_full_stop_pt-BR.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 375162
+        },
+        "ru": {
+          "url": "https://cdn.temu3code.com/memes/story/ru/ep03_no_telemetry_full_stop_ru.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 366552
+        },
+        "it": {
+          "url": "https://cdn.temu3code.com/memes/story/it/ep03_no_telemetry_full_stop_it.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 361038
+        },
+        "nl": {
+          "url": "https://cdn.temu3code.com/memes/story/nl/ep03_no_telemetry_full_stop_nl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 370050
+        },
+        "pl": {
+          "url": "https://cdn.temu3code.com/memes/story/pl/ep03_no_telemetry_full_stop_pl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 368428
+        },
+        "tr": {
+          "url": "https://cdn.temu3code.com/memes/story/tr/ep03_no_telemetry_full_stop_tr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 365482
+        },
+        "vi": {
+          "url": "https://cdn.temu3code.com/memes/story/vi/ep03_no_telemetry_full_stop_vi.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 363236
+        },
+        "id": {
+          "url": "https://cdn.temu3code.com/memes/story/id/ep03_no_telemetry_full_stop_id.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 359586
+        }
       }
     },
     {
@@ -109,6 +403,104 @@
         "width": 1024,
         "height": 1536,
         "bytes": 400618
+      },
+      "media": {
+        "en": {
+          "url": "https://cdn.temu3code.com/memes/story/en/ep04_western_medicine_gdpr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 407156
+        },
+        "zh-CN": {
+          "url": "https://cdn.temu3code.com/memes/story/zh/ep04_western_medicine_gdpr_zh.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 400618
+        },
+        "zh-TW": {
+          "url": "https://cdn.temu3code.com/memes/story/zh-TW/ep04_western_medicine_gdpr_zh-TW.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 379890
+        },
+        "ja": {
+          "url": "https://cdn.temu3code.com/memes/story/ja/ep04_western_medicine_gdpr_ja.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 378848
+        },
+        "ko": {
+          "url": "https://cdn.temu3code.com/memes/story/ko/ep04_western_medicine_gdpr_ko.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 355296
+        },
+        "fr": {
+          "url": "https://cdn.temu3code.com/memes/story/fr/ep04_western_medicine_gdpr_fr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 386546
+        },
+        "es": {
+          "url": "https://cdn.temu3code.com/memes/story/es/ep04_western_medicine_gdpr_es.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 385516
+        },
+        "de": {
+          "url": "https://cdn.temu3code.com/memes/story/de/ep04_western_medicine_gdpr_de.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 384354
+        },
+        "pt-BR": {
+          "url": "https://cdn.temu3code.com/memes/story/pt-BR/ep04_western_medicine_gdpr_pt-BR.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 384292
+        },
+        "ru": {
+          "url": "https://cdn.temu3code.com/memes/story/ru/ep04_western_medicine_gdpr_ru.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 380692
+        },
+        "it": {
+          "url": "https://cdn.temu3code.com/memes/story/it/ep04_western_medicine_gdpr_it.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 377322
+        },
+        "nl": {
+          "url": "https://cdn.temu3code.com/memes/story/nl/ep04_western_medicine_gdpr_nl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 385416
+        },
+        "pl": {
+          "url": "https://cdn.temu3code.com/memes/story/pl/ep04_western_medicine_gdpr_pl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 385134
+        },
+        "tr": {
+          "url": "https://cdn.temu3code.com/memes/story/tr/ep04_western_medicine_gdpr_tr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 381712
+        },
+        "vi": {
+          "url": "https://cdn.temu3code.com/memes/story/vi/ep04_western_medicine_gdpr_vi.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 382084
+        },
+        "id": {
+          "url": "https://cdn.temu3code.com/memes/story/id/ep04_western_medicine_gdpr_id.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 380748
+        }
       }
     },
     {
@@ -133,6 +525,104 @@
         "width": 1024,
         "height": 1536,
         "bytes": 327560
+      },
+      "media": {
+        "en": {
+          "url": "https://cdn.temu3code.com/memes/story/en/ep05_3h30_retirement.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 318440
+        },
+        "zh-CN": {
+          "url": "https://cdn.temu3code.com/memes/story/zh/ep05_3h30_retirement_zh.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 327560
+        },
+        "zh-TW": {
+          "url": "https://cdn.temu3code.com/memes/story/zh-TW/ep05_3h30_retirement_zh-TW.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 312594
+        },
+        "ja": {
+          "url": "https://cdn.temu3code.com/memes/story/ja/ep05_3h30_retirement_ja.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 299262
+        },
+        "ko": {
+          "url": "https://cdn.temu3code.com/memes/story/ko/ep05_3h30_retirement_ko.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 286112
+        },
+        "fr": {
+          "url": "https://cdn.temu3code.com/memes/story/fr/ep05_3h30_retirement_fr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 313238
+        },
+        "es": {
+          "url": "https://cdn.temu3code.com/memes/story/es/ep05_3h30_retirement_es.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 311286
+        },
+        "de": {
+          "url": "https://cdn.temu3code.com/memes/story/de/ep05_3h30_retirement_de.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 313834
+        },
+        "pt-BR": {
+          "url": "https://cdn.temu3code.com/memes/story/pt-BR/ep05_3h30_retirement_pt-BR.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 311782
+        },
+        "ru": {
+          "url": "https://cdn.temu3code.com/memes/story/ru/ep05_3h30_retirement_ru.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 313506
+        },
+        "it": {
+          "url": "https://cdn.temu3code.com/memes/story/it/ep05_3h30_retirement_it.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 305628
+        },
+        "nl": {
+          "url": "https://cdn.temu3code.com/memes/story/nl/ep05_3h30_retirement_nl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 307672
+        },
+        "pl": {
+          "url": "https://cdn.temu3code.com/memes/story/pl/ep05_3h30_retirement_pl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 312166
+        },
+        "tr": {
+          "url": "https://cdn.temu3code.com/memes/story/tr/ep05_3h30_retirement_tr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 310774
+        },
+        "vi": {
+          "url": "https://cdn.temu3code.com/memes/story/vi/ep05_3h30_retirement_vi.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 305810
+        },
+        "id": {
+          "url": "https://cdn.temu3code.com/memes/story/id/ep05_3h30_retirement_id.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 306900
+        }
       }
     },
     {
@@ -157,6 +647,104 @@
         "width": 1024,
         "height": 1536,
         "bytes": 333310
+      },
+      "media": {
+        "en": {
+          "url": "https://cdn.temu3code.com/memes/story/en/ep06_89_views_fear.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 343022
+        },
+        "zh-CN": {
+          "url": "https://cdn.temu3code.com/memes/story/zh/ep06_89_views_fear_zh.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 333310
+        },
+        "zh-TW": {
+          "url": "https://cdn.temu3code.com/memes/story/zh-TW/ep06_89_views_fear_zh-TW.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 316996
+        },
+        "ja": {
+          "url": "https://cdn.temu3code.com/memes/story/ja/ep06_89_views_fear_ja.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 317378
+        },
+        "ko": {
+          "url": "https://cdn.temu3code.com/memes/story/ko/ep06_89_views_fear_ko.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 304588
+        },
+        "fr": {
+          "url": "https://cdn.temu3code.com/memes/story/fr/ep06_89_views_fear_fr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 320070
+        },
+        "es": {
+          "url": "https://cdn.temu3code.com/memes/story/es/ep06_89_views_fear_es.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 327300
+        },
+        "de": {
+          "url": "https://cdn.temu3code.com/memes/story/de/ep06_89_views_fear_de.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 323418
+        },
+        "pt-BR": {
+          "url": "https://cdn.temu3code.com/memes/story/pt-BR/ep06_89_views_fear_pt-BR.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 320824
+        },
+        "ru": {
+          "url": "https://cdn.temu3code.com/memes/story/ru/ep06_89_views_fear_ru.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 325904
+        },
+        "it": {
+          "url": "https://cdn.temu3code.com/memes/story/it/ep06_89_views_fear_it.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 319868
+        },
+        "nl": {
+          "url": "https://cdn.temu3code.com/memes/story/nl/ep06_89_views_fear_nl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 323034
+        },
+        "pl": {
+          "url": "https://cdn.temu3code.com/memes/story/pl/ep06_89_views_fear_pl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 322468
+        },
+        "tr": {
+          "url": "https://cdn.temu3code.com/memes/story/tr/ep06_89_views_fear_tr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 322442
+        },
+        "vi": {
+          "url": "https://cdn.temu3code.com/memes/story/vi/ep06_89_views_fear_vi.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 321970
+        },
+        "id": {
+          "url": "https://cdn.temu3code.com/memes/story/id/ep06_89_views_fear_id.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 321374
+        }
       },
       "sourceUrl": "https://x.com/realchendahuang/status/2126204776467853346"
     },
@@ -183,6 +771,104 @@
         "height": 1536,
         "bytes": 366654
       },
+      "media": {
+        "en": {
+          "url": "https://cdn.temu3code.com/memes/story/en/ep07_hi_im_zed_11_browsers.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 372904
+        },
+        "zh-CN": {
+          "url": "https://cdn.temu3code.com/memes/story/zh/ep07_hi_im_zed_11_browsers_zh.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 366654
+        },
+        "zh-TW": {
+          "url": "https://cdn.temu3code.com/memes/story/zh-TW/ep07_hi_im_zed_11_browsers_zh-TW.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 344426
+        },
+        "ja": {
+          "url": "https://cdn.temu3code.com/memes/story/ja/ep07_hi_im_zed_11_browsers_ja.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 338198
+        },
+        "ko": {
+          "url": "https://cdn.temu3code.com/memes/story/ko/ep07_hi_im_zed_11_browsers_ko.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 328382
+        },
+        "fr": {
+          "url": "https://cdn.temu3code.com/memes/story/fr/ep07_hi_im_zed_11_browsers_fr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 345868
+        },
+        "es": {
+          "url": "https://cdn.temu3code.com/memes/story/es/ep07_hi_im_zed_11_browsers_es.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 348384
+        },
+        "de": {
+          "url": "https://cdn.temu3code.com/memes/story/de/ep07_hi_im_zed_11_browsers_de.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 346748
+        },
+        "pt-BR": {
+          "url": "https://cdn.temu3code.com/memes/story/pt-BR/ep07_hi_im_zed_11_browsers_pt-BR.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 348912
+        },
+        "ru": {
+          "url": "https://cdn.temu3code.com/memes/story/ru/ep07_hi_im_zed_11_browsers_ru.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 342774
+        },
+        "it": {
+          "url": "https://cdn.temu3code.com/memes/story/it/ep07_hi_im_zed_11_browsers_it.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 344576
+        },
+        "nl": {
+          "url": "https://cdn.temu3code.com/memes/story/nl/ep07_hi_im_zed_11_browsers_nl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 342114
+        },
+        "pl": {
+          "url": "https://cdn.temu3code.com/memes/story/pl/ep07_hi_im_zed_11_browsers_pl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 346984
+        },
+        "tr": {
+          "url": "https://cdn.temu3code.com/memes/story/tr/ep07_hi_im_zed_11_browsers_tr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 350906
+        },
+        "vi": {
+          "url": "https://cdn.temu3code.com/memes/story/vi/ep07_hi_im_zed_11_browsers_vi.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 342462
+        },
+        "id": {
+          "url": "https://cdn.temu3code.com/memes/story/id/ep07_hi_im_zed_11_browsers_id.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 342040
+        }
+      },
       "sourceUrl": "https://x.com/realchendahuang/status/2126228292231659944"
     },
     {
@@ -208,6 +894,104 @@
         "height": 1536,
         "bytes": 336732
       },
+      "media": {
+        "en": {
+          "url": "https://cdn.temu3code.com/memes/story/en/ep08_slophouse_finale.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 338520
+        },
+        "zh-CN": {
+          "url": "https://cdn.temu3code.com/memes/story/zh/ep08_slophouse_finale_zh.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 336732
+        },
+        "zh-TW": {
+          "url": "https://cdn.temu3code.com/memes/story/zh-TW/ep08_slophouse_finale_zh-TW.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 315928
+        },
+        "ja": {
+          "url": "https://cdn.temu3code.com/memes/story/ja/ep08_slophouse_finale_ja.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 315038
+        },
+        "ko": {
+          "url": "https://cdn.temu3code.com/memes/story/ko/ep08_slophouse_finale_ko.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 301400
+        },
+        "fr": {
+          "url": "https://cdn.temu3code.com/memes/story/fr/ep08_slophouse_finale_fr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 328752
+        },
+        "es": {
+          "url": "https://cdn.temu3code.com/memes/story/es/ep08_slophouse_finale_es.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 325204
+        },
+        "de": {
+          "url": "https://cdn.temu3code.com/memes/story/de/ep08_slophouse_finale_de.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 321246
+        },
+        "pt-BR": {
+          "url": "https://cdn.temu3code.com/memes/story/pt-BR/ep08_slophouse_finale_pt-BR.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 325902
+        },
+        "ru": {
+          "url": "https://cdn.temu3code.com/memes/story/ru/ep08_slophouse_finale_ru.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 315472
+        },
+        "it": {
+          "url": "https://cdn.temu3code.com/memes/story/it/ep08_slophouse_finale_it.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 321598
+        },
+        "nl": {
+          "url": "https://cdn.temu3code.com/memes/story/nl/ep08_slophouse_finale_nl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 322996
+        },
+        "pl": {
+          "url": "https://cdn.temu3code.com/memes/story/pl/ep08_slophouse_finale_pl.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 318016
+        },
+        "tr": {
+          "url": "https://cdn.temu3code.com/memes/story/tr/ep08_slophouse_finale_tr.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 320484
+        },
+        "vi": {
+          "url": "https://cdn.temu3code.com/memes/story/vi/ep08_slophouse_finale_vi.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 314484
+        },
+        "id": {
+          "url": "https://cdn.temu3code.com/memes/story/id/ep08_slophouse_finale_id.webp",
+          "width": 1024,
+          "height": 1536,
+          "bytes": 319316
+        }
+      },
       "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078"
     }
   ],
@@ -216,17 +1000,115 @@
       "url": "https://cdn.temu3code.com/audio/temu3code-96h-en.mp3",
       "bytes": 21978519,
       "durationSec": 1373.6,
-      "durationText": "22:54",
-      "titleEn": "The 96 Hours After One Block (English · NotebookLM)",
-      "titleZh": "一次拉黑之后的 96 小时（英文播客 · NotebookLM）"
+      "durationText": "22:54"
+    },
+    "zh-CN": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-zh.mp3",
+      "bytes": 18227336,
+      "durationSec": 1139.1,
+      "durationText": "18:59"
     },
     "zh": {
       "url": "https://cdn.temu3code.com/audio/temu3code-96h-zh.mp3",
       "bytes": 18227336,
       "durationSec": 1139.1,
-      "durationText": "18:59",
-      "titleEn": "The 96 Hours After One Block (Chinese · NotebookLM)",
-      "titleZh": "一次拉黑之后的 96 小时（中文播客 · NotebookLM）"
+      "durationText": "18:59"
+    },
+    "zh-TW": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-zh-TW.mp3",
+      "bytes": 18971721,
+      "durationSec": 1185.7,
+      "durationText": "19:46"
+    },
+    "ja": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-ja.mp3",
+      "bytes": 17359234,
+      "durationSec": 1084.9,
+      "durationText": "18:05"
+    },
+    "ko": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-ko.mp3",
+      "bytes": 14016815,
+      "durationSec": 876.0,
+      "durationText": "14:36"
+    },
+    "fr": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-fr.mp3",
+      "bytes": 14524217,
+      "durationSec": 907.7,
+      "durationText": "15:08"
+    },
+    "es": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-es.mp3",
+      "bytes": 16338578,
+      "durationSec": 1021.1,
+      "durationText": "17:01"
+    },
+    "de": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-de.mp3",
+      "bytes": 15836191,
+      "durationSec": 989.7,
+      "durationText": "16:30"
+    },
+    "pt-BR": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-pt-BR.mp3",
+      "bytes": 24904651,
+      "durationSec": 1556.5,
+      "durationText": "25:56"
+    },
+    "ru": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-ru.mp3",
+      "bytes": 13205556,
+      "durationSec": 825.3,
+      "durationText": "13:45"
+    },
+    "ar": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-ar.mp3",
+      "bytes": 13019564,
+      "durationSec": 813.7,
+      "durationText": "13:34"
+    },
+    "it": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-it.mp3",
+      "bytes": 14277203,
+      "durationSec": 892.2,
+      "durationText": "14:52"
+    },
+    "nl": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-nl.mp3",
+      "bytes": 15241435,
+      "durationSec": 952.5,
+      "durationText": "15:52"
+    },
+    "pl": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-pl.mp3",
+      "bytes": 20845014,
+      "durationSec": 1302.7,
+      "durationText": "21:43"
+    },
+    "tr": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-tr.mp3",
+      "bytes": 15294934,
+      "durationSec": 955.8,
+      "durationText": "15:56"
+    },
+    "vi": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-vi.mp3",
+      "bytes": 10771780,
+      "durationSec": 673.2,
+      "durationText": "11:13"
+    },
+    "id": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-id.mp3",
+      "bytes": 13883486,
+      "durationSec": 867.6,
+      "durationText": "14:28"
+    },
+    "hi": {
+      "url": "https://cdn.temu3code.com/audio/temu3code-96h-hi.mp3",
+      "bytes": 16077771,
+      "durationSec": 1004.8,
+      "durationText": "16:45"
     }
   },
   "items": [
