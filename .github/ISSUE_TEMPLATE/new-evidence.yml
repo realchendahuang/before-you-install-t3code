@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        All submissions must follow [CONTRIBUTING.md](https://github.com/realchendahuang/before-you-install-t3code/blob/main/CONTRIBUTING.md): verifiable primary sources only, canonical `https://` URLs (zero X redirect shortlinks), and zero private personal information.
+        All submissions must follow [CONTRIBUTING.md](https://github.com/realchendahuang/temu3code/blob/main/CONTRIBUTING.md): verifiable primary sources only, canonical `https://` URLs (zero X redirect shortlinks), and zero private personal information.
   - type: input
     id: target-domain
     attributes:

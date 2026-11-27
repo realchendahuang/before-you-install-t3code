@@ -1,0 +1,1353 @@
+[
+  {
+    "id": "EV-001",
+    "path": "evidence/00-cover-en.png",
+    "part": "Origin",
+    "parts": [
+      "Origin"
+    ],
+    "title": "Audit Cover Banner (English)",
+    "caption": "Before You Install T3 Code — 18-part independent audit banner.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/README.md",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EV-002",
+    "path": "evidence/00-cover-zh.png",
+    "part": "Origin",
+    "parts": [
+      "Origin"
+    ],
+    "title": "Audit Cover Banner (Chinese Editions)",
+    "caption": "Chinese-language audit banner archived for zh-CN / zh-TW editions.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/i18n/README.zh-CN.md",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EV-003",
+    "path": "evidence/01-origin-theo-threat.png",
+    "part": "Origin",
+    "parts": [
+      "Origin",
+      "Part 15"
+    ],
+    "title": "Public GitHub Account Takedown Threat",
+    "caption": "Theo's Nov 23, 2026 post demanding an MIT fork author rename immediately or have their GitHub account taken down.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2124829315657576890"
+  },
+  {
+    "id": "EV-004",
+    "path": "evidence/extra/p1-3-maria-t3libre.png",
+    "part": "Origin",
+    "parts": [
+      "Origin",
+      "Part 15"
+    ],
+    "title": "Employee Public Fork maria-rcks/t3libre",
+    "caption": "T3 team member @maria_rcks hosting a public fork named maria-rcks/t3libre ('T3 Code, liberated') without takedown threats.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EV-005",
+    "path": "evidence/extra/p1-4-github-t3code-search.png",
+    "part": "Origin",
+    "parts": [
+      "Origin",
+      "Part 15"
+    ],
+    "title": "GitHub Search for English-Named t3code Forks",
+    "caption": "GitHub search results showing numerous English-language forks and tools using t3code / T3 Code in their names.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EV-006",
+    "path": "evidence/extra/p1-5-x-get-better-lawyer.png",
+    "part": "Part 15",
+    "parts": [
+      "Origin",
+      "Part 15"
+    ],
+    "title": "\"Get a better lawyer\" Tweet (3h Before TRADEMARK.md)",
+    "caption": "Theo mocking compliance reviews 3 hours before merging TRADEMARK.md and issuing trademark claims.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2125026423769555308"
+  },
+  {
+    "id": "EV-007",
+    "path": "evidence/02-no-telemetry-removed.png",
+    "part": "Part 1",
+    "parts": [
+      "Part 1"
+    ],
+    "title": "Commit 3bdaa6e1 Deletes \"No telemetry\" Promise",
+    "caption": "Commit 3bdaa6e1 on June 18, 2026 silently deleting \"No telemetry / Unless you opt in. Full stop.\" after 3+ months of default collection.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/commit/3bdaa6e10046945ccc08264d2d6f3b81775efcb3"
+  },
+  {
+    "id": "EV-008",
+    "path": "evidence/03-identify-codex-claude.png",
+    "part": "Part 1",
+    "parts": [
+      "Part 1"
+    ],
+    "title": "Identify.ts Cross-Tool Credential Hashing",
+    "caption": "Identify.ts reading ~/.codex/auth.json and ~/.claude.json to transmit unsalted SHA-256 owner hashes across tools.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/Identify.ts"
+  },
+  {
+    "id": "EV-009",
+    "path": "evidence/extra/t3code-5-pr-21506-theo-owner-tracking.png",
+    "part": "Part 1",
+    "parts": [
+      "Part 1"
+    ],
+    "title": "PR #21506 Cross-Install Owner Tracking",
+    "caption": "PR #21506 authored by t3dotgg introducing installId and cross-tool owner attribution.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/21506"
+  },
+  {
+    "id": "EV-010",
+    "path": "evidence/04-issue1397-no-optout.png",
+    "part": "Part 1",
+    "parts": [
+      "Part 1"
+    ],
+    "title": "Issue #1397 Closed as Not Planned",
+    "caption": "Maintainer Julius closing Issue #1397 and stating they will not make opting out easier.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/issues/1397"
+  },
+  {
+    "id": "EV-011",
+    "path": "evidence/extra/t3code-4-pr-27077-rejected.png",
+    "part": "Part 1",
+    "parts": [
+      "Part 1"
+    ],
+    "title": "PR #27077 Rejected as Unwanted (147 Passing Tests)",
+    "caption": "Community opt-out PR #27077 closed unmerged as unwanted despite 147 passing tests and Macroscope approval.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/27077"
+  },
+  {
+    "id": "EV-012",
+    "path": "evidence/05-telemetry-cant-disable.png",
+    "part": "Part 7",
+    "parts": [
+      "Part 1",
+      "Part 7"
+    ],
+    "title": "docs/user/telemetry.md Documented Blind Spots",
+    "caption": "Official docs confirming hosted web app has no toggle, mobile is outside Managed Policy, and Publish agent activity ignores opt-outs.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/docs/user/telemetry.md"
+  },
+  {
+    "id": "EV-013",
+    "path": "evidence/extra/p5-1-x-theo-managed-policy.png",
+    "part": "Part 7",
+    "parts": [
+      "Part 7"
+    ],
+    "title": "Theo Managed Policy Claim (Nov 24 19:13 CST)",
+    "caption": "Theo claiming Managed Policy is trivial to configure and \"turns off all telemetry\".",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://x.com/theo/status/2125186071357251715"
+  },
+  {
+    "id": "EV-014",
+    "path": "evidence/extra/p5-2-x-theo-never-touches-servers.png",
+    "part": "Part 7",
+    "parts": [
+      "Part 7"
+    ],
+    "title": "\"Never touches any of our servers\" Claim",
+    "caption": "Theo claiming on Nov 24 at 19:36 CST that conversation data never touches T3 servers.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://x.com/theo/status/2125191784859115766"
+  },
+  {
+    "id": "EV-015",
+    "path": "evidence/extra/p5-4-doc-managed-policy-paths.png",
+    "part": "Part 7",
+    "parts": [
+      "Part 7"
+    ],
+    "title": "docs/user/managed-policy.md Admin Paths",
+    "caption": "Official Managed Policy docs requiring admin/root paths across macOS, Windows HKLM, and Linux.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/docs/user/managed-policy.md"
+  },
+  {
+    "id": "EV-016",
+    "path": "evidence/06-pr42450-absolute-path.jpg",
+    "part": "Part 11",
+    "parts": [
+      "Part 11"
+    ],
+    "title": "PR #42450 git.cwd Absolute Path Leak",
+    "caption": "Merged 90m after denial: confirms relay webhook runs exported git.cwd workspace paths, usernames, and repo names to Axiom.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/42450"
+  },
+  {
+    "id": "EV-017",
+    "path": "evidence/extra/x-post11-2-pr42376-windows-optout.jpg",
+    "part": "Part 11",
+    "parts": [
+      "Part 11"
+    ],
+    "title": "PR #42376 Ignored Windows Opt-Out Env Var",
+    "caption": "PR #42376 admitting Windows desktop ignored saved T3CODE_TELEMETRY_ENABLED=false user environment variables.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/42376"
+  },
+  {
+    "id": "EV-018",
+    "path": "evidence/extra/x-post11-3-pr42464-mac-shell-env.jpg",
+    "part": "Part 11",
+    "parts": [
+      "Part 11"
+    ],
+    "title": "PR #42464 Ignored macOS ~/.zshrc Opt-Out",
+    "caption": "PR #42464 admitting macOS first-launch relay tracing ignored ~/.zshrc opt-outs for the entire session.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/42464"
+  },
+  {
+    "id": "EV-019",
+    "path": "evidence/extra/x-post11-4-dump-264-claude-records.jpg",
+    "part": "Part 11",
+    "parts": [
+      "Part 11"
+    ],
+    "title": "100MB Dump Audit: 264 Live Claude Records",
+    "caption": "Forensic check of events.clean.jsonl showing 264 Claude records linking 4 machines plus verbatim private proxy model names.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://files.tslop.org/2026/11/t3code-telemetry-events-jsonl-a4896cdc.gz"
+  },
+  {
+    "id": "EV-020",
+    "path": "evidence/08-pr42380-220w-ip-axiom.jpg",
+    "part": "Part 12",
+    "parts": [
+      "Part 12"
+    ],
+    "title": "PR #42380: 2.2M/hr IP + UA Spans in Axiom",
+    "caption": "PR #42380 revealing relay spans logged real caller IPs and User-Agent next to user.id at ~2.2M spans/hour for 30 days.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/42380"
+  },
+  {
+    "id": "EV-021",
+    "path": "evidence/09-pr42285-delete-account-leftover.jpg",
+    "part": "Part 12",
+    "parts": [
+      "Part 12"
+    ],
+    "title": "PR #42285 Broken Account Deletion",
+    "caption": "PR #42285 admitting Clerk deletion left PlanetScale relay rows and active Cloudflare tunnels until manual SQL cleanup.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/42285"
+  },
+  {
+    "id": "EV-022",
+    "path": "evidence/extra/x-post12-3-pr42459-android-fcm-leak.jpg",
+    "part": "Part 12",
+    "parts": [
+      "Part 12"
+    ],
+    "title": "PR #42459 Android FCM Plaintext user_id Leak",
+    "caption": "PR #42459 confirming Android FCM notifications previously transmitted plaintext Clerk user_id values to Google.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/42459"
+  },
+  {
+    "id": "EV-023",
+    "path": "evidence/extra/x-post12-4-pr42466-anonymous-batch.jpg",
+    "part": "Part 12",
+    "parts": [
+      "Part 12"
+    ],
+    "title": "PR #42466 Mixed Anonymous Feedback Batches",
+    "caption": "PR #42466 admitting anonymous agent.feedback events were batched in the same POST alongside installId and host fingerprints.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/42466"
+  },
+  {
+    "id": "EV-024",
+    "path": "evidence/10-issue17845-fake-delete.png",
+    "part": "Part 2",
+    "parts": [
+      "Part 2"
+    ],
+    "title": "Issue #17845 Fake SQLite Thread Deletion",
+    "caption": "Permanently deleted sidebar threads remain in statev2.sqlite, causing 25.9–41.6 GB disk bloat.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/issues/17845"
+  },
+  {
+    "id": "EV-025",
+    "path": "evidence/extra/t3code-9-issue-11222-process-spy.png",
+    "part": "Part 2",
+    "parts": [
+      "Part 2"
+    ],
+    "title": "Issue #11222 Full-Machine Process Scanner",
+    "caption": "t3-resource-monitor scanning every OS process every 5s with command-line arguments and ~280–300 persistent handles.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/issues/11222"
+  },
+  {
+    "id": "EV-026",
+    "path": "evidence/extra/t3code-6-pr-5551-reality-check.png",
+    "part": "Part 2",
+    "parts": [
+      "Part 2",
+      "Part 9"
+    ],
+    "title": "PR #5551 Hiding Build/Plan (\"Reality check\")",
+    "caption": "PR #5551 burying the Build/Plan toggle with a telemetry chart captioned 'Reality check for those upset' (10 downvotes).",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/5551"
+  },
+  {
+    "id": "EV-027",
+    "path": "evidence/extra/t3code-7-pr-33131-ai-brainrot.png",
+    "part": "Part 2",
+    "parts": [
+      "Part 2",
+      "Part 9"
+    ],
+    "title": "PR #33131 Deleting Plan Mode",
+    "caption": "PR #33131 deleting Plan mode with an AI summary claiming it could revert 'if usage data says to keep it'.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/33131"
+  },
+  {
+    "id": "EV-028",
+    "path": "evidence/22-contributing-vouched-ban.png",
+    "part": "Part 2",
+    "parts": [
+      "Part 2",
+      "Part 9"
+    ],
+    "title": "CONTRIBUTING.md & .github/VOUCHED.td Bans",
+    "caption": "CONTRIBUTING.md (\"here's my advice: Don't\") routing PR disputes to public denouncement bans in .github/VOUCHED.td.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/CONTRIBUTING.md"
+  },
+  {
+    "id": "EV-029",
+    "path": "evidence/11-issue15353-auto-force-push.png",
+    "part": "Part 3",
+    "parts": [
+      "Part 3",
+      "Part 13"
+    ],
+    "title": "Issue #15353 Silent git push --force",
+    "caption": "Claude Auto mode silently approves git push --force origin main on 3rd attempt with no UI confirmation (52+ days open).",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/issues/15353"
+  },
+  {
+    "id": "EV-030",
+    "path": "evidence/extra/t3code-15-pr-41237-slophouse-drop-filter.png",
+    "part": "Part 3",
+    "parts": [
+      "Part 3"
+    ],
+    "title": "PR #41237 Drops Model Filter in 21 Hours",
+    "caption": "PR #41237 merged 21h after Issue #40948 dropping model privacy filtering for slopalytics.com.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/41237"
+  },
+  {
+    "id": "EV-031",
+    "path": "evidence/extra/t3code-13-pr-39483-secret-traversal.png",
+    "part": "Part 3",
+    "parts": [
+      "Part 3",
+      "Part 13"
+    ],
+    "title": "PR #39483 Silent ServerSecretStore Path Traversal Fix",
+    "caption": "Silently patches ServerSecretStore jti/nonce path traversal before device approval without a Security Advisory.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/39483"
+  },
+  {
+    "id": "EV-032",
+    "path": "evidence/extra/t3code-14-pr-30997-powershell-av.png",
+    "part": "Part 3",
+    "parts": [
+      "Part 3",
+      "Part 13"
+    ],
+    "title": "PR #30997 Base64 PowerShell AV Flag",
+    "caption": "Open PR addressing externalLauncher.ts spawning PowerShell -ExecutionPolicy Bypass -EncodedCommand flagged by AV.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/30997"
+  },
+  {
+    "id": "EV-033",
+    "path": "evidence/extra/t3code-12-issue-33639-theo-insult.png",
+    "part": "Part 3",
+    "parts": [
+      "Part 3",
+      "Part 9"
+    ],
+    "title": "Issue #33639 Maintainer Insult to User",
+    "caption": "Theo telling complaining user @bermudi to uninstall and calling him an 'ungrateful prick' (PR #41572 rejected next morning).",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/issues/33639#issuecomment-6765462545"
+  },
+  {
+    "id": "EV-034",
+    "path": "evidence/extra/x-post05-4-security-md-intended.jpg",
+    "part": "Part 13",
+    "parts": [
+      "Part 3",
+      "Part 5",
+      "Part 13"
+    ],
+    "title": "SECURITY.md Intended Trust Boundaries",
+    "caption": "SECURITY.md declaring OS-wide filesystem reads, plain iOS HTTP, and full machine takeover via relay key compromise as intended.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/SECURITY.md"
+  },
+  {
+    "id": "EV-035",
+    "path": "evidence/26-cn-cesspit.png",
+    "part": "Part 13",
+    "parts": [
+      "Part 13",
+      "Part 14",
+      "Part 16"
+    ],
+    "title": "Nov 24 \"Chinese Tech Twitter Cesspit\" Outburst",
+    "caption": "Theo calling Chinese tech Twitter \"the biggest fucking cesspit\" and Chinese audit readers \"fucking braindead\".",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": "https://x.com/theo/status/2125177503526588877"
+  },
+  {
+    "id": "EV-036",
+    "path": "evidence/12-antigravity-v1internal-spoof.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4"
+    ],
+    "title": "antigravityUsageLimits.ts Spoofed Header & v1internal",
+    "caption": "Hardcodes antigravity/hub/2.24.0 User-Agent and hits undocumented Google v1internal endpoints with OS-extracted tokens.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L20-L45"
+  },
+  {
+    "id": "EV-037",
+    "path": "evidence/extra/t3code-18b-code-v1internal-call.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4"
+    ],
+    "title": "antigravityUsageLimits.ts Direct v1internal POST",
+    "caption": "Direct HttpClientRequest.post(`${endpoint}/v1internal:${operation}`) using OS keyring/CredReadW bearer token.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts#L445-L476"
+  },
+  {
+    "id": "EV-038",
+    "path": "evidence/13-antigravity-ssh-spoof.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4"
+    ],
+    "title": "antigravityAuthSupport.ts Forged SSH_CONNECTION",
+    "caption": "Injects fake SSH_CONNECTION='127.0.0.1 0 127.0.0.1 0' to bypass Google CLI keyring isolation (caused #41973 cross-talk).",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityAuthSupport.ts#L230-L236"
+  },
+  {
+    "id": "EV-039",
+    "path": "evidence/14-issue41536-fresh-ban.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4"
+    ],
+    "title": "Issue #41536: Fresh $20 Account Banned in 3 Minutes",
+    "caption": "Zero-proxy fresh $20 Google AI subscription banned on first message 3 minutes after setup; closed as duplicate.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/issues/41536"
+  },
+  {
+    "id": "EV-040",
+    "path": "evidence/extra/t3code-16-faq-tos-guarantee.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4"
+    ],
+    "title": "docs/user/faq.md Antigravity ToS Guarantee",
+    "caption": "Official FAQ assuring users: \"T3 Code is within the TOS of Claude Code, Codex, and Google Antigravity... you can trust it is safe.\"",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/docs/user/faq.md#will-i-get-banned-for-using-my-subscription"
+  },
+  {
+    "id": "EV-041",
+    "path": "evidence/extra/t3code-17-issue-40713-lie-and-bust.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4"
+    ],
+    "title": "Issue #40713 Maintainer Denial Challenged",
+    "caption": "Maintainer claiming T3 Code never calls Antigravity backend directly before users posted exact source paths.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/issues/40713"
+  },
+  {
+    "id": "EV-042",
+    "path": "evidence/extra/t3code-17b-issue-40713-schlessera-bust.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4"
+    ],
+    "title": "Issue #40713 Developer schlessera Code Rebuttal",
+    "caption": "Developer schlessera refuting maintainer claims with direct source links to antigravityUsageLimits.ts.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/issues/40713"
+  },
+  {
+    "id": "EV-043",
+    "path": "evidence/extra/t3code-20-pr-26876-spoof-zed.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4"
+    ],
+    "title": "PR #26876 Client Masquerading as Zed",
+    "caption": "PR #26876 merged by t3dotgg renaming client identifier to 'zed' to bypass Antigravity model whitelists.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/26876"
+  },
+  {
+    "id": "EV-044",
+    "path": "evidence/extra/p2-2-pr33800-cliproxy-agy.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4",
+      "Part 17"
+    ],
+    "title": "PR #33800 CLIProxyAPI Hub Integration",
+    "caption": "Merged PR #33800 natively wiring CLIProxyAPI hub polling for Antigravity, xAI, and Claude into T3 Code.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/33800"
+  },
+  {
+    "id": "EV-045",
+    "path": "evidence/extra/p2-1a-cliproxy-claude.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4",
+      "Part 17"
+    ],
+    "title": "cliproxyApi.ts Spoofed Claude Code Headers",
+    "caption": "cliproxyApi.ts sending hardcoded claude-code/2.1.273 and Antigravity headers during hub quota polling.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts"
+  },
+  {
+    "id": "EV-046",
+    "path": "evidence/extra/p2-1b-cliproxy-xai-agy.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4",
+      "Part 17"
+    ],
+    "title": "cliproxyApi.ts Spoofed xAI & Antigravity Polling",
+    "caption": "cliproxyApi.ts lines 348–393 polling xAI (grok-cli/1.0.77) and Antigravity v1internal quotas.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/apps/server/src/usage/cliproxyApi.ts"
+  },
+  {
+    "id": "EV-047",
+    "path": "evidence/extra/p2-5-x-theo-not-cliproxy.png",
+    "part": "Part 4",
+    "parts": [
+      "Part 4"
+    ],
+    "title": "\"Not with cliproxy right?\" Reply to Disabled Account",
+    "caption": "Theo blaming CLIProxy when user @Only_21Mil reported a second disabled Google AI Ultra account on Nov 23.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://x.com/theo/status/2124703048140517397"
+  },
+  {
+    "id": "EV-048",
+    "path": "evidence/15-connect-no-e2e.jpg",
+    "part": "Part 5",
+    "parts": [
+      "Part 5"
+    ],
+    "title": "Issue #32098 T3 Connect Lacks E2E Encryption",
+    "caption": "Maintainer confirms compromised relay key or cloud account can control linked machines and closes E2E request.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/issues/32098#issuecomment-6869049926"
+  },
+  {
+    "id": "EV-049",
+    "path": "evidence/extra/x-post05-3-managed-endpoint-provider.jpg",
+    "part": "Part 5",
+    "parts": [
+      "Part 5"
+    ],
+    "title": "ManagedEndpointProvider.ts Cloudflare Tunneling",
+    "caption": "ManagedEndpointProvider.ts provisioning Cloudflare Tunnels & DNS records inside T3's own Cloudflare account.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/infra/relay/src/environments/ManagedEndpointProvider.ts"
+  },
+  {
+    "id": "EV-050",
+    "path": "evidence/16-pr32945-ovh-caddy-gateway.jpg",
+    "part": "Part 5",
+    "parts": [
+      "Part 5"
+    ],
+    "title": "PR #32945 OVH Hillsboro Caddy Plaintext Gateway",
+    "caption": "Theo's PR citing $25k/mo Cloudflare Tunnel cost and moving to self-hosted OVH Caddy TLS termination (zero E2E).",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/32945"
+  },
+  {
+    "id": "EV-051",
+    "path": "evidence/18-theo-vibe-kanban.png",
+    "part": "Part 6",
+    "parts": [
+      "Part 6"
+    ],
+    "title": "Vibe Kanban Investor Overlap & Shutdown Mockery",
+    "caption": "Theo disclosing he invested in and contributed to Vibe Kanban before publicly mocking its shutdown.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2122201981167251877"
+  },
+  {
+    "id": "EV-052",
+    "path": "evidence/extra/p4-2-x-theo-daytona-investor.png",
+    "part": "Part 6",
+    "parts": [
+      "Part 6"
+    ],
+    "title": "Daytona & Cloud-Sandbox Angel Overlap",
+    "caption": "Theo confirming on Nov 18 his angel investments in Daytona and most of its cloud-sandbox competitors.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2123011578090127499"
+  },
+  {
+    "id": "EV-053",
+    "path": "evidence/extra/p4-3-x-theo-paid-cloud-sandboxes.png",
+    "part": "Part 6",
+    "parts": [
+      "Part 6"
+    ],
+    "title": "Paid Cloud Sandboxes Proposal inside T3 Code",
+    "caption": "Theo floating paid cloud sandboxes inside T3 Code on Nov 9, nine days before the Daytona disclosure.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2119705561679933806"
+  },
+  {
+    "id": "EV-054",
+    "path": "evidence/extra/p6-1-x-theo-800k-cost.png",
+    "part": "Part 8",
+    "parts": [
+      "Part 8"
+    ],
+    "title": "$800k+ Out-of-Pocket Client Spend Disclosure",
+    "caption": "Theo stating on Nov 12, 2026 that T3 Code has cost $800k+ to build as a free client.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2120729779511124267"
+  },
+  {
+    "id": "EV-055",
+    "path": "evidence/17-theo-31t-tokens-10m-day.png",
+    "part": "Part 8",
+    "parts": [
+      "Part 8"
+    ],
+    "title": "31.7T Tokens / $10.19M Daily Compute Radar",
+    "caption": "Theo's internal T3 Code analytics dashboard showing 31.7 trillion tokens and $10.19M equivalent daily API spend.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2122860770329608290"
+  },
+  {
+    "id": "EV-056",
+    "path": "evidence/extra/p6-5-x-theo-98pct-usage.png",
+    "part": "Part 8",
+    "parts": [
+      "Part 8"
+    ],
+    "title": "~98.5% Three-Lab Usage Split Disclosure",
+    "caption": "Theo disclosing ~98.5% of all T3 Code usage comes from Codex, Claude, and Antigravity.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2123965784888377541"
+  },
+  {
+    "id": "EV-057",
+    "path": "evidence/extra/p6-3-x-theo-my-analytics.png",
+    "part": "Part 8",
+    "parts": [
+      "Part 8"
+    ],
+    "title": "Mocking Outsider Without Analytics Access",
+    "caption": "Theo mocking a commenter for guessing shares without access to his internal T3 Code analytics.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2124682906132181482"
+  },
+  {
+    "id": "EV-058",
+    "path": "evidence/extra/p6-4-x-theo-investors.png",
+    "part": "Part 8",
+    "parts": [
+      "Part 8"
+    ],
+    "title": "Investor Acquisition Inquiries Reply",
+    "caption": "Theo telling @maria_rcks on Nov 21 that \"multiple investors have asked me about this\".",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2123885732330885417"
+  },
+  {
+    "id": "EV-059",
+    "path": "evidence/extra/p3-1-x-theo-patrick-many-prs.png",
+    "part": "Part 8",
+    "parts": [
+      "Part 8"
+    ],
+    "title": "Claiming DeepMind Engineer Landed \"Many PRs\"",
+    "caption": "Theo claiming Google DeepMind's Patrick Toulme \"has landed many PRs on T3 Code\".",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EV-060",
+    "path": "evidence/extra/p3-2-patrick-only-1-commit.png",
+    "part": "Part 8",
+    "parts": [
+      "Part 8"
+    ],
+    "title": "Git Log Shows Only 1 Patrick Toulme Commit",
+    "caption": "pingdotgg/t3code main commit log filtered by patrick-toulme showing only 1 commit (PR #31158).",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/31158"
+  },
+  {
+    "id": "EV-061",
+    "path": "evidence/extra/p7-1-x-theo-nukes-machine.png",
+    "part": "Part 9",
+    "parts": [
+      "Part 9"
+    ],
+    "title": "\"If it nukes my machine that's free content\"",
+    "caption": "Theo writing on Nov 10, 2026: 'I need results fast because I have to film, and if it nukes my machine that's free content'.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2119993037971730879"
+  },
+  {
+    "id": "EV-062",
+    "path": "evidence/extra/p7-2-x-theo-yolo-merges.png",
+    "part": "Part 9",
+    "parts": [
+      "Part 9"
+    ],
+    "title": "\"My yolo merges breaking shit sometimes\"",
+    "caption": "Theo telling nightly build users on Nov 10, 2026 to expect 'my yolo merges breaking shit sometimes'.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2119951615679672513"
+  },
+  {
+    "id": "EV-063",
+    "path": "evidence/extra/p7-3-x-theo-unfollow-pr.png",
+    "part": "Part 9",
+    "parts": [
+      "Part 9"
+    ],
+    "title": "Gatekeeping Contributor Over X Follow",
+    "caption": "Theo turning away an eager contributor with CONTRIBUTING.md on Nov 12 because they didn't follow him.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2120821423438778667"
+  },
+  {
+    "id": "EV-064",
+    "path": "evidence/extra/p7-4-x-theo-take-it-away.png",
+    "part": "Part 9",
+    "parts": [
+      "Part 9"
+    ],
+    "title": "Threatening to Remove /btw From Users",
+    "caption": "Theo warning critics on Nov 12: 'I already caved for y'all with /btw, be careful. I am not afraid to take it away.'",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2120853340078874923"
+  },
+  {
+    "id": "EV-065",
+    "path": "evidence/extra/p7-5-x-theo-pic-over-pr.png",
+    "part": "Part 9",
+    "parts": [
+      "Part 9"
+    ],
+    "title": "\"Annotated Screenshot Over a PR Any Day\"",
+    "caption": "Theo stating on Nov 20, 2026 that he would take an annotated screenshot over an open-source PR 'literally any day'.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2123754193530053110"
+  },
+  {
+    "id": "EV-066",
+    "path": "evidence/23-stealing-fork-bot.png",
+    "part": "Part 10",
+    "parts": [
+      "Part 10"
+    ],
+    "title": "\"Okay I'm stealing this\" + @bot Fork Scraping",
+    "caption": "Theo replying 'Okay I'm stealing this' and tagging @bot 30s later to scrape @MiaAI_lab's fork onto beebox.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2119240810202034645"
+  },
+  {
+    "id": "EV-067",
+    "path": "evidence/extra/p8-4b-x-theo-copy-other-tools.png",
+    "part": "Part 10",
+    "parts": [
+      "Part 10"
+    ],
+    "title": "@bot Clones Rival Tools' Praised Features",
+    "caption": "Theo dispatching @bot on Nov 13, 2026 to break every praised feature from rival tools into separate T3 Code threads.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2121017649652269120"
+  },
+  {
+    "id": "EV-068",
+    "path": "evidence/extra/p8-4c-x-theo-mock-copying.png",
+    "part": "Part 10",
+    "parts": [
+      "Part 10"
+    ],
+    "title": "Mocking Claude Code Desktop Sidebar Tabs",
+    "caption": "Theo mocking Claude Code Desktop's sidebar tabs on Nov 24, 2026 after dispatching @bot against rivals.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2124987957803446311"
+  },
+  {
+    "id": "EV-069",
+    "path": "evidence/extra/p8-2-x-theo-demonetize-cn.png",
+    "part": "Part 10",
+    "parts": [
+      "Part 10"
+    ],
+    "title": "Community Notes Demonetization Call",
+    "caption": "Theo calling on followers on Nov 11, 2026 to use Community Notes to demonetize critics.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2120238923884696025"
+  },
+  {
+    "id": "EV-070",
+    "path": "evidence/extra/p8-3-x-theo-autoblocker.png",
+    "part": "Part 10",
+    "parts": [
+      "Part 10"
+    ],
+    "title": "Automated X Blocker Bot (~100 Accounts/Day)",
+    "caption": "Theo confirming on Nov 24, 2026 that his X account runs an auto-blocker bot and blocked ~100 accounts that day.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/theo/status/2125077510941802509"
+  },
+  {
+    "id": "EV-071",
+    "path": "evidence/charts/theo-chart-1-overview.png",
+    "part": "Charts",
+    "parts": [
+      "Charts",
+      "Part 14"
+    ],
+    "title": "Forensic Chart 1 · 1,151-Tweet Overview (PNG)",
+    "caption": "1,151 tweets over 17.24 days: 75.6% replies, 2.7m median gap, and 162 T3 Code vs. 0 legacy product mentions.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EV-072",
+    "path": "evidence/charts/theo-chart-2-rhythm.png",
+    "part": "Charts",
+    "parts": [
+      "Charts",
+      "Part 14"
+    ],
+    "title": "Forensic Chart 2 · Circadian & Daily Cadence (PNG)",
+    "caption": "233 posts during 00:00–04:59 PST, 0 posts during 08:00–09:59 PST, and 17-day posting curve.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EV-073",
+    "path": "evidence/charts/theo-chart-3-double-standard.png",
+    "part": "Charts",
+    "parts": [
+      "Charts",
+      "Part 14"
+    ],
+    "title": "Forensic Chart 3 · Selective Politeness Split (PNG)",
+    "caption": "0.0% profanity toward 20 VIP/big-tech handles vs. 8.0% hostility toward ordinary developers and 14.4% in crisis.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EV-074",
+    "path": "evidence/charts/theo-chart-4-cn-crisis.png",
+    "part": "Charts",
+    "parts": [
+      "Charts",
+      "Part 14"
+    ],
+    "title": "Forensic Chart 4 · 25-Hour Crisis Timeline (PNG)",
+    "caption": "132 posts across 3 escalation waves, 81.8% replies, and 4.0× personal insult surge.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EV-075",
+    "path": "evidence/25-double-standard-chart-zh.png",
+    "part": "Charts",
+    "parts": [
+      "Charts",
+      "Part 14"
+    ],
+    "title": "Double-Standard Comparison Graphic (Chinese)",
+    "caption": "Archived Chinese-language visualization of the 0% VIP vs. 8.0% developer vs. 14.4% crisis split.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": ""
+  },
+  {
+    "id": "EV-076",
+    "path": "evidence/extra/p9-1-x-theo-google-bridges.png",
+    "part": "Part 14",
+    "parts": [
+      "Part 14"
+    ],
+    "title": "\"Happy I didn't burn bridges\" (Nov 21)",
+    "caption": "Theo celebrating not burning bridges with Google after Neon launched, days after criticizing Gemini 4 Carbon.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": "https://x.com/theo/status/2123995323123343869"
+  },
+  {
+    "id": "EV-077",
+    "path": "evidence/25-engineers-unemployment.png",
+    "part": "Part 14",
+    "parts": [
+      "Part 14"
+    ],
+    "title": "\"Engineers deserve the mass unemployment\"",
+    "caption": "Theo quote-tweeting a basic tool comparison question to tell 386k+ viewers engineers deserve mass unemployment.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": "https://x.com/theo/status/2124470530590011704"
+  },
+  {
+    "id": "EV-078",
+    "path": "evidence/extra/p9-3-x-theo-local-ai-graves.png",
+    "part": "Part 14",
+    "parts": [
+      "Part 14"
+    ],
+    "title": "\"Dance on the graves of local AI\"",
+    "caption": "Theo vowing on Nov 12, 2026 to 'dance on the graves of the local ai community'.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": "https://x.com/theo/status/2120733839832273025"
+  },
+  {
+    "id": "EV-079",
+    "path": "evidence/extra/p9-4-x-theo-linux-larpers.png",
+    "part": "Part 14",
+    "parts": [
+      "Part 14"
+    ],
+    "title": "\"Linux larpers tend to dislike real devs\"",
+    "caption": "Theo dismissing Linux users as 'Linux larpers' on Nov 22, 2026.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": "https://x.com/theo/status/2124298216271499605"
+  },
+  {
+    "id": "EV-080",
+    "path": "evidence/extra/p9-5b-x-theo-stupid-bitch.png",
+    "part": "Part 14",
+    "parts": [
+      "Part 14"
+    ],
+    "title": "Repeated \"stupid bitch\" Attack & Retweet",
+    "caption": "Theo repeating 'stupid bitch' against a female critic on Nov 12, 2026 with 'no regret in saying such'.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": "https://x.com/theo/status/2120599310211703274"
+  },
+  {
+    "id": "EV-081",
+    "path": "evidence/extra/p9-5-x-theo-jail-rsd.png",
+    "part": "Part 14",
+    "parts": [
+      "Part 14"
+    ],
+    "title": "Jail Threat & Medical RSD Mockery",
+    "caption": "Theo threatening a Threads critic with jail while mocking their RSD diagnosis on Nov 18, 2026.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": "https://x.com/theo/status/2122865897375400066"
+  },
+  {
+    "id": "EV-082",
+    "path": "evidence/extra/p9-7-x-theo-burning-trust.png",
+    "part": "Part 14",
+    "parts": [
+      "Part 14"
+    ],
+    "title": "\"Burning the trust\" Lecture (24h Before Crisis)",
+    "caption": "Theo lecturing another user on Nov 22 against 'burning the trust of everyone around you' 24h before the crisis.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md",
+    "sourceUrl": "https://x.com/theo/status/2124449493513068862"
+  },
+  {
+    "id": "EV-083",
+    "path": "evidence/24-pr41898-trademark-aftermath.png",
+    "part": "Part 15",
+    "parts": [
+      "Part 15",
+      "Part 16"
+    ],
+    "title": "PR #41898 Retroactive TRADEMARK.md (17h After Threat)",
+    "caption": "Merged at 12:21 BJ on Nov 24 (~17 hours after the ban threat), generated via Gemini 4 Neon in Antigravity.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/41898"
+  },
+  {
+    "id": "EV-084",
+    "path": "evidence/extra/p1-2b-trademark-md.png",
+    "part": "Part 15",
+    "parts": [
+      "Part 15"
+    ],
+    "title": "TRADEMARK.md \"Registered or Unregistered\" Claims",
+    "caption": "TRADEMARK.md added in PR #41898 claiming rights over T3 Code / T3 marks despite 0 USPTO registrations.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/TRADEMARK.md"
+  },
+  {
+    "id": "EV-085",
+    "path": "evidence/extra/x-post17-1-theo-youtube-sponsors.jpg",
+    "part": "Part 17",
+    "parts": [
+      "Part 17"
+    ],
+    "title": "2023 Sponsor List (Clerk, Axiom, Vercel, PlanetScale)",
+    "caption": "Theo's May 14, 2023 tweet listing sponsors Vercel, Clerk, Upstash, Axiom, and PlanetScale.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/1657488850472804353"
+  },
+  {
+    "id": "EV-086",
+    "path": "evidence/extra/x-post17-5-rauchg-vercel-sponsor.jpg",
+    "part": "Part 17",
+    "parts": [
+      "Part 17"
+    ],
+    "title": "Vercel CEO Confirms Sponsoring Only Theo",
+    "caption": "Guillermo Rauch confirming on April 5, 2024 that Vercel sponsored a single YouTuber (Theo).",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/rauchg/status/1776260839965863965"
+  },
+  {
+    "id": "EV-087",
+    "path": "evidence/extra/x-post17-2-maria-endless-deleted.jpg",
+    "part": "Part 17",
+    "parts": [
+      "Part 17"
+    ],
+    "title": "T3 Employee @maria_rcks Post After Deleting Endless",
+    "caption": "Aug 22, 2026 tweet after deleting Endless 0% Codex exploit and hoping Codex bans accounts that used it.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/maria_rcks/status/2090972426876129658"
+  },
+  {
+    "id": "EV-088",
+    "path": "evidence/extra/x-post17-3-codex-45444-regression.jpg",
+    "part": "Part 17",
+    "parts": [
+      "Part 17"
+    ],
+    "title": "openai/codex#45444 Hard 0% Quota Cutoff",
+    "caption": "GitHub issue documenting OpenAI tightening Codex so active turns terminate mid-task at 0% quota.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://github.com/openai/codex/issues/45444"
+  },
+  {
+    "id": "EV-089",
+    "path": "evidence/19-cliproxy-gist-555pct.jpg",
+    "part": "Part 17",
+    "parts": [
+      "Part 17"
+    ],
+    "title": "Theo's 452-Star CLIProxyAPI Gist (555% Quota)",
+    "caption": "Pooling 7 Claude + 3 Codex accounts across 12+ machines via CLIProxyAPI while FAQ warns users of bans.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://gist.github.com/t3dotgg/59a521d2ee8d70aaf90e280c175072af"
+  },
+  {
+    "id": "EV-090",
+    "path": "evidence/extra/p2-3-x-theo-cliproxy-clickhouse.png",
+    "part": "Part 17",
+    "parts": [
+      "Part 4",
+      "Part 17"
+    ],
+    "title": "ClickHouse CLIProxy Request Logs Tweet",
+    "caption": "Theo instructing @bot on Nov 8 to dig through his CLIProxy logs in ClickHouse.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2119193502852755520"
+  },
+  {
+    "id": "EV-091",
+    "path": "evidence/extra/p2-4-x-theo-grokbot-tutorial.png",
+    "part": "Part 17",
+    "parts": [
+      "Part 4",
+      "Part 17"
+    ],
+    "title": "Grok Bot + $100 Claude T3 MCP Routing Guide",
+    "caption": "Theo's Nov 10, 2026 4-step guide routing Grok Bot to Opus 5.5 through a $100 Claude plan and T3 Code.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2119994608516276256"
+  },
+  {
+    "id": "EV-092",
+    "path": "evidence/extra/p2-4b-x-theo-15k-ultra.png",
+    "part": "Part 17",
+    "parts": [
+      "Part 4",
+      "Part 17"
+    ],
+    "title": "$14,662 / 73x Yield on $200 Claude Ultra Plan",
+    "caption": "Theo's Nov 10 graphic claiming $14,662 in Opus 5.5 value from 1.1M proxied requests on a $200 Ultra plan.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2119960608816988596"
+  },
+  {
+    "id": "EV-093",
+    "path": "evidence/extra/p10-1-x-theo-apr25-trick-vcs.png",
+    "part": "Part 18",
+    "parts": [
+      "Part 18"
+    ],
+    "title": "\"GitHub has a fake star problem\" (Apr 2026)",
+    "caption": "Theo arguing GitHub stars became 'mostly a way for companies to trick VCs into investing' 6 months earlier.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2048122499834036340"
+  },
+  {
+    "id": "EV-094",
+    "path": "evidence/20-star-10x-cliff.png",
+    "part": "Part 18",
+    "parts": [
+      "Part 18"
+    ],
+    "title": "10x Daily Star Spike After In-App Prompt",
+    "caption": "Theo's Nov 2 chart celebrating a near-vertical 10x spike immediately after shipping the Star prompt.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2117065834267136469"
+  },
+  {
+    "id": "EV-095",
+    "path": "evidence/extra/p10-3-x-theo-nov2-trending.png",
+    "part": "Part 18",
+    "parts": [
+      "Part 18"
+    ],
+    "title": "+3,094 Stars/Day on GitHub Trending",
+    "caption": "Theo's Nov 2 GitHub Trending screenshot highlighting 3,094 stars in a single day.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2117172614158508400"
+  },
+  {
+    "id": "EV-096",
+    "path": "evidence/extra/p3-3-pr29922-one-click-star.png",
+    "part": "Part 18",
+    "parts": [
+      "Part 18"
+    ],
+    "title": "PR #29922 Self-Merged One-Click Server Star",
+    "caption": "PR #29922 adding 30-second idle detection and server-credential one-click starring RPC.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/29922"
+  },
+  {
+    "id": "EV-097",
+    "path": "evidence/extra/p10-4a-pr29922-macroscope.png",
+    "part": "Part 18",
+    "parts": [
+      "Part 18"
+    ],
+    "title": "Macroscope Flagged PR #29922 (Bypassed)",
+    "caption": "Macroscope bot flagging PR #29922 as 'Needs Human Approval' over server vs. user GitHub account mismatch.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/29922"
+  },
+  {
+    "id": "EV-098",
+    "path": "evidence/21-pr29922-zhilsinger-review.png",
+    "part": "Part 18",
+    "parts": [
+      "Part 18"
+    ],
+    "title": "zhilsinger Request Changes Unanswered 19 Days",
+    "caption": "Developer zhilsinger warning about shared-host starring and arbitrary-repo starring via server credentials.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/29922"
+  },
+  {
+    "id": "EV-099",
+    "path": "evidence/extra/p3-4-code-star-prompt.png",
+    "part": "Part 18",
+    "parts": [
+      "Part 18"
+    ],
+    "title": "GitHubStarPrompt.tsx Source Implementation",
+    "caption": "Frontend component implementing PROMPTS_BEFORE_ASKING = 5, IDLE_MS = 30_000, and starInPlace RPC + confetti.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/apps/web/src/components/GitHubStarPrompt.tsx"
+  },
+  {
+    "id": "EV-100",
+    "path": "evidence/extra/p10-5-gh-driver-arbitrary-repo.png",
+    "part": "Part 18",
+    "parts": [
+      "Part 18"
+    ],
+    "title": "driver.ts#L60-L99 Arbitrary-Repo Starring Bug",
+    "caption": "starredPath never pins pingdotgg/t3code, letting any source-control:write client star arbitrary repos via host credentials.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts#L60-L99"
+  },
+  {
+    "id": "EV-101",
+    "path": "evidence/extra/p10-6-x-theo-nov24-missed-70k.png",
+    "part": "Part 18",
+    "parts": [
+      "Part 18"
+    ],
+    "title": "Claiming He \"Entirely Missed\" Crossing 70k Stars",
+    "caption": "Theo's Nov 24 tweet at 74.6k stars claiming he 'entirely missed' breaking 70k.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2124992724223029538"
+  },
+  {
+    "id": "EV-102",
+    "path": "evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png",
+    "part": "Part 19",
+    "parts": [
+      "Part 19",
+      "Part 5",
+      "Part 13"
+    ],
+    "title": "http.ts#L215-L241 Plaintext --lan Cookie Lacks Secure",
+    "caption": "PR #37042 only sets Secure when url.protocol === 'https:', sending 30-day shell cookies in cleartext over t3 up --lan HTTP.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/http.ts#L215-L221"
+  },
+  {
+    "id": "EV-103",
+    "path": "evidence/extra/ca81b7b9-a1-cookie-origin-bypass.png",
+    "part": "Part 19",
+    "parts": [
+      "Part 19",
+      "Part 5",
+      "Part 13"
+    ],
+    "title": "EnvironmentAuth.ts#L798-L819 Missing Origin Bypass",
+    "caption": "isBrowserOriginAllowed returns true when the Origin header is omitted, letting any non-browser script replay stolen cookies.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L798-L806"
+  },
+  {
+    "id": "EV-104",
+    "path": "evidence/extra/ca81b7b9-a1-a4-a5-ttl-and-wsclaims.png",
+    "part": "Part 19",
+    "parts": [
+      "Part 19",
+      "Part 5",
+      "Part 13"
+    ],
+    "title": "SessionStore.ts#L491-L522 30d Shell TTL & 5m WS Ticket",
+    "caption": "DEFAULT_SESSION_TTL = 30 days, DEFAULT_WEBSOCKET_TOKEN_TTL = 5 minutes, and WebSocketClaims with no single-use jti.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/SessionStore.ts#L492-L493"
+  },
+  {
+    "id": "EV-105",
+    "path": "evidence/extra/ca81b7b9-a5-30d-bearer-and-no-self-revoke.png",
+    "part": "Part 19",
+    "parts": [
+      "Part 19",
+      "Part 5",
+      "Part 13"
+    ],
+    "title": "EnvironmentAuth.ts#L1506-L1521 Self-Revocation Blocked",
+    "caption": "Non-DPoP /oauth/token exchanges fall back to 30-day unbound Bearer tokens; no /logout route exists and revokeClientSession rejects self-revocation.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1506-L1511"
+  },
+  {
+    "id": "EV-106",
+    "path": "evidence/extra/ca81b7b9-a4-ws-ticket-reuse-url.png",
+    "part": "Part 19",
+    "parts": [
+      "Part 19",
+      "Part 5",
+      "Part 13"
+    ],
+    "title": "EnvironmentAuth.ts#L1553-L1585 URL ?wsTicket= Replay Window",
+    "caption": "WS tickets travel in URL ?wsTicket= query strings and omit replay guards for Bearer RPC and all media route tickets.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/auth/EnvironmentAuth.ts#L1553-L1622"
+  },
+  {
+    "id": "EV-107",
+    "path": "evidence/extra/ca81b7b9-a3-ipv6-loopback-killed.png",
+    "part": "Part 19",
+    "parts": [
+      "Part 19",
+      "Part 5",
+      "Part 13"
+    ],
+    "title": "startupAccess.ts#L71-L110 NodeNet.isIPv4 Kills ::1 Tunnels",
+    "caption": "Line 39 permits IPv6 ::1 loopback, yet isPrivateNetworkAddress runs NodeNet.isIPv4 and terminates Tailscale Serve / Connect via socket.destroy().",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/startupAccess.ts#L71-L108"
+  },
+  {
+    "id": "EV-108",
+    "path": "evidence/extra/ca81b7b9-a6-submodule-recursive.png",
+    "part": "Part 19",
+    "parts": [
+      "Part 19",
+      "Part 13",
+      "Part 2"
+    ],
+    "title": "GitVcsDriverCore.ts#L6144-L6205 Recursive Submodules & Env",
+    "caption": "Worktree creation auto-runs git submodule update --init --recursive while children inherit host GITHUB_TOKEN and SSH_AUTH_SOCK.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/vcs/GitVcsDriverCore.ts#L6144-L6205"
+  },
+  {
+    "id": "EV-109",
+    "path": "evidence/extra/ca81b7b9-a2-pr39483-silent-fix.png",
+    "part": "Part 19",
+    "parts": [
+      "Part 19",
+      "Part 13"
+    ],
+    "title": "PR #39483 Silent ServerSecretStore Path-Traversal Fix (ca81b7b9 Audit)",
+    "caption": "Cross-verified during the ca81b7b9 security audit: PR #39483 silently patched a path-traversal vulnerability in ServerSecretStore on Nov 20 while published GitHub Security Advisories remained at 0.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/39483"
+  }
+]

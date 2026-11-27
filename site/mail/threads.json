@@ -1,0 +1,2558 @@
+{
+  "meta": {
+    "title": "Tmail — @theo & T3 Code Public Record Inbox",
+    "subtitle": "Independent, primary-sourced public archive (May 2023 – Nov 2026)",
+    "dateSpanStart": "2023-05-14",
+    "dateSpanEnd": "2026-11-25",
+    "repoUrl": "https://github.com/realchendahuang/temu3code",
+    "upstreamRepo": "pingdotgg/t3code",
+    "upstreamCommit": "ca81b7b9"
+  },
+  "topics": [
+    {
+      "id": "bullying",
+      "label": "Bullying & Threats",
+      "labelZh": "霸凌与威胁",
+      "icon": "gavel"
+    },
+    {
+      "id": "double-standard",
+      "label": "Double Standards",
+      "labelZh": "双标与歧视",
+      "icon": "balance"
+    },
+    {
+      "id": "promises",
+      "label": "Promises vs. Code",
+      "labelZh": "承诺 vs 代码",
+      "icon": "fact_check"
+    },
+    {
+      "id": "telemetry",
+      "label": "Telemetry & Privacy",
+      "labelZh": "遥测与隐私",
+      "icon": "visibility"
+    },
+    {
+      "id": "security",
+      "label": "Security & Bans",
+      "labelZh": "安全漏洞与封号",
+      "icon": "shield"
+    },
+    {
+      "id": "deleted",
+      "label": "Deleted / Retracted",
+      "labelZh": "删帖与撤回",
+      "icon": "visibility_off"
+    },
+    {
+      "id": "commercial",
+      "label": "Commercial & Stars",
+      "labelZh": "商业利益与刷星",
+      "icon": "trending_up"
+    }
+  ],
+  "people": [
+    {
+      "id": "theo",
+      "name": "@theo (Theo Browne)",
+      "role": "Creator of T3 Code / Ping.gg",
+      "color": "#D93025"
+    },
+    {
+      "id": "dddxx666",
+      "name": "@DDdxx666 (MIT Fork)",
+      "role": "Chinese MIT Fork Author (Stardust)",
+      "color": "#1A73E8"
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg & VLC",
+      "role": "Open-Source Maintainers ($20k Bounty)",
+      "color": "#188038"
+    },
+    {
+      "id": "indian-devs",
+      "name": "Indian Dev Community",
+      "role": "2024 Nationality Harassment Wave",
+      "color": "#E37400"
+    },
+    {
+      "id": "bermudi",
+      "name": "@bermudi (Issue #33639)",
+      "role": "T3 Code User Insulted by Maintainer",
+      "color": "#A142F4"
+    },
+    {
+      "id": "miaai",
+      "name": "@MiaAI_lab & Rivals",
+      "role": "Fork Scraped by @bot in 30 Seconds",
+      "color": "#E52592"
+    },
+    {
+      "id": "dlkfz",
+      "name": "@DLKFZWilliam2",
+      "role": "Nov 24 Fork Debate Counterparty",
+      "color": "#007B83"
+    },
+    {
+      "id": "ordinary-devs",
+      "name": "Ordinary Developers",
+      "role": "Engineers, Local AI & Linux Devs",
+      "color": "#3C4043"
+    },
+    {
+      "id": "female-critic",
+      "name": "Female Critic & RSD User",
+      "role": "Targeted in Nov 11–18 Replies",
+      "color": "#C5221F"
+    },
+    {
+      "id": "vibe-daytona",
+      "name": "Vibe Kanban & Daytona",
+      "role": "Angel Portfolio Companies",
+      "color": "#1967D2"
+    },
+    {
+      "id": "julius",
+      "name": "@jullerino (Julius)",
+      "role": "T3 Code Core Maintainer",
+      "color": "#5F6368"
+    },
+    {
+      "id": "maria",
+      "name": "@maria_rcks (Maria)",
+      "role": "T3 Team Member (maria-rcks/t3libre)",
+      "color": "#9334E6"
+    },
+    {
+      "id": "labs-vips",
+      "name": "Google / OpenAI VIPs",
+      "role": "20 Big-Tech Executives (0.0% Profanity)",
+      "color": "#137333"
+    },
+    {
+      "id": "antigravity-users",
+      "name": "Antigravity & Relay Users",
+      "role": "3-Minute Bans & Plaintext Relay",
+      "color": "#B06000"
+    },
+    {
+      "id": "gdpr-auditors",
+      "name": "EU GDPR & Auditors",
+      "role": "Independent Audit & Legal Records",
+      "color": "#174EA6"
+    },
+    {
+      "id": "dhh-wp",
+      "name": "DHH / WordPress / USPTO",
+      "role": "Prior UI Mockery & Trademark History",
+      "color": "#4A148C"
+    }
+  ],
+  "threads": [
+    {
+      "id": "2023-05-sponsor-roster",
+      "exhibit": "17",
+      "date": "2023-05-14",
+      "dateDisplay": "May 14, 2023",
+      "timestamp": "May 14, 2023",
+      "from": "@theo → YouTube Sponsors",
+      "to": "YouTube Viewers & Developers",
+      "people": [
+        "theo",
+        "gdpr-auditors"
+      ],
+      "platform": "X",
+      "category": "telemetry",
+      "topics": [
+        "commercial",
+        "telemetry"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 312,
+      "subject": "Published YouTube sponsor roster: Vercel, Clerk, Upstash, Axiom, PlanetScale",
+      "subjectZh": "公开 YouTube 赞助商名单：Vercel、Clerk、Upstash、Axiom、PlanetScale",
+      "snippet": "Three years later, Clerk (auth) and Axiom (2.2M/hr IP-tagged spans kept 30 days) were embedded directly inside T3 Code's cloud relay.",
+      "snippetZh": "三年后，这份赞助名单里的 Clerk 和 Axiom 被直接嵌进 T3 Code 云中继（Axiom 存留每小时 220 万条含 IP 日志 30 天）。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Public timeline",
+          "time": "May 14, 2023",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "Published his YouTube sponsor stack on X (status 1657488850472804353): @vercel, @clerk, @upstash, @axiomhq, and @PlanetScale.\n\nDirect code audit of pingdotgg/t3code's infra/relay/ later confirmed Clerk (Config.ts:63-65) handles relay auth and Axiom (observability.ts:20-79) retains t3-code-relay-traces, t3-code-mobile-logs, and t3-code-mobile-metrics for 30 days.",
+          "attachments": [
+            {
+              "src": "evidence/extra/x-post17-1-theo-youtube-sponsors.jpg",
+              "title": "2023 Sponsor List (Clerk, Axiom, Vercel, PlanetScale)"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 1657488850472804353",
+              "url": "https://x.com/theo/status/1657488850472804353"
+            }
+          ]
+        },
+        {
+          "sender": "Guillermo Rauch (@rauchg)",
+          "handle": "@rauchg · Vercel CEO",
+          "to": "@theo & Tech Twitter",
+          "time": "Apr 5, 2024",
+          "avatar": "G",
+          "color": "#1A73E8",
+          "body": "Confirmed on X (status 1776260839965863965): \"our devrel team is 4 people and we sponsor one YouTuber (Theo)\".\n\nIn Sept 2024, Theo disclosed upon ending the Vercel deal that prior sponsor contracts included exclusivity clauses restricting promotion of competing products.",
+          "attachments": [
+            {
+              "src": "evidence/extra/x-post17-5-rauchg-vercel-sponsor.jpg",
+              "title": "Vercel CEO confirms sponsoring only Theo"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 1776260839965863965",
+              "url": "https://x.com/rauchg/status/1776260839965863965"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2024-06-indian-dev-apology",
+      "exhibit": "16",
+      "date": "2024-06-01",
+      "dateDisplay": "2024",
+      "timestamp": "2024 (Two years before Nov 2026)",
+      "from": "@theo ↔ Indian Dev Community",
+      "to": "Indian Programming Creators & Devs",
+      "people": [
+        "theo",
+        "indian-devs"
+      ],
+      "platform": "YouTube",
+      "category": "bullying",
+      "topics": [
+        "bullying",
+        "double-standard"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1482,
+      "subject": "Nationality harassment wave against Indian dev channels → \"I screwed up.\" apology",
+      "subjectZh": "针对印度开发者频道引发国籍网暴 → 曾发视频《I screwed up.》道歉",
+      "snippet": "Explicitly condemned directing nationality-based hostility at developer communities — two years before \"Temu3 Code\" and \"Chinese tech twitter is the biggest fucking cesspit\".",
+      "snippetZh": "2024 年曾专门发视频谴责按国籍攻击开发者群体；两年后面对中国开发者却骂出「Temu3 Code」与「biggest fucking cesspit」。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@t3dotgg · YouTube",
+          "to": "Developer Community",
+          "time": "2024",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "After publishing a video targeting Indian programming tutorial channels over open-source PR spam, comment sections erupted with nationality-based harassment.\n\nFollowing community backlash, @theo uploaded \"I screwed up.\" (youtube.com/watch?v=o2CSJYXJBpc), explicitly condemning nationality-targeted hostility against developer communities.",
+          "attachments": [],
+          "links": [
+            {
+              "label": "YouTube: \"I screwed up.\"",
+              "url": "https://www.youtube.com/watch?v=o2CSJYXJBpc"
+            }
+          ]
+        },
+        {
+          "sender": "Public Record Comparison",
+          "handle": "Two Years Later · Nov 24, 2026",
+          "to": "Audit Exhibit #16",
+          "time": "Nov 24, 2026, 6:39 PM CST",
+          "avatar": "R",
+          "color": "#188038",
+          "body": "Two years later, during the November 2026 Chinese MIT-fork dispute, @theo called a free MIT fork \"Temu3 Code\" and \"Chinese knockoff\", then declared:\n\n\"I will say that chinese tech twitter is the biggest fucking cesspit I've ever waded into somehow, and if you trust anyone on that side writing slop essays about things you are fucking braindead\"",
+          "attachments": [
+            {
+              "src": "evidence/26-cn-cesspit.png",
+              "title": "Nov 24 'Chinese tech twitter is the biggest fucking cesspit' post"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2125177503526588877",
+              "url": "https://x.com/theo/status/2125177503526588877"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2024-06-vsc-fork-dhh-ui",
+      "exhibit": "16",
+      "date": "2024-06-18",
+      "dateDisplay": "Jun 2024",
+      "timestamp": "June 2024",
+      "from": "@theo → DHH & Theme Author",
+      "to": "Open-Source Maintainers",
+      "people": [
+        "theo",
+        "dhh-wp"
+      ],
+      "platform": "GitHub",
+      "category": "bullying",
+      "topics": [
+        "bullying",
+        "double-standard"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 684,
+      "subject": "Forked another dev's repo as vsc-material-but-i-wont-sue-you & mocked DHH's UI",
+      "subjectZh": "曾给自己的 Fork 故意取名 vsc-material-but-i-wont-sue-you 嘲讽原作者，并公开群嘲 DHH 的 UI",
+      "snippet": "Mocked another author's legal sensitivity when forking their theme — then threatened GitHub account termination over an MIT fork two years later.",
+      "snippetZh": "自己 Fork 别人主题时故意在仓库名里嘲讽对方维权，两年后别人 MIT Fork 自己代码却威胁让 GitHub 封号。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "github.com/t3dotgg · Repository",
+          "to": "Original VS Code Theme Author & DHH",
+          "time": "June 2024",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "1. Fork Mockery: When @theo forked another developer's VS Code Material theme in 2024, he explicitly named the public repository `t3dotgg/vsc-material-but-i-wont-sue-you` to mock the original creator's legal/copyright sensitivity.\n\n2. Public UI Ridicule: In June 2024, he built viral engagement publicly mocking Rails creator DHH's email client UI — contrasting sharply with his 2026 defense of maintainers against online mockery.",
+          "attachments": [],
+          "links": [
+            {
+              "label": "GitHub: vsc-material-but-i-wont-sue-you",
+              "url": "https://github.com/t3dotgg/vsc-material-but-i-wont-sue-you"
+            },
+            {
+              "label": "Historical Receipt Thread",
+              "url": "https://x.com/realchendahuang/status/2125066552785711291"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2024-09-wordpress-trademark",
+      "exhibit": "15",
+      "date": "2024-09-26",
+      "dateDisplay": "Sep 26, 2024",
+      "timestamp": "Sep 26, 2024 & Apr 2025",
+      "from": "@theo → WordPress / USPTO",
+      "to": "Open-Source Community",
+      "people": [
+        "theo",
+        "dhh-wp"
+      ],
+      "platform": "X",
+      "category": "bullying",
+      "topics": [
+        "double-standard",
+        "promises"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 590,
+      "subject": "Re: Trademark disputes — \"Trademarking something so common with prior art is genuinely insane\"",
+      "subjectZh": "评 WordPress 商标争议：「给这么常见的词抢注商标简直疯了」",
+      "snippet": "Mocked WordPress's \"unenforceable trademark dispute\" in 2024–2025 — before threatening a GitHub ban with 0 USPTO registrations in Nov 2026.",
+      "snippetZh": "2024–2025 年嘲笑 WordPress 打「无法执行的商标战」，2026 年自己 0 件美国商标注册却拿商标威胁封杀开源作者账号。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Public timeline",
+          "time": "Sep 26, 2024",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "Mocked WordPress for pursuing an \"unenforceable trademark dispute\" (status 1839261574005141945).\n\nFollow-up in April 2025: \"Trademarking something so common with so much prior art is genuinely insane.\"",
+          "attachments": [],
+          "links": [
+            {
+              "label": "X Post 1839261574005141945",
+              "url": "https://x.com/theo/status/1839261574005141945"
+            }
+          ]
+        },
+        {
+          "sender": "USPTO TSDR Public Registry",
+          "handle": "tsdr.uspto.gov · Official Filing",
+          "to": "T3 Tools, Inc.",
+          "time": "May 19, 2025",
+          "avatar": "U",
+          "color": "#174EA6",
+          "body": "Official USPTO TSDR audit confirms:\n• T3 Code / T3 Tools / T3 Connect: 0 USPTO federal registrations.\n• Sole filing by T3 Tools, Inc.: `PING LABS` (Serial 97294243) — refused Feb 2025, marked ABANDONED May 19, 2025.\n• Third parties already hold registered software/SaaS `T3` wordmarks (EquipmentShare Reg. 7795672, registered May 13, 2025; ESG Operations Reg. 3324707).",
+          "attachments": [
+            {
+              "src": "evidence/extra/p1-2b-trademark-md.png",
+              "title": "Retroactive TRADEMARK.md claiming unregistered marks"
+            }
+          ],
+          "links": [
+            {
+              "label": "USPTO Serial 97294243 (Abandoned)",
+              "url": "https://tsdr.uspto.gov/statusview/sn97294243"
+            },
+            {
+              "label": "GitHub Trademark Policy",
+              "url": "https://docs.github.com/en/site-policy/content-removal-policies/github-trademark-policy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2025-10-ffmpeg-bounty",
+      "exhibit": "16",
+      "date": "2025-10-15",
+      "dateDisplay": "Oct 2025",
+      "timestamp": "October 2025",
+      "from": "@theo ↔ FFmpeg & VLC",
+      "to": "FFmpeg Open-Source Maintainers",
+      "people": [
+        "theo",
+        "ffmpeg"
+      ],
+      "platform": "YouTube",
+      "category": "bullying",
+      "topics": [
+        "bullying",
+        "deleted"
+      ],
+      "status": "deleted",
+      "sentByTheo": true,
+      "deleted": true,
+      "starredDefault": true,
+      "starCount": 2410,
+      "subject": "[DELETED] Offered $20,000 bounty to push out an FFmpeg maintainer",
+      "subjectZh": "[已删帖/删视频] 公开悬赏 2 万美元驱逐 FFmpeg 开源维护者",
+      "snippet": "Swore at FFmpeg maintainers on camera and offered $20k bounty — Windscribe counter-offered $21k for Theo to leave X; VLC founder condemned it; Theo deleted video & tweets.",
+      "snippetZh": "直播/视频怒骂 FFmpeg 维护者并开出 2 万美元悬赏；Windscribe 反手悬赏 2.1 万让他退网一个月、VLC 创始人声援后，Theo 删帖删视频撤回悬赏。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X & YouTube [DELETED]",
+          "to": "FFmpeg Maintainers",
+          "time": "October 2025",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "During a public clash with the FFmpeg X account, @theo swore at open-source maintainers on camera and publicly offered a $20,000 bounty aimed at pushing out an FFmpeg maintainer.\n\nThis occurred less than a year before he publicly condemned \"harassing open source maintainers\" on Nov 11, 2026.",
+          "attachments": [],
+          "links": [
+            {
+              "label": "Documented Video Record (YouTube)",
+              "url": "https://www.youtube.com/watch?v=1oQ3KMeaH04"
+            }
+          ]
+        },
+        {
+          "sender": "Windscribe, VLC Founder & FFmpeg Mailing List",
+          "handle": "Open-Source Community Response",
+          "to": "@theo & Public",
+          "time": "October 2025",
+          "avatar": "F",
+          "color": "#188038",
+          "body": "• VPN provider Windscribe counter-offered $21,000 for @theo to stay off X for one month.\n• VLC's founder publicly condemned bounties targeting open-source maintainers.\n• FFmpeg developers documented the harassment on the official FFmpeg mailing list.\n• Following the backlash, @theo withdrew the $20,000 bounty and deleted the video and posts.",
+          "attachments": [],
+          "links": [
+            {
+              "label": "Exhibit #16 Historical Record",
+              "url": "https://github.com/realchendahuang/temu3code/blob/main/cases/en/16-two-year-pattern-of-bullying-and-deletions.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-03-06-pr174-default-telemetry",
+      "exhibit": "01",
+      "date": "2026-03-06",
+      "dateDisplay": "Mar 6, 2026",
+      "timestamp": "Mar 6, 2026",
+      "from": "pingdotgg/t3code (PR #174)",
+      "to": "All T3 Code Users",
+      "people": [
+        "theo",
+        "julius"
+      ],
+      "platform": "GitHub",
+      "category": "telemetry",
+      "topics": [
+        "telemetry",
+        "promises"
+      ],
+      "status": "partial",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1890,
+      "subject": "Shipped default-on PostHog telemetry behind \"No telemetry. Unless you opt in. Full stop.\"",
+      "subjectZh": "主页写着「绝无遥测，除非你主动开启」，代码里却默认开启 PostHog 采集（PR #174）",
+      "snippet": "PR #174 enabled PostHog telemetry by default with zero consent dialog, zero settings UI toggle, and zero docs while homepage promised 'No telemetry. Full stop.'",
+      "snippetZh": "PR #174 悄悄默认启用 PostHog 遥测，无弹窗同意、无设置开关、无文档，同时主页继续挂着「No telemetry. Full stop.」长达三个多月。",
+      "messages": [
+        {
+          "sender": "T3 Code Homepage (t3.codes)",
+          "handle": "Public Marketing Promise",
+          "to": "Prospective Users",
+          "time": "Mar 6 – Jun 18, 2026",
+          "avatar": "P",
+          "color": "#1A73E8",
+          "body": "Homepage prominently promised:\n\"No telemetry. Unless you opt in. Full stop.\"\n\nYet on March 6, 2026, PR #174 enabled PostHog analytics with `Config.withDefault(true)`, no consent modal, no Settings UI toggle, and no telemetry documentation.",
+          "attachments": [
+            {
+              "src": "evidence/02-no-telemetry-removed.png",
+              "title": "Commit 3bdaa6e1 showing the deleted 'No telemetry. Unless you opt in. Full stop.' promise"
+            }
+          ],
+          "links": [
+            {
+              "label": "PR #174",
+              "url": "https://github.com/pingdotgg/t3code/pull/174"
+            },
+            {
+              "label": "AnalyticsService.ts",
+              "url": "https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-04-25-fake-stars-vc",
+      "exhibit": "18",
+      "date": "2026-04-25",
+      "dateDisplay": "Apr 25, 2026",
+      "timestamp": "Apr 25, 2026",
+      "from": "@theo → GitHub Founders",
+      "to": "Public timeline",
+      "people": [
+        "theo",
+        "ordinary-devs"
+      ],
+      "platform": "X",
+      "category": "bullying",
+      "topics": [
+        "commercial",
+        "double-standard"
+      ],
+      "status": "open",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 820,
+      "subject": "Condemned GitHub stars as a way \"to trick VCs into investing\" — 6 months before 30s-idle star funnel",
+      "subjectZh": "曾痛批 GitHub Star 用来「骗 VC 投资」，半年后自己合并应用内 30 秒弹窗一键刷星",
+      "snippet": "In April 2026 he slammed manufactured GitHub stars; in Nov 2026 he self-merged PR #29922 firing PUT user/starred using host credentials to jump 30k → 77k stars.",
+      "snippetZh": "4 月还讽刺刷 Star 是骗 VC 投资；11 月自己绕过审查合并 PR #29922，用宿主凭证一键自动点星，25 天从 3 万星飙到 7.7 万星。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Public timeline",
+          "time": "Apr 25, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "Publicly condemned artificial GitHub star growth as a gimmick \"to trick VCs into investing.\"\n\nSix months later, he self-merged PR #29922 to catapult pingdotgg/t3code from 30k to 77k stars (while watchers stayed ~129), then claimed on Nov 24 he \"entirely missed\" crossing 70k stars.",
+          "attachments": [
+            {
+              "src": "evidence/extra/p10-1-x-theo-apr25-trick-vcs.png",
+              "title": "'GitHub has a fake star problem' (Apr 2026)"
+            },
+            {
+              "src": "evidence/20-star-10x-cliff.png",
+              "title": "10x daily star spike after in-app star prompt"
+            },
+            {
+              "src": "evidence/extra/p10-6-x-theo-nov24-missed-70k.png",
+              "title": "Claiming he 'entirely missed' crossing 70k stars"
+            }
+          ],
+          "links": [
+            {
+              "label": "PR #29922",
+              "url": "https://github.com/pingdotgg/t3code/pull/29922"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-06-18-commit-3bdaa6e1-deleted-promise",
+      "exhibit": "01",
+      "date": "2026-06-18",
+      "dateDisplay": "Jun 18, 2026",
+      "timestamp": "Jun 18, 2026",
+      "from": "@theo [commit 3bdaa6e1]",
+      "to": "t3.codes Homepage",
+      "people": [
+        "theo"
+      ],
+      "platform": "GitHub",
+      "category": "telemetry",
+      "topics": [
+        "telemetry",
+        "deleted",
+        "promises"
+      ],
+      "status": "deleted",
+      "sentByTheo": true,
+      "deleted": true,
+      "starredDefault": true,
+      "starCount": 1640,
+      "subject": "[SILENTLY DELETED] Removed \"No telemetry. Unless you opt in. Full stop.\" from homepage",
+      "subjectZh": "[静默删除] 三个多月后借改版悄悄删掉主页的「绝无遥测」承诺，无任何公告",
+      "snippet": "Commit 3bdaa6e1 silently stripped the homepage 'No telemetry' guarantee during a redesign with zero changelog notice to existing users.",
+      "snippetZh": "在默认收集遥测超过 3 个月后，commit 3bdaa6e1 借着页面改版悄悄删掉了主页「No telemetry」承诺，未通知任何老用户。",
+      "messages": [
+        {
+          "sender": "Theo Browne (commit 3bdaa6e1)",
+          "handle": "pingdotgg/t3code · Git Commit",
+          "to": "t3.codes production",
+          "time": "Jun 18, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "After collecting default-on PostHog telemetry for more than three months under the homepage promise \"No telemetry / Unless you opt in. Full stop.\", commit 3bdaa6e1 silently deleted those lines during a marketing redesign with zero user announcement.",
+          "attachments": [
+            {
+              "src": "evidence/02-no-telemetry-removed.png",
+              "title": "Git diff of commit 3bdaa6e1 removing the 'No telemetry' lines"
+            }
+          ],
+          "links": [
+            {
+              "label": "Commit 3bdaa6e1",
+              "url": "https://github.com/pingdotgg/t3code/commit/3bdaa6e10046945ccc08264d2d6f3b81775efcb3"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-06-23-issue1397-no-optout",
+      "exhibit": "01",
+      "date": "2026-06-23",
+      "dateDisplay": "Jun 23, 2026",
+      "timestamp": "Jun 23, 2026",
+      "from": "@jullerino → Issue #1397",
+      "to": "Privacy-Conscious Users",
+      "people": [
+        "julius",
+        "ordinary-devs"
+      ],
+      "platform": "GitHub",
+      "category": "telemetry",
+      "topics": [
+        "telemetry",
+        "promises"
+      ],
+      "status": "open",
+      "sentByTheo": false,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1410,
+      "subject": "Re: Telemetry opt-out toggle — \"We will not make this easier to opt out of\"",
+      "subjectZh": "回复遥测关闭开关请求：「我们不会让退出变得更容易」",
+      "snippet": "Closed Issue #1397 as not planned: \"it is crucial for us to know how many users we have\". Issue #4123 citing archived screenshots was closed silently twice.",
+      "snippetZh": "核心维护者 Julius 直接将 Issue #1397 标为 not planned 关闭，理由是「知道我们有多少用户至关重要」；另一条附主页截图质疑的 Issue #4123 被两次静默关闭。",
+      "messages": [
+        {
+          "sender": "T3 Code User",
+          "handle": "GitHub · Issue #1397",
+          "to": "pingdotgg/t3code maintainers",
+          "time": "June 2026",
+          "avatar": "U",
+          "color": "#5F6368",
+          "body": "Requested an easy settings UI toggle to opt out of telemetry inside T3 Code.",
+          "attachments": [],
+          "links": [
+            {
+              "label": "Issue #1397",
+              "url": "https://github.com/pingdotgg/t3code/issues/1397"
+            }
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino)",
+          "handle": "Core Maintainer · pingdotgg/t3code",
+          "to": "Issue #1397 Reporter",
+          "time": "Jun 23, 2026",
+          "avatar": "J",
+          "color": "#3C4043",
+          "body": "Closed as `not planned`:\n\n\"We will not make this easier to opt out of, it is crucial for us to know how many users we have.\"\n\nLater, Issue #4123 (attaching archived screenshots of the deleted \"No telemetry\" promise) was silently closed twice (Oct 21 & Nov 4).",
+          "attachments": [
+            {
+              "src": "evidence/04-issue1397-no-optout.png",
+              "title": "Issue #1397 closed as not planned"
+            }
+          ],
+          "links": [
+            {
+              "label": "Issue #1397",
+              "url": "https://github.com/pingdotgg/t3code/issues/1397"
+            },
+            {
+              "label": "Issue #4123",
+              "url": "https://github.com/pingdotgg/t3code/issues/4123"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-08-06-pr5551-reality-check",
+      "exhibit": "09",
+      "date": "2026-08-06",
+      "dateDisplay": "Aug 6, 2026",
+      "timestamp": "Aug 6 – Sep 2, 2026",
+      "from": "@theo → PR #5551 / #9190",
+      "to": "GitHub PR #5551 & PR #9190",
+      "people": [
+        "theo",
+        "ordinary-devs"
+      ],
+      "platform": "GitHub",
+      "category": "bullying",
+      "topics": [
+        "bullying",
+        "telemetry"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 520,
+      "subject": "\"Reality check for those upset\" — Buried Build/Plan toggle & hid context ring (16 downvotes)",
+      "subjectZh": "配图「给不满者的现实检验」强行隐藏 Build/Plan 开关与上下文进度条（全仓最高点踩）",
+      "snippet": "Attached an unscaled private telemetry chart mocking upset users (10 downvotes), then hid the context-window ring by default (16 downvotes).",
+      "snippetZh": "因为自己不用 Plan 模式，贴出一张无刻度的内部遥测折线图嘲讽不满用户，随后又隐藏上下文进度环收获全仓最高 16 个点踩。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #5551 & PR #9190",
+          "to": "T3 Code Users",
+          "time": "Aug 6 – Sep 2, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "• Aug 6 (PR #5551): Because Theo did not personally use Plan mode, he buried the Build/Plan toggle in legacy settings (`default false`), attaching an unscaled telemetry line chart captioned \"Reality check for those upset\" (10 downvotes).\n\n• Sep 2 (PR #9190): Hid the composer context-window progress ring by default, drawing 16 downvotes — the highest downvote count in the repository.",
+          "attachments": [
+            {
+              "src": "evidence/extra/t3code-6-pr-5551-reality-check.png",
+              "title": "PR #5551 'Reality check for those upset'"
+            }
+          ],
+          "links": [
+            {
+              "label": "PR #5551",
+              "url": "https://github.com/pingdotgg/t3code/pull/5551"
+            },
+            {
+              "label": "PR #9190",
+              "url": "https://github.com/pingdotgg/t3code/pull/9190"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-10-03-issue15353-force-push",
+      "exhibit": "03",
+      "date": "2026-10-03",
+      "dateDisplay": "Oct 3, 2026",
+      "timestamp": "Oct 3, 2026 (Open 52+ Days)",
+      "from": "Issue #15353 → t3code",
+      "to": "T3 Code Maintainers (Issue #15353)",
+      "people": [
+        "ordinary-devs",
+        "theo"
+      ],
+      "platform": "GitHub",
+      "category": "telemetry",
+      "topics": [
+        "security",
+        "promises"
+      ],
+      "status": "open",
+      "sentByTheo": false,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1730,
+      "subject": "CRITICAL: Claude Auto mode silently approves git push --force origin main (Unfixed 52+ days)",
+      "subjectZh": "严重漏洞：Claude Auto 模式无弹窗静默放行 git push --force origin main（52 天未修）",
+      "snippet": "Claude's safety classifier blocked twice and asked for human confirmation; T3 Code silently approved it as \"user_temporary\". 3 community fix PRs ignored.",
+      "snippetZh": "Claude 安全分类器两次拦截并请求人工确认，T3 Code 却直接无弹窗静默批准并记作 user_temporary；社区提交的 3 个修复 PR 全部被晾置或自动关闭。",
+      "messages": [
+        {
+          "sender": "GitHub Issue #15353",
+          "handle": "pingdotgg/t3code · Bug Report",
+          "to": "T3 Code Maintainers",
+          "time": "Oct 3, 2026 (Still open at ca81b7b9)",
+          "avatar": "!",
+          "color": "#C5221F",
+          "body": "In `ClaudeAdapterV2.ts`, Auto mode short-circuited `!requiresClaudeApproval(context)` directly to `\"allow\"`.\n\nWhen Claude's own safety classifier blocked `git push --force origin main` twice and escalated the third attempt for explicit human approval, T3 Code silently approved it with zero UI prompt and logged `\"source\": \"user_temporary\"`.\n\nTwo community fix PRs (#15360, #35207) sat unreviewed until bot auto-close; #40692 remained unmerged — still open 52+ days later at commit `ca81b7b9`.",
+          "attachments": [
+            {
+              "src": "evidence/11-issue15353-auto-force-push.png",
+              "title": "Issue #15353 open 52+ days documenting silent git push --force"
+            }
+          ],
+          "links": [
+            {
+              "label": "Issue #15353",
+              "url": "https://github.com/pingdotgg/t3code/issues/15353"
+            },
+            {
+              "label": "Unmerged Fix PR #40692",
+              "url": "https://github.com/pingdotgg/t3code/pull/40692"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-10-15-ingest-t3-codes",
+      "exhibit": "01",
+      "date": "2026-10-15",
+      "dateDisplay": "Oct 2026",
+      "timestamp": "Oct 2026 (PR #15028)",
+      "from": "t3code → ingest.t3.codes",
+      "to": "Closed-Source Retention Gateway",
+      "people": [
+        "theo",
+        "julius"
+      ],
+      "platform": "Code",
+      "category": "telemetry",
+      "topics": [
+        "telemetry",
+        "promises"
+      ],
+      "status": "open",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 940,
+      "subject": "Routed 10-second telemetry batches through closed-source ingest.t3.codes retaining raw copies",
+      "subjectZh": "通过闭源接口 ingest.t3.codes 每 10 秒上报一次，转发 PostHog 前本地留存原始副本",
+      "snippet": "Line 1 of AnalyticsService.ts explicitly confirms: '// T3 ingest retains events and forwards to PostHog; UUIDs deduplicate retries there.'",
+      "snippetZh": "AnalyticsService.ts 第 1 行注释明写：T3 闭源 ingest 服务器会在转发 PostHog 前留存所有原始事件副本。",
+      "messages": [
+        {
+          "sender": "AnalyticsService.ts (Line 1)",
+          "handle": "pingdotgg/t3code · PR #15028",
+          "to": "https://ingest.t3.codes/batch/",
+          "time": "October 2026",
+          "avatar": "C",
+          "color": "#007B83",
+          "body": "PR #15028 routed 10-second batched analytics (`FLUSH_INTERVAL_MS = 10_000`) through T3's closed-source endpoint `https://ingest.t3.codes/`.\n\nCode verbatim:\n`// T3 ingest retains events and forwards to PostHog; UUIDs deduplicate retries there.`\n`enabled: Config.Boolean(\"T3CODE_TELEMETRY_ENABLED\").pipe(Config.withDefault(true))`\n\nEven at latest HEAD (`ca81b7b9`), `AnalyticsService.ts:156` still writes a persistent local ID to disk before checking whether telemetry is disabled, and `ingest.t3.codes` remains closed-source.",
+          "attachments": [
+            {
+              "src": "evidence/03-identify-codex-claude.png",
+              "title": "Identify.ts & AnalyticsService telemetry implementation"
+            }
+          ],
+          "links": [
+            {
+              "label": "PR #15028",
+              "url": "https://github.com/pingdotgg/t3code/pull/15028"
+            },
+            {
+              "label": "AnalyticsService.ts",
+              "url": "https://github.com/pingdotgg/t3code/blob/main/apps/server/src/telemetry/AnalyticsService.ts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-10-20-pr21506-cross-tool-hash",
+      "exhibit": "01",
+      "date": "2026-10-20",
+      "dateDisplay": "Oct 20, 2026",
+      "timestamp": "Oct 20, 2026 (PR #21506)",
+      "from": "@theo → ~/.codex & ~/.claude",
+      "to": "User Home Directory Credentials",
+      "people": [
+        "theo",
+        "gdpr-auditors"
+      ],
+      "platform": "Code",
+      "category": "telemetry",
+      "topics": [
+        "telemetry",
+        "security"
+      ],
+      "status": "partial",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 2150,
+      "subject": "PR #21506 reads ~/.codex/auth.json & ~/.claude.json to stitch machines via unsalted SHA-256",
+      "subjectZh": "PR #21506 越界读取 ~/.codex 和 ~/.claude.json 凭证，用无盐 SHA-256 跨设备关联用户身份",
+      "snippet": "Authored by t3dotgg: decoded OpenAI JWT user_id and Claude accountUuid to link separate devices back to one person via `install.owner_observed`.",
+      "snippetZh": "由 t3dotgg 亲自提交合并：解码 OpenAI JWT 的 user_id 与 Claude accountUuid，通过无盐 SHA-256 把同一人的多台机器串联起来。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #21506",
+          "to": "apps/server/src/telemetry/Identify.ts",
+          "time": "Oct 19–20, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "Merged `feat(server): analytics records a stable install id and who owns each install` (#21506).\n\n`Identify.ts` read `~/.codex/auth.json` (decoding OpenAI's JWT `user_id` claim) and `~/.claude.json` (`oauthAccount.accountUuid`) alongside T3 Connect user IDs, computing unsalted SHA-256 digests (`telemetryId.ts`) to link separate computers back to one individual.\n\nBecause T3 holds plaintext Clerk IDs, unsalted digests reverse deterministically. External CLI reads were only removed a month later in PR #42299 after Part 1 crossed 2.26M+ views.",
+          "attachments": [
+            {
+              "src": "evidence/extra/t3code-5-pr-21506-theo-owner-tracking.png",
+              "title": "PR #21506 authored by t3dotgg"
+            },
+            {
+              "src": "evidence/03-identify-codex-claude.png",
+              "title": "Identify.ts reading ~/.codex/auth.json and ~/.claude.json"
+            }
+          ],
+          "links": [
+            {
+              "label": "PR #21506",
+              "url": "https://github.com/pingdotgg/t3code/pull/21506"
+            },
+            {
+              "label": "Post-Audit Removal PR #42299",
+              "url": "https://github.com/pingdotgg/t3code/pull/42299"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-10-28-fake-delete-process-spy",
+      "exhibit": "02",
+      "date": "2026-10-28",
+      "dateDisplay": "Oct 28, 2026",
+      "timestamp": "Oct–Nov 2026",
+      "from": "Users → Issues #17845 / #11222",
+      "to": "pingdotgg/t3code",
+      "people": [
+        "ordinary-devs",
+        "julius"
+      ],
+      "platform": "GitHub",
+      "category": "telemetry",
+      "topics": [
+        "security",
+        "promises",
+        "telemetry"
+      ],
+      "status": "partial",
+      "sentByTheo": false,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 1290,
+      "subject": "41.6 GB fake SQLite \"permanent delete\" & 5-second full-OS process command-line spy",
+      "subjectZh": "「永久删除」是假删致 SQLite 暴涨至 41.6 GB + Rust 进程每 5 秒全盘扫描全机命令行",
+      "snippet": "Clicking 'permanently clears conversation history' left full history on disk; background t3-resource-monitor swept every OS process & full cmdline every 5s.",
+      "snippetZh": "弹窗写着「永久清除对话历史」，实际只写个软删除标记导致数据库飙到 41.6 GB；后台 Rust 监控每 5 秒扫全机 440+ 进程完整命令行（含明文密钥）。",
+      "messages": [
+        {
+          "sender": "Affected Users (Issues #17845, #28903, #11222)",
+          "handle": "pingdotgg/t3code · GitHub Issues",
+          "to": "T3 Code Maintainers",
+          "time": "Oct–Nov 2026",
+          "avatar": "U",
+          "color": "#5F6368",
+          "body": "1. Fake Permanent Delete (#17845): Dialog promised \"This permanently clears conversation history for this thread\", yet `ThreadDeletion.ts` only appended a `thread.deleted` event — bloating `statev2.sqlite` to 25.9 GB in 3 weeks and 41.6 GB in 6 weeks.\n\n2. Full-OS Process Scanning (#11222 & PR #41889): Native helper `t3-resource-monitor` ran `ProcessesToUpdate::All` with `with_cmd(UpdateKind::Always)` every 5 seconds even with diagnostics closed, scanning 440+ unrelated apps/games and capturing full command lines (often carrying plaintext API keys and passwords).",
+          "attachments": [
+            {
+              "src": "evidence/10-issue17845-fake-delete.png",
+              "title": "Issue #17845 documenting 41.6 GB fake SQLite deletion"
+            },
+            {
+              "src": "evidence/extra/t3code-9-issue-11222-process-spy.png",
+              "title": "Issue #11222 documenting 5-second full-OS process scanning"
+            }
+          ],
+          "links": [
+            {
+              "label": "Issue #17845",
+              "url": "https://github.com/pingdotgg/t3code/issues/17845"
+            },
+            {
+              "label": "Issue #11222",
+              "url": "https://github.com/pingdotgg/t3code/issues/11222"
+            },
+            {
+              "label": "PR #41889",
+              "url": "https://github.com/pingdotgg/t3code/pull/41889"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-02-pr29922-77k-stars",
+      "exhibit": "18",
+      "date": "2026-11-02",
+      "dateDisplay": "Nov 2, 2026",
+      "timestamp": "Nov 2–6, 2026",
+      "from": "@theo ↔ @zhilsinger (PR #29922)",
+      "to": "pingdotgg/t3code (PR #29922)",
+      "people": [
+        "theo",
+        "ordinary-devs"
+      ],
+      "platform": "GitHub",
+      "category": "telemetry",
+      "topics": [
+        "commercial",
+        "security",
+        "double-standard"
+      ],
+      "status": "open",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1520,
+      "subject": "Self-merged 30s-idle host-credential star prompt (30k → 77k stars) + unfixed arbitrary-repo bug",
+      "subjectZh": "绕过人工审批自合 30 秒闲置刷星弹窗（3 万飙至 7.7 万星），且留下任意仓库点星漏洞未修",
+      "snippet": "Bypassed Macroscope approval block, ignored zhilsinger's Request Changes for 19 days; driver.ts#L60-L99 still lets arbitrary repos be starred via host GitHub credentials.",
+      "snippetZh": "无视 Macroscope 拦截提示、晾着 zhilsinger 的 Request Changes 19 天不理，直接自合用宿主 GitHub 凭证自动点星的弹窗，暴涨 +3,094 星/天。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #29922",
+          "to": "All Desktop/Web Users",
+          "time": "Nov 2, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "Self-merged PR #27832, #29922, and #29987 adding a 30-second-idle toast after 5 sent prompts that fires `PUT user/starred/pingdotgg/t3code` using the host server's GitHub credentials.\n\n• Bypassed Macroscope bot's `Needs Human Approval` flag.\n• Catapulted the repo from 30k to 77k stars (+3,094 stars/day on GitHub Trending) while watchers stayed ~129.",
+          "attachments": [
+            {
+              "src": "evidence/extra/p3-3-pr29922-one-click-star.png",
+              "title": "PR #29922 self-merged one-click server star"
+            },
+            {
+              "src": "evidence/extra/p10-4a-pr29922-macroscope.png",
+              "title": "Macroscope flagged PR #29922 (bypassed)"
+            },
+            {
+              "src": "evidence/extra/p10-3-x-theo-nov2-trending.png",
+              "title": "+3,094 stars/day on GitHub Trending"
+            }
+          ],
+          "links": [
+            {
+              "label": "PR #29922",
+              "url": "https://github.com/pingdotgg/t3code/pull/29922"
+            }
+          ]
+        },
+        {
+          "sender": "@zhilsinger",
+          "handle": "GitHub Security Reviewer",
+          "to": "@t3dotgg (PR #29922)",
+          "time": "Nov 2026 (Unanswered 19+ days)",
+          "avatar": "Z",
+          "color": "#188038",
+          "body": "Submitted a formal `Request changes` review flagging that `packages/source-control-github/src/server/driver.ts#L60-L99` accepts unpinned arbitrary owner/repo parameters for server-side starring.\n\nRemained unanswered and unfixed through `ca81b7b9`.",
+          "attachments": [
+            {
+              "src": "evidence/21-pr29922-zhilsinger-review.png",
+              "title": "zhilsinger Request Changes review unanswered 19 days"
+            },
+            {
+              "src": "evidence/extra/p10-5-gh-driver-arbitrary-repo.png",
+              "title": "driver.ts#L60-L99 arbitrary-repo starring bug"
+            }
+          ],
+          "links": [
+            {
+              "label": "driver.ts source",
+              "url": "https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-08-stealing-miaai-fork",
+      "exhibit": "10",
+      "date": "2026-11-08",
+      "dateDisplay": "Nov 8, 2026",
+      "timestamp": "Nov 8, 2026, 9:28 AM CST",
+      "from": "@theo → @MiaAI_lab & @bot",
+      "to": "@MiaAI_lab, @bot (beebox)",
+      "people": [
+        "theo",
+        "miaai"
+      ],
+      "platform": "X",
+      "category": "bullying",
+      "topics": [
+        "double-standard",
+        "bullying"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1680,
+      "subject": "\"Okay I'm stealing this\" — Dispatched @bot 30 seconds later to scrape her fork",
+      "subjectZh": "公然回复女开发者 Fork「Okay I'm stealing this」，30 秒后派 @bot 扒她代码",
+      "snippet": "09:28:47 'Okay I'm stealing this' → 09:29:17 '@bot find her fork and see how portable this is... implement it.' Repeated Nov 13 on rival tools.",
+      "snippetZh": "09:28:47 回复「我要偷这个了」，30 秒后直接公开 @bot「去找她的 fork 看能不能移植并实现出来」；11 月 13 日又派 bot 逐条抄竞品功能。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2119240683680944172)",
+          "to": "@MiaAI_lab",
+          "time": "Nov 8, 2026, 09:28:47 CST",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "\"Okay I'm stealing this\"",
+          "attachments": [],
+          "links": [
+            {
+              "label": "X Post 2119240683680944172",
+              "url": "https://x.com/theo/status/2119240683680944172"
+            }
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2119240810202034645)",
+          "to": "@bot (30 seconds later)",
+          "time": "Nov 8, 2026, 09:29:17 CST",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "\"@bot find her fork and see how portable this is. Spin up a thread on beebox with opus 5.5 to implement it. Use my full stop skill.\"\n\nFive days later (Nov 13, status 2121017649652269120), when @zqkrq listed features preferred in competing tools, Theo again commanded `@bot` to spin up separate threads cloning every praised feature — while mocking @agent_wrapper and Claude Code Desktop for shipping similar UI.",
+          "attachments": [
+            {
+              "src": "evidence/23-stealing-fork-bot.png",
+              "title": "Replying 'Okay I'm stealing this' and tagging @bot 30s later"
+            },
+            {
+              "src": "evidence/extra/p8-4b-x-theo-copy-other-tools.png",
+              "title": "Nov 13 dispatching @bot to clone rival tool features"
+            },
+            {
+              "src": "evidence/extra/p8-4c-x-theo-mock-copying.png",
+              "title": "Nov 24 mocking Claude Code Desktop sidebar tabs"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2119240810202034645",
+              "url": "https://x.com/theo/status/2119240810202034645"
+            },
+            {
+              "label": "Nov 13 Rival-Cloning Post",
+              "url": "https://x.com/theo/status/2121017649652269120"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09-issue33639-bermudi-insult",
+      "exhibit": "09",
+      "date": "2026-11-09",
+      "dateDisplay": "Nov 9, 2026",
+      "timestamp": "Nov 9, 2026",
+      "from": "@theo ↔ @bermudi (#33639)",
+      "to": "Issue #33639 & PR #33131",
+      "people": [
+        "theo",
+        "bermudi"
+      ],
+      "platform": "GitHub",
+      "category": "bullying",
+      "topics": [
+        "bullying"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1950,
+      "subject": "Told user @bermudi to uninstall & called him an \"ungrateful prick who is lazy as shit\"",
+      "subjectZh": "在 GitHub Issue #33639 辱骂反馈用户 @bermudi 是「忘恩负义、懒得要死的混蛋」并威胁封禁",
+      "snippet": "After deleting Plan mode via an unread AI summary (PR #33131), Theo exploded at a user asking about release notes and rejected a clean fix PR #41572 the next morning.",
+      "snippetZh": "删掉 Plan 模式后，用户抱怨更新日志没说明上下文进度条去哪了，Theo 直接让他卸载、威胁拉黑并飙脏话；次日另一个干净修复 PR #41572 也被秒拒。",
+      "messages": [
+        {
+          "sender": "@bermudi",
+          "handle": "GitHub User · Issue #33639",
+          "to": "pingdotgg/t3code",
+          "time": "Nov 2026",
+          "avatar": "B",
+          "color": "#A142F4",
+          "body": "Complained that release notes failed to explain where the hidden context-window indicator moved, noting not every developer can afford thousands of dollars in AI subscriptions.",
+          "attachments": [
+            {
+              "src": "evidence/extra/t3code-7-pr-33131-ai-brainrot.png",
+              "title": "PR #33131 deleting Plan mode with contradictory AI summary"
+            }
+          ],
+          "links": [
+            {
+              "label": "PR #33131",
+              "url": "https://github.com/pingdotgg/t3code/pull/33131"
+            }
+          ]
+        },
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "Maintainer · Issue #33639",
+          "to": "@bermudi",
+          "time": "Nov 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "\"@bermudi you in particular should uninstall our software. I will ban you from the repo if you ever leave a comment like this again. You spent actual time being a dick to me personally for giving out software I could charge millions of dollars for for free... You're an ungrateful prick who is lazy as shit, and I do not care about your opinions.\"\n\nWhen another contributor submitted PR #41572 cleanly placing the context ring inside the send button without taking composer space, it was closed immediately the next morning.",
+          "attachments": [
+            {
+              "src": "evidence/extra/t3code-12-issue-33639-theo-insult.png",
+              "title": "Verbatim screenshot of Theo insulting @bermudi in Issue #33639"
+            }
+          ],
+          "links": [
+            {
+              "label": "Issue #33639 Comment",
+              "url": "https://github.com/pingdotgg/t3code/issues/33639#issuecomment-6765462545"
+            },
+            {
+              "label": "Rejected Fix PR #41572",
+              "url": "https://github.com/pingdotgg/t3code/pull/41572"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-10-yolo-merges-nuke",
+      "exhibit": "09",
+      "date": "2026-11-10",
+      "dateDisplay": "Nov 10, 2026",
+      "timestamp": "Nov 10–16, 2026",
+      "from": "@theo → Nightly Users",
+      "to": "Nightly Users & Contributors",
+      "people": [
+        "theo",
+        "julius"
+      ],
+      "platform": "X",
+      "category": "telemetry",
+      "topics": [
+        "security",
+        "commercial"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 610,
+      "subject": "\"If it nukes my machine that's free content\" — 500 commits/day, 700 agents & yolo merges",
+      "subjectZh": "自曝「弄崩电脑正好当免费视频素材」：日均 500 提交、700 个 Agent 与 yolo merges",
+      "snippet": "\"If you're okay with my yolo merges breaking shit sometimes, stay on nightly\" — while blaming 70% of user feature requests on \"prompt skill issues\".",
+      "snippetZh": "内部靠 Agent 无人值守狂合 PR、自嘲 yolo merges 经常把东西搞崩；对外却嘲讽「70% 的功能请求都是用户 prompt 水平太菜」。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "T3 Code Nightly Users",
+          "time": "Nov 10, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "• \"If you're okay with my yolo merges breaking shit sometimes, stay on nightly\" (2119951615679672513)\n• \"I need results fast because I have to film, and if it nukes my machine that's free content\" (2119993037971730879)\n• \"~70% of feature requests in T3 Code are prompt skill issues at this point\" (2119958282022568059)\n• Nov 12: \"I'm often at 500 commits/day, this is just t3 code lol\" (2120741101250515322)\n• Nov 16: \"Knowing what my 1 video editor is working on is very different from knowing what my 700 agents did last week.\" (2122203951701585972)",
+          "attachments": [
+            {
+              "src": "evidence/extra/p7-1-x-theo-nukes-machine.png",
+              "title": "'if it nukes my machine that's free content'"
+            },
+            {
+              "src": "evidence/extra/p7-2-x-theo-yolo-merges.png",
+              "title": "'my yolo merges breaking shit sometimes'"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2119951615679672513",
+              "url": "https://x.com/theo/status/2119951615679672513"
+            },
+            {
+              "label": "X Post 2119993037971730879",
+              "url": "https://x.com/theo/status/2119993037971730879"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-11-gendered-attack-demonetize",
+      "exhibit": "14",
+      "date": "2026-11-11",
+      "dateDisplay": "Nov 11, 2026",
+      "timestamp": "Nov 11–12, 2026 (125 posts/day peak)",
+      "from": "@theo → Female Critic",
+      "to": "Public timeline & Community Notes",
+      "people": [
+        "theo",
+        "female-critic"
+      ],
+      "platform": "X",
+      "category": "bullying",
+      "topics": [
+        "bullying"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1340,
+      "subject": "Repeated \"stupid bitch\" attack (\"no regret\") + urging followers to demonetize critics",
+      "subjectZh": "连发「stupid bitch」称绝不后悔，并号召粉丝用 Community Notes 断掉批评者变现收入",
+      "snippet": "Peak posting day (125 posts, 32 in 1 hour): doubled down on gendered profanity and asked followers to \"use your community note powers to demonetize them\".",
+      "snippetZh": "单日发帖峰值 125 条（1 小时连发 32 条）：连骂女性批评者并称毫无悔意，同时呼吁粉丝动用 Community Notes 剥夺批评者创作者收益。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (Peak Day: 125 Posts)",
+          "to": "Female Critic & Followers",
+          "time": "Nov 11–12, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "• Nov 11 (2120238201705226498): \"Harassing and lying about open source maintainers is indeed a stupid bitch move.\"\n• Nov 12 (2120599310211703274): \"I do indeed think they are a stupid bitch and I have no regret in saying such.\"\n• Nov 11 (2120238923884696025): \"I'd appreciate if you used your community note powers to demonetize them for their lies :)\"",
+          "attachments": [
+            {
+              "src": "evidence/extra/p9-5b-x-theo-stupid-bitch.png",
+              "title": "Repeated 'stupid bitch' attack with 'no regret'"
+            },
+            {
+              "src": "evidence/extra/p8-2-x-theo-demonetize-cn.png",
+              "title": "Urging followers to use Community Notes to demonetize critics"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2120599310211703274",
+              "url": "https://x.com/theo/status/2120599310211703274"
+            },
+            {
+              "label": "X Post 2120238923884696025",
+              "url": "https://x.com/theo/status/2120238923884696025"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12-contributing-vouched-local-ai",
+      "exhibit": "09",
+      "date": "2026-11-12",
+      "dateDisplay": "Nov 12, 2026",
+      "timestamp": "Nov 12, 2026",
+      "from": "@theo → Contributors & Local AI",
+      "to": "pingdotgg/t3code & Local AI Community",
+      "people": [
+        "theo",
+        "ordinary-devs"
+      ],
+      "platform": "GitHub",
+      "category": "bullying",
+      "topics": [
+        "bullying",
+        "double-standard"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 1120,
+      "subject": "CONTRIBUTING.md: \"Here's my advice: Don't\" + .github/VOUCHED.td public bans + \"Dance on local AI's graves\"",
+      "subjectZh": "重写贡献指南「别来贡献」、上线 .github/VOUCHED.td 公开拉黑名单，并宣称「要在本地 AI 社区坟头蹦迪」",
+      "snippet": "Turned away an eager contributor for not following him on X, codified public denouncement bans in VOUCHED.td, and mocked local-AI devs using Qwen 3.8.",
+      "snippetZh": "因贡献者没关注他 X 账号而婉拒 PR、威胁收回 /btw 功能、在仓库建公开拉黑自动关单系统，并辱骂开源本地模型用户。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "CONTRIBUTING.md & X",
+          "to": "Open-Source Contributors",
+          "time": "Nov 12, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "• `CONTRIBUTING.md`: \"If you're looking for things to contribute, here's my advice: Don't. ... A banned account is denounced in `.github/VOUCHED.td`. Any issue or PR it opens is closed when it is opened.\" (174 items labeled `unwanted`.)\n• Turning away a PR author (2120821423438778667): \"From your eagerness to contribute to the fact that you reply to my posts without following me...not sure this is the best project for you to put your time into.\"\n• Threatening users (2120853340078874923): \"I already caved for y'all with /btw, be careful. I am not afraid to take it away.\"\n• Attacking Local AI developers (2120733839832273025 & 2120757007523447144): \"I'm going to dance on the graves of the 'local ai' community tho\" & \"If I was as dumb as you, I'd probably be fine with Qwen 3.8 too :)\"",
+          "attachments": [
+            {
+              "src": "evidence/22-contributing-vouched-ban.png",
+              "title": "CONTRIBUTING.md pointing to public denouncement bans in .github/VOUCHED.td"
+            },
+            {
+              "src": "evidence/extra/p7-3-x-theo-unfollow-pr.png",
+              "title": "Turning away contributor for not following on X"
+            },
+            {
+              "src": "evidence/extra/p7-4-x-theo-take-it-away.png",
+              "title": "'be careful. I am not afraid to take it away'"
+            },
+            {
+              "src": "evidence/extra/p9-3-x-theo-local-ai-graves.png",
+              "title": "'dance on the graves of the local ai community'"
+            }
+          ],
+          "links": [
+            {
+              "label": "CONTRIBUTING.md",
+              "url": "https://github.com/pingdotgg/t3code/blob/main/CONTRIBUTING.md"
+            },
+            {
+              "label": ".github/VOUCHED.td",
+              "url": "https://github.com/pingdotgg/t3code/blob/main/.github/VOUCHED.td"
+            },
+            {
+              "label": "Local AI Post",
+              "url": "https://x.com/theo/status/2120733839832273025"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-16-vibe-kanban-daytona",
+      "exhibit": "06",
+      "date": "2026-11-16",
+      "dateDisplay": "Nov 16, 2026",
+      "timestamp": "Nov 16–18, 2026",
+      "from": "@theo ↔ Vibe Kanban / Daytona",
+      "to": "Angel Portfolio Companies",
+      "people": [
+        "theo",
+        "vibe-daytona"
+      ],
+      "platform": "X",
+      "category": "bullying",
+      "topics": [
+        "commercial",
+        "bullying"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 740,
+      "subject": "Angel-investor conflict: Mocked Vibe Kanban's shutdown & overlapped Daytona with paid sandboxes",
+      "subjectZh": "天使投资人利益冲突：公开嘲讽被投公司 Vibe Kanban 倒闭，并在 T3 Code 提议做付费云沙盒与 Daytona 正面撞车",
+      "snippet": "\"This UI is great…for running out of runway and killing your business\" — after watching portfolio team Vibe Kanban pivot toward T3 Code's layout.",
+      "snippetZh": "身为 Vibe Kanban 投资人兼贡献者，见其转型倒闭后公开补刀；另一边刚在 T3 Code 放风做付费云沙盒，9 天后又称希望自己投资的 Daytona 别出事。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2122201981167251877)",
+          "to": "Tech Twitter",
+          "time": "Nov 16, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "\"Fun fact: I was an investor in and contributor to Vibe Kanban. They realized kanbans were dead and started moving to basically the exact UI that T3 Code has today. They didn't finish fast enough. They gave up and shut down the company. This UI is great…for running out of runway and killing your business. Maybe that's why tech twitter likes it so much 🤔\"",
+          "attachments": [
+            {
+              "src": "evidence/18-theo-vibe-kanban.png",
+              "title": "Mocking Vibe Kanban shutdown after angel investment"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2122201981167251877",
+              "url": "https://x.com/theo/status/2122201981167251877"
+            }
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2123011578090127499)",
+          "to": "Daytona CEO (@ivanburazin)",
+          "time": "Nov 18, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "\"For the sake of my investment in Daytona (and most of the competitors you're currently mad at), I really hope you're wrong here\"\n\nJust nine days earlier (Nov 9, status 2119705561679933806), Theo floated shipping paid cloud sandboxes directly inside T3 Code.",
+          "attachments": [
+            {
+              "src": "evidence/extra/p4-2-x-theo-daytona-investor.png",
+              "title": "Confirming angel investment in Daytona & competitors"
+            },
+            {
+              "src": "evidence/extra/p4-3-x-theo-paid-cloud-sandboxes.png",
+              "title": "Nov 9 proposing paid cloud sandboxes inside T3 Code"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2123011578090127499",
+              "url": "https://x.com/theo/status/2123011578090127499"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-17-pr27077-rejected",
+      "exhibit": "01",
+      "date": "2026-11-17",
+      "dateDisplay": "Nov 17, 2026",
+      "timestamp": "Nov 17, 2026",
+      "from": "t3code → @inayayousfi (#27077)",
+      "to": "4th Rejected Opt-Out Contributor",
+      "people": [
+        "julius",
+        "ordinary-devs"
+      ],
+      "platform": "GitHub",
+      "category": "telemetry",
+      "topics": [
+        "telemetry",
+        "promises"
+      ],
+      "status": "open",
+      "sentByTheo": false,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 890,
+      "subject": "Rejected PR #27077 (telemetry opt-out, 147 passing tests, bot-approved) as unwanted",
+      "subjectZh": "147 项测试全过、机器人已批准的社区关闭遥测 PR #27077 被直接打上 unwanted 拒绝",
+      "snippet": "Fourth community telemetry opt-out PR (#13458, #16763, #21248, #27077) closed unmerged: \"It is not something the project wants to take on\".",
+      "snippetZh": "这是社区连续第 4 个要求加遥测开关的 PR，测试全过且审校通过，仍被以「项目不想接受」为由拒绝。",
+      "messages": [
+        {
+          "sender": "pingdotgg/t3code",
+          "handle": "GitHub · PR #27077",
+          "to": "@inayayousfi",
+          "time": "Nov 17, 2026",
+          "avatar": "P",
+          "color": "#3C4043",
+          "body": "Community contributor `@inayayousfi` submitted PR #27077 implementing a clean telemetry opt-out setting with 147 passing tests and approval from `macroscopeapp[bot]`.\n\nClosed unmerged on November 17 with the `unwanted` label — joining previously rejected opt-out PRs #13458, #16763, and #21248.",
+          "attachments": [
+            {
+              "src": "evidence/extra/t3code-4-pr-27077-rejected.png",
+              "title": "PR #27077 closed as unwanted despite 147 passing tests"
+            }
+          ],
+          "links": [
+            {
+              "label": "PR #27077",
+              "url": "https://github.com/pingdotgg/t3code/pull/27077"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-18-jail-threat-rsd",
+      "exhibit": "14",
+      "date": "2026-11-18",
+      "dateDisplay": "Nov 18, 2026",
+      "timestamp": "Nov 18, 2026",
+      "from": "@theo → Threads Critic (RSD)",
+      "to": "Critic with RSD Diagnosis",
+      "people": [
+        "theo",
+        "female-critic"
+      ],
+      "platform": "X",
+      "category": "bullying",
+      "topics": [
+        "bullying"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1460,
+      "subject": "\"Stop now or I will literally send you to jail... cell mates & your RSD\"",
+      "subjectZh": "威胁把批评者「送进监狱」并当众嘲讽其心理疾病诊断（RSD）",
+      "snippet": "Threatened a critic with prison while mocking their Rejection Sensitive Dysphoria (RSD) — posted during his claimed '102°F fever' (177 posts in 48 hours).",
+      "snippetZh": "在自称「发烧 102°F」的 48 小时里狂发 177 条推文，期间发帖威胁把一名批评者送进监狱并嘲笑其心理障碍诊断。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2122838455483031925 / 2122865897375400066)",
+          "to": "Threads Critic",
+          "time": "Nov 18, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "\"Stop now or I will literally send you to jail. I'm sure your cell mates will be very understanding of your RSD.\"\n\nPosted during the same 48-hour period (Nov 17–18 PST) where @theo claimed a 102°F fever while publishing 177 X posts, a 6,643-character Astra essay, a video, and 8 consecutive profanity-laden replies attacking @elshayib.",
+          "attachments": [
+            {
+              "src": "evidence/extra/p9-5-x-theo-jail-rsd.png",
+              "title": "Jail threat and medical RSD mockery on Nov 18, 2026"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2122838455483031925",
+              "url": "https://x.com/theo/status/2122838455483031925"
+            },
+            {
+              "label": "X Post 2122865897375400066",
+              "url": "https://x.com/theo/status/2122865897375400066"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-18-31t-token-radar",
+      "exhibit": "08",
+      "date": "2026-11-18",
+      "dateDisplay": "Nov 18, 2026",
+      "timestamp": "Nov 12–23, 2026",
+      "from": "@theo → AI Labs & VCs",
+      "to": "OpenAI, DeepMind & Investors",
+      "people": [
+        "theo",
+        "labs-vips",
+        "maria"
+      ],
+      "platform": "X",
+      "category": "telemetry",
+      "topics": [
+        "commercial",
+        "telemetry"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1610,
+      "subject": "31.7T tokens/day ($10.19M/day) compute radar, $800k spend & $300k+ free OpenAI tokens",
+      "subjectZh": "免费客户端背后的商业账本：日监控 31.7 万亿 Token（$1019 万/天）情报雷达与 30 万美元免费额度",
+      "snippet": "Default-on telemetry powered a real-time $10.19M/day model market-share monitor traded for $300k+ free OpenAI tokens & investor acquisition inquiries.",
+      "snippetZh": "不肯加遥测关闭开关的真正原因：用默认遥测攒出日均 31.7 万亿 Token 的模型市占率雷达，换取大厂 30 万+ 美元免费早鸟额度和 VC 收购洽谈。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Public timeline & @maria_rcks",
+          "time": "Nov 12 – Nov 23, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "• Nov 12 (2120729779511124267): Disclosed spending \"$800k+ to make\" the free open-source client.\n• Nov 18 (2122860770329608290): Posted internal dashboard showing 31.7T tokens/day and $10.19M/day equivalent API spend (peaking near $10.2M/day), plus $300k+ in unlimited free OpenAI early-access tokens.\n• Nov 21 (2123885732330885417): Replied to @maria_rcks: \"Maria please, multiple investors have asked me about this 💀\".\n• Nov 23 (2124682906132181482): Wielded private analytics in replies: \"I'm sorry, I didn't realize you had access to my analytics and could see things I don't.\"",
+          "attachments": [
+            {
+              "src": "evidence/17-theo-31t-tokens-10m-day.png",
+              "title": "Internal analytics: 31.7T tokens/day & $10.19M/day"
+            },
+            {
+              "src": "evidence/extra/p6-1-x-theo-800k-cost.png",
+              "title": "Disclosing $800k+ build spend"
+            },
+            {
+              "src": "evidence/extra/p6-4-x-theo-investors.png",
+              "title": "'multiple investors have asked me about this'"
+            },
+            {
+              "src": "evidence/extra/p6-5-x-theo-98pct-usage.png",
+              "title": "Disclosing ~98.5% three-lab concentration"
+            }
+          ],
+          "links": [
+            {
+              "label": "31.7T Radar Post",
+              "url": "https://x.com/theo/status/2122860770329608290"
+            },
+            {
+              "label": "Investor Post",
+              "url": "https://x.com/theo/status/2123885732330885417"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-19-selective-politeness-vips",
+      "exhibit": "14",
+      "date": "2026-11-19",
+      "dateDisplay": "Nov 19, 2026",
+      "timestamp": "Nov 7–24, 2026 (n = 1,151 posts)",
+      "from": "@theo → 20 Big-Tech VIPs",
+      "to": "Google DeepMind, OpenAI & Tech Execs",
+      "people": [
+        "theo",
+        "labs-vips"
+      ],
+      "platform": "X",
+      "category": "bullying",
+      "topics": [
+        "double-standard"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 2280,
+      "subject": "0.0% profanity to 20 Big-Tech VIPs vs. 8.0% to ordinary devs — \"Happy I didn't burn bridges\"",
+      "subjectZh": "1,151 条推文定量统计：对 20 位大厂高管 0.0% 脏话（32.6% 吹捧感谢），对普通开发者 8.0% 辱骂",
+      "snippet": "Exhaustive 1,151-post dataset proves razor-sharp selective politeness: 0.0% hostility (32.6% gratitude) to lab executives vs. 8.0% hostility to devs and 14.4% crisis surge.",
+      "snippetZh": "17 天全量 1,151 条公开推文证实极度选择性礼貌：面对 Google/OpenAI 高管 0% 脏话还庆幸没烧桥，面对普通开发者与中文圈瞬间飙升。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2123255588570501585 & 2123995323123343869)",
+          "to": "Google DeepMind & OpenAI Leadership",
+          "time": "Nov 19–21, 2026",
+          "avatar": "T",
+          "color": "#137333",
+          "body": "• Nov 19: \"I'm so sorry Google. I didn't recognize your game\"\n• Nov 21: \"Happy I didn't burn bridges with my past content and that we can enjoy this moment together :)\"\n\nQuantitative breakdown across all 1,151 consecutive X posts (Nov 7–24, 2026):\n• 20 Big-Tech Execs / Lab Staff (n = 43 primary-@; 62 any-@): 0.0% targeted profanity/insults, 32.6% explicit gratitude.\n• Ordinary Developers & Critics (n = 766 primary-@): 8.0% hostility/profanity (61 / 766).\n• 25-Hour Chinese-Fork Crisis (n = 132): Direct personal insults surged 4.0× from 3.6% to 14.4%.",
+          "attachments": [
+            {
+              "src": "evidence/charts/theo-chart-3-double-standard.png",
+              "title": "Forensic Chart 3: 0.0% VIP vs 8.0% Dev vs 14.4% Crisis"
+            },
+            {
+              "src": "evidence/extra/p9-1-x-theo-google-bridges.png",
+              "title": "'Happy I didn't burn bridges with my past content'"
+            }
+          ],
+          "links": [
+            {
+              "label": "Dossier 06 (1,151-Tweet Dataset)",
+              "url": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md"
+            },
+            {
+              "label": "X Post 2123995323123343869",
+              "url": "https://x.com/theo/status/2123995323123343869"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-22-engineers-unemployment-linux",
+      "exhibit": "14",
+      "date": "2026-11-22",
+      "dateDisplay": "Nov 22, 2026",
+      "timestamp": "Nov 22, 2026 (24h Before Fork Crisis)",
+      "from": "@theo → Engineers & Linux",
+      "to": "Developer Community",
+      "people": [
+        "theo",
+        "ordinary-devs"
+      ],
+      "platform": "X",
+      "category": "bullying",
+      "topics": [
+        "bullying",
+        "double-standard"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1820,
+      "subject": "\"Engineers deserve the mass unemployment\" + \"Linux larpers\" — hours after lecturing \"don't burn trust\"",
+      "subjectZh": "骂程序员「活该大规模失业」、讽 Linux 用户是「coser」，同一天还说教「别烧毁信任」",
+      "snippet": "Quote-tweeted an honest comparison question with \"Engineers deserve the mass unemployment they have coming\" (386k+ views) and called average devs \"not very smart\".",
+      "snippetZh": "转发一条普通工具对比提问回骂「工程师活该迎来大规模失业」（38.6 万浏览），顺带嘲讽「普通开发者不太聪明」和 Linux 用户。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Ordinary Developers",
+          "time": "Nov 21–22, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "• Nov 21 (2123906522728272178): \"the average developer isn't very smart\"\n• Nov 22 (2124298216271499605): \"I see why you hate me tho, Linux larpers tend to dislike real devs\"\n• Nov 22 (2124470530590011704, 386k+ views): Quote-tweeting a simple question comparing T3 Code and Antigravity: \"Engineers deserve the mass unemployment they have coming\"\n• Nov 22, 18:26 CST (2124449493513068862 — exactly 24h before attacking the Chinese MIT fork): \"Fwiw, burning the trust of everyone around you is pretty much never the best path to get what you want\"",
+          "attachments": [
+            {
+              "src": "evidence/25-engineers-unemployment.png",
+              "title": "'Engineers deserve the mass unemployment they have coming'"
+            },
+            {
+              "src": "evidence/extra/p9-4-x-theo-linux-larpers.png",
+              "title": "'Linux larpers tend to dislike real devs'"
+            },
+            {
+              "src": "evidence/extra/p9-7-x-theo-burning-trust.png",
+              "title": "Lecturing 'don't burn trust' 24h before the crisis"
+            }
+          ],
+          "links": [
+            {
+              "label": "Unemployment Post",
+              "url": "https://x.com/theo/status/2124470530590011704"
+            },
+            {
+              "label": "Burning Trust Post",
+              "url": "https://x.com/theo/status/2124449493513068862"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-22-antigravity-spoof-3min-ban",
+      "exhibit": "04",
+      "date": "2026-11-22",
+      "dateDisplay": "Nov 22, 2026",
+      "timestamp": "Nov 22, 2026",
+      "from": "@Allmight97 ↔ t3code (#41536)",
+      "to": "Google Antigravity Subscribers (Issues #40713 & #41536)",
+      "people": [
+        "antigravity-users",
+        "theo",
+        "labs-vips"
+      ],
+      "platform": "Code",
+      "category": "telemetry",
+      "topics": [
+        "security",
+        "promises",
+        "double-standard"
+      ],
+      "status": "open",
+      "sentByTheo": false,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1570,
+      "subject": "FAQ promised \"zero risk\" ToS safety — code spoofed v1internal & SSH_CONNECTION, banning fresh $20 account in 3 min",
+      "subjectZh": "FAQ 保证「绝对安全合规」，代码却提取系统密钥伪造 Google 内部 Header 与 SSH，新号 3 分钟被封",
+      "snippet": "Extracted OS keyring tokens, hardcoded antigravity/hub/2.24.0, forged SSH_CONNECTION, wired PR #33800 CLIProxyAPI — while Theo blamed proxies and boasted of 555% CLIProxyAPI Gist.",
+      "snippetZh": "FAQ 拍胸脯保证符合 Google ToS，实测代码提取系统钥匙串伪造请求头和假 SSH 环境变量，全新 20 美元号发第一条消息 3 分钟即封，且 Theo 自己发过 10 号池白嫖教程。",
+      "messages": [
+        {
+          "sender": "T3 Code FAQ & @theo",
+          "handle": "docs/user/faq.md & X",
+          "to": "Paying Google AI Subscribers",
+          "time": "Nov 22, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "FAQ guarantee: \"We work with all of the labs and T3 Code is within the TOS of Claude Code, Codex, and Google Antigravity... If it works in T3 Code, you can trust it is safe.\"\n\nOn X (Nov 22, 2124266892991115362), Theo vouched Antigravity had \"zero risk\" and claimed DeepMind's @PatrickToulme \"has landed many PRs on T3 Code\" — git log shows exactly 1 commit (#31158). Meanwhile, Theo publicly shared a 10-account CLIProxyAPI pooling Gist (555% quota) and exploited Codex's 0% grace period for $800+ extra compute.",
+          "attachments": [
+            {
+              "src": "evidence/extra/t3code-16-faq-tos-guarantee.png",
+              "title": "FAQ guaranteeing Antigravity ToS compliance"
+            },
+            {
+              "src": "evidence/extra/p3-1-x-theo-patrick-many-prs.png",
+              "title": "Claiming DeepMind engineer 'landed many PRs'"
+            },
+            {
+              "src": "evidence/extra/p3-2-patrick-only-1-commit.png",
+              "title": "Git log proving exactly 1 commit (#31158)"
+            },
+            {
+              "src": "evidence/19-cliproxy-gist-555pct.jpg",
+              "title": "Theo's 452-star CLIProxyAPI 555% quota pooling Gist"
+            }
+          ],
+          "links": [
+            {
+              "label": "antigravityUsageLimits.ts",
+              "url": "https://github.com/pingdotgg/t3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts"
+            }
+          ]
+        },
+        {
+          "sender": "@Allmight97 & @schlessera",
+          "handle": "GitHub · Issues #41536 & #40713",
+          "to": "pingdotgg/t3code",
+          "time": "Nov 2026",
+          "avatar": "A",
+          "color": "#B06000",
+          "body": "• Issue #41536: Brand-new $20 Google AI subscription with zero proxies banned on its first message — 3 minutes after setup.\n• Issue #40713: Maintainer denied hitting Antigravity backend; @schlessera rebutted with source code proving `antigravityUsageLimits.ts` extracts OS keyring tokens and spoofs `antigravity/hub/2.24.0` against `v1internal`, while `antigravityAuthSupport.ts#L230-L236` injects fake `SSH_CONNECTION` (causing cross-account prompt leaks in #41973).",
+          "attachments": [
+            {
+              "src": "evidence/12-antigravity-v1internal-spoof.png",
+              "title": "Hardcoded antigravity/hub/2.24.0 spoofed header"
+            },
+            {
+              "src": "evidence/13-antigravity-ssh-spoof.png",
+              "title": "Fake SSH_CONNECTION injection"
+            },
+            {
+              "src": "evidence/14-issue41536-fresh-ban.png",
+              "title": "Fresh $20 account banned in 3 minutes"
+            },
+            {
+              "src": "evidence/extra/t3code-17b-issue-40713-schlessera-bust.png",
+              "title": "schlessera code-level rebuttal in Issue #40713"
+            }
+          ],
+          "links": [
+            {
+              "label": "Issue #41536",
+              "url": "https://github.com/pingdotgg/t3code/issues/41536"
+            },
+            {
+              "label": "Issue #40713",
+              "url": "https://github.com/pingdotgg/t3code/issues/40713"
+            },
+            {
+              "label": "PR #33800",
+              "url": "https://github.com/pingdotgg/t3code/pull/33800"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-22-pr41237-21h-filter-drop",
+      "exhibit": "03",
+      "date": "2026-11-22",
+      "dateDisplay": "Nov 22, 2026",
+      "timestamp": "Nov 22–23, 2026 (21 Hours)",
+      "from": "@theo → slopalytics.com",
+      "to": "PR #41237 (Model Telemetry Filter)",
+      "people": [
+        "theo"
+      ],
+      "platform": "GitHub",
+      "category": "telemetry",
+      "topics": [
+        "telemetry",
+        "commercial"
+      ],
+      "status": "partial",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 870,
+      "subject": "21 hours to remove model privacy whitelist for slopalytics.com (vs. 52+ days on force-push bug)",
+      "subjectZh": "52 天不修静默 force-push 漏洞，却只用 21 小时删掉模型隐私白名单给自家榜单导数据",
+      "snippet": "Merged PR #41237 under @theo's account so private enterprise/local model names (`ollama/acme-internal`) flowed verbatim into telemetry.",
+      "snippetZh": "为了自家公开榜单 slopalytics.com 能显示新模型，21 小时闪电合并 PR #41237 撤销隐私白名单，导致企业私有模型名明文上传。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · Issue #40948 → PR #41237",
+          "to": "slopalytics.com / telemetry pipeline",
+          "time": "Nov 22–23, 2026",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "On Nov 22, Issue #40948 noted newer models were missing from @theo's public leaderboard `slopalytics.com` because PR #29001 enforced a privacy whitelist.\n\nWithin 21 hours, PR #41237 merged under @theo's account noting Theo explicitly requested removing the filter — causing private local/enterprise names like `ollama/acme-internal` and `acme-azure-deployment` (plus custom proxies later found in Theo's own dump) to be transmitted verbatim.",
+          "attachments": [
+            {
+              "src": "evidence/extra/t3code-15-pr-41237-slophouse-drop-filter.png",
+              "title": "PR #41237 dropping model privacy filter in 21 hours"
+            }
+          ],
+          "links": [
+            {
+              "label": "Issue #40948",
+              "url": "https://github.com/pingdotgg/t3code/issues/40948"
+            },
+            {
+              "label": "PR #41237",
+              "url": "https://github.com/pingdotgg/t3code/pull/41237"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-23-origin-temu3-threat",
+      "exhibit": "00",
+      "date": "2026-11-23",
+      "dateDisplay": "Nov 23, 2026",
+      "timestamp": "Nov 23, 2026, 7:11 PM – Nov 24, 6:12 AM CST",
+      "from": "@theo ↔ @DDdxx666 (MIT Fork)",
+      "to": "@DDdxx666, @maria_rcks & Public",
+      "people": [
+        "theo",
+        "dddxx666",
+        "maria"
+      ],
+      "platform": "X",
+      "category": "bullying",
+      "topics": [
+        "bullying",
+        "double-standard",
+        "promises"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 3890,
+      "subject": "\"Chinese knockoff\" / \"Temu3 Code\" — \"Do it right now or I'll have GitHub take down your account\"",
+      "subjectZh": "导火索：11 分钟连骂中国开源 MIT Fork「山寨/Temu3」并威胁让 GitHub 封号，11 小时后却欢迎万亿美企随便抄",
+      "snippet": "Homepage said 'Steal our code (legally)'. Attacked a Chinese MIT fork within 11 minutes, apologized privately in DMs while leaving 200k-view attacks up, then welcomed US trillion-dollar labs copying MIT code.",
+      "snippetZh": "官网写着「合法来偷我们的代码」，却在 11 分钟内对免费 MIT Fork 扣上「中国山寨/Temu3」帽子并威胁封号；私信道歉却保留 20 万浏览公开发难，11 小时后称万亿美元美企抄 MIT 完全没问题。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124823227570745504 & 2124825920808829077)",
+          "to": "Public quote-tweet of @DDdxx666's MIT fork",
+          "time": "Nov 23, 2026, 19:11 – 19:22 CST",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "19:11:49 CST: \"I think there's a Chinese knockoff of T3 Code going around because this definitely is NOT our app\"\n\n19:22:31 CST (10m 42s later): \"Temu3 Code\"",
+          "attachments": [
+            {
+              "src": "receipts/x-2124823227570745504-chinese-knockoff.png",
+              "title": "Original X post: \"Chinese knockoff of T3 Code\" (195k+ views)"
+            },
+            {
+              "src": "receipts/x-2124825920808829077-temu3-code.png",
+              "title": "Original X post 10m 42s later: \"Temu3 Code\" (84k+ views)"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2124823227570745504",
+              "url": "https://x.com/theo/status/2124823227570745504"
+            },
+            {
+              "label": "X Post 2124825920808829077",
+              "url": "https://x.com/theo/status/2124825920808829077"
+            }
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124829315657576890)",
+          "to": "@DDdxx666",
+          "time": "Nov 23, 2026, 19:36 CST",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "After @DDdxx666 agreed to consider renaming the free MIT fork to avoid confusion:\n\n\"Not consider. Do it right now or I'm going to contact GitHub and have your account taken down.\"\n\n@DDdxx666 complied within 30 minutes (renaming to `Stardust` and removing all T3 branding). @theo apologized privately in DMs while keeping both 200k-view public attack posts live.",
+          "attachments": [
+            {
+              "src": "evidence/01-origin-theo-threat.png",
+              "title": "Verbatim GitHub account takedown threat"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2124829315657576890",
+              "url": "https://x.com/theo/status/2124829315657576890"
+            }
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124989435154726982 — 11 hours later)",
+          "to": "Question about trillion-dollar US companies copying T3 Code",
+          "time": "Nov 24, 2026, 06:12 CST",
+          "avatar": "T",
+          "color": "#137333",
+          "body": "\"Nah. Open source is open source, even if a trillion dollar company uses it!\"\n\nMeanwhile, T3 employee @maria_rcks publicly hosted `maria-rcks/t3libre` (\"T3 Code, liberated\"), and English-language repos (`t3code-quota-ui`, `t3code-atlas`, `t3code-bar`) operated undisturbed with zero takedown threats.",
+          "attachments": [
+            {
+              "src": "receipts/x-2124989435154726982-trillion-dollar-oss.png",
+              "title": "Original X reply 11h later: \"Open source is open source, even if a trillion dollar company uses it!\""
+            },
+            {
+              "src": "evidence/extra/p1-3-maria-t3libre.png",
+              "title": "Employee @maria_rcks hosting maria-rcks/t3libre"
+            },
+            {
+              "src": "evidence/extra/p1-4-github-t3code-search.png",
+              "title": "English t3code-* repos operating undisturbed"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2124989435154726982",
+              "url": "https://x.com/theo/status/2124989435154726982"
+            },
+            {
+              "label": "Origin Audit Post",
+              "url": "https://x.com/realchendahuang/status/2125062675147448475"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-24-retroactive-trademark-blocker",
+      "exhibit": "15",
+      "date": "2026-11-24",
+      "dateDisplay": "Nov 24, 2026",
+      "timestamp": "Nov 24, 2026, 08:38 – 12:23 CST",
+      "from": "@theo ↔ @DLKFZWilliam2",
+      "to": "PR #41898 & Auto-Blocker (~100 accounts)",
+      "people": [
+        "theo",
+        "dlkfz",
+        "dhh-wp"
+      ],
+      "platform": "X",
+      "category": "bullying",
+      "topics": [
+        "bullying",
+        "double-standard",
+        "promises"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 2110,
+      "subject": "17-hour retroactive TRADEMARK.md + \"get a better lawyer\" + \"China should kick you out\"",
+      "subjectZh": "威胁封号 17 小时后补打 TRADEMARK.md 补丁，94 秒后拿去压人；辱骂辩论者「中国该把你踢出去」并开机器人拉黑百人",
+      "snippet": "08:38 mocked compliance ('get a better lawyer') → 12:02 auto-blocker bot & 'China should kick you out' → 12:21 merged PR #41898 claiming unregistered rights → cited it 94s later.",
+      "snippetZh": "上午 8:38 刚嘲讽合规法务「换个更好的律师」，中午 12:02 辱骂 @DLKFZWilliam2 并确认开机器人拉黑约 100 人，12:21 紧急合并 PR #41898 补写商标声明。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125026423769555308)",
+          "to": "Compliance Lawyers",
+          "time": "Nov 24, 2026, 08:38 CST",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "\"Those regulations are really vague and dumb... if your lawyer pushed back on using agents to merge because of some dumb regulation, get a better lawyer.\"",
+          "attachments": [
+            {
+              "src": "evidence/extra/p1-5-x-get-better-lawyer.png",
+              "title": "'get a better lawyer' 3h before TRADEMARK.md"
+            },
+            {
+              "src": "receipts/x-2125019705270477102-low-quality-users.png",
+              "title": "Original X post (08:12 CST): \"We already have all the high quality users, not surprised the low quality ones are now following\""
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2125026423769555308",
+              "url": "https://x.com/theo/status/2125026423769555308"
+            },
+            {
+              "label": "X Post 2125019705270477102",
+              "url": "https://x.com/theo/status/2125019705270477102"
+            }
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125077510941802509 & 2125120041092108678)",
+          "to": "@DLKFZWilliam2 & ~100 Blocked Accounts",
+          "time": "Nov 24, 2026, 12:02 CST",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "\"My bot blocked you for harassment. I unblocked you so you could reply. Now that I've seen your reply, I agree with my bot. You're a liar and a fucking pussy. China should kick you out for making them look bad\"\n\nLater added: \"Blocked like 100 slop accounts today.\"",
+          "attachments": [
+            {
+              "src": "evidence/extra/p8-3-x-theo-autoblocker.png",
+              "title": "Confirming auto-blocker bot banning ~100 accounts"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2125077510941802509",
+              "url": "https://x.com/theo/status/2125077510941802509"
+            },
+            {
+              "label": "X Post 2125120041092108678",
+              "url": "https://x.com/theo/status/2125120041092108678"
+            }
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "PR #41898 → X (2125082769395220688)",
+          "to": "@DLKFZWilliam2 (94 seconds after merge)",
+          "time": "Nov 24, 2026, 12:21 – 12:23 CST",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "12:21:37 CST (17 hours after threatening @DDdxx666's GitHub account): Merged PR #41898 (authored with Gemini 4 Neon in Antigravity) retroactively adding `TRADEMARK.md` claiming T3 Tools, Inc. owns `T3 Code` \"whether registered or unregistered\".\n\n12:23:09 CST (94 seconds later): Replied linking the fresh commit: \"Again, it was always illegal to use our trademark. Now your agent will be more aware of the legality 🫡\"",
+          "attachments": [
+            {
+              "src": "receipts/x-2125082769395220688-always-illegal.png",
+              "title": "Original X post (12:23 CST): \"Again, it was always illegal to use our trademark\" (+ PR #41898)"
+            },
+            {
+              "src": "evidence/24-pr41898-trademark-aftermath.png",
+              "title": "PR #41898 merged 17h after ban threat"
+            },
+            {
+              "src": "evidence/extra/p1-2b-trademark-md.png",
+              "title": "TRADEMARK.md claiming unregistered marks"
+            }
+          ],
+          "links": [
+            {
+              "label": "PR #41898",
+              "url": "https://github.com/pingdotgg/t3code/pull/41898"
+            },
+            {
+              "label": "X Post 2125082769395220688",
+              "url": "https://x.com/theo/status/2125082769395220688"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-24-cesspit-crisis-outburst",
+      "exhibit": "16",
+      "date": "2026-11-24",
+      "dateDisplay": "Nov 24, 2026",
+      "timestamp": "Nov 24, 2026, 6:39 – 7:45 PM CST",
+      "from": "@theo → Chinese Tech Twitter",
+      "to": "Public timeline (4.0× Insult Surge)",
+      "people": [
+        "theo",
+        "gdpr-auditors",
+        "ordinary-devs"
+      ],
+      "platform": "X",
+      "category": "bullying",
+      "topics": [
+        "bullying",
+        "double-standard"
+      ],
+      "status": "record",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 3120,
+      "subject": "\"Biggest fucking cesspit\" / \"Fucking braindead\" + 3× copy-paste replies & \"I'm not apologizing\"",
+      "subjectZh": "源码审计爆火后怒骂中文科技圈「最大粪坑」、读者「脑残」，连刷 3 遍中文复读机并宣称「绝不道歉」",
+      "snippet": "After Part 1 telemetry audit exploded past 1.81M views, direct insults spiked 4.0× (3.6% → 14.4%) while Theo pasted '完了，又伤害中国人民的感情了。' three times.",
+      "snippetZh": "Part 1 源码遥测实锤突破 181 万浏览后，Theo 人身攻击率暴涨 4 倍（3.6% → 14.4%），连续复制粘贴嘲讽回复并拒不道歉。",
+      "messages": [
+        {
+          "sender": "Independent Code Audit (Part 1 & 2)",
+          "handle": "@realchendahuang · X (2.26M+ views)",
+          "to": "Global Developer Community",
+          "time": "Nov 24, 2026, 17:04 – 17:31 CST",
+          "avatar": "A",
+          "color": "#1A73E8",
+          "body": "Published line-by-line source-code audit of pingdotgg/t3code documenting default-on PostHog telemetry, closed-source ingest.t3.codes retention, ~/.codex + ~/.claude.json credential hashing, 4 rejected opt-out PRs, 41.6 GB fake SQLite deletion, and 5-second OS process scanning.",
+          "attachments": [],
+          "links": [
+            {
+              "label": "Part 1 (2.26M+ views)",
+              "url": "https://x.com/realchendahuang/status/2125153472450527440"
+            },
+            {
+              "label": "Part 2",
+              "url": "https://x.com/realchendahuang/status/2125160473176023486"
+            }
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (Wave 3 Crisis Outburst)",
+          "to": "Chinese Tech Twitter & Audit Readers",
+          "time": "Nov 24, 2026, 18:39 – 19:45 CST",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "• 18:39:35 (2125177503526588877): \"I will say that chinese tech twitter is the biggest fucking cesspit I've ever waded into somehow, and if you trust anyone on that side writing slop essays about things you are fucking braindead\"\n• 18:41:21, 18:43:26, 19:45:14 (3 identical copy-paste replies): \"完了，又伤害中国人民的感情了。\"\n• 18:59:21 (2125182476943556955): \"He deserves zero attention for his lies and slander. I'm thankful his audience has zero value\"\n• 19:42:43 (2125193393450226024): \"I'm not apologizing. I've done nothing wrong\"",
+          "attachments": [
+            {
+              "src": "evidence/26-cn-cesspit.png",
+              "title": "Nov 24 'Chinese tech twitter is the biggest fucking cesspit' post"
+            },
+            {
+              "src": "evidence/charts/theo-chart-4-cn-crisis.png",
+              "title": "Forensic Chart 4: 4.0× personal insult surge during 25h crisis"
+            },
+            {
+              "src": "receipts/x-2125177947376300110-hurt-feelings-zh.png",
+              "title": "Original X reply (18:41 CST, copy-pasted 3×): \"完了，又伤害中国人民的感情了。\""
+            },
+            {
+              "src": "receipts/x-2125182476943556955-zero-value.png",
+              "title": "Original X post (18:59 CST): \"I am thankful his audience has zero value\""
+            },
+            {
+              "src": "receipts/x-2125193393450226024-not-apologizing.png",
+              "title": "Original X reply (19:42 CST): \"I am not apologizing. I have done nothing wrong\""
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2125177503526588877",
+              "url": "https://x.com/theo/status/2125177503526588877"
+            },
+            {
+              "label": "X Post 2125193393450226024",
+              "url": "https://x.com/theo/status/2125193393450226024"
+            },
+            {
+              "label": "X Post 2125177947376300110 (Copy-paste #1)",
+              "url": "https://x.com/theo/status/2125177947376300110"
+            },
+            {
+              "label": "X Post 2125182476943556955 (Zero value)",
+              "url": "https://x.com/theo/status/2125182476943556955"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-24-managed-policy-plaintext-relay",
+      "exhibit": "07",
+      "date": "2026-11-24",
+      "dateDisplay": "Nov 24, 2026",
+      "timestamp": "Nov 24, 2026, 7:13 – 7:36 PM CST",
+      "from": "@theo → Enterprise / Privacy",
+      "to": "Contradicted by docs/user/telemetry.md & T3 Connect",
+      "people": [
+        "theo",
+        "antigravity-users",
+        "gdpr-auditors"
+      ],
+      "platform": "X",
+      "category": "telemetry",
+      "topics": [
+        "telemetry",
+        "security",
+        "promises"
+      ],
+      "status": "open",
+      "sentByTheo": true,
+      "deleted": false,
+      "starredDefault": false,
+      "starCount": 1240,
+      "subject": "Claimed Managed Policy turns off \"all telemetry\" & data \"never touches our servers\" — contradicted by own docs & relay",
+      "subjectZh": "宣称企业策略可一键关掉「所有遥测」且对话「永不经服务器」，被自家文档 4 大盲区与明文中继直接打脸",
+      "snippet": "docs/user/telemetry.md admits hosted web has no toggle, mobile ignores Managed Policy, Publish agent activity ignores opt-outs — and T3 Connect has zero E2E encryption.",
+      "snippetZh": "官方 telemetry.md 白纸黑字承认网页版无开关、移动端不受企业策略控制、Publish 活动无视退出；T3 Connect 中继零端到端加密，全量代码与终端流明文过境。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125186071357251715 & 2125191784859115766)",
+          "to": "Enterprise & Privacy Critics",
+          "time": "Nov 24, 2026, 19:13 – 19:36 CST",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "• 19:13 CST: Claimed T3 Code has the \"best corporate managed policy system\" making it \"trivial to set up and turn off all telemetry\".\n• 19:36 CST: Claimed conversation data \"never touches any of our servers\".",
+          "attachments": [
+            {
+              "src": "evidence/extra/p5-1-x-theo-managed-policy.png",
+              "title": "Theo Managed Policy claim"
+            },
+            {
+              "src": "evidence/extra/p5-2-x-theo-never-touches-servers.png",
+              "title": "'never touches any of our servers' claim"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Post 2125186071357251715",
+              "url": "https://x.com/theo/status/2125186071357251715"
+            },
+            {
+              "label": "X Post 2125191784859115766",
+              "url": "https://x.com/theo/status/2125191784859115766"
+            }
+          ]
+        },
+        {
+          "sender": "T3 Code Own Docs & Relay Code",
+          "handle": "docs/user/telemetry.md & PR #32945",
+          "to": "Verification Record",
+          "time": "Verified at ca81b7b9",
+          "avatar": "D",
+          "color": "#188038",
+          "body": "Directly contradicted by T3 Code's own files:\n1. `docs/user/telemetry.md` confirms hosted web (`app.t3.codes`) has no tracing toggle, mobile is outside Managed Policy, and `Publish agent activity` ignores telemetry opt-outs.\n2. T3 Connect (Issue #32098 & PR #32945): Every prompt, source file, and terminal stream terminates in plaintext inside T3-controlled OVH/Cloudflare infrastructure with zero E2E encryption and default-off device approval.",
+          "attachments": [
+            {
+              "src": "evidence/05-telemetry-cant-disable.png",
+              "title": "docs/user/telemetry.md four documented blind spots"
+            },
+            {
+              "src": "evidence/15-connect-no-e2e.jpg",
+              "title": "T3 Connect zero E2E encryption confirmed"
+            },
+            {
+              "src": "evidence/16-pr32945-ovh-caddy-gateway.jpg",
+              "title": "PR #32945 OVH Hillsboro Caddy TLS-termination gateway"
+            }
+          ],
+          "links": [
+            {
+              "label": "docs/user/telemetry.md",
+              "url": "https://github.com/pingdotgg/t3code/blob/main/docs/user/telemetry.md"
+            },
+            {
+              "label": "Exhibit #05 (T3 Connect)",
+              "url": "https://github.com/realchendahuang/temu3code/blob/main/cases/en/05-t3-connect-zero-e2e-plaintext-relay.md"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-25-gdpr-overnight-collapse",
+      "exhibit": "11",
+      "date": "2026-11-25",
+      "dateDisplay": "Nov 25, 2026",
+      "timestamp": "Nov 25, 2026, 04:00 – 07:00 CST",
+      "from": "@theo & Julius ↔ EU GDPR",
+      "to": "Overnight PRs #42380, #42450, #42285, #42376, #42464",
+      "people": [
+        "theo",
+        "julius",
+        "gdpr-auditors"
+      ],
+      "platform": "GitHub",
+      "category": "telemetry",
+      "topics": [
+        "telemetry",
+        "deleted",
+        "promises"
+      ],
+      "status": "partial",
+      "sentByTheo": true,
+      "deleted": true,
+      "starredDefault": true,
+      "starCount": 2960,
+      "subject": "[DELETED 4 AM THREAT] Clarification collapsed in 90 min: 2.2M/hr IP logs, git.cwd leaks & 264 Claude records",
+      "subjectZh": "[凌晨 4 点闭源威胁已删] 澄清贴 90 分钟全线崩塌：自曝 220 万/时 IP 日志、绝对路径泄露与 264 条活 Claude 关联记录",
+      "snippet": "After an EU GDPR complaint, Theo posted & deleted a 4 AM closed-source ultimatum, then his 3 clarification claims were refuted within 90 minutes by his own team's PRs and his 100 MB dump.",
+      "snippetZh": "欧盟 GDPR 投诉提交后，Theo 凌晨发帖威胁闭源（破 3 千赞后悄删）；早间三大澄清承诺在 90 分钟内被自家 PR #42450/#42380/#42376 和他公开的 100MB 数据包逐条打穿。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (~04:00 & 04:54 CST)",
+          "to": "Public timeline",
+          "time": "Nov 25, 2026, 04:00 – 04:54 CST",
+          "avatar": "T",
+          "color": "#D93025",
+          "body": "• ~04:00 AM [DELETED]: Posted a threat to take T3 Code closed-source that night because users did not deserve open source — silently deleted before sunrise after crossing 3,000 likes.\n• 04:54 AM (2125332390239494211): Published a clarification thread + 100 MB gzipped dump (`events.clean.jsonl`, mtime 20 min earlier) asserting: (1) never collected file paths, (2) env var opt-outs always worked cleanly, (3) Claude account tracking was broken anyway.",
+          "attachments": [
+            {
+              "src": "evidence/extra/x-post11-4-dump-264-claude-records.jpg",
+              "title": "100MB dump forensic audit: 264 live Claude records stitching 4 machines"
+            }
+          ],
+          "links": [
+            {
+              "label": "X Clarification Post",
+              "url": "https://x.com/theo/status/2125332390239494211"
+            }
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino) — 6-Hour Overnight GDPR Blitz",
+          "handle": "pingdotgg/t3code · PRs #42380, #42450, #42285, #42376, #42464, #42466",
+          "to": "Main Branch (90 Minutes Later)",
+          "time": "Nov 25, 2026, 04:00 – 07:00 CST",
+          "avatar": "J",
+          "color": "#C5221F",
+          "body": "Every single assurance collapsed under T3's own merged PR descriptions:\n• PR #42450 (90 min later): Admitted relay webhook runs exported `git.cwd` absolute workspace paths (including username & repo name) to Axiom.\n• PR #42380: Admitted relay spans logged real caller IPs (`cf-connecting-ip`) + `user_agent` next to `user.id` at ~2.2M spans/hour kept for 30 days in Axiom.\n• PR #42376 & #42464: Admitted Windows & macOS first-launch silently ignored saved `T3CODE_TELEMETRY_ENABLED=false` opt-outs.\n• PR #42285: Admitted deleting an account in Clerk left relay DB rows & live Cloudflare tunnels behind.\n• PR #42466: Admitted supposedly \"anonymous\" feedback was batched in the same POST alongside `installId` and host fingerprints.\n• Theo's own dump still contained 264 live Claude records stitching 4 machines (`a482ba5e966a`, `6f24ed1088e8`, `67b554ed259a`, `f756376079c5`) to one SHA-256 hash.",
+          "attachments": [
+            {
+              "src": "evidence/06-pr42450-absolute-path.jpg",
+              "title": "PR #42450 admitting git.cwd absolute path leak to Axiom"
+            },
+            {
+              "src": "evidence/08-pr42380-220w-ip-axiom.jpg",
+              "title": "PR #42380 admitting 2.2M/hr IP + UA spans in Axiom"
+            },
+            {
+              "src": "evidence/09-pr42285-delete-account-leftover.jpg",
+              "title": "PR #42285 admitting broken account deletion"
+            },
+            {
+              "src": "evidence/extra/x-post11-2-pr42376-windows-optout.jpg",
+              "title": "PR #42376 ignored Windows opt-out"
+            },
+            {
+              "src": "evidence/extra/x-post11-3-pr42464-mac-shell-env.jpg",
+              "title": "PR #42464 ignored macOS ~/.zshrc opt-out"
+            },
+            {
+              "src": "evidence/extra/x-post12-4-pr42466-anonymous-batch.jpg",
+              "title": "PR #42466 mixed anonymous feedback batches"
+            }
+          ],
+          "links": [
+            {
+              "label": "PR #42450",
+              "url": "https://github.com/pingdotgg/t3code/pull/42450"
+            },
+            {
+              "label": "PR #42380",
+              "url": "https://github.com/pingdotgg/t3code/pull/42380"
+            },
+            {
+              "label": "PR #42285",
+              "url": "https://github.com/pingdotgg/t3code/pull/42285"
+            },
+            {
+              "label": "PR #42466",
+              "url": "https://github.com/pingdotgg/t3code/pull/42466"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-25-ca81b7b9-active-vulns",
+      "exhibit": "19",
+      "date": "2026-11-25",
+      "dateDisplay": "Nov 25, 2026",
+      "timestamp": "Nov 25, 2026, 2:49 PM CST (`ca81b7b9`)",
+      "from": "Security Audit (ca81b7b9)",
+      "to": "All T3 Code Installations (0 Security Advisories)",
+      "people": [
+        "gdpr-auditors",
+        "antigravity-users"
+      ],
+      "platform": "Code",
+      "category": "telemetry",
+      "topics": [
+        "security"
+      ],
+      "status": "open",
+      "sentByTheo": false,
+      "deleted": false,
+      "starredDefault": true,
+      "starCount": 1790,
+      "subject": "0 GitHub Security Advisories + 5 active Auth & Repo-RCE vulnerabilities at latest HEAD (ca81b7b9)",
+      "subjectZh": "0 份 GitHub 安全公告 + 最新代码 ca81b7b9 仍存 5 项高危认证与恶意仓库执行漏洞",
+      "snippet": "Silent high-severity patches (PR #39483 path traversal) with 0 advisories, plus 30-day plaintext --lan cookies, unrevocable Bearer tokens, replayable ?wsTicket=, and untrusted-repo SSH_AUTH_SOCK exposure.",
+      "snippetZh": "静默修复密钥存储路径穿越等高危漏洞却发 0 份安全公告；截至最新提交仍存在 30 天明文 LAN Cookie、无法自吊销 Bearer Token、URL wsTicket 重放及恶意仓库继承 SSH_AUTH_SOCK 风险。",
+      "messages": [
+        {
+          "sender": "Independent Security Audit (ca81b7b9)",
+          "handle": "+259 commits checked · Nov 25 14:49 CST",
+          "to": "Developers & Security Teams",
+          "time": "Nov 25, 2026, 14:49 CST",
+          "avatar": "S",
+          "color": "#C5221F",
+          "body": "Despite quietly patching high-severity issues like `ServerSecretStore` path traversal (PR #39483), published GitHub Security Advisories remain 0.\n\nLine-by-line verification of latest `main` HEAD (`ca81b7b9`) confirmed 5 active vulnerabilities:\n1. 30-day plaintext `--lan` shell cookies lacking `Secure` flag + missing-`Origin` bypass (`http.ts:215-241`, `EnvironmentAuth.ts:798-819`).\n2. Unrevocable 30-day non-DPoP Bearer tokens (`EnvironmentAuth.ts:1506-1521`).\n3. Replayable `?wsTicket=` query URLs with 5-minute window (`EnvironmentAuth.ts:1553-1585`).\n4. `NodeNet.isIPv4` killing `::1` IPv6 tunnels (`startupAccess.ts:71-110`).\n5. Untrusted repositories auto-executing recursive submodules/hooks with inherited host `SSH_AUTH_SOCK` and `GITHUB_TOKEN` (`GitVcsDriverCore.ts:6144-6205`).",
+          "attachments": [
+            {
+              "src": "evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png",
+              "title": "Plaintext --lan cookie without Secure flag"
+            },
+            {
+              "src": "evidence/extra/ca81b7b9-a5-30d-bearer-and-no-self-revoke.png",
+              "title": "30-day Bearer token self-revocation blocked"
+            },
+            {
+              "src": "evidence/extra/ca81b7b9-a6-submodule-recursive.png",
+              "title": "Untrusted repo inheriting SSH_AUTH_SOCK & GITHUB_TOKEN"
+            },
+            {
+              "src": "evidence/extra/t3code-13-pr-39483-secret-traversal.png",
+              "title": "PR #39483 silent path traversal fix (0 advisories)"
+            }
+          ],
+          "links": [
+            {
+              "label": "Exhibit #19 Full Audit",
+              "url": "https://github.com/realchendahuang/temu3code/blob/main/cases/en/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md"
+            },
+            {
+              "label": "Exhibit #13 (0 Security Advisories)",
+              "url": "https://github.com/realchendahuang/temu3code/blob/main/cases/en/13-zero-security-advisories-and-silent-patches.md"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

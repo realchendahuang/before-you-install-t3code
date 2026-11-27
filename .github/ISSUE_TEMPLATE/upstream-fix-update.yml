@@ -7,7 +7,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please read [CONTRIBUTING.md](https://github.com/realchendahuang/before-you-install-t3code/blob/main/CONTRIBUTING.md) before submitting. Only verifiable public commits, pull requests, and official documentation updates on `pingdotgg/t3code` are accepted. Zero X redirect shortlinks or unverified speculation.
+        Please read [CONTRIBUTING.md](https://github.com/realchendahuang/temu3code/blob/main/CONTRIBUTING.md) before submitting. Only verifiable public commits, pull requests, and official documentation updates on `pingdotgg/t3code` are accepted. Zero X redirect shortlinks or unverified speculation.
   - type: input
     id: affected-section
     attributes:

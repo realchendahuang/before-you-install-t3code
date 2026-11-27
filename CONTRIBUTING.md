@@ -1,93 +1,53 @@
 # Contributing
 
-This repository is an evidence-backed, public-record audit of `pingdotgg/t3code` (T3 Code). Pull requests and structured issue reports are welcome—especially for:
+This repository (`realchendahuang/temu3code`) is an independent, evidence-first public-record archive of `pingdotgg/t3code` (T3 Code), published live at **https://temu3code.com/**. Pull requests and structured issue reports are welcome — especially for:
 
-1. **Verifiable Status Updates:** If an issue or vulnerability documented here is properly fixed and verified in a public commit or pull request on `pingdotgg/t3code`, please submit a PR or use the [Upstream Fix / Status Update](./.github/ISSUE_TEMPLATE/upstream-fix-update.yml) issue form with the fix commit/PR link and verification details.
-2. **Additional Primary Evidence:** Any new telemetry, security, or compliance finding must include direct, verifiable primary URLs (GitHub commits, PRs, issues, source line links, official docs, or archived public records) via PR or the [New Primary Evidence](./.github/ISSUE_TEMPLATE/new-evidence.yml) issue form.
-3. **Translations:** Improvements to the six United Nations official language editions or any of the 12 Global Community Editions under [`docs/i18n/`](./docs/i18n/README.zh-CN.md) (18 languages total including the root English edition) are welcome via PR or the [Translation Fix](./.github/ISSUE_TEMPLATE/translation-fix.yml) issue form.
+1. **Verifiable Status Updates:** If an issue or vulnerability documented here is fixed and verified in a public commit or pull request on `pingdotgg/t3code`, submit a PR or open an [Upstream Fix / Status Update](./.github/ISSUE_TEMPLATE/upstream-fix-update.yml) issue with the commit/PR URL.
+2. **Additional Primary Evidence (`#20`, `#21`, …):** New telemetry, security, governance, or public-record exhibits must cite canonical, publicly verifiable URLs (GitHub commits, PRs, issues, source line links, official docs, USPTO TSDR records, or archived public posts). Private-message reports or uncorroborated allegations are kept separate from the numbered `#00`–`#19+` primary archive.
+3. **18-Language Translations:** Improvements to any of the **18 equal language editions** across both GitHub Markdown (`cases/<lang>/`, `docs/i18n/README.<lang>.md`) and the live website (`site/data/i18n/<lang>.json`) are welcome via PR or [Translation Fix](./.github/ISSUE_TEMPLATE/translation-fix.yml).
+4. **Community Memes & Satire Cards:** New CC0 1.0 satire cards can be submitted via GitHub Issue or PR and published to Cloudflare R2 (`cdn.temu3code.com`) via `scripts/publish_memes.py`.
 
-## Repository Structure
+## Repository Architecture
 
-### Root, Indexes, Evidence Assets & Static Pages Viewer
+All **18 languages** stay aligned across GitHub Markdown and the static **https://temu3code.com/** site:
 
-- [`README.md`](./README.md) — Flagship English audit portal summarizing all 18 findings, timeline, mitigation steps, and primary links.
-- [`docs/COMPLETE-SOURCE-INDEX.md`](./docs/COMPLETE-SOURCE-INDEX.md) — Master tabular index of all direct primary URLs across the root portal, all six deep-dive dossiers, and the primary-source archive.
-- [`docs/EVIDENCE-INDEX.md`](./docs/EVIDENCE-INDEX.md) — Complete catalog of all **108** visual assets under `evidence/` (`28` root curated screenshots/covers including `00-cover-zh.png` and `25-double-standard-chart-zh.png` for Chinese editions, `4` forensic charts in `evidence/charts/`, and `76` extended screenshots in `evidence/extra/`).
-- [`docs/community/issue-1-the-case-against-theo.md`](./docs/community/issue-1-the-case-against-theo.md) — Verbatim archive of community commentary submitted via Issue #1 (`@opserx`).
-- `evidence/` — Losslessly optimized PNG and JPEG visual receipts (`evidence/`, `evidence/charts/`, `evidence/extra/`). Every file under `evidence/` must be referenced by the repository's Markdown documentation.
-- [`site/`](./site/index.html) — Zero-tracker static GitHub Pages portal (`site/index.html`, `site/styles.css`, `site/app.js`, and interactive dark-themed forensic charts under `site/charts/`) featuring a filterable risk matrix, interactive 1,151-tweet charts, a 108-receipt lightbox gallery, and copy-paste mitigation commands. Deployed via [`.github/workflows/pages.yml`](./.github/workflows/pages.yml), which stages `site/` alongside `evidence/` without duplicating image bytes.
+- [`content/manifest.json`](./content/manifest.json) — Master metadata registry (18 languages, 4 thematic chapters, numbered exhibits `#00`–`#19+`, upstream commits).
+- [`content/evidence.json`](./content/evidence.json) — Structured catalog of all **109** primary visual receipts & forensic charts under `evidence/`.
+- [`cases/<lang>/NN-<slug>.md`](./cases/en/00-origin-fork-dispute-and-double-standard.md) — **Markdown single source of truth** for every numbered exhibit (`#00`–`#19+`), written in clean, table-free prose with `<!-- section:... -->` structural markers.
+- [`README.md`](./README.md) & [`docs/i18n/README.<lang>.md`](./docs/i18n/README.zh-CN.md) — 18 equal-footing front doors linking directly to `temu3code.com`, `/mail/`, `/#x-receipts`, and `/memes/` in the reader's language.
+- [`site/`](./site/index.html) — Zero-telemetry static website deployed to **https://temu3code.com/** (Cloudflare Pages + GitHub Pages mirror):
+  - [`site/index.html`](./site/index.html) — Temu3 Code homepage (`#x-receipts` 12 original X captures, 6 verified code/privacy facts, and 19 Sins collector showcase).
+  - [`site/mail/index.html`](./site/mail/index.html) — **Tmail** interactive public-record inbox (`34` threads, 2023–2026 chronological sort, `TPhotos` 109 receipts, `TDrive` 6 dossiers, `TCal` 1,151-tweet charts).
+  - [`site/memes/index.html`](./site/memes/index.html) — **Meme Arsenal** backed by edge-cached Cloudflare R2 (`cdn.temu3code.com`) and [`site/data/memes.json`](./site/data/memes.json).
+  - [`site/data/i18n/<lang>.json`](./site/data/i18n/en.json) & [`site/data/i18n.js`](./site/data/i18n.js) — Shared 18-language UI translation bundles (including RTL Arabic).
+- [`docs/dossiers/`](./docs/dossiers/01-telemetry-and-gdpr-timeline.md), [`docs/EVIDENCE-INDEX.md`](./docs/EVIDENCE-INDEX.md), [`docs/COMPLETE-SOURCE-INDEX.md`](./docs/COMPLETE-SOURCE-INDEX.md), and [`docs/community/`](./docs/community/issue-1-the-case-against-theo.md) — Deep technical reference dossiers, master catalogs, and separated community commentary.
 
-### Deep Forensic Dossiers (`docs/dossiers/`)
-
-Detailed technical, financial, and quantitative documentation is organized into six dedicated dossiers:
-
-1. [`docs/dossiers/01-telemetry-and-gdpr-timeline.md`](./docs/dossiers/01-telemetry-and-gdpr-timeline.md) — Default PostHog telemetry, `ingest.t3.codes`, cross-tool SHA-256 identification (`Identify.ts`), Managed Policy gaps, the Nov 24–25 post-GDPR overnight sprint, and post-audit upstream tracking.
-2. [`docs/dossiers/02-local-safety-and-security-audit.md`](./docs/dossiers/02-local-safety-and-security-audit.md) — `statev2.sqlite` retention, `t3-resource-monitor` process scanning, Claude Auto silent `git push --force`, silent security patches, and `SECURITY.md` boundaries.
-3. [`docs/dossiers/03-antigravity-tos-and-t3connect-relay.md`](./docs/dossiers/03-antigravity-tos-and-t3connect-relay.md) — Google Antigravity `v1internal` header and `SSH_CONNECTION` spoofing, fresh account bans, and T3 Connect missing end-to-end encryption.
-4. [`docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md`](./docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md) — $800k+ spend, 31.7T-token telemetry radar, investor/sponsor overlaps, CLIProxyAPI contradictions, and the `driver.ts` 77k-star toast funnel.
-5. [`docs/dossiers/05-governance-trademark-and-history.md`](./docs/dossiers/05-governance-trademark-and-history.md) — `yolo merges` vs. `CONTRIBUTING.md`/`.github/VOUCHED.td`, fork-scraping `@bot`, USPTO/GitHub trademark record, and historical incidents.
-6. [`docs/dossiers/06-tweet-forensic-dataset-1151.md`](./docs/dossiers/06-tweet-forensic-dataset-1151.md) — Quantitative methodology, cadence, tone asymmetry, and embedded PNG charts across 1,151 `@theo` X posts (Nov 7–24, 2026).
-
-### 18-Language Documentation Tree (`docs/i18n/`)
-
-The audit portal maintains an 18-language tree covering the six United Nations official languages and 12 Global Community Editions:
-
-- **United Nations Official Languages (6):**
-  - English: [`./README.md`](./README.md)
-  - 简体中文: [`./docs/i18n/README.zh-CN.md`](./docs/i18n/README.zh-CN.md)
-  - Français: [`./docs/i18n/README.fr.md`](./docs/i18n/README.fr.md)
-  - Español: [`./docs/i18n/README.es.md`](./docs/i18n/README.es.md)
-  - Русский: [`./docs/i18n/README.ru.md`](./docs/i18n/README.ru.md)
-  - العربية: [`./docs/i18n/README.ar.md`](./docs/i18n/README.ar.md)
-- **Global Community Editions (12):**
-  - 繁體中文: [`./docs/i18n/README.zh-TW.md`](./docs/i18n/README.zh-TW.md)
-  - 日本語: [`./docs/i18n/README.ja.md`](./docs/i18n/README.ja.md)
-  - 한국어: [`./docs/i18n/README.ko.md`](./docs/i18n/README.ko.md)
-  - Deutsch: [`./docs/i18n/README.de.md`](./docs/i18n/README.de.md)
-  - Português: [`./docs/i18n/README.pt-BR.md`](./docs/i18n/README.pt-BR.md)
-  - Italiano: [`./docs/i18n/README.it.md`](./docs/i18n/README.it.md)
-  - Nederlands: [`./docs/i18n/README.nl.md`](./docs/i18n/README.nl.md)
-  - Polski: [`./docs/i18n/README.pl.md`](./docs/i18n/README.pl.md)
-  - Türkçe: [`./docs/i18n/README.tr.md`](./docs/i18n/README.tr.md)
-  - Tiếng Việt: [`./docs/i18n/README.vi.md`](./docs/i18n/README.vi.md)
-  - Bahasa Indonesia: [`./docs/i18n/README.id.md`](./docs/i18n/README.id.md)
-  - हिन्दी: [`./docs/i18n/README.hi.md`](./docs/i18n/README.hi.md)
-
-When updating or adding translations inside `docs/i18n/`, adjust relative asset and cross-document paths for depth (for example, `../../evidence/...`, `../dossiers/...`, `../COMPLETE-SOURCE-INDEX.md`, `../EVIDENCE-INDEX.md`, and `../../README.md`).
-
-### Issue Templates (`.github/ISSUE_TEMPLATE/`)
-
-Structured YAML issue forms route community contributions cleanly:
-
-- [`.github/ISSUE_TEMPLATE/config.yml`](./.github/ISSUE_TEMPLATE/config.yml) — Disables blank issues and directs general questions back to this guide.
-- [`.github/ISSUE_TEMPLATE/upstream-fix-update.yml`](./.github/ISSUE_TEMPLATE/upstream-fix-update.yml) — Reports verified upstream fixes or status changes in `pingdotgg/t3code` (requires affected dossier/section, canonical fix PR/commit URL, and verification details).
-- [`.github/ISSUE_TEMPLATE/new-evidence.yml`](./.github/ISSUE_TEMPLATE/new-evidence.yml) — Submits new primary-source findings (requires target domain, canonical `https://` URLs, and reproducible steps or line references).
-- [`.github/ISSUE_TEMPLATE/translation-fix.yml`](./.github/ISSUE_TEMPLATE/translation-fix.yml) — Reports translation or link-parity issues across the 17 `docs/i18n/` editions and `README.md`.
-
-## Ground Rules
-
-- **Primary sources only:** No rumors, speculation, or unverified claims.
-- **No personal information or harassment:** Keep all entries strictly focused on shipped software behavior, repository documentation, governance policies, and verifiable public statements. Never submit private addresses, phone numbers, or personal contact data.
-- **Preserve all URLs verbatim:** When translating, never modify, shorten, or drop any GitHub, USPTO, YouTube, or X source URL.
-- **Canonical direct URLs only:** Never commit X redirect shortlinks; always expand links to their direct canonical `https://` target.
-- **Clean Markdown formatting:** Avoid backslash-escaped currency dollar signs and unrendered double-equals highlight syntax.
-
-## Automated Verification
-
-Every push to `main` and every pull request runs [`.github/workflows/verify.yml`](./.github/workflows/verify.yml), which executes `scripts/verify_repo.py`. Before opening a pull request, run the repository verification script locally:
+## How to Add a New Exhibit (`#20`, `#21`, …) or New Memes
 
 ```bash
-# Full strict check (required in CI: links, anchors, evidence/, dossiers -> source index, and all 17 i18n editions)
-python3 scripts/verify_repo.py
+# 1. Scaffold English & Simplified Chinese Markdown exhibit templates
+python3 scripts/new_case.py \
+  --id 20 \
+  --slug "short-descriptive-slug" \
+  --act act3 \
+  --status open \
+  --severity critical \
+  --hero "evidence/extra/your-screenshot.png" \
+  --x-post "https://x.com/..."
 
-# Staged English/dossier check (allows pending docs/i18n/ editions during staged drafting)
-python3 scripts/verify_repo.py --allow-missing-i18n
+# 2. Polish cases/en/20-*.md and cases/zh-CN/20-*.md, add URLs to docs/COMPLETE-SOURCE-INDEX.md,
+#    and add the matching thread to site/mail/threads.json
+
+# 3. Publish new memes (converts to WebP, syncs to R2, refreshes site/data/memes.json)
+python3 scripts/publish_memes.py
+
+# 4. Run strict CI verification (must exit 0 with 0 errors)
+python3 scripts/verify_repo.py
 ```
 
-`scripts/verify_repo.py` enforces:
+## Editorial & Verification Rules
 
-1. **Relative Links & Images:** Every relative Markdown and HTML `href`/`src` target resolves cleanly inside the repository.
-2. **Internal `#anchor` Validation:** Every same-file and cross-file `#anchor` link resolves against GitHub Unicode heading slugs (`L`, `M`, `N`, `-`, `_`, spaces → `-`, lowercase, with duplicate-heading suffixes) or explicit HTML `id="..."` attributes.
-3. **100% `evidence/` Asset Coverage:** Every image file under `evidence/` is referenced by the repository's Markdown documentation (`0` unreferenced assets).
-4. **Formatting & Link Hygiene:** Zero X redirect shortlinks, zero backslash-escaped currency dollar signs outside fenced code blocks, and zero unrendered double-equals highlight markers.
-5. **External URL Parity:** Every `https://` URL in `README.md` and **all** `docs/dossiers/*.md` files is cataloged in `docs/COMPLETE-SOURCE-INDEX.md`, and all 17 `docs/i18n/` editions match the base `README.md` URL set.
+- **Zero shortened redirect URLs** (`t.co` links are blocked by CI).
+- **Zero private contact details** or doxxing.
+- **100% evidence accounting:** Every file under `evidence/` must be indexed and referenced.
+- **100% URL parity:** Every localized exhibit under `cases/<lang>/` must preserve the exact canonical URLs and image paths of its English source.
