@@ -15,11 +15,12 @@
     "close": "Kapat",
     "all": "Tümü",
     "prev": "Önceki",
-    "next": "Sonraki"
+    "next": "Sonraki",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · T3 Code'u kurmadan önce",
-    "heroH1": "T3 Code'u<br />kurmadan önce.",
+    "pageTitle": "Temu3 Code · Sıfır telemetri. Sadece kanıt.",
+    "heroH1": "Sıfır telemetri.<br />Sadece kanıt.",
     "heroSub": "20 vaka, 109 ekran görüntüsü ve pingdotgg/t3code'dan 3,5 yıllık kamuya açık gönderi ve kod. Takip yok.",
     "ctaMail": "Tmail'i aç",
     "ctaSteal": "Kodumuzu çal (GitHub'ı aramayız, söz) ↗",
@@ -117,7 +118,7 @@
     "f6Desc": "Düz metin 30 günlük --lan shell çerezleri, iptal edilemeyen Bearer token'lar ve açıkta SSH_AUTH_SOCK.",
     "mmTitle": "24 Günah ve Mem",
     "mmDraw": "Rastgele kart çek",
-    "mmAll": "114 memin tamamı ↗",
+    "mmAll": "150 memin tamamı ↗",
     "mmOpenArsenal": "Memler'de aç ↗",
     "mmCopyPng": "PNG kopyala",
     "mmDrawAgain": "Tekrar çek",
@@ -129,9 +130,9 @@
     "stealReports": "20 vakanın tamamı ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 Memler · 114 CC0 kart ve mem",
+    "pageTitle": "Temu3 Memler · 150 CC0 kart ve mem",
     "title": "Memler",
-    "sub": "114 CC0 kart ve mem. Kopyalamak veya kaynağına bakmak için karta tıkla.",
+    "sub": "150 CC0 kart ve mem. Kopyalamak veya kaynağına bakmak için karta tıkla.",
     "drawBtn": "Rastgele kart çek",
     "drawAgain": "Tekrar çek",
     "submitBtn": "GitHub'da gönder ↗",
@@ -231,7 +232,7 @@
     "aboutTitle": "Tmail hakkında",
     "aboutBody": "34 konu ve 109 ekran görüntüsünden oluşan, takip yapmayan statik arşiv (Mayıs 2023 – Kasım 2026).",
     "memeModalDesc": "Kopyalamak veya kaydetmek için Memler'de karta tıkla.",
-    "openAllMemes": "114 memin tamamı ↗",
+    "openAllMemes": "150 memin tamamı ↗",
     "copyInMemes": "PNG kopyala ↗",
     "topicPrefix": "Konu",
     "personPrefix": "Kişi",
@@ -294,14 +295,15 @@
         "title": "Rapor 06 · 1.151 gönderi (7–24 Kasım 2026)",
         "desc": "20 büyük teknoloji VIP'sine %0,0 küfür, normal geliştiricilere %8,0, kriz sırasında %14,4, bir de nasıl saydığımız."
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · T3 Code'u kurmadan önce",
+    "title": "Temu3 Code · Sıfır telemetri. Sadece kanıt.",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 X gönderisi",
-    "portalMemes": "114 mem",
+    "portalMemes": "150 mem",
     "portalEvidence": "109 ekran görüntüsü",
     "portalSources": "327 bağlantı",
     "languagesLabel": "Diller (18):",

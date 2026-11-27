@@ -15,11 +15,12 @@
     "close": "Zamknij",
     "all": "Wszystko",
     "prev": "Poprzedni",
-    "next": "Następny"
+    "next": "Następny",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · Zanim zainstalujesz T3 Code",
-    "heroH1": "Zanim zainstalujesz<br />T3 Code.",
+    "pageTitle": "Temu3 Code · Zero telemetrii. Same dowody.",
+    "heroH1": "Zero telemetrii.<br />Same dowody.",
     "heroSub": "20 przypadków, 109 zrzutów ekranu i 3,5 roku publicznych postów i kodu z pingdotgg/t3code. Bez śledzenia.",
     "ctaMail": "Otwórz Tmail",
     "ctaSteal": "Ukradnij nasz kod (nie zadzwonimy do GitHuba) ↗",
@@ -117,7 +118,7 @@
     "f6Desc": "Ciasteczka shella --lan w jawnym tekście trzymane 30 dni, tokeny Bearer, których nie da się unieważnić, i wystawiony SSH_AUTH_SOCK.",
     "mmTitle": "24 grzechy i memy",
     "mmDraw": "Wylosuj kartę",
-    "mmAll": "Wszystkie 114 memów ↗",
+    "mmAll": "Wszystkie 150 memów ↗",
     "mmOpenArsenal": "Otwórz w Memach ↗",
     "mmCopyPng": "Kopiuj PNG",
     "mmDrawAgain": "Losuj ponownie",
@@ -129,9 +130,9 @@
     "stealReports": "Wszystkie 20 przypadków ↗"
   },
   "memes": {
-    "pageTitle": "Memy Temu3 · 114 kart i memów CC0",
+    "pageTitle": "Memy Temu3 · 150 kart i memów CC0",
     "title": "Memy",
-    "sub": "114 kart i memów CC0. Kliknij kartę, żeby skopiować albo sprawdzić źródło.",
+    "sub": "150 kart i memów CC0. Kliknij kartę, żeby skopiować albo sprawdzić źródło.",
     "drawBtn": "Wylosuj kartę",
     "drawAgain": "Losuj ponownie",
     "submitBtn": "Zgłoś na GitHubie ↗",
@@ -231,7 +232,7 @@
     "aboutTitle": "O Tmail",
     "aboutBody": "Statyczne archiwum bez śledzenia: 34 wątki i 109 zrzutów ekranu (maj 2023 do listopada 2026).",
     "memeModalDesc": "Kliknij kartę, żeby skopiować lub zapisać w Memach.",
-    "openAllMemes": "Wszystkie 114 memów ↗",
+    "openAllMemes": "Wszystkie 150 memów ↗",
     "copyInMemes": "Kopiuj PNG ↗",
     "topicPrefix": "Temat",
     "personPrefix": "Osoba",
@@ -294,14 +295,15 @@
         "title": "Raport 06 · 1151 postów (7–24 lis 2026)",
         "desc": "0,0% wyzwisk wobec 20 VIP-ów z big techu vs. 8,0% wobec zwykłych deweloperów vs. 14,4% w trakcie kryzysu, plus jak liczyliśmy."
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · Zanim zainstalujesz T3 Code",
+    "title": "Temu3 Code · Zero telemetrii. Same dowody.",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 postów na X",
-    "portalMemes": "114 memów",
+    "portalMemes": "150 memów",
     "portalEvidence": "109 zrzutów ekranu",
     "portalSources": "327 linków",
     "languagesLabel": "Języki (18):",

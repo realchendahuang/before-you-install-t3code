@@ -15,11 +15,12 @@
     "close": "Sluiten",
     "all": "Alles",
     "prev": "Vorige",
-    "next": "Volgende"
+    "next": "Volgende",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · Voordat je T3 Code installeert",
-    "heroH1": "Voordat je<br />T3 Code installeert.",
+    "pageTitle": "Temu3 Code · Geen telemetrie. Alleen bewijs.",
+    "heroH1": "Geen telemetrie.<br />Alleen bewijs.",
     "heroSub": "20 zaken, 109 screenshots en 3,5 jaar publieke posts en code van pingdotgg/t3code. Geen tracking.",
     "ctaMail": "Open Tmail",
     "ctaSteal": "Steel onze code (we bellen GitHub niet) ↗",
@@ -117,7 +118,7 @@
     "f6Desc": "--lan-shellcookies die 30 dagen meegaan en in platte tekst staan, Bearer-tokens die je niet kunt intrekken en een blootgestelde SSH_AUTH_SOCK.",
     "mmTitle": "24 zonden en memes",
     "mmDraw": "Trek een willekeurige kaart",
-    "mmAll": "Alle 114 memes ↗",
+    "mmAll": "Alle 150 memes ↗",
     "mmOpenArsenal": "Openen in Memes ↗",
     "mmCopyPng": "PNG kopiëren",
     "mmDrawAgain": "Opnieuw trekken",
@@ -129,9 +130,9 @@
     "stealReports": "Alle 20 zaken ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 Memes · 114 CC0-kaarten en memes",
+    "pageTitle": "Temu3 Memes · 150 CC0-kaarten en memes",
     "title": "Memes",
-    "sub": "114 CC0-kaarten en memes. Klik op een kaart om te kopiëren of de bron te bekijken.",
+    "sub": "150 CC0-kaarten en memes. Klik op een kaart om te kopiëren of de bron te bekijken.",
     "drawBtn": "Trek een willekeurige kaart",
     "drawAgain": "Opnieuw trekken",
     "submitBtn": "Indienen op GitHub ↗",
@@ -231,7 +232,7 @@
     "aboutTitle": "Over Tmail",
     "aboutBody": "Een statisch archief zonder tracking van 34 threads en 109 screenshots (mei 2023 tot nov 2026).",
     "memeModalDesc": "Klik op een kaart om te kopiëren of op te slaan in Memes.",
-    "openAllMemes": "Alle 114 memes ↗",
+    "openAllMemes": "Alle 150 memes ↗",
     "copyInMemes": "PNG kopiëren ↗",
     "topicPrefix": "Onderwerp",
     "personPrefix": "Persoon",
@@ -294,14 +295,15 @@
         "title": "Rapport 06 · 1.151 posts (7-24 nov 2026)",
         "desc": "0,0% schelden op 20 bigtech-VIP's vs. 8,0% op gewone devs vs. 14,4% tijdens de crisis, plus hoe we hebben geteld."
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · Voordat je T3 Code installeert",
+    "title": "Temu3 Code · Geen telemetrie. Alleen bewijs.",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 X-posts",
-    "portalMemes": "114 memes",
+    "portalMemes": "150 memes",
     "portalEvidence": "109 screenshots",
     "portalSources": "327 links",
     "languagesLabel": "Talen (18):",

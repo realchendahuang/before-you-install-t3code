@@ -15,11 +15,12 @@
     "close": "Chiudi",
     "all": "Tutti",
     "prev": "Precedente",
-    "next": "Successivo"
+    "next": "Successivo",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · Prima di installare T3 Code",
-    "heroH1": "Prima di installare<br />T3 Code.",
+    "pageTitle": "Temu3 Code · Zero telemetria. Solo prove.",
+    "heroH1": "Zero telemetria.<br />Solo prove.",
     "heroSub": "20 casi, 109 screenshot e 3,5 anni di post e codice pubblici da pingdotgg/t3code. Nessun tracciamento.",
     "ctaMail": "Apri Tmail",
     "ctaSteal": "Ruba il nostro codice (non chiamiamo GitHub) ↗",
@@ -117,7 +118,7 @@
     "f6Desc": "Cookie di shell --lan in chiaro per 30 giorni, Bearer token che non puoi revocare e SSH_AUTH_SOCK esposto.",
     "mmTitle": "24 peccati e meme",
     "mmDraw": "Pesca una carta a caso",
-    "mmAll": "Tutti i 114 meme ↗",
+    "mmAll": "Tutti i 150 meme ↗",
     "mmOpenArsenal": "Apri in Meme ↗",
     "mmCopyPng": "Copia PNG",
     "mmDrawAgain": "Pesca di nuovo",
@@ -129,9 +130,9 @@
     "stealReports": "Tutti i 20 casi ↗"
   },
   "memes": {
-    "pageTitle": "Meme di Temu3 · 114 carte e meme CC0",
+    "pageTitle": "Meme di Temu3 · 150 carte e meme CC0",
     "title": "Meme",
-    "sub": "114 carte e meme CC0. Clicca una carta per copiarla o controllare la fonte.",
+    "sub": "150 carte e meme CC0. Clicca una carta per copiarla o controllare la fonte.",
     "drawBtn": "Pesca una carta a caso",
     "drawAgain": "Pesca di nuovo",
     "submitBtn": "Invia su GitHub ↗",
@@ -231,7 +232,7 @@
     "aboutTitle": "Informazioni su Tmail",
     "aboutBody": "Un archivio statico senza tracciamento: 34 thread e 109 screenshot (da maggio 2023 a novembre 2026).",
     "memeModalDesc": "Clicca una carta per copiarla o salvarla in Meme.",
-    "openAllMemes": "Tutti i 114 meme ↗",
+    "openAllMemes": "Tutti i 150 meme ↗",
     "copyInMemes": "Copia PNG ↗",
     "topicPrefix": "Argomento",
     "personPrefix": "Persona",
@@ -294,14 +295,15 @@
         "title": "Report 06 · 1.151 post (7–24 nov 2026)",
         "desc": "0,0% di parolacce con 20 VIP del big tech vs. 8,0% con sviluppatori normali vs. 14,4% durante la crisi, e come abbiamo contato."
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · Prima di installare T3 Code",
+    "title": "Temu3 Code · Zero telemetria. Solo prove.",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 post su X",
-    "portalMemes": "114 meme",
+    "portalMemes": "150 meme",
     "portalEvidence": "109 screenshot",
     "portalSources": "327 link",
     "languagesLabel": "Lingue (18):",

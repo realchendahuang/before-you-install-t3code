@@ -15,11 +15,12 @@
     "close": "Schließen",
     "all": "Alle",
     "prev": "Zurück",
-    "next": "Weiter"
+    "next": "Weiter",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · Bevor du T3 Code installierst",
-    "heroH1": "Bevor du<br />T3 Code installierst.",
+    "pageTitle": "Temu3 Code · Keine Telemetrie. Nur Beweise.",
+    "heroH1": "Keine Telemetrie.<br />Nur Beweise.",
     "heroSub": "20 Fälle, 109 Screenshots und 3,5 Jahre öffentliche Posts und Code von pingdotgg/t3code. Kein Tracking.",
     "ctaMail": "Tmail öffnen",
     "ctaSteal": "Klau unseren Code (wir rufen GitHub nicht an) ↗",
@@ -117,7 +118,7 @@
     "f6Desc": "30 Tage gültige --lan-Shell-Cookies im Klartext, nicht widerrufbare Bearer-Tokens und offengelegtes SSH_AUTH_SOCK.",
     "mmTitle": "24 Sünden & Memes",
     "mmDraw": "Zufällige Karte ziehen",
-    "mmAll": "Alle 114 Memes ↗",
+    "mmAll": "Alle 150 Memes ↗",
     "mmOpenArsenal": "In Memes öffnen ↗",
     "mmCopyPng": "PNG kopieren",
     "mmDrawAgain": "Nochmal ziehen",
@@ -129,9 +130,9 @@
     "stealReports": "Alle 20 Fälle ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 Memes · 114 CC0-Karten & Memes",
+    "pageTitle": "Temu3 Memes · 150 CC0-Karten & Memes",
     "title": "Memes",
-    "sub": "114 CC0-Karten und Memes. Klick auf eine Karte, um sie zu kopieren oder die Quelle zu prüfen.",
+    "sub": "150 CC0-Karten und Memes. Klick auf eine Karte, um sie zu kopieren oder die Quelle zu prüfen.",
     "drawBtn": "Zufällige Karte ziehen",
     "drawAgain": "Nochmal ziehen",
     "submitBtn": "Auf GitHub einreichen ↗",
@@ -231,7 +232,7 @@
     "aboutTitle": "Über Tmail",
     "aboutBody": "Ein statisches Archiv ohne Tracking mit 34 Threads und 109 Screenshots (Mai 2023 bis Nov. 2026).",
     "memeModalDesc": "Klick auf eine Karte, um sie zu kopieren oder in Memes zu speichern.",
-    "openAllMemes": "Alle 114 Memes ↗",
+    "openAllMemes": "Alle 150 Memes ↗",
     "copyInMemes": "PNG kopieren ↗",
     "topicPrefix": "Thema",
     "personPrefix": "Person",
@@ -294,14 +295,15 @@
         "title": "Bericht 06 · 1.151 Posts (7.–24. Nov. 2026)",
         "desc": "0,0 % Flüche gegen 20 Big-Tech-VIPs vs. 8,0 % gegen normale Devs vs. 14,4 % während der Krise, plus wie wir gezählt haben."
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · Bevor du T3 Code installierst",
+    "title": "Temu3 Code · Keine Telemetrie. Nur Beweise.",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 X-Posts",
-    "portalMemes": "114 Memes",
+    "portalMemes": "150 Memes",
     "portalEvidence": "109 Screenshots",
     "portalSources": "327 Links",
     "languagesLabel": "Sprachen (18):",

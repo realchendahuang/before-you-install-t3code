@@ -383,7 +383,7 @@
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
     await applyLanguage(lang);
     try {
-      const res = await fetch("./data/memes.json?v=3");
+      const res = await fetch("./data/memes.json?v=4");
       if (res.ok) {
         const data = await res.json();
         memeCatalogMeta = data;

@@ -15,11 +15,12 @@
     "close": "إغلاق",
     "all": "الكل",
     "prev": "السابق",
-    "next": "التالي"
+    "next": "التالي",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · قبل تثبيت T3 Code",
-    "heroH1": "قبل أن تثبّت<br />T3 Code.",
+    "pageTitle": "Temu3 Code · لا تتبّع، فقط الأدلة",
+    "heroH1": "لا تتبّع.<br />فقط الأدلة.",
     "heroSub": "20 حالة، 109 لقطات شاشة، و3.5 سنوات من المنشورات والأكواد العامة من pingdotgg/t3code. بلا تتبّع.",
     "ctaMail": "افتح Tmail",
     "ctaSteal": "اسرق كودنا (لن نشتكيك لـ GitHub) ↗",
@@ -117,7 +118,7 @@
     "f6Desc": "كوكيز shell غير مشفرة لـ --lan تُحفظ 30 يوماً، ورموز Bearer لا يمكن إبطالها، وSSH_AUTH_SOCK مكشوف.",
     "mmTitle": "24 خطيئة وميم",
     "mmDraw": "اسحب بطاقة عشوائية",
-    "mmAll": "كل الـ114 ميم ↗",
+    "mmAll": "كل الـ150 ميم ↗",
     "mmOpenArsenal": "افتح في الميمز ↗",
     "mmCopyPng": "انسخ PNG",
     "mmDrawAgain": "اسحب مجدداً",
@@ -129,9 +130,9 @@
     "stealReports": "كل الحالات الـ20 ↗"
   },
   "memes": {
-    "pageTitle": "ميمز Temu3 · 114 بطاقة وميم بترخيص CC0",
+    "pageTitle": "ميمز Temu3 · 150 بطاقة وميم بترخيص CC0",
     "title": "ميمز",
-    "sub": "114 بطاقة وميم بترخيص CC0. اضغط أي بطاقة لنسخها أو معرفة المصدر.",
+    "sub": "150 بطاقة وميم بترخيص CC0. اضغط أي بطاقة لنسخها أو معرفة المصدر.",
     "drawBtn": "اسحب بطاقة عشوائية",
     "drawAgain": "اسحب مجدداً",
     "submitBtn": "أرسل على GitHub ↗",
@@ -231,7 +232,7 @@
     "aboutTitle": "عن Tmail",
     "aboutBody": "أرشيف ثابت بلا تتبع يضم 34 محادثة و109 لقطات شاشة (من مايو 2023 إلى نوفمبر 2026).",
     "memeModalDesc": "اضغط أي بطاقة لنسخها أو حفظها في الميمز.",
-    "openAllMemes": "كل الـ114 ميم ↗",
+    "openAllMemes": "كل الـ150 ميم ↗",
     "copyInMemes": "انسخ PNG ↗",
     "topicPrefix": "الموضوع",
     "personPrefix": "الشخص",
@@ -294,14 +295,15 @@
         "title": "التقرير 06 · 1,151 منشوراً (7 إلى 24 نوفمبر 2026)",
         "desc": "0.0% سب تجاه 20 من كبار شخصيات شركات التقنية مقابل 8.0% تجاه المطورين العاديين مقابل 14.4% أثناء الأزمة، مع شرح طريقة العد."
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · قبل تثبيت T3 Code",
+    "title": "Temu3 Code · لا تتبّع، فقط الأدلة",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 منشور X",
-    "portalMemes": "114 ميم",
+    "portalMemes": "150 ميم",
     "portalEvidence": "109 لقطات شاشة",
     "portalSources": "327 رابطاً",
     "languagesLabel": "اللغات (18):",

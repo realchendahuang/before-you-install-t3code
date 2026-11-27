@@ -15,11 +15,12 @@
     "close": "Fermer",
     "all": "Tout",
     "prev": "Précédent",
-    "next": "Suivant"
+    "next": "Suivant",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · Avant d'installer T3 Code",
-    "heroH1": "Avant d'installer<br />T3 Code.",
+    "pageTitle": "Temu3 Code · Zéro télémétrie. Que des preuves.",
+    "heroH1": "Zéro télémétrie.<br />Que des preuves.",
     "heroSub": "20 cas, 109 captures d'écran et 3,5 ans de posts publics et de code de pingdotgg/t3code. Zéro tracking.",
     "ctaMail": "Ouvrir Tmail",
     "ctaSteal": "Volez notre code (promis, on n'appelle pas GitHub) ↗",
@@ -117,7 +118,7 @@
     "f6Desc": "Cookies shell --lan en clair pendant 30 jours, jetons Bearer impossibles à révoquer et SSH_AUTH_SOCK exposé.",
     "mmTitle": "24 péchés et mèmes",
     "mmDraw": "Tirer une carte au hasard",
-    "mmAll": "Les 114 mèmes ↗",
+    "mmAll": "Les 150 mèmes ↗",
     "mmOpenArsenal": "Ouvrir dans Mèmes ↗",
     "mmCopyPng": "Copier le PNG",
     "mmDrawAgain": "Tirer à nouveau",
@@ -129,9 +130,9 @@
     "stealReports": "Les 20 cas ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 Mèmes · 114 cartes et mèmes CC0",
+    "pageTitle": "Temu3 Mèmes · 150 cartes et mèmes CC0",
     "title": "Mèmes",
-    "sub": "114 cartes et mèmes CC0. Cliquez sur une carte pour la copier ou vérifier la source.",
+    "sub": "150 cartes et mèmes CC0. Cliquez sur une carte pour la copier ou vérifier la source.",
     "drawBtn": "Tirer une carte au hasard",
     "drawAgain": "Tirer à nouveau",
     "submitBtn": "Proposer sur GitHub ↗",
@@ -231,7 +232,7 @@
     "aboutTitle": "À propos de Tmail",
     "aboutBody": "Une archive statique et sans tracking de 34 fils et 109 captures d'écran (mai 2023 à nov. 2026).",
     "memeModalDesc": "Cliquez sur une carte pour la copier ou l'enregistrer dans Mèmes.",
-    "openAllMemes": "Les 114 mèmes ↗",
+    "openAllMemes": "Les 150 mèmes ↗",
     "copyInMemes": "Copier le PNG ↗",
     "topicPrefix": "Sujet",
     "personPrefix": "Personne",
@@ -294,14 +295,15 @@
         "title": "Rapport 06 · 1 151 posts (7 au 24 nov. 2026)",
         "desc": "0,0 % d'insultes envers 20 VIP de la Big Tech vs. 8,0 % envers des devs lambda vs. 14,4 % pendant la crise, et notre méthode de comptage."
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · Avant d'installer T3 Code",
+    "title": "Temu3 Code · Zéro télémétrie. Que des preuves.",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 posts X",
-    "portalMemes": "114 mèmes",
+    "portalMemes": "150 mèmes",
     "portalEvidence": "109 captures d'écran",
     "portalSources": "327 liens",
     "languagesLabel": "Langues (18) :",

@@ -427,6 +427,7 @@ a:hover {
 .tile-drive { background: linear-gradient(135deg, #34a853, #188038); }
 .tile-cal { background: linear-gradient(135deg, #1a73e8, #0b57d0); }
 .tile-memes { background: linear-gradient(135deg, #f5b942, #d97706); }
+.tile-story { background: linear-gradient(135deg, #4b7cf3, #7c3aed); }
 .tile-report { background: linear-gradient(135deg, #d97757, #b45333); }
 
 .lang-picker-pill {

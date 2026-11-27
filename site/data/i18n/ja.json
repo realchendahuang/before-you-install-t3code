@@ -15,11 +15,12 @@
     "close": "閉じる",
     "all": "すべて",
     "prev": "前へ",
-    "next": "次へ"
+    "next": "次へ",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · T3 Codeをインストールする前に",
-    "heroH1": "T3 Codeを入れる<br />前に。",
+    "pageTitle": "Temu3 Code · テレメトリなし、証拠だけ",
+    "heroH1": "テレメトリなし。<br />あるのは証拠だけ。",
     "heroSub": "20件の事例、109枚のスクリーンショット、pingdotgg/t3codeの3年半にわたる公開投稿とコード。トラッキングなし。",
     "ctaMail": "Tmailを開く",
     "ctaSteal": "コードを盗んでいいよ（GitHub に通報しません）↗",
@@ -117,7 +118,7 @@
     "f6Desc": "平文で30日保持される--lanのシェルCookie、失効できないBearerトークン、露出したSSH_AUTH_SOCK。",
     "mmTitle": "24の罪とミーム",
     "mmDraw": "ランダムに1枚引く",
-    "mmAll": "全114ミーム ↗",
+    "mmAll": "全150ミーム ↗",
     "mmOpenArsenal": "ミームで開く ↗",
     "mmCopyPng": "PNGをコピー",
     "mmDrawAgain": "もう一度引く",
@@ -129,9 +130,9 @@
     "stealReports": "全20事例 ↗"
   },
   "memes": {
-    "pageTitle": "Temu3ミーム · CC0カードとミーム114点",
+    "pageTitle": "Temu3ミーム · CC0カードとミーム150点",
     "title": "ミーム",
-    "sub": "CC0のカードとミームが114点。カードをクリックするとコピー、または出典を確認できる。",
+    "sub": "CC0のカードとミームが150点。カードをクリックするとコピー、または出典を確認できる。",
     "drawBtn": "ランダムに1枚引く",
     "drawAgain": "もう一度引く",
     "submitBtn": "GitHubで投稿 ↗",
@@ -231,7 +232,7 @@
     "aboutTitle": "Tmailについて",
     "aboutBody": "34スレッドと109枚のスクリーンショット（2023年5月〜2026年11月）をまとめた、トラッキングなしの静的アーカイブ。",
     "memeModalDesc": "カードをクリックすると、ミームでコピーまたは保存できる。",
-    "openAllMemes": "全114ミーム ↗",
+    "openAllMemes": "全150ミーム ↗",
     "copyInMemes": "PNGをコピー ↗",
     "topicPrefix": "トピック",
     "personPrefix": "人物",
@@ -294,14 +295,15 @@
         "title": "レポート06 · 1,151件の投稿（2026年11月7〜24日）",
         "desc": "大手テックVIP20人への罵倒0.0%、一般開発者へ8.0%、危機時14.4%。集計方法も掲載。"
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · T3 Codeをインストールする前に",
+    "title": "Temu3 Code · テレメトリなし、証拠だけ",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "Xの投稿12件",
-    "portalMemes": "ミーム114点",
+    "portalMemes": "ミーム150点",
     "portalEvidence": "スクリーンショット109枚",
     "portalSources": "リンク327件",
     "languagesLabel": "言語（18）:",

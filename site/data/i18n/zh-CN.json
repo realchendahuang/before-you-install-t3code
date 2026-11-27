@@ -15,11 +15,12 @@
     "close": "关闭",
     "all": "全部",
     "prev": "上一张",
-    "next": "下一张"
+    "next": "下一张",
+    "navStory": "连载漫画"
   },
   "home": {
-    "pageTitle": "Temu3 Code · 装 T3 Code 之前",
-    "heroH1": "装 T3 Code 之前，<br />先看这份记录。",
+    "pageTitle": "Temu3 Code · 绝无遥测，全是实锤",
+    "heroH1": "绝无遥测。<br />全是实锤。",
     "heroSub": "20 件事、109 张截图，整理了 pingdotgg/t3code 过去三年半的公开言行和代码。不加任何追踪。",
     "ctaMail": "打开 Tmail",
     "ctaSteal": "来偷我们的代码（真不找 GitHub 封你）↗",
@@ -117,7 +118,7 @@
     "f6Desc": "30 天明文 --lan Cookie、没法吊销的 Bearer Token，以及把 SSH_AUTH_SOCK 暴露给陌生仓库。",
     "mmTitle": "「二十四宗罪」和梗图",
     "mmDraw": "随机抽一张",
-    "mmAll": "全部 114 张梗图 ↗",
+    "mmAll": "全部 150 张梗图 ↗",
     "mmOpenArsenal": "去梗图页打开 ↗",
     "mmCopyPng": "复制 PNG",
     "mmDrawAgain": "再抽一张",
@@ -126,12 +127,19 @@
     "stealTitle": "「合法偷走我们的代码。」*",
     "stealSub": "*这次是真的。这里全部 CC0 1.0，随便 Fork，没人威胁封号。",
     "stealFork": "去 GitHub Fork ↗",
-    "stealReports": "全部 20 个案例 ↗"
+    "stealReports": "全部 20 个案例 ↗",
+    "storyKicker": "8 话双语漫画 · NotebookLM 播客（英/中）· 28 枚透明表情包",
+    "storyTitle": "被拉黑之后的九十六小时",
+    "storySub": "8 话高清双语连载漫画 + 中英双语 NotebookLM 深度播客，完整还原 96 小时风波始末；附赠 28 枚透明底暴漫表情包 ZIP，微信 / Discord / Slack / Telegram 即拖即用。",
+    "storyReadBtn": "看 8 话连载与双语播客 →",
+    "storyZipBtn": "免费下载 28 枚表情包 ZIP",
+    "storyZipHint": "CC0 1.0 · 英文 & 简体中文双版 · 零追踪",
+    "storyEpPill": "第 1 话 → 第 8 话"
   },
   "memes": {
-    "pageTitle": "Temu3 梗图 · 114 张 CC0 卡牌和梗图",
+    "pageTitle": "Temu3 梗图 · 150 张 CC0 卡牌、表情包、GIF 与连载漫画",
     "title": "梗图",
-    "sub": "114 张 CC0 梗图和卡牌，点开就能复制或看原帖。",
+    "sub": "150 张 CC0 收藏卡、二创梗图、28 枚透明暴漫表情、GIF 动图与双语连载漫画。点开即可复制或核验来源。",
     "drawBtn": "随机抽一张",
     "drawAgain": "再抽一张",
     "submitBtn": "去 GitHub 投稿 ↗",
@@ -153,11 +161,29 @@
       "sins": "二十四宗罪",
       "blended": "梗图",
       "classic": "原帖",
-      "comics": "漫画",
+      "comics": "短漫",
       "community": "投稿",
-      "parody": "恶搞"
+      "parody": "恶搞",
+      "stickers": "表情包",
+      "creative": "创意",
+      "story": "连载"
     },
-    "tabParodies": "恶搞二创"
+    "tabParodies": "恶搞二创",
+    "stickerZipBtn": "免费下载 28 枚表情包 ZIP",
+    "stickerZipSub": "Discord · Slack · Telegram · 微信即用",
+    "tabStickers": "28 枚表情包",
+    "tabCreative": "创意合集",
+    "tabStory": "连载漫画",
+    "tabReceipts": "原帖短漫",
+    "copyGifBtn": "复制 GIF 链接",
+    "downloadGifBtn": "保存 GIF",
+    "copiedGifToast": "已复制动图 GIF 链接。",
+    "stickerBannerTitle": "完整版 28 枚透明底暴漫表情包 v1.1",
+    "stickerBannerDesc": "已按平台尺寸分目录打包：Discord / Slack (128px)、Telegram (512px WebP/PNG)、微信 (240px)，附 4×7 全家福宣传图。",
+    "promoSheetBtn": "看 4×7 全家福 ↗",
+    "storyBannerTitle": "想竖屏连读 8 话漫画 + 听中英双语播客？",
+    "storyBannerDesc": "前往 /story/ 专属阅读页，一键切换简体中文 / English 漫画与 NotebookLM 双语音频。",
+    "openStoryReader": "打开 /story/ 连载阅读页 →"
   },
   "mail": {
     "pageTitle": "Tmail · 公开存档（2023–2026）",
@@ -231,7 +257,7 @@
     "aboutTitle": "关于 Tmail",
     "aboutBody": "纯静态、不加追踪的存档，收了 2023 年 5 月到 2026 年 11 月的 34 条记录和 109 张截图。",
     "memeModalDesc": "点任意卡片去梗图页复制或保存。",
-    "openAllMemes": "全部 114 张梗图 ↗",
+    "openAllMemes": "全部 150 张梗图 ↗",
     "copyInMemes": "复制 PNG ↗",
     "topicPrefix": "主题",
     "personPrefix": "人物",
@@ -294,14 +320,15 @@
         "title": "报告 06 · 1,151 条推文统计（2026-11-07 至 11-24）",
         "desc": "对 20 位大厂高管 0% 脏话、对普通开发者 8%、危机期 14.4%，附完整统计方法。"
       }
-    }
+    },
+    "storyTile": "连载"
   },
   "readme": {
-    "title": "Temu3 Code · 安装 T3 Code 之前",
+    "title": "Temu3 Code · 绝无遥测，全是实锤",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 张 X 原帖",
-    "portalMemes": "114 张梗图",
+    "portalMemes": "150 张梗图",
     "portalEvidence": "109 张截图",
     "portalSources": "327 条链接",
     "languagesLabel": "全部 18 种语言：",
@@ -309,5 +336,24 @@
     "originP1": "2026 年 11 月 23 日，@theo 把一位中国开发者的免费 MIT Fork 叫成「Chinese knockoff」。十分钟后，他又在 X 上顺手给了我们这个名字：「Temu3 Code」（8.4 万浏览）。",
     "originP2": "一个连美国注册商标都没有的创始人白送的名字，不用白不用。我们直接注册了 temu3code.com，把公开记录全放进来，顺手把 PostHog 删干净。谢了 Theo。这里全部 CC0 1.0，随便 Fork，不找 GitHub 封号。",
     "originCta": "看 @theo 原帖 ↗"
+  },
+  "story": {
+    "pageTitle": "被拉黑之后的九十六小时 · 8 话双语连载漫画与播客 · Temu3 Code",
+    "kicker": "8 话双语连载漫画 · NOTEBOOKLM 双语播客",
+    "title": "被拉黑之后的九十六小时",
+    "sub": "从 11 分钟 MIT Fork 封号威胁，到每小时 220 万 IP 日志、89 浏览告到 AWS HR、冒充 Zed 握手与遁入闭源 Slophouse——每一格都有公开提交与原帖留档。",
+    "podcastTitle": "收听《96 小时始末》· NotebookLM 深度播客",
+    "podcastSub": "中英双语完整音频回顾 · 无追踪直连播放",
+    "podcastDownload": "下载 MP3 ↓",
+    "zoomBtn": "放大看图",
+    "receiptBtn": "看证据",
+    "ctaKicker": "继续探索 · 全部 CC0 1.0 公开领域",
+    "ctaTitle": "打包带走 28 枚表情包、逛全部梗图，或去 Tmail 核验一手铁证。",
+    "ctaSub": "每一格漫画都能直达对应提交记录、PR Diff 与原帖存档。零遥测，欢迎任意转发二创。",
+    "ctaZip": "免费下载 28 枚表情包 ZIP",
+    "ctaMemes": "逛全部梗图库 →",
+    "ctaMail": "去 Tmail 查原始证据 →",
+    "ctaZipHint": "表情包已适配 Discord · Slack · Telegram · 微信",
+    "loadingEmpty": "正在加载连载章节..."
   }
 }

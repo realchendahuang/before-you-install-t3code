@@ -316,7 +316,48 @@ section { padding: 80px 0; }
 .fact-title { font-size: 15.5px; font-weight: 600; color: #ffffff; line-height: 1.4; }
 .fact-desc { margin: 0; font-size: 14px; color: #b4b4bc; line-height: 1.65; }
 
-/* ---------- 19 SINS & MEMES ---------- */
+/* ---------- STORY COMIC + PODCAST + STICKER SPOTLIGHT ---------- */
+.sec-story-spot {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 56px 0;
+}
+.story-spot-card {
+  display: grid; grid-template-columns: minmax(0, 1.35fr) 268px; gap: 32px; align-items: center;
+  padding: 28px 30px; border-radius: 16px;
+  background: linear-gradient(135deg, rgba(75, 124, 243, 0.09), rgba(10, 10, 14, 0.96) 52%, rgba(245, 185, 66, 0.07));
+  border: 1px solid rgba(75, 124, 243, 0.28);
+  box-shadow: 0 22px 60px rgba(0, 0, 0, 0.65);
+}
+.story-spot-copy { display: flex; flex-direction: column; gap: 12px; }
+.story-spot-kicker {
+  align-self: flex-start; padding: 3px 9px; border-radius: 999px;
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600; letter-spacing: 0.05em;
+  color: #bfdbfe; background: rgba(75, 124, 243, 0.16); border: 1px solid rgba(75, 124, 243, 0.36);
+}
+.story-spot-h2 {
+  margin: 0; font-size: clamp(23px, 3.2vw, 34px); font-weight: 650;
+  line-height: 1.14; letter-spacing: -0.028em; color: #ffffff;
+}
+.story-spot-p { margin: 0; font-size: 15px; line-height: 1.65; color: #c4c4cc; max-width: 600px; }
+.story-spot-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 4px; }
+.btn-spot { min-height: 42px; padding: 0 18px; font-size: 14px; }
+.btn-spot-zip { min-height: 42px; padding: 0 16px; border-radius: 10px; font-size: 14px; }
+.story-spot-hint { font-family: var(--font-mono); font-size: 11.5px; color: var(--dim); }
+.story-spot-preview {
+  position: relative; display: block; border-radius: 12px; overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.16); background: #121216;
+  aspect-ratio: 4 / 5; box-shadow: 0 18px 46px rgba(0, 0, 0, 0.7);
+  transition: transform 180ms ease, border-color 180ms ease;
+}
+.story-spot-preview:hover { transform: translateY(-3px); border-color: rgba(75, 124, 243, 0.72); }
+.story-spot-preview img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+.story-spot-pill {
+  position: absolute; left: 10px; bottom: 10px; padding: 4px 10px; border-radius: 999px;
+  background: rgba(0, 0, 0, 0.82); border: 1px solid rgba(255, 255, 255, 0.22);
+  font-family: var(--font-mono); font-size: 11px; font-weight: 600; color: #fff;
+}
+
+/* ---------- 24 SINS & MEMES ---------- */
 .sec-memes {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   background: radial-gradient(ellipse 75% 45% at 50% 0%, rgba(245, 185, 66, 0.08), transparent 72%);
@@ -449,7 +490,8 @@ section { padding: 80px 0; }
 /* ---------- TABLET ---------- */
 @media (max-width: 1024px) {
   .float-tile { display: none; }
-  .origin-card { grid-template-columns: 1fr; padding: 24px; gap: 22px; }
+  .origin-card, .story-spot-card { grid-template-columns: 1fr; padding: 24px; gap: 22px; }
+  .story-spot-preview { max-width: 300px; }
   .app-win-grid { grid-template-columns: 1fr; }
   .win-col-left { border: none; border-bottom: 1px solid rgba(255, 255, 255, 0.08); }
   .win-col-right { border: none; border-top: 1px solid rgba(255, 255, 255, 0.08); }

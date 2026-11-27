@@ -15,11 +15,12 @@
     "close": "Tutup",
     "all": "Semua",
     "prev": "Sebelumnya",
-    "next": "Berikutnya"
+    "next": "Berikutnya",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · Sebelum Install T3 Code",
-    "heroH1": "Sebelum install<br />T3 Code.",
+    "pageTitle": "Temu3 Code · Tanpa telemetri. Cuma bukti.",
+    "heroH1": "Tanpa telemetri.<br />Cuma bukti.",
     "heroSub": "20 kasus, 109 tangkapan layar, dan 3,5 tahun postingan publik serta kode dari pingdotgg/t3code. Tanpa pelacakan.",
     "ctaMail": "Buka Tmail",
     "ctaSteal": "Curi kode kami (tenang, nggak lapor GitHub) ↗",
@@ -117,7 +118,7 @@
     "f6Desc": "Cookie shell --lan 30 hari dalam plaintext, Bearer token yang tidak bisa dicabut, dan SSH_AUTH_SOCK terekspos.",
     "mmTitle": "24 Dosa & Meme",
     "mmDraw": "Ambil Kartu Acak",
-    "mmAll": "Semua 114 Meme ↗",
+    "mmAll": "Semua 150 Meme ↗",
     "mmOpenArsenal": "Buka di Meme ↗",
     "mmCopyPng": "Salin PNG",
     "mmDrawAgain": "Ambil Lagi",
@@ -129,9 +130,9 @@
     "stealReports": "Semua 20 Kasus ↗"
   },
   "memes": {
-    "pageTitle": "Meme Temu3 · 114 Kartu & Meme CC0",
+    "pageTitle": "Meme Temu3 · 150 Kartu & Meme CC0",
     "title": "Meme",
-    "sub": "114 kartu dan meme CC0. Klik kartu mana pun untuk menyalin atau cek sumber.",
+    "sub": "150 kartu dan meme CC0. Klik kartu mana pun untuk menyalin atau cek sumber.",
     "drawBtn": "Ambil Kartu Acak",
     "drawAgain": "Ambil Lagi",
     "submitBtn": "Kirim di GitHub ↗",
@@ -231,7 +232,7 @@
     "aboutTitle": "Tentang Tmail",
     "aboutBody": "Arsip statis tanpa pelacakan berisi 34 utas dan 109 tangkapan layar (Mei 2023 sampai Nov 2026).",
     "memeModalDesc": "Klik kartu mana pun untuk menyalin atau menyimpan di Meme.",
-    "openAllMemes": "Semua 114 Meme ↗",
+    "openAllMemes": "Semua 150 Meme ↗",
     "copyInMemes": "Salin PNG ↗",
     "topicPrefix": "Topik",
     "personPrefix": "Orang",
@@ -294,14 +295,15 @@
         "title": "Laporan 06 · 1.151 Postingan (7-24 Nov 2026)",
         "desc": "0,0% kata kasar ke 20 VIP Big-Tech vs. 8,0% ke developer biasa vs. 14,4% saat krisis, plus cara kami menghitung."
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · Sebelum Install T3 Code",
+    "title": "Temu3 Code · Tanpa telemetri. Cuma bukti.",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 Postingan X",
-    "portalMemes": "114 Meme",
+    "portalMemes": "150 Meme",
     "portalEvidence": "109 Tangkapan Layar",
     "portalSources": "327 Tautan",
     "languagesLabel": "Bahasa (18):",

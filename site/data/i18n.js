@@ -68,7 +68,7 @@
     if (cache.has(norm)) return cache.get(norm);
     const base = dataBase.endsWith("/") ? dataBase : dataBase + "/";
     try {
-      const res = await fetch(`${base}i18n/${norm}.json?v=7`);
+      const res = await fetch(`${base}i18n/${norm}.json?v=9`);
       if (!res.ok) throw new Error("fetch failed");
       const obj = await res.json();
       cache.set(norm, obj);

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>The 96 Hours After One Block · 8-Episode Bilingual Comic &amp; Podcast · Temu3 Code</title>
+  <meta name="description" content="Read the complete 8-episode bilingual comic and listen to the English &amp; Chinese NotebookLM podcast chronicling the 96 hours after one block. CC0 1.0, zero telemetry." />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://temu3code.com/story/" />
+  <meta property="og:title" content="The 96 Hours After One Block · 8-Episode Comic &amp; Podcast" />
+  <meta property="og:description" content="8 bilingual comic episodes + NotebookLM audio overview (EN &amp; 中文) linked directly to primary Tmail receipts. CC0 1.0, zero telemetry." />
+  <meta property="og:image" content="https://cdn.temu3code.com/memes/story/en/ep01_11_hours_apart.webp" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="The 96 Hours After One Block · Temu3 Code" />
+  <meta name="twitter:description" content="8-episode bilingual comic + EN/ZH NotebookLM podcast. Every panel backed by verified receipts." />
+  <meta name="twitter:image" content="https://cdn.temu3code.com/memes/story/en/ep01_11_hours_apart.webp" />
+
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0a0a' stroke='%23262626'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%23ffffff' font-family='system-ui,sans-serif' font-weight='700' font-size='14'%3ET3%3C/text%3E%3C/svg%3E" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="./story.css?v=1" />
+</head>
+<body>
+  <header class="nav-header">
+    <div class="nav-inner">
+      <a class="brand" href="../">
+        <span class="brand-strong">Temu3</span>
+        <span class="brand-muted">Code</span>
+      </a>
+
+      <label class="lang-picker" aria-label="Select language">
+        <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18" />
+        </svg>
+        <select id="langSelect" class="lang-select" aria-label="Language"></select>
+      </label>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="nav-link" href="../" data-i18n="common.navHome">Home</a>
+        <a class="nav-link" href="../#x-receipts" data-i18n="common.navReceipts">X Posts</a>
+        <a class="nav-link is-current" href="./" aria-current="page" data-i18n="common.navStory">Story Comic</a>
+        <a class="nav-link" href="../memes/" data-i18n="common.navMemes">Memes</a>
+        <a class="nav-link" href="../mail/" data-i18n="common.navMail">Tmail</a>
+        <a class="nav-star-link" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer" data-i18n="common.navGithub">GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="story-hero">
+      <div class="container reader-container">
+        <div class="hero-kicker" data-i18n="story.kicker">8-EPISODE BILINGUAL COMIC · AUDIO PODCAST</div>
+        <h1 class="hero-h1" data-i18n="story.title">The 96 Hours After One Block</h1>
+        <p class="hero-sub" data-i18n="story.sub">
+          From an 11-minute MIT fork threat to 2.2M/hr IP logs, 89-view HR complaints, fake Zed headers, and "slophouse" — every panel backed by public commits and receipts.
+        </p>
+
+        <!-- TOP PODCAST PLAYER CARD -->
+        <div id="podcastCard" class="podcast-card" hidden>
+          <div class="pod-head">
+            <div class="pod-title-wrap">
+              <span class="pod-badge" aria-hidden="true">🎧</span>
+              <div>
+                <div class="pod-title" data-i18n="story.podcastTitle">Listen to the 96-Hour Story · NotebookLM Podcast</div>
+                <div id="podMeta" class="pod-meta" data-i18n="story.podcastSub">Full bilingual deep-dive audio overview · zero tracking</div>
+              </div>
+            </div>
+            <div class="pod-tracks" role="tablist" aria-label="Podcast audio language">
+              <button type="button" id="podTrackEn" class="seg-btn is-active" data-pod-lang="en">English</button>
+              <button type="button" id="podTrackZh" class="seg-btn" data-pod-lang="zh">中文</button>
+            </div>
+          </div>
+          <div class="pod-player-row">
+            <audio id="podcastAudio" class="pod-audio" controls preload="metadata"></audio>
+            <a id="podDownloadBtn" class="act-btn pod-dl-btn" href="#" download>
+              <span data-i18n="story.podcastDownload">MP3 ↓</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STICKY READER CONTROLS -->
+    <div class="reader-bar" id="readerBar">
+      <div class="container reader-container reader-bar-inner">
+        <div class="comic-lang-switch" role="group" aria-label="Comic language">
+          <button type="button" id="comicLangEn" class="seg-btn is-active" data-comic-lang="en">English</button>
+          <button type="button" id="comicLangZh" class="seg-btn" data-comic-lang="zh">简体中文</button>
+        </div>
+        <nav id="epJumpPills" class="ep-pills" aria-label="Jump to episode"></nav>
+      </div>
+    </div>
+
+    <!-- 8-EPISODE VERTICAL COMIC COLUMN -->
+    <section class="reader-sec">
+      <div class="container reader-container">
+        <div id="storyReader" class="story-reader" aria-live="polite"></div>
+
+        <!-- BOTTOM CTAS -->
+        <div class="story-cta-box">
+          <div class="story-cta-copy">
+            <div class="story-cta-kicker" data-i18n="story.ctaKicker">KEEP EXPLORING · 100% CC0 1.0</div>
+            <h2 class="story-cta-h2" data-i18n="story.ctaTitle">Grab the Stickers, Browse the Memes, or Verify Every Receipt.</h2>
+            <p class="story-cta-sub" data-i18n="story.ctaSub">
+              Every comic panel links straight to archived public commits, PR diffs, and original posts. Zero telemetry, free to share anywhere.
+            </p>
+          </div>
+          <div class="story-cta-actions">
+            <a id="storyZipBtn" class="btn-gold" href="https://cdn.temu3code.com/stickers/theo-rage-stickers-pack.zip" download>
+              <span>📦</span>
+              <span data-i18n="story.ctaZip">Free 28-Sticker ZIP</span>
+            </a>
+            <a class="btn-cobalt" href="../memes/" data-i18n="story.ctaMemes">Browse All Memes →</a>
+            <a class="btn-outline" href="../mail/" data-i18n="story.ctaMail">Open Tmail Receipts →</a>
+          </div>
+          <div class="story-cta-hint" data-i18n="story.ctaZipHint">Sticker pack ready for Discord · Slack · Telegram · WeChat</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span data-i18n="common.footer">CC0 1.0 · Public archive · Not affiliated with T3 Tools Inc.</span>
+      <div class="footer-links">
+        <a href="../" data-i18n="common.navHome">Home</a>
+        <a href="../memes/" data-i18n="common.navMemes">Memes</a>
+        <a href="../mail/" data-i18n="common.navMail">Tmail</a>
+        <a href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer" data-i18n="common.navGithub">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CLICK-TO-ZOOM LIGHTBOX -->
+  <div id="storyLightbox" class="lb" hidden role="dialog" aria-modal="true" aria-labelledby="lbTitle">
+    <div class="lb-backdrop" data-lb-close></div>
+    <div class="lb-dialog">
+      <div class="lb-head">
+        <div class="lb-head-left">
+          <span id="lbCounter" class="lb-counter"></span>
+          <h3 id="lbTitle" class="lb-title"></h3>
+        </div>
+        <div class="lb-head-right">
+          <button type="button" id="lbLangToggle" class="act-btn lb-lang-btn">EN / 中文</button>
+          <button type="button" class="lb-close" data-lb-close aria-label="Close">✕</button>
+        </div>
+      </div>
+      <div class="lb-stage" id="lbStage">
+        <button type="button" id="lbPrev" class="lb-nav lb-prev" aria-label="Previous">‹</button>
+        <div class="lb-img-box">
+          <img id="lbImg" crossorigin="anonymous" alt="" />
+        </div>
+        <button type="button" id="lbNext" class="lb-nav lb-next" aria-label="Next">›</button>
+      </div>
+      <div class="lb-foot">
+        <p id="lbNote" class="lb-note"></p>
+        <div class="lb-foot-row">
+          <div class="lb-mobile-nav">
+            <button type="button" id="lbPrevMobile" class="act-btn" aria-label="Previous">‹</button>
+            <button type="button" id="lbNextMobile" class="act-btn" aria-label="Next">›</button>
+          </div>
+          <div class="lb-actions">
+            <button type="button" id="lbCopyBtn" class="act-btn act-primary" data-i18n="memes.copyBtn">Copy PNG</button>
+            <button type="button" id="lbDownloadBtn" class="act-btn" data-i18n="memes.downloadBtn">Save</button>
+            <a id="lbShareX" class="act-btn" href="#" target="_blank" rel="noopener noreferrer" data-i18n="memes.shareX">Share on X ↗</a>
+            <a id="lbReceiptLink" class="act-btn act-cobalt" href="#" data-i18n="memes.verifyReceipt">Source →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="../data/i18n.js?v=10"></script>
+  <script src="./story.js?v=1"></script>
+</body>
+</html>

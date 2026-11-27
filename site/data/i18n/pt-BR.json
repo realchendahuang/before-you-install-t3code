@@ -15,11 +15,12 @@
     "close": "Fechar",
     "all": "Tudo",
     "prev": "Anterior",
-    "next": "Próximo"
+    "next": "Próximo",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · Antes de instalar o T3 Code",
-    "heroH1": "Antes de você instalar<br />o T3 Code.",
+    "pageTitle": "Temu3 Code · Zero telemetria. Só provas.",
+    "heroH1": "Zero telemetria.<br />Só provas.",
     "heroSub": "20 casos, 109 capturas e 3,5 anos de posts e código públicos do pingdotgg/t3code. Sem rastreamento.",
     "ctaMail": "Abrir o Tmail",
     "ctaSteal": "Roube nosso código (não vamos chamar o GitHub) ↗",
@@ -117,7 +118,7 @@
     "f6Desc": "Cookies de shell --lan em texto puro por 30 dias, Bearer tokens que não dá pra revogar, e SSH_AUTH_SOCK exposto.",
     "mmTitle": "24 pecados e memes",
     "mmDraw": "Sortear um card",
-    "mmAll": "Todos os 114 memes ↗",
+    "mmAll": "Todos os 150 memes ↗",
     "mmOpenArsenal": "Abrir em Memes ↗",
     "mmCopyPng": "Copiar PNG",
     "mmDrawAgain": "Sortear de novo",
@@ -129,9 +130,9 @@
     "stealReports": "Todos os 20 casos ↗"
   },
   "memes": {
-    "pageTitle": "Memes do Temu3 · 114 cards e memes CC0",
+    "pageTitle": "Memes do Temu3 · 150 cards e memes CC0",
     "title": "Memes",
-    "sub": "114 cards e memes CC0. Clica em qualquer card pra copiar ou ver a fonte.",
+    "sub": "150 cards e memes CC0. Clica em qualquer card pra copiar ou ver a fonte.",
     "drawBtn": "Sortear um card",
     "drawAgain": "Sortear de novo",
     "submitBtn": "Enviar no GitHub ↗",
@@ -231,7 +232,7 @@
     "aboutTitle": "Sobre o Tmail",
     "aboutBody": "Um arquivo estático, sem rastreamento, de 34 threads e 109 capturas (maio de 2023 a nov de 2026).",
     "memeModalDesc": "Clica em qualquer card pra copiar ou salvar em Memes.",
-    "openAllMemes": "Todos os 114 memes ↗",
+    "openAllMemes": "Todos os 150 memes ↗",
     "copyInMemes": "Copiar PNG ↗",
     "topicPrefix": "Tópico",
     "personPrefix": "Pessoa",
@@ -294,14 +295,15 @@
         "title": "Relatório 06 · 1.151 posts (7 a 24 de nov de 2026)",
         "desc": "0,0% de xingamento a 20 VIPs de big tech vs. 8,0% a dev comum vs. 14,4% na crise, e como a gente contou."
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · Antes de instalar o T3 Code",
+    "title": "Temu3 Code · Zero telemetria. Só provas.",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 posts no X",
-    "portalMemes": "114 memes",
+    "portalMemes": "150 memes",
     "portalEvidence": "109 capturas",
     "portalSources": "327 links",
     "languagesLabel": "Idiomas (18):",

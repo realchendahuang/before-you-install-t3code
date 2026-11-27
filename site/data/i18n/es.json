@@ -15,11 +15,12 @@
     "close": "Cerrar",
     "all": "Todo",
     "prev": "Anterior",
-    "next": "Siguiente"
+    "next": "Siguiente",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · Antes de instalar T3 Code",
-    "heroH1": "Antes de instalar<br />T3 Code.",
+    "pageTitle": "Temu3 Code · Cero telemetría. Solo pruebas.",
+    "heroH1": "Cero telemetría.<br />Solo pruebas.",
     "heroSub": "20 casos, 109 capturas y 3,5 años de publicaciones y código públicos de pingdotgg/t3code. Sin rastreo.",
     "ctaMail": "Abrir Tmail",
     "ctaSteal": "Roba nuestro código (no llamaremos a GitHub) ↗",
@@ -117,7 +118,7 @@
     "f6Desc": "Cookies de shell --lan de 30 días en texto plano, Bearer tokens que no puedes revocar y SSH_AUTH_SOCK expuesto.",
     "mmTitle": "24 pecados y memes",
     "mmDraw": "Sacar una carta al azar",
-    "mmAll": "Los 114 memes ↗",
+    "mmAll": "Los 150 memes ↗",
     "mmOpenArsenal": "Abrir en Memes ↗",
     "mmCopyPng": "Copiar PNG",
     "mmDrawAgain": "Sacar otra",
@@ -129,9 +130,9 @@
     "stealReports": "Los 20 casos ↗"
   },
   "memes": {
-    "pageTitle": "Memes de Temu3 · 114 cartas y memes CC0",
+    "pageTitle": "Memes de Temu3 · 150 cartas y memes CC0",
     "title": "Memes",
-    "sub": "114 cartas y memes CC0. Haz clic en cualquier carta para copiarla o ver la fuente.",
+    "sub": "150 cartas y memes CC0. Haz clic en cualquier carta para copiarla o ver la fuente.",
     "drawBtn": "Sacar una carta al azar",
     "drawAgain": "Sacar otra",
     "submitBtn": "Enviar en GitHub ↗",
@@ -231,7 +232,7 @@
     "aboutTitle": "Sobre Tmail",
     "aboutBody": "Un archivo estático y sin rastreo de 34 hilos y 109 capturas (de mayo de 2023 a nov de 2026).",
     "memeModalDesc": "Haz clic en cualquier carta para copiarla o guardarla en Memes.",
-    "openAllMemes": "Los 114 memes ↗",
+    "openAllMemes": "Los 150 memes ↗",
     "copyInMemes": "Copiar PNG ↗",
     "topicPrefix": "Tema",
     "personPrefix": "Persona",
@@ -294,14 +295,15 @@
         "title": "Informe 06 · 1.151 publicaciones (7 a 24 nov 2026)",
         "desc": "0,0% de insultos a 20 VIP de las grandes tecnológicas vs. 8,0% a desarrolladores normales vs. 14,4% durante la crisis, y cómo lo contamos."
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · Antes de instalar T3 Code",
+    "title": "Temu3 Code · Cero telemetría. Solo pruebas.",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 publicaciones en X",
-    "portalMemes": "114 memes",
+    "portalMemes": "150 memes",
     "portalEvidence": "109 capturas",
     "portalSources": "327 enlaces",
     "languagesLabel": "Idiomas (18):",

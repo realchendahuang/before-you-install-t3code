@@ -367,7 +367,7 @@
   async function init() {
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
     try {
-      const res = await fetch("../data/memes.json?v=3");
+      const res = await fetch("../data/memes.json?v=4");
       const data = await res.json();
       catalogMeta = data;
       allItems = Array.isArray(data.items) ? data.items : [];

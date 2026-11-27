@@ -15,11 +15,12 @@
     "close": "關閉",
     "all": "全部",
     "prev": "上一張",
-    "next": "下一張"
+    "next": "下一張",
+    "navStory": "連載漫畫"
   },
   "home": {
-    "pageTitle": "Temu3 Code · 裝 T3 Code 之前",
-    "heroH1": "裝 T3 Code 之前，<br />先看這份紀錄。",
+    "pageTitle": "Temu3 Code · 絕無遙測，全是實錘",
+    "heroH1": "絕無遙測。<br />全是實錘。",
     "heroSub": "20 個案子、109 張截圖，整理 pingdotgg/t3code 三年半來的公開貼文和程式碼。不做任何追蹤。",
     "ctaMail": "開啟 Tmail",
     "ctaSteal": "來偷我們的程式碼（真不找 GitHub 檢舉你）↗",
@@ -117,7 +118,7 @@
     "f6Desc": "30 天明文 --lan shell cookie、撤銷不了的 Bearer token，還有直接曝露的 SSH_AUTH_SOCK。",
     "mmTitle": "24 宗罪與迷因",
     "mmDraw": "隨機抽一張",
-    "mmAll": "全部 114 張迷因 ↗",
+    "mmAll": "全部 150 張迷因 ↗",
     "mmOpenArsenal": "到迷因頁開啟 ↗",
     "mmCopyPng": "複製 PNG",
     "mmDrawAgain": "再抽一張",
@@ -126,18 +127,25 @@
     "stealTitle": "「合法偷走我們的程式碼。」*",
     "stealSub": "*這次是真的。這裡全部 CC0 1.0，隨便 Fork，不會有人威脅你。",
     "stealFork": "到 GitHub Fork ↗",
-    "stealReports": "全部 20 個案例 ↗"
+    "stealReports": "全部 20 個案例 ↗",
+    "storyKicker": "8 話雙語漫畫 · NotebookLM 播客（英/中）· 28 枚透明貼圖",
+    "storyTitle": "被封鎖之後的九十六小時",
+    "storySub": "8 話高畫質雙語連載漫畫 + 中英雙語 NotebookLM 深度播客，完整還原 96 小時風波始末；附贈 28 枚透明底暴漫貼圖包 ZIP，Discord / Slack / Telegram / 微信隨拖即用。",
+    "storyReadBtn": "看 8 話連載與雙語播客 →",
+    "storyZipBtn": "免費下載 28 枚貼圖包 ZIP",
+    "storyZipHint": "CC0 1.0 · English & 中文雙版 · 零追蹤",
+    "storyEpPill": "第 1 話 → 第 8 話"
   },
   "memes": {
-    "pageTitle": "Temu3 迷因 · 114 張 CC0 卡牌與迷因",
+    "pageTitle": "Temu3 迷因 · 150 張 CC0 卡牌、貼圖、GIF 與連載漫畫",
     "title": "迷因",
-    "sub": "114 張 CC0 卡牌和迷因，點任何一張就能複製或看來源。",
+    "sub": "150 張 CC0 收藏卡、迷因、28 枚透明貼圖、GIF 動圖與雙語連載漫畫。點開即可複製或核驗來源。",
     "drawBtn": "隨機抽一張",
     "drawAgain": "再抽一張",
     "submitBtn": "到 GitHub 投稿 ↗",
     "tabAll": "全部",
     "tabSins": "24 宗罪",
-    "tabBlended": "迷因",
+    "tabBlended": "熱門迷因",
     "tabClassic": "截圖",
     "tabComics": "漫畫",
     "searchPlaceholder": "搜尋",
@@ -153,11 +161,29 @@
       "sins": "24 宗罪",
       "blended": "迷因",
       "classic": "貼文",
-      "comics": "漫畫",
+      "comics": "短漫",
       "community": "投稿",
-      "parody": "惡搞"
+      "parody": "惡搞",
+      "stickers": "貼圖",
+      "creative": "創意",
+      "story": "連載"
     },
-    "tabParodies": "惡搞二創"
+    "tabParodies": "惡搞二創",
+    "stickerZipBtn": "免費下載 28 枚貼圖包 ZIP",
+    "stickerZipSub": "Discord · Slack · Telegram · 微信即用",
+    "tabStickers": "28 枚貼圖",
+    "tabCreative": "創意合集",
+    "tabStory": "連載漫畫",
+    "tabReceipts": "原帖短漫",
+    "copyGifBtn": "複製 GIF 連結",
+    "downloadGifBtn": "儲存 GIF",
+    "copiedGifToast": "已複製動圖 GIF 連結。",
+    "stickerBannerTitle": "完整版 28 枚透明底暴漫貼圖包 v1.1",
+    "stickerBannerDesc": "已依平台尺寸分資料夾打包：Discord / Slack (128px)、Telegram (512px WebP/PNG)、微信 (240px)，附 4×7 總覽圖。",
+    "promoSheetBtn": "看 4×7 總覽圖 ↗",
+    "storyBannerTitle": "想直式連讀 8 話漫畫 + 聽中英雙語播客？",
+    "storyBannerDesc": "前往 /story/ 專屬閱讀頁，一鍵切換中文 / English 漫畫與 NotebookLM 雙語音訊。",
+    "openStoryReader": "開啟 /story/ 連載閱讀頁 →"
   },
   "mail": {
     "pageTitle": "Tmail · 公開存檔（2023–2026）",
@@ -231,7 +257,7 @@
     "aboutTitle": "關於 Tmail",
     "aboutBody": "純靜態、不追蹤的存檔，收了 34 個討論串和 109 張截圖（2023 年 5 月到 2026 年 11 月）。",
     "memeModalDesc": "點任何一張卡片，到迷因頁複製或儲存。",
-    "openAllMemes": "全部 114 張迷因 ↗",
+    "openAllMemes": "全部 150 張迷因 ↗",
     "copyInMemes": "複製 PNG ↗",
     "topicPrefix": "主題",
     "personPrefix": "人物",
@@ -294,14 +320,15 @@
         "title": "報告 06 · 1,151 則貼文（2026-11-07 至 11-24）",
         "desc": "對 20 位大廠高層 0.0% 髒話、對一般開發者 8.0%、危機期 14.4%，附完整統計方法。"
       }
-    }
+    },
+    "storyTile": "連載"
   },
   "readme": {
-    "title": "Temu3 Code · 裝 T3 Code 之前",
+    "title": "Temu3 Code · 絕無遙測，全是實錘",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 則 X 貼文",
-    "portalMemes": "114 張迷因",
+    "portalMemes": "150 張迷因",
     "portalEvidence": "109 張截圖",
     "portalSources": "327 條連結",
     "languagesLabel": "18 種語言：",
@@ -309,5 +336,24 @@
     "originP1": "2026 年 11 月 23 日，@theo 把一位中國開發者免費的 MIT Fork 叫成「Chinese knockoff」。十分鐘後，他自己在 X 上給了我們這個名字：「Temu3 Code」（8.4 萬次瀏覽）。",
     "originP2": "一個連美國商標都沒有的創辦人白送的名字，不用白不用。我們註冊了 temu3code.com，把公開紀錄全放上來，順手把 PostHog 拿掉。謝了 Theo。這裡全部 CC0 1.0，隨便 Fork。",
     "originCta": "看 @theo 原帖 ↗"
+  },
+  "story": {
+    "pageTitle": "被封鎖之後的九十六小時 · 8 話雙語連載漫畫與播客 · Temu3 Code",
+    "kicker": "8 話雙語連載漫畫 · NOTEBOOKLM 雙語播客",
+    "title": "被封鎖之後的九十六小時",
+    "sub": "從 11 分鐘 MIT Fork 封號威脅，到每小時 220 萬 IP 日誌、89 瀏覽告到 AWS HR、冒充 Zed 握手與遁入閉源 Slophouse——每一格都有公開提交與原帖存檔。",
+    "podcastTitle": "收聽《96 小時始末》· NotebookLM 深度播客",
+    "podcastSub": "中英雙語完整音訊回顧 · 零追蹤直連播放",
+    "podcastDownload": "下載 MP3 ↓",
+    "zoomBtn": "放大看圖",
+    "receiptBtn": "看來源",
+    "ctaKicker": "繼續探索 · 全部 CC0 1.0 公開領域",
+    "ctaTitle": "打包帶走 28 枚貼圖、逛全部迷因，或到 Tmail 查核一手證據。",
+    "ctaSub": "每一格漫畫都能直達對應提交紀錄、PR Diff 與原帖存檔。零遙測，歡迎自由分享。",
+    "ctaZip": "免費下載 28 枚貼圖包 ZIP",
+    "ctaMemes": "逛全部迷因庫 →",
+    "ctaMail": "去 Tmail 查原始證據 →",
+    "ctaZipHint": "貼圖包已適配 Discord · Slack · Telegram · 微信",
+    "loadingEmpty": "正在載入連載章節..."
   }
 }

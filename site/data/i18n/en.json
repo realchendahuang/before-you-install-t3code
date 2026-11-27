@@ -15,11 +15,12 @@
     "close": "Close",
     "all": "All",
     "prev": "Previous",
-    "next": "Next"
+    "next": "Next",
+    "navStory": "Story Comic"
   },
   "home": {
-    "pageTitle": "Temu3 Code · Before You Install T3 Code",
-    "heroH1": "Before you install<br />T3 Code.",
+    "pageTitle": "Temu3 Code · No Telemetry. Just Receipts.",
+    "heroH1": "No telemetry.<br />Just receipts.",
     "heroSub": "20 cases, 109 screenshots, and 3.5 years of public posts and code from pingdotgg/t3code. No tracking.",
     "ctaMail": "Open Tmail",
     "ctaSteal": "Steal our code (we won't call GitHub) ↗",
@@ -117,7 +118,7 @@
     "f6Desc": "Plaintext 30-day --lan shell cookies, Bearer tokens you can't revoke, and exposed SSH_AUTH_SOCK.",
     "mmTitle": "24 Sins & Memes",
     "mmDraw": "Draw a Random Card",
-    "mmAll": "All 114 Memes ↗",
+    "mmAll": "All 150 Memes ↗",
     "mmOpenArsenal": "Open in Memes ↗",
     "mmCopyPng": "Copy PNG",
     "mmDrawAgain": "Draw Again",
@@ -126,18 +127,25 @@
     "stealTitle": "\"Steal our code (legally).\"*",
     "stealSub": "*We actually mean it. Everything here is CC0 1.0. Fork it without getting threatened.",
     "stealFork": "Fork on GitHub ↗",
-    "stealReports": "All 20 Cases ↗"
+    "stealReports": "All 20 Cases ↗",
+    "storyKicker": "8-EPISODE COMIC · PODCAST (EN/中文) · 28 STICKERS",
+    "storyTitle": "The 96 Hours After One Block",
+    "storySub": "Follow the entire 96-hour timeline in an 8-episode bilingual comic with a NotebookLM audio podcast — plus a free 28-sticker transparent pack ready for Discord, Slack, Telegram, and WeChat.",
+    "storyReadBtn": "Read 8-Ep Comic & Listen →",
+    "storyZipBtn": "Free 28-Sticker ZIP",
+    "storyZipHint": "CC0 1.0 · English & 简体中文 · Zero telemetry",
+    "storyEpPill": "Ep. 1 → Ep. 8"
   },
   "memes": {
-    "pageTitle": "Temu3 Memes · 114 CC0 Cards & Memes",
+    "pageTitle": "Temu3 Memes · 150 CC0 Cards, Stickers, GIFs & Comics",
     "title": "Memes",
-    "sub": "114 CC0 cards and memes. Click any card to copy or check the source.",
+    "sub": "150 CC0 collector cards, viral memes, 28 transparent stickers, GIFs, and bilingual story comics. Click any item to copy or check the source.",
     "drawBtn": "Draw a Random Card",
     "drawAgain": "Draw Again",
     "submitBtn": "Submit on GitHub ↗",
     "tabAll": "All",
     "tabSins": "24 Sins",
-    "tabBlended": "Memes",
+    "tabBlended": "Viral Memes",
     "tabClassic": "Screenshots",
     "tabComics": "Comics",
     "searchPlaceholder": "Search",
@@ -152,12 +160,30 @@
     "series": {
       "sins": "24 SINS",
       "blended": "MEME",
-      "classic": "POST",
+      "classic": "RECEIPT",
       "comics": "COMIC",
       "community": "COMMUNITY",
-      "parody": "PARODY"
+      "parody": "PARODY",
+      "stickers": "STICKER",
+      "creative": "CREATIVE",
+      "story": "STORY"
     },
-    "tabParodies": "Parodies"
+    "tabParodies": "Parodies",
+    "stickerZipBtn": "Free 28-Sticker ZIP",
+    "stickerZipSub": "Discord · Slack · Telegram · WeChat",
+    "tabStickers": "28 Stickers",
+    "tabCreative": "Creative Pack",
+    "tabStory": "Story Comics",
+    "tabReceipts": "Receipts",
+    "copyGifBtn": "Copy GIF URL",
+    "downloadGifBtn": "Save GIF",
+    "copiedGifToast": "Copied animated GIF link.",
+    "stickerBannerTitle": "Full 28-Sticker Transparent Pack v1.1",
+    "stickerBannerDesc": "Pre-sized RGBA folders for Discord & Slack (128px), Telegram (512px WebP/PNG), and WeChat (240px) + 4×7 X promo contact sheet.",
+    "promoSheetBtn": "4×7 Contact Sheet ↗",
+    "storyBannerTitle": "Prefer vertical comic reading + NotebookLM Podcast?",
+    "storyBannerDesc": "Open the dedicated /story/ reader for instant English / 简体中文 switching and bilingual audio overview.",
+    "openStoryReader": "Open /story/ Reader →"
   },
   "mail": {
     "pageTitle": "Tmail · Public Archive (2023–2026)",
@@ -231,7 +257,7 @@
     "aboutTitle": "About Tmail",
     "aboutBody": "A static, no-tracking archive of 34 threads and 109 screenshots (May 2023 to Nov 2026).",
     "memeModalDesc": "Click any card to copy or save in Memes.",
-    "openAllMemes": "All 114 Memes ↗",
+    "openAllMemes": "All 150 Memes ↗",
     "copyInMemes": "Copy PNG ↗",
     "topicPrefix": "Topic",
     "personPrefix": "Person",
@@ -294,14 +320,15 @@
         "title": "Report 06 · 1,151 Posts (Nov 7–24, 2026)",
         "desc": "0.0% swearing at 20 Big-Tech VIPs vs. 8.0% at regular devs vs. 14.4% during the crisis, plus how we counted."
       }
-    }
+    },
+    "storyTile": "TStory"
   },
   "readme": {
-    "title": "Temu3 Code · Before You Install T3 Code",
+    "title": "Temu3 Code · No Telemetry. Just Receipts.",
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 X Posts",
-    "portalMemes": "114 Memes",
+    "portalMemes": "150 Memes",
     "portalEvidence": "109 Screenshots",
     "portalSources": "327 Links",
     "languagesLabel": "Languages (18):",
@@ -309,5 +336,24 @@
     "originP1": "On Nov 23, 2026, ten minutes after calling a Chinese developer's free MIT fork a \"Chinese knockoff,\" @theo gave us the name on X: \"Temu3 Code\" (84k views).",
     "originP2": "When a founder with zero US trademarks hands you a free name, you take it. We registered temu3code.com, put all the public records here, and left out PostHog. Thanks for the name, Theo. Everything here is CC0 1.0, so fork away.",
     "originCta": "See @theo's post ↗"
+  },
+  "story": {
+    "pageTitle": "The 96 Hours After One Block · 8-Episode Comic & Podcast · Temu3 Code",
+    "kicker": "8-EPISODE BILINGUAL COMIC · AUDIO PODCAST",
+    "title": "The 96 Hours After One Block",
+    "sub": "From an 11-minute MIT fork threat to 2.2M/hr IP logs, 89-view HR complaints, fake Zed headers, and \"slophouse\" — every panel backed by public commits and receipts.",
+    "podcastTitle": "Listen to the 96-Hour Story · NotebookLM Podcast",
+    "podcastSub": "Full bilingual deep-dive audio overview · zero tracking",
+    "podcastDownload": "MP3 ↓",
+    "zoomBtn": "Zoom",
+    "receiptBtn": "Receipt",
+    "ctaKicker": "KEEP EXPLORING · 100% CC0 1.0",
+    "ctaTitle": "Grab the Stickers, Browse the Memes, or Verify Every Receipt.",
+    "ctaSub": "Every comic panel links straight to archived public commits, PR diffs, and original posts. Zero telemetry, free to share anywhere.",
+    "ctaZip": "Free 28-Sticker ZIP",
+    "ctaMemes": "Browse All Memes →",
+    "ctaMail": "Open Tmail Receipts →",
+    "ctaZipHint": "Sticker pack ready for Discord · Slack · Telegram · WeChat",
+    "loadingEmpty": "Story episodes are loading..."
   }
 }

@@ -903,7 +903,7 @@
   async function openThreadMemesModal(th) {
     if (!state.memes) {
       try {
-        const res = await fetch(`${state.dataPrefix}memes.json?v=3`);
+        const res = await fetch(`${state.dataPrefix}memes.json?v=4`);
         if (res.ok) {
           const obj = await res.json();
           state.memes = Array.isArray(obj.items) ? obj.items : [];
