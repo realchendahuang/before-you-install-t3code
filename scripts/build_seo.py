@@ -44,6 +44,18 @@ CASE_SLUGS = {
     "19": "ca81b7b9-lan-cookie-bearer-ws-and-repo-rce",
 }
 
+EXHIBIT_DOSSIERS = {
+    "20": "docs/dossiers/05-governance-trademark-and-history.md",
+    "21": "docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "22": "docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "23": "docs/dossiers/02-local-safety-and-security-audit.md",
+    "24": "docs/dossiers/02-local-safety-and-security-audit.md",
+    "25": "docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "26": "docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "27": "docs/dossiers/05-governance-trademark-and-history.md",
+    "28": "docs/dossiers/02-local-safety-and-security-audit.md",
+}
+
 THREAD_CSS = """/* Static SEO Archive Thread Stylesheet — matches Tmail Material 3 light theme */
 :root {
   --shell-bg: #f6f8fc;
@@ -811,14 +823,14 @@ def render_thread_html(
 ) -> str:
     tid = th["id"]
     is_zh = lang == "zh-CN"
-    zh_th = zh_bundle["threads"][tid]
-    zh_topics = zh_bundle["topics"]
+    zh_th = zh_bundle["threads"].get(tid)
+    zh_topics = zh_bundle.get("topics", {})
 
-    subject = strip_md_code(zh_th["subject"] if is_zh else th["subject"])
-    snippet = strip_md_code(zh_th["snippet"] if is_zh else th["snippet"])
-    from_str = zh_th["from"] if is_zh else th["from"]
-    to_str = zh_th["to"] if is_zh else th["to"]
-    date_disp = zh_th["dateDisplay"] if is_zh else th["dateDisplay"]
+    subject = strip_md_code((zh_th["subject"] if is_zh and zh_th else None) or (th.get("subjectZh") if is_zh else th["subject"]))
+    snippet = strip_md_code((zh_th["snippet"] if is_zh and zh_th else None) or (th.get("snippetZh") if is_zh else th["snippet"]))
+    from_str = zh_th["from"] if (is_zh and zh_th) else th["from"]
+    to_str = zh_th["to"] if (is_zh and zh_th) else th["to"]
+    date_disp = zh_th["dateDisplay"] if (is_zh and zh_th) else th["dateDisplay"]
 
     root_rel = "../../../../" if is_zh else "../../../"
     mail_rel = "../../../" if is_zh else "../../"
@@ -852,11 +864,12 @@ def render_thread_html(
     exhibit = th["exhibit"]
     slug = CASE_SLUGS.get(exhibit)
     case_lang = "zh-CN" if is_zh else "en"
-    exhibit_url = (
-        f"{REPO_URL}/blob/main/cases/{case_lang}/{exhibit}-{slug}.md"
-        if slug
-        else f"{REPO_URL}#all-20-verified-exhibits-0019"
-    )
+    if slug:
+        exhibit_url = f"{REPO_URL}/blob/main/cases/{case_lang}/{exhibit}-{slug}.md"
+    elif exhibit in EXHIBIT_DOSSIERS:
+        exhibit_url = f"{REPO_URL}/blob/main/{EXHIBIT_DOSSIERS[exhibit]}"
+    else:
+        exhibit_url = f"{REPO_URL}#all-20-verified-exhibits-0019"
 
     status_lbl, status_cls = status_label_and_class(th, lang)
     topic_chips = [
@@ -920,19 +933,19 @@ def render_thread_html(
 
     msgs_html: list[str] = []
     for mi, m in enumerate(th["messages"]):
-        zm = zh_th["messages"][mi]
-        sender = zm["sender"] if is_zh else m["sender"]
-        handle = zm["handle"] if is_zh else m["handle"]
-        m_to = zm["to"] if is_zh else m["to"]
-        m_time = zm["time"] if is_zh else m["time"]
-        body_raw = zm["body"] if is_zh else m["body"]
+        zm = zh_th["messages"][mi] if (zh_th and mi < len(zh_th.get("messages", []))) else {}
+        sender = zm.get("sender") if (is_zh and zm) else m["sender"]
+        handle = zm.get("handle") if (is_zh and zm) else m["handle"]
+        m_to = zm.get("to") if (is_zh and zm) else m["to"]
+        m_time = zm.get("time") if (is_zh and zm) else m["time"]
+        body_raw = zm.get("body") if (is_zh and zm) else m["body"]
         body_html = format_body_html(body_raw)
 
         att_html = ""
         atts = m.get("attachments", [])
         if atts:
             figs: list[str] = []
-            z_att_titles = zm.get("attachments", [])
+            z_att_titles = zm.get("attachments", []) if zm else []
             for ai, a in enumerate(atts):
                 a_title = strip_md_code(z_att_titles[ai] if (is_zh and ai < len(z_att_titles)) else a["title"])
                 att_src = a["src"].lstrip("./")
@@ -952,7 +965,7 @@ def render_thread_html(
         lks = m.get("links", [])
         if lks:
             pills: list[str] = []
-            z_link_labels = zm.get("links", [])
+            z_link_labels = zm.get("links", []) if zm else []
             for li, lk in enumerate(lks):
                 lk_label = z_link_labels[li] if (is_zh and li < len(z_link_labels)) else lk["label"]
                 pills.append(
@@ -987,8 +1000,8 @@ def render_thread_html(
     next_href = (
         f"../../{next_th['id']}/zh/" if is_zh else f"../{next_th['id']}/"
     ) if next_th else ""
-    prev_subj = strip_md_code((zh_bundle["threads"][prev_th["id"]]["subject"] if is_zh else prev_th["subject"]) if prev_th else "")
-    next_subj = strip_md_code((zh_bundle["threads"][next_th["id"]]["subject"] if is_zh else next_th["subject"]) if next_th else "")
+    prev_subj = strip_md_code(((zh_bundle["threads"].get(prev_th["id"]) or {}).get("subject") or prev_th.get("subjectZh") or prev_th["subject"]) if is_zh else prev_th["subject"]) if prev_th else ""
+    next_subj = strip_md_code(((zh_bundle["threads"].get(next_th["id"]) or {}).get("subject") or next_th.get("subjectZh") or next_th["subject"]) if is_zh else next_th["subject"]) if next_th else ""
 
     prev_card = (
         f'<a class="pn-card" href="{esc(prev_href)}"><span class="pn-label">{"← 上一条" if is_zh else "← Previous"}</span><span class="pn-title">{esc(prev_subj)}</span></a>'
@@ -1129,7 +1142,7 @@ def render_thread_html(
 
 
 def build_sitemap(threads_en: list[dict], zh_bundle: dict, memes_data: dict) -> str:
-    today = "2026-11-27"
+    today = "2026-11-28"
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
@@ -1207,11 +1220,12 @@ def build_sitemap(threads_en: list[dict], zh_bundle: dict, memes_data: dict) -> 
         zh_loc = f"{BASE_URL}/mail/t/{tid}/zh/"
         alts = [("en", en_loc), ("zh-CN", zh_loc), ("x-default", en_loc)]
 
-        zh_th = zh_bundle["threads"][tid]
+        zh_th = zh_bundle["threads"].get(tid) or {}
         en_imgs: list[tuple[str, str]] = []
         zh_imgs: list[tuple[str, str]] = []
         for mi, m in enumerate(th["messages"]):
-            zm = zh_th["messages"][mi]
+            zmsgs = zh_th.get("messages", [])
+            zm = zmsgs[mi] if mi < len(zmsgs) else {}
             z_titles = zm.get("attachments", [])
             for ai, a in enumerate(m.get("attachments", [])):
                 src = a["src"].lstrip("./")
@@ -1270,7 +1284,8 @@ def validate_outputs(threads_en: list[dict], memes_data: dict) -> None:
     titles: set[str] = set()
     descs: set[str] = set()
     html_files = sorted(OUT_T_DIR.rglob("*.html"))
-    assert len(html_files) == 68, f"Expected 68 static HTML files, got {len(html_files)}"
+    expected_html = len(threads_en) * 2
+    assert len(html_files) == expected_html, f"Expected {expected_html} static HTML files, got {len(html_files)}"
 
     for hp in html_files:
         raw = hp.read_text(encoding="utf-8")

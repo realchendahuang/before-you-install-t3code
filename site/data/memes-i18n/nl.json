@@ -97,6 +97,22 @@
       "title": "Zonde 24 · 泄 · Je prompt in de URL",
       "note": "Share-links propten citaten van 8.000 tekens en volledige prompts in platte-tekst-URL's. Issue #29449 in 4m 39s op slot, 0 replies, doc verwijderd."
     },
+    "sins-sin-25-patronage-zi": {
+      "title": "Zonde 25 · Patronage「资」",
+      "note": "Nadat T3 Code laag scoorde op een publieke tier list, stuurde Theo de auteur een DM en bood aan zijn benchmark te financieren ('dus ik bood aan het te financieren'). De volgende versie noemde T3 Code zijn daily driver, met t3.ademark.dev."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "Zonde 26 · Ondermaats「劣」",
+      "note": "Scoorde doodleuk laatste met een 'F' (kroop pas naar 'D' na noodpatches) in @ZryMiller's audit van 25 tools, terwijl Aether en Hermes ronduit 'A's kregen. Maakt nog steeds een anoniem id aan bij opt-out en laat <ClerkProvider telemetry={false}> weg."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "Zonde 27 · Lockdown「闭」",
+      "note": "Zei tegen 1.401 onbetaalde MIT-bijdragers 'Advies: niet doen', vergrendelde Issue #4123 via @pingdotgg bij 700K views, en patchte stilletjes nog 4 lekken in v0.1.13 met 0 Security Advisories."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "Zonde 28 · Ballast「胀」",
+      "note": "Een fan-out-bug overspoelde de statev2.sqlite van SWC-maker @kdy1dev met 5.654.888 dubbele rijen (113 GiB; 0 B vrijgemaakt in de UI; 56,68 GiB na doctor), terwijl Theo 41 uur radiostilte hield en lof retweet."
+    },
     "blended-00-drake": {
       "title": "Drake: dubbele standaard van 11 uur",
       "note": "Chinese dev forkt MIT gratis: bandreiging. Lab van een biljoen dollar kopieert MIT 11 uur later: 'Open source is open source!'"
@@ -245,6 +261,10 @@
       "title": "Changelog: GBK ja, bans nee",
       "note": "v0.1.13: 401 wijzigingen, 7 highlights over GBK-bestanden. De banwaarschuwing van Google en de Zed-spoof zaten in '+380 more.'"
     },
+    "blended-21c-always-has-been-zed": {
+      "title": "Is altijd al zo geweest: clientInfo { name: 'zed' }",
+      "note": "PR #43087 gaf toe dat de Antigravity ACP-handshake clientInfo: { name: 'zed', version: '0.0.0' } verstuurde; daarna stopte v0.1.13 de fix in '+380 meer bugfixes'."
+    },
     "blended-22a-clown-final-statement": {
       "title": "Clown in precies 16 minuten",
       "note": "'T3 leest nooit je bestanden.' 16 minuten later telde @sk1gl4a 243 gescande Claude-chats. PR #43948 gaf hem gelijk."
@@ -269,6 +289,10 @@
       "title": "Flex Tape op een beveiligingswaarschuwing",
       "note": "De SDK van Anthropic waarschuwde voor een wildcard die de goedkeuring omzeilde. T3 monkey-patchte process.emitWarning en zette een unit test op de mute."
     },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "Dit is prima (cookies van 11 browsers op desktop)",
+      "note": "ServerBrowser.ts isoleert tabbladen alleen als desktop === null (headless Linux), waardoor cookies van alle 11 geïmporteerde browsers, gedempte Anthropic-waarschuwingen en uploadpaden naar ~/.ssh/id_rsa op desktop open en bloot liggen."
+    },
     "blended-24a-anakin-padme-url": {
       "title": "8.000 tekens in de URL, toch?",
       "note": "PR #18454 propt prompts van 8.000 tekens en namen van privérepo's in app.t3.codes/new?prompt=, en previews loggen ze."
@@ -276,6 +300,22 @@
     "blended-24b-disaster-girl-4m39s": {
       "title": "In 4m 39s gelockt, toen verwijderd",
       "note": "Issue #29449: quote-URL's lekten 32 tekens niet-geselecteerde tekst. In 4m 39s gelockt, naar mobile geshipt, doc verwijderd."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "Scooby-onthulling: 'Dus ik bood aan het te financieren'",
+      "note": "Nadat T3 Code laag scoorde op ADE Tier List v1, gaf Theo publiekelijk toe dat hij de auteur een DM stuurde en aanbood zijn benchmark te financieren—al snel gevolgd door 'T3 Code is mijn daily driver' en t3.ademark.dev."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "Champagnepodium: van F naar D",
+      "note": "In @ZryMiller's telemetrie-audit van 25 tools kregen Aether en Hermes ronduit A's, terwijl baseline T3 Code doodleuk laatste werd met een F—pas na noodpatches steeg het naar een D."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "4 jaar verschil: glacier#1 (2022) tot #33639 (2026)",
+      "note": "In oktober 2022 sprong @t3dotgg in hazae41/glacier#1 en noemde de maintainer 'gewoon een lul :('; vier jaar later noemde hij een gebruiker een 'ondankbare klootzak' en vergrendelde Issue #4123 via @pingdotgg."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41 uur stilte of trek 25 kaarten",
+      "note": "In plaats van de AWS-HR-thread met 639K views, 243 gescande Claude-chats of 113 GiB SQLite-bloat te beantwoorden, bleef Theo 41 uur radiostil en repostte lof over Mobile 2.4."
     },
     "stickers-01_copium_no_telemetry": {
       "title": "Geen-telemetrie-copium",
@@ -413,6 +453,14 @@
       "title": "Idioom #06 · 掩耳盗铃: advisories: 0",
       "note": "Haalt \"geen telemetrie\" uit de README en dicht kritieke gaten in stille commits. Advisories nog steeds 0."
     },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "Chinees idioom #07: 金蝉脱壳 (de gouden cicade werpt haar schaal af)",
+      "note": "Een lege MIT-open-source-schelp achterlaten terwijl je PR #43889 sluit ('nvm makkelijker in slophouse') en identiteitstracking naar de closed-source backend verhuist."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "Chinees idioom #08: 杀鸡儆猴 (de kip slachten om de apen af te schrikken)",
+      "note": "Een tweet van 89 views en 0 likes van AWS-engineer @dmfigol omtoveren tot DM's om middernacht ('angst is een goede prikkel'), Engelse steken en een formele klacht bij AWS HR."
+    },
     "creative-packaging-01-t3code-iceberg": {
       "title": "De T3 Code-ijsberg",
       "note": "Boven water: de \"Temu3 Code\"-tweet. Daaronder: 41,6 GB nep-verwijderingen, 2,2 mln/uur IP-logs, 0 advisories, meltdown om 4 uur 's nachts."
@@ -428,6 +476,10 @@
     "creative-packaging-04-mit-license-coupon": {
       "title": "Kortingsbon: 100% korting, China uitgesloten",
       "note": "Folderbon: \"Steel onze code (legaal)!\". De kleine lettertjes maken hem ongeldig voor Chinese forks."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "Rapportcijfer: telemetrie-audit van 35 tools (F → D)",
+      "note": "Droge schoolrapportkaart uit @ZryMiller's audit van 35 tools: Aether en Hermes scoren ronduit A's, Orca krijgt een C voor het respecteren van DO_NOT_TRACK, en T3 Code blijft steken op F → D."
     },
     "creative-gaming-01-sekiro-google-ban": {
       "title": "Sekiro: ACCOUNT GEBAND (3:00)",
@@ -456,6 +508,18 @@
     "creative-gaming-07-steam-77k-stars": {
       "title": "Prestatie: '100% organische groei' (129 watchers)",
       "note": "30 seconden inactiviteit triggert de auto-star-popup. Sterren: 77.000. Watchers: 129."
+    },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Steam-prestatie: 'Naar Ideas verhuizen in 4m 39s'",
+      "note": "Zeldzame Steam-prestatie voor het vergrendelen van Issue #29449 in 4m 39s met 0 reacties, nadat plaintext quote-URL's prompts van 8.000 tekens lekten, het naar mobiel werd verscheept en het design doc werd verwijderd."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Steam-prestatie: 'Makkelijker in Slophouse'",
+      "note": "Zeldzame Steam-prestatie voor betrapt worden op het scannen van 243 lokale Claude-chats, 16 minuten na je 'slotverklaring', en dan PR #43889 sluiten om tracking naar closed-source slophouse te verhuizen."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Steam-prestatie: '81K sterren, 0 beveiligingsadvisories'",
+      "note": "Zeldzame Steam-prestatie voor het uitlichten van GBK-tekstbestanden in v0.1.13 (401 wijzigingen) terwijl Google's waarschuwing over accountbans en Zed-spoofing werden begraven in '+380 meer bugfixes'."
     },
     "creative-pokemon-01-evo-star-farmer": {
       "title": "Evolutielijn #01: de sterrenboer",
@@ -500,6 +564,10 @@
     "creative-reactions-07-gif-auto-star-counter": {
       "title": "GIF: auto-star-teller van 30s",
       "note": "30 seconden inactief, popup vuurt PUT user/starred. Sterren klimmen naar 77.000, watchers bevroren op 129."
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "Antwoordbewijs: creator met 1M+ vs. tweet met 89 views",
+      "note": "Snel antwoordbewijs voor @dmfigol's thread van januari 2025: een tweet met 89 views en 0 likes lokte DM's om middernacht uit ('angst is een goede prikkel'), taalsteken en een klacht bij AWS HR."
     },
     "story-en-ep01": {
       "title": "Afl.1 · 11 Uur Verschil (EN)",

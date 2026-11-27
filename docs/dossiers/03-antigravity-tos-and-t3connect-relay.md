@@ -238,6 +238,20 @@ Deep source verification against `pingdotgg/t3code` HEAD `ca81b7b9` confirms fou
 
 ---
 
+## 3.5 Nov 25–26 Google Flagging Admission & `v0.1.13` Silent Removal (Exhibit #21)
+
+Two days after closing `#40713` and `#41536`, upstream merged two PRs acknowledging Antigravity policy warnings while burying both changes inside `v0.1.13`'s `"Plus 380 more bug fixes"` rollup with `0` Security Advisories:
+
+- **[PR #43026](https://github.com/pingdotgg/t3code/pull/43026)** (`2026-11-25T19:25:43Z`, `@juliusmarminge`): Admitted *"Antigravity supports only ACP for external clients. Google told us that calling its internal APIs can get an account flagged"* (`"Either one could get users in trouble"`), deleting `antigravityUsageLimits.ts` and dropping `@napi-rs/keyring` from `apps/server`.
+- **[PR #43087](https://github.com/pingdotgg/t3code/pull/43087)** (`2026-11-26T15:42:39Z`, `@gabrielelpidio`): Removed fallback `clientInfo: { name: "zed", version: "0.0.0" }` impersonation from the Antigravity ACP handshake (`"Posing as another client breaks the same rule"`).
+- **[`v0.1.13`](https://github.com/pingdotgg/t3code/releases/tag/v0.1.13)** (`2026-11-26T19:32:24Z`, `401 changes`): Highlighted 7 minor items (GBK/GB18030 files, path copying, simulator toggles) while omitting Google's warning and both PRs from the top changelog.
+
+![PR #43026 acknowledging Google account-flagging warning](../../evidence/extra/nov27-pr43026-google-flagged.png)
+
+![PR #43087 removing Zed allowlist handshake impersonation](../../evidence/extra/nov27-pr43087-zed-spoof.png)
+
+---
+
 ## 4. Primary References
 
 ### Local Checkout Files Inspected (`scratch/t3code/`)
@@ -290,3 +304,5 @@ Deep source verification against `pingdotgg/t3code` HEAD `ca81b7b9` confirms fou
   - https://github.com/pingdotgg/t3code/discussions/21286, https://github.com/pingdotgg/t3code/discussions/37831
   - https://github.com/pingdotgg/t3code/pull/32945 (Open — `$25k/mo` Cloudflare bill, OVH Hillsboro `gw.t3coderelay.com` Caddy + Go Unix-socket gateway)
   - https://x.com/theo/status/2125370330244128924 (Nov 25 post stating E2E encryption is impossible)
+- Google Flagging Admission & Zed Impersonation Removal (Exhibit #21):
+  - https://github.com/pingdotgg/t3code/pull/43026 ; https://github.com/pingdotgg/t3code/pull/43087 ; https://github.com/pingdotgg/t3code/releases/tag/v0.1.13 ; https://x.com/realchendahuang/status/2126228292231659944

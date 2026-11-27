@@ -97,6 +97,22 @@
       "title": "罪24 · 泄 · あなたのプロンプトがURLに",
       "note": "共有リンクは8,000文字の引用とプロンプト全文を平文URLに詰め込んだ。Issue #29449は4分39秒でロック、返信ゼロ、ドキュメントは削除。"
     },
+    "sins-sin-25-patronage-zi": {
+      "title": "罪25 · パトロネージ「资」",
+      "note": "T3 Codeが公開ティアリストで低評価を食らった直後、Theoは著者にDMを送り、ベンチマークへの資金提供を持ちかけた（「だから資金を出そうと申し出た」）。次のバージョンではT3 Codeを「普段使いの一台」と絶賛し、t3.ademark.devを添えた。"
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "罪26 · サブパー「劣」",
+      "note": "@ZryMillerの25ツール監査で最下位の「F」（緊急パッチ後にようやく「D」）に沈み、一方のAetherとHermesは堂々の「A」。それでもオプトアウト時に匿名IDを生成し、<ClerkProvider telemetry={false}>を書き漏らしている。"
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "罪27 · ロックダウン「闭」",
+      "note": "報酬ゼロのMITコントリビューター1,401人に「Advice: Don't.」と告げ、70万再生の中@pingdotgg経由でIssue #4123をロック。さらにv0.1.13で脆弱性4件をこっそり修正しつつ、Security Advisoryは0件。"
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "罪28 · 肥大「胀」",
+      "note": "ファンアウトのバグがSWC作者@kdy1devのstatev2.sqliteを564万4,888行の重複で埋め尽くした（113 GiB、UIでの解放は0 B、doctor後56.68 GiB）。その間Theoは41時間だんまりを決め込み、絶賛ツイートをRTしていた。"
+    },
     "blended-00-drake": {
       "title": "Drake：11時間のダブルスタンダード",
       "note": "中国の開発者がMITを無料でフォーク：BAN脅迫。11時間後、兆ドル規模の米国ラボがMITをコピー：「オープンソースはオープンソースだろ！」"
@@ -245,6 +261,10 @@
       "title": "変更履歴：GBKは載る、BANは載らない",
       "note": "v0.1.13：変更401件、ハイライトはGBKファイル7件。GoogleのBAN警告とZed偽装は「+380件」の中に埋もれた"
     },
+    "blended-21c-always-has-been-zed": {
+      "title": "ずっとそうだった：clientInfo { name: 'zed' }",
+      "note": "PR #43087で、AntigravityのACPハンドシェイクがclientInfo: { name: 'zed', version: '0.0.0' } を送っていたことが判明。そしてv0.1.13は修正を「+380 more bug fixes」の中に押し込めた。"
+    },
     "blended-22a-clown-final-statement": {
       "title": "16分ぴったりでピエロ",
       "note": "「T3はあなたのファイルを一切読まない」。16分後、@sk1gl4aがスキャンされたClaudeチャット243件を数え上げた。PR #43948も認めた"
@@ -269,6 +289,10 @@
       "title": "セキュリティ警告にFlex Tape",
       "note": "AnthropicのSDKが承認を回避するワイルドカードを警告。T3は process.emitWarning をモンキーパッチし、その黙らせ方を単体テストした"
     },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "これで問題なし（デスクトップ上の11ブラウザ分のCookie）",
+      "note": "ServerBrowser.tsがタブを隔離するのはdesktop === null（ヘッドレスLinux）の時だけ。デスクトップでは11ブラウザ分のCookie、黙殺されたAnthropic警告、そして~/.ssh/id_rsaのアップロード経路まで丸見えになる。"
+    },
     "blended-24a-anakin-padme-url": {
       "title": "URLに8,000文字、だよね？",
       "note": "PR #18454は8,000文字のプロンプトとプライベートリポジトリ名を app.t3.codes/new?prompt= に詰め込み、プレビューがそれをログに残す"
@@ -276,6 +300,22 @@
     "blended-24b-disaster-girl-4m39s": {
       "title": "4分39秒で確定、そして削除",
       "note": "Issue #29449：引用URLが未選択テキスト32文字を漏洩。4分39秒で確定、モバイルに配信、ドキュメントは削除"
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "スクービー・リビール：「だから資金を出そうと申し出た」",
+      "note": "ADE Tier List v1でT3 Codeが低評価だった後、Theoは著者にDMしてベンチマークへの資金提供を持ちかけたと公言。ほどなく「T3 Codeは俺の普段使い」とt3.ademark.devが続いた。"
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "シャンパン・ポディウム：FからDへ昇格",
+      "note": "@ZryMillerの25ツール・テレメトリ監査で、AetherとHermesはオールA。ベースラインのT3 Codeは最下位のFで、緊急パッチ後にようやくDへ。"
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "4年の隔たり：glacier#1（2022）から#33639（2026）へ",
+      "note": "2022年10月、@t3dotggはhazae41/glacier#1に飛び込み、メンテナーを「ただのクズだ :(」と罵倒。4年後、今度はユーザーを「恩知らずの野郎」呼ばわりし、@pingdotgg経由でIssue #4123をロックした。"
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41時間の沈黙、さもなくば25枚ドロー",
+      "note": "63.9万再生のAWS HRスレッド、スキャンされた243件のClaudeチャット、113 GiBのSQLite肥大——どれにも答えず、Theoは41時間だんまりでMobile 2.4の絶賛をリポストし続けた。"
     },
     "stickers-01_copium_no_telemetry": {
       "title": "テレメトリなしコピウム",
@@ -413,6 +453,14 @@
       "title": "四字熟語 #06 · 掩耳盗铃：アドバイザリは 0 件",
       "note": "README から「テレメトリなし」を削除し、重大な穴はひっそりとしたコミットで修正。アドバイザリは今も 0 件。"
     },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "中国故事成語 #07：金蝉脱壳（金蝉、殻を脱ぐ）",
+      "note": "中身の抜けたMITオープンソースの殻だけ残し、PR #43889をクローズ（「nvm easier to do in slophouse」）。身元追跡はクローズドソースのバックエンドへ移した。"
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "中国故事成語 #08：杀鸡儆猴（鶏を殺して猿を戒める）",
+      "note": "再生89回・いいね0のAWSエンジニア@dmfigolのツイートを、真夜中のDM（「恐怖はいい動機づけだ」）、英語での嫌味、そしてAWS HRへの正式抗議に変えた。"
+    },
     "creative-packaging-01-t3code-iceberg": {
       "title": "T3 Code の氷山",
       "note": "水面：あの「Temu3 Code」ツイート。水面下：41.6 GB の偽削除、毎時 220 万件の IP ログ、アドバイザリ 0 件、午前 4 時のメルトダウン。"
@@ -428,6 +476,10 @@
     "creative-packaging-04-mit-license-coupon": {
       "title": "クーポン：100% オフ、中国は対象外",
       "note": "日曜折込チラシのクーポン：「俺たちのコードを盗め（合法的に）！」。ただし中国発フォークには細則で無効化。"
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "通知表：35ツール・テレメトリ監査（F → D）",
+      "note": "@ZryMillerの35ツール監査を、淡々とした学校の通知表に仕立てた一本。AetherとHermesはオールA、OrcaはDO_NOT_TRACKを守ってC、T3 CodeはF → Dで踏みとどまる。"
     },
     "creative-gaming-01-sekiro-google-ban": {
       "title": "隻狼：ACCOUNT BANNED（3:00）",
@@ -456,6 +508,18 @@
     "creative-gaming-07-steam-77k-stars": {
       "title": "実績：『100% オーガニック成長』（ウォッチャー 129 人）",
       "note": "30 秒放置するだけで自動スターのプロンプトが発火。スター 77,000、ウォッチャー 129。"
+    },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Steam実績：「4分39秒でIdeas行き」",
+      "note": "希少なSteam実績。平文の引用URLが8,000字プロンプトを漏らし、モバイルに出荷し、設計ドキュメントを削除した挙げ句、Issue #29449を4分39秒・返信0でロックした。"
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Steam実績：「Slophouseならもっと楽」",
+      "note": "希少なSteam実績。「最終声明」から16分後に243件のローカルClaudeチャットをスキャンしている現場を押さえられ、追跡をクローズドソースのslophouseへ移すためPR #43889をクローズした。"
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Steam実績：「スター81K、Advisory 0件」",
+      "note": "希少なSteam実績。v0.1.13（401件の変更）でGBKテキストファイルを華々しく打ち出しつつ、Googleのアカウント停止警告とZedのなりすましを「+380 more bug fixes」に埋めた。"
     },
     "creative-pokemon-01-evo-star-farmer": {
       "title": "進化ライン #01：スター農家",
@@ -500,6 +564,10 @@
     "creative-reactions-07-gif-auto-star-counter": {
       "title": "GIF：30 秒で自動スターのカウンター",
       "note": "30 秒放置するとポップアップが PUT user/starred を発火。スターは 77,000 まで上昇、ウォッチャーは 129 で停止。"
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "返信の証拠：登録者100万超クリエイター vs. 表示89回ツイート",
+      "note": "@dmfigolの2025年1月のスレッドに対する反論の証拠カード。表示89回・いいね0の投稿が、深夜のDM（「恐怖は良いインセンティブだ」）、英語力への嫌味、そしてAWS HRへの通報を引き起こした。"
     },
     "story-en-ep01": {
       "title": "Ep.1 · 11時間の差（EN）",

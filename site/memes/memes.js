@@ -404,7 +404,7 @@
     }
 
     const [memesRes] = await Promise.all([
-      fetch("../data/memes.json?v=6").catch(() => null),
+      fetch("../data/memes.json?v=7").catch(() => null),
       applyLanguage(lang, true)
     ]);
     if (memesRes && memesRes.ok) {

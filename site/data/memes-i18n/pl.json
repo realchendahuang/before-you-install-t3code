@@ -97,6 +97,22 @@
       "title": "Grzech 24 · 泄 · Twój prompt w URL-u",
       "note": "Linki do udostępniania wpychały 8000-znakowe cytaty i całe prompty do jawnych URL-i. Issue #29449 zablokowane w 4 min 39 s, 0 odpowiedzi, dokument usunięty."
     },
+    "sins-sin-25-patronage-zi": {
+      "title": "Grzech 25 · Patronat「资」",
+      "note": "Gdy T3 Code wypadł słabo na publicznej tier liście, Theo napisał na priv do autora i zaproponował sfinansowanie jego benchmarku („więc zaproponowałem, że to sfinansuję”). W następnej wersji nazwał T3 Code swoim codziennym narzędziem, z t3.ademark.dev w komplecie."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "Grzech 26 · Miernota「劣」",
+      "note": "W audycie 25 narzędzi @ZryMiller wylądował na samym dnie z „F” (po awaryjnych łatkach doczołgał się tylko do „D”), podczas gdy Aether i Hermes zgarnęły same „A”. Wciąż tworzy anonymous-id przy opt-oucie i pomija <ClerkProvider telemetry={false}>."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "Grzech 27 · Zamknięcie「闭」",
+      "note": "Powiedział 1 401 niezapłaconym współtwórcom projektu na MIT: „Rada: nie róbcie tego”, zamknął Issue #4123 przez @pingdotgg przy 700 tys. wyświetleń i po cichu załatał 4 kolejne luki w v0.1.13, mając 0 Security Advisories."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "Grzech 28 · Rozdęcie「胀」",
+      "note": "Bug fan-out zalał statev2.sqlite twórcy SWC, @kdy1dev, 5 654 888 zduplikowanymi wierszami (113 GiB; 0 B odzyskane w UI; 56,68 GiB po doctorze), a Theo milczał jak zaklęty przez 41 godzin, retweetując pochwały."
+    },
     "blended-00-drake": {
       "title": "Drake: 11-godzinny podwójny standard",
       "note": "Chiński deweloper forkuje MIT za darmo: groźba bana. Amerykańskie labo warte biliony kopiuje MIT 11 godzin później: „Open source to open source!”"
@@ -245,6 +261,10 @@
       "title": "Changelog: GBK tak, bany nie",
       "note": "v0.1.13: 401 zmian, 7 highlightów o plikach GBK. Ostrzeżenie Google o banie i podszywanie się pod Zed siedziały w „+380 more”."
     },
+    "blended-21c-always-has-been-zed": {
+      "title": "Zawsze tak było: clientInfo { name: 'zed' }",
+      "note": "PR #43087 przyznał, że handshake ACP w Antigravity wysyłał clientInfo: { name: 'zed', version: '0.0.0' }, a potem v0.1.13 schował poprawkę w „+380 kolejnych poprawkach błędów”."
+    },
     "blended-22a-clown-final-statement": {
       "title": "Błazen w 16 minut",
       "note": "„T3 nigdy nie czyta twoich plików.” 16 minut później @sk1gl4a naliczył 243 przeskanowane czaty Claude. PR #43948 to potwierdził."
@@ -269,6 +289,10 @@
       "title": "Flex Tape na ostrzeżeniu bezpieczeństwa",
       "note": "SDK Anthropic ostrzegało o wildcardzie omijającym zatwierdzenie. T3 zrobił monkey-patch process.emitWarning i przetestował wyciszenie unit testem."
     },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "Wszystko w porządku (ciasteczka z 11 przeglądarek na Desktopie)",
+      "note": "ServerBrowser.ts izoluje karty tylko gdy desktop === null (headless Linux), zostawiając na Desktopie odsłonięte ciasteczka wszystkich 11 zaimportowanych przeglądarek, wyciszone ostrzeżenia Anthropic i ścieżki wysyłki ~/.ssh/id_rsa."
+    },
     "blended-24a-anakin-padme-url": {
       "title": "8000 znaków w URL-u, co nie?",
       "note": "PR #18454 wpycha 8000-znakowe prompty i nazwy prywatnych repo do app.t3.codes/new?prompt=, a podglądy je logują."
@@ -276,6 +300,22 @@
     "blended-24b-disaster-girl-4m39s": {
       "title": "Zamknięte w 4 min 39 s, potem usunięte",
       "note": "Issue #29449: URL-e cytatów wyciekały 32 znaki niezaznaczonego tekstu. Zablokowane w 4 min 39 s, wysłane na mobile, dokument usunięty."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "Demaskacja à la Scooby: „Więc zaproponowałem, że sfinansuję”",
+      "note": "Po tym jak T3 Code wypadł słabo w ADE Tier List v1, Theo publicznie przyznał, że napisał do autora na priv i zaproponował sfinansowanie jego benchmarku — a wkrótce potem pojawiło się „T3 Code to moje codzienne narzędzie” i t3.ademark.dev."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "Podium z szampanem: awans z F na D",
+      "note": "W audycie telemetrii 25 narzędzi @ZryMiller Aether i Hermes dostały same A, a bazowy T3 Code — ostatnie miejsce i F, wznosząc się po awaryjnych łatkach jedynie na D."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "4 lata różnicy: glacier#1 (2022) i #33639 (2026)",
+      "note": "W październiku 2022 @t3dotgg wpadł do hazae41/glacier#1 i nazwał maintainera „po prostu dupkiem :(”; cztery lata później nazwał użytkownika „niewdzięcznym gnojkiem” i zamknął Issue #4123 przez @pingdotgg."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41 godzin ciszy albo dobierz 25",
+      "note": "Zamiast odpowiedzieć na wątek AWS HR z 639 tys. wyświetleń, na 243 zeskanowane czaty z Claude'a czy na 113 GiB rozdmuchanego SQLite, Theo milczał przez 41 godzin, podbijając pochwały dla Mobile 2.4."
     },
     "stickers-01_copium_no_telemetry": {
       "title": "Copium „No Telemetry”",
@@ -413,6 +453,14 @@
       "title": "Idiom #06 · 掩耳盗铃: Biuletyny bezpieczeństwa: 0",
       "note": "Usuwa „brak telemetrii” z README i łata krytyczne dziury cichymi commitami. Biuletynów wciąż 0."
     },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "Chiński idiom #07: 金蝉脱壳 (złota cykada zrzuca skorupę)",
+      "note": "Zostawia za sobą pustą skorupkę open-source na MIT, zamykając PR #43889 („nvm, w slophouse łatwiej”) i przenosząc śledzenie tożsamości do zamkniętego backendu."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "Chiński idiom #08: 杀鸡儆猴 (zabić kurę, by nastraszyć małpy)",
+      "note": "Zamienił tweeta inżyniera AWS @dmfigol z 89 wyświetleniami i 0 polubień w nocne DM-y („Strach to dobra motywacja”), docinki o jego angielski i oficjalną skargę do HR AWS."
+    },
     "creative-packaging-01-t3code-iceberg": {
       "title": "Góra lodowa T3 Code",
       "note": "Wierzchołek: tweet o „Temu3 Code”. Pod spodem: 41,6 GB fałszywych usunięć, 2,2 mln logów IP na godzinę, 0 biuletynów, awaria o 4 rano."
@@ -428,6 +476,10 @@
     "creative-packaging-04-mit-license-coupon": {
       "title": "Kupon: 100% zniżki, Chiny wyłączone",
       "note": "Kupon z niedzielnej gazetki: „Kradnijcie nasz kod (legalnie)!”. Drobny druk unieważnia go dla chińskich forków."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "Świadectwo: audyt telemetrii 35 narzędzi (F → D)",
+      "note": "Świadectwo szkolne bez emocji z audytu 35 narzędzi @ZryMiller: Aether i Hermes mają same A, Orca dostaje C za respektowanie DO_NOT_TRACK, a T3 Code tkwi na F → D."
     },
     "creative-gaming-01-sekiro-google-ban": {
       "title": "Sekiro: KONTO ZABANOWANE (3:00)",
@@ -457,6 +509,18 @@
       "title": "Osiągnięcie: „100% organicznego wzrostu” (129 obserwujących)",
       "note": "30 sekund bezczynności odpala prośbę o automatyczną gwiazdkę. Gwiazdki: 77 000. Obserwujący: 129."
     },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Osiągnięcie Steam: „Przenieś do Ideas w 4 min 39 s”",
+      "note": "Rzadkie osiągnięcie Steam za zamknięcie Issue #29449 w 4 min 39 s z 0 odpowiedzi — po tym, jak jawne linki-cytaty wyciekły prompty po 8000 znaków, po wysłaniu tego na mobile i skasowaniu dokumentu projektowego."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Osiągnięcie Steam: „W slophouse łatwiej”",
+      "note": "Rzadkie osiągnięcie Steam za przyłapanie na skanowaniu 243 lokalnych czatów z Claude'a 16 minut po „finalnym oświadczeniu”, a potem zamknięcie PR #43889, by przenieść śledzenie do zamkniętego slophouse."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Osiągnięcie Steam: „81 tys. gwiazdek, 0 Advisories”",
+      "note": "Rzadkie osiągnięcie Steam za wystawienie na piedestał plików tekstowych GBK w v0.1.13 (401 zmian), przy jednoczesnym zakopaniu ostrzeżenia Google o banach kont i podszywania się pod Zed w „+380 kolejnych poprawkach błędów”."
+    },
     "creative-pokemon-01-evo-star-farmer": {
       "title": "Linia ewolucji #01: Farmer gwiazdek",
       "note": "Wyśmiewał gwiazdki na GitHubie jako zagranie VC. Teraz odpala popup po 30 s bezczynności i siedzi na 77 000 gwiazdek przy 129 obserwujących."
@@ -478,7 +542,7 @@
       "note": "Wrzucaj to, ilekroć wróci usunięty slogan. Git diff mówi sam za siebie."
     },
     "creative-reactions-02-reply-uspto-zero": {
-      "title": "Paragon: 0 znaków towarowych w USPTO",
+      "title": "Dowód: 0 znaków towarowych w USPTO",
       "note": "Na każde roszczenie o „naruszenie znaku towarowego”: T3 Tools Inc. miało w momencie groźby zero rejestracji w USPTO."
     },
     "creative-reactions-03-reply-1151-scoreboard": {
@@ -501,6 +565,10 @@
       "title": "GIF: licznik automatycznych gwiazdek co 30 s",
       "note": "30 sekund bezczynności, popup strzela PUT user/starred. Gwiazdki rosną do 77 000, obserwujący zamrożeni na 129."
     },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "Potwierdzenie odpowiedzi: twórca z 1 mln+ vs tweet z 89 wyświetleniami",
+      "note": "Szybkie potwierdzenie odpowiedzi na wątek @dmfigol ze stycznia 2025: tweet z 89 wyświetleniami i 0 polubień wywołał nocne DM-y („Strach to dobra motywacja”), docinki o język i skargę do HR AWS."
+    },
     "story-en-ep01": {
       "title": "Odc.1 · 11 godzin różnicy (wersja ang.)",
       "note": "Darmowy fork na MIT dostaje łatkę „Temu3 Code” i groźbę bana. Jedenaście godzin później: witamy, bilionowe laboratoria z USA."
@@ -511,11 +579,11 @@
     },
     "story-en-ep02": {
       "title": "Odc.2 · Najgorsze kliknięcie blokady (wersja ang.)",
-      "note": "Jedno uprzejme pytanie o podwójne standardy, jeden natychmiastowy blok, a paragony ciągną się aż do FFmpeg."
+      "note": "Jedno uprzejme pytanie o podwójne standardy, jeden natychmiastowy blok, a dowody ciągną się aż do FFmpeg."
     },
     "story-zh-ep02": {
       "title": "Odc.2 · Najgorsze kliknięcie blokady (wersja chińska)",
-      "note": "Jedno uprzejme pytanie o podwójne standardy, jeden natychmiastowy blok, a paragony ciągną się aż do FFmpeg."
+      "note": "Jedno uprzejme pytanie o podwójne standardy, jeden natychmiastowy blok, a dowody ciągną się aż do FFmpeg."
     },
     "story-en-ep03": {
       "title": "Odc.3 · Zero telemetrii, kropka (wersja ang.)",
@@ -527,19 +595,19 @@
     },
     "story-en-ep04": {
       "title": "Odc.4 · Zachodnia medycyna działa szybko (wersja ang.)",
-      "note": "Miesiące skarg były wyśmiewane. Jedno zgłoszenie GDPR kupiło 6-godzinny nocny sprint i logi IP 2.2M/h."
+      "note": "Miesiące skarg były wyśmiewane. Jedno zgłoszenie GDPR wymusiło 6-godzinny nocny sprint i logi IP 2.2M/h."
     },
     "story-zh-ep04": {
       "title": "Odc.4 · Zachodnia medycyna działa szybko (wersja chińska)",
-      "note": "Miesiące skarg były wyśmiewane. Jedno zgłoszenie GDPR kupiło 6-godzinny nocny sprint i logi IP 2.2M/h."
+      "note": "Miesiące skarg były wyśmiewane. Jedno zgłoszenie GDPR wymusiło 6-godzinny nocny sprint i logi IP 2.2M/h."
     },
     "story-en-ep05": {
       "title": "Odc.5 · Emerytura na 3.5 godziny (wersja ang.)",
-      "note": "Ogłosił emeryturę po 18 paragonach. Jedna świeża awantura i nowe bugi ściągnęły go z powrotem 3.5 godziny później."
+      "note": "Ogłosił emeryturę po 18 dowodach. Jedna świeża awantura i nowe bugi ściągnęły go z powrotem 3.5 godziny później."
     },
     "story-zh-ep05": {
       "title": "Odc.5 · Emerytura na 3.5 godziny (wersja chińska)",
-      "note": "Ogłosił emeryturę po 18 paragonach. Jedna świeża awantura i nowe bugi ściągnęły go z powrotem 3.5 godziny później."
+      "note": "Ogłosił emeryturę po 18 dowodach. Jedna świeża awantura i nowe bugi ściągnęły go z powrotem 3.5 godziny później."
     },
     "story-en-ep06": {
       "title": "Odc.6 · 89 wyświetleń, jedna skarga do HR (wersja ang.)",
@@ -571,7 +639,7 @@
     },
     "classic-00b-drake-11-hours": {
       "title": "Drake odrzuca chiński fork",
-      "note": "Dwa posty @theo, 11 godzin różnicy, z kodami QR, żebyś sam sprawdził paragony."
+      "note": "Dwa posty @theo, 11 godzin różnicy, z kodami QR, żebyś sam sprawdził dowody."
     },
     "classic-14-gordon-ramsay-1151-tweets": {
       "title": "1,151 postów, 0% dla VIP-ów",

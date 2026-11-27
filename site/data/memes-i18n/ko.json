@@ -97,6 +97,22 @@
       "title": "죄 24 · 泄 · URL에 담긴 네 프롬프트",
       "note": "공유 링크는 8,000자 인용문과 전체 프롬프트를 평문 URL에 때려넣었다. Issue #29449는 4분 39초 만에 잠겼고, 답글 0, 문서 삭제."
     },
+    "sins-sin-25-patronage-zi": {
+      "title": "죄 25 · 후원「资」",
+      "note": "T3 Code가 공개 티어 리스트에서 낮은 점수를 받자, Theo가 작성자에게 DM을 보내 자기 벤치마크에 자금을 대겠다고 제안했다('그래서 내가 후원하겠다고 했다'). 다음 버전에서는 T3 Code를 두고 자기 daily driver라 불렀고 t3.ademark.dev까지 붙였다."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "죄 26 · 열등「劣」",
+      "note": "@ZryMiller의 25개 도구 감사에서 최하위 'F'를 받았다(긴급 패치 후 겨우 'D'로). 같은 감사에서 Aether와 Hermes는 나란히 'A'를 받았다. 그런데도 옵트아웃 시 익명 id를 생성하고 <ClerkProvider telemetry={false}>는 여전히 빼먹는다."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "죄 27 · 봉쇄「闭」",
+      "note": "무보수 MIT 기여자 1,401명에게 '조언: 하지 마라'라고 통보했고, @pingdotgg를 통해 조회수 700K에서 Issue #4123을 잠갔으며, v0.1.13에서 취약점 4개를 조용히 패치하고 Security Advisory는 0건 올렸다."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "죄 28 · 비대「胀」",
+      "note": "fan-out 버그가 SWC 제작자 @kdy1dev의 statev2.sqlite를 중복 행 5,654,888개로 범람시켰다(113 GiB, UI에서 확보된 공간 0 B, 닥터 실행 후 56.68 GiB). 그동안 Theo는 41시간 내내 칭찬 리트윗만 하며 잠적했다."
+    },
     "blended-00-drake": {
       "title": "Drake: 11시간의 이중 잣대",
       "note": "중국 개발자가 MIT를 공짜로 포크: 밴 협박. 11시간 뒤 미국의 조 단위 연구소가 MIT를 베낌: '오픈소스는 오픈소스니까!'"
@@ -245,6 +261,10 @@
       "title": "체인지로그: GBK는 하고 밴은 안 하고",
       "note": "v0.1.13: 변경 401건, 하이라이트 7건은 죄다 GBK 파일. 구글 밴 경고와 Zed 사칭은 '+380 more'에 조용히 묻혔다."
     },
+    "blended-21c-always-has-been-zed": {
+      "title": "늘 그래왔다: clientInfo { name: 'zed' }",
+      "note": "PR #43087은 Antigravity ACP 핸드셰이크가 clientInfo: { name: 'zed', version: '0.0.0' }를 보냈다고 인정했다. 그리고 v0.1.13은 그 수정을 '+380 more bug fixes' 안에 슬쩍 숨겼다."
+    },
     "blended-22a-clown-final-statement": {
       "title": "딱 16분 만에 광대",
       "note": "'T3는 네 파일 절대 안 읽어.' 16분 뒤 @sk1gl4a가 Claude 대화 243개 스캔된 거 세어옴. PR #43948도 인정."
@@ -269,6 +289,10 @@
       "title": "보안 경고에 Flex Tape 붙이기",
       "note": "Anthropic SDK가 승인을 우회하는 와일드카드를 경고했다. T3는 process.emitWarning을 몽키패치하고, 그 무음 처리를 유닛테스트까지 붙였다."
     },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "이거 괜찮아 (데스크톱에 브라우저 11종 쿠키)",
+      "note": "ServerBrowser.ts는 desktop === null(헤드리스 Linux)일 때만 탭을 격리한다. 그래서 데스크톱에서는 가져온 브라우저 11종의 쿠키, 음소거된 Anthropic 경고, ~/.ssh/id_rsa 업로드 경로가 전부 노출된 채로 남는다."
+    },
     "blended-24a-anakin-padme-url": {
       "title": "URL에 8,000자, 그쵸?",
       "note": "PR #18454는 8,000자 프롬프트와 비공개 레포 이름을 app.t3.codes/new?prompt=에 밀어넣고, 프리뷰에 로그까지 남긴다."
@@ -276,6 +300,22 @@
     "blended-24b-disaster-girl-4m39s": {
       "title": "4분 39초 만에 확정, 그리고 삭제",
       "note": "Issue #29449: 인용 URL이 선택하지도 않은 텍스트 32자를 흘렸다. 4분 39초 만에 확정, 모바일까지 배포, 문서는 삭제."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "스쿠비 공개: '그래서 내가 후원하겠다고 했다'",
+      "note": "T3 Code가 ADE Tier List v1에서 낮은 점수를 받자, Theo는 작성자에게 DM을 보내 자기 벤치마크에 자금을 대겠다고 제안했다고 공개적으로 인정했다. 얼마 안 있어 'T3 Code는 내 daily driver'와 t3.ademark.dev가 뒤따랐다."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "샴페인 포디엄: F에서 D로 승급",
+      "note": "@ZryMiller의 25개 도구 텔레메트리 감사에서 Aether와 Hermes는 나란히 올 A를 받았고, 베이스라인 T3 Code는 최하위 F를 받았다. 긴급 패치를 거치고서야 D로 올라섰다."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "4년 차이: glacier#1(2022)에서 #33639(2026)까지",
+      "note": "2022년 10월, @t3dotgg는 hazae41/glacier#1에 뛰어들어 메인테이너를 '그냥 나쁜 놈 :('이라 불렀다. 4년 뒤 그는 한 사용자를 '은혜도 모르는 새끼'라고 부르고, @pingdotgg를 통해 Issue #4123을 잠갔다."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41시간 침묵 아니면 카드 25장 뽑기",
+      "note": "조회수 639K의 AWS HR 스레드, 스캔된 Claude 채팅 243개, 113 GiB SQLite 비대 문제에 답하는 대신, Theo는 41시간 동안 Mobile 2.4 칭찬만 리포스트하며 침묵했다."
     },
     "stickers-01_copium_no_telemetry": {
       "title": "텔레메트리 없음 코피움",
@@ -413,6 +453,14 @@
       "title": "고사성어 #06 · 掩耳盗铃: 보안 공지 0건",
       "note": "README에서 \"텔레메트리 없음\"을 지우고, 치명적 취약점은 조용한 커밋으로 패치한다. 보안 공지는 여전히 0건."
     },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "중국 속담 #07: 金蝉脱壳 (매미가 껍질을 벗다)",
+      "note": "빈 MIT 오픈소스 껍데기만 남겨두고 PR #43889('그냥 slophouse에서 하는 게 더 쉽다')를 닫은 뒤, 신원 추적을 클로즈드소스 백엔드로 옮겼다."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "중국 속담 #08: 杀鸡儆猴 (닭을 죽여 원숭이를 놀라게 하다)",
+      "note": "조회수 89, 좋아요 0인 AWS 엔지니어 @dmfigol의 트윗을 자정 DM('공포는 좋은 인센티브다'), 영어식 비꼬기, 정식 AWS HR 민원으로 키워냈다."
+    },
     "creative-packaging-01-t3code-iceberg": {
       "title": "T3 Code 아이스버그",
       "note": "수면 위: \"Temu3 Code\" 트윗. 수면 아래: 41.6 GB짜리 가짜 삭제, 시간당 220만 건 IP 로그, 보안 공지 0건, 새벽 4시 멘붕."
@@ -428,6 +476,10 @@
     "creative-packaging-04-mit-license-coupon": {
       "title": "쿠폰: 100% 할인, 중국 제외",
       "note": "일요일 전단 쿠폰: \"우리 코드 훔쳐 가세요(합법적으로)!\" 작은 글씨가 중국 포크에는 쿠폰을 무효화한다."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "성적표: 35개 도구 텔레메트리 감사 (F → D)",
+      "note": "@ZryMiller의 35개 도구 감사에서 나온 무표정 성적표. Aether와 Hermes는 올 A, Orca는 DO_NOT_TRACK을 존중해 C, T3 Code는 F → D."
     },
     "creative-gaming-01-sekiro-google-ban": {
       "title": "세키로: 계정 정지 (3:00)",
@@ -456,6 +508,18 @@
     "creative-gaming-07-steam-77k-stars": {
       "title": "업적: '100% 유기적 성장' (워처 129명)",
       "note": "30초만 유휴 상태여도 자동 스타 팝업이 뜬다. 스타: 77,000. 워처: 129."
+    },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Steam 업적: '4분 39초 만에 Ideas로 이동'",
+      "note": "평문 인용 URL이 8,000자 프롬프트를 유출하고, 그걸 모바일로 출시하고, 설계 문서를 삭제한 뒤 Issue #29449를 4분 39초 만에 답변 0개로 잠근 희귀 Steam 업적."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Steam 업적: 'Slophouse에서 더 쉽다'",
+      "note": "'최종 성명' 16분 뒤 로컬 Claude 채팅 243개를 스캔하다 적발되고, PR #43889를 닫아 추적을 클로즈드소스 slophouse로 옮긴 희귀 Steam 업적."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Steam 업적: '스타 81K, 어드바이저리 0'",
+      "note": "v0.1.13(변경 401건)에서 GBK 텍스트 파일을 조명하는 동안, Google의 계정 정지 경고와 Zed 사칭은 '+380 more bug fixes' 속에 묻어버린 희귀 Steam 업적."
     },
     "creative-pokemon-01-evo-star-farmer": {
       "title": "진화 계통 #01: 스타 파머",
@@ -500,6 +564,10 @@
     "creative-reactions-07-gif-auto-star-counter": {
       "title": "GIF: 30초 자동 스타 카운터",
       "note": "30초만 유휴 상태여도 팝업이 PUT user/starred를 발사한다. 스타는 77,000까지 오르고 워처는 129에 얼어붙는다."
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "반박 증거: 100만+ 크리에이터 vs 조회수 89 트윗",
+      "note": "@dmfigol의 2025년 1월 스레드용 반박 증거 카드. 조회수 89, 좋아요 0인 트윗 하나가 자정 DM('공포는 좋은 인센티브다'), 언어 조롱, AWS HR 민원을 촉발했다."
     },
     "story-en-ep01": {
       "title": "Ep.1 · 11시간의 간격 (영문판)",

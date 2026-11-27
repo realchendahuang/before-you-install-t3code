@@ -434,8 +434,8 @@
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
 
     const [memesRes, subsRes] = await Promise.all([
-      fetch("../data/memes.json?v=6").catch(() => null),
-      fetch("../data/story-subtitles.json?v=2").catch(() => null),
+      fetch("../data/memes.json?v=7").catch(() => null),
+      fetch("../data/story-subtitles.json?v=3").catch(() => null),
       applyLanguage(lang, true)
     ]);
 

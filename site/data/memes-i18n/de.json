@@ -97,6 +97,22 @@
       "title": "Sünde 24 · 泄 · Dein Prompt in der URL",
       "note": "Share-Links stopften 8.000-Zeichen-Zitate und komplette Prompts in Klartext-URLs. Issue #29449 in 4m 39s dicht, 0 Antworten, Doku gelöscht."
     },
+    "sins-sin-25-patronage-zi": {
+      "title": "Sünde 25 · Gönnerschaft「资」",
+      "note": "Nachdem T3 Code auf einer öffentlichen Tier-List schlecht abgeschnitten hatte, schrieb Theo dem Autor eine DM und bot an, dessen Benchmark zu finanzieren („also habe ich angeboten, ihn zu finanzieren“). Die nächste Version nannte T3 Code dann seinen Daily Driver – mit t3.ademark.dev."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "Sünde 26 · Minderwertig「劣」",
+      "note": "Im 25-Tool-Audit von @ZryMiller auf dem allerletzten Platz mit „F“ (nach Notfall-Patches kriecht es gerade mal auf „D“), während Aether und Hermes glatte „A“ kassierten. Erzeugt bei Opt-out trotzdem eine anonymous-id und lässt <ClerkProvider telemetry={false}> einfach weg."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "Sünde 27 · Abriegelung「闭」",
+      "note": "1.401 unbezahlten MIT-Contributors „Advice: Don't“ an den Kopf geworfen, Issue #4123 bei 700K Views via @pingdotgg dichtgemacht und in v0.1.13 still 4 weitere Vulns gefixt – mit 0 Security Advisories."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "Sünde 28 · Aufblähung「胀」",
+      "note": "Ein Fan-out-Bug flutete statev2.sqlite von SWC-Schöpfer @kdy1dev mit 5.654.888 doppelten Zeilen (113 GiB; 0 B in der UI freigegeben; 56,68 GiB nach dem Doctor) – während Theo 41 Stunden Funkstille hielt und Lob retweetete."
+    },
     "blended-00-drake": {
       "title": "Drake: Doppelstandard in 11 Stunden",
       "note": "China-Dev forkt MIT gratis: Bann-Drohung. Billionen-Dollar-US-Labor kopiert MIT 11 Stunden später: „Open Source ist Open Source!“"
@@ -245,6 +261,10 @@
       "title": "Changelog: GBK ja, Sperren nein",
       "note": "v0.1.13: 401 Änderungen, 7 Highlights zu GBK-Dateien. Googles Sperr-Warnung und der Zed-Spoof steckten unter „+380 weitere“."
     },
+    "blended-21c-always-has-been-zed": {
+      "title": "War schon immer so: clientInfo { name: 'zed' }",
+      "note": "PR #43087 gab zu, dass der Antigravity-ACP-Handshake clientInfo: { name: 'zed', version: '0.0.0' } verschickte; v0.1.13 versteckte den Fix dann unter „+380 more bug fixes“."
+    },
     "blended-22a-clown-final-statement": {
       "title": "Clown in exakt 16 Minuten",
       "note": "„T3 liest niemals deine Dateien.“ 16 Minuten später zählte @sk1gl4a 243 gescannte Claude-Chats. PR #43948 stimmte zu."
@@ -269,6 +289,10 @@
       "title": "Flex Tape auf einer Sicherheitswarnung",
       "note": "Anthropics SDK warnte, dass ein Wildcard die Freigabe umgeht. T3 monkey-patchte process.emitWarning und testete die Stummschaltung per Unit-Test."
     },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "This Is Fine (Cookies von 11 Browsern auf dem Desktop)",
+      "note": "ServerBrowser.ts isoliert Tabs nur bei desktop === null (headless Linux) – und lässt damit die Cookies aller 11 importierten Browser, stummgeschaltete Anthropic-Warnungen und Upload-Pfade zu ~/.ssh/id_rsa auf dem Desktop offen liegen."
+    },
     "blended-24a-anakin-padme-url": {
       "title": "8.000 Zeichen in der URL, oder?",
       "note": "PR #18454 stopft 8.000-Zeichen-Prompts und private Repo-Namen in app.t3.codes/new?prompt=, und Vorschauen loggen sie."
@@ -276,6 +300,22 @@
     "blended-24b-disaster-girl-4m39s": {
       "title": "In 4 Min. 39 Sek. festgezurrt, dann gelöscht",
       "note": "Issue #29449: Zitat-URLs leaken 32 Zeichen nicht ausgewählten Texts. In 4 Min. 39 Sek. festgezurrt, auf Mobile ausgeliefert, Doku gelöscht."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "Scooby-Enthüllung: „Also habe ich angeboten, ihn zu finanzieren“",
+      "note": "Nachdem T3 Code auf der ADE Tier List v1 schlecht abgeschnitten hatte, gab Theo öffentlich zu, dem Autor eine DM geschickt und angeboten zu haben, dessen Benchmark zu finanzieren – kurz darauf folgten „T3 Code is my daily driver“ und t3.ademark.dev."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "Sektpodium: Von F auf D hochgestuft",
+      "note": "Im 25-Tool-Telemetrie-Audit von @ZryMiller holten Aether und Hermes glatte A's, während Baseline-T3 Code das Schlusslicht-F kassierte – und nach Notfall-Patches gerade mal auf D kletterte."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "4 Jahre dazwischen: glacier#1 (2022) bis #33639 (2026)",
+      "note": "Im Okt. 2022 sprang @t3dotgg in hazae41/glacier#1 und nannte den Maintainer „just a dick :(“; vier Jahre später nannte er einen Nutzer ein „ungrateful prick“ und ließ Issue #4123 via @pingdotgg sperren."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41 Stunden Funkstille oder zieh 25",
+      "note": "Statt den AWS-HR-Thread mit 639K Views, die 243 gescannten Claude-Chats oder die 113 GiB SQLite-Bloat zu beantworten, blieb Theo 41 Stunden auf Sendepause und repostete lieber Lob für Mobile 2.4."
     },
     "stickers-01_copium_no_telemetry": {
       "title": "Keine-Telemetrie-Copium",
@@ -413,6 +453,14 @@
       "title": "Redewendung #06 · 掩耳盗铃: Advisories: 0",
       "note": "Löscht »keine Telemetrie« aus der README und stopft kritische Lücken in stillen Commits. Advisories weiterhin: 0."
     },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "Chinesisches Sprichwort #07: 金蝉脱壳 (Die goldene Zikade streift ihren Panzer ab)",
+      "note": "Eine leere MIT-Open-Source-Hülle zurückgelassen, PR #43889 geschlossen („nvm easier to do in slophouse“) und das Identitäts-Tracking ins Closed-Source-Backend verlagert."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "Chinesisches Sprichwort #08: 杀鸡儆猴 (Das Huhn töten, um die Affen zu warnen)",
+      "note": "Aus einem Tweet mit 89 Views und 0 Likes vom AWS-Engineer @dmfigol Mitternachts-DMs gemacht („Fear is a good incentive“), dazu englische Seitenhiebe und eine formelle Beschwerde bei AWS HR."
+    },
     "creative-packaging-01-t3code-iceberg": {
       "title": "Der T3 Code Iceberg",
       "note": "Oben: der »Temu3 Code«-Tweet. Darunter: 41,6 GB Fake-Löschungen, 2,2 Mio. IP-Logs pro Stunde, 0 Advisories, 4-Uhr-Meltdown."
@@ -428,6 +476,10 @@
     "creative-packaging-04-mit-license-coupon": {
       "title": "Coupon: 100 % Rabatt, China ausgeschlossen",
       "note": "Sonntagsbeilagen-Coupon: »Stehlen Sie unseren Code (legal)!« Das Kleingedruckte macht ihn für chinesische Forks ungültig."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "Zeugnis: 35-Tool-Telemetrie-Audit (F → D)",
+      "note": "Trockenes Schulzeugnis aus dem 35-Tool-Audit von @ZryMiller: Aether und Hermes kassieren glatte A's, Orca bekommt ein C fürs Respektieren von DO_NOT_TRACK, und T3 Code dümpelt bei F → D."
     },
     "creative-gaming-01-sekiro-google-ban": {
       "title": "Sekiro: ACCOUNT GEBANNT (3:00)",
@@ -456,6 +508,18 @@
     "creative-gaming-07-steam-77k-stars": {
       "title": "Achievement: »100 % organisches Wachstum« (129 Watcher)",
       "note": "30 Sekunden Leerlauf triggern den Auto-Star-Popup. Stars: 77.000. Watcher: 129."
+    },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Steam-Erfolg: „Ab nach Ideas in 4 Min. 39 Sek.“",
+      "note": "Seltene Steam-Achievement dafür, Issue #29449 in 4 Min. 39 Sek. ohne eine einzige Antwort dichtgemacht zu haben – nachdem Plaintext-Quote-URLs 8.000-Zeichen-Prompts leaken ließen, das Ganze auf Mobile ausgeliefert und das Design-Doc gelöscht wurde."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Steam-Erfolg: „In Slophouse einfacher“",
+      "note": "Seltene Steam-Achievement dafür, 16 Minuten nach dem „Final statement“ beim Scannen von 243 lokalen Claude-Chats erwischt zu werden und dann PR #43889 zu schließen, um das Tracking in den Closed-Source-Slophouse zu verlagern."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Steam-Erfolg: „81K Stars, 0 Advisories“",
+      "note": "Seltene Steam-Achievement dafür, in v0.1.13 (401 Änderungen) GBK-Textdateien in den Fokus zu rücken und dabei Googles Account-Ban-Warnung samt Zed-Spoofing unter „+380 more bug fixes“ zu begraben."
     },
     "creative-pokemon-01-evo-star-farmer": {
       "title": "Entwicklungslinie #01: Der Star-Farmer",
@@ -500,6 +564,10 @@
     "creative-reactions-07-gif-auto-star-counter": {
       "title": "GIF: 30s-Auto-Star-Zähler",
       "note": "30 Sekunden idle, Popup feuert PUT user/starred. Stars klettern auf 77.000, Watcher kleben bei 129."
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "Antwort-Beleg: 1M+ Creator vs. Tweet mit 89 Views",
+      "note": "Kurzer Antwort-Beleg für @dmfigol's Thread vom Jan. 2025: Ein Tweet mit 89 Views und 0 Likes löste Mitternachts-DMs („Angst ist ein guter Anreiz“), Spitzen gegen die Sprache und eine Beschwerde bei AWS HR aus."
     },
     "story-en-ep01": {
       "title": "Ep.1 · 11 Stunden Abstand (EN)",

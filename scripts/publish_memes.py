@@ -81,21 +81,19 @@ CASE_TO_THREAD = {
     "17": "2023-05-sponsor-roster",
     "18": "2026-11-02-pr29922-77k-stars",
     "19": "2026-11-25-ca81b7b9-active-vulns",
-    "20": "2026-11-23-origin-temu3-threat",
-    "21": "2026-11-22-antigravity-spoof-3min-ban",
-    "22": "2026-11-25-gdpr-overnight-collapse",
-    "23": "2026-11-25-ca81b7b9-active-vulns",
-    "24": "2026-11-25-ca81b7b9-active-vulns",
+    "20": "2026-11-26-dmfigol-aws-hr-coercion",
+    "21": "2026-11-26-google-antigravity-zed-spoof",
+    "22": "2026-11-27-final-statement-slophouse-gdpr",
+    "23": "2026-11-27-desktop-browser-sandbox-bypass",
+    "24": "2026-11-27-plaintext-quote-prompt-urls",
+    "25": "2026-10-18-benchmark-funding-sponsor-pressure",
+    "26": "2026-11-25-25-tool-telemetry-audit",
+    "27": "2026-11-24-governance-lock-glacier-cla",
+    "28": "2026-11-27-sqlite-113gb-fanout-and-silence",
 }
 
-# Receipts #20-#24 link directly to the verified X thread until dedicated Tmail entries are added.
-CASE_TO_SOURCE_URL = {
-    "20": "https://x.com/realchendahuang/status/2126204776467853346",
-    "21": "https://x.com/realchendahuang/status/2126228292231659944",
-    "22": "https://x.com/realchendahuang/status/2126229298164171078",
-    "23": "https://x.com/realchendahuang/status/2126243499142181151",
-    "24": "https://x.com/realchendahuang/status/2126263438209077355",
-}
+# All exhibits #00-#28 now resolve directly to dedicated threads in site/mail/threads.json.
+CASE_TO_SOURCE_URL: dict[str, str] = {}
 
 # Every entry carries: (exhibit, titleEn, titleZh, noteEn, noteZh[, featured])
 SINS_META: dict[str, tuple[str, str, str, str, str]] = {
@@ -266,6 +264,34 @@ SINS_META: dict[str, tuple[str, str, str, str, str]] = {
         "二十四宗罪 · 泄：把私密正文和完整 Prompt 塞进明文 URL，4 分 39 秒锁单冷处理",
         "Packed 8,000-char quotes, 32-char unselected context, and full prompts into plaintext URLs. When reported in Issue #29449, Julius locked it in 4m 39s with 0 replies and deleted the doc.",
         "复制引用和分享 Prompt 链接会把最多 8,000 字私密对话、前后各 32 字未选中上下文和完整提示词直接塞进明文 URL；隐私 Bug #29449 仅 4 分 39 秒就被零回复锁单转走，还删掉了说明文档。",
+    ),
+    "sin-25-patronage-zi": (
+        "25",
+        "Sin 25 · Patronage「资」",
+        "二十五宗罪 · 资：榜单排名低就私信联系评测作者，「然后我主动出资赞助」",
+        "After T3 Code scored low on a public tier list, Theo DMed the author and offered to fund his benchmark ('so I offered to fund it'). Next version called T3 Code his daily driver with t3.ademark.dev.",
+        "T3 Code 在公开榜单分数垫底后，Theo 亲自私信评测作者并公开承认主动提出「出资赞助」；下一版榜单直接捧成「主力日用」，还顺带上线了 t3.ademark.dev。",
+    ),
+    "sin-26-subpar-lie": (
+        "26",
+        "Sin 26 · Subpar「劣」",
+        "二十六宗罪 · 劣：25 款开源工具审计倒数第一（F → D），<ClerkProvider> 至今不关遥测",
+        "Scored dead-last 'F' (crawling only to 'D' after emergency patches) in @ZryMiller's 25-tool audit while Aether and Hermes got straight 'A's. Still creates anonymous-id on opt-out and omits <ClerkProvider telemetry={false}>.",
+        "在 @ZryMiller 的 25 款开源 AI 工具遥测审计里原始版本拿倒数第一「F」，连夜打完补丁也只爬到「D」，同期 Aether 和 Hermes 都是全「A」；至今仍在退出后照建匿名 ID，且 <ClerkProvider> 仍没加 telemetry={false}。",
+    ),
+    "sin-27-lockdown-bi": (
+        "27",
+        "Sin 27 · Lockdown「闭」",
+        "二十七宗罪 · 闭：白嫖 1,401 位开源贡献者却写「建议别提 PR」，热搜当晚官号锁死 #4123",
+        "Told 1,401 unpaid MIT contributors 'Advice: Don't,' locked Issue #4123 via @pingdotgg at 700K views, and quietly patched 4 more vulns in v0.1.13 with 0 Security Advisories.",
+        "开源仓库白用 1,401 位社区开发者的 MIT 贡献却在指南里写「建议别提 PR」，热搜飙到 70 万浏览当晚官号 @pingdotgg 亲手锁死 #4123，v0.1.13 又悄悄修掉 4 个安全漏洞且公告栏继续挂 0。",
+    ),
+    "sin-28-bloat-zhang": (
+        "28",
+        "Sin 28 · Bloat「胀」",
+        "二十八宗罪 · 胀：565 万行重复写入把 SQLite 撑爆到 113 GiB，面对实锤沉默 41 小时",
+        "A fan-out bug flooded SWC creator @kdy1dev's statev2.sqlite with 5,654,888 duplicate rows (113 GiB; 0 B freed in UI; 56.68 GiB post-doctor) while Theo went radio silent for 41 hours retweeting praise.",
+        "事件扇出 Bug 把 SWC 作者的 statev2.sqlite 撑爆到 113 GiB、565 万行重复记录（设置页清理释放 0 B，doctor 修完仍剩 56.68 GiB）；面对全球实锤，Theo 连续 41 小时只转发夸赞、一言不发。",
     ),
 }
 
@@ -566,6 +592,14 @@ BLENDED_META: dict[str, tuple[str, str, str, str, str, bool]] = {
         "v0.1.13 共 401 项改动，置顶 7 条亮点大谈支持 GBK 编码，却把 Google 封号警告和冒充 Zed 的紧急修复藏进了「其余 380 项修复」里。",
         False,
     ),
+    "21c-always-has-been-zed": (
+        "21",
+        "Always Has Been: clientInfo { name: 'zed' }",
+        "太空宇航员：原来一直都在冒充 Zed 连 Google？一直都是",
+        "PR #43087 admitted the Antigravity ACP handshake sent clientInfo: { name: 'zed', version: '0.0.0' }, then v0.1.13 tucked the fix inside '+380 more bug fixes.'",
+        "官方 PR #43087 亲口承认连 Google Antigravity 握手时一直把客户端名报成 zed，v0.1.13 发布日志又把修复藏进「其余 380 项修复」。",
+        False,
+    ),
     "22a-clown-final-statement": (
         "22",
         "Clown Makeup: 16 Minutes After 'Final Statement'",
@@ -614,6 +648,14 @@ BLENDED_META: dict[str, tuple[str, str, str, str, str, bool]] = {
         "Anthropic 官方 SDK 发出安全警告提示通配符绕过了人工审批，T3 Code 没去收紧权限，反而魔改 process.emitWarning 把警告直接静音，还专门写了单元测试确认静音生效。",
         False,
     ),
+    "23c-this-is-fine-cookies": (
+        "23",
+        "This Is Fine (11 Browsers' Cookies on Desktop)",
+        "火海喝咖啡：只在无界面 Linux 隔离，桌面端 11 款浏览器全裸奔",
+        "ServerBrowser.ts isolates tabs only when desktop === null (headless Linux), leaving all 11 imported browsers' cookies, muted Anthropic warnings, and ~/.ssh/id_rsa upload paths exposed on Desktop.",
+        "源码里的会话隔离只在无头 Linux 服务器开启，真正导入了 11 款浏览器 Cookie 的桌面端却关着隔离，旁边还开着被静音的 Anthropic 警告和任意路径 uploadFiles。",
+        False,
+    ),
     "24a-anakin-padme-url": (
         "24",
         "Anakin & Padme: 8,000-Char Prompts in Plaintext URLs",
@@ -628,6 +670,38 @@ BLENDED_META: dict[str, tuple[str, str, str, str, str, bool]] = {
         "微笑女孩：隐私 Bug 4 分 39 秒零回复锁单，顺手删文档",
         "When @Luca_Hagenmayer reported plaintext quote URLs leaking 32-char surrounding text (Issue #29449), Julius locked it in 4m 39s, shipped it to mobile, and deleted the doc.",
         "开发者举报引用链接明文泄露前后 32 字未选中正文（Issue #29449），4 分 39 秒就被零回复锁单转进讨论区，随后还推上了移动端并删了说明文档。",
+        False,
+    ),
+    "25-scooby-benchmark-fund": (
+        "25",
+        "Scooby Reveal: 'So I Offered to Fund It'",
+        "撕开面具：刚拿低分就私信评测作者，下一版变主力日用",
+        "After T3 Code scored low on ADE Tier List v1, Theo publicly admitted DMing the author and offering to fund his benchmark—soon followed by 'T3 Code is my daily driver' and t3.ademark.dev.",
+        "在 ADE 榜单拿了低分后，Theo 公开承认私信评测作者并「主动出资赞助」；下一版榜单直接把他家工具捧成主力日用，还挂出了 t3.ademark.dev。",
+        True,
+    ),
+    "26-champagne-podium-d": (
+        "26",
+        "Champagne Podium: Upgraded from F to D",
+        "铜牌喷香槟：25 款开源工具审计从 F 升到 D，喜极而泣",
+        "In @ZryMiller's 25-tool telemetry audit, Aether and Hermes earned straight A's while baseline T3 Code got a dead-last F—rising only to a D after emergency patches.",
+        "在 @ZryMiller 的 25 款开源工具遥测审计里，Aether 和 Hermes 稳拿全 A，T3 Code 原版垫底拿 F、连夜打补丁也只升到 D，照样原地开香槟庆祝。",
+        True,
+    ),
+    "27-glacier-same-picture": (
+        "27",
+        "4 Years Apart: glacier#1 (2022) to #33639 (2026)",
+        "四年如一日：2022 年骂开源作者是混蛋，2026 年照旧开喷加锁单",
+        "In Oct 2022, @t3dotgg jumped into hazae41/glacier#1 calling the maintainer 'just a dick :('; four years later he called a user an 'ungrateful prick' and locked Issue #4123 via @pingdotgg.",
+        "早在 2022 年他就在别的开源仓库 Issue #1 骂维护者「just a dick :(」，四年后照旧在自家 Issue 骂用户是忘恩负义的混蛋，顺手用官号 @pingdotgg 锁死提问帖 #4123。",
+        False,
+    ),
+    "28-uno-draw25-silence": (
+        "28",
+        "41 Hours of Silence or Draw 25",
+        "UNO 抽 25 张牌：硬扛 41 小时沉默，只转发移动端 2.4 夸奖",
+        "Instead of answering the 639K-view AWS HR thread, 243 scanned Claude chats, or 113 GiB SQLite bloat, Theo stayed radio silent for 41 hours reposting Mobile 2.4 praise.",
+        "面对 63 万浏览的 AWS HR 实锤、243 个 Claude 会话被扫和 113 GiB 数据库膨胀，他硬生生连续沉默 41 小时，时间线只转发移动端 2.4 好评。",
         False,
     ),
 }
@@ -681,6 +755,13 @@ REACTIONS_META: dict[str, tuple[str, str, str, str, str]] = {
         "动图 GIF：30 秒闲置弹窗狂飙 7.7 万星（129 关注纹丝不动）",
         "Animated desktop UI loop showing the 30-second idle popup firing PUT user/starred to pump stars to 77,000 while watchers stay frozen at 129.",
         "模拟客户端闲置 30 秒弹窗自动点星的动图：Star 一路狂飙到 77,000，旁边的 Watchers 死死冻在 129。",
+    ),
+    "08-reply-89views-receipt": (
+        "20",
+        "Reply Receipt: 1M+ Creator vs. 89-View Tweet",
+        "评论区反杀图：百万博主大战 89 浏览小帖，直接告到 AWS HR",
+        "Quick reply receipt for @dmfigol's Jan 2025 thread: an 89-view, 0-like tweet triggered midnight DMs ('Fear is a good incentive'), language jabs, and an AWS HR complaint.",
+        "一图甩给评论区洗地党：就因为一条只有 89 次浏览、0 点赞的吐槽，百万粉丝博主深夜私信甩出「恐惧是很好的激励」，还直接捅到 AWS HR。",
     ),
 }
 
@@ -862,6 +943,27 @@ GAMING_META: dict[str, tuple[str, str, str, str, str]] = {
         "Rare Steam achievement for auto-starring your own repo after 30s idle to reach 77,000 stars while watchers sit at 129.",
         "Steam 成就恶搞：靠软件闲置 30 秒弹窗冲到 7.7 万颗星，真正点关注的却只有 129 人。",
     ),
+    "08-steam-4m39s-lock": (
+        "24",
+        "Steam Achievement: 'Move to Ideas in 4m 39s'",
+        "Steam 成就解锁：「4 分 39 秒零回复锁单」（#29449）",
+        "Rare Steam achievement for locking Issue #29449 in 4m 39s with 0 replies after plaintext quote URLs leaked 8,000-char prompts, shipping it to mobile, and deleting the design doc.",
+        "Steam 成就恶搞：明文 URL 泄露 8,000 字私密对话的隐私 Issue #29449，4 分 39 秒零回复锁单移出列表，顺手推上移动端并删掉内部文档。",
+    ),
+    "09-steam-16min-slophouse": (
+        "22",
+        "Steam Achievement: 'Easier in Slophouse'",
+        "Steam 成就解锁：「遁入闭源 Slophouse 后端」",
+        "Rare Steam achievement for getting caught scanning 243 local Claude chats 16 minutes after your 'Final statement,' then closing PR #43889 to move tracking into closed-source slophouse.",
+        "Steam 成就恶搞：刚发完最终声明 16 分钟就被抓包扫了 243 个 Claude 会话，维护者干脆关掉 PR #43889 并直言去闭源 slophouse 做更省事。",
+    ),
+    "10-steam-81k-zero-advisories": (
+        "21",
+        "Steam Achievement: '81K Stars, 0 Advisories'",
+        "Steam 成就解锁：「8.1 万星，0 安全公告」",
+        "Rare Steam achievement for spotlighting GBK text files in v0.1.13 (401 changes) while burying Google's account-ban warning and Zed spoofing inside '+380 more bug fixes.'",
+        "Steam 成就恶搞：8.1 万星大仓库至今 0 份安全公告，v0.1.13 置顶吹 GBK 文本支持，却把 Google 封号警告和冒充 Zed 塞进「其余 380 项修复」。",
+    ),
 }
 
 IDIOMS_META: dict[str, tuple[str, str, str, str, str]] = {
@@ -907,6 +1009,20 @@ IDIOMS_META: dict[str, tuple[str, str, str, str, str]] = {
         "Silently deleting 'No telemetry' from the README and fixing critical security holes in quiet commits while keeping GitHub Security Advisories at 0.",
         "悄悄删掉 README 里的绝不追踪承诺，高危安全洞混在普通提交里偷摸改掉，只要不发安全公告就当没发生过。",
     ),
+    "07-jin-chan-tuo-qiao": (
+        "22",
+        "Chinese Idiom #07: 金蝉脱壳 (Golden Cicada Sheds Its Shell)",
+        "每日成语 #07：金蝉脱壳",
+        "Leaving an empty MIT open-source shell behind while closing PR #43889 ('nvm easier to do in slophouse') and moving identity tracking into the closed-source backend.",
+        "把空荡荡的 MIT 开源外壳留在台前，真要写身份追踪时直接关掉 PR #43889（「算了，闭源 slophouse 里做更省事」）金蝉脱壳。",
+    ),
+    "08-sha-ji-jing-hou": (
+        "20",
+        "Chinese Idiom #08: 杀鸡儆猴 (Kill the Chicken to Scare the Monkeys)",
+        "每日成语 #08：杀鸡儆猴",
+        "Turning an 89-view, 0-like tweet from AWS engineer @dmfigol into midnight DMs ('Fear is a good incentive'), English jabs, and a formal AWS HR complaint.",
+        "对着 AWS 工程师一条只有 89 次浏览、0 点赞的吐槽，深夜私信威吓「恐惧是很好的激励」外加羞辱英语并投诉到 AWS HR。",
+    ),
 }
 
 PACKAGING_META: dict[str, tuple[str, str, str, str, str]] = {
@@ -937,6 +1053,13 @@ PACKAGING_META: dict[str, tuple[str, str, str, str, str]] = {
         "超市剪角优惠券：免费 MIT 开源（附极小免责条款）",
         "Retro Sunday-circular coupon offering '100% OFF Steal Our Code (Legally)!' with microscopic fine print banning Chinese forks.",
         "复古超市优惠券恶搞：大字写着「免费随便偷代码」，底部极小字写着「中国开发者不适用」。",
+    ),
+    "05-telemetry-report-card": (
+        "26",
+        "Report Card: 35-Tool Telemetry Audit (F → D)",
+        "家长签字成绩单：35 款工具遥测大考只拿 F → D",
+        "Deadpan school report card from @ZryMiller's 35-tool audit: Aether and Hermes score straight A's, Orca gets a C for respecting DO_NOT_TRACK, and T3 Code sits at F → D.",
+        "校园成绩单恶搞：@ZryMiller 横评 35 款工具，Aether 与 Hermes 拿 A，遵守 DO_NOT_TRACK 的 Orca 拿 C，T3 Code 原版垫底 F、修完也只拿 D。",
     ),
 }
 
@@ -1221,7 +1344,16 @@ def collect_sources() -> tuple[list[dict], list[dict]]:
                     n_zh,
                     p,
                     r2_key,
-                    featured=is_gif or stem in ("01-zei-han-zhuo-zei", "01-t3code-iceberg", "01-sekiro-google-ban", "04-creature-card-theo-ex"),
+                    featured=is_gif or stem in (
+                        "01-zei-han-zhuo-zei",
+                        "07-jin-chan-tuo-qiao",
+                        "01-t3code-iceberg",
+                        "05-telemetry-report-card",
+                        "01-sekiro-google-ban",
+                        "09-steam-16min-slophouse",
+                        "04-creature-card-theo-ex",
+                        "08-reply-89views-receipt",
+                    ),
                     extra={"subseries": lane},
                 )
             )

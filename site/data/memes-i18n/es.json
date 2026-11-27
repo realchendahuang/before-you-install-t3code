@@ -97,6 +97,22 @@
       "title": "Pecado 24 · 泄 · Tu prompt en la URL",
       "note": "Los enlaces para compartir metían citas de 8.000 caracteres y prompts completos en URLs en texto plano. El Issue #29449 se cerró en 4m 39s, 0 respuestas, doc eliminada."
     },
+    "sins-sin-25-patronage-zi": {
+      "title": "Pecado 25 · Mecenazgo「资」",
+      "note": "Después de que T3 Code puntuara bajo en una tier list pública, Theo le escribió por MD al autor y se ofreció a financiar su benchmark («así que me ofrecí a financiarlo»). La versión siguiente llamó a T3 Code su herramienta diaria con t3.ademark.dev."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "Pecado 26 · Deficiente「劣」",
+      "note": "Quedó último con un «F» (arrastrándose hasta un «D» solo tras parches de emergencia) en la auditoría de 25 herramientas de @ZryMiller, mientras Aether y Hermes se llevaron «A» en todo. Sigue creando anonymous-id al desactivar el tracking y omite <ClerkProvider telemetry={false}>."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "Pecado 27 · Cierre「闭」",
+      "note": "Le dijo a 1.401 contribuidores no remunerados del MIT «Consejo: no lo hagas», cerró el Issue #4123 vía @pingdotgg con 700K vistas y parcheó en silencio 4 vulnerabilidades más en v0.1.13 con 0 Security Advisories."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "Pecado 28 · Inflado「胀」",
+      "note": "Un bug de fan-out inundó el statev2.sqlite del creador de SWC @kdy1dev con 5.654.888 filas duplicadas (113 GiB; 0 B liberados en la UI; 56,68 GiB tras el doctor) mientras Theo se quedaba en silencio total 41 horas retuiteando elogios."
+    },
     "blended-00-drake": {
       "title": "Drake: el doble estándar de las 11 horas",
       "note": "Un dev chino hace fork MIT gratis: amenaza de ban. Un laboratorio de un billón de dólares copia MIT 11 horas después: '¡el open source es open source!'"
@@ -245,6 +261,10 @@
       "title": "Changelog: GBK sí, baneos no",
       "note": "v0.1.13: 401 cambios, 7 destacados sobre archivos GBK. El aviso de baneo de Google y el spoof de Zed quedaron en «+380 más»."
     },
+    "blended-21c-always-has-been-zed": {
+      "title": "Siempre fue así: clientInfo { name: 'zed' }",
+      "note": "El PR #43087 admitió que el handshake ACP de Antigravity enviaba clientInfo: { name: 'zed', version: '0.0.0' }, y luego la v0.1.13 escondió el arreglo dentro de «+380 bug fixes más»."
+    },
     "blended-22a-clown-final-statement": {
       "title": "Payaso en 16 minutos exactos",
       "note": "«T3 nunca lee tus archivos». 16 minutos después @sk1gl4a contó 243 chats de Claude escaneados. PR #43948 lo confirmaba."
@@ -269,6 +289,10 @@
       "title": "Cinta americana sobre un aviso de seguridad",
       "note": "El SDK de Anthropic avisaba de un wildcard que saltaba la aprobación. T3 hizo monkey-patch de process.emitWarning y testeó el silencio."
     },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "Esto está bien (las cookies de 11 navegadores en Desktop)",
+      "note": "ServerBrowser.ts solo aísla las pestañas cuando desktop === null (Linux headless), dejando expuestas en Desktop las cookies de los 11 navegadores importados, los avisos silenciados de Anthropic y las rutas de subida ~/.ssh/id_rsa."
+    },
     "blended-24a-anakin-padme-url": {
       "title": "8.000 caracteres en la URL, ¿verdad?",
       "note": "PR #18454 mete prompts de 8.000 caracteres y nombres de repos privados en app.t3.codes/new?prompt=, y las previews los registran."
@@ -276,6 +300,22 @@
     "blended-24b-disaster-girl-4m39s": {
       "title": "Bloqueado en 4m 39s y luego borrado",
       "note": "Issue #29449: las URLs de citas filtraban 32 caracteres de texto no seleccionado. Bloqueado en 4m 39s, enviado a móvil, doc borrado."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "Revelación Scooby: «Así que me ofrecí a financiarlo»",
+      "note": "Tras puntuar bajo en la ADE Tier List v1, Theo admitió en público que le escribió por MD al autor ofreciéndose a financiar su benchmark; poco después llegaron «T3 Code es mi herramienta diaria» y t3.ademark.dev."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "Podio de champán: de F a D",
+      "note": "En la auditoría de telemetría de 25 herramientas de @ZryMiller, Aether y Hermes se llevaron «A» en todo, mientras el T3 Code de base quedó último con «F», subiendo solo a «D» tras parches de emergencia."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "4 años de distancia: glacier#1 (2022) a #33639 (2026)",
+      "note": "En octubre de 2022, @t3dotgg se metió en hazae41/glacier#1 para llamar al maintainer «simplemente un imbécil :(»; cuatro años después llamó a un usuario «gilipollas desagradecido» y cerró el Issue #4123 vía @pingdotgg."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41 horas de silencio o roba 25",
+      "note": "En vez de responder al hilo de RR. HH. de AWS con 639K vistas, a los 243 chats de Claude escaneados o a los 113 GiB de inflado en SQLite, Theo se quedó en silencio total 41 horas reposteando elogios de Mobile 2.4."
     },
     "stickers-01_copium_no_telemetry": {
       "title": "Copium sin telemetría",
@@ -413,6 +453,14 @@
       "title": "Modismo #06 · 掩耳盗铃: Avisos: 0",
       "note": "Borra «sin telemetría» del README y parchea fallos críticos en commits silenciosos. Avisos: sigue en 0."
     },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "Modismo chino #07: 金蝉脱壳 (la cigarra dorada se desprende de su caparazón)",
+      "note": "Dejar atrás un caparazón open source MIT vacío mientras cierra el PR #43889 («nah, es más fácil en slophouse») y traslada el rastreo de identidad al backend de código cerrado."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "Modismo chino #08: 杀鸡儆猴 (matar la gallina para asustar a los monos)",
+      "note": "Convertir un tuit de 89 vistas y 0 me gusta del ingeniero de AWS @dmfigol en MDs a medianoche («el miedo es un buen incentivo»), pullas sobre su inglés y una queja formal a RR. HH. de AWS."
+    },
     "creative-packaging-01-t3code-iceberg": {
       "title": "El iceberg de T3 Code",
       "note": "Superficie: el tuit de «Temu3 Code». Debajo: 41,6 GB de borrados falsos, 2,2 M/h de logs de IP, 0 avisos, crisis a las 4 AM."
@@ -428,6 +476,10 @@
     "creative-packaging-04-mit-license-coupon": {
       "title": "Cupón: 100 % de descuento, China excluida",
       "note": "Cupón de folleto dominical: «¡Roba nuestro código (legalmente)!». La letra pequeña lo anula para los forks chinos."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "Boletín de notas: auditoría de telemetría de 35 herramientas (F → D)",
+      "note": "Boletín escolar imperturbable de la auditoría de 35 herramientas de @ZryMiller: Aether y Hermes sacan «A» en todo, Orca se lleva un «C» por respetar DO_NOT_TRACK y T3 Code se queda en F → D."
     },
     "creative-gaming-01-sekiro-google-ban": {
       "title": "Sekiro: CUENTA BANEADA (3:00)",
@@ -457,6 +509,18 @@
       "title": "Logro: «Crecimiento 100 % orgánico» (129 seguidores)",
       "note": "A los 30 segundos inactivo salta el aviso de auto-star. Estrellas: 77.000. Seguidores: 129."
     },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Logro de Steam: «Pasar a Ideas en 4 min 39 s»",
+      "note": "Logro raro de Steam por cerrar el Issue #29449 en 4 min 39 s con 0 respuestas, después de que unas URLs de citas en texto plano filtraran prompts de 8.000 caracteres, de enviarlo a móvil y de borrar el documento de diseño."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Logro de Steam: «Más fácil en Slophouse»",
+      "note": "Logro raro de Steam por que te pillen escaneando 243 chats locales de Claude 16 minutos después de tu «declaración final», y luego cerrar el PR #43889 para mover el rastreo al slophouse de código cerrado."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Logro de Steam: «81K estrellas, 0 avisos de seguridad»",
+      "note": "Logro raro de Steam por poner bajo los focos unos archivos de texto GBK en la v0.1.13 (401 cambios) mientras enterraba la advertencia de Google sobre baneos de cuenta y el spoofing de Zed dentro de «+380 bug fixes más»."
+    },
     "creative-pokemon-01-evo-star-farmer": {
       "title": "Línea evolutiva #01: El granjero de estrellas",
       "note": "Se burlaba de las estrellas de GitHub como truco de capital riesgo. Ahora envía un popup a los 30 s de inactividad y va por 77.000 estrellas con 129 seguidores."
@@ -478,7 +542,7 @@
       "note": "Publícalo cada vez que reaparezca el eslogan borrado. El git diff habla por sí solo."
     },
     "creative-reactions-02-reply-uspto-zero": {
-      "title": "Recibo: 0 marcas en la USPTO",
+      "title": "Prueba: 0 marcas en la USPTO",
       "note": "Para cada acusación de «infracción de marca»: T3 Tools Inc. tenía cero registros en la USPTO cuando lanzó la amenaza."
     },
     "creative-reactions-03-reply-1151-scoreboard": {
@@ -500,6 +564,10 @@
     "creative-reactions-07-gif-auto-star-counter": {
       "title": "GIF: Contador de auto-star a los 30 s",
       "note": "30 segundos inactivo y el popup dispara PUT user/starred. Las estrellas suben a 77.000, los seguidores siguen congelados en 129."
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "Evidencia de respuesta: creador con 1M+ contra tuit de 89 vistas",
+      "note": "Evidencia exprés de respuesta al hilo de @dmfigol de enero de 2025: un tuit de 89 vistas y 0 me gusta desató MDs a medianoche («el miedo es un buen incentivo»), pullas sobre su inglés y una queja a RR. HH. de AWS."
     },
     "story-en-ep01": {
       "title": "Ep.1 · 11 horas de diferencia (EN)",
@@ -527,11 +595,11 @@
     },
     "story-en-ep04": {
       "title": "Ep.4 · La medicina occidental es rápida (EN)",
-      "note": "Meses de quejas se respondieron con burlas. Una sola denuncia GDPR compró un sprint nocturno de 6 horas y registros de IP de 2,2 M/hora."
+      "note": "Meses de quejas se respondieron con burlas. Una sola denuncia GDPR forzó un sprint nocturno de 6 horas y registros de IP de 2,2 M/hora."
     },
     "story-zh-ep04": {
       "title": "Ep.4 · La medicina occidental es rápida (chino)",
-      "note": "Meses de quejas se respondieron con burlas. Una sola denuncia GDPR compró un sprint nocturno de 6 horas y registros de IP de 2,2 M/hora."
+      "note": "Meses de quejas se respondieron con burlas. Una sola denuncia GDPR forzó un sprint nocturno de 6 horas y registros de IP de 2,2 M/hora."
     },
     "story-en-ep05": {
       "title": "Ep.5 · La jubilación de 3,5 horas (EN)",

@@ -425,7 +425,7 @@
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
     const [, res] = await Promise.all([
       applyLanguage(lang, true),
-      fetch("./data/memes.json?v=6").catch(() => null)
+      fetch("./data/memes.json?v=7").catch(() => null)
     ]);
     if (res && res.ok) {
       try {

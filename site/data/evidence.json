@@ -1349,5 +1349,291 @@
     "caption": "Silently patched ServerSecretStore path traversal on Nov 20 during the ca81b7b9 window while GitHub Security Advisories stayed at 0.",
     "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
     "sourceUrl": "https://github.com/pingdotgg/t3code/pull/39483"
+  },
+  {
+    "id": "EV-110",
+    "path": "evidence/extra/nov27-dmfigol-aws-hr-post.png",
+    "part": "Part 20",
+    "parts": [
+      "Part 20",
+      "Part 16"
+    ],
+    "title": "@dmfigol 639K-View AWS HR Thread",
+    "caption": "Former AWS engineer @dmfigol's Nov 26 post detailing the Jan 2025 CheckPoint/Palo Alto dispute and retracted AWS HR complaint.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/dmfigol/status/2126025881844174968"
+  },
+  {
+    "id": "EV-111",
+    "path": "evidence/extra/nov27-dmfigol-dm-screenshots.png",
+    "part": "Part 20",
+    "parts": [
+      "Part 20",
+      "Part 16"
+    ],
+    "title": "@theo DMs: 'Fear is a good incentive'",
+    "caption": "Archived Jan 29, 2025 DM screenshots posted by @dmfigol quoting 'Fear is a good incentive' and 'is English your native language?'.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://x.com/dmfigol/status/2126025889016094829"
+  },
+  {
+    "id": "EV-112",
+    "path": "evidence/extra/nov27-pr43026-google-flagged.png",
+    "part": "Part 21",
+    "parts": [
+      "Part 21",
+      "Part 4"
+    ],
+    "title": "PR #43026 Google Account-Flag Admission",
+    "caption": "Merged Nov 25 PR deleting antigravityUsageLimits.ts after Google warned calling internal APIs can flag accounts.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/43026"
+  },
+  {
+    "id": "EV-113",
+    "path": "evidence/extra/nov27-pr43087-zed-spoof.png",
+    "part": "Part 21",
+    "parts": [
+      "Part 21",
+      "Part 4"
+    ],
+    "title": "PR #43087 Zed Allowlist Spoof Removal",
+    "caption": "Merged Nov 26 PR admitting T3 Code sent clientInfo: { name: 'zed' } on Antigravity ACP handshakes to access Claude/GPT models.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/03-antigravity-tos-and-t3connect-relay.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/43087"
+  },
+  {
+    "id": "EV-114",
+    "path": "evidence/extra/nov27-theo-final-statement.png",
+    "part": "Part 22",
+    "parts": [
+      "Part 22",
+      "Part 1"
+    ],
+    "title": "@theo Nov 25 'Final statement.'",
+    "caption": "Nine-point 'T3 Code has never:' denial claiming only basic token and prompt counts were ever tracked.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://x.com/theo/status/2125700717935841479"
+  },
+  {
+    "id": "EV-115",
+    "path": "evidence/extra/nov27-sk1gl4a-gdpr-243-sessions.png",
+    "part": "Part 22",
+    "parts": [
+      "Part 22",
+      "Part 1"
+    ],
+    "title": "@sk1gl4a 243 Claude Sessions & GDPR Filing",
+    "caption": "Capture posted 16 minutes after Theo's Final statement showing 243 unsolicited Claude reads, 3-machine hash, and LfD complaint.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://x.com/sk1gl4a/status/2125748079047647715"
+  },
+  {
+    "id": "EV-116",
+    "path": "evidence/extra/nov27-sk1gl4a-german-vat-stripe.png",
+    "part": "Part 22",
+    "parts": [
+      "Part 22",
+      "Part 12"
+    ],
+    "title": "T3 Connect Stripe 19% German VAT Checkout",
+    "caption": "Stripe checkout billing German residents €9.03/mo (incl. 19% MwSt) to raise T3 Connect limits, establishing GDPR Art. 3(2) scope.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://x.com/sk1gl4a/status/2125807572800200712"
+  },
+  {
+    "id": "EV-117",
+    "path": "evidence/extra/nov27-sk1gl4a-t3chat-fingerprint.png",
+    "part": "Part 22",
+    "parts": [
+      "Part 22",
+      "Part 1"
+    ],
+    "title": "t3.chat Zero-Click FingerprintJS Capture",
+    "caption": "Logged-out zero-click capture on t3.chat privacy policy page loading FingerprintJS (/api/identity), PostHog, Plausible, and hCaptcha.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://x.com/sk1gl4a/status/2125814463085334546"
+  },
+  {
+    "id": "EV-118",
+    "path": "evidence/extra/nov27-pr43948-read-without-asking.png",
+    "part": "Part 22",
+    "parts": [
+      "Part 22",
+      "Part 1"
+    ],
+    "title": "PR #43948 Unsolicited Agent Scan Admission",
+    "caption": "Maintainer PR explicitly admitting T3 Code read other agents' files, keys, and session history on disk without asking.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/43948"
+  },
+  {
+    "id": "EV-119",
+    "path": "evidence/extra/nov27-pr43889-easier-in-slophouse.png",
+    "part": "Part 22",
+    "parts": [
+      "Part 22",
+      "Part 1"
+    ],
+    "title": "PR #43889 Closed: 'nvm easier to do in slophouse'",
+    "caption": "Closed PR moving Connect analytics identity linking from public client code into the closed-source slophouse backend.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/pull/43889"
+  },
+  {
+    "id": "EV-120",
+    "path": "evidence/extra/nov27-claude-adapter-shadow-warn.png",
+    "part": "Part 23",
+    "parts": [
+      "Part 23",
+      "Part 2"
+    ],
+    "title": "ClaudeAdapterV2.ts#L1629-L1647 Muted Warning",
+    "caption": "Monkey-patches process.emitWarning in withoutClaudeCanUseToolShadowedWarning to silence Anthropic's approval-shadowing warning.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L1629-L1647"
+  },
+  {
+    "id": "EV-121",
+    "path": "evidence/extra/nov27-server-browser-isolated.png",
+    "part": "Part 23",
+    "parts": [
+      "Part 23",
+      "Part 2"
+    ],
+    "title": "ServerBrowser.ts#L1236-L1247 Desktop Non-Isolation",
+    "caption": "Sets isolatedContext: true only when desktop === null, leaving Desktop Electron with 11 imported browsers' cookies unisolated.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/server/src/preview/ServerBrowser.ts#L1236-L1247"
+  },
+  {
+    "id": "EV-122",
+    "path": "evidence/extra/nov27-server-browser-upload-files.png",
+    "part": "Part 23",
+    "parts": [
+      "Part 23",
+      "Part 2"
+    ],
+    "title": "ServerBrowser.ts#L1723-L1749 uploadFiles Check",
+    "caption": "Host uploadFiles helper validates only NodePath.isAbsolute(path) with no workspace boundary or confirmation prompt.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/server/src/preview/ServerBrowser.ts#L1723-L1749"
+  },
+  {
+    "id": "EV-123",
+    "path": "evidence/extra/nov27-prompt-links-public-url.png",
+    "part": "Part 24",
+    "parts": [
+      "Part 24",
+      "Part 2"
+    ],
+    "title": "promptLinks.ts#L192-L207 Public Prompt Query URLs",
+    "caption": "buildNewThreadLink encodes full prompts (up to 8,000 chars) and repo names into https://app.t3.codes/new?prompt=... URLs.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/blob/f40f78eb5eacefd08049f7df87fa6442def58cd6/packages/shared/src/promptLinks.ts#L192-L207"
+  },
+  {
+    "id": "EV-124",
+    "path": "evidence/extra/nov27-discussion29456-quote-leak.png",
+    "part": "Part 24",
+    "parts": [
+      "Part 24",
+      "Part 2"
+    ],
+    "title": "Discussion #29456 Locked in 4m 39s",
+    "caption": "Privacy bug Issue #29449 on plaintext t3-citation:// quote links locked and moved to Ideas Discussion #29456 in 4m 39s with 0 replies.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/discussions/29456"
+  },
+  {
+    "id": "EV-125",
+    "path": "evidence/extra/nov27-theo-admits-funding-bench.png",
+    "part": "Part 25",
+    "parts": [
+      "Part 25",
+      "Part 6"
+    ],
+    "title": "@theo Admits Benchmark Funding Offer",
+    "caption": "Oct 18 tweet publicly confirming Theo contacted @zqkrq over T3 Code's low score and offered to fund a benchmark.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/theo/status/2111903235166679341"
+  },
+  {
+    "id": "EV-126",
+    "path": "evidence/extra/nov27-ondrej-v1-v2-accusation.png",
+    "part": "Part 25",
+    "parts": [
+      "Part 25",
+      "Part 6"
+    ],
+    "title": "@DavidOndrej1 Oct 18 Benchmark Post",
+    "caption": "236K-view accusation over v1/v2 benchmark ranking alongside Community Note.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/DavidOndrej1/status/2111884469468893524"
+  },
+  {
+    "id": "EV-127",
+    "path": "evidence/extra/nov27-ondrej-sponsor-banner.png",
+    "part": "Part 25",
+    "parts": [
+      "Part 25",
+      "Part 17"
+    ],
+    "title": "T3 Code Sponsor Banner (WorkOS, Blacksmith, Browserbase, CodeRabbit)",
+    "caption": "Sponsor roster posted Nov 26 by @DavidOndrej1 beneath @dmfigol's thread.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/04-business-ledger-sponsors-and-77k-stars.md",
+    "sourceUrl": "https://x.com/DavidOndrej1/status/2126085904875798845"
+  },
+  {
+    "id": "EV-128",
+    "path": "evidence/extra/nov27-zrymiller-25-tool-audit.png",
+    "part": "Part 26",
+    "parts": [
+      "Part 26",
+      "Part 1"
+    ],
+    "title": "@ZryMiller 25-Tool OSS Telemetry Audit",
+    "caption": "284K-view independent scorecard comparing 25 OSS AI tools (3 A-tier, T3 Code F -> D, Orca lone DO_NOT_TRACK pass).",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/01-telemetry-and-gdpr-timeline.md",
+    "sourceUrl": "https://x.com/ZryMiller/status/2125497546772812061"
+  },
+  {
+    "id": "EV-129",
+    "path": "evidence/extra/nov27-issue4123-locked-pingdotgg.png",
+    "part": "Part 27",
+    "parts": [
+      "Part 27",
+      "Part 9"
+    ],
+    "title": "Issue #4123 Locked by @pingdotgg Org",
+    "caption": "Telemetry complaint closed twice by @t3dotgg and locked by @pingdotgg org account at the Nov 24 viral peak.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://github.com/pingdotgg/t3code/issues/4123"
+  },
+  {
+    "id": "EV-130",
+    "path": "evidence/extra/nov27-hazae41-glacier-issue1.png",
+    "part": "Part 27",
+    "parts": [
+      "Part 27",
+      "Part 16"
+    ],
+    "title": "hazae41/glacier#1 Oct 2022 Comment",
+    "caption": "Live 2022 comment where @t3dotgg wrote 'sadly the maintainer is just a dick :(' on an independent OSS project's first issue.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/05-governance-trademark-and-history.md",
+    "sourceUrl": "https://github.com/hazae41/glacier/issues/1#issuecomment-1264711070"
+  },
+  {
+    "id": "EV-131",
+    "path": "evidence/extra/nov27-julius-fanout-56gb.png",
+    "part": "Part 28",
+    "parts": [
+      "Part 28",
+      "Part 2"
+    ],
+    "title": "113 GiB SQLite 'Massive Fan Out' (#44029)",
+    "caption": "@jullerino acknowledging 5.65M duplicate provider-session.updated rows reported by SWC creator @kdy1dev in Issue #44029.",
+    "dossier": "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/02-local-safety-and-security-audit.md",
+    "sourceUrl": "https://x.com/jullerino/status/2126207815052325020"
   }
 ]

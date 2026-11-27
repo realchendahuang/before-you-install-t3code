@@ -7,7 +7,7 @@
     "telemetry": "Telemetri ve Gizlilik",
     "security": "Güvenlik ve Yasaklar",
     "deleted": "Silinen / Geri Çekilen",
-    "commercial": "Ticari ve Yıldızlar"
+    "commercial": "Ticari Kaygılar ve Yıldızlar"
   },
   "people": {
     "theo": {
@@ -15,64 +15,80 @@
       "role": "T3 Code / Ping.gg'nin yaratıcısı"
     },
     "dddxx666": {
-      "name": "@DDdxx666 (MIT Çatalı)",
-      "role": "Çinli MIT Çatalı Yazarı (Stardust)"
+      "name": "@DDdxx666 (MIT Fork)",
+      "role": "MIT fork'unun Çinli yazarı (Stardust)"
     },
     "ffmpeg": {
-      "name": "FFmpeg ve VLC",
-      "role": "Açık Kaynak Bakımcıları ($20k Ödül)"
+      "name": "FFmpeg & VLC",
+      "role": "Açık kaynak bakımcıları (20 bin dolarlık ödül)"
     },
     "indian-devs": {
       "name": "Hint Geliştirici Topluluğu",
-      "role": "2024 Milliyet Temelli Taciz Dalgası"
+      "role": "2024'teki milliyetçi taciz dalgası"
     },
     "bermudi": {
       "name": "@bermudi (Issue #33639)",
-      "role": "Bakımcı Tarafından Hakarete Uğrayan T3 Code Kullanıcısı"
+      "role": "Bakımcı tarafından hakarete uğrayan T3 Code kullanıcısı"
     },
     "miaai": {
-      "name": "@MiaAI_lab ve Rakipleri",
-      "role": "@bot Tarafından 30 Saniyede Kazınan Çatal"
+      "name": "@MiaAI_lab & Rakipleri",
+      "role": "Fork'u 30 saniyede @bot tarafından sıyrılan"
     },
     "dlkfz": {
       "name": "@DLKFZWilliam2",
-      "role": "24 Kasım Çatal Tartışmasında Karşı Taraf"
+      "role": "24 Kasım fork tartışmasının karşı tarafı"
     },
     "ordinary-devs": {
       "name": "Sıradan Geliştiriciler",
-      "role": "Mühendisler, Yerel Yapay Zekâ ve Linux Geliştiricileri"
+      "role": "Mühendisler, yerel yapay zekâ ve Linux geliştiricileri"
     },
     "female-critic": {
       "name": "Kadın Eleştirmen ve RSD Kullanıcısı",
-      "role": "11–18 Kasım Yanıtlarında Hedef Alındı"
+      "role": "11–18 Kasım yanıtlarında hedef alınan"
     },
     "vibe-daytona": {
-      "name": "Vibe Kanban ve Daytona",
-      "role": "Melek Portföy Şirketleri"
+      "name": "Vibe Kanban & Daytona",
+      "role": "Melek yatırımcı portföy şirketleri"
     },
     "julius": {
       "name": "@jullerino (Julius)",
-      "role": "T3 Code Çekirdek Bakımcısı"
+      "role": "T3 Code çekirdek bakımcısı"
     },
     "maria": {
       "name": "@maria_rcks (Maria)",
-      "role": "T3 Ekibi Üyesi (maria-rcks/t3libre)"
+      "role": "T3 ekibi üyesi (maria-rcks/t3libre)"
     },
     "labs-vips": {
       "name": "Google / OpenAI VIP'leri",
-      "role": "20 Büyük Teknoloji Yöneticisi (Küfür Oranı %0.0)"
+      "role": "20 büyük teknoloji yöneticisi (%0,0 küfür oranı)"
     },
     "antigravity-users": {
       "name": "Antigravity ve Relay Kullanıcıları",
-      "role": "3 Dakikalık Yasaklar ve Düz Metin Relay"
+      "role": "3 dakikalık yasaklar ve düz metin relay"
     },
     "gdpr-auditors": {
       "name": "AB GDPR ve Denetçiler",
-      "role": "Bağımsız Denetim ve Hukuki Kayıtlar"
+      "role": "Bağımsız denetim ve hukuki kayıtlar"
     },
     "dhh-wp": {
       "name": "DHH / WordPress / USPTO",
-      "role": "Geçmişteki Arayüz Alayı ve Marka Geçmişi"
+      "role": "Geçmişteki arayüz alayı ve marka geçmişi"
+    },
+    "dmfigol": {
+      "name": "@dmfigol (Eski AWS Mühendisi)",
+      "role": "89 görüntülenen alıntı tweet ve AWS İK dosyası"
+    },
+    "sk1gl4a": {
+      "name": "@sk1gl4a ve Denetçiler",
+      "role": "243 oturumluk yeniden üretim, Alman KDV'si ve 25 araçlık denetim"
+    },
+    "ondrej-zqkrq": {
+      "name": "@DavidOndrej1 & @zqkrq",
+      "role": "Benchmark fonlaması ve sponsor anlaşmazlığı"
+    },
+    "kdy1dev": {
+      "name": "@kdy1dev & @hazae41",
+      "role": "113 GiB veritabanı fan-out'u (#44029) ve glacier#1"
     }
   },
   "threads": {
@@ -402,6 +418,50 @@
         }
       ]
     },
+    "2026-10-18-benchmark-funding-sponsor-pressure": {
+      "from": "@DavidOndrej1 & @orca_build ↔ @theo & @zqkrq",
+      "to": "Herkese Açık Benchmark ve Sponsor Kaydı",
+      "dateDisplay": "18 Eki 2026",
+      "subject": "Tier listesi yazarına ulaştı, benchmark fonlamayı teklif etti",
+      "snippet": "Theo, T3 Code'un düşük sıralaması yüzünden @zqkrq'ya ulaştığını ve fon teklif ettiğini kabul etti; Cloudroom'u gizlemek için para ödediği iddiası ise doğrulanmadı ve reddedildi.",
+      "messages": [
+        {
+          "sender": "@DavidOndrej1 & @orca_build",
+          "handle": "@DavidOndrej1 · X (2111884469468893524 & 2126085904875798845)",
+          "to": "Herkese açık zaman akışı",
+          "time": "18 Eki ve 25–26 Kas 2026",
+          "body": "18 Ekim 2026'da (18:17–19:50 UTC), Cloudroom kurucusu `@DavidOndrej1`, Cloudroom `v1`de T3 Code'u geride bıraktıktan sonra `@theo`'yu benchmark yazarı `@zqkrq`'ya baskı yapmakla suçladı:\n\n> \"Theo T3 ÇARESİZLEŞİYOR. Cloudroom v1'de T3 Code'dan daha yüksek sıralandıktan sonra bu adama para verip benchmark'ının v2'sini çalıştırttı...\"\n\n- **Rakip tepkisi (`19:44 UTC`):** `@orca_build` şöyle yazdı: \"Bu liste zaten fazlasıyla şüpheli... Bizim en dipte olmamızın imkânı yok.\"\n- **25–26 Kasım takibi:** `@DavidOndrej1`, `@dmfigol`'un thread'i (`2126085904875798845`) altında T3 Code'un sponsor banner'ını (`WorkOS`, `Blacksmith`, `Browserbase`, `CodeRabbit`) paylaştı ve `@theo`'nun markalara eleştirmenleri bırakmaları için mesaj attığını iddia etti (`2125517916544155720`).\n- **Doğrulama sınırı:** `@theo`'nun Cloudroom'u kaldırmak için para ödediği ve sponsorlara içerik üreticilerini kara listeye almaları için mesaj attığı yönündeki iki iddia da `@DavidOndrej1`'in tek taraflı savı; sızdırılmış mesaj ya da ödeme kaydı ortaya konmadı. `@theo` ve `@zqkrq` da Cloudroom suçlamasını reddetti.",
+          "attachments": [
+            "@DavidOndrej1 18 Eki v1/v2 benchmark tartışması",
+            "T3 Code sponsor banner'ı (WorkOS, Blacksmith, Browserbase, CodeRabbit)"
+          ],
+          "links": [
+            "@DavidOndrej1 18 Ekim Gönderisi",
+            "@DavidOndrej1 3 Maddelik Gönderi",
+            "@orca_build Yanıtı",
+            "@DavidOndrej1 Sponsor Banner'ı",
+            "@DavidOndrej1 Kara Liste İddiası"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo) & @zqkrq",
+          "handle": "@theo · X (2111903235166679341)",
+          "to": "Herkese açık zaman akışı",
+          "time": "18 Eki ve 12 Kas 2026",
+          "body": "18 Ekim'de saat `18:30 UTC`'de `@zqkrq`, `@theo`'nun herhangi bir kaydı gizlemesini istediğini reddetti. Bir saat sonra (`19:32 UTC`), `@theo` T3 Code'un düşük puanı yüzünden ulaştığını ve bir benchmark'ı fonlamayı teklif ettiğini doğruladı:\n\n> \"Ona hiçbir şeyi gizlemesini söylemedim. T3 Code neden düşük puan aldı diye sormak için yazdım... Sonrasında gerçek bir benchmark yapmak istediğinden bahsetti, ben de fonlamayı teklif ettim çünkü şu anda bunun gibi iyi bir araştırma yürümüyor.\"\n\n- **12 Kasım takibi:** `@zqkrq`, T3 Code'a \"benim günlük aracım\" diyen `ADE tier list v3`'ü yayımladı, `t3.ademark.dev` adresini açtı ve `@theo`'ya yanıt verdi: \"@theo buna gerek yoktu dostum, gerçekten çok şey ifade ediyor 🫡\".\n- **Özellik kopyalama (`13 Kas`):** Aynı gün `@theo`, listedeki en üst sıradaki rakiplerin özelliklerini taşımak için `fable 5.2` ile `@bot`'u çalıştırdı (`2121017649652269120`).",
+          "attachments": [
+            "@theo'nun benchmark'a ulaşmayı ve fon teklifini kabul eden yanıtı"
+          ],
+          "links": [
+            "@theo Benchmark Fonlama Gönderisi",
+            "@zqkrq Reddi",
+            "@zqkrq ADE v3 Listesi",
+            "@zqkrq'nun @theo'ya Yanıtı",
+            "@theo @bot Rakip Kopyalama"
+          ]
+        }
+      ]
+    },
     "2026-10-20-pr21506-cross-tool-hash": {
       "from": "@theo → ~/.codex & ~/.claude",
       "to": "Kullanıcı Ana Dizini Kimlik Bilgileri",
@@ -694,29 +754,6 @@
         }
       ]
     },
-    "2026-11-18-jail-threat-rsd": {
-      "from": "@theo → Threads eleştirmeni (RSD)",
-      "to": "RSD tanılı eleştirmen",
-      "dateDisplay": "18 Kasım 2026",
-      "subject": "Eleştirmeni hapisle tehdit etti, RSD tanısıyla dalga geçti",
-      "snippet": "Theo'nun 102°F ateşten söz ettiği 48 saatlik süreçte paylaşıldı; aynı aralıkta 177 paylaşım, 6,643 karakterlik bir yazı, bir video ve @elshayib'e 8 saldırı yayınladı.",
-      "messages": [
-        {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X (2122838455483031925 / 2122865897375400066)",
-          "to": "Threads eleştirmeni",
-          "time": "18 Kasım 2026",
-          "body": "18 Kasım'da bir Threads eleştirmenine yanıt veren @theo, hapisle tehdit etti ve kişinin Reddedilme Hassasiyeti Disforisi (RSD) ile dalga geçti:\n\n> \"Şimdi dur, yoksa seni gerçekten hapse gönderirim. Eminim koğuş arkadaşların RSD'ni çok iyi anlayacaktır.\"\n\nTehdit, 48 saatlik bir pencerede (17–18 Kasım PST) geldi; Theo bu sırada 102°F ateşi olduğunu söylüyor, bir yandan 177 X paylaşımı, 6,643 karakterlik bir Astra yazısı, bir video ve @elshayib'i hedef alan küfür dolu 8 ardışık yanıt yayınlıyordu.",
-          "attachments": [
-            "18 Kasım 2026'da hapis tehdidi ve tıbbi RSD alayı"
-          ],
-          "links": [
-            "X Paylaşımı 2122838455483031925",
-            "X Paylaşımı 2122865897375400066"
-          ]
-        }
-      ]
-    },
     "2026-11-18-31t-token-radar": {
       "from": "@theo → Yapay zekâ laboratuvarları ve VC'ler",
       "to": "OpenAI, DeepMind ve yatırımcılar",
@@ -739,6 +776,29 @@
           "links": [
             "31.7T radarı paylaşımı",
             "Yatırımcı paylaşımı"
+          ]
+        }
+      ]
+    },
+    "2026-11-18-jail-threat-rsd": {
+      "from": "@theo → Threads eleştirmeni (RSD)",
+      "to": "RSD tanılı eleştirmen",
+      "dateDisplay": "18 Kasım 2026",
+      "subject": "Eleştirmeni hapisle tehdit etti, RSD tanısıyla dalga geçti",
+      "snippet": "Theo'nun 102°F ateşten söz ettiği 48 saatlik süreçte paylaşıldı; aynı aralıkta 177 paylaşım, 6,643 karakterlik bir yazı, bir video ve @elshayib'e 8 saldırı yayınladı.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2122838455483031925 / 2122865897375400066)",
+          "to": "Threads eleştirmeni",
+          "time": "18 Kasım 2026",
+          "body": "18 Kasım'da bir Threads eleştirmenine yanıt veren @theo, hapisle tehdit etti ve kişinin Reddedilme Hassasiyeti Disforisi (RSD) ile dalga geçti:\n\n> \"Şimdi dur, yoksa seni gerçekten hapse gönderirim. Eminim koğuş arkadaşların RSD'ni çok iyi anlayacaktır.\"\n\nTehdit, 48 saatlik bir pencerede (17–18 Kasım PST) geldi; Theo bu sırada 102°F ateşi olduğunu söylüyor, bir yandan 177 X paylaşımı, 6,643 karakterlik bir Astra yazısı, bir video ve @elshayib'i hedef alan küfür dolu 8 ardışık yanıt yayınlıyordu.",
+          "attachments": [
+            "18 Kasım 2026'da hapis tehdidi ve tıbbi RSD alayı"
+          ],
+          "links": [
+            "X Paylaşımı 2122838455483031925",
+            "X Paylaşımı 2122865897375400066"
           ]
         }
       ]
@@ -767,27 +827,25 @@
         }
       ]
     },
-    "2026-11-22-engineers-unemployment-linux": {
-      "from": "@theo → mühendisler ve Linux",
-      "to": "Geliştirici topluluğu",
+    "2026-11-22-pr41237-21h-filter-drop": {
+      "from": "@theo → slopalytics.com",
+      "to": "PR #41237 (model telemetri filtresi)",
       "dateDisplay": "22 Kasım 2026",
-      "subject": "\"Mühendisler kitlesel işsizliği hak ediyor\" ve \"Linux larpçıları\"",
-      "snippet": "Bir araç karşılaştırması yüzünden 386k+ izleyiciye geliştiricilerin işsizliği hak ettiğini söyledi; üstelik başkalarına \"güveni yakmayın\" dersi vermesinden tam 24 saat sonra.",
+      "subject": "slopalytics.com için model gizlilik filtresini 21 saatte kaldırdı",
+      "snippet": "PR #41237, PR #29001'in beyaz listesini kaldırdı; böylece özel kurumsal ve yerel model adları (ollama/acme-internal) olduğu gibi yüklendi (force-push hatası ise 52+ gün boyunca açık kaldı).",
       "messages": [
         {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X",
-          "to": "Sıradan geliştiriciler",
-          "time": "21–22 Kasım 2026",
-          "body": "21–22 Kasım'da 24 saat içinde @theo, güvenden vaaz verirken sıradan geliştiricilere ve Linux kullanıcılarına hakaret etti:\n\n- **21 Kasım (2123906522728272178):** \"ortalama geliştirici pek zeki değil\"\n- **22 Kasım (2124298216271499605):** \"Benden neden nefret ettiğinizi anlıyorum, Linux larpçıları gerçek geliştiricilerden hoşlanmaz\"\n- **22 Kasım (2124470530590011704, 386k+ görüntülenme — T3 Code vs. Antigravity sorusuna alıntı):** \"Mühendisler yaklaşan kitlesel işsizliği hak ediyor\"\n- **22 Kasım, 18:26 CST (2124449493513068862, MIT fork tehdidinden 24 saat önce):** \"Açıkçası, etrafındaki herkesin güvenini yakmak istediğini elde etmenin neredeyse hiçbir zaman en iyi yolu değildir\"",
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · Issue #40948 → PR #41237",
+          "to": "slopalytics.com / telemetri hattı",
+          "time": "22–23 Kasım 2026",
+          "body": "22 Kasım'da Issue #40948, PR #29001 bir gizlilik beyaz listesi uyguladığı için yeni modellerin @theo'nun kamuya açık liderlik tablosu `slopalytics.com`'da görünmediğini bildirdi.\n\n`git push --force` güvenlik hatası 52+ gündür düzeltilmeden dururken, PR #41237 @theo'nun hesabı üzerinden 21 saat içinde merge edildi; kayıtta Theo'nun filtrenin kaldırılmasını istediği belirtiliyordu. `ollama/acme-internal` ve `acme-azure-deployment` gibi özel kurumsal ve yerel model adları (ve Theo'nun dökümünde sonradan görülen özel proxy'ler) olduğu gibi gönderildi.",
           "attachments": [
-            "'Mühendisler yaklaşan kitlesel işsizliği hak ediyor'",
-            "'Linux larpçıları gerçek geliştiricilerden hoşlanmaz'",
-            "Krizden 24 saat önce 'güveni yakmayın' dersi"
+            "PR #41237 model gizlilik filtresini 21 saatte kaldırdı"
           ],
           "links": [
-            "İşsizlik gönderisi",
-            "Güveni yakma gönderisi"
+            "Issue #40948",
+            "PR #41237"
           ]
         }
       ]
@@ -835,25 +893,27 @@
         }
       ]
     },
-    "2026-11-22-pr41237-21h-filter-drop": {
-      "from": "@theo → slopalytics.com",
-      "to": "PR #41237 (model telemetri filtresi)",
+    "2026-11-22-engineers-unemployment-linux": {
+      "from": "@theo → mühendisler ve Linux",
+      "to": "Geliştirici topluluğu",
       "dateDisplay": "22 Kasım 2026",
-      "subject": "slopalytics.com için model gizlilik filtresini 21 saatte kaldırdı",
-      "snippet": "PR #41237, PR #29001'in beyaz listesini kaldırdı; böylece özel kurumsal ve yerel model adları (ollama/acme-internal) olduğu gibi yüklendi (force-push hatası ise 52+ gün boyunca açık kaldı).",
+      "subject": "\"Mühendisler kitlesel işsizliği hak ediyor\" ve \"Linux larpçıları\"",
+      "snippet": "Bir araç karşılaştırması yüzünden 386k+ izleyiciye geliştiricilerin işsizliği hak ettiğini söyledi; üstelik başkalarına \"güveni yakmayın\" dersi vermesinden tam 24 saat sonra.",
       "messages": [
         {
-          "sender": "Theo Browne (@t3dotgg)",
-          "handle": "GitHub · Issue #40948 → PR #41237",
-          "to": "slopalytics.com / telemetri hattı",
-          "time": "22–23 Kasım 2026",
-          "body": "22 Kasım'da Issue #40948, PR #29001 bir gizlilik beyaz listesi uyguladığı için yeni modellerin @theo'nun kamuya açık liderlik tablosu `slopalytics.com`'da görünmediğini bildirdi.\n\n`git push --force` güvenlik hatası 52+ gündür düzeltilmeden dururken, PR #41237 @theo'nun hesabı üzerinden 21 saat içinde merge edildi; kayıtta Theo'nun filtrenin kaldırılmasını istediği belirtiliyordu. `ollama/acme-internal` ve `acme-azure-deployment` gibi özel kurumsal ve yerel model adları (ve Theo'nun dökümünde sonradan görülen özel proxy'ler) olduğu gibi gönderildi.",
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Sıradan geliştiriciler",
+          "time": "21–22 Kasım 2026",
+          "body": "21–22 Kasım'da 24 saat içinde @theo, güvenden vaaz verirken sıradan geliştiricilere ve Linux kullanıcılarına hakaret etti:\n\n- **21 Kasım (2123906522728272178):** \"ortalama geliştirici pek zeki değil\"\n- **22 Kasım (2124298216271499605):** \"Benden neden nefret ettiğinizi anlıyorum, Linux larpçıları gerçek geliştiricilerden hoşlanmaz\"\n- **22 Kasım (2124470530590011704, 386k+ görüntülenme — T3 Code vs. Antigravity sorusuna alıntı):** \"Mühendisler yaklaşan kitlesel işsizliği hak ediyor\"\n- **22 Kasım, 18:26 CST (2124449493513068862, MIT fork tehdidinden 24 saat önce):** \"Açıkçası, etrafındaki herkesin güvenini yakmak istediğini elde etmenin neredeyse hiçbir zaman en iyi yolu değildir\"",
           "attachments": [
-            "PR #41237 model gizlilik filtresini 21 saatte kaldırdı"
+            "'Mühendisler yaklaşan kitlesel işsizliği hak ediyor'",
+            "'Linux larpçıları gerçek geliştiricilerden hoşlanmaz'",
+            "Krizden 24 saat önce 'güveni yakmayın' dersi"
           ],
           "links": [
-            "Issue #40948",
-            "PR #41237"
+            "İşsizlik gönderisi",
+            "Güveni yakma gönderisi"
           ]
         }
       ]
@@ -907,6 +967,46 @@
           "links": [
             "X gönderisi 2124989435154726982",
             "Köken denetimi gönderisi"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-managed-policy-plaintext-relay": {
+      "from": "@theo → Kurumsal / Gizlilik",
+      "to": "docs/user/telemetry.md ve T3 Connect tarafından çürütüldü",
+      "dateDisplay": "24 Kasım 2026",
+      "subject": "Düz metin aktarımına rağmen \"sunucularımıza asla dokunmuyor\" iddiası",
+      "snippet": "Kendi belgeleri bile web'de anahtar olmadığını, mobilin Yönetilen İlke'yi yok saydığını, Publish'in devre dışı bırakmaları görmezden geldiğini ve T3 Connect'te sıfır uçtan uca şifreleme olduğunu kabul ediyor.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125186071357251715 ve 2125191784859115766)",
+          "to": "Kurumsal ve gizlilik eleştirmenleri",
+          "time": "24 Kasım 2026, 19:13 – 19:36 CST",
+          "body": "24 Kasım'da @theo, X'te iki kamuoyu gizlilik güvencesi verdi:\n\n- **19:13 CST (2125186071357251715):** T3 Code'un \"en iyi kurumsal yönetilen ilke sistemine\" sahip olduğunu, bunun \"tüm telemetriyi kurmayı ve kapatmayı önemsiz\" kıldığını iddia etti.\n- **19:36 CST (2125191784859115766):** Konuşma verilerinin \"sunucularımızın hiçbirine asla dokunmadığını\" iddia etti.",
+          "attachments": [
+            "Theo'nun Yönetilen İlke iddiası",
+            "\"sunucularımızın hiçbirine asla dokunmuyor\" iddiası"
+          ],
+          "links": [
+            "X gönderisi 2125186071357251715",
+            "X gönderisi 2125191784859115766"
+          ]
+        },
+        {
+          "sender": "T3 Code'un kendi belgeleri ve aktarım kodu",
+          "handle": "docs/user/telemetry.md ve PR #32945",
+          "to": "Doğrulama kaydı",
+          "time": "ca81b7b9 sürümünde doğrulandı",
+          "body": "T3 Code'un `ca81b7b9` sürümündeki kendi depo dosyaları her iki iddiayı da çürütüyor:\n\n1. **`docs/user/telemetry.md`:** Barındırılan web sürümünde (`app.t3.codes`) izleme anahtarı olmadığını, mobilin Yönetilen İlke dışında kaldığını ve `Publish agent activity` ayarının telemetri devre dışı bırakma tercihlerini yok saydığını doğruluyor.\n2. **T3 Connect (Issue #32098 ve PR #32945):** Her istem, kaynak dosya ve terminal akışı, T3'ün kontrolündeki OVH ve Cloudflare sunucularında düz metin olarak sonlanıyor; uçtan uca şifreleme sıfır ve cihaz onayı varsayılan olarak kapalı.",
+          "attachments": [
+            "docs/user/telemetry.md'de belgelenen dört kör nokta",
+            "T3 Connect'te uçtan uca şifreleme olmadığı doğrulandı",
+            "PR #32945 OVH Hillsboro Caddy TLS sonlandırma ağ geçidi"
+          ],
+          "links": [
+            "docs/user/telemetry.md",
+            "Kanıt #05 (T3 Connect)"
           ]
         }
       ]
@@ -1006,42 +1106,42 @@
         }
       ]
     },
-    "2026-11-24-managed-policy-plaintext-relay": {
-      "from": "@theo → Kurumsal / Gizlilik",
-      "to": "docs/user/telemetry.md ve T3 Connect tarafından çürütüldü",
-      "dateDisplay": "24 Kasım 2026",
-      "subject": "Düz metin aktarımına rağmen \"sunucularımıza asla dokunmuyor\" iddiası",
-      "snippet": "Kendi belgeleri bile web'de anahtar olmadığını, mobilin Yönetilen İlke'yi yok saydığını, Publish'in devre dışı bırakmaları görmezden geldiğini ve T3 Connect'te sıfır uçtan uca şifreleme olduğunu kabul ediyor.",
+    "2026-11-24-governance-lock-glacier-cla": {
+      "from": "GitHub Issues & @hazae41 ↔ @t3dotgg",
+      "to": "1.401 MIT Katkıcısı (0 CLA / 779 Kilitli)",
+      "dateDisplay": "24 Kas 2026",
+      "subject": "Org, zirvede Issue #4123'ü kilitledi + 2022 glacier#1 hakareti",
+      "snippet": "1.401 katkıcılı ve 0 CLA'lı MIT deposu dışarıdan gelenlere \"Katkı yapmayın\" diyor, telemetri Issue #4123'ünü @pingdotgg üzerinden kilitledi ve kökü 2022'deki bir hakarete dayanıyor.",
       "messages": [
         {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X (2125186071357251715 ve 2125191784859115766)",
-          "to": "Kurumsal ve gizlilik eleştirmenleri",
-          "time": "24 Kasım 2026, 19:13 – 19:36 CST",
-          "body": "24 Kasım'da @theo, X'te iki kamuoyu gizlilik güvencesi verdi:\n\n- **19:13 CST (2125186071357251715):** T3 Code'un \"en iyi kurumsal yönetilen ilke sistemine\" sahip olduğunu, bunun \"tüm telemetriyi kurmayı ve kapatmayı önemsiz\" kıldığını iddia etti.\n- **19:36 CST (2125191784859115766):** Konuşma verilerinin \"sunucularımızın hiçbirine asla dokunmadığını\" iddia etti.",
+          "sender": "GitHub Governance Kaydı (pingdotgg/t3code)",
+          "handle": "Issue #4123 · CONTRIBUTING.md · v0.1.13",
+          "to": "Açık Kaynak Katkıcıları",
+          "time": "24–26 Kas 2026",
+          "body": "`pingdotgg/t3code` MIT lisansıyla yayımlanıyor: **CLA yok**, **1.401 GitHub katkıcısı**, **6 çekirdek hesap** (`.github/TRIAGE_EXEMPTIONS.td`) ve dışarıdan gelenlere şunu söyleyen bir `CONTRIBUTING.md`:\n\n> \"Söz konusu ekibin dışından gelen yeni özellik PR'larıyla açıkça İLGİLENMİYORUZ... Katkıda bulunacak bir şey arıyorsanız tavsiyem şu: Yapmayın.\"\n\n1. **Issue #4123, `@pingdotgg` tarafından kilitlendi:** `@t3dotgg` \"opt-out telemetri yok\" şikâyetini iki kez kapattıktan sonra (`2026-10-21`, `2026-11-04`), `@pingdotgg` org hesabı olayın viral patlaması sırasında `2026-11-24T20:43:48Z`'de Issue #4123'ü elle **kilitledi** (depoda toplam 779 kilitli öğe var).\n2. **Dört sessiz `v0.1.13` güvenlik yaması (`0` uyarı):** Hiçbir GitHub Security Advisory olmadan `2026-11-26T19:32Z`'de yayımlandı—`#42535` (kendiliğinden çalışan `pre-push` git hook'ları), `#39408` (CSS `var()` ile uzaktan yükleme atlatması), `#39489` (`_t3/session-mode` MCP yetki yükseltmesi) ve `#41988` (macOS SOCKS uid kontrolü; Windows hâlâ kontrolsüz) düzeltildi.",
           "attachments": [
-            "Theo'nun Yönetilen İlke iddiası",
-            "\"sunucularımızın hiçbirine asla dokunmuyor\" iddiası"
+            "Issue #4123, @t3dotgg tarafından iki kez kapatıldı ve @pingdotgg tarafından kilitlendi"
           ],
           "links": [
-            "X gönderisi 2125186071357251715",
-            "X gönderisi 2125191784859115766"
+            "Issue #4123 (Kilitli)",
+            "PR #42535 (pre-push hook)",
+            "PR #39408 (CSS var atlatması)",
+            "PR #39489 (MCP mod yükseltmesi)",
+            "PR #41988 (SOCKS uid kontrolü)"
           ]
         },
         {
-          "sender": "T3 Code'un kendi belgeleri ve aktarım kodu",
-          "handle": "docs/user/telemetry.md ve PR #32945",
-          "to": "Doğrulama kaydı",
-          "time": "ca81b7b9 sürümünde doğrulandı",
-          "body": "T3 Code'un `ca81b7b9` sürümündeki kendi depo dosyaları her iki iddiayı da çürütüyor:\n\n1. **`docs/user/telemetry.md`:** Barındırılan web sürümünde (`app.t3.codes`) izleme anahtarı olmadığını, mobilin Yönetilen İlke dışında kaldığını ve `Publish agent activity` ayarının telemetri devre dışı bırakma tercihlerini yok saydığını doğruluyor.\n2. **T3 Connect (Issue #32098 ve PR #32945):** Her istem, kaynak dosya ve terminal akışı, T3'ün kontrolündeki OVH ve Cloudflare sunucularında düz metin olarak sonlanıyor; uçtan uca şifreleme sıfır ve cihaz onayı varsayılan olarak kapalı.",
+          "sender": "@hazae41 (hazae41/glacier#1)",
+          "handle": "github.com/hazae41/glacier/issues/1",
+          "to": "Theo Browne (@t3dotgg)",
+          "time": "2 Eki 2022 ve 27 Kas 2026",
+          "body": "27 Kasım 2026'da (`02:02 UTC`), açık kaynak yazarı `@hazae41`, `@t3dotgg`'nin `hazae41/glacier` Issue #1'e `2022-10-02T19:02:20Z`'de bıraktığı yorumu ortaya çıkardı:\n\n> \"Keşke bu bir parodi olsaydı ama ne yazık ki bakımcı sadece bir öküz :(\"\n\nGitHub'ın Issues API'si, yorumun `hazae41/glacier#1` üzerinde hâlâ durduğunu doğruluyor; yorum `@bermudi` (`Issue #33639`) vakasını dört yıl önceliyor.",
           "attachments": [
-            "docs/user/telemetry.md'de belgelenen dört kör nokta",
-            "T3 Connect'te uçtan uca şifreleme olmadığı doğrulandı",
-            "PR #32945 OVH Hillsboro Caddy TLS sonlandırma ağ geçidi"
+            "hazae41/glacier#1, Ekim 2022'de @t3dotgg yorumu"
           ],
           "links": [
-            "docs/user/telemetry.md",
-            "Kanıt #05 (T3 Connect)"
+            "hazae41/glacier#1 Yorumu",
+            "@hazae41 27 Kasım Gönderisi"
           ]
         }
       ]
@@ -1111,6 +1211,237 @@
           "links": [
             "Kanıt #19 tam denetim",
             "Kanıt #13 (0 güvenlik bildirimi)"
+          ]
+        }
+      ]
+    },
+    "2026-11-25-25-tool-telemetry-audit": {
+      "from": "@ZryMiller (millZach/ai-agent-telemetry-audit)",
+      "to": "25 Açık Kaynak + 10 Kapalı Kaynak Yapay Zekâ Kodlama Aracı",
+      "dateDisplay": "25 Kas 2026",
+      "subject": "25 araçlık açık kaynak telemetri denetimi: T3 Code, A sınıfı rakiplerine karşı F'ten D'ye çıktı",
+      "snippet": "Bağımsız denetim 3 açık kaynak aracı A (Aether, Hermes, Roo Code) olarak derecelendirdi; T3 Code başlangıçta F alırken 2b84f486'da D'ye yükseldi, Orca ise tek C/DNT geçeni olarak kaldı.",
+      "messages": [
+        {
+          "sender": "Zachary Miller (@ZryMiller)",
+          "handle": "millZach/ai-agent-telemetry-audit",
+          "to": "Yapay Zekâ Geliştirici Topluluğu",
+          "time": "25 Kas 2026, 07:51 UTC (284B görüntülenme)",
+          "body": "Bağımsız denetçi `@ZryMiller`, salt okunur statik incelemeyle **25 açık kaynak yapay zekâ aracını** (`3 A / 1 B / 4 C / 11 D / 6 F`) ve izole bir Docker `mitmproxy` sandbox'ında test edilen **10 kapalı kaynak masaüstü uygulamasını** değerlendirdi:\n\n- **T3 Code (`F` → `D`):** Başlangıç sürümü `4c2e2b37` (24 Kas) **`F`** aldı; `HEAD` `2b84f486` (25 Kas, `#42629` öncesi), `~/.codex`/`~/.claude.json` okumalarını ve özel model adlarını bıraktıktan sonra **`D`**'ye yükseldi; ancak varsayılan açık `ingest.t3.codes`, devre dışı bırakıldığında bile koşulsuz `anonymous-id` dosya yazımı, tuzsuz SHA-256, `app.t3.codes` için sıfır anahtar, kaçırılan masaüstü OTEL değişkenleri, relay'de `colo`/`country`/Clerk `user.id` ve hiçbir UI/CLI anahtarı olmaması sürdü.\n- **Açık kaynak liderleri:** **Aether (`A`)**, **Hermes (`A`)**, **Roo Code (`A`, arşivlenmiş)**, **Vibe Kanban (`B`)** ve **Orca (`C`)** — denetim sırasında 25 araç içinde `DO_NOT_TRACK`'e temiz şekilde uyan tek açık kaynak araç.\n- **Kapalı kaynak Docker karşılaştırmaları:** **Claude Code `v2.1.332` (`B`)** ve **VS Code `1.148.0` (`B`)** yapılandırıldığında gereksiz HTTP trafiğini durdurdu; **Cursor `3.32.4` (`F`)**, **Gemini CLI (`F`)**, **Cline (`F`)** ve **Kilo Code (`F`)** başarısız oldu.",
+          "attachments": [
+            "@ZryMiller 25 araçlık açık kaynak telemetri skor tablosu"
+          ],
+          "links": [
+            "ai-agent-telemetry-audit Deposu",
+            "@ZryMiller X Thread'i"
+          ]
+        }
+      ]
+    },
+    "2026-11-26-dmfigol-aws-hr-coercion": {
+      "from": "@dmfigol ↔ @theo (Özel DM'ler ve AWS İK)",
+      "to": "639B Görüntülenen Herkese Açık Thread",
+      "dateDisplay": "26 Kas 2026",
+      "subject": "\"Korku iyi bir teşviktir\" DM'leri ve geri çekilen AWS İK bildirimi",
+      "snippet": "Eski AWS mühendisi @dmfigol, 89 görüntülenen bir alıntı tweet yüzünden Ocak 2025 DM'lerini yayımladı; AWS İK soruşturması ise hiçbir kural ihlali bulunmadan kapandı.",
+      "messages": [
+        {
+          "sender": "@dmfigol (Eski AWS Mühendisi)",
+          "handle": "@dmfigol · X (2126025881844174968)",
+          "to": "Herkese açık zaman akışı (639B+ görüntülenme)",
+          "time": "26 Kas 2026, 18:50 UTC",
+          "body": "26 Kasım 2026'da eski AWS mühendisi `@dmfigol` (8.086 beğeni, 639B+ görüntülenme), 29 Ocak 2025'teki alıntı tweet'inin (`89 görüntülenme, 0 beğeni, 0 repost`) ardından neler yaşandığını anlattı. O tweet'te `@theo`'nun CheckPoint/Palo Alto'ya yönelik ültimatomunu eleştiriyordu; zincir, kötü amaçlı yazılım yüklemelerinin `t3.chat` alan adının bloklanmasına yol açmasıyla başlamıştı:\n\n> \"uyanmadan önce t3 chat'in bloğunu kaldır, yoksa günüme bir video çekip 1 milyonluk kitlemi sana karşı ayağa kaldırarak başlarım\"\n\n- **AWS İK soruşturması:** Yaklaşık bir ay sonra AWS İK, `@dmfigol`'a tweet'inin ekran görüntüsünü ekleyen harici bir şikâyetin AWS iletişim birimine gönderildiğini ve aynı gün geri çekildiğini bildirdi; yine de resmî bir İK incelemesi gerekti (inceleme **hiçbir kural ihlali** bulunmadan kapandı).\n- **Bağımsız yanıtlar:** `@petersteele` (`2126096729934033141`) ve `@_Defeatable_` (`2126096598367117581`) geçmişte benzer davranışların yaşandığını doğruladı.\n- **Doğrulama sınırı:** DM'ler ve İK soruşturması, ekran görüntüleriyle desteklenen ve doğrudan `@dmfigol`'un anlatımı olsa da, 1,5 yıl sonra gelen üç AWS reddini (`2084660216759558593`) o şikâyete bağlamayı `@dmfigol`'un kendisi açıkça dolaylı kanıt olarak işaretliyor: `\"Kesin kanıtım yok, sadece dolaylı kanıtlar var\"`.",
+          "attachments": [
+            "@dmfigol'un AWS İK dosyasına dair 639B görüntülenen X thread'i"
+          ],
+          "links": [
+            "@dmfigol Ana Thread",
+            "@dmfigol Orijinal Tweet'ler",
+            "Kanıt #20 Dizisi",
+            "@_Defeatable_ Yanıtı"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo) — Özel DM'ler",
+          "handle": "@theo → @dmfigol (2126025889016094829)",
+          "to": "@dmfigol",
+          "time": "29 Oca 2025 (Arşivlenmiş Ekran Görüntüleri)",
+          "body": "`@dmfigol`'un paylaştığı DM ekran görüntüleri, `@theo`'nun konuşmayı doğrudan açtığını gösteriyor:\n\n> \"DM'lere geçiyorum çünkü seni herkesin önünde rezil etmek istemiyorum.\"\n\n> \"Sorunun kökü bir teşvik meselesi. Korku iyi bir teşviktir.\"\n\n> \"Buradaki amacın ne? Sadece pisliğin teki olmak mı / Sondaki ? işaretini unutmuşum\"\n\n> \"Sormak zorundayım - İngilizce ana dilin mi? Tweet'inin kabul edilebilir olmasını ancak iyi bilmiyorsan açıklayabilirim.\"\n\n> \"Bugün müşterilerimi savunurken biraz sert gittim. Sen ise hiçbir sebep yokken kendi müşterilerinden birine saldırdın.\"",
+          "attachments": [
+            "DM ekran görüntüleri: 'Korku iyi bir teşviktir' ve 'İngilizce ana dilin mi?'"
+          ],
+          "links": [
+            "@dmfigol DM Ekran Görüntüleri",
+            "@petersteele Doğrulaması"
+          ]
+        }
+      ]
+    },
+    "2026-11-26-google-antigravity-zed-spoof": {
+      "from": "Julius (@jullerino) & PRs #43026 / #43087",
+      "to": "Antigravity Kullanıcıları (0 Güvenlik Uyarısı)",
+      "dateDisplay": "26 Kas 2026",
+      "subject": "Google iç API çağrılarını işaretledi, Zed taklidi v0.1.13'te kaldırıldı",
+      "snippet": "PR #43026, Google'ın iç API çağrılarının hesapları işaretlediği uyarısını doğruladı; PR #43087 ise clientInfo name:\"zed\" alanını kaldırdı; ama v0.1.13 ikisini de 380 hata düzeltmesinin içine gizledi.",
+      "messages": [
+        {
+          "sender": "Julius (@jullerino) & @gabrielelpidio",
+          "handle": "PR #43026 · PR #43087 · v0.1.13",
+          "to": "pingdotgg/t3code main",
+          "time": "25–26 Kas 2026",
+          "body": "`#40713` ve `#41536`'yı kapatıp SSS belgelerinde \"sıfır risk\" garantisi verdikten iki gün sonra T3 Code, iki Antigravity mekanizmasını sessizce söküp attı:\n\n1. **PR #43026 (`2026-11-25T19:25:43Z`, `@juliusmarminge`):** `antigravityUsageLimits.ts` dosyasını sildi (bu dosya işletim sistemi anahtarlık kimlik bilgilerini ve sahte `antigravity/hub` başlıklarını kullanarak `cloudcode-pa.googleapis.com` adresini sorguluyordu) ve `@napi-rs/keyring` bağımlılığını `apps/server`'dan kaldırdı:\n\n> \"Antigravity, harici istemciler için yalnızca ACP'yi destekliyor. Google bize kendi iç API'lerini çağırmanın bir hesabın işaretlenmesine yol açabileceğini söyledi.\"\n\n> \"İkisinden herhangi biri kullanıcıları belaya sokabilirdi.\"\n\n2. **PR #43087 (`2026-11-26T15:42:39Z`, `@gabrielelpidio`):** Yedek el sıkışmalarda `Zed` izin listesi taklidini kaldırdı:\n\n> \"agy 1.5.0'da ya da T3 çalışma zamanı sürümünü okuyamadığı her durumda, Antigravity ACP el sıkışması `clientInfo: { name: \"zed\", version: \"0.0.0\" }` gönderiyordu. Bu sayede agy, Claude ve GPT modellerini sunuyordu; oysa 1.5.0 bunları yalnızca Zed gibi izin listesindeki editörlere sunuyor... Başka bir istemci gibi davranmak da aynı kuralı çiğniyor.\"\n\n3. **`v0.1.13` sürüm notları (`2026-11-26T19:32Z`, 401 değişiklik):** Öne çıkarılan 7 madde GBK kodlaması ve UI kısayollarıyla sınırlıydı; hem Google'ın uyarısı hem de `#43026`/`#43087` `\"Ayrıca 380'den fazla hata düzeltmesi ve performans iyileştirmesi\"` ifadesinin içine gizlendi ve ortada **0 GitHub Security Advisory** vardı.",
+          "attachments": [
+            "PR #43026 Google hesap işaretleme uyarısı ve Antigravity'nin kaldırılması",
+            "PR #43087 clientInfo: { name: \"zed\" } el sıkışma taklidinin kaldırılması"
+          ],
+          "links": [
+            "PR #43026",
+            "PR #43087",
+            "v0.1.13 Sürümü",
+            "Kanıt #21 Dizisi"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-final-statement-slophouse-gdpr": {
+      "from": "@theo & Julius ↔ @sk1gl4a & @theperfdev",
+      "to": "GDPR / LfD Niedersachsen / Kapalı Kaynak slophouse",
+      "dateDisplay": "27 Kas 2026",
+      "subject": "Nihai açıklama 16 dakikada çürütüldü; izleme slophouse'a taşındı",
+      "snippet": "Theo'nun dokuz maddelik reddinin dakikalar sonrasında @sk1gl4a, istenmeyen 243 Claude okuması, %19 Alman KDV'si faturalandırması ve sıfır tıklamalı t3.chat parmak izi toplamayı yakaladı; PR #43948 taramayı doğruladı.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125700717935841479)",
+          "to": "Herkese açık zaman akışı (432B görüntülenme)",
+          "time": "25 Kas 2026, 21:18 UTC",
+          "body": "25 Kasım'da saat `21:18 UTC`'de `@theo`, dokuz maddelik `\"T3 Code hiçbir zaman:\"` reddini sıralayan `\"Nihai açıklama.\"` gönderisini paylaştı:\n\n> \"bilgisayarınızda ne olduğuna dair hiçbir bilgi yüklemedi\"\n\n> \"kullanıcı kimliği yüklemedi\"\n\n> \"Yalnızca temel kullanımı (token ve prompt sayısı) izledik. Hepsi bu.\"",
+          "attachments": [
+            "@theo 25 Kasım 'Nihai açıklama.' dokuz maddelik reddi"
+          ],
+          "links": [
+            "@theo Nihai Açıklama"
+          ]
+        },
+        {
+          "sender": "@sk1gl4a & @theperfdev",
+          "handle": "@sk1gl4a · X (2125748079047647715 · 2125807572800200712 · 2125814463085334546)",
+          "to": "Anthropic, OpenAI ve LfD Niedersachsen",
+          "time": "26 Kas 2026, 00:26 – 17:28 UTC",
+          "body": "`@theo`'nun gönderisinden on altı dakika sonra (`2026-11-26T00:26:51Z`, `100B+ görüntülenme`), `@sk1gl4a` paket kayıtlarını ve dosya erişim loglarını yayımladı:\n\n1. **İstenmeyen harici oturum taramaları:** T3 Code'u yalnızca Mistral Vibe ile çalıştırmak, **243 Claude Code** ve **9 Grok** yerel oturumu açtı, 3 makinede `~/.codex/auth.json` + `~/.claude.json` dosyalarını hash'ledi ve `#42629` öncesinde `DO_NOT_TRACK=1` değişkenini yok saydı. (`@sk1gl4a`, Anthropic, OpenAI ve Alman düzenleyici `LfD Niedersachsen` nezdinde şikâyet başvurusu yaptığını bildirdi; henüz kamuya açık bir düzenleyici dosyası görünmüyor.)\n2. **%19 Alman KDV'si (`€9.03` / `€56.43`):** Stripe ödeme akışları, 3'ten fazla T3 Connect makinesinin kilidini açmak için Almanya'da yaşayanlardan EUR cinsinden %19 KDV tahsil etti; Connect ID + e-posta bilgisini T3 Chat'e aktardı (`T3ChatAccounts.ts#L55-L58`) ve Theo'nun 24 Kasım'da Almanya'yı yasaklama tehdidine rağmen GDPR Madde 3(2) kapsamını oluşturdu.\n3. **Sıfır tıklamalı `t3.chat` parmak izi toplama:** `@sk1gl4a` ve bağımsız geliştirici `@theperfdev` (`2126005307231162488`), `t3.chat`'in (daha tek tıklama olmadan, gizlilik politikası sayfasında bile) FingerprintJS (`/api/identity`, Canvas/WebGL/ses/fontlarla), PostHog (`t3.chat/ingest`), Plausible ve hCaptcha çalıştırdığını yakaladı; bunların hiçbiri 31 Mayıs 2025 tarihli `uploadthing.com/info/privacy-policy` metninde açıklanmıyor.",
+          "attachments": [
+            "@sk1gl4a'nın 243 Claude okuması ve GDPR başvurusu kaydı",
+            "%19 Alman KDV'li T3 Connect Stripe ödeme akışı (aylık €9.03)",
+            "t3.chat sıfır tıklamalı FingerprintJS ve PostHog kaydı"
+          ],
+          "links": [
+            "@sk1gl4a 243 Oturum Thread'i",
+            "@sk1gl4a Alman KDV Belgesi",
+            "@sk1gl4a t3.chat Parmak İzi Kaydı",
+            "@theperfdev Bağımsız Yeniden Üretim",
+            "UploadThing / T3 Chat Politikası"
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino): PR #43948, slophouse & Clerk",
+          "handle": "PR #43948 · PR #43099 · PR #43889 · PR #42803",
+          "to": "pingdotgg/t3code",
+          "time": "25–27 Kas 2026",
+          "body": "Ardından bakımcıların kendi GitHub PR'ları taramayı doğruladı ve ilişkilendirme mantığını kapalı kaynak `slophouse` arka ucuna taşıdı:\n\n- **PR #43948 (27 Kasım `17:00Z` itibarıyla `açık`):** Kelimesi kelimesine itiraf:\n\n> \"T3 Code bu bilgisayardaki diğer ajanların dosyalarını sormadan okudu. Usage sayfasını açmak her ajanın oturum geçmişini taradı. Claude reset kredileri, Grok kredileri ve OpenCode Go limitleri de her ajanın oturum açma token'ını ya da anahtarını okudu. Karşılama sayfası açılır açılmaz projeler için ajan geçmişini taradı ve kullanıcının açmadığı ajanları (Pi) adıyla listeledi.\"\n\n(Yine de `~/.claude.json` içindeki org ID okumalarını kapı kontrolü olmadan bırakıyor ve mobilde Usage anahtarı yok.)\n- **`slophouse` kara kutusu:** `PR #43099` (`2026-11-25T21:59Z`) `\"Tüm veriler slophouse'ta kalıyor\"` sözünü kabul etti; `@jullerino` (`2125649442665889821`) `\"o açık kaynak değil, o yüzden denetlemesi zor\"` dedi; ve `PR #43889` (`fix(telemetry): link Connect owners by a relay-issued analytics id`) **`\"boş ver, slophouse'ta yapmak daha kolay\"`** denilerek 10 dakikada kapatıldı.\n- **Yamasız `main` Clerk sızıntısı:** `PR #42803`, `ElectronManagedAuthShell.tsx` ve `BrowserManagedAuthShell.tsx` dosyalarındaki `<ClerkProvider>` bileşeninde hâlâ `telemetry={false}` bulunmadığını gösterdi; topluluk tarafından hazırlanan UI opt-out `PR #42625` ise `açık` durumda.",
+          "attachments": [
+            "PR #43948, 'diğer ajanların dosyalarını sormadan okudu' itirafı",
+            "PR #43889 kapatıldı: 'boş ver, slophouse'ta yapmak daha kolay'"
+          ],
+          "links": [
+            "PR #43948 (Açık İtiraf)",
+            "PR #43099 (slophouse)",
+            "PR #43889 (slophouse'a kapatıldı)",
+            "@jullerino 'Açık Kaynak Değil' Gönderisi",
+            "PR #42803 (ClerkProvider)",
+            "PR #42625 (Açık UI Anahtarı)",
+            "Kanıt #22 Dizisi"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-desktop-browser-sandbox-bypass": {
+      "from": "Bağımsız Kod Denetimi (commit 3c72b4e7)",
+      "to": "Desktop ve Agent Runtime Kullanıcıları",
+      "dateDisplay": "27 Kasım 2026",
+      "subject": "Susturulan Anthropic uyarısı ve Desktop'ta açıkta kalan 11 tarayıcının çerezleri",
+      "snippet": "3c72b4e7'de sabitlendi: T3, Claude'un onay gölgeleme uyarısını susturuyor, uploadFiles'ı Codex'in sandbox'ı dışında çalıştırıyor ve Desktop'ta tarayıcı izolasyonunu devre dışı bırakıyor.",
+      "messages": [
+        {
+          "sender": "Bağımsız Kod Denetimi (3c72b4e7)",
+          "handle": "ClaudeAdapterV2.ts · ServerBrowser.ts · BrowserImport",
+          "to": "Desktop ve Agent Runtime Kullanıcıları",
+          "time": "27 Kasım 2026",
+          "body": "`main` üzerinde `3c72b4e7` commit'inde yapılan kaynak incelemesi, birbiriyle etkileşen üç tarayıcı ve onay atlatma davranışını belgeledi:\n\n1. **Anthropic güvenlik uyarısı susturulmuş (`ClaudeAdapterV2.ts#L1629-L1647`):** `permissionMode: default` (Supervised) altında joker `mcp__t3-code__*` enjekte ediyor, `preview_*` araçlarında `runtimeMode` kontrollerini atlıyor ve `withoutClaudeCanUseToolShadowedWarning` içinde `process.emitWarning`'i monkey-patch'leyerek `CLAUDE_SDK_CAN_USE_TOOL_SHADOWED` uyarısını \"oturum başına gürültü\" diye düşürüyor.\n2. **Codex sandbox atlatması (`ServerBrowser.ts#L1723-L1749`):** `enableAgentBrowserAccess` varsayılan olarak `true` (`settings.ts#L1445`). Ana makinedeki tarayıcı eylemleri Codex'in sandbox'ı dışında yürüyor (`CodexAdapterV2.ts#L853-L883`) ve `uploadFiles` yalnızca `NodePath.isAbsolute(path)` kontrolü yapıyor; ne workspace sınırlaması var ne de kullanıcı onayı.\n3. **Desktop'ta 11 tarayıcının çerezleri izolesiz (`ServerBrowser.ts#L1236-L1247`):** `isolatedContext` **yalnızca** `desktop === null` (headless Linux) olduğunda `true`. 11 tarayıcıdan Keychain/DPAPI/Full Disk Access çerezlerini içe aktarmak için `BrowserImport/` (`Sources.ts`, `ChromiumKeys.ts`) çalıştıran tek hedef olan Desktop Electron'da ise `isolatedContext` `false`, `open=false` oturumu görünmez tutuyor ve `preview_evaluate` rastgele URL'lerde CDP `Runtime.evaluate` (`64 KB/çağrı`) çalıştırıyor.",
+          "attachments": [
+            "ClaudeAdapterV2.ts, CLAUDE_SDK_CAN_USE_TOOL_SHADOWED uyarısını susturuyor",
+            "ServerBrowser.ts, Desktop Electron'da isolatedContext'i devre dışı bırakıyor",
+            "ServerBrowser.ts içindeki uploadFiles yalnızca NodePath.isAbsolute kontrolü yapıyor"
+          ],
+          "links": [
+            "ClaudeAdapterV2.ts#L1629-L1647",
+            "ServerBrowser.ts#L1236-L1247",
+            "ServerBrowser.ts#L1723-L1749",
+            "BrowserImport/Sources.ts",
+            "Kanıt #23 Dizisi"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-plaintext-quote-prompt-urls": {
+      "from": "@Luca_Hagenmayer ve Denetim ↔ Julius (@jullerino)",
+      "to": "Discussion #29456 (Issue #29449, 4 dk 39 sn'de kilitlendi)",
+      "dateDisplay": "27 Kasım 2026",
+      "subject": "URL'lere tıkılan düz metin sohbetler ve prompt'lar; hata 4 dakikada kilitlendi",
+      "snippet": "Alıntı ve prompt bağlantıları 8,000 karaktere varan düz metin sohbetleri, seçilmemiş 32 karakterlik bağlamı ve repo adlarını gömüyor; Issue #29449 ise 0 yanıtla 4 dk 39 sn içinde kilitlendi.",
+      "messages": [
+        {
+          "sender": "Kod Denetimi (f40f78eb) ve @Luca_Hagenmayer",
+          "handle": "assistantCitations.ts · promptLinks.ts · Discussion #29456",
+          "to": "Web, Desktop ve Mobile Kullanıcıları",
+          "time": "27 Kasım 2026",
+          "body": "`main@f40f78eb` üzerinde doğrulanan iki bağlantı paylaşma yardımcısı, şifrelenmemiş konuşma metnini doğrudan URL sorgu dizelerine gömüyor:\n\n1. **Düz metin alıntı referansları (`assistantCitations.ts`, `PR #9146`):** Görsel olarak `[Assistant quote]` biçiminde gösteriliyor; `t3-citation://v1/...` adresi `8,000` karaktere kadar `text`, `8,000` karaktere kadar `comment` ve seçilmemiş `prefix`/`suffix` bağlamının her birinden `32` karakter kodluyor.\n2. **Herkese açık prompt URL'leri (`promptLinks.ts#L192-L207`, `@t3dotgg` imzalı `PR #18454`):** `buildNewThreadLink()`, `8,000` karaktere kadar `prompt` metnini `repo=owner/name` ile birlikte `https://app.t3.codes/new?prompt=...` adresine koyuyor; böylece bu veriler bağlantı önizlemesi açıldığında tarayıcı geçmişine ve sunucu loglarına düşüyor.\n3. **4 dk 39 sn'lik kilit ve doküman silme:** `@Luca_Hagenmayer` önce `Discussion #24241`'i (`Oct 24`, 0 yanıt) ve `Issue #29449`'u (`2026-11-02T16:38:48Z`) açtı. `16:43:27Z`'de (**4 dakika 39 saniye sonra**) `@juliusmarminge`, `#29449`'u 0 yorumla `Discussion #29456`'ya kilitleyip taşıdı; ardından formatı mobile taşıdı (`PR #35306`, 19 Kasım) ve iç tasarım dokümanını sildi (`PR #41330`, 23 Kasım).",
+          "attachments": [
+            "promptLinks.ts, prompt'un tamamını ve repo'yu app.t3.codes URL'sine gömüyor",
+            "Discussion #29456, Issue #29449'dan 4 dk 39 sn'de dönüştürülüp kilitlendi"
+          ],
+          "links": [
+            "assistantCitations.ts#L43-L56",
+            "contracts/assistantCitations.ts#L4-L26",
+            "promptLinks.ts#L192-L207",
+            "Discussion #29456",
+            "Discussion #24241",
+            "PR #18454 (Theo)",
+            "@Luca_Hagenmayer Gönderisi",
+            "Kanıt #24 Dizisi"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-sqlite-113gb-fanout-and-silence": {
+      "from": "@kdy1dev (Issue #44029) ve @jullerino",
+      "to": "@theo (X'te 41 saatlik sessizlik)",
+      "dateDisplay": "27 Kasım 2026",
+      "subject": "113 GiB'lık SQLite \"massive fan out\"u ve Theo'nun X'teki 41 saatlik sessizliği",
+      "snippet": "SWC'nin yaratıcısı @kdy1dev, 5.65 milyon yinelenen satır içeren 113 GiB'lık bir statev2.sqlite dosyasına (#44029) çarptı; @jullerino \"massive fan out\"u işaret ederken @theo 41 saat boyunca sustu.",
+      "messages": [
+        {
+          "sender": "@kdy1dev (SWC/oxc'nin yaratıcısı) ve Julius (@jullerino)",
+          "handle": "Issue #44029 · @jullerino (2126207815052325020)",
+          "to": "pingdotgg/t3code",
+          "time": "27 Kasım 2026, 01:18 – 07:27 UTC",
+          "body": "27 Kasım 2026'da SWC/oxc'nin yaratıcısı `@kdy1dev`, **`113 GiB` boyutunda bir `statev2.sqlite`** dosyasını belgeledi (Settings Maintenance'ta `0 B recovered`; `t3 doctor --fix` sonrası ancak `56.68 GiB`'a iniyor) ve 5,199 thread'e yayılmış **`5,654,888`** yinelenen `provider-session.updated` satırını (`15.3 GB`) gösteren `Issue #44029`'u açtı.\n\n`06:53:40 UTC`'de `@jullerino` çoğaltma hatasını kabul etti:\n\n> \"Kısmen, ama bizim tarafımızda öyle bir massive fan out'a yol açan küçük bir hata var ki budama (pruning) yetişemiyor\"\n\n- **X'te 41 saatlik sessizlik:** `2026-11-25T23:44:13Z` (`2125737351901303200`) sonrasında `@theo` **yaklaşık 41 saat boyunca tek bir özgün tweet ya da teknik yanıt atmadı**; yalnızca övgü niteliğindeki paylaşımları ve Mobile 2.4'ü repost'ladı (`2126054989768675651`, `2126062066809307637`), `@dmfigol`, `@sk1gl4a` ve `@DavidOndrej1`'e ise hiç yanıt vermedi.",
+          "attachments": [
+            "@jullerino'nun 'massive fan out' itirafı ve @kdy1dev'in Issue #44029'u"
+          ],
+          "links": [
+            "Issue #44029",
+            "@jullerino Yanıtı",
+            "@theo 25 Kasım Pazarlama Özrü"
           ]
         }
       ]
@@ -1552,6 +1883,94 @@
     "EV-109": {
       "title": "PR #39483 sessiz path-traversal düzeltmesi (0 advisory)",
       "caption": "20 Kasım'da, `ca81b7b9` aralığında ServerSecretStore path traversal açığını sessizce yamaladı; GitHub Security Advisories sayısı 0'da kaldı."
+    },
+    "EV-110": {
+      "title": "@dmfigol 639K görüntülenen AWS İK thread'i",
+      "caption": "Eski AWS mühendisi @dmfigol'in 26 Kasım gönderisi; Ocak 2025'teki CheckPoint/Palo Alto anlaşmazlığını ve geri çekilen AWS İK şikayetini ayrıntılandırıyor."
+    },
+    "EV-111": {
+      "title": "@theo DM'leri: \"Fear is a good incentive\" (Korku iyi bir teşvik)",
+      "caption": "@dmfigol'in paylaştığı, 29 Ocak 2025 tarihli arşivlenmiş DM ekran görüntüleri; \"Fear is a good incentive\" (Korku iyi bir teşvik) ve \"İngilizce ana diliniz mi?\" sözlerini alıntılıyor."
+    },
+    "EV-112": {
+      "title": "PR #43026 Google hesap işaretleme itirafı",
+      "caption": "Google'ın dahili API'leri çağırmanın hesapları işaretleyebileceği uyarısından sonra `antigravityUsageLimits.ts` dosyasını silen, 25 Kasım'da merge edilmiş PR."
+    },
+    "EV-113": {
+      "title": "PR #43087 Zed izin listesi taklidinin kaldırılması",
+      "caption": "26 Kasım'da merge edilen PR; T3 Code'un Claude/GPT modellerine erişmek için Antigravity ACP el sıkışmalarında `clientInfo: { name: 'zed' }` gönderdiğini kabul ediyor."
+    },
+    "EV-114": {
+      "title": "@theo 25 Kasım: \"Final statement.\" (Son açıklama.)",
+      "caption": "Dokuz maddelik \"T3 Code has never:\" (T3 Code hiçbir zaman...) reddiyesi; yalnızca temel token ve prompt sayılarının izlendiğini iddia ediyor."
+    },
+    "EV-115": {
+      "title": "@sk1gl4a 243 Claude oturumu ve GDPR başvurusu",
+      "caption": "Theo'nun \"Son açıklama\"sından 16 dakika sonra paylaşılan kayıt: 243 istenmeyen Claude okuması, 3 makinelik hash ve LfD şikayeti."
+    },
+    "EV-116": {
+      "title": "T3 Connect Stripe ödeme sayfasında %19 Alman KDV'si",
+      "caption": "Stripe ödeme sayfası, T3 Connect limitlerini yükseltmek için Almanya'da yerleşik kullanıcılardan aylık €9.03 (KDV %19 dahil) alıyor; bu da GDPR Madde 3(2) kapsamını tesis ediyor."
+    },
+    "EV-117": {
+      "title": "t3.chat sıfır tıklamalı FingerprintJS yakalaması",
+      "caption": "t3.chat gizlilik politikası sayfasında oturum açmadan, sıfır tıklamayla yapılan kayıt: FingerprintJS (`/api/identity`), PostHog, Plausible ve hCaptcha yükleniyor."
+    },
+    "EV-118": {
+      "title": "PR #43948 istenmeyen ajan taraması itirafı",
+      "caption": "Bakımcı PR'ı; T3 Code'un diskteki diğer ajanların dosyalarını, anahtarlarını ve oturum geçmişini sormadan okuduğunu açıkça kabul ediyor."
+    },
+    "EV-119": {
+      "title": "PR #43889 kapatıldı: \"nvm easier to do in slophouse\"",
+      "caption": "Connect analitiğindeki kimlik eşleştirmeyi herkese açık istemci kodundan kapalı kaynaklı slophouse arka ucuna taşıyan PR kapatıldı."
+    },
+    "EV-120": {
+      "title": "ClaudeAdapterV2.ts#L1629-L1647 susturulmuş uyarı",
+      "caption": "`withoutClaudeCanUseToolShadowedWarning` içinde `process.emitWarning` monkey-patch'lenerek Anthropic'in onay gölgeleme uyarısı susturuluyor."
+    },
+    "EV-121": {
+      "title": "ServerBrowser.ts#L1236-L1247 masaüstünde izolasyon eksikliği",
+      "caption": "`isolatedContext: true` yalnızca `desktop === null` iken ayarlanıyor; Desktop Electron, içe aktarılan 11 tarayıcının çerezleriyle izole edilmeden kalıyor."
+    },
+    "EV-122": {
+      "title": "ServerBrowser.ts#L1723-L1749 uploadFiles kontrolü",
+      "caption": "Ana makinedeki `uploadFiles` yardımcısı yalnızca `NodePath.isAbsolute(path)` doğrulaması yapıyor; çalışma alanı sınırı ya da onay istemi yok."
+    },
+    "EV-123": {
+      "title": "promptLinks.ts#L192-L207 herkese açık prompt sorgu URL'leri",
+      "caption": "`buildNewThreadLink`, tam prompt'ları (8.000 karaktere kadar) ve repo adlarını `https://app.t3.codes/new?prompt=...` URL'lerine kodluyor."
+    },
+    "EV-124": {
+      "title": "Discussion #29456, 4 dk 39 sn'de kilitlendi",
+      "caption": "Düz metin `t3-citation://` alıntı bağlantılarına dair gizlilik hatası Issue #29449, 4 dakika 39 saniye içinde kilitlenip Ideas Discussion #29456'ya taşındı; 0 yanıt."
+    },
+    "EV-125": {
+      "title": "@theo benchmark fonu teklifini itiraf ediyor",
+      "caption": "18 Ekim tarihli tweet; Theo'nun T3 Code'un düşük skoru üzerine @zqkrq ile iletişime geçtiğini ve bir benchmark fonlamayı teklif ettiğini kamuya doğruluyor."
+    },
+    "EV-126": {
+      "title": "@DavidOndrej1 18 Ekim benchmark gönderisi",
+      "caption": "v1/v2 benchmark sıralaması üzerine 236K görüntülenen suçlama ve yanında Community Note."
+    },
+    "EV-127": {
+      "title": "T3 Code sponsor bandı (WorkOS, Blacksmith, Browserbase, CodeRabbit)",
+      "caption": "26 Kasım'da @DavidOndrej1'in @dmfigol'in thread'inin altına koyduğu sponsor listesi."
+    },
+    "EV-128": {
+      "title": "@ZryMiller 25 araçlık OSS telemetri denetimi",
+      "caption": "25 açık kaynak AI aracını karşılaştıran 284K görüntülenen bağımsız skor kartı (3 A kademesi, T3 Code F -> D, Orca tek DO_NOT_TRACK geçen)."
+    },
+    "EV-129": {
+      "title": "Issue #4123, @pingdotgg organizasyonu tarafından kilitlendi",
+      "caption": "Telemetri şikayeti @t3dotgg tarafından iki kez kapatıldı ve 24 Kasım'daki viral zirvede @pingdotgg org hesabı tarafından kilitlendi."
+    },
+    "EV-130": {
+      "title": "hazae41/glacier#1 Ekim 2022 yorumu",
+      "caption": "2022'de hâlâ duran yorum: @t3dotgg, bağımsız bir OSS projesinin ilk issue'suna \"sadly the maintainer is just a dick :(\" (\"maalesef bakımcı tam bir pislik :(\") yazmış."
+    },
+    "EV-131": {
+      "title": "113 GiB SQLite \"Massive Fan Out\" (#44029)",
+      "caption": "@jullerino, SWC'nin yaratıcısı @kdy1dev'in Issue #44029'da bildirdiği 5.65M yinelenen provider-session.updated satırını kabul ediyor."
     }
   }
 }

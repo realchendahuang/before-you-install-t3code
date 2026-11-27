@@ -2,100 +2,116 @@
   "lang": "vi",
   "items": {
     "sins-sin-01-bigotry-qi": {
-      "title": "Sin 1 · 歧 · MIT cho tôi, không cho ai",
-      "note": "Đe dọa ban GitHub 11 phút sau khi có bản fork MIT miễn phí. Mười một giờ sau, lab Mỹ copy MIT? Hoàn toàn ổn."
+      "title": "Tội 1 · 歧 · MIT cho ta, không cho ngươi",
+      "note": "Dọa ban GitHub 11 phút sau khi có bản fork MIT miễn phí. Mười một tiếng sau, lab Mỹ copy MIT? Hoàn toàn ổn."
     },
     "sins-sin-02-deceit-qi": {
-      "title": "Sin 2 · 欺 · Dấu chấm hết chẳng nghĩa lý gì",
-      "note": "Homepage ghi 'không telemetry, chấm hết.' PostHog bật mặc định, file đăng nhập của tool khác thì bị hash."
+      "title": "Tội 2 · 欺 · Dấu chấm hết chẳng nghĩa lý gì",
+      "note": "Trang chủ ghi 'không telemetry, hết.' PostHog bật mặc định, file đăng nhập của tool khác thì bị băm."
     },
     "sins-sin-03-gluttony-tun": {
-      "title": "Sin 3 · 吞 · 41.6 GB của thứ \"đã xóa\"",
-      "note": "'Xóa vĩnh viễn' để lại chat trong database 41.6 GB. Một job nền liệt kê tiến trình đang chạy mỗi 5 giây."
+      "title": "Tội 3 · 吞 · 41,6 GB của thứ \"đã xóa\"",
+      "note": "'Xóa vĩnh viễn' để lại chat trong database 41,6 GB. Một job nền liệt kê tiến trình đang chạy mỗi 5 giây."
     },
     "sins-sin-04-sloth-dai": {
-      "title": "Sin 4 · 怠 · 52 ngày vs 21 giờ",
-      "note": "Bug git push --force nằm mở hơn 52 ngày. Xóa bộ lọc privacy để nuôi leaderboard thì mất 21 giờ."
+      "title": "Tội 4 · 怠 · 52 ngày vs 21 giờ",
+      "note": "Bug git push --force treo mở 52+ ngày. Xóa một bộ lọc quyền riêng tư để nuôi leaderboard thì mất 21 giờ."
     },
     "sins-sin-05-forgery-wei": {
-      "title": "Sin 5 · 伪 · $20, bay màu trong 3 phút",
-      "note": "FAQ hứa không có rủi ro bị ban. Code giả header nội bộ Google bằng key trích xuất; tài khoản $20 chết trong 3 phút."
+      "title": "Tội 5 · 伪 · $20, bị ban trong 3 phút",
+      "note": "FAQ hứa không có rủi ro ban. Code giả header nội bộ Google bằng key trích xuất; tài khoản $20 chết trong 3 phút."
     },
     "sins-sin-06-exposure-luo": {
-      "title": "Sin 6 · 裸 · Relay đọc luôn terminal của bạn",
-      "note": "T3 Connect giải mã TLS trên máy của họ. Không E2E, nên traffic terminal của bạn đi qua relay của họ dưới dạng plaintext."
+      "title": "Tội 6 · 裸 · Relay đọc terminal của bạn",
+      "note": "T3 Connect kết thúc TLS ngay trên máy nó. Không E2E, nên traffic terminal của bạn băng qua relay của họ dưới dạng plaintext."
     },
     "sins-sin-07-envy-du": {
-      "title": "Sin 7 · 妒 · Đầu tư, chế giễu, rồi cạnh tranh",
-      "note": "Đầu tư vào Vibe Kanban và Daytona, chế giễu cái chết của Vibe Kanban, rồi chào bán cloud sandbox trả phí để dìm Daytona."
+      "title": "Tội 7 · 妒 · Đầu tư, chế giễu, cạnh tranh",
+      "note": "Đầu tư vào Vibe Kanban và Daytona, chế giễu cái chết của Vibe Kanban, rồi chào bán cloud sandbox trả phí để hạ giá Daytona."
     },
     "sins-sin-08-blindness-mang": {
-      "title": "Sin 8 · 盲 · Docs mâu thuẫn với lời khoe",
-      "note": "Nói Managed Policy doanh nghiệp tắt hết telemetry. Docs của chính T3 Code liệt kê bốn chỗ dữ liệu vẫn rò ra."
+      "title": "Tội 8 · 盲 · Docs mâu thuẫn với lời khoe",
+      "note": "Bảo Managed Policy doanh nghiệp tắt sạch telemetry. Docs của chính T3 Code liệt kê bốn chỗ dữ liệu vẫn rò ra."
     },
     "sins-sin-09-greed-tan": {
-      "title": "Sin 9 · 贪 · 31.7T token mỗi ngày",
-      "note": "Tracking bật mặc định nuôi radar trực tiếp 31,7 nghìn tỷ token mỗi ngày, dùng để pitch VC và lấy hơn $300k credit API."
+      "title": "Tội 9 · 贪 · 31,7T token mỗi ngày",
+      "note": "Tracking bật mặc định nuôi radar trực tiếp 31,7 nghìn tỷ token/ngày, dùng để pitch VC và giành hơn $300k credit API."
     },
     "sins-sin-10-arrogance-kuang": {
-      "title": "Sin 10 · 狂 · Merge kiểu YOLO, phép lịch sự bằng không",
-      "note": "Khoe 500 commit một ngày và 'merge kiểu yolo', rồi gọi một user trong Issue #33639 là 'đồ vô ơn'."
+      "title": "Tội 10 · 狂 · Merge kiểu YOLO, zero phép tắc",
+      "note": "Khoe 500 commit một ngày và 'merge yolo', rồi gọi một user trong Issue #33639 là 'đồ vô ơn khốn nạn'."
     },
     "sins-sin-11-plunder-qie": {
-      "title": "Sin 11 · 窃 · 'Tôi lấy cái này', 30 giây",
-      "note": "Trả lời 'Okay, tôi lấy cái này' với fork của dev khác, rồi 30 giây sau bảo @bot copy code của cô ấy vào T3 Code."
+      "title": "Tội 11 · 窃 · 'Tôi lấy cái này', 30 giây",
+      "note": "Trả lời 'Ok tôi lấy cái này' vào fork của dev khác, rồi 30 giây sau bảo @bot copy code của cô ấy vào T3 Code."
     },
     "sins-sin-12-mendacity-huang": {
-      "title": "Sin 12 · 谎 · Bị vả lại sau hai giờ",
-      "note": "Bài đăng buổi sáng: chưa bao giờ log file path, opt-out luôn hoạt động. Hai giờ sau, chính các patch GDPR khẩn của anh ta nói ngược lại."
+      "title": "Tội 12 · 谎 · Đáp trả sau hai tiếng",
+      "note": "Bài đăng buổi sáng: chưa từng log đường dẫn file, opt-out luôn hoạt động. Hai tiếng sau, chính các patch GDPR khẩn của anh ta nói ngược lại."
     },
     "sins-sin-13-concealment-man": {
-      "title": "Sin 13 · 瞒 · Security Advisory: con số không",
-      "note": "Lỗ hổng bảo mật nghiêm trọng được vá lén trong các pull request thường. GitHub Security Advisory công bố: không cái nào."
+      "title": "Tội 13 · 瞒 · Security Advisory: con số 0",
+      "note": "Lỗ hổng bảo mật nghiêm trọng được vá lén trong các pull request thường. GitHub Security Advisory công bố: zero."
     },
     "sins-sin-14-servility-chan": {
-      "title": "Sin 14 · 谄 · 0% với sếp lớn, 14,4% với bạn",
-      "note": "1.151 bài liên tiếp: 0% chửi 20 sếp Big Tech, 8% với dev thường, 14,4% trong lúc bùng nổ vụ fork Trung Quốc."
+      "title": "Tội 14 · 谄 · 0% cho sếp lớn, 14,4% cho bạn",
+      "note": "1.151 bài liên tiếp: 0% chửi 20 sếp Big Tech, 8% chửi dev thường, 14,4% trong vụ meltdown fork Trung Quốc."
     },
     "sins-sin-15-fraud-zha": {
-      "title": "Sin 15 · 诈 · Không có trademark nào, chỉ một TRADEMARK.md",
-      "note": "Dọa ban GitHub vì 'xâm phạm trademark' trong khi chẳng có trademark Mỹ nào. TRADEMARK.md xuất hiện 17 giờ sau."
+      "title": "Tội 15 · 诈 · Zero nhãn hiệu, một file TRADEMARK.md",
+      "note": "Dọa ban GitHub vì 'xâm phạm nhãn hiệu' trong khi không giữ nhãn hiệu Mỹ nào. TRADEMARK.md xuất hiện 17 giờ sau."
     },
     "sins-sin-16-recidivism-guan": {
-      "title": "Sin 16 · 惯 · Cùng một bài, ba năm",
-      "note": "2024: quấy rối kênh dev Ấn Độ. 2025: chiêu bounty FFmpeg $20k. 2026: tech Twitter Trung Quốc là cái hố rác. Năm nào cũng vậy."
+      "title": "Tội 16 · 惯 · Cùng một bài, ba năm",
+      "note": "2024: kênh dev Ấn Độ bị quấy. 2025: chiêu bounty FFmpeg $20k. 2026: tech Twitter Trung Quốc là cống rãnh. Năm nào cũng vậy."
     },
     "sins-sin-17-hypocrisy-jiao": {
-      "title": "Sin 17 · 矫 · Giảng ToS, chia sẻ Gist proxy",
+      "title": "Tội 17 · 矫 · Giảng đạo ToS, Gist proxy",
       "note": "Lên lớp về ToS trong khi chia sẻ Gist proxy 10 tài khoản để né giới hạn API, và nhét sponsor YouTube vào cloud relay."
     },
     "sins-sin-18-vanity-xu": {
-      "title": "Sin 18 · 虚 · Star toàn fake, trừ của tôi",
-      "note": "Tháng 4: star chỉ để lòe VC. Tháng 11: popup idle 30 giây dùng credential local đẩy 30k star lên 77k."
+      "title": "Tội 18 · 虚 · Star toàn fake, trừ của tôi",
+      "note": "Tháng 4: star sinh ra để lừa VC. Tháng 11: popup idle 30 giây dùng credential cục bộ đẩy 30k star lên 77k."
     },
     "sins-sin-19-breach-lou": {
-      "title": "Sin 19 · 漏 · Năm lỗ hổng vẫn mở",
-      "note": "Sau 259 commit nữa, vẫn còn năm lỗ: cookie LAN plaintext 30 ngày, Bearer token không thu hồi được, SSH agent phơi bày."
+      "title": "Tội 19 · 漏 · Năm lỗ vẫn còn mở",
+      "note": "Sau thêm 259 commit, vẫn còn năm lỗ: cookie LAN plaintext sống 30 ngày, Bearer token không thu hồi được, SSH agent phơi ra ngoài."
     },
     "sins-sin-20-coercion-xie": {
-      "title": "Sin 20 · 胁 · 89 view, một đơn kiện HR",
-      "note": "Bài đăng 89 view, 0 like của kỹ sư AWS @dmfigol nhận DM lúc nửa đêm: 'Sợ hãi là động lực tốt', rồi một đơn khiếu nại lên HR AWS."
+      "title": "Tội 20 · 胁 · 89 view, một đơn kiện HR",
+      "note": "Bài đăng 89 view, 0 like của kỹ sư AWS @dmfigol nhận DM lúc nửa đêm: 'Nỗi sợ là động lực tốt', rồi một đơn khiếu nại lên HR AWS."
     },
     "sins-sin-21-impostor-mao": {
-      "title": "Sin 21 · 冒 · Giả làm Zed",
-      "note": "PR #43026/#43087 thừa nhận cảnh báo của Google và việc T3 giả clientInfo thành 'zed'. v0.1.13 chôn cả hai vào '+380 fixes.'"
+      "title": "Tội 21 · 冒 · Giả làm Zed",
+      "note": "PR #43026/#43087 thừa nhận cảnh báo của Google và việc T3 giả clientInfo thành 'zed'. v0.1.13 chôn cả hai trong '+380 fixes'."
     },
     "sins-sin-22-evasion-dun": {
-      "title": "Sin 22 · 遁 · 16 phút sau, closed-source",
-      "note": "'Tuyên bố cuối' +16 phút: quét 243 chat Claude, tính VAT 19%, PR #43889 bị giết với lý do 'dễ hơn ở slophouse.'"
+      "title": "Tội 22 · 遁 · 16 phút sau, closed-source",
+      "note": "'Tuyên bố cuối' +16 phút: quét 243 chat Claude, thu VAT 19%, giết PR #43889 với câu 'dễ hơn trong slophouse'."
     },
     "sins-sin-23-sabotage-po": {
-      "title": "Sin 23 · 破 · Tắt cảnh báo, chia sẻ cookie",
-      "note": "Bịt cảnh báo của Anthropic bằng process.emitWarning, để uploadFiles bỏ qua sandbox của Codex, khiến cookie của 11 trình duyệt không được cô lập."
+      "title": "Tội 23 · 破 · Tắt cảnh báo, chia sẻ cookie",
+      "note": "Bịt cảnh báo của Anthropic bằng process.emitWarning, để uploadFiles né sandbox của Codex, bỏ mặc cookie của 11 trình duyệt không cô lập."
     },
     "sins-sin-24-leak-xie": {
-      "title": "Sin 24 · 泄 · Prompt của bạn nằm trong URL",
-      "note": "Link chia sẻ nhét quote 8.000 ký tự và cả prompt vào URL plaintext. Issue #29449 bị khóa sau 4 phút 39 giây, 0 trả lời, tài liệu bị xóa."
+      "title": "Tội 24 · 泄 · Prompt của bạn nằm trong URL",
+      "note": "Link chia sẻ nhét đoạn trích 8.000 ký tự và cả prompt vào URL plaintext. Issue #29449 bị khóa sau 4 phút 39 giây, 0 phản hồi, doc bị xóa."
+    },
+    "sins-sin-25-patronage-zi": {
+      "title": "Tội 25 · Bảo trợ「资」",
+      "note": "Sau khi T3 Code bị chấm điểm thấp trên một bảng xếp hạng công khai, Theo nhắn riêng cho tác giả và ngỏ ý tài trợ benchmark của anh ta ('nên tôi đề nghị tài trợ'). Bản kế tiếp gọi T3 Code là lựa chọn hằng ngày của mình, kèm theo t3.ademark.dev."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "Tội 26 · Kém cỏi「劣」",
+      "note": "Bét bảng với điểm 'F' (chỉ bò lên được 'D' sau các bản vá khẩn) trong đợt audit 25 công cụ của @ZryMiller, trong khi Aether và Hermes toàn điểm 'A'. Vẫn tạo anonymous-id khi người dùng opt-out và bỏ sót <ClerkProvider telemetry={false}>."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "Tội 27 · Phong tỏa「闭」",
+      "note": "Đáp lại 1,401 người đóng góp MIT không lương bằng 'Lời khuyên: Đừng', khóa Issue #4123 qua @pingdotgg ở mốc 700K lượt xem, và lặng lẽ vá thêm 4 lỗ hổng trong v0.1.13 với 0 Security Advisory."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "Tội 28 · Phình「胀」",
+      "note": "Một bug fan-out làm ngập statev2.sqlite của tác giả SWC @kdy1dev bằng 5,654,888 dòng trùng lặp (113 GiB; UI giải phóng 0 B; 56.68 GiB sau doctor), trong khi Theo im thin thít 41 tiếng chỉ để retweet lời khen."
     },
     "blended-00-drake": {
       "title": "Drake: Tiêu chuẩn kép 11 giờ",
@@ -245,6 +261,10 @@
       "title": "Changelog: GBK thì có, ban thì không",
       "note": "v0.1.13: 401 thay đổi, 7 điểm nhấn về file GBK. Cảnh báo ban của Google và màn giả danh Zed nằm trong '+380 mục khác.'"
     },
+    "blended-21c-always-has-been-zed": {
+      "title": "Vẫn Luôn Là Vậy: clientInfo { name: 'zed' }",
+      "note": "PR #43087 thừa nhận cú bắt tay ACP của Antigravity gửi clientInfo: { name: 'zed', version: '0.0.0' }, rồi v0.1.13 nhét luôn bản vá vào mục '+380 more bug fixes.'"
+    },
     "blended-22a-clown-final-statement": {
       "title": "Hề trong đúng 16 phút",
       "note": "'T3 không bao giờ đọc file của bạn.' 16 phút sau @sk1gl4a đếm được 243 cuộc chat Claude bị quét. PR #43948 xác nhận."
@@ -269,6 +289,10 @@
       "title": "Flex Tape dán lên cảnh báo bảo mật",
       "note": "SDK của Anthropic cảnh báo về wildcard vượt qua phê duyệt. T3 monkey-patch process.emitWarning và viết unit test cho cái mute đó."
     },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "Không Sao Cả (Cookie của 11 Trình Duyệt trên Desktop)",
+      "note": "ServerBrowser.ts chỉ tách tab khi desktop === null (Linux headless), để mặc toàn bộ cookie của 11 trình duyệt đã import, cảnh báo Anthropic bị tắt tiếng, và đường dẫn upload ~/.ssh/id_rsa lộ thiên trên Desktop."
+    },
     "blended-24a-anakin-padme-url": {
       "title": "8.000 ký tự trong URL, đúng không?",
       "note": "PR #18454 nhét prompt 8.000 ký tự và tên repo riêng tư vào app.t3.codes/new?prompt=, và bản preview ghi log hết."
@@ -276,6 +300,22 @@
     "blended-24b-disaster-girl-4m39s": {
       "title": "Chốt trong 4 phút 39 giây, rồi xóa",
       "note": "Issue #29449: URL trích dẫn rò rỉ 32 ký tự văn bản không được chọn. Chốt trong 4 phút 39 giây, đẩy lên mobile, xóa tài liệu."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "Màn Lột Mặt Scooby: 'Nên Tôi Đề Nghị Tài Trợ'",
+      "note": "Sau khi T3 Code bị chấm thấp trên ADE Tier List v1, Theo công khai thừa nhận đã nhắn riêng tác giả và ngỏ ý tài trợ benchmark — ngay sau đó là 'T3 Code là lựa chọn hằng ngày của tôi' và t3.ademark.dev."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "Bục Champagne: Nâng hạng từ F lên D",
+      "note": "Trong đợt audit telemetry 25 công cụ của @ZryMiller, Aether và Hermes toàn điểm A, còn T3 Code bản gốc bét bảng với F — chỉ nhích lên D sau các bản vá khẩn."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "Cách nhau 4 năm: glacier#1 (2022) đến #33639 (2026)",
+      "note": "Tháng 10/2022, @t3dotgg nhảy vào hazae41/glacier#1 buông câu maintainer 'chỉ là thằng khốn :('; bốn năm sau, anh ta gọi một người dùng là 'đồ vô ơn khốn nạn' và khóa Issue #4123 qua @pingdotgg."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "Im lặng 41 tiếng hay rút 25 lá",
+      "note": "Thay vì trả lời thread AWS HR 639K lượt xem, 243 đoạn chat Claude bị quét, hay 113 GiB SQLite phình to, Theo im thin thít 41 tiếng chỉ để đăng lại lời khen Mobile 2.4."
     },
     "stickers-01_copium_no_telemetry": {
       "title": "Copium 'Không telemetry'",
@@ -413,6 +453,14 @@
       "title": "Thành ngữ #06 · 掩耳盗铃: Advisory: 0",
       "note": "Xóa \"không telemetry\" khỏi README và vá lỗ hổng nghiêm trọng bằng những commit lặng lẽ. Advisory vẫn là 0."
     },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "Thành ngữ Trung Hoa #07: 金蝉脱壳 (Kim thiền thoát xác)",
+      "note": "Bỏ lại một cái vỏ MIT mã nguồn mở rỗng ruột, trong khi đóng PR #43889 ('thôi, làm bên slophouse dễ hơn') và dời việc theo dõi danh tính vào backend mã đóng."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "Thành ngữ Trung Hoa #08: 杀鸡儆猴 (Giết gà dọa khỉ)",
+      "note": "Biến một tweet 89 lượt xem, 0 like của kỹ sư AWS @dmfigol thành loạt DM lúc nửa đêm ('Sợ hãi là động lực tốt'), những cú châm chọc bằng tiếng Anh, và một đơn khiếu nại chính thức lên HR của AWS."
+    },
     "creative-packaging-01-t3code-iceberg": {
       "title": "Tảng băng trôi T3 Code",
       "note": "Bề mặt: dòng tweet \"Temu3 Code\". Bên dưới: 41,6 GB xóa giả, 2,2 triệu IP/giờ ghi log, 0 advisory, một cú nổ lúc 4 giờ sáng."
@@ -428,6 +476,10 @@
     "creative-packaging-04-mit-license-coupon": {
       "title": "Phiếu giảm giá: Giảm 100%, không áp dụng cho Trung Quốc",
       "note": "Phiếu kèm báo Chủ nhật: \"Ăn cắp code của chúng tôi (hợp pháp)!\". Chữ nhỏ vô hiệu hóa nó với các bản fork Trung Quốc."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "Học bạ: Audit telemetry 35 công cụ (F → D)",
+      "note": "Học bạ chấm kiểu trường học tỉnh bơ, rút từ đợt audit 35 công cụ của @ZryMiller: Aether và Hermes toàn điểm A, Orca được C nhờ tôn trọng DO_NOT_TRACK, còn T3 Code ngồi ở F → D."
     },
     "creative-gaming-01-sekiro-google-ban": {
       "title": "Sekiro: TÀI KHOẢN BỊ BAN (3:00)",
@@ -457,6 +509,18 @@
       "title": "Thành tựu: 'Tăng trưởng 100% tự nhiên' (129 watcher)",
       "note": "Ngồi không 30 giây là popup auto-star bật lên. Star: 77.000. Watcher: 129."
     },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Thành tựu Steam: 'Chuyển sang Ideas trong 4m 39s'",
+      "note": "Thành tựu Steam hiếm: khóa Issue #29449 trong 4m 39s với 0 phản hồi, sau khi URL trích dẫn dạng plaintext làm rò rỉ prompt dài 8,000 ký tự, đưa lên mobile, rồi xóa luôn design doc."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Thành tựu Steam: 'Làm bên slophouse dễ hơn'",
+      "note": "Thành tựu Steam hiếm: bị bắt quả tang quét 243 đoạn chat Claude cục bộ chỉ 16 phút sau 'tuyên bố cuối cùng', rồi đóng PR #43889 để dời việc tracking vào slophouse mã đóng."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Thành tựu Steam: '81K sao, 0 Advisory'",
+      "note": "Thành tựu Steam hiếm: rọi đèn vào mấy file văn bản GBK trong v0.1.13 (401 thay đổi) trong khi chôn cảnh báo khóa tài khoản của Google và màn giả danh Zed vào mục '+380 more bug fixes.'"
+    },
     "creative-pokemon-01-evo-star-farmer": {
       "title": "Chuỗi tiến hóa #01: Nông dân nuôi star",
       "note": "Từng chế giễu star GitHub là chiêu trò của VC. Giờ phát popup 30 giây ngồi không và ngồi trên 77.000 star, 129 watcher."
@@ -478,7 +542,7 @@
       "note": "Thả cái này mỗi khi câu slogan bị xóa sống lại. Cứ để git diff nói."
     },
     "creative-reactions-02-reply-uspto-zero": {
-      "title": "Biên lai: 0 nhãn hiệu USPTO",
+      "title": "Bằng chứng: 0 nhãn hiệu USPTO",
       "note": "Dành cho mọi cáo buộc \"xâm phạm nhãn hiệu\": T3 Tools Inc. có đúng 0 đăng ký USPTO vào thời điểm đe dọa."
     },
     "creative-reactions-03-reply-1151-scoreboard": {
@@ -500,6 +564,10 @@
     "creative-reactions-07-gif-auto-star-counter": {
       "title": "GIF: Bộ đếm auto-star 30 giây",
       "note": "Ngồi không 30 giây, popup bắn PUT user/starred. Star leo lên 77.000, watcher đứng im ở 129."
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "Bằng chứng trả lời: Creator 1M+ đấu với tweet 89 lượt xem",
+      "note": "Bằng chứng nhanh về cú trả lời cho thread tháng 1/2025 của @dmfigol: một tweet 89 lượt xem, 0 like đã kích hoạt loạt DM nửa đêm ('Sợ hãi là động lực tốt'), những cú châm chọc ngôn ngữ, và một đơn khiếu nại lên HR của AWS."
     },
     "story-en-ep01": {
       "title": "Tập 1 · Cách nhau 11 tiếng (bản tiếng Anh)",

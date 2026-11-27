@@ -1,12 +1,12 @@
 {
   "cdnBase": "https://cdn.temu3code.com",
   "bucket": "temu3-media",
-  "total": 150,
+  "total": 167,
   "counts": {
-    "sins": 24,
-    "blended": 45,
+    "sins": 28,
+    "blended": 51,
     "stickers": 28,
-    "creative": 28,
+    "creative": 35,
     "story": 16,
     "classic": 5,
     "comics": 4
@@ -629,7 +629,7 @@
       "num": 6,
       "id": "ep06",
       "exhibit": "20",
-      "thread": "2026-11-23-origin-temu3-threat",
+      "thread": "2026-11-26-dmfigol-aws-hr-coercion",
       "kickerEn": "EPISODE 06 · MIDNIGHT DMs",
       "kickerZh": "第 6 话 · 89 浏览与恐惧激励",
       "titleEn": "89 Views & 'Fear Is a Good Incentive'",
@@ -745,14 +745,13 @@
           "height": 1536,
           "bytes": 321374
         }
-      },
-      "sourceUrl": "https://x.com/realchendahuang/status/2126204776467853346"
+      }
     },
     {
       "num": 7,
       "id": "ep07",
       "exhibit": "21",
-      "thread": "2026-11-22-antigravity-spoof-3min-ban",
+      "thread": "2026-11-26-google-antigravity-zed-spoof",
       "kickerEn": "EPISODE 07 · IMPERSONATING ZED",
       "kickerZh": "第 7 话 · 假冒 Zed 与 11 款浏览器",
       "titleEn": "Hi, I'm Zed (+ 11 Browsers)",
@@ -868,14 +867,13 @@
           "height": 1536,
           "bytes": 342040
         }
-      },
-      "sourceUrl": "https://x.com/realchendahuang/status/2126228292231659944"
+      }
     },
     {
       "num": 8,
       "id": "ep08",
       "exhibit": "22",
-      "thread": "2026-11-25-gdpr-overnight-collapse",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
       "kickerEn": "EPISODE 08 · SLOPHOUSE FINALE",
       "kickerZh": "第 8 话 · 遁入闭源泔水屋",
       "titleEn": "'nvm easier to do in slophouse'",
@@ -991,8 +989,7 @@
           "height": 1536,
           "bytes": 319316
         }
-      },
-      "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078"
+      }
     }
   ],
   "podcasts": {
@@ -1401,7 +1398,7 @@
       "id": "sins-sin-20-coercion-xie",
       "series": "sins",
       "exhibit": "20",
-      "thread": "2026-11-23-origin-temu3-threat",
+      "thread": "2026-11-26-dmfigol-aws-hr-coercion",
       "titleEn": "Sin 20 · 胁 · 89 Views, HR Complaint",
       "titleZh": "二十宗罪 · 胁：89 浏览换来 HR 投诉",
       "noteEn": "An 89-view, 0-like post from AWS engineer @dmfigol got midnight DMs: 'Fear is a good incentive,' then an AWS HR complaint.",
@@ -1410,14 +1407,13 @@
       "url": "https://cdn.temu3code.com/memes/sins/sin-20-coercion-xie.webp",
       "width": 853,
       "height": 1280,
-      "bytes": 373596,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126204776467853346"
+      "bytes": 373596
     },
     {
       "id": "sins-sin-21-impostor-mao",
       "series": "sins",
       "exhibit": "21",
-      "thread": "2026-11-22-antigravity-spoof-3min-ban",
+      "thread": "2026-11-26-google-antigravity-zed-spoof",
       "titleEn": "Sin 21 · 冒 · Pretending to Be Zed",
       "titleZh": "二十一宗罪 · 冒：冒充 Zed，藏进 380 项修复",
       "noteEn": "PR #43026/#43087 admit Google's warning and T3 spoofing clientInfo as 'zed'. v0.1.13 buried both in '+380 fixes.'",
@@ -1426,14 +1422,13 @@
       "url": "https://cdn.temu3code.com/memes/sins/sin-21-impostor-mao.webp",
       "width": 853,
       "height": 1280,
-      "bytes": 365072,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126228292231659944"
+      "bytes": 365072
     },
     {
       "id": "sins-sin-22-evasion-dun",
       "series": "sins",
       "exhibit": "22",
-      "thread": "2026-11-25-gdpr-overnight-collapse",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
       "titleEn": "Sin 22 · 遁 · 16 Minutes Later, Closed-Source",
       "titleZh": "二十二宗罪 · 遁：16 分钟打脸，改去闭源后端",
       "noteEn": "'Final statement' +16 min: 243 Claude chats scanned, 19% VAT billed, PR #43889 killed with 'easier in slophouse.'",
@@ -1442,14 +1437,13 @@
       "url": "https://cdn.temu3code.com/memes/sins/sin-22-evasion-dun.webp",
       "width": 853,
       "height": 1280,
-      "bytes": 384156,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078"
+      "bytes": 384156
     },
     {
       "id": "sins-sin-23-sabotage-po",
       "series": "sins",
       "exhibit": "23",
-      "thread": "2026-11-25-ca81b7b9-active-vulns",
+      "thread": "2026-11-27-desktop-browser-sandbox-bypass",
       "titleEn": "Sin 23 · 破 · Mute the Warning, Share the Cookies",
       "titleZh": "二十三宗罪 · 破：静音警告，11 个浏览器全交",
       "noteEn": "Silenced Anthropic's warning via process.emitWarning, let uploadFiles skip Codex's sandbox, left 11 browsers' cookies unisolated.",
@@ -1458,14 +1452,13 @@
       "url": "https://cdn.temu3code.com/memes/sins/sin-23-sabotage-po.webp",
       "width": 853,
       "height": 1280,
-      "bytes": 403308,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126243499142181151"
+      "bytes": 403308
     },
     {
       "id": "sins-sin-24-leak-xie",
       "series": "sins",
       "exhibit": "24",
-      "thread": "2026-11-25-ca81b7b9-active-vulns",
+      "thread": "2026-11-27-plaintext-quote-prompt-urls",
       "titleEn": "Sin 24 · 泄 · Your Prompt in the URL",
       "titleZh": "二十四宗罪 · 泄：正文进 URL，4 分 39 秒锁单",
       "noteEn": "Share links stuffed 8,000-char quotes and full prompts into plaintext URLs. Issue #29449 locked in 4m 39s, 0 replies, doc deleted.",
@@ -1474,8 +1467,67 @@
       "url": "https://cdn.temu3code.com/memes/sins/sin-24-leak-xie.webp",
       "width": 853,
       "height": 1280,
-      "bytes": 395174,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126263438209077355"
+      "bytes": 395174
+    },
+    {
+      "id": "sins-sin-25-patronage-zi",
+      "series": "sins",
+      "exhibit": "25",
+      "thread": "2026-10-18-benchmark-funding-sponsor-pressure",
+      "titleEn": "Sin 25 · Patronage「资」",
+      "titleZh": "二十五宗罪 · 资：榜单排名低就私信联系评测作者，「然后我主动出资赞助」",
+      "noteEn": "After T3 Code scored low on a public tier list, Theo DMed the author and offered to fund his benchmark ('so I offered to fund it'). Next version called T3 Code his daily driver with t3.ademark.dev.",
+      "noteZh": "T3 Code 在公开榜单分数垫底后，Theo 亲自私信评测作者并公开承认主动提出「出资赞助」；下一版榜单直接捧成「主力日用」，还顺带上线了 t3.ademark.dev。",
+      "featured": true,
+      "url": "https://cdn.temu3code.com/memes/sins/sin-25-patronage-zi.webp",
+      "width": 853,
+      "height": 1280,
+      "bytes": 382002
+    },
+    {
+      "id": "sins-sin-26-subpar-lie",
+      "series": "sins",
+      "exhibit": "26",
+      "thread": "2026-11-25-25-tool-telemetry-audit",
+      "titleEn": "Sin 26 · Subpar「劣」",
+      "titleZh": "二十六宗罪 · 劣：25 款开源工具审计倒数第一（F → D），<ClerkProvider> 至今不关遥测",
+      "noteEn": "Scored dead-last 'F' (crawling only to 'D' after emergency patches) in @ZryMiller's 25-tool audit while Aether and Hermes got straight 'A's. Still creates anonymous-id on opt-out and omits <ClerkProvider telemetry={false}>.",
+      "noteZh": "在 @ZryMiller 的 25 款开源 AI 工具遥测审计里原始版本拿倒数第一「F」，连夜打完补丁也只爬到「D」，同期 Aether 和 Hermes 都是全「A」；至今仍在退出后照建匿名 ID，且 <ClerkProvider> 仍没加 telemetry={false}。",
+      "featured": true,
+      "url": "https://cdn.temu3code.com/memes/sins/sin-26-subpar-lie.webp",
+      "width": 853,
+      "height": 1280,
+      "bytes": 384220
+    },
+    {
+      "id": "sins-sin-27-lockdown-bi",
+      "series": "sins",
+      "exhibit": "27",
+      "thread": "2026-11-24-governance-lock-glacier-cla",
+      "titleEn": "Sin 27 · Lockdown「闭」",
+      "titleZh": "二十七宗罪 · 闭：白嫖 1,401 位开源贡献者却写「建议别提 PR」，热搜当晚官号锁死 #4123",
+      "noteEn": "Told 1,401 unpaid MIT contributors 'Advice: Don't,' locked Issue #4123 via @pingdotgg at 700K views, and quietly patched 4 more vulns in v0.1.13 with 0 Security Advisories.",
+      "noteZh": "开源仓库白用 1,401 位社区开发者的 MIT 贡献却在指南里写「建议别提 PR」，热搜飙到 70 万浏览当晚官号 @pingdotgg 亲手锁死 #4123，v0.1.13 又悄悄修掉 4 个安全漏洞且公告栏继续挂 0。",
+      "featured": true,
+      "url": "https://cdn.temu3code.com/memes/sins/sin-27-lockdown-bi.webp",
+      "width": 853,
+      "height": 1280,
+      "bytes": 380892
+    },
+    {
+      "id": "sins-sin-28-bloat-zhang",
+      "series": "sins",
+      "exhibit": "28",
+      "thread": "2026-11-27-sqlite-113gb-fanout-and-silence",
+      "titleEn": "Sin 28 · Bloat「胀」",
+      "titleZh": "二十八宗罪 · 胀：565 万行重复写入把 SQLite 撑爆到 113 GiB，面对实锤沉默 41 小时",
+      "noteEn": "A fan-out bug flooded SWC creator @kdy1dev's statev2.sqlite with 5,654,888 duplicate rows (113 GiB; 0 B freed in UI; 56.68 GiB post-doctor) while Theo went radio silent for 41 hours retweeting praise.",
+      "noteZh": "事件扇出 Bug 把 SWC 作者的 statev2.sqlite 撑爆到 113 GiB、565 万行重复记录（设置页清理释放 0 B，doctor 修完仍剩 56.68 GiB）；面对全球实锤，Theo 连续 41 小时只转发夸赞、一言不发。",
+      "featured": true,
+      "url": "https://cdn.temu3code.com/memes/sins/sin-28-bloat-zhang.webp",
+      "width": 853,
+      "height": 1280,
+      "bytes": 383588
     },
     {
       "id": "blended-00-drake",
@@ -1976,7 +2028,7 @@
       "id": "blended-20a-89views-domino",
       "series": "blended",
       "exhibit": "20",
-      "thread": "2026-11-23-origin-temu3-threat",
+      "thread": "2026-11-26-dmfigol-aws-hr-coercion",
       "titleEn": "89 Views, Then HR",
       "titleZh": "89 浏览吐槽，换来 HR 投诉",
       "noteEn": "An AWS engineer's 89-view, 0-like critique got midnight DMs, English mockery, and a report to AWS HR.",
@@ -1985,14 +2037,13 @@
       "url": "https://cdn.temu3code.com/memes/blended/20a-89views-domino.webp",
       "width": 1280,
       "height": 882,
-      "bytes": 78412,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126204776467853346"
+      "bytes": 78412
     },
     {
       "id": "blended-20b-evil-kermit-fear",
       "series": "blended",
       "exhibit": "20",
-      "thread": "2026-11-23-origin-temu3-threat",
+      "thread": "2026-11-26-dmfigol-aws-hr-coercion",
       "titleEn": "'Fear Is a Good Incentive'",
       "titleZh": "私信原话：恐惧是好的激励",
       "noteEn": "Polite DM suggesting per-customer subdomains got back 'Fear is a good incentive,' then a report to AWS HR.",
@@ -2001,14 +2052,13 @@
       "url": "https://cdn.temu3code.com/memes/blended/20b-evil-kermit-fear.webp",
       "width": 1280,
       "height": 593,
-      "bytes": 45332,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126204776467853346"
+      "bytes": 45332
     },
     {
       "id": "blended-21a-scooby-zed",
       "series": "blended",
       "exhibit": "21",
-      "thread": "2026-11-22-antigravity-spoof-3min-ban",
+      "thread": "2026-11-26-google-antigravity-zed-spoof",
       "titleEn": "Scooby-Doo: It Was 'zed'",
       "titleZh": "撕面具：握手时自称 zed",
       "noteEn": "PR #43087: T3 Code sent clientInfo { name: 'zed' } in Antigravity handshakes to slip past Google's allowlist.",
@@ -2017,14 +2067,13 @@
       "url": "https://cdn.temu3code.com/memes/blended/21a-scooby-zed.webp",
       "width": 960,
       "height": 1280,
-      "bytes": 109156,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126228292231659944"
+      "bytes": 109156
     },
     {
       "id": "blended-21b-two-buttons-v0113",
       "series": "blended",
       "exhibit": "21",
-      "thread": "2026-11-22-antigravity-spoof-3min-ban",
+      "thread": "2026-11-26-google-antigravity-zed-spoof",
       "titleEn": "Changelog: GBK Yes, Bans No",
       "titleZh": "亮点写 GBK，封号警告塞进 380 项",
       "noteEn": "v0.1.13: 401 changes, 7 highlights on GBK files. Google's ban warning and the Zed spoof sat in '+380 more.'",
@@ -2033,14 +2082,28 @@
       "url": "https://cdn.temu3code.com/memes/blended/21b-two-buttons-v0113.webp",
       "width": 845,
       "height": 1280,
-      "bytes": 107554,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126228292231659944"
+      "bytes": 107554
+    },
+    {
+      "id": "blended-21c-always-has-been-zed",
+      "series": "blended",
+      "exhibit": "21",
+      "thread": "2026-11-26-google-antigravity-zed-spoof",
+      "titleEn": "Always Has Been: clientInfo { name: 'zed' }",
+      "titleZh": "太空宇航员：原来一直都在冒充 Zed 连 Google？一直都是",
+      "noteEn": "PR #43087 admitted the Antigravity ACP handshake sent clientInfo: { name: 'zed', version: '0.0.0' }, then v0.1.13 tucked the fix inside '+380 more bug fixes.'",
+      "noteZh": "官方 PR #43087 亲口承认连 Google Antigravity 握手时一直把客户端名报成 zed，v0.1.13 发布日志又把修复藏进「其余 380 项修复」。",
+      "featured": false,
+      "url": "https://cdn.temu3code.com/memes/blended/21c-always-has-been-zed.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 163070
     },
     {
       "id": "blended-22a-clown-final-statement",
       "series": "blended",
       "exhibit": "22",
-      "thread": "2026-11-25-gdpr-overnight-collapse",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
       "titleEn": "Clown in 16 Minutes Flat",
       "titleZh": "最终声明 16 分钟后被拆台",
       "noteEn": "'T3 never reads your files.' 16 minutes later @sk1gl4a counted 243 scanned Claude chats. PR #43948 agreed.",
@@ -2049,14 +2112,13 @@
       "url": "https://cdn.temu3code.com/memes/blended/22a-clown-final-statement.webp",
       "width": 1203,
       "height": 1280,
-      "bytes": 126474,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078"
+      "bytes": 126474
     },
     {
       "id": "blended-22b-drake-germany-vat",
       "series": "blended",
       "exhibit": "22",
-      "thread": "2026-11-25-gdpr-overnight-collapse",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
       "titleEn": "Ban Germany, Charge 19% VAT",
       "titleZh": "嘴上封禁德国，照收 19% 增值税",
       "noteEn": "Threatened to ban Germany over a GDPR complaint. Stripe still billed German buyers 19% German VAT in euros.",
@@ -2065,14 +2127,13 @@
       "url": "https://cdn.temu3code.com/memes/blended/22b-drake-germany-vat.webp",
       "width": 1254,
       "height": 1254,
-      "bytes": 88160,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078"
+      "bytes": 88160
     },
     {
       "id": "blended-22c-roll-safe-slophouse",
       "series": "blended",
       "exhibit": "22",
-      "thread": "2026-11-25-gdpr-overnight-collapse",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
       "titleEn": "'nvm easier to do in slophouse'",
       "titleZh": "怕审计？塞进闭源后端做",
       "noteEn": "PR #43889 linked Connect users via analytics IDs. Closed 10 minutes later: 'nvm easier to do in slophouse.'",
@@ -2081,14 +2142,13 @@
       "url": "https://cdn.temu3code.com/memes/blended/22c-roll-safe-slophouse.webp",
       "width": 1280,
       "height": 720,
-      "bytes": 81182,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078"
+      "bytes": 81182
     },
     {
       "id": "blended-22d-trade-offer-privacy",
       "series": "blended",
       "exhibit": "22",
-      "thread": "2026-11-25-gdpr-overnight-collapse",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
       "titleEn": "Read Our Privacy Policy (Fingerprinted)",
       "titleZh": "打开隐私政策页，0 点击先收指纹",
       "noteEn": "Logged-out open of t3.chat's privacy policy, zero clicks: FingerprintJS POSTed your visitorId to /api/identity.",
@@ -2097,14 +2157,13 @@
       "url": "https://cdn.temu3code.com/memes/blended/22d-trade-offer-privacy.webp",
       "width": 978,
       "height": 1280,
-      "bytes": 123592,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078"
+      "bytes": 123592
     },
     {
       "id": "blended-23a-gru-plan-sandbox",
       "series": "blended",
       "exhibit": "23",
-      "thread": "2026-11-25-ca81b7b9-active-vulns",
+      "thread": "2026-11-27-desktop-browser-sandbox-bypass",
       "titleEn": "Isolation Only on Headless Linux",
       "titleZh": "隔离只管无头 Linux，桌面全裸",
       "noteEn": "ServerBrowser.ts only sets isolatedContext when desktop === null, so 11 imported browsers' cookies stay shared on Desktop.",
@@ -2113,14 +2172,13 @@
       "url": "https://cdn.temu3code.com/memes/blended/23a-gru-plan-sandbox.webp",
       "width": 1280,
       "height": 820,
-      "bytes": 135580,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126243499142181151"
+      "bytes": 135580
     },
     {
       "id": "blended-23b-flex-tape-warning",
       "series": "blended",
       "exhibit": "23",
-      "thread": "2026-11-25-ca81b7b9-active-vulns",
+      "thread": "2026-11-27-desktop-browser-sandbox-bypass",
       "titleEn": "Flex Tape on a Security Warning",
       "titleZh": "不修权限，把 Anthropic 警告静音",
       "noteEn": "Anthropic's SDK warned of a wildcard bypassing approval. T3 monkey-patched process.emitWarning and unit-tested the mute.",
@@ -2129,14 +2187,28 @@
       "url": "https://cdn.temu3code.com/memes/blended/23b-flex-tape-warning.webp",
       "width": 1141,
       "height": 1280,
-      "bytes": 280708,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126243499142181151"
+      "bytes": 280708
+    },
+    {
+      "id": "blended-23c-this-is-fine-cookies",
+      "series": "blended",
+      "exhibit": "23",
+      "thread": "2026-11-27-desktop-browser-sandbox-bypass",
+      "titleEn": "This Is Fine (11 Browsers' Cookies on Desktop)",
+      "titleZh": "火海喝咖啡：只在无界面 Linux 隔离，桌面端 11 款浏览器全裸奔",
+      "noteEn": "ServerBrowser.ts isolates tabs only when desktop === null (headless Linux), leaving all 11 imported browsers' cookies, muted Anthropic warnings, and ~/.ssh/id_rsa upload paths exposed on Desktop.",
+      "noteZh": "源码里的会话隔离只在无头 Linux 服务器开启，真正导入了 11 款浏览器 Cookie 的桌面端却关着隔离，旁边还开着被静音的 Anthropic 警告和任意路径 uploadFiles。",
+      "featured": false,
+      "url": "https://cdn.temu3code.com/memes/blended/23c-this-is-fine-cookies.webp",
+      "width": 1280,
+      "height": 622,
+      "bytes": 249392
     },
     {
       "id": "blended-24a-anakin-padme-url",
       "series": "blended",
       "exhibit": "24",
-      "thread": "2026-11-25-ca81b7b9-active-vulns",
+      "thread": "2026-11-27-plaintext-quote-prompt-urls",
       "titleEn": "8,000 Chars in the URL, Right?",
       "titleZh": "你没把 8000 字 Prompt 塞网址吧",
       "noteEn": "PR #18454 stuffs 8,000-char prompts and private repo names into app.t3.codes/new?prompt=, and previews log them.",
@@ -2145,14 +2217,13 @@
       "url": "https://cdn.temu3code.com/memes/blended/24a-anakin-padme-url.webp",
       "width": 1254,
       "height": 1254,
-      "bytes": 205246,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126263438209077355"
+      "bytes": 205246
     },
     {
       "id": "blended-24b-disaster-girl-4m39s",
       "series": "blended",
       "exhibit": "24",
-      "thread": "2026-11-25-ca81b7b9-active-vulns",
+      "thread": "2026-11-27-plaintext-quote-prompt-urls",
       "titleEn": "Locked in 4m 39s, Then Deleted",
       "titleZh": "隐私 Bug 4 分 39 秒锁单删文档",
       "noteEn": "Issue #29449: quote URLs leaked 32 chars of unselected text. Locked in 4m 39s, shipped to mobile, doc deleted.",
@@ -2161,8 +2232,67 @@
       "url": "https://cdn.temu3code.com/memes/blended/24b-disaster-girl-4m39s.webp",
       "width": 1280,
       "height": 960,
-      "bytes": 143394,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126263438209077355"
+      "bytes": 143394
+    },
+    {
+      "id": "blended-25-scooby-benchmark-fund",
+      "series": "blended",
+      "exhibit": "25",
+      "thread": "2026-10-18-benchmark-funding-sponsor-pressure",
+      "titleEn": "Scooby Reveal: 'So I Offered to Fund It'",
+      "titleZh": "撕开面具：刚拿低分就私信评测作者，下一版变主力日用",
+      "noteEn": "After T3 Code scored low on ADE Tier List v1, Theo publicly admitted DMing the author and offering to fund his benchmark—soon followed by 'T3 Code is my daily driver' and t3.ademark.dev.",
+      "noteZh": "在 ADE 榜单拿了低分后，Theo 公开承认私信评测作者并「主动出资赞助」；下一版榜单直接把他家工具捧成主力日用，还挂出了 t3.ademark.dev。",
+      "featured": true,
+      "url": "https://cdn.temu3code.com/memes/blended/25-scooby-benchmark-fund.webp",
+      "width": 960,
+      "height": 1280,
+      "bytes": 116366
+    },
+    {
+      "id": "blended-26-champagne-podium-d",
+      "series": "blended",
+      "exhibit": "26",
+      "thread": "2026-11-25-25-tool-telemetry-audit",
+      "titleEn": "Champagne Podium: Upgraded from F to D",
+      "titleZh": "铜牌喷香槟：25 款开源工具审计从 F 升到 D，喜极而泣",
+      "noteEn": "In @ZryMiller's 25-tool telemetry audit, Aether and Hermes earned straight A's while baseline T3 Code got a dead-last F—rising only to a D after emergency patches.",
+      "noteZh": "在 @ZryMiller 的 25 款开源工具遥测审计里，Aether 和 Hermes 稳拿全 A，T3 Code 原版垫底拿 F、连夜打补丁也只升到 D，照样原地开香槟庆祝。",
+      "featured": true,
+      "url": "https://cdn.temu3code.com/memes/blended/26-champagne-podium-d.webp",
+      "width": 1280,
+      "height": 853,
+      "bytes": 323866
+    },
+    {
+      "id": "blended-27-glacier-same-picture",
+      "series": "blended",
+      "exhibit": "27",
+      "thread": "2026-11-24-governance-lock-glacier-cla",
+      "titleEn": "4 Years Apart: glacier#1 (2022) to #33639 (2026)",
+      "titleZh": "四年如一日：2022 年骂开源作者是混蛋，2026 年照旧开喷加锁单",
+      "noteEn": "In Oct 2022, @t3dotgg jumped into hazae41/glacier#1 calling the maintainer 'just a dick :('; four years later he called a user an 'ungrateful prick' and locked Issue #4123 via @pingdotgg.",
+      "noteZh": "早在 2022 年他就在别的开源仓库 Issue #1 骂维护者「just a dick :(」，四年后照旧在自家 Issue 骂用户是忘恩负义的混蛋，顺手用官号 @pingdotgg 锁死提问帖 #4123。",
+      "featured": false,
+      "url": "https://cdn.temu3code.com/memes/blended/27-glacier-same-picture.webp",
+      "width": 1170,
+      "height": 1280,
+      "bytes": 165706
+    },
+    {
+      "id": "blended-28-uno-draw25-silence",
+      "series": "blended",
+      "exhibit": "28",
+      "thread": "2026-11-27-sqlite-113gb-fanout-and-silence",
+      "titleEn": "41 Hours of Silence or Draw 25",
+      "titleZh": "UNO 抽 25 张牌：硬扛 41 小时沉默，只转发移动端 2.4 夸奖",
+      "noteEn": "Instead of answering the 639K-view AWS HR thread, 243 scanned Claude chats, or 113 GiB SQLite bloat, Theo stayed radio silent for 41 hours reposting Mobile 2.4 praise.",
+      "noteZh": "面对 63 万浏览的 AWS HR 实锤、243 个 Claude 会话被扫和 113 GiB 数据库膨胀，他硬生生连续沉默 41 小时，时间线只转发移动端 2.4 好评。",
+      "featured": false,
+      "url": "https://cdn.temu3code.com/memes/blended/28-uno-draw25-silence.webp",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 141768
     },
     {
       "id": "stickers-01_copium_no_telemetry",
@@ -2508,7 +2638,7 @@
       "id": "stickers-21_slophouse_nvm",
       "series": "stickers",
       "exhibit": "22",
-      "thread": "2026-11-25-gdpr-overnight-collapse",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
       "titleEn": "Slophouse Trapdoor",
       "titleZh": "PR #43889 进暗门",
       "noteEn": "Closed PR #43889 and moved the work private, trapdoor style.",
@@ -2518,7 +2648,6 @@
       "width": 1254,
       "height": 1254,
       "bytes": 186844,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078",
       "slug": "theo_slophouse",
       "transparent": true
     },
@@ -2526,7 +2655,7 @@
       "id": "stickers-22_impersonate_zed",
       "series": "stickers",
       "exhibit": "21",
-      "thread": "2026-11-22-antigravity-spoof-3min-ban",
+      "thread": "2026-11-26-google-antigravity-zed-spoof",
       "titleEn": "Hi, I'm Zed",
       "titleZh": "纸板面具：我是 Zed",
       "noteEn": "Spoofed clientInfo: { name: 'zed' } to get past Google's check.",
@@ -2536,7 +2665,6 @@
       "width": 1254,
       "height": 1254,
       "bytes": 187488,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126228292231659944",
       "slug": "theo_zed_mask",
       "transparent": true
     },
@@ -2544,7 +2672,7 @@
       "id": "stickers-23_89views_hr",
       "series": "stickers",
       "exhibit": "20",
-      "thread": "2026-11-23-origin-temu3-threat",
+      "thread": "2026-11-26-dmfigol-aws-hr-coercion",
       "titleEn": "89 Views, Call HR",
       "titleZh": "89 浏览就喊 HR",
       "noteEn": "An 89-view tweet was enough to dial AWS HR.",
@@ -2554,7 +2682,6 @@
       "width": 1254,
       "height": 1254,
       "bytes": 242362,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126204776467853346",
       "slug": "theo_89_hr",
       "transparent": true
     },
@@ -2562,7 +2689,7 @@
       "id": "stickers-24_fear_incentive",
       "series": "stickers",
       "exhibit": "20",
-      "thread": "2026-11-23-origin-temu3-threat",
+      "thread": "2026-11-26-dmfigol-aws-hr-coercion",
       "titleEn": "Fear Is a Good Incentive",
       "titleZh": "恐惧是很好的激励",
       "noteEn": "The midnight DM reads: 'Fear is a good incentive.'",
@@ -2572,7 +2699,6 @@
       "width": 1254,
       "height": 1254,
       "bytes": 203918,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126204776467853346",
       "slug": "theo_fear",
       "transparent": true
     },
@@ -2580,7 +2706,7 @@
       "id": "stickers-25_english_native",
       "series": "stickers",
       "exhibit": "20",
-      "thread": "2026-11-23-origin-temu3-threat",
+      "thread": "2026-11-26-dmfigol-aws-hr-coercion",
       "titleEn": "Is English Your Native Language?",
       "titleZh": "「英语是你母语吗」",
       "noteEn": "Monocle out, DMs open: 'Is English your native language?'",
@@ -2590,7 +2716,6 @@
       "width": 1254,
       "height": 1254,
       "bytes": 176898,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126204776467853346",
       "slug": "theo_english",
       "transparent": true
     },
@@ -2598,7 +2723,7 @@
       "id": "stickers-26_16min_busted",
       "series": "stickers",
       "exhibit": "22",
-      "thread": "2026-11-25-gdpr-overnight-collapse",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
       "titleEn": "16 Minutes to Busted",
       "titleZh": "16 分钟当场打脸",
       "noteEn": "Denied reading 243 Claude chats, then got caught 16 minutes later.",
@@ -2608,7 +2733,6 @@
       "width": 1254,
       "height": 1254,
       "bytes": 236590,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078",
       "slug": "theo_16min",
       "transparent": true
     },
@@ -2616,7 +2740,7 @@
       "id": "stickers-27_19pct_vat",
       "series": "stickers",
       "exhibit": "22",
-      "thread": "2026-11-25-gdpr-overnight-collapse",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
       "titleEn": "19% VAT, No GDPR",
       "titleZh": "19% 德国税真香",
       "noteEn": "Dodges GDPR, then happily bills €9.03 with 19% German VAT.",
@@ -2626,7 +2750,6 @@
       "width": 1254,
       "height": 1254,
       "bytes": 218690,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078",
       "slug": "theo_19vat",
       "transparent": true
     },
@@ -2634,7 +2757,7 @@
       "id": "stickers-28_380_fixes",
       "series": "stickers",
       "exhibit": "21",
-      "thread": "2026-11-22-antigravity-spoof-3min-ban",
+      "thread": "2026-11-26-google-antigravity-zed-spoof",
       "titleEn": "+380 Fixes, One Ban",
       "titleZh": "吹口哨藏封号雷",
       "noteEn": "The Google ban fix is buried in '+380 bug fixes', whistle included.",
@@ -2644,7 +2767,6 @@
       "width": 1254,
       "height": 1254,
       "bytes": 185394,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126228292231659944",
       "slug": "theo_380_fixes",
       "transparent": true
     },
@@ -2745,6 +2867,38 @@
       "subseries": "idioms"
     },
     {
+      "id": "creative-idioms-07-jin-chan-tuo-qiao",
+      "series": "creative",
+      "exhibit": "22",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
+      "titleEn": "Chinese Idiom #07: 金蝉脱壳 (Golden Cicada Sheds Its Shell)",
+      "titleZh": "每日成语 #07：金蝉脱壳",
+      "noteEn": "Leaving an empty MIT open-source shell behind while closing PR #43889 ('nvm easier to do in slophouse') and moving identity tracking into the closed-source backend.",
+      "noteZh": "把空荡荡的 MIT 开源外壳留在台前，真要写身份追踪时直接关掉 PR #43889（「算了，闭源 slophouse 里做更省事」）金蝉脱壳。",
+      "featured": true,
+      "url": "https://cdn.temu3code.com/memes/creative/idioms/07-jin-chan-tuo-qiao.webp",
+      "width": 853,
+      "height": 1280,
+      "bytes": 233388,
+      "subseries": "idioms"
+    },
+    {
+      "id": "creative-idioms-08-sha-ji-jing-hou",
+      "series": "creative",
+      "exhibit": "20",
+      "thread": "2026-11-26-dmfigol-aws-hr-coercion",
+      "titleEn": "Chinese Idiom #08: 杀鸡儆猴 (Kill the Chicken to Scare the Monkeys)",
+      "titleZh": "每日成语 #08：杀鸡儆猴",
+      "noteEn": "Turning an 89-view, 0-like tweet from AWS engineer @dmfigol into midnight DMs ('Fear is a good incentive'), English jabs, and a formal AWS HR complaint.",
+      "noteZh": "对着 AWS 工程师一条只有 89 次浏览、0 点赞的吐槽，深夜私信威吓「恐惧是很好的激励」外加羞辱英语并投诉到 AWS HR。",
+      "featured": false,
+      "url": "https://cdn.temu3code.com/memes/creative/idioms/08-sha-ji-jing-hou.webp",
+      "width": 853,
+      "height": 1280,
+      "bytes": 226302,
+      "subseries": "idioms"
+    },
+    {
       "id": "creative-packaging-01-t3code-iceberg",
       "series": "creative",
       "exhibit": "00",
@@ -2806,6 +2960,22 @@
       "width": 1280,
       "height": 853,
       "bytes": 334718,
+      "subseries": "packaging"
+    },
+    {
+      "id": "creative-packaging-05-telemetry-report-card",
+      "series": "creative",
+      "exhibit": "26",
+      "thread": "2026-11-25-25-tool-telemetry-audit",
+      "titleEn": "Report Card: 35-Tool Telemetry Audit (F → D)",
+      "titleZh": "家长签字成绩单：35 款工具遥测大考只拿 F → D",
+      "noteEn": "Deadpan school report card from @ZryMiller's 35-tool audit: Aether and Hermes score straight A's, Orca gets a C for respecting DO_NOT_TRACK, and T3 Code sits at F → D.",
+      "noteZh": "校园成绩单恶搞：@ZryMiller 横评 35 款工具，Aether 与 Hermes 拿 A，遵守 DO_NOT_TRACK 的 Orca 拿 C，T3 Code 原版垫底 F、修完也只拿 D。",
+      "featured": true,
+      "url": "https://cdn.temu3code.com/memes/creative/packaging/05-telemetry-report-card.webp",
+      "width": 1170,
+      "height": 1280,
+      "bytes": 361234,
       "subseries": "packaging"
     },
     {
@@ -2918,6 +3088,54 @@
       "width": 1280,
       "height": 720,
       "bytes": 85030,
+      "subseries": "gaming"
+    },
+    {
+      "id": "creative-gaming-08-steam-4m39s-lock",
+      "series": "creative",
+      "exhibit": "24",
+      "thread": "2026-11-27-plaintext-quote-prompt-urls",
+      "titleEn": "Steam Achievement: 'Move to Ideas in 4m 39s'",
+      "titleZh": "Steam 成就解锁：「4 分 39 秒零回复锁单」（#29449）",
+      "noteEn": "Rare Steam achievement for locking Issue #29449 in 4m 39s with 0 replies after plaintext quote URLs leaked 8,000-char prompts, shipping it to mobile, and deleting the design doc.",
+      "noteZh": "Steam 成就恶搞：明文 URL 泄露 8,000 字私密对话的隐私 Issue #29449，4 分 39 秒零回复锁单移出列表，顺手推上移动端并删掉内部文档。",
+      "featured": false,
+      "url": "https://cdn.temu3code.com/memes/creative/gaming/08-steam-4m39s-lock.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 91736,
+      "subseries": "gaming"
+    },
+    {
+      "id": "creative-gaming-09-steam-16min-slophouse",
+      "series": "creative",
+      "exhibit": "22",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
+      "titleEn": "Steam Achievement: 'Easier in Slophouse'",
+      "titleZh": "Steam 成就解锁：「遁入闭源 Slophouse 后端」",
+      "noteEn": "Rare Steam achievement for getting caught scanning 243 local Claude chats 16 minutes after your 'Final statement,' then closing PR #43889 to move tracking into closed-source slophouse.",
+      "noteZh": "Steam 成就恶搞：刚发完最终声明 16 分钟就被抓包扫了 243 个 Claude 会话，维护者干脆关掉 PR #43889 并直言去闭源 slophouse 做更省事。",
+      "featured": true,
+      "url": "https://cdn.temu3code.com/memes/creative/gaming/09-steam-16min-slophouse.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 100736,
+      "subseries": "gaming"
+    },
+    {
+      "id": "creative-gaming-10-steam-81k-zero-advisories",
+      "series": "creative",
+      "exhibit": "21",
+      "thread": "2026-11-26-google-antigravity-zed-spoof",
+      "titleEn": "Steam Achievement: '81K Stars, 0 Advisories'",
+      "titleZh": "Steam 成就解锁：「8.1 万星，0 安全公告」",
+      "noteEn": "Rare Steam achievement for spotlighting GBK text files in v0.1.13 (401 changes) while burying Google's account-ban warning and Zed spoofing inside '+380 more bug fixes.'",
+      "noteZh": "Steam 成就恶搞：8.1 万星大仓库至今 0 份安全公告，v0.1.13 置顶吹 GBK 文本支持，却把 Google 封号警告和冒充 Zed 塞进「其余 380 项修复」。",
+      "featured": false,
+      "url": "https://cdn.temu3code.com/memes/creative/gaming/10-steam-81k-zero-advisories.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 99646,
       "subseries": "gaming"
     },
     {
@@ -3101,6 +3319,22 @@
       "mime": "image/gif"
     },
     {
+      "id": "creative-reactions-08-reply-89views-receipt",
+      "series": "creative",
+      "exhibit": "20",
+      "thread": "2026-11-26-dmfigol-aws-hr-coercion",
+      "titleEn": "Reply Receipt: 1M+ Creator vs. 89-View Tweet",
+      "titleZh": "评论区反杀图：百万博主大战 89 浏览小帖，直接告到 AWS HR",
+      "noteEn": "Quick reply receipt for @dmfigol's Jan 2025 thread: an 89-view, 0-like tweet triggered midnight DMs ('Fear is a good incentive'), language jabs, and an AWS HR complaint.",
+      "noteZh": "一图甩给评论区洗地党：就因为一条只有 89 次浏览、0 点赞的吐槽，百万粉丝博主深夜私信甩出「恐惧是很好的激励」，还直接捅到 AWS HR。",
+      "featured": true,
+      "url": "https://cdn.temu3code.com/memes/creative/reactions/08-reply-89views-receipt.webp",
+      "width": 1280,
+      "height": 720,
+      "bytes": 117518,
+      "subseries": "reactions"
+    },
+    {
       "id": "story-en-ep01",
       "series": "story",
       "exhibit": "00",
@@ -3108,7 +3342,7 @@
       "titleEn": "Ep.1 · 11 Hours Apart (EN)",
       "titleZh": "第 1 话 · 相隔 11 小时的变脸（英）",
       "noteEn": "Free MIT fork gets called 'Temu3 Code' and a ban threat. Eleven hours later, welcome trillion-dollar US labs.",
-      "noteZh": "免费 MIT Fork 被骂成「Temu3 Code」还收到封号威胁，11 小时后对万亿美企热烈欢迎。",
+      "noteZh": "免费 MIT 分支被骂成「Temu3 Code」还收到封号威胁，11 小时后对万亿美企热烈欢迎。",
       "featured": true,
       "url": "https://cdn.temu3code.com/memes/story/en/ep01_11_hours_apart.webp",
       "width": 1024,
@@ -3125,7 +3359,7 @@
       "titleEn": "Ep.1 · 11 Hours Apart (中文)",
       "titleZh": "第 1 话 · 相隔 11 小时的变脸（中）",
       "noteEn": "Free MIT fork gets called 'Temu3 Code' and a ban threat. Eleven hours later, welcome trillion-dollar US labs.",
-      "noteZh": "免费 MIT Fork 被骂成「Temu3 Code」还收到封号威胁，11 小时后对万亿美企热烈欢迎。",
+      "noteZh": "免费 MIT 分支被骂成「Temu3 Code」还收到封号威胁，11 小时后对万亿美企热烈欢迎。",
       "featured": true,
       "url": "https://cdn.temu3code.com/memes/story/zh/ep01_11_hours_apart_zh.webp",
       "width": 1024,
@@ -3274,7 +3508,7 @@
       "id": "story-en-ep06",
       "series": "story",
       "exhibit": "20",
-      "thread": "2026-11-23-origin-temu3-threat",
+      "thread": "2026-11-26-dmfigol-aws-hr-coercion",
       "titleEn": "Ep.6 · 89 Views, One HR Complaint (EN)",
       "titleZh": "第 6 话 · 89 次浏览换张 HR 投诉（英）",
       "noteEn": "Jan 2025: an AWS engineer's critique got 89 views, then midnight threats and an AWS HR complaint.",
@@ -3284,7 +3518,6 @@
       "width": 1024,
       "height": 1536,
       "bytes": 343022,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126204776467853346",
       "storyLang": "en",
       "episode": 6
     },
@@ -3292,7 +3525,7 @@
       "id": "story-zh-ep06",
       "series": "story",
       "exhibit": "20",
-      "thread": "2026-11-23-origin-temu3-threat",
+      "thread": "2026-11-26-dmfigol-aws-hr-coercion",
       "titleEn": "Ep.6 · 89 Views, One HR Complaint (中文)",
       "titleZh": "第 6 话 · 89 次浏览换张 HR 投诉（中）",
       "noteEn": "Jan 2025: an AWS engineer's critique got 89 views, then midnight threats and an AWS HR complaint.",
@@ -3302,7 +3535,6 @@
       "width": 1024,
       "height": 1536,
       "bytes": 333310,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126204776467853346",
       "storyLang": "zh",
       "episode": 6
     },
@@ -3310,7 +3542,7 @@
       "id": "story-en-ep07",
       "series": "story",
       "exhibit": "21",
-      "thread": "2026-11-22-antigravity-spoof-3min-ban",
+      "thread": "2026-11-26-google-antigravity-zed-spoof",
       "titleEn": "Ep.7 · Hi, I'm Zed, Trust Me (EN)",
       "titleZh": "第 7 话 · 你好，我是 Zed（英）",
       "noteEn": "Google flagged T3 Code for spoofing clientInfo: 'zed'. Desktop was busy importing 11 browsers' cookies.",
@@ -3320,7 +3552,6 @@
       "width": 1024,
       "height": 1536,
       "bytes": 372904,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126228292231659944",
       "storyLang": "en",
       "episode": 7
     },
@@ -3328,7 +3559,7 @@
       "id": "story-zh-ep07",
       "series": "story",
       "exhibit": "21",
-      "thread": "2026-11-22-antigravity-spoof-3min-ban",
+      "thread": "2026-11-26-google-antigravity-zed-spoof",
       "titleEn": "Ep.7 · Hi, I'm Zed, Trust Me (中文)",
       "titleZh": "第 7 话 · 你好，我是 Zed（中）",
       "noteEn": "Google flagged T3 Code for spoofing clientInfo: 'zed'. Desktop was busy importing 11 browsers' cookies.",
@@ -3338,7 +3569,6 @@
       "width": 1024,
       "height": 1536,
       "bytes": 366654,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126228292231659944",
       "storyLang": "zh",
       "episode": 7
     },
@@ -3346,7 +3576,7 @@
       "id": "story-en-ep08",
       "series": "story",
       "exhibit": "22",
-      "thread": "2026-11-25-gdpr-overnight-collapse",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
       "titleEn": "Ep.8 · Easier in Slophouse (EN)",
       "titleZh": "第 8 话 · 挪进闭源更省事（英）",
       "noteEn": "Audits kept catching tracking PRs. #43889 closed, identity linking moved to the closed-source backend.",
@@ -3356,7 +3586,6 @@
       "width": 1024,
       "height": 1536,
       "bytes": 338520,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078",
       "storyLang": "en",
       "episode": 8
     },
@@ -3364,7 +3593,7 @@
       "id": "story-zh-ep08",
       "series": "story",
       "exhibit": "22",
-      "thread": "2026-11-25-gdpr-overnight-collapse",
+      "thread": "2026-11-27-final-statement-slophouse-gdpr",
       "titleEn": "Ep.8 · Easier in Slophouse (中文)",
       "titleZh": "第 8 话 · 挪进闭源更省事（中）",
       "noteEn": "Audits kept catching tracking PRs. #43889 closed, identity linking moved to the closed-source backend.",
@@ -3374,7 +3603,6 @@
       "width": 1024,
       "height": 1536,
       "bytes": 336732,
-      "sourceUrl": "https://x.com/realchendahuang/status/2126229298164171078",
       "storyLang": "zh",
       "episode": 8
     },

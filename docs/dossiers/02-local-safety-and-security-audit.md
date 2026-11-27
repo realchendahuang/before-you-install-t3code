@@ -257,6 +257,32 @@ Opening an untrusted repository in T3 Code executes repository-controlled hooks 
 
 ---
 
+### 5.2 Nov 27 Mainline Browser Isolation, Plaintext URLs & `113 GiB` SQLite Fan-Out (Exhibits #23, #24 & #28)
+
+1. **Desktop Browser Isolation & Claude Shadow-Warning Bypass (`main@3c72b4e7`, Exhibit #23):**
+   - [`ClaudeAdapterV2.ts#L1629-L1647`](https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L1629-L1647) (`#L2879-L2939`, `#L14051-L14058`, [`McpToolAccess.ts#L159-L167`](https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/server/src/mcp/McpToolAccess.ts#L159-L167)) injects wildcard `mcp__t3-code__*` under `permissionMode: default`, bypasses `runtimeMode` checks on `preview_*`, and monkey-patches `process.emitWarning` to drop `CLAUDE_SDK_CAN_USE_TOOL_SHADOWED`.
+   - [`ServerBrowser.ts#L1723-L1749`](https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/server/src/preview/ServerBrowser.ts#L1723-L1749) executes outside Codex's sandbox (`enableAgentBrowserAccess` default `true`, [`settings.ts#L1445`](https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/packages/contracts/src/settings.ts#L1445)) and validates `uploadFiles` only with `NodePath.isAbsolute(path)`.
+   - [`ServerBrowser.ts#L1236-L1247`](https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/server/src/preview/ServerBrowser.ts#L1236-L1247) sets `isolatedContext` to `true` **only** when `desktop === null` (headless Linux), leaving Desktop Electron—which imports 11 browsers' Keychain/DPAPI cookies via [`BrowserImport/Sources.ts`](https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/desktop/src/preview/BrowserImport/Sources.ts#L86-L197)—with `isolatedContext = false`, invisible `open=false` mounts, and CDP `preview_evaluate`.
+2. **Plaintext Quote Citations & Prompt URLs (`main@f40f78eb`, Exhibit #24):**
+   - [`assistantCitations.ts#L43-L56`](https://github.com/pingdotgg/t3code/blob/f40f78eb5eacefd08049f7df87fa6442def58cd6/packages/shared/src/assistantCitations.ts#L43-L56) and [`contracts/src/assistantCitations.ts#L4-L26`](https://github.com/pingdotgg/t3code/blob/f40f78eb5eacefd08049f7df87fa6442def58cd6/packages/contracts/src/assistantCitations.ts#L4-L26) pack up to 8,000-char plaintext quote text, 8,000-char notes, and 32-char unselected surrounding context inside `t3-citation://v1/...`, while [`promptLinks.ts#L192-L207`](https://github.com/pingdotgg/t3code/blob/f40f78eb5eacefd08049f7df87fa6442def58cd6/packages/shared/src/promptLinks.ts#L192-L207) (`PR #18454`, self-merged by `@t3dotgg`) builds `app.t3.codes/new?prompt=...&repo=...`.
+   - `@Luca_Hagenmayer` (`2125286765132939292`) opened [`Discussion #24241`](https://github.com/pingdotgg/t3code/discussions/24241) and `Issue #29449`, which `@juliusmarminge` locked with 0 comments into [`Discussion #29456`](https://github.com/pingdotgg/t3code/discussions/29456) in **4m 39s** (`2026-11-02T16:43:27Z`), before expanding citations to mobile (`PR #35306`) and deleting the internal doc (`PR #41330`).
+3. **`113 GiB` `statev2.sqlite` Duplication & Fan-Out (`2026-11-27`, Exhibit #28):**
+   - SWC/oxc creator `@kdy1dev` filed [`Issue #44029`](https://github.com/pingdotgg/t3code/issues/44029) reporting a **`113 GiB`** `statev2.sqlite` (`0 B recovered` in Settings Maintenance, `56.68 GiB` after `t3 doctor --fix`) containing **`5,654,888`** duplicate `provider-session.updated` rows (`15.3 GB`); `@jullerino` (`2126207815052325020`) acknowledged `"a small bug on our end that causes a massive fan out so the pruning doesn't keep up"`.
+
+![ClaudeAdapterV2.ts muting Anthropic shadow warning](../../evidence/extra/nov27-claude-adapter-shadow-warn.png)
+
+![ServerBrowser.ts disabling isolatedContext on Desktop Electron](../../evidence/extra/nov27-server-browser-isolated.png)
+
+![ServerBrowser.ts uploadFiles checking only NodePath.isAbsolute](../../evidence/extra/nov27-server-browser-upload-files.png)
+
+![promptLinks.ts embedding full prompts and repo names into app.t3.codes URL](../../evidence/extra/nov27-prompt-links-public-url.png)
+
+![Discussion #29456 locked from Issue #29449 in 4m 39s](../../evidence/extra/nov27-discussion29456-quote-leak.png)
+
+![@jullerino acknowledging massive fan out on Issue #44029](../../evidence/extra/nov27-julius-fanout-56gb.png)
+
+---
+
 ## 6. Primary References
 
 ### Local Checkout Files Inspected (`scratch/t3code/`)
@@ -302,3 +328,10 @@ Opening an untrusted repository in T3 Code executes repository-controlled hooks 
   - Merged security fixes: https://github.com/pingdotgg/t3code/pull/39483 (`ServerSecretStore.ts`), https://github.com/pingdotgg/t3code/pull/41757, https://github.com/pingdotgg/t3code/pull/42386, https://github.com/pingdotgg/t3code/pull/42413, https://github.com/pingdotgg/t3code/pull/42504, https://github.com/pingdotgg/t3code/pull/22190, https://github.com/pingdotgg/t3code/pull/37823, https://github.com/pingdotgg/t3code/pull/39464, https://github.com/pingdotgg/t3code/pull/39480, https://github.com/pingdotgg/t3code/pull/40133, https://github.com/pingdotgg/t3code/pull/41756, https://github.com/pingdotgg/t3code/pull/41886
   - Open / unmerged security items: https://github.com/pingdotgg/t3code/pull/30997 (PowerShell `-ExecutionPolicy Bypass -EncodedCommand`), https://github.com/pingdotgg/t3code/issues/26489 (open local security defect), https://github.com/pingdotgg/t3code/pull/36216, https://github.com/pingdotgg/t3code/pull/23428, https://github.com/pingdotgg/t3code/pull/33144
   - Maintainer conduct & rejected community PRs: https://github.com/pingdotgg/t3code/issues/33639, https://github.com/pingdotgg/t3code/pull/41572 (closed context-meter UI PR)
+- Nov 27 Desktop Browser Sandbox Bypass, Plaintext Citation/Prompt URLs & `113 GiB` SQLite Fan-Out (Exhibits #23, #24 & #28):
+  - https://x.com/realchendahuang/status/2126243499142181151 ; https://x.com/realchendahuang/status/2126263438209077355
+  - https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/server/src/orchestration-v2/Adapters/ClaudeAdapterV2.ts#L1629-L1647 ; https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/server/src/mcp/McpToolAccess.ts#L159-L167
+  - https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/server/src/preview/ServerBrowser.ts#L1236-L1247 ; https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/server/src/preview/ServerBrowser.ts#L1723-L1749 ; https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/apps/desktop/src/preview/BrowserImport/Sources.ts#L86-L197 ; https://github.com/pingdotgg/t3code/blob/3c72b4e7810eeeb6d3e2c387893dedf4f4e53a5c/packages/contracts/src/settings.ts#L1445
+  - https://github.com/pingdotgg/t3code/blob/f40f78eb5eacefd08049f7df87fa6442def58cd6/packages/shared/src/assistantCitations.ts#L43-L56 ; https://github.com/pingdotgg/t3code/blob/f40f78eb5eacefd08049f7df87fa6442def58cd6/packages/contracts/src/assistantCitations.ts#L4-L26 ; https://github.com/pingdotgg/t3code/blob/f40f78eb5eacefd08049f7df87fa6442def58cd6/packages/shared/src/promptLinks.ts#L192-L207
+  - https://github.com/pingdotgg/t3code/discussions/29456 ; https://github.com/pingdotgg/t3code/discussions/24241 ; https://github.com/pingdotgg/t3code/pull/18454 ; https://github.com/pingdotgg/t3code/pull/9146 ; https://github.com/pingdotgg/t3code/pull/35306 ; https://github.com/pingdotgg/t3code/pull/41330 ; https://x.com/Luca_Hagenmayer/status/2125286765132939292
+  - https://github.com/pingdotgg/t3code/issues/44029 ; https://x.com/jullerino/status/2126207815052325020

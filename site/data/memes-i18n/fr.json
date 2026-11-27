@@ -97,6 +97,22 @@
       "title": "Péché 24 · 泄 · Ton prompt dans l'URL",
       "note": "Les liens de partage fourraient des citations de 8 000 caractères et des prompts entiers dans des URLs en clair. Issue #29449 verrouillée en 4 min 39 s, 0 réponse, doc supprimée."
     },
+    "sins-sin-25-patronage-zi": {
+      "title": "Péché 25 · Mécénat「资」",
+      "note": "Après que T3 Code s'est ramassé sur un tier list public, Theo a DM l'auteur et proposé de financer son benchmark (« donc j'ai proposé de le financer »). La version suivante le consacrait daily driver, avec t3.ademark.dev."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "Péché 26 · Médiocre「劣」",
+      "note": "Bon dernier avec un « F » (remonté péniblement à « D » après des patchs d'urgence) dans l'audit 25 outils de @ZryMiller, pendant qu'Aether et Hermes raflaient des « A » partout. Crée toujours un anonymous-id en cas d'opt-out et omet <ClerkProvider telemetry={false}>."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "Péché 27 · Verrouillage「闭」",
+      "note": "A lâché « Advice: Don't » à 1 401 contributeurs MIT non payés, verrouillé l'Issue #4123 via @pingdotgg à 700K vues, et discrètement patché 4 vulns de plus en v0.1.13 avec 0 Security Advisory."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "Péché 28 · Boursouflure「胀」",
+      "note": "Un bug de fan-out a noyé le statev2.sqlite du créateur de SWC @kdy1dev sous 5 654 888 lignes dupliquées (113 GiB ; 0 B libéré dans l'UI ; 56,68 GiB après doctor), pendant que Theo restait muet 41 heures à retweeter des éloges."
+    },
     "blended-00-drake": {
       "title": "Drake : le deux-poids-deux-mesures en 11 heures",
       "note": "Un dev chinois forke du MIT gratos : menace de ban. Un labo US à 1 000 milliards copie le MIT 11 heures plus tard : « L'open source, c'est l'open source ! »"
@@ -245,6 +261,10 @@
       "title": "Changelog : GBK oui, bans non",
       "note": "v0.1.13 : 401 changements, 7 highlights sur les fichiers GBK. L'avertissement de ban de Google et l'usurpation Zed planqués dans « +380 more »."
     },
+    "blended-21c-always-has-been-zed": {
+      "title": "Ça a toujours été le cas : clientInfo { name: 'zed' }",
+      "note": "Le PR #43087 a admis que la poignée de main ACP d'Antigravity envoyait clientInfo : { name: 'zed', version: '0.0.0' }, puis la v0.1.13 a planqué le correctif dans « +380 more bug fixes »."
+    },
     "blended-22a-clown-final-statement": {
       "title": "Clown en 16 minutes pile",
       "note": "« T3 ne lit jamais vos fichiers. » 16 minutes plus tard, @sk1gl4a comptait 243 conversations Claude scannées. PR #43948 confirme."
@@ -269,6 +289,10 @@
       "title": "Flex Tape sur un avertissement de sécurité",
       "note": "Le SDK d'Anthropic avertissait d'un wildcard contournant l'approbation. T3 a monkey-patché process.emitWarning et fait un test unitaire du musellement."
     },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "This Is Fine (les cookies de 11 navigateurs sur le Desktop)",
+      "note": "ServerBrowser.ts n'isole les onglets que si desktop === null (Linux headless), laissant les cookies des 11 navigateurs importés, des avertissements Anthropic muets et des chemins d'upload ~/.ssh/id_rsa exposés sur le Desktop."
+    },
     "blended-24a-anakin-padme-url": {
       "title": "8 000 caractères dans l'URL, hein ?",
       "note": "PR #18454 fourre des prompts de 8 000 caractères et des noms de repos privés dans app.t3.codes/new?prompt=, et les previews les loggent."
@@ -276,6 +300,22 @@
     "blended-24b-disaster-girl-4m39s": {
       "title": "Verrouillé en 4 min 39, puis supprimé",
       "note": "Issue #29449 : les URLs de citation fuitaient 32 caractères de texte non sélectionné. Verrouillée en 4 min 39, expédiée sur mobile, doc supprimée."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "Révélation façon Scooby : « donc j'ai proposé de le financer »",
+      "note": "Après que T3 Code s'est ramassé sur l'ADE Tier List v1, Theo a admis publiquement avoir DM l'auteur et proposé de financer son benchmark — vite suivi de « T3 Code is my daily driver » et t3.ademark.dev."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "Podium au champagne : promu de F à D",
+      "note": "Dans l'audit télémétrie 25 outils de @ZryMiller, Aether et Hermes raflaient des A partout tandis que le T3 Code de base récoltait un F bon dernier — remonté à D seulement après des patchs d'urgence."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "4 ans d'écart : glacier#1 (2022) à #33639 (2026)",
+      "note": "En oct. 2022, @t3dotgg débarquait dans hazae41/glacier#1 en traitant le mainteneur de « just a dick :( » ; quatre ans plus tard, il traitait un utilisateur d'« ungrateful prick » et verrouillait l'Issue #4123 via @pingdotgg."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41 heures de silence ou pioche 25",
+      "note": "Plutôt que de répondre au thread AWS HR à 639K vues, aux 243 Claude chats scannés ou aux 113 GiB de SQLite boursouflé, Theo est resté muet 41 heures à reposter les éloges de Mobile 2.4."
     },
     "stickers-01_copium_no_telemetry": {
       "title": "Copium « No Telemetry »",
@@ -413,6 +453,14 @@
       "title": "Idiome n°06 · 掩耳盗铃 : avis de sécurité : 0",
       "note": "Supprime « aucune télémétrie » du README et bouche les failles critiques dans des commits discrets. Avis de sécurité : toujours 0."
     },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "Idiome chinois n°07 : 金蝉脱壳 (la cigale d'or quitte sa carapace)",
+      "note": "Laisser derrière soi une coquille open source MIT bien vide en fermant le PR #43889 (« nvm easier to do in slophouse ») et déplacer le tracking d'identité dans le backend closed-source."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "Idiome chinois n°08 : 杀鸡儆猴 (tuer le poulet pour effrayer les singes)",
+      "note": "Transformer un tweet à 89 vues et 0 like de l'ingénieur AWS @dmfigol en DM de minuit (« la peur est un bon stimulant »), piques en anglais et plainte formelle auprès des RH d'AWS."
+    },
     "creative-packaging-01-t3code-iceberg": {
       "title": "L'iceberg T3 Code",
       "note": "Surface : le tweet « Temu3 Code ». En dessous : 41,6 Go de fausses suppressions, 2,2 M d'IP loggées par heure, 0 avis de sécurité, craquage à 4 h du matin."
@@ -428,6 +476,10 @@
     "creative-packaging-04-mit-license-coupon": {
       "title": "Coupon : 100 % de réduc, Chine exclue",
       "note": "Coupon du dimanche : « Volez notre code (légalement) ! » Les petites lignes l'annulent pour les forks chinois."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "Bulletin scolaire : audit télémétrie 35 outils (F → D)",
+      "note": "Bulletin scolaire à froid tiré de l'audit 35 outils de @ZryMiller : Aether et Hermes raflent des A partout, Orca écope d'un C pour avoir respecté DO_NOT_TRACK, et T3 Code stagne à F → D."
     },
     "creative-gaming-01-sekiro-google-ban": {
       "title": "Sekiro : COMPTE BANNI (3:00)",
@@ -456,6 +508,18 @@
     "creative-gaming-07-steam-77k-stars": {
       "title": "Succès : « Croissance 100 % organique » (129 watchers)",
       "note": "30 secondes d'inactivité déclenchent la popup d'auto-star. Stars : 77 000. Watchers : 129."
+    },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Succès Steam : « Déplacer dans Ideas en 4 min 39 s »",
+      "note": "Succès Steam rare pour avoir verrouillé l'Issue #29449 en 4 min 39 s avec 0 réponse, après que des URLs de citation en clair ont fait fuiter des prompts de 8 000 caractères, l'avoir expédié sur mobile et supprimé le design doc."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Succès Steam : « Plus facile dans le slophouse »",
+      "note": "Succès Steam rare pour s'être fait prendre à scanner 243 Claude chats locaux 16 minutes après ta « déclaration finale », puis avoir fermé le PR #43889 pour déplacer le tracking dans le slophouse closed-source."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Succès Steam : « 81K étoiles, 0 advisory »",
+      "note": "Succès Steam rare pour avoir mis en avant des fichiers texte GBK en v0.1.13 (401 changements) tout en enterrant l'avertissement de bannissement de compte signé Google et l'usurpation de Zed dans « +380 more bug fixes »."
     },
     "creative-pokemon-01-evo-star-farmer": {
       "title": "Ligne d'évolution n°01 : le star farmer",
@@ -501,6 +565,10 @@
       "title": "GIF : le compteur d'auto-star à 30 s",
       "note": "30 secondes d'inactivité, la popup envoie PUT user/starred. Les stars montent à 77 000, les watchers figés à 129."
     },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "Preuve en réponse : créateur à 1M+ contre tweet à 89 vues",
+      "note": "Pièce à conviction rapide pour le thread de @dmfigol de janvier 2025 : un tweet à 89 vues et 0 like a déclenché des DM de minuit (« la peur est un bon stimulant »), des piques linguistiques et une plainte RH auprès d'AWS."
+    },
     "story-en-ep01": {
       "title": "Ép.1 · 11 heures d'écart (EN)",
       "note": "Un fork MIT gratuit affublé du nom « Temu3 Code » et menacé de bannissement. Onze heures plus tard : bienvenue aux labos US à mille milliards."
@@ -527,11 +595,11 @@
     },
     "story-en-ep04": {
       "title": "Ép.4 · La médecine occidentale, ça marche vite (EN)",
-      "note": "Des mois de plaintes tournées en dérision. Un seul dépôt GDPR a acheté un sprint nocturne de 6 heures et des logs IP à 2,2 M/h."
+      "note": "Des mois de plaintes tournées en dérision. Un seul dépôt GDPR a déclenché un sprint nocturne de 6 heures et des logs IP à 2,2 M/h."
     },
     "story-zh-ep04": {
       "title": "Ép.4 · La médecine occidentale, ça marche vite (version chinoise)",
-      "note": "Des mois de plaintes tournées en dérision. Un seul dépôt GDPR a acheté un sprint nocturne de 6 heures et des logs IP à 2,2 M/h."
+      "note": "Des mois de plaintes tournées en dérision. Un seul dépôt GDPR a déclenché un sprint nocturne de 6 heures et des logs IP à 2,2 M/h."
     },
     "story-en-ep05": {
       "title": "Ép.5 · La retraite de 3,5 heures (EN)",

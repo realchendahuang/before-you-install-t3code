@@ -2,57 +2,57 @@
   "lang": "ja",
   "topics": {
     "bullying": "いじめと脅迫",
-    "double-standard": "二重基準",
+    "double-standard": "ダブルスタンダード",
     "promises": "約束とコードの乖離",
-    "telemetry": "テレメトリーとプライバシー",
+    "telemetry": "テレメトリとプライバシー",
     "security": "セキュリティとBAN",
     "deleted": "削除・撤回済み",
-    "commercial": "商業化とスター数"
+    "commercial": "商業利用とスター数"
   },
   "people": {
     "theo": {
       "name": "@theo（Theo Browne）",
-      "role": "T3 Code / Ping.gg の創設者"
+      "role": "T3 Code / Ping.gg の作者"
     },
     "dddxx666": {
       "name": "@DDdxx666（MITフォーク）",
-      "role": "中国版MITフォークの作者（Stardust）"
+      "role": "中国のMITフォーク作者（Stardust）"
     },
     "ffmpeg": {
       "name": "FFmpeg & VLC",
-      "role": "オープンソースのメンテナー（懸賞金2万ドル）"
+      "role": "オープンソースのメンテナー（賞金2万ドル）"
     },
     "indian-devs": {
       "name": "インド人開発者コミュニティ",
-      "role": "2024年の国籍ヘイト波"
+      "role": "2024年の国籍をめぐる嫌がらせの波"
     },
     "bermudi": {
       "name": "@bermudi（Issue #33639）",
       "role": "メンテナーに侮辱されたT3 Codeユーザー"
     },
     "miaai": {
-      "name": "@MiaAI_lab と競合各社",
+      "name": "@MiaAI_labと競合各社",
       "role": "@bot に30秒でスクレイピングされたフォーク"
     },
     "dlkfz": {
       "name": "@DLKFZWilliam2",
-      "role": "11月24日のフォーク論争の相手方"
+      "role": "11月24日のフォーク論争の相手側"
     },
     "ordinary-devs": {
       "name": "一般開発者",
       "role": "エンジニア、ローカルAI、Linux開発者"
     },
     "female-critic": {
-      "name": "女性批評家とRSDユーザー",
+      "name": "女性の批判者とRSDユーザー",
       "role": "11月11〜18日の返信で標的にされた人物"
     },
     "vibe-daytona": {
-      "name": "Vibe Kanban & Daytona",
+      "name": "Vibe KanbanとDaytona",
       "role": "エンジェル投資先企業"
     },
     "julius": {
       "name": "@jullerino（Julius）",
-      "role": "T3 Code の中核メンテナー"
+      "role": "T3 Codeの中核メンテナー"
     },
     "maria": {
       "name": "@maria_rcks（Maria）",
@@ -63,16 +63,32 @@
       "role": "大手テック企業の幹部20人（暴言0.0%）"
     },
     "antigravity-users": {
-      "name": "Antigravity & Relay のユーザー",
-      "role": "3分BANと平文リレー"
+      "name": "AntigravityとRelayのユーザー",
+      "role": "3分間のBANと平文リレー"
     },
     "gdpr-auditors": {
-      "name": "EU GDPRと監査人",
+      "name": "EUのGDPRと監査人",
       "role": "独立監査と法的記録"
     },
     "dhh-wp": {
       "name": "DHH / WordPress / USPTO",
-      "role": "過去のUI揶揄と商標の経緯"
+      "role": "過去のUI嘲笑と商標の経緯"
+    },
+    "dmfigol": {
+      "name": "@dmfigol（元AWSエンジニア）",
+      "role": "閲覧89回の引用ポストとAWSの人事案件"
+    },
+    "sk1gl4a": {
+      "name": "@sk1gl4aと監査人",
+      "role": "243セッションの再現、ドイツVAT、25ツール監査"
+    },
+    "ondrej-zqkrq": {
+      "name": "@DavidOndrej1と@zqkrq",
+      "role": "ベンチマーク資金とスポンサー論争"
+    },
+    "kdy1dev": {
+      "name": "@kdy1devと@hazae41",
+      "role": "113 GiBのDBファンアウト（#44029）とglacier#1"
     }
   },
   "threads": {
@@ -402,6 +418,50 @@
         }
       ]
     },
+    "2026-10-18-benchmark-funding-sponsor-pressure": {
+      "from": "@DavidOndrej1 & @orca_build ↔ @theo & @zqkrq",
+      "to": "公開ベンチマーク・スポンサー記録",
+      "dateDisplay": "2026年10月18日",
+      "subject": "ティアリスト作者に接触し、ベンチマークへの資金提供を申し出",
+      "snippet": "TheoはT3 Codeの低評価をめぐって@zqkrqに連絡し、資金提供を申し出たと認めた。Cloudroomを隠すために金を払ったという主張は裏付けがなく、双方が否定している。",
+      "messages": [
+        {
+          "sender": "@DavidOndrej1 & @orca_build",
+          "handle": "@DavidOndrej1 · X (2111884469468893524 & 2126085904875798845)",
+          "to": "公開タイムライン",
+          "time": "2026年10月18日・11月25〜26日",
+          "body": "2026年10月18日（18:17–19:50 UTC）、Cloudroomの創業者`@DavidOndrej1`は、Cloudroomが`v1`でT3 Codeを上回った後に`@theo`がベンチマーク作者`@zqkrq`へ圧力をかけたと非難した：\n\n> 「Theo、T3はもう必死だ。Cloudroomがv1でT3 Codeより上位に来た途端、こいつは金を払って自分のベンチマークのv2を走らせた……」\n\n- **競合の反応（`19:44 UTC`）：** `@orca_build`はこう書いた。「このリストはそもそもかなり怪しい……我々が最下位なわけがない」\n- **11月25〜26日の続報：** `@DavidOndrej1`は`@dmfigol`のスレッド（`2126085904875798845`）の下にT3 Codeのスポンサーバナー（`WorkOS`、`Blacksmith`、`Browserbase`、`CodeRabbit`）を投稿し、`@theo`がブランド各社に批判者を切るようメッセージを送っていると主張した（`2125517916544155720`）。\n- **検証の限界：** `@theo`が金を払ってCloudroomを消させたという話と、スポンサーにメッセージを送って批評家をブラックリスト化させたという話は、いずれも`@DavidOndrej1`側の一方的な主張で、漏洩したメッセージも支払記録も提示されていない。Cloudroomに関する告発は`@theo`も`@zqkrq`も否定している。",
+          "attachments": [
+            "@DavidOndrej1 10月18日のv1/v2ベンチマーク論争",
+            "T3 Codeのスポンサーバナー（WorkOS、Blacksmith、Browserbase、CodeRabbit）"
+          ],
+          "links": [
+            "@DavidOndrej1 10月18日の投稿",
+            "@DavidOndrej1 3点投稿",
+            "@orca_buildの返信",
+            "@DavidOndrej1 スポンサーバナー",
+            "@DavidOndrej1 ブラックリスト主張"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo) & @zqkrq",
+          "handle": "@theo · X (2111903235166679341)",
+          "to": "公開タイムライン",
+          "time": "2026年10月18日・11月12日",
+          "body": "10月18日`18:30 UTC`、`@zqkrq`は`@theo`が特定の項目を隠すよう求めた事実はないと否定した。その1時間後（`19:32 UTC`）、`@theo`はT3 Codeの低スコアをめぐって連絡を取り、ベンチマークへの資金提供を申し出たと認めた：\n\n> 「何かを隠せと言ったわけではない。T3 Codeのスコアがなぜ低いのか聞くために連絡した……彼がその後、本物のベンチマークを作りたいと言うので、今こうした良質な調査がどこにもないから資金を出そうと申し出た」\n\n- **11月12日の続報：** `@zqkrq`はT3 Codeを「俺の daily driver」と評する`ADE tier list v3`を公開し、`t3.ademark.dev`を作成、`@theo`に「@theo そこまでしなくてよかったのに、マジでありがたい 🫡」と返信した。\n- **機能の移植（`Nov 13`）：** 同じ日、`@theo`は`fable 5.2`で`@bot`を走らせ、リスト上位の競合製品から機能を移植した（`2121017649652269120`）。",
+          "attachments": [
+            "ベンチマークへの接触と資金提供を認めた@theoの返信"
+          ],
+          "links": [
+            "@theo ベンチマーク資金提供の投稿",
+            "@zqkrqの否定",
+            "@zqkrqのADE v3リスト",
+            "@zqkrqから@theoへの返信",
+            "@theoが@botで競合機能を移植"
+          ]
+        }
+      ]
+    },
     "2026-10-20-pr21506-cross-tool-hash": {
       "from": "@theo → ~/.codex & ~/.claude",
       "to": "ユーザーホームディレクトリの認証情報",
@@ -694,29 +754,6 @@
         }
       ]
     },
-    "2026-11-18-jail-threat-rsd": {
-      "from": "@theo → Threadsの批評者（RSD）",
-      "to": "RSD診断のある批評者",
-      "dateDisplay": "2026年11月18日",
-      "subject": "批評者を刑務所送りにすると脅し、RSD診断を嘲笑",
-      "snippet": "華氏102度の熱を公言しながら177件の投稿、6,643文字の論考、動画1本、そして @elshayib への8件の攻撃を公開した48時間の内側での出来事。",
-      "messages": [
-        {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X（2122838455483031925 / 2122865897375400066）",
-          "to": "Threadsの批評者",
-          "time": "2026年11月18日",
-          "body": "11月18日、Threads の批評者への返信で、@theo は刑務所送りを脅し、その人の Rejection Sensitive Dysphoria（RSD）を嘲笑った：\n\n> 「今すぐやめろ、さもなければ文字通り刑務所に送ってやる。君のRSDを、同房の連中がとても理解してくれること請け合いだ。」\n\nこの脅しは48時間の時間帯（11月17〜18日 PST）に飛び出した。その間、彼は華氏102度の熱があると公言しながら、Xへの投稿177件、6,643文字のAstra論考、動画1本、そして @elshayib を標的にした罵倒まみれのリプライを8件連続で公開していた。",
-          "attachments": [
-            "2026年11月18日の刑務所送り脅しと医学的RSD嘲笑"
-          ],
-          "links": [
-            "X Post 2122838455483031925",
-            "X Post 2122865897375400066"
-          ]
-        }
-      ]
-    },
     "2026-11-18-31t-token-radar": {
       "from": "@theo → AIラボとVC",
       "to": "OpenAI、DeepMind、投資家",
@@ -739,6 +776,29 @@
           "links": [
             "31.7T Radar Post",
             "Investor Post"
+          ]
+        }
+      ]
+    },
+    "2026-11-18-jail-threat-rsd": {
+      "from": "@theo → Threadsの批評者（RSD）",
+      "to": "RSD診断のある批評者",
+      "dateDisplay": "2026年11月18日",
+      "subject": "批評者を刑務所送りにすると脅し、RSD診断を嘲笑",
+      "snippet": "華氏102度の熱を公言しながら177件の投稿、6,643文字の論考、動画1本、そして @elshayib への8件の攻撃を公開した48時間の内側での出来事。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X（2122838455483031925 / 2122865897375400066）",
+          "to": "Threadsの批評者",
+          "time": "2026年11月18日",
+          "body": "11月18日、Threads の批評者への返信で、@theo は刑務所送りを脅し、その人の Rejection Sensitive Dysphoria（RSD）を嘲笑った：\n\n> 「今すぐやめろ、さもなければ文字通り刑務所に送ってやる。君のRSDを、同房の連中がとても理解してくれること請け合いだ。」\n\nこの脅しは48時間の時間帯（11月17〜18日 PST）に飛び出した。その間、彼は華氏102度の熱があると公言しながら、Xへの投稿177件、6,643文字のAstra論考、動画1本、そして @elshayib を標的にした罵倒まみれのリプライを8件連続で公開していた。",
+          "attachments": [
+            "2026年11月18日の刑務所送り脅しと医学的RSD嘲笑"
+          ],
+          "links": [
+            "X Post 2122838455483031925",
+            "X Post 2122865897375400066"
           ]
         }
       ]
@@ -767,27 +827,25 @@
         }
       ]
     },
-    "2026-11-22-engineers-unemployment-linux": {
-      "from": "@theo → エンジニアと Linux",
-      "to": "開発者コミュニティ",
+    "2026-11-22-pr41237-21h-filter-drop": {
+      "from": "@theo → slopalytics.com",
+      "to": "PR #41237（モデルテレメトリ・フィルタ）",
       "dateDisplay": "2026年11月22日",
-      "subject": "「エンジニアは大量失業して当然」と「Linux ラーパー」",
-      "snippet": "「信頼を焼くな」と説教したちょうど24時間後、ツール比較をめぐって38.6万人以上の視聴者に開発者は失業して当然だと告げた。",
+      "subject": "slopalytics.com のためにモデルのプライバシーフィルタを21時間で撤去",
+      "snippet": "PR #41237 が PR #29001 のホワイトリストを外したため、企業内部やローカルのモデル名（ollama/acme-internal）がそのまま送信された（force-push のバグは52日以上放置）。",
       "messages": [
         {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X",
-          "to": "一般開発者",
-          "time": "2026年11月21〜22日",
-          "body": "11月21日から22日までの24時間で、@theo は信頼を説きながら一般開発者と Linux ユーザーを侮辱した：\n\n- **11月21日（2123906522728272178）：**「平均的な開発者はあまり賢くない」\n- **11月22日（2124298216271499605）：**「なぜ俺が嫌われているかは分かるよ、Linux ラーパーは本物の開発者が嫌いだからな」\n- **11月22日（2124470530590011704、38.6万回以上閲覧 — T3 Code 対 Antigravity の質問への引用返信）：**「エンジニアは、これから来る大量失業を受けて当然だ」\n- **11月22日 18:26 CST（2124449493513068862、MIT フォーク脅迫の24時間前）：**「念のため言うと、周囲全員の信頼を焼き払うのは、望むものを得る最善の道ではまずない」",
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · Issue #40948 → PR #41237",
+          "to": "slopalytics.com / テレメトリ経路",
+          "time": "2026年11月22〜23日",
+          "body": "11月22日、Issue #40948 は、PR #29001 がプライバシー・ホワイトリストを強制していたため、新しいモデルが @theo の公開リーダーボード `slopalytics.com` に表示されないと報告した。\n\n`git push --force` の安全バグが52日以上も未修正のまま放置される一方、PR #41237 は21時間以内に @theo のアカウントでマージされ、Theo がフィルタ撤去を求めたと記されていた。`ollama/acme-internal` や `acme-azure-deployment` といった企業内部・ローカルモデル名（および後に Theo のダンプで見つかったカスタムプロキシ）が、そのまま送信された。",
           "attachments": [
-            "「エンジニアは、これから来る大量失業を受けて当然だ」",
-            "「Linux ラーパーは本物の開発者が嫌いだからな」",
-            "危機の24時間前に「信頼を焼くな」と説教"
+            "モデルのプライバシーフィルタを21時間で撤去した PR #41237"
           ],
           "links": [
-            "失業ポスト",
-            "信頼を焼くポスト"
+            "Issue #40948",
+            "PR #41237"
           ]
         }
       ]
@@ -835,45 +893,47 @@
         }
       ]
     },
-    "2026-11-22-pr41237-21h-filter-drop": {
-      "from": "@theo → slopalytics.com",
-      "to": "PR #41237（モデルテレメトリ・フィルタ）",
+    "2026-11-22-engineers-unemployment-linux": {
+      "from": "@theo → エンジニアと Linux",
+      "to": "開発者コミュニティ",
       "dateDisplay": "2026年11月22日",
-      "subject": "slopalytics.com のためにモデルのプライバシーフィルタを21時間で撤去",
-      "snippet": "PR #41237 が PR #29001 のホワイトリストを外したため、企業内部やローカルのモデル名（ollama/acme-internal）がそのまま送信された（force-push のバグは52日以上放置）。",
+      "subject": "「エンジニアは大量失業して当然」と「Linux ラーパー」",
+      "snippet": "「信頼を焼くな」と説教したちょうど24時間後、ツール比較をめぐって38.6万人以上の視聴者に開発者は失業して当然だと告げた。",
       "messages": [
         {
-          "sender": "Theo Browne (@t3dotgg)",
-          "handle": "GitHub · Issue #40948 → PR #41237",
-          "to": "slopalytics.com / テレメトリ経路",
-          "time": "2026年11月22〜23日",
-          "body": "11月22日、Issue #40948 は、PR #29001 がプライバシー・ホワイトリストを強制していたため、新しいモデルが @theo の公開リーダーボード `slopalytics.com` に表示されないと報告した。\n\n`git push --force` の安全バグが52日以上も未修正のまま放置される一方、PR #41237 は21時間以内に @theo のアカウントでマージされ、Theo がフィルタ撤去を求めたと記されていた。`ollama/acme-internal` や `acme-azure-deployment` といった企業内部・ローカルモデル名（および後に Theo のダンプで見つかったカスタムプロキシ）が、そのまま送信された。",
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "一般開発者",
+          "time": "2026年11月21〜22日",
+          "body": "11月21日から22日までの24時間で、@theo は信頼を説きながら一般開発者と Linux ユーザーを侮辱した：\n\n- **11月21日（2123906522728272178）：**「平均的な開発者はあまり賢くない」\n- **11月22日（2124298216271499605）：**「なぜ俺が嫌われているかは分かるよ、Linux ラーパーは本物の開発者が嫌いだからな」\n- **11月22日（2124470530590011704、38.6万回以上閲覧 — T3 Code 対 Antigravity の質問への引用返信）：**「エンジニアは、これから来る大量失業を受けて当然だ」\n- **11月22日 18:26 CST（2124449493513068862、MIT フォーク脅迫の24時間前）：**「念のため言うと、周囲全員の信頼を焼き払うのは、望むものを得る最善の道ではまずない」",
           "attachments": [
-            "モデルのプライバシーフィルタを21時間で撤去した PR #41237"
+            "「エンジニアは、これから来る大量失業を受けて当然だ」",
+            "「Linux ラーパーは本物の開発者が嫌いだからな」",
+            "危機の24時間前に「信頼を焼くな」と説教"
           ],
           "links": [
-            "Issue #40948",
-            "PR #41237"
+            "失業ポスト",
+            "信頼を焼くポスト"
           ]
         }
       ]
     },
     "2026-11-23-origin-temu3-threat": {
-      "from": "@theo ↔ @DDdxx666（MIT フォーク）",
-      "to": "@DDdxx666、@maria_rcks、そして公衆",
+      "from": "@theo ↔ @DDdxx666（MITフォーク）",
+      "to": "@DDdxx666、@maria_rcks、ほか一般公開",
       "dateDisplay": "2026年11月23日",
-      "subject": "「Temu3 Code」：中国の MIT フォークをめぐり GitHub BAN を脅迫",
-      "snippet": "t3.codes で「コードを盗んでいい（合法的に）」と約束していたのに、Theo は @DDdxx666 の MIT フォークを攻撃。謝罪は DM だけ、11時間後には1兆ドル企業を歓迎した。",
+      "subject": "「Temu3 Code」：中国製MITフォークをめぐりGitHubアカウント停止を脅迫",
+      "snippet": "t3.codes で「コードを盗んでいい（合法的に）」と謳っておきながら、Theo は @DDdxx666 のMITフォークを攻撃し、謝罪はDMだけで済ませ、その11時間後には兆ドル規模の米国企業を歓迎した。",
       "messages": [
         {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X (2124823227570745504 & 2124825920808829077)",
-          "to": "@DDdxx666 の MIT フォークへの公開引用ポスト",
-          "time": "2026年11月23日 19:11〜19:22 CST",
-          "body": "`t3.codes` が GitHub リポジトリを「コードを盗んでいい（合法的に）」と宣伝していたにもかかわらず、通りすがりの人が @DDdxx666 の無料 MIT フォークを公式アプリと勘違いしたとき、@theo は11分間に2回投稿した：\n\n19:11:49 CST（2124823227570745504）：\n\n> 「T3 Code の中国製パチモノ（\"Chinese knockoff\"）が出回っている気がする。これは絶対に我々のアプリじゃない」\n\n19:22:31 CST（2124825920808829077、10分42秒後）：\n\n> 「Temu3 Code」",
+          "sender": "Theo Browne（@theo）",
+          "handle": "@theo · X（2124823227570745504 & 2124825920808829077）",
+          "to": "@DDdxx666 のMITフォークへの公開引用投稿",
+          "time": "2026年11月23日 19:11 – 19:22 CST",
+          "body": "`t3.codes` が自らのGitHubリポジトリを「コードを盗んでいい（合法的に）」と宣伝していたにもかかわらず、`@theo` は、ネット上のあるユーザーが `@DDdxx666` の無料MITフォークを公式アプリと取り違えたことを受けて、11分のあいだに2回投稿した。\n\n19:11:49 CST（2124823227570745504）：\n\n> 「T3 Code の中国製パチモノが出回っていると思う。これがまぎれもなく我々のアプリではないからだ」\n\n19:22:31 CST（2124825920808829077、10分42秒後）：\n\n> 「Temu3 Code」",
           "attachments": [
-            "元の X 投稿：「T3 Code の Chinese knockoff」（19.5万回以上閲覧）",
-            "10分42秒後の元 X 投稿：「Temu3 Code」（8.4万回以上閲覧）"
+            "元の X 投稿：「T3 Code の中国製パチモノ」（195k+ 表示）",
+            "10分42秒後の元の X 投稿：「Temu3 Code」（84k+ 表示）"
           ],
           "links": [
             "X 投稿 2124823227570745504",
@@ -881,32 +941,72 @@
           ]
         },
         {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X (2124829315657576890)",
+          "sender": "Theo Browne（@theo）",
+          "handle": "@theo · X（2124829315657576890）",
           "to": "@DDdxx666",
           "time": "2026年11月23日 19:36 CST",
-          "body": "@DDdxx666 が混乱を避けるため MIT フォークの改名を検討すると答えると、@theo は19:36 CST にこう返した：\n\n> 「検討じゃない。今すぐやれ。やらないなら GitHub に連絡してアカウントを削除させる」\n\n@DDdxx666 は30分以内にリポジトリを `Stardust` に改名し、T3 のブランディングをすべて剥がした。@theo は DM で非公開に謝罪したが、20万回閲覧された公開投稿2件は残したままだ。",
+          "body": "混乱を避けるためMITフォークの改名を検討してもよいと `@DDdxx666` が応じると、`@theo` は19:36 CSTにこう返した。\n\n> 「検討じゃない。今すぐやれ。やらないならGitHubに連絡して、お前のアカウントを停止させる」\n\n`@DDdxx666` は30分以内にリポジトリ名を `Stardust` へ変え、T3のブランド表記をすべて削り落とした。`@theo` はDMで非公開に謝罪した一方、20万表示を超えた公開投稿2件はいずれも残したままだ。",
           "attachments": [
-            "GitHub アカウント削除を突きつけた文言そのままの脅迫"
+            "GitHubアカウント停止をほのめかした原文そのままの脅迫"
           ],
           "links": [
             "X 投稿 2124829315657576890"
           ]
         },
         {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X (2124989435154726982 — 11時間後)",
-          "to": "1兆ドル企業が T3 Code をコピーする件についての質問",
+          "sender": "Theo Browne（@theo）",
+          "handle": "@theo · X（2124989435154726982 — 11時間後）",
+          "to": "T3 Code を模倣する兆ドル規模の米国企業についての質問",
           "time": "2026年11月24日 06:12 CST",
-          "body": "06:12 CST——それから11時間も経たないうちに——時価総額1兆ドル級の米国企業が T3 Code をコピーしても気にならないかと問われ、@theo はこう答えた：\n\n> 「いや。オープンソースはオープンソースだ。たとえ1兆ドル企業が使ってもな！」\n\n一方で、T3 の従業員 @maria_rcks は `maria-rcks/t3libre`（「T3 Code、解放版」）を公然とホストし、英語圏のリポジトリ（`t3code-quota-ui`、`t3code-atlas`、`t3code-bar`）は削除要請を一切受けずに動き続けた。",
+          "body": "06:12 CST、それから11時間も経たないうちに、兆ドル規模の米国企業がT3 Codeをコピーしても気にならないかと問われ、`@theo` はこう答えた。\n\n> 「いや。オープンソースはオープンソースだ。兆ドル企業が使おうと関係ない！」\n\n一方、T3の従業員 `@maria_rcks` は `maria-rcks/t3libre`（「解放された T3 Code」）を公然とホストし、英語圏のリポジトリ（`t3code-quota-ui`、`t3code-atlas`、`t3code-bar`）も削除要求を一切受けることなく稼働を続けた。",
           "attachments": [
-            "11時間後の元 X 返信：「オープンソースはオープンソースだ。たとえ1兆ドル企業が使ってもな！」",
+            "11時間後の元の X 返信：「オープンソースはオープンソースだ。兆ドル企業が使おうと関係ない！」",
             "従業員 @maria_rcks がホストする maria-rcks/t3libre",
-            "問題なく動き続ける英語圏の t3code-* リポジトリ"
+            "そのまま稼働を続ける英語圏の t3code-* リポジトリ"
           ],
           "links": [
             "X 投稿 2124989435154726982",
-            "Origin 監査ポスト"
+            "Origin Audit Post"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-managed-policy-plaintext-relay": {
+      "from": "@theo → 企業／プライバシー",
+      "to": "docs/user/telemetry.mdとT3 Connectに反証された",
+      "dateDisplay": "2026年11月24日",
+      "subject": "「当社のサーバーには一切触れない」と主張、しかし中継は平文",
+      "snippet": "自社ドキュメントは、Webに切り替えがないこと、モバイルがManaged Policyを無視すること、Publishがオプトアウトを無視すること、T3 ConnectがE2E暗号化ゼロであることを認めている。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X（2125186071357251715 & 2125191784859115766）",
+          "to": "企業とプライバシー批判者",
+          "time": "2026年11月24日 19:13 – 19:36 CST",
+          "body": "11月24日、@theoはXでプライバシーに関する2つの公約を投稿した：\n\n- **CST 19:13（2125186071357251715）:** T3 Codeには「最高の企業向けManaged Policyシステム」があり、「全テレメトリーの設定と停止が簡単」だと主張。\n- **CST 19:36（2125191784859115766）:** 会話データは「当社のサーバーには一切触れない」と主張。",
+          "attachments": [
+            "TheoのManaged Policy主張",
+            "「当社のサーバーには一切触れない」主張"
+          ],
+          "links": [
+            "X投稿 2125186071357251715",
+            "X投稿 2125191784859115766"
+          ]
+        },
+        {
+          "sender": "T3 Code自社ドキュメントと中継コード",
+          "handle": "docs/user/telemetry.md & PR #32945",
+          "to": "検証記録",
+          "time": "ca81b7b9で検証",
+          "body": "`ca81b7b9`のT3 Code自社リポジトリのファイルは、両方の主張と矛盾する：\n\n1. **`docs/user/telemetry.md`:** ホスト版Web（`app.t3.codes`）にはトレーシングの切り替えがなく、モバイルはManaged Policyの対象外で、`Publish agent activity`はテレメトリーのオプトアウトを無視すると確認している。\n2. **T3 Connect（Issue #32098 & PR #32945）:** すべてのプロンプト、ソースファイル、ターミナルストリームはT3管理下のOVHとCloudflareサーバー内で平文のまま終端し、エンドツーエンド暗号化はゼロ、デバイス承認はデフォルトでオフ。",
+          "attachments": [
+            "docs/user/telemetry.mdが記録する4つの盲点",
+            "T3 ConnectのE2E暗号化ゼロを確認",
+            "PR #32945 OVH Hillsboro Caddy TLS終端ゲートウェイ"
+          ],
+          "links": [
+            "docs/user/telemetry.md",
+            "証拠#05（T3 Connect）"
           ]
         }
       ]
@@ -1006,42 +1106,42 @@
         }
       ]
     },
-    "2026-11-24-managed-policy-plaintext-relay": {
-      "from": "@theo → 企業／プライバシー",
-      "to": "docs/user/telemetry.mdとT3 Connectに反証された",
+    "2026-11-24-governance-lock-glacier-cla": {
+      "from": "GitHub Issues & @hazae41 ↔ @t3dotgg",
+      "to": "MITコントリビューター1,401人（CLAゼロ／ロック779件）",
       "dateDisplay": "2026年11月24日",
-      "subject": "「当社のサーバーには一切触れない」と主張、しかし中継は平文",
-      "snippet": "自社ドキュメントは、Webに切り替えがないこと、モバイルがManaged Policyを無視すること、Publishがオプトアウトを無視すること、T3 ConnectがE2E暗号化ゼロであることを認めている。",
+      "subject": "炎上ピーク時にOrgがIssue #4123をロック、さらに2022年のglacier#1侮辱",
+      "snippet": "コントリビューター1,401人・CLAゼロのMITリポジトリは外部に「貢献するな」と告げ、テレメトリのIssue #4123は@pingdotggがロックした。その系譜は2022年の侮辱発言にまで遡る。",
       "messages": [
         {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X（2125186071357251715 & 2125191784859115766）",
-          "to": "企業とプライバシー批判者",
-          "time": "2026年11月24日 19:13 – 19:36 CST",
-          "body": "11月24日、@theoはXでプライバシーに関する2つの公約を投稿した：\n\n- **CST 19:13（2125186071357251715）:** T3 Codeには「最高の企業向けManaged Policyシステム」があり、「全テレメトリーの設定と停止が簡単」だと主張。\n- **CST 19:36（2125191784859115766）:** 会話データは「当社のサーバーには一切触れない」と主張。",
+          "sender": "GitHubガバナンス記録（pingdotgg/t3code）",
+          "handle": "Issue #4123 · CONTRIBUTING.md · v0.1.13",
+          "to": "オープンソースのコントリビューター",
+          "time": "2026年11月24〜26日",
+          "body": "`pingdotgg/t3code`はMITライセンスで公開され、**CLAなし**、**GitHubコントリビューター1,401人**、**コアアカウント6個**（`.github/TRIAGE_EXEMPTIONS.td`）という構成だ。`CONTRIBUTING.md`は外部の人間にこう告げている：\n\n> 「当該チーム外の人間からの新機能追加PRには、明示的に一切関心がない……何か貢献したいなら、私の助言はこうだ。やめておけ」\n\n1. **Issue #4123が`@pingdotgg`によりロック：** `@t3dotgg`が「オプトアウト不可のテレメトリ」への苦情を2度クローズした後（`2026-10-21`、`2026-11-04`）、炎上が起きた`2026-11-24T20:43:48Z`に、Orgアカウント`@pingdotgg`がIssue #4123を手動で**ロック**した（リポジトリ全体のロック件数は779）。\n2. **`v0.1.13`の静かなセキュリティ修正4件（アドバイザリ`0`件）：** `2026-11-26T19:32Z`にGitHub Security Advisoryを一切出さずにリリースされ、`#42535`（促されていない`pre-push` gitフック）、`#39408`（CSS `var()`のリモート読み込みバイパス）、`#39489`（`_t3/session-mode`のMCP権限昇格）、`#41988`（macOSのSOCKS uidチェック。Windowsは未チェックのまま）を修正した。",
           "attachments": [
-            "TheoのManaged Policy主張",
-            "「当社のサーバーには一切触れない」主張"
+            "Issue #4123は@t3dotggが2度クローズし、@pingdotggがロック"
           ],
           "links": [
-            "X投稿 2125186071357251715",
-            "X投稿 2125191784859115766"
+            "Issue #4123（ロック済み）",
+            "PR #42535（pre-pushフック）",
+            "PR #39408（CSS varバイパス）",
+            "PR #39489（MCPモード権限昇格）",
+            "PR #41988（SOCKS uidチェック）"
           ]
         },
         {
-          "sender": "T3 Code自社ドキュメントと中継コード",
-          "handle": "docs/user/telemetry.md & PR #32945",
-          "to": "検証記録",
-          "time": "ca81b7b9で検証",
-          "body": "`ca81b7b9`のT3 Code自社リポジトリのファイルは、両方の主張と矛盾する：\n\n1. **`docs/user/telemetry.md`:** ホスト版Web（`app.t3.codes`）にはトレーシングの切り替えがなく、モバイルはManaged Policyの対象外で、`Publish agent activity`はテレメトリーのオプトアウトを無視すると確認している。\n2. **T3 Connect（Issue #32098 & PR #32945）:** すべてのプロンプト、ソースファイル、ターミナルストリームはT3管理下のOVHとCloudflareサーバー内で平文のまま終端し、エンドツーエンド暗号化はゼロ、デバイス承認はデフォルトでオフ。",
+          "sender": "@hazae41（hazae41/glacier#1）",
+          "handle": "github.com/hazae41/glacier/issues/1",
+          "to": "Theo Browne (@t3dotgg)",
+          "time": "2022年10月2日・2026年11月27日",
+          "body": "2026年11月27日（`02:02 UTC`）、オープンソース作者の`@hazae41`が、`@t3dotgg`によって`hazae41/glacier`のIssue #1に残された`2022-10-02T19:02:20Z`のコメントを掘り起こした：\n\n> 「これがパロディならいいのだが、残念ながらメンテナはただの嫌な奴だ :(」\n\nGitHubのIssues APIは、このコメントが今も`hazae41/glacier#1`に残っていることを確認している。`@bermudi`（`Issue #33639`）の件より4年も前のことだ。",
           "attachments": [
-            "docs/user/telemetry.mdが記録する4つの盲点",
-            "T3 ConnectのE2E暗号化ゼロを確認",
-            "PR #32945 OVH Hillsboro Caddy TLS終端ゲートウェイ"
+            "hazae41/glacier#1への2022年10月の@t3dotggのコメント"
           ],
           "links": [
-            "docs/user/telemetry.md",
-            "証拠#05（T3 Connect）"
+            "hazae41/glacier#1のコメント",
+            "@hazae41 11月27日の投稿"
           ]
         }
       ]
@@ -1111,6 +1211,237 @@
           "links": [
             "証拠#19 完全監査",
             "証拠#13（セキュリティアドバイザリ0件）"
+          ]
+        }
+      ]
+    },
+    "2026-11-25-25-tool-telemetry-audit": {
+      "from": "@ZryMiller（millZach/ai-agent-telemetry-audit）",
+      "to": "OSS 25本＋クローズドソース10本のAIコーディングツール",
+      "dateDisplay": "2026年11月25日",
+      "subject": "OSS25本テレメトリ監査：T3 CodeはFからDへ、A評価の同業勢との差",
+      "snippet": "独立監査はOSSツール3本（Aether、Hermes、Roo Code）をA、T3 CodeをベースラインでFと評価した。2b84f486でDに上がったが、監査時点でDO_NOT_TRACKを守っていたのはOrcaだけだった。",
+      "messages": [
+        {
+          "sender": "Zachary Miller (@ZryMiller)",
+          "handle": "millZach/ai-agent-telemetry-audit",
+          "to": "AI開発コミュニティ",
+          "time": "2026年11月25日 07:51 UTC（表示284K）",
+          "body": "独立監査者の`@ZryMiller`は、**オープンソースAIツール25本**を読み取り専用の静的検査で評価し（`3 A / 1 B / 4 C / 11 D / 6 F`）、さらに**クローズドソースのデスクトップアプリ10本**を隔離したDocker `mitmproxy`サンドボックス内で検証した：\n\n- **T3 Code（`F` → `D`）：** ベースライン`4c2e2b37`（11月24日）は**`F`**。`HEAD`の`2b84f486`（11月25日、`#42629`以前）は、`~/.codex`／`~/.claude.json`の読み取りとカスタムモデル名を削除したことで**`D`**まで上がった。ただし、デフォルト有効の`ingest.t3.codes`、無効化時でも無条件に書き込まれる`anonymous-id`ファイル、ソルトなしのSHA-256、`app.t3.codes`のトグルが皆無、デスクトップ版OTEL環境変数の取りこぼし、リレー経由の`colo`／`country`／Clerkの`user.id`、UI/CLIのトグル不在は残ったままだ。\n- **オープンソース勢の上位：** **Aether（`A`）**、**Hermes（`A`）**、**Roo Code（`A`、アーカイブ済み）**、**Vibe Kanban（`B`）**、**Orca（`C`）**。監査時点で`DO_NOT_TRACK`をきちんと守っていたOSSツールは、25本中Orcaだけだった。\n- **クローズドソースとのDocker比較：** **Claude Code `v2.1.332`（`B`）**と**VS Code `1.148.0`（`B`）**は設定すれば不要なHTTPを止めた。一方、**Cursor `3.32.4`（`F`）**、**Gemini CLI（`F`）**、**Cline（`F`）**、**Kilo Code（`F`）**は落第した。",
+          "attachments": [
+            "@ZryMiller 25ツールOSSテレメトリ採点表"
+          ],
+          "links": [
+            "ai-agent-telemetry-audit リポジトリ",
+            "@ZryMillerのXスレッド"
+          ]
+        }
+      ]
+    },
+    "2026-11-26-dmfigol-aws-hr-coercion": {
+      "from": "@dmfigol ↔ @theo（非公開DMとAWS人事）",
+      "to": "表示639K超の公開スレッド",
+      "dateDisplay": "2026年11月26日",
+      "subject": "「恐怖は良いインセンティブ」DMと取り下げられたAWS人事通報",
+      "snippet": "元AWSエンジニアの@dmfigolは、表示89回の引用投稿をきっかけに2025年1月のDMを公開した。AWS人事の調査は不正なしで終わった。",
+      "messages": [
+        {
+          "sender": "@dmfigol（元AWSエンジニア）",
+          "handle": "@dmfigol · X (2126025881844174968)",
+          "to": "公開タイムライン（表示639K超）",
+          "time": "2026年11月26日 18:50 UTC",
+          "body": "2026年11月26日、元AWSエンジニアの`@dmfigol`（いいね8,086、表示639K超）は、2025年1月29日の引用投稿（表示89、いいね0、リポスト0）の後に何が起きたかを語った。この投稿は、マルウェアのアップロードで`t3.chat`ドメインがブロックされた後、CheckPoint／Palo Altoに対する`@theo`の最後通牒を批判したものだった：\n\n> 「俺が起きる前にt3 chatのブロックを解除しろ。さもなければ、今日は一日かけて動画を撮り、100万人超の観客を率いてお前を叩く」\n\n- **AWS人事による調査：** 約1か月後、AWS人事は`@dmfigol`に、彼のツイートのスクリーンショットを添えた外部からの通報がAWS広報に送られ、同日中に取り下げられたと連絡した。それでも正式な人事調査は必要とされ、調査は**不正なし**で終わった。\n- **独立した反応：** `@petersteele`（`2126096729934033141`）と`@_Defeatable_`（`2126096598367117581`）が、過去にも同様の言動があったと裏付けた。\n- **検証の限界：** DMと人事調査はスクリーンショットを伴う`@dmfigol`本人の証言だが、1年半後のAWS不採用3件（`2084660216759558593`）を通報に結びつけるのは状況証拠にすぎず、`@dmfigol`自身も明言している。`「確たる証拠はない、状況証拠だけだ」`",
+          "attachments": [
+            "AWS人事件についての@dmfigolの表示639K超のXスレッド"
+          ],
+          "links": [
+            "@dmfigol メインスレッド",
+            "@dmfigol 元のツイート",
+            "証拠スレッド #20",
+            "@_Defeatable_の返信"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo) — 非公開DM",
+          "handle": "@theo → @dmfigol (2126025889016094829)",
+          "to": "@dmfigol",
+          "time": "2025年1月29日（保存されたスクリーンショット）",
+          "body": "`@dmfigol`が投稿したDMのスクリーンショットによると、`@theo`は自ら会話を始めている：\n\n> 「公開の場で晒したくないのでDMに移る」\n\n> 「問題の根っこはインセンティブ設計だ。恐怖は良いインセンティブだ」\n\n> 「ここでの君の目的は何だ？ ただのクソ野郎になりたいだけか / 末尾に ? を付け忘れたな」\n\n> 「あえて聞くが、英語は母語か？ 君のツイートが許容される状況なんて、英語をよく知らない場合しか想像できない」\n\n> 「今日は顧客を守るために少し強く出た。君は理由もなく自分の顧客の一人を攻撃したんだ」",
+          "attachments": [
+            "DMのスクリーンショット：「恐怖は良いインセンティブ」「英語は母語か？」"
+          ],
+          "links": [
+            "@dmfigolのDMスクリーンショット",
+            "@petersteeleの裏付け"
+          ]
+        }
+      ]
+    },
+    "2026-11-26-google-antigravity-zed-spoof": {
+      "from": "Julius (@jullerino) & PR #43026 / #43087",
+      "to": "Antigravity利用者（セキュリティアドバイザリ0件）",
+      "dateDisplay": "2026年11月26日",
+      "subject": "Googleが内部API呼び出しを警告、Zedなりすましはv0.1.13で削除",
+      "snippet": "PR #43026は、内部API呼び出しでアカウントがフラグ付けされるとGoogleが警告したことを裏付け、PR #43087はclientInfo name:\"zed\"を削除した。だがv0.1.13はその両方を380件のバグ修正の中に隠した。",
+      "messages": [
+        {
+          "sender": "Julius (@jullerino) & @gabrielelpidio",
+          "handle": "PR #43026 · PR #43087 · v0.1.13",
+          "to": "pingdotgg/t3code main",
+          "time": "2026年11月25〜26日",
+          "body": "FAQドキュメントで「リスクはゼロ」と保証しつつ`#40713`と`#41536`をクローズした2日後、T3 CodeはAntigravity関連の仕組みを2つとも静かに撤去した：\n\n1. **PR #43026（`2026-11-25T19:25:43Z`、`@juliusmarminge`）：** `antigravityUsageLimits.ts`（OSのキーチェーン認証情報と偽の`antigravity/hub`ヘッダーを使って`cloudcode-pa.googleapis.com`をポーリングしていた）を削除し、`apps/server`から`@napi-rs/keyring`を取り除いた：\n\n> 「Antigravityは外部クライアントにはACPしか提供しない。Googleから、内部APIを呼ぶとアカウントがフラグを立てられる場合があると告げられた」\n\n> 「どちらもユーザーを厄介な目に遭わせかねない」\n\n2. **PR #43087（`2026-11-26T15:42:39Z`、`@gabrielelpidio`）：** フォールバックのハンドシェイクで行っていた`Zed`許可リストのなりすましを削除：\n\n> 「agy 1.5.0では、あるいはT3がランタイムのバージョンを読めなかったときはいつでも、AntigravityのACPハンドシェイクは`clientInfo: { name: \"zed\", version: \"0.0.0\" }`を送っていた。これでagyはClaudeとGPTのモデルを提供してくれた。1.5.0がそれを提供するのはZedのような許可リスト入りのエディタだけだ……別のクライアントを装うのは、同じルール違反になる」\n\n3. **`v0.1.13`のリリースノート（`2026-11-26T19:32Z`、変更401件）：** 強調された7項目はGBKエンコーディングとUIショートカットの話で、Googleの警告も`#43026`／`#43087`も触れられず、`「さらに380件のバグ修正と性能改善」`の中に埋もれている。GitHub Security Advisoryは**0件**だ。",
+          "attachments": [
+            "PR #43026 Googleのアカウントフラグ警告とAntigravity削除",
+            "PR #43087 clientInfo: { name: \"zed\" } のハンドシェイクなりすましを削除"
+          ],
+          "links": [
+            "PR #43026",
+            "PR #43087",
+            "v0.1.13リリース",
+            "証拠スレッド #21"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-final-statement-slophouse-gdpr": {
+      "from": "@theo & Julius ↔ @sk1gl4a & @theperfdev",
+      "to": "GDPR／LfD Niedersachsen／クローズドソースのslophouse",
+      "dateDisplay": "2026年11月27日",
+      "subject": "最終声明は16分で反証、追跡はslophouseへ",
+      "snippet": "Theoの9項目の否定から数分後、@sk1gl4aは求められていないClaude読み取り243件、ドイツVAT 19%の請求、クリック不要のt3.chatフィンガープリンティングを捕捉した。PR #43948が走査を認めている。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125700717935841479)",
+          "to": "公開タイムライン（表示432K）",
+          "time": "2026年11月25日 21:18 UTC",
+          "body": "11月25日`21:18 UTC`、`@theo`は`「最終声明」`と題する投稿を行い、「T3 Codeはこれまで一度も：」として9項目の否定を並べた：\n\n> 「あなたのコンピュータ上にある情報をアップロードしたことはない」\n\n> 「ユーザーIDをアップロードしたことはない」\n\n> 「我々が追跡していたのは基本的な利用状況（トークン数とプロンプト数）だけだ。それ以外はない」",
+          "attachments": [
+            "@theo 11月25日「最終声明」の9項目否定"
+          ],
+          "links": [
+            "@theoの最終声明"
+          ]
+        },
+        {
+          "sender": "@sk1gl4a & @theperfdev",
+          "handle": "@sk1gl4a · X (2125748079047647715 · 2125807572800200712 · 2125814463085334546)",
+          "to": "Anthropic、OpenAI、LfD Niedersachsen",
+          "time": "2026年11月26日 00:26 – 17:28 UTC",
+          "body": "`@theo`の投稿（`2026-11-26T00:26:51Z`、表示`100K+`）から16分後、`@sk1gl4a`はパケットキャプチャとファイルアクセスログを公開した：\n\n1. **求められていない外部セッションの走査：** Mistral VibeだけでT3 Codeを動かしたところ、ローカルの**Claude Code 243件**と**Grok 9件**のセッションが開かれ、3台のマシンで`~/.codex/auth.json`と`~/.claude.json`がハッシュ化され、`#42629`以前は`DO_NOT_TRACK=1`も無視された。（`@sk1gl4a`はAnthropic、OpenAI、ドイツの規制当局`LfD Niedersachsen`に申し立てたと報告しているが、当局の公開議事録はまだ出ていない。）\n2. **ドイツ付加価値税19%（`€9.03`／`€56.43`）：** Stripeの決済では、T3 Connectのマシン3台超をアンロックするためにドイツ居住者へユーロ建てで19%のVATを請求していた。Connect IDとメールアドレスをT3 Chatへ渡し（`T3ChatAccounts.ts#L55-L58`）、Theoが11月24日にドイツを禁止すると脅したにもかかわらず、GDPR第3条(2)の適用範囲を成立させている。\n3. **クリック不要の`t3.chat`フィンガープリンティング：** `@sk1gl4a`と独立開発者の`@theperfdev`（`2126005307231162488`）はともに、`t3.chat`（クリック前のプライバシーポリシーページですら）がFingerprintJS（Canvas/WebGL/音声/フォントを使う`/api/identity`）、PostHog（`t3.chat/ingest`）、Plausible、hCaptchaを動かしているのを捕捉した。いずれも2025年5月31日の`uploadthing.com/info/privacy-policy`には開示されていない。",
+          "attachments": [
+            "@sk1gl4aによるClaude読み取り243件の捕捉とGDPR申し立て",
+            "T3 ConnectのStripe決済画面、ドイツVAT 19%（月額€9.03）",
+            "t3.chatのクリック不要FingerprintJS／PostHog捕捉"
+          ],
+          "links": [
+            "@sk1gl4a 243セッションのスレッド",
+            "@sk1gl4a ドイツVATの証拠投稿",
+            "@sk1gl4a t3.chatのフィンガープリント",
+            "@theperfdevの独立再現",
+            "UploadThing / T3 Chatのポリシー"
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino)：PR #43948、slophouse、Clerk",
+          "handle": "PR #43948 · PR #43099 · PR #43889 · PR #42803",
+          "to": "pingdotgg/t3code",
+          "time": "2026年11月25〜27日",
+          "body": "その後、メンテナ自身のGitHub PRが走査を認め、帰属判定のロジックをクローズドソースの`slophouse`バックエンドへ移した：\n\n- **PR #43948（11月27日`17:00Z`時点で`open`）：** 次のように明言されている：\n\n> 「T3 Codeはこのコンピュータ上で他のエージェントのファイルを断りなく読んでいた。Usageを開くと、あらゆるエージェントのセッション履歴を走査した。Claudeのリセットクレジット、Grokのクレジット、OpenCode Goの上限も、各エージェントのサインイントークンやキーを読んでいた。Welcomeページは開いた瞬間にプロジェクトのためにエージェント履歴を走査し、ユーザーが有効にしていないエージェント（Pi）まで名前を挙げていた」\n\n（`~/.claude.json`の組織ID読み取りは依然として無制限のままで、モバイル版Usageのトグルもない。）\n- **`slophouse`というブラックボックス：** `PR #43099`（`2026-11-25T21:59Z`）は`「データはすべてslophouseに留まる」`と認め、`@jullerino`（`2125649442665889821`）は`「オープンソースではないので監査が難しい」`と認めた。さらに`PR #43889`（`fix(telemetry): link Connect owners by a relay-issued analytics id`）は**`「いや、slophouseでやる方が楽だ」`**という一言とともに10分でクローズされた。\n- **未修正の`main`のClerkリーク：** `PR #42803`は、`ElectronManagedAuthShell.tsx`と`BrowserManagedAuthShell.tsx`の`<ClerkProvider>`に依然`telemetry={false}`がないことを示した。コミュニティによるUIオプトアウトの`PR #42625`は`open`のままだ。",
+          "attachments": [
+            "PR #43948 「他のエージェントのファイルを断りなく読んだ」と認める",
+            "PR #43889 クローズ：「いや、slophouseでやる方が楽だ」"
+          ],
+          "links": [
+            "PR #43948（公開された自認）",
+            "PR #43099（slophouse）",
+            "PR #43889（slophouseへ移してクローズ）",
+            "@jullerino オープンソースではないという投稿",
+            "PR #42803（ClerkProvider）",
+            "PR #42625（openのままのUIトグル）",
+            "証拠スレッド #22"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-desktop-browser-sandbox-bypass": {
+      "from": "コード監査（コミット 3c72b4e7）",
+      "to": "デスクトップ版および Supervised Claude / Codex の利用者",
+      "dateDisplay": "2026年11月27日",
+      "subject": "Anthropic の警告を無音化し、デスクトップで11ブラウザの Cookie を露出",
+      "snippet": "3c72b4e7 時点：T3 は Claude の承認を覆い隠す警告を黙らせ、Codex のサンドボックス外で uploadFiles を走らせ、デスクトップではブラウザ分離を無効にしている。",
+      "messages": [
+        {
+          "sender": "独立コード監査（3c72b4e7）",
+          "handle": "ClaudeAdapterV2.ts · ServerBrowser.ts · BrowserImport",
+          "to": "デスクトップ版およびエージェント実行環境の利用者",
+          "time": "2026年11月27日",
+          "body": "コミット `3c72b4e7` の `main` をソースコードレベルで点検した結果、ブラウザと承認バイパスに関わる3つの挙動が互いに絡み合っていることが確認できた。\n\n1. **Anthropic のセキュリティ警告を無音化（`ClaudeAdapterV2.ts#L1629-L1647`）:** `permissionMode: default`（Supervised）の下でワイルドカード `mcp__t3-code__*` を注入し、`preview_*` 系ツールでは `runtimeMode` のチェックを飛ばす。さらに `withoutClaudeCanUseToolShadowedWarning` の内部で `process.emitWarning` をモンキーパッチし、`CLAUDE_SDK_CAN_USE_TOOL_SHADOWED` を「セッションごとのノイズ」として握りつぶす。\n2. **Codex サンドボックスのバイパス（`ServerBrowser.ts#L1723-L1749`）:** `enableAgentBrowserAccess` の既定値は `true`（`settings.ts#L1445`）。ホスト側ブラウザの操作は Codex のサンドボックスの外で実行され（`CodexAdapterV2.ts#L853-L883`）、`uploadFiles` は `NodePath.isAbsolute(path)` だけを検証する。ワークスペースへの閉じ込めも、ユーザーへの確認もない。\n3. **デスクトップ版では11ブラウザの Cookie が隔離されない（`ServerBrowser.ts#L1236-L1247`）:** `isolatedContext` が `true` になるのは `desktop === null`（ヘッドレス Linux）の場合だけ。デスクトップの Electron では `isolatedContext` は `false` で、`open=false` によってセッションは見えないまま、`preview_evaluate` が任意の URL に対して CDP の `Runtime.evaluate`（1回あたり `64 KB`）を実行する。しかも 11 ブラウザから Keychain／DPAPI／フルディスクアクセスの Cookie を取り込む `BrowserImport/`（`Sources.ts`、`ChromiumKeys.ts`）が動くのは、このデスクトップ版だけだ。",
+          "attachments": [
+            "`CLAUDE_SDK_CAN_USE_TOOL_SHADOWED` を握りつぶす ClaudeAdapterV2.ts",
+            "デスクトップの Electron で isolatedContext を無効化する ServerBrowser.ts",
+            "NodePath.isAbsolute しか検証しない ServerBrowser.ts の uploadFiles"
+          ],
+          "links": [
+            "ClaudeAdapterV2.ts#L1629-L1647",
+            "ServerBrowser.ts#L1236-L1247",
+            "ServerBrowser.ts#L1723-L1749",
+            "BrowserImport/Sources.ts",
+            "証拠スレッド #23"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-plaintext-quote-prompt-urls": {
+      "from": "@Luca_Hagenmayer と監査担当 ↔ Julius（@jullerino）",
+      "to": "Discussion #29456（Issue #29449 は4分39秒でロック）",
+      "dateDisplay": "2026年11月27日",
+      "subject": "平文チャットとプロンプトを URL に詰め込み、バグは4分でロック",
+      "snippet": "引用リンクとプロンプトリンクには最大8,000文字の平文チャット、未選択の前後文脈32文字、リポジトリ名が埋め込まれる。Issue #29449 は返信0件のまま4分39秒でロックされた。",
+      "messages": [
+        {
+          "sender": "コード監査（f40f78eb）および @Luca_Hagenmayer",
+          "handle": "assistantCitations.ts · promptLinks.ts · Discussion #29456",
+          "to": "Web版・デスクトップ版・モバイル版の利用者",
+          "time": "2026年11月27日",
+          "body": "`main@f40f78eb` で確認した2つのリンク共有ヘルパーは、暗号化していない会話テキストをそのまま URL のクエリ文字列に詰め込んでいる。\n\n1. **平文の引用リンク（`assistantCitations.ts`、`PR #9146`）:** 画面上は `[Assistant quote]` と表示されるが、`t3-citation://v1/...` には最大 `8,000` 文字の `text`、`8,000` 文字の `comment`、そして選択していない前後の文脈 `prefix`／`suffix` が各 `32` 文字ずつ符号化されている。\n2. **公開プロンプト URL（`promptLinks.ts#L192-L207`、`@t3dotgg` による `PR #18454`）:** `buildNewThreadLink()` は最大 `8,000` 文字の `prompt` と `repo=owner/name` を `https://app.t3.codes/new?prompt=...` に載せる。リンクプレビューの展開時には、ブラウザ履歴やサーバーログにも露出する。\n3. **4分39秒でのロックと設計文書の削除:** `@Luca_Hagenmayer` は `Discussion #24241`（`Oct 24`、返信0件）と `Issue #29449`（`2026-11-02T16:38:48Z`）を立てた。`16:43:27Z`（**4分39秒後**）、`@juliusmarminge` はコメント0件のまま `#29449` をロックして `Discussion #29456` に変換し、その後モバイルにも同じ形式を投入（`PR #35306`、Nov 19）、社内設計文書を削除した（`PR #41330`、Nov 23）。",
+          "attachments": [
+            "プロンプト全文とリポジトリ名を app.t3.codes の URL に詰め込む promptLinks.ts",
+            "Issue #29449 から4分39秒で Discussion #29456 に変換・ロック"
+          ],
+          "links": [
+            "assistantCitations.ts#L43-L56",
+            "contracts/assistantCitations.ts#L4-L26",
+            "promptLinks.ts#L192-L207",
+            "Discussion #29456",
+            "Discussion #24241",
+            "PR #18454 (Theo)",
+            "@Luca_Hagenmayer Post",
+            "証拠スレッド #24"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-sqlite-113gb-fanout-and-silence": {
+      "from": "@kdy1dev（Issue #44029）と @jullerino",
+      "to": "@theo（X で41時間の沈黙）",
+      "dateDisplay": "2026年11月27日",
+      "subject": "113 GiB の SQLite と「大規模なファンアウト」、X での Theo の41時間沈黙",
+      "snippet": "SWC 作者の @kdy1dev が 5.65M 行の重複を含む 113 GiB の statev2.sqlite（#44029）に遭遇。@jullerino は「大規模なファンアウト」と認め、@theo は41時間沈黙した。",
+      "messages": [
+        {
+          "sender": "@kdy1dev（SWC/oxc 作者）と Julius（@jullerino）",
+          "handle": "Issue #44029 · @jullerino (2126207815052325020)",
+          "to": "pingdotgg/t3code",
+          "time": "2026年11月27日 01:18 – 07:27 UTC",
+          "body": "2026年11月27日、SWC/oxc の作者 `@kdy1dev` は **`113 GiB` の `statev2.sqlite`** を記録した（設定のメンテナンス画面では `0 B recovered`、`t3 doctor --fix` を実行しても `56.68 GiB` までしか縮まなかった）。`Issue #44029` には、5,199 スレッドにまたがる `provider-session.updated` の重複行 **`5,654,888`** 件（`15.3 GB`）が記録されている。\n\n`06:53:40 UTC`、`@jullerino` は重複バグを認めた。\n\n> 「一部はそうだが、こちらの小さなバグが大規模なファンアウトを引き起こしていて、剪定が追いつかないようだ」\n\n- **X での41時間沈黙:** `2026-11-25T23:44:13Z`（`2125737351901303200`）以降、`@theo` は約41時間にわたりオリジナルの投稿も技術的な返信も**一件も出していない**。出したのは称賛の引用リポストと Mobile 2.4 の告知（`2126054989768675651`、`2126062066809307637`）だけで、`@dmfigol`、`@sk1gl4a`、`@DavidOndrej1` への返信は一つもない。",
+          "attachments": [
+            "@jullerino が「大規模なファンアウト」を認めた発言と @kdy1dev の Issue #44029"
+          ],
+          "links": [
+            "Issue #44029",
+            "@jullerino Reply",
+            "@theo Nov 25 Marketing Apology"
           ]
         }
       ]
@@ -1552,6 +1883,94 @@
     "EV-109": {
       "title": "PR #39483 静かなパストラバーサル修正（アドバイザリ0件）",
       "caption": "11月20日、ca81b7b9 の期間中に ServerSecretStore のパストラバーサルを静かに修正したが、GitHub Security Advisories は0件のままだった。"
+    },
+    "EV-110": {
+      "title": "@dmfigolの63.9万表示のAWS人事スレッド",
+      "caption": "元AWSエンジニアの@dmfigolが11月26日に投稿したもの。2025年1月のCheckPoint/Palo Altoをめぐる紛争と、取り下げられたAWS人事への通報を詳述している。"
+    },
+    "EV-111": {
+      "title": "@theoのDM：「恐怖は良い動機づけだ」",
+      "caption": "@dmfigolが公開した2025年1月29日のDMスクリーンショット（アーカイブ）。「Fear is a good incentive（恐怖は良い動機づけだ）」「is English your native language?（英語は母語ですか？）」のやり取りを引用している。"
+    },
+    "EV-112": {
+      "title": "PR #43026、Googleによるアカウントフラグ付けを認める",
+      "caption": "Googleが「内部APIの呼び出しはアカウントをフラグ付けされ得る」と警告したことを受け、antigravityUsageLimits.tsを削除した11月25日マージのPR。"
+    },
+    "EV-113": {
+      "title": "PR #43087、Zedの許可リスト偽装を削除",
+      "caption": "T3 CodeがClaude/GPTモデルにアクセスするため、AntigravityのACPハンドシェイクで `clientInfo: { name: 'zed' }` を送っていたことを認めた11月26日マージのPR。"
+    },
+    "EV-114": {
+      "title": "@theo、11月25日の「Final statement.」",
+      "caption": "「T3 Code has never:（T3 Codeはこれまで一度も〜したことがない）」と9項目で否定し、追跡していたのは基本的なトークン数とプロンプト数のみだと主張した投稿。"
+    },
+    "EV-115": {
+      "title": "@sk1gl4a、243件のClaudeセッションとGDPR申し立て",
+      "caption": "Theoの「Final statement.」から16分後に投稿されたキャプチャ。求められていないClaudeの読み取り243件、3台のマシンのハッシュ、ドイツのデータ保護監督当局（LfD）への申し立てを記録している。"
+    },
+    "EV-116": {
+      "title": "T3 ConnectのStripe決済、ドイツVAT 19%",
+      "caption": "T3 Connectの上限を引き上げるため、ドイツ居住者に月額€9.03（19% MwSt込み）を請求するStripeの決済画面。GDPR第3条(2)の適用範囲を確立するものだ。"
+    },
+    "EV-117": {
+      "title": "t3.chatのゼロクリックFingerprintJS取得",
+      "caption": "t3.chatのプライバシーポリシーページで、未ログイン・クリックなしの状態で取得された記録。FingerprintJS（`/api/identity`）、PostHog、Plausible、hCaptchaが読み込まれている。"
+    },
+    "EV-118": {
+      "title": "PR #43948、無断のエージェントスキャンを認める",
+      "caption": "メンテナのPRで、T3 Codeが他のエージェントのファイル、キー、ディスク上のセッション履歴を無断で読んでいたことを明示的に認めている。"
+    },
+    "EV-119": {
+      "title": "PR #43889 クローズ：「いや、slophouseでやる方が楽だ」",
+      "caption": "Connectの分析用ID連携を公開クライアントコードからクローズドソースのslophouseバックエンドへ移すPR。クローズ済み。"
+    },
+    "EV-120": {
+      "title": "ClaudeAdapterV2.ts#L1629-L1647 黙らされた警告",
+      "caption": "`withoutClaudeCanUseToolShadowedWarning` 内で `process.emitWarning` をモンキーパッチし、Anthropicの承認シャドーイング警告を黙らせている。"
+    },
+    "EV-121": {
+      "title": "ServerBrowser.ts#L1236-L1247 デスクトップ版の非分離",
+      "caption": "`desktop === null` のときだけ `isolatedContext: true` を設定するため、デスクトップ版Electronではインポートした11ブラウザ分のCookieが分離されないまま残る。"
+    },
+    "EV-122": {
+      "title": "ServerBrowser.ts#L1723-L1749 uploadFilesの検証",
+      "caption": "ホスト側の `uploadFiles` ヘルパーは `NodePath.isAbsolute(path)` しか検証せず、ワークスペース境界のチェックも確認プロンプトもない。"
+    },
+    "EV-123": {
+      "title": "promptLinks.ts#L192-L207 公開プロンプトクエリURL",
+      "caption": "`buildNewThreadLink` はプロンプト全文（最大8,000文字）とリポジトリ名を `https://app.t3.codes/new?prompt=...` 形式のURLにエンコードする。"
+    },
+    "EV-124": {
+      "title": "Discussion #29456、4分39秒でロック",
+      "caption": "平文の `t3-citation://` 引用リンクに関するプライバシーバグ Issue #29449 は、4分39秒でロックされ、返信0件のままIdeasのDiscussion #29456へ移された。"
+    },
+    "EV-125": {
+      "title": "@theo、ベンチマーク資金提供の申し出を認める",
+      "caption": "10月18日のツイートで、TheoがT3 Codeの低スコアをめぐって@zqkrqに接触し、ベンチマークへの資金提供を申し出たことを公に認めている。"
+    },
+    "EV-126": {
+      "title": "@DavidOndrej1の10月18日のベンチマーク投稿",
+      "caption": "v1/v2ベンチマークの順位をめぐる23.6万回表示の告発投稿。Community Noteが付されている。"
+    },
+    "EV-127": {
+      "title": "T3 Codeのスポンサー一覧（WorkOS、Blacksmith、Browserbase、CodeRabbit）",
+      "caption": "11月26日、@dmfigolのスレッドの下に@DavidOndrej1が投稿したスポンサー一覧。"
+    },
+    "EV-128": {
+      "title": "@ZryMillerによる25ツールのOSSテレメトリ監査",
+      "caption": "25のOSS AIツールを比較した28.4万回表示の独立系スコアカード（A評価は3ツール、T3 CodeはF→D、DO_NOT_TRACKに唯一合格したのはOrcaのみ）。"
+    },
+    "EV-129": {
+      "title": "Issue #4123、@pingdotggの組織アカウントによりロック",
+      "caption": "テレメトリに関する苦情は@t3dotggによって2度クローズされ、11月24日の炎上ピーク時に@pingdotggの組織アカウントによってロックされた。"
+    },
+    "EV-130": {
+      "title": "hazae41/glacier#1 2022年10月のコメント",
+      "caption": "2022年から現存するコメント。@t3dotggが独立系OSSプロジェクトの最初のIssueに「sadly the maintainer is just a dick :(（残念ながらメンテナはただの嫌な野郎だ）」と書き込んでいる。"
+    },
+    "EV-131": {
+      "title": "113 GiBのSQLite「Massive Fan Out」（#44029）",
+      "caption": "@jullerinoが、SWC作者の@kdy1devがIssue #44029で報告した565万件の重複した `provider-session.updated` 行を認めている。"
     }
   }
 }

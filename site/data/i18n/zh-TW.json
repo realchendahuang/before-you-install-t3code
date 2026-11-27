@@ -215,7 +215,7 @@
     "platCode": "程式碼",
     "allDates": "全部日期",
     "yearPre": "2026（3 月到 11 月 22 日）",
-    "yearCrisis": "11 月 23–25 日",
+    "yearCrisis": "11 月 23–27 日",
     "sortBadge": "排序",
     "sortNewest": "最新優先",
     "sortOldest": "最早優先",
@@ -302,7 +302,7 @@
     },
     "dossiers": {
       "01": {
-        "title": "報告 01 · 遙測與連夜 GDPR 補丁",
+        "title": "報告 01 · 遙測與連夜 GDPR 修補程式",
         "desc": "PR #174、commit 3bdaa6e1、ingest.t3.codes、Identify.ts、每小時 220 萬筆 Axiom IP 日誌，以及 PR #42450。"
       },
       "02": {
@@ -345,7 +345,7 @@
   "story": {
     "pageTitle": "被封鎖後的 96 小時 · 18 語連載漫畫與 Podcast · Temu3 Code",
     "title": "被封鎖之後的九十六小時",
-    "podcastTitle": "NotebookLM 播客",
+    "podcastTitle": "NotebookLM Podcast",
     "podcastDownload": "MP3 ↓",
     "zoomBtn": "放大",
     "receiptBtn": "來源",

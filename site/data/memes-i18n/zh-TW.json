@@ -97,6 +97,22 @@
       "title": "二十四宗罪 · 洩：正文進 URL，4 分 39 秒鎖單",
       "note": "分享連結把 8,000 字私密對話和完整提示詞塞進明文 URL；Issue #29449 零回覆、4 分 39 秒鎖單，文件也刪了。"
     },
+    "sins-sin-25-patronage-zi": {
+      "title": "二十五宗罪 · 資：榜單排名墊底就私訊評測作者，「然後我主動出資贊助」",
+      "note": "T3 Code 在公開榜單分數墊底後，Theo 親自私訊評測作者，並公開承認主動提出「出資贊助」；下一版榜單直接把它捧成「主力日用」，還順帶上線了 t3.ademark.dev。"
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "二十六宗罪 · 劣：25 款開源工具稽核倒數第一（F → D），<ClerkProvider> 至今不關遙測",
+      "note": "在 @ZryMiller 的 25 款開源 AI 工具遙測稽核裡，原始版本拿下倒數第一「F」，連夜趕完修補程式也只爬到「D」，同期 Aether 和 Hermes 全是「A」；至今仍在退出後照樣建立匿名 ID，而且 <ClerkProvider> 還是沒加上 telemetry={false}。"
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "二十七宗罪 · 閉：白拿 1,401 位開源貢獻者的心血，指南卻寫「建議別提 PR」，熱搜當晚官方帳號鎖死 #4123",
+      "note": "開源儲存庫白用 1,401 位社群開發者的 MIT 貢獻，卻在指南裡寫「建議別提 PR」；熱搜衝到 70 萬瀏覽量當晚，官方帳號 @pingdotgg 親手鎖死 #4123，v0.1.13 又悄悄修掉 4 個安全漏洞，公告欄照樣掛 0。"
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "二十八宗罪 · 脹：565 萬行重複寫入把 SQLite 撐爆到 113 GiB，面對鐵證沉默 41 小時",
+      "note": "事件扇出 Bug 把 SWC 作者的 statev2.sqlite 撐爆到 113 GiB、565 萬行重複紀錄（設定頁清理只釋放 0 B，doctor 修完仍剩 56.68 GiB）；面對全球鐵證，Theo 連續 41 小時只轉發誇讚、一句話都不說。"
+    },
     "blended-00-drake": {
       "title": "Drake 式雙標：11 小時兩張臉",
       "note": "中國開發者免費 Fork：改名字不然封鎖帳號；11 小時後美國大廠抄同一份程式碼：開源就是開源，隨便用。"
@@ -142,7 +158,7 @@
       "note": "以為遠端連終端是端對端加密，查完原始碼發現中繼伺服器上直接解密明文轉發。"
     },
     "blended-06-laughing-leo": {
-      "title": "投資人舉杯笑被投項目停服",
+      "title": "投資人舉杯笑被投專案關停",
       "note": "當過 Vibe Kanban 的天使投資人，轉頭公開笑它倒閉，還要在自家軟體裡賣同類沙盒。"
     },
     "blended-07-two-buttons": {
@@ -162,8 +178,8 @@
       "note": "社群把帶 147 項測試的遙測開關 PR 寫好了，維護者拒絕，還說不會讓退出更容易。"
     },
     "blended-10a-yall-got-any-more": {
-      "title": "再來點社群 Fork，30 秒扒走",
-      "note": "看到別人 Fork 裡的好功能，一句「我要偷這個了」，馬上叫機器人去扒倉庫。"
+      "title": "再來點社群 Fork，30 秒抄走",
+      "note": "看到別人 Fork 裡的好功能，一句「我要偷這個了」，馬上叫機器人去扒儲存庫。"
     },
     "blended-10b-left-exit-12": {
       "title": "罵完 Fork，30 秒後扒人家 Fork",
@@ -171,15 +187,15 @@
     },
     "blended-11-train-bus": {
       "title": "澄清兩小時，被自家 PR 撞飛",
-      "note": "上午發長文保證沒收路徑、開關好使，不到兩小時自家補丁把話全撞碎。"
+      "note": "上午發長文保證沒收路徑、開關管用，不到兩小時自家修補程式把話全撞碎。"
     },
     "blended-12a-this-is-fine": {
       "title": "火海喝咖啡：220 萬條日誌/小時",
-      "note": "歐盟 GDPR 舉報後連夜補鍋，補丁自己曝光中繼每小時往 Axiom 寫 220 萬條帶 IP 日誌，留 30 天。"
+      "note": "歐盟 GDPR 檢舉後連夜救火，修補程式自己曝光中繼每小時往 Axiom 寫 220 萬條帶 IP 日誌，留 30 天。"
     },
     "blended-12b-panik-kalm-panik": {
-      "title": "舉報來了：慌、穩、更慌",
-      "note": "被歐盟舉報，連夜打 6 小時補丁以為穩了，結果補丁裡藏著更大的洩漏。"
+      "title": "檢舉來了：慌、穩、更慌",
+      "note": "被歐盟檢舉，連夜打了 6 小時修補程式以為穩了，結果修補程式裡藏著更大的洩漏。"
     },
     "blended-13-hide-the-pain": {
       "title": "漏洞偷偷修完，公告欄掛 0",
@@ -245,6 +261,10 @@
       "title": "亮點寫 GBK，封號警告塞進 380 項",
       "note": "v0.1.13 共 401 項改動，置頂 7 條亮點講 GBK，Google 封號警告和冒充 Zed 全塞進「其餘 380 項」。"
     },
+    "blended-21c-always-has-been-zed": {
+      "title": "太空人：原來一直都在冒充 Zed 連 Google？一直都是",
+      "note": "官方 PR #43087 親口承認，跟 Google Antigravity 握手時一直把客戶端名稱報成 zed；v0.1.13 發布日誌又把修正藏進「其餘 380 項修復」。"
+    },
     "blended-22a-clown-final-statement": {
       "title": "最終聲明 16 分鐘後被拆台",
       "note": "剛保證從不讀本機檔案，16 分鐘後 @sk1gl4a 數出 243 個被掃描的 Claude 工作階段，第二天 PR #43948 自己認了。"
@@ -269,6 +289,10 @@
       "title": "不修權限，把 Anthropic 警告靜音",
       "note": "Anthropic SDK 警告通配符繞過人工審批，T3 不改權限，反而改 process.emitWarning 靜音，還寫了單元測試。"
     },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "火海喝咖啡：只在無介面 Linux 隔離，桌面版 11 款瀏覽器全數不設防",
+      "note": "原始碼裡的會話隔離只在無頭 Linux 伺服器開啟，真正匯入 11 款瀏覽器 Cookie 的桌面版反倒關著隔離，旁邊還開著被靜音的 Anthropic 警告和任意路徑 uploadFiles。"
+    },
     "blended-24a-anakin-padme-url": {
       "title": "你沒把 8000 字 Prompt 塞網址吧",
       "note": "自己提自己合的 PR #18454 把 8000 字 Prompt 和私有儲存庫名稱拼進公網 URL，貼到 Slack 就被預覽寫進日誌。"
@@ -276,6 +300,22 @@
     "blended-24b-disaster-girl-4m39s": {
       "title": "隱私 Bug 4 分 39 秒鎖單刪文件",
       "note": "檢舉引用連結明文洩漏前後 32 字正文（Issue #29449），4 分 39 秒零回覆鎖單，還推上行動端、刪了文件。"
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "撕下面具：剛拿低分就私訊評測作者，下一版直接變主力日用",
+      "note": "在 ADE 榜單拿了低分後，Theo 公開承認私訊評測作者並「主動出資贊助」；下一版榜單直接把他家工具捧成主力日用，還掛出了 t3.ademark.dev。"
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "銅牌噴香檳：25 款開源工具稽核從 F 升到 D，喜極而泣",
+      "note": "在 @ZryMiller 的 25 款開源工具遙測稽核裡，Aether 和 Hermes 穩拿全 A，T3 Code 原版墊底拿 F、連夜趕修補程式也只升到 D，照樣原地開香檳慶祝。"
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "四年如一日：2022 年罵開源作者是混蛋，2026 年照舊開罵還順手鎖定",
+      "note": "早在 2022 年，他就在別的開源儲存庫 Issue #1 罵維護者是混蛋（「just a dick :(」），四年後照舊在自家 Issue 罵使用者是忘恩負義的混蛋，順手用官方帳號 @pingdotgg 鎖死討論串 #4123。"
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "UNO 抽 25 張牌：硬扛 41 小時沉默，只轉發行動版 2.4 好評",
+      "note": "面對 63 萬瀏覽量的 AWS HR 鐵證、243 個 Claude 工作階段被掃，以及 113 GiB 資料庫膨脹，他硬生生連續沉默 41 小時，時間軸只轉發行動版 2.4 好評。"
     },
     "stickers-01_copium_no_telemetry": {
       "title": "吸氧：絕無遙測",
@@ -286,7 +326,7 @@
       "note": "凌晨 4 點還在救火，面具必須焊在臉上。"
     },
     "stickers-03_rage_temu3": {
-      "title": "TEMU3! 經典破防",
+      "title": "TEMU3! 經典失控暴走",
       "note": "看到免費 MIT Fork 後第 11 分鐘的標準表情。"
     },
     "stickers-04_simp_1t_vip": {
@@ -359,7 +399,7 @@
     },
     "stickers-21_slophouse_nvm": {
       "title": "PR #43889 進暗門",
-      "note": "PR #43889 一關，活兒直接搬進私有儲存庫暗門。"
+      "note": "PR #43889 一關，開發工作直接搬進私有儲存庫暗門。"
     },
     "stickers-22_impersonate_zed": {
       "title": "紙板面具：我是 Zed",
@@ -399,7 +439,7 @@
     },
     "creative-idioms-03-ci-di-wu-yin": {
       "title": "成語 #03：此地無銀三百兩",
-      "note": "才剛說從不記錄路徑和 IP，自家 GDPR 補丁就洩漏出每小時 220 萬筆 IP 和路徑。"
+      "note": "剛說從不記路徑和 IP，自家 GDPR 修補程式就漏出每小時 220 萬條 IP 和路徑。"
     },
     "creative-idioms-04-zhi-lu-wei-ma": {
       "title": "每日成語：指鹿為馬，0 件商標",
@@ -412,6 +452,14 @@
     "creative-idioms-06-yan-er-dao-ling": {
       "title": "每日成語：掩耳盜鈴，不發公告就沒洞",
       "note": "README 刪掉絕不追蹤，高危漏洞混在普通提交裡改掉，公告數保持 0。"
+    },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "每日成語 #07：金蟬脫殼",
+      "note": "把空蕩蕩的 MIT 開源外殼留在台前，真要寫身分追蹤時直接關掉 PR #43889（「算了，在閉源 slophouse 裡做更省事」），金蟬脫殼。"
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "每日成語 #08：殺雞儆猴",
+      "note": "對著 AWS 工程師一條只有 89 次瀏覽量、0 個按讚的抱怨，深夜私訊威嚇「恐懼是很好的激勵」，外加羞辱對方的英文，還投訴到 AWS HR。"
     },
     "creative-packaging-01-t3code-iceberg": {
       "title": "T3 Code 黑歷史冰山",
@@ -428,6 +476,10 @@
     "creative-packaging-04-mit-license-coupon": {
       "title": "超市優惠券：免費 MIT，中國除外",
       "note": "大字寫著免費隨便偷程式碼，剪角小字寫著中國開發者不適用。"
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "家長簽字成績單：35 款工具遙測大考只拿 F → D",
+      "note": "校園成績單惡搞：@ZryMiller 橫評 35 款工具，Aether 與 Hermes 拿 A，遵守 DO_NOT_TRACK 的 Orca 拿 C，T3 Code 原版墊底 F、修完也只拿 D。"
     },
     "creative-gaming-01-sekiro-google-ban": {
       "title": "隻狼：帳號封禁，3 分鐘通關",
@@ -457,13 +509,25 @@
       "title": "成就解鎖：純自然成長，129 追蹤",
       "note": "閒置 30 秒彈窗自動點星，星數 7.7 萬，追蹤 129。"
     },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Steam 成就解鎖：「4 分 39 秒零回覆鎖定」（#29449）",
+      "note": "Steam 成就惡搞：明文 URL 外洩 8,000 字私密對話的隱私 Issue #29449，4 分 39 秒零回覆就鎖定移出清單，順手推上行動版還刪掉內部文件。"
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Steam 成就解鎖：「遁入閉源 Slophouse 後端」",
+      "note": "Steam 成就惡搞：剛發完最終聲明 16 分鐘就被抓包掃了 243 個 Claude 工作階段，維護者乾脆關掉 PR #43889，直言去閉源 slophouse 做更省事。"
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Steam 成就解鎖：「8.1 萬星，0 安全公告」",
+      "note": "Steam 成就惡搞：8.1 萬星的儲存庫至今 0 份安全公告，v0.1.13 置頂吹 GBK 文字支援，卻把 Google 封號警告和冒充 Zed 塞進「其餘 380 項修復」。"
+    },
     "creative-pokemon-01-evo-star-farmer": {
       "title": "進化鏈 #01：刷星大帝",
       "note": "當年罵 Star 是騙投資人的把戲，如今靠 30 秒彈窗刷到 7.7 萬星、129 追蹤。"
     },
     "creative-pokemon-02-evo-two-year-cycle": {
       "title": "進化鏈 #02：兩年一輪迴",
-      "note": "2024 掛印度開發者道歉，2025 FFmpeg 懸賞，2026 中文圈破防，凌晨 4 點刪文重置。"
+      "note": "2024 掛印度開發者道歉，2025 FFmpeg 懸賞，2026 中文圈失控暴走，凌晨 4 點刪文重置。"
     },
     "creative-pokemon-03-evo-no-telemetry": {
       "title": "進化鏈 #03：絕無遙測三段變身",
@@ -500,6 +564,10 @@
     "creative-reactions-07-gif-auto-star-counter": {
       "title": "動圖：30 秒自動點星",
       "note": "閒置 30 秒彈窗就發 PUT user/starred，星數衝到 77,000，追蹤凍在 129。"
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "留言區反殺圖：百萬博主大戰 89 瀏覽量小帖，直接告到 AWS HR",
+      "note": "一張圖甩給留言區洗地黨：就因為一條只有 89 次瀏覽量、0 個按讚的抱怨，百萬粉絲博主深夜私訊甩出「恐懼是很好的激勵」，還直接捅到 AWS HR。"
     },
     "story-en-ep01": {
       "title": "第 1 話 · 相隔 11 小時的變臉（英）",

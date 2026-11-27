@@ -165,7 +165,7 @@
     const pending = (async () => {
       try {
         const [res, enObj] = await Promise.all([
-          fetch(`${base}i18n/${norm}.json?v=14`),
+          fetch(`${base}i18n/${norm}.json?v=15`),
           norm !== "en" ? loadBundle("en", base) : Promise.resolve(null)
         ]);
         if (!res.ok) throw new Error("fetch failed");
@@ -195,7 +195,7 @@
     if (memesInFlight.has(key)) return memesInFlight.get(key);
     const pending = (async () => {
       try {
-        const res = await fetch(`${base}memes-i18n/${encodeURIComponent(norm)}.json?v=1`);
+        const res = await fetch(`${base}memes-i18n/${encodeURIComponent(norm)}.json?v=2`);
         if (!res.ok) throw new Error("fetch failed");
         const obj = await res.json();
         const items = (obj && obj.items && typeof obj.items === "object") ? obj.items : null;

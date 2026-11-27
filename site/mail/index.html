@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Tmail · Searchable Public Archive for T3 Code (pingdotgg/t3code)</title>
-  <meta name="description" content="Search 34 public threads and 109 screenshots on T3 Code (pingdotgg/t3code) and @theo: PostHog telemetry, security issues, and source records. CC0 1.0." />
+  <meta name="description" content="Search 43 public threads and 131 screenshots on T3 Code (pingdotgg/t3code) and @theo: PostHog telemetry, security issues, and source records. CC0 1.0." />
   <link rel="canonical" href="https://temu3code.com/mail/" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#f6f8fc" />
@@ -14,7 +14,7 @@
   <meta property="og:locale" content="en_US" />
   <meta property="og:url" content="https://temu3code.com/mail/" />
   <meta property="og:title" content="Tmail · Public Archive for T3 Code (pingdotgg/t3code)" />
-  <meta property="og:description" content="Browse, search, and sort 34 public threads, GitHub PRs, PostHog telemetry records, security issues, and 109 archived screenshots." />
+  <meta property="og:description" content="Browse, search, and sort 43 public threads, GitHub PRs, PostHog telemetry records, security issues, and 131 archived screenshots." />
   <meta property="og:image" content="https://temu3code.com/og-card.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
@@ -39,7 +39,7 @@
         "@id": "https://temu3code.com/mail/#collection",
         "name": "Tmail · Public Archive for T3 Code (pingdotgg/t3code)",
         "url": "https://temu3code.com/mail/",
-        "description": "Searchable, date-sortable public archive of 34 threads and 109 screenshots covering pingdotgg/t3code, PostHog telemetry, security flaws, and @theo.",
+        "description": "Searchable, date-sortable public archive of 43 threads and 131 screenshots covering pingdotgg/t3code, PostHog telemetry, security flaws, and @theo.",
         "license": "https://creativecommons.org/publicdomain/zero/1.0/",
         "isAccessibleForFree": true,
         "inLanguage": ["en", "zh-CN", "zh-TW", "ja", "ko", "fr", "es", "de", "pt-BR", "ru", "ar", "it", "nl", "pl", "tr", "vi", "id", "hi"],
@@ -77,8 +77,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" media="print" data-async-font />
   <link rel="stylesheet" href="./styles.css?v=10" />
-  <script defer src="../data/i18n.js?v=16"></script>
-  <script defer src="./app.js?v=20"></script>
+  <script defer src="../data/i18n.js?v=17"></script>
+  <script defer src="./app.js?v=21"></script>
 </head>
 <body>
   <div class="app-shell" id="appShell">
@@ -307,7 +307,7 @@
                   <option value="2023-2024">2023 – 2024</option>
                   <option value="2025">2025</option>
                   <option value="2026-pre" data-i18n="yearPre">2026 (Mar – Nov 22)</option>
-                  <option value="crisis" data-i18n="yearCrisis">Nov 23–25</option>
+                  <option value="crisis" data-i18n="yearCrisis">Nov 23–27</option>
                 </select>
               </div>
 
@@ -352,6 +352,66 @@
           <div class="email-list" id="emailList" role="list">
             <div class="email-row" role="listitem">
               <div class="row-controls"></div>
+              <div class="row-sender"><span class="sender-name">@theo &amp; Julius ↔ @sk1gl4a &amp; @theperfdev</span></div>
+              <div class="row-main">
+                <span class="platform-chip">GitHub</span>
+                <a class="row-subject" href="./t/2026-11-27-final-statement-slophouse-gdpr/">Final statement refuted in 16m; tracking moves to slophouse</a>
+                <span class="row-snippet">Minutes after Theo&#x27;s nine denials, @sk1gl4a caught 243 unsolicited Claude reads, 19% German VAT billing, and zero-click t3.chat fingerprinting; PR #43948 confirmed scanning.</span>
+              </div>
+              <div class="row-meta"><span class="row-date">Nov 27, 2026</span></div>
+            </div>
+            <div class="email-row" role="listitem">
+              <div class="row-controls"></div>
+              <div class="row-sender"><span class="sender-name">Code Audit (commit 3c72b4e7)</span></div>
+              <div class="row-main">
+                <span class="platform-chip">Code</span>
+                <a class="row-subject" href="./t/2026-11-27-desktop-browser-sandbox-bypass/">Muted Anthropic warning &amp; exposed 11 browsers&#x27; cookies on Desktop</a>
+                <span class="row-snippet">Pinned at 3c72b4e7: T3 silences Claude&#x27;s approval-shadowing warning, runs uploadFiles outside Codex&#x27;s sandbox, and disables browser isolation on Desktop.</span>
+              </div>
+              <div class="row-meta"><span class="row-date">Nov 27, 2026</span></div>
+            </div>
+            <div class="email-row" role="listitem">
+              <div class="row-controls"></div>
+              <div class="row-sender"><span class="sender-name">@Luca_Hagenmayer &amp; Audit ↔ Julius (@jullerino)</span></div>
+              <div class="row-main">
+                <span class="platform-chip">GitHub</span>
+                <a class="row-subject" href="./t/2026-11-27-plaintext-quote-prompt-urls/">Plaintext chats &amp; prompts packed into URLs; bug locked in 4m</a>
+                <span class="row-snippet">Quote and prompt links embed up to 8,000-char plaintext chats, 32-char unselected context, and repo names; Issue #29449 was locked in 4m 39s with 0 replies.</span>
+              </div>
+              <div class="row-meta"><span class="row-date">Nov 27, 2026</span></div>
+            </div>
+            <div class="email-row" role="listitem">
+              <div class="row-controls"></div>
+              <div class="row-sender"><span class="sender-name">@kdy1dev (Issue #44029) &amp; @jullerino</span></div>
+              <div class="row-main">
+                <span class="platform-chip">GitHub</span>
+                <a class="row-subject" href="./t/2026-11-27-sqlite-113gb-fanout-and-silence/">113 GiB SQLite &quot;massive fan out&quot; &amp; Theo&#x27;s 41h silence on X</a>
+                <span class="row-snippet">SWC creator @kdy1dev hit a 113 GiB statev2.sqlite (#44029) with 5.65M duplicate rows; @jullerino cited &quot;massive fan out&quot; while @theo stayed silent for 41h.</span>
+              </div>
+              <div class="row-meta"><span class="row-date">Nov 27, 2026</span></div>
+            </div>
+            <div class="email-row" role="listitem">
+              <div class="row-controls"></div>
+              <div class="row-sender"><span class="sender-name">@dmfigol ↔ @theo (Private DMs &amp; AWS HR)</span></div>
+              <div class="row-main">
+                <span class="platform-chip">X</span>
+                <a class="row-subject" href="./t/2026-11-26-dmfigol-aws-hr-coercion/">&quot;Fear is a good incentive&quot; DMs &amp; retracted AWS HR report</a>
+                <span class="row-snippet">Ex-AWS engineer @dmfigol published Jan 2025 DMs over an 89-view quote-tweet and an AWS HR inquiry cleared with zero wrongdoing.</span>
+              </div>
+              <div class="row-meta"><span class="row-date">Nov 26, 2026</span></div>
+            </div>
+            <div class="email-row" role="listitem">
+              <div class="row-controls"></div>
+              <div class="row-sender"><span class="sender-name">Julius (@jullerino) &amp; PRs #43026 / #43087</span></div>
+              <div class="row-main">
+                <span class="platform-chip">GitHub</span>
+                <a class="row-subject" href="./t/2026-11-26-google-antigravity-zed-spoof/">Google flagged internal API calls &amp; Zed spoof cut in v0.1.13</a>
+                <span class="row-snippet">PR #43026 confirmed Google warned internal API calls flag accounts and PR #43087 dropped clientInfo name:&quot;zed&quot;, yet v0.1.13 hid both inside 380 bug fixes.</span>
+              </div>
+              <div class="row-meta"><span class="row-date">Nov 26, 2026</span></div>
+            </div>
+            <div class="email-row" role="listitem">
+              <div class="row-controls"></div>
               <div class="row-sender"><span class="sender-name">@theo &amp; Julius ↔ EU GDPR</span></div>
               <div class="row-main">
                 <span class="platform-chip">GitHub</span>
@@ -369,6 +429,26 @@
                 <span class="row-snippet">Even after quietly fixing path traversal in PR #39483, HEAD still ships plaintext --lan cookies, unrevocable Bearer tokens, and repo hook RCE.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 25, 2026</span></div>
+            </div>
+            <div class="email-row" role="listitem">
+              <div class="row-controls"></div>
+              <div class="row-sender"><span class="sender-name">@ZryMiller (millZach/ai-agent-telemetry-audit)</span></div>
+              <div class="row-main">
+                <span class="platform-chip">GitHub</span>
+                <a class="row-subject" href="./t/2026-11-25-25-tool-telemetry-audit/">25-tool OSS telemetry audit: T3 Code moved F to D vs. A-tier peers</a>
+                <span class="row-snippet">Independent audit rated 3 OSS tools A (Aether, Hermes, Roo Code) and T3 Code F at baseline, rising to D at 2b84f486 while Orca stayed the lone C/DNT pass.</span>
+              </div>
+              <div class="row-meta"><span class="row-date">Nov 25, 2026</span></div>
+            </div>
+            <div class="email-row" role="listitem">
+              <div class="row-controls"></div>
+              <div class="row-sender"><span class="sender-name">@theo → Enterprise / Privacy</span></div>
+              <div class="row-main">
+                <span class="platform-chip">X</span>
+                <a class="row-subject" href="./t/2026-11-24-managed-policy-plaintext-relay/">Claimed &quot;never touches our servers&quot; despite plaintext relay</a>
+                <span class="row-snippet">Own docs admit web has no toggle, mobile ignores Managed Policy, Publish ignores opt-outs, and T3 Connect runs zero E2E encryption.</span>
+              </div>
+              <div class="row-meta"><span class="row-date">Nov 24, 2026</span></div>
             </div>
             <div class="email-row" role="listitem">
               <div class="row-controls"></div>
@@ -392,11 +472,11 @@
             </div>
             <div class="email-row" role="listitem">
               <div class="row-controls"></div>
-              <div class="row-sender"><span class="sender-name">@theo → Enterprise / Privacy</span></div>
+              <div class="row-sender"><span class="sender-name">GitHub Issues &amp; @hazae41 ↔ @t3dotgg</span></div>
               <div class="row-main">
-                <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-24-managed-policy-plaintext-relay/">Claimed &quot;never touches our servers&quot; despite plaintext relay</a>
-                <span class="row-snippet">Own docs admit web has no toggle, mobile ignores Managed Policy, Publish ignores opt-outs, and T3 Connect runs zero E2E encryption.</span>
+                <span class="platform-chip">GitHub</span>
+                <a class="row-subject" href="./t/2026-11-24-governance-lock-glacier-cla/">Org locked Issue #4123 at peak + 2022 glacier#1 insult</a>
+                <span class="row-snippet">MIT repo with 1,401 contributors and 0 CLA tells outsiders &quot;Don&#x27;t&quot; contribute, locked telemetry Issue #4123 via @pingdotgg, and traces to a 2022 insult.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 24, 2026</span></div>
             </div>
@@ -412,11 +492,11 @@
             </div>
             <div class="email-row" role="listitem">
               <div class="row-controls"></div>
-              <div class="row-sender"><span class="sender-name">@theo → Engineers &amp; Linux</span></div>
+              <div class="row-sender"><span class="sender-name">@theo → slopalytics.com</span></div>
               <div class="row-main">
-                <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-22-engineers-unemployment-linux/">&quot;Engineers deserve mass unemployment&quot; &amp; &quot;Linux larpers&quot;</a>
-                <span class="row-snippet">Told 386k+ viewers devs deserved unemployment over a tool comparison, exactly 24 hours after lecturing others not to &quot;burn trust&quot;.</span>
+                <span class="platform-chip">GitHub</span>
+                <a class="row-subject" href="./t/2026-11-22-pr41237-21h-filter-drop/">Dropped model privacy filter in 21h for slopalytics.com</a>
+                <span class="row-snippet">PR #41237 removed PR #29001&#x27;s whitelist so private enterprise and local model names (ollama/acme-internal) uploaded verbatim (while force-push sat 52+ days).</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 22, 2026</span></div>
             </div>
@@ -432,11 +512,11 @@
             </div>
             <div class="email-row" role="listitem">
               <div class="row-controls"></div>
-              <div class="row-sender"><span class="sender-name">@theo → slopalytics.com</span></div>
+              <div class="row-sender"><span class="sender-name">@theo → Engineers &amp; Linux</span></div>
               <div class="row-main">
-                <span class="platform-chip">GitHub</span>
-                <a class="row-subject" href="./t/2026-11-22-pr41237-21h-filter-drop/">Dropped model privacy filter in 21h for slopalytics.com</a>
-                <span class="row-snippet">PR #41237 removed PR #29001&#x27;s whitelist so private enterprise and local model names (ollama/acme-internal) uploaded verbatim (while force-push sat 52+ days).</span>
+                <span class="platform-chip">X</span>
+                <a class="row-subject" href="./t/2026-11-22-engineers-unemployment-linux/">&quot;Engineers deserve mass unemployment&quot; &amp; &quot;Linux larpers&quot;</a>
+                <span class="row-snippet">Told 386k+ viewers devs deserved unemployment over a tool comparison, exactly 24 hours after lecturing others not to &quot;burn trust&quot;.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 22, 2026</span></div>
             </div>
@@ -452,21 +532,21 @@
             </div>
             <div class="email-row" role="listitem">
               <div class="row-controls"></div>
-              <div class="row-sender"><span class="sender-name">@theo → Threads Critic (RSD)</span></div>
-              <div class="row-main">
-                <span class="platform-chip">X</span>
-                <a class="row-subject" href="./t/2026-11-18-jail-threat-rsd/">Threatened critic with jail &amp; mocked their RSD diagnosis</a>
-                <span class="row-snippet">Posted during a 48-hour span in which Theo cited a 102°F fever while publishing 177 posts, a 6,643-char essay, a video, and 8 attacks on @elshayib.</span>
-              </div>
-              <div class="row-meta"><span class="row-date">Nov 18, 2026</span></div>
-            </div>
-            <div class="email-row" role="listitem">
-              <div class="row-controls"></div>
               <div class="row-sender"><span class="sender-name">@theo → AI Labs &amp; VCs</span></div>
               <div class="row-main">
                 <span class="platform-chip">X</span>
                 <a class="row-subject" href="./t/2026-11-18-31t-token-radar/">31.7T tokens/day ($10.19M/day) telemetry radar &amp; VC talks</a>
                 <span class="row-snippet">Default telemetry built a real-time lab market-share monitor alongside $800k+ spend, $300k+ in free OpenAI tokens, and investor inquiries.</span>
+              </div>
+              <div class="row-meta"><span class="row-date">Nov 18, 2026</span></div>
+            </div>
+            <div class="email-row" role="listitem">
+              <div class="row-controls"></div>
+              <div class="row-sender"><span class="sender-name">@theo → Threads Critic (RSD)</span></div>
+              <div class="row-main">
+                <span class="platform-chip">X</span>
+                <a class="row-subject" href="./t/2026-11-18-jail-threat-rsd/">Threatened critic with jail &amp; mocked their RSD diagnosis</a>
+                <span class="row-snippet">Posted during a 48-hour span in which Theo cited a 102°F fever while publishing 177 posts, a 6,643-char essay, a video, and 8 attacks on @elshayib.</span>
               </div>
               <div class="row-meta"><span class="row-date">Nov 18, 2026</span></div>
             </div>
@@ -569,6 +649,16 @@
                 <span class="row-snippet">Authored by t3dotgg, Identify.ts hashed OpenAI JWT user_id and Claude accountUuid via unsalted SHA-256 under install.owner_observed.</span>
               </div>
               <div class="row-meta"><span class="row-date">Oct 20, 2026</span></div>
+            </div>
+            <div class="email-row" role="listitem">
+              <div class="row-controls"></div>
+              <div class="row-sender"><span class="sender-name">@DavidOndrej1 &amp; @orca_build ↔ @theo &amp; @zqkrq</span></div>
+              <div class="row-main">
+                <span class="platform-chip">X</span>
+                <a class="row-subject" href="./t/2026-10-18-benchmark-funding-sponsor-pressure/">Contacted tier-list author &amp; offered to fund benchmark</a>
+                <span class="row-snippet">Theo admitted contacting @zqkrq over T3 Code&#x27;s low rank and offering funding; claims he paid to hide Cloudroom remain uncorroborated and denied.</span>
+              </div>
+              <div class="row-meta"><span class="row-date">Oct 18, 2026</span></div>
             </div>
             <div class="email-row" role="listitem">
               <div class="row-controls"></div>

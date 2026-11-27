@@ -5,38 +5,38 @@
     "double-standard": "雙重標準",
     "promises": "說一套做一套",
     "telemetry": "遙測與隱私",
-    "security": "漏洞與封鎖",
-    "deleted": "已刪帖",
+    "security": "漏洞與封號",
+    "deleted": "已刪文",
     "commercial": "商業與刷星"
   },
   "people": {
     "theo": {
-      "name": "@theo（Theo Browne）",
+      "name": "@theo (Theo Browne)",
       "role": "T3 Code / Ping.gg 作者"
     },
     "dddxx666": {
-      "name": "@DDdxx666（MIT Fork）",
-      "role": "中文 MIT Fork作者（Stardust）"
+      "name": "@DDdxx666 (MIT Fork)",
+      "role": "中文 MIT Fork 作者（Stardust）"
     },
     "ffmpeg": {
-      "name": "FFmpeg 與 VLC",
+      "name": "FFmpeg & VLC",
       "role": "開源維護者（$20k 懸賞）"
     },
     "indian-devs": {
       "name": "印度開發者社群",
-      "role": "2024 年國籍攻擊潮"
+      "role": "2024 年國籍騷擾風波"
     },
     "bermudi": {
-      "name": "@bermudi（Issue #33639）",
-      "role": "被維護者辱罵的 T3 Code 使用者"
+      "name": "@bermudi (Issue #33639)",
+      "role": "遭維護者辱罵的 T3 Code 使用者"
     },
     "miaai": {
-      "name": "@MiaAI_lab 與同行",
-      "role": "分叉被 @bot 30 秒扒走"
+      "name": "@MiaAI_lab 與對手",
+      "role": "Fork 30 秒內被 @bot 掀底"
     },
     "dlkfz": {
       "name": "@DLKFZWilliam2",
-      "role": "11 月 24 日分叉爭論對手方"
+      "role": "11 月 24 日 Fork 爭論的另一方"
     },
     "ordinary-devs": {
       "name": "普通開發者",
@@ -44,35 +44,51 @@
     },
     "female-critic": {
       "name": "女性批評者與 RSD 使用者",
-      "role": "11 月 11–18 日回覆中被針對"
+      "role": "11 月 11–18 日回覆區裡的箭靶"
     },
     "vibe-daytona": {
-      "name": "Vibe Kanban 與 Daytona",
+      "name": "Vibe Kanban & Daytona",
       "role": "天使投資組合公司"
     },
     "julius": {
-      "name": "@jullerino（Julius）",
+      "name": "@jullerino (Julius)",
       "role": "T3 Code 核心維護者"
     },
     "maria": {
-      "name": "@maria_rcks（Maria）",
+      "name": "@maria_rcks (Maria)",
       "role": "T3 團隊成員（maria-rcks/t3libre）"
     },
     "labs-vips": {
-      "name": "Google / OpenAI 高層",
-      "role": "20 位大廠高管（髒話率 0.0%）"
+      "name": "Google / OpenAI VIPs",
+      "role": "20 位大廠高階主管（髒話率 0.0%）"
     },
     "antigravity-users": {
-      "name": "Antigravity 與 Relay 使用者",
-      "role": "3 分鐘封鎖與明文 Relay"
+      "name": "Antigravity & Relay 使用者",
+      "role": "3 分鐘封號與明文 Relay"
     },
     "gdpr-auditors": {
-      "name": "歐盟 GDPR 與審計方",
-      "role": "獨立審計與法律記錄"
+      "name": "歐盟 GDPR 與稽核方",
+      "role": "獨立稽核與法律紀錄"
     },
     "dhh-wp": {
       "name": "DHH / WordPress / USPTO",
-      "role": "早年嘲弄 UI 與商標前科"
+      "role": "早前嘲諷 UI 與商標舊帳"
+    },
+    "dmfigol": {
+      "name": "@dmfigol（前 AWS 工程師）",
+      "role": "89 次瀏覽的引用推文與 AWS HR 投訴"
+    },
+    "sk1gl4a": {
+      "name": "@sk1gl4a 與獨立稽核方",
+      "role": "243 個工作階段封包擷取重現、德國 VAT 與 25 款工具橫向評測"
+    },
+    "ondrej-zqkrq": {
+      "name": "@DavidOndrej1 與 @zqkrq",
+      "role": "基準測試資助與贊助商施壓爭議"
+    },
+    "kdy1dev": {
+      "name": "@kdy1dev 與 @hazae41",
+      "role": "113 GiB 資料庫扇出（#44029）與 glacier#1 舊評"
     }
   },
   "threads": {
@@ -402,6 +418,50 @@
         }
       ]
     },
+    "2026-10-18-benchmark-funding-sponsor-pressure": {
+      "from": "@DavidOndrej1 & @orca_build ↔ @theo & @zqkrq",
+      "to": "公開基準測試與贊助紀錄",
+      "dateDisplay": "2026 年 10 月 18 日",
+      "subject": "私聯榜單作者，主動提出出資贊助基準測試",
+      "snippet": "Theo 承認因 T3 Code 排名靠後聯繫 @zqkrq，並提出出資；所謂花錢隱藏 Cloudroom 的說法無實據，雙方均否認。",
+      "messages": [
+        {
+          "sender": "@DavidOndrej1 & @orca_build",
+          "handle": "@DavidOndrej1 · X (2111884469468893524 & 2126085904875798845)",
+          "to": "公開時間線",
+          "time": "2026 年 10 月 18 日 & 11 月 25–26 日",
+          "body": "2026 年 10 月 18 日（18:17–19:50 UTC），Cloudroom 創辦人 `@DavidOndrej1` 指控 `@theo`：Cloudroom 在 `v1` 榜單上排名壓過 T3 Code 之後，他跑去向榜單作者 `@zqkrq` 施壓：\n\n> 「Theo 的 T3 已經急瘋了。Cloudroom 在 v1 上排名比 T3 Code 高，他就花錢讓這個人去做 v2 基準測試……」\n\n- **競品反應（`19:44 UTC`）：** `@orca_build` 寫道：「這榜單本來就很可疑……我們怎麼可能墊底。」\n- **11 月 25–26 日後續：** `@DavidOndrej1` 在 `@dmfigol` 的推文串（`2126085904875798845`）下貼出 T3 Code 的贊助商橫幅（`WorkOS`、`Blacksmith`、`Browserbase`、`CodeRabbit`），並聲稱 `@theo` 私訊品牌方，要他們放棄批評者（`2125517916544155720`）。\n- **核實邊界：** 兩項指控——`@theo` 花錢刪掉 Cloudroom、私訊贊助商封殺創作者——都只是 `@DavidOndrej1` 的單方面說法，既沒有外流的私訊，也沒有付款紀錄；`@theo` 與 `@zqkrq` 都否認 Cloudroom 一說。",
+          "attachments": [
+            "@DavidOndrej1 10 月 18 日 v1/v2 基準爭議",
+            "T3 Code 贊助商橫幅（WorkOS、Blacksmith、Browserbase、CodeRabbit）"
+          ],
+          "links": [
+            "@DavidOndrej1 10 月 18 日推文",
+            "@DavidOndrej1 三點指控推文",
+            "@orca_build 回覆",
+            "@DavidOndrej1 贊助商橫幅",
+            "@DavidOndrej1 封殺指控"
+          ]
+        },
+        {
+          "sender": "Theo Browne（@theo）& @zqkrq",
+          "handle": "@theo · X (2111903235166679341)",
+          "to": "公開時間線",
+          "time": "2026 年 10 月 18 日 & 11 月 12 日",
+          "body": "10 月 18 日 `18:30 UTC`，`@zqkrq` 否認 `@theo` 要求隱藏任何條目。一小時後（`19:32 UTC`），`@theo` 承認自己因 T3 Code 得分偏低找過對方，並提出出資做基準測試：\n\n> 「我沒讓他隱藏任何東西。我找他是想問 T3 Code 為什麼得分低……他說之後想做一个真正嚴謹的基準測試，我就提出出資，因為現在根本沒人做這種像樣的研究。」\n\n- **11 月 12 日後續：** `@zqkrq` 發布 `ADE tier list v3`，稱 T3 Code 是「我每天主力用的工具」，上線 `t3.ademark.dev`，並回覆 `@theo`：「@theo 你真沒必要這麼做，這對我意義很大 🫡」。\n- **功能照搬（11 月 13 日）：** 同一天，`@theo` 用 `fable 5.2` 跑 `@bot`，把榜單上排名靠前的競品功能逐個搬過來（`2121017649652269120`）。",
+          "attachments": [
+            "@theo 承認聯繫榜單作者並提出出資的回覆"
+          ],
+          "links": [
+            "@theo 基準出資推文",
+            "@zqkrq 否認",
+            "@zqkrq ADE v3 榜單",
+            "@zqkrq 回覆 @theo",
+            "@theo 用 @bot 照搬競品"
+          ]
+        }
+      ]
+    },
     "2026-10-20-pr21506-cross-tool-hash": {
       "from": "@theo → `~/.codex` 與 `~/.claude`",
       "to": "使用者家目錄裡的憑證",
@@ -414,7 +474,7 @@
           "handle": "GitHub · PR #21506",
           "to": "apps/server/src/telemetry/Identify.ts",
           "time": "2026 年 10 月 19–20 日",
-          "body": "Theo（@t3dotgg）合併了 PR #21506：`feat(server): analytics records a stable install id and who owns each install`。\n\n`Identify.ts` 讀了 `~/.codex/auth.json`（解出 OpenAI JWT 的 `user_id` 宣告）和 `~/.claude.json`（`oauthAccount.accountUuid`），再配上 T3 Connect 的使用者 ID。接著它算出無鹽 SHA-256 摘要（`telemetryId.ts`），存成 `install.owner_observed`，把不同機器綁到同一個人身上。\n\nT3 存的是明文 Clerk ID，所以無鹽摘要能確定性地反推回原文。這些讀取外部 CLI 檔案的程式碼在倉庫裡躺了一個月，直到 Part 1 播放量破 226 萬，PR #42299 才把它們刪掉。",
+          "body": "Theo（@t3dotgg）合併了 PR #21506：`feat(server): analytics records a stable install id and who owns each install`。\n\n`Identify.ts` 讀了 `~/.codex/auth.json`（解出 OpenAI JWT 的 `user_id` 宣告）和 `~/.claude.json`（`oauthAccount.accountUuid`），再配上 T3 Connect 的使用者 ID。接著它算出無鹽 SHA-256 摘要（`telemetryId.ts`），存成 `install.owner_observed`，把不同機器綁到同一個人身上。\n\nT3 存的是明文 Clerk ID，所以無鹽摘要能確定性地反推回原文。這些讀取外部 CLI 檔案的程式碼在儲存庫裡躺了一個月，直到 Part 1 瀏覽量破 226 萬，PR #42299 才把它們刪掉。",
           "attachments": [
             "PR #21506（作者 t3dotgg）",
             "`Identify.ts` 讀取 `~/.codex/auth.json` 與 `~/.claude.json`"
@@ -456,7 +516,7 @@
       "to": "pingdotgg/t3code（PR #29922）",
       "dateDisplay": "2026 年 11 月 2 日",
       "subject": "自合 30 秒刷星彈窗（3 萬 → 7.7 萬），漏洞原樣留著",
-      "snippet": "繞過 Macroscope 的審批攔截，@zhilsinger 的 Request Changes 晾了 19 天以上不理，driver.ts#L60-L99 讓用戶端能給任意倉庫點星。",
+      "snippet": "繞過 Macroscope 的審批攔截，@zhilsinger 的 Request Changes 晾了 19 天以上不理，driver.ts#L60-L99 讓用戶端能給任意儲存庫點星。",
       "messages": [
         {
           "sender": "Theo Browne（@t3dotgg）",
@@ -478,10 +538,10 @@
           "handle": "GitHub 安全審核者",
           "to": "@t3dotgg（PR #29922）",
           "time": "2026 年 11 月（19 天以上無人回應）",
-          "body": "審核者 @zhilsinger 提交了正式的 `Request changes`，警告 `packages/source-control-github/src/server/driver.ts#L60-L99` 接受未固定來源的 `owner/repo` 參數來做伺服器端點星，等於任何用戶端都能借宿主憑證給任意倉庫點星。\n\n這條審核一直到 `ca81b7b9` 都無人回應、也沒修，晾了 19 天以上。",
+          "body": "審核者 @zhilsinger 提交了正式的 `Request changes`，警告 `packages/source-control-github/src/server/driver.ts#L60-L99` 接受未固定來源的 `owner/repo` 參數來做伺服器端點星，等於任何用戶端都能借宿主憑證給任意儲存庫點星。\n\n這條審核一直到 `ca81b7b9` 都無人回應、也沒修，晾了 19 天以上。",
           "attachments": [
             "@zhilsinger 的 Request Changes 審核晾了 19 天",
-            "`driver.ts#L60-L99` 任意倉庫點星漏洞"
+            "`driver.ts#L60-L99` 任意儲存庫點星漏洞"
           ],
           "links": [
             "`driver.ts` 原始碼"
@@ -550,7 +610,7 @@
           "handle": "維護者 · Issue #33639",
           "to": "@bermudi",
           "time": "2026 年 11 月",
-          "body": "Theo（@t3dotgg）在 Issue #33639 裡回覆：\n\n> 「@bermudi 你尤其該把我們的軟體卸了。你再留一次這種評論，我就把你從倉庫裡封掉。我白給你用一套本來能賣幾百萬美元的軟體，你倒特意抽出時間來人身攻擊我……你就是個忘恩負義的混蛋，懶得出奇，你的意見我一點都不在乎。」\n\n另一位貢獻者開了 PR #41572，乾淨地把上下文環塞進傳送按鈕、不佔輸入框空間，第二天早上就被關了。",
+          "body": "Theo（@t3dotgg）在 Issue #33639 裡回覆：\n\n> 「@bermudi 你尤其該把我們的軟體卸了。你再留一次這種評論，我就把你從儲存庫裡封掉。我白給你用一套本來能賣幾百萬美元的軟體，你倒特意抽出時間來人身攻擊我……你就是個忘恩負義的混蛋，懶得出奇，你的意見我一點都不在乎。」\n\n另一位貢獻者開了 PR #41572，乾淨地把上下文環塞進傳送按鈕、不佔輸入框空間，第二天早上就被關了。",
           "attachments": [
             "Theo 在 Issue #33639 辱罵 @bermudi 的原話截圖"
           ],
@@ -694,29 +754,6 @@
         }
       ]
     },
-    "2026-11-18-jail-threat-rsd": {
-      "from": "@theo → Threads 批評者（RSD）",
-      "to": "確診 RSD 的批評者",
-      "dateDisplay": "2026 年 11 月 18 日",
-      "subject": "威脅把批評者送進監獄，還嘲笑其 RSD 診斷",
-      "snippet": "這番話發於 48 小時之內：他自稱發燒 102°F，同期發了 177 條帖、一篇 6,643 字長文、一條影片，外加 8 條針對 @elshayib 的攻擊。",
-      "messages": [
-        {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X（2122838455483031925 / 2122865897375400066）",
-          "to": "Threads 上的批評者",
-          "time": "2026 年 11 月 18 日",
-          "body": "11 月 18 日，@theo 回覆一位 Threads 上的批評者，威脅要送人進監獄，還拿對方的 Rejection Sensitive Dysphoria（RSD，拒絕敏感性煩躁）開涮：\n\n> 「現在就停，不然我真的會把你送進監獄。我相信你的獄友會對你的 RSD 非常體諒。」\n\n這番威脅落在 48 小時窗口內（11 月 17–18 日，太平洋時間）：他一邊自稱發燒 102°F，一邊發了 177 條 X 帖、一篇 6,643 字元的 Astra 長文、一條影片，還有 8 條連續針對 @elshayib 的髒話回覆。",
-          "attachments": [
-            "2026 年 11 月 18 日的監獄威脅與 RSD 病情嘲諷"
-          ],
-          "links": [
-            "X 帖子 2122838455483031925",
-            "X 帖子 2122865897375400066"
-          ]
-        }
-      ]
-    },
     "2026-11-18-31t-token-radar": {
       "from": "@theo → AI 實驗室與 VC",
       "to": "OpenAI、DeepMind 與投資人",
@@ -739,6 +776,29 @@
           "links": [
             "31.7T 雷達原帖",
             "投資人問詢原帖"
+          ]
+        }
+      ]
+    },
+    "2026-11-18-jail-threat-rsd": {
+      "from": "@theo → Threads 批評者（RSD）",
+      "to": "確診 RSD 的批評者",
+      "dateDisplay": "2026 年 11 月 18 日",
+      "subject": "威脅把批評者送進監獄，還嘲笑其 RSD 診斷",
+      "snippet": "這番話發於 48 小時之內：他自稱發燒 102°F，同期發了 177 條帖、一篇 6,643 字長文、一條影片，外加 8 條針對 @elshayib 的攻擊。",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X（2122838455483031925 / 2122865897375400066）",
+          "to": "Threads 上的批評者",
+          "time": "2026 年 11 月 18 日",
+          "body": "11 月 18 日，@theo 回覆一位 Threads 上的批評者，威脅要送人進監獄，還拿對方的 Rejection Sensitive Dysphoria（RSD，拒絕敏感性煩躁）開涮：\n\n> 「現在就停，不然我真的會把你送進監獄。我相信你的獄友會對你的 RSD 非常體諒。」\n\n這番威脅落在 48 小時窗口內（11 月 17–18 日，太平洋時間）：他一邊自稱發燒 102°F，一邊發了 177 條 X 帖、一篇 6,643 字元的 Astra 長文、一條影片，還有 8 條連續針對 @elshayib 的髒話回覆。",
+          "attachments": [
+            "2026 年 11 月 18 日的監獄威脅與 RSD 病情嘲諷"
+          ],
+          "links": [
+            "X 帖子 2122838455483031925",
+            "X 帖子 2122865897375400066"
           ]
         }
       ]
@@ -767,27 +827,25 @@
         }
       ]
     },
-    "2026-11-22-engineers-unemployment-linux": {
-      "from": "@theo → 工程師與 Linux",
-      "to": "開發者社群",
+    "2026-11-22-pr41237-21h-filter-drop": {
+      "from": "@theo → slopalytics.com",
+      "to": "PR #41237（模型遙測過濾器）",
       "dateDisplay": "2026 年 11 月 22 日",
-      "subject": "“工程師活該大規模失業”與“Linux coser”",
-      "snippet": "一句工具比較就回罵開發者活該失業，38.6 萬+ 人圍觀；而就在 24 小時前，他才剛說教別人別“燒掉信任”。",
+      "subject": "為 slopalytics.com，21 小時撤掉模型隱私過濾",
+      "snippet": "PR #41237 拆掉 PR #29001 的白名單，企業私有模型和本地模型名（ollama/acme-internal）原樣上傳（而 force-push 漏洞掛了 52 天以上）。",
       "messages": [
         {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X",
-          "to": "一般開發者",
-          "time": "2026 年 11 月 21–22 日",
-          "body": "11 月 21 日至 22 日的 24 小時內，@theo 一邊講信任，一邊罵一般開發者和 Linux 使用者：\n\n- **11 月 21 日 (2123906522728272178)：** “一般開發者不太聰明”\n- **11 月 22 日 (2124298216271499605)：** “我明白你為啥討厭我了，Linux coser 一向看不上真開發者”\n- **11 月 22 日 (2124470530590011704，38.6 萬+ 瀏覽——引用的是一條 T3 Code 對比 Antigravity 的提問)：** “工程師們活該迎來這波大規模失業”\n- **11 月 22 日 18:26 CST (2124449493513068862，距那場 MIT Fork威脅 24 小時)：** “說句實話，燒掉周圍所有人的信任，基本從來不是達成目的的好路子”",
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · Issue #40948 → PR #41237",
+          "to": "slopalytics.com / 遙測鏈路",
+          "time": "2026 年 11 月 22–23 日",
+          "body": "11 月 22 日，Issue #40948 回報 @theo 的公開榜單 `slopalytics.com` 上少了新模型，因為 PR #29001 設了一道隱私白名單。\n\n`git push --force` 的安全漏洞掛了 52 天以上沒人動，PR #41237 卻在 21 小時內以 @theo 的帳號合併，說明裡寫著是 Theo 要求撤掉過濾。企業私有模型和本地模型名——比如 `ollama/acme-internal`、`acme-azure-deployment`，還有後來出現在 Theo 轉儲裡的自訂代理——全部原樣上傳。",
           "attachments": [
-            "“工程師們活該迎來這波大規模失業”原帖",
-            "“Linux coser 一向看不上真開發者”原帖",
-            "危機前 24 小時還在說教：別燒掉信任"
+            "PR #41237 用 21 小時撤掉模型隱私過濾"
           ],
           "links": [
-            "失業言論原帖",
-            "別燒信任原帖"
+            "Issue #40948",
+            "PR #41237"
           ]
         }
       ]
@@ -835,25 +893,27 @@
         }
       ]
     },
-    "2026-11-22-pr41237-21h-filter-drop": {
-      "from": "@theo → slopalytics.com",
-      "to": "PR #41237（模型遙測過濾器）",
+    "2026-11-22-engineers-unemployment-linux": {
+      "from": "@theo → 工程師與 Linux",
+      "to": "開發者社群",
       "dateDisplay": "2026 年 11 月 22 日",
-      "subject": "為 slopalytics.com，21 小時撤掉模型隱私過濾",
-      "snippet": "PR #41237 拆掉 PR #29001 的白名單，企業私有模型和本地模型名（ollama/acme-internal）原樣上傳（而 force-push 漏洞掛了 52 天以上）。",
+      "subject": "“工程師活該大規模失業”與“Linux coser”",
+      "snippet": "一句工具比較就回罵開發者活該失業，38.6 萬+ 人圍觀；而就在 24 小時前，他才剛說教別人別“燒掉信任”。",
       "messages": [
         {
-          "sender": "Theo Browne (@t3dotgg)",
-          "handle": "GitHub · Issue #40948 → PR #41237",
-          "to": "slopalytics.com / 遙測鏈路",
-          "time": "2026 年 11 月 22–23 日",
-          "body": "11 月 22 日，Issue #40948 回報 @theo 的公開榜單 `slopalytics.com` 上少了新模型，因為 PR #29001 設了一道隱私白名單。\n\n`git push --force` 的安全漏洞掛了 52 天以上沒人動，PR #41237 卻在 21 小時內以 @theo 的帳號合併，說明裡寫著是 Theo 要求撤掉過濾。企業私有模型和本地模型名——比如 `ollama/acme-internal`、`acme-azure-deployment`，還有後來出現在 Theo 轉儲裡的自訂代理——全部原樣上傳。",
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "一般開發者",
+          "time": "2026 年 11 月 21–22 日",
+          "body": "11 月 21 日至 22 日的 24 小時內，@theo 一邊講信任，一邊罵一般開發者和 Linux 使用者：\n\n- **11 月 21 日 (2123906522728272178)：** “一般開發者不太聰明”\n- **11 月 22 日 (2124298216271499605)：** “我明白你為啥討厭我了，Linux coser 一向看不上真開發者”\n- **11 月 22 日 (2124470530590011704，38.6 萬+ 瀏覽——引用的是一條 T3 Code 對比 Antigravity 的提問)：** “工程師們活該迎來這波大規模失業”\n- **11 月 22 日 18:26 CST (2124449493513068862，距那場 MIT Fork 威脅 24 小時)：** “說句實話，燒掉周圍所有人的信任，基本從來不是達成目的的好路子”",
           "attachments": [
-            "PR #41237 用 21 小時撤掉模型隱私過濾"
+            "“工程師們活該迎來這波大規模失業”原帖",
+            "“Linux coser 一向看不上真開發者”原帖",
+            "危機前 24 小時還在說教：別燒掉信任"
           ],
           "links": [
-            "Issue #40948",
-            "PR #41237"
+            "失業言論原帖",
+            "別燒信任原帖"
           ]
         }
       ]
@@ -862,7 +922,7 @@
       "from": "@theo ↔ @DDdxx666（MIT Fork）",
       "to": "@DDdxx666、@maria_rcks 及公眾",
       "dateDisplay": "2026 年 11 月 23 日",
-      "subject": "“Temu3 Code”：為一個中文 MIT Fork威脅封鎖 GitHub 帳號",
+      "subject": "“Temu3 Code”：為一個中文 MIT Fork 威脅封鎖 GitHub 帳號",
       "snippet": "官網才剛寫“合法偷走我們的程式碼”，Theo 就開火 @DDdxx666 的 MIT Fork，只在私訊裡道歉，11 小時後又說歡迎兆美元美企來用。",
       "messages": [
         {
@@ -870,7 +930,7 @@
           "handle": "@theo · X (2124823227570745504 & 2124825920808829077)",
           "to": "公開引用 @DDdxx666 的 MIT Fork",
           "time": "2026 年 11 月 23 日 19:11 – 19:22 CST",
-          "body": "`t3.codes` 官網掛著自家 GitHub 儲存庫連結，旁邊寫著“Steal our code (legally)”（合法偷走我們的程式碼）。可當路人把 @DDdxx666 的免費 MIT Fork當成官方應用程式時，@theo 11 分鐘內連發兩帖：\n\n19:11:49 CST (2124823227570745504)：\n\n> “我覺得市面上流傳著一個 T3 Code 的中國山寨版，因為這玩意兒絕對不是我們的應用程式”\n\n19:22:31 CST (2124825920808829077，10 分 42 秒後)：\n\n> “Temu3 Code”",
+          "body": "`t3.codes` 官網掛著自家 GitHub 儲存庫連結，旁邊寫著“Steal our code (legally)”（合法偷走我們的程式碼）。可當路人把 @DDdxx666 的免費 MIT Fork 當成官方應用程式時，@theo 11 分鐘內連發兩帖：\n\n19:11:49 CST (2124823227570745504)：\n\n> “我覺得市面上流傳著一個 T3 Code 的中國山寨版，因為這東西絕對不是我們的應用程式”\n\n19:22:31 CST (2124825920808829077，10 分 42 秒後)：\n\n> “Temu3 Code”",
           "attachments": [
             "原帖：“T3 Code 的中國山寨版”（19.5 萬+ 瀏覽）",
             "10 分 42 秒後的原帖：“Temu3 Code”（8.4 萬+ 瀏覽）"
@@ -885,7 +945,7 @@
           "handle": "@theo · X (2124829315657576890)",
           "to": "@DDdxx666",
           "time": "2026 年 11 月 23 日 19:36 CST",
-          "body": "當 @DDdxx666 表示願意考慮給這個 MIT Fork改名、避免混淆，@theo 在 19:36 CST 回：\n\n> “不是考慮。現在就改，否則我去聯繫 GitHub 把你帳號封了。”\n\n@DDdxx666 30 分鐘內把儲存庫改名為 `Stardust`，並清掉了所有 T3 品牌標識。@theo 在私訊裡道了歉，但那兩條 20 萬瀏覽的公開帖一直掛著。",
+          "body": "當 @DDdxx666 表示願意考慮給這個 MIT Fork 改名、避免混淆，@theo 在 19:36 CST 回：\n\n> “不是考慮。現在就改，否則我去聯繫 GitHub 把你帳號封了。”\n\n@DDdxx666 30 分鐘內把儲存庫改名為 `Stardust`，並清掉了所有 T3 品牌標識。@theo 在私訊裡道了歉，但那兩條 20 萬瀏覽的公開帖一直掛著。",
           "attachments": [
             "一字不差的 GitHub 封鎖帳號威脅"
           ],
@@ -907,6 +967,46 @@
           "links": [
             "X 推文 2124989435154726982",
             "溯源審計帖"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-managed-policy-plaintext-relay": {
+      "from": "@theo → 企業 / 隱私",
+      "to": "被 docs/user/telemetry.md 與 T3 Connect 打臉",
+      "dateDisplay": "2026 年 11 月 24 日",
+      "subject": "號稱「從不經過我們的伺服器」，可中繼全是明文",
+      "snippet": "自家文件承認：網頁版沒有開關、行動端無視 Managed Policy、Publish 無視退出設定，T3 Connect 端到端加密為零。",
+      "messages": [
+        {
+          "sender": "Theo Browne（@theo）",
+          "handle": "@theo · X（2125186071357251715 與 2125191784859115766）",
+          "to": "企業客戶與隱私批評者",
+          "time": "2026 年 11 月 24 日 19:13 – 19:36 CST",
+          "body": "11 月 24 日，@theo 在 X 上做了兩次隱私保證：\n\n- **19:13 CST（2125186071357251715）：** 稱 T3 Code 有「最好的企業託管策略系統」，能「輕鬆設定、一鍵關掉全部遙測」。\n- **19:36 CST（2125191784859115766）：** 稱對話資料「從不經過我們的任何伺服器」。",
+          "attachments": [
+            "Theo 的託管策略說法",
+            "「從不經過我們的任何伺服器」說法"
+          ],
+          "links": [
+            "X 貼文 2125186071357251715",
+            "X 貼文 2125191784859115766"
+          ]
+        },
+        {
+          "sender": "T3 Code 自家文件與中繼程式碼",
+          "handle": "docs/user/telemetry.md 與 PR #32945",
+          "to": "核實記錄",
+          "time": "已在 ca81b7b9 核實",
+          "body": "T3 Code 自己在 `ca81b7b9` 上的儲存庫檔案，把這兩句話都推翻了：\n\n1. **`docs/user/telemetry.md`：** 確認託管網頁版（`app.t3.codes`）沒有追蹤開關，行動端不在 Managed Policy 管轄內，`Publish agent activity` 無視遙測退出設定。\n2. **T3 Connect（Issue #32098 與 PR #32945）：** 每一條 prompt、原始碼檔案和終端流，都在 T3 控制的 OVH 與 Cloudflare 伺服器裡以明文落地，端到端加密為零，裝置審批預設關閉。",
+          "attachments": [
+            "docs/user/telemetry.md 記錄的四塊盲區",
+            "T3 Connect 端到端加密為零已確認",
+            "PR #32945 OVH Hillsboro Caddy TLS 終止閘道"
+          ],
+          "links": [
+            "docs/user/telemetry.md",
+            "證據 #05（T3 Connect）"
           ]
         }
       ]
@@ -1006,42 +1106,42 @@
         }
       ]
     },
-    "2026-11-24-managed-policy-plaintext-relay": {
-      "from": "@theo → 企業 / 隱私",
-      "to": "被 docs/user/telemetry.md 與 T3 Connect 打臉",
+    "2026-11-24-governance-lock-glacier-cla": {
+      "from": "GitHub Issues & @hazae41 ↔ @t3dotgg",
+      "to": "1,401 名 MIT 貢獻者（0 份 CLA / 779 項被鎖）",
       "dateDisplay": "2026 年 11 月 24 日",
-      "subject": "號稱「從不經過我們的伺服器」，可中繼全是明文",
-      "snippet": "自家文件承認：網頁版沒有開關、行動端無視 Managed Policy、Publish 無視退出設定，T3 Connect 端到端加密為零。",
+      "subject": "爭議頂峰鎖死 Issue #4123，2022 年 glacier#1 辱罵被翻出",
+      "snippet": "MIT 儲存庫擁有 1,401 名貢獻者、0 份 CLA，貢獻指南卻勸退外部 PR；輿情爆發當晚，@pingdotgg 組織帳號鎖死遙測討論 Issue #4123，還牽出 2022 年辱罵作者的舊留言。",
       "messages": [
         {
-          "sender": "Theo Browne（@theo）",
-          "handle": "@theo · X（2125186071357251715 與 2125191784859115766）",
-          "to": "企業客戶與隱私批評者",
-          "time": "2026 年 11 月 24 日 19:13 – 19:36 CST",
-          "body": "11 月 24 日，@theo 在 X 上做了兩次隱私保證：\n\n- **19:13 CST（2125186071357251715）：** 稱 T3 Code 有「最好的企業託管策略系統」，能「輕鬆設定、一鍵關掉全部遙測」。\n- **19:36 CST（2125191784859115766）：** 稱對話資料「從不經過我們的任何伺服器」。",
+          "sender": "GitHub 治理紀錄（pingdotgg/t3code）",
+          "handle": "Issue #4123 · CONTRIBUTING.md · v0.1.13",
+          "to": "開源貢獻者",
+          "time": "2026 年 11 月 24–26 日",
+          "body": "`pingdotgg/t3code` 以 MIT 授權條款發布，**沒有 CLA**，**1,401 名 GitHub 貢獻者**，**6 個核心帳號**（`.github/TRIAGE_EXEMPTIONS.td`），而 `CONTRIBUTING.md` 對外人寫著：\n\n> 「我們明確表示：不歡迎團隊之外的人提交新功能 PR……如果你想找點東西來貢獻，我的建議是：別。」\n\n1. **Issue #4123 被 `@pingdotgg` 鎖死：** `@t3dotgg` 兩次關閉「不接受退出遙測」的投訴（`2026-10-21`、`2026-11-04`）之後，`@pingdotgg` 組織帳號在輿情爆發期間於 `2026-11-24T20:43:48Z` 手動**鎖定** Issue #4123（全儲存庫被鎖條目共 779 項）。\n2. **`v0.1.13` 悄悄打了四個安全修補程式（0 份公告）：** `2026-11-26T19:32Z` 發布，未附任何 GitHub Security Advisory——修掉 `#42535`（未經提示就裝 `pre-push` git 掛鉤）、`#39408`（CSS `var()` 遠端載入繞過）、`#39489`（`_t3/session-mode` MCP 提權）、`#41988`（macOS SOCKS uid 校驗；Windows 仍未校驗）。",
           "attachments": [
-            "Theo 的託管策略說法",
-            "「從不經過我們的任何伺服器」說法"
+            "Issue #4123 被 @t3dotgg 兩次關閉、被 @pingdotgg 鎖定"
           ],
           "links": [
-            "X 貼文 2125186071357251715",
-            "X 貼文 2125191784859115766"
+            "Issue #4123（已鎖定）",
+            "PR #42535（pre-push 掛鉤）",
+            "PR #39408（CSS var 繞過）",
+            "PR #39489（MCP 模式提權）",
+            "PR #41988（SOCKS uid 校驗）"
           ]
         },
         {
-          "sender": "T3 Code 自家文件與中繼程式碼",
-          "handle": "docs/user/telemetry.md 與 PR #32945",
-          "to": "核實記錄",
-          "time": "已在 ca81b7b9 核實",
-          "body": "T3 Code 自己在 `ca81b7b9` 上的儲存庫檔案，把這兩句話都推翻了：\n\n1. **`docs/user/telemetry.md`：** 確認託管網頁版（`app.t3.codes`）沒有追蹤開關，行動端不在 Managed Policy 管轄內，`Publish agent activity` 無視遙測退出設定。\n2. **T3 Connect（Issue #32098 與 PR #32945）：** 每一條 prompt、原始碼檔案和終端流，都在 T3 控制的 OVH 與 Cloudflare 伺服器裡以明文落地，端到端加密為零，裝置審批預設關閉。",
+          "sender": "@hazae41（hazae41/glacier#1）",
+          "handle": "github.com/hazae41/glacier/issues/1",
+          "to": "Theo Browne（@t3dotgg）",
+          "time": "2022 年 10 月 2 日 & 2026 年 11 月 27 日",
+          "body": "2026 年 11 月 27 日（`02:02 UTC`），開源作者 `@hazae41` 翻出 `@t3dotgg` 於 `2022-10-02T19:02:20Z` 留在 `hazae41/glacier` Issue #1 下的留言：\n\n> 「我真希望這是個惡搞，可惜維護者就是個混蛋 :(」\n\nGitHub 的 Issues API 確認該留言仍掛在 `hazae41/glacier#1` 上，比 `@bermudi`（Issue #33639）早了四年。",
           "attachments": [
-            "docs/user/telemetry.md 記錄的四塊盲區",
-            "T3 Connect 端到端加密為零已確認",
-            "PR #32945 OVH Hillsboro Caddy TLS 終止閘道"
+            "hazae41/glacier#1 上 @t3dotgg 2022 年 10 月的留言"
           ],
           "links": [
-            "docs/user/telemetry.md",
-            "證據 #05（T3 Connect）"
+            "hazae41/glacier#1 留言",
+            "@hazae41 11 月 27 日推文"
           ]
         }
       ]
@@ -1114,6 +1214,237 @@
           ]
         }
       ]
+    },
+    "2026-11-25-25-tool-telemetry-audit": {
+      "from": "@ZryMiller（millZach/ai-agent-telemetry-audit）",
+      "to": "25 款開源 + 10 款閉源 AI 程式開發工具",
+      "dateDisplay": "2026 年 11 月 25 日",
+      "subject": "25 款工具遙測橫評：T3 Code 從 F 升到 D，同業已有 A 級",
+      "snippet": "獨立橫評給出 3 款 A 級開源工具（Aether、Hermes、Roo Code）；T3 Code 基線獲評 F、2b84f486 升至 D 級，全榜僅 Orca 在稽核時徹底遵守 DO_NOT_TRACK。",
+      "messages": [
+        {
+          "sender": "Zachary Miller（@ZryMiller）",
+          "handle": "millZach/ai-agent-telemetry-audit",
+          "to": "AI 開發者社群",
+          "time": "2026 年 11 月 25 日 07:51 UTC（28.4 萬次瀏覽）",
+          "body": "獨立稽核者 `@ZryMiller` 用唯讀靜態檢查評了 **25 款開源 AI 工具**（`3 A / 1 B / 4 C / 11 D / 6 F`），另外把 **10 款閉源桌面應用程式**放進隔離的 Docker `mitmproxy` 沙箱實測：\n\n- **T3 Code（`F` → `D`）：** 基線 `4c2e2b37`（11 月 24 日）拿 **`F`**；`HEAD` `2b84f486`（11 月 25 日，`#42629` 之前）砍掉對 `~/.codex`/`~/.claude.json` 的讀取和自訂模型名稱後升到 **`D`**，但仍留著：預設開啟的 `ingest.t3.codes`、關掉開關時照樣無條件寫 `anonymous-id` 檔案、無鹽 SHA-256、`app.t3.codes` 沒有任何開關、漏掉桌面端 OTEL 變數、中繼 `colo`/`country`/Clerk `user.id`、UI 與 CLI 都沒有開關。\n- **開源標竿：** **Aether（`A`）**、**Hermes（`A`）**、**Roo Code（`A`，已封存）**、**Vibe Kanban（`B`）**、**Orca（`C`）**——25 款裡唯一在稽核時乾淨遵守 `DO_NOT_TRACK` 的開源工具。\n- **閉源 Docker 對照：** 設定到位後，**Claude Code `v2.1.332`（`B`）** 和 **VS Code `1.148.0`（`B`）** 都停掉了非必要 HTTP 請求；**Cursor `3.32.4`（`F`）**、**Gemini CLI（`F`）**、**Cline（`F`）**、**Kilo Code（`F`）** 全部不及格。",
+          "attachments": [
+            "@ZryMiller 25 款開源工具遙測評分表"
+          ],
+          "links": [
+            "ai-agent-telemetry-audit 儲存庫",
+            "@ZryMiller X 推文串"
+          ]
+        }
+      ]
+    },
+    "2026-11-26-dmfigol-aws-hr-coercion": {
+      "from": "@dmfigol ↔ @theo（私訊與 AWS HR）",
+      "to": "63.9 萬次瀏覽的公開推文串",
+      "dateDisplay": "2026 年 11 月 26 日",
+      "subject": "「恐懼就是好激勵」私訊，與當天撤回仍立案的 AWS HR 投訴",
+      "snippet": "前 AWS 工程師 @dmfigol 公開 2025 年 1 月私訊：起因是一條 89 次瀏覽的引用推文；AWS HR 介入調查，最終以零過錯結案。",
+      "messages": [
+        {
+          "sender": "@dmfigol（前 AWS 工程師）",
+          "handle": "@dmfigol · X (2126025881844174968)",
+          "to": "公開時間線（63.9 萬+ 次瀏覽）",
+          "time": "2026 年 11 月 26 日 18:50 UTC",
+          "body": "2026 年 11 月 26 日，前 AWS 工程師 `@dmfigol`（8,086 讚、63.9 萬+ 瀏覽）回顧了 2025 年 1 月 29 日那條引用推文之後的遭遇：當時他批評 `@theo` 在惡意程式上傳觸發 `t3.chat` 網域封禁後，對 CheckPoint/Palo Alto 下最後通牒；那條推文只有 `89 次瀏覽、0 讚、0 轉發`：\n\n> 「在我醒來之前把 t3 chat 解封，不然我今天一開頭就拍影片，拉我 100 萬+ 粉絲一起衝你」\n\n- **AWS HR 調查：** 大約一個月後，AWS HR 通知 `@dmfigol`：有人向 AWS 公關部門發了外部投訴，附上他的推文截圖，投訴當天撤回，但 HR 仍要求正式審查（最終以**零過錯**結案）。\n- **獨立佐證：** `@petersteele`（`2126096729934033141`）和 `@_Defeatable_`（`2126096598367117581`）表示自己也遇過類似行為。\n- **核實邊界：** 私訊與 HR 調查是 `@dmfigol` 親歷、有截圖支撐；但把一年半後三次 AWS 拒信（`2084660216759558593`）算到那次投訴頭上，`@dmfigol` 自己明確標為間接推斷：「我沒有硬證據，只有旁證」。",
+          "attachments": [
+            "@dmfigol 關於 AWS HR 案件的 63.9 萬瀏覽 X 推文串"
+          ],
+          "links": [
+            "@dmfigol 主推文串",
+            "@dmfigol 原始推文",
+            "鐵證 #20 原帖",
+            "@_Defeatable_ 回覆"
+          ]
+        },
+        {
+          "sender": "Theo Browne（@theo）——私訊",
+          "handle": "@theo → @dmfigol (2126025889016094829)",
+          "to": "@dmfigol",
+          "time": "2025 年 1 月 29 日（存檔截圖）",
+          "body": "`@dmfigol` 貼出的私訊截圖顯示，`@theo` 直接開場：\n\n> 「轉到私訊說，因為我不想公開轟你。」\n\n> 「問題的根子是激勵機制。恐懼就是好激勵。」\n\n> 「你圖什麼？就為了當個爛人 / 剛才末尾少了個問號」\n\n> 「我得問一句——英語是你的母語嗎？我唯一能想像你這條推文算合理的解釋，就是你對英語不太熟。」\n\n> 「今天我下手是重了點，我在護我的客戶。你毫無理由地攻擊了你自己的其中一個客戶。」",
+          "attachments": [
+            "私訊截圖：「恐懼就是好激勵」與「英語是你的母語嗎？」"
+          ],
+          "links": [
+            "@dmfigol 私訊截圖",
+            "@petersteele 佐證"
+          ]
+        }
+      ]
+    },
+    "2026-11-26-google-antigravity-zed-spoof": {
+      "from": "Julius（@jullerino）& PR #43026 / #43087",
+      "to": "Antigravity 使用者（0 份安全公告）",
+      "dateDisplay": "2026 年 11 月 26 日",
+      "subject": "Google 警示內部 API 封號風險，v0.1.13 靜默刪掉冒充 Zed 握手",
+      "snippet": "PR #43026 承認 Google 警告呼叫內部 API 會讓帳號被標記，PR #43087 撤掉 clientInfo name:\"zed\"，而 v0.1.13 把這兩件事埋進 380 條 bug 修正裡。",
+      "messages": [
+        {
+          "sender": "Julius（@jullerino）& @gabrielelpidio",
+          "handle": "PR #43026 · PR #43087 · v0.1.13",
+          "to": "pingdotgg/t3code main",
+          "time": "2026 年 11 月 25–26 日",
+          "body": "關閉 `#40713` 和 `#41536`、並在 FAQ 文件裡保證「零風險」兩天後，T3 Code 悄悄拆掉了 Antigravity 的兩套機制：\n\n1. **PR #43026（`2026-11-25T19:25:43Z`，`@juliusmarminge`）：** 刪掉 `antigravityUsageLimits.ts`（該檔案用系統鑰匙圈憑證、配上偽造的 `antigravity/hub` 請求標頭去輪詢 `cloudcode-pa.googleapis.com`），並從 `apps/server` 移除 `@napi-rs/keyring`：\n\n> 「Antigravity 只對外部客戶端支援 ACP。Google 告訴我們，呼叫它的內部 API 可能讓帳號被標記。」\n\n> 「這兩件事任何一件都可能讓使用者惹上麻煩。」\n\n2. **PR #43087（`2026-11-26T15:42:39Z`，`@gabrielelpidio`）：** 撤掉回退握手中冒充 `Zed` 白名單客戶端的做法：\n\n> 「在 agy 1.5.0 上，或者只要 T3 讀不到執行時版本，Antigravity 的 ACP 握手就會發出 `clientInfo: { name: \"zed\", version: \"0.0.0\" }`。這樣 agy 才會放出 Claude 和 GPT 模型——1.5.0 只對這些白名單編輯器（例如 Zed）開放……冒充別的客戶端，違反的是同一條規矩。」\n\n3. **`v0.1.13` 發布說明（`2026-11-26T19:32Z`，401 項改動）：** 7 條重點全講 GBK 編碼和 UI 快速鍵——Google 的警告和 `#43026`/`#43087` 一字未提，全塞進那句「另有 380 項 bug 修正與效能改進」裡，**GitHub Security Advisory 掛零**。",
+          "attachments": [
+            "PR #43026：Google 的帳號標記警告與 Antigravity 功能移除",
+            "PR #43087：刪除 clientInfo: { name: \"zed\" } 握手冒充"
+          ],
+          "links": [
+            "PR #43026",
+            "PR #43087",
+            "v0.1.13 發布",
+            "鐵證 #21 原帖"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-final-statement-slophouse-gdpr": {
+      "from": "@theo & Julius ↔ @sk1gl4a & @theperfdev",
+      "to": "GDPR / 下薩克森邦 LfD / 閉源 slophouse",
+      "dateDisplay": "2026 年 11 月 27 日",
+      "subject": "「最終聲明」16 分鐘被打穿，追蹤邏輯轉入閉源 slophouse",
+      "snippet": "Theo 九連否認幾分鐘後，@sk1gl4a 抓到 243 次擅自讀取 Claude、19% 德國加值稅帳單、t3.chat 零點擊指紋；PR #43948 隨後認帳。",
+      "messages": [
+        {
+          "sender": "Theo Browne（@theo）",
+          "handle": "@theo · X (2125700717935841479)",
+          "to": "公開時間線（43.2 萬次瀏覽）",
+          "time": "2026 年 11 月 25 日 21:18 UTC",
+          "body": "2026 年 11 月 25 日 `21:18 UTC`，`@theo` 發出「最終聲明。」，列出九條「T3 Code 從來沒有：」的否認：\n\n> 「上傳過任何關於你電腦裡有什麼的資訊」\n\n> 「上傳過使用者 ID」\n\n> 「我們只統計基礎用量（token 數和提示詞數）。就這樣。」",
+          "attachments": [
+            "@theo 11 月 25 日「最終聲明。」九點否認"
+          ],
+          "links": [
+            "@theo 最終聲明"
+          ]
+        },
+        {
+          "sender": "@sk1gl4a & @theperfdev",
+          "handle": "@sk1gl4a · X (2125748079047647715 · 2125807572800200712 · 2125814463085334546)",
+          "to": "Anthropic、OpenAI 與下薩克森邦 LfD",
+          "time": "2026 年 11 月 26 日 00:26 – 17:28 UTC",
+          "body": "`@theo` 發文 16 分鐘後（`2026-11-26T00:26:51Z`，`10 萬+ 瀏覽`），`@sk1gl4a` 公布了封包擷取與檔案存取紀錄：\n\n1. **擅自掃描外部工作階段：** 只裝了 Mistral Vibe 跑 T3 Code，卻開啟了 **243 個 Claude Code** 和 **9 個 Grok** 本機工作階段，在 3 台機器上對 `~/.codex/auth.json` + `~/.claude.json` 做雜湊，並且在 `#42629` 之前完全無視 `DO_NOT_TRACK=1`。（`@sk1gl4a` 稱已向 Anthropic、OpenAI 和德國監管機關 `LfD Niedersachsen` 檢舉；目前尚未見到公開的監管立案紀錄。）\n2. **19% 德國加值稅（`€9.03` / `€56.43`）：** Stripe 結帳時以歐元向德國居民收取 19% 加值稅，用來解鎖 3 台以上 T3 Connect 裝置——同時把 Connect ID + 電子郵件傳給 T3 Chat（`T3ChatAccounts.ts#L55-L58`）；即便 Theo 11 月 24 日威脅封鎖德國，這一手也早已落進 GDPR 第 3(2) 條的適用範圍。\n3. **`t3.chat` 零點擊指紋：** `@sk1gl4a` 與獨立開發者 `@theperfdev`（`2126005307231162488`）都抓到 `t3.chat`（連隱私政策頁面、一次都沒點也在跑）載入 FingerprintJS（`/api/identity`，蒐集 Canvas/WebGL/音訊/字型）、PostHog（`t3.chat/ingest`）、Plausible 和 hCaptcha——2025 年 5 月 31 日的 `uploadthing.com/info/privacy-policy` 裡一條都沒揭露。",
+          "attachments": [
+            "@sk1gl4a 抓到的 243 次 Claude 讀取與 GDPR 投訴資料",
+            "T3 Connect 的 Stripe 結帳頁，含 19% 德國加值稅（€9.03/月）",
+            "t3.chat 零點擊載入 FingerprintJS 與 PostHog 的封包擷取"
+          ],
+          "links": [
+            "@sk1gl4a 243 個工作階段推文串",
+            "@sk1gl4a 德國加值稅帳單",
+            "@sk1gl4a t3.chat 指紋擷取",
+            "@theperfdev 獨立複現",
+            "UploadThing / T3 Chat 隱私政策"
+          ]
+        },
+        {
+          "sender": "Julius（@jullerino）：PR #43948、slophouse 與 Clerk",
+          "handle": "PR #43948 · PR #43099 · PR #43889 · PR #42803",
+          "to": "pingdotgg/t3code",
+          "time": "2026 年 11 月 25–27 日",
+          "body": "維護者自己的 GitHub PR 隨後證實了這些掃描，還把歸因邏輯挪進閉源的 `slophouse` 後端：\n\n- **PR #43948（截至 11 月 27 日 `17:00Z` 仍 `open`）：** 照原文認帳：\n\n> 「T3 Code 沒問過一聲，就讀了這台電腦上其他 agent 的檔案。打開 Usage 就把每個 agent 的工作階段歷史掃了一遍。Claude 重置額度、Grok 額度、OpenCode Go 限額，也各自讀了對應 agent 的登入 token 或 key。Welcome 頁面一打開就掃 agent 歷史找專案，還把使用者根本沒開的 agent（Pi）列了出來。」\n\n（`~/.claude.json` 組織 ID 的讀取依舊無門檻，行動版 Usage 也沒有開關。）\n- **`slophouse` 黑箱：** `PR #43099`（`2026-11-25T21:59Z`）承認「所有資料都留在 slophouse」；`@jullerino`（`2125649442665889821`）承認「那部分不開源，很難稽核」；`PR #43889`（`fix(telemetry): link Connect owners by a relay-issued analytics id`）10 分鐘就被關掉，理由寫著 **「nvm easier to do in slophouse」**（算了，在 slophouse 裡做更省事）。\n- **`main` 分支的 Clerk 洩漏未修：** `PR #42803` 指出 `ElectronManagedAuthShell.tsx` 和 `BrowserManagedAuthShell.tsx` 裡的 `<ClerkProvider>` 仍缺 `telemetry={false}`，而社群提的 UI 開關 `PR #42625` 還掛著 `open`。",
+          "attachments": [
+            "PR #43948：承認「沒問過一聲就讀了其他 agent 的檔案」",
+            "PR #43889 關閉理由：「nvm easier to do in slophouse」"
+          ],
+          "links": [
+            "PR #43948（公開認帳）",
+            "PR #43099（slophouse）",
+            "PR #43889（轉進 slophouse 關閉）",
+            "@jullerino「不開源」推文",
+            "PR #42803（ClerkProvider）",
+            "PR #42625（待處理的 UI 開關）",
+            "鐵證 #22 原帖"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-desktop-browser-sandbox-bypass": {
+      "from": "程式碼稽核（提交 3c72b4e7）",
+      "to": "桌面版及受監督 Claude / Codex 使用者",
+      "dateDisplay": "2026 年 11 月 27 日",
+      "subject": "桌面版將 Anthropic 警示靜音，並暴露 11 款瀏覽器的 Cookie",
+      "snippet": "3c72b4e7 已確認：T3 將 Claude 的核准屏蔽警示靜音，讓 uploadFiles 繞過 Codex 沙箱，並在桌面版關閉瀏覽器隔離。",
+      "messages": [
+        {
+          "sender": "獨立程式碼稽核（3c72b4e7）",
+          "handle": "ClaudeAdapterV2.ts · ServerBrowser.ts · BrowserImport",
+          "to": "桌面版及 Agent 執行時使用者",
+          "time": "2026 年 11 月 27 日",
+          "body": "對 `main` 分支提交 `3c72b4e7` 的原始碼檢查，記錄了三種相互影響的瀏覽器與核准繞過行為：\n\n1. **Anthropic 安全警示被靜音（`ClaudeAdapterV2.ts#L1629-L1647`）：** 在 `permissionMode: default`（受監督模式）下注入萬用字元 `mcp__t3-code__*`；略過 `preview_*` 工具的 `runtimeMode` 檢查；在 `withoutClaudeCanUseToolShadowedWarning` 內動態修改 `process.emitWarning`，將 `CLAUDE_SDK_CAN_USE_TOOL_SHADOWED` 當成「單一工作階段雜訊」丟棄。\n2. **Codex 沙箱被繞過（`ServerBrowser.ts#L1723-L1749`）：** `enableAgentBrowserAccess` 預設設為 `true`（`settings.ts#L1445`）。主機端瀏覽器操作在 Codex 沙箱外執行（`CodexAdapterV2.ts#L853-L883`）；`uploadFiles` 只檢查 `NodePath.isAbsolute(path)`，既不限制在工作區內，也不要求使用者確認。\n3. **桌面版未隔離 11 款瀏覽器的 Cookie（`ServerBrowser.ts#L1236-L1247`）：** 只有在 `desktop === null`（無頭 Linux）時，`isolatedContext` 才為 `true`。桌面 Electron 是唯一執行 `BrowserImport/`（`Sources.ts`、`ChromiumKeys.ts`）的目標，它會從 11 款瀏覽器匯入 Keychain、DPAPI 及完全磁碟存取權限下的 Cookie；但此時 `isolatedContext` 為 `false`，`open=false` 會讓工作階段保持隱藏，`preview_evaluate` 則可在任意 URL 上透過 CDP 執行 `Runtime.evaluate`（每次 64 KB）。",
+          "attachments": [
+            "ClaudeAdapterV2.ts 封鎖 CLAUDE_SDK_CAN_USE_TOOL_SHADOWED",
+            "ServerBrowser.ts 在桌面版 Electron 上停用 isolatedContext",
+            "ServerBrowser.ts 的 uploadFiles 只檢查 NodePath.isAbsolute"
+          ],
+          "links": [
+            "ClaudeAdapterV2.ts#L1629-L1647",
+            "ServerBrowser.ts#L1236-L1247",
+            "ServerBrowser.ts#L1723-L1749",
+            "BrowserImport/Sources.ts",
+            "鐵證 #23 原帖"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-plaintext-quote-prompt-urls": {
+      "from": "@Luca_Hagenmayer 與程式碼稽核 ↔ Julius（@jullerino）",
+      "to": "Discussion #29456（Issue #29449 在 4 分 39 秒後被鎖定）",
+      "dateDisplay": "2026 年 11 月 27 日",
+      "subject": "明文對話與 Prompt 全塞進 URL；Bug 在 4 分鐘內被鎖定",
+      "snippet": "引用與 Prompt 連結會嵌入最長 8,000 字元的明文對話、32 字元的未選取上下文及儲存庫名稱；Issue #29449 在 4 分 39 秒內被鎖定，回覆數為 0。",
+      "messages": [
+        {
+          "sender": "程式碼稽核（f40f78eb）與 @Luca_Hagenmayer",
+          "handle": "assistantCitations.ts · promptLinks.ts · Discussion #29456",
+          "to": "Web、桌面端及行動端使用者",
+          "time": "2026 年 11 月 27 日",
+          "body": "在 `main@f40f78eb` 上驗證了兩個連結分享輔助函式，它們會把未加密的對話文字直接塞進 URL 查詢字串：\n\n1. **明文引用（`assistantCitations.ts`、`PR #9146`）：** 介面顯示為 `[助理引用]`；`t3-citation://v1/...` 會編碼最多 `8,000` 字元的 `text`、`8,000` 字元的 `comment`，以及未選取的 `prefix`、`suffix` 上下文各 `32` 字元。\n2. **公開 Prompt URL（`promptLinks.ts#L192-L207`、`PR #18454`，作者 @t3dotgg）：** `buildNewThreadLink()` 把最多 `8,000` 字元的 `prompt` 和 `repo=owner/name` 拼入 `https://app.t3.codes/new?prompt=...`；連結預覽展開時，這些內容會暴露在瀏覽器歷史記錄和伺服器日誌中。\n3. **4 分 39 秒鎖定並刪除文件：** `@Luca_Hagenmayer` 發起 `Discussion #24241`（10 月 24 日，0 條回覆）和 `Issue #29449`（`2026-11-02T16:38:48Z`）。到 `16:43:27Z` 時（**4 分 39 秒後**），`@juliusmarminge` 將 #29449 轉入 `Discussion #29456` 並鎖定，評論數仍為 0；隨後又把這套格式推上行動版（`PR #35306`，11 月 19 日），並刪除內部設計文件（`PR #41330`，11 月 23 日）。",
+          "attachments": [
+            "promptLinks.ts 將完整 Prompt 和儲存庫名稱塞進 app.t3.codes URL",
+            "Issue #29449 在 4 分 39 秒內轉入並鎖定為 Discussion #29456"
+          ],
+          "links": [
+            "assistantCitations.ts#L43-L56",
+            "contracts/assistantCitations.ts#L4-L26",
+            "promptLinks.ts#L192-L207",
+            "Discussion #29456",
+            "Discussion #24241",
+            "PR #18454（Theo）",
+            "@Luca_Hagenmayer 貼文",
+            "鐵證 #24 原帖"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-sqlite-113gb-fanout-and-silence": {
+      "from": "@kdy1dev（Issue #44029）與 @jullerino",
+      "to": "@theo（在 X 上沉默 41 小時）",
+      "dateDisplay": "2026 年 11 月 27 日",
+      "subject": "113 GiB SQLite 的「大規模扇出」，Theo 在 X 上沉默 41 小時",
+      "snippet": "SWC 建立者 @kdy1dev 的 statev2.sqlite（Issue #44029）膨脹至 113 GiB，並出現 565 萬筆重複資料列；@jullerino 稱其為「大規模扇出」，@theo 則沉默了 41 小時。",
+      "messages": [
+        {
+          "sender": "@kdy1dev（SWC/oxc 建立者）與 Julius（@jullerino）",
+          "handle": "Issue #44029 · @jullerino（2126207815052325020）",
+          "to": "pingdotgg/t3code",
+          "time": "2026 年 11 月 27 日，01:18 – 07:27 UTC",
+          "body": "2026 年 11 月 27 日，SWC/oxc 建立者 `@kdy1dev` 記錄了一個體積達 **`113 GiB` 的 `statev2.sqlite`**：設定維護頁面顯示「已復原 `0 B`」，執行 `t3 doctor --fix` 後也只縮至 `56.68 GiB`。他提交 `Issue #44029`，展示 5,199 個討論串中共有 **`5,654,888`** 筆重複的 `provider-session.updated` 記錄（`15.3 GB`）。\n\n`06:53:40 UTC`，`@jullerino` 承認存在這個重複寫入 Bug：\n\n> 「有一部分是這樣，但看起來我們這邊有個小 Bug，導致資料大規模扇出，清理速度跟不上」\n\n- **在 X 上沉默 41 小時：** `2026-11-25T23:44:13Z`（`2125737351901303200`）之後，`@theo` **約 41 小時內沒有發布任何原創推文或技術回覆**，只轉推了讚揚內容及 Mobile 2.4（`2126054989768675651`、`2126062066809307637`），也未回覆 `@dmfigol`、`@sk1gl4a` 或 `@DavidOndrej1`。",
+          "attachments": [
+            "@jullerino 承認存在「大規模扇出」及 @kdy1dev 的 Issue #44029"
+          ],
+          "links": [
+            "Issue #44029",
+            "@jullerino 回覆",
+            "@theo 11 月 25 日行銷道歉"
+          ]
+        }
+      ]
     }
   },
   "evidence": {
@@ -1127,7 +1458,7 @@
     },
     "EV-003": {
       "title": "GitHub 帳號清除威脅",
-      "caption": "2026 年 11 月 23 日的貼文，命令 MIT Fork作者立刻改名，否則就丟掉 GitHub 帳號。"
+      "caption": "2026 年 11 月 23 日的貼文，命令 MIT Fork 作者立刻改名，否則就丟掉 GitHub 帳號。"
     },
     "EV-004": {
       "title": "員工分叉 maria-rcks/t3libre",
@@ -1358,8 +1689,8 @@
       "caption": "主分支 git log 按 patrick-toulme 過濾，只有一個提交（PR #31158）。"
     },
     "EV-061": {
-      "title": "「就算把我機器搞廢了，那也是免費素材」",
-      "caption": "2026 年 11 月 10 日的貼文，解釋為什麼為了拍影片寧可跑得飛快，哪怕 agent 把他的機器整廢。"
+      "title": "「就算把我機器弄垮了，那也是免費素材」",
+      "caption": "2026 年 11 月 10 日的貼文，解釋為什麼為了拍影片寧可跑得飛快，哪怕 agent 把他的機器弄垮。"
     },
     "EV-062": {
       "title": "「我的 yolo 合併有時候確實會把東西搞壞」",
@@ -1552,6 +1883,94 @@
     "EV-109": {
       "title": "PR #39483：悄悄修掉路徑穿越（0 條安全公告）",
       "caption": "11 月 20 日、ca81b7b9 那段時間裡悄悄修了 ServerSecretStore 的路徑穿越，而 GitHub Security Advisories 一直掛著 0。"
+    },
+    "EV-110": {
+      "title": "@dmfigol 63.9 萬瀏覽量 AWS HR 事件貼文",
+      "caption": "前 AWS 工程師 @dmfigol 於 11 月 26 日發文，詳述 2025 年 1 月 CheckPoint/Palo Alto 爭議及遭撤回的 AWS HR 申訴。"
+    },
+    "EV-111": {
+      "title": "@theo 私訊：「恐懼就是好激勵」",
+      "caption": "@dmfigol 公開 2025 年 1 月 29 日私訊存檔截圖，內容包含「恐懼就是好激勵（Fear is a good incentive）」與「英語是你的母語嗎？」。"
+    },
+    "EV-112": {
+      "title": "PR #43026：承認 Google 會標記帳號",
+      "caption": "11 月 25 日合併的 PR，刪掉 antigravityUsageLimits.ts。此前 Google 警告：呼叫內部 API 可能導致帳號被標記。"
+    },
+    "EV-113": {
+      "title": "PR #43087：移除 Zed 白名單偽裝",
+      "caption": "11 月 26 日合併的 PR，承認 T3 Code 在 Antigravity ACP 握手時傳送 clientInfo: { name: 'zed' }，藉此存取 Claude/GPT 模型。"
+    },
+    "EV-114": {
+      "title": "@theo 11 月 25 日「最終聲明」",
+      "caption": "列出九條「T3 Code 從未……」的否定聲明，聲稱僅統計過基礎 Token 與 Prompt 數量。"
+    },
+    "EV-115": {
+      "title": "@sk1gl4a：擅自讀取 243 個 Claude 工作階段與 GDPR 申訴",
+      "caption": "Theo 發布最終聲明 16 分鐘後貼出實測封包擷取：擅自讀取 243 個 Claude 工作階段、3 台機器雜湊記錄，並已向德國下薩克森邦 LfD 申訴。"
+    },
+    "EV-116": {
+      "title": "T3 Connect 的 Stripe 結帳：19% 德國加值稅",
+      "caption": "Stripe 結帳向德國居民收取 €9.03/月（含 19% MwSt），用於提升 T3 Connect 額度，藉此證實 GDPR 第 3(2) 條的適用範圍。"
+    },
+    "EV-117": {
+      "title": "t3.chat 零點擊 FingerprintJS 擷取",
+      "caption": "未登入、零點擊狀態下擷取 t3.chat 隱私政策頁，該頁載入了 FingerprintJS（/api/identity）、PostHog、Plausible 和 hCaptcha。"
+    },
+    "EV-118": {
+      "title": "PR #43948：承認擅自掃描其他 Agent",
+      "caption": "維護者 PR 明確承認：T3 Code 不打招呼就讀走磁碟上其他 Agent 的檔案、金鑰和工作階段歷史。"
+    },
+    "EV-119": {
+      "title": "PR #43889 被關：「算了，放 slophouse 裡做更省事」",
+      "caption": "被關閉的 PR 將 Connect 的分析身分關聯邏輯從公開客戶端程式碼移入閉源 slophouse 後端。"
+    },
+    "EV-120": {
+      "title": "ClaudeAdapterV2.ts#L1629-L1647：強行靜音警示",
+      "caption": "在 withoutClaudeCanUseToolShadowedWarning 中篡改 process.emitWarning，把 Anthropic 的核准屏蔽警示強行消音。"
+    },
+    "EV-121": {
+      "title": "ServerBrowser.ts#L1236-L1247：桌面端未做隔離",
+      "caption": "僅在 desktop === null 時啟用 isolatedContext: true，導致桌面 Electron 從 11 款瀏覽器匯入的 Cookie 全部暴露在同一上下文中。"
+    },
+    "EV-122": {
+      "title": "ServerBrowser.ts#L1723-L1749：uploadFiles 路徑校驗缺失",
+      "caption": "主機端 uploadFiles 輔助函式僅檢查 NodePath.isAbsolute(path)，既無工作區邊界限制，也無使用者確認彈窗。"
+    },
+    "EV-123": {
+      "title": "promptLinks.ts#L192-L207：公開的 Prompt 查詢 URL",
+      "caption": "buildNewThreadLink 把完整 prompt（最長 8,000 字元）和儲存庫名稱編碼進 https://app.t3.codes/new?prompt=... 這類 URL。"
+    },
+    "EV-124": {
+      "title": "Discussion #29456：4 分 39 秒即被鎖定",
+      "caption": "明文 t3-citation:// 引用連結隱私漏洞 Issue #29449 在 4 分 39 秒內被鎖定並移入 Ideas 區 Discussion #29456，全程 0 條回覆。"
+    },
+    "EV-125": {
+      "title": "@theo 承認出資做基準測試",
+      "caption": "10 月 18 日的推文公開證實：Theo 因 T3 Code 分數偏低聯絡 @zqkrq，並提出出錢資助一次基準測試。"
+    },
+    "EV-126": {
+      "title": "@DavidOndrej1 10 月 18 日基準測試指控貼文",
+      "caption": "獲 23.6 萬次瀏覽的指控貼文，質疑 v1/v2 基準榜單排名公正性，貼文下方附帶社群附註（Community Note）。"
+    },
+    "EV-127": {
+      "title": "T3 Code 贊助商橫幅（WorkOS、Blacksmith、Browserbase、CodeRabbit）",
+      "caption": "@DavidOndrej1 於 11 月 26 日貼在 @dmfigol 貼文下方的贊助商名單。"
+    },
+    "EV-128": {
+      "title": "@ZryMiller：25 款開源工具遙測橫評",
+      "caption": "28.4 萬瀏覽量的獨立評分表，橫評 25 款開源 AI 工具（3 款獲 A 級，T3 Code 由 F 升至 D，僅 Orca 通過 DO_NOT_TRACK 核查）。"
+    },
+    "EV-129": {
+      "title": "Issue #4123 被 @pingdotgg 組織帳號鎖定",
+      "caption": "遙測投訴討論串先被 @t3dotgg 關了兩次，11 月 24 日發酵高峰時又被 @pingdotgg 組織帳號鎖定。"
+    },
+    "EV-130": {
+      "title": "hazae41/glacier#1：2022 年 10 月辱罵舊評",
+      "caption": "至今仍掛在網上的 2022 年評論：@t3dotgg 在獨立開源專案首個 issue 下寫道「真希望這是個惡搞，可惜維護者就是個混蛋 :(」。"
+    },
+    "EV-131": {
+      "title": "113 GiB SQLite「大規模扇出」（#44029）",
+      "caption": "@jullerino 承認存在 565 萬條重複的 provider-session.updated 記錄，由 SWC 作者 @kdy1dev 在 Issue #44029 中揭露。"
     }
   }
 }

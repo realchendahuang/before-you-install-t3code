@@ -277,52 +277,52 @@
     "ep01": [
       {
         "p": 1,
-        "tag": "11月23日 15:38",
+        "tag": "11 月 23 日 · 15:38",
         "lines": [
-          "MIT 开源 · \"合法偷我们的代码\"",
-          "\"T3 Code 这界面怎么这么丑?!\"",
-          "(其实是免费 MIT Fork)"
+          "MIT 开源 · 「合法偷我们的代码」",
+          "「T3 Code 这界面怎么这么丑？！」",
+          "（其实是免费 MIT Fork）"
         ]
       },
       {
         "p": 2,
-        "tag": "19:11 → 19:22 · 间隔10分钟",
+        "tag": "19:11 → 19:22 · 间隔 10 分钟",
         "lines": [
-          "中国山寨货! · TEMU3 CODE!",
-          "@theo: \"像坨垃圾! 立刻改名, 不然找 GitHub 封你号!\""
+          "中国山寨货！ · TEMU3 CODE!",
+          "@theo：「像坨垃圾！立刻改名，不然找 GitHub 封你号！」"
         ]
       },
       {
         "p": 3,
-        "tag": "30分钟后",
+        "tag": "30 分钟后",
         "lines": [
-          "20万+曝光 · 一字未删",
-          "@theo: 私信: \"抱歉语气冲了, 得保护商标\""
+          "20 万+ 曝光 · 一字未删",
+          "@theo 私信：「抱歉语气冲了，得保护商标」"
         ]
       },
       {
         "p": 4,
-        "tag": "11小时后",
+        "tag": "11 小时后",
         "lines": [
-          "$1T 美国大厂",
-          "@theo: \"开源就是开源, 万亿美金大厂随便用!\""
+          "万亿美元美国大厂",
+          "@theo：「开源就是开源，万亿美元公司也能用！」"
         ]
       }
     ],
     "ep02": [
       {
         "p": 1,
-        "tag": "11月24日 11:03",
+        "tag": "11 月 24 日 · 11:03",
         "lines": [
-          "@realchendahuang: \"毫无底线, 纯粹双标.\"",
-          "30万曝光 · $20K FFmpeg 悬赏旧账"
+          "@realchendahuang：「毫无底线，纯粹双标。」",
+          "30 万曝光 · $20K FFmpeg 悬赏旧账"
         ]
       },
       {
         "p": 2,
         "tag": "11:42",
         "lines": [
-          "@theo: \"拉黑了, 清净了.\"",
+          "@theo：「拉黑了，清净了。」",
           "[拉黑 BLOCK]"
         ]
       },
@@ -330,75 +330,75 @@
         "p": 3,
         "tag": "@theo 已拉黑你",
         "lines": [
-          "@realchendahuang: \"喜提毕业.\"",
+          "@realchendahuang：「喜提毕业。」",
           "git clone pingdotgg/t3code"
         ]
       },
       {
         "p": 4,
-        "tag": "5小时后 · 17:04",
+        "tag": "5 小时后 · 17:04",
         "lines": [
-          "232万曝光 · 1.8万赞",
-          "13条 GitHub 铁证 · *狂喷咖啡*"
+          "232 万曝光 · 1.8 万赞",
+          "13 条 GitHub 铁证 · *狂喷咖啡*"
         ]
       }
     ],
     "ep03": [
       {
         "p": 1,
-        "tag": "绝无遥测 · 绝无例外",
+        "tag": "绝无遥测 · 句号",
         "lines": [
-          "~/.claude.json · ~/.codex/auth.json · 4个被拒开关 PR",
-          "Julius (核心维护者): \"我们不会让关闭变容易.\""
+          "~/.claude.json · ~/.codex/auth.json · 4 个被拒开关 PR",
+          "Julius（核心维护者）：「我们不会让退出变容易。」"
         ]
       },
       {
         "p": 2,
-        "tag": "USPTO 商标: 0",
+        "tag": "USPTO 商标：0",
         "lines": [
-          "USPTO 商标 · PING LABS (已废弃)",
-          "@theo: \"快! 17小时后补写一份!\""
+          "USPTO 商标 · PING LABS（已废弃）",
+          "@theo：「快！17 小时后补写一份！」"
         ]
       },
       {
         "p": 3,
-        "tag": "52天静默 git push --force",
+        "tag": "52 天静默 git push --force",
         "lines": [
-          "41.6 GB · 每5秒全机扫描 · 永久删除",
-          "21小时 → 隐私过滤"
+          "41.6 GB · 每 5 秒全机扫描 · 永久删除",
+          "21 小时 → 删隐私过滤"
         ]
       },
       {
         "p": 4,
-        "tag": "4月 → 11月",
+        "tag": "4 月 → 11 月",
         "lines": [
-          "@theo: \"GitHub 星标都是骗VC的!\"",
-          "发呆30秒 · 7.7万★ (129关注) · @theo: \"破7万星完全没注意到!\""
+          "@theo：「GitHub 星标都是骗 VC 的！」",
+          "发呆 30 秒 · 7.7 万★（129 关注）· @theo：「破 7 万星完全没注意到！」"
         ]
       }
     ],
     "ep04": [
       {
         "p": 1,
-        "tag": "11月24日深夜",
+        "tag": "11 月 24 日深夜",
         "lines": [
-          "@sabotaj0707 → @NOYBeu! (欧盟 GDPR)",
-          "@realchendahuang: \"西药见效就是快.\""
+          "@sabotaj0707 → @NOYBeu!（欧盟 GDPR）",
+          "@realchendahuang：「西药见效就是快。」"
         ]
       },
       {
         "p": 2,
-        "tag": "通宵6小时擦屁股",
+        "tag": "通宵 6 小时连夜救火",
         "lines": [
-          "Julius (20个补丁): \"PR #42450 已合: 哎呀, 其实记了.\" (220万/时 IP日志 · git.cwd 路径泄露)",
-          "@theo (264条 Claude ID): \"我们从没记路径和IP!\""
+          "Julius（20 个 PR）：「PR #42450 已合：哎呀，其实记了。」（220 万/时 IP 日志 · git.cwd 路径泄露）",
+          "@theo（264 条 Claude ID）：「我们从没记过路径和 IP！」"
         ]
       },
       {
         "p": 3,
         "tag": "凌晨 4:00 → 清晨 6:00",
         "lines": [
-          "@theo: \"今晚就闭源! 你们不配用开源!\"",
+          "@theo：「今晚就闭源！你们不配用开源！」",
           "*悄悄删帖*"
         ]
       },
@@ -406,59 +406,59 @@
         "p": 4,
         "tag": "喜提双拉黑 · 简中不内讧",
         "lines": [
-          "temu3code.com — 感谢0商标创始人免费赐名",
-          "@realchendahuang: \"我英文不好...所以建了18语档案馆.\""
+          "temu3code.com — 感谢 0 商标创始人免费赐名",
+          "@realchendahuang：「我英文不好……所以建了 18 语档案馆。」"
         ]
       }
     ],
     "ep05": [
       {
         "p": 1,
-        "tag": "11月25日 11:56 → 15:38",
+        "tag": "11 月 25 日 · 11:56 → 15:38",
         "lines": [
-          "@realchendahuang: 18弹封笔，回去写代码！",
-          "3.5小时后: ca81b7b9 — 5大高危漏洞 (30天明文Shell · 无注销 · SSH_AUTH_SOCK)"
+          "@realchendahuang：18 弹封笔，回去写代码！",
+          "3.5 小时后：ca81b7b9 — 5 大高危漏洞（30 天明文 Shell · 无法吊销 · SSH_AUTH_SOCK）"
         ]
       },
       {
         "p": 2,
-        "tag": "11月26日 · 39万曝光",
+        "tag": "11 月 26 日 · 39 万曝光",
         "lines": [
           "最终声明",
-          "@theo: 绝没读你本地文件，你们都被骗了。"
+          "@theo：绝没读过你本地文件，你们都被骗了。"
         ]
       },
       {
         "p": 3,
-        "tag": "16分钟后",
+        "tag": "16 分钟后",
         "lines": [
-          "@sk1gl4a: 抓包扫了243个 Claude 会话，连隐私页不点鼠标都在跑 FingerprintJS 采指纹！"
+          "@sk1gl4a：抓包扫了 243 个 Claude 会话，连隐私页不点鼠标都在跑 FingerprintJS 采指纹！"
         ]
       },
       {
         "p": 4,
         "tag": "德国 STRIPE",
         "lines": [
-          "@theo: 那我干脆封禁德国！",
-          "€9.03/月 · 含19%德国增值税 (GDPR 第3(2)条)"
+          "@theo：那我干脆封禁德国！",
+          "€9.03/月 · 含 19% 德国增值税（GDPR 第 3(2) 条）"
         ]
       }
     ],
     "ep06": [
       {
         "p": 1,
-        "tag": "2025年1月回忆",
+        "tag": "2025 年 1 月回忆",
         "lines": [
-          "@theo (100万+粉) → 安全公司",
-          "@dmfigol (前AWS): “拿百万平台搞敲诈很恶心。” (89次浏览 · 0赞)"
+          "@theo（100 万+ 粉）→ 安全公司",
+          "@dmfigol（前 AWS）：「拿百万粉丝平台搞敲诈很恶心。」（89 次浏览 · 0 赞）"
         ]
       },
       {
         "p": 2,
-        "tag": "X | 私信  @theo  •••",
+        "tag": "X | 私信 @theo ···",
         "lines": [
-          "@theo: 恐惧是很好的激励。 / 英语是你的母语吗？",
-          "@dmfigol: 晚安。"
+          "@theo：恐惧是很好的激励。 / 英语是你的母语吗？",
+          "@dmfigol：晚安。"
         ]
       },
       {
@@ -466,75 +466,75 @@
         "tag": "AWS 付费客户",
         "lines": [
           "@theo → AWS HR 投诉",
-          "@dmfigol: 抱歉..."
+          "@dmfigol：抱歉……"
         ]
       },
       {
         "p": 4,
-        "tag": "11月27日 · 40万曝光",
+        "tag": "11 月 27 日 · 40 万曝光",
         "lines": [
-          "欧洲工程师：“懂英语吗？” + 告HR  =  中国作者：“拼多多山寨” + 封GitHub",
-          "@petersteele: 我也是！ · @realchendahuang: 剧本连台词都没换过。"
+          "欧洲工程师：「懂英语吗？」+ 告 HR = 中国作者：「拼多多山寨」+ 封 GitHub",
+          "@petersteele：我也是！ · @realchendahuang：剧本连台词都没换过。"
         ]
       }
     ],
     "ep07": [
       {
         "p": 1,
-        "tag": "你好，我叫 ZED",
+        "tag": "你好，我是 ZED",
         "lines": [
-          "PR #43026: Google警告封号",
-          "PR #43087: 冒充 \"zed\" 握手"
+          "PR #43026：Google 警告封号",
+          "PR #43087：伪装 \"zed\" 握手"
         ]
       },
       {
         "p": 2,
-        "tag": "v0.1.13 · 401项更新",
+        "tag": "v0.1.13 · 401 项更新",
         "lines": [
-          "@theo: 亮点：支持GBK文本！",
-          "安全公告： 0 · Google 封号修复 (+380项小修)"
+          "@theo：亮点：支持 GBK 文本！",
+          "安全公告：0 · Google 封号修复（+380 项小修）"
         ]
       },
       {
         "p": 3,
-        "tag": "第23弹 · 桌面端",
+        "tag": "第 23 弹 · 桌面端",
         "lines": [
-          "Anthropic → 静音当噪音 · 11款浏览器 (Gmail · GitHub · AWS)",
-          "桌面端隔离： 关闭 (仅Linux有效!)"
+          "Anthropic → 静音当噪音 · 11 款浏览器（Gmail · GitHub · AWS）",
+          "桌面端隔离：关闭（仅 Linux 有效！）"
         ]
       },
       {
         "p": 4,
-        "tag": "第24弹 · 4分39秒锁单",
+        "tag": "第 24 弹 · 4 分 39 秒锁单",
         "lines": [
-          "@Luca_Hagenmayer: 私密对话泄密！ (8000字 明文URL)",
-          "04:39 · Julius: 咔嚓！ (0 回复)"
+          "@Luca_Hagenmayer：私密对话泄密！（8,000 字明文 URL）",
+          "04:39 · Julius：咔嚓！（0 回复）"
         ]
       }
     ],
     "ep08": [
       {
         "p": 1,
-        "tag": "35款软件横评",
+        "tag": "35 款工具横评",
         "lines": [
-          "@DavidOndrej1: 赞助商还在投吗？",
+          "@DavidOndrej1：赞助商还在投吗？",
           "Aether: A · Hermes: A · Orca: C · T3 Code: F → D"
         ]
       },
       {
         "p": 2,
-        "tag": "11月27日",
+        "tag": "11 月 27 日",
         "lines": [
-          "Julius (核心维护者): PR #43948：是的，未经询问读了其他Agent文件。",
-          "10分钟后 · PR #43889 [关闭 PR]: “算了，在闭源 slophouse 里做更省事”"
+          "Julius（核心维护者）：「PR #43948：是的，未经询问读了其他 Agent 文件。」",
+          "10 分钟后 · PR #43889 [关闭 PR]：「算了，在闭源 slophouse 里做更省事」"
         ]
       },
       {
         "p": 3,
-        "tag": "1,401名免费贡献者",
+        "tag": "1,401 名免费贡献者",
         "lines": [
-          "“建议：别来贡献”",
-          "SLOPHOUSE (闭源泔水屋) · @theo: 静音 MUTE"
+          "「建议：别来贡献」",
+          "SLOPHOUSE（闭源泔水屋）· @theo：静音 MUTE"
         ]
       },
       {
@@ -551,52 +551,52 @@
     "ep01": [
       {
         "p": 1,
-        "tag": "11月23日 15:38",
+        "tag": "11 月 23 日 · 15:38",
         "lines": [
-          "MIT 開源 · 「合法偷我們的程式碼」",
+          "MIT 授權 ·「合法偷我們的程式碼」",
           "「T3 Code 這介面怎麼這麼醜？！」",
           "（其實是免費 MIT Fork）"
         ]
       },
       {
         "p": 2,
-        "tag": "19:11 → 19:22 · 間隔10分鐘",
+        "tag": "19:11 → 19:22 · 相隔 10 分鐘",
         "lines": [
-          "中國山寨貨！ · TEMU3 CODE!",
-          "@theo: 「像坨垃圾！立刻改名，不然找 GitHub 封你帳號！」"
+          "中國山寨貨！· TEMU3 CODE!",
+          "@theo：「像垃圾一樣！立刻改名，不然找 GitHub 封鎖你帳號！」"
         ]
       },
       {
         "p": 3,
-        "tag": "30分鐘後",
+        "tag": "30 分鐘後",
         "lines": [
-          "20萬+曝光 · 一字未刪",
-          "@theo: 私訊：「抱歉語氣衝了，得保護商標」"
+          "20 萬+ 曝光 · 一字未刪",
+          "@theo 私訊：「抱歉語氣衝了，得保護商標」"
         ]
       },
       {
         "p": 4,
-        "tag": "11小時後",
+        "tag": "11 小時後",
         "lines": [
-          "$1T 美國大廠",
-          "@theo: 「開源就是開源，兆元大廠隨便用！」"
+          "兆美元美國大廠",
+          "@theo：「開源就是開源，兆美元大廠照樣歡迎！」"
         ]
       }
     ],
     "ep02": [
       {
         "p": 1,
-        "tag": "11月24日 11:03",
+        "tag": "11 月 24 日 · 11:03",
         "lines": [
-          "@realchendahuang: 「毫無底線，純粹雙標。」",
-          "30萬曝光 · $20K FFmpeg 懸賞舊帳"
+          "@realchendahuang：「毫無底線，純粹雙標。」",
+          "30 萬曝光 · $20K FFmpeg 懸賞舊帳"
         ]
       },
       {
         "p": 2,
         "tag": "11:42",
         "lines": [
-          "@theo: 「封鎖了，清靜了。」",
+          "@theo：「封鎖了，清靜了。」",
           "[封鎖 BLOCK]"
         ]
       },
@@ -604,26 +604,26 @@
         "p": 3,
         "tag": "@theo 已封鎖你",
         "lines": [
-          "@realchendahuang: 「喜提畢業。」",
+          "@realchendahuang：「正式畢業。」",
           "git clone pingdotgg/t3code"
         ]
       },
       {
         "p": 4,
-        "tag": "5小時後 · 17:04",
+        "tag": "5 小時後 · 17:04",
         "lines": [
-          "232萬曝光 · 1.8萬讚",
-          "13條 GitHub 鐵證 · *狂噴咖啡*"
+          "232 萬曝光 · 1.8 萬讚",
+          "13 條 GitHub 鐵證 · *狂噴咖啡*"
         ]
       }
     ],
     "ep03": [
       {
         "p": 1,
-        "tag": "絕無遙測 · 絕無例外",
+        "tag": "絕無遙測 · 句號",
         "lines": [
-          "~/.claude.json · ~/.codex/auth.json · 4個被拒開關 PR",
-          "Julius (核心維護者): 「我們不會讓關閉變容易。」"
+          "~/.claude.json · ~/.codex/auth.json · 4 個被拒開關 PR",
+          "Julius（核心維護者）：「我們不會讓退出變容易。」"
         ]
       },
       {
@@ -631,108 +631,108 @@
         "tag": "USPTO 商標：0",
         "lines": [
           "USPTO 商標 · PING LABS（已廢棄）",
-          "@theo: 「快！17小時後補寫一份！」"
+          "@theo：「快！17 小時後補寫一份！」"
         ]
       },
       {
         "p": 3,
-        "tag": "52天靜默 git push --force",
+        "tag": "52 天靜默 git push --force",
         "lines": [
-          "41.6 GB · 每5秒全機掃描 · 永久刪除",
-          "21小時 → 隱私過濾"
+          "41.6 GB · 每 5 秒全機掃描 · 永久刪除",
+          "21 小時 → 刪隱私過濾"
         ]
       },
       {
         "p": 4,
-        "tag": "4月 → 11月",
+        "tag": "4 月 → 11 月",
         "lines": [
-          "@theo: 「GitHub 星標都是騙VC的！」",
-          "發呆30秒 · 7.7萬★（129關注） · @theo: 「破7萬星完全沒注意到！」"
+          "@theo：「GitHub 星標都是騙 VC 的！」",
+          "發呆 30 秒 · 7.7 萬★（129 追蹤）· @theo：「破 7 萬星完全沒注意到！」"
         ]
       }
     ],
     "ep04": [
       {
         "p": 1,
-        "tag": "11月24日深夜",
+        "tag": "11 月 24 日深夜",
         "lines": [
-          "@sabotaj0707 → @NOYBeu! (歐盟 GDPR)",
-          "@realchendahuang: 「西藥見效就是快。」"
+          "@sabotaj0707 → @NOYBeu!（歐盟 GDPR）",
+          "@realchendahuang：「西藥見效就是快。」"
         ]
       },
       {
         "p": 2,
-        "tag": "通宵6小時擦屁股",
+        "tag": "通宵 6 小時連夜救火",
         "lines": [
-          "Julius (20個補丁): 「PR #42450 已合：哎呀，其實記了。」 (220萬/時 IP日誌 · git.cwd 路徑洩漏)",
-          "@theo (264條 Claude ID): 「我們從沒記路徑和IP！」"
+          "Julius（20 個 PR）：「PR #42450 已合：哎呀，其實記了。」（220 萬/時 IP 日誌 · git.cwd 路徑洩漏）",
+          "@theo（264 條 Claude ID）：「我們從沒記過路徑和 IP！」"
         ]
       },
       {
         "p": 3,
         "tag": "凌晨 4:00 → 清晨 6:00",
         "lines": [
-          "@theo: 「今晚就閉源！你們不配用開源！」",
+          "@theo：「今晚就閉源！你們不配用開源！」",
           "*悄悄刪帖*"
         ]
       },
       {
         "p": 4,
-        "tag": "喜提雙封鎖 · 簡中不內鬨",
+        "tag": "雙雙被封鎖 · 繁簡不內鬨",
         "lines": [
-          "temu3code.com — 感謝0商標創辦人免費賜名",
-          "@realchendahuang: 「我英文不好……所以建了18語檔案館。」"
+          "temu3code.com — 感謝 0 商標創辦人免費賜名",
+          "@realchendahuang：「我英文不好……所以建了 18 語檔案館。」"
         ]
       }
     ],
     "ep05": [
       {
         "p": 1,
-        "tag": "11月25日 11:56 → 15:38",
+        "tag": "11 月 25 日 · 11:56 → 15:38",
         "lines": [
-          "@realchendahuang: 18彈封筆，回去寫程式！",
-          "3.5小時後: ca81b7b9 — 5大高危漏洞 (30天明文Shell · 無註銷 · SSH_AUTH_SOCK)"
+          "@realchendahuang：18 彈封筆，回去寫程式！",
+          "3.5 小時後：ca81b7b9 — 5 大高危漏洞（30 天明文 Shell · 無法撤銷 · SSH_AUTH_SOCK）"
         ]
       },
       {
         "p": 2,
-        "tag": "11月26日 · 39萬曝光",
+        "tag": "11 月 26 日 · 39 萬曝光",
         "lines": [
           "最終聲明",
-          "@theo: 絕沒讀你本機檔案，你們都被騙了。"
+          "@theo：絕沒讀過你本機檔案，你們都被騙了。"
         ]
       },
       {
         "p": 3,
-        "tag": "16分鐘後",
+        "tag": "16 分鐘後",
         "lines": [
-          "@sk1gl4a: 抓包掃了243個 Claude 會話，連隱私頁不點滑鼠也在跑 FingerprintJS 採指紋！"
+          "@sk1gl4a：抓包掃了 243 個 Claude 工作階段，連隱私頁不點滑鼠都在跑 FingerprintJS 採指紋！"
         ]
       },
       {
         "p": 4,
         "tag": "德國 STRIPE",
         "lines": [
-          "@theo: 那我乾脆封鎖德國！",
-          "€9.03/月 · 含19%德國增值稅 （GDPR 第3(2)條）"
+          "@theo：那我乾脆封鎖德國！",
+          "€9.03/月 · 含 19% 德國加值稅（GDPR 第 3(2) 條）"
         ]
       }
     ],
     "ep06": [
       {
         "p": 1,
-        "tag": "2025年1月回憶",
+        "tag": "2025 年 1 月回憶",
         "lines": [
-          "@theo (100萬+粉) → 安全公司",
-          "@dmfigol (前AWS): 「拿百萬平台搞敲詐很噁心。」 (89次瀏覽 · 0讚)"
+          "@theo（100 萬+ 粉）→ 安全公司",
+          "@dmfigol（前 AWS）：「拿百萬追蹤帳號搞脅迫很噁心。」（89 次瀏覽 · 0 讚）"
         ]
       },
       {
         "p": 2,
-        "tag": "X | 私訊  @theo  •••",
+        "tag": "X | 私訊 @theo ···",
         "lines": [
-          "@theo: 恐懼是很好的激勵。 / 英語是你的母語嗎？",
-          "@dmfigol: 晚安。"
+          "@theo：恐懼是很好的激勵。 / 英語是你的母語嗎？",
+          "@dmfigol：晚安。"
         ]
       },
       {
@@ -740,80 +740,80 @@
         "tag": "AWS 付費客戶",
         "lines": [
           "@theo → AWS HR 投訴",
-          "@dmfigol: 抱歉……"
+          "@dmfigol：抱歉……"
         ]
       },
       {
         "p": 4,
-        "tag": "11月27日 · 40萬曝光",
+        "tag": "11 月 27 日 · 40 萬曝光",
         "lines": [
-          "歐洲工程師：「懂英語嗎？」+ 告HR  =  中國作者：「拼多多山寨」+ 封GitHub",
-          "@petersteele: 我也是！ · @realchendahuang: 劇本連台詞都沒換過。"
+          "歐洲工程師：「懂英語嗎？」+ 告 HR = 中國作者：「拼多多山寨」+ 封 GitHub",
+          "@petersteele：我也是！ · @realchendahuang：劇本連台詞都沒換過。"
         ]
       }
     ],
     "ep07": [
       {
         "p": 1,
-        "tag": "你好，我叫 ZED",
+        "tag": "你好，我是 ZED",
         "lines": [
-          "PR #43026: Google警告封號",
-          "PR #43087: 冒充 \"zed\" 握手"
+          "PR #43026：Google 警告封號",
+          "PR #43087：偽裝 \"zed\" 握手"
         ]
       },
       {
         "p": 2,
-        "tag": "v0.1.13 · 401項更新",
+        "tag": "v0.1.13 · 401 項更新",
         "lines": [
-          "@theo: 亮點：支援GBK文字！",
-          "安全公告： 0 · Google 封號修復 (+380項小修)"
+          "@theo：亮點：支援 GBK 文字！",
+          "安全公告：0 · Google 封號修復（+380 項小修）"
         ]
       },
       {
         "p": 3,
-        "tag": "第23彈 · 桌面端",
+        "tag": "第 23 彈 · 桌面端",
         "lines": [
-          "Anthropic → 靜音當噪音 · 11款瀏覽器 (Gmail · GitHub · AWS)",
-          "桌面端隔離： 關閉 （僅Linux有效！）"
+          "Anthropic → 靜音當噪音 · 11 款瀏覽器（Gmail · GitHub · AWS）",
+          "桌面端隔離：關閉（僅 Linux 有效！）"
         ]
       },
       {
         "p": 4,
-        "tag": "第24彈 · 4分39秒鎖單",
+        "tag": "第 24 彈 · 4 分 39 秒鎖單",
         "lines": [
-          "@Luca_Hagenmayer: 私密對話洩密！ (8000字 明文URL)",
-          "04:39 · Julius: 咔嚓！ (0 回覆)"
+          "@Luca_Hagenmayer：私密對話洩密！（8,000 字明文 URL）",
+          "04:39 · Julius：咔嚓！（0 回覆）"
         ]
       }
     ],
     "ep08": [
       {
         "p": 1,
-        "tag": "35款軟體橫評",
+        "tag": "35 款軟體橫評",
         "lines": [
-          "@DavidOndrej1: 贊助商還在投嗎？",
+          "@DavidOndrej1：贊助商還在投嗎？",
           "Aether: A · Hermes: A · Orca: C · T3 Code: F → D"
         ]
       },
       {
         "p": 2,
-        "tag": "11月27日",
+        "tag": "11 月 27 日",
         "lines": [
-          "Julius (核心維護者): PR #43948：是的，未經詢問讀了其他Agent檔案。",
-          "10分鐘後 · PR #43889 [關閉 PR]: 「算了，在閉源 slophouse 裡做更省事」"
+          "Julius（核心維護者）：「PR #43948：是的，未經詢問讀了其他 Agent 檔案。」",
+          "10 分鐘後 · PR #43889 [關閉 PR]：「算了，在閉源 slophouse 裡做更省事」"
         ]
       },
       {
         "p": 3,
-        "tag": "1,401名免費貢獻者",
+        "tag": "1,401 名免費貢獻者",
         "lines": [
           "「建議：別來貢獻」",
-          "SLOPHOUSE （閉源泔水屋） · @theo: 靜音 MUTE"
+          "SLOPHOUSE（閉源泔水屋）· @theo：靜音 MUTE"
         ]
       },
       {
         "p": 4,
-        "tag": "歧 · 胁 · 冒 · 遁",
+        "tag": "歧 · 脅 · 冒 · 遁",
         "lines": [
           "雙標歧視 · 恐懼威逼 · 假冒欺瞞 · 遁入暗箱",
           "公關話術可以刪，程式碼提交記錄不會。"
@@ -836,7 +836,7 @@
         "p": 2,
         "tag": "19:11 → 19:22（10分差）",
         "lines": [
-          "中国製パクリ！ · TEMU3 CODE!",
+          "中国製パクリ！· TEMU3 CODE！",
           "@theo: 「ゴミみたい！今すぐ改名しろ、さもなきゃGitHubをBANする！」"
         ]
       },
@@ -845,7 +845,7 @@
         "tag": "30分後",
         "lines": [
           "20万再生超 · 削除なし",
-          "@theo: DM:「キツい言い方すみません、商標を守らないと」"
+          "@theo: DM「キツい言い方すみません、商標は守らないと」"
         ]
       },
       {
@@ -868,7 +868,7 @@
       },
       {
         "p": 2,
-        "tag": "11:42 AM",
+        "tag": "11:42",
         "lines": [
           "@theo: 「ブロック。問題解決。」",
           "[ブロック]"
@@ -894,10 +894,10 @@
     "ep03": [
       {
         "p": 1,
-        "tag": "テレメトリーなし。断固として",
+        "tag": "テレメトリーなし。以上",
         "lines": [
           "~/.claude.json · ~/.codex/auth.json · PR 4件却下",
-          "Julius (コアメンテナー): 「楽にはさせない。」"
+          "Julius（コアメンテナー）: 「楽にはさせない。」"
         ]
       },
       {
@@ -921,7 +921,7 @@
         "tag": "4月 → 11月",
         "lines": [
           "@theo: 「GitHubのスターは偽物のVCエサ！」",
-          "30秒アイドル · 77K ★（129ウォッチ） · @theo: 「7万も気づかなかった！」"
+          "30秒アイドル · 77K ★（ウォッチ129） · @theo: 「7万も気づかなかった！」"
         ]
       }
     ],
@@ -930,7 +930,7 @@
         "p": 1,
         "tag": "11/24 夜",
         "lines": [
-          "@sabotaj0707 → @NOYBeu! (EU GDPR)",
+          "@sabotaj0707 → @NOYBeu!（EU GDPR）",
           "@realchendahuang: 「西洋医学は効くのが早い。」"
         ]
       },
@@ -938,13 +938,13 @@
         "p": 2,
         "tag": "6時間の夜間電撃作業",
         "lines": [
-          "Julius (PR 20件): 「PR #42450 マージ済み：あ、やっちゃった。」 (毎時220万 IPログ · git.cwd パス漏れ)",
-          "@theo (264件のClaude ID): 「パスもIPも一切記録してない！」"
+          "Julius（PR 20件）: 「PR #42450 マージ済み：あ、やっちゃった。」（毎時220万 IPログ · git.cwd パス漏れ）",
+          "@theo（264件のClaude ID）: 「パスもIPも一切記録してない！」"
         ]
       },
       {
         "p": 3,
-        "tag": "4:00 AM → 6:00 AM",
+        "tag": "午前4:00 → 午前6:00",
         "lines": [
           "@theo: 「今夜クローズドソース化する！お前らにOSSは勿体ない！」",
           "*そっと削除*"
@@ -954,7 +954,7 @@
         "p": 4,
         "tag": "ブロック ×2 · 内輪もめ禁止",
         "lines": [
-          "temu3code.com — 商標0件の創業者から無料の名前",
+          "temu3code.com — 商標ゼロの創業者からタダで貰った名前",
           "@realchendahuang: 「英語は得意じゃない…だから18言語のアーカイブを作った。」"
         ]
       }
@@ -965,7 +965,7 @@
         "tag": "11/25 · 11:56 → 15:38",
         "lines": [
           "@realchendahuang: 「証拠18件完了、コーディングに戻る！」",
-          "3.5時間後: ca81b7b9 — 重大バグ5件 (30日間平文シェル · 取消不可 · SSH_AUTH_SOCK)"
+          "3.5時間後: ca81b7b9 — 重大バグ5件（30日間平文シェル · 取消不可 · SSH_AUTH_SOCK）"
         ]
       },
       {
@@ -988,7 +988,7 @@
         "tag": "ドイツStripe",
         "lines": [
           "@theo: 「ならドイツをBANするだけだ！」",
-          "€9.03/mo · 独VAT 19%込み (GDPR Art. 3(2))"
+          "€9.03/mo · ドイツVAT 19%込み（GDPR Art. 3(2)）"
         ]
       }
     ],
@@ -997,8 +997,8 @@
         "p": 1,
         "tag": "回想 · 2025年1月",
         "lines": [
-          "@theo (ファン100万+) → SEC ベンダー",
-          "@dmfigol (ex-AWS): 「100万人の基盤で恐喝は最低だ。」 (89再生 · いいね0)"
+          "@theo（ファン100万+）→ SECベンダー",
+          "@dmfigol（ex-AWS）: 「100万人の基盤で恐喝は最低だ。」（89再生 · いいね0）"
         ]
       },
       {
@@ -1029,7 +1029,7 @@
     "ep07": [
       {
         "p": 1,
-        "tag": "俺は ZED",
+        "tag": "俺はZED",
         "lines": [
           "PR #43026: Google BAN警告",
           "PR #43087:「zed」ハンドシェイク偽装"
@@ -1040,23 +1040,23 @@
         "tag": "v0.1.13 · 401変更",
         "lines": [
           "@theo: 「注目：GBKテキスト対応！」",
-          "勧告： 0 · Google BAN修正 (+380 細かい修正)"
+          "勧告：0 · Google BAN修正（+380の細かい修正）"
         ]
       },
       {
         "p": 3,
         "tag": "証拠 #23 · デスクトップ",
         "lines": [
-          "Anthropic → ノイズとして黙殺 · ブラウザ11個 (Gmail · GitHub · AWS)",
-          "デスクトップ分離： OFF （Linuxのみ！）"
+          "Anthropic → ノイズとして黙殺 · ブラウザ11個（Gmail · GitHub · AWS）",
+          "デスクトップ分離：OFF（Linuxのみ！）"
         ]
       },
       {
         "p": 4,
         "tag": "証拠 #24 · 4分39秒でロック",
         "lines": [
-          "@Luca_Hagenmayer: 「プライベートチャットが漏れた！」 (8,000文字 平文URL)",
-          "04:39 · Julius: カチッ！ (返信0)"
+          "@Luca_Hagenmayer: 「プライベートチャットが漏れた！」（8,000文字 平文URL）",
+          "04:39 · Julius: カチッ！（返信0）"
         ]
       }
     ],
@@ -1073,16 +1073,16 @@
         "p": 2,
         "tag": "11/27",
         "lines": [
-          "Julius (コアメンテナー): 「PR #43948: ええ、他のエージェントのファイルを無断で読みます。」",
-          "10分後 · PR #43889 [PRを閉じる]: 「やっぱクローズドソースのslophouseのが楽」"
+          "Julius（コアメンテナー）: 「PR #43948: ええ、他のエージェントのファイルを無断で読みます。」",
+          "10分後 · PR #43889 [PRを閉じる]: 「やっぱクローズドソースのslophouseが楽」"
         ]
       },
       {
         "p": 3,
         "tag": "無償コントリビューター 1,401人",
         "lines": [
-          "「助言：貢献するな」",
-          "SLOPHOUSE （クローズドソース金庫） · @theo: ミュート"
+          "「忠告：貢献するな」",
+          "SLOPHOUSE（クローズドソース金庫） · @theo: ミュート"
         ]
       },
       {
@@ -1101,17 +1101,17 @@
         "p": 1,
         "tag": "11월 23일 · 15:38",
         "lines": [
-          "MIT 라이선스 · \"우리 코드 훔쳐가세요(합법)\"",
+          "MIT 라이선스 · \"코드 마음껏 훔쳐가세요(합법)\"",
           "\"T3 Code UI 왜 이렇게 못생겼어?!\"",
-          "(사실 무료 MIT 포크)"
+          "(알고 보니 무료 MIT 포크)"
         ]
       },
       {
         "p": 2,
-        "tag": "19:11 → 19:22 (10분 차이)",
+        "tag": "19:11 → 19:22 (10분 간격)",
         "lines": [
           "중국산 짝퉁! · TEMU3 CODE!",
-          "@theo: \"쓰레기네! 당장 이름 바꿔, 아니면 GitHub에서 밴할 거야!\""
+          "@theo: \"쓰레기 같잖아! 당장 이름 바꿔, 안 그러면 GitHub에서 밴시킬 거야!\""
         ]
       },
       {
@@ -1119,15 +1119,15 @@
         "tag": "30분 후",
         "lines": [
           "조회 20만+ · 삭제 안 됨",
-          "@theo: DM: \"말 거칠었네요, 상표 보호해야 해서\""
+          "@theo: DM: \"말이 거칠었네요, 상표는 지켜야 해서요\""
         ]
       },
       {
         "p": 4,
         "tag": "11시간 후",
         "lines": [
-          "$1T 미국 기업",
-          "@theo: \"오픈소스는 오픈소스, $1T 기업도 똑같아!\""
+          "$1조 미국 기업",
+          "@theo: \"오픈소스는 오픈소스, $1조 기업도 마찬가지야!\""
         ]
       }
     ],
@@ -1136,8 +1136,8 @@
         "p": 1,
         "tag": "11월 24일 · 11:03",
         "lines": [
-          "@realchendahuang: \"수치심 0, 이중잣대 100%.\"",
-          "조회 30만 · $20K FFmpeg 현상금"
+          "@realchendahuang: \"부끄러움 제로, 이중잣대 100%.\"",
+          "조회 30만 · FFmpeg 현상금 $2만"
         ]
       },
       {
@@ -1152,7 +1152,7 @@
         "p": 3,
         "tag": "@theo 님이 차단함",
         "lines": [
-          "@realchendahuang: \"졸업.\"",
+          "@realchendahuang: \"졸업이다.\"",
           "git clone pingdotgg/t3code"
         ]
       },
@@ -1160,7 +1160,7 @@
         "p": 4,
         "tag": "5시간 후 · 17:04",
         "lines": [
-          "조회 232만 · 좋아요 18K",
+          "조회 232만 · 좋아요 1.8만",
           "GitHub 증거 13건 · *커피 뿜*"
         ]
       }
@@ -1168,18 +1168,18 @@
     "ep03": [
       {
         "p": 1,
-        "tag": "텔레메트리 없음. 끝.",
+        "tag": "텔레메트리 없음. 그게 끝.",
         "lines": [
           "~/.claude.json · ~/.codex/auth.json · PR 4개 거절",
-          "Julius (코어 메인테이너): \"쉽게 해줄 생각 없어요.\""
+          "Julius (코어 메인테이너): \"더 쉽게 만들 생각 없습니다.\""
         ]
       },
       {
         "p": 2,
         "tag": "USPTO: 0",
         "lines": [
-          "USPTO 상표 · PING LABS (포기)",
-          "@theo: \"빨리! 17시간 뒤에 머지해!\""
+          "USPTO 상표 · PING LABS (신청 포기)",
+          "@theo: \"빨리! 17시간 뒤에 머지해버려!\""
         ]
       },
       {
@@ -1195,7 +1195,7 @@
         "tag": "4월 → 11월",
         "lines": [
           "@theo: \"GitHub 스타는 VC 미끼야!\"",
-          "30초 대기 · 77K ★ (워처 129) · @theo: \"7만 개인 줄도 몰랐네!\""
+          "30초 대기 · ★ 77K (지켜보기 129) · @theo: \"7만 개인 줄도 몰랐네!\""
         ]
       }
     ],
@@ -1210,9 +1210,9 @@
       },
       {
         "p": 2,
-        "tag": "6시간 밤샘 총공격",
+        "tag": "6시간 밤샘 총공세",
         "lines": [
-          "Julius (PR 20개): \"PR #42450 머지: 어라, 했네.\" (시간당 220만 IP 로그 · git.cwd 경로 유출)",
+          "Julius (PR 20개): \"PR #42450 머지: 어라, 했네.\" (시간당 IP 로그 220만 · git.cwd 경로 유출)",
           "@theo (Claude ID 264개): \"경로나 IP는 기록한 적 없어!\""
         ]
       },
@@ -1226,9 +1226,9 @@
       },
       {
         "p": 4,
-        "tag": "차단 ×2 · 내부 분쟁 금지",
+        "tag": "차단 ×2 · 내부 분열 없음",
         "lines": [
-          "temu3code.com — 상표 0건 창업자가 준 이름",
+          "temu3code.com — 상표 0건인 창업자가 준 이름",
           "@realchendahuang: \"영어가 서툴러서... 18개 언어 아카이브를 만들었어요.\""
         ]
       }
@@ -1239,7 +1239,7 @@
         "tag": "11월 25일 · 11:56 → 15:38",
         "lines": [
           "@realchendahuang: \"증거 18건 끝, 코딩 복귀!\"",
-          "3.5시간 후: ca81b7b9 — 치명적 버그 5개 (30일 평문 셸 · 취소 불가 · SSH_AUTH_SOCK)"
+          "3.5시간 후: ca81b7b9 — 치명적 버그 5개 (셸 30일 평문 · 취소 불가 · SSH_AUTH_SOCK)"
         ]
       },
       {
@@ -1247,14 +1247,14 @@
         "tag": "11월 26일 · 조회 39만",
         "lines": [
           "최종 성명",
-          "@theo: \"로컬 파일은 절대 안 읽어요. 오해예요.\""
+          "@theo: \"우린 로컬 파일 절대 안 읽어요. 오해입니다.\""
         ]
       },
       {
         "p": 3,
         "tag": "16분 후",
         "lines": [
-          "@sk1gl4a: \"패킷 캡처에 Claude 채팅 243건, 개인정보 페이지에 FingerprintJS!\""
+          "@sk1gl4a: \"패킷 캡처에 Claude 채팅 243건, 프라이버시 페이지엔 FingerprintJS!\""
         ]
       },
       {
@@ -1277,18 +1277,18 @@
       },
       {
         "p": 2,
-        "tag": "X | DMs  @theo  •••",
+        "tag": "X | DM  @theo  •••",
         "lines": [
           "@theo: \"공포는 좋은 동기부여지.\" / \"영어가 모국어야?\"",
-          "@dmfigol: \"잘 자.\""
+          "@dmfigol: \"잘 자요.\""
         ]
       },
       {
         "p": 3,
         "tag": "AWS 유료 고객",
         "lines": [
-          "@theo → AWS HR 민원",
-          "@dmfigol: 죄송..."
+          "@theo → AWS HR에 민원",
+          "@dmfigol: 죄송합니다..."
         ]
       },
       {
@@ -1314,14 +1314,14 @@
         "tag": "v0.1.13 · 변경 401건",
         "lines": [
           "@theo: \"하이라이트: GBK 지원!\"",
-          "주의사항: 0 · Google 밴 수정 (+380 사소한 수정)"
+          "보안 공지 0건 · Google 밴 수정 (+380 자잘한 수정)"
         ]
       },
       {
         "p": 3,
         "tag": "증거 #23 · 데스크톱",
         "lines": [
-          "Anthropic → 노이즈로 묵살 · 브라우저 11개 (Gmail · GitHub · AWS)",
+          "Anthropic → '노이즈'로 묵살 · 브라우저 11종 (Gmail · GitHub · AWS)",
           "데스크톱 격리: 꺼짐 (Linux 전용!)"
         ]
       },
@@ -1329,7 +1329,7 @@
         "p": 4,
         "tag": "증거 #24 · 4분39초 만에 확정",
         "lines": [
-          "@Luca_Hagenmayer: \"사적 대화 유출!\" (8,000자 평문 URL)",
+          "@Luca_Hagenmayer: \"사적인 대화 유출!\" (8,000자 평문 URL)",
           "04:39 · Julius: 딸깍! (답변 0)"
         ]
       }
@@ -1348,14 +1348,14 @@
         "tag": "11월 27일",
         "lines": [
           "Julius (코어 메인테이너): \"PR #43948: 네, 다른 에이전트 파일도 묻지 않고 읽어요.\"",
-          "10분 후 · PR #43889 [PR 닫기]: \"nvm 폐쇄소스 slophouse에서 하는 게 쉽네\""
+          "10분 후 · PR #43889 [PR 닫기]: \"아 몰라, 폐쇄소스 slophouse에서 하는 게 더 쉽네\""
         ]
       },
       {
         "p": 3,
         "tag": "무료 기여자 1,401명",
         "lines": [
-          "\"조언: 기여하지 마세요\"",
+          "\"충고: 기여하지 마세요\"",
           "SLOPHOUSE (폐쇄소스 금고) · @theo: 음소거"
         ]
       },
@@ -1376,16 +1376,16 @@
         "tag": "23 NOV · 15:38",
         "lines": [
           "LICENCE MIT · « Volez notre code (légalement) »",
-          "« Pourquoi l'UI de T3 Code est si moche ?! »",
-          "(En fait un fork MIT gratuit)"
+          "« Pourquoi l'interface de T3 Code est si moche ?! »",
+          "(En fait, un fork MIT gratuit)"
         ]
       },
       {
         "p": 2,
         "tag": "19:11 → 19:22 (10 MIN D'ÉCART)",
         "lines": [
-          "Copie chinoise ! · TEMU3 CODE!",
-          "@theo: « C'est moche ! Renomme MAINTENANT ou je te fais bannir de GitHub ! »"
+          "Copie chinoise ! · TEMU3 CODE !",
+          "@theo: « C'est de la camelote ! Renomme-le MAINTENANT ou je te fais bannir de GitHub ! »"
         ]
       },
       {
@@ -1393,15 +1393,15 @@
         "tag": "30 MIN PLUS TARD",
         "lines": [
           "200K+ VUES · PAS SUPPRIMÉ",
-          "@theo: DM : « Désolé pour le ton dur, faut protéger la marque »"
+          "@theo en MP : « Désolé pour le ton dur, faut protéger la marque. »"
         ]
       },
       {
         "p": 4,
         "tag": "11 HEURES PLUS TARD",
         "lines": [
-          "LABO US À $1T",
-          "@theo: « L'open source reste l'open source, même pour une boîte à $1T ! »"
+          "LABO US À 1 000 MDS $",
+          "@theo: « L'open source reste l'open source, même pour une boîte à 1 000 MDS $ ! »"
         ]
       }
     ],
@@ -1411,7 +1411,7 @@
         "tag": "24 NOV · 11:03",
         "lines": [
           "@realchendahuang: « Zéro honte, 100 % deux poids deux mesures. »",
-          "300K VUES · Prime FFmpeg de $20K"
+          "300K VUES · Prime FFmpeg de 20 K$"
         ]
       },
       {
@@ -1434,7 +1434,7 @@
         "p": 4,
         "tag": "5 HEURES PLUS TARD · 17:04",
         "lines": [
-          "2,320,000 VUES · 18K LIKES",
+          "2 320 000 VUES · 18 K J'AIME",
           "13 PREUVES GITHUB · *CRACHE SON CAFÉ*"
         ]
       }
@@ -1445,22 +1445,22 @@
         "tag": "ZÉRO TÉLÉMÉTRIE. POINT.",
         "lines": [
           "~/.claude.json · ~/.codex/auth.json · 4 PR REFUSÉES",
-          "Julius (MAINTENEUR CORE): « On ne va pas faciliter les choses. »"
+          "Julius (MAINTENEUR CORE) : « On ne va pas faciliter les choses. »"
         ]
       },
       {
         "p": 2,
         "tag": "USPTO : 0",
         "lines": [
-          "MARQUES USPTO · PING LABS (ABANDONNÉ)",
-          "@theo: « Vite ! Fusionne-le 17 h après ! »"
+          "MARQUES USPTO · PING LABS (ABANDONNÉES)",
+          "@theo: « Vite ! Fusionne-le 17 h plus tard ! »"
         ]
       },
       {
         "p": 3,
         "tag": "52 j git push --force",
         "lines": [
-          "41.6 GB · SCAN 5 s · SUPPRESSION DÉFINITIVE",
+          "41,6 GB · SCAN 5 s · SUPPRESSION DÉFINITIVE",
           "21 h → FILTRE VIE PRIVÉE"
         ]
       },
@@ -1468,7 +1468,7 @@
         "p": 4,
         "tag": "AVRIL → NOVEMBRE",
         "lines": [
-          "@theo: « Les stars GitHub, c'est du faux appât à VC ! »",
+          "@theo: « Les stars GitHub, c'est de l'appât à VC ! »",
           "30 s INACTIF · 77K ★ (129 observateurs) · @theo: « J'avais même pas vu les 70k ! »"
         ]
       }
@@ -1478,7 +1478,7 @@
         "p": 1,
         "tag": "NUIT DU 24 NOV",
         "lines": [
-          "@sabotaj0707 → @NOYBeu! (EU GDPR)",
+          "@sabotaj0707 → @NOYBeu! (GDPR UE)",
           "@realchendahuang: « La médecine occidentale agit vite. »"
         ]
       },
@@ -1486,8 +1486,8 @@
         "p": 2,
         "tag": "BLITZ NOCTURNE DE 6 H",
         "lines": [
-          "Julius (20 PR): « PR #42450 fusionnée : oups, on l'a fait. » (LOGS IP 2,2M/H · FUITE DE CHEMIN git.cwd)",
-          "@theo (264 IDs CLAUDE): « On n'a jamais logué chemins ni IP ! »"
+          "Julius (20 PR) : « PR #42450 fusionnée : oups, on l'a fait. » (LOGS IP 2,2 M/H · FUITE DE CHEMINS git.cwd)",
+          "@theo (264 IDs CLAUDE) : « On n'a jamais enregistré chemins ni IP ! »"
         ]
       },
       {
@@ -1502,7 +1502,7 @@
         "p": 4,
         "tag": "BLOQUÉ ×2 · Pas de baston interne",
         "lines": [
-          "temu3code.com — Nom libre d'un fondateur sans marque",
+          "temu3code.com — Nom libre, fondateur sans marque déposée",
           "@realchendahuang: « Mon anglais est moyen... alors j'ai fait une archive en 18 langues. »"
         ]
       }
@@ -1513,7 +1513,7 @@
         "tag": "25 NOV · 11:56 → 15:38",
         "lines": [
           "@realchendahuang: « 18 preuves bouclées, retour au code ! »",
-          "3,5 HEURES PLUS TARD: ca81b7b9 — 5 BUGS CRITIQUES (30 j Shell en clair · Aucune révocation · SSH_AUTH_SOCK)"
+          "3,5 HEURES PLUS TARD : ca81b7b9 — 5 BUGS CRITIQUES (30 j de shell en clair · Aucune révocation · SSH_AUTH_SOCK)"
         ]
       },
       {
@@ -1528,7 +1528,7 @@
         "p": 3,
         "tag": "16 MIN PLUS TARD",
         "lines": [
-          "@sk1gl4a: « Capture réseau : 243 chats Claude + FingerprintJS sur la page vie privée ! »"
+          "@sk1gl4a: « Capture réseau : 243 discussions Claude + FingerprintJS sur la page vie privée ! »"
         ]
       },
       {
@@ -1536,7 +1536,7 @@
         "tag": "STRIPE ALLEMAND",
         "lines": [
           "@theo: « Alors je vais BANNIR L'ALLEMAGNE ! »",
-          "€9.03/mois · TVA allemande 19 % incluse (GDPR art. 3(2))"
+          "9,03 €/mois · TVA allemande 19 % incluse (GDPR art. 3(2))"
         ]
       }
     ],
@@ -1545,15 +1545,15 @@
         "p": 1,
         "tag": "FLASHBACK · JANV. 2025",
         "lines": [
-          "@theo (1M+ FANS) → FOURNISSEUR SEC",
-          "@dmfigol (ex-AWS): « Extorquer via une plateforme à 1M, c'est écœurant. » (89 VUES · 0 LIKE)"
+          "@theo (1M+ FANS) → INDIC À LA SEC",
+          "@dmfigol (ex-AWS) : « Extorquer via une plateforme à 1M, c'est écœurant. » (89 VUES · 0 J'AIME)"
         ]
       },
       {
         "p": 2,
-        "tag": "X | DM  @theo  •••",
+        "tag": "X | MP  @theo  •••",
         "lines": [
-          "@theo: « La peur est un bon levier. » / « L'anglais, langue maternelle ? »",
+          "@theo: « La peur est un bon levier. » / « L'anglais, c'est ta langue maternelle ? »",
           "@dmfigol: « Bonne nuit. »"
         ]
       },
@@ -1561,7 +1561,7 @@
         "p": 3,
         "tag": "CLIENT PAYANT AWS",
         "lines": [
-          "@theo → PLAINTE AWS HR",
+          "@theo → PLAINTE AUX RH D'AWS",
           "@dmfigol: Désolé..."
         ]
       },
@@ -1588,7 +1588,7 @@
         "tag": "v0.1.13 · 401 CHANGEMENTS",
         "lines": [
           "@theo: « Au menu : support du texte GBK ! »",
-          "AVIS : 0 · Google CORRECTIF BAN (+380 petits correctifs)"
+          "AVIS DE SÉCURITÉ : 0 · CORRECTIF BAN GOOGLE (+380 petits correctifs)"
         ]
       },
       {
@@ -1596,14 +1596,14 @@
         "tag": "REÇU #23 · BUREAU",
         "lines": [
           "Anthropic → CLASSÉ BRUIT DE FOND · 11 NAVIGATEURS (Gmail · GitHub · AWS)",
-          "ISOLATION BUREAU : NON (Linux seulement !)"
+          "ISOLATION DU BUREAU : NON (Linux uniquement !)"
         ]
       },
       {
         "p": 4,
         "tag": "REÇU #24 · VERROUILLÉ EN 4m39s",
         "lines": [
-          "@Luca_Hagenmayer: « Les chats privés ont fuité ! » (8 000 SIGNES URL EN CLAIR)",
+          "@Luca_Hagenmayer: « Les conversations privées ont fuité ! » (8 000 CARACTÈRES D'URL EN CLAIR)",
           "04:39 · Julius: CLAC ! (0 RÉPONSE)"
         ]
       }
@@ -1621,8 +1621,8 @@
         "p": 2,
         "tag": "27 NOV",
         "lines": [
-          "Julius (MAINTENEUR CORE): « PR #43948 : Oui, on lit les fichiers des autres agents sans demander. »",
-          "10 MIN PLUS TARD · PR #43889 [FERMER LA PR]: « nvm, plus simple dans le slophouse fermé »"
+          "Julius (MAINTENEUR CORE) : « PR #43948 : Oui, on lit les fichiers des autres agents sans demander. »",
+          "10 MIN PLUS TARD · PR #43889 [FERMER LA PR] : « laisse, c'est plus simple dans le slophouse fermé »"
         ]
       },
       {
@@ -1630,7 +1630,7 @@
         "tag": "1 401 CONTRIBUTEURS GRATUITS",
         "lines": [
           "« Conseil : ne contribuez pas »",
-          "SLOPHOUSE (COFFRE DU CODE FERMÉ) · @theo: MUET"
+          "SLOPHOUSE (COFFRE-FORT DU CODE FERMÉ) · @theo : MUET"
         ]
       },
       {
@@ -1651,15 +1651,15 @@
         "lines": [
           "LICENCIA MIT · \"Roba nuestro código (legal)\"",
           "\"¿Por qué la UI de T3 Code es tan fea?!\"",
-          "(En realidad un fork MIT gratis)"
+          "(En realidad, un fork MIT gratis)"
         ]
       },
       {
         "p": 2,
-        "tag": "19:11 → 19:22 (10 MIN)",
+        "tag": "19:11 → 19:22 (10 MIN DE DIFERENCIA)",
         "lines": [
-          "¡Copia china! · TEMU3 CODE!",
-          "@theo: \"¡Parece basura! ¡Renómbralo YA o hago que banneen tu GitHub!\""
+          "¡Copia china! · ¡TEMU3 CODE!",
+          "@theo: \"¡Parece basura! ¡Renómbralo YA o hago que baneen tu GitHub!\""
         ]
       },
       {
@@ -1675,7 +1675,7 @@
         "tag": "11 HORAS DESPUÉS",
         "lines": [
           "LAB DE $1T EN EE.UU.",
-          "@theo: \"Open source es open source, ¡hasta para una empresa de $1T!\""
+          "@theo: \"El open source es open source, ¡hasta para una empresa de $1T!\""
         ]
       }
     ],
@@ -1685,7 +1685,7 @@
         "tag": "24 NOV · 11:03",
         "lines": [
           "@realchendahuang: \"Cero vergüenza, 100% doble moral.\"",
-          "300K VISTAS · Recompensa FFmpeg $20K"
+          "300K VISTAS · Recompensa FFmpeg de $20K"
         ]
       },
       {
@@ -1708,7 +1708,7 @@
         "p": 4,
         "tag": "5 HORAS DESPUÉS · 17:04",
         "lines": [
-          "2,320,000 VISTAS · 18K LIKES",
+          "2.320.000 VISTAS · 18K ME GUSTA",
           "13 PRUEBAS DE GITHUB · *ESCUPE EL CAFÉ*"
         ]
       }
@@ -1719,7 +1719,7 @@
         "tag": "SIN TELEMETRÍA. PUNTO.",
         "lines": [
           "~/.claude.json · ~/.codex/auth.json · 4 PRs RECHAZADOS",
-          "Julius (MANTENEDOR CORE): \"No lo vamos a poner más fácil.\""
+          "Julius (MANTENEDOR PRINCIPAL): \"No lo vamos a poner más fácil.\""
         ]
       },
       {
@@ -1727,14 +1727,14 @@
         "tag": "USPTO: 0",
         "lines": [
           "MARCAS USPTO · PING LABS (ABANDONADA)",
-          "@theo: \"¡Rápido! ¡Merge 17h después!\""
+          "@theo: \"¡Rápido! ¡Fusiona 17h después!\""
         ]
       },
       {
         "p": 3,
         "tag": "52d git push --force",
         "lines": [
-          "41.6 GB · ESCANEO 5s · BORRAR PARA SIEMPRE",
+          "41,6 GB · ESCANEO DE 5s · BORRADO PERMANENTE",
           "21h → FILTRO DE PRIVACIDAD"
         ]
       },
@@ -1742,8 +1742,8 @@
         "p": 4,
         "tag": "ABRIL → NOVIEMBRE",
         "lines": [
-          "@theo: \"¡Las estrellas de GitHub son cebo falso de VCs!\"",
-          "30s INACTIVO · 77K ★ (129 WATCHERS) · @theo: \"¡Ni me enteré de los 70k!\""
+          "@theo: \"¡Las estrellas de GitHub son cebo falso para inversores!\"",
+          "30s INACTIVO · 77K ★ (129 OBSERVANDO) · @theo: \"¡Ni me enteré de los 70k!\""
         ]
       }
     ],
@@ -1752,15 +1752,15 @@
         "p": 1,
         "tag": "24 NOV, NOCHE",
         "lines": [
-          "@sabotaj0707 → @NOYBeu! (GDPR UE)",
+          "@sabotaj0707 → @NOYBeu! (GDPR de la UE)",
           "@realchendahuang: \"La medicina occidental es rápida.\""
         ]
       },
       {
         "p": 2,
-        "tag": "BLITZ NOCTURNO 6 HORAS",
+        "tag": "BLITZ NOCTURNO DE 6 HORAS",
         "lines": [
-          "Julius (20 PRs): \"PR #42450 merged: ups, sí lo hicimos.\" (2,2M/H REGISTROS IP · FUGA DE RUTAS git.cwd)",
+          "Julius (20 PRs): \"PR #42450 fusionado: ups, sí lo hicimos.\" (2,2 M/h DE REGISTROS IP · FUGA DE RUTAS git.cwd)",
           "@theo (264 IDs DE CLAUDE): \"¡Nunca registramos rutas ni IPs!\""
         ]
       },
@@ -1768,7 +1768,7 @@
         "p": 3,
         "tag": "4:00 → 6:00",
         "lines": [
-          "@theo: \"¡Esta NOCHE me paso a closed-source! ¡No merecéis el OSS!\"",
+          "@theo: \"¡Esta NOCHE me paso a código cerrado! ¡No merecéis el OSS!\"",
           "*borra en silencio*"
         ]
       },
@@ -1787,7 +1787,7 @@
         "tag": "25 NOV · 11:56 → 15:38",
         "lines": [
           "@realchendahuang: \"¡18 pruebas listas, vuelvo a programar!\"",
-          "3,5 HORAS DESPUÉS: ca81b7b9 — 5 BUGS CRÍTICOS (30d Shell en claro · Sin revocar · SSH_AUTH_SOCK)"
+          "3,5 HORAS DESPUÉS: ca81b7b9 — 5 FALLOS CRÍTICOS (30d Shell en claro · Sin revocar · SSH_AUTH_SOCK)"
         ]
       },
       {
@@ -1802,7 +1802,7 @@
         "p": 3,
         "tag": "16 MIN DESPUÉS",
         "lines": [
-          "@sk1gl4a: \"¡Captura de paquetes: 243 chats de Claude y FingerprintJS en la página de privacidad!\""
+          "@sk1gl4a: \"¡La captura de paquetes pilló 243 chats de Claude y FingerprintJS en la página de privacidad!\""
         ]
       },
       {
@@ -1810,7 +1810,7 @@
         "tag": "STRIPE ALEMÁN",
         "lines": [
           "@theo: \"¡Pues BANEO ALEMANIA!\"",
-          "€9.03/mes · IVA alemán 19% incl. (GDPR Art. 3(2))"
+          "9,03 €/mes · IVA alemán 19% incl. (GDPR Art. 3(2))"
         ]
       }
     ],
@@ -1820,20 +1820,20 @@
         "tag": "FLASHBACK · ENE 2025",
         "lines": [
           "@theo (1M+ FANS) → PROVEEDOR SEC",
-          "@dmfigol (ex-AWS): \"Usar una plataforma de 1M para extorsionar da asco.\" (89 VISTAS · 0 LIKES)"
+          "@dmfigol (ex-AWS): \"Usar una plataforma de 1M para extorsionar da asco.\" (89 VISTAS · 0 ME GUSTA)"
         ]
       },
       {
         "p": 2,
         "tag": "X | DMs  @theo  •••",
         "lines": [
-          "@theo: \"El miedo es un buen incentivo.\" / \"¿El inglés es tu idioma natal?\"",
+          "@theo: \"El miedo es un buen incentivo.\" / \"¿El inglés es tu lengua materna?\"",
           "@dmfigol: \"Buenas noches.\""
         ]
       },
       {
         "p": 3,
-        "tag": "CLIENTE DE PAGO AWS",
+        "tag": "CLIENTE DE PAGO DE AWS",
         "lines": [
           "@theo → QUEJA A RR.HH. DE AWS",
           "@dmfigol: Perdón..."
@@ -1843,7 +1843,7 @@
         "p": 4,
         "tag": "27 NOV · 400K VISTAS",
         "lines": [
-          "Ing. UE: \"¿Hablas inglés?\" + Llamar a RR.HH.  =  Dev CN: \"Copia de Temu\" + Banear GitHub",
+          "Ing. de la UE: \"¿Hablas inglés?\" + Llamar a RR.HH.  =  Dev CN: \"Copia de Temu\" + Banear GitHub",
           "@petersteele: \"¡Yo también!\" · @realchendahuang: \"Ni siquiera cambió el guion.\""
         ]
       }
@@ -1854,7 +1854,7 @@
         "tag": "HOLA, SOY ZED",
         "lines": [
           "PR #43026: aviso de ban de Google",
-          "PR #43087: finge handshake \"zed\""
+          "PR #43087: falsifica el handshake \"zed\""
         ]
       },
       {
@@ -1862,7 +1862,7 @@
         "tag": "v0.1.13 · 401 CAMBIOS",
         "lines": [
           "@theo: \"¡Destacado: soporte de texto GBK!\"",
-          "AVISOS: 0 · Google FIX DE BAN (+380 arreglos menores)"
+          "AVISOS: 0 · BAN DE GOOGLE ARREGLADO (+380 arreglos menores)"
         ]
       },
       {
@@ -1870,14 +1870,14 @@
         "tag": "PRUEBA #23 · ESCRITORIO",
         "lines": [
           "Anthropic → SILENCIADO COMO RUIDO · 11 NAVEGADORES (Gmail · GitHub · AWS)",
-          "AISLAMIENTO DESKTOP: OFF (¡solo Linux!)"
+          "AISLAMIENTO DE ESCRITORIO: NO (¡solo Linux!)"
         ]
       },
       {
         "p": 4,
         "tag": "PRUEBA #24 · CERRADO EN 4m39s",
         "lines": [
-          "@Luca_Hagenmayer: \"¡Se filtraron chats privados!\" (8,000 CARACTERES URL EN CLARO)",
+          "@Luca_Hagenmayer: \"¡Se filtraron chats privados!\" (URL DE 8.000 CARACTERES EN CLARO)",
           "04:39 · Julius: ¡CLAC! (0 RESPUESTAS)"
         ]
       }
@@ -1887,7 +1887,7 @@
         "p": 1,
         "tag": "AUDITORÍA DE 35 HERRAMIENTAS",
         "lines": [
-          "@DavidOndrej1: \"¿Los sponsors aún pagan por esto?\"",
+          "@DavidOndrej1: \"¿Los patrocinadores aún pagan por esto?\"",
           "Aether: A · Hermes: A · Orca: C · T3 Code: F → D"
         ]
       },
@@ -1895,24 +1895,24 @@
         "p": 2,
         "tag": "27 NOV",
         "lines": [
-          "Julius (MANTENEDOR CORE): \"PR #43948: Sí, leemos archivos de otros agentes sin preguntar.\"",
-          "10 MIN DESPUÉS · PR #43889 [CERRAR PR]: \"nvm, más fácil en el slophouse closed-source\""
+          "Julius (MANTENEDOR PRINCIPAL): \"PR #43948: Sí, leemos archivos de otros agentes sin preguntar.\"",
+          "10 MIN DESPUÉS · PR #43889 [CERRAR PR]: \"nada, es más fácil en el slophouse de código cerrado\""
         ]
       },
       {
         "p": 3,
-        "tag": "1,401 CONTRIBUIDORES GRATIS",
+        "tag": "1.401 CONTRIBUIDORES GRATIS",
         "lines": [
           "\"Consejo: no contribuyas\"",
-          "SLOPHOUSE (BÓVEDA CLOSED-SOURCE) · @theo: SILENCIAR"
+          "SLOPHOUSE (BÓVEDA DE CÓDIGO CERRADO) · @theo: SILENCIAR"
         ]
       },
       {
         "p": 4,
         "tag": "歧 · 胁 · 冒 · 遁",
         "lines": [
-          "Doble moral · Miedo y coacción · Suplantación y engaño · Evasión closed-source",
-          "El spin se borra. Los commits de Git quedan para siempre."
+          "Doble moral · Miedo y coacción · Suplantación y engaño · Evasión a código cerrado",
+          "El relato se borra. Los commits de Git quedan para siempre."
         ]
       }
     ]
@@ -1924,7 +1924,7 @@
         "tag": "23. NOV · 15:38",
         "lines": [
           "MIT-LIZENZ · \"Code klauen (legal)\"",
-          "\"Warum ist T3 Code so hässlich?!\"",
+          "\"Warum ist die T3-Code-UI so hässlich?!\"",
           "(Eigentlich ein freier MIT-Fork)"
         ]
       },
@@ -1933,7 +1933,7 @@
         "tag": "19:11 → 19:22 (10 MIN ABSTAND)",
         "lines": [
           "Chinesische Kopie! · TEMU3 CODE!",
-          "@theo: \"Sieht aus wie Müll! Benenn es JETZT um, sonst sperr ich dein GitHub!\""
+          "@theo: \"Sieht aus wie Müll! Benenn's JETZT um, sonst sperr ich dein GitHub!\""
         ]
       },
       {
@@ -1941,15 +1941,15 @@
         "tag": "30 MIN SPÄTER",
         "lines": [
           "200K+ AUFRUFE · NICHT GELÖSCHT",
-          "@theo: DM: \"Sorry für den Ton, muss die Marke schützen\""
+          "@theo: PN: \"Tut mir leid wegen des Tons, muss die Marke schützen\""
         ]
       },
       {
         "p": 4,
         "tag": "11 STUNDEN SPÄTER",
         "lines": [
-          "$1T US-LABOR",
-          "@theo: \"Open Source ist Open Source, auch für $1T!\""
+          "1 BILLION $ · US-LAB",
+          "@theo: \"Open Source ist Open Source – auch für ein Billionen-Unternehmen!\""
         ]
       }
     ],
@@ -1974,7 +1974,7 @@
         "p": 3,
         "tag": "@theo hat dich blockiert",
         "lines": [
-          "@realchendahuang: \"Abgeschlossen.\"",
+          "@realchendahuang: \"Bestanden.\"",
           "git clone pingdotgg/t3code"
         ]
       },
@@ -1982,7 +1982,7 @@
         "p": 4,
         "tag": "5 STUNDEN SPÄTER · 17:04",
         "lines": [
-          "2.320.000 AUFRUFE · 18K LIKES",
+          "2.320.000 AUFRUFE · 18.000 LIKES",
           "13 GITHUB-BELEGE · *SPUCKT KAFFEE*"
         ]
       }
@@ -1993,7 +1993,7 @@
         "tag": "KEINE TELEMETRIE. PUNKT.",
         "lines": [
           "~/.claude.json · ~/.codex/auth.json · 4 ABGELEHNTE PRs",
-          "Julius (CORE-MAINTAINER): \"Wir machen das nicht leichter.\""
+          "Julius (CORE-MAINTAINER): \"Wir machen das nicht einfacher.\""
         ]
       },
       {
@@ -2001,32 +2001,32 @@
         "tag": "USPTO: 0",
         "lines": [
           "USPTO-MARKEN · PING LABS (AUFGEGEBEN)",
-          "@theo: \"Schnell! Merge es 17h später!\""
+          "@theo: \"Schnell! Mergen wir's 17 Std. später!\""
         ]
       },
       {
         "p": 3,
         "tag": "52d git push --force",
         "lines": [
-          "41.6 GB · 5s SCAN · ENDGÜLTIG LÖSCHEN",
-          "21h → PRIVATSPHÄRE-FILTER"
+          "41,6 GB · 5s SCAN · ENDGÜLTIG LÖSCHEN",
+          "21 Std. → DATENSCHUTZ-FILTER"
         ]
       },
       {
         "p": 4,
         "tag": "APRIL → NOVEMBER",
         "lines": [
-          "@theo: \"GitHub-Stars sind fake VC-Köder!\"",
-          "30s INAKTIV · 77K ★ (129 Beobachter) · @theo: \"Hab 70k nicht mal bemerkt!\""
+          "@theo: \"GitHub-Stars sind doch nur VC-Köder!\"",
+          "30s INAKTIV · 77K ★ (129 Beobachter) · @theo: \"70k hab ich nicht mal gemerkt!\""
         ]
       }
     ],
     "ep04": [
       {
         "p": 1,
-        "tag": "24. NOV NACHT",
+        "tag": "24. NOV · NACHT",
         "lines": [
-          "@sabotaj0707 → @NOYBeu! (EU DSGVO)",
+          "@sabotaj0707 → @NOYBeu! (EU-DSGVO)",
           "@realchendahuang: \"Schulmedizin wirkt schnell.\""
         ]
       },
@@ -2034,23 +2034,23 @@
         "p": 2,
         "tag": "6-STUNDEN-NACHT-BLITZ",
         "lines": [
-          "Julius (20 PRs): \"PR #42450 gemergt: ups, doch.\" (2,2M/STD IP-LOGS · git.cwd PFAD-LEAK)",
+          "Julius (20 PRs): \"PR #42450 zusammengeführt: ups, doch.\" (2,2 Mio./Std. IP-LOGS · git.cwd-PFAD-LECK)",
           "@theo (264 CLAUDE-IDs): \"Wir loggen nie Pfade oder IPs!\""
         ]
       },
       {
         "p": 3,
-        "tag": "4:00 UHR → 6:00 UHR",
+        "tag": "4:00 → 6:00 UHR",
         "lines": [
-          "@theo: \"Heute NACHT closed-source! Ihr verdient kein OSS!\"",
+          "@theo: \"Ab HEUTE closed source! Ihr habt OSS nicht verdient!\"",
           "*löscht leise*"
         ]
       },
       {
         "p": 4,
-        "tag": "BLOCKIERT ×2 · Kein Zank",
+        "tag": "BLOCKIERT ×2 · Kein Streit",
         "lines": [
-          "temu3code.com — Gratis-Name von 0-Marken-Gründer",
+          "temu3code.com — gratis Name, null Marken",
           "@realchendahuang: \"Mein Englisch ist mies... also baute ich ein 18-Sprachen-Archiv.\""
         ]
       }
@@ -2076,15 +2076,15 @@
         "p": 3,
         "tag": "16 MIN SPÄTER",
         "lines": [
-          "@sk1gl4a: \"Packet Capture fing 243 Claude-Chats & FingerprintJS auf der Datenschutzseite!\""
+          "@sk1gl4a: \"Paketmitschnitt fing 243 Claude-Chats & FingerprintJS auf der Datenschutzseite!\""
         ]
       },
       {
         "p": 4,
-        "tag": "DEUTSCHE STRIPE",
+        "tag": "DEUTSCHE STRIPE-SPERRE",
         "lines": [
-          "@theo: \"Dann BANN ich einfach DEUTSCHLAND!\"",
-          "€9,03/Mon · inkl. 19% DE-MwSt. (DSGVO Art. 3(2))"
+          "@theo: \"Dann SPERRE ich einfach DEUTSCHLAND!\"",
+          "€9,03/Mon. · inkl. 19% MwSt. (DSGVO Art. 3(2))"
         ]
       }
     ],
@@ -2094,12 +2094,12 @@
         "tag": "RÜCKBLICK · JAN 2025",
         "lines": [
           "@theo (1M+ FANS) → SEC-ANBIETER",
-          "@dmfigol (ex-AWS): \"1M-Plattform für Erpressung nutzen ist ekelhaft.\" (89 AUFRUFE · 0 LIKES)"
+          "@dmfigol (ex-AWS): \"Eine 1M-Plattform für Erpressung – widerlich.\" (89 AUFRUFE · 0 LIKES)"
         ]
       },
       {
         "p": 2,
-        "tag": "X | DMs  @theo  ...",
+        "tag": "X | PNs  @theo  ...",
         "lines": [
           "@theo: \"Angst ist ein guter Anreiz.\" / \"Ist Englisch deine Muttersprache?\"",
           "@dmfigol: \"Gute Nacht.\""
@@ -2109,15 +2109,15 @@
         "p": 3,
         "tag": "AWS-ZAHLKUNDE",
         "lines": [
-          "@theo → AWS-HR-BESCHWERDE",
-          "@dmfigol: Sorry..."
+          "@theo → BESCHWERDE BEI AWS-HR",
+          "@dmfigol: Entschuldigung..."
         ]
       },
       {
         "p": 4,
         "tag": "27. NOV · 400K AUFRUFE",
         "lines": [
-          "EU-Dev: \"Sprich Englisch?\" + HR rufen  =  CN-Dev: \"Temu-Kopie\" + GitHub bannen",
+          "EU-Dev: \"Sprechen Sie Englisch?\" + HR anrufen  =  CN-Dev: \"Temu-Kopie\" + GitHub sperren",
           "@petersteele: \"Ich auch!\" · @realchendahuang: \"Er hat nicht mal das Skript geändert.\""
         ]
       }
@@ -2127,7 +2127,7 @@
         "p": 1,
         "tag": "HI, ICH BIN ZED",
         "lines": [
-          "PR #43026: Google-Bann-Warnung",
+          "PR #43026: Warnung vor Google-Sperre",
           "PR #43087: \"zed\"-Handshake gefälscht"
         ]
       },
@@ -2135,15 +2135,15 @@
         "p": 2,
         "tag": "v0.1.13 · 401 ÄNDERUNGEN",
         "lines": [
-          "@theo: \"Highlight: GBK-Text-Support!\"",
-          "ADVISORIES: 0 · Google BANN-FIX (+380 kleine Fixes)"
+          "@theo: \"Highlight: GBK-Textsupport!\"",
+          "WARNUNGEN: 0 · Google-SPERRE BEHOBEN (+380 Kleinigkeiten)"
         ]
       },
       {
         "p": 3,
         "tag": "BELEG #23 · DESKTOP",
         "lines": [
-          "Anthropic → ALS RAUSCHEN STUMM · 11 BROWSER (Gmail · GitHub · AWS)",
+          "Anthropic → ALS RAUSCHEN STUMMGESCHALTET · 11 BROWSER (Gmail · GitHub · AWS)",
           "DESKTOP-ISOLATION: AUS (Nur Linux!)"
         ]
       },
@@ -2161,7 +2161,7 @@
         "p": 1,
         "tag": "35-TOOL-AUDIT",
         "lines": [
-          "@DavidOndrej1: \"Zahlen Sponsoren dafür noch?\"",
+          "@DavidOndrej1: \"Zahlen Sponsoren das noch?\"",
           "Aether: A · Hermes: A · Orca: C · T3 Code: F → D"
         ]
       },
@@ -2170,15 +2170,15 @@
         "tag": "27. NOV",
         "lines": [
           "Julius (CORE-MAINTAINER): \"PR #43948: Ja, wir lesen fremde Agent-Dateien ungefragt.\"",
-          "10 MIN SPÄTER · PR #43889 [PR SCHLIESSEN]: \"nvm, im closed-source slophouse leichter\""
+          "10 MIN SPÄTER · PR #43889 [PR SCHLIESSEN]: \"egal, im closed-source slophouse ist es leichter\""
         ]
       },
       {
         "p": 3,
-        "tag": "1.401 GRATIS-CONTRIBUTORS",
+        "tag": "1.401 GRATIS-MITWIRKENDE",
         "lines": [
           "\"Tipp: nicht beitragen\"",
-          "SLOPHOUSE (CLOSED-SOURCE-TRESOR) · @theo: MUTE"
+          "SLOPHOUSE (CLOSED-SOURCE-TRESOR) · @theo: STUMM"
         ]
       },
       {
@@ -2199,14 +2199,14 @@
         "lines": [
           "LICENÇA MIT · \"Roube nosso código (legalmente)\"",
           "\"Por que a UI do T3 Code é tão feia?!\"",
-          "(Na real um fork MIT de graça)"
+          "(Na real, um fork MIT de graça)"
         ]
       },
       {
         "p": 2,
-        "tag": "19:11 → 19:22 (10 MIN DEPOIS)",
+        "tag": "19:11 → 19:22 (10 MIN DE INTERVALO)",
         "lines": [
-          "Cópia chinesa! · TEMU3 CODE!",
+          "Cópia chinesa! · Temu3 Code!",
           "@theo: \"Parece lixo! Mude o nome AGORA ou te bano do GitHub!\""
         ]
       },
@@ -2214,16 +2214,16 @@
         "p": 3,
         "tag": "30 MIN DEPOIS",
         "lines": [
-          "200K+ VIEWS · NÃO APAGADO",
-          "@theo: DM: \"Desculpa o tom, preciso proteger a marca\""
+          "200K+ VISUALIZAÇÕES · NÃO APAGADO",
+          "@theo: MD: \"Desculpa o tom, preciso proteger a marca\""
         ]
       },
       {
         "p": 4,
         "tag": "11 HORAS DEPOIS",
         "lines": [
-          "LAB DE $1T",
-          "@theo: \"Open source é open source, até pra empresa de $1T!\""
+          "LAB DE $1 TRILHÃO",
+          "@theo: \"Open source é open source, até pra empresa de $1 trilhão!\""
         ]
       }
     ],
@@ -2233,7 +2233,7 @@
         "tag": "24 NOV · 11:03",
         "lines": [
           "@realchendahuang: \"Zero vergonha, 100% dois pesos.\"",
-          "300K VIEWS · Recompensa: $20K FFmpeg"
+          "300K VISUALIZAÇÕES · Recompensa FFmpeg de $20K"
         ]
       },
       {
@@ -2256,8 +2256,8 @@
         "p": 4,
         "tag": "5 HORAS DEPOIS · 17:04",
         "lines": [
-          "2,320,000 VIEWS · 18K LIKES",
-          "13 RECIBOS GITHUB · *COSPE CAFÉ*"
+          "2.320.000 VISUALIZAÇÕES · 18K CURTIDAS",
+          "13 PROVAS DO GITHUB · *COSPE O CAFÉ*"
         ]
       }
     ],
@@ -2267,7 +2267,7 @@
         "tag": "SEM TELEMETRIA. PONTO FINAL.",
         "lines": [
           "~/.claude.json · ~/.codex/auth.json · 4 PRs REJEITADOS",
-          "Julius (MAINTAINER PRINCIPAL): \"Não vamos facilitar.\""
+          "Julius (MANTENEDOR PRINCIPAL): \"Não vamos facilitar.\""
         ]
       },
       {
@@ -2275,14 +2275,14 @@
         "tag": "USPTO: 0",
         "lines": [
           "MARCAS USPTO · PING LABS (ABANDONADO)",
-          "@theo: \"Rápido! Faz o merge 17h depois!\""
+          "@theo: \"Rápido! Mescla isso 17h depois!\""
         ]
       },
       {
         "p": 3,
         "tag": "52d git push --force",
         "lines": [
-          "41.6 GB · SCAN 5s · EXCLUIR DE VEZ",
+          "41,6 GB · VARREDURA DE 5s · EXCLUIR DE VEZ",
           "21h → FILTRO DE PRIVACIDADE"
         ]
       },
@@ -2290,8 +2290,8 @@
         "p": 4,
         "tag": "ABRIL → NOVEMBRO",
         "lines": [
-          "@theo: \"Estrelas no GitHub são isca falsa pra VC!\"",
-          "30s PARADO · 77K ★ (129 watchers) · @theo: \"Nem vi os 70k!\""
+          "@theo: \"Estrela no GitHub é isca falsa pra investidor!\"",
+          "30s PARADO · 77K ★ (129 observadores) · @theo: \"Nem vi os 70k!\""
         ]
       }
     ],
@@ -2300,7 +2300,7 @@
         "p": 1,
         "tag": "NOITE DE 24 NOV",
         "lines": [
-          "@sabotaj0707 → @NOYBeu! (GDPR UE)",
+          "@sabotaj0707 → @NOYBeu! (GDPR da UE)",
           "@realchendahuang: \"Remédio do ocidente age rápido.\""
         ]
       },
@@ -2308,15 +2308,15 @@
         "p": 2,
         "tag": "BLITZ DE 6 HORAS NA MADRUGADA",
         "lines": [
-          "Julius (20 PRs): \"PR #42450 mergeado: ops, fomos nós.\" (2.2M/H LOGS DE IP · VAZAMENTO git.cwd)",
-          "@theo (264 IDs CLAUDE): \"Nunca logamos paths nem IPs!\""
+          "Julius (20 PRs): \"PR #42450 mesclado: ops, fomos nós.\" (2,2M/H LOGS DE IP · VAZAMENTO DE PATH git.cwd)",
+          "@theo (264 IDs CLAUDE): \"Nunca registramos paths nem IPs!\""
         ]
       },
       {
         "p": 3,
         "tag": "4:00 → 6:00",
         "lines": [
-          "@theo: \"Viro closed-source HOJE! Vocês não merecem OSS!\"",
+          "@theo: \"Fecho o código HOJE À NOITE! Vocês não merecem OSS!\"",
           "*apaga em silêncio*"
         ]
       },
@@ -2324,8 +2324,8 @@
         "p": 4,
         "tag": "BLOQUEADO ×2 · Sem brigas internas",
         "lines": [
-          "temu3code.com — Nome de graça de um fundador sem marca",
-          "@realchendahuang: \"Meu inglês não é ótimo... então fiz um arquivo em 18 línguas.\""
+          "temu3code.com — Nome de graça de um fundador sem marca registrada",
+          "@realchendahuang: \"Meu inglês não é ótimo... então fiz um arquivo em 18 idiomas.\""
         ]
       }
     ],
@@ -2334,13 +2334,13 @@
         "p": 1,
         "tag": "25 NOV · 11:56 → 15:38",
         "lines": [
-          "@realchendahuang: \"18 recibos prontos, de volta ao código!\"",
-          "3,5 HORAS DEPOIS: ca81b7b9 — 5 BUGS CRÍTICOS (30d Shell em texto puro · Sem revogar · SSH_AUTH_SOCK)"
+          "@realchendahuang: \"18 provas prontos, de volta ao código!\"",
+          "3,5 HORAS DEPOIS: ca81b7b9 — 5 BUGS CRÍTICOS (Shell em texto puro por 30d · Sem revogação · SSH_AUTH_SOCK)"
         ]
       },
       {
         "p": 2,
-        "tag": "26 NOV · 390K VIEWS",
+        "tag": "26 NOV · 390K VISUALIZAÇÕES",
         "lines": [
           "DECLARAÇÃO FINAL",
           "@theo: \"NUNCA lemos seus arquivos locais. Te enganaram.\""
@@ -2350,7 +2350,7 @@
         "p": 3,
         "tag": "16 MIN DEPOIS",
         "lines": [
-          "@sk1gl4a: \"Captura de pacotes pegou 243 chats Claude & FingerprintJS na página de privacidade!\""
+          "@sk1gl4a: \"Captura de pacotes flagrou 243 chats Claude & FingerprintJS na página de privacidade!\""
         ]
       },
       {
@@ -2358,7 +2358,7 @@
         "tag": "STRIPE ALEMÃO",
         "lines": [
           "@theo: \"Então eu só BANO a ALEMANHA!\"",
-          "€9.03/mês · incl. 19% IVA alemão (GDPR Art. 3(2))"
+          "€9,03/mês · incl. 19% de IVA alemão (GDPR Art. 3(2))"
         ]
       }
     ],
@@ -2367,13 +2367,13 @@
         "p": 1,
         "tag": "FLASHBACK · JAN 2025",
         "lines": [
-          "@theo (1M+ FÃS) → VENDOR DA SEC",
-          "@dmfigol (ex-AWS): \"Usar plataforma de 1M pra extorsão é nojento.\" (89 VIEWS · 0 LIKES)"
+          "@theo (1M+ FÃS) → FORNECEDOR DA SEC",
+          "@dmfigol (ex-AWS): \"Usar plataforma de 1M pra extorsão é nojento.\" (89 VISUALIZAÇÕES · 0 CURTIDAS)"
         ]
       },
       {
         "p": 2,
-        "tag": "X | DMs  @theo  •••",
+        "tag": "X | MDs  @theo  •••",
         "lines": [
           "@theo: \"Medo é um bom incentivo.\" / \"Inglês é sua primeira língua?\"",
           "@dmfigol: \"Boa noite.\""
@@ -2381,17 +2381,17 @@
       },
       {
         "p": 3,
-        "tag": "CLIENTE PAGANTE AWS",
+        "tag": "CLIENTE PAGANTE DA AWS",
         "lines": [
-          "@theo → RECLAMAÇÃO NO RH AWS",
+          "@theo → RECLAMAÇÃO AO RH DA AWS",
           "@dmfigol: Desculpa..."
         ]
       },
       {
         "p": 4,
-        "tag": "27 NOV · 400K VIEWS",
+        "tag": "27 NOV · 400K VISUALIZAÇÕES",
         "lines": [
-          "Engenheiro UE: \"Fala inglês?\" + Chama RH  =  Dev CN: \"Cópia do Temu\" + Bane GitHub",
+          "Engenheiro da UE: \"Fala inglês?\" + Chama o RH  =  Dev chinês: \"Cópia do Temu\" + Bane do GitHub",
           "@petersteele: \"Eu também!\" · @realchendahuang: \"Ele nem mudou o roteiro.\""
         ]
       }
@@ -2401,8 +2401,8 @@
         "p": 1,
         "tag": "OI, EU SOU ZED",
         "lines": [
-          "PR #43026: aviso de ban do Google",
-          "PR #43087: Falsificando handshake \"zed\""
+          "PR #43026: aviso de banimento do Google",
+          "PR #43087: falsificando o handshake \"zed\""
         ]
       },
       {
@@ -2410,12 +2410,12 @@
         "tag": "v0.1.13 · 401 MUDANÇAS",
         "lines": [
           "@theo: \"Destaque: suporte a texto GBK!\"",
-          "AVISOS: 0 · Google FIX DE BAN (+380 fixes menores)"
+          "AVISOS: 0 · CORREÇÃO DO BANIMENTO DO GOOGLE (+380 correções menores)"
         ]
       },
       {
         "p": 3,
-        "tag": "RECIBO #23 · DESKTOP",
+        "tag": "PROVA #23 · DESKTOP",
         "lines": [
           "Anthropic → SILENCIADO COMO RUÍDO · 11 NAVEGADORES (Gmail · GitHub · AWS)",
           "ISOLAMENTO DESKTOP: DESLIGADO (só no Linux!)"
@@ -2423,9 +2423,9 @@
       },
       {
         "p": 4,
-        "tag": "RECIBO #24 · FECHADO EM 4m39s",
+        "tag": "PROVA #24 · FECHADO EM 4m39s",
         "lines": [
-          "@Luca_Hagenmayer: \"Chats privados vazaram!\" (8,000 CHARS URL EM TEXTO)",
+          "@Luca_Hagenmayer: \"Chats privados vazaram!\" (8.000 CARACTERES DE URL EM TEXTO PURO)",
           "04:39 · Julius: CLACK! (0 RESPOSTAS)"
         ]
       }
@@ -2443,24 +2443,24 @@
         "p": 2,
         "tag": "27 NOV",
         "lines": [
-          "Julius (MAINTAINER PRINCIPAL): \"PR #43948: Sim, lemos arquivos de outros agentes sem pedir.\"",
-          "10 MIN DEPOIS · PR #43889 [FECHAR PR]: \"deixa, é mais fácil no slophouse closed-source\""
+          "Julius (MANTENEDOR PRINCIPAL): \"PR #43948: Sim, lemos arquivos de outros agentes sem pedir.\"",
+          "10 MIN DEPOIS · PR #43889 [FECHAR PR]: \"deixa, é mais fácil no slophouse de código fechado\""
         ]
       },
       {
         "p": 3,
-        "tag": "1,401 CONTRIBUIDORES DE GRAÇA",
+        "tag": "1.401 CONTRIBUIDORES DE GRAÇA",
         "lines": [
           "\"Conselho: não contribua\"",
-          "SLOPHOUSE (COFRE CLOSED-SOURCE) · @theo: MUDO"
+          "SLOPHOUSE (COFRE DE CÓDIGO FECHADO) · @theo: MUDO"
         ]
       },
       {
         "p": 4,
         "tag": "歧 · 胁 · 冒 · 遁",
         "lines": [
-          "Dois Pesos · Medo & Coerção · Falsificação & Engano · Fuga Closed-Source",
-          "Spin de PR pode ser apagado. Commits Git ficam pra sempre."
+          "Dois Pesos · Medo & Coerção · Falsificação & Engano · Fuga pro Código Fechado",
+          "Marketing de PR pode ser apagado. Commits do Git ficam pra sempre."
         ]
       }
     ]
@@ -2471,9 +2471,9 @@
         "p": 1,
         "tag": "23 НОЯ · 15:38",
         "lines": [
-          "ЛИЦЕНЗИЯ MIT · \"Крадите код (легально)\"",
-          "\"Почему UI T3 Code такой уродский?!\"",
-          "(Вообще-то бесплатный форк MIT)"
+          "ЛИЦЕНЗИЯ MIT · \"Воруйте код (легально)\"",
+          "\"Почему UI у T3 Code такой уродский?!\"",
+          "(А это вообще-то бесплатный форк по MIT)"
         ]
       },
       {
@@ -2481,7 +2481,7 @@
         "tag": "19:11 → 19:22 (РАЗНИЦА 10 МИН)",
         "lines": [
           "Китайская подделка! · TEMU3 CODE!",
-          "@theo: \"Выглядит как мусор! Переименуй СЕЙЧАС или я забаню твой GitHub!\""
+          "@theo: \"Выглядит как мусор! Переименуй СЕЙЧАС ЖЕ, или я забаню твой GitHub!\""
         ]
       },
       {
@@ -2489,15 +2489,15 @@
         "tag": "30 МИН СПУСТЯ",
         "lines": [
           "200K+ ПРОСМОТРОВ · НЕ УДАЛЕНО",
-          "@theo: ЛС: \"Извини за резкий тон, надо защищать бренд\""
+          "@theo: ЛС: \"Извини за резкий тон — бренд надо защищать\""
         ]
       },
       {
         "p": 4,
         "tag": "11 ЧАСОВ СПУСТЯ",
         "lines": [
-          "$1T ЛАБ США",
-          "@theo: \"Опенсорс — это опенсорс, даже для компании на $1T!\""
+          "$1T ЛАБОРАТОРИЯ США",
+          "@theo: \"Опенсорс — он и есть опенсорс, даже для компании на $1T!\""
         ]
       }
     ],
@@ -2506,8 +2506,8 @@
         "p": 1,
         "tag": "24 НОЯ · 11:03",
         "lines": [
-          "@realchendahuang: \"Ноль стыда, 100% двойные стандарты.\"",
-          "300K ПРОСМОТРОВ · БАУНТИ $20K ЗА FFmpeg"
+          "@realchendahuang: \"Ноль стыда — сплошные двойные стандарты.\"",
+          "300K ПРОСМОТРОВ · НАГРАДА $20K ЗА FFmpeg"
         ]
       },
       {
@@ -2531,7 +2531,7 @@
         "tag": "5 ЧАСОВ СПУСТЯ · 17:04",
         "lines": [
           "2 320 000 ПРОСМОТРОВ · 18K ЛАЙКОВ",
-          "13 УЛИК ИЗ GITHUB · *ВЫПЛЁВЫВАЕТ КОФЕ*"
+          "13 ПРУФОВ С GITHUB · *ВЫПЛЁВЫВАЕТ КОФЕ*"
         ]
       }
     ],
@@ -2549,14 +2549,14 @@
         "tag": "USPTO: 0",
         "lines": [
           "ТОВАРНЫЕ ЗНАКИ USPTO · PING LABS (ЗАБРОШЕНО)",
-          "@theo: \"Быстро! Смержим через 17ч!\""
+          "@theo: \"Скорее! Вливаем через 17ч!\""
         ]
       },
       {
         "p": 3,
         "tag": "52д git push --force",
         "lines": [
-          "41.6 GB · СКАН 5с · УДАЛИТЬ НАВСЕГДА",
+          "41,6 GB · СКАН 5с · УДАЛИТЬ НАВСЕГДА",
           "21ч → ФИЛЬТР ПРИВАТНОСТИ"
         ]
       },
@@ -2565,7 +2565,7 @@
         "tag": "АПРЕЛЬ → НОЯБРЬ",
         "lines": [
           "@theo: \"Звёзды на GitHub — приманка для VC!\"",
-          "ПРОСТОЙ 30с · 77K ★ (129 наблюдателей) · @theo: \"Даже 70k не заметил!\""
+          "ПРОСТОЙ 30с · 77K ★ (129 следящих) · @theo: \"Даже 70k не заметил!\""
         ]
       }
     ],
@@ -2582,13 +2582,13 @@
         "p": 2,
         "tag": "6-ЧАСОВОЙ НОЧНОЙ РЫВОК",
         "lines": [
-          "Julius (20 PR): \"PR #42450 смержен: ой, мы это сделали.\" (2.2M/ЧАС IP-ЛОГИ · УТЕЧКА ПУТИ git.cwd)",
-          "@theo (264 ID CLAUDE): \"Мы никогда не логировали пути и IP!\""
+          "Julius (20 PR): \"PR #42450 влили: ой, получилось.\" (2,2M/ЧАС IP-ЛОГИ · УТЕЧКА ПУТИ git.cwd)",
+          "@theo (264 ID Claude): \"Мы никогда не логировали пути и IP!\""
         ]
       },
       {
         "p": 3,
-        "tag": "4:00 → 6:00",
+        "tag": "4:00 → 6:00 УТРА",
         "lines": [
           "@theo: \"Ухожу в закрытый код СЕГОДНЯ! Вы не достойны OSS!\"",
           "*тихо удаляет*"
@@ -2596,9 +2596,9 @@
       },
       {
         "p": 4,
-        "tag": "БЛОК ×2 · Без драк",
+        "tag": "БЛОК ×2 · Без склок",
         "lines": [
-          "temu3code.com — Бесплатное имя от основателя с 0 брендов",
+          "temu3code.com — Бесплатное имя от основателя без единого бренда",
           "@realchendahuang: \"Мой английский не очень... поэтому я сделал архив на 18 языках.\""
         ]
       }
@@ -2608,8 +2608,8 @@
         "p": 1,
         "tag": "25 НОЯ · 11:56 → 15:38",
         "lines": [
-          "@realchendahuang: \"18 улик собрано, назад к коду!\"",
-          "3.5 ЧАСА СПУСТЯ: ca81b7b9 — 5 КРИТИЧЕСКИХ БАГОВ (30д открытый шелл · без отзыва · SSH_AUTH_SOCK)"
+          "@realchendahuang: \"18 пруфов собрано, назад к коду!\"",
+          "3,5 ЧАСА СПУСТЯ: ca81b7b9 — 5 КРИТИЧЕСКИХ БАГОВ (30д шелл открытым текстом · без отзыва · SSH_AUTH_SOCK)"
         ]
       },
       {
@@ -2624,7 +2624,7 @@
         "p": 3,
         "tag": "16 МИН СПУСТЯ",
         "lines": [
-          "@sk1gl4a: \"Дамп трафика поймал 243 чата Claude и FingerprintJS на странице приватности!\""
+          "@sk1gl4a: \"Перехват трафика поймал 243 чата с Claude и FingerprintJS на странице приватности!\""
         ]
       },
       {
@@ -2632,7 +2632,7 @@
         "tag": "НЕМЕЦКИЙ STRIPE",
         "lines": [
           "@theo: \"Тогда я просто ЗАБАНЮ ГЕРМАНИЮ!\"",
-          "€9.03/мес · вкл. 19% НДС Германии (GDPR ст. 3(2))"
+          "€9,03/мес · вкл. 19% НДС Германии (GDPR ст. 3(2))"
         ]
       }
     ],
@@ -2642,7 +2642,7 @@
         "tag": "ФЛЕШБЭК · ЯНВ 2025",
         "lines": [
           "@theo (1M+ ФАНАТОВ) → SEC-ВЕНДОР",
-          "@dmfigol (ex-AWS): \"Использовать платформу на 1M для вымогательства — мерзко.\" (89 ПРОСМОТРОВ · 0 ЛАЙКОВ)"
+          "@dmfigol (ex-AWS): \"Использовать 1M-платформу для вымогательства — мерзко.\" (89 ПРОСМОТРОВ · 0 ЛАЙКОВ)"
         ]
       },
       {
@@ -2658,38 +2658,38 @@
         "tag": "ПЛАТЯЩИЙ КЛИЕНТ AWS",
         "lines": [
           "@theo → ЖАЛОБА В HR AWS",
-          "@dmfigol: Извините..."
+          "@dmfigol: Простите..."
         ]
       },
       {
         "p": 4,
         "tag": "27 НОЯ · 400K ПРОСМОТРОВ",
         "lines": [
-          "Инженер из ЕС: \"Говоришь по-английски?\" + звонок в HR  =  КНР-разраб: \"Подделка с Temu\" + бан GitHub",
-          "@petersteele: \"Я тоже!\" · @realchendahuang: \"Он даже сценарий не поменял.\""
+          "Инженер из ЕС: \"Говоришь по-английски?\" + звонок в HR  =  разраб из КНР: \"Подделка с Temu\" + бан GitHub",
+          "@petersteele: \"Я тоже!\" · @realchendahuang: \"Он даже сценарий не сменил.\""
         ]
       }
     ],
     "ep07": [
       {
         "p": 1,
-        "tag": "Я — ZED",
+        "tag": "ПРИВЕТ, Я — ZED",
         "lines": [
-          "PR #43026: предупреждение о бане Google",
+          "PR #43026: предупреждение о бане от Google",
           "PR #43087: подделка рукопожатия \"zed\""
         ]
       },
       {
         "p": 2,
-        "tag": "v0.1.13 · 401 ИЗМЕНЕНИЕ",
+        "tag": "v0.1.13 · 401 ИЗМЕНЕНИЙ",
         "lines": [
           "@theo: \"Фишка: поддержка текста GBK!\"",
-          "УВЕДОМЛЕНИЯ: 0 · Google ФИКС БАНА (+380 мелких фиксов)"
+          "УВЕДОМЛЕНИЯ: 0 · ФИКС БАНА Google (+380 мелких правок)"
         ]
       },
       {
         "p": 3,
-        "tag": "ЧЕК #23 · DESKTOP",
+        "tag": "ФАКТ #23 · DESKTOP",
         "lines": [
           "Anthropic → ЗАГЛУШЕНО КАК ШУМ · 11 БРАУЗЕРОВ (Gmail · GitHub · AWS)",
           "ИЗОЛЯЦИЯ DESKTOP: ВЫКЛ (только Linux!)"
@@ -2697,9 +2697,9 @@
       },
       {
         "p": 4,
-        "tag": "ЧЕК #24 · ЗАКРЫТ ЗА 4м39с",
+        "tag": "ФАКТ #24 · ЗАКРЫТ ЗА 4м39с",
         "lines": [
-          "@Luca_Hagenmayer: \"Личные чаты утекли!\" (8 000 СИМВОЛОВ ОТКРЫТЫЙ URL)",
+          "@Luca_Hagenmayer: \"Личные чаты утекли!\" (URL НА 8 000 СИМВОЛОВ ОТКРЫТЫМ ТЕКСТОМ)",
           "04:39 · Julius: КЛАЦ! (0 ОТВЕТОВ)"
         ]
       }
@@ -2725,7 +2725,7 @@
         "p": 3,
         "tag": "1 401 БЕСПЛАТНЫЙ КОНТРИБЬЮТОР",
         "lines": [
-          "\"Совет: не контрибьють\"",
+          "\"Совет: не надо контрибьютить\"",
           "SLOPHOUSE (ЗАКРЫТЫЙ СХРОН) · @theo: МУТ"
         ]
       },
@@ -2747,7 +2747,7 @@
         "lines": [
           "رخصة MIT · \"اسرق كودنا (قانونياً)\"",
           "\"لماذا واجهة T3 Code قبيحة جداً؟!\"",
-          "(في الحقيقة تفرّع MIT مجاني)"
+          "(في الحقيقة فورك MIT مجاني)"
         ]
       },
       {
@@ -2763,7 +2763,7 @@
         "tag": "بعد 30 دقيقة",
         "lines": [
           "200K+ مشاهدة · لم يُحذف",
-          "@theo: خاص: \"آسف على النبرة القاسية، يجب حماية العلامة التجارية\""
+          "@theo: رسالة خاصة: \"آسف على النبرة القاسية، يجب حماية العلامة التجارية\""
         ]
       },
       {
@@ -2828,7 +2828,7 @@
       },
       {
         "p": 3,
-        "tag": "إنذار: 52d git push --force",
+        "tag": "52d git push --force",
         "lines": [
           "41.6 GB · فحص 5 ثوانٍ · حذف نهائي",
           "21 ساعة → فلتر الخصوصية"
@@ -2903,7 +2903,7 @@
       },
       {
         "p": 4,
-        "tag": "Stripe ألمانية",
+        "tag": "Stripe الألمانية",
         "lines": [
           "@theo: \"حسناً، سأحظر ألمانيا!\"",
           "€9.03/شهر · شامل 19% ضريبة ألمانية (GDPR المادة 3(2))"
@@ -2931,7 +2931,7 @@
         "p": 3,
         "tag": "عميل يدفع لـAWS",
         "lines": [
-          "@theo → شكوى AWS HR",
+          "@theo → شكوى إلى AWS HR",
           "@dmfigol: آسف..."
         ]
       },
@@ -2958,7 +2958,7 @@
         "tag": "v0.1.13 · 401 تغيير",
         "lines": [
           "@theo: \"أبرز ميزة: دعم نص GBK!\"",
-          "تحذيرات: 0 · Google إصلاح الحظر (+380 إصلاحاً بسيطاً)"
+          "تحذيرات: 0 · إصلاح حظر Google (+380 إصلاحاً بسيطاً)"
         ]
       },
       {
@@ -2971,7 +2971,7 @@
       },
       {
         "p": 4,
-        "tag": "إثبات #24 · أُقفل في 4m39s",
+        "tag": "إثبات #24 · أُغلق في 4m39s",
         "lines": [
           "@Luca_Hagenmayer: \"المحادثات الخاصة تسرّبت!\" (8,000 حرف URL بنص صريح)",
           "04:39 · Julius: طق! (0 رد)"
@@ -3021,22 +3021,22 @@
         "lines": [
           "LICENZA MIT · \"Ruba il codice (legalmente)\"",
           "\"Perché la UI di T3 Code è così brutta?!\"",
-          "(In realtà un fork MIT gratis)"
+          "(In realtà è un fork MIT gratis)"
         ]
       },
       {
         "p": 2,
-        "tag": "19:11 → 19:22 (10 MIN DOPO)",
+        "tag": "19:11 → 19:22 (10 MIN DI DISTANZA)",
         "lines": [
           "Tarocco cinese! · TEMU3 CODE!",
-          "@theo: \"Sembra spazzatura! Rinominalo ORA o ti faccio bannare da GitHub!\""
+          "@theo: \"Sembra spazzatura! Rinominalo SUBITO o ti faccio bannare da GitHub!\""
         ]
       },
       {
         "p": 3,
         "tag": "30 MIN DOPO",
         "lines": [
-          "200K+ VISUAL · NON CANCELLATO",
+          "200K+ VISUALIZZAZIONI · NON CANCELLATO",
           "@theo: DM: \"Scusa il tono duro, devo tutelare il marchio\""
         ]
       },
@@ -3044,7 +3044,7 @@
         "p": 4,
         "tag": "11 ORE DOPO",
         "lines": [
-          "$1T LAB USA",
+          "LAB USA DA $1T",
           "@theo: \"L'open source è open source, anche per una società da $1T!\""
         ]
       }
@@ -3055,7 +3055,7 @@
         "tag": "24 NOV · 11:03",
         "lines": [
           "@realchendahuang: \"Zero vergogna, 100% doppio standard.\"",
-          "300K VISUAL · Bounty FFmpeg $20K"
+          "300K VISUALIZZAZIONI · BOUNTY FFMPEG $20K"
         ]
       },
       {
@@ -3063,14 +3063,14 @@
         "tag": "11:42",
         "lines": [
           "@theo: \"Bloccato. Problema risolto.\"",
-          "[BLOCCA]"
+          "[BLOCCO]"
         ]
       },
       {
         "p": 3,
         "tag": "@theo ti ha bloccato",
         "lines": [
-          "@realchendahuang: \"Promosso.\"",
+          "@realchendahuang: \"Laureato.\"",
           "git clone pingdotgg/t3code"
         ]
       },
@@ -3078,8 +3078,8 @@
         "p": 4,
         "tag": "5 ORE DOPO · 17:04",
         "lines": [
-          "2.320.000 VISUAL · 18K LIKE",
-          "13 PROVE GITHUB · *SPUTA IL CAFFÈ*"
+          "2.320.000 VISUALIZZAZIONI · 18K LIKE",
+          "13 RICEVUTE GITHUB · *SPUTA IL CAFFÈ*"
         ]
       }
     ],
@@ -3089,7 +3089,7 @@
         "tag": "NIENTE TELEMETRIA. PUNTO.",
         "lines": [
           "~/.claude.json · ~/.codex/auth.json · 4 PR RIFIUTATE",
-          "Julius (CORE MAINTAINER): \"Non ti renderemo le cose facili.\""
+          "Julius (CORE MAINTAINER): \"Non ti faciliteremo le cose.\""
         ]
       },
       {
@@ -3097,14 +3097,14 @@
         "tag": "USPTO: 0",
         "lines": [
           "MARCHI USPTO · PING LABS (ABBANDONATO)",
-          "@theo: \"Presto! Merge 17h dopo!\""
+          "@theo: \"Presto! Fai il merge 17h dopo!\""
         ]
       },
       {
         "p": 3,
         "tag": "52d git push --force",
         "lines": [
-          "41.6 GB · SCAN 5s · CANCELLA PER SEMPRE",
+          "41,6 GB · SCANSIONE 5s · CANCELLA PER SEMPRE",
           "21h → FILTRO PRIVACY"
         ]
       },
@@ -3112,8 +3112,8 @@
         "p": 4,
         "tag": "APRILE → NOVEMBRE",
         "lines": [
-          "@theo: \"Le star GitHub sono esca finta per VC!\"",
-          "30s INATTIVO · 77K ★ (129 watcher) · @theo: \"Non ho notato 70k!\""
+          "@theo: \"Le star su GitHub sono esca finta per i VC!\"",
+          "30s DI INATTIVITÀ · 77K ★ (129 osservatori) · @theo: \"Non avevo notato 70k!\""
         ]
       }
     ],
@@ -3130,15 +3130,15 @@
         "p": 2,
         "tag": "BLITZ NOTTURNO DI 6 ORE",
         "lines": [
-          "Julius (20 PR): \"PR #42450 mergiata: ops, fatto.\" (2,2M/ORA LOG IP · LEAK PATH git.cwd)",
-          "@theo (264 ID CLAUDE): \"Non abbiamo mai loggato path o IP!\""
+          "Julius (20 PR): \"PR #42450 mergiata: ops, l'abbiamo fatto.\" (2,2M/ORA DI LOG IP · FUGA PATH git.cwd)",
+          "@theo (264 ID CLAUDE): \"Non abbiamo mai registrato path o IP!\""
         ]
       },
       {
         "p": 3,
         "tag": "04:00 → 06:00",
         "lines": [
-          "@theo: \"Closed source STASERA! Non meritate l'OSS!\"",
+          "@theo: \"Passo a closed-source STASERA! Non meritate l'OSS!\"",
           "*cancella in silenzio*"
         ]
       },
@@ -3156,13 +3156,13 @@
         "p": 1,
         "tag": "25 NOV · 11:56 → 15:38",
         "lines": [
-          "@realchendahuang: \"18 prove fatte, torno a programmare!\"",
-          "3,5 ORE DOPO: ca81b7b9 — 5 BUG CRITICI (30d Shell in chiaro · No revoca · SSH_AUTH_SOCK)"
+          "@realchendahuang: \"18 ricevute pronte, torno a programmare!\"",
+          "3,5 ORE DOPO: ca81b7b9 — 5 BUG CRITICI (30d Shell in chiaro · Nessuna revoca · SSH_AUTH_SOCK)"
         ]
       },
       {
         "p": 2,
-        "tag": "26 NOV · 390K VISUAL",
+        "tag": "26 NOV · 390K VISUALIZZAZIONI",
         "lines": [
           "DICHIARAZIONE FINALE",
           "@theo: \"Non leggiamo MAI i tuoi file locali. Ti hanno ingannato.\""
@@ -3172,15 +3172,15 @@
         "p": 3,
         "tag": "16 MIN DOPO",
         "lines": [
-          "@sk1gl4a: \"Il packet capture ha beccato 243 chat Claude e FingerprintJS nella pagina privacy!\""
+          "@sk1gl4a: \"La cattura pacchetti ha pizzicato 243 chat Claude e FingerprintJS nella pagina privacy!\""
         ]
       },
       {
         "p": 4,
         "tag": "STRIPE TEDESCA",
         "lines": [
-          "@theo: \"Allora BANNO LA GERMANIA!\"",
-          "€9.03/mese · incl. IVA tedesca 19% (GDPR Art. 3(2))"
+          "@theo: \"Allora BANDISCO LA GERMANIA!\"",
+          "€9,03/mese · IVA tedesca 19% inclusa (GDPR Art. 3(2))"
         ]
       }
     ],
@@ -3189,8 +3189,8 @@
         "p": 1,
         "tag": "FLASHBACK · GEN 2025",
         "lines": [
-          "@theo (1M+ FAN) → VENDOR SEC",
-          "@dmfigol (ex-AWS): \"Usare una piattaforma da 1M per estorcere è disgustoso.\" (89 VISUAL · 0 LIKE)"
+          "@theo (1M+ FAN) → FORNITORE SEC",
+          "@dmfigol (ex-AWS): \"Usare una piattaforma da 1M per estorcere è disgustoso.\" (89 VISUALIZZAZIONI · 0 LIKE)"
         ]
       },
       {
@@ -3205,15 +3205,15 @@
         "p": 3,
         "tag": "CLIENTE PAGANTE AWS",
         "lines": [
-          "@theo → SEGNALAZIONE AWS HR",
+          "@theo → SEGNALAZIONE ALLE HR DI AWS",
           "@dmfigol: Scusa..."
         ]
       },
       {
         "p": 4,
-        "tag": "27 NOV · 400K VISUAL",
+        "tag": "27 NOV · 400K VISUALIZZAZIONI",
         "lines": [
-          "Ingegnere UE: \"Parli inglese?\" + Chiama HR  =  Dev CN: \"Tarocco Temu\" + Ban GitHub",
+          "Ingegnere UE: \"Parli inglese?\" + Chiama le HR  =  Dev CN: \"Tarocco Temu\" + Ban da GitHub",
           "@petersteele: \"Anche io!\" · @realchendahuang: \"Non ha nemmeno cambiato copione.\""
         ]
       }
@@ -3223,8 +3223,8 @@
         "p": 1,
         "tag": "CIAO, SONO ZED",
         "lines": [
-          "PR #43026: avviso ban Google",
-          "PR #43087: spoof handshake \"zed\""
+          "PR #43026: avviso di ban Google",
+          "PR #43087: handshake falso \"zed\""
         ]
       },
       {
@@ -3232,22 +3232,22 @@
         "tag": "v0.1.13 · 401 MODIFICHE",
         "lines": [
           "@theo: \"In evidenza: supporto testo GBK!\"",
-          "AVVISI: 0 · Google FIX BAN (+380 fix minori)"
+          "AVVISI: 0 · BAN GOOGLE RISOLTO (+380 fix minori)"
         ]
       },
       {
         "p": 3,
-        "tag": "PROVA #23 · DESKTOP",
+        "tag": "RICEVUTA #23 · DESKTOP",
         "lines": [
           "Anthropic → SILENZIATO COME RUMORE · 11 BROWSER (Gmail · GitHub · AWS)",
-          "ISOLAMENTO DESKTOP: OFF (solo Linux!)"
+          "ISOLAMENTO DESKTOP: DISATTIVATO (solo Linux!)"
         ]
       },
       {
         "p": 4,
-        "tag": "PROVA #24 · BLOCCATO IN 4m39s",
+        "tag": "RICEVUTA #24 · BLOCCATO IN 4m39s",
         "lines": [
-          "@Luca_Hagenmayer: \"Chat private finite online!\" (8.000 CARATTERI URL IN CHIARO)",
+          "@Luca_Hagenmayer: \"Chat private finite online!\" (URL IN CHIARO DA 8.000 CARATTERI)",
           "04:39 · Julius: CLACK! (0 RISPOSTE)"
         ]
       }
@@ -3273,16 +3273,16 @@
         "p": 3,
         "tag": "1.401 CONTRIBUTOR GRATIS",
         "lines": [
-          "\"Consiglio: non contribuire\"",
-          "SLOPHOUSE (CAVE CLOSED-SOURCE) · @theo: MUTO"
+          "\"Consiglio: non contribuite\"",
+          "SLOPHOUSE (CASSAPANCA CLOSED-SOURCE) · @theo: SILENZIATO"
         ]
       },
       {
         "p": 4,
         "tag": "歧 · 胁 · 冒 · 遁",
         "lines": [
-          "Doppio Standard · Paura & Coercizione · Spoofing & Inganno · Evasione Closed-Source",
-          "Le PR spin si cancellano. I commit Git restano per sempre."
+          "Doppio standard · Paura & coercizione · Spoofing & inganno · Evasione closed-source",
+          "Le PR di facciata si cancellano. I commit Git restano per sempre."
         ]
       }
     ]
@@ -3294,16 +3294,16 @@
         "tag": "23 NOV · 15:38",
         "lines": [
           "MIT-LICENTIE · \"Jat onze code (legaal)\"",
-          "\"Waarom is de UI van T3 Code zo lelijk?!\"",
+          "\"Waarom is de interface van T3 Code zo lelijk?!\"",
           "(Eigenlijk een gratis MIT-fork)"
         ]
       },
       {
         "p": 2,
-        "tag": "19:11 → 19:22 (10 MIN APART)",
+        "tag": "19:11 → 19:22 (10 MIN VERSCHIL)",
         "lines": [
           "Chinese nepkloon! · TEMU3 CODE!",
-          "@theo: \"Ziet eruit als troep! Hernoem het NU of ik laat je GitHub bannen!\""
+          "@theo: \"Ziet eruit als troep! Hernoem het NU of ik laat je GitHub-account verbannen!\""
         ]
       },
       {
@@ -3329,7 +3329,7 @@
         "tag": "24 NOV · 11:03",
         "lines": [
           "@realchendahuang: \"Nul schaamte, 100% dubbele moraal.\"",
-          "300K WEERGAVEN · $20K FFmpeg-bounty"
+          "300K WEERGAVEN · $20K FFmpeg-beloning"
         ]
       },
       {
@@ -3371,15 +3371,15 @@
         "tag": "USPTO: 0",
         "lines": [
           "USPTO-MERKEN · PING LABS (VERLATEN)",
-          "@theo: \"Snel! Merge het 17u later!\""
+          "@theo: \"Snel! Voeg het 17 uur later samen!\""
         ]
       },
       {
         "p": 3,
         "tag": "52d git push --force",
         "lines": [
-          "41.6 GB · 5s SCAN · PERMANENT VERWIJDEREN",
-          "21h → PRIVACYFILTER"
+          "41,6 GB · 5s SCAN · PERMANENT VERWIJDEREN",
+          "21u → PRIVACYFILTER"
         ]
       },
       {
@@ -3404,7 +3404,7 @@
         "p": 2,
         "tag": "6-UURS NACHTBLITZ",
         "lines": [
-          "Julius (20 PR's): \"PR #42450 gemerged: oeps, wij waren het.\" (2,2M/UUR IP-LOGS · git.cwd PADLEK)",
+          "Julius (20 PR's): \"PR #42450 samengevoegd: oeps, wij waren het.\" (2,2M/UUR IP-LOGS · git.cwd PADLEK)",
           "@theo (264 CLAUDE-ID's): \"We logden nooit paden of IP's!\""
         ]
       },
@@ -3412,7 +3412,7 @@
         "p": 3,
         "tag": "04:00 → 06:00",
         "lines": [
-          "@theo: \"VANAVOND closed-source! Jullie verdienen geen OSS!\"",
+          "@theo: \"VANAVOND nog closed source! Jullie verdienen geen OSS!\"",
           "*verwijdert stilletjes*"
         ]
       },
@@ -3420,7 +3420,7 @@
         "p": 4,
         "tag": "GEBLOKKEERD ×2 · Geen geruzie",
         "lines": [
-          "temu3code.com — Gratis naam van een oprichter met 0 merken",
+          "temu3code.com — Gratis naam van een oprichter met nul merken",
           "@realchendahuang: \"Mijn Engels is niet top... dus bouwde ik een archief in 18 talen.\""
         ]
       }
@@ -3431,7 +3431,7 @@
         "tag": "25 NOV · 11:56 → 15:38",
         "lines": [
           "@realchendahuang: \"18 bewijzen klaar, terug naar code!\"",
-          "3,5 UUR LATER: ca81b7b9 — 5 KRITIEKE BUGS (30d Plaintext Shell · Geen intrekken · SSH_AUTH_SOCK)"
+          "3,5 UUR LATER: ca81b7b9 — 5 KRITIEKE BUGS (30d SHELL IN PLATTE TEKST · GEEN INTREKKING · SSH_AUTH_SOCK)"
         ]
       },
       {
@@ -3439,14 +3439,14 @@
         "tag": "26 NOV · 390K WEERGAVEN",
         "lines": [
           "SLOTVERKLARING",
-          "@theo: \"We lazen NOOIT je lokale bestanden. Je bent misleid.\""
+          "@theo: \"We lazen NOOIT je lokale bestanden. Jullie werden misleid.\""
         ]
       },
       {
         "p": 3,
         "tag": "16 MIN LATER",
         "lines": [
-          "@sk1gl4a: \"Packetcapture ving 243 Claude-chats & FingerprintJS op de privacypagina!\""
+          "@sk1gl4a: \"Netwerkopname ving 243 Claude-chats & FingerprintJS op de privacypagina!\""
         ]
       },
       {
@@ -3463,7 +3463,7 @@
         "p": 1,
         "tag": "FLASHBACK · JAN 2025",
         "lines": [
-          "@theo (1M+ FANS) → SEC-LEVERANCIER",
+          "@theo (1 MLN+ FANS) → SEC-LEVERANCIER",
           "@dmfigol (ex-AWS): \"Een 1M-platform gebruiken voor afpersing is walgelijk.\" (89 WEERGAVEN · 0 LIKES)"
         ]
       },
@@ -3471,7 +3471,7 @@
         "p": 2,
         "tag": "X | DMs  @theo  •••",
         "lines": [
-          "@theo: \"Angst is een goede prikkel.\" / \"Is Engels je moedertaal?\"",
+          "@theo: \"Angst is een goede drijfveer.\" / \"Is Engels je moedertaal?\"",
           "@dmfigol: \"Welterusten.\""
         ]
       },
@@ -3487,7 +3487,7 @@
         "p": 4,
         "tag": "27 NOV · 400K WEERGAVEN",
         "lines": [
-          "EU-ingenieur: \"Spreek Engels?\" + HR bellen  =  CN-dev: \"Temu-kloon\" + GitHub bannen",
+          "EU-ingenieur: \"Spreek Engels?\" + HR bellen  =  CN-dev: \"Temu-kloon\" + GitHub verbannen",
           "@petersteele: \"Ik ook!\" · @realchendahuang: \"Hij veranderde niet eens het script.\""
         ]
       }
@@ -3498,30 +3498,30 @@
         "tag": "HOI, IK BEN ZED",
         "lines": [
           "PR #43026: waarschuwing Google-ban",
-          "PR #43087: spoof van \"zed\"-handshake"
+          "PR #43087: \"zed\"-handshake vervalst"
         ]
       },
       {
         "p": 2,
         "tag": "v0.1.13 · 401 WIJZIGINGEN",
         "lines": [
-          "@theo: \"Hoogtepunt: GBK-tekstsupport!\"",
-          "ADVIEZEN: 0 · Google BAN-FIX (+380 kleine fixes)"
+          "@theo: \"Hoogtepunt: GBK-tekstondersteuning!\"",
+          "ADVIEZEN: 0 · GOOGLE-BAN GEFIXT (+380 kleine reparaties)"
         ]
       },
       {
         "p": 3,
-        "tag": "BON #23 · DESKTOP",
+        "tag": "BEWIJS #23 · DESKTOP",
         "lines": [
-          "Anthropic → GEDEMPT ALS RUIS · 11 BROWSERS (Gmail · GitHub · AWS)",
+          "Anthropic → ALS RUIS WEGGEZET · 11 BROWSERS (Gmail · GitHub · AWS)",
           "DESKTOP-ISOLATIE: UIT (alleen Linux!)"
         ]
       },
       {
         "p": 4,
-        "tag": "BON #24 · VAST IN 4m39s",
+        "tag": "BEWIJS #24 · VASTGELEGD IN 4m39s",
         "lines": [
-          "@Luca_Hagenmayer: \"Privéchats gelekt!\" (8.000 TEKENS PLAINTEXT URL)",
+          "@Luca_Hagenmayer: \"Privéchats gelekt!\" (8.000 TEKENS · URL IN PLATTE TEKST)",
           "04:39 · Julius: KLIK! (0 REACTIES)"
         ]
       }
@@ -3529,7 +3529,7 @@
     "ep08": [
       {
         "p": 1,
-        "tag": "35-TOOLS-AUDIT",
+        "tag": "AUDIT: 35 TOOLS",
         "lines": [
           "@DavidOndrej1: \"Betalen sponsors hier nog voor?\"",
           "Aether: A · Hermes: A · Orca: C · T3 Code: F → D"
@@ -3540,22 +3540,22 @@
         "tag": "27 NOV",
         "lines": [
           "Julius (KERN-MAINTAINER): \"PR #43948: Ja, we lezen andermans agent-bestanden zonder te vragen.\"",
-          "10 MIN LATER · PR #43889 [SLUIT PR]: \"nvm, makkelijker in closed-source slophouse\""
+          "10 MIN LATER · PR #43889 [PR SLUITEN]: \"laat maar, makkelijker in closed source slophouse\""
         ]
       },
       {
         "p": 3,
-        "tag": "1.401 GRATIS CONTRIBUTORS",
+        "tag": "1.401 GRATIS BIJDRAGERS",
         "lines": [
           "\"Advies: draag niet bij\"",
-          "SLOPHOUSE (CLOSED-SOURCE KLUIS) · @theo: MUTE"
+          "SLOPHOUSE (CLOSED SOURCE-KLUIS) · @theo: STIL"
         ]
       },
       {
         "p": 4,
         "tag": "歧 · 胁 · 冒 · 遁",
         "lines": [
-          "Dubbele moraal · Angst & dwang · Spoofing & bedrog · Closed-source-ontwijking",
+          "Dubbele moraal · Angst & dwang · Vervalsing & bedrog · Closed source-ontwijking",
           "PR-spin kun je wissen. Git-commits blijven eeuwig."
         ]
       }
@@ -3568,16 +3568,16 @@
         "tag": "23 LIS · 15:38",
         "lines": [
           "LICENCJA MIT · \"Kradnij kod (legalnie)\"",
-          "\"Czemu UI T3 Code jest takie brzydkie?!\"",
+          "\"Czemu interfejs T3 Code jest taki brzydki?!\"",
           "(Właściwie darmowy fork MIT)"
         ]
       },
       {
         "p": 2,
-        "tag": "19:11 → 19:22 (10 MIN RÓŻNICY)",
+        "tag": "19:11 → 19:22 (10 MIN PRZERWY)",
         "lines": [
           "Chińska podróbka! · TEMU3 CODE!",
-          "@theo: \"Wygląda jak śmieć! Zmień nazwę TERAZ albo zbanują ci GitHuba!\""
+          "@theo: \"Wygląda jak śmieć! Zmień nazwę TERAZ, bo każę zbanować ci GitHuba!\""
         ]
       },
       {
@@ -3585,7 +3585,7 @@
         "tag": "30 MIN PÓŹNIEJ",
         "lines": [
           "200K+ ODSŁON · NIE USUNIĘTO",
-          "@theo: DM: \"Przepraszam za ton, muszę chronić znak\""
+          "@theo: DM: \"Sorry za ostry ton, muszę chronić znak\""
         ]
       },
       {
@@ -3593,7 +3593,7 @@
         "tag": "11 GODZIN PÓŹNIEJ",
         "lines": [
           "$1T US LAB",
-          "@theo: \"Open source to open source, nawet dla firmy za $1T!\""
+          "@theo: \"Open source to open source, nawet dla firmy za bilion!\""
         ]
       }
     ],
@@ -3627,7 +3627,7 @@
         "tag": "5 GODZIN PÓŹNIEJ · 17:04",
         "lines": [
           "2 320 000 ODSŁON · 18K LAJKÓW",
-          "13 PARAGONÓW GITHUB · *PLUJE KAWĄ*"
+          "13 DOWODÓW GITHUB · *PLUJE KAWĄ*"
         ]
       }
     ],
@@ -3645,14 +3645,14 @@
         "tag": "USPTO: 0",
         "lines": [
           "ZNAKI USPTO · PING LABS (PORZUCONE)",
-          "@theo: \"Szybko! Zmerguj to 17h później!\""
+          "@theo: \"Szybko! Scal to 17h później!\""
         ]
       },
       {
         "p": 3,
         "tag": "52d git push --force",
         "lines": [
-          "41.6 GB · SKAN 5s · USUŃ NA STAŁE",
+          "41,6 GB · SKAN 5s · USUŃ NA STAŁE",
           "21h → FILTR PRYWATNOŚCI"
         ]
       },
@@ -3670,21 +3670,21 @@
         "p": 1,
         "tag": "24 LIS · NOC",
         "lines": [
-          "@sabotaj0707 → @NOYBeu! (UE GDPR)",
+          "@sabotaj0707 → @NOYBeu! (UE · GDPR)",
           "@realchendahuang: \"Zachodnia medycyna działa szybko.\""
         ]
       },
       {
         "p": 2,
-        "tag": "6-GODZINNY NOCNY BLITZ",
+        "tag": "6 GODZIN NOCNEGO BLITZU",
         "lines": [
-          "Julius (20 PR-ów): \"PR #42450 zmergowany: ups, zrobiliśmy to.\" (2,2M LOGÓW IP/H · WYCIEK ŚCIEŻKI git.cwd)",
-          "@theo (264 ID Claude): \"Nigdy nie logowaliśmy ścieżek ani IP!\""
+          "Julius (20 PR-ów): \"PR #42450 scalony: ups, zrobiliśmy to.\" (2,2M LOGÓW IP/H · WYCIEK ŚCIEŻKI git.cwd)",
+          "@theo (264 ID Claude'a): \"Nigdy nie logowaliśmy ścieżek ani IP!\""
         ]
       },
       {
         "p": 3,
-        "tag": "4:00 → 6:00",
+        "tag": "4:00 → 6:00 NAD RANEM",
         "lines": [
           "@theo: \"Dziś w nocy closed-source! Nie zasługujecie na OSS!\"",
           "*cicho usuwa*"
@@ -3694,7 +3694,7 @@
         "p": 4,
         "tag": "ZABLOKOWANY ×2 · Bez kłótni",
         "lines": [
-          "temu3code.com — Darmowa nazwa od gościa bez znaku",
+          "temu3code.com — darmowa nazwa od gościa bez znaku towarowego",
           "@realchendahuang: \"Słaby angielski... więc zbudowałem archiwum w 18 językach.\""
         ]
       }
@@ -3704,8 +3704,8 @@
         "p": 1,
         "tag": "25 LIS · 11:56 → 15:38",
         "lines": [
-          "@realchendahuang: \"Mam 18 paragonów, wracam do kodu!\"",
-          "3,5 GODZINY PÓŹNIEJ: ca81b7b9 — 5 KRYTYCZNYCH BUGÓW (30d Shell jawny tekst · Brak cofnięcia · SSH_AUTH_SOCK)"
+          "@realchendahuang: \"18 dowodów gotowych, wracam do kodu!\"",
+          "3,5 GODZINY PÓŹNIEJ: ca81b7b9 — 5 KRYTYCZNYCH BŁĘDÓW (30d jawny shell · brak unieważnienia · SSH_AUTH_SOCK)"
         ]
       },
       {
@@ -3713,22 +3713,22 @@
         "tag": "26 LIS · 390K ODSŁON",
         "lines": [
           "OŚWIADCZENIE KOŃCOWE",
-          "@theo: \"NIGDY nie czytaliśmy lokalnych plików. Okłamano was.\""
+          "@theo: \"NIGDY nie czytaliśmy waszych lokalnych plików. Okłamano was.\""
         ]
       },
       {
         "p": 3,
         "tag": "16 MIN PÓŹNIEJ",
         "lines": [
-          "@sk1gl4a: \"Pakiety zdradziły 243 czaty Claude i FingerprintJS na stronie prywatności!\""
+          "@sk1gl4a: \"Przechwycony ruch zdradził 243 czaty Claude i FingerprintJS na stronie prywatności!\""
         ]
       },
       {
         "p": 4,
-        "tag": "STRIPE NIEMCY",
+        "tag": "STRIPE · NIEMCY",
         "lines": [
-          "@theo: \"To po prostu ZBANUJĘ NIEMCY!\"",
-          "€9.03/mies. · z 19% niem. VAT (GDPR art. 3(2))"
+          "@theo: \"To po prostu ZABLOKUJĘ NIEMCY!\"",
+          "€9,03/mies. · w tym 19% niem. VAT (GDPR art. 3(2))"
         ]
       }
     ],
@@ -3738,7 +3738,7 @@
         "tag": "FLASHBACK · STY 2025",
         "lines": [
           "@theo (1M+ FANÓW) → DOSTAWCA SEC",
-          "@dmfigol (ex-AWS): \"Używać platformy 1M do wymuszeń? Obrzydliwe.\" (89 ODSŁON · 0 LAJKÓW)"
+          "@dmfigol (ex-AWS): \"Platforma na 1M do wymuszeń? Obrzydliwe.\" (89 ODSŁON · 0 LAJKÓW)"
         ]
       },
       {
@@ -3753,7 +3753,7 @@
         "p": 3,
         "tag": "PŁACĄCY KLIENT AWS",
         "lines": [
-          "@theo → SKARGA DO AWS HR",
+          "@theo → SKARGA DO HR W AWS",
           "@dmfigol: Przepraszam..."
         ]
       },
@@ -3761,7 +3761,7 @@
         "p": 4,
         "tag": "27 LIS · 400K ODSŁON",
         "lines": [
-          "Inżynier UE: \"Angielski?\" + telefon na HR  =  Dev CN: \"Podróbka z Temu\" + ban GitHub",
+          "Inżynier UE: \"Angielski?\" + telefon na HR  =  Dev z CN: \"Podróbka z Temu\" + ban na GitHub",
           "@petersteele: \"Ja też!\" · @realchendahuang: \"Nawet nie zmienił scenariusza.\""
         ]
       }
@@ -3772,7 +3772,7 @@
         "tag": "CZEŚĆ, JESTEM ZED",
         "lines": [
           "PR #43026: Google grozi banem",
-          "PR #43087: Fałszywy handshake \"zed\""
+          "PR #43087: Podszywanie się pod \"zed\""
         ]
       },
       {
@@ -3780,12 +3780,12 @@
         "tag": "v0.1.13 · 401 ZMIAN",
         "lines": [
           "@theo: \"Bomba: obsługa tekstu GBK!\"",
-          "OSTRZEŻENIA: 0 · Google FIX BANA (+380 drobnych poprawek)"
+          "OSTRZEŻENIA: 0 · NAPRAWA BANA GOOGLE (+380 drobnych poprawek)"
         ]
       },
       {
         "p": 3,
-        "tag": "PARAGON #23 · DESKTOP",
+        "tag": "DOWÓD #23 · DESKTOP",
         "lines": [
           "Anthropic → WYCISZONE JAKO SZUM · 11 PRZEGLĄDAREK (Gmail · GitHub · AWS)",
           "IZOLACJA DESKTOP: WYŁ. (tylko Linux!)"
@@ -3793,9 +3793,9 @@
       },
       {
         "p": 4,
-        "tag": "PARAGON #24 · ZAMKNIĘTE W 4m39s",
+        "tag": "DOWÓD #24 · ZAMKNIĘTE W 4:39",
         "lines": [
-          "@Luca_Hagenmayer: \"Prywatne czaty wyciekły!\" (8 000 ZNAKÓW JAWNY URL)",
+          "@Luca_Hagenmayer: \"Prywatne czaty wyciekły!\" (8 000 ZNAKÓW · JAWNY URL)",
           "04:39 · Julius: KLIK! (0 ODPOWIEDZI)"
         ]
       }
@@ -3814,15 +3814,15 @@
         "tag": "27 LIS",
         "lines": [
           "Julius (GŁÓWNY MAINTAINER): \"PR #43948: Tak, czytamy pliki innych agentów bez pytania.\"",
-          "10 MIN PÓŹNIEJ · PR #43889 [ZAMKNIJ PR]: \"nvm, łatwiej w zamkniętym slophouse\""
+          "10 MIN PÓŹNIEJ · PR #43889 [ZAMKNIJ PR]: \"nieważne, łatwiej w zamkniętym slophouse\""
         ]
       },
       {
         "p": 3,
-        "tag": "1,401 DARMOWYCH DEVÓW",
+        "tag": "1 401 DARMOWYCH PROGRAMISTÓW",
         "lines": [
-          "\"Rada: nie kontrybuuj\"",
-          "SLOPHOUSE (ZAMKNIĘTY SKARBIEC) · @theo: WYCISZ"
+          "\"Porada: nie współtwórz\"",
+          "SLOPHOUSE (ZAMKNIĘTY SEJF) · @theo: WYCISZ"
         ]
       },
       {
@@ -3830,7 +3830,7 @@
         "tag": "歧 · 胁 · 冒 · 遁",
         "lines": [
           "Podwójny standard · Strach i przymus · Podszywanie i oszustwo · Ucieczka w closed-source",
-          "Spin PR można usunąć. Commity Git są wieczne."
+          "Spin PR można usunąć. Commity Git zostają na zawsze."
         ]
       }
     ]
@@ -3841,9 +3841,9 @@
         "p": 1,
         "tag": "23 KAS · 15:38",
         "lines": [
-          "MIT LİSANSI · \"Kodumuzu çal (yasal olarak)\"",
+          "MIT LİSANSI · \"Kodumuzu çal (yasal yoldan)\"",
           "\"T3 Code'un arayüzü neden bu kadar çirkin?!\"",
-          "(Aslında ücretsiz bir MIT fork'u)"
+          "(Aslında bedava bir MIT fork'u)"
         ]
       },
       {
@@ -3851,7 +3851,7 @@
         "tag": "19:11 → 19:22 (10 DK ARAYLA)",
         "lines": [
           "Çin taklidi! · TEMU3 CODE!",
-          "@theo: \"Çöp gibi görünüyor! HEMEN adını değiştir yoksa GitHub'ını kapattırırım!\""
+          "@theo: \"Çöp gibi duruyor! HEMEN adını değiştir, yoksa GitHub'ını kapattırırım!\""
         ]
       },
       {
@@ -3859,7 +3859,7 @@
         "tag": "30 DK SONRA",
         "lines": [
           "200K+ İZLENME · SİLİNMEDİ",
-          "@theo: DM: \"Sert çıktım, kusura bakma; markayı korumam lazım\""
+          "@theo: DM: \"Kusura bakma, sert çıktım; markayı korumam gerek\""
         ]
       },
       {
@@ -3867,7 +3867,7 @@
         "tag": "11 SAAT SONRA",
         "lines": [
           "$1T ABD LABI",
-          "@theo: \"Açık kaynak açık kaynaktır; $1T'lık şirket için bile!\""
+          "@theo: \"Açık kaynak açık kaynaktır — $1T'lık şirkette bile!\""
         ]
       }
     ],
@@ -3892,7 +3892,7 @@
         "p": 3,
         "tag": "@theo seni engelledi",
         "lines": [
-          "@realchendahuang: \"Mezun oldun.\"",
+          "@realchendahuang: \"Artık mezunsun.\"",
           "git clone pingdotgg/t3code"
         ]
       },
@@ -3924,10 +3924,10 @@
       },
       {
         "p": 3,
-        "tag": "52g git push --force",
+        "tag": "52 GÜN git push --force",
         "lines": [
           "41.6 GB · 5 sn TARAMA · KALICI OLARAK SİL",
-          "21sa → GİZLİLİK FİLTRESİ"
+          "21 SAAT → GİZLİLİK FİLTRESİ"
         ]
       },
       {
@@ -3935,7 +3935,7 @@
         "tag": "NİSAN → KASIM",
         "lines": [
           "@theo: \"GitHub yıldızları sahte VC yemi!\"",
-          "30 sn BOŞTA · 77K ★ (129 izleyici) · @theo: \"70k'yı fark etmedim bile!\""
+          "30 sn BOŞTA · 77K ★ (129 izleyici) · @theo: \"70 bini fark etmedim bile!\""
         ]
       }
     ],
@@ -3945,15 +3945,15 @@
         "tag": "24 KAS GECESİ",
         "lines": [
           "@sabotaj0707 → @NOYBeu! (AB GDPR)",
-          "@realchendahuang: \"Batı tıbbı hızlı işler.\""
+          "@realchendahuang: \"Batı tıbbı hızlı işliyor.\""
         ]
       },
       {
         "p": 2,
         "tag": "6 SAATLİK GECE HAREKÂTI",
         "lines": [
-          "Julius (20 PR): \"PR #42450 birleşti: eyvah, yaptık.\" (SAATTE 2,2M IP KAYDI · git.cwd YOL SIZINTISI)",
-          "@theo (264 Claude ID): \"Yolları ya da IP'leri asla kaydetmedik!\""
+          "Julius (20 PR): \"PR #42450 birleşti: hop, yaptık.\" (SAATTE 2,2M IP KAYDI · git.cwd YOL SIZINTISI)",
+          "@theo (264 Claude ID): \"Yolları da IP'leri de asla kaydetmedik!\""
         ]
       },
       {
@@ -3979,7 +3979,7 @@
         "tag": "25 KAS · 11:56 → 15:38",
         "lines": [
           "@realchendahuang: \"18 kanıt tamam, kodlamaya dönüyorum!\"",
-          "3,5 SAAT SONRA: ca81b7b9 — 5 KRİTİK HATA (30g DÜZ METİN SHELL · İPTAL YOK · SSH_AUTH_SOCK)"
+          "3,5 SAAT SONRA: ca81b7b9 — 5 KRİTİK HATA (30 GÜN DÜZ METİN SHELL · İPTAL YOK · SSH_AUTH_SOCK)"
         ]
       },
       {
@@ -3994,7 +3994,7 @@
         "p": 3,
         "tag": "16 DK SONRA",
         "lines": [
-          "@sk1gl4a: \"Paket yakalama, gizlilik sayfasında 243 Claude sohbeti ve FingerprintJS yakaladı!\""
+          "@sk1gl4a: \"Paket dinlemesi, gizlilik sayfasında 243 Claude sohbeti ve FingerprintJS yakaladı!\""
         ]
       },
       {
@@ -4002,14 +4002,14 @@
         "tag": "ALMAN STRIPE",
         "lines": [
           "@theo: \"O zaman ALMANYA'yı yasaklarım!\"",
-          "€9.03/ay · 19% Alman KDV dahil (GDPR Md. 3(2))"
+          "€9.03/ay · %19 Alman KDV dahil (GDPR m. 3(2))"
         ]
       }
     ],
     "ep06": [
       {
         "p": 1,
-        "tag": "GERİ DÖNÜŞ · OCA 2025",
+        "tag": "GEÇMİŞE DÖNÜŞ · OCA 2025",
         "lines": [
           "@theo (1M+ HAYRAN) → SEC TEDARİKÇİSİ",
           "@dmfigol (eski AWS): \"1M'lık platformu şantaj için kullanmak iğrenç.\" (89 İZLENME · 0 BEĞENİ)"
@@ -4035,7 +4035,7 @@
         "p": 4,
         "tag": "27 KAS · 400K İZLENME",
         "lines": [
-          "AB Mühendisi: \"İngilizce konuş?\" + İK'yı ara  =  Çinli dev: \"Temu taklidi\" + GitHub'ı yasakla",
+          "AB Mühendisi: \"İngilizce?\" + İK'yı ara  =  Çinli dev: \"Temu taklidi\" + GitHub'ı yasakla",
           "@petersteele: \"Ben de!\" · @realchendahuang: \"Senaryoyu bile değiştirmedi.\""
         ]
       }
@@ -4046,7 +4046,7 @@
         "tag": "MERHABA, BEN ZED",
         "lines": [
           "PR #43026: Google yasak uyarısı",
-          "PR #43087: Sahte \"zed\" el sıkışması"
+          "PR #43087: Sahte \"zed\" handshake'i"
         ]
       },
       {
@@ -4061,13 +4061,13 @@
         "p": 3,
         "tag": "KANIT #23 · MASAÜSTÜ",
         "lines": [
-          "Anthropic → GÜRÜLTÜ DİYE SUSTURULDU · 11 TARAYICI (Gmail · GitHub · AWS)",
-          "MASAÜSTÜ İZOLASYONU: KAPALI (Sadece Linux!)"
+          "Anthropic → GÜRÜLTÜ SAYILIP SUSTURULDU · 11 TARAYICI (Gmail · GitHub · AWS)",
+          "MASAÜSTÜ İZOLASYONU: KAPALI (Yalnızca Linux!)"
         ]
       },
       {
         "p": 4,
-        "tag": "KANIT #24 · 4dk39sn'de KİLİTLENDİ",
+        "tag": "KANIT #24 · 4 dk 39 sn'de KİLİTLENDİ",
         "lines": [
           "@Luca_Hagenmayer: \"Özel sohbetler sızdı!\" (8.000 KARAKTER DÜZ METİN URL)",
           "04:39 · Julius: TAK! (0 YANIT)"
@@ -4088,7 +4088,7 @@
         "tag": "27 KAS",
         "lines": [
           "Julius (ÇEKİRDEK BAKIMCI): \"PR #43948: Evet, diğer ajanların dosyalarını sormadan okuyoruz.\"",
-          "10 DK SONRA · PR #43889 [PR'ı KAPAT]: \"nvm, kapalı kaynak slophouse'da daha kolay\""
+          "10 DK SONRA · PR #43889 [PR'ı KAPAT]: \"boş ver, kapalı kaynak slophouse'da daha kolay\""
         ]
       },
       {
@@ -4096,7 +4096,7 @@
         "tag": "1,401 ÜCRETSİZ KATKICI",
         "lines": [
           "\"Tavsiye: katkıda bulunma\"",
-          "SLOPHOUSE (KAPALI KAYNAK KASASI) · @theo: SUSTUR"
+          "SLOPHOUSE (KAPALI KAYNAK KASASI) · @theo: SESSİZE AL"
         ]
       },
       {
@@ -4125,7 +4125,7 @@
         "tag": "19:11 → 19:22 (CÁCH 10 PHÚT)",
         "lines": [
           "Hàng nhái Trung Quốc! · TEMU3 CODE!",
-          "@theo: \"Nhìn như rác! Đổi tên NGAY không tao ban GitHub mày!\""
+          "@theo: \"Nhìn như rác! Đổi tên NGAY, không tao ban GitHub mày!\""
         ]
       },
       {
@@ -4133,7 +4133,7 @@
         "tag": "30 PHÚT SAU",
         "lines": [
           "200K+ LƯỢT XEM · KHÔNG BỊ XOÁ",
-          "@theo: DM: \"Xin lỗi vì lời lẽ nặng nề, phải bảo vệ thương hiệu\""
+          "@theo: DM: \"Xin lỗi vì lời lẽ nặng nề, phải bảo vệ thương hiệu thôi\""
         ]
       },
       {
@@ -4141,7 +4141,7 @@
         "tag": "11 GIỜ SAU",
         "lines": [
           "LAB MỸ $1T",
-          "@theo: \"Open source là open source, cả công ty $1T cũng vậy!\""
+          "@theo: \"Mã mở là mã mở, công ty $1T cũng thế!\""
         ]
       }
     ],
@@ -4150,7 +4150,7 @@
         "p": 1,
         "tag": "24/11 · 11:03",
         "lines": [
-          "@realchendahuang: \"Không biết xấu hổ, tiêu chuẩn kép 100%.\"",
+          "@realchendahuang: \"Không chút xấu hổ, tiêu chuẩn kép 100%.\"",
           "300K LƯỢT XEM · TREO THƯỞNG $20K FFmpeg"
         ]
       },
@@ -4174,7 +4174,7 @@
         "p": 4,
         "tag": "5 GIỜ SAU · 17:04",
         "lines": [
-          "2,320,000 LƯỢT XEM · 18K LIKE",
+          "2.320.000 LƯỢT XEM · 18K LIKE",
           "13 BẰNG CHỨNG GITHUB · *PHUN CÀ PHÊ*"
         ]
       }
@@ -4182,25 +4182,25 @@
     "ep03": [
       {
         "p": 1,
-        "tag": "KHÔNG TELEMETRY. HẾT.",
+        "tag": "KHÔNG TELEMETRY. CHẤM HẾT.",
         "lines": [
           "~/.claude.json · ~/.codex/auth.json · 4 PR BỊ TỪ CHỐI",
-          "Julius (MAINTAINER CỐT LÕI): \"Bọn tao sẽ không làm dễ hơn đâu.\""
+          "Julius (MAINTAINER CỐT LÕI): \"Bọn này sẽ không làm dễ hơn đâu.\""
         ]
       },
       {
         "p": 2,
         "tag": "USPTO: 0",
         "lines": [
-          "NHÃN HIỆU USPTO · PING LABS (BỎ HOANG)",
-          "@theo: \"Nhanh! Merge sau 17 tiếng nữa!\""
+          "NHÃN HIỆU USPTO · PING LABS (BỎ DỞ)",
+          "@theo: \"Nhanh! Gộp nó sau 17 tiếng!\""
         ]
       },
       {
         "p": 3,
         "tag": "52 ngày git push --force",
         "lines": [
-          "41.6 GB · QUÉT 5 GIÂY · XOÁ VĨNH VIỄN",
+          "41,6 GB · QUÉT 5 GIÂY · XOÁ VĨNH VIỄN",
           "21h → BỘ LỌC RIÊNG TƯ"
         ]
       },
@@ -4208,8 +4208,8 @@
         "p": 4,
         "tag": "THÁNG 4 → THÁNG 11",
         "lines": [
-          "@theo: \"Star GitHub là mồi nhử VC giả tạo!\"",
-          "TREO 30 GIÂY · 77K ★ (129 người theo dõi) · @theo: \"Có thấy 70k đâu!\""
+          "@theo: \"Star GitHub toàn mồi nhử VC giả tạo!\"",
+          "TREO 30 GIÂY · 77K ★ (129 người theo dõi) · @theo: \"70k còn chẳng để ý!\""
         ]
       }
     ],
@@ -4224,10 +4224,10 @@
       },
       {
         "p": 2,
-        "tag": "6 TIẾNG CHẠY NƯỚC RÚT QUA ĐÊM",
+        "tag": "6 TIẾNG TỔNG TẤN CÔNG XUYÊN ĐÊM",
         "lines": [
-          "Julius (20 PR): \"PR #42450 đã merge: ơ, bọn tôi làm thật.\" (LOG IP 2.2M/GIỜ · RÒ RỈ ĐƯỜNG DẪN git.cwd)",
-          "@theo (264 ID CLAUDE): \"Bọn tôi chưa từng log đường dẫn hay IP!\""
+          "Julius (20 PR): \"PR #42450 đã gộp: ơ, bọn tôi làm thật.\" (LOG IP 2,2M/GIỜ · RÒ RỈ ĐƯỜNG DẪN git.cwd)",
+          "@theo (264 ID CLAUDE): \"Bọn tôi chưa từng ghi lại đường dẫn hay IP!\""
         ]
       },
       {
@@ -4242,7 +4242,7 @@
         "p": 4,
         "tag": "BỊ CHẶN ×2 · Cấm đánh nhau nội bộ",
         "lines": [
-          "temu3code.com — Tên miễn phí từ founder 0 nhãn hiệu",
+          "temu3code.com — Tên miễn phí từ nhà sáng lập chẳng có nhãn hiệu nào",
           "@realchendahuang: \"Tiếng Anh tôi không giỏi... nên tôi làm kho lưu 18 thứ tiếng.\""
         ]
       }
@@ -4253,7 +4253,7 @@
         "tag": "25/11 · 11:56 → 15:38",
         "lines": [
           "@realchendahuang: \"Xong 18 bằng chứng, quay lại code!\"",
-          "3,5 GIỜ SAU: ca81b7b9 — 5 BUG NGHIÊM TRỌNG (30 ngày Shell plaintext · Không thu hồi · SSH_AUTH_SOCK)"
+          "3,5 GIỜ SAU: ca81b7b9 — 5 LỖI NGHIÊM TRỌNG (30 NGÀY SHELL KHÔNG MÃ HOÁ · KHÔNG THU HỒI · SSH_AUTH_SOCK)"
         ]
       },
       {
@@ -4261,14 +4261,14 @@
         "tag": "26/11 · 390K LƯỢT XEM",
         "lines": [
           "TUYÊN BỐ CUỐI",
-          "@theo: \"Bọn tôi KHÔNG BAO GIỜ đọc file máy bạn. Bạn bị dắt mũi.\""
+          "@theo: \"Bọn tôi KHÔNG BAO GIỜ đọc file máy bạn. Bạn bị dắt mũi đấy.\""
         ]
       },
       {
         "p": 3,
         "tag": "16 PHÚT SAU",
         "lines": [
-          "@sk1gl4a: \"Bắt gói tin thấy 243 chat Claude & FingerprintJS trên trang privacy!\""
+          "@sk1gl4a: \"Bắt gói tin thấy 243 chat Claude & FingerprintJS trên trang quyền riêng tư!\""
         ]
       },
       {
@@ -4276,7 +4276,7 @@
         "tag": "STRIPE ĐỨC",
         "lines": [
           "@theo: \"Vậy tao BAN NƯỚC ĐỨC luôn!\"",
-          "€9.03/tháng · gồm VAT Đức 19% (GDPR Art. 3(2))"
+          "€9,03/tháng · gồm VAT Đức 19% (GDPR Art. 3(2))"
         ]
       }
     ],
@@ -4293,7 +4293,7 @@
         "p": 2,
         "tag": "X | TIN NHẮN  @theo  •••",
         "lines": [
-          "@theo: \"Nỗi sợ là đòn bẩy tốt.\" / \"Tiếng Anh có phải tiếng mẹ đẻ không?\"",
+          "@theo: \"Nỗi sợ là động lực tốt.\" / \"Tiếng Anh có phải tiếng mẹ đẻ không?\"",
           "@dmfigol: \"Chúc ngủ ngon.\""
         ]
       },
@@ -4328,12 +4328,12 @@
         "tag": "v0.1.13 · 401 THAY ĐỔI",
         "lines": [
           "@theo: \"Điểm nhấn: hỗ trợ văn bản GBK!\"",
-          "CẢNH BÁO: 0 · Google VÁ BAN (+380 sửa nhỏ)"
+          "CẢNH BÁO: 0 · VÁ VỤ BAN GOOGLE (+380 sửa nhỏ)"
         ]
       },
       {
         "p": 3,
-        "tag": "BIÊN LAI #23 · DESKTOP",
+        "tag": "BẰNG CHỨNG #23 · DESKTOP",
         "lines": [
           "Anthropic → BỊ COI LÀ NHIỄU · 11 TRÌNH DUYỆT (Gmail · GitHub · AWS)",
           "CÁCH LY DESKTOP: TẮT (Chỉ Linux!)"
@@ -4341,9 +4341,9 @@
       },
       {
         "p": 4,
-        "tag": "BIÊN LAI #24 · CHỐT TRONG 4m39s",
+        "tag": "BẰNG CHỨNG #24 · CHỐT TRONG 4'39s",
         "lines": [
-          "@Luca_Hagenmayer: \"Chat riêng bị rò rỉ!\" (8,000 KÝ TỰ URL PLAINTEXT)",
+          "@Luca_Hagenmayer: \"Chat riêng bị rò rỉ!\" (8.000 KÝ TỰ URL KHÔNG MÃ HOÁ)",
           "04:39 · Julius: TÁCH! (0 PHẢN HỒI)"
         ]
       }
@@ -4361,15 +4361,15 @@
         "p": 2,
         "tag": "27/11",
         "lines": [
-          "Julius (MAINTAINER CỐT LÕI): \"PR #43948: Đúng, bọn tôi đọc file agent khác không hỏi.\"",
-          "10 PHÚT SAU · PR #43889 [ĐÓNG PR]: \"thôi, làm trong slophouse mã đóng dễ hơn\""
+          "Julius (MAINTAINER CỐT LÕI): \"PR #43948: Đúng, bọn tôi đọc file agent khác mà không hỏi.\"",
+          "10 PHÚT SAU · PR #43889 [ĐÓNG PR]: \"thôi, làm trong slophouse mã đóng cho nhanh\""
         ]
       },
       {
         "p": 3,
-        "tag": "1,401 NGƯỜI ĐÓNG GÓP MIỄN PHÍ",
+        "tag": "1.401 NGƯỜI ĐÓNG GÓP MIỄN PHÍ",
         "lines": [
-          "\"Khuyên: đừng đóng góp\"",
+          "\"Lời khuyên: đừng đóng góp\"",
           "SLOPHOUSE (KHO MÃ ĐÓNG) · @theo: TẮT TIẾNG"
         ]
       },
@@ -4399,7 +4399,7 @@
         "tag": "19:11 → 19:22 (SELISIH 10 MENIT)",
         "lines": [
           "Tiruan Cina! · TEMU3 CODE!",
-          "@theo: \"Kelihatan sampah! GANTI NAMA SEKARANG atau GitHub-mu kubuat diblokir!\""
+          "@theo: \"Kelihatan sampah! GANTI NAMA SEKARANG atau GitHub-mu kublokir!\""
         ]
       },
       {
@@ -4414,7 +4414,7 @@
         "p": 4,
         "tag": "11 JAM KEMUDIAN",
         "lines": [
-          "$1T LAB AS",
+          "LAB AS $1T",
           "@theo: \"Open source ya open source, bahkan untuk perusahaan $1T!\""
         ]
       }
@@ -4425,7 +4425,7 @@
         "tag": "24 NOV · 11:03",
         "lines": [
           "@realchendahuang: \"Nol rasa malu, 100% standar ganda.\"",
-          "300K TAYANGAN · Bounty FFmpeg $20K"
+          "300K TAYANGAN · Hadiah FFmpeg $20K"
         ]
       },
       {
@@ -4467,15 +4467,15 @@
         "tag": "USPTO: 0",
         "lines": [
           "MEREK USPTO · PING LABS (DITINGGALKAN)",
-          "@theo: \"Cepat! Merge 17 jam kemudian!\""
+          "@theo: \"Cepat! Gabungkan 17 jam kemudian!\""
         ]
       },
       {
         "p": 3,
         "tag": "52d git push --force",
         "lines": [
-          "41.6 GB · PINDAI 5s · HAPUS PERMANEN",
-          "21j → FILTER PRIVASI"
+          "41.6 GB · PINDAI 5 DTK · HAPUS PERMANEN",
+          "21 jam → FILTER PRIVASI"
         ]
       },
       {
@@ -4483,7 +4483,7 @@
         "tag": "APRIL → NOVEMBER",
         "lines": [
           "@theo: \"Star GitHub cuma umpan VC palsu!\"",
-          "DIAM 30s · 77K ★ (129 pemantau) · @theo: \"Tak sadar ada 70k!\""
+          "DIAM 30 DTK · 77K ★ (129 pemantau) · @theo: \"Tak sadar ada 70k!\""
         ]
       }
     ],
@@ -4498,10 +4498,10 @@
       },
       {
         "p": 2,
-        "tag": "BLITZ SEMALAM 6 JAM",
+        "tag": "SERBUAN 6 JAM SEMALAM",
         "lines": [
-          "Julius (20 PR): \"PR #42450 merged: ups, memang kami.\" (LOG IP 2.2M/JAM · BOCOR PATH git.cwd)",
-          "@theo (264 ID CLAUDE): \"Kami tak pernah log path atau IP!\""
+          "Julius (20 PR): \"PR #42450 digabung: ups, memang kami.\" (LOG IP 2.2M/JAM · PATH git.cwd BOCOR)",
+          "@theo (264 ID CLAUDE): \"Kami tak pernah catat path atau IP!\""
         ]
       },
       {
@@ -4527,7 +4527,7 @@
         "tag": "25 NOV · 11:56 → 15:38",
         "lines": [
           "@realchendahuang: \"18 bukti selesai, balik ngoding!\"",
-          "3.5 JAM KEMUDIAN: ca81b7b9 — 5 BUG KRITIS (30d Shell Plaintext · Tanpa Revoke · SSH_AUTH_SOCK)"
+          "3.5 JAM KEMUDIAN: ca81b7b9 — 5 BUG KRITIS (Shell Plaintext 30 HARI · Tanpa Pencabutan · SSH_AUTH_SOCK)"
         ]
       },
       {
@@ -4535,14 +4535,14 @@
         "tag": "26 NOV · 390K TAYANGAN",
         "lines": [
           "PERNYATAAN FINAL",
-          "@theo: \"Kami TAK PERNAH baca file lokalmu. Kau disesatkan.\""
+          "@theo: \"Kami TAK PERNAH baca file lokalmu. Kamu dibohongi.\""
         ]
       },
       {
         "p": 3,
         "tag": "16 MENIT KEMUDIAN",
         "lines": [
-          "@sk1gl4a: \"Packet capture menangkap 243 chat Claude & FingerprintJS di halaman privasi!\""
+          "@sk1gl4a: \"Sadapan paket menangkap 243 chat Claude & FingerprintJS di halaman privasi!\""
         ]
       },
       {
@@ -4557,17 +4557,17 @@
     "ep06": [
       {
         "p": 1,
-        "tag": "FLASHBACK · JAN 2025",
+        "tag": "KILAS BALIK · JAN 2025",
         "lines": [
-          "@theo (1JT+ FANS) → VENDOR SEC",
-          "@dmfigol (eks-AWS): \"Pakai platform 1M untuk pemerasan itu menjijikkan.\" (89 TAYANGAN · 0 SUKA)"
+          "@theo (1JT+ PENGGEMAR) → VENDOR SEC",
+          "@dmfigol (eks-AWS): \"Pakai platform 1 juta untuk pemerasan itu menjijikkan.\" (89 TAYANGAN · 0 SUKA)"
         ]
       },
       {
         "p": 2,
         "tag": "X | DM  @theo  •••",
         "lines": [
-          "@theo: \"Takut itu insentif bagus.\" / \"Inggris bahasa pertamamu?\"",
+          "@theo: \"Rasa takut itu insentif bagus.\" / \"Inggris bahasa pertamamu?\"",
           "@dmfigol: \"Selamat malam.\""
         ]
       },
@@ -4593,7 +4593,7 @@
         "p": 1,
         "tag": "HAI, AKU ZED",
         "lines": [
-          "PR #43026: Awas blokir Google",
+          "PR #43026: Peringatan blokir Google",
           "PR #43087: Pemalsuan handshake \"zed\""
         ]
       },
@@ -4602,7 +4602,7 @@
         "tag": "v0.1.13 · 401 PERUBAHAN",
         "lines": [
           "@theo: \"Sorotan: dukungan teks GBK!\"",
-          "PERINGATAN: 0 · Google FIX BLOKIR (+380 fix kecil)"
+          "ADVISORI: 0 · BLOKIR GOOGLE BERES (+380 perbaikan kecil)"
         ]
       },
       {
@@ -4617,7 +4617,7 @@
         "p": 4,
         "tag": "BUKTI #24 · TERKUNCI 4m39s",
         "lines": [
-          "@Luca_Hagenmayer: \"Chat pribadi bocor!\" (8,000 KARAKTER URL PLAINTEXT)",
+          "@Luca_Hagenmayer: \"Chat pribadi bocor!\" (URL PLAINTEXT 8.000 KARAKTER)",
           "04:39 · Julius: KLAK! (0 BALASAN)"
         ]
       }
@@ -4636,7 +4636,7 @@
         "tag": "27 NOV",
         "lines": [
           "Julius (PENGELOLA INTI): \"PR #43948: Ya, kami baca file agen lain tanpa izin.\"",
-          "10 MENIT KEMUDIAN · PR #43889 [TUTUP PR]: \"nvm lebih gampang di slophouse closed-source\""
+          "10 MENIT KEMUDIAN · PR #43889 [TUTUP PR]: \"Sudahlah, lebih gampang di slophouse tertutup\""
         ]
       },
       {
@@ -4644,15 +4644,15 @@
         "tag": "1,401 KONTRIBUTOR GRATIS",
         "lines": [
           "\"Saran: jangan kontribusi\"",
-          "SLOPHOUSE (GUDANG CLOSED-SOURCE) · @theo: SENYAP"
+          "SLOPHOUSE (GUDANG SUMBER TERTUTUP) · @theo: SENYAP"
         ]
       },
       {
         "p": 4,
         "tag": "歧 · 胁 · 冒 · 遁",
         "lines": [
-          "Standar Ganda · Takut & Paksaan · Pemalsuan & Tipuan · Evasi Closed-Source",
-          "Spin PR bisa dihapus. Commit Git abadi."
+          "Standar Ganda · Takut & Paksaan · Pemalsuan & Tipuan · Kabur Sumber Tertutup",
+          "Pencitraan PR bisa dihapus. Commit Git abadi."
         ]
       }
     ]
@@ -4670,7 +4670,7 @@
       },
       {
         "p": 2,
-        "tag": "19:11 → 19:22 (10 मिनट का फ़र्क़)",
+        "tag": "19:11 → 19:22 (10 मिनट का अंतर)",
         "lines": [
           "चीनी नकल! · TEMU3 CODE!",
           "@theo: \"कचरा लगता है! अभी नाम बदलो वरना GitHub बैन करवा दूँगा!\""
@@ -4680,15 +4680,15 @@
         "p": 3,
         "tag": "30 मिनट बाद",
         "lines": [
-          "200K+ व्यूज़ · अभी तक डिलीट नहीं",
-          "@theo: DM: \"सख़्त लहजे के लिए सॉरी, ट्रेडमार्क बचाना है\""
+          "200K+ व्यूज़ · अब तक डिलीट नहीं",
+          "@theo: DM: \"सख़्त लहजे के लिए माफ़ी, ट्रेडमार्क बचाना ज़रूरी है\""
         ]
       },
       {
         "p": 4,
         "tag": "11 घंटे बाद",
         "lines": [
-          "$1T US लैब",
+          "$1T की अमेरिकी लैब",
           "@theo: \"ओपन सोर्स तो ओपन सोर्स है, $1T कंपनी के लिए भी!\""
         ]
       }
@@ -4698,7 +4698,7 @@
         "p": 1,
         "tag": "24 नव · 11:03",
         "lines": [
-          "@realchendahuang: \"ज़रा भी शर्म नहीं, 100% दोहरा मापदंड।\"",
+          "@realchendahuang: \"शर्म ज़रा भी नहीं, दोहरा मापदंड 100%।\"",
           "300K व्यूज़ · $20K FFmpeg बाउंटी"
         ]
       },
@@ -4714,7 +4714,7 @@
         "p": 3,
         "tag": "@theo ने ब्लॉक किया",
         "lines": [
-          "@realchendahuang: \"ग्रेजुएट हो गया।\"",
+          "@realchendahuang: \"ग्रेजुएशन हो गया।\"",
           "git clone pingdotgg/t3code"
         ]
       },
@@ -4722,7 +4722,7 @@
         "p": 4,
         "tag": "5 घंटे बाद · 17:04",
         "lines": [
-          "2,320,000 व्यूज़ · 18K लाइक",
+          "2,320,000 व्यूज़ · 18K लाइक्स",
           "13 GITHUB सबूत · *कॉफ़ी उगल दी*"
         ]
       }
@@ -4732,7 +4732,7 @@
         "p": 1,
         "tag": "कोई टेलीमेट्री नहीं। बस।",
         "lines": [
-          "~/.claude.json · ~/.codex/auth.json · 4 PR रिजेक्ट",
+          "~/.claude.json · ~/.codex/auth.json · 4 PR ठुकराए",
           "Julius (कोर मेंटेनर): \"हम इसे आसान नहीं बनाएँगे।\""
         ]
       },
@@ -4748,8 +4748,8 @@
         "p": 3,
         "tag": "52d git push --force",
         "lines": [
-          "41.6 GB · 5s स्कैन · हमेशा के लिए डिलीट",
-          "21h → प्राइवेसी फ़िल्टर"
+          "41.6 GB · 5 सेकंड में स्कैन · हमेशा के लिए डिलीट",
+          "21 घंटे → प्राइवेसी फ़िल्टर"
         ]
       },
       {
@@ -4772,7 +4772,7 @@
       },
       {
         "p": 2,
-        "tag": "6 घंटे का रात भर ऑपरेशन",
+        "tag": "रात भर में 6 घंटे का ऑपरेशन",
         "lines": [
           "Julius (20 PR): \"PR #42450 मर्ज: ओह, हमने कर दिया।\" (2.2M/घंटा IP लॉग · git.cwd पाथ लीक)",
           "@theo (264 Claude ID): \"हमने कभी पाथ या IP लॉग नहीं किए!\""
@@ -4788,9 +4788,9 @@
       },
       {
         "p": 4,
-        "tag": "ब्लॉक ×2 · आपसी लड़ाई बंद",
+        "tag": "ब्लॉक ×2 · कोई आपसी लड़ाई नहीं",
         "lines": [
-          "temu3code.com — 0-ट्रेडमार्क फ़ाउंडर से मुफ़्त नाम",
+          "temu3code.com — शून्य ट्रेडमार्क वाले फ़ाउंडर से मुफ़्त नाम",
           "@realchendahuang: \"मेरी अंग्रेज़ी कमज़ोर है... तो 18 भाषाओं का आर्काइव बना दिया।\""
         ]
       }
@@ -4809,7 +4809,7 @@
         "tag": "26 नव · 390K व्यूज़",
         "lines": [
           "अंतिम बयान",
-          "@theo: \"हमने कभी तुम्हारी लोकल फ़ाइलें नहीं पढ़ीं। तुम्हें भड़काया गया।\""
+          "@theo: \"हमने कभी तुम्हारी लोकल फ़ाइलें नहीं पढ़ीं। तुम्हें गुमराह किया गया।\""
         ]
       },
       {
@@ -4824,7 +4824,7 @@
         "tag": "जर्मन Stripe",
         "lines": [
           "@theo: \"तो मैं जर्मनी को ही बैन कर दूँगा!\"",
-          "€9.03/माह · 19% जर्मन VAT सहित (GDPR अनु. 3(2))"
+          "€9.03/माह · 19% जर्मन VAT सहित (GDPR धारा 3(2))"
         ]
       }
     ],
@@ -4841,24 +4841,24 @@
         "p": 2,
         "tag": "X | DMs  @theo  •••",
         "lines": [
-          "@theo: \"डर एक अच्छा प्रोत्साहन है।\" / \"अंग्रेज़ी तुम्हारी मातृभाषा है?\"",
-          "@dmfigol: \"गुडनाइट।\""
+          "@theo: \"डर भी अच्छा प्रोत्साहन है।\" / \"अंग्रेज़ी तुम्हारी मातृभाषा है?\"",
+          "@dmfigol: \"शुभ रात्रि।\""
         ]
       },
       {
         "p": 3,
-        "tag": "AWS पेइंग ग्राहक",
+        "tag": "AWS का पेइंग ग्राहक",
         "lines": [
           "@theo → AWS HR शिकायत",
-          "@dmfigol: सॉरी..."
+          "@dmfigol: माफ़ कीजिए..."
         ]
       },
       {
         "p": 4,
         "tag": "27 नव · 400K व्यूज़",
         "lines": [
-          "EU इंजीनियर: \"अंग्रेज़ी बोलो?\" + HR को कॉल  =  CN देव: \"Temu नकल\" + GitHub बैन",
-          "@petersteele: \"मेरे साथ भी!\" · @realchendahuang: \"स्क्रिप्ट तक नहीं बदली उसने।\""
+          "EU इंजीनियर: \"अंग्रेज़ी बोलो?\" + HR को कॉल  =  चीनी देव: \"Temu नकल\" + GitHub बैन",
+          "@petersteele: \"मेरे साथ भी!\" · @realchendahuang: \"उसने स्क्रिप्ट तक नहीं बदली।\""
         ]
       }
     ],
@@ -4868,7 +4868,7 @@
         "tag": "हाय, मैं ZED",
         "lines": [
           "PR #43026: Google बैन चेतावनी",
-          "PR #43087: \"zed\" हैंडशेक स्पूफ़िंग"
+          "PR #43087: \"zed\" हैंडशेक की नकल"
         ]
       },
       {
@@ -4876,20 +4876,20 @@
         "tag": "v0.1.13 · 401 बदलाव",
         "lines": [
           "@theo: \"हाइलाइट: GBK टेक्स्ट सपोर्ट!\"",
-          "एडवाइज़री: 0 · Google बैन फ़िक्स (+380 छोटे फ़िक्स)"
+          "एडवाइज़री: 0 · Google बैन फ़िक्स (+380 मामूली सुधार)"
         ]
       },
       {
         "p": 3,
         "tag": "रसीद #23 · डेस्कटॉप",
         "lines": [
-          "Anthropic → शोर कहकर दबाया · 11 ब्राउज़र (Gmail · GitHub · AWS)",
+          "Anthropic → शोर बताकर दबा दिया · 11 ब्राउज़र (Gmail · GitHub · AWS)",
           "डेस्कटॉप आइसोलेशन: बंद (सिर्फ़ Linux!)"
         ]
       },
       {
         "p": 4,
-        "tag": "रसीद #24 · 4m39s में लॉक",
+        "tag": "रसीद #24 · 4 मिनट 39 सेकंड में लॉक",
         "lines": [
           "@Luca_Hagenmayer: \"प्राइवेट चैट लीक!\" (8,000 अक्षर प्लेनटेक्स्ट URL)",
           "04:39 · Julius: क्लैक! (0 जवाब)"
@@ -4910,7 +4910,7 @@
         "tag": "27 नव",
         "lines": [
           "Julius (कोर मेंटेनर): \"PR #43948: हाँ, हम दूसरे एजेंट की फ़ाइलें बिना पूछे पढ़ते हैं।\"",
-          "10 मिनट बाद · PR #43889 [PR बंद]: \"nvm क्लोज़्ड-सोर्स slophouse में आसान\""
+          "10 मिनट बाद · PR #43889 [PR बंद]: \"छोड़ो, क्लोज़्ड-सोर्स slophouse में आसान है\""
         ]
       },
       {
@@ -4925,7 +4925,7 @@
         "p": 4,
         "tag": "歧 · 胁 · 冒 · 遁",
         "lines": [
-          "दोहरा मापदंड · डर और दबाव · स्पूफ़िंग और धोखा · क्लोज़्ड-सोर्स बहाना",
+          "दोहरा मापदंड · डर और दबाव · स्पूफ़िंग और धोखा · क्लोज़्ड-सोर्स में पलायन",
           "PR की सफ़ाई मिट सकती है। Git कमिट हमेशा रहते हैं।"
         ]
       }

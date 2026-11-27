@@ -5,8 +5,8 @@
     "double-standard": "Dubbele standaarden",
     "promises": "Beloftes vs. code",
     "telemetry": "Telemetrie & privacy",
-    "security": "Beveiliging & bans",
-    "deleted": "Verwijderd / teruggetrokken",
+    "security": "Beveiliging & verbanningen",
+    "deleted": "Verwijderd / ingetrokken",
     "commercial": "Commercie & sterren"
   },
   "people": {
@@ -20,11 +20,11 @@
     },
     "ffmpeg": {
       "name": "FFmpeg & VLC",
-      "role": "Open-source-maintainers ($20k bounty)"
+      "role": "Onderhouders van open source ($20k bounty)"
     },
     "indian-devs": {
       "name": "Indiase developercommunity",
-      "role": "Golf van nationaliteitspesterijen in 2024"
+      "role": "Golf van intimidatie op nationaliteit, 2024"
     },
     "bermudi": {
       "name": "@bermudi (Issue #33639)",
@@ -32,23 +32,23 @@
     },
     "miaai": {
       "name": "@MiaAI_lab & concurrenten",
-      "role": "Fork binnen 30 seconden gescraped door @bot"
+      "role": "Fork in 30 seconden gescrapet door @bot"
     },
     "dlkfz": {
       "name": "@DLKFZWilliam2",
-      "role": "Tegenpartij in het forkdebat van 24 nov"
+      "role": "Tegenpartij in het fork-debat van 24 nov"
     },
     "ordinary-devs": {
       "name": "Gewone ontwikkelaars",
-      "role": "Engineers, lokale AI en Linux-devs"
+      "role": "Engineers, lokale AI & Linux-ontwikkelaars"
     },
     "female-critic": {
-      "name": "Vrouwelijke critica & RSD-gebruiker",
-      "role": "Doelwit in de reacties van 11–18 nov"
+      "name": "Vrouwelijke criticus & RSD-gebruiker",
+      "role": "Doelwit in de replies van 11–18 nov"
     },
     "vibe-daytona": {
       "name": "Vibe Kanban & Daytona",
-      "role": "Portfoliobedrijven van de angelinvesteerder"
+      "role": "Portfoliobedrijven van de angel"
     },
     "julius": {
       "name": "@jullerino (Julius)",
@@ -60,11 +60,11 @@
     },
     "labs-vips": {
       "name": "Google / OpenAI-VIP's",
-      "role": "20 big-tech-bestuurders (0.0% gevloek)"
+      "role": "20 bigtech-topmensen (0.0% grof taalgebruik)"
     },
     "antigravity-users": {
       "name": "Antigravity & Relay-gebruikers",
-      "role": "Bans van 3 minuten & plaintext-relay"
+      "role": "Verbanningen van 3 minuten & relay in platte tekst"
     },
     "gdpr-auditors": {
       "name": "EU-GDPR & auditors",
@@ -72,7 +72,23 @@
     },
     "dhh-wp": {
       "name": "DHH / WordPress / USPTO",
-      "role": "Eerdere spot met de UI & handelsmerkhistorie"
+      "role": "Eerdere spot met de UI & handelsmerkhirstorie"
+    },
+    "dmfigol": {
+      "name": "@dmfigol (ex-AWS-ingenieur)",
+      "role": "Quote-tweet met 89 weergaven & AWS-HR-zaak"
+    },
+    "sk1gl4a": {
+      "name": "@sk1gl4a & auditors",
+      "role": "Reproductie van 243 sessies, Duitse btw & audit met 25 tools"
+    },
+    "ondrej-zqkrq": {
+      "name": "@DavidOndrej1 & @zqkrq",
+      "role": "Financiering van benchmarks & ruzie over sponsors"
+    },
+    "kdy1dev": {
+      "name": "@kdy1dev & @hazae41",
+      "role": "Fan-out van 113 GiB-database (#44029) & glacier#1"
     }
   },
   "threads": {
@@ -402,6 +418,50 @@
         }
       ]
     },
+    "2026-10-18-benchmark-funding-sponsor-pressure": {
+      "from": "@DavidOndrej1 & @orca_build ↔ @theo & @zqkrq",
+      "to": "Openbaar benchmark- en sponsorverslag",
+      "dateDisplay": "18 okt. 2026",
+      "subject": "Contact gezocht met ranglijstauteur & aanbod om benchmark te financieren",
+      "snippet": "Theo gaf toe dat hij @zqkrq had benaderd over de lage notering van T3 Code en financiering aanbood; de claim dat hij betaalde om Cloudroom te verbergen is niet gestaafd en wordt ontkend.",
+      "messages": [
+        {
+          "sender": "@DavidOndrej1 & @orca_build",
+          "handle": "@DavidOndrej1 · X (2111884469468893524 & 2126085904875798845)",
+          "to": "Openbare timeline",
+          "time": "18 okt. & 25–26 nov. 2026",
+          "body": "Op 18 oktober 2026 (18:17–19:50 UTC) beschuldigde Cloudroom-oprichter `@DavidOndrej1` `@theo` ervan benchmarkauteur `@zqkrq` onder druk te zetten nadat Cloudroom T3 Code had ingehaald op `v1`:\n\n> \"Theo T3 wordt WANHOPIG. hij betaalde deze gast om v2 van zijn benchmark te draaien nadat Cloudroom hoger eindigde dan T3 Code op de v1...\"\n\n- **Reactie van een concurrent (`19:44 UTC`):** `@orca_build` schreef: \"Deze lijst is sowieso zeer twijfelachtig... Onmogelijk dat wij onderaan staan.\"\n- **Vervolg op 25–26 november:** `@DavidOndrej1` plaatste de sponsorbanier van T3 Code (`WorkOS`, `Blacksmith`, `Browserbase`, `CodeRabbit`) onder de thread van `@dmfigol` (`2126085904875798845`) en beweerde dat `@theo` merken bericht om critici te laten vallen (`2125517916544155720`).\n- **Grens van de verificatie:** Beide beschuldigingen—dat `@theo` betaalde om Cloudroom te verwijderen en sponsors berichtte om makers op een zwarte lijst te zetten—zijn eenzijdige claims van `@DavidOndrej1`; er zijn geen gelekte berichten of betalingsbewijzen op tafel gelegd, en zowel `@theo` als `@zqkrq` ontkenden de beschuldiging over Cloudroom.",
+          "attachments": [
+            "@DavidOndrej1 benchmarkruzie v1/v2 van 18 okt.",
+            "Sponsorbanier van T3 Code (WorkOS, Blacksmith, Browserbase, CodeRabbit)"
+          ],
+          "links": [
+            "@DavidOndrej1 Bericht van 18 okt.",
+            "@DavidOndrej1 Bericht met drie punten",
+            "@orca_build Antwoord",
+            "@DavidOndrej1 Sponsorbanier",
+            "@DavidOndrej1 Claim over zwarte lijst"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo) & @zqkrq",
+          "handle": "@theo · X (2111903235166679341)",
+          "to": "Openbare timeline",
+          "time": "18 okt. & 12 nov. 2026",
+          "body": "Op 18 oktober om `18:30 UTC` ontkende `@zqkrq` dat `@theo` had gevraagd een vermelding te verbergen. Een uur later (`19:32 UTC`) bevestigde `@theo` dat hij contact had gezocht over de lage score van T3 Code en had aangeboden een benchmark te financieren:\n\n> \"Ik heb hem niet gezegd iets te verbergen. Ik ben naar hem toe gestapt om te vragen waarom T3 Code laag scoorde... Hij zei daarna een echte benchmark te willen maken, dus ik bood aan die te financieren, want er gebeurt op dit moment geen goed onderzoek van dit type.\"\n\n- **Vervolg op 12 november:** `@zqkrq` bracht `ADE tier list v3` uit, noemde T3 Code \"mijn daily driver\", maakte `t3.ademark.dev` aan en antwoordde `@theo`: \"@theo je had dit niet hoeven doen man, betekent echt veel 🫡\".\n- **Klonen van features (`13 nov.`):** Diezelfde dag liet `@theo` `@bot` met `fable 5.2` features overzetten van de hoogst gerangschikte concurrenten op de lijst (`2121017649652269120`).",
+          "attachments": [
+            "@theo's antwoord waarin hij de toenadering en het financieringsaanbod toegeeft"
+          ],
+          "links": [
+            "@theo Bericht over benchmarkfinanciering",
+            "@zqkrq Ontkenning",
+            "@zqkrq ADE v3-lijst",
+            "@zqkrq Antwoord aan @theo",
+            "@theo @bot Kloon van concurrenten"
+          ]
+        }
+      ]
+    },
     "2026-10-20-pr21506-cross-tool-hash": {
       "from": "@theo → ~/.codex & ~/.claude",
       "to": "Inloggegevens in de thuismap van de gebruiker",
@@ -694,29 +754,6 @@
         }
       ]
     },
-    "2026-11-18-jail-threat-rsd": {
-      "from": "@theo → Threads-criticus (RSD)",
-      "to": "Criticus met RSD-diagnose",
-      "dateDisplay": "18 nov. 2026",
-      "subject": "Dreigde criticus met gevangenis & dreef spot met diens RSD-diagnose",
-      "snippet": "Geplaatst in een periode van 48 uur waarin Theo een koorts van 102°F aanvoerde terwijl hij 177 posts, een essay van 6,643 tekens, een video en 8 aanvallen op @elshayib publiceerde.",
-      "messages": [
-        {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X (2122838455483031925 / 2122865897375400066)",
-          "to": "Threads-criticus",
-          "time": "18 nov. 2026",
-          "body": "Op 18 november antwoordde @theo op een Threads-criticus, dreigde met de gevangenis en dreef de spot met diens afwijzingsgevoelige dysforie (RSD):\n\n> \"Stop nu of ik stuur je letterlijk naar de gevangenis. Ik weet zeker dat je celgenoten veel begrip zullen hebben voor je RSD.\"\n\nDe dreiging viel in een venster van 48 uur (17–18 nov. PST), waarin hij beweerde 102°F koorts te hebben terwijl hij 177 X-posts, een essay van 6,643 tekens over Astra, een video en 8 opeenvolgende met vloeken gevulde reacties op @elshayib publiceerde.",
-          "attachments": [
-            "Dreiging met gevangenis en spot met medische RSD op 18 nov. 2026"
-          ],
-          "links": [
-            "X-bericht 2122838455483031925",
-            "X-bericht 2122865897375400066"
-          ]
-        }
-      ]
-    },
     "2026-11-18-31t-token-radar": {
       "from": "@theo → AI-labs & VC's",
       "to": "OpenAI, DeepMind & investeerders",
@@ -739,6 +776,29 @@
           "links": [
             "31.7T-radarbericht",
             "Investeerdersbericht"
+          ]
+        }
+      ]
+    },
+    "2026-11-18-jail-threat-rsd": {
+      "from": "@theo → Threads-criticus (RSD)",
+      "to": "Criticus met RSD-diagnose",
+      "dateDisplay": "18 nov. 2026",
+      "subject": "Dreigde criticus met gevangenis & dreef spot met diens RSD-diagnose",
+      "snippet": "Geplaatst in een periode van 48 uur waarin Theo een koorts van 102°F aanvoerde terwijl hij 177 posts, een essay van 6,643 tekens, een video en 8 aanvallen op @elshayib publiceerde.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2122838455483031925 / 2122865897375400066)",
+          "to": "Threads-criticus",
+          "time": "18 nov. 2026",
+          "body": "Op 18 november antwoordde @theo op een Threads-criticus, dreigde met de gevangenis en dreef de spot met diens afwijzingsgevoelige dysforie (RSD):\n\n> \"Stop nu of ik stuur je letterlijk naar de gevangenis. Ik weet zeker dat je celgenoten veel begrip zullen hebben voor je RSD.\"\n\nDe dreiging viel in een venster van 48 uur (17–18 nov. PST), waarin hij beweerde 102°F koorts te hebben terwijl hij 177 X-posts, een essay van 6,643 tekens over Astra, een video en 8 opeenvolgende met vloeken gevulde reacties op @elshayib publiceerde.",
+          "attachments": [
+            "Dreiging met gevangenis en spot met medische RSD op 18 nov. 2026"
+          ],
+          "links": [
+            "X-bericht 2122838455483031925",
+            "X-bericht 2122865897375400066"
           ]
         }
       ]
@@ -767,27 +827,25 @@
         }
       ]
     },
-    "2026-11-22-engineers-unemployment-linux": {
-      "from": "@theo → engineers en Linux",
-      "to": "Developercommunity",
+    "2026-11-22-pr41237-21h-filter-drop": {
+      "from": "@theo → slopalytics.com",
+      "to": "PR #41237 (filter voor modeltelemetrie)",
       "dateDisplay": "22 nov 2026",
-      "subject": "\"Engineers verdienen massale werkloosheid\" en \"Linux-larpers\"",
-      "snippet": "Zei tegen 386k+ kijkers dat devs werkloosheid verdienen, naar aanleiding van een toolvergelijking — precies 24 uur nadat hij anderen de les had gelezen over \"vertrouwen verbranden\".",
+      "subject": "Privacyfilter voor modellen in 21 uur geschrapt voor slopalytics.com",
+      "snippet": "PR #41237 haalde de whitelist van PR #29001 weg, waardoor namen van private enterprise- en lokale modellen (ollama/acme-internal) letterlijk werden geüpload (terwijl de force-push-bug 52+ dagen bleef liggen).",
       "messages": [
         {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X",
-          "to": "Gewone developers",
-          "time": "21–22 nov 2026",
-          "body": "Binnen 24 uur, op 21–22 november, beledigde @theo gewone developers en Linux-gebruikers terwijl hij zelf de moraal preekte over vertrouwen:\n\n- **21 nov (2123906522728272178):** \"de gemiddelde developer is niet erg slim\"\n- **22 nov (2124298216271499605):** \"Ik snap best waarom je me haat, Linux-larpers hebben meestal een hekel aan echte devs\"\n- **22 nov (2124470530590011704, 386k+ views — als quote bij een vraag over T3 Code vs. Antigravity):** \"Engineers verdienen de massale werkloosheid die eraan komt\"\n- **22 nov, 18:26 CST (2124449493513068862, 24 uur voor de dreiging rond de MIT-fork):** \"Fwiw, het vertrouwen van iedereen om je heen verbranden is vrijwel nooit de beste manier om te krijgen wat je wilt\"",
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · Issue #40948 → PR #41237",
+          "to": "slopalytics.com / telemetrie-pipeline",
+          "time": "22–23 nov 2026",
+          "body": "Op 22 november meldde Issue #40948 dat nieuwere modellen ontbraken op @theo's publieke leaderboard `slopalytics.com`, omdat PR #29001 een privacy-whitelist afdwong.\n\nTerwijl de veiligheidsbug in `git push --force` 52+ dagen onopgelost bleef liggen, werd PR #41237 binnen 21 uur samengevoegd onder @theo's account, met de vermelding dat Theo vroeg de filter te schrappen. Namen van private enterprise- en lokale modellen zoals `ollama/acme-internal` en `acme-azure-deployment` (plus custom proxies die later in Theo's dump opdoken) werden letterlijk verstuurd.",
           "attachments": [
-            "\"Engineers verdienen de massale werkloosheid die eraan komt\"",
-            "\"Linux-larpers hebben meestal een hekel aan echte devs\"",
-            "De les \"verbrand geen vertrouwen\" 24 uur voor de crisis"
+            "PR #41237 schrapt de privacyfilter voor modellen in 21 uur"
           ],
           "links": [
-            "Post over werkloosheid",
-            "Post over vertrouwen verbranden"
+            "Issue #40948",
+            "PR #41237"
           ]
         }
       ]
@@ -835,25 +893,27 @@
         }
       ]
     },
-    "2026-11-22-pr41237-21h-filter-drop": {
-      "from": "@theo → slopalytics.com",
-      "to": "PR #41237 (filter voor modeltelemetrie)",
+    "2026-11-22-engineers-unemployment-linux": {
+      "from": "@theo → engineers en Linux",
+      "to": "Developercommunity",
       "dateDisplay": "22 nov 2026",
-      "subject": "Privacyfilter voor modellen in 21 uur geschrapt voor slopalytics.com",
-      "snippet": "PR #41237 haalde de whitelist van PR #29001 weg, waardoor namen van private enterprise- en lokale modellen (ollama/acme-internal) letterlijk werden geüpload (terwijl de force-push-bug 52+ dagen bleef liggen).",
+      "subject": "\"Engineers verdienen massale werkloosheid\" en \"Linux-larpers\"",
+      "snippet": "Zei tegen 386k+ kijkers dat devs werkloosheid verdienen, naar aanleiding van een toolvergelijking — precies 24 uur nadat hij anderen de les had gelezen over \"vertrouwen verbranden\".",
       "messages": [
         {
-          "sender": "Theo Browne (@t3dotgg)",
-          "handle": "GitHub · Issue #40948 → PR #41237",
-          "to": "slopalytics.com / telemetrie-pipeline",
-          "time": "22–23 nov 2026",
-          "body": "Op 22 november meldde Issue #40948 dat nieuwere modellen ontbraken op @theo's publieke leaderboard `slopalytics.com`, omdat PR #29001 een privacy-whitelist afdwong.\n\nTerwijl de veiligheidsbug in `git push --force` 52+ dagen onopgelost bleef liggen, werd PR #41237 binnen 21 uur samengevoegd onder @theo's account, met de vermelding dat Theo vroeg de filter te schrappen. Namen van private enterprise- en lokale modellen zoals `ollama/acme-internal` en `acme-azure-deployment` (plus custom proxies die later in Theo's dump opdoken) werden letterlijk verstuurd.",
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Gewone developers",
+          "time": "21–22 nov 2026",
+          "body": "Binnen 24 uur, op 21–22 november, beledigde @theo gewone developers en Linux-gebruikers terwijl hij zelf de moraal preekte over vertrouwen:\n\n- **21 nov (2123906522728272178):** \"de gemiddelde developer is niet erg slim\"\n- **22 nov (2124298216271499605):** \"Ik snap best waarom je me haat, Linux-larpers hebben meestal een hekel aan echte devs\"\n- **22 nov (2124470530590011704, 386k+ views — als quote bij een vraag over T3 Code vs. Antigravity):** \"Engineers verdienen de massale werkloosheid die eraan komt\"\n- **22 nov, 18:26 CST (2124449493513068862, 24 uur voor de dreiging rond de MIT-fork):** \"Fwiw, het vertrouwen van iedereen om je heen verbranden is vrijwel nooit de beste manier om te krijgen wat je wilt\"",
           "attachments": [
-            "PR #41237 schrapt de privacyfilter voor modellen in 21 uur"
+            "\"Engineers verdienen de massale werkloosheid die eraan komt\"",
+            "\"Linux-larpers hebben meestal een hekel aan echte devs\"",
+            "De les \"verbrand geen vertrouwen\" 24 uur voor de crisis"
           ],
           "links": [
-            "Issue #40948",
-            "PR #41237"
+            "Post over werkloosheid",
+            "Post over vertrouwen verbranden"
           ]
         }
       ]
@@ -907,6 +967,46 @@
           "links": [
             "X-post 2124989435154726982",
             "Post van de origin-audit"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-managed-policy-plaintext-relay": {
+      "from": "@theo → Zakelijk / privacy",
+      "to": "Weersproken door docs/user/telemetry.md & T3 Connect",
+      "dateDisplay": "24 nov. 2026",
+      "subject": "Beweerde \"raakt nooit onze servers\" ondanks plaintext-relay",
+      "snippet": "Eigen documentatie geeft toe dat de webversie geen schakelaar heeft, mobiel Managed Policy negeert, Publish opt-outs negeert en T3 Connect nul E2E-versleuteling gebruikt.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125186071357251715 & 2125191784859115766)",
+          "to": "Critici op Enterprise en privacy",
+          "time": "24 nov. 2026, 19:13 – 19:36 CST",
+          "body": "Op 24 november deed @theo twee publieke geruststellingen over privacy op X:\n\n- **19:13 CST (2125186071357251715):** Beweerde dat T3 Code het \"beste systeem voor bedrijfsbreed beheerd beleid\" heeft, waardoor het \"doodsimpel is om alle telemetrie in te stellen en uit te zetten\".\n- **19:36 CST (2125191784859115766):** Beweerde dat gespreksgegevens \"nooit onze servers raken\".",
+          "attachments": [
+            "Theo's claim over Managed Policy",
+            "Claim \"raakt nooit een van onze servers\""
+          ],
+          "links": [
+            "X-bericht 2125186071357251715",
+            "X-bericht 2125191784859115766"
+          ]
+        },
+        {
+          "sender": "T3 Code's eigen documentatie & relaycode",
+          "handle": "docs/user/telemetry.md & PR #32945",
+          "to": "Verificatierecord",
+          "time": "Geverifieerd op ca81b7b9",
+          "body": "T3 Code's eigen repositorybestanden op `ca81b7b9` weerspreken beide claims:\n\n1. **`docs/user/telemetry.md`:** Bevestigt dat de gehoste webversie (`app.t3.codes`) geen schakelaar voor tracing heeft, dat mobiel buiten Managed Policy valt en dat `Publish agent activity` telemetrie-opt-outs negeert.\n2. **T3 Connect (Issue #32098 & PR #32945):** Elke prompt, elk bronbestand en elke terminalstream eindigt als plaintext in door T3 beheerde OVH- en Cloudflare-servers, met nul end-to-endversleuteling en apparaatgoedkeuring die standaard uitstaat.",
+          "attachments": [
+            "docs/user/telemetry.md: vier gedocumenteerde blinde vlekken",
+            "T3 Connect: bevestigd dat er geen E2E-versleuteling is",
+            "PR #32945: OVH Hillsboro Caddy TLS-terminatiegateway"
+          ],
+          "links": [
+            "docs/user/telemetry.md",
+            "Bewijsstuk #05 (T3 Connect)"
           ]
         }
       ]
@@ -1006,42 +1106,42 @@
         }
       ]
     },
-    "2026-11-24-managed-policy-plaintext-relay": {
-      "from": "@theo → Zakelijk / privacy",
-      "to": "Weersproken door docs/user/telemetry.md & T3 Connect",
+    "2026-11-24-governance-lock-glacier-cla": {
+      "from": "GitHub Issues & @hazae41 ↔ @t3dotgg",
+      "to": "1.401 MIT-bijdragers (0 CLA / 779 vergrendeld)",
       "dateDisplay": "24 nov. 2026",
-      "subject": "Beweerde \"raakt nooit onze servers\" ondanks plaintext-relay",
-      "snippet": "Eigen documentatie geeft toe dat de webversie geen schakelaar heeft, mobiel Managed Policy negeert, Publish opt-outs negeert en T3 Connect nul E2E-versleuteling gebruikt.",
+      "subject": "Org vergrendelde Issue #4123 op het hoogtepunt + belediging in glacier#1 uit 2022",
+      "snippet": "MIT-repo met 1.401 bijdragers en 0 CLA zegt buitenstaanders \"Don't\" bij te dragen, vergrendelde telemetrie-Issue #4123 via @pingdotgg, en voert terug tot een belediging uit 2022.",
       "messages": [
         {
-          "sender": "Theo Browne (@theo)",
-          "handle": "@theo · X (2125186071357251715 & 2125191784859115766)",
-          "to": "Critici op Enterprise en privacy",
-          "time": "24 nov. 2026, 19:13 – 19:36 CST",
-          "body": "Op 24 november deed @theo twee publieke geruststellingen over privacy op X:\n\n- **19:13 CST (2125186071357251715):** Beweerde dat T3 Code het \"beste systeem voor bedrijfsbreed beheerd beleid\" heeft, waardoor het \"doodsimpel is om alle telemetrie in te stellen en uit te zetten\".\n- **19:36 CST (2125191784859115766):** Beweerde dat gespreksgegevens \"nooit onze servers raken\".",
+          "sender": "Bestuursverslag GitHub (pingdotgg/t3code)",
+          "handle": "Issue #4123 · CONTRIBUTING.md · v0.1.13",
+          "to": "Open-sourcebijdragers",
+          "time": "24–26 nov. 2026",
+          "body": "`pingdotgg/t3code` verschijnt onder de MIT-licentie met **geen CLA**, **1.401 GitHub-bijdragers**, **6 kernaccounts** (`.github/TRIAGE_EXEMPTIONS.td`) en een `CONTRIBUTING.md` dat buitenstaanders voorhoudt:\n\n> \"Wij zijn expliciet NIET GEÏNTERESSEERD in nieuwe feature-PR's van mensen buiten dat team... Als je iets zoekt om aan bij te dragen, is hier mijn advies: Doe het niet.\"\n\n1. **Issue #4123 vergrendeld door `@pingdotgg`:** Nadat `@t3dotgg` de klacht \"geen opt-out voor telemetrie\" twee keer had gesloten (`2026-10-21`, `2026-11-04`), **vergrendelde** het org-account `@pingdotgg` Issue #4123 handmatig op `2026-11-24T20:43:48Z` midden in de virale uitbarsting (de repo telt 779 vergrendelde items).\n2. **Vier stille beveiligingspatches in `v0.1.13` (`0` adviezen):** Uitgebracht op `2026-11-26T19:32Z` zonder enig GitHub Security Advisory—met fixes voor `#42535` (ongevraagde `pre-push` git-hooks), `#39408` (omzeiling van het remote laden via CSS `var()`), `#39489` (privilege-escalatie in `_t3/session-mode` MCP) en `#41988` (SOCKS uid-check op macOS; Windows nog steeds ongecontroleerd).",
           "attachments": [
-            "Theo's claim over Managed Policy",
-            "Claim \"raakt nooit een van onze servers\""
+            "Issue #4123 twee keer gesloten door @t3dotgg en vergrendeld door @pingdotgg"
           ],
           "links": [
-            "X-bericht 2125186071357251715",
-            "X-bericht 2125191784859115766"
+            "Issue #4123 (vergrendeld)",
+            "PR #42535 (pre-push hook)",
+            "PR #39408 (CSS var-omzeiling)",
+            "PR #39489 (escalatie in MCP-modus)",
+            "PR #41988 (SOCKS uid-check)"
           ]
         },
         {
-          "sender": "T3 Code's eigen documentatie & relaycode",
-          "handle": "docs/user/telemetry.md & PR #32945",
-          "to": "Verificatierecord",
-          "time": "Geverifieerd op ca81b7b9",
-          "body": "T3 Code's eigen repositorybestanden op `ca81b7b9` weerspreken beide claims:\n\n1. **`docs/user/telemetry.md`:** Bevestigt dat de gehoste webversie (`app.t3.codes`) geen schakelaar voor tracing heeft, dat mobiel buiten Managed Policy valt en dat `Publish agent activity` telemetrie-opt-outs negeert.\n2. **T3 Connect (Issue #32098 & PR #32945):** Elke prompt, elk bronbestand en elke terminalstream eindigt als plaintext in door T3 beheerde OVH- en Cloudflare-servers, met nul end-to-endversleuteling en apparaatgoedkeuring die standaard uitstaat.",
+          "sender": "@hazae41 (hazae41/glacier#1)",
+          "handle": "github.com/hazae41/glacier/issues/1",
+          "to": "Theo Browne (@t3dotgg)",
+          "time": "2 okt. 2022 & 27 nov. 2026",
+          "body": "Op 27 november 2026 (`02:02 UTC`) bracht open-sourceauteur `@hazae41` een reactie van `@t3dotgg` uit `2022-10-02T19:02:20Z` naar boven op Issue #1 van `hazae41/glacier`:\n\n> \"Ik wou dat dit een parodie was, maar helaas is de maintainer gewoon een lul :(\"\n\nDe Issues API van GitHub bevestigt dat de reactie nog steeds live staat op `hazae41/glacier#1`—vier jaar vóór `@bermudi` (`Issue #33639`).",
           "attachments": [
-            "docs/user/telemetry.md: vier gedocumenteerde blinde vlekken",
-            "T3 Connect: bevestigd dat er geen E2E-versleuteling is",
-            "PR #32945: OVH Hillsboro Caddy TLS-terminatiegateway"
+            "Reactie van @t3dotgg op hazae41/glacier#1, okt. 2022"
           ],
           "links": [
-            "docs/user/telemetry.md",
-            "Bewijsstuk #05 (T3 Connect)"
+            "Reactie op hazae41/glacier#1",
+            "@hazae41 Bericht van 27 nov."
           ]
         }
       ]
@@ -1111,6 +1211,237 @@
           "links": [
             "Bewijsstuk #19 volledige audit",
             "Bewijsstuk #13 (0 beveiligingsadviezen)"
+          ]
+        }
+      ]
+    },
+    "2026-11-25-25-tool-telemetry-audit": {
+      "from": "@ZryMiller (millZach/ai-agent-telemetry-audit)",
+      "to": "25 OSS- + 10 closed-source AI-codingtools",
+      "dateDisplay": "25 nov. 2026",
+      "subject": "Telemetrie-audit van 25 tools: T3 Code van F naar D, terwijl vakgenoten A halen",
+      "snippet": "Een onafhankelijke audit gaf 3 OSS-tools een A (Aether, Hermes, Roo Code) en T3 Code een F in de basislijn, opklimmend naar D bij 2b84f486, terwijl Orca als enige de DNT-toets doorstond (C).",
+      "messages": [
+        {
+          "sender": "Zachary Miller (@ZryMiller)",
+          "handle": "millZach/ai-agent-telemetry-audit",
+          "to": "AI-ontwikkelaarscommunity",
+          "time": "25 nov. 2026, 07:51 UTC (284K weergaven)",
+          "body": "Onafhankelijk auditor `@ZryMiller` beoordeelde **25 open-source AI-tools** via read-only statische inspectie (`3 A / 1 B / 4 C / 11 D / 6 F`), naast **10 closed-source desktop-apps** die in een geïsoleerde Docker-`mitmproxy`-sandbox werden getest:\n\n- **T3 Code (`F` → `D`):** Basisversie `4c2e2b37` (24 nov.) scoorde **`F`**; `HEAD` `2b84f486` (25 nov., vóór `#42629`) steeg naar **`D`** nadat het lezen van `~/.codex`/`~/.claude.json` en eigen modelnamen was geschrapt, maar hield vast aan standaard ingeschakelde `ingest.t3.codes`, ongeconditioneerde `anonymous-id`-bestandswrites bij uitschakeling, ongesalte SHA-256, nul toggle voor `app.t3.codes`, gemiste desktop-OTEL-variabelen, relay `colo`/`country`/Clerk `user.id`, en geen UI/CLI-schakelaar.\n- **Koplopers in open source:** **Aether (`A`)**, **Hermes (`A`)**, **Roo Code (`A`, gearchiveerd)**, **Vibe Kanban (`B`)** en **Orca (`C`)**—de enige OSS-tool van de 25 die op het moment van de audit `DO_NOT_TRACK` netjes respecteerde.\n- **Vergelijking met closed-source in Docker:** **Claude Code `v2.1.332` (`B`)** en **VS Code `1.148.0` (`B`)** stopten niet-essentiële HTTP zodra dat was ingesteld; **Cursor `3.32.4` (`F`)**, **Gemini CLI (`F`)**, **Cline (`F`)** en **Kilo Code (`F`)** zakten.",
+          "attachments": [
+            "@ZryMiller scorekaart telemetrie voor 25 OSS-tools"
+          ],
+          "links": [
+            "Repo ai-agent-telemetry-audit",
+            "@ZryMiller X-thread"
+          ]
+        }
+      ]
+    },
+    "2026-11-26-dmfigol-aws-hr-coercion": {
+      "from": "@dmfigol ↔ @theo (privé-DM's & AWS-HR)",
+      "to": "Publieke thread met 639K weergaven",
+      "dateDisplay": "26 nov. 2026",
+      "subject": "DM's met \"Fear is a good incentive\" & ingetrokken AWS-HR-melding",
+      "snippet": "Voormalig AWS-engineer @dmfigol publiceerde DM's uit jan. 2025 naar aanleiding van een quote-tweet met 89 weergaven; een HR-onderzoek bij AWS werd afgesloten zonder enig wangedrag.",
+      "messages": [
+        {
+          "sender": "@dmfigol (voormalig AWS-engineer)",
+          "handle": "@dmfigol · X (2126025881844174968)",
+          "to": "Openbare timeline (639K+ weergaven)",
+          "time": "26 nov. 2026, 18:50 UTC",
+          "body": "Op 26 november 2026 (8.086 likes, 639K+ weergaven) haalde voormalig AWS-engineer `@dmfigol` op wat volgde op zijn quote-tweet van 29 januari 2025 (`89 weergaven, 0 likes, 0 reposts`), waarin hij kritiek had op het ultimatum van `@theo` aan CheckPoint/Palo Alto nadat malware-uploads een blokkade van het domein `t3.chat` hadden uitgelokt:\n\n> \"deblokkeer t3 chat voor ik wakker word, anders begin ik mijn dag met het filmen van een video en zet ik mijn publiek van 1 mln+ tegen je op\"\n\n- **HR-onderzoek bij AWS:** Ongeveer een maand later meldde AWS-HR aan `@dmfigol` dat er een externe klacht met een screenshot van zijn tweet naar de communicatieafdeling van AWS was gestuurd en dezelfde dag weer was ingetrokken; een formele HR-beoordeling bleef nodig (afgesloten met **nul wangedrag**).\n- **Onafhankelijke reacties:** `@petersteele` (`2126096729934033141`) en `@_Defeatable_` (`2126096598367117581`) bevestigden vergelijkbaar gedrag uit het verleden.\n- **Grens van de verificatie:** De DM's en het HR-onderzoek zijn de directe lezing van `@dmfigol`, gestaafd met screenshots, maar dat drie latere afwijzingen bij AWS anderhalf jaar later (`2084660216759558593`) aan die klacht worden toegeschreven, markeert `@dmfigol` zelf expliciet als indirect bewijs: `\"Ik heb geen hard bewijs, alleen indirecte aanwijzingen\"`.",
+          "attachments": [
+            "@dmfigol X-thread met 639K weergaven over de AWS-HR-zaak"
+          ],
+          "links": [
+            "@dmfigol Hoofdthread",
+            "@dmfigol Oorspronkelijke tweets",
+            "Bewijsthread #20",
+            "@_Defeatable_ Antwoord"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo) — privé-DM's",
+          "handle": "@theo → @dmfigol (2126025889016094829)",
+          "to": "@dmfigol",
+          "time": "29 jan. 2025 (gearchiveerde screenshots)",
+          "body": "De door `@dmfigol` geposte DM-screenshots laten zien dat `@theo` het gesprek zelf opent:\n\n> \"Ik ga naar DM's, want ik wil je niet publiekelijk afbranden.\"\n\n> \"De kern van het probleem is een prikkelprobleem. Angst is een goede prikkel.\"\n\n> \"Wat is je doel hier? Gewoon een klootzak zijn / Er miste een ? aan het eind\"\n\n> \"Ik moet het vragen - is Engels je moedertaal? Het enige excuus dat ik kan bedenken voor je tweet is dat je de taal niet goed kent.\"\n\n> \"Vandaag ging ik er wat hard in terwijl ik mijn klanten verdedigde. Jij viel een van je eigen klanten aan zonder enige reden.\"",
+          "attachments": [
+            "DM-screenshots: 'angst is een goede prikkel' & 'is Engels je moedertaal?'"
+          ],
+          "links": [
+            "@dmfigol DM-screenshots",
+            "@petersteele Bevestiging"
+          ]
+        }
+      ]
+    },
+    "2026-11-26-google-antigravity-zed-spoof": {
+      "from": "Julius (@jullerino) & PR's #43026 / #43087",
+      "to": "Antigravity-gebruikers (0 beveiligingsadviezen)",
+      "dateDisplay": "26 nov. 2026",
+      "subject": "Google waarschuwde voor interne API-calls & Zed-spoof geschrapt in v0.1.13",
+      "snippet": "PR #43026 bevestigde dat Google waarschuwde dat interne API-calls accounts markeren, en PR #43087 haalde clientInfo name:\"zed\" weg — v0.1.13 verstopte beide tussen 380 bugfixes.",
+      "messages": [
+        {
+          "sender": "Julius (@jullerino) & @gabrielelpidio",
+          "handle": "PR #43026 · PR #43087 · v0.1.13",
+          "to": "pingdotgg/t3code main",
+          "time": "25–26 nov. 2026",
+          "body": "Twee dagen na het sluiten van `#40713` en `#41536`, met de garantie van \"nul risico\" in de FAQ-documentatie, verwijderde T3 Code stilletjes beide Antigravity-mechanismen:\n\n1. **PR #43026 (`2026-11-25T19:25:43Z`, `@juliusmarminge`):** Verwijderde `antigravityUsageLimits.ts` (dat `cloudcode-pa.googleapis.com` pollde met inloggegevens uit de OS-keychain en nep-headers `antigravity/hub`) en haalde `@napi-rs/keyring` uit `apps/server`:\n\n> \"Antigravity ondersteunt alleen ACP voor externe clients. Google heeft ons verteld dat het aanroepen van hun interne API's een account kan laten markeren.\"\n\n> \"Elk van beide kon gebruikers in de problemen brengen.\"\n\n2. **PR #43087 (`2026-11-26T15:42:39Z`, `@gabrielelpidio`):** Verwijderde de impersonatie via de `Zed`-allowlist bij fallback-handshakes:\n\n> \"Op agy 1.5.0, of wanneer T3 de runtime-versie niet kon lezen, stuurde de Antigravity ACP-handshake `clientInfo: { name: \"zed\", version: \"0.0.0\" }`. Daardoor bood agy Claude- en GPT-modellen aan, die 1.5.0 alleen aanbiedt aan editors op de allowlist, zoals Zed... Je voordoen als een andere client breekt dezelfde regel.\"\n\n3. **Release notes van `v0.1.13` (`2026-11-26T19:32Z`, 401 wijzigingen):** De 7 uitgelichte punten gingen over GBK-codering en UI-sneltoetsen—zonder de waarschuwing van Google en zonder `#43026`/`#43087`, die schuilgingen onder `\"Plus 380 more bug fixes and performance improvements\"` ('plus nog 380 bugfixes en prestatieverbeteringen'), met **0 GitHub Security Advisories**.",
+          "attachments": [
+            "PR #43026 Waarschuwing van Google over accountmarkering & verwijdering van Antigravity",
+            "PR #43087 verwijdert handshake-spoof clientInfo: { name: \"zed\" }"
+          ],
+          "links": [
+            "PR #43026",
+            "PR #43087",
+            "Release v0.1.13",
+            "Bewijsthread #21"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-final-statement-slophouse-gdpr": {
+      "from": "@theo & Julius ↔ @sk1gl4a & @theperfdev",
+      "to": "GDPR / LfD Niedersachsen / closed-source slophouse",
+      "dateDisplay": "27 nov. 2026",
+      "subject": "Slotverklaring in 16 minuten ontkracht; tracking verhuist naar slophouse",
+      "snippet": "Minuuten na Theo's negen ontkenningen betrapte @sk1gl4a 243 ongevraagde Claude-reads, 19% Duitse btw-facturering en zero-click fingerprinting op t3.chat; PR #43948 bevestigde de scan.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125700717935841479)",
+          "to": "Openbare timeline (432K weergaven)",
+          "time": "25 nov. 2026, 21:18 UTC",
+          "body": "Op 25 november om `21:18 UTC` plaatste `@theo` `\"Final statement.\"` ('slotverklaring'), met negen ontkenningen in de reeks `\"T3 Code has never:\"` ('T3 Code heeft nooit'):\n\n> \"informatie geüpload over wat er op je computer staat\"\n\n> \"een gebruikers-ID geüpload\"\n\n> \"Wij volgden alleen basisgebruik (aantal tokens en prompts). Meer niet.\"",
+          "attachments": [
+            "@theo's negenpuntsontkenning 'Final statement.' van 25 nov."
+          ],
+          "links": [
+            "@theo Slotverklaring"
+          ]
+        },
+        {
+          "sender": "@sk1gl4a & @theperfdev",
+          "handle": "@sk1gl4a · X (2125748079047647715 · 2125807572800200712 · 2125814463085334546)",
+          "to": "Anthropic, OpenAI & LfD Niedersachsen",
+          "time": "26 nov. 2026, 00:26 – 17:28 UTC",
+          "body": "Zestien minuten na het bericht van `@theo` (`2026-11-26T00:26:51Z`, `100K+ weergaven`) publiceerde `@sk1gl4a` packet captures en logs van bestandstoegang:\n\n1. **Ongevraagde scans van externe sessies:** T3 Code uitsluitend met Mistral Vibe draaien opende lokaal **243 Claude Code**- en **9 Grok**-sessies, hashte `~/.codex/auth.json` + `~/.claude.json` op 3 machines, en negeerde `DO_NOT_TRACK=1` vóór `#42629`. (`@sk1gl4a` meldde klachten te hebben ingediend bij Anthropic, OpenAI en de Duitse toezichthouder `LfD Niedersachsen`; een openbaar dossier bij de toezichthouder is nog niet verschenen.)\n2. **19% Duitse btw (`€9.03` / `€56.43`):** Stripe-checkouts factureerden Duitse ingezetenen in EUR met 19% btw om meer dan 3 T3 Connect-machines vrij te geven—waarbij Connect-ID + e-mail naar T3 Chat gingen (`T3ChatAccounts.ts#L55-L58`) en het bereik van GDPR Art. 3(2) werd gevestigd, ondanks Theo's dreiging van 24 november om Duitsland te blokkeren.\n3. **Zero-click fingerprinting op `t3.chat`:** `@sk1gl4a` en onafhankelijk ontwikkelaar `@theperfdev` (`2126005307231162488`) legden beiden vast dat `t3.chat` (zelfs op de pagina met het privacybeleid, vóór elke klik) FingerprintJS draaide (`/api/identity` met Canvas/WebGL/audio/fonts), PostHog (`t3.chat/ingest`), Plausible en hCaptcha—geen daarvan vermeld in de `uploadthing.com/info/privacy-policy` van 31 mei 2025.",
+          "attachments": [
+            "@sk1gl4a's capture van 243 Claude-reads & GDPR-melding",
+            "Stripe-checkout van T3 Connect met 19% Duitse btw (€9.03/mnd)",
+            "Zero-click capture van FingerprintJS & PostHog op t3.chat"
+          ],
+          "links": [
+            "@sk1gl4a Thread over 243 sessies",
+            "@sk1gl4a Duitse btw-factuur",
+            "@sk1gl4a t3.chat-fingerprint",
+            "@theperfdev Onafhankelijke reproductie",
+            "Beleid van UploadThing / T3 Chat"
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino): PR #43948, slophouse & Clerk",
+          "handle": "PR #43948 · PR #43099 · PR #43889 · PR #42803",
+          "to": "pingdotgg/t3code",
+          "time": "25–27 nov. 2026",
+          "body": "De eigen PR's van de maintainers op GitHub bevestigden vervolgens de scans en verplaatsten de attributielogica naar de closed-source backend `slophouse`:\n\n- **PR #43948 (nog `open` op 27 nov. `17:00Z`):** Letterlijke bekentenis:\n\n> \"T3 Code las de bestanden van andere agents op deze computer zonder te vragen. Het openen van Usage scande de sessiegeschiedenis van elke agent. Claude reset-credits, Grok-credits en OpenCode Go-limieten lazen ook het inlogtoken of de sleutel van elke agent. De Welcome-pagina scande de agentgeschiedenis op projecten zodra die opende, en noemde agents die de gebruiker niet had aangezet (Pi).\"\n\n(Laat nog steeds het lezen van de org-ID uit `~/.claude.json` onbeveiligd en heeft geen mobiele Usage-schakelaar.)\n- **Zwarte doos `slophouse`:** `PR #43099` (`2026-11-25T21:59Z`) gaf toe: `\"All data stays in slophouse\"` ('alle data blijft in slophouse'); `@jullerino` (`2125649442665889821`) gaf toe: `\"that is not open source so hard to audit\"` ('dat is geen open source, dus moeilijk te auditen'); en `PR #43889` (`fix(telemetry): link Connect owners by a relay-issued analytics id`) werd binnen 10 minuten gesloten met **`\"nvm easier to do in slophouse\"`**.\n- **Ongepatcht Clerk-lek in `main`:** `PR #42803` toonde dat `<ClerkProvider>` in `ElectronManagedAuthShell.tsx` en `BrowserManagedAuthShell.tsx` nog steeds `telemetry={false}` mist, terwijl de community-opt-out in de UI (`PR #42625`) nog `open` staat.",
+          "attachments": [
+            "PR #43948 met de bekentenis dat T3 Code 'de bestanden van andere agents las zonder te vragen'",
+            "PR #43889 gesloten: 'nvm easier to do in slophouse'"
+          ],
+          "links": [
+            "PR #43948 (open bekentenis)",
+            "PR #43099 (slophouse)",
+            "PR #43889 (gesloten, verhuisd naar slophouse)",
+            "@jullerino Bericht 'geen open source'",
+            "PR #42803 (ClerkProvider)",
+            "PR #42625 (open UI-schakelaar)",
+            "Bewijsthread #22"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-desktop-browser-sandbox-bypass": {
+      "from": "Code Audit (commit 3c72b4e7)",
+      "to": "Gebruikers van Desktop & Supervised Claude / Codex",
+      "dateDisplay": "27 nov 2026",
+      "subject": "Gedempte Anthropic-waarschuwing & blootgelegde cookies van 11 browsers op Desktop",
+      "snippet": "Vastgepind op 3c72b4e7: T3 smoort Claude's waarschuwing over approval-shadowing, draait uploadFiles buiten Codex' sandbox en schakelt browserisolatie uit op Desktop.",
+      "messages": [
+        {
+          "sender": "Onafhankelijke code-audit (3c72b4e7)",
+          "handle": "ClaudeAdapterV2.ts · ServerBrowser.ts · BrowserImport",
+          "to": "Gebruikers van Desktop & Agent Runtime",
+          "time": "27 nov 2026",
+          "body": "Broninspectie van `main` op commit `3c72b4e7` documenteerde drie samenhangende browser- en approval-bypassgedragingen:\n\n1. **Anthropic-beveiligingswaarschuwing gedempt (`ClaudeAdapterV2.ts#L1629-L1647`):** injecteert wildcard `mcp__t3-code__*` onder `permissionMode: default` (Supervised), slaat `runtimeMode`-checks over bij `preview_*`-tools en monkey-patcht `process.emitWarning` binnen `withoutClaudeCanUseToolShadowedWarning` om `CLAUDE_SDK_CAN_USE_TOOL_SHADOWED` weg te gooien als \"per-sessieruis\".\n2. **Codex-sandboxbypass (`ServerBrowser.ts#L1723-L1749`):** `enableAgentBrowserAccess` staat standaard op `true` (`settings.ts#L1445`). Browseracties op de host draaien buiten Codex' sandbox (`CodexAdapterV2.ts#L853-L883`), en `uploadFiles` valideert alleen `NodePath.isAbsolute(path)` zonder workspace-beperking of bevestiging door de gebruiker.\n3. **Cookies van 11 browsers niet geïsoleerd op Desktop (`ServerBrowser.ts#L1236-L1247`):** `isolatedContext` is **alleen** `true` wanneer `desktop === null` (headless Linux). Op Desktop Electron – het enige doel dat `BrowserImport/` (`Sources.ts`, `ChromiumKeys.ts`) draait om Keychain/DPAPI/Full Disk Access-cookies van 11 browsers te importeren – staat `isolatedContext` op `false`, houdt `open=false` de sessie onzichtbaar en draait `preview_evaluate` CDP `Runtime.evaluate` (`64 KB/call`) op willekeurige URL's.",
+          "attachments": [
+            "ClaudeAdapterV2.ts dempt CLAUDE_SDK_CAN_USE_TOOL_SHADOWED",
+            "ServerBrowser.ts schakelt isolatedContext uit op Desktop Electron",
+            "ServerBrowser.ts laat uploadFiles alleen NodePath.isAbsolute checken"
+          ],
+          "links": [
+            "ClaudeAdapterV2.ts#L1629-L1647",
+            "ServerBrowser.ts#L1236-L1247",
+            "ServerBrowser.ts#L1723-L1749",
+            "BrowserImport/Sources.ts",
+            "Bewijsthread #23"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-plaintext-quote-prompt-urls": {
+      "from": "@Luca_Hagenmayer & Audit ↔ Julius (@jullerino)",
+      "to": "Discussie #29456 (Issue #29449 vergrendeld in 4m 39s)",
+      "dateDisplay": "27 nov 2026",
+      "subject": "Platte chattekst & prompts in URL's gepropt; bug in 4m vergrendeld",
+      "snippet": "Quote- en promptlinks bevatten tot 8,000 tekens platte chattekst, 32 tekens niet-geselecteerde context en reponamen; Issue #29449 werd in 4m 39s vergrendeld met 0 reacties.",
+      "messages": [
+        {
+          "sender": "Code-audit (f40f78eb) & @Luca_Hagenmayer",
+          "handle": "assistantCitations.ts · promptLinks.ts · Discussion #29456",
+          "to": "Gebruikers van Web, Desktop & Mobiel",
+          "time": "27 nov 2026",
+          "body": "Twee helpers voor het delen van links, geverifieerd op `main@f40f78eb`, stoppen onversleutelde gesprekstekst rechtstreeks in URL-query's:\n\n1. **Platte-tekst-quotecitaties (`assistantCitations.ts`, `PR #9146`):** Visueel weergegeven als `[Assistant quote]` codeert `t3-citation://v1/...` tot `8,000` tekens `text`, `8,000` tekens `comment` en telkens `32` tekens niet-geselecteerde `prefix`/`suffix`-context.\n2. **Publieke prompt-URL's (`promptLinks.ts#L192-L207`, `PR #18454` van `@t3dotgg`):** `buildNewThreadLink()` zet tot `8,000` tekens `prompt` plus `repo=owner/name` op `https://app.t3.codes/new?prompt=...`, waardoor die in de browsergeschiedenis en serverlogs belanden zodra een linkpreview wordt uitgeklapt.\n3. **Vergrendeling in 4m 39s & doc-verwijdering:** `@Luca_Hagenmayer` opende `Discussion #24241` (`24 okt`, 0 reacties) en `Issue #29449` (`2026-11-02T16:38:48Z`). Om `16:43:27Z` (**4 minuten en 39 seconden later**) vergrendelde `@juliusmarminge` `#29449` met 0 comments naar `Discussion #29456`, leverde daarna het formaat uit op mobiel (`PR #35306`, 19 nov) en verwijderde het interne designdocument (`PR #41330`, 23 nov).",
+          "attachments": [
+            "promptLinks.ts stopt volledige prompt en repo in app.t3.codes-URL",
+            "Discussion #29456 omgezet en vergrendeld vanuit Issue #29449 in 4m 39s"
+          ],
+          "links": [
+            "assistantCitations.ts#L43-L56",
+            "contracts/assistantCitations.ts#L4-L26",
+            "promptLinks.ts#L192-L207",
+            "Discussion #29456",
+            "Discussion #24241",
+            "PR #18454 (Theo)",
+            "@Luca_Hagenmayer Post",
+            "Bewijsthread #24"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-sqlite-113gb-fanout-and-silence": {
+      "from": "@kdy1dev (Issue #44029) & @jullerino",
+      "to": "@theo (41 uur stilte op X)",
+      "dateDisplay": "27 nov 2026",
+      "subject": "113 GiB SQLite \"massive fan out\" & Theo's 41 uur stilte op X",
+      "snippet": "SWC-maker @kdy1dev stuitte op een statev2.sqlite van 113 GiB (#44029) met 5.65M dubbele rijen; @jullerino sprak van \"massive fan out\" terwijl @theo 41 uur lang zweeg.",
+      "messages": [
+        {
+          "sender": "@kdy1dev (maker van SWC/oxc) & Julius (@jullerino)",
+          "handle": "Issue #44029 · @jullerino (2126207815052325020)",
+          "to": "pingdotgg/t3code",
+          "time": "27 nov 2026, 01:18 – 07:27 UTC",
+          "body": "Op 27 november 2026 documenteerde SWC/oxc-maker `@kdy1dev` een **`113 GiB` grote `statev2.sqlite`** (`0 B recovered` in Instellingen → Onderhoud, die na `t3 doctor --fix` slechts kromp tot `56.68 GiB`) en diende `Issue #44029` in met **`5,654,888`** dubbele `provider-session.updated`-rijen (`15.3 GB`) verspreid over 5,199 threads.\n\nOm `06:53:40 UTC` erkende `@jullerino` de duplicatiebug:\n\n> \"Deels, maar het lijkt een kleine bug aan onze kant die een massive fan out veroorzaakt, waardoor het opschonen het niet kan bijhouden\"\n\n- **41 uur stilte op X:** Na `2026-11-25T23:44:13Z` (`2125737351901303200`) plaatste `@theo` **ongeveer 41 uur lang nul originele tweets of technische reacties**; hij deelde alleen lof en Mobile 2.4 (`2126054989768675651`, `2126062066809307637`) en antwoordde met geen woord op `@dmfigol`, `@sk1gl4a` of `@DavidOndrej1`.",
+          "attachments": [
+            "@jullerino's toegeving over 'massive fan out' & @kdy1dev Issue #44029"
+          ],
+          "links": [
+            "Issue #44029",
+            "@jullerino Reply",
+            "@theo Nov 25 Marketing Apology"
           ]
         }
       ]
@@ -1552,6 +1883,94 @@
     "EV-109": {
       "title": "PR #39483: stille fix voor path traversal (0 adviezen)",
       "caption": "Patched op 20 nov stil een path traversal in ServerSecretStore tijdens het venster van ca81b7b9, terwijl GitHub Security Advisories op 0 bleef staan."
+    },
+    "EV-110": {
+      "title": "@dmfigol: AWS-HR-thread met 639K weergaven",
+      "caption": "De post van 26 november van voormalig AWS-engineer @dmfigol, die het conflict met CheckPoint/Palo Alto uit januari 2025 en de ingetrokken AWS-HR-klacht uit de doeken doet."
+    },
+    "EV-111": {
+      "title": "@theo DM's: 'Fear is a good incentive'",
+      "caption": "Gearchiveerde DM-screenshots van 29 januari 2025 die @dmfigol plaatste, met de citaten 'Fear is a good incentive' ('angst is een goede prikkel') en 'is English your native language?'."
+    },
+    "EV-112": {
+      "title": "PR #43026: toegegeven accountflag door Google",
+      "caption": "Samengevoegde PR van 25 november waarin `antigravityUsageLimits.ts` wordt verwijderd, nadat Google waarschuwde dat het aanroepen van interne API's accounts kan markeren."
+    },
+    "EV-113": {
+      "title": "PR #43087: schrapping van de Zed-allowlist-spoof",
+      "caption": "Samengevoegde PR van 26 november die toegeeft dat T3 Code bij Antigravity-ACP-handshakes `clientInfo: { name: 'zed' }` meestuurde om toegang te krijgen tot Claude/GPT-modellen."
+    },
+    "EV-114": {
+      "title": "@theo op 25 november: 'Final statement.'",
+      "caption": "Negendelige ontkenning in de vorm van 'T3 Code has never:', waarin wordt beweerd dat er slechts basisaantallen tokens en prompts werden bijgehouden."
+    },
+    "EV-115": {
+      "title": "@sk1gl4a: 243 Claude-sessies en GDPR-aangifte",
+      "caption": "Vastlegging geplaatst 16 minuten na Theo's 'Final statement', met 243 ongevraagde Claude-uitlezingen, een hash over 3 machines en een klacht bij de LfD."
+    },
+    "EV-116": {
+      "title": "T3 Connect: Stripe-afrekenen met 19% Duitse btw",
+      "caption": "Stripe-afrekenpagina die Duitse inwoners €9.03 per maand factureert (incl. 19% MwSt) om de T3 Connect-limieten te verhogen — waarmee het toepassingsbereik van GDPR Art. 3(2) vaststaat."
+    },
+    "EV-117": {
+      "title": "t3.chat: FingerprintJS vastgelegd zonder één klik",
+      "caption": "Vastlegging zonder klik, terwijl je uitgelogd bent, op de privacybeleidspagina van t3.chat: die laadt FingerprintJS (`/api/identity`), PostHog, Plausible en hCaptcha."
+    },
+    "EV-118": {
+      "title": "PR #43948: toegegeven ongevraagde agentscan",
+      "caption": "PR van een maintainer die expliciet toegeeft dat T3 Code zonder iets te vragen bestanden, sleutels en sessiegeschiedenis van andere agents op schijf uitleest."
+    },
+    "EV-119": {
+      "title": "PR #43889 gesloten: 'nvm easier to do in slophouse'",
+      "caption": "Gesloten PR die het koppelen van Connect-analyticsidentiteiten uit de openbare clientcode overhevelt naar de gesloten backend slophouse ('nvm, makkelijker in slophouse')."
+    },
+    "EV-120": {
+      "title": "ClaudeAdapterV2.ts#L1629-L1647: gedempte waarschuwing",
+      "caption": "Monkey-patchet `process.emitWarning` in `withoutClaudeCanUseToolShadowedWarning` om Anthropic's waarschuwing over approval-shadowing het zwijgen op te leggen."
+    },
+    "EV-121": {
+      "title": "ServerBrowser.ts#L1236-L1247: desktop zonder isolatie",
+      "caption": "Zet `isolatedContext: true` alleen wanneer `desktop === null`, waardoor Desktop Electron met de cookies van 11 geïmporteerde browsers ongeïsoleerd blijft."
+    },
+    "EV-122": {
+      "title": "ServerBrowser.ts#L1723-L1749: controle in uploadFiles",
+      "caption": "De host-helper `uploadFiles` controleert alleen `NodePath.isAbsolute(path)`, zonder grens aan de workspace en zonder bevestigingsvraag."
+    },
+    "EV-123": {
+      "title": "promptLinks.ts#L192-L207: publieke prompt-query-URL's",
+      "caption": "`buildNewThreadLink` codeert volledige prompts (tot 8,000 tekens) en reponamen in URL's als https://app.t3.codes/new?prompt=..."
+    },
+    "EV-124": {
+      "title": "Discussion #29456 binnen 4m 39s op slot",
+      "caption": "Privacybug Issue #29449 over plaintext `t3-citation://`-quotelinks werd binnen 4m 39s op slot gezet en verhuisd naar Ideas Discussion #29456, met 0 reacties."
+    },
+    "EV-125": {
+      "title": "@theo geeft financieringsaanbod voor benchmark toe",
+      "caption": "Tweet van 18 oktober waarin Theo publiekelijk bevestigt dat hij @zqkrq benaderde over de lage score van T3 Code en aanbood een benchmark te financieren."
+    },
+    "EV-126": {
+      "title": "@DavidOndrej1: benchmarkpost van 18 oktober",
+      "caption": "Beschuldiging met 236K weergaven over de v1/v2-benchmarkranglijst, met een Community Note erbij."
+    },
+    "EV-127": {
+      "title": "Sponsorbanner van T3 Code (WorkOS, Blacksmith, Browserbase, CodeRabbit)",
+      "caption": "Sponsorlijst die @DavidOndrej1 op 26 november onder de thread van @dmfigol plaatste."
+    },
+    "EV-128": {
+      "title": "@ZryMiller: telemetrie-audit van 25 OSS-tools",
+      "caption": "Onafhankelijke scorecard met 284K weergaven die 25 OSS-AI-tools vergelijkt (3 in A-tier, T3 Code van F naar D, Orca als enige die DO_NOT_TRACK haalt)."
+    },
+    "EV-129": {
+      "title": "Issue #4123 op slot gezet door de @pingdotgg-org",
+      "caption": "Telemetrieklacht twee keer gesloten door @t3dotgg en op slot gezet door het org-account @pingdotgg, op het virale hoogtepunt van 24 november."
+    },
+    "EV-130": {
+      "title": "Reactie op hazae41/glacier#1, oktober 2022",
+      "caption": "Nog steeds zichtbare reactie uit 2022 waarin @t3dotgg bij het eerste issue van een onafhankelijk OSS-project schreef: 'sadly the maintainer is just a dick :(' ('helaas is de maintainer gewoon een lul :(')."
+    },
+    "EV-131": {
+      "title": "113 GiB SQLite en 'massive fan out' (#44029)",
+      "caption": "@jullerino erkent de 5.65M dubbele `provider-session.updated`-rijen die SWC-maker @kdy1dev meldde in Issue #44029."
     }
   }
 }

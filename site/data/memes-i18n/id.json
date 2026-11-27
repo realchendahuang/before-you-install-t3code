@@ -97,6 +97,22 @@
       "title": "Dosa 24 · 泄 · Prompt Lo di URL",
       "note": "Link share menjejalkan kutipan 8.000 karakter dan prompt penuh ke URL teks polos. Issue #29449 dikunci dalam 4m 39s, 0 balasan, dokumen dihapus."
     },
+    "sins-sin-25-patronage-zi": {
+      "title": "Dosa 25 · Patronase「资」",
+      "note": "Setelah T3 Code dapat skor rendah di tier list publik, Theo DM penulisnya dan menawarkan mendanai benchmark-nya ('jadi saya tawarkan mendanainya'). Versi berikutnya menyebut T3 Code sebagai daily driver-nya, lengkap dengan t3.ademark.dev."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "Dosa 26 · Di Bawah Standar「劣」",
+      "note": "Dapat 'F' di urutan paling buncit (baru merangkak ke 'D' setelah patch darurat) di audit 25 tool @ZryMiller, sementara Aether dan Hermes dapat 'A' semua. Tetap saja membuat anonymous-id saat opt-out dan menghilangkan <ClerkProvider telemetry={false}>."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "Dosa 27 · Karantina「闭」",
+      "note": "Bilang ke 1,401 kontributor MIT yang tidak dibayar 'Saran: Jangan,' mengunci Issue #4123 lewat @pingdotgg di 700K views, lalu diam-diam menambal 4 vuln lagi di v0.1.13 dengan 0 Security Advisory."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "Dosa 28 · Menggelembung「胀」",
+      "note": "Bug fan-out membanjiri statev2.sqlite milik kreator SWC @kdy1dev dengan 5,654,888 baris duplikat (113 GiB; 0 B terbuang di UI; 56,68 GiB setelah doctor), sementara Theo bungkam total 41 jam sambil me-retweet pujian."
+    },
     "blended-00-drake": {
       "title": "Drake: Standar Ganda 11 Jam",
       "note": "Developer China fork MIT gratis: diancam ban. Lab AS triliunan dolar nyontek MIT 11 jam kemudian: 'Open source kan open source!'"
@@ -245,6 +261,10 @@
       "title": "Changelog: GBK Iya, Ban Enggak",
       "note": "v0.1.13: 401 perubahan, 7 highlight soal file GBK. Peringatan ban dari Google dan spoof Zed disembunyiin di '+380 lainnya.'"
     },
+    "blended-21c-always-has-been-zed": {
+      "title": "Dari Dulu Begitu: clientInfo { name: 'zed' }",
+      "note": "PR #43087 mengakui handshake ACP Antigravity mengirim clientInfo: { name: 'zed', version: '0.0.0' }, lalu v0.1.13 menyelipkan perbaikannya ke dalam '+380 more bug fixes.'"
+    },
     "blended-22a-clown-final-statement": {
       "title": "Badut dalam 16 Menit Saja",
       "note": "'T3 nggak pernah baca file kamu.' 16 menit kemudian @sk1gl4a ngitung 243 chat Claude yang discan. PR #43948 membenarkan."
@@ -269,6 +289,10 @@
       "title": "Flex Tape di Atas Peringatan Keamanan",
       "note": "SDK Anthropic ngasih peringatan soal wildcard yang ngakalin approval. T3 monkey-patch process.emitWarning dan malah bikin unit test buat nge-mute itu."
     },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "Semua Baik-Baik Saja (Cookie 11 Browser di Desktop)",
+      "note": "ServerBrowser.ts hanya mengisolasi tab saat desktop === null (Linux headless), sehingga cookie dari 11 browser yang diimpor, peringatan Anthropic yang dibisukan, dan path unggah ~/.ssh/id_rsa tetap terbuka di Desktop."
+    },
     "blended-24a-anakin-padme-url": {
       "title": "8.000 Karakter di URL, 'kan?",
       "note": "PR #18454 nyumpel prompt 8.000 karakter dan nama repo privat ke app.t3.codes/new?prompt=, dan preview-nya nge-log semuanya."
@@ -276,6 +300,22 @@
     "blended-24b-disaster-girl-4m39s": {
       "title": "Dikunci dalam 4m 39s, Lalu Dihapus",
       "note": "Issue #29449: URL quote bocorin 32 karakter teks yang nggak dipilih. Dikunci dalam 4m 39s, dirilis ke mobile, dokumennya dihapus."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "Terungkap ala Scooby: 'Jadi Saya Tawarkan Mendanainya'",
+      "note": "Setelah T3 Code dapat skor rendah di ADE Tier List v1, Theo mengaku terbuka soal DM ke penulisnya dan tawaran mendanai benchmark-nya—tak lama kemudian muncul 'T3 Code adalah daily driver saya' dan t3.ademark.dev."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "Podium Sampanye: Naik dari F ke D",
+      "note": "Di audit telemetri 25 tool @ZryMiller, Aether dan Hermes dapat A semua, sementara T3 Code versi dasar dapat F di posisi paling buncit—hanya naik ke D setelah patch darurat."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "Beda 4 Tahun: glacier#1 (2022) ke #33639 (2026)",
+      "note": "Oktober 2022, @t3dotgg nyemplung ke hazae41/glacier#1 dan menyebut maintainer-nya 'cuma orang brengsek :('; empat tahun kemudian dia menyebut seorang pengguna 'berengsek tak tahu terima kasih' dan mengunci Issue #4123 lewat @pingdotgg."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41 Jam Bungkam atau Ambil 25 Kartu",
+      "note": "Alih-alih menjawab thread AWS HR yang 639K views, 243 chat Claude yang terpindai, atau SQLite kembung 113 GiB, Theo bungkam total 41 jam sambil me-repost pujian untuk Mobile 2.4."
     },
     "stickers-01_copium_no_telemetry": {
       "title": "Copium 'No Telemetry'",
@@ -413,6 +453,14 @@
       "title": "Idiom #06 · 掩耳盗铃: Advisory: 0",
       "note": "Hapus \"tanpa telemetri\" dari README dan tambal lubang kritis lewat commit senyap. Advisory tetap 0."
     },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "Peribahasa Mandarin #07: 金蝉脱壳 (Cicada Emas Lepas Kulit)",
+      "note": "Meninggalkan cangkang open-source MIT yang kosong sambil menutup PR #43889 ('nvm lebih gampang di slophouse') dan memindahkan pelacakan identitas ke backend closed-source."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "Peribahasa Mandarin #08: 杀鸡儆猴 (Bunuh Ayam buat Takutin Monyet)",
+      "note": "Mengubah tweet 89 views, 0 like dari engineer AWS @dmfigol jadi DM tengah malam ('Rasa takut itu insentif yang bagus'), sindiran soal bahasa Inggris, dan laporan resmi ke HR AWS."
+    },
     "creative-packaging-01-t3code-iceberg": {
       "title": "Iceberg T3 Code",
       "note": "Permukaan: tweet \"Temu3 Code\". Di bawahnya: hapus palsu 41,6 GB, log IP 2,2 jt/jam, 0 advisory, krisis jam 4 pagi."
@@ -428,6 +476,10 @@
     "creative-packaging-04-mit-license-coupon": {
       "title": "Kupon: Diskon 100%, China Dikecualikan",
       "note": "Kupon selebaran Minggu: \"Curi kode kami (legal)!\" Cetakan kecilnya membatalkannya untuk fork China."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "Rapor: Audit Telemetri 35 Tool (F → D)",
+      "note": "Rapor sekolah datar tanpa emosi dari audit 35 tool @ZryMiller: Aether dan Hermes dapat A semua, Orca dapat C karena menghormati DO_NOT_TRACK, dan T3 Code nangkring di F → D."
     },
     "creative-gaming-01-sekiro-google-ban": {
       "title": "Sekiro: AKUN KENA BAN (3:00)",
@@ -456,6 +508,18 @@
     "creative-gaming-07-steam-77k-stars": {
       "title": "Pencapaian: 'Pertumbuhan 100% Organik' (129 Watcher)",
       "note": "Diam 30 detik saja memicu popup auto-star. Star: 77.000. Watcher: 129."
+    },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Pencapaian Steam: 'Pindah ke Ideas dalam 4m 39s'",
+      "note": "Pencapaian Steam langka karena mengunci Issue #29449 dalam 4m 39s tanpa satu balasan, setelah URL kutipan plaintext membocorkan prompt sepanjang 8.000 karakter, lalu mengirimnya ke mobile dan menghapus design doc."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Pencapaian Steam: 'Lebih Gampang di Slophouse'",
+      "note": "Pencapaian Steam langka karena ketahuan memindai 243 chat Claude lokal 16 menit setelah 'Pernyataan final' Anda, lalu menutup PR #43889 untuk memindahkan pelacakan ke slophouse closed-source."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Pencapaian Steam: '81K Bintang, 0 Advisory'",
+      "note": "Pencapaian Steam langka karena menyorot file teks GBK di v0.1.13 (401 perubahan) sambil mengubur peringatan ban akun dari Google dan spoofing Zed di dalam '+380 more bug fixes.'"
     },
     "creative-pokemon-01-evo-star-farmer": {
       "title": "Jalur Evolusi #01: Petani Star",
@@ -500,6 +564,10 @@
     "creative-reactions-07-gif-auto-star-counter": {
       "title": "GIF: Penghitung Auto-Star 30 Detik",
       "note": "Diam 30 detik, popup memicu PUT user/starred. Star naik ke 77.000, watcher beku di 129."
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "Tanda Balasan: Kreator 1M+ vs Tweet 89 Views",
+      "note": "Tanda balasan singkat untuk thread @dmfigol Januari 2025: tweet 89 views, 0 like memicu DM tengah malam ('Rasa takut itu insentif yang bagus'), sindiran soal bahasa, dan laporan ke HR AWS."
     },
     "story-en-ep01": {
       "title": "Ep.1 · Terpisah 11 Jam (versi Inggris)",

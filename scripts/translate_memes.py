@@ -68,6 +68,41 @@ ZH_TRADITIONAL_BANNED = (
     "顯而易見",
     "不容忽視",
     "眾所周知",
+    "值得關注",
+    "令人咋舌",
+    "細思極恐",
+    "不言而喻",
+)
+
+ZH_TW_FORBIDDEN_TERMS = (
+    "微信",
+    "MIT 分支",
+    "MIT 分叉",
+    "梗圖",
+    "梗图",
+    "補丁",
+    "倉庫",
+    "軟件",
+    "信息",
+    "默認",
+    "鏈接",
+    "活兒",
+    "搞廢",
+    "整廢",
+    "破防",
+    "舉報",
+    "好使",
+    "播放量",
+    "點讚",
+    "黑客",
+    "服務器",
+    "內存",
+    "硬盤",
+    "帶寬",
+    "喜提",
+    "擦屁股",
+    "這玩意兒",
+    "停服",
 )
 
 # Verified strictly Simplified-only characters that must not leak into zh-TW
@@ -180,11 +215,13 @@ def check_item_invariants(
         for bad in ZH_TRADITIONAL_BANNED:
             if bad in cand:
                 errs.append(f"{label}: contains AI cliché '{bad}'")
-        for bad_term in ("微信", "MIT 分支", "MIT 分叉", "梗圖", "梗图"):
+        for bad_term in ZH_TW_FORBIDDEN_TERMS:
             if bad_term in cand:
-                errs.append(f"{label}: contains forbidden term '{bad_term}' in zh-TW")
+                errs.append(f"{label}: contains forbidden/Mainland term '{bad_term}' in zh-TW")
         if re.search(r"(?<!處理)(?<!應用)程序", cand):
             errs.append(f"{label}: contains Mainland '程序' in zh-TW")
+        if re.search(r"MIT Fork[\u4e00-\u9fff]|[\u4e00-\u9fff]MIT Fork", cand):
+            errs.append(f"{label}: missing space around 'MIT Fork'")
         if "完了，又伤害中国人民的感情了" not in cand:
             sc_hits = sorted(set(cand) & ZH_TW_SC_CHARS)
             if sc_hits:
@@ -196,6 +233,11 @@ def check_item_invariants(
         script_re = SCRIPT_RE_BY_LANG.get(lang_code)
         if script_re and len(prose_words) >= 2 and not script_re.search(cand):
             errs.append(f"{label}: missing target script characters for {lang_code}")
+        if lang_code == "pt-BR" and ("trillion" in src_text.lower() or "$1T" in src_text):
+            if re.search(r"bilion[áa]ri|bilh[ãa]o|bilh[õo]es", cand, re.I):
+                errs.append(f"{label}: $1T/trillion must be trilhão/trilionário in pt-BR")
+        if lang_code == "vi" and src_text.startswith("Sin ") and cand.startswith("Sin "):
+            errs.append(f"{label}: translate 'Sin' as 'Tội' in Vietnamese")
 
     inv = extract_invariants(src_text)
     for h in inv["handles"]:
@@ -243,6 +285,25 @@ def validate_chunk(
     return errs
 
 
+MEME_STYLE_HINTS: dict[str, str] = {
+    "ja": "Use punchy plain-form Japanese (常体/タメ口でキレのあるネットミーム調). Translate short English punchlines cleanly into Japanese.",
+    "ko": "Use punchy Korean declarative/meme style (~했다 / ~다 / 명사형 종결). Translate quoted English punchlines naturally into Korean (never leave 'Okay I'm stealing this' untranslated).",
+    "es": "Use crisp Spanish dev-meme style: 'fork' (never 'bifurcación'), natural phrasing, and translate quoted English punchlines into Spanish.",
+    "fr": "Use sharp French tech-meme satire: 'fork', punchy phrasing, natural French idioms.",
+    "de": "Use sharp German tech-meme satire: crisp, ironic, natural German syntax.",
+    "pt-BR": "Use punchy Brazilian Portuguese tech-meme style: 'fork', and ALWAYS translate '$1T' / 'trillion' as 'trilhão' / 'trilionário' (NEVER 'bilionário').",
+    "vi": "Use punchy Vietnamese meme satire: translate 'Sin N' as 'Tội N' (never keep 'Sin N'), natural dev slang.",
+    "it": "Use crisp Italian tech-meme satire ('fork', sharp punchlines).",
+    "nl": "Use sharp Dutch tech-meme satire ('fork', dry Dutch wit).",
+    "pl": "Use crisp Polish dev-meme satire ('fork', sharp punchlines).",
+    "ru": "Use biting Russian IT-meme satire ('форк', sharp concise punchlines).",
+    "ar": "Use punchy modern Arabic tech-meme satire ('فورك MIT', sharp crisp phrasing).",
+    "tr": "Use sharp Turkish dev-meme satire ('fork', crisp punchlines).",
+    "id": "Use witty Indonesian tech-meme style ('fork', natural conversational punchlines).",
+    "hi": "Use sharp Hindi tech-meme style ('फ़ोर्क', natural punchlines without untranslated English blocks).",
+}
+
+
 def translate_chunk(
     src_items: dict[str, dict[str, str]],
     lang: dict[str, Any],
@@ -254,23 +315,25 @@ def translate_chunk(
 
     if from_zh_cn:
         guidance = (
-            "Convert every Simplified Chinese `title` and `note` into natural Traditional Chinese "
-            "(Taiwan/Hong Kong editorial usage: e.g. 程式碼/檔案/帳號/封鎖/雜湊/工程師).\n"
+            "Convert every Simplified Chinese `title` and `note` into authentic, sharp Taiwan/HK Traditional Chinese (信達雅).\n"
             "STRICT zh-TW TERMINOLOGY:\n"
-            "- Always use `WeChat` instead of `微信`.\n"
-            "- Always use `迷因` instead of `梗圖` / `梗图`.\n"
-            "- Always use `MIT Fork` instead of `MIT 分支` / `MIT 分叉`.\n"
-            "- Always use `行程` or `處理程序` instead of standalone `程序`, and `工程師` instead of `程序員` / `程序员`.\n"
-            "- Never leave Simplified Chinese characters behind (use 著 not 着, 多數 not 多数, 賊喊捉賊 not 贼喊捉贼, 託管 not 托管, etc.).\n"
+            "- Always use `WeChat` (never `微信`), `迷因` (never `梗圖`/`梗图`), `MIT Fork` (never `MIT 分支`/`MIT 分叉`), `行程`/`處理程序` (never standalone `程序`), `工程師` (never `程序員`), `修補程式` (never `補丁`), `儲存庫` (never `倉庫`), `專案` (for project), `軟體` (never `軟件`), `預設` (never `默認`), `檢舉` (never `舉報`), `瀏覽量` (never `播放量`), `按讚` (never `點讚`).\n"
+            "- Replace Mainland slang (`活兒`/`玩意兒`/`搞廢`/`整廢`/`破防`/`好使`/`喜提`/`擦屁股`/`停服`) with natural Taiwan phrasing (`開發工作`/`這東西`/`弄垮`/`失控暴走`/`管用`/`正式畢業`/`救火`/`關停`).\n"
+            "- Keep spaces around English/numbers (`MIT Fork 威脅`) and NEVER leave Simplified Chinese chars behind.\n"
             "- Zero AI clichés."
         )
     else:
+        extra_hint = MEME_STYLE_HINTS.get(code, "")
         guidance = (
-            f"Translate every `title` and `note` from English into sharp, punchy, natural {lang['englishName']} ({lang['name']}).\n"
-            f"Write like a sharp tech-community meme archive editor — zero robotic filler, zero AI clichés.\n"
+            f"Translate every `title` and `note` from English into faithful, fluent, razor-sharp {lang['englishName']} ({lang['name']}) — 信达雅:\n"
+            f"- 信 (Faithful): preserve exact facts, numbers, dates, and references.\n"
+            f"- 达 (Fluent): natural {lang['englishName']} word order and idiom; no stiff translationese.\n"
+            f"- 雅 (Sharp Satire): write like a witty tech-community meme archive editor — concise, punchy, zero robotic filler or AI hype.\n"
+            f"{extra_hint}\n"
             f"Translate ALL readable English prose completely into {lang['englishName']}; never leave whole titles or notes in English!\n"
             f"- For items like `Sin 1 · 歧 · ...` or `The 歧 Seal`, keep the single Chinese sin/seal glyph (e.g. `歧`) and translate the rest.\n"
-            f"- For `(中文)` in episode/comic titles, translate it cleanly into {lang['englishName']} (e.g., Chinese edition / 简体中文版 / etc.)."
+            f"- For `(中文)` in episode/comic titles, translate it cleanly into {lang['englishName']} (e.g., Chinese edition / 简体中文版 / etc.).\n"
+            f"- IMPORTANT: 'receipts' means 'documented evidence/proof' (NEVER store receipts/invoices like fatura/recibo/paragon/чек/biên lai), and 'bought a sprint' means 'triggered/forced a sprint' (NEVER literally purchased)."
         )
 
     src_json = json.dumps(src_items, ensure_ascii=False, indent=2)
@@ -371,22 +434,39 @@ def main() -> int:
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     all_ids = [it["id"] for it in memes_items]
-    id_batches = chunk_list(all_ids, args.batch_size)
 
-    pending_langs: list[dict[str, Any]] = []
+    pending_jobs: list[tuple[dict[str, Any], dict[str, dict[str, str]], dict[str, dict[str, str]], list[list[str]]]] = []
     for lang in target_langs:
-        if not args.force and not validate_file(lang, memes_items):
-            print(f"  [memes-i18n] {lang['code']}: cached", flush=True)
-        else:
-            pending_langs.append(lang)
+        code = lang["code"]
+        from_zh_cn = code == "zh-TW"
+        src_items = build_source_items(memes_items, from_zh_cn)
+        cached_items: dict[str, dict[str, str]] = {}
+        out_path = OUT_DIR / f"{code}.json"
+        if not args.force and out_path.is_file():
+            try:
+                old_obj = json.loads(out_path.read_text(encoding="utf-8"))
+                old_items = old_obj.get("items") if isinstance(old_obj, dict) else None
+                if isinstance(old_items, dict):
+                    for mid in all_ids:
+                        if mid in old_items and not validate_chunk({mid: src_items[mid]}, {mid: old_items[mid]}, code, from_zh_cn):
+                            cached_items[mid] = old_items[mid]
+            except Exception:
+                cached_items = {}
+        missing_ids = [mid for mid in all_ids if mid not in cached_items]
+        if not missing_ids and not validate_file(lang, memes_items):
+            print(f"  [memes-i18n] {code}: cached ({len(all_ids)} items)", flush=True)
+            continue
+        id_batches = chunk_list(missing_ids, args.batch_size)
+        pending_jobs.append((lang, src_items, cached_items, id_batches))
 
-    if not pending_langs:
+    if not pending_jobs:
         print("All target memes-i18n files are already valid and cached.")
         return 0
 
+    total_chunks = sum(len(jb[3]) for jb in pending_jobs)
     print(
-        f"Translating {len(memes_items)} memes across {len(pending_langs)} language(s) "
-        f"({len(id_batches)} chunks/lang, j={args.jobs})...",
+        f"Translating missing/updated memes across {len(pending_jobs)} language(s) "
+        f"({total_chunks} chunk(s), j={args.jobs})...",
         flush=True,
     )
 
@@ -396,12 +476,15 @@ def main() -> int:
         chunks_by_lang: dict[str, dict[int, dict[str, dict[str, str]]]] = {}
         remaining_by_lang: dict[str, int] = {}
         src_by_lang: dict[str, dict[str, dict[str, str]]] = {}
+        cached_by_lang: dict[str, dict[str, dict[str, str]]] = {}
+        batch_count_by_lang: dict[str, int] = {}
 
-        for lang in pending_langs:
+        for lang, src_items, cached_items, id_batches in pending_jobs:
             code = lang["code"]
-            src_items = build_source_items(memes_items, code == "zh-TW")
             src_by_lang[code] = src_items
+            cached_by_lang[code] = cached_items
             chunks_by_lang[code] = {}
+            batch_count_by_lang[code] = len(id_batches)
             remaining_by_lang[code] = len(id_batches)
             for bi, batch_ids in enumerate(id_batches):
                 batch_src = {mid: src_items[mid] for mid in batch_ids}
@@ -417,10 +500,10 @@ def main() -> int:
                 print(f"  [FAIL] {code} batch {bi + 1}: {exc}", file=sys.stderr, flush=True)
             remaining_by_lang[code] -= 1
             if remaining_by_lang[code] == 0:
-                if len(chunks_by_lang[code]) != len(id_batches):
+                if len(chunks_by_lang[code]) != batch_count_by_lang[code]:
                     continue
-                merged: dict[str, dict[str, str]] = {}
-                for idx in range(len(id_batches)):
+                merged: dict[str, dict[str, str]] = dict(cached_by_lang[code])
+                for idx in range(batch_count_by_lang[code]):
                     merged.update(chunks_by_lang[code][idx])
                 ordered = {mid: merged[mid] for mid in all_ids}
                 errs = validate_chunk(src_by_lang[code], ordered, code, code == "zh-TW")
@@ -433,12 +516,13 @@ def main() -> int:
                     json.dumps(out_obj, ensure_ascii=False, indent=2) + "\n",
                     encoding="utf-8",
                 )
-                print(f"  [memes-i18n] {code}: ok ({len(ordered)} items)", flush=True)
+                reused = len(cached_by_lang[code])
+                print(f"  [memes-i18n] {code}: ok ({len(ordered)} items; reused={reused}, translated={len(ordered)-reused})", flush=True)
 
     if failures:
         print(f"\nCompleted with {len(failures)} failure(s).", file=sys.stderr)
         return 1
-    print(f"\nAll {len(pending_langs)} memes-i18n files written and validated.")
+    print(f"\nAll {len(pending_jobs)} memes-i18n files written and validated.")
     return 0
 
 
