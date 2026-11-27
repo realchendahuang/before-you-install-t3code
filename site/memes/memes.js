@@ -156,6 +156,15 @@
     });
   }
 
+  let lastColCount = 0;
+
+  function getColCount() {
+    const w = window.innerWidth || 1200;
+    if (w <= 540) return 1;
+    if (w <= 980) return 2;
+    return 3;
+  }
+
   function renderGrid() {
     renderSeriesBanner();
     const grid = document.getElementById("memeGrid");
@@ -175,26 +184,43 @@
     const dlTxt = t("memes.downloadBtn", "Save");
     const dlGifTxt = t("memes.downloadGifBtn", "Save GIF");
 
-    grid.innerHTML = visibleItems
-      .map((it, idx) => {
-        const title = isZh() ? it.titleZh : it.titleEn;
-        const note = isZh() ? it.noteZh : it.noteEn;
-        const sLabel = t(`memes.series.${it.series}`, it.series.toUpperCase());
-        const gif = isAnimatedGif(it);
-        const cardCls = [
-          "meme-card",
-          it.series === "sins" ? "is-sin" : "",
-          it.series === "stickers" || it.transparent ? "is-sticker" : "",
-        ].filter(Boolean).join(" ");
+    const colCount = getColCount();
+    lastColCount = colCount;
+    const cols = Array.from({ length: colCount }, () => []);
+    const heights = new Array(colCount).fill(0);
+    const colWidth = colCount === 1 ? 340 : colCount === 2 ? 360 : 340;
 
-        const srcHref = it.sourceUrl || `../mail/?thread=${encodeURIComponent(it.thread)}`;
-        const srcAttrs = it.sourceUrl ? ' target="_blank" rel="noopener noreferrer"' : "";
+    visibleItems.forEach((it, idx) => {
+      const title = isZh() ? it.titleZh : it.titleEn;
+      const note = isZh() ? it.noteZh : it.noteEn;
+      const sLabel = t(`memes.series.${it.series}`, it.series.toUpperCase());
+      const gif = isAnimatedGif(it);
+      const cardCls = [
+        "meme-card",
+        it.series === "sins" ? "is-sin" : "",
+        it.series === "stickers" || it.transparent ? "is-sticker" : "",
+      ].filter(Boolean).join(" ");
 
-        return `<article class="${cardCls}">
+      const srcHref = it.sourceUrl || `../mail/?thread=${encodeURIComponent(it.thread)}`;
+      const srcAttrs = it.sourceUrl ? ' target="_blank" rel="noopener noreferrer"' : "";
+
+      const w = Number(it.width) || 900;
+      const h = Number(it.height) || 900;
+      const ratio = Math.min(2.2, Math.max(0.4, h / w));
+      const noteLines = note ? Math.ceil(note.length / (isZh() ? 22 : 42)) : 0;
+      const titleLines = title ? Math.ceil(title.length / (isZh() ? 18 : 34)) : 1;
+      const estHeight = ratio * colWidth + 96 + titleLines * 21 + noteLines * 20;
+
+      let bestCol = 0;
+      for (let c = 1; c < colCount; c++) {
+        if (heights[c] < heights[bestCol]) bestCol = c;
+      }
+
+      cols[bestCol].push(`<article class="${cardCls}">
           <button type="button" class="meme-media-btn" data-open-lb="${idx}" aria-label="${escapeHtml(title)}">
             <div class="meme-img-frame">
               ${gif ? `<span class="gif-pill">GIF</span>` : ""}
-              <img src="${escapeHtml(it.url)}" alt="${escapeHtml(title)}" width="${it.width || 900}" height="${it.height || 900}" loading="lazy" crossorigin="anonymous" />
+              <img src="${escapeHtml(it.url)}" alt="${escapeHtml(title)}" width="${w}" height="${h}" loading="lazy" crossorigin="anonymous" />
             </div>
           </button>
           <div class="meme-body">
@@ -210,9 +236,11 @@
               <a class="act-btn act-cobalt" href="${escapeHtml(srcHref)}"${srcAttrs}>#${escapeHtml(it.exhibit)} →</a>
             </div>
           </div>
-        </article>`;
-      })
-      .join("");
+        </article>`);
+      heights[bestCol] += estHeight + 18;
+    });
+
+    grid.innerHTML = cols.map((itemsHtml) => `<div class="meme-col">${itemsHtml.join("")}</div>`).join("");
   }
 
   function triggerPop() {
@@ -431,6 +459,14 @@
     if (e.key === "Escape") closeLightbox();
     else if (e.key === "ArrowLeft") stepLightbox(-1);
     else if (e.key === "ArrowRight") stepLightbox(1);
+  });
+
+  let resizeTimer = null;
+  window.addEventListener("resize", () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
+      if (allItems.length && getColCount() !== lastColCount) renderGrid();
+    }, 120);
   });
 
   init();

@@ -119,7 +119,8 @@ a { color: inherit; text-decoration: none; }
 .sb-actions { display: flex; gap: 8px; flex-wrap: wrap; }
 
 .gallery-sec { padding: 18px 0 72px; }
-.meme-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; align-items: start; }
+.meme-grid { display: flex; gap: 18px; align-items: flex-start; }
+.meme-col { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
 
 .meme-card {
   background: var(--surface); border: 1px solid var(--border); border-radius: 14px; overflow: hidden;
@@ -254,7 +255,6 @@ a { color: inherit; text-decoration: none; }
   max-width: calc(100vw - 32px); text-align: center;
 }
 
-@media (max-width: 980px) { .meme-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 @media (max-width: 640px) {
   .container { padding: 0 16px; }
   .nav-inner { flex-wrap: wrap; min-height: 0; padding: 8px 14px 0; row-gap: 6px; gap: 8px 10px; }
@@ -285,7 +285,7 @@ a { color: inherit; text-decoration: none; }
   .search-input { font-size: 16px; height: 42px; }
 
   .gallery-sec { padding: 14px 0 56px; }
-  .meme-grid { gap: 14px; }
+  .meme-grid, .meme-col { gap: 14px; }
   .footer-inner { flex-direction: column; align-items: flex-start; gap: 10px; }
 
   .lb { padding: 10px; }
@@ -298,7 +298,4 @@ a { color: inherit; text-decoration: none; }
   .lb-foot { padding: 10px 12px max(10px, env(safe-area-inset-bottom)); }
   .lb-actions { gap: 6px; }
   .act-btn { padding: 5px 9px; font-size: 12px; }
-}
-@media (max-width: 540px) {
-  .meme-grid { grid-template-columns: 1fr; }
 }
