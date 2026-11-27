@@ -208,16 +208,6 @@
     if (zipBtn && memeCatalogMeta && memeCatalogMeta.stickerZipUrl) {
       zipBtn.href = memeCatalogMeta.stickerZipUrl;
     }
-    const allBtn = document.getElementById("homeAllMemesBtn");
-    const totalN = memeCatalog.length || (memeCatalogMeta && memeCatalogMeta.total) || 0;
-    const sinsN = (memeCatalogMeta && memeCatalogMeta.counts && memeCatalogMeta.counts.sins) || 0;
-    if (allBtn && totalN) {
-      allBtn.textContent = allBtn.textContent.replace(/\b(61|114|144|149|150)\b/, String(totalN));
-    }
-    const mmTitle = document.getElementById("memesTitle");
-    if (mmTitle && sinsN) {
-      mmTitle.textContent = mmTitle.textContent.replace(/\b(19|22|24)\b/, String(sinsN));
-    }
 
     if (!rail || !viralGrid || !memeCatalog.length) return;
 

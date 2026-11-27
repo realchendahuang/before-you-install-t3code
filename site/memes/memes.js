@@ -96,57 +96,10 @@
 
   function updateDynamicCounts() {
     if (!catalogMeta) return;
-    const counts = catalogMeta.counts || {};
-    const total = allItems.length || catalogMeta.total || 0;
-    const sinsN = counts.sins || 22;
-    const stickersN = counts.stickers || 28;
-    const receiptsN = (counts.classic || 0) + (counts.comics || 0);
-
     const zipBtn = document.getElementById("stickerZipBtn");
     if (zipBtn && catalogMeta.stickerZipUrl) {
       zipBtn.href = catalogMeta.stickerZipUrl;
     }
-
-    const ptTpl = t("memes.pageTitle");
-    if (ptTpl && total) {
-      document.title = ptTpl.replace(/\b(61|114|144|149|150)\b/, String(total)).replace(/\b(19|22|24)\b/, String(sinsN));
-    }
-
-    const subEl = document.getElementById("heroSub");
-    if (subEl && total) {
-      const subTpl = t("memes.sub");
-      if (subTpl) {
-        subEl.textContent = subTpl
-          .replace(/\b(61|114|144|149|150)\b/, String(total))
-          .replace(/\b(19|22|24)\b/, String(sinsN));
-      }
-    }
-
-    const setTab = (series, label) => {
-      const el = document.querySelector(`[data-series="${series}"]`);
-      if (el && label) el.textContent = label;
-    };
-
-    const allLabel = t("memes.tabAll", "All");
-    setTab("all", total ? `${allLabel} (${total})` : allLabel);
-
-    const sinsLabel = t("memes.tabSins", `${sinsN} Sins`);
-    setTab("sins", sinsLabel.replace(/\b(19|22|24)\b/, String(sinsN)));
-
-    const blendedLabel = t("memes.tabBlended", "Viral Memes");
-    setTab("blended", counts.blended ? `${blendedLabel} (${counts.blended})` : blendedLabel);
-
-    const stickersLabel = t("memes.tabStickers", `${stickersN} Stickers`);
-    setTab("stickers", stickersLabel.replace(/\b28\b/, String(stickersN)));
-
-    const creativeLabel = t("memes.tabCreative", "Creative Pack");
-    setTab("creative", counts.creative ? `${creativeLabel} (${counts.creative})` : creativeLabel);
-
-    const storyLabel = t("memes.tabStory", "Story Comics");
-    setTab("story", counts.story ? `${storyLabel} (${counts.story})` : storyLabel);
-
-    const receiptsLabel = t("memes.tabReceipts", "Receipts");
-    setTab("receipts", receiptsN ? `${receiptsLabel} (${receiptsN})` : receiptsLabel);
   }
 
   function renderSeriesBanner() {
@@ -158,15 +111,15 @@
       const promoUrl = catalogMeta.promoSheetUrl || "";
       const mb = catalogMeta.stickerZipBytes ? ` (${(catalogMeta.stickerZipBytes / (1024 * 1024)).toFixed(1)} MB)` : "";
       el.innerHTML = `<div class="sb-left">
-        ${promoUrl ? `<a class="sb-thumb" href="${escapeHtml(promoUrl)}" target="_blank" rel="noopener noreferrer" aria-label="4x7 Sticker Contact Sheet"><img src="${escapeHtml(promoUrl)}" alt="28-Sticker Promo Sheet" loading="lazy" /></a>` : ""}
+        ${promoUrl ? `<a class="sb-thumb" href="${escapeHtml(promoUrl)}" target="_blank" rel="noopener noreferrer" aria-label="Sticker Contact Sheet"><img src="${escapeHtml(promoUrl)}" alt="Sticker Pack Promo Sheet" loading="lazy" /></a>` : ""}
         <div>
-          <div class="sb-title">${escapeHtml(t("memes.stickerBannerTitle", "Full 28-Sticker Transparent Pack v1.1"))}</div>
-          <p class="sb-desc">${escapeHtml(t("memes.stickerBannerDesc", "Pre-sized RGBA folders for Discord & Slack (128px), Telegram (512px WebP/PNG), and WeChat (240px) + 4×7 X promo sheet."))}</p>
+          <div class="sb-title">${escapeHtml(t("memes.stickerBannerTitle", "Transparent Rage-Comic Sticker Pack"))}</div>
+          <p class="sb-desc">${escapeHtml(t("memes.stickerBannerDesc", "Pre-sized RGBA folders for Discord & Slack (128px), Telegram (512px WebP/PNG), and WeChat (240px) + promo contact sheet."))}</p>
         </div>
       </div>
       <div class="sb-actions">
         ${promoUrl ? `<a class="act-btn" href="${escapeHtml(promoUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("memes.promoSheetBtn", "4×7 Contact Sheet ↗"))}</a>` : ""}
-        <a class="act-btn act-cobalt" href="${escapeHtml(zipUrl)}" download>📦 ${escapeHtml(t("memes.stickerZipBtn", "Free 28-Sticker ZIP"))}${escapeHtml(mb)}</a>
+        <a class="act-btn act-cobalt" href="${escapeHtml(zipUrl)}" download>📦 ${escapeHtml(t("memes.stickerZipBtn", "Download Sticker Pack"))}${escapeHtml(mb)}</a>
       </div>`;
       el.hidden = false;
       return;
@@ -221,14 +174,12 @@
     const copyGifTxt = t("memes.copyGifBtn", "Copy GIF URL");
     const dlTxt = t("memes.downloadBtn", "Save");
     const dlGifTxt = t("memes.downloadGifBtn", "Save GIF");
-    const sinsN = (catalogMeta && catalogMeta.counts && catalogMeta.counts.sins) || 22;
 
     grid.innerHTML = visibleItems
       .map((it, idx) => {
         const title = isZh() ? it.titleZh : it.titleEn;
         const note = isZh() ? it.noteZh : it.noteEn;
-        let sLabel = t(`memes.series.${it.series}`, it.series.toUpperCase());
-        if (it.series === "sins") sLabel = sLabel.replace(/\b(19|22)\b/, String(sinsN));
+        const sLabel = t(`memes.series.${it.series}`, it.series.toUpperCase());
         const gif = isAnimatedGif(it);
         const cardCls = [
           "meme-card",
@@ -283,8 +234,7 @@
     if (counter) counter.textContent = `${lbIndex + 1} / ${visibleItems.length}`;
     const badgeEl = document.getElementById("lbBadge");
     badgeEl.className = `badge badge-${it.series}`;
-    let sLabel = t(`memes.series.${it.series}`, it.series);
-    if (it.series === "sins") sLabel = sLabel.replace(/\b(19|22)\b/, String(sinsN));
+    const sLabel = t(`memes.series.${it.series}`, it.series);
     badgeEl.textContent = `${sLabel} · ${it.slug ? `:${it.slug}:` : `#${it.exhibit}`}`;
     document.getElementById("lbTitle").textContent = title;
     const noteEl = document.getElementById("lbNote");

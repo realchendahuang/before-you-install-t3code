@@ -63,14 +63,34 @@
     return "en";
   }
 
+  function deepMergeDefaults(baseObj, overrideObj) {
+    if (!baseObj || typeof baseObj !== "object") return overrideObj;
+    if (!overrideObj || typeof overrideObj !== "object") return baseObj;
+    const out = Array.isArray(baseObj) ? baseObj.slice() : { ...baseObj };
+    for (const k of Object.keys(overrideObj)) {
+      const bv = out[k];
+      const ov = overrideObj[k];
+      if (bv && ov && typeof bv === "object" && typeof ov === "object" && !Array.isArray(bv) && !Array.isArray(ov)) {
+        out[k] = deepMergeDefaults(bv, ov);
+      } else if (ov !== undefined && ov !== null && ov !== "") {
+        out[k] = ov;
+      }
+    }
+    return out;
+  }
+
   async function loadBundle(code, dataBase) {
     const norm = normalizeLang(code) || "en";
     if (cache.has(norm)) return cache.get(norm);
     const base = dataBase.endsWith("/") ? dataBase : dataBase + "/";
     try {
-      const res = await fetch(`${base}i18n/${norm}.json?v=10`);
+      const res = await fetch(`${base}i18n/${norm}.json?v=12`);
       if (!res.ok) throw new Error("fetch failed");
-      const obj = await res.json();
+      let obj = await res.json();
+      if (norm !== "en") {
+        const enObj = await loadBundle("en", base);
+        if (enObj) obj = deepMergeDefaults(enObj, obj);
+      }
       cache.set(norm, obj);
       return obj;
     } catch (_) {

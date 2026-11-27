@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Tmail · Public Record Inbox (2023–2026)</title>
-  <meta name="description" content="Searchable, date-sortable public archive for @theo and pingdotgg/t3code (May 2023 to Nov 2026). Every thread links to public posts, GitHub PRs, USPTO records, and 109 archived screenshots." />
+  <title>Tmail · Public Archive</title>
+  <meta name="description" content="Searchable, date-sortable public archive for @theo and pingdotgg/t3code. Every thread links to public posts, GitHub PRs, trademark records, and archived screenshots." />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://temu3code.com/mail/" />
-  <meta property="og:title" content="Tmail · Public Record Inbox (2023–2026)" />
-  <meta property="og:description" content="Browse, search, and sort 3.5 years of public posts, GitHub PRs, telemetry records, and security issues like an inbox." />
+  <meta property="og:title" content="Tmail · Public Archive" />
+  <meta property="og:description" content="Browse, search, and sort public posts, GitHub PRs, telemetry records, and security issues like an inbox." />
   <meta property="og:image" content="https://temu3code.com/og-card.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Tmail · Public Record Inbox" />
-  <meta name="twitter:description" content="Sort by date (2023–2026) to inspect multi-year public posts, telemetry records, and 109 archived screenshots." />
+  <meta name="twitter:title" content="Tmail · Public Archive" />
+  <meta name="twitter:description" content="Sort by date to inspect public posts, GitHub PRs, telemetry records, and archived screenshots." />
   <meta name="twitter:image" content="https://temu3code.com/og-card.png" />
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ffffff'/%3E%3Cpath d='M5 9.5L16 17.5L27 9.5V23C27 24.1 26.1 25 25 25H7C5.9 25 5 24.1 5 23V9.5Z' fill='%23EA4335'/%3E%3Cpath d='M5 9.5C5 8.1 6.1 7 7.5 7H24.5C25.9 7 27 8.1 27 9.5L16 17.5L5 9.5Z' fill='%234285F4'/%3E%3Cpath d='M5 10.5V23C5 24.1 5.9 25 7 25H10V14.2L5 10.5Z' fill='%2334A853'/%3E%3Cpath d='M27 10.5V23C27 24.1 26.1 25 25 25H22V14.2L27 10.5Z' fill='%23FBBC05'/%3E%3C/svg%3E" />
@@ -139,9 +139,9 @@
             <div class="profile-email">public-record@temu3code.com</div>
             <div class="profile-big-avatar">T3</div>
             <div class="profile-greeting" data-i18n="profileGreeting">Public Record Archive</div>
-            <div class="profile-sub" data-i18n="profileSub">Viewing verbatim public statements, GitHub PRs, USPTO records &amp; 109 receipts for @theo / pingdotgg/t3code (2023–2026).</div>
+            <div class="profile-sub" data-i18n="profileSub">Public posts, GitHub PRs, and archived screenshots for @theo / pingdotgg/t3code.</div>
             <div class="profile-actions">
-              <a class="profile-btn" href="../" data-report-link data-i18n="openFullReport">Open 20-Exhibit Report</a>
+              <a class="profile-btn" href="../" data-report-link data-i18n="openHome">Temu3 Home</a>
               <a class="profile-btn" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
             </div>
             <div class="profile-foot">CC0 1.0 Public Domain · Zero Telemetry</div>
@@ -185,8 +185,8 @@
           </button>
           <button type="button" class="nav-row" data-folder="attachments">
             <span class="material-symbols-outlined nav-ico">attach_file</span>
-            <span class="nav-label" data-i18n="folderAttachments">Attachments</span>
-            <span class="nav-count">109</span>
+            <span class="nav-label" data-i18n="folderAttachments">Photos</span>
+            <span class="nav-count" id="countPhotos"></span>
           </button>
           <button type="button" class="nav-row" data-folder="activity">
             <span class="material-symbols-outlined nav-ico">calendar_today</span>
@@ -265,7 +265,7 @@
             </div>
 
             <div class="toolbar-right">
-              <span class="range-label" id="rangeLabel">1–34 of 34</span>
+              <span class="range-label" id="rangeLabel"></span>
             </div>
           </div>
 
@@ -321,7 +321,7 @@
                 <button type="button" id="prevThreadBtn" class="icon-btn icon-btn-sm" aria-label="Previous thread">
                   <span class="material-symbols-outlined">chevron_left</span>
                 </button>
-                <span id="threadPosLabel" class="range-label">1 of 22</span>
+                <span id="threadPosLabel" class="range-label"></span>
                 <button type="button" id="nextThreadBtn" class="icon-btn icon-btn-sm" aria-label="Next thread">
                   <span class="material-symbols-outlined">chevron_right</span>
                 </button>
@@ -332,12 +332,12 @@
           <div class="thread-content" id="threadContent"></div>
         </div>
 
-        <!-- ATTACHMENTS / TPHOTOS VIEW (109 VISUAL RECEIPTS) -->
+        <!-- ATTACHMENTS / TPHOTOS VIEW -->
         <div id="attachmentsView" class="view-pane subapp-pane" hidden>
           <div class="subapp-head">
             <div>
-              <h2 class="subapp-title" data-i18n="photosTitle">TPhotos — 109 Primary Visual Receipts</h2>
-              <p class="subapp-desc" data-i18n="photosDesc">Every archived screenshot, GitHub PR capture, USPTO check, and forensic chart from the repository. Click any image to inspect at full resolution.</p>
+              <h2 class="subapp-title" data-i18n="photosTitle">TPhotos · Archived Screenshots</h2>
+              <p class="subapp-desc" data-i18n="photosDesc">Screenshots, PRs, and charts. Click any image to zoom.</p>
             </div>
             <input type="search" id="photosSearchInput" class="subapp-search" placeholder="Search photos" />
           </div>
@@ -348,12 +348,12 @@
         <div id="activityView" class="view-pane subapp-pane" hidden>
           <div class="subapp-head">
             <div>
-              <h2 class="subapp-title" data-i18n="activityTitle">TCal — Multi-Year Pattern &amp; 1,151-Tweet Activity</h2>
-              <p class="subapp-desc" data-i18n="activityDesc">Chronological timeline from May 2023 to Nov 2026 alongside the exhaustive 1,151-tweet quantitative dataset (Nov 7–24, 2026).</p>
+              <h2 class="subapp-title" data-i18n="activityTitle">TCal · Timeline &amp; 1,151 Posts</h2>
+              <p class="subapp-desc" data-i18n="activityDesc">Timeline from 2023 to 2026 and stats from 1,151 posts.</p>
             </div>
             <button type="button" class="tool-btn" id="activityToOldestBtn">
               <span class="material-symbols-outlined">sort</span>
-              <span data-i18n="viewChronoInbox">Open Chronological Inbox</span>
+              <span data-i18n="viewChronoInbox">Sort oldest first</span>
             </button>
           </div>
           <div class="activity-metrics" id="activityMetrics"></div>
@@ -365,10 +365,10 @@
         <div id="driveView" class="view-pane subapp-pane" hidden>
           <div class="subapp-head">
             <div>
-              <h2 class="subapp-title" data-i18n="driveTitle">TDrive — 6 Deep Dossiers &amp; 327 Primary Sources</h2>
-              <p class="subapp-desc" data-i18n="driveDesc">Line-by-line source code audits, verbatim SQL, USPTO TSDR records, and 2-minute hardening commands.</p>
+              <h2 class="subapp-title" data-i18n="driveTitle">TDrive · Reports &amp; Source Links</h2>
+              <p class="subapp-desc" data-i18n="driveDesc">Full write-ups, trademark checks, and cleanup commands.</p>
             </div>
-            <a class="tool-btn" href="../" data-report-link data-i18n="openFullReport">Open 20-Exhibit Report</a>
+            <a class="tool-btn" href="../" data-report-link data-i18n="openHome">Temu3 Home</a>
           </div>
           <div class="drive-grid" id="driveGrid"></div>
         </div>
@@ -393,24 +393,23 @@
         <span class="dock-ico tile-mail"><span class="material-symbols-outlined">mail</span></span>
         <span class="dock-label">Tmail</span>
       </button>
-      <button type="button" class="dock-btn" data-dock="attachments" title="TPhotos (109 Visual Receipts)">
+      <button type="button" class="dock-btn" data-dock="attachments" title="TPhotos (Screenshots)">
         <span class="dock-ico tile-photos"><span class="material-symbols-outlined">photo_library</span></span>
         <span class="dock-label">TPhotos</span>
       </button>
-      <button type="button" class="dock-btn" data-dock="drive" title="TDrive (6 Dossiers &amp; 327 Sources)">
+      <button type="button" class="dock-btn" data-dock="drive" title="TDrive (Reports &amp; Sources)">
         <span class="dock-ico tile-drive"><span class="material-symbols-outlined">folder_open</span></span>
         <span class="dock-label">TDrive</span>
       </button>
-      <button type="button" class="dock-btn" data-dock="activity" title="TCal (2023–2026 Timeline &amp; Stats)">
+      <button type="button" class="dock-btn" data-dock="activity" title="TCal (Timeline &amp; Stats)">
         <span class="dock-ico tile-cal"><span class="material-symbols-outlined">calendar_month</span></span>
-        <span class="dock-badge">3.5y</span>
         <span class="dock-label">TCal</span>
       </button>
-      <a class="dock-btn" href="../story/" title="TStory · 8-Episode Comic &amp; Bilingual Podcast">
+      <a class="dock-btn" href="../story/" title="TStory · Comic &amp; Podcast">
         <span class="dock-ico tile-story"><span class="material-symbols-outlined">auto_stories</span></span>
         <span class="dock-label" data-i18n="storyTile">TStory</span>
       </a>
-      <a class="dock-btn" href="../memes/" title="TMemes · 24 Sins, 28 Stickers &amp; 150 Memes">
+      <a class="dock-btn" href="../memes/" title="TMemes · Sins Deck, Stickers &amp; Memes">
         <span class="dock-ico tile-memes"><span class="material-symbols-outlined">style</span></span>
         <span class="dock-label">TMemes</span>
       </a>
@@ -456,7 +455,7 @@
   <!-- TOAST -->
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
-  <script src="../data/i18n.js?v=10"></script>
-  <script src="./app.js?v=14"></script>
+  <script src="../data/i18n.js?v=13"></script>
+  <script src="./app.js?v=15"></script>
 </body>
 </html>

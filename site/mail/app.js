@@ -27,8 +27,8 @@
       suiteTitle: "Public Record Suite",
       classicPortal: "Temu3",
       profileGreeting: "Public Record Archive",
-      profileSub: "Viewing verbatim public statements, GitHub PRs, USPTO records & 109 receipts for @theo / pingdotgg/t3code (2023–2026).",
-      openFullReport: "Back to Temu3 Home",
+      profileSub: "Public posts, GitHub PRs, and archived screenshots for @theo / pingdotgg/t3code.",
+      openFullReport: "Temu3 Home",
       submitReceipt: "Submit Receipt",
       folderInbox: "Inbox",
       folderStarred: "Starred",
@@ -55,13 +55,13 @@
       tabTelemetry: "Telemetry & Security",
       tabTelemetrySub: "PostHog, 2.2M/hr IP logs, Antigravity bans, ca81b7b9…",
       verifiedSource: "Verified Primary Source",
-      photosTitle: "TPhotos — 109 Primary Visual Receipts",
-      photosDesc: "Every archived screenshot, GitHub PR capture, USPTO check, and forensic chart from the repository. Click any image to inspect at full resolution.",
-      activityTitle: "TCal — Multi-Year Pattern & 1,151-Tweet Activity",
-      activityDesc: "Chronological timeline from May 2023 to Nov 2026 alongside the exhaustive 1,151-tweet quantitative dataset (Nov 7–24, 2026).",
-      viewChronoInbox: "Open Chronological Inbox",
-      driveTitle: "TDrive — 6 Deep Dossiers & 327 Primary Sources",
-      driveDesc: "Line-by-line source code audits, verbatim SQL, USPTO TSDR records, and 2-minute hardening commands.",
+      photosTitle: "TPhotos · Archived Screenshots",
+      photosDesc: "Screenshots, PRs, and charts. Click any image to zoom.",
+      activityTitle: "TCal · Timeline & 1,151 Posts",
+      activityDesc: "Timeline from 2023 to 2026 and stats from 1,151 posts.",
+      viewChronoInbox: "Sort oldest first",
+      driveTitle: "TDrive · Reports & Source Links",
+      driveDesc: "Full write-ups, trademark checks, and cleanup commands.",
       peopleDirTitle: "People & Counterparties Directory",
       peopleDirDesc: "Click any person or community below to filter every documented interaction with @theo and pingdotgg/t3code.",
       backInbox: "← Back to Inbox",
@@ -88,7 +88,7 @@
       suiteTitle: "公共档案套件",
       classicPortal: "Temu3 主页",
       profileGreeting: "独立公共记录档案箱",
-      profileSub: "收录 @theo 与 pingdotgg/t3code 的公开原文、GitHub PR/Issue、USPTO 商标查询及 109 份存档截图（2023–2026）。",
+      profileSub: "收录 @theo 和 pingdotgg/t3code 的公开原帖、GitHub PR 和存档截图。",
       openFullReport: "返回 Temu3 主页",
       submitReceipt: "提交公开证据",
       folderInbox: "收件箱",
@@ -116,13 +116,13 @@
       tabTelemetry: "遥测与安全漏洞",
       tabTelemetrySub: "默认 PostHog、220 万/时 IP 日志、Antigravity 3 分钟封号…",
       verifiedSource: "已核验一手信源",
-      photosTitle: "TPhotos — 109 份一手截图证据库",
-      photosDesc: "仓库完整归档的推文截图、PR 源码截图、USPTO 记录与统计图表，点击任意图片查看原图。",
-      activityTitle: "TCal — 3.5 年时间线与 1,151 条推文定量分析",
-      activityDesc: "完整还原 2023 年 5 月至 2026 年 11 月公开行为轨迹，结合 1,151 条连续推文定量统计图表。",
-      viewChronoInbox: "按最早时间浏览收件箱",
-      driveTitle: "TDrive — 6 份深度技术卷宗与 327 条一手信源",
-      driveDesc: "逐行源码审计、SQL 取证、USPTO 商标检索及 2 分钟清理加固命令。",
+      photosTitle: "TPhotos · 截图存档",
+      photosDesc: "截图、PR 记录和图表，点开查看大图。",
+      activityTitle: "TCal · 时间线和 1,151 条推文",
+      activityDesc: "2023 到 2026 年时间线，以及 1,151 条推文统计。",
+      viewChronoInbox: "按最早时间排序",
+      driveTitle: "TDrive · 专题报告与原始链接",
+      driveDesc: "完整报告、商标查询和 2 分钟清理命令。",
       peopleDirTitle: "涉及人物与开发者群体目录",
       peopleDirDesc: "点击任意人物或群体，立刻筛选与 @theo 及 pingdotgg/t3code 的全部公开交互记录。",
       backInbox: "← 返回收件箱",
@@ -472,6 +472,10 @@
     $("#countStarred").textContent = state.starredIds.size;
     $("#countDeleted").textContent = all.filter((th) => th.deleted || th.topics.includes("deleted")).length;
     $("#countSent").textContent = all.filter((th) => th.sentByTheo).length;
+    const countPhotosEl = $("#countPhotos");
+    if (countPhotosEl && Array.isArray(state.evidence) && state.evidence.length) {
+      countPhotosEl.textContent = state.evidence.length;
+    }
     $("#tabBullyingCount").textContent = all.filter(
       (th) => th.category === "bullying" || th.topics.includes("bullying") || th.topics.includes("double-standard")
     ).length;
