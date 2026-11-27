@@ -32,7 +32,7 @@
   --sidebar-w: 256px;
   --topbar-h: 64px;
   --radius-card: 16px;
-  --font-sans: "Inter", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Inter", Roboto, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
 }
 
@@ -70,24 +70,13 @@ a:hover {
   text-decoration: underline;
 }
 
-.material-symbols-outlined {
-  font-family: "Material Symbols Outlined";
-  font-weight: normal;
-  font-style: normal;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
+.tmail-ico {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  flex-shrink: 0;
   user-select: none;
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 20;
-}
-
-.material-symbols-outlined.is-filled {
-  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 20;
 }
 
 /* ---------- APP SHELL ---------- */
@@ -243,8 +232,9 @@ a:hover {
   color: var(--accent-blue);
 }
 
-.search-chip .material-symbols-outlined {
-  font-size: 16px;
+.search-chip .tmail-ico {
+  width: 16px;
+  height: 16px;
 }
 
 .kbd-hint {
@@ -328,8 +318,9 @@ a:hover {
   background: #f1f3f4;
 }
 
-.icon-pill-btn .material-symbols-outlined {
-  font-size: 17px;
+.icon-pill-btn .tmail-ico {
+  width: 17px;
+  height: 17px;
 }
 
 .jemini-pill {
@@ -443,7 +434,7 @@ a:hover {
   color: #3c4043;
   font-size: 13px;
 }
-.lang-picker-pill .material-symbols-outlined { font-size: 17px; color: #5f6368; }
+.lang-picker-pill .tmail-ico { width: 17px; height: 17px; color: #5f6368; }
 .tmail-lang-select {
   border: 0;
   background: transparent;
@@ -659,12 +650,12 @@ a:hover {
 }
 
 .nav-row.active .nav-ico {
-  font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0, "opsz" 20;
   color: var(--accent-blue);
 }
 
 .nav-ico {
-  font-size: 19px;
+  width: 19px;
+  height: 19px;
   color: var(--text-secondary);
 }
 
@@ -759,12 +750,13 @@ a:hover {
   font-weight: 600;
 }
 
-.topic-btn .material-symbols-outlined {
-  font-size: 17px;
+.topic-btn .tmail-ico {
+  width: 17px;
+  height: 17px;
   color: var(--text-secondary);
 }
 
-.topic-btn.active .material-symbols-outlined {
+.topic-btn.active .tmail-ico {
   color: var(--accent-blue);
 }
 
@@ -870,7 +862,7 @@ a:hover {
   display: none;
 }
 
-.overview-banner.is-collapsed #overviewToggleBtn .material-symbols-outlined {
+.overview-banner.is-collapsed #overviewToggleBtn .tmail-ico {
   transform: rotate(180deg);
 }
 
@@ -952,8 +944,9 @@ a:hover {
   color: var(--text-primary);
 }
 
-.tool-btn .material-symbols-outlined {
-  font-size: 17px;
+.tool-btn .tmail-ico {
+  width: 17px;
+  height: 17px;
 }
 
 .select-pill {
@@ -973,8 +966,9 @@ a:hover {
   background: #f8f9fa;
 }
 
-.select-pill .material-symbols-outlined {
-  font-size: 16px;
+.select-pill .tmail-ico {
+  width: 16px;
+  height: 16px;
 }
 
 .select-pill select {
@@ -1198,12 +1192,9 @@ a:hover {
   color: var(--star-gold);
 }
 
-.star-btn.is-starred .material-symbols-outlined {
-  font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0, "opsz" 20;
-}
-
-.star-btn .material-symbols-outlined {
-  font-size: 18px;
+.star-btn .tmail-ico {
+  width: 18px;
+  height: 18px;
 }
 
 .row-sender {
@@ -1315,8 +1306,9 @@ a:hover {
   color: var(--text-muted);
 }
 
-.attach-pill .material-symbols-outlined {
-  font-size: 15px;
+.attach-pill .tmail-ico {
+  width: 15px;
+  height: 15px;
 }
 
 .row-date {
@@ -1339,8 +1331,9 @@ a:hover {
   color: var(--text-muted);
 }
 
-.empty-state .material-symbols-outlined {
-  font-size: 40px;
+.empty-state .tmail-ico {
+  width: 40px;
+  height: 40px;
   margin-bottom: 10px;
   color: #9aa0a6;
 }
@@ -1381,9 +1374,9 @@ a:hover {
   filter: brightness(0.96);
 }
 
-.verified-pill .material-symbols-outlined {
-  font-size: 16px;
-  font-variation-settings: "FILL" 1, "wght" 500, "GRAD" 0, "opsz" 20;
+.verified-pill .tmail-ico {
+  width: 16px;
+  height: 16px;
 }
 
 .thread-stepper {
@@ -1685,8 +1678,9 @@ a:hover {
   color: var(--text-primary);
 }
 
-.gmail-reply-btn .material-symbols-outlined {
-  font-size: 18px;
+.gmail-reply-btn .tmail-ico {
+  width: 18px;
+  height: 18px;
 }
 
 /* ---------- SUB-APP PANES (TPhotos / TCal / TDrive / People) ---------- */
@@ -2194,9 +2188,9 @@ a:hover {
   unicode-bidi: isolate;
 }
 
-[dir="rtl"] #backToInboxBtn .material-symbols-outlined,
-[dir="rtl"] #prevThreadBtn .material-symbols-outlined,
-[dir="rtl"] #nextThreadBtn .material-symbols-outlined {
+[dir="rtl"] #backToInboxBtn .tmail-ico,
+[dir="rtl"] #prevThreadBtn .tmail-ico,
+[dir="rtl"] #nextThreadBtn .tmail-ico {
   transform: scaleX(-1);
 }
 
@@ -2345,8 +2339,9 @@ a:hover {
     gap: 3px;
   }
 
-  .lang-picker-pill .material-symbols-outlined {
-    font-size: 15px;
+  .lang-picker-pill .tmail-ico {
+    width: 15px;
+    height: 15px;
   }
 
   .tmail-lang-select {
@@ -2548,8 +2543,9 @@ a:hover {
     font-size: 11.5px;
   }
 
-  .star-btn .material-symbols-outlined {
-    font-size: 16px;
+  .star-btn .tmail-ico {
+    width: 16px;
+    height: 16px;
   }
 
   .thread-toolbar {
@@ -2681,8 +2677,9 @@ a:hover {
     border-radius: 8px;
   }
 
-  .dock-ico .material-symbols-outlined {
-    font-size: 18px;
+  .dock-ico .tmail-ico {
+    width: 18px;
+    height: 18px;
   }
 
   .dock-label {

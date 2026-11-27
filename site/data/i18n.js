@@ -24,6 +24,7 @@
 
   const VALID_CODES = new Set(LANGUAGES.map((l) => l.code));
   const cache = new Map();
+  const inFlight = new Map();
 
   function normalizeLang(raw) {
     if (!raw) return null;
@@ -83,20 +84,30 @@
     const norm = normalizeLang(code) || "en";
     if (cache.has(norm)) return cache.get(norm);
     const base = dataBase.endsWith("/") ? dataBase : dataBase + "/";
-    try {
-      const res = await fetch(`${base}i18n/${norm}.json?v=13`);
-      if (!res.ok) throw new Error("fetch failed");
-      let obj = await res.json();
-      if (norm !== "en") {
-        const enObj = await loadBundle("en", base);
-        if (enObj) obj = deepMergeDefaults(enObj, obj);
+    const key = `${base}::${norm}`;
+    if (inFlight.has(key)) return inFlight.get(key);
+    const pending = (async () => {
+      try {
+        const [res, enObj] = await Promise.all([
+          fetch(`${base}i18n/${norm}.json?v=13`),
+          norm !== "en" ? loadBundle("en", base) : Promise.resolve(null)
+        ]);
+        if (!res.ok) throw new Error("fetch failed");
+        let obj = await res.json();
+        if (norm !== "en" && enObj) {
+          obj = deepMergeDefaults(enObj, obj);
+        }
+        cache.set(norm, obj);
+        return obj;
+      } catch (_) {
+        if (norm !== "en") return loadBundle("en", base);
+        return null;
+      } finally {
+        inFlight.delete(key);
       }
-      cache.set(norm, obj);
-      return obj;
-    } catch (_) {
-      if (norm !== "en") return loadBundle("en", base);
-      return null;
-    }
+    })();
+    inFlight.set(key, pending);
+    return pending;
   }
 
   function getKey(bundle, path) {

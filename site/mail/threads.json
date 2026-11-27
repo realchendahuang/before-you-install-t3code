@@ -1994,11 +1994,11 @@
           "body": "Although `t3.codes` advertised its GitHub repo with \"Steal our code (legally)\", @theo posted twice in 11 minutes when a bystander mistook @DDdxx666's free MIT fork for the official app:\n\n19:11:49 CST (2124823227570745504):\n\n> \"I think there's a Chinese knockoff of T3 Code going around because this definitely is NOT our app\"\n\n19:22:31 CST (2124825920808829077, 10m 42s later):\n\n> \"Temu3 Code\"",
           "attachments": [
             {
-              "src": "receipts/x-2124823227570745504-chinese-knockoff.png",
+              "src": "receipts/x-2124823227570745504-chinese-knockoff.webp",
               "title": "Original X post: \"Chinese knockoff of T3 Code\" (195k+ views)"
             },
             {
-              "src": "receipts/x-2124825920808829077-temu3-code.png",
+              "src": "receipts/x-2124825920808829077-temu3-code.webp",
               "title": "Original X post 10m 42s later: \"Temu3 Code\" (84k+ views)"
             }
           ],
@@ -2044,7 +2044,7 @@
           "body": "At 06:12 CST — under 11 hours later — asked whether trillion-dollar US companies copying T3 Code bothered him, @theo replied:\n\n> \"Nah. Open source is open source, even if a trillion dollar company uses it!\"\n\nMeanwhile, T3 employee @maria_rcks publicly hosted `maria-rcks/t3libre` (\"T3 Code, liberated\"), and English-language repos (`t3code-quota-ui`, `t3code-atlas`, `t3code-bar`) ran undisturbed with zero takedown threats.",
           "attachments": [
             {
-              "src": "receipts/x-2124989435154726982-trillion-dollar-oss.png",
+              "src": "receipts/x-2124989435154726982-trillion-dollar-oss.webp",
               "title": "Original X reply 11h later: \"Open source is open source, even if a trillion dollar company uses it!\""
             },
             {
@@ -2113,7 +2113,7 @@
               "title": "'get a better lawyer' 3h before TRADEMARK.md"
             },
             {
-              "src": "receipts/x-2125019705270477102-low-quality-users.png",
+              "src": "receipts/x-2125019705270477102-low-quality-users.webp",
               "title": "Original X post (08:12 CST): \"We already have all the high quality users, not surprised the low quality ones are now following\""
             }
           ],
@@ -2163,7 +2163,7 @@
           "body": "At 12:21:37 CST — 17 hours after threatening @DDdxx666's GitHub account — @theo merged PR #41898 (generated with Gemini 4 Neon in Antigravity), retroactively adding `TRADEMARK.md` to claim T3 Tools, Inc. owns `T3 Code` \"whether registered or unregistered\".\n\nNinety-four seconds later (12:23:09 CST), he linked the new file back to @DLKFZWilliam2:\n\n> \"Again, it was always illegal to use our trademark. Now your agent will be more aware of the legality 🫡\"",
           "attachments": [
             {
-              "src": "receipts/x-2125082769395220688-always-illegal.png",
+              "src": "receipts/x-2125082769395220688-always-illegal.webp",
               "title": "Original X post (12:23 CST): \"Again, it was always illegal to use our trademark\" (+ PR #41898)"
             },
             {
@@ -2255,15 +2255,15 @@
               "title": "Forensic Chart 4: 4.0× personal insult surge during 25h crisis"
             },
             {
-              "src": "receipts/x-2125177947376300110-hurt-feelings-zh.png",
+              "src": "receipts/x-2125177947376300110-hurt-feelings-zh.webp",
               "title": "Original X reply (18:41 CST, copy-pasted 3×): \"完了，又伤害中国人民的感情了。\""
             },
             {
-              "src": "receipts/x-2125182476943556955-zero-value.png",
+              "src": "receipts/x-2125182476943556955-zero-value.webp",
               "title": "Original X post (18:59 CST): \"I am thankful his audience has zero value\""
             },
             {
-              "src": "receipts/x-2125193393450226024-not-apologizing.png",
+              "src": "receipts/x-2125193393450226024-not-apologizing.webp",
               "title": "Original X reply (19:42 CST): \"I am not apologizing. I have done nothing wrong\""
             }
           ],

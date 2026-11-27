@@ -333,7 +333,7 @@
     if (el && val) el.setAttribute("content", val);
   }
 
-  async function applyLanguage(nextCode) {
+  async function applyLanguage(nextCode, deferRender = false) {
     lang = I18N.normalizeLang(nextCode) || "en";
     I18N.applyDirection(lang);
     bundle = await I18N.loadBundle(lang, "../data/");
@@ -363,21 +363,15 @@
     const searchEl = document.getElementById("memeSearch");
     if (searchEl) searchEl.placeholder = t("memes.searchPlaceholder", searchEl.placeholder);
 
-    updateDynamicCounts();
-    renderGrid();
-    if (lbIndex >= 0) updateLightbox(false);
+    if (!deferRender) {
+      updateDynamicCounts();
+      renderGrid();
+      if (lbIndex >= 0) updateLightbox(false);
+    }
   }
 
   async function init() {
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
-    try {
-      const res = await fetch("../data/memes.json?v=5");
-      const data = await res.json();
-      catalogMeta = data;
-      allItems = Array.isArray(data.items) ? data.items : [];
-    } catch (_) {
-      allItems = [];
-    }
 
     const reqSeries = new URLSearchParams(window.location.search).get("series");
     if (reqSeries) {
@@ -390,7 +384,21 @@
       }
     }
 
-    await applyLanguage(lang);
+    const [memesRes] = await Promise.all([
+      fetch("../data/memes.json?v=5").catch(() => null),
+      applyLanguage(lang, true)
+    ]);
+    if (memesRes && memesRes.ok) {
+      try {
+        const data = await memesRes.json();
+        catalogMeta = data;
+        allItems = Array.isArray(data.items) ? data.items : [];
+      } catch (_) {
+        allItems = [];
+      }
+    }
+    updateDynamicCounts();
+    renderGrid();
 
     const hashId = (window.location.hash || "").replace(/^#/, "");
     if (hashId) {

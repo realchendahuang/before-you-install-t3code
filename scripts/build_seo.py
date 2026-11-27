@@ -761,7 +761,7 @@ def render_thread_html(
 
     root_rel = "../../../../" if is_zh else "../../../"
     mail_rel = "../../../" if is_zh else "../../"
-    css_href = "../../thread.css" if is_zh else "../thread.css"
+    css_href = "../../thread.css?v=2" if is_zh else "../thread.css?v=2"
     en_canonical = f"{BASE_URL}/mail/t/{tid}/"
     zh_canonical = f"{BASE_URL}/mail/t/{tid}/zh/"
     canonical_url = zh_canonical if is_zh else en_canonical
@@ -1102,7 +1102,7 @@ def build_sitemap(threads_en: list[dict], zh_bundle: dict, memes_data: dict) -> 
 
     home_images = [
         (f"{BASE_URL}/og-card.png", "Temu3 Code — Independent CC0 Audit of pingdotgg/t3code"),
-        (f"{BASE_URL}/receipts/x-2124825920808829077-temu3-code.png", "@theo naming post: Temu3 Code"),
+        (f"{BASE_URL}/receipts/x-2124825920808829077-temu3-code.webp", "@theo naming post: Temu3 Code"),
         (f"{BASE_URL}/evidence/00-cover-en.png", "Before You Install T3 Code Audit Banner"),
         (f"{BASE_URL}/evidence/charts/theo-chart-1-overview.png", "1,151-Tweet Forensic Dataset Overview"),
         (f"{BASE_URL}/evidence/charts/theo-chart-3-double-standard.png", "Selective Politeness Split: 0.0% VIP vs 8.0% Dev vs 14.4% Crisis"),

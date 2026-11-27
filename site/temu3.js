@@ -2,17 +2,17 @@
   "use strict";
 
   const X_RECEIPTS = [
-    { id: "2124823227570745504", src: "./receipts/x-2124823227570745504-chinese-knockoff.png", url: "https://x.com/theo/status/2124823227570745504", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
-    { id: "2124825920808829077", src: "./receipts/x-2124825920808829077-temu3-code.png", url: "https://x.com/theo/status/2124825920808829077", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "hostility"] },
+    { id: "2124823227570745504", src: "./receipts/x-2124823227570745504-chinese-knockoff.webp", url: "https://x.com/theo/status/2124823227570745504", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
+    { id: "2124825920808829077", src: "./receipts/x-2124825920808829077-temu3-code.webp", url: "https://x.com/theo/status/2124825920808829077", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "hostility"] },
     { id: "2124829315657576890", src: "./evidence/01-origin-theo-threat.png", url: "https://x.com/theo/status/2124829315657576890", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "hostility"] },
-    { id: "2124989435154726982", src: "./receipts/x-2124989435154726982-trillion-dollar-oss.png", url: "https://x.com/theo/status/2124989435154726982", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
-    { id: "2125019705270477102", src: "./receipts/x-2125019705270477102-low-quality-users.png", url: "https://x.com/theo/status/2125019705270477102", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "hostility"] },
-    { id: "2125082769395220688", src: "./receipts/x-2125082769395220688-always-illegal.png", url: "https://x.com/theo/status/2125082769395220688", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "double-standard"] },
+    { id: "2124989435154726982", src: "./receipts/x-2124989435154726982-trillion-dollar-oss.webp", url: "https://x.com/theo/status/2124989435154726982", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
+    { id: "2125019705270477102", src: "./receipts/x-2125019705270477102-low-quality-users.webp", url: "https://x.com/theo/status/2125019705270477102", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "hostility"] },
+    { id: "2125082769395220688", src: "./receipts/x-2125082769395220688-always-illegal.webp", url: "https://x.com/theo/status/2125082769395220688", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "double-standard"] },
     { id: "2125077510941802509", src: "./evidence/extra/p8-3-x-theo-autoblocker.png", url: "https://x.com/theo/status/2125077510941802509", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "hostility"] },
     { id: "2125177503526588877", src: "./evidence/26-cn-cesspit.png", url: "https://x.com/theo/status/2125177503526588877", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
-    { id: "2125177947376300110", src: "./receipts/x-2125177947376300110-hurt-feelings-zh.png", url: "https://x.com/theo/status/2125177947376300110", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
-    { id: "2125182476943556955", src: "./receipts/x-2125182476943556955-zero-value.png", url: "https://x.com/theo/status/2125182476943556955", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
-    { id: "2125193393450226024", src: "./receipts/x-2125193393450226024-not-apologizing.png", url: "https://x.com/theo/status/2125193393450226024", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
+    { id: "2125177947376300110", src: "./receipts/x-2125177947376300110-hurt-feelings-zh.webp", url: "https://x.com/theo/status/2125177947376300110", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
+    { id: "2125182476943556955", src: "./receipts/x-2125182476943556955-zero-value.webp", url: "https://x.com/theo/status/2125182476943556955", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
+    { id: "2125193393450226024", src: "./receipts/x-2125193393450226024-not-apologizing.webp", url: "https://x.com/theo/status/2125193393450226024", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
     { id: "2119240810202034645", src: "./evidence/23-stealing-fork-bot.png", url: "https://x.com/theo/status/2119240810202034645", thread: "2026-11-08-stealing-miaai-fork", tags: ["double-standard"] }
   ];
 
@@ -396,16 +396,18 @@
 
   async function init() {
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
-    await applyLanguage(lang);
-    try {
-      const res = await fetch("./data/memes.json?v=5");
-      if (res.ok) {
+    const [, res] = await Promise.all([
+      applyLanguage(lang),
+      fetch("./data/memes.json?v=5").catch(() => null)
+    ]);
+    if (res && res.ok) {
+      try {
         const data = await res.json();
         memeCatalogMeta = data;
         memeCatalog = Array.isArray(data.items) ? data.items : [];
         renderMemeShowcase();
-      }
-    } catch (_) {}
+      } catch (_) {}
+    }
   }
 
   document.querySelectorAll("[data-preview-idx]").forEach((btn) => {

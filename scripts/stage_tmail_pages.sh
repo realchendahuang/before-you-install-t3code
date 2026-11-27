@@ -28,6 +28,26 @@ cat > "$OUT_DIR/_headers" <<'EOF'
   Cache-Control: public, max-age=86400, s-maxage=604800
 /data/*
   Cache-Control: public, max-age=300, s-maxage=3600
+/data/i18n.js
+  Cache-Control: public, max-age=31536000, immutable
+/temu3.css
+  Cache-Control: public, max-age=31536000, immutable
+/temu3.js
+  Cache-Control: public, max-age=31536000, immutable
+/mail/app.js
+  Cache-Control: public, max-age=31536000, immutable
+/mail/styles.css
+  Cache-Control: public, max-age=31536000, immutable
+/mail/t/thread.css
+  Cache-Control: public, max-age=31536000, immutable
+/memes/memes.css
+  Cache-Control: public, max-age=31536000, immutable
+/memes/memes.js
+  Cache-Control: public, max-age=31536000, immutable
+/story/story.css
+  Cache-Control: public, max-age=31536000, immutable
+/story/story.js
+  Cache-Control: public, max-age=31536000, immutable
 /robots.txt
   Cache-Control: public, max-age=3600
 /sitemap.xml
@@ -37,6 +57,9 @@ cat > "$OUT_DIR/_headers" <<'EOF'
 /*
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
+  X-Frame-Options: DENY
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Content-Security-Policy: default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://cdn.temu3code.com data: blob:; media-src 'self' https://cdn.temu3code.com; connect-src 'self' https://cdn.temu3code.com; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'
 EOF
 
 echo "Staged Cloudflare Pages bundle in $OUT_DIR ($(du -sh "$OUT_DIR" | awk '{print $1}'))"

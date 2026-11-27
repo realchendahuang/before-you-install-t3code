@@ -365,7 +365,7 @@
     if (el && val) el.setAttribute("content", val);
   }
 
-  async function applyLanguage(nextCode) {
+  async function applyLanguage(nextCode, deferRender = false) {
     lang = I18N.normalizeLang(nextCode) || "en";
     I18N.applyDirection(lang);
     bundle = await I18N.loadBundle(lang, "../data/");
@@ -394,9 +394,11 @@
       if (v) el.textContent = v;
     });
 
-    renderPodcast();
-    renderEpisodes();
-    if (lbIndex >= 0) updateLightbox();
+    if (!deferRender) {
+      renderPodcast();
+      renderEpisodes();
+      if (lbIndex >= 0) updateLightbox();
+    }
   }
 
   async function init() {
@@ -405,6 +407,7 @@
     const [memesRes, subsRes] = await Promise.all([
       fetch("../data/memes.json?v=4").catch(() => null),
       fetch("../data/story-subtitles.json?v=1").catch(() => null),
+      applyLanguage(lang, true)
     ]);
 
     if (memesRes && memesRes.ok) {
@@ -431,7 +434,8 @@
       } catch (_) {}
     }
 
-    await applyLanguage(lang);
+    renderPodcast();
+    renderEpisodes();
 
     const hashId = (window.location.hash || "").replace(/^#/, "");
     if (hashId) {

@@ -193,6 +193,62 @@
   ];
 
   const SHARED_I18N = window.Temu3I18n;
+  const ICONS = {
+    menu: '<path d="M3 6h18M3 12h18M3 18h18"/>',
+    search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+    person: '<circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.5 3.6-6 8-6s8 2.5 8 6"/>',
+    group: '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 19.5c0-3 2.9-5 6.5-5s6.5 2 6.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14.5c2.5 0 4.5 1.5 4.5 4"/>',
+    translate: '<path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1"/><path d="m22 22-5-10-5 10M14 18h6"/>',
+    help_outline: '<circle cx="12" cy="12" r="9"/><path d="M9.5 9.2a2.6 2.6 0 0 1 5 1c0 1.8-2.5 2.2-2.5 3.8"/><circle cx="12" cy="17.2" r="0.8" fill="currentColor" stroke="none"/>',
+    volunteer_activism: '<path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.5 12 20 12 20Z"/>',
+    apps: '<circle cx="5" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="5" cy="19" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="19" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="19" r="1.5" fill="currentColor" stroke="none"/>',
+    mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/>',
+    photo_library: '<rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="9.5" cy="9.5" r="1.5" fill="currentColor" stroke="none"/><path d="m20 15-4.5-4.5L7 19"/>',
+    folder_open: '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/>',
+    calendar_month: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>',
+    auto_stories: '<path d="M2 6.5A2.5 2.5 0 0 1 4.5 4H12v16H4.5A2.5 2.5 0 0 1 2 17.5v-11Z"/><path d="M22 6.5A2.5 2.5 0 0 0 19.5 4H12v16h7.5a2.5 2.5 0 0 0 2.5-2.5v-11Z"/>',
+    playing_cards: '<rect x="5" y="4" width="11" height="15" rx="2"/><path d="M16 7h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9"/>',
+    style: '<rect x="5" y="4" width="11" height="15" rx="2"/><path d="M16 7h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9"/>',
+    home: '<path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5Z"/>',
+    code: '<path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>',
+    edit: '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
+    inbox: '<path d="M4 4h16l2 9v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6l2-9Z"/><path d="M2 13h6l2 3h4l2-3h6"/>',
+    star_border: '<polygon points="12 3 14.9 8.8 21.3 9.7 16.6 14.2 17.7 20.6 12 17.6 6.3 20.6 7.4 14.2 2.7 9.7 9.1 8.8" fill="none"/>',
+    star: '<polygon points="12 3 14.9 8.8 21.3 9.7 16.6 14.2 17.7 20.6 12 17.6 6.3 20.6 7.4 14.2 2.7 9.7 9.1 8.8" fill="currentColor" stroke-width="1.2"/>',
+    visibility_off: '<path d="M3 3l18 18"/><path d="M10.6 10.6a2 2 0 0 0 2.8 2.8"/><path d="M9.9 4.2A10.4 10.4 0 0 1 12 4c5.5 0 9.5 4.2 10.5 8-.4 1.6-1.4 3.2-2.7 4.5M6.6 6.6C4.4 8 2.9 10 2.5 12c1 3.8 5 8 9.5 8 1.9 0 3.7-.6 5.2-1.5"/>',
+    send: '<path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7Z"/>',
+    attach_file: '<path d="m21.4 11.1-9.2 9.2a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.1a2 2 0 0 1-2.8-2.8l8.5-8.4"/>',
+    calendar_today: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>',
+    arrow_drop_down: '<path d="m7 10 5 5 5-5H7Z" fill="currentColor" stroke="none"/>',
+    refresh: '<path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/>',
+    casino: '<rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1.1" fill="currentColor" stroke="none"/><circle cx="15" cy="9" r="1.1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/><circle cx="9" cy="15" r="1.1" fill="currentColor" stroke="none"/><circle cx="15" cy="15" r="1.1" fill="currentColor" stroke="none"/>',
+    public: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18"/>',
+    date_range: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h2M12 14h2M16 14h.01"/>',
+    schedule: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    gavel: '<path d="m14 13-7.5 7.5a2.1 2.1 0 0 1-3-3L11 10"/><path d="m16 16 6-6"/><path d="m8 8 6-6"/><path d="m9 7 8 8"/><path d="m21 11-8-8"/>',
+    shield: '<path d="M12 3 4 7v5c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V7l-8-4Z"/>',
+    arrow_back: '<path d="M19 12H5"/><path d="m12 19-7-7 7-7"/>',
+    link: '<path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1"/><path d="M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7.1 7.1l1.1-1.1"/>',
+    description: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/>',
+    article: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/>',
+    verified: '<path d="M12 2 14.9 4.2 18.5 3.8 19.6 7.2 22.5 9.5 21.3 13 22.5 16.5 19.6 18.8 18.5 22.2 14.9 21.8 12 24 9.1 21.8 5.5 22.2 4.4 18.8 1.5 16.5 2.7 13 1.5 9.5 4.4 7.2 5.5 3.8 9.1 4.2Z" fill="currentColor" stroke="none"/><path d="m8.8 12.2 2.2 2.2 4.5-4.6" stroke="#ffffff" stroke-width="2.1"/>',
+    chevron_left: '<path d="m15 18-6-6 6-6"/>',
+    chevron_right: '<path d="m9 18 6-6-6-6"/>',
+    sort: '<path d="M3 6h18M3 12h12M3 18h6"/>',
+    close: '<path d="M18 6 6 18M6 6l12 12"/>',
+    balance: '<path d="M12 3v18M5 7h14M7 7l-3 7h6l-3-7ZM17 7l-3 7h6l-3-7ZM8 21h8"/>',
+    fact_check: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h5M7 14h4M14.5 12.5l1.5 1.5 3-3"/>',
+    visibility: '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>',
+    trending_up: '<path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/>',
+    reply: '<path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11"/>',
+    forward: '<path d="m15 14 5-5-5-5"/><path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5v0A5.5 5.5 0 0 0 9.5 20H13"/>',
+    open_in_new: '<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/>'
+  };
+  function iconSvg(name, cls = "") {
+    const body = ICONS[name] || ICONS.article;
+    const classes = cls ? `tmail-ico ${cls}` : "tmail-ico";
+    return `<svg class="${classes}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${body}</svg>`;
+  }
   const INITIAL_SEO = {
     title: document.title,
     desc: document.querySelector('meta[name="description"]')?.getAttribute("content") || "",
@@ -820,7 +876,7 @@
         const label = locTopicLabel(tp);
         return `<li>
           <button type="button" class="topic-btn${active}" data-topic="${tp.id}">
-            <span class="material-symbols-outlined">${tp.icon}</span>
+            ${iconSvg(tp.icon)}
             <span class="nav-label">${escapeBidi(label)}</span>
             <span class="person-count">${count}</span>
           </button>
@@ -972,7 +1028,7 @@
     const container = $("#emailList");
     if (!total) {
       container.innerHTML = `<div class="empty-state">
-        <span class="material-symbols-outlined">inbox</span>
+        ${iconSvg("inbox")}
         <p>${escapeHtml(t("emptyList"))}</p>
         <button type="button" class="tool-btn" id="emptyResetBtn">${escapeHtml(t("clearFilters"))}</button>
       </div>`;
@@ -999,7 +1055,7 @@
           <div class="row-avatar" style="background:${escapeHtml(avatarColor)}" aria-hidden="true">${escapeHtml(avatarChar)}</div>
           <div class="row-controls">
             <button type="button" class="star-btn${starred ? " is-starred" : ""}" data-star-id="${th.id}" aria-label="Star thread" title="Star">
-              <span class="material-symbols-outlined">${starred ? "star" : "star_border"}</span>
+              ${iconSvg(starred ? "star" : "star_border", starred ? "is-filled" : "")}
               <span>${starDisplay}</span>
             </button>
           </div>
@@ -1013,7 +1069,7 @@
             <span class="row-snippet">${escapeBidi(lf.snippet)}</span>
           </div>
           <div class="row-meta">
-            ${attCount ? `<span class="attach-pill" title="${attCount}"><span class="material-symbols-outlined">attach_file</span>${attCount}</span>` : ""}
+            ${attCount ? `<span class="attach-pill" title="${attCount}">${iconSvg("attach_file")}${attCount}</span>` : ""}
             <span class="row-date">${escapeHtml(lf.dateDisplay)}</span>
           </div>
         </div>`;
@@ -1089,7 +1145,8 @@
 
     const starred = state.starredIds.has(th.id);
     const starBtn = $("#threadStarBtn");
-    starBtn.innerHTML = `<span class="material-symbols-outlined${starred ? " is-filled" : ""}" style="${starred ? "color:#f4b400" : ""}">${starred ? "star" : "star_border"}</span>`;
+    starBtn.innerHTML = iconSvg(starred ? "star" : "star_border", starred ? "is-filled" : "");
+    starBtn.style.color = starred ? "#f4b400" : "";
 
     const CASE_SLUGS = {
       "00": "origin-fork-dispute-and-double-standard",
@@ -1204,27 +1261,27 @@
       ${messagesHtml}
       <div class="thread-footer-actions">
         <a class="gmail-reply-btn" href="${escapeHtml(primaryLink)}" target="_blank" rel="noopener noreferrer">
-          <span class="material-symbols-outlined">reply</span>
+          ${iconSvg("reply")}
           <span>${escapeHtml(t("replyOriginal"))}</span>
         </a>
         <a class="gmail-reply-btn" href="https://x.com/intent/tweet?text=${shareText}&url=${shareUrl}" target="_blank" rel="noopener noreferrer">
-          <span class="material-symbols-outlined">forward</span>
+          ${iconSvg("forward")}
           <span>${escapeHtml(t("shareOnX"))}</span>
         </a>
         <a class="gmail-reply-btn" href="${exhibitUrl}">
-          <span class="material-symbols-outlined">article</span>
+          ${iconSvg("article")}
           <span>${escapeHtml(t("fullExhibit"))} (#${escapeHtml(th.exhibit)})</span>
         </a>
         <button type="button" class="gmail-reply-btn" id="footerCopyBtn">
-          <span class="material-symbols-outlined">link</span>
+          ${iconSvg("link")}
           <span>${escapeHtml(t("copyLink"))}</span>
         </button>
         <button type="button" class="gmail-reply-btn" id="footerMemeBtn">
-          <span class="material-symbols-outlined">style</span>
+          ${iconSvg("style")}
           <span>${escapeHtml(t("viewMemeCard"))}</span>
         </button>
         <a class="gmail-reply-btn" href="./t/${encodeURIComponent(th.id)}/${isZh() ? "zh/" : ""}">
-          <span class="material-symbols-outlined">open_in_new</span>
+          ${iconSvg("open_in_new")}
           <span>HTML</span>
         </a>
       </div>
@@ -1898,19 +1955,24 @@
 
   async function init() {
     bindGlobalEvents();
-    await detectAssetPrefix();
+    const inSubdir = /\/(mail|inbox)(\/|$)/.test(window.location.pathname || "/");
+    state.assetPrefix = inSubdir ? "../" : "./";
+    state.dataPrefix = inSubdir ? "../data/" : "./data/";
+    state.reportBase = state.assetPrefix;
 
     try {
-      const [threadsRes, evRes] = await Promise.all([
+      const [, threadsRes, evRes] = await Promise.all([
+        detectAssetPrefix(),
         fetch("./threads.json"),
-        fetch(`${state.dataPrefix}evidence.json`).catch(() => null)
+        fetch(`${state.dataPrefix}evidence.json`).catch(() => null),
+        applyI18n(state.lang)
       ]);
       state.data = await threadsRes.json();
       if (evRes && evRes.ok) {
         state.evidence = await evRes.json();
       }
       loadPersistedState(state.data.threads);
-      await applyI18n(state.lang);
+      if (state.lang !== "en") applyInboxMeta();
 
       // Check deep-link ?thread=..., ?sort=oldest, ?view=photos
       const params = new URLSearchParams(window.location.search);
