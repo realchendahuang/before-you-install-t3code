@@ -115,9 +115,9 @@
     "f6Stat": "0 advisories",
     "f6Title": "5 открытых багов безопасности в ca81b7b9",
     "f6Desc": "Открытым текстом 30-дневные куки --lan, Bearer-токены без возможности отзыва и выставленный наружу SSH_AUTH_SOCK.",
-    "mmTitle": "19 грехов и мемов",
+    "mmTitle": "24 греха и мемы",
     "mmDraw": "Вытянуть случайную карту",
-    "mmAll": "Все 61 мем ↗",
+    "mmAll": "Все 114 мемов ↗",
     "mmOpenArsenal": "Открыть в Мемах ↗",
     "mmCopyPng": "Скопировать PNG",
     "mmDrawAgain": "Вытянуть ещё",
@@ -129,14 +129,14 @@
     "stealReports": "Все 20 кейсов ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 Memes · 61 карта и мем под CC0",
+    "pageTitle": "Temu3 Мемы · 114 карточек и мемов CC0",
     "title": "Мемы",
-    "sub": "61 карта и мем под CC0. Кликните по карте, чтобы скопировать или посмотреть источник.",
+    "sub": "114 карточек и мемов CC0. Нажмите на карточку, чтобы скопировать или проверить источник.",
     "drawBtn": "Вытянуть случайную карту",
     "drawAgain": "Вытянуть ещё",
     "submitBtn": "Предложить на GitHub ↗",
     "tabAll": "Все",
-    "tabSins": "19 грехов",
+    "tabSins": "24 греха",
     "tabBlended": "Мемы",
     "tabClassic": "Скриншоты",
     "tabComics": "Комиксы",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "Изображение открыто в новой вкладке.",
     "downloadedToast": "Сохранено.",
     "series": {
-      "sins": "19 ГРЕХОВ",
+      "sins": "24 ГРЕХА",
       "blended": "МЕМ",
       "classic": "ПОСТ",
       "comics": "КОМИКС",
-      "community": "СООБЩЕСТВО"
-    }
+      "community": "СООБЩЕСТВО",
+      "parody": "ПАРОДИЯ"
+    },
+    "tabParodies": "Пародии"
   },
   "mail": {
     "pageTitle": "Tmail · Публичный архив (2023–2026)",
@@ -229,7 +231,7 @@
     "aboutTitle": "О Tmail",
     "aboutBody": "Статичный архив без трекинга: 34 треда и 109 скриншотов (с мая 2023 по ноябрь 2026).",
     "memeModalDesc": "Кликните по карте, чтобы скопировать или сохранить её в Мемах.",
-    "openAllMemes": "Все 61 мем ↗",
+    "openAllMemes": "Все 114 мемов ↗",
     "copyInMemes": "Скопировать PNG ↗",
     "topicPrefix": "Тема",
     "personPrefix": "Человек",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 постов в X",
-    "portalMemes": "61 мем",
+    "portalMemes": "114 мемов",
     "portalEvidence": "109 скриншотов",
     "portalSources": "327 ссылок",
     "languagesLabel": "Языки (18):",

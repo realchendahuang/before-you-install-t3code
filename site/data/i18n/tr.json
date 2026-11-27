@@ -115,9 +115,9 @@
     "f6Stat": "0 bildirim",
     "f6Title": "ca81b7b9'da 5 açık güvenlik hatası",
     "f6Desc": "Düz metin 30 günlük --lan shell çerezleri, iptal edilemeyen Bearer token'lar ve açıkta SSH_AUTH_SOCK.",
-    "mmTitle": "19 Günah ve Mem",
+    "mmTitle": "24 Günah ve Mem",
     "mmDraw": "Rastgele kart çek",
-    "mmAll": "61 memin tamamı ↗",
+    "mmAll": "114 memin tamamı ↗",
     "mmOpenArsenal": "Memler'de aç ↗",
     "mmCopyPng": "PNG kopyala",
     "mmDrawAgain": "Tekrar çek",
@@ -129,14 +129,14 @@
     "stealReports": "20 vakanın tamamı ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 Memler · 61 CC0 kart ve mem",
+    "pageTitle": "Temu3 Memler · 114 CC0 kart ve mem",
     "title": "Memler",
-    "sub": "61 CC0 kart ve mem. Kopyalamak veya kaynağına bakmak için karta tıkla.",
+    "sub": "114 CC0 kart ve mem. Kopyalamak veya kaynağına bakmak için karta tıkla.",
     "drawBtn": "Rastgele kart çek",
     "drawAgain": "Tekrar çek",
     "submitBtn": "GitHub'da gönder ↗",
     "tabAll": "Tümü",
-    "tabSins": "19 Günah",
+    "tabSins": "24 Günah",
     "tabBlended": "Memler",
     "tabClassic": "Ekran görüntüleri",
     "tabComics": "Karikatürler",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "Görsel yeni sekmede açıldı.",
     "downloadedToast": "Kaydedildi.",
     "series": {
-      "sins": "19 GÜNAH",
+      "sins": "24 GÜNAH",
       "blended": "MEM",
       "classic": "GÖNDERİ",
       "comics": "KARİKATÜR",
-      "community": "TOPLULUK"
-    }
+      "community": "TOPLULUK",
+      "parody": "PARODİ"
+    },
+    "tabParodies": "Parodiler"
   },
   "mail": {
     "pageTitle": "Tmail · Kamuya açık arşiv (2023–2026)",
@@ -229,7 +231,7 @@
     "aboutTitle": "Tmail hakkında",
     "aboutBody": "34 konu ve 109 ekran görüntüsünden oluşan, takip yapmayan statik arşiv (Mayıs 2023 – Kasım 2026).",
     "memeModalDesc": "Kopyalamak veya kaydetmek için Memler'de karta tıkla.",
-    "openAllMemes": "61 memin tamamı ↗",
+    "openAllMemes": "114 memin tamamı ↗",
     "copyInMemes": "PNG kopyala ↗",
     "topicPrefix": "Konu",
     "personPrefix": "Kişi",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 X gönderisi",
-    "portalMemes": "61 mem",
+    "portalMemes": "114 mem",
     "portalEvidence": "109 ekran görüntüsü",
     "portalSources": "327 bağlantı",
     "languagesLabel": "Diller (18):",

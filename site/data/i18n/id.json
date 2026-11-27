@@ -115,9 +115,9 @@
     "f6Stat": "0 Advisory",
     "f6Title": "5 bug keamanan terbuka di ca81b7b9",
     "f6Desc": "Cookie shell --lan 30 hari dalam plaintext, Bearer token yang tidak bisa dicabut, dan SSH_AUTH_SOCK terekspos.",
-    "mmTitle": "19 Dosa & Meme",
+    "mmTitle": "24 Dosa & Meme",
     "mmDraw": "Ambil Kartu Acak",
-    "mmAll": "Semua 61 Meme ↗",
+    "mmAll": "Semua 114 Meme ↗",
     "mmOpenArsenal": "Buka di Meme ↗",
     "mmCopyPng": "Salin PNG",
     "mmDrawAgain": "Ambil Lagi",
@@ -129,14 +129,14 @@
     "stealReports": "Semua 20 Kasus ↗"
   },
   "memes": {
-    "pageTitle": "Meme Temu3 · 61 Kartu & Meme CC0",
+    "pageTitle": "Meme Temu3 · 114 Kartu & Meme CC0",
     "title": "Meme",
-    "sub": "61 kartu dan meme CC0. Klik kartu mana pun untuk menyalin atau cek sumber.",
+    "sub": "114 kartu dan meme CC0. Klik kartu mana pun untuk menyalin atau cek sumber.",
     "drawBtn": "Ambil Kartu Acak",
     "drawAgain": "Ambil Lagi",
     "submitBtn": "Kirim di GitHub ↗",
     "tabAll": "Semua",
-    "tabSins": "19 Dosa",
+    "tabSins": "24 Dosa",
     "tabBlended": "Meme",
     "tabClassic": "Tangkapan Layar",
     "tabComics": "Komik",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "Gambar dibuka di tab baru.",
     "downloadedToast": "Disimpan.",
     "series": {
-      "sins": "19 DOSA",
+      "sins": "24 DOSA",
       "blended": "MEME",
       "classic": "POSTINGAN",
       "comics": "KOMIK",
-      "community": "KOMUNITAS"
-    }
+      "community": "KOMUNITAS",
+      "parody": "PARODI"
+    },
+    "tabParodies": "Parodi"
   },
   "mail": {
     "pageTitle": "Tmail · Arsip Publik (2023-2026)",
@@ -229,7 +231,7 @@
     "aboutTitle": "Tentang Tmail",
     "aboutBody": "Arsip statis tanpa pelacakan berisi 34 utas dan 109 tangkapan layar (Mei 2023 sampai Nov 2026).",
     "memeModalDesc": "Klik kartu mana pun untuk menyalin atau menyimpan di Meme.",
-    "openAllMemes": "Semua 61 Meme ↗",
+    "openAllMemes": "Semua 114 Meme ↗",
     "copyInMemes": "Salin PNG ↗",
     "topicPrefix": "Topik",
     "personPrefix": "Orang",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 Postingan X",
-    "portalMemes": "61 Meme",
+    "portalMemes": "114 Meme",
     "portalEvidence": "109 Tangkapan Layar",
     "portalSources": "327 Tautan",
     "languagesLabel": "Bahasa (18):",

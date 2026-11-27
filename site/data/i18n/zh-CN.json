@@ -115,9 +115,9 @@
     "f6Stat": "0 安全公告",
     "f6Title": "ca81b7b9 里还有 5 个安全漏洞",
     "f6Desc": "30 天明文 --lan Cookie、没法吊销的 Bearer Token，以及把 SSH_AUTH_SOCK 暴露给陌生仓库。",
-    "mmTitle": "「十九宗罪」和梗图",
+    "mmTitle": "「二十四宗罪」和梗图",
     "mmDraw": "随机抽一张",
-    "mmAll": "全部 61 张梗图 ↗",
+    "mmAll": "全部 114 张梗图 ↗",
     "mmOpenArsenal": "去梗图页打开 ↗",
     "mmCopyPng": "复制 PNG",
     "mmDrawAgain": "再抽一张",
@@ -129,14 +129,14 @@
     "stealReports": "全部 20 个案例 ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 梗图 · 61 张 CC0 卡牌和梗图",
+    "pageTitle": "Temu3 梗图 · 114 张 CC0 卡牌和梗图",
     "title": "梗图",
-    "sub": "61 张 CC0 梗图和卡牌，点开就能复制或看原帖。",
+    "sub": "114 张 CC0 梗图和卡牌，点开就能复制或看原帖。",
     "drawBtn": "随机抽一张",
     "drawAgain": "再抽一张",
     "submitBtn": "去 GitHub 投稿 ↗",
     "tabAll": "全部",
-    "tabSins": "十九宗罪",
+    "tabSins": "二十四宗罪",
     "tabBlended": "二创梗图",
     "tabClassic": "原帖梗",
     "tabComics": "漫画",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "已在新标签打开原图。",
     "downloadedToast": "已保存。",
     "series": {
-      "sins": "十九宗罪",
+      "sins": "二十四宗罪",
       "blended": "梗图",
       "classic": "原帖",
       "comics": "漫画",
-      "community": "投稿"
-    }
+      "community": "投稿",
+      "parody": "恶搞"
+    },
+    "tabParodies": "恶搞二创"
   },
   "mail": {
     "pageTitle": "Tmail · 公开存档（2023–2026）",
@@ -229,7 +231,7 @@
     "aboutTitle": "关于 Tmail",
     "aboutBody": "纯静态、不加追踪的存档，收了 2023 年 5 月到 2026 年 11 月的 34 条记录和 109 张截图。",
     "memeModalDesc": "点任意卡片去梗图页复制或保存。",
-    "openAllMemes": "全部 61 张梗图 ↗",
+    "openAllMemes": "全部 114 张梗图 ↗",
     "copyInMemes": "复制 PNG ↗",
     "topicPrefix": "主题",
     "personPrefix": "人物",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 张 X 原帖",
-    "portalMemes": "61 张梗图",
+    "portalMemes": "114 张梗图",
     "portalEvidence": "109 张截图",
     "portalSources": "327 条链接",
     "languagesLabel": "全部 18 种语言：",

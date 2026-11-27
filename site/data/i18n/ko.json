@@ -115,9 +115,9 @@
     "f6Stat": "권고 0건",
     "f6Title": "ca81b7b9에 남은 보안 버그 5건",
     "f6Desc": "30일간 평문으로 남는 --lan 셸 쿠키, 폐기할 수 없는 Bearer 토큰, 그대로 노출된 SSH_AUTH_SOCK.",
-    "mmTitle": "죄 19가지 & 밈",
+    "mmTitle": "죄 24가지 & 밈",
     "mmDraw": "랜덤 카드 뽑기",
-    "mmAll": "밈 61개 전체 ↗",
+    "mmAll": "밈 114개 전체 ↗",
     "mmOpenArsenal": "밈에서 열기 ↗",
     "mmCopyPng": "PNG 복사",
     "mmDrawAgain": "다시 뽑기",
@@ -129,14 +129,14 @@
     "stealReports": "사례 20건 전체 ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 밈 · CC0 카드 & 밈 61개",
+    "pageTitle": "Temu3 밈 · CC0 카드 & 밈 114개",
     "title": "밈",
-    "sub": "CC0 카드와 밈 61개. 카드를 클릭하면 복사하거나 출처를 확인할 수 있습니다.",
+    "sub": "CC0 카드와 밈 114개. 카드를 클릭하면 복사하거나 출처를 확인할 수 있습니다.",
     "drawBtn": "랜덤 카드 뽑기",
     "drawAgain": "다시 뽑기",
     "submitBtn": "GitHub에 제보 ↗",
     "tabAll": "전체",
-    "tabSins": "죄 19가지",
+    "tabSins": "죄 24가지",
     "tabBlended": "밈",
     "tabClassic": "스크린샷",
     "tabComics": "만화",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "새 탭에서 이미지를 열었습니다.",
     "downloadedToast": "저장했습니다.",
     "series": {
-      "sins": "죄 19가지",
+      "sins": "죄 24가지",
       "blended": "밈",
       "classic": "게시물",
       "comics": "만화",
-      "community": "커뮤니티"
-    }
+      "community": "커뮤니티",
+      "parody": "패러디"
+    },
+    "tabParodies": "패러디"
   },
   "mail": {
     "pageTitle": "Tmail · 공개 아카이브 (2023–2026)",
@@ -229,7 +231,7 @@
     "aboutTitle": "Tmail 소개",
     "aboutBody": "스레드 34개와 스크린샷 109장을 담은 정적 아카이브. 추적 없음 (2023년 5월 ~ 2026년 11월).",
     "memeModalDesc": "밈에서 카드를 클릭하면 복사하거나 저장할 수 있습니다.",
-    "openAllMemes": "밈 61개 전체 ↗",
+    "openAllMemes": "밈 114개 전체 ↗",
     "copyInMemes": "PNG 복사 ↗",
     "topicPrefix": "주제",
     "personPrefix": "인물",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "X 게시물 12개",
-    "portalMemes": "밈 61개",
+    "portalMemes": "밈 114개",
     "portalEvidence": "스크린샷 109장",
     "portalSources": "링크 327개",
     "languagesLabel": "언어 (18):",

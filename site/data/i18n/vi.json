@@ -115,9 +115,9 @@
     "f6Stat": "0 advisory",
     "f6Title": "5 bug bảo mật còn mở ở ca81b7b9",
     "f6Desc": "Cookie shell --lan 30 ngày dạng plaintext, Bearer token không thu hồi được, và SSH_AUTH_SOCK bị lộ.",
-    "mmTitle": "19 tội & meme",
+    "mmTitle": "24 tội & meme",
     "mmDraw": "Rút một thẻ ngẫu nhiên",
-    "mmAll": "Toàn bộ 61 meme ↗",
+    "mmAll": "Toàn bộ 114 meme ↗",
     "mmOpenArsenal": "Mở trong Memes ↗",
     "mmCopyPng": "Copy PNG",
     "mmDrawAgain": "Rút lại",
@@ -129,14 +129,14 @@
     "stealReports": "Toàn bộ 20 vụ việc ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 Memes · 61 thẻ & meme CC0",
+    "pageTitle": "Temu3 Memes · 114 thẻ & meme CC0",
     "title": "Meme",
-    "sub": "61 thẻ và meme CC0. Bấm vào thẻ bất kỳ để copy hoặc xem nguồn.",
+    "sub": "114 thẻ và meme CC0. Bấm vào thẻ bất kỳ để copy hoặc xem nguồn.",
     "drawBtn": "Rút một thẻ ngẫu nhiên",
     "drawAgain": "Rút lại",
     "submitBtn": "Gửi trên GitHub ↗",
     "tabAll": "Tất cả",
-    "tabSins": "19 tội",
+    "tabSins": "24 tội",
     "tabBlended": "Meme",
     "tabClassic": "Ảnh chụp",
     "tabComics": "Truyện tranh",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "Đã mở ảnh ở tab mới.",
     "downloadedToast": "Đã lưu.",
     "series": {
-      "sins": "19 TỘI",
+      "sins": "24 TỘI",
       "blended": "MEME",
       "classic": "BÀI ĐĂNG",
       "comics": "TRUYỆN TRANH",
-      "community": "CỘNG ĐỒNG"
-    }
+      "community": "CỘNG ĐỒNG",
+      "parody": "CHẾ"
+    },
+    "tabParodies": "Chế"
   },
   "mail": {
     "pageTitle": "Tmail · Lưu trữ công khai (2023–2026)",
@@ -229,7 +231,7 @@
     "aboutTitle": "Về Tmail",
     "aboutBody": "Kho lưu trữ tĩnh, không tracking, gồm 34 luồng và 109 ảnh chụp (tháng 5/2023 đến tháng 11/2026).",
     "memeModalDesc": "Bấm vào thẻ bất kỳ để copy hoặc lưu trong Memes.",
-    "openAllMemes": "Toàn bộ 61 meme ↗",
+    "openAllMemes": "Toàn bộ 114 meme ↗",
     "copyInMemes": "Copy PNG ↗",
     "topicPrefix": "Chủ đề",
     "personPrefix": "Người",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 bài đăng X",
-    "portalMemes": "61 meme",
+    "portalMemes": "114 meme",
     "portalEvidence": "109 ảnh chụp",
     "portalSources": "327 liên kết",
     "languagesLabel": "Ngôn ngữ (18):",

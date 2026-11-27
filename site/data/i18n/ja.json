@@ -115,9 +115,9 @@
     "f6Stat": "アドバイザリ0件",
     "f6Title": "ca81b7b9に残るセキュリティバグ5件",
     "f6Desc": "平文で30日保持される--lanのシェルCookie、失効できないBearerトークン、露出したSSH_AUTH_SOCK。",
-    "mmTitle": "19の罪とミーム",
+    "mmTitle": "24の罪とミーム",
     "mmDraw": "ランダムに1枚引く",
-    "mmAll": "全61ミーム ↗",
+    "mmAll": "全114ミーム ↗",
     "mmOpenArsenal": "ミームで開く ↗",
     "mmCopyPng": "PNGをコピー",
     "mmDrawAgain": "もう一度引く",
@@ -129,14 +129,14 @@
     "stealReports": "全20事例 ↗"
   },
   "memes": {
-    "pageTitle": "Temu3ミーム · CC0カードとミーム61点",
+    "pageTitle": "Temu3ミーム · CC0カードとミーム114点",
     "title": "ミーム",
-    "sub": "CC0のカードとミームが61点。カードをクリックするとコピー、または出典を確認できる。",
+    "sub": "CC0のカードとミームが114点。カードをクリックするとコピー、または出典を確認できる。",
     "drawBtn": "ランダムに1枚引く",
     "drawAgain": "もう一度引く",
     "submitBtn": "GitHubで投稿 ↗",
     "tabAll": "すべて",
-    "tabSins": "19の罪",
+    "tabSins": "24の罪",
     "tabBlended": "ミーム",
     "tabClassic": "スクリーンショット",
     "tabComics": "コミック",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "画像を新しいタブで開きました。",
     "downloadedToast": "保存しました。",
     "series": {
-      "sins": "19の罪",
+      "sins": "24の罪",
       "blended": "ミーム",
       "classic": "投稿",
       "comics": "コミック",
-      "community": "コミュニティ"
-    }
+      "community": "コミュニティ",
+      "parody": "パロディ"
+    },
+    "tabParodies": "パロディ"
   },
   "mail": {
     "pageTitle": "Tmail · 公開アーカイブ（2023〜2026）",
@@ -229,7 +231,7 @@
     "aboutTitle": "Tmailについて",
     "aboutBody": "34スレッドと109枚のスクリーンショット（2023年5月〜2026年11月）をまとめた、トラッキングなしの静的アーカイブ。",
     "memeModalDesc": "カードをクリックすると、ミームでコピーまたは保存できる。",
-    "openAllMemes": "全61ミーム ↗",
+    "openAllMemes": "全114ミーム ↗",
     "copyInMemes": "PNGをコピー ↗",
     "topicPrefix": "トピック",
     "personPrefix": "人物",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "Xの投稿12件",
-    "portalMemes": "ミーム61点",
+    "portalMemes": "ミーム114点",
     "portalEvidence": "スクリーンショット109枚",
     "portalSources": "リンク327件",
     "languagesLabel": "言語（18）:",

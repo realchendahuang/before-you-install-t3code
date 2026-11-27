@@ -115,9 +115,9 @@
     "f6Stat": "0 份公告",
     "f6Title": "ca81b7b9 裡還有 5 個安全漏洞",
     "f6Desc": "30 天明文 --lan shell cookie、撤銷不了的 Bearer token，還有直接曝露的 SSH_AUTH_SOCK。",
-    "mmTitle": "19 宗罪與迷因",
+    "mmTitle": "24 宗罪與迷因",
     "mmDraw": "隨機抽一張",
-    "mmAll": "全部 61 張迷因 ↗",
+    "mmAll": "全部 114 張迷因 ↗",
     "mmOpenArsenal": "到迷因頁開啟 ↗",
     "mmCopyPng": "複製 PNG",
     "mmDrawAgain": "再抽一張",
@@ -129,14 +129,14 @@
     "stealReports": "全部 20 個案例 ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 迷因 · 61 張 CC0 卡牌與迷因",
+    "pageTitle": "Temu3 迷因 · 114 張 CC0 卡牌與迷因",
     "title": "迷因",
-    "sub": "61 張 CC0 卡牌和迷因，點任何一張就能複製或看來源。",
+    "sub": "114 張 CC0 卡牌和迷因，點任何一張就能複製或看來源。",
     "drawBtn": "隨機抽一張",
     "drawAgain": "再抽一張",
     "submitBtn": "到 GitHub 投稿 ↗",
     "tabAll": "全部",
-    "tabSins": "19 宗罪",
+    "tabSins": "24 宗罪",
     "tabBlended": "迷因",
     "tabClassic": "截圖",
     "tabComics": "漫畫",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "已在新分頁開啟原圖。",
     "downloadedToast": "已儲存。",
     "series": {
-      "sins": "19 宗罪",
+      "sins": "24 宗罪",
       "blended": "迷因",
       "classic": "貼文",
       "comics": "漫畫",
-      "community": "投稿"
-    }
+      "community": "投稿",
+      "parody": "惡搞"
+    },
+    "tabParodies": "惡搞二創"
   },
   "mail": {
     "pageTitle": "Tmail · 公開存檔（2023–2026）",
@@ -229,7 +231,7 @@
     "aboutTitle": "關於 Tmail",
     "aboutBody": "純靜態、不追蹤的存檔，收了 34 個討論串和 109 張截圖（2023 年 5 月到 2026 年 11 月）。",
     "memeModalDesc": "點任何一張卡片，到迷因頁複製或儲存。",
-    "openAllMemes": "全部 61 張迷因 ↗",
+    "openAllMemes": "全部 114 張迷因 ↗",
     "copyInMemes": "複製 PNG ↗",
     "topicPrefix": "主題",
     "personPrefix": "人物",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 則 X 貼文",
-    "portalMemes": "61 張迷因",
+    "portalMemes": "114 張迷因",
     "portalEvidence": "109 張截圖",
     "portalSources": "327 條連結",
     "languagesLabel": "18 種語言：",

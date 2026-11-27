@@ -115,9 +115,9 @@
     "f6Stat": "0 एडवाइज़री",
     "f6Title": "ca81b7b9 में 5 खुले सिक्योरिटी बग",
     "f6Desc": "30 दिन तक प्लेनटेक्स्ट --lan शेल कुकीज़, ऐसे Bearer टोकन जिन्हें रिवोक नहीं कर सकते, और SSH_AUTH_SOCK का एक्सपोज़र.",
-    "mmTitle": "19 पाप और मीम्स",
+    "mmTitle": "24 पाप और मीम्स",
     "mmDraw": "रैंडम कार्ड निकालो",
-    "mmAll": "सभी 61 मीम्स ↗",
+    "mmAll": "सभी 114 मीम्स ↗",
     "mmOpenArsenal": "मीम्स में खोलो ↗",
     "mmCopyPng": "PNG कॉपी करो",
     "mmDrawAgain": "फिर निकालो",
@@ -129,14 +129,14 @@
     "stealReports": "सभी 20 मामले ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 मीम्स · 61 CC0 कार्ड और मीम्स",
+    "pageTitle": "Temu3 मीम्स · 114 CC0 कार्ड और मीम्स",
     "title": "मीम्स",
-    "sub": "61 CC0 कार्ड और मीम्स. किसी भी कार्ड पर क्लिक करके कॉपी करो या स्रोत देखो.",
+    "sub": "114 CC0 कार्ड और मीम्स. किसी भी कार्ड पर क्लिक करके कॉपी करो या स्रोत देखो.",
     "drawBtn": "रैंडम कार्ड निकालो",
     "drawAgain": "फिर निकालो",
     "submitBtn": "GitHub पर सबमिट करो ↗",
     "tabAll": "सभी",
-    "tabSins": "19 पाप",
+    "tabSins": "24 पाप",
     "tabBlended": "मीम्स",
     "tabClassic": "स्क्रीनशॉट",
     "tabComics": "कॉमिक्स",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "इमेज नए टैब में खुल गई.",
     "downloadedToast": "सेव हो गया.",
     "series": {
-      "sins": "19 पाप",
+      "sins": "24 पाप",
       "blended": "मीम",
       "classic": "पोस्ट",
       "comics": "कॉमिक",
-      "community": "कम्युनिटी"
-    }
+      "community": "कम्युनिटी",
+      "parody": "पैरोडी"
+    },
+    "tabParodies": "पैरोडी"
   },
   "mail": {
     "pageTitle": "Tmail · सार्वजनिक आर्काइव (2023 से 2026)",
@@ -229,7 +231,7 @@
     "aboutTitle": "Tmail के बारे में",
     "aboutBody": "34 थ्रेड्स और 109 स्क्रीनशॉट का स्टैटिक आर्काइव, बिना ट्रैकिंग (मई 2023 से नवंबर 2026).",
     "memeModalDesc": "मीम्स में किसी भी कार्ड को कॉपी या सेव करने के लिए क्लिक करो.",
-    "openAllMemes": "सभी 61 मीम्स ↗",
+    "openAllMemes": "सभी 114 मीम्स ↗",
     "copyInMemes": "PNG कॉपी करो ↗",
     "topicPrefix": "टॉपिक",
     "personPrefix": "व्यक्ति",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 X पोस्ट",
-    "portalMemes": "61 मीम्स",
+    "portalMemes": "114 मीम्स",
     "portalEvidence": "109 स्क्रीनशॉट",
     "portalSources": "327 लिंक",
     "languagesLabel": "भाषाएँ (18):",

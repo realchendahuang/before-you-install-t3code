@@ -4,6 +4,7 @@
   const I18N = window.Temu3I18n;
   let lang = I18N.detectInitialLang();
   let bundle = null;
+  let catalogMeta = null;
   let allItems = [];
   let visibleItems = [];
   let activeSeries = "all";
@@ -16,6 +17,10 @@
 
   function isZh() {
     return lang === "zh-CN" || lang === "zh-TW";
+  }
+
+  function isAnimatedGif(it) {
+    return Boolean(it && (it.animated || it.mime === "image/gif" || /\.gif(\?|$)/i.test(it.url || "")));
   }
 
   function escapeHtml(s) {
@@ -35,9 +40,20 @@
     showToast._t = setTimeout(() => { el.hidden = true; }, 2400);
   }
 
-  async function copyImageAsPng(url) {
+  async function copyAsset(it) {
+    if (!it) return;
+    if (isAnimatedGif(it)) {
+      try {
+        await navigator.clipboard.writeText(it.url);
+        showToast(t("memes.copiedGifToast", "Copied animated GIF link."));
+      } catch (_) {
+        window.open(it.url, "_blank", "noopener,noreferrer");
+        showToast(t("memes.copyFallbackToast", "Opened image in a new tab."));
+      }
+      return;
+    }
     try {
-      const res = await fetch(url, { mode: "cors" });
+      const res = await fetch(it.url, { mode: "cors" });
       if (!res.ok) throw new Error("fetch failed");
       const blob = await res.blob();
       const bmp = await createImageBitmap(blob);
@@ -49,16 +65,19 @@
         canvas.toBlob((b) => (b ? resolve(b) : reject(new Error("toBlob failed"))), "image/png")
       );
       await navigator.clipboard.write([new ClipboardItem({ "image/png": pngBlob })]);
-      showToast(t("memes.copiedToast", "Copied PNG to clipboard."));
+      showToast(t("memes.copiedToast", "Copied PNG."));
     } catch (_) {
-      window.open(url, "_blank", "noopener,noreferrer");
+      window.open(it.url, "_blank", "noopener,noreferrer");
       showToast(t("memes.copyFallbackToast", "Opened image in a new tab."));
     }
   }
 
-  async function downloadImage(url, filename) {
+  async function downloadAsset(it) {
+    if (!it) return;
+    const ext = isAnimatedGif(it) ? "gif" : "webp";
+    const filename = `${it.slug || it.id}.${ext}`;
     try {
-      const res = await fetch(url, { mode: "cors" });
+      const res = await fetch(it.url, { mode: "cors" });
       if (!res.ok) throw new Error("fetch failed");
       const blob = await res.blob();
       const objUrl = URL.createObjectURL(blob);
@@ -69,22 +88,123 @@
       a.click();
       a.remove();
       setTimeout(() => URL.revokeObjectURL(objUrl), 4000);
-      showToast(t("memes.downloadedToast", "Download started."));
+      showToast(t("memes.downloadedToast", "Saved."));
     } catch (_) {
-      window.open(url, "_blank", "noopener,noreferrer");
+      window.open(it.url, "_blank", "noopener,noreferrer");
     }
+  }
+
+  function updateDynamicCounts() {
+    if (!catalogMeta) return;
+    const counts = catalogMeta.counts || {};
+    const total = allItems.length || catalogMeta.total || 0;
+    const sinsN = counts.sins || 22;
+    const stickersN = counts.stickers || 28;
+    const receiptsN = (counts.classic || 0) + (counts.comics || 0);
+
+    const zipBtn = document.getElementById("stickerZipBtn");
+    if (zipBtn && catalogMeta.stickerZipUrl) {
+      zipBtn.href = catalogMeta.stickerZipUrl;
+    }
+
+    const ptTpl = t("memes.pageTitle");
+    if (ptTpl && total) {
+      document.title = ptTpl.replace(/\b(61|114|144|149|150)\b/, String(total)).replace(/\b(19|22|24)\b/, String(sinsN));
+    }
+
+    const subEl = document.getElementById("heroSub");
+    if (subEl && total) {
+      const subTpl = t("memes.sub");
+      if (subTpl) {
+        subEl.textContent = subTpl
+          .replace(/\b(61|114|144|149|150)\b/, String(total))
+          .replace(/\b(19|22|24)\b/, String(sinsN));
+      }
+    }
+
+    const setTab = (series, label) => {
+      const el = document.querySelector(`[data-series="${series}"]`);
+      if (el && label) el.textContent = label;
+    };
+
+    const allLabel = t("memes.tabAll", "All");
+    setTab("all", total ? `${allLabel} (${total})` : allLabel);
+
+    const sinsLabel = t("memes.tabSins", `${sinsN} Sins`);
+    setTab("sins", sinsLabel.replace(/\b(19|22|24)\b/, String(sinsN)));
+
+    const blendedLabel = t("memes.tabBlended", "Viral Memes");
+    setTab("blended", counts.blended ? `${blendedLabel} (${counts.blended})` : blendedLabel);
+
+    const stickersLabel = t("memes.tabStickers", `${stickersN} Stickers`);
+    setTab("stickers", stickersLabel.replace(/\b28\b/, String(stickersN)));
+
+    const creativeLabel = t("memes.tabCreative", "Creative Pack");
+    setTab("creative", counts.creative ? `${creativeLabel} (${counts.creative})` : creativeLabel);
+
+    const storyLabel = t("memes.tabStory", "Story Comics");
+    setTab("story", counts.story ? `${storyLabel} (${counts.story})` : storyLabel);
+
+    const receiptsLabel = t("memes.tabReceipts", "Receipts");
+    setTab("receipts", receiptsN ? `${receiptsLabel} (${receiptsN})` : receiptsLabel);
+  }
+
+  function renderSeriesBanner() {
+    const el = document.getElementById("seriesBanner");
+    if (!el) return;
+
+    if (activeSeries === "stickers" && catalogMeta) {
+      const zipUrl = catalogMeta.stickerZipUrl || "https://cdn.temu3code.com/stickers/theo-rage-stickers-pack.zip";
+      const promoUrl = catalogMeta.promoSheetUrl || "";
+      const mb = catalogMeta.stickerZipBytes ? ` (${(catalogMeta.stickerZipBytes / (1024 * 1024)).toFixed(1)} MB)` : "";
+      el.innerHTML = `<div class="sb-left">
+        ${promoUrl ? `<a class="sb-thumb" href="${escapeHtml(promoUrl)}" target="_blank" rel="noopener noreferrer" aria-label="4x7 Sticker Contact Sheet"><img src="${escapeHtml(promoUrl)}" alt="28-Sticker Promo Sheet" loading="lazy" /></a>` : ""}
+        <div>
+          <div class="sb-title">${escapeHtml(t("memes.stickerBannerTitle", "Full 28-Sticker Transparent Pack v1.1"))}</div>
+          <p class="sb-desc">${escapeHtml(t("memes.stickerBannerDesc", "Pre-sized RGBA folders for Discord & Slack (128px), Telegram (512px WebP/PNG), and WeChat (240px) + 4×7 X promo sheet."))}</p>
+        </div>
+      </div>
+      <div class="sb-actions">
+        ${promoUrl ? `<a class="act-btn" href="${escapeHtml(promoUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("memes.promoSheetBtn", "4×7 Contact Sheet ↗"))}</a>` : ""}
+        <a class="act-btn act-cobalt" href="${escapeHtml(zipUrl)}" download>📦 ${escapeHtml(t("memes.stickerZipBtn", "Free 28-Sticker ZIP"))}${escapeHtml(mb)}</a>
+      </div>`;
+      el.hidden = false;
+      return;
+    }
+
+    if (activeSeries === "story") {
+      el.innerHTML = `<div class="sb-left">
+        <div>
+          <div class="sb-title">${escapeHtml(t("memes.storyBannerTitle", "Prefer vertical comic reading + NotebookLM Podcast?"))}</div>
+          <p class="sb-desc">${escapeHtml(t("memes.storyBannerDesc", "Open the dedicated /story/ reader for instant English / 简体中文 switching and bilingual audio overview."))}</p>
+        </div>
+      </div>
+      <div class="sb-actions">
+        <a class="act-btn act-cobalt" href="../story/">${escapeHtml(t("memes.openStoryReader", "Open /story/ Reader →"))}</a>
+      </div>`;
+      el.hidden = false;
+      return;
+    }
+
+    el.hidden = true;
+    el.innerHTML = "";
   }
 
   function getFiltered() {
     const q = query.trim().toLowerCase();
     return allItems.filter((it) => {
-      if (activeSeries !== "all" && it.series !== activeSeries) return false;
+      if (activeSeries === "receipts") {
+        if (it.series !== "classic" && it.series !== "comics") return false;
+      } else if (activeSeries !== "all" && it.series !== activeSeries) {
+        return false;
+      }
       if (!q) return true;
-      return `${it.id} #${it.exhibit} ${it.titleEn} ${it.titleZh} ${it.noteEn || ""} ${it.noteZh || ""} ${it.series}`.toLowerCase().includes(q);
+      return `${it.id} #${it.exhibit} ${it.slug || ""} ${it.subseries || ""} ${it.titleEn} ${it.titleZh} ${it.noteEn || ""} ${it.noteZh || ""} ${it.series}`.toLowerCase().includes(q);
     });
   }
 
   function renderGrid() {
+    renderSeriesBanner();
     const grid = document.getElementById("memeGrid");
     const empty = document.getElementById("emptyState");
     const badge = document.getElementById("countBadge");
@@ -97,31 +217,46 @@
     }
     empty.hidden = true;
 
-    const copyTxt = t("memes.copyBtn", "Copy PNG");
+    const copyPngTxt = t("memes.copyBtn", "Copy PNG");
+    const copyGifTxt = t("memes.copyGifBtn", "Copy GIF URL");
     const dlTxt = t("memes.downloadBtn", "Save");
+    const dlGifTxt = t("memes.downloadGifBtn", "Save GIF");
+    const sinsN = (catalogMeta && catalogMeta.counts && catalogMeta.counts.sins) || 22;
 
     grid.innerHTML = visibleItems
       .map((it, idx) => {
         const title = isZh() ? it.titleZh : it.titleEn;
         const note = isZh() ? it.noteZh : it.noteEn;
-        const sLabel = t(`memes.series.${it.series}`, it.series.toUpperCase());
-        return `<article class="meme-card${it.series === "sins" ? " is-sin" : ""}">
+        let sLabel = t(`memes.series.${it.series}`, it.series.toUpperCase());
+        if (it.series === "sins") sLabel = sLabel.replace(/\b(19|22)\b/, String(sinsN));
+        const gif = isAnimatedGif(it);
+        const cardCls = [
+          "meme-card",
+          it.series === "sins" ? "is-sin" : "",
+          it.series === "stickers" || it.transparent ? "is-sticker" : "",
+        ].filter(Boolean).join(" ");
+
+        const srcHref = it.sourceUrl || `../mail/?thread=${encodeURIComponent(it.thread)}`;
+        const srcAttrs = it.sourceUrl ? ' target="_blank" rel="noopener noreferrer"' : "";
+
+        return `<article class="${cardCls}">
           <button type="button" class="meme-media-btn" data-open-lb="${idx}" aria-label="${escapeHtml(title)}">
             <div class="meme-img-frame">
+              ${gif ? `<span class="gif-pill">GIF</span>` : ""}
               <img src="${escapeHtml(it.url)}" alt="${escapeHtml(title)}" width="${it.width || 900}" height="${it.height || 900}" loading="lazy" crossorigin="anonymous" />
             </div>
           </button>
           <div class="meme-body">
             <div class="meme-meta">
               <span class="badge badge-${escapeHtml(it.series)}">${escapeHtml(sLabel)}</span>
-              <span class="ex-tag">#${escapeHtml(it.exhibit)}</span>
+              <span class="ex-tag">${it.slug ? `:${escapeHtml(it.slug)}:` : `#${escapeHtml(it.exhibit)}`}</span>
             </div>
             <h3 class="meme-title">${escapeHtml(title)}</h3>
             ${note ? `<p class="meme-note">${escapeHtml(note)}</p>` : ""}
             <div class="meme-actions">
-              <button type="button" class="act-btn act-primary" data-copy-idx="${idx}">${escapeHtml(copyTxt)}</button>
-              <button type="button" class="act-btn" data-dl-idx="${idx}">${escapeHtml(dlTxt)}</button>
-              <a class="act-btn act-cobalt" href="../mail/?thread=${encodeURIComponent(it.thread)}">#${escapeHtml(it.exhibit)} →</a>
+              <button type="button" class="act-btn act-primary" data-copy-idx="${idx}">${escapeHtml(gif ? copyGifTxt : copyPngTxt)}</button>
+              <button type="button" class="act-btn" data-dl-idx="${idx}">${escapeHtml(gif ? dlGifTxt : dlTxt)}</button>
+              <a class="act-btn act-cobalt" href="${escapeHtml(srcHref)}"${srcAttrs}>#${escapeHtml(it.exhibit)} →</a>
             </div>
           </div>
         </article>`;
@@ -141,21 +276,45 @@
     if (lbIndex < 0 || lbIndex >= visibleItems.length) return;
     const it = visibleItems[lbIndex];
     const title = isZh() ? it.titleZh : it.titleEn;
+    const gif = isAnimatedGif(it);
+    const sinsN = (catalogMeta && catalogMeta.counts && catalogMeta.counts.sins) || 22;
+
     const counter = document.getElementById("lbCounter");
     if (counter) counter.textContent = `${lbIndex + 1} / ${visibleItems.length}`;
     const badgeEl = document.getElementById("lbBadge");
     badgeEl.className = `badge badge-${it.series}`;
-    badgeEl.textContent = `${t(`memes.series.${it.series}`, it.series)} · #${it.exhibit}`;
+    let sLabel = t(`memes.series.${it.series}`, it.series);
+    if (it.series === "sins") sLabel = sLabel.replace(/\b(19|22)\b/, String(sinsN));
+    badgeEl.textContent = `${sLabel} · ${it.slug ? `:${it.slug}:` : `#${it.exhibit}`}`;
     document.getElementById("lbTitle").textContent = title;
     const noteEl = document.getElementById("lbNote");
     if (noteEl) noteEl.textContent = (isZh() ? it.noteZh : it.noteEn) || "";
+    const imgBox = document.getElementById("lbImgBox");
+    if (imgBox) imgBox.classList.toggle("is-transparent", Boolean(it.transparent || it.series === "stickers"));
     const img = document.getElementById("lbImg");
     img.src = it.url;
     img.alt = title;
+
+    const copyBtn = document.getElementById("lbCopyBtn");
+    if (copyBtn) copyBtn.textContent = gif ? t("memes.copyGifBtn", "Copy GIF URL") : t("memes.copyBtn", "Copy PNG");
+    const dlBtn = document.getElementById("lbDownloadBtn");
+    if (dlBtn) dlBtn.textContent = gif ? t("memes.downloadGifBtn", "Save GIF") : t("memes.downloadBtn", "Save");
+
     const shareText = encodeURIComponent(`${title} · temu3code.com`);
     const shareUrl = encodeURIComponent(`https://temu3code.com/memes/#${it.id}`);
     document.getElementById("lbShareX").href = `https://x.com/intent/tweet?text=${shareText}&url=${shareUrl}`;
-    document.getElementById("lbReceiptLink").href = `../mail/?thread=${encodeURIComponent(it.thread)}`;
+    const receiptLink = document.getElementById("lbReceiptLink");
+    if (it.sourceUrl) {
+      receiptLink.href = it.sourceUrl;
+      receiptLink.setAttribute("target", "_blank");
+      receiptLink.setAttribute("rel", "noopener noreferrer");
+      receiptLink.textContent = t("common.openX", "Original post ↗");
+    } else {
+      receiptLink.href = `../mail/?thread=${encodeURIComponent(it.thread)}`;
+      receiptLink.removeAttribute("target");
+      receiptLink.removeAttribute("rel");
+      receiptLink.textContent = t("memes.verifyReceipt", "Source →");
+    }
     const drawAgain = document.getElementById("lbDrawAgainBtn");
     if (drawAgain) drawAgain.hidden = it.series !== "sins";
     if (animate) triggerPop();
@@ -200,6 +359,7 @@
     const searchEl = document.getElementById("memeSearch");
     if (searchEl) searchEl.placeholder = t("memes.searchPlaceholder", searchEl.placeholder);
 
+    updateDynamicCounts();
     renderGrid();
     if (lbIndex >= 0) updateLightbox(false);
   }
@@ -207,19 +367,23 @@
   async function init() {
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
     try {
-      const res = await fetch("../data/memes.json?v=2");
+      const res = await fetch("../data/memes.json?v=3");
       const data = await res.json();
+      catalogMeta = data;
       allItems = Array.isArray(data.items) ? data.items : [];
     } catch (_) {
       allItems = [];
     }
 
     const reqSeries = new URLSearchParams(window.location.search).get("series");
-    if (reqSeries && ["all", "sins", "blended", "classic", "comics"].includes(reqSeries)) {
-      activeSeries = reqSeries;
-      document.querySelectorAll("[data-series]").forEach((b) =>
-        b.classList.toggle("is-active", b.getAttribute("data-series") === activeSeries)
-      );
+    if (reqSeries) {
+      const mapped = (reqSeries === "classic" || reqSeries === "comics") ? "receipts" : reqSeries;
+      if (["all", "sins", "blended", "stickers", "creative", "story", "receipts"].includes(mapped)) {
+        activeSeries = mapped;
+        document.querySelectorAll("[data-series]").forEach((b) =>
+          b.classList.toggle("is-active", b.getAttribute("data-series") === activeSeries)
+        );
+      }
     }
 
     await applyLanguage(lang);
@@ -268,9 +432,9 @@
     const openBtn = e.target.closest("[data-open-lb]");
     if (openBtn) { openLightbox(Number(openBtn.getAttribute("data-open-lb")), false); return; }
     const copyBtn = e.target.closest("[data-copy-idx]");
-    if (copyBtn) { const it = visibleItems[Number(copyBtn.getAttribute("data-copy-idx"))]; if (it) copyImageAsPng(it.url); return; }
+    if (copyBtn) { const it = visibleItems[Number(copyBtn.getAttribute("data-copy-idx"))]; if (it) copyAsset(it); return; }
     const dlBtn = e.target.closest("[data-dl-idx]");
-    if (dlBtn) { const it = visibleItems[Number(dlBtn.getAttribute("data-dl-idx"))]; if (it) downloadImage(it.url, `${it.id}.webp`); }
+    if (dlBtn) { const it = visibleItems[Number(dlBtn.getAttribute("data-dl-idx"))]; if (it) downloadAsset(it); }
   });
 
   gridEl.addEventListener("pointermove", (e) => {
@@ -287,10 +451,10 @@
   document.getElementById("lbPrevMobile").addEventListener("click", () => stepLightbox(-1));
   document.getElementById("lbNextMobile").addEventListener("click", () => stepLightbox(1));
   document.getElementById("lbCopyBtn").addEventListener("click", () => {
-    const it = visibleItems[lbIndex]; if (it) copyImageAsPng(it.url);
+    const it = visibleItems[lbIndex]; if (it) copyAsset(it);
   });
   document.getElementById("lbDownloadBtn").addEventListener("click", () => {
-    const it = visibleItems[lbIndex]; if (it) downloadImage(it.url, `${it.id}.webp`);
+    const it = visibleItems[lbIndex]; if (it) downloadAsset(it);
   });
 
   let touchStartX = 0;

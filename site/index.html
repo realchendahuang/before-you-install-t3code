@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Temu3 Code · Before You Install T3 Code</title>
-  <meta name="description" content="20 documented cases, 109 archived screenshots, 61 CC0 memes, and 3.5 years of public posts and commits from pingdotgg/t3code across 18 languages. Zero telemetry." />
+  <meta name="description" content="20 documented cases, 109 archived screenshots, 150 CC0 memes &amp; 28 stickers, an 8-episode bilingual comic + podcast, and 3.5 years of public commits from pingdotgg/t3code. Zero telemetry." />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://temu3code.com/" />
   <meta property="og:title" content="Temu3 Code · Before You Install T3 Code" />
-  <meta property="og:description" content="20 documented cases, 109 archived screenshots, 12 original X posts, and 61 CC0 memes across 18 languages. Zero telemetry." />
+  <meta property="og:description" content="20 documented cases, 109 archived screenshots, 12 original X posts, 8-episode comic + podcast, and 150 CC0 memes &amp; stickers across 18 languages. Zero telemetry." />
   <meta property="og:image" content="https://temu3code.com/og-card.png" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Temu3 Code · Public Archive & Tmail Inbox" />
@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="./temu3.css?v=14" />
+  <link rel="stylesheet" href="./temu3.css?v=15" />
 </head>
 <body>
   <header class="nav-header">
@@ -41,7 +41,8 @@
       </label>
 
       <nav class="nav-links" aria-label="Main navigation">
-        <a class="nav-link" href="#x-receipts" data-i18n="common.navReceipts">X Archive</a>
+        <a class="nav-link" href="#x-receipts" data-i18n="common.navReceipts">X Posts</a>
+        <a class="nav-link" href="./story/" data-i18n="common.navStory">Story Comic</a>
         <a class="nav-link" href="./memes/" data-i18n="common.navMemes">Memes</a>
         <a class="nav-link" href="./mail/" data-i18n="common.navMail">Tmail</a>
         <a class="nav-gh" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">
@@ -236,21 +237,51 @@
       </div>
     </section>
 
-    <!-- BAND 4: 19 SINS DECK & MEMES -->
+    <!-- BAND 3.5: 96-HOUR STORY COMIC + PODCAST + 28-STICKER ZIP -->
+    <section id="story-showcase" class="sec-story-spot" aria-labelledby="storySpotTitle">
+      <div class="container">
+        <div class="story-spot-card">
+          <div class="story-spot-copy">
+            <span class="story-spot-kicker" data-i18n="home.storyKicker">8-EPISODE COMIC · PODCAST (EN/中文) · 28 STICKERS</span>
+            <h2 id="storySpotTitle" class="story-spot-h2" data-i18n="home.storyTitle">The 96 Hours After One Block</h2>
+            <p class="story-spot-p" data-i18n="home.storySub">
+              Follow the entire 96-hour timeline in an 8-episode bilingual comic with a NotebookLM audio podcast — plus a free 28-sticker transparent pack ready for Discord, Slack, Telegram, and WeChat.
+            </p>
+            <div class="story-spot-actions">
+              <a class="btn-cobalt btn-spot" href="./story/">
+                <span>📖</span>
+                <span data-i18n="home.storyReadBtn">Read 8-Ep Comic &amp; Listen →</span>
+              </a>
+              <a id="homeStoryZipBtn" class="btn-gold-sm btn-spot-zip" href="https://cdn.temu3code.com/stickers/theo-rage-stickers-pack.zip" download title="Discord · Slack · Telegram · WeChat">
+                <span>📦</span>
+                <span data-i18n="home.storyZipBtn">Free 28-Sticker ZIP</span>
+              </a>
+            </div>
+            <div class="story-spot-hint" data-i18n="home.storyZipHint">CC0 1.0 · English &amp; 简体中文 · Zero telemetry</div>
+          </div>
+          <a class="story-spot-preview" href="./story/" aria-label="Open 8-episode Story Comic">
+            <img id="homeStoryCoverImg" src="https://cdn.temu3code.com/memes/story/en/ep01_11_hours_apart.webp" alt="Ep. 1 · 11 Hours Apart" loading="lazy" />
+            <span class="story-spot-pill" data-i18n="home.storyEpPill">Ep. 1 → Ep. 8</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- BAND 4: 24 SINS DECK & MEMES -->
     <section id="memes-showcase" class="sec-memes" aria-labelledby="memesTitle">
       <div class="container">
         <div class="sec-head-row">
-          <h2 id="memesTitle" class="sec-h2" data-i18n="home.mmTitle">19 Sins Deck &amp; Memes</h2>
+          <h2 id="memesTitle" class="sec-h2" data-i18n="home.mmTitle">24 Sins Deck &amp; Memes</h2>
           <div class="mm-head-actions">
             <button type="button" id="homeDrawSinBtn" class="btn-gold-sm">
               <span>🎲</span>
               <span data-i18n="home.mmDraw">Draw a Random Sin</span>
             </button>
-            <a class="btn-outline btn-sm-outline" href="./memes/" data-i18n="home.mmAll">All 61 Memes ↗</a>
+            <a id="homeAllMemesBtn" class="btn-outline btn-sm-outline" href="./memes/" data-i18n="home.mmAll">All 150 Memes ↗</a>
           </div>
         </div>
 
-        <div id="homeSinsRail" class="sins-rail" aria-label="19 Sins collector cards"></div>
+        <div id="homeSinsRail" class="sins-rail" aria-label="24 Sins collector cards"></div>
         <div id="homeViralGrid" class="mm-viral-grid"></div>
       </div>
     </section>
@@ -281,8 +312,9 @@
     <div class="footer-inner">
       <span data-i18n="common.footer">CC0 1.0 · Independent public archive · Not affiliated with T3 Tools Inc.</span>
       <div class="footer-links">
-        <a href="./mail/" data-i18n="common.navMail">Tmail</a>
+        <a href="./story/" data-i18n="common.navStory">Story Comic</a>
         <a href="./memes/" data-i18n="common.navMemes">Memes</a>
+        <a href="./mail/" data-i18n="common.navMail">Tmail</a>
         <a href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer" data-i18n="common.navGithub">GitHub</a>
       </div>
     </div>
@@ -327,7 +359,7 @@
 
   <div id="homeToast" class="toast" role="status" aria-live="polite" hidden></div>
 
-  <script src="./data/i18n.js?v=8"></script>
-  <script src="./temu3.js?v=12"></script>
+  <script src="./data/i18n.js?v=9"></script>
+  <script src="./temu3.js?v=14"></script>
 </body>
 </html>

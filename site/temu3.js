@@ -73,6 +73,7 @@
   let activeFilter = "all";
   let visibleReceipts = X_RECEIPTS.slice();
   let memeCatalog = [];
+  let memeCatalogMeta = null;
   let lbMode = "receipts";
   let lbIsSins = false;
   let lbItems = [];
@@ -195,6 +196,29 @@
   function renderMemeShowcase() {
     const rail = document.getElementById("homeSinsRail");
     const viralGrid = document.getElementById("homeViralGrid");
+
+    // Sync Story cover & dynamic meme counts
+    const coverImg = document.getElementById("homeStoryCoverImg");
+    if (coverImg && memeCatalogMeta && Array.isArray(memeCatalogMeta.storyEpisodes) && memeCatalogMeta.storyEpisodes.length) {
+      const ep1 = memeCatalogMeta.storyEpisodes[0];
+      const pick = isZh() ? (ep1.zh || ep1.en) : (ep1.en || ep1.zh);
+      if (pick && pick.url) coverImg.src = pick.url;
+    }
+    const zipBtn = document.getElementById("homeStoryZipBtn");
+    if (zipBtn && memeCatalogMeta && memeCatalogMeta.stickerZipUrl) {
+      zipBtn.href = memeCatalogMeta.stickerZipUrl;
+    }
+    const allBtn = document.getElementById("homeAllMemesBtn");
+    const totalN = memeCatalog.length || (memeCatalogMeta && memeCatalogMeta.total) || 0;
+    const sinsN = (memeCatalogMeta && memeCatalogMeta.counts && memeCatalogMeta.counts.sins) || 0;
+    if (allBtn && totalN) {
+      allBtn.textContent = allBtn.textContent.replace(/\b(61|114|144|149|150)\b/, String(totalN));
+    }
+    const mmTitle = document.getElementById("memesTitle");
+    if (mmTitle && sinsN) {
+      mmTitle.textContent = mmTitle.textContent.replace(/\b(19|22|24)\b/, String(sinsN));
+    }
+
     if (!rail || !viralGrid || !memeCatalog.length) return;
 
     const sins = memeCatalog.filter((m) => m.series === "sins");
@@ -216,6 +240,8 @@
       .map((m, idx) => {
         const title = isZh() ? m.titleZh : m.titleEn;
         const note = isZh() ? m.noteZh : m.noteEn;
+        const srcHref = m.sourceUrl || `./mail/?thread=${encodeURIComponent(m.thread)}`;
+        const srcAttrs = m.sourceUrl ? ' target="_blank" rel="noopener noreferrer"' : "";
         return `<article class="mm-viral-card">
           <button type="button" class="mm-viral-thumb" data-viral-idx="${idx}" aria-label="${escapeHtml(title)}">
             <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" loading="lazy" />
@@ -223,7 +249,7 @@
           <div class="mm-viral-body">
             <div class="mm-viral-top">
               <span class="mm-viral-title">${escapeHtml(title)}</span>
-              <a class="mm-viral-link" href="./mail/?thread=${encodeURIComponent(m.thread)}">#${escapeHtml(m.exhibit)} →</a>
+              <a class="mm-viral-link" href="${escapeHtml(srcHref)}"${srcAttrs}>#${escapeHtml(m.exhibit)} →</a>
             </div>
             ${note ? `<p class="mm-viral-note">${escapeHtml(note)}</p>` : ""}
           </div>
@@ -265,8 +291,17 @@
       xLink.href = `./memes/#${encodeURIComponent(m.id)}`;
       xLink.removeAttribute("target");
       xLink.textContent = t("home.mmOpenArsenal", "Open in /memes/ ↗");
-      mailLink.href = `./mail/?thread=${encodeURIComponent(m.thread)}`;
-      mailLink.textContent = t("common.openMail", "Tmail →");
+      if (m.sourceUrl) {
+        mailLink.href = m.sourceUrl;
+        mailLink.setAttribute("target", "_blank");
+        mailLink.setAttribute("rel", "noopener noreferrer");
+        mailLink.textContent = t("common.openX", "Original post ↗");
+      } else {
+        mailLink.href = `./mail/?thread=${encodeURIComponent(m.thread)}`;
+        mailLink.removeAttribute("target");
+        mailLink.removeAttribute("rel");
+        mailLink.textContent = t("common.openMail", "Tmail →");
+      }
       rawLink.href = m.url;
       rawLink.textContent = t("common.rawImage", "Full image ↗");
       if (drawAgainBtn) drawAgainBtn.hidden = !lbIsSins;
@@ -348,9 +383,10 @@
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
     await applyLanguage(lang);
     try {
-      const res = await fetch("./data/memes.json?v=2");
+      const res = await fetch("./data/memes.json?v=3");
       if (res.ok) {
         const data = await res.json();
+        memeCatalogMeta = data;
         memeCatalog = Array.isArray(data.items) ? data.items : [];
         renderMemeShowcase();
       }

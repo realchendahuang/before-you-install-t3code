@@ -115,9 +115,9 @@
     "f6Stat": "0 Advisories",
     "f6Title": "5 Open Security Bugs in ca81b7b9",
     "f6Desc": "Plaintext 30-day --lan shell cookies, Bearer tokens you can't revoke, and exposed SSH_AUTH_SOCK.",
-    "mmTitle": "19 Sins & Memes",
+    "mmTitle": "24 Sins & Memes",
     "mmDraw": "Draw a Random Card",
-    "mmAll": "All 61 Memes ↗",
+    "mmAll": "All 114 Memes ↗",
     "mmOpenArsenal": "Open in Memes ↗",
     "mmCopyPng": "Copy PNG",
     "mmDrawAgain": "Draw Again",
@@ -129,14 +129,14 @@
     "stealReports": "All 20 Cases ↗"
   },
   "memes": {
-    "pageTitle": "Temu3 Memes · 61 CC0 Cards & Memes",
+    "pageTitle": "Temu3 Memes · 114 CC0 Cards & Memes",
     "title": "Memes",
-    "sub": "61 CC0 cards and memes. Click any card to copy or check the source.",
+    "sub": "114 CC0 cards and memes. Click any card to copy or check the source.",
     "drawBtn": "Draw a Random Card",
     "drawAgain": "Draw Again",
     "submitBtn": "Submit on GitHub ↗",
     "tabAll": "All",
-    "tabSins": "19 Sins",
+    "tabSins": "24 Sins",
     "tabBlended": "Memes",
     "tabClassic": "Screenshots",
     "tabComics": "Comics",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "Opened image in a new tab.",
     "downloadedToast": "Saved.",
     "series": {
-      "sins": "19 SINS",
+      "sins": "24 SINS",
       "blended": "MEME",
       "classic": "POST",
       "comics": "COMIC",
-      "community": "COMMUNITY"
-    }
+      "community": "COMMUNITY",
+      "parody": "PARODY"
+    },
+    "tabParodies": "Parodies"
   },
   "mail": {
     "pageTitle": "Tmail · Public Archive (2023–2026)",
@@ -229,7 +231,7 @@
     "aboutTitle": "About Tmail",
     "aboutBody": "A static, no-tracking archive of 34 threads and 109 screenshots (May 2023 to Nov 2026).",
     "memeModalDesc": "Click any card to copy or save in Memes.",
-    "openAllMemes": "All 61 Memes ↗",
+    "openAllMemes": "All 114 Memes ↗",
     "copyInMemes": "Copy PNG ↗",
     "topicPrefix": "Topic",
     "personPrefix": "Person",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 X Posts",
-    "portalMemes": "61 Memes",
+    "portalMemes": "114 Memes",
     "portalEvidence": "109 Screenshots",
     "portalSources": "327 Links",
     "languagesLabel": "Languages (18):",

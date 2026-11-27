@@ -115,9 +115,9 @@
     "f6Stat": "0 avisos",
     "f6Title": "5 bugs de segurança abertos no ca81b7b9",
     "f6Desc": "Cookies de shell --lan em texto puro por 30 dias, Bearer tokens que não dá pra revogar, e SSH_AUTH_SOCK exposto.",
-    "mmTitle": "19 pecados e memes",
+    "mmTitle": "24 pecados e memes",
     "mmDraw": "Sortear um card",
-    "mmAll": "Todos os 61 memes ↗",
+    "mmAll": "Todos os 114 memes ↗",
     "mmOpenArsenal": "Abrir em Memes ↗",
     "mmCopyPng": "Copiar PNG",
     "mmDrawAgain": "Sortear de novo",
@@ -129,14 +129,14 @@
     "stealReports": "Todos os 20 casos ↗"
   },
   "memes": {
-    "pageTitle": "Memes do Temu3 · 61 cards e memes CC0",
+    "pageTitle": "Memes do Temu3 · 114 cards e memes CC0",
     "title": "Memes",
-    "sub": "61 cards e memes CC0. Clica em qualquer card pra copiar ou ver a fonte.",
+    "sub": "114 cards e memes CC0. Clica em qualquer card pra copiar ou ver a fonte.",
     "drawBtn": "Sortear um card",
     "drawAgain": "Sortear de novo",
     "submitBtn": "Enviar no GitHub ↗",
     "tabAll": "Tudo",
-    "tabSins": "19 pecados",
+    "tabSins": "24 pecados",
     "tabBlended": "Memes",
     "tabClassic": "Capturas",
     "tabComics": "Quadrinhos",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "Imagem aberta numa nova aba.",
     "downloadedToast": "Salvo.",
     "series": {
-      "sins": "19 PECADOS",
+      "sins": "24 PECADOS",
       "blended": "MEME",
       "classic": "POST",
       "comics": "QUADRINHO",
-      "community": "COMUNIDADE"
-    }
+      "community": "COMUNIDADE",
+      "parody": "PARÓDIA"
+    },
+    "tabParodies": "Paródias"
   },
   "mail": {
     "pageTitle": "Tmail · Arquivo público (2023–2026)",
@@ -229,7 +231,7 @@
     "aboutTitle": "Sobre o Tmail",
     "aboutBody": "Um arquivo estático, sem rastreamento, de 34 threads e 109 capturas (maio de 2023 a nov de 2026).",
     "memeModalDesc": "Clica em qualquer card pra copiar ou salvar em Memes.",
-    "openAllMemes": "Todos os 61 memes ↗",
+    "openAllMemes": "Todos os 114 memes ↗",
     "copyInMemes": "Copiar PNG ↗",
     "topicPrefix": "Tópico",
     "personPrefix": "Pessoa",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 posts no X",
-    "portalMemes": "61 memes",
+    "portalMemes": "114 memes",
     "portalEvidence": "109 capturas",
     "portalSources": "327 links",
     "languagesLabel": "Idiomas (18):",

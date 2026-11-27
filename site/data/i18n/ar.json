@@ -115,9 +115,9 @@
     "f6Stat": "0 تنبيهات",
     "f6Title": "5 أخطاء أمنية مفتوحة في ca81b7b9",
     "f6Desc": "كوكيز shell غير مشفرة لـ --lan تُحفظ 30 يوماً، ورموز Bearer لا يمكن إبطالها، وSSH_AUTH_SOCK مكشوف.",
-    "mmTitle": "19 خطيئة وميم",
+    "mmTitle": "24 خطيئة وميم",
     "mmDraw": "اسحب بطاقة عشوائية",
-    "mmAll": "كل الـ61 ميم ↗",
+    "mmAll": "كل الـ114 ميم ↗",
     "mmOpenArsenal": "افتح في الميمز ↗",
     "mmCopyPng": "انسخ PNG",
     "mmDrawAgain": "اسحب مجدداً",
@@ -129,14 +129,14 @@
     "stealReports": "كل الحالات الـ20 ↗"
   },
   "memes": {
-    "pageTitle": "ميمز Temu3 · 61 بطاقة وميم بترخيص CC0",
+    "pageTitle": "ميمز Temu3 · 114 بطاقة وميم بترخيص CC0",
     "title": "ميمز",
-    "sub": "61 بطاقة وميم بترخيص CC0. اضغط أي بطاقة لنسخها أو معرفة المصدر.",
+    "sub": "114 بطاقة وميم بترخيص CC0. اضغط أي بطاقة لنسخها أو معرفة المصدر.",
     "drawBtn": "اسحب بطاقة عشوائية",
     "drawAgain": "اسحب مجدداً",
     "submitBtn": "أرسل على GitHub ↗",
     "tabAll": "الكل",
-    "tabSins": "19 خطيئة",
+    "tabSins": "24 خطيئة",
     "tabBlended": "ميمز",
     "tabClassic": "لقطات شاشة",
     "tabComics": "قصص مصورة",
@@ -150,12 +150,14 @@
     "copyFallbackToast": "فُتحت الصورة في تبويب جديد.",
     "downloadedToast": "تم الحفظ.",
     "series": {
-      "sins": "19 خطيئة",
+      "sins": "24 خطيئة",
       "blended": "ميم",
       "classic": "منشور",
       "comics": "قصة مصورة",
-      "community": "مجتمع"
-    }
+      "community": "مجتمع",
+      "parody": "ساخرة"
+    },
+    "tabParodies": "محاكاة ساخرة"
   },
   "mail": {
     "pageTitle": "Tmail · أرشيف عام (2023 إلى 2026)",
@@ -229,7 +231,7 @@
     "aboutTitle": "عن Tmail",
     "aboutBody": "أرشيف ثابت بلا تتبع يضم 34 محادثة و109 لقطات شاشة (من مايو 2023 إلى نوفمبر 2026).",
     "memeModalDesc": "اضغط أي بطاقة لنسخها أو حفظها في الميمز.",
-    "openAllMemes": "كل الـ61 ميم ↗",
+    "openAllMemes": "كل الـ114 ميم ↗",
     "copyInMemes": "انسخ PNG ↗",
     "topicPrefix": "الموضوع",
     "personPrefix": "الشخص",
@@ -299,7 +301,7 @@
     "portalHome": "temu3code.com",
     "portalMail": "Tmail",
     "portalReceipts": "12 منشور X",
-    "portalMemes": "61 ميم",
+    "portalMemes": "114 ميم",
     "portalEvidence": "109 لقطات شاشة",
     "portalSources": "327 رابطاً",
     "languagesLabel": "اللغات (18):",
