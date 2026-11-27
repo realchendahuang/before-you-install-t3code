@@ -1,18 +1,18 @@
-# Temu3 Code — Before You Install T3 Code
+# Temu3 Code · Before You Install T3 Code
 
 <p align="center">
-  <em>An independent, evidence-first public record of pingdotgg/t3code — documenting racial double standards, deceptive telemetry, critical security flaws, and commercial manipulation.</em>
+  <em>20 documented cases, 109 archived screenshots, and 3.5 years of public posts and commits from pingdotgg/t3code. Zero telemetry.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=en"><strong>🌐 temu3code.com</strong></a> ·
   <a href="https://temu3code.com/mail/?lang=en"><strong>✉ Tmail Inbox</strong></a> ·
-  <a href="https://temu3code.com/?lang=en#x-receipts"><strong>📸 12 Original X Shots</strong></a> ·
+  <a href="https://temu3code.com/?lang=en#x-receipts"><strong>📸 12 Original X Screenshots</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=en"><strong>🃏 61 Memes</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="./docs/EVIDENCE-INDEX.md"><strong>109 Receipts</strong></a> ·
+  <a href="./docs/EVIDENCE-INDEX.md"><strong>109 Screenshots</strong></a> ·
   <a href="./docs/COMPLETE-SOURCE-INDEX.md"><strong>327 Sources</strong></a>
 </p>
 
@@ -52,9 +52,9 @@
 > [!TIP]
 > **Why "Temu3 Code"?**
 >
-> On Nov 23, 2026 — 10 minutes after calling a Chinese developer's free MIT fork a "Chinese knockoff" — @theo generously donated our brand name on X: "Temu3 Code" (84k views).
+> On Nov 23, 2026, ten minutes after calling a Chinese developer's free MIT fork a "Chinese knockoff," @theo gave us the name on X: "Temu3 Code" (84k views).
 >
-> Free branding from a founder with 0 USPTO trademarks is too good to waste — so we registered temu3code.com, moved the public audit in, and left out the PostHog telemetry. Thanks for the free naming consultation, Theo. (CC0 1.0 — feel free to fork us back.) — [View @theo's naming tweet ↗](https://x.com/theo/status/2124825920808829077)
+> A founder with zero USPTO trademarks handing out free branding is hard to turn down. We registered temu3code.com, put the public audit here, and left out PostHog. Thanks for the name, Theo. Everything here is CC0 1.0, so fork away. [View @theo's naming post ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

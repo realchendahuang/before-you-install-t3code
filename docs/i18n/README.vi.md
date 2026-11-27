@@ -1,7 +1,7 @@
-# Temu3 Code — Trước khi cài T3 Code
+# Temu3 Code · Trước khi bạn cài T3 Code
 
 <p align="center">
-  <em>Một hồ sơ công khai độc lập, lấy chứng cứ làm trọng tâm về pingdotgg/t3code — ghi lại tiêu chuẩn kép về chủng tộc, telemetry gây nhầm lẫn, lỗ hổng bảo mật nghiêm trọng và thao túng thương mại.</em>
+  <em>20 vụ việc có hồ sơ, 109 ảnh chụp lưu trữ và 3,5 năm bài đăng, commit công khai từ pingdotgg/t3code. Không telemetry.</em>
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 bằng chứng</strong></a> ·
+  <a href="../EVIDENCE-INDEX.md"><strong>109 ảnh chụp</strong></a> ·
   <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 nguồn</strong></a>
 </p>
 
@@ -50,11 +50,11 @@
 
 <!-- origin-story:start -->
 > [!TIP]
-> **Vì sao là "Temu3 Code"?**
+> **Vì sao gọi là "Temu3 Code"?**
 >
-> Ngày 23/11/2026 — 10 phút sau khi gọi bản fork MIT miễn phí của một nhà phát triển Trung Quốc là "Chinese knockoff" — @theo hào phóng tặng tên thương hiệu của chúng tôi trên X: "Temu3 Code" (84k lượt xem).
+> Ngày 23/11/2026, mười phút sau khi gọi bản fork MIT miễn phí của một developer Trung Quốc là "Chinese knockoff", @theo đặt tên cho chúng tôi trên X: "Temu3 Code" (84 nghìn lượt xem).
 >
-> Thương hiệu miễn phí từ một nhà sáng lập chưa đăng ký bất kỳ nhãn hiệu nào với USPTO thì quá tốt để bỏ phí — nên chúng tôi đã đăng ký temu3code.com, đưa toàn bộ public audit vào và bỏ luôn telemetry PostHog. Cảm ơn buổi tư vấn đặt tên miễn phí, Theo. (CC0 1.0 — muốn thì cứ fork ngược lại chúng tôi.) — [Xem tweet đặt tên của @theo ↗](https://x.com/theo/status/2124825920808829077)
+> Một founder không có nhãn hiệu USPTO nào mà tặng miễn phí thương hiệu thì khó mà từ chối. Chúng tôi đăng ký temu3code.com, đặt bản kiểm toán công khai ở đây, và bỏ PostHog ra ngoài. Cảm ơn vì cái tên, Theo. Mọi thứ ở đây đều là CC0 1.0, cứ fork thoải mái. [Xem bài đặt tên của @theo ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

@@ -1,7 +1,7 @@
-# Temu3 Code — Voordat je T3 Code installeert
+# Temu3 Code · Voordat je T3 Code installeert
 
 <p align="center">
-  <em>Een onafhankelijk, bewijsgericht openbaar dossier over pingdotgg/t3code — met raciale dubbele maatstaven, misleidende telemetrie, kritieke beveiligingsfouten en commerciële manipulatie.</em>
+  <em>20 gedocumenteerde zaken, 109 gearchiveerde screenshots en 3,5 jaar publieke posts en commits van pingdotgg/t3code. Nul telemetrie.</em>
 </p>
 
 <p align="center">
@@ -12,7 +12,7 @@
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 bewijzen</strong></a> ·
+  <a href="../EVIDENCE-INDEX.md"><strong>109 screenshots</strong></a> ·
   <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 bronnen</strong></a>
 </p>
 
@@ -52,9 +52,9 @@
 > [!TIP]
 > **Waarom "Temu3 Code"?**
 >
-> Op 23 november 2026 — 10 minuten nadat @theo de gratis MIT-fork van een Chinese developer een "Chinese knockoff" had genoemd — schonk @theo ons genereus onze brandnaam op X: "Temu3 Code" (84k views).
+> Op 23 november 2026, tien minuten nadat hij de gratis MIT-fork van een Chinese developer een "Chinese knockoff" noemde, gaf @theo ons de naam op X: "Temu3 Code" (84k weergaven).
 >
-> Gratis branding van een founder met 0 USPTO-octrooien is te goed om te verspillen — dus hebben we temu3code.com geregistreerd, de openbare audit overgezet en de PostHog-telemetrie weggelaten. Bedankt voor de gratis naamgevingsconsult, Theo. (CC0 1.0 — fork ons gerust terug.) — [Bekijk de naming-tweet van @theo ↗](https://x.com/theo/status/2124825920808829077)
+> Een oprichter met nul USPTO-handelsmerken die gratis branding weggeeft, sla je niet af. We registreerden temu3code.com, zetten de publieke audit hier neer en lieten PostHog weg. Bedankt voor de naam, Theo. Alles hier is CC0 1.0, dus fork erop los. [Bekijk de naamgevingspost van @theo ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

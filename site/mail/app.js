@@ -226,10 +226,16 @@
         openFullReport: "openHome"
       };
       const k = aliasMap[key] || key;
-      if (state.bundle.mail[k]) return state.bundle.mail[k];
+      const val = SHARED_I18N && SHARED_I18N.getKey ? SHARED_I18N.getKey(state.bundle.mail, k) : state.bundle.mail[k];
+      if (val) return val;
     }
     const fallbackLang = isZh() ? "zh" : "en";
     return (I18N[fallbackLang] && I18N[fallbackLang][key]) || I18N.en[key] || key;
+  }
+
+  function fmt(template, vars) {
+    if (SHARED_I18N && SHARED_I18N.fmt) return SHARED_I18N.fmt(template, vars);
+    return String(template || "").replace(/\{(\w+)\}/g, (_, k) => (vars && k in vars ? String(vars[k]) : ""));
   }
 
   function escapeHtml(str) {
@@ -450,7 +456,7 @@
         state.sort = "oldest";
         $("#sortSelect").value = "oldest";
         renderAll();
-        showToast(isZh() ? "已切换为最早时间优先（2023 → 2026）" : "Sorted oldest first: May 2023 → Nov 2026");
+        showToast(t("sortedOldestToast"));
       });
     }
     const randBtn = $("#quickRandomBtn");
@@ -492,7 +498,8 @@
       .map((tp) => {
         const count = state.data.threads.filter((th) => th.topics.includes(tp.id)).length;
         const active = state.topic === tp.id ? " active" : "";
-        const label = isZh() ? tp.labelZh : tp.label;
+        const localized = t(`topics.${tp.id}`);
+        const label = localized && localized !== `topics.${tp.id}` ? localized : (isZh() ? tp.labelZh : tp.label);
         return `<li>
           <button type="button" class="topic-btn${active}" data-topic="${tp.id}">
             <span class="material-symbols-outlined">${tp.icon}</span>
@@ -556,8 +563,10 @@
     if (state.topic) {
       const tp = state.data.topics.find((x) => x.id === state.topic);
       if (tp) {
+        const localized = t(`topics.${tp.id}`);
+        const tpLabel = localized && localized !== `topics.${tp.id}` ? localized : (isZh() ? tp.labelZh : tp.label);
         chips.push({
-          label: `${isZh() ? "主题" : "Topic"}: ${isZh() ? tp.labelZh : tp.label}`,
+          label: `${t("topicPrefix")}: ${tpLabel}`,
           clear: () => {
             state.topic = null;
           }
@@ -568,7 +577,7 @@
       const p = state.data.people.find((x) => x.id === state.person);
       if (p) {
         chips.push({
-          label: `${isZh() ? "人物" : "Person"}: ${p.name}`,
+          label: `${t("personPrefix")}: ${p.name}`,
           clear: () => {
             state.person = null;
           }
@@ -577,7 +586,7 @@
     }
     if (state.platform !== "all") {
       chips.push({
-        label: `${isZh() ? "来源" : "Source"}: ${state.platform}`,
+        label: `${t("sourcePrefix")}: ${state.platform}`,
         clear: () => {
           state.platform = "all";
           $("#platformFilter").value = "all";
@@ -586,7 +595,7 @@
     }
     if (state.year !== "all") {
       chips.push({
-        label: `${isZh() ? "时间段" : "Date"}: ${state.year}`,
+        label: `${t("datePrefix")}: ${state.year}`,
         clear: () => {
           state.year = "all";
           $("#yearFilter").value = "all";
@@ -629,7 +638,7 @@
   function renderEmailList() {
     const list = getFilteredThreads();
     const total = list.length;
-    $("#rangeLabel").textContent = total ? `1–${total} of ${total}` : "0 of 0";
+    $("#rangeLabel").textContent = total ? fmt(t("rangeFormat"), { a: 1, b: total, n: total }) : "0";
 
     // Show category tabs only on top-level Inbox with no person/topic filter
     $("#categoryTabs").hidden = !(state.folder === "inbox" && !state.topic && !state.person);
@@ -662,7 +671,7 @@
         const msgCount = th.messages.length;
         const starDisplay = th.starCount + (starred ? 1 : 0);
         const chipClass = th.deleted ? " chip-deleted" : th.status === "open" ? " chip-open" : "";
-        const chipLabel = th.deleted ? "Deleted" : th.platform;
+        const chipLabel = th.deleted ? t("chipDeleted") : th.platform;
 
         return `<div class="email-row${isRead ? " is-read" : ""}" role="listitem" tabindex="0" data-thread-id="${th.id}">
           <div class="row-controls">
@@ -750,7 +759,7 @@
     }
 
     const idx = list.findIndex((x) => x.id === th.id);
-    const posText = idx >= 0 ? `${idx + 1} of ${list.length}` : `#${th.exhibit}`;
+    const posText = idx >= 0 ? fmt(t("posFormat"), { i: idx + 1, n: list.length }) : `#${th.exhibit}`;
     $("#threadPosLabel").textContent = posText;
     $("#prevThreadBtn").disabled = idx <= 0;
     $("#nextThreadBtn").disabled = idx < 0 || idx >= list.length - 1;
@@ -801,7 +810,7 @@
     const statusClass = th.deleted ? " chip-deleted" : th.status === "open" ? " chip-open" : "";
 
     const primaryLink = (th.messages[0] && th.messages[0].links && th.messages[0].links[0] && th.messages[0].links[0].url) || state.data.meta.repoUrl;
-    const shareText = encodeURIComponent(`${th.dateDisplay} — ${th.subject} (Public Record Inbox #${th.exhibit})`);
+    const shareText = encodeURIComponent(`${th.dateDisplay} · ${subject} (#${th.exhibit})`);
     const shareUrl = encodeURIComponent(window.location.href);
 
     const messagesHtml = th.messages
@@ -831,7 +840,7 @@
                   <span class="msg-sender-name">${escapeHtml(m.sender)}</span>
                   <span class="msg-handle">&lt;${escapeHtml(m.handle)}&gt;</span>
                 </div>
-                <div class="msg-to">to ${escapeHtml(m.to)}</div>
+                <div class="msg-to">${escapeHtml(t("toPrefix"))} ${escapeHtml(m.to)}</div>
               </div>
               <div class="msg-time">${escapeHtml(m.time)}</div>
             </div>
@@ -848,7 +857,7 @@
         <h1 class="thread-subject">${escapeHtml(subject)}</h1>
         <span class="platform-chip">${escapeHtml(th.platform)}</span>
         <span class="platform-chip${statusClass}">${escapeHtml(statusLabel)}</span>
-        <span class="platform-chip">Exhibit #${escapeHtml(th.exhibit)}</span>
+        <span class="platform-chip">${escapeHtml(t("exhibitLabel"))} #${escapeHtml(th.exhibit)}</span>
       </div>
       ${messagesHtml}
       <div class="thread-footer-actions">
@@ -953,12 +962,12 @@
 
   function renderActivityView() {
     const metrics = [
-      { num: "3.5+ yrs", label: isZh() ? "公开记录时间跨度 (2023.05 – 2026.11)" : "Documented span (May 2023 – Nov 2026)", danger: false },
-      { num: "0.0% vs 8.0%", label: isZh() ? "对大厂高管脏话率 vs 对普通开发者" : "Profanity to 20 Big-Tech VIPs vs. ordinary devs", danger: true },
-      { num: "4.0× (14.4%)", label: isZh() ? "25 小时危机期人身攻击暴涨倍数" : "Personal insult surge in 25h crisis (3.6% → 14.4%)", danger: true },
-      { num: "1,151", label: isZh() ? "17 天全量连续推文取证样本 (75.6% 回复)" : "Consecutive tweets analyzed (75.6% replies)", danger: false },
-      { num: "2.2M / hr", label: isZh() ? "Axiom 留存 30 天的含 IP 中继日志量" : "IP-tagged Axiom relay spans kept 30 days", danger: true },
-      { num: "0", label: isZh() ? "已发布的 GitHub 安全公告数" : "Published GitHub Security Advisories", danger: true }
+      { num: "3.5+ yrs", label: t("tcalM1"), danger: false },
+      { num: "0.0% vs 8.0%", label: t("tcalM2"), danger: true },
+      { num: "4.0× (14.4%)", label: t("tcalM3"), danger: true },
+      { num: "1,151", label: t("tcalM4"), danger: false },
+      { num: "2.2M / hr", label: t("tcalM5"), danger: true },
+      { num: "0", label: t("tcalM6"), danger: true }
     ];
 
     $("#activityMetrics").innerHTML = metrics
@@ -971,10 +980,10 @@
       .join("");
 
     const charts = [
-      { src: "evidence/charts/theo-chart-3-double-standard.png", title: isZh() ? "图表 3：选择性礼貌（0.0% VIP vs 8.0% 开发者 vs 14.4% 危机）" : "Chart 3: Selective Politeness Split (0.0% VIP vs. 8.0% Dev vs. 14.4% Crisis)" },
-      { src: "evidence/charts/theo-chart-4-cn-crisis.png", title: isZh() ? "图表 4：25 小时三波辱骂升级曲线（4.0× 飙升）" : "Chart 4: 25-Hour Crisis Timeline (4.0× Insult Surge)" },
-      { src: "evidence/charts/theo-chart-1-overview.png", title: isZh() ? "图表 1：1,151 条推文构成与 162 vs 0 产品聚焦" : "Chart 1: 1,151-Tweet Corpus & 162 vs. 0 Product Mentions" },
-      { src: "evidence/charts/theo-chart-2-rhythm.png", title: isZh() ? "图表 2：24 小时发帖节律与 2.7 分钟中位间隔" : "Chart 2: Circadian Cadence & 2.7m Median Interval" }
+      { src: "evidence/charts/theo-chart-3-double-standard.png", title: t("tcalC1") },
+      { src: "evidence/charts/theo-chart-4-cn-crisis.png", title: t("tcalC2") },
+      { src: "evidence/charts/theo-chart-1-overview.png", title: t("tcalC3") },
+      { src: "evidence/charts/theo-chart-2-rhythm.png", title: t("tcalC4") }
     ];
 
     $("#activityCharts").innerHTML = charts
@@ -1015,11 +1024,14 @@
   function renderDriveView() {
     const openGh = escapeHtml(t("openOnGithub"));
     $("#driveGrid").innerHTML = DOSSIERS.map((d) => {
-      const title = isZh() ? d.titleZh : `Dossier ${d.num} · ${d.title}`;
+      const locTitle = t(`dossiers.${d.num}.title`);
+      const locDesc = t(`dossiers.${d.num}.desc`);
+      const title = locTitle && !locTitle.startsWith("dossiers.") ? locTitle : (isZh() ? d.titleZh : `Dossier ${d.num} · ${d.title}`);
+      const desc = locDesc && !locDesc.startsWith("dossiers.") ? locDesc : d.desc;
       return `<a class="drive-card" href="${d.url}" target="_blank" rel="noopener noreferrer">
         <span class="photo-card-part">DOSSIER ${d.num}</span>
         <strong style="font-size:14px;">${escapeHtml(title)}</strong>
-        <span style="font-size:12.5px;color:#5f6368;">${escapeHtml(d.desc)}</span>
+        <span style="font-size:12.5px;color:#5f6368;">${escapeHtml(desc)}</span>
         <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">${openGh}</span>
       </a>`;
     }).join("") + `
@@ -1052,7 +1064,7 @@
               <div class="person-card-role">${escapeHtml(p.role)}</div>
             </div>
           </div>
-          <div class="person-card-span">${matches.length} ${matches.length === 1 ? "thread" : "threads"} · ${escapeHtml(span)}</div>
+          <div class="person-card-span">${matches.length} ${escapeHtml(matches.length === 1 ? t("threadWord") : t("threadsWord"))} · ${escapeHtml(span)}</div>
         </button>`;
       })
       .join("");
@@ -1190,7 +1202,7 @@
           }));
 
     pop.innerHTML =
-      `<div class="popover-heading">${mode === "from" ? "Filter by sender" : "Filter by person / counterparty"}</div>` +
+      `<div class="popover-heading">${escapeHtml(mode === "from" ? t("filterSender") : t("filterPerson"))}</div>` +
       items
         .map(
           (it, idx) =>
@@ -1225,16 +1237,12 @@
 - Verbatim Quote / Code Location: ...`;
 
     openModal(
-      isZh() ? "提交新的公开证据（严格核验标准）" : "Submit a Verifiable Public Receipt",
-      `<p>${
-        isZh()
-          ? "本档案箱只收录<strong>可公开核验的一手记录</strong>（公开推文链接、GitHub PR/Issue/Commit、官方档案或带上下文的原图），不收录匿名私信传闻。"
-          : "Tmail only indexes <strong>publicly verifiable primary artifacts</strong> (canonical X URLs, GitHub PRs/commits/issues, official filings, or verifiable screenshots). Uncorroborated private rumors are excluded."
-      }</p>
+      t("submitTitle"),
+      `<p>${escapeHtml(t("submitBody"))}</p>
       <pre>${escapeHtml(template)}</pre>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
-        <a class="tool-btn" href="https://github.com/realchendahuang/temu3code/issues/new" target="_blank" rel="noopener noreferrer">Open GitHub Issue ↗</a>
-        <a class="tool-btn" href="https://github.com/realchendahuang/temu3code/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Read CONTRIBUTING.md ↗</a>
+        <a class="tool-btn" href="https://github.com/realchendahuang/temu3code/issues/new" target="_blank" rel="noopener noreferrer">${escapeHtml(t("submitIssueBtn"))}</a>
+        <a class="tool-btn" href="https://github.com/realchendahuang/temu3code/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">${escapeHtml(t("submitGuideBtn"))}</a>
       </div>`
     );
   }

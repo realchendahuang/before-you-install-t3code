@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temu3 Meme Arsenal — 61 CC0 Cards &amp; Memes</title>
-  <meta name="description" content="19 Sins holographic collector cards, 33 viral memes, and bilingual strips — CC0 1.0, backed by verified Tmail receipts." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Temu3 Meme Archive · 61 CC0 Cards &amp; Memes</title>
+  <meta name="description" content="19 Sins collector cards, 33 memes, and bilingual comics. All CC0 1.0, each linked to its Tmail source." />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://temu3code.com/memes/" />
-  <meta property="og:title" content="Temu3 Meme Arsenal — 19 Sins Deck &amp; Viral Memes" />
+  <meta property="og:title" content="Temu3 Meme Archive · 19 Sins Deck &amp; Memes" />
   <meta property="og:image" content="https://cdn.temu3code.com/memes/blended/00-drake.webp" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:image" content="https://cdn.temu3code.com/memes/blended/00-drake.webp" />
@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="./memes.css?v=3" />
+  <link rel="stylesheet" href="./memes.css?v=5" />
 </head>
 <body>
   <header class="nav-header">
@@ -28,16 +28,18 @@
         <span class="brand-muted">Code</span>
       </a>
 
-      <nav class="nav-right" aria-label="Main navigation">
-        <label class="lang-picker" aria-label="Select language">
-          <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-            <circle cx="12" cy="12" r="9" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18" />
-          </svg>
-          <select id="langSelect" class="lang-select" aria-label="Language"></select>
-        </label>
-        <a class="nav-link" href="../#x-receipts" data-i18n="common.navReceipts">X Receipts</a>
+      <label class="lang-picker" aria-label="Select language">
+        <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18" />
+        </svg>
+        <select id="langSelect" class="lang-select" aria-label="Language"></select>
+      </label>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="nav-link" href="../" data-i18n="common.navHome">Home</a>
+        <a class="nav-link" href="../#x-receipts" data-i18n="common.navReceipts">X Archive</a>
         <a class="nav-link" href="../mail/" data-i18n="common.navMail">Tmail</a>
         <a class="nav-star-link" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer" data-i18n="common.navGithub">GitHub</a>
       </nav>
@@ -49,8 +51,8 @@
       <div class="container">
         <div class="hero-top">
           <div>
-            <h1 class="hero-h1" data-i18n="memes.title">Meme Arsenal.</h1>
-            <p class="hero-sub" data-i18n="memes.sub">19 Sins collector cards, 33 viral memes, and bilingual strips. CC0 1.0 — every card links to its Tmail receipt.</p>
+            <h1 class="hero-h1" data-i18n="memes.title">Meme Archive.</h1>
+            <p class="hero-sub" data-i18n="memes.sub">19 Sins collector cards, 33 memes, and bilingual comics. All CC0 1.0, each linked to its Tmail source.</p>
           </div>
           <div class="hero-controls">
             <button type="button" id="drawSinBtn" class="btn-gold">
@@ -65,8 +67,8 @@
           <div class="filter-tabs" role="tablist">
             <button type="button" class="tab-btn is-active" data-series="all" data-i18n="memes.tabAll">All</button>
             <button type="button" class="tab-btn" data-series="sins" data-i18n="memes.tabSins">19 Sins</button>
-            <button type="button" class="tab-btn" data-series="blended" data-i18n="memes.tabBlended">Viral Memes</button>
-            <button type="button" class="tab-btn" data-series="classic" data-i18n="memes.tabClassic">Receipts</button>
+            <button type="button" class="tab-btn" data-series="blended" data-i18n="memes.tabBlended">Memes</button>
+            <button type="button" class="tab-btn" data-series="classic" data-i18n="memes.tabClassic">Screenshots</button>
             <button type="button" class="tab-btn" data-series="comics" data-i18n="memes.tabComics">Comics</button>
           </div>
           <div class="search-wrap">
@@ -87,7 +89,7 @@
 
   <footer class="footer">
     <div class="container footer-inner">
-      <span data-i18n="common.footer">CC0 1.0 · Independent public-record archive · Not affiliated with T3 Tools Inc.</span>
+      <span data-i18n="common.footer">CC0 1.0 · Independent public archive · Not affiliated with T3 Tools Inc.</span>
       <div class="footer-links">
         <a href="../" data-i18n="common.navHome">Home</a>
         <a href="../mail/" data-i18n="common.navMail">Tmail</a>
@@ -101,24 +103,30 @@
     <div class="lb-dialog">
       <div class="lb-head">
         <div class="lb-head-left">
+          <span id="lbCounter" class="lb-counter"></span>
           <span id="lbBadge" class="badge"></span>
           <h3 id="lbTitle" class="lb-title"></h3>
         </div>
         <button type="button" class="lb-close" data-lb-close aria-label="Close">✕</button>
       </div>
-      <div class="lb-stage">
+      <div class="lb-stage" id="lbStage">
         <button type="button" id="lbPrev" class="lb-nav lb-prev" aria-label="Previous">‹</button>
-        <div class="lb-img-box">
+        <div class="lb-img-box" id="lbImgBox">
           <img id="lbImg" crossorigin="anonymous" alt="" />
         </div>
         <button type="button" id="lbNext" class="lb-nav lb-next" aria-label="Next">›</button>
       </div>
       <div class="lb-foot">
+        <div class="lb-mobile-nav">
+          <button type="button" id="lbPrevMobile" class="act-btn" aria-label="Previous">‹</button>
+          <button type="button" id="lbNextMobile" class="act-btn" aria-label="Next">›</button>
+        </div>
         <div class="lb-actions">
+          <button type="button" id="lbDrawAgainBtn" class="act-btn act-gold" hidden>🎲 <span data-i18n="memes.drawAgain">Draw Another</span></button>
           <button type="button" id="lbCopyBtn" class="act-btn act-primary" data-i18n="memes.copyBtn">Copy PNG</button>
           <button type="button" id="lbDownloadBtn" class="act-btn" data-i18n="memes.downloadBtn">Save</button>
           <a id="lbShareX" class="act-btn" href="#" target="_blank" rel="noopener noreferrer" data-i18n="memes.shareX">Share on X ↗</a>
-          <a id="lbReceiptLink" class="act-btn act-cobalt" href="#" data-i18n="memes.verifyReceipt">Verify Receipt →</a>
+          <a id="lbReceiptLink" class="act-btn act-cobalt" href="#" data-i18n="memes.verifyReceipt">View Source →</a>
         </div>
       </div>
     </div>
@@ -126,7 +134,7 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
-  <script src="../data/i18n.js?v=3"></script>
-  <script src="./memes.js?v=3"></script>
+  <script src="../data/i18n.js?v=4"></script>
+  <script src="./memes.js?v=4"></script>
 </body>
 </html>

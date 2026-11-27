@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tmail — @theo &amp; T3 Code Public Record Inbox (2023–2026)</title>
-  <meta name="description" content="Searchable, date-sortable public-record inbox of @theo and pingdotgg/t3code (May 2023 – Nov 2026). Every thread is anchored to verbatim public posts, GitHub PRs, USPTO records, and 109 archived screenshots." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Tmail · Public Record Inbox (2023–2026)</title>
+  <meta name="description" content="Searchable, date-sortable public archive for @theo and pingdotgg/t3code (May 2023 to Nov 2026). Every thread links to public posts, GitHub PRs, USPTO records, and 109 archived screenshots." />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://temu3code.com/mail/" />
-  <meta property="og:title" content="Tmail (temu3code.com) — @theo &amp; T3 Code Public Record Inbox (2023–2026)" />
-  <meta property="og:description" content="Browse, search, and sort 3.5 years of verified public interactions, double standards, telemetry receipts, and security records like an inbox." />
+  <meta property="og:title" content="Tmail · Public Record Inbox (2023–2026)" />
+  <meta property="og:description" content="Browse, search, and sort 3.5 years of public posts, GitHub PRs, telemetry records, and security issues like an inbox." />
   <meta property="og:image" content="https://temu3code.com/og-card.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Tmail (temu3code.com) — @theo &amp; T3 Code Public Record Inbox" />
-  <meta name="twitter:description" content="Sort by date (2023–2026) to trace multi-year online hostility, deceptive telemetry, and 109 archived visual receipts." />
+  <meta name="twitter:title" content="Tmail · Public Record Inbox" />
+  <meta name="twitter:description" content="Sort by date (2023–2026) to inspect multi-year public posts, telemetry records, and 109 archived screenshots." />
   <meta name="twitter:image" content="https://temu3code.com/og-card.png" />
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ffffff'/%3E%3Cpath d='M5 9.5L16 17.5L27 9.5V23C27 24.1 26.1 25 25 25H7C5.9 25 5 24.1 5 23V9.5Z' fill='%23EA4335'/%3E%3Cpath d='M5 9.5C5 8.1 6.1 7 7.5 7H24.5C25.9 7 27 8.1 27 9.5L16 17.5L5 9.5Z' fill='%234285F4'/%3E%3Cpath d='M5 10.5V23C5 24.1 5.9 25 7 25H10V14.2L5 10.5Z' fill='%2334A853'/%3E%3Cpath d='M27 10.5V23C27 24.1 26.1 25 25 25H22V14.2L27 10.5Z' fill='%23FBBC05'/%3E%3C/svg%3E" />
@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,400,0..1,0&display=swap" />
-  <link rel="stylesheet" href="./styles.css?v=3" />
+  <link rel="stylesheet" href="./styles.css?v=4" />
 </head>
 <body>
   <div class="app-shell" id="appShell">
@@ -233,7 +233,7 @@
                   <option value="all" data-i18n="allPlatforms">All sources</option>
                   <option value="X">X (Twitter)</option>
                   <option value="GitHub">GitHub</option>
-                  <option value="Code">Source Code</option>
+                  <option value="Code" data-i18n="platCode">Source Code</option>
                   <option value="YouTube">YouTube</option>
                 </select>
               </div>
@@ -241,11 +241,11 @@
               <div class="select-pill">
                 <span class="material-symbols-outlined">date_range</span>
                 <select id="yearFilter" aria-label="Filter by date range">
-                  <option value="all" data-i18n="allDates">All dates (2023–2026)</option>
+                  <option value="all" data-i18n="allDates">2023–2026</option>
                   <option value="2023-2024">2023 – 2024</option>
                   <option value="2025">2025</option>
-                  <option value="2026-pre">2026 (Mar – Nov 22)</option>
-                  <option value="crisis">Nov 23–25 Crisis</option>
+                  <option value="2026-pre" data-i18n="yearPre">2026 (Mar – Nov 22)</option>
+                  <option value="crisis" data-i18n="yearCrisis">Nov 23–25 Crisis</option>
                 </select>
               </div>
 
@@ -461,7 +461,7 @@
   <!-- TOAST -->
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
-  <script src="../data/i18n.js?v=3"></script>
-  <script src="./app.js?v=9"></script>
+  <script src="../data/i18n.js?v=4"></script>
+  <script src="./app.js?v=10"></script>
 </body>
 </html>

@@ -1,18 +1,18 @@
-# Temu3 Code — zanim zainstalujesz T3 Code
+# Temu3 Code · Zanim zainstalujesz T3 Code
 
 <p align="center">
-  <em>Niezależny, stawiający dowody na pierwszym miejscu rejestr publiczny pingdotgg/t3code — dokumentujący podwójne standardy rasowe, zwodniczą telemetrię, krytyczne luki w bezpieczeństwie i manipulację komercyjną.</em>
+  <em>20 udokumentowanych spraw, 109 zarchiwizowanych zrzutów ekranu i 3,5 roku publicznych wpisów oraz commitów z pingdotgg/t3code. Zero telemetrii.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=pl"><strong>🌐 temu3code.com</strong></a> ·
   <a href="https://temu3code.com/mail/?lang=pl"><strong>✉ Skrzynka Tmail</strong></a> ·
-  <a href="https://temu3code.com/?lang=pl#x-receipts"><strong>📸 12 oryginalnych zrzutów X</strong></a> ·
+  <a href="https://temu3code.com/?lang=pl#x-receipts"><strong>📸 12 oryginalnych zrzutów ekranu z X</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=pl"><strong>🃏 61 memów</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 paragonów</strong></a> ·
+  <a href="../EVIDENCE-INDEX.md"><strong>109 zrzutów ekranu</strong></a> ·
   <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 źródeł</strong></a>
 </p>
 
@@ -50,11 +50,11 @@
 
 <!-- origin-story:start -->
 > [!TIP]
-> **Dlaczego „Temu3 Code”?**
+> **Dlaczego "Temu3 Code"?**
 >
-> 23 listopada 2026 r. — 10 minut po tym, jak nazwał darmowy fork MIT chińskiego dewelopera „Chinese knockoff” — @theo hojnie podarował naszą nazwę marki na X: „Temu3 Code” (84 tys. wyświetleń).
+> 23 listopada 2026 r., dziesięć minut po nazwaniu darmowego forka MIT chińskiego programisty "Chinese knockoff", @theo dał nam nazwę na X: "Temu3 Code" (84 tys. wyświetleń).
 >
-> Darmowe branding od założyciela z zerem znaków towarowych USPTO jest zbyt cenne, by je zmarnować — więc zarejestrowaliśmy temu3code.com, przenieśliśmy publiczny audyt i pominęliśmy telemetrię PostHog. Dziękujemy za darmową konsultację namingową, Theo. (CC0 1.0 — śmiało, forkuj nas z powrotem.) — [Zobacz tweet @theo o nazwie ↗](https://x.com/theo/status/2124825920808829077)
+> Ciężko odmówić założycielowi z zerem znaków towarowych USPTO, który rozdaje darmowy branding. Zarejestrowaliśmy temu3code.com, umieściliśmy tu publiczny audyt i pominęliśmy PostHog. Dzięki za nazwę, Theo. Wszystko tutaj jest na CC0 1.0, więc forkujcie do woli. [Zobacz wpis @theo z nazwą ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

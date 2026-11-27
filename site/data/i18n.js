@@ -41,13 +41,13 @@
   }
 
   function detectInitialLang() {
-    // 1. Explicit ?lang= query param applies only to the current view (never poisons localStorage).
+    // 1. Explicit ?lang= applies only to the current view (never overwrites saved choice).
     try {
       const p = new URLSearchParams(window.location.search).get("lang");
       const fromParam = normalizeLang(p);
       if (fromParam) return fromParam;
     } catch (_) {}
-    // 2. Explicit user selection saved from the language dropdown.
+    // 2. Saved user selection from the language switcher.
     try {
       const saved = normalizeLang(localStorage.getItem("temu3-lang"));
       if (saved) return saved;
@@ -68,7 +68,7 @@
     if (cache.has(norm)) return cache.get(norm);
     const base = dataBase.endsWith("/") ? dataBase : dataBase + "/";
     try {
-      const res = await fetch(`${base}i18n/${norm}.json?v=2`);
+      const res = await fetch(`${base}i18n/${norm}.json?v=4`);
       if (!res.ok) throw new Error("fetch failed");
       const obj = await res.json();
       cache.set(norm, obj);
@@ -91,6 +91,11 @@
       }
     }
     return typeof cur === "string" ? cur : "";
+  }
+
+  function fmt(template, vars) {
+    if (!template) return "";
+    return String(template).replace(/\{(\w+)\}/g, (_, k) => (vars && k in vars ? String(vars[k]) : ""));
   }
 
   function mountLangSelect(selectEl, initialCode, onChange) {
@@ -126,6 +131,7 @@
     detectInitialLang,
     loadBundle,
     getKey,
+    fmt,
     mountLangSelect,
     applyDirection
   };

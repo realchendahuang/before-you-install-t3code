@@ -1,7 +1,7 @@
-# Temu3 Code — 安装 T3 Code 之前
+# Temu3 Code · 安装 T3 Code 之前
 
 <p align="center">
-  <em>面向 pingdotgg/t3code 的独立公共调查档案 —— 用一手源码、截图与量化数据，完整记录种族歧视双标、隐秘遥测、高危产品缺陷与商业操弄始末。</em>
+  <em>20 份独立取证、109 张原帖与源码截图，记录 pingdotgg/t3code 过去 3.5 年的公开言行与代码实情。零遥测。</em>
 </p>
 
 <p align="center">
@@ -52,9 +52,9 @@
 > [!TIP]
 > **为什么叫「Temu3 Code」？**
 >
-> 2026 年 11 月 23 日，在给中国开发者的免费 MIT 开源 Fork 扣上「Chinese knockoff」帽子 10 分钟后，@theo 在 X 上亲自慷慨赐名：「Temu3 Code」（8.4 万浏览）。
+> 2026 年 11 月 23 日，把一位中国开发者的免费 MIT Fork 叫成「Chinese knockoff」十分钟后，@theo 在 X 上顺手给了我们这个名字：「Temu3 Code」（8.4 万浏览）。
 >
-> 一位名下 0 件美国注册商标的创始人免费送上的联名品牌，不用实在太客气了——于是我们顺手注册了 temu3code.com，把整座公共审计档案馆搬了进来，还贴心地去掉了默认 PostHog 遥测。感谢 Theo 的免费品牌咨询（CC0 1.0，欢迎随时来 Fork，绝不找 GitHub 封号）。 — [围观 @theo 赐名原帖 ↗](https://x.com/theo/status/2124825920808829077)
+> 一个名下连美国注册商标都没有的创始人白送的名字，不用可惜了。我们直接注册了 temu3code.com，把公开审计全搬进来，顺便把 PostHog 遥测删干净。多谢赐名，Theo。全站 CC0 1.0，欢迎随便 Fork，绝不找 GitHub 封号。 [看 @theo 赐名原帖 ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

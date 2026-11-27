@@ -49,10 +49,10 @@
         canvas.toBlob((b) => (b ? resolve(b) : reject(new Error("toBlob failed"))), "image/png")
       );
       await navigator.clipboard.write([new ClipboardItem({ "image/png": pngBlob })]);
-      showToast(t("memes.copiedToast", "Copied PNG!"));
+      showToast(t("memes.copiedToast", "Copied PNG to clipboard."));
     } catch (_) {
       window.open(url, "_blank", "noopener,noreferrer");
-      showToast(t("memes.copyFallbackToast", "Opened image in new tab."));
+      showToast(t("memes.copyFallbackToast", "Opened image in a new tab."));
     }
   }
 
@@ -127,10 +127,20 @@
       .join("");
   }
 
-  function updateLightbox() {
+  function triggerPop() {
+    const box = document.getElementById("lbImgBox");
+    if (!box) return;
+    box.classList.remove("is-drawing");
+    void box.offsetWidth;
+    box.classList.add("is-drawing");
+  }
+
+  function updateLightbox(animate = false) {
     if (lbIndex < 0 || lbIndex >= visibleItems.length) return;
     const it = visibleItems[lbIndex];
     const title = isZh() ? it.titleZh : it.titleEn;
+    const counter = document.getElementById("lbCounter");
+    if (counter) counter.textContent = `${lbIndex + 1} / ${visibleItems.length}`;
     const badgeEl = document.getElementById("lbBadge");
     badgeEl.className = `badge badge-${it.series}`;
     badgeEl.textContent = `${t(`memes.series.${it.series}`, it.series)} · #${it.exhibit}`;
@@ -138,18 +148,21 @@
     const img = document.getElementById("lbImg");
     img.src = it.url;
     img.alt = title;
-    const shareText = encodeURIComponent(`${it.titleEn} — temu3code.com`);
+    const shareText = encodeURIComponent(`${title} · temu3code.com`);
     const shareUrl = encodeURIComponent(`https://temu3code.com/memes/#${it.id}`);
     document.getElementById("lbShareX").href = `https://x.com/intent/tweet?text=${shareText}&url=${shareUrl}`;
     document.getElementById("lbReceiptLink").href = `../mail/?thread=${encodeURIComponent(it.thread)}`;
+    const drawAgain = document.getElementById("lbDrawAgainBtn");
+    if (drawAgain) drawAgain.hidden = it.series !== "sins";
+    if (animate) triggerPop();
     try { history.replaceState(null, "", `#${it.id}`); } catch (_) {}
   }
 
-  function openLightbox(idx) {
+  function openLightbox(idx, animate = false) {
     const lb = document.getElementById("memeLightbox");
     if (!lb || idx < 0 || idx >= visibleItems.length) return;
     lbIndex = idx;
-    updateLightbox();
+    updateLightbox(animate);
     lb.hidden = false;
     document.body.style.overflow = "hidden";
   }
@@ -160,6 +173,12 @@
     lb.hidden = true;
     lbIndex = -1;
     document.body.style.overflow = "";
+  }
+
+  function stepLightbox(delta) {
+    if (lbIndex < 0 || !visibleItems.length) return;
+    lbIndex = (lbIndex + delta + visibleItems.length) % visibleItems.length;
+    updateLightbox(false);
   }
 
   async function applyLanguage(nextCode) {
@@ -178,7 +197,7 @@
     if (searchEl) searchEl.placeholder = t("memes.searchPlaceholder", searchEl.placeholder);
 
     renderGrid();
-    if (lbIndex >= 0) updateLightbox();
+    if (lbIndex >= 0) updateLightbox(false);
   }
 
   async function init() {
@@ -204,7 +223,7 @@
     const hashId = (window.location.hash || "").replace(/^#/, "");
     if (hashId) {
       const found = visibleItems.findIndex((i) => i.id === hashId);
-      if (found >= 0) openLightbox(found);
+      if (found >= 0) openLightbox(found, false);
     }
   }
 
@@ -229,13 +248,21 @@
       b.classList.toggle("is-active", b.getAttribute("data-series") === "sins")
     );
     renderGrid();
-    if (visibleItems.length) openLightbox(Math.floor(Math.random() * visibleItems.length));
+    if (visibleItems.length) openLightbox(Math.floor(Math.random() * visibleItems.length), true);
+  });
+
+  document.getElementById("lbDrawAgainBtn").addEventListener("click", () => {
+    if (!visibleItems.length) return;
+    let next = Math.floor(Math.random() * visibleItems.length);
+    if (visibleItems.length > 1 && next === lbIndex) next = (next + 1) % visibleItems.length;
+    lbIndex = next;
+    updateLightbox(true);
   });
 
   const gridEl = document.getElementById("memeGrid");
   gridEl.addEventListener("click", (e) => {
     const openBtn = e.target.closest("[data-open-lb]");
-    if (openBtn) { openLightbox(Number(openBtn.getAttribute("data-open-lb"))); return; }
+    if (openBtn) { openLightbox(Number(openBtn.getAttribute("data-open-lb")), false); return; }
     const copyBtn = e.target.closest("[data-copy-idx]");
     if (copyBtn) { const it = visibleItems[Number(copyBtn.getAttribute("data-copy-idx"))]; if (it) copyImageAsPng(it.url); return; }
     const dlBtn = e.target.closest("[data-dl-idx]");
@@ -251,16 +278,10 @@
   });
 
   document.querySelectorAll("[data-lb-close]").forEach((el) => el.addEventListener("click", closeLightbox));
-  document.getElementById("lbPrev").addEventListener("click", () => {
-    if (lbIndex < 0) return;
-    lbIndex = (lbIndex - 1 + visibleItems.length) % visibleItems.length;
-    updateLightbox();
-  });
-  document.getElementById("lbNext").addEventListener("click", () => {
-    if (lbIndex < 0) return;
-    lbIndex = (lbIndex + 1) % visibleItems.length;
-    updateLightbox();
-  });
+  document.getElementById("lbPrev").addEventListener("click", () => stepLightbox(-1));
+  document.getElementById("lbNext").addEventListener("click", () => stepLightbox(1));
+  document.getElementById("lbPrevMobile").addEventListener("click", () => stepLightbox(-1));
+  document.getElementById("lbNextMobile").addEventListener("click", () => stepLightbox(1));
   document.getElementById("lbCopyBtn").addEventListener("click", () => {
     const it = visibleItems[lbIndex]; if (it) copyImageAsPng(it.url);
   });
@@ -268,11 +289,30 @@
     const it = visibleItems[lbIndex]; if (it) downloadImage(it.url, `${it.id}.webp`);
   });
 
+  let touchStartX = 0;
+  let touchStartY = 0;
+  const lbStage = document.getElementById("lbStage");
+  if (lbStage) {
+    lbStage.addEventListener("touchstart", (e) => {
+      if (e.touches.length !== 1) return;
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+    lbStage.addEventListener("touchend", (e) => {
+      if (!e.changedTouches.length) return;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      const dy = e.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.4) {
+        stepLightbox(dx < 0 ? 1 : -1);
+      }
+    }, { passive: true });
+  }
+
   document.addEventListener("keydown", (e) => {
     if (lbIndex < 0) return;
     if (e.key === "Escape") closeLightbox();
-    else if (e.key === "ArrowLeft") { lbIndex = (lbIndex - 1 + visibleItems.length) % visibleItems.length; updateLightbox(); }
-    else if (e.key === "ArrowRight") { lbIndex = (lbIndex + 1) % visibleItems.length; updateLightbox(); }
+    else if (e.key === "ArrowLeft") stepLightbox(-1);
+    else if (e.key === "ArrowRight") stepLightbox(1);
   });
 
   init();

@@ -1,19 +1,19 @@
-# Temu3 Code — T3 Code をインストールする前に
+# Temu3 Code · T3 Code をインストールする前に
 
 <p align="center">
-  <em>pingdotgg/t3code に関する、独立した証拠優先の公開記録 — 人種的二重基準、欺瞞的なテレメトリー、重大なセキュリティ欠陥、商業的操作を記録する。</em>
+  <em>記録済みの事例 20 件、アーカイブ済みスクリーンショット 109 枚、そして pingdotgg/t3code の 3.5 年分の公開投稿とコミット。テレメトリはゼロ。</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=ja"><strong>🌐 temu3code.com</strong></a> ·
   <a href="https://temu3code.com/mail/?lang=ja"><strong>✉ Tmail 受信箱</strong></a> ·
-  <a href="https://temu3code.com/?lang=ja#x-receipts"><strong>📸 X の原典ショット12点</strong></a> ·
-  <a href="https://temu3code.com/memes/?lang=ja"><strong>🃏 ミーム61点</strong></a>
+  <a href="https://temu3code.com/?lang=ja#x-receipts"><strong>📸 X の元スクリーンショット 12 枚</strong></a> ·
+  <a href="https://temu3code.com/memes/?lang=ja"><strong>🃏 ミーム 61 枚</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>記録109件</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>情報源327件</strong></a>
+  <a href="../EVIDENCE-INDEX.md"><strong>スクリーンショット 109 枚</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>出典 327 件</strong></a>
 </p>
 
 <p align="center">
@@ -50,11 +50,11 @@
 
 <!-- origin-story:start -->
 > [!TIP]
-> **なぜ「Temu3 Code」なのか？**
+> **なぜ「Temu3 Code」なのか**
 >
-> 2026年11月23日——ある中国開発者の無料MITフォークを「Chinese knockoff」と称してわずか10分後、@theoがXでブランド名を無償提供。「Temu3 Code」（84k views）。
+> 2026年11月23日、中国の開発者による無料の MIT フォークを「Chinese knockoff」と呼んでから 10 分後、@theo は X で私たちに名前を与えた。「Temu3 Code」である（8.4万回表示）。
 >
-> USPTOの商標を1件も保有していない創業者からNOMADEprovidediet branding intervention too good to waste — so we registered temu3code.com, moved the public audit in, and left out the PostHog telemetry. Thanks for the free naming consultation, Theo. (CC0 1.0 — feel free to fork us back.) — [@theoの命名ツイートを見る ↗](https://x.com/theo/status/2124825920808829077)
+> USPTO 商標を 1 件も持たない創業者が無料でブランド名をくれるなら、断る理由はない。私たちは temu3code.com を取得し、公開監査をここに置き、PostHog は入れなかった。名前をありがとう、Theo。ここにあるものはすべて CC0 1.0 なので、いくらでもフォークしてほしい。 [@theo の命名投稿を見る ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

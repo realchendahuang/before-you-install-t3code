@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temu3 Code — Public Record Archive for T3 Code</title>
-  <meta name="description" content="Independent 18-language public-record archive for pingdotgg/t3code & @theo: Tmail inbox, 12 original X screenshots, 61 CC0 memes, 109 receipts, and 327 primary sources. Zero telemetry." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Temu3 Code · Before You Install T3 Code</title>
+  <meta name="description" content="20 documented cases, 109 archived screenshots, 61 CC0 memes, and 3.5 years of public posts and commits from pingdotgg/t3code across 18 languages. Zero telemetry." />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://temu3code.com/" />
-  <meta property="og:title" content="Temu3 Code — The open-source receipt plane for T3 Code" />
-  <meta property="og:description" content="20 verified exhibits, 109 receipts, 12 original X screenshots, and 61 CC0 memes across 18 languages. Zero telemetry." />
+  <meta property="og:title" content="Temu3 Code · Before You Install T3 Code" />
+  <meta property="og:description" content="20 documented cases, 109 archived screenshots, 12 original X posts, and 61 CC0 memes across 18 languages. Zero telemetry." />
   <meta property="og:image" content="https://temu3code.com/og-card.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Temu3 Code — Public Record & Tmail Inbox" />
-  <meta name="twitter:description" content="Independent CC0 1.0 public-record archive across 18 languages. Zero telemetry." />
+  <meta name="twitter:title" content="Temu3 Code · Public Archive & Tmail Inbox" />
+  <meta name="twitter:description" content="Independent CC0 1.0 public archive for pingdotgg/t3code across 18 languages. Zero telemetry." />
   <meta name="twitter:image" content="https://temu3code.com/og-card.png" />
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0a0a' stroke='%23262626'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%23ffffff' font-family='system-ui,sans-serif' font-weight='700' font-size='14'%3ET3%3C/text%3E%3C/svg%3E" />
@@ -21,7 +21,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="./temu3.css?v=10" />
+  <link rel="stylesheet" href="./temu3.css?v=12" />
 </head>
 <body>
   <header class="nav-header">
@@ -31,17 +31,17 @@
         <span class="brand-muted">Code</span>
       </a>
 
-      <nav class="nav-right" aria-label="Main navigation">
-        <label class="lang-picker" aria-label="Select language">
-          <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
-            <circle cx="12" cy="12" r="9" />
-            <line x1="3" y1="12" x2="21" y2="12" />
-            <path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18" />
-          </svg>
-          <select id="langSelect" class="lang-select" aria-label="Language"></select>
-        </label>
+      <label class="lang-picker" aria-label="Select language">
+        <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" />
+          <line x1="3" y1="12" x2="21" y2="12" />
+          <path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18" />
+        </svg>
+        <select id="langSelect" class="lang-select" aria-label="Language"></select>
+      </label>
 
-        <a class="nav-link" href="#x-receipts" data-i18n="common.navReceipts">X Receipts</a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="nav-link" href="#x-receipts" data-i18n="common.navReceipts">X Archive</a>
         <a class="nav-link" href="./memes/" data-i18n="common.navMemes">Memes</a>
         <a class="nav-link" href="./mail/" data-i18n="common.navMail">Tmail</a>
         <a class="nav-gh" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">
@@ -55,36 +55,36 @@
   </header>
 
   <main>
-    <!-- BAND 1: CLEAN HERO + LOCALIZED TMAIL PREVIEW -->
+    <!-- BAND 1: CLEAN HERO + INTERACTIVE TMAIL PREVIEW -->
     <section class="hero" aria-labelledby="heroTitle">
       <div class="hero-grid-bg" aria-hidden="true"></div>
 
       <div class="hero-stage">
-        <a class="float-tile tile-tl" href="./mail/?thread=2026-03-06-pr174-default-telemetry" aria-label="PostHog telemetry">
+        <a class="float-tile tile-tl" href="./mail/?thread=2026-03-06-pr174-default-telemetry" data-tip="PR #174: Default PostHog" data-i18n-tip="home.tilePosthog" aria-label="PostHog telemetry">
           <svg viewBox="0 0 24 24" fill="none" stroke="#e5e5e5" stroke-width="1.8"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3" fill="#e5e5e5"/></svg>
         </a>
-        <a class="float-tile tile-ml" href="./mail/" aria-label="Tmail Inbox">
+        <a class="float-tile tile-ml" href="./mail/" data-tip="Tmail Inbox (34 threads)" data-i18n-tip="home.tileTmail" aria-label="Tmail Inbox">
           <svg viewBox="0 0 24 24" fill="none" stroke="#d97757" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3.5 7 8.5 6 8.5-6"/></svg>
         </a>
-        <a class="float-tile tile-bl" href="./mail/?thread=2026-10-03-issue15353-force-push" aria-label="Force push">
+        <a class="float-tile tile-bl" href="./mail/?thread=2026-10-03-issue15353-force-push" data-tip="52-day silent force-push" data-i18n-tip="home.tileForcePush" aria-label="Force push">
           <svg viewBox="0 0 24 24" fill="none" stroke="#f5f5f5" stroke-width="1.8"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M6 8.5v7A2.5 2.5 0 0 0 8.5 18H15.5"/><path d="M18 8.5v7"/></svg>
         </a>
-        <a class="float-tile tile-tr" href="./mail/?thread=2026-11-22-antigravity-spoof-3min-ban" aria-label="Antigravity spoof">
+        <a class="float-tile tile-tr" href="./mail/?thread=2026-11-22-antigravity-spoof-3min-ban" data-tip="Antigravity 3-min bans" data-i18n-tip="home.tileAntigravity" aria-label="Antigravity spoof">
           <svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8"><path d="M12 3 4 7v5c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V7l-8-4Z"/><path d="M9.5 9.5 14.5 14.5M14.5 9.5l-5 5"/></svg>
         </a>
-        <a class="float-tile tile-mr" href="./mail/?thread=2026-10-20-pr21506-cross-tool-hash" aria-label="Credential hash">
+        <a class="float-tile tile-mr" href="./mail/?thread=2026-10-20-pr21506-cross-tool-hash" data-tip="~/.claude.json SHA-256 hash" data-i18n-tip="home.tileHash" aria-label="Credential hash">
           <svg viewBox="0 0 24 24" fill="none" stroke="#f5f5f5" stroke-width="1.8"><circle cx="8.5" cy="15.5" r="4"/><path d="m11.5 12.5 7.5-7.5M16 8l2.5 2.5M18.5 5.5 21 8"/></svg>
         </a>
-        <a class="float-tile tile-br" href="./mail/?thread=2026-11-24-retroactive-trademark-blocker" aria-label="USPTO 0 trademarks">
+        <a class="float-tile tile-br" href="./mail/?thread=2026-11-24-retroactive-trademark-blocker" data-tip="USPTO trademarks: 0" data-i18n-tip="home.tileUspto" aria-label="USPTO 0 trademarks">
           <svg viewBox="0 0 24 24" fill="none" stroke="#f5f5f5" stroke-width="1.8"><path d="m14 5 5 5-8 8-5-5 8-8Z"/><path d="m4 20 5-5"/><path d="M12 21h9"/></svg>
         </a>
 
         <div class="hero-copy">
           <h1 id="heroTitle" class="hero-h1" data-i18n-html="home.heroH1">
-            The open-source<br />receipt plane<br />for T3 Code.
+            Before you install<br />T3 Code.
           </h1>
           <p class="hero-sub" data-i18n="home.heroSub">
-            20 verified exhibits, 109 receipts, and 3.5 years of public records for pingdotgg/t3code. Zero telemetry.
+            20 documented cases, 109 archived screenshots, and 3.5 years of public posts and commits from pingdotgg/t3code. Zero telemetry.
           </p>
 
           <div class="hero-cta-stack">
@@ -97,7 +97,7 @@
             </a>
 
             <a class="hero-ghost-link" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">
-              <span data-i18n="home.ctaSteal">Steal our code (legally — CC0 1.0) ↗</span>
+              <span data-i18n="home.ctaSteal">Fork our code (legally, CC0 1.0) ↗</span>
             </a>
           </div>
         </div>
@@ -114,83 +114,67 @@
           </div>
 
           <div class="app-win-grid">
-            <div class="win-col-left">
+            <div class="win-col-left" role="tablist" aria-label="Pinned records">
               <div class="win-list-label" data-i18n="home.winPinned">PINNED</div>
-              <a class="win-thread-item is-active" href="./mail/?thread=2026-11-23-origin-temu3-threat">
+              <button type="button" class="win-thread-item is-active" role="tab" aria-selected="true" data-preview-idx="0">
                 <div class="win-th-top"><span>@theo ↔ @DDdxx666</span><span class="win-th-date">2026-11</span></div>
                 <div class="win-th-sub" data-i18n="home.winT1Sub">"Temu3 Code" &amp; GitHub ban threat</div>
-              </a>
-              <a class="win-thread-item" href="./mail/?thread=2026-11-25-gdpr-overnight-collapse">
+              </button>
+              <button type="button" class="win-thread-item" role="tab" aria-selected="false" data-preview-idx="1">
                 <div class="win-th-top"><span>GDPR &amp; Axiom</span><span class="win-th-date">2026-11</span></div>
                 <div class="win-th-sub" data-i18n="home.winT2Sub">2.2M/hr IP logs &amp; git.cwd leak</div>
-              </a>
-              <a class="win-thread-item" href="./mail/?thread=2025-10-ffmpeg-bounty">
+              </button>
+              <button type="button" class="win-thread-item" role="tab" aria-selected="false" data-preview-idx="2">
                 <div class="win-th-top"><span>@theo ↔ FFmpeg</span><span class="win-th-date">2025-10</span></div>
                 <div class="win-th-sub" data-i18n="home.winT3Sub">$20k FFmpeg bounty (deleted)</div>
-              </a>
-              <a class="win-thread-item" href="./mail/?thread=2026-11-25-ca81b7b9-active-vulns">
+              </button>
+              <button type="button" class="win-thread-item" role="tab" aria-selected="false" data-preview-idx="3">
                 <div class="win-th-top"><span>ca81b7b9</span><span class="win-th-date">2026-11</span></div>
                 <div class="win-th-sub" data-i18n="home.winT4Sub">0 Advisories · 5 active ca81b7b9 flaws</div>
-              </a>
+              </button>
             </div>
 
             <div class="win-col-center">
-              <div class="win-msg-card">
-                <div class="win-msg-head">
-                  <span class="win-badge-red" data-i18n="home.winC1Badge">11 MIN AFTER FORK</span>
-                  <span class="muted" data-i18n="home.winC1Meta">@theo · Nov 23, 2026</span>
-                </div>
-                <p>“Temu3 Code” — “Not consider. Do it right now or I'm going to contact GitHub and have your account taken down.”</p>
+              <div id="winCenterCards" class="win-cards-stack"></div>
+              <div class="win-center-actions">
+                <a id="winOpenThreadBtn" class="win-composer-cta" href="./mail/?thread=2026-11-23-origin-temu3-threat" data-i18n="home.winOpenThread">
+                  Open this thread in Tmail →
+                </a>
+                <a class="win-all-link" href="./mail/" data-i18n="home.winEnter">
+                  Browse all 34 threads (2023–2026) →
+                </a>
               </div>
-
-              <div class="win-msg-card">
-                <div class="win-msg-head">
-                  <span class="win-badge-green" data-i18n="home.winC2Badge">11 HOURS LATER ($1T US LAB)</span>
-                  <span class="muted" data-i18n="home.winC2Meta">@theo · Nov 24, 2026</span>
-                </div>
-                <p>“Nah. Open source is open source, even if a trillion dollar company uses it!”</p>
-              </div>
-
-              <div class="win-msg-card">
-                <div class="win-msg-head">
-                  <span class="win-badge-amber" data-i18n="home.winC3Badge">30 SEC AFTER "STEALING THIS"</span>
-                  <span class="muted" data-i18n="home.winC3Meta">@theo → @bot · Nov 8, 2026</span>
-                </div>
-                <p>“Okay I'm stealing this” → <code>@bot find her fork and see how portable this is... implement it.</code></p>
-              </div>
-
-              <a class="win-composer-cta" href="./mail/" data-i18n="home.winEnter">
-                Browse all 34 threads (2023 → 2026) →
-              </a>
             </div>
 
             <div class="win-col-right">
               <div class="win-list-label" data-i18n="home.winMetrics">VERIFIED</div>
-              <div class="win-stat-row"><span class="muted" data-i18n="home.mAdvisories">Security Advisories</span><span class="txt-red" data-i18n="home.mAdvisoriesVal">0</span></div>
-              <div class="win-stat-row"><span class="muted" data-i18n="home.mUspto">USPTO Trademarks</span><span class="txt-red" data-i18n="home.mUsptoVal">0</span></div>
-              <div class="win-stat-row"><span class="muted" data-i18n="home.mHostility">VIP vs. Crisis Insults</span><span class="txt-amber" data-i18n="home.mHostilityVal">0% vs 14.4%</span></div>
-              <div class="win-stat-row"><span class="muted" data-i18n="home.mAxiom">Axiom IP Logs</span><span class="txt-red" data-i18n="home.mAxiomVal">2.2M / hr</span></div>
-              <div class="win-stat-row"><span class="muted" data-i18n="home.mOptOut">Settings Opt-Out UI</span><span class="txt-red" data-i18n="home.mOptOutVal">0 toggles</span></div>
+              <div class="win-stats-grid">
+                <div class="win-stat-row"><span class="muted" data-i18n="home.mAdvisories">Security Advisories</span><span class="txt-red" data-i18n="home.mAdvisoriesVal">0</span></div>
+                <div class="win-stat-row"><span class="muted" data-i18n="home.mUspto">USPTO Trademarks</span><span class="txt-red" data-i18n="home.mUsptoVal">0</span></div>
+                <div class="win-stat-row"><span class="muted" data-i18n="home.mHostility">VIP vs. Crisis Insults</span><span class="txt-amber" data-i18n="home.mHostilityVal">0% vs 14.4%</span></div>
+                <div class="win-stat-row"><span class="muted" data-i18n="home.mAxiom">Axiom IP Logs</span><span class="txt-red" data-i18n="home.mAxiomVal">2.2M / hr</span></div>
+                <div class="win-stat-row"><span class="muted" data-i18n="home.mOptOut">Settings Opt-Out UI</span><span class="txt-red" data-i18n="home.mOptOutVal">0 toggles</span></div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- BAND 1.5: WHY "TEMU3 CODE"? (ORIGIN OF THE NAME) -->
+    <!-- BAND 1.5: WHY "TEMU3 CODE"? -->
     <section id="why-temu3" class="sec-origin" aria-labelledby="originTitle">
       <div class="container">
         <div class="origin-card">
           <div class="origin-copy">
             <h2 id="originTitle" class="origin-h2" data-i18n="home.originTitle">Why "Temu3 Code"?</h2>
             <p class="origin-p" data-i18n="home.originP1">
-              On Nov 23, 2026 — 10 minutes after calling a Chinese developer's free MIT fork a "Chinese knockoff" — @theo generously donated our brand name on X: "Temu3 Code" (84k views).
+              On Nov 23, 2026, ten minutes after calling a Chinese developer's free MIT fork a "Chinese knockoff," @theo gave us the name on X: "Temu3 Code" (84k views).
             </p>
             <p class="origin-p origin-p-muted" data-i18n="home.originP2">
-              Free branding from a founder with 0 USPTO trademarks is too good to waste — so we registered temu3code.com, moved the public audit in, and left out the PostHog telemetry. Thanks for the free naming consultation, Theo. (CC0 1.0 — feel free to fork us back.)
+              A founder with zero USPTO trademarks handing out free branding is hard to turn down. We registered temu3code.com, put the public audit here, and left out PostHog. Thanks for the name, Theo. Everything here is CC0 1.0, so fork away.
             </p>
             <a class="origin-link" href="https://x.com/theo/status/2124825920808829077" target="_blank" rel="noopener noreferrer" data-i18n="home.originCta">
-              View @theo's naming tweet ↗
+              View @theo's naming post ↗
             </a>
           </div>
 
@@ -201,11 +185,11 @@
       </div>
     </section>
 
-    <!-- BAND 2: FIRST-HAND ORIGINAL X RECEIPTS (CLEAN, NO MICRO-CLUTTER) -->
+    <!-- BAND 2: ORIGINAL X SCREENSHOTS -->
     <section id="x-receipts" class="sec-x-receipts" aria-labelledby="xReceiptsTitle">
       <div class="container">
         <div class="sec-head-row">
-          <h2 id="xReceiptsTitle" class="sec-h2" data-i18n="home.xrTitle">Original X Receipts</h2>
+          <h2 id="xReceiptsTitle" class="sec-h2" data-i18n="home.xrTitle">Original X Screenshots</h2>
           <div class="xr-filters" role="tablist">
             <button type="button" class="xr-filter is-active" data-xr-filter="all" data-i18n="home.xrFilterAll">All (12)</button>
             <button type="button" class="xr-filter" data-xr-filter="origin" data-i18n="home.xrFilterOrigin">Fork &amp; Temu3</button>
@@ -218,7 +202,7 @@
       </div>
     </section>
 
-    <!-- BAND 3: 6 CORE VERIFIED CODE & PRIVACY FACTS -->
+    <!-- BAND 3: 6 CORE CODE & PRIVACY FACTS -->
     <section id="facts" class="sec-facts" aria-labelledby="factsTitle">
       <div class="container">
         <h2 id="factsTitle" class="sec-h2" data-i18n="home.factsTitle">What actually shipped.</h2>
@@ -231,22 +215,22 @@
           <a class="fact-card" href="./mail/?thread=2026-11-25-gdpr-overnight-collapse">
             <span class="fact-stat txt-red" data-i18n="home.f2Stat">2.2M / hr</span>
             <strong class="fact-title" data-i18n="home.f2Title">Axiom IP &amp; git.cwd Leaks</strong>
-            <p class="fact-desc" data-i18n="home.f2Desc">Overnight GDPR patches revealed 30-day IP-tagged relay spans and absolute workspace paths.</p>
+            <p class="fact-desc" data-i18n="home.f2Desc">Overnight GDPR patches exposed 30-day IP-tagged relay spans and absolute workspace paths.</p>
           </a>
           <a class="fact-card" href="./mail/?thread=2026-10-03-issue15353-force-push">
             <span class="fact-stat txt-red" data-i18n="home.f3Stat">52+ Days</span>
             <strong class="fact-title" data-i18n="home.f3Title">Silent git push --force</strong>
-            <p class="fact-desc" data-i18n="home.f3Desc">Issue #15353 stayed open 52+ days while a model privacy filter was stripped in 21 hours.</p>
+            <p class="fact-desc" data-i18n="home.f3Desc">Issue #15353 sat open for 52+ days, while a model privacy filter was stripped in 21 hours.</p>
           </a>
           <a class="fact-card" href="./mail/?thread=2026-10-28-fake-delete-process-spy">
             <span class="fact-stat txt-amber" data-i18n="home.f4Stat">41.6 GB</span>
-            <strong class="fact-title" data-i18n="home.f4Title">Fake SQLite Delete &amp; Process Spy</strong>
-            <p class="fact-desc" data-i18n="home.f4Desc">"Permanently delete" left full history on disk; a Rust task scanned all OS processes every 5s.</p>
+            <strong class="fact-title" data-i18n="home.f4Title">Fake SQLite Delete &amp; Process Scanner</strong>
+            <p class="fact-desc" data-i18n="home.f4Desc">"Permanently delete" kept full history on disk, and a Rust task scanned all OS processes every 5s.</p>
           </a>
           <a class="fact-card" href="./mail/?thread=2026-11-22-antigravity-spoof-3min-ban">
             <span class="fact-stat txt-blue" data-i18n="home.f5Stat">3 Min</span>
             <strong class="fact-title" data-i18n="home.f5Title">Antigravity Header Spoofing Bans</strong>
-            <p class="fact-desc" data-i18n="home.f5Desc">Spoofed internal Google headers against v1internal, triggering rapid account bans.</p>
+            <p class="fact-desc" data-i18n="home.f5Desc">Spoofed internal Google headers against v1internal, triggering rapid personal account bans.</p>
           </a>
           <a class="fact-card" href="./mail/?thread=2026-11-25-ca81b7b9-active-vulns">
             <span class="fact-stat txt-red" data-i18n="home.f6Stat">0 Advisories</span>
@@ -257,11 +241,11 @@
       </div>
     </section>
 
-    <!-- BAND 4: 19 SINS DECK & VIRAL MEMES (R2 CDN) -->
+    <!-- BAND 4: 19 SINS DECK & MEMES -->
     <section id="memes-showcase" class="sec-memes" aria-labelledby="memesTitle">
       <div class="container">
         <div class="sec-head-row">
-          <h2 id="memesTitle" class="sec-h2" data-i18n="home.mmTitle">19 Sins Deck &amp; Viral Memes</h2>
+          <h2 id="memesTitle" class="sec-h2" data-i18n="home.mmTitle">19 Sins Deck &amp; Memes</h2>
           <div class="mm-head-actions">
             <button type="button" id="homeDrawSinBtn" class="btn-gold-sm">
               <span>🎲</span>
@@ -276,11 +260,11 @@
       </div>
     </section>
 
-    <!-- BAND 5: FINAL PUNCH — STEAL OUR CODE (LEGALLY)* -->
+    <!-- BAND 5: FINAL CTA -->
     <section id="open" class="sec-open">
       <div class="container">
         <h2 class="sec-h2 center" data-i18n="home.stealTitle">"Steal our code (legally)."*</h2>
-        <p class="sec-lead center" data-i18n="home.stealSub">*We actually mean it. CC0 1.0 public domain — fork our repo with zero GitHub ban threats.</p>
+        <p class="sec-lead center" data-i18n="home.stealSub">*Unlike T3 Code, we mean it. Everything here is CC0 1.0 public domain. Fork it with zero takedown threats.</p>
 
         <div class="term-card">
           <pre class="term-body"><span class="t-dim">$</span> gh repo fork pingdotgg/t3code
@@ -293,7 +277,7 @@
         <div class="final-actions">
           <a class="btn-cobalt" href="./mail/" data-i18n="home.ctaMail">Open Tmail Inbox</a>
           <a class="btn-outline" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer" data-i18n="home.stealFork">Fork on GitHub ↗</a>
-          <a class="btn-outline" href="https://github.com/realchendahuang/temu3code#all-20-verified-exhibits-0019" target="_blank" rel="noopener noreferrer" data-i18n="home.stealReports">20 Exhibits on GitHub ↗</a>
+          <a class="btn-outline" href="https://github.com/realchendahuang/temu3code#all-20-verified-exhibits-0019" target="_blank" rel="noopener noreferrer" data-i18n="home.stealReports">20 Cases on GitHub ↗</a>
         </div>
       </div>
     </section>
@@ -301,7 +285,7 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <span data-i18n="common.footer">CC0 1.0 · Independent public-record archive · Not affiliated with T3 Tools Inc.</span>
+      <span data-i18n="common.footer">CC0 1.0 · Independent public archive · Not affiliated with T3 Tools Inc.</span>
       <div class="footer-links">
         <a href="./mail/" data-i18n="common.navMail">Tmail</a>
         <a href="./memes/" data-i18n="common.navMemes">Memes</a>
@@ -315,27 +299,38 @@
     <div class="xr-lb-backdrop" data-lb-close></div>
     <div class="xr-lb-dialog">
       <div class="xr-lb-head">
-        <h3 id="lbTitle" class="xr-lb-title"></h3>
+        <div class="xr-lb-head-left">
+          <span id="lbCounter" class="xr-lb-counter"></span>
+          <h3 id="lbTitle" class="xr-lb-title"></h3>
+        </div>
         <button type="button" class="xr-lb-close" data-lb-close aria-label="Close">✕</button>
       </div>
-      <div class="xr-lb-stage">
+      <div class="xr-lb-stage" id="lbStage">
         <button type="button" id="lbPrev" class="xr-lb-nav xr-lb-prev" aria-label="Previous">‹</button>
-        <div class="xr-lb-img-wrap">
-          <img id="lbImg" alt="" />
+        <div class="xr-lb-img-wrap" id="lbImgWrap">
+          <img id="lbImg" crossorigin="anonymous" alt="" />
         </div>
         <button type="button" id="lbNext" class="xr-lb-nav xr-lb-next" aria-label="Next">›</button>
       </div>
       <div class="xr-lb-foot">
+        <div class="xr-lb-mobile-nav">
+          <button type="button" id="lbPrevMobile" class="xr-btn" aria-label="Previous">‹</button>
+          <button type="button" id="lbNextMobile" class="xr-btn" aria-label="Next">›</button>
+        </div>
         <div class="xr-lb-actions">
-          <a id="lbXLink" class="xr-btn xr-btn-x" href="#" target="_blank" rel="noopener noreferrer">X ↗</a>
+          <button type="button" id="lbCopyPngBtn" class="xr-btn xr-btn-copy" data-i18n="home.mmCopyPng">Copy PNG</button>
+          <button type="button" id="lbDrawAgainBtn" class="xr-btn xr-btn-gold" hidden>🎲 <span data-i18n="home.mmDrawAgain">Draw Another</span></button>
+          <a id="lbXLink" class="xr-btn xr-btn-x" href="#" target="_blank" rel="noopener noreferrer">Original post ↗</a>
           <a id="lbMailLink" class="xr-btn" href="#">Tmail →</a>
-          <a id="lbRawLink" class="xr-btn" href="#" target="_blank" rel="noopener noreferrer">Raw ↗</a>
+          <a id="lbRawLink" class="xr-btn" href="#" target="_blank" rel="noopener noreferrer">Full image ↗</a>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="./data/i18n.js?v=3"></script>
-  <script src="./temu3.js?v=9"></script>
+  <div id="homeToast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="./data/i18n.js?v=4"></script>
+  <script src="./temu3.js?v=11"></script>
 </body>
 </html>

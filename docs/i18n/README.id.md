@@ -1,18 +1,18 @@
-# Temu3 Code — Sebelum Memasang T3 Code
+# Temu3 Code · Sebelum Pasang T3 Code
 
 <p align="center">
-  <em>Catatan publik independen yang mengutamakan bukti atas pingdotgg/t3code — mendokumentasikan standar ganda rasial, telemetri yang menyesatkan, cacat keamanan kritis, dan manipulasi komersial.</em>
+  <em>20 kasus terdokumentasi, 109 tangkapan layar terarsip, dan 3,5 tahun posting publik serta commit dari pingdotgg/t3code. Nol telemetri.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=id"><strong>🌐 temu3code.com</strong></a> ·
   <a href="https://temu3code.com/mail/?lang=id"><strong>✉ Kotak Masuk Tmail</strong></a> ·
-  <a href="https://temu3code.com/?lang=id#x-receipts"><strong>📸 12 Foto X Asli</strong></a> ·
+  <a href="https://temu3code.com/?lang=id#x-receipts"><strong>📸 12 Tangkapan Layar X Asli</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=id"><strong>🃏 61 Meme</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 Bukti</strong></a> ·
+  <a href="../EVIDENCE-INDEX.md"><strong>109 Tangkapan Layar</strong></a> ·
   <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 Sumber</strong></a>
 </p>
 
@@ -52,9 +52,9 @@
 > [!TIP]
 > **Kenapa "Temu3 Code"?**
 >
-> Pada 23 Nov 2026 — 10 menit setelah menyebut fork gratis dari developer China sebagai "Chinese knockoff" — @theo dengan murah hati memberikan nama brand kami di X: "Temu3 Code" (84k views).
+> Pada 23 Nov 2026, sepuluh menit setelah menyebut fork MIT gratis milik developer Tiongkok sebagai "Chinese knockoff," @theo memberi kami nama di X: "Temu3 Code" (84 ribu tayangan).
 >
-> Gratisnya nama brand dari founder yang punya 0 USPTO trademarks terlalu bagus untuk disia-siakan — jadi kami mendaftarkan temu3code.com, memindahkan audit publik ke sana, dan tidak pasang telemetry PostHog. Terima kasih atas konsultasi penamaan gratis, Theo. (CC0 1.0 — silakan fork kami balik.) — [Lihat tweet penamaan @theo ↗](https://x.com/theo/status/2124825920808829077)
+> Seorang founder tanpa merek dagang USPTO yang membagikan branding gratis sulit ditolak. Kami mendaftarkan temu3code.com, menaruh audit publik di sini, dan tidak memasang PostHog. Terima kasih atas namanya, Theo. Semua di sini CC0 1.0, jadi silakan fork. [Lihat posting penamaan @theo ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

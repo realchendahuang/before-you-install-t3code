@@ -1,19 +1,19 @@
-# Temu3 Code — T3 Code इंस्टॉल करने से पहले
+# Temu3 Code · T3 Code इंस्टॉल करने से पहले
 
 <p align="center">
-  <em>pingdotgg/t3code का एक स्वतंत्र, साक्ष्य-प्राथमिक सार्वजनिक लेखा-जोखा — नस्लीय दोहरे मानदंडों, भ्रामक टेलीमेट्री, गंभीर सुरक्षा खामियों और व्यावसायिक हेरफेर का दस्तावेजीकरण।</em>
+  <em>20 दर्ज मामले, 109 आर्काइव स्क्रीनशॉट, और pingdotgg/t3code के 3.5 साल के सार्वजनिक पोस्ट और कमिट। ज़ीरो टेलीमेट्री।</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=hi"><strong>🌐 temu3code.com</strong></a> ·
   <a href="https://temu3code.com/mail/?lang=hi"><strong>✉ Tmail इनबॉक्स</strong></a> ·
-  <a href="https://temu3code.com/?lang=hi#x-receipts"><strong>📸 12 मूल X शॉट</strong></a> ·
+  <a href="https://temu3code.com/?lang=hi#x-receipts"><strong>📸 12 मूल X स्क्रीनशॉट</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=hi"><strong>🃏 61 मीम्स</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 रसीदें</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 स्रोत</strong></a>
+  <a href="../EVIDENCE-INDEX.md"><strong>109 स्क्रीनशॉट</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 सोर्स</strong></a>
 </p>
 
 <p align="center">
@@ -50,11 +50,11 @@
 
 <!-- origin-story:start -->
 > [!TIP]
-> **"Temu3 Code" क्यों?**
+> **"Temu3 Code" नाम क्यों?**
 >
-> 23 नवंबर, 2026 को — किसी चीनी डेवलपर के मुफ़्त MIT फ़ोर्क को "Chinese knockoff" कहने के ठीक 10 मिनट बाद — @theo ने X पर हमारा ब्रांड नाम किसी दान में दे दिया: "Temu3 Code" (84k views)।
+> 23 नव 2026 को, एक चीनी डेवलपर के फ्री MIT फोर्क को "Chinese knockoff" कहने के दस मिनट बाद, @theo ने X पर हमें नाम दे दिया: "Temu3 Code" (84 हज़ार व्यूज़)।
 >
-> 0 USPTO ट्रेडमार्क वाले संस्थापक से मुफ़्त ब्रांडिंग बेकार जाने से बेहतर है — इसलिए हमने temu3code.com रजिस्टर किया, सार्वजनिक ऑडिट अंदर रखी, और PostHog टेलीमेट्री छोड़ दी। मुफ़्त नामकरण परामर्श के लिए धन्यवाद, Theo। (CC0 1.0 — चाहें तो हमें भी फ़ोर्क कर लीजिए।) — [@theo का नामकरण ट्वीट देखें ↗](https://x.com/theo/status/2124825920808829077)
+> जिस फाउंडर के पास USPTO ट्रेडमार्क शून्य हों, वो मुफ़्त ब्रांडिंग दे रहा हो तो मना करना मुश्किल है। हमने temu3code.com रजिस्टर किया, सार्वजनिक ऑडिट यहाँ रखा, और PostHog बाहर रखा। नाम के लिए शुक्रिया, Theo। यहाँ सब कुछ CC0 1.0 है, तो फोर्क करते रहिए। [@theo की नामकरण पोस्ट देखें ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 
