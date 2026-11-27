@@ -260,9 +260,10 @@ def verify_repo(repo_root: Path, allow_missing_i18n: bool) -> VerificationReport
         "site/memes/index.html",
         "site/memes/memes.css",
         "site/memes/memes.js",
+        "site/data/i18n.js",
         "site/data/evidence.json",
         "site/data/memes.json",
-    ):
+    ) + tuple(f"site/data/i18n/{lang['code']}.json" for lang in manifest["languages"]):
         fp = repo_root / req_file
         if not fp.is_file():
             report.site_bundle_errors.append(f"Missing {req_file}")

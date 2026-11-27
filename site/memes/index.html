@@ -3,17 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Temu3 Meme Arsenal — 19 Sins Collector Deck &amp; Viral Memes | temu3code.com</title>
-  <meta name="description" content="61 high-res satire assets for pingdotgg/t3code & @theo: 19 Sins holographic collector cards, 33 viral blended memes, and bilingual receipt strips. CC0 1.0 — copy, download, and verify every claim in Tmail." />
+  <title>Temu3 Meme Arsenal — 61 CC0 Cards &amp; Memes</title>
+  <meta name="description" content="19 Sins holographic collector cards, 33 viral memes, and bilingual strips — CC0 1.0, backed by verified Tmail receipts." />
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://temu3code.com/memes/" />
   <meta property="og:title" content="Temu3 Meme Arsenal — 19 Sins Deck &amp; Viral Memes" />
-  <meta property="og:description" content="Laugh first, verify in 1 click. 19 Sins collector cards + 33 viral memes + bilingual strips, each anchored to primary receipts in Tmail." />
   <meta property="og:image" content="https://cdn.temu3code.com/memes/blended/00-drake.webp" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Temu3 Meme Arsenal — 19 Sins Deck &amp; Viral Memes" />
-  <meta name="twitter:description" content="61 CC0 1.0 satire cards & memes backed by 327 primary sources. Copy PNG in 1 click or verify in Tmail." />
   <meta name="twitter:image" content="https://cdn.temu3code.com/memes/blended/00-drake.webp" />
 
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0a0a' stroke='%23262626'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%23ffffff' font-family='system-ui,sans-serif' font-weight='700' font-size='14'%3ET3%3C/text%3E%3C/svg%3E" />
@@ -21,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" />
-  <link rel="stylesheet" href="./memes.css?v=1" />
+  <link rel="stylesheet" href="./memes.css?v=2" />
 </head>
 <body>
   <header class="nav-header">
@@ -29,58 +26,51 @@
       <a class="brand" href="../">
         <span class="brand-strong">Temu3</span>
         <span class="brand-muted">Code</span>
-        <span class="brand-pill" data-i18n="brandPill">MEME ARSENAL · CC0</span>
       </a>
 
-      <div class="nav-right">
-        <button type="button" id="langToggleBtn" class="nav-lang-btn" aria-label="Switch language">
-          <span id="langLabel">中文</span>
-        </button>
-        <a class="nav-link" href="../" data-i18n="navHome">Home</a>
-        <a class="nav-link" href="../#x-receipts" data-i18n="navXReceipts">X Receipts</a>
-        <a class="nav-link" href="../mail/" data-i18n="navMail">Tmail Inbox</a>
-        <a class="nav-star-link" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">
-          <strong>GitHub</strong>
-          <span data-i18n="navRepo">↗</span>
-        </a>
-      </div>
+      <nav class="nav-right" aria-label="Main navigation">
+        <label class="lang-picker" aria-label="Select language">
+          <svg class="ico-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" />
+            <line x1="3" y1="12" x2="21" y2="12" />
+            <path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18" />
+          </svg>
+          <select id="langSelect" class="lang-select" aria-label="Language"></select>
+        </label>
+        <a class="nav-link" href="../#x-receipts" data-i18n="common.navReceipts">X Receipts</a>
+        <a class="nav-link" href="../mail/" data-i18n="common.navMail">Tmail</a>
+        <a class="nav-star-link" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer" data-i18n="common.navGithub">GitHub</a>
+      </nav>
     </div>
   </header>
 
   <main>
     <section class="hero">
-      <div class="hero-grid-bg" aria-hidden="true"></div>
-      <div class="container hero-inner">
-        <span class="eyebrow" data-i18n="eyebrow">LAUGH FIRST · VERIFY IN 1 CLICK · CDN.TEMU3CODE.COM</span>
-        <h1 class="hero-h1" data-i18n="heroTitle">The Temu3 Meme Arsenal.</h1>
-        <p class="hero-sub" data-i18n="heroSub">
-          19 Sins holographic collector cards, 33 viral blended memes, and bilingual editorial strips — CC0 1.0 public domain. Copy any card directly to your clipboard, download, or click through to the verified receipt in Tmail.
-        </p>
-
-        <div class="hero-controls">
-          <button type="button" id="drawSinBtn" class="btn-gold">
-            <span>🎲</span>
-            <span data-i18n="drawSinBtn">Draw a Random Sin Card</span>
-          </button>
-          <a class="btn-outline" href="../mail/">
-            <span>✉</span>
-            <span data-i18n="openTmailBtn">Verify Receipts in Tmail →</span>
-          </a>
-          <a class="btn-outline" href="https://github.com/realchendahuang/temu3code/issues/new" target="_blank" rel="noopener noreferrer">
-            <span data-i18n="submitMemeBtn">Submit a Meme (PR / Issue) ↗</span>
-          </a>
+      <div class="container">
+        <div class="hero-top">
+          <div>
+            <h1 class="hero-h1" data-i18n="memes.title">Meme Arsenal.</h1>
+            <p class="hero-sub" data-i18n="memes.sub">19 Sins collector cards, 33 viral memes, and bilingual strips. CC0 1.0 — every card links to its Tmail receipt.</p>
+          </div>
+          <div class="hero-controls">
+            <button type="button" id="drawSinBtn" class="btn-gold">
+              <span>🎲</span>
+              <span data-i18n="memes.drawBtn">Draw a Random Sin</span>
+            </button>
+            <a class="btn-outline" href="https://github.com/realchendahuang/temu3code/issues/new" target="_blank" rel="noopener noreferrer" data-i18n="memes.submitBtn">Submit via GitHub ↗</a>
+          </div>
         </div>
 
         <div class="toolbar">
-          <div class="filter-tabs" role="tablist" aria-label="Filter meme series">
-            <button type="button" class="tab-btn is-active" data-series="all" data-i18n="tabAll">All</button>
-            <button type="button" class="tab-btn" data-series="sins" data-i18n="tabSins">19 Sins Cards</button>
-            <button type="button" class="tab-btn" data-series="blended" data-i18n="tabBlended">Viral Memes</button>
-            <button type="button" class="tab-btn" data-series="classic" data-i18n="tabClassic">Classic Receipts</button>
-            <button type="button" class="tab-btn" data-series="comics" data-i18n="tabComics">Bilingual Comics</button>
+          <div class="filter-tabs" role="tablist">
+            <button type="button" class="tab-btn is-active" data-series="all" data-i18n="memes.tabAll">All</button>
+            <button type="button" class="tab-btn" data-series="sins" data-i18n="memes.tabSins">19 Sins</button>
+            <button type="button" class="tab-btn" data-series="blended" data-i18n="memes.tabBlended">Viral Memes</button>
+            <button type="button" class="tab-btn" data-series="classic" data-i18n="memes.tabClassic">Receipts</button>
+            <button type="button" class="tab-btn" data-series="comics" data-i18n="memes.tabComics">Comics</button>
           </div>
           <div class="search-wrap">
-            <input type="search" id="memeSearch" class="search-input" placeholder="Search Drake, Clown, 1151, PostHog, #15..." aria-label="Search memes" />
+            <input type="search" id="memeSearch" class="search-input" placeholder="Search Drake, Clown, 1151, #15..." aria-label="Search memes" />
             <span id="countBadge" class="count-badge">—</span>
           </div>
         </div>
@@ -90,43 +80,22 @@
     <section class="gallery-sec">
       <div class="container">
         <div id="memeGrid" class="meme-grid"></div>
-        <div id="emptyState" class="empty-state" hidden data-i18n="emptyState">
-          No memes match your search. Try "Drake", "USPTO", "1151", or clear filters.
-        </div>
-      </div>
-    </section>
-
-    <section class="submit-band">
-      <div class="container">
-        <div class="submit-card">
-          <div>
-            <h2 class="submit-h2" data-i18n="growTitle">Built to keep growing (CC0 1.0).</h2>
-            <p class="submit-p" data-i18n="growBody">
-              Every meme here is served from edge-cached Cloudflare R2 (cdn.temu3code.com) and indexed via memes.json — zero database, zero telemetry. Drop a new meme or receipt via GitHub PR/Issue and we'll add it to the arsenal (and we genuinely won't threaten your GitHub account).
-            </p>
-          </div>
-          <div class="submit-actions">
-            <a class="btn-cobalt" href="https://github.com/realchendahuang/temu3code/issues/new" target="_blank" rel="noopener noreferrer" data-i18n="growCta">Contribute on GitHub ↗</a>
-            <a class="btn-outline" href="../#x-receipts" data-i18n="growReceipts">Inspect Original X Screenshots</a>
-          </div>
-        </div>
+        <div id="emptyState" class="empty-state" hidden data-i18n="memes.empty">No matching memes.</div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-inner">
-      <span data-i18n="footerNote">CC0 1.0 Public Domain · Independent Satire &amp; Public-Record Archive (Not affiliated with T3 Tools Inc.)</span>
+      <span data-i18n="common.footer">CC0 1.0 · Independent public-record archive · Not affiliated with T3 Tools Inc.</span>
       <div class="footer-links">
-        <a href="../">Temu3 Home</a>
-        <a href="../#x-receipts">Original X Shots</a>
-        <a href="../mail/">Tmail Inbox</a>
-        <a href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">GitHub Repo</a>
+        <a href="../" data-i18n="common.navHome">Home</a>
+        <a href="../mail/" data-i18n="common.navMail">Tmail</a>
+        <a href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer" data-i18n="common.navGithub">GitHub</a>
       </div>
     </div>
   </footer>
 
-  <!-- LIGHTBOX MODAL -->
   <div id="memeLightbox" class="lb" hidden role="dialog" aria-modal="true" aria-labelledby="lbTitle">
     <div class="lb-backdrop" data-lb-close></div>
     <div class="lb-dialog">
@@ -146,10 +115,10 @@
       </div>
       <div class="lb-foot">
         <div class="lb-actions">
-          <button type="button" id="lbCopyBtn" class="act-btn act-primary" data-i18n="copyPng">Copy PNG</button>
-          <button type="button" id="lbDownloadBtn" class="act-btn" data-i18n="downloadBtn">Download</button>
-          <a id="lbShareX" class="act-btn" href="#" target="_blank" rel="noopener noreferrer" data-i18n="shareX">Share on X ↗</a>
-          <a id="lbReceiptLink" class="act-btn act-cobalt" href="#" data-i18n="verifyReceipt">Verify Receipt in Tmail →</a>
+          <button type="button" id="lbCopyBtn" class="act-btn act-primary" data-i18n="memes.copyBtn">Copy PNG</button>
+          <button type="button" id="lbDownloadBtn" class="act-btn" data-i18n="memes.downloadBtn">Save</button>
+          <a id="lbShareX" class="act-btn" href="#" target="_blank" rel="noopener noreferrer" data-i18n="memes.shareX">Share on X ↗</a>
+          <a id="lbReceiptLink" class="act-btn act-cobalt" href="#" data-i18n="memes.verifyReceipt">Verify Receipt →</a>
         </div>
       </div>
     </div>
@@ -157,6 +126,7 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
-  <script src="./memes.js?v=2"></script>
+  <script src="../data/i18n.js?v=1"></script>
+  <script src="./memes.js?v=3"></script>
 </body>
 </html>

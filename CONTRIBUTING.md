@@ -1,27 +1,31 @@
 # Contributing
 
-This repository is an independent, evidence-first public-record investigation of `pingdotgg/t3code` (T3 Code). Pull requests and structured issue reports are welcome — especially for:
+This repository (`realchendahuang/temu3code`) is an independent, evidence-first public-record archive of `pingdotgg/t3code` (T3 Code), published live at **https://temu3code.com/**. Pull requests and structured issue reports are welcome — especially for:
 
 1. **Verifiable Status Updates:** If an issue or vulnerability documented here is fixed and verified in a public commit or pull request on `pingdotgg/t3code`, submit a PR or open an [Upstream Fix / Status Update](./.github/ISSUE_TEMPLATE/upstream-fix-update.yml) issue with the commit/PR URL.
 2. **Additional Primary Evidence (`#20`, `#21`, …):** New telemetry, security, governance, or public-record exhibits must cite canonical, publicly verifiable URLs (GitHub commits, PRs, issues, source line links, official docs, USPTO TSDR records, or archived public posts). Private-message reports or uncorroborated allegations are kept separate from the numbered `#00`–`#19+` primary archive.
-3. **18-Language Translations:** Improvements to any of the 18 language editions (6 UN official languages + 12 global community editions) are welcome via PR or [Translation Fix](./.github/ISSUE_TEMPLATE/translation-fix.yml).
+3. **18-Language Translations:** Improvements to any of the **18 equal language editions** across both GitHub Markdown (`cases/<lang>/`, `docs/i18n/README.<lang>.md`) and the live website (`site/data/i18n/<lang>.json`) are welcome via PR or [Translation Fix](./.github/ISSUE_TEMPLATE/translation-fix.yml).
+4. **Community Memes & Satire Cards:** New CC0 1.0 satire cards can be submitted via GitHub Issue or PR and published to Cloudflare R2 (`cdn.temu3code.com`) via `scripts/publish_memes.py`.
 
-## Single-Source Repository Architecture
+## Repository Architecture
 
-To guarantee readability and keep all **18 languages** permanently in sync across GitHub Markdown and the interactive GitHub Pages portal:
+All **18 languages** stay aligned across GitHub Markdown and the static **https://temu3code.com/** site:
 
 - [`content/manifest.json`](./content/manifest.json) — Master metadata registry (18 languages, 4 thematic chapters, numbered exhibits `#00`–`#19+`, upstream commits).
 - [`content/evidence.json`](./content/evidence.json) — Structured catalog of all **109** primary visual receipts & forensic charts under `evidence/`.
-- [`content/ui/<lang>.json`](./content/ui/en.json) — Localized UI strings, chapter summaries, story arc, and hardening steps across all 18 languages.
-- [`cases/<lang>/NN-<slug>.md`](./cases/en/00-origin-fork-dispute-and-double-standard.md) — **Markdown single source of truth** for every numbered exhibit (`#00`–`#19+`), written in clean, table-free magazine prose with invisible `<!-- section:... -->` structural markers.
-- [`README.md`](./README.md) & [`docs/i18n/README.<lang>.md`](./docs/i18n/README.zh-CN.md) — Clean, table-free 18-language front doors **generated directly** from `cases/<lang>/` and `content/ui/<lang>.json` via `scripts/build_portal.py`.
-- [`site/`](./site/index.html) — Zero-tracker static GitHub Pages interactive visual portal (Claude editorial typography & reading workspace) supporting all **18 languages** (including RTL Arabic), lazy-loaded JSON bundles (`site/data/<lang>.json`), embedded 1,151-tweet interactive charts, a searchable 109-receipt lightbox archive, and per-exhibit static OpenGraph / Twitter Card share pages (`site/c/NN/` & `site/c/zh/NN/`).
-- [`docs/dossiers/`](./docs/dossiers/01-telemetry-and-gdpr-timeline.md), [`docs/EVIDENCE-INDEX.md`](./docs/EVIDENCE-INDEX.md), [`docs/COMPLETE-SOURCE-INDEX.md`](./docs/COMPLETE-SOURCE-INDEX.md), and [`docs/community/`](./docs/community/issue-1-the-case-against-theo.md) — Preserved deep technical reference dossiers, master catalogs, and separated community commentary.
+- [`cases/<lang>/NN-<slug>.md`](./cases/en/00-origin-fork-dispute-and-double-standard.md) — **Markdown single source of truth** for every numbered exhibit (`#00`–`#19+`), written in clean, table-free prose with `<!-- section:... -->` structural markers.
+- [`README.md`](./README.md) & [`docs/i18n/README.<lang>.md`](./docs/i18n/README.zh-CN.md) — 18 equal-footing front doors linking directly to `temu3code.com`, `/mail/`, `/#x-receipts`, and `/memes/` in the reader's language.
+- [`site/`](./site/index.html) — Zero-telemetry static website deployed to **https://temu3code.com/** (Cloudflare Pages + GitHub Pages mirror):
+  - [`site/index.html`](./site/index.html) — Temu3 Code homepage (`#x-receipts` 12 original X captures, 6 verified code/privacy facts, and 19 Sins collector showcase).
+  - [`site/mail/index.html`](./site/mail/index.html) — **Tmail** interactive public-record inbox (`34` threads, 2023–2026 chronological sort, `TPhotos` 109 receipts, `TDrive` 6 dossiers, `TCal` 1,151-tweet charts).
+  - [`site/memes/index.html`](./site/memes/index.html) — **Meme Arsenal** backed by edge-cached Cloudflare R2 (`cdn.temu3code.com`) and [`site/data/memes.json`](./site/data/memes.json).
+  - [`site/data/i18n/<lang>.json`](./site/data/i18n/en.json) & [`site/data/i18n.js`](./site/data/i18n.js) — Shared 18-language UI translation bundles (including RTL Arabic).
+- [`docs/dossiers/`](./docs/dossiers/01-telemetry-and-gdpr-timeline.md), [`docs/EVIDENCE-INDEX.md`](./docs/EVIDENCE-INDEX.md), [`docs/COMPLETE-SOURCE-INDEX.md`](./docs/COMPLETE-SOURCE-INDEX.md), and [`docs/community/`](./docs/community/issue-1-the-case-against-theo.md) — Deep technical reference dossiers, master catalogs, and separated community commentary.
 
-## How to Add a New Exhibit (`#20`, `#21`, …)
+## How to Add a New Exhibit (`#20`, `#21`, …) or New Memes
 
 ```bash
-# 1. Scaffold metadata + English & Simplified Chinese Markdown templates
+# 1. Scaffold English & Simplified Chinese Markdown exhibit templates
 python3 scripts/new_case.py \
   --id 20 \
   --slug "short-descriptive-slug" \
@@ -31,15 +35,13 @@ python3 scripts/new_case.py \
   --hero "evidence/extra/your-screenshot.png" \
   --x-post "https://x.com/..."
 
-# 2. Polish cases/en/20-*.md and cases/zh-CN/20-*.md, and add new URLs to docs/COMPLETE-SOURCE-INDEX.md
+# 2. Polish cases/en/20-*.md and cases/zh-CN/20-*.md, add URLs to docs/COMPLETE-SOURCE-INDEX.md,
+#    and add the matching thread to site/mail/threads.json
 
-# 3. Batch-translate Exhibit #20 across the remaining 16 languages with automated URL/marker validation
-python3 scripts/translate_i18n.py --only-case 20 -j 8
+# 3. Publish new memes (converts to WebP, syncs to R2, refreshes site/data/memes.json)
+python3 scripts/publish_memes.py
 
-# 4. Rebuild all 18 READMEs, 18 lazy site JSON bundles, and OG share pages
-python3 scripts/build_portal.py
-
-# 5. Run strict CI verification (must exit 0 with 0 errors)
+# 4. Run strict CI verification (must exit 0 with 0 errors)
 python3 scripts/verify_repo.py
 ```
 

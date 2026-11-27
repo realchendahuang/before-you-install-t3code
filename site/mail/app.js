@@ -188,8 +188,10 @@
     }
   ];
 
+  const SHARED_I18N = window.Temu3I18n;
   const state = {
-    lang: localStorage.getItem("tmail-lang") === "zh" ? "zh" : "en",
+    lang: SHARED_I18N ? SHARED_I18N.detectInitialLang() : "en",
+    bundle: null,
     data: null,
     evidence: [],
     assetPrefix: "../",
@@ -212,8 +214,22 @@
   const $ = (sel) => document.querySelector(sel);
   const $$ = (sel) => Array.from(document.querySelectorAll(sel));
 
+  function isZh() {
+    return state.lang === "zh-CN" || state.lang === "zh-TW" || isZh();
+  }
+
   function t(key) {
-    return (I18N[state.lang] && I18N[state.lang][key]) || I18N.en[key] || key;
+    if (state.bundle && state.bundle.mail) {
+      const aliasMap = {
+        classicPortal: "homeTile",
+        dockReport: "homeTile",
+        openFullReport: "openHome"
+      };
+      const k = aliasMap[key] || key;
+      if (state.bundle.mail[k]) return state.bundle.mail[k];
+    }
+    const fallbackLang = isZh() ? "zh" : "en";
+    return (I18N[fallbackLang] && I18N[fallbackLang][key]) || I18N.en[key] || key;
   }
 
   function escapeHtml(str) {
@@ -404,23 +420,25 @@
     return list;
   }
 
-  function applyI18n() {
-    document.documentElement.lang = state.lang === "zh" ? "zh-CN" : "en";
+  async function applyI18n(nextCode) {
+    if (nextCode && SHARED_I18N) {
+      state.lang = SHARED_I18N.normalizeLang(nextCode) || "en";
+    }
+    if (SHARED_I18N) {
+      SHARED_I18N.applyDirection(state.lang);
+      state.bundle = await SHARED_I18N.loadBundle(state.lang, state.dataPrefix);
+    }
+    const pt = t("pageTitle");
+    if (pt && pt !== "pageTitle") document.title = pt;
+
     $$("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
       if (key) el.textContent = t(key);
     });
-    $("#langToggleLabel").textContent = t("langToggle");
-    $("#searchInput").placeholder = t("searchPlaceholder");
-
-    if (state.lang === "zh") {
-      $("#bullyingSpanPill").textContent = "2023.05 – 2026.11 · 跨度 3.5+ 年";
-      $("#overviewBody").innerHTML = `你正在浏览 <strong>@theo</strong> 与 <strong>pingdotgg/t3code</strong> 的公共记录收件箱。每一封记录均锚定一手公开推文、GitHub PR/Issue、USPTO 商标查询及 109 份存档截图。<button type="button" class="inline-link-btn" id="quickOldestBtn">按最早日期排序（2023 → 2026 看长期霸凌跨度）</button>、<button type="button" class="inline-link-btn" id="quickRandomBtn">随机抽看一条</button>，或<a href="${state.reportBase}#x-receipts" class="inline-link">返回 Temu3 主页查看一手 X 原图</a>。`;
-    } else {
-      $("#bullyingSpanPill").textContent = "May 2023 – Nov 2026 · 3.5+ Years";
-      $("#overviewBody").innerHTML = `You are browsing the public-record inbox of <strong>@theo</strong> &amp; <strong>pingdotgg/t3code</strong>. Every thread is anchored to verbatim public X posts, GitHub PRs/Issues, USPTO filings, and 109 archived screenshots. <button type="button" class="inline-link-btn" id="quickOldestBtn">Sort oldest-first (2023 → 2026 span)</button>, <button type="button" class="inline-link-btn" id="quickRandomBtn">open a random thread</button>, or <a href="${state.reportBase}#x-receipts" class="inline-link">view original X receipts on Temu3 Home</a>.`;
-    }
-    bindOverviewQuickBtns();
+    const searchEl = $("#searchInput");
+    if (searchEl) searchEl.placeholder = t("searchPlaceholder");
+    const photosSearch = $("#photosSearchInput");
+    if (photosSearch) photosSearch.placeholder = t("photosSearch");
   }
 
   function bindOverviewQuickBtns() {
@@ -432,7 +450,7 @@
         state.sort = "oldest";
         $("#sortSelect").value = "oldest";
         renderAll();
-        showToast(state.lang === "zh" ? "已切换为最早时间优先（2023 → 2026）" : "Sorted oldest first: May 2023 → Nov 2026");
+        showToast(isZh() ? "已切换为最早时间优先（2023 → 2026）" : "Sorted oldest first: May 2023 → Nov 2026");
       });
     }
     const randBtn = $("#quickRandomBtn");
@@ -474,7 +492,7 @@
       .map((tp) => {
         const count = state.data.threads.filter((th) => th.topics.includes(tp.id)).length;
         const active = state.topic === tp.id ? " active" : "";
-        const label = state.lang === "zh" ? tp.labelZh : tp.label;
+        const label = isZh() ? tp.labelZh : tp.label;
         return `<li>
           <button type="button" class="topic-btn${active}" data-topic="${tp.id}">
             <span class="material-symbols-outlined">${tp.icon}</span>
@@ -539,7 +557,7 @@
       const tp = state.data.topics.find((x) => x.id === state.topic);
       if (tp) {
         chips.push({
-          label: `${state.lang === "zh" ? "主题" : "Topic"}: ${state.lang === "zh" ? tp.labelZh : tp.label}`,
+          label: `${isZh() ? "主题" : "Topic"}: ${isZh() ? tp.labelZh : tp.label}`,
           clear: () => {
             state.topic = null;
           }
@@ -550,7 +568,7 @@
       const p = state.data.people.find((x) => x.id === state.person);
       if (p) {
         chips.push({
-          label: `${state.lang === "zh" ? "人物" : "Person"}: ${p.name}`,
+          label: `${isZh() ? "人物" : "Person"}: ${p.name}`,
           clear: () => {
             state.person = null;
           }
@@ -559,7 +577,7 @@
     }
     if (state.platform !== "all") {
       chips.push({
-        label: `${state.lang === "zh" ? "来源" : "Source"}: ${state.platform}`,
+        label: `${isZh() ? "来源" : "Source"}: ${state.platform}`,
         clear: () => {
           state.platform = "all";
           $("#platformFilter").value = "all";
@@ -568,7 +586,7 @@
     }
     if (state.year !== "all") {
       chips.push({
-        label: `${state.lang === "zh" ? "时间段" : "Date"}: ${state.year}`,
+        label: `${isZh() ? "时间段" : "Date"}: ${state.year}`,
         clear: () => {
           state.year = "all";
           $("#yearFilter").value = "all";
@@ -638,8 +656,8 @@
       .map((th) => {
         const starred = state.starredIds.has(th.id);
         const isRead = state.readIds.has(th.id);
-        const subject = state.lang === "zh" ? th.subjectZh : th.subject;
-        const snippet = state.lang === "zh" ? th.snippetZh : th.snippet;
+        const subject = isZh() ? th.subjectZh : th.subject;
+        const snippet = isZh() ? th.snippetZh : th.snippet;
         const attCount = th.messages.reduce((n, m) => n + (m.attachments ? m.attachments.length : 0), 0);
         const msgCount = th.messages.length;
         const starDisplay = th.starCount + (starred ? 1 : 0);
@@ -763,15 +781,15 @@
       "18": "77k-star-funnel-and-arbitrary-repo-starring",
       "19": "ca81b7b9-lan-cookie-bearer-ws-and-repo-rce"
     };
-    const caseLang = state.lang === "zh" ? "zh-CN" : "en";
+    const caseLang = SHARED_I18N ? (SHARED_I18N.normalizeLang(state.lang) || "en") : "en";
     const slug = CASE_SLUGS[th.exhibit];
     const exhibitUrl = slug
       ? `https://github.com/realchendahuang/temu3code/blob/main/cases/${caseLang}/${th.exhibit}-${slug}.md`
       : "https://github.com/realchendahuang/temu3code#all-20-verified-exhibits-0019";
     $("#threadExhibitTopLink").href = exhibitUrl;
-    $("#threadExhibitTopLabel").textContent = `Exhibit #${th.exhibit}`;
+    $("#threadExhibitTopLabel").textContent = `${t("fullExhibit")} #${th.exhibit}`;
 
-    const subject = state.lang === "zh" ? th.subjectZh : th.subject;
+    const subject = isZh() ? th.subjectZh : th.subject;
     const statusLabel =
       th.status === "open"
         ? t("statusOpen")
@@ -852,7 +870,7 @@
         </button>
         <button type="button" class="gmail-reply-btn" id="footerMemeBtn">
           <span class="material-symbols-outlined">style</span>
-          <span>${state.lang === "zh" ? "查看梗图卡" : "View Meme Card"}</span>
+          <span>${escapeHtml(t("viewMemeCard"))}</span>
         </button>
       </div>
     </div>`;
@@ -888,24 +906,20 @@
     const cardsHtml = matches
       .slice(0, 6)
       .map((m) => {
-        const title = state.lang === "zh" ? m.titleZh : m.titleEn;
+        const title = isZh() ? m.titleZh : m.titleEn;
         return `<a href="../memes/#${encodeURIComponent(m.id)}" style="display:flex;flex-direction:column;gap:6px;padding:8px;border:1px solid #dadce0;border-radius:10px;text-decoration:none;color:#202124;background:#fff;">
           <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" style="width:100%;height:auto;border-radius:6px;display:block;" loading="lazy" />
           <strong style="font-size:12.5px;line-height:1.35;">${escapeHtml(title)}</strong>
-          <span style="font-size:11px;color:#0b57d0;">${state.lang === "zh" ? "去 /memes/ 一键复制原图 ↗" : "Open & copy PNG in /memes/ ↗"}</span>
+          <span style="font-size:11px;color:#0b57d0;">${escapeHtml(t("copyInMemes"))}</span>
         </a>`;
       })
       .join("");
     openModal(
-      state.lang === "zh" ? `Exhibit #${th.exhibit} 对应讽刺梗图与罪状卡` : `Exhibit #${th.exhibit} · Satire Cards & Memes`,
-      `<p style="margin-top:0;font-size:13px;color:#5f6368;">${
-        state.lang === "zh"
-          ? "梗图与一手取证严格分层存储于 Cloudflare R2（cdn.temu3code.com），点击任意卡片进入 /memes/ 一键复制高清 PNG。"
-          : "Satire cards are strictly separated from primary forensic receipts and hosted on Cloudflare R2 (cdn.temu3code.com). Click any card to open & copy PNG in /memes/."
-      }</p>
+      `${t("viewMemeCard")} · #${th.exhibit}`,
+      `<p style="margin-top:0;font-size:13px;color:#5f6368;">${escapeHtml(t("memeModalDesc"))}</p>
       <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;">${cardsHtml}</div>
       <div style="margin-top:14px;display:flex;justify-content:flex-end;">
-        <a class="tool-btn" href="../memes/">${state.lang === "zh" ? "打开全部 61 张梗图库 ↗" : "Open Full 61-Meme Arsenal ↗"}</a>
+        <a class="tool-btn" href="../memes/">${escapeHtml(t("openAllMemes"))}</a>
       </div>`
     );
   }
@@ -939,12 +953,12 @@
 
   function renderActivityView() {
     const metrics = [
-      { num: "3.5+ yrs", label: state.lang === "zh" ? "公开记录时间跨度 (2023.05 – 2026.11)" : "Documented span (May 2023 – Nov 2026)", danger: false },
-      { num: "0.0% vs 8.0%", label: state.lang === "zh" ? "对大厂高管脏话率 vs 对普通开发者" : "Profanity to 20 Big-Tech VIPs vs. ordinary devs", danger: true },
-      { num: "4.0× (14.4%)", label: state.lang === "zh" ? "25 小时危机期人身攻击暴涨倍数" : "Personal insult surge in 25h crisis (3.6% → 14.4%)", danger: true },
-      { num: "1,151", label: state.lang === "zh" ? "17 天全量连续推文取证样本 (75.6% 回复)" : "Consecutive tweets analyzed (75.6% replies)", danger: false },
-      { num: "2.2M / hr", label: state.lang === "zh" ? "Axiom 留存 30 天的含 IP 中继日志量" : "IP-tagged Axiom relay spans kept 30 days", danger: true },
-      { num: "0", label: state.lang === "zh" ? "已发布的 GitHub 安全公告数" : "Published GitHub Security Advisories", danger: true }
+      { num: "3.5+ yrs", label: isZh() ? "公开记录时间跨度 (2023.05 – 2026.11)" : "Documented span (May 2023 – Nov 2026)", danger: false },
+      { num: "0.0% vs 8.0%", label: isZh() ? "对大厂高管脏话率 vs 对普通开发者" : "Profanity to 20 Big-Tech VIPs vs. ordinary devs", danger: true },
+      { num: "4.0× (14.4%)", label: isZh() ? "25 小时危机期人身攻击暴涨倍数" : "Personal insult surge in 25h crisis (3.6% → 14.4%)", danger: true },
+      { num: "1,151", label: isZh() ? "17 天全量连续推文取证样本 (75.6% 回复)" : "Consecutive tweets analyzed (75.6% replies)", danger: false },
+      { num: "2.2M / hr", label: isZh() ? "Axiom 留存 30 天的含 IP 中继日志量" : "IP-tagged Axiom relay spans kept 30 days", danger: true },
+      { num: "0", label: isZh() ? "已发布的 GitHub 安全公告数" : "Published GitHub Security Advisories", danger: true }
     ];
 
     $("#activityMetrics").innerHTML = metrics
@@ -957,10 +971,10 @@
       .join("");
 
     const charts = [
-      { src: "evidence/charts/theo-chart-3-double-standard.png", title: state.lang === "zh" ? "图表 3：选择性礼貌（0.0% VIP vs 8.0% 开发者 vs 14.4% 危机）" : "Chart 3: Selective Politeness Split (0.0% VIP vs. 8.0% Dev vs. 14.4% Crisis)" },
-      { src: "evidence/charts/theo-chart-4-cn-crisis.png", title: state.lang === "zh" ? "图表 4：25 小时三波辱骂升级曲线（4.0× 飙升）" : "Chart 4: 25-Hour Crisis Timeline (4.0× Insult Surge)" },
-      { src: "evidence/charts/theo-chart-1-overview.png", title: state.lang === "zh" ? "图表 1：1,151 条推文构成与 162 vs 0 产品聚焦" : "Chart 1: 1,151-Tweet Corpus & 162 vs. 0 Product Mentions" },
-      { src: "evidence/charts/theo-chart-2-rhythm.png", title: state.lang === "zh" ? "图表 2：24 小时发帖节律与 2.7 分钟中位间隔" : "Chart 2: Circadian Cadence & 2.7m Median Interval" }
+      { src: "evidence/charts/theo-chart-3-double-standard.png", title: isZh() ? "图表 3：选择性礼貌（0.0% VIP vs 8.0% 开发者 vs 14.4% 危机）" : "Chart 3: Selective Politeness Split (0.0% VIP vs. 8.0% Dev vs. 14.4% Crisis)" },
+      { src: "evidence/charts/theo-chart-4-cn-crisis.png", title: isZh() ? "图表 4：25 小时三波辱骂升级曲线（4.0× 飙升）" : "Chart 4: 25-Hour Crisis Timeline (4.0× Insult Surge)" },
+      { src: "evidence/charts/theo-chart-1-overview.png", title: isZh() ? "图表 1：1,151 条推文构成与 162 vs 0 产品聚焦" : "Chart 1: 1,151-Tweet Corpus & 162 vs. 0 Product Mentions" },
+      { src: "evidence/charts/theo-chart-2-rhythm.png", title: isZh() ? "图表 2：24 小时发帖节律与 2.7 分钟中位间隔" : "Chart 2: Circadian Cadence & 2.7m Median Interval" }
     ];
 
     $("#activityCharts").innerHTML = charts
@@ -981,7 +995,7 @@
     const sortedOldest = state.data.threads.slice().sort((a, b) => a.date.localeCompare(b.date));
     $("#activityTimeline").innerHTML = sortedOldest
       .map((th) => {
-        const subject = state.lang === "zh" ? th.subjectZh : th.subject;
+        const subject = isZh() ? th.subjectZh : th.subject;
         return `<div class="timeline-row" data-timeline-id="${th.id}">
           <span class="timeline-date">${escapeHtml(th.date)}</span>
           <div>
@@ -999,26 +1013,27 @@
   }
 
   function renderDriveView() {
+    const openGh = escapeHtml(t("openOnGithub"));
     $("#driveGrid").innerHTML = DOSSIERS.map((d) => {
-      const title = state.lang === "zh" ? d.titleZh : `Dossier ${d.num} · ${d.title}`;
+      const title = isZh() ? d.titleZh : `Dossier ${d.num} · ${d.title}`;
       return `<a class="drive-card" href="${d.url}" target="_blank" rel="noopener noreferrer">
         <span class="photo-card-part">DOSSIER ${d.num}</span>
         <strong style="font-size:14px;">${escapeHtml(title)}</strong>
         <span style="font-size:12.5px;color:#5f6368;">${escapeHtml(d.desc)}</span>
-        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">Open on GitHub ↗</span>
+        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">${openGh}</span>
       </a>`;
     }).join("") + `
       <a class="drive-card" href="https://github.com/realchendahuang/temu3code/blob/main/docs/COMPLETE-SOURCE-INDEX.md" target="_blank" rel="noopener noreferrer">
-        <span class="photo-card-part">MASTER INDEX</span>
-        <strong style="font-size:14px;">327 Canonical Primary Sources</strong>
-        <span style="font-size:12.5px;color:#5f6368;">Every GitHub PR, commit SHA, X post ID, USPTO TSDR serial, and YouTube link verified by CI.</span>
-        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">Open Source Index ↗</span>
+        <span class="photo-card-part">INDEX</span>
+        <strong style="font-size:14px;">${escapeHtml(t("masterIndexTitle"))}</strong>
+        <span style="font-size:12.5px;color:#5f6368;">${escapeHtml(t("masterIndexDesc"))}</span>
+        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">${openGh}</span>
       </a>
       <a class="drive-card" href="https://github.com/realchendahuang/temu3code#2-minute-hardening--cleanup-playbook" target="_blank" rel="noopener noreferrer">
         <span class="photo-card-part">HARDENING</span>
-        <strong style="font-size:14px;">2-Minute Cleanup &amp; Mitigation Playbook</strong>
-        <span style="font-size:12.5px;color:#5f6368;">Hosts sinkhole for ingest.t3.codes, DO_NOT_TRACK=1, SQLite VACUUM, and GitHub OAuth revocation.</span>
-        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">Open Hardening Guide →</span>
+        <strong style="font-size:14px;">${escapeHtml(t("hardeningTitle"))}</strong>
+        <span style="font-size:12.5px;color:#5f6368;">${escapeHtml(t("hardeningDesc"))}</span>
+        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">${openGh}</span>
       </a>
     `;
   }
@@ -1209,9 +1224,9 @@
 - Verbatim Quote / Code Location: ...`;
 
     openModal(
-      state.lang === "zh" ? "提交新的公开证据（严格核验标准）" : "Submit a Verifiable Public Receipt",
+      isZh() ? "提交新的公开证据（严格核验标准）" : "Submit a Verifiable Public Receipt",
       `<p>${
-        state.lang === "zh"
+        isZh()
           ? "本档案箱只收录<strong>可公开核验的一手记录</strong>（公开推文链接、GitHub PR/Issue/Commit、官方档案或带上下文的原图），不收录匿名私信传闻。"
           : "Tmail only indexes <strong>publicly verifiable primary artifacts</strong> (canonical X URLs, GitHub PRs/commits/issues, official filings, or verifiable screenshots). Uncorroborated private rumors are excluded."
       }</p>
@@ -1225,20 +1240,12 @@
 
   function openAboutModal() {
     openModal(
-      state.lang === "zh" ? "关于 Tmail 公共记录收件箱" : "About Tmail Public Record Inbox",
-      `<p>${
-        state.lang === "zh"
-          ? "Tmail 是 <strong>Before You Install T3 Code</strong> 独立开源调查的「收件箱时间线」视图，涵盖 <strong>2023 年 5 月至 2026 年 11 月</strong>共 3.5+ 年的公开记录，支持按日期正序/倒序排序、按人物和主题筛选，以及浏览全部 109 张存档截图。"
-          : "Tmail is the interactive inbox view of <strong>Before You Install T3 Code</strong>, indexing <strong>3.5+ years (May 2023 – Nov 2026)</strong> of verbatim public records for <code>@theo</code> and <code>pingdotgg/t3code</code>."
-      }</p>
-      <ul>
-        <li><strong>100% Static &amp; Zero Telemetry:</strong> No analytics scripts, no cookies, no tracking beacons. Starred items are stored strictly in your browser's <code>localStorage</code>.</li>
-        <li><strong>Verification Standard:</strong> Every thread links directly to canonical X posts, GitHub PRs/commits (checked through <code>ca81b7b9</code>), USPTO TSDR records, and archived screenshots in Git.</li>
-        <li><strong>Keyboard Shortcuts:</strong> <code>⌘K</code> / <code>/</code> to search · <code>Esc</code> to return to inbox · <code>s</code> to star current thread.</li>
-      </ul>
+      t("aboutTitle"),
+      `<p>${escapeHtml(t("aboutBody"))}</p>
       <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
-        <a class="tool-btn" href="${state.reportBase}">Back to Temu3 Home</a>
-        <a class="tool-btn" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">GitHub Repo (CC0 1.0) ↗</a>
+        <a class="tool-btn" href="${state.reportBase}">${escapeHtml(t("openHome"))}</a>
+        <a class="tool-btn" href="../memes/">${escapeHtml(t("openAllMemes"))}</a>
+        <a class="tool-btn" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">${escapeHtml(t("openOnGithub"))}</a>
       </div>`
     );
   }
@@ -1256,8 +1263,8 @@
       blocks.push(`<p><a class="tool-btn" href="${escapeHtml(SUPPORT_CONFIG.githubSponsors)}" target="_blank" rel="noopener noreferrer">GitHub Sponsors ↗</a></p>`);
     }
     openModal(
-      state.lang === "zh" ? SUPPORT_CONFIG.titleZh : SUPPORT_CONFIG.title,
-      `<p>${escapeHtml(state.lang === "zh" ? SUPPORT_CONFIG.noteZh : SUPPORT_CONFIG.note)}</p>${blocks.join("")}`
+      isZh() ? SUPPORT_CONFIG.titleZh : SUPPORT_CONFIG.title,
+      `<p>${escapeHtml(isZh() ? SUPPORT_CONFIG.noteZh : SUPPORT_CONFIG.note)}</p>${blocks.join("")}`
     );
   }
 
@@ -1278,14 +1285,12 @@
       resetFilters();
     });
 
-    $("#langToggleBtn").addEventListener("click", () => {
-      state.lang = state.lang === "en" ? "zh" : "en";
-      try {
-        localStorage.setItem("tmail-lang", state.lang);
-      } catch (_) {}
-      applyI18n();
-      renderAll();
-    });
+    if (SHARED_I18N && $("#langSelect")) {
+      SHARED_I18N.mountLangSelect($("#langSelect"), state.lang, async (next) => {
+        await applyI18n(next);
+        renderAll();
+      });
+    }
 
     $("#aboutBtn").addEventListener("click", openAboutModal);
     $("#composeBtn").addEventListener("click", openSubmitReceiptModal);
@@ -1340,10 +1345,7 @@
     $("#chipFromBtn").addEventListener("click", () => showSearchFilterPopover("from"));
     $("#chipToBtn").addEventListener("click", () => showSearchFilterPopover("to"));
 
-    // Overview collapse
-    $("#overviewToggleBtn").addEventListener("click", () => {
-      $("#overviewBanner").classList.toggle("is-collapsed");
-    });
+    // Overview banner removed for minimal inbox layout
 
     // Folders
     $$(".folder-nav .nav-row").forEach((btn) => {
@@ -1507,9 +1509,9 @@
         state.evidence = await evRes.json();
       }
       loadPersistedState(state.data.threads);
-      applyI18n();
+      await applyI18n(state.lang);
 
-      // Check deep-link ?thread=... or ?sort=oldest
+      // Check deep-link ?thread=..., ?sort=oldest, ?view=photos
       const params = new URLSearchParams(window.location.search);
       if (params.get("sort") === "oldest") {
         state.sort = "oldest";
@@ -1518,10 +1520,10 @@
       const deepThread = params.get("thread");
       if (deepThread && state.data.threads.some((x) => x.id === deepThread)) {
         openThread(deepThread);
-      } else if (window.location.hash === "#photos") {
+      } else if (params.get("view") === "photos" || window.location.hash === "#photos") {
         state.view = "attachments";
         renderAll();
-      } else if (window.location.hash === "#activity") {
+      } else if (params.get("view") === "activity" || window.location.hash === "#activity") {
         state.view = "activity";
         renderAll();
       } else {

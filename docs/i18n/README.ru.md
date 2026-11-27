@@ -1,31 +1,30 @@
-# Прежде чем установить T3 Code
+# Temu3 Code — прежде чем ставить T3 Code
 
 <p align="center">
   <em>Независимый публичный реестр pingdotgg/t3code, основанный на доказательствах: расовые двойные стандарты, вводящая в заблуждение телеметрия, критические уязвимости и коммерческие манипуляции.</em>
 </p>
 
 <p align="center">
-  <a href="https://temu3code.com/"><strong>🌐 Открыть интерактивное визуальное расследование (18 языков)</strong></a>
-  ·
-  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
-  ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 визуальных свидетельств</strong></a>
-  ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 первичных источников</strong></a>
+  <a href="https://temu3code.com/?lang=ru"><strong>🌐 temu3code.com</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=ru"><strong>✉ Ящик Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=ru#x-receipts"><strong>📸 12 оригинальных скриншотов X</strong></a> ·
+  <a href="https://temu3code.com/memes/?lang=ru"><strong>🃏 61 мем</strong></a>
+</p>
+<p align="center">
+  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
+  <a href="../EVIDENCE-INDEX.md"><strong>109 чеков</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 источников</strong></a>
 </p>
 
 <p align="center">
-  <strong>Официальные языки ООН:</strong>
+  <strong>Языки (18):</strong><br />
   <a href="../../README.md">English</a> ·
   <a href="./README.zh-CN.md">简体中文</a> ·
+  <a href="./README.zh-TW.md">繁體中文</a> ·
   <a href="./README.fr.md">Français</a> ·
   <a href="./README.es.md">Español</a> ·
   <a href="./README.ru.md"><strong>Русский</strong></a> ·
-  <a href="./README.ar.md">العربية</a>
-</p>
-<p align="center">
-  <strong>Глобальные версии сообщества:</strong>
-  <a href="./README.zh-TW.md">繁體中文</a> ·
+  <a href="./README.ar.md">العربية</a> ·
   <a href="./README.ja.md">日本語</a> ·
   <a href="./README.ko.md">한국어</a> ·
   <a href="./README.de.md">Deutsch</a> ·
@@ -74,16 +73,16 @@
 
 - **#00 · [Спор об истоках: «Украдите наш код», угрозы из-за названия форка и расовые двойные стандарты](../../cases/ru/00-origin-fork-dispute-and-double-standard.md)** — `📌 Публичный реестр`
   Меньше чем за 11 минут @theo назвал бесплатный MIT-форк китайского разработчика «китайской подделкой» и «Temu3 Code» и пригрозил блокировкой аккаунта на GitHub — а менее чем через 11 часов публично одобрил копирование MIT-кода компаниями стоимостью в триллион долларов из США.
-  [Открыть материал полностью](../../cases/ru/00-origin-fork-dispute-and-double-standard.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125062675147448475)
+  [Открыть материал полностью](../../cases/ru/00-origin-fork-dispute-and-double-standard.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125062675147448475)
 - **#14 · [Количественный датасет из 1 151 твита: избирательная вежливость и 4,0-кратный всплеск антикитайского кризиса](../../cases/ru/14-1151-tweet-quantitative-double-standard.md)** — `📌 Публичный реестр`
   Исчерпывающий количественный анализ 1 151 последовательного поста @theo в X (7–24 ноября 2026 года) доказывает резкую асимметрию власти: 0,0% нецензурной брани в адрес 20 топ-менеджеров крупных технологических компаний и сотрудников лабораторий против 8,0% враждебности по отношению к рядовым разработчикам — с ростом в 4,0 раза до 14,4% во время 25-часового спора вокруг китайского форка.
-  [Открыть материал полностью](../../cases/ru/14-1151-tweet-quantitative-double-standard.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125404517697290438)
+  [Открыть материал полностью](../../cases/ru/14-1151-tweet-quantitative-double-standard.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125404517697290438)
 - **#15 · [Ноль товарных знаков USPTO за угрозой блокировки на GitHub и `TRADEMARK.md`, добавленный задним числом через 17 часов](../../cases/ru/15-zero-uspto-trademarks-and-retroactive-policy.md)** — `📌 Публичный реестр`
   Когда @theo пригрозил обратиться в GitHub, чтобы заблокировать аккаунт китайского разработчика за «нарушение прав на товарный знак», у T3 Tools Inc. не было ни одной регистрации в USPTO на `T3 Code`, `T3 Tools` или `T3 Connect` — а `TRADEMARK.md` был добавлен задним числом через 17 часов.
-  [Открыть материал полностью](../../cases/ru/15-zero-uspto-trademarks-and-retroactive-policy.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125408163273080950)
+  [Открыть материал полностью](../../cases/ru/15-zero-uspto-trademarks-and-retroactive-policy.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125408163273080950)
 - **#16 · [Двухлетняя историческая закономерность: волны травли по национальному признаку, награда в $20 тыс. за FFmpeg и удалённые угрозы](../../cases/ru/16-two-year-pattern-of-bullying-and-deletions.md)** — `📌 Публичный реестр`
   Вспышка вокруг китайского форка в ноябре 2026 года не была единичным срывом — публичные записи с 2024 по 2026 год фиксируют повторяющийся цикл: травля по национальному признаку, издевательства в open source, насмешки над интерфейсами других разработчиков и удаление постов после волны критики.
-  [Открыть материал полностью](../../cases/ru/16-two-year-pattern-of-bullying-and-deletions.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125408843152953693)
+  [Открыть материал полностью](../../cases/ru/16-two-year-pattern-of-bullying-and-deletions.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125408843152953693)
 
 ### Часть II · Вводящая в заблуждение телеметрия и нарушения приватности
 
@@ -91,16 +90,16 @@
 
 - **#01 · [Телеметрия по умолчанию за обещанием "No Telemetry" на главной странице](../../cases/ru/01-default-telemetry-and-cross-tool-tracking.md)** — `🟡 Частично исправлено`
   Пока на главной странице обещали *"No telemetry. Unless you opt in. Full stop."*, T3 Code включил отслеживание PostHog по умолчанию, направлял сырые копии через закрытый `ingest.t3.codes`, хешировал внешние учетные данные `~/.codex` и `~/.claude.json` и отклонил четыре PR сообщества об отказе от телеметрии.
-  [Открыть материал полностью](../../cases/ru/01-default-telemetry-and-cross-tool-tracking.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125153472450527440)
+  [Открыть материал полностью](../../cases/ru/01-default-telemetry-and-cross-tool-tracking.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125153472450527440)
 - **#07 · [Противоречие управляемой политики: четыре задокументированных слепых зоны телеметрии](../../cases/ru/07-managed-policy-blind-spots.md)** — `🔴 Не исправлено`
   @theo утверждал, что в T3 Code «best corporate managed policy system», благодаря которой «trivial to turn off all telemetry», — что напрямую опровергается собственными файлами T3 Code `docs/user/telemetry.md` и `docs/user/managed-policy.md`.
-  [Открыть материал полностью](../../cases/ru/07-managed-policy-blind-spots.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125391659492081947)
+  [Открыть материал полностью](../../cases/ru/07-managed-policy-blind-spots.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125391659492081947)
 - **#11 · [Разъяснение от 25 ноября опровергнуто в течение 2 часов ночными PR и дампом на 100 МБ](../../cases/ru/11-nov25-clarification-contradicted-in-2-hours.md)** — `🟡 Частично исправлено`
   Утром 25 ноября @theo выступил с тремя широкими заверениями о приватности и опубликовал дамп телеметрии на 100 МБ — все три утверждения были опровергнуты в течение двух часов PR его собственной команды и самим gzip-архивом.
-  [Открыть материал полностью](../../cases/ru/11-nov25-clarification-contradicted-in-2-hours.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125394810559426993)
+  [Открыть материал полностью](../../cases/ru/11-nov25-clarification-contradicted-in-2-hours.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125394810559426993)
 - **#12 · [Шестичасовая ночная гонка после GDPR: 2,2 млн IP-логов в час и сломанное удаление аккаунтов](../../cases/ru/12-post-gdpr-overnight-blitz-2m-ip-logs.md)** — `🟡 Частично исправлено`
   После подачи официальной жалобы по GDPR в ЕС 24 ноября шесть часов экстренных ночных патчей невольно вскрыли четыре более глубокие проблемы с приватностью — главная из них: 2,2 млн спанов Axiom в час с привязкой к IP, хранящихся 30 дней.
-  [Открыть материал полностью](../../cases/ru/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125395501663281198)
+  [Открыть материал полностью](../../cases/ru/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125395501663281198)
 
 ### Часть III · Дефекты продукта и критические уязвимости
 
@@ -108,22 +107,22 @@
 
 - **#02 · [Фальшивое удаление тредов в SQLite (раздувание до 41.6 ГБ) и пятисекундное сканирование всех процессов ОС](../../cases/ru/02-fake-sqlite-delete-and-process-scanner.md)** — `🟡 Частично исправлено`
   Нажатие «удалить навсегда» оставляло полную историю переписки внутри `statev2.sqlite` (раздувая локальные диски до 41.6 ГБ), а фоновый монитор на Rust каждые 5 секунд сканировал все процессы ОС вместе с полными командными строками, без возможности отказаться.
-  [Открыть материал полностью](../../cases/ru/02-fake-sqlite-delete-and-process-scanner.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125160473176023486)
+  [Открыть материал полностью](../../cases/ru/02-fake-sqlite-delete-and-process-scanner.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125160473176023486)
 - **#03 · [52 дня молчаливого `git push --force` против 21 часа на удаление фильтра приватности моделей](../../cases/ru/03-silent-force-push-vs-21h-filter-removal.md)** — `🔴 Не исправлено`
   Более 52 дней T3 Code держал открытым баг, при котором режим Claude Auto молча одобрял `git push --force origin main`, не запрашивая подтверждения, — и при этом ему понадобился всего 21 час, чтобы убрать белый список приватности, из-за чего приватные модели появились в публичном лидерборде @theo.
-  [Открыть материал полностью](../../cases/ru/03-silent-force-push-vs-21h-filter-removal.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125201882687881378)
+  [Открыть материал полностью](../../cases/ru/03-silent-force-push-vs-21h-filter-removal.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125201882687881378)
 - **#04 · [Подмена заголовков Google Antigravity, фиктивный `SSH_CONNECTION` и блокировка аккаунта за 3 минуты](../../cases/ru/04-antigravity-spoofing-and-3-minute-bans.md)** — `🔴 Не исправлено`
   Несмотря на гарантии соблюдения ToS в своём FAQ, T3 Code извлекает учётные данные из связки ключей ОС, подменяет внутренние заголовки Google (`antigravity/hub/2.24.0`) при обращении к `v1internal` и подставляет фиктивные значения `SSH_CONNECTION` — подвергая личные подписки Google риску быстрых блокировок.
-  [Открыть материал полностью](../../cases/ru/04-antigravity-spoofing-and-3-minute-bans.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125213397507858657)
+  [Открыть материал полностью](../../cases/ru/04-antigravity-spoofing-and-3-minute-bans.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125213397507858657)
 - **#05 · [T3 Connect: полное отсутствие сквозного шифрования и шлюз с терминацией TLS, пропускающий открытый текст](../../cases/ru/05-t3-connect-zero-e2e-plaintext-relay.md)** — `🔴 Не исправлено`
   Каждый промпт, исходный файл и поток терминала, проходящие через T3 Connect, обрабатываются в открытом виде внутри инфраструктуры, контролируемой T3, — при полном отсутствии сквозного шифрования и одобрении устройств, отключённом по умолчанию.
-  [Открыть материал полностью](../../cases/ru/05-t3-connect-zero-e2e-plaintext-relay.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125218189596676555)
+  [Открыть материал полностью](../../cases/ru/05-t3-connect-zero-e2e-plaintext-relay.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125218189596676555)
 - **#13 · [Ноль опубликованных GitHub Security Advisories, молчаливые патчи высокой критичности и поспешный `SECURITY.md`](../../cases/ru/13-zero-security-advisories-and-silent-patches.md)** — `🔴 Не исправлено`
   Отмахиваясь на X от китайских аудиторов исходного кода, T3 Code тихо вливал исправления уязвимостей высокой критичности — включая path traversal в хранилище секретов, утечки токенов между доменами и выполнение команд из недоверенных репозиториев — при этом число опубликованных GitHub Security Advisories оставалось равным 0.
-  [Открыть материал полностью](../../cases/ru/13-zero-security-advisories-and-silent-patches.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125395980354994414)
+  [Открыть материал полностью](../../cases/ru/13-zero-security-advisories-and-silent-patches.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125395980354994414)
 - **#19 · [`ca81b7b9` Критический аудит аутентификации и выполнения в репозитории: 30-дневная оболочка по открытому HTTP в LAN, неотзываемые токены и утечка `SSH_AUTH_SOCK`](../../cases/ru/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md)** — `🔴 Не исправлено`
   Построчная проверка последнего HEAD ветки `main` (`ca81b7b9`, 25 ноября 14:49 CST) подтвердила пять активных брешей в безопасности и надёжности: 30-дневные куки оболочки в открытом виде при `--lan` с обходом при отсутствии `Origin`, неотзываемые Bearer-токены на 30 дней, воспроизводимые URL с `?wsTicket=`, `isIPv4`, убивающий туннели `::1`, и недоверенные репозитории, исполняющие хуки и сабмодули с унаследованными `SSH_AUTH_SOCK` и `GITHUB_TOKEN`.
-  [Открыть материал полностью](../../cases/ru/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125494234614788390)
+  [Открыть материал полностью](../../cases/ru/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125494234614788390)
 
 ### Часть IV · Коммерческие манипуляции и давление на сообщество
 
@@ -131,22 +130,22 @@
 
 - **#06 · [Конфликты ангельского инвестора: насмешки над закрытием Vibe Kanban и пересечение с Daytona](../../cases/ru/06-angel-investor-conflicts-vibe-kanban-daytona.md)** — `📌 Публичный реестр`
   Помимо дефектов кода, публичные посты @theo в X документируют острые конфликты между его ролью ангельского инвестора в конкурирующих стартапах, делающих инструменты для разработчиков, и его управлением T3 Code.
-  [Открыть материал полностью](../../cases/ru/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125385742243520653)
+  [Открыть материал полностью](../../cases/ru/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125385742243520653)
 - **#08 · [Бизнес-бухгалтерия на $800 000+ и радар ежедневных вычислений на 31,7 трлн токенов](../../cases/ru/08-800k-spend-and-31t-token-radar.md)** — `📌 Публичный реестр`
   Телеметрия, включённая по умолчанию, была не инженерным недосмотром: она финансировала разведывательный радар в реальном времени на 31,7 трлн токенов в день (эквивалент $10,19 млн в день на API), который обменивался на $300 тыс.+ бесплатных ранних токенов OpenAI и выходы на инвесторов.
-  [Открыть материал полностью](../../cases/ru/08-800k-spend-and-31t-token-radar.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125392410763239723)
+  [Открыть материал полностью](../../cases/ru/08-800k-spend-and-31t-token-radar.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125392410763239723)
 - **#09 · [Внутренние `yolo merges` против внешней враждебности к сообществу и банов через `.github/VOUCHED.td`](../../cases/ru/09-yolo-merges-vs-community-hostility.md)** — `📌 Публичный реестр`
   Внутри T3 Code выпускал по 500 коммитов в день через автоматизированные агентские циклы и признавал, что «yolo merges breaking shit» — а снаружи говорил контрибьюторам «here's my advice: Don't», предавал пользователей публичному осуждению через `.github/VOUCHED.td` и оскорблял тех, кто сообщал об ошибках.
-  [Открыть материал полностью](../../cases/ru/09-yolo-merges-vs-community-hostility.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125392916369871309)
+  [Открыть материал полностью](../../cases/ru/09-yolo-merges-vs-community-hostility.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125392916369871309)
 - **#10 · [Публичный скрапинг форков через `@bot`, насмешки над конкурентами и подавление критиков](../../cases/ru/10-fork-scraping-bot-and-critics-suppression.md)** — `📌 Публичный реестр`
   Высмеивая конкурентов за копирование UI-паттернов, @theo публично ответил «Okay I'm stealing this» на форк разработчицы и через 30 секунд отправил @bot скрапить её код — параллельно разворачивая автоблокировщики и призывая подписчиков лишить критиков монетизации.
-  [Открыть материал полностью](../../cases/ru/10-fork-scraping-bot-and-critics-suppression.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125393641665671593)
+  [Открыть материал полностью](../../cases/ru/10-fork-scraping-bot-and-critics-suppression.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125393641665671593)
 - **#17 · [Спонсорские связки в стеке, эксплуатация бага 0% квоты Codex и лицемерие `CLIProxyAPI` с 10 аккаунтами](../../cases/ru/17-sponsor-stack-and-quota-exploit-hypocrisy.md)** — `📌 Публичный реестр`
   Проповедуя комплаенс и отказываясь от встроенного переключения аккаунтов из-за риска блокировок, T3 Code встраивает в свой облачный стек YouTube-спонсоров @theo (Clerk и Axiom), тогда как сам @theo хвастался эксплуатацией бага 0% квоты Codex и опубликовал Gist с объединением 10 аккаунтов через `CLIProxyAPI`, на который напрямую ссылается FAQ T3.
-  [Открыть материал полностью](../../cases/ru/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2023-05-sponsor-roster) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125411353393553744)
+  [Открыть материал полностью](../../cases/ru/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2023-05-sponsor-roster&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125411353393553744)
 - **#18 · [Воронка на 77 000 звёзд: звёзды за 30-секундный простой под учётными данными хоста и неисправленный баг с произвольным репозиторием](../../cases/ru/18-77k-star-funnel-and-arbitrary-repo-starring.md)** — `🔴 Не исправлено`
   Спустя шесть месяцев после того, как он назвал звёзды GitHub способом "to trick VCs into investing", @theo сам смёржил внутриинтерфейсный тост по 30-секундному простою, который шлёт `PUT user/starred/...` с учётными данными GitHub хоста, — и это подбросило репозиторий с 30k до 77k звёзд (при ~129 watchers), тогда как баг со звёздами произвольным репозиториям так и остался неисправленным.
-  [Открыть материал полностью](../../cases/ru/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125416210120765799)
+  [Открыть материал полностью](../../cases/ru/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [Интерактивная карточка](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars&lang=ru) · [Оригинальный пост в X](https://x.com/realchendahuang/status/2125416210120765799)
 
 ---
 

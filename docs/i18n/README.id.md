@@ -1,31 +1,30 @@
-# Sebelum Anda Memasang T3 Code
+# Temu3 Code — Sebelum Memasang T3 Code
 
 <p align="center">
   <em>Catatan publik independen yang mengutamakan bukti atas pingdotgg/t3code — mendokumentasikan standar ganda rasial, telemetri yang menyesatkan, cacat keamanan kritis, dan manipulasi komersial.</em>
 </p>
 
 <p align="center">
-  <a href="https://temu3code.com/"><strong>🌐 Buka Investigasi Visual Interaktif (18 Bahasa)</strong></a>
-  ·
-  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
-  ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 Bukti Visual</strong></a>
-  ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 Sumber Primer</strong></a>
+  <a href="https://temu3code.com/?lang=id"><strong>🌐 temu3code.com</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=id"><strong>✉ Kotak Masuk Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=id#x-receipts"><strong>📸 12 Foto X Asli</strong></a> ·
+  <a href="https://temu3code.com/memes/?lang=id"><strong>🃏 61 Meme</strong></a>
+</p>
+<p align="center">
+  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
+  <a href="../EVIDENCE-INDEX.md"><strong>109 Bukti</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 Sumber</strong></a>
 </p>
 
 <p align="center">
-  <strong>Bahasa Resmi PBB:</strong>
+  <strong>Bahasa (18):</strong><br />
   <a href="../../README.md">English</a> ·
   <a href="./README.zh-CN.md">简体中文</a> ·
+  <a href="./README.zh-TW.md">繁體中文</a> ·
   <a href="./README.fr.md">Français</a> ·
   <a href="./README.es.md">Español</a> ·
   <a href="./README.ru.md">Русский</a> ·
-  <a href="./README.ar.md">العربية</a>
-</p>
-<p align="center">
-  <strong>Edisi Komunitas Global:</strong>
-  <a href="./README.zh-TW.md">繁體中文</a> ·
+  <a href="./README.ar.md">العربية</a> ·
   <a href="./README.ja.md">日本語</a> ·
   <a href="./README.ko.md">한국어</a> ·
   <a href="./README.de.md">Deutsch</a> ·
@@ -74,16 +73,16 @@ Setiap bukti di bawah ini tertaut ke berkas bukti terlokalisasi khusus yang tanp
 
 - **#00 · [Sengketa Asal-Usul: "Steal Our Code", Ancaman Penamaan Fork & Standar Ganda Rasial](../../cases/id/00-origin-fork-dispute-and-double-standard.md)** — `📌 Catatan Publik`
   Dalam waktu 11 menit, @theo menyebut fork MIT gratis milik pengembang Tiongkok sebagai "Chinese knockoff" dan "Temu3 Code" serta mengancam akan memblokir akun GitHub — lalu secara terbuka menyambut perusahaan-perusahaan Amerika bernilai triliunan dolar yang menyalin kode MIT kurang dari 11 jam kemudian.
-  [Buka bukti lengkap](../../cases/id/00-origin-fork-dispute-and-double-standard.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat) · [Unggahan X asli](https://x.com/realchendahuang/status/2125062675147448475)
+  [Buka bukti lengkap](../../cases/id/00-origin-fork-dispute-and-double-standard.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125062675147448475)
 - **#14 · [Dataset Kuantitatif 1.151 Tweet: Kesopanan Selektif & Lonjakan Krisis Anti-Tiongkok 4,0×](../../cases/id/14-1151-tweet-quantitative-double-standard.md)** — `📌 Catatan Publik`
   Analisis kuantitatif menyeluruh atas 1.151 unggahan @theo di X secara berurutan (7–24 November 2026) membuktikan asimetri kekuasaan yang mencolok: 0,0% makian terhadap 20 eksekutif big-tech dan staf lab vs. 8,0% permusuhan terhadap pengembang biasa — melonjak 4,0× menjadi 14,4% selama perselisihan fork Tiongkok berdurasi 25 jam.
-  [Buka bukti lengkap](../../cases/id/14-1151-tweet-quantitative-double-standard.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips) · [Unggahan X asli](https://x.com/realchendahuang/status/2125404517697290438)
+  [Buka bukti lengkap](../../cases/id/14-1151-tweet-quantitative-double-standard.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125404517697290438)
 - **#15 · [Nol Merek Dagang USPTO di Balik Ancaman Larangan GitHub & `TRADEMARK.md` yang Dibuat Surut 17 Jam Kemudian](../../cases/id/15-zero-uspto-trademarks-and-retroactive-policy.md)** — `📌 Catatan Publik`
   Ketika @theo mengancam akan menghubungi GitHub untuk menangguhkan akun seorang pengembang Tiongkok karena "pelanggaran merek dagang", T3 Tools Inc. tidak memiliki satu pun pendaftaran USPTO untuk `T3 Code`, `T3 Tools`, atau `T3 Connect` — dan menggabungkan `TRADEMARK.md` secara surut 17 jam kemudian.
-  [Buka bukti lengkap](../../cases/id/15-zero-uspto-trademarks-and-retroactive-policy.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker) · [Unggahan X asli](https://x.com/realchendahuang/status/2125408163273080950)
+  [Buka bukti lengkap](../../cases/id/15-zero-uspto-trademarks-and-retroactive-policy.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125408163273080950)
 - **#16 · [Pola Historis Dua Tahun: Serangan Balik Bernuansa Kebangsaan, Bounty FFmpeg $20k & Ancaman yang Dihapus](../../cases/id/16-two-year-pattern-of-bullying-and-deletions.md)** — `📌 Catatan Publik`
   Ledakan emosional fork China pada November 2026 bukan kekhilafan yang berdiri sendiri — catatan publik dari 2024 hingga 2026 mendokumentasikan siklus berulang berupa pelecehan yang menyasar kebangsaan, perundungan open-source, olok-olok terhadap UI pengembang lain, dan penghapusan unggahan setelah serangan balik.
-  [Buka bukti lengkap](../../cases/id/16-two-year-pattern-of-bullying-and-deletions.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty) · [Unggahan X asli](https://x.com/realchendahuang/status/2125408843152953693)
+  [Buka bukti lengkap](../../cases/id/16-two-year-pattern-of-bullying-and-deletions.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125408843152953693)
 
 ### Bagian II · Telemetri Menyesatkan & Pelanggaran Privasi
 
@@ -91,16 +90,16 @@ Setiap bukti di bawah ini tertaut ke berkas bukti terlokalisasi khusus yang tanp
 
 - **#01 · [Telemetri Default di Balik Janji "No Telemetry" pada Halaman Depan](../../cases/id/01-default-telemetry-and-cross-tool-tracking.md)** — `🟡 Sebagian Ditambal`
   Saat halaman depannya menjanjikan *"No telemetry. Unless you opt in. Full stop."*, T3 Code mengaktifkan pelacakan PostHog secara default, mengalirkan salinan mentah lewat `ingest.t3.codes` yang closed-source, melakukan hashing terhadap kredensial eksternal `~/.codex` dan `~/.claude.json`, serta menolak empat PR opt-out dari komunitas.
-  [Buka bukti lengkap](../../cases/id/01-default-telemetry-and-cross-tool-tracking.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry) · [Unggahan X asli](https://x.com/realchendahuang/status/2125153472450527440)
+  [Buka bukti lengkap](../../cases/id/01-default-telemetry-and-cross-tool-tracking.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125153472450527440)
 - **#07 · [Kontradiksi Managed Policy: Empat Titik Buta Telemetri yang Terdokumentasi](../../cases/id/07-managed-policy-blind-spots.md)** — `🔴 Belum Diperbaiki`
   @theo mengklaim T3 Code punya "best corporate managed policy system" sehingga "trivial to turn off all telemetry" — dikontradiksi langsung oleh `docs/user/telemetry.md` dan `docs/user/managed-policy.md` milik T3 Code sendiri.
-  [Buka bukti lengkap](../../cases/id/07-managed-policy-blind-spots.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Unggahan X asli](https://x.com/realchendahuang/status/2125391659492081947)
+  [Buka bukti lengkap](../../cases/id/07-managed-policy-blind-spots.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125391659492081947)
 - **#11 · [Klarifikasi 25 November Dibantah dalam 2 Jam oleh PR Semalam & Dump 100 MB](../../cases/id/11-nov25-clarification-contradicted-in-2-hours.md)** — `🟡 Sebagian Ditambal`
   Pada pagi 25 November, @theo menyampaikan tiga jaminan privasi yang bersifat menyeluruh dan merilis dump telemetri berukuran 100 MB — ketiga klaim itu dibantah dalam waktu dua jam oleh PR timnya sendiri dan oleh isi dump terkompresi gzip tersebut.
-  [Buka bukti lengkap](../../cases/id/11-nov25-clarification-contradicted-in-2-hours.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Unggahan X asli](https://x.com/realchendahuang/status/2125394810559426993)
+  [Buka bukti lengkap](../../cases/id/11-nov25-clarification-contradicted-in-2-hours.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125394810559426993)
 - **#12 · [Blitz Tengah Malam Enam Jam Pasca-GDPR: Log IP 2,2 Juta/Jam & Penghapusan Akun yang Rusak](../../cases/id/12-post-gdpr-overnight-blitz-2m-ip-logs.md)** — `🟡 Sebagian Ditambal`
   Setelah keluhan resmi GDPR Uni Eropa diajukan pada 24 November, enam jam tambalan darurat sepanjang malam tanpa sengaja memunculkan empat pengungkapan privasi yang lebih dalam — terutama span Axiom bertanda IP sebanyak 2,2 juta/jam yang disimpan selama 30 hari.
-  [Buka bukti lengkap](../../cases/id/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Unggahan X asli](https://x.com/realchendahuang/status/2125395501663281198)
+  [Buka bukti lengkap](../../cases/id/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125395501663281198)
 
 ### Bagian III · Cacat Produk & Cacat Keamanan Kritis
 
@@ -108,22 +107,22 @@ Setiap bukti di bawah ini tertaut ke berkas bukti terlokalisasi khusus yang tanp
 
 - **#02 · [Penghapusan Thread SQLite Palsu (Pembengkakan 41,6 GB) & Pemindaian Proses Seluruh OS Setiap 5 Detik](../../cases/id/02-fake-sqlite-delete-and-process-scanner.md)** — `🟡 Sebagian Ditambal`
   Menekan "hapus permanen" meninggalkan seluruh riwayat percakapan utuh di dalam `statev2.sqlite` (membengkakkan disk lokal hingga 41,6 GB), sementara pemantau Rust di latar belakang memindai setiap proses OS dan baris perintah lengkapnya setiap 5 detik tanpa opsi untuk mematikannya.
-  [Buka bukti lengkap](../../cases/id/02-fake-sqlite-delete-and-process-scanner.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy) · [Unggahan X asli](https://x.com/realchendahuang/status/2125160473176023486)
+  [Buka bukti lengkap](../../cases/id/02-fake-sqlite-delete-and-process-scanner.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125160473176023486)
 - **#03 · [52 Hari `git push --force` Senyap vs. 21 Jam Penghapusan Filter Privasi Model](../../cases/id/03-silent-force-push-vs-21h-filter-removal.md)** — `🔴 Belum Diperbaiki`
   Selama 52+ hari, T3 Code membiarkan sebuah bug tetap terbuka di mana mode Claude Auto diam-diam menyetujui `git push --force origin main` tanpa meminta konfirmasi — namun hanya butuh 21 jam untuk mencabut whitelist privasi agar model privat muncul di leaderboard publik @theo.
-  [Buka bukti lengkap](../../cases/id/03-silent-force-push-vs-21h-filter-removal.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push) · [Unggahan X asli](https://x.com/realchendahuang/status/2125201882687881378)
+  [Buka bukti lengkap](../../cases/id/03-silent-force-push-vs-21h-filter-removal.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125201882687881378)
 - **#04 · [Pemalsuan Header Google Antigravity, `SSH_CONNECTION` Palsu & Larangan Akun dalam 3 Menit](../../cases/id/04-antigravity-spoofing-and-3-minute-bans.md)** — `🔴 Belum Diperbaiki`
   Meski menjamin kepatuhan ToS di FAQ-nya, T3 Code mengekstrak kredensial keyring OS, memalsukan header internal Google (`antigravity/hub/2.24.0`) ke endpoint `v1internal`, dan menyuntikkan nilai `SSH_CONNECTION` palsu — membuat langganan Google pribadi rentan dilarang dalam hitungan menit.
-  [Buka bukti lengkap](../../cases/id/04-antigravity-spoofing-and-3-minute-bans.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban) · [Unggahan X asli](https://x.com/realchendahuang/status/2125213397507858657)
+  [Buka bukti lengkap](../../cases/id/04-antigravity-spoofing-and-3-minute-bans.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125213397507858657)
 - **#05 · [T3 Connect: Nol Enkripsi End-to-End & Gateway Terminasi TLS Plaintext](../../cases/id/05-t3-connect-zero-e2e-plaintext-relay.md)** — `🔴 Belum Diperbaiki`
   Setiap prompt, berkas sumber, dan aliran terminal yang melewati T3 Connect berakhir sebagai plaintext di dalam infrastruktur yang dikendalikan T3 — tanpa enkripsi end-to-end sama sekali dan dengan persetujuan perangkat yang secara bawaan mati.
-  [Buka bukti lengkap](../../cases/id/05-t3-connect-zero-e2e-plaintext-relay.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Unggahan X asli](https://x.com/realchendahuang/status/2125218189596676555)
+  [Buka bukti lengkap](../../cases/id/05-t3-connect-zero-e2e-plaintext-relay.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125218189596676555)
 - **#13 · [Nol Security Advisory GitHub, Patch Severity Tinggi yang Senyap & `SECURITY.md` yang Terburu-buru](../../cases/id/13-zero-security-advisories-and-silent-patches.md)** — `🔴 Belum Diperbaiki`
   Saat meremehkan auditor kode sumber Tiongkok di X, T3 Code diam-diam menggabungkan perbaikan kerentanan severity tinggi — termasuk path traversal pada secret store, kebocoran token lintas domain, dan eksekusi perintah dari repo tak tepercaya — sambil membiarkan Security Advisory GitHub yang terbit tetap 0.
-  [Buka bukti lengkap](../../cases/id/13-zero-security-advisories-and-silent-patches.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Unggahan X asli](https://x.com/realchendahuang/status/2125395980354994414)
+  [Buka bukti lengkap](../../cases/id/13-zero-security-advisories-and-silent-patches.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125395980354994414)
 - **#19 · [`ca81b7b9` Audit Kritis Autentikasi & Eksekusi Repo: Shell LAN Plaintext 30 Hari, Token Tanpa Pencabutan & Paparan `SSH_AUTH_SOCK`](../../cases/id/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md)** — `🔴 Belum Diperbaiki`
   Verifikasi baris demi baris terhadap `main` HEAD terbaru (`ca81b7b9`, 25 Nov 14:49 CST) mengonfirmasi lima cacat keamanan dan keandalan yang masih aktif: cookie shell `--lan` plaintext berumur 30 hari dengan bypass `Origin` yang hilang, token Bearer 30 hari yang tak dapat dicabut, URL `?wsTicket=` yang dapat diputar ulang, `isIPv4` yang mematikan tunnel `::1`, serta repositori tak tepercaya yang mengeksekusi hook/submodule dengan `SSH_AUTH_SOCK` dan `GITHUB_TOKEN` warisan.
-  [Buka bukti lengkap](../../cases/id/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Unggahan X asli](https://x.com/realchendahuang/status/2125494234614788390)
+  [Buka bukti lengkap](../../cases/id/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125494234614788390)
 
 ### Bagian IV · Manipulasi Komersial & Intimidasi Komunitas
 
@@ -131,22 +130,22 @@ Setiap bukti di bawah ini tertaut ke berkas bukti terlokalisasi khusus yang tanp
 
 - **#06 · [Konflik Investor Angel: Ejekan Penutupan Vibe Kanban & Tumpang Tindih Daytona](../../cases/id/06-angel-investor-conflicts-vibe-kanban-daytona.md)** — `📌 Catatan Publik`
   Di luar cacat kode, unggahan publik @theo di X mendokumentasikan konflik tajam antara perannya sebagai investor angel di startup pengembang yang bersaing dan pengelolaan T3 Code olehnya.
-  [Buka bukti lengkap](../../cases/id/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona) · [Unggahan X asli](https://x.com/realchendahuang/status/2125385742243520653)
+  [Buka bukti lengkap](../../cases/id/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125385742243520653)
 - **#08 · [Buku Besar Bisnis Senilai $800 Ribu+ & Radar Komputasi Harian 31,7 Triliun Token](../../cases/id/08-800k-spend-and-31t-token-radar.md)** — `📌 Catatan Publik`
   Telemetri yang aktif secara default bukanlah kelalaian teknis: ia membiayai radar intelijen real-time berkapasitas 31,7 triliun token/hari (setara pengeluaran API $10,19 juta/hari) yang ditukar dengan token early-access OpenAI gratis senilai $300 ribu+ dan pendekatan kepada investor.
-  [Buka bukti lengkap](../../cases/id/08-800k-spend-and-31t-token-radar.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar) · [Unggahan X asli](https://x.com/realchendahuang/status/2125392410763239723)
+  [Buka bukti lengkap](../../cases/id/08-800k-spend-and-31t-token-radar.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125392410763239723)
 - **#09 · [`yolo merges` Internal vs. Permusuhan Komunitas Eksternal & Larangan `.github/VOUCHED.td`](../../cases/id/09-yolo-merges-vs-community-hostility.md)** — `📌 Catatan Publik`
   Secara internal, T3 Code mengirim 500 commit/hari melalui loop agen otomatis dan mengakui "yolo merges breaking shit" — sementara secara eksternal memberi tahu kontributor "here's my advice: Don't", mengecam pengguna lewat `.github/VOUCHED.td`, dan menghina pelapor issue.
-  [Buka bukti lengkap](../../cases/id/09-yolo-merges-vs-community-hostility.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult) · [Unggahan X asli](https://x.com/realchendahuang/status/2125392916369871309)
+  [Buka bukti lengkap](../../cases/id/09-yolo-merges-vs-community-hostility.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125392916369871309)
 - **#10 · [Pengambilan Kode Fork Publik lewat `@bot`, Ejekan terhadap Pesaing & Penindasan Kritikus](../../cases/id/10-fork-scraping-bot-and-critics-suppression.md)** — `📌 Catatan Publik`
   Sambil mengejek para pesaing karena meniru pola UI, @theo secara publik membalas *"Okay I'm stealing this"* kepada pengembang yang membuat fork dan mengerahkan `@bot` 30 detik kemudian untuk mengambil kodenya — sekaligus memasang pemblokir otomatis dan mendesak pengikutnya agar mematikan monetisasi kritikus.
-  [Buka bukti lengkap](../../cases/id/10-fork-scraping-bot-and-critics-suppression.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork) · [Unggahan X asli](https://x.com/realchendahuang/status/2125393641665671593)
+  [Buka bukti lengkap](../../cases/id/10-fork-scraping-bot-and-critics-suppression.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125393641665671593)
 - **#17 · [Keterikatan Sponsor Stack, Eksploitasi Kuota 0% Codex & Kemunafikan `CLIProxyAPI` 10 Akun](../../cases/id/17-sponsor-stack-and-quota-exploit-hypocrisy.md)** — `📌 Catatan Publik`
   Sambil mengkampanyekan kepatuhan dan menolak fitur pergantian akun bawaan karena risiko banned, T3 Code menyematkan sponsor YouTube @theo (Clerk dan Axiom) ke dalam cloud stack-nya, sementara @theo membanggakan eksploitasi bug kuota 0% Codex dan menerbitkan Gist `CLIProxyAPI` berisi 10 akun yang ditautkan langsung dari FAQ T3.
-  [Buka bukti lengkap](../../cases/id/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2023-05-sponsor-roster) · [Unggahan X asli](https://x.com/realchendahuang/status/2125411353393553744)
+  [Buka bukti lengkap](../../cases/id/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2023-05-sponsor-roster&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125411353393553744)
 - **#18 · [Corong 77.000 Bintang: Pemberian Bintang Memakai Kredensial Host Saat Idle 30 Detik & Bug Repo Sewenang-wenang yang Tak Kunjung Diperbaiki](../../cases/id/18-77k-star-funnel-and-arbitrary-repo-starring.md)** — `🔴 Belum Diperbaiki`
   Enam bulan setelah mengecam bintang GitHub sebagai cara "to trick VCs into investing", @theo melakukan self-merge atas toast in-app yang muncul setelah idle 30 detik dan memicu `PUT user/starred/...` memakai kredensial GitHub host — melambungkan repo dari 30 ribu ke 77 ribu bintang (dengan ~129 watcher), sementara bug pemberian bintang ke repo sewenang-wenang dibiarkan tak diperbaiki.
-  [Buka bukti lengkap](../../cases/id/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars) · [Unggahan X asli](https://x.com/realchendahuang/status/2125416210120765799)
+  [Buka bukti lengkap](../../cases/id/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [Kartu interaktif](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars&lang=id) · [Unggahan X asli](https://x.com/realchendahuang/status/2125416210120765799)
 
 ---
 

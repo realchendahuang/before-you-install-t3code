@@ -1,31 +1,30 @@
-# Trước khi bạn cài T3 Code
+# Temu3 Code — Trước khi cài T3 Code
 
 <p align="center">
   <em>Một hồ sơ công khai độc lập, lấy chứng cứ làm trọng tâm về pingdotgg/t3code — ghi lại tiêu chuẩn kép về chủng tộc, telemetry gây nhầm lẫn, lỗ hổng bảo mật nghiêm trọng và thao túng thương mại.</em>
 </p>
 
 <p align="center">
-  <a href="https://temu3code.com/"><strong>🌐 Mở điều tra trực quan tương tác (18 ngôn ngữ)</strong></a>
-  ·
-  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
-  ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 ảnh chứng cứ</strong></a>
-  ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 nguồn sơ cấp</strong></a>
+  <a href="https://temu3code.com/?lang=vi"><strong>🌐 temu3code.com</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=vi"><strong>✉ Hộp thư Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=vi#x-receipts"><strong>📸 12 ảnh chụp X gốc</strong></a> ·
+  <a href="https://temu3code.com/memes/?lang=vi"><strong>🃏 61 meme</strong></a>
+</p>
+<p align="center">
+  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
+  <a href="../EVIDENCE-INDEX.md"><strong>109 bằng chứng</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 nguồn</strong></a>
 </p>
 
 <p align="center">
-  <strong>Ngôn ngữ chính thức của Liên Hợp Quốc:</strong>
+  <strong>Ngôn ngữ (18):</strong><br />
   <a href="../../README.md">English</a> ·
   <a href="./README.zh-CN.md">简体中文</a> ·
+  <a href="./README.zh-TW.md">繁體中文</a> ·
   <a href="./README.fr.md">Français</a> ·
   <a href="./README.es.md">Español</a> ·
   <a href="./README.ru.md">Русский</a> ·
-  <a href="./README.ar.md">العربية</a>
-</p>
-<p align="center">
-  <strong>Ấn bản cộng đồng toàn cầu:</strong>
-  <a href="./README.zh-TW.md">繁體中文</a> ·
+  <a href="./README.ar.md">العربية</a> ·
   <a href="./README.ja.md">日本語</a> ·
   <a href="./README.ko.md">한국어</a> ·
   <a href="./README.de.md">Deutsch</a> ·
@@ -74,16 +73,16 @@ Mỗi hồ sơ dưới đây liên kết đến tệp hồ sơ bản địa hóa
 
 - **#00 · [Tranh chấp nguồn gốc: "Steal our code", đe dọa đặt tên fork & tiêu chuẩn kép về sắc tộc](../../cases/vi/00-origin-fork-dispute-and-double-standard.md)** — `📌 Hồ sơ công khai`
   Chỉ trong vòng 11 phút, @theo đã gắn nhãn bản fork MIT miễn phí của một lập trình viên Trung Quốc là "Chinese knockoff" và "Temu3 Code", đồng thời đe dọa khóa tài khoản GitHub — rồi chưa đầy 11 giờ sau, công khai hoan nghênh các công ty Mỹ trị giá nghìn tỷ đô sao chép mã MIT.
-  [Mở toàn bộ hồ sơ](../../cases/vi/00-origin-fork-dispute-and-double-standard.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125062675147448475)
+  [Mở toàn bộ hồ sơ](../../cases/vi/00-origin-fork-dispute-and-double-standard.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125062675147448475)
 - **#14 · [Bộ dữ liệu định lượng 1.151 tweet: Sự lịch sự có chọn lọc & làn sóng chống Trung Quốc tăng 4,0 lần trong cuộc khủng hoảng](../../cases/vi/14-1151-tweet-quantitative-double-standard.md)** — `📌 Hồ sơ công khai`
   Phân tích định lượng toàn diện 1.151 bài đăng liên tiếp của @theo trên X (7–24/11/2026) chứng minh sự bất đối xứng quyền lực rõ rệt: 0,0% lời lẽ tục tĩu nhắm vào 20 giám đốc điều hành big-tech và nhân sự phòng lab, so với 8,0% thái độ thù địch nhắm vào các lập trình viên bình thường — tăng vọt 4,0 lần lên 14,4% trong cuộc tranh chấp bản fork Trung Quốc kéo dài 25 giờ.
-  [Mở toàn bộ hồ sơ](../../cases/vi/14-1151-tweet-quantitative-double-standard.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125404517697290438)
+  [Mở toàn bộ hồ sơ](../../cases/vi/14-1151-tweet-quantitative-double-standard.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125404517697290438)
 - **#15 · [Không có bất kỳ nhãn hiệu USPTO nào đằng sau lời đe dọa cấm tài khoản GitHub & `TRADEMARK.md` hồi tố sau 17 giờ](../../cases/vi/15-zero-uspto-trademarks-and-retroactive-policy.md)** — `📌 Hồ sơ công khai`
   Khi @theo dọa liên hệ GitHub để lấy xuống tài khoản của một lập trình viên Trung Quốc với lý do "xâm phạm nhãn hiệu", T3 Tools Inc. không sở hữu bất kỳ đăng ký USPTO nào cho `T3 Code`, `T3 Tools` hay `T3 Connect` — và đã hợp nhất `TRADEMARK.md` một cách hồi tố 17 giờ sau đó.
-  [Mở toàn bộ hồ sơ](../../cases/vi/15-zero-uspto-trademarks-and-retroactive-policy.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125408163273080950)
+  [Mở toàn bộ hồ sơ](../../cases/vi/15-zero-uspto-trademarks-and-retroactive-policy.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125408163273080950)
 - **#16 · [Mô thức lịch sử hai năm: Phản ứng dữ dội nhắm vào quốc tịch, tiền thưởng FFmpeg 20.000 USD & những lời đe dọa bị xóa](../../cases/vi/16-two-year-pattern-of-bullying-and-deletions.md)** — `📌 Hồ sơ công khai`
   Vụ bùng nổ liên quan đến bản fork Trung Quốc vào tháng 11/2026 không phải là một sơ suất đơn lẻ — các hồ sơ công khai từ 2024 đến 2026 ghi lại một chu kỳ lặp đi lặp lại gồm quấy rối nhắm vào quốc tịch, bắt nạt trong cộng đồng mã nguồn mở, chế giễu giao diện của các lập trình viên khác, và xóa bài sau khi dư luận phản ứng.
-  [Mở toàn bộ hồ sơ](../../cases/vi/16-two-year-pattern-of-bullying-and-deletions.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125408843152953693)
+  [Mở toàn bộ hồ sơ](../../cases/vi/16-two-year-pattern-of-bullying-and-deletions.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125408843152953693)
 
 ### Phần II · Telemetry gây nhầm lẫn và các vi phạm quyền riêng tư
 
@@ -91,16 +90,16 @@ Mỗi hồ sơ dưới đây liên kết đến tệp hồ sơ bản địa hóa
 
 - **#01 · [Telemetry mặc định đằng sau lời hứa "No telemetry" trên trang chủ](../../cases/vi/01-default-telemetry-and-cross-tool-tracking.md)** — `🟡 Đã vá một phần`
   Trong khi trang chủ cam kết "No telemetry. Unless you opt in. Full stop.", T3 Code lại bật theo dõi PostHog mặc định, chuyển các bản sao thô qua `ingest.t3.codes` (mã nguồn đóng), băm các thông tin xác thực bên ngoài trong `~/.codex` và `~/.claude.json`, và từ chối bốn PR xin tắt thu thập từ cộng đồng.
-  [Mở toàn bộ hồ sơ](../../cases/vi/01-default-telemetry-and-cross-tool-tracking.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125153472450527440)
+  [Mở toàn bộ hồ sơ](../../cases/vi/01-default-telemetry-and-cross-tool-tracking.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125153472450527440)
 - **#07 · [Mâu thuẫn Managed Policy: Bốn điểm mù telemetry được chính tài liệu ghi nhận](../../cases/vi/07-managed-policy-blind-spots.md)** — `🔴 Chưa khắc phục`
   `@theo` khẳng định T3 Code sở hữu "best corporate managed policy system" khiến việc "trivial to turn off all telemetry" trở nên dễ dàng — điều này bị chính `docs/user/telemetry.md` và `docs/user/managed-policy.md` của T3 Code phủ định trực tiếp.
-  [Mở toàn bộ hồ sơ](../../cases/vi/07-managed-policy-blind-spots.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125391659492081947)
+  [Mở toàn bộ hồ sơ](../../cases/vi/07-managed-policy-blind-spots.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125391659492081947)
 - **#11 · [Làm rõ ngày 25/11 bị phủ định trong vòng 2 giờ bởi các PR qua đêm và bản dump 100 MB](../../cases/vi/11-nov25-clarification-contradicted-in-2-hours.md)** — `🟡 Đã vá một phần`
   Sáng ngày 25 tháng 11, @theo đưa ra ba cam kết rộng rãi về quyền riêng tư và công bố bản dump telemetry 100 MB — cả ba tuyên bố đều bị chính các PR của nhóm ông và bản dump nén gzip phủ định trong vòng hai giờ.
-  [Mở toàn bộ hồ sơ](../../cases/vi/11-nov25-clarification-contradicted-in-2-hours.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125394810559426993)
+  [Mở toàn bộ hồ sơ](../../cases/vi/11-nov25-clarification-contradicted-in-2-hours.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125394810559426993)
 - **#12 · [Cuộc đột kích xuyên đêm sáu tiếng sau GDPR: Nhật ký IP 2,2 triệu/giờ & việc xóa tài khoản hỏng](../../cases/vi/12-post-gdpr-overnight-blitz-2m-ip-logs.md)** — `🟡 Đã vá một phần`
   Sau khi một đơn khiếu nại GDPR chính thức của EU được nộp vào ngày 24 tháng 11, sáu tiếng vá khẩn cấp xuyên đêm đã vô tình làm lộ thêm bốn điểm công bố riêng tư sâu hơn — dẫn đầu là 2,2 triệu span Axiom gắn thẻ IP mỗi giờ, được lưu giữ trong 30 ngày.
-  [Mở toàn bộ hồ sơ](../../cases/vi/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125395501663281198)
+  [Mở toàn bộ hồ sơ](../../cases/vi/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125395501663281198)
 
 ### Phần III · Lỗi sản phẩm và các lỗ hổng bảo mật nghiêm trọng
 
@@ -108,22 +107,22 @@ Mỗi hồ sơ dưới đây liên kết đến tệp hồ sơ bản địa hóa
 
 - **#02 · [Xóa Thread SQLite Giả Tạo (Phình Dữ Liệu 41.6 GB) & Quét Toàn Bộ Tiến Trình Hệ Điều Hành Mỗi 5 Giây](../../cases/vi/02-fake-sqlite-delete-and-process-scanner.md)** — `🟡 Đã vá một phần`
   Việc bấm "permanently delete" vẫn để nguyên toàn bộ lịch sử hội thoại bên trong `statev2.sqlite` (khiến đĩa cục bộ phình lên 41.6 GB), trong khi một monitor Rust chạy nền quét mọi tiến trình hệ điều hành và toàn bộ dòng lệnh mỗi 5 giây mà không có bất kỳ tùy chọn tắt nào.
-  [Mở toàn bộ hồ sơ](../../cases/vi/02-fake-sqlite-delete-and-process-scanner.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125160473176023486)
+  [Mở toàn bộ hồ sơ](../../cases/vi/02-fake-sqlite-delete-and-process-scanner.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125160473176023486)
 - **#03 · [52 ngày `git push --force` âm thầm so với 21 giờ gỡ bỏ bộ lọc quyền riêng tư mô hình](../../cases/vi/03-silent-force-push-vs-21h-filter-removal.md)** — `🔴 Chưa khắc phục`
   Trong hơn 52 ngày, T3 Code để một lỗi tồn tại: chế độ Auto của Claude âm thầm phê duyệt `git push --force origin main` mà không hề nhắc — vậy mà chỉ mất 21 giờ để gỡ bỏ một danh sách trắng quyền riêng tư, để các mô hình riêng tư xuất hiện trên bảng xếp hạng công khai của @theo.
-  [Mở toàn bộ hồ sơ](../../cases/vi/03-silent-force-push-vs-21h-filter-removal.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125201882687881378)
+  [Mở toàn bộ hồ sơ](../../cases/vi/03-silent-force-push-vs-21h-filter-removal.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125201882687881378)
 - **#04 · [Google Antigravity giả mạo header, `SSH_CONNECTION` giả & tài khoản bị ban trong 3 phút](../../cases/vi/04-antigravity-spoofing-and-3-minute-bans.md)** — `🔴 Chưa khắc phục`
   Dù cam kết tuân thủ ToS trong FAQ của mình, T3 Code vẫn trích xuất thông tin đăng nhập từ keyring của hệ điều hành, giả mạo header nội bộ của Google (`antigravity/hub/2.24.0`) khi gọi `v1internal`, và chèn các giá trị `SSH_CONNECTION` giả — khiến các gói đăng ký Google cá nhân có nguy cơ bị ban nhanh chóng.
-  [Mở toàn bộ hồ sơ](../../cases/vi/04-antigravity-spoofing-and-3-minute-bans.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125213397507858657)
+  [Mở toàn bộ hồ sơ](../../cases/vi/04-antigravity-spoofing-and-3-minute-bans.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125213397507858657)
 - **#05 · [T3 Connect: Không có mã hóa đầu-cuối & cổng gateway chấm dứt TLS dưới dạng văn bản thuần](../../cases/vi/05-t3-connect-zero-e2e-plaintext-relay.md)** — `🔴 Chưa khắc phục`
   Mọi prompt, tệp nguồn và luồng terminal đi qua T3 Connect đều kết thúc dưới dạng văn bản thuần bên trong hạ tầng do T3 kiểm soát — không có mã hóa đầu-cuối và tính năng phê duyệt thiết bị mặc định tắt.
-  [Mở toàn bộ hồ sơ](../../cases/vi/05-t3-connect-zero-e2e-plaintext-relay.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125218189596676555)
+  [Mở toàn bộ hồ sơ](../../cases/vi/05-t3-connect-zero-e2e-plaintext-relay.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125218189596676555)
 - **#13 · [Không có cảnh báo bảo mật GitHub nào, vá lỗ hổng nghiêm trọng trong im lặng & `SECURITY.md` vội vã](../../cases/vi/13-zero-security-advisories-and-silent-patches.md)** — `🔴 Chưa khắc phục`
   Trong lúc các kiểm toán viên mã nguồn Trung Quốc bị gạt bỏ trên X, T3 Code lặng lẽ hợp nhất các bản vá lỗ hổng nghiêm trọng — gồm path traversal trong kho lưu trữ bí mật, rò rỉ token xuyên miền và thực thi lệnh từ repo không đáng tin cậy — đồng thời vẫn giữ số Cảnh báo Bảo mật GitHub được công bố ở mức 0.
-  [Mở toàn bộ hồ sơ](../../cases/vi/13-zero-security-advisories-and-silent-patches.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125395980354994414)
+  [Mở toàn bộ hồ sơ](../../cases/vi/13-zero-security-advisories-and-silent-patches.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125395980354994414)
 - **#19 · [`ca81b7b9` Kiểm toán nghiêm trọng về xác thực & thực thi trong repo: shell LAN dạng văn bản thuần kéo dài 30 ngày, token không thể thu hồi & phơi nhiễm `SSH_AUTH_SOCK`](../../cases/vi/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md)** — `🔴 Chưa khắc phục`
   Kiểm tra từng dòng trên HEAD mới nhất của `main` (`ca81b7b9`, 25/11 14:49 CST) xác nhận năm lỗ hổng bảo mật và độ tin cậy vẫn đang hoạt động: cookie shell `--lan` dạng văn bản thuần kéo dài 30 ngày với cơ chế bỏ qua khi thiếu `Origin`, token Bearer 30 ngày không thể thu hồi, URL `?wsTicket=` có thể phát lại, `isIPv4` vô hiệu hóa tunnel `::1`, và các repository không đáng tin cậy thực thi hook/submodule với `SSH_AUTH_SOCK` và `GITHUB_TOKEN` được kế thừa.
-  [Mở toàn bộ hồ sơ](../../cases/vi/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125494234614788390)
+  [Mở toàn bộ hồ sơ](../../cases/vi/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125494234614788390)
 
 ### Phần IV · Thao túng thương mại và bắt nạt cộng đồng
 
@@ -131,22 +130,22 @@ Mỗi hồ sơ dưới đây liên kết đến tệp hồ sơ bản địa hóa
 
 - **#06 · [Xung đột lợi ích của nhà đầu tư thiên thần: Chế giễu việc Vibe Kanban đóng cửa & sự trùng lặp với Daytona](../../cases/vi/06-angel-investor-conflicts-vibe-kanban-daytona.md)** — `📌 Hồ sơ công khai`
   Ngoài các khiếm khuyết về mã nguồn, những bài đăng công khai trên X của @theo còn ghi lại các xung đột gay gắt giữa vai trò nhà đầu tư thiên thần của anh trong những startup phát triển phần mềm cạnh tranh và việc anh vận hành T3 Code.
-  [Mở toàn bộ hồ sơ](../../cases/vi/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125385742243520653)
+  [Mở toàn bộ hồ sơ](../../cases/vi/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125385742243520653)
 - **#08 · [Sổ cái kinh doanh 800.000 USD+ & Radar tính toán 31,7 nghìn tỷ token mỗi ngày](../../cases/vi/08-800k-spend-and-31t-token-radar.md)** — `📌 Hồ sơ công khai`
   Telemetry bật mặc định không phải là một sơ suất kỹ thuật: nó nuôi một radar tình báo thời gian thực 31,7T token/ngày (tương đương 10,19 triệu USD/ngày chi phí API), đổi lấy 300 nghìn USD+ token OpenAI early-access miễn phí và các cuộc tiếp cận nhà đầu tư.
-  [Mở toàn bộ hồ sơ](../../cases/vi/08-800k-spend-and-31t-token-radar.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125392410763239723)
+  [Mở toàn bộ hồ sơ](../../cases/vi/08-800k-spend-and-31t-token-radar.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125392410763239723)
 - **#09 · [Chuyện `yolo merges` nội bộ đối lập với thái độ thù địch với cộng đồng bên ngoài & các lệnh cấm trong `.github/VOUCHED.td`](../../cases/vi/09-yolo-merges-vs-community-hostility.md)** — `📌 Hồ sơ công khai`
   Bên trong, T3 Code tung ra 500 commit/ngày thông qua các vòng lặp agent tự động và tự nhận *"my yolo merges breaking shit"* — trong khi bên ngoài lại nói với người đóng góp *"here's my advice: Don't"*, tố cáo người dùng qua `.github/VOUCHED.td`, và lăng mạ những người mở issue.
-  [Mở toàn bộ hồ sơ](../../cases/vi/09-yolo-merges-vs-community-hostility.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125392916369871309)
+  [Mở toàn bộ hồ sơ](../../cases/vi/09-yolo-merges-vs-community-hostility.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125392916369871309)
 - **#10 · [Công khai dùng `@bot` cào fork, chế giễu đối thủ & đàn áp người chỉ trích](../../cases/vi/10-fork-scraping-bot-and-critics-suppression.md)** — `📌 Hồ sơ công khai`
   Trong lúc chế giễu các đối thủ vì sao chép mẫu giao diện UI, @theo công khai trả lời "Okay I'm stealing this" trước bản fork của một nữ lập trình viên và 30 giây sau điều `@bot` đi cào mã của cô — đồng thời triển khai các công cụ tự động chặn và kêu gọi người theo dõi cắt nguồn thu nhập của những người chỉ trích.
-  [Mở toàn bộ hồ sơ](../../cases/vi/10-fork-scraping-bot-and-critics-suppression.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125393641665671593)
+  [Mở toàn bộ hồ sơ](../../cases/vi/10-fork-scraping-bot-and-critics-suppression.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125393641665671593)
 - **#17 · [Ràng buộc với dàn nhà tài trợ, chiêu trục lợi hạn mức 0% của Codex & sự đạo đức giả quanh `CLIProxyAPI` 10 tài khoản](../../cases/vi/17-sponsor-stack-and-quota-exploit-hypocrisy.md)** — `📌 Hồ sơ công khai`
   Trong khi rao giảng về việc tuân thủ và từ chối tích hợp tính năng chuyển đổi tài khoản vì nguy cơ bị khóa, T3 Code lại nhúng các nhà tài trợ YouTube của @theo (Clerk và Axiom) vào stack đám mây của mình, trong khi @theo từng khoe đã lợi dụng lỗi hạn mức 0% của Codex và công bố một Gist gộp 10 tài khoản `CLIProxyAPI` được liên kết trực tiếp từ FAQ của T3.
-  [Mở toàn bộ hồ sơ](../../cases/vi/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2023-05-sponsor-roster) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125411353393553744)
+  [Mở toàn bộ hồ sơ](../../cases/vi/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2023-05-sponsor-roster&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125411353393553744)
 - **#18 · [Cỗ Máy Phễu 77.000 Sao: Gắn Sao Bằng Thông Tin Đăng Nhập Máy Chủ Khi Nhàn Rỗi 30 Giây & Lỗi Gắn Sao Kho Bất Kỳ Chưa Được Sửa](../../cases/vi/18-77k-star-funnel-and-arbitrary-repo-starring.md)** — `🔴 Chưa khắc phục`
   Sáu tháng sau khi lên án sao GitHub là cách "to trick VCs into investing", @theo tự merge một toast trong ứng dụng kích hoạt sau 30 giây nhàn rỗi, gọi `PUT user/starred/...` bằng thông tin đăng nhập GitHub của máy chủ — đẩy repo từ 30k lên 77k sao (chỉ với ~129 watcher) trong khi vẫn để nguyên lỗi gắn sao cho kho bất kỳ.
-  [Mở toàn bộ hồ sơ](../../cases/vi/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125416210120765799)
+  [Mở toàn bộ hồ sơ](../../cases/vi/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [Thẻ tương tác](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars&lang=vi) · [Bài đăng X gốc](https://x.com/realchendahuang/status/2125416210120765799)
 
 ---
 

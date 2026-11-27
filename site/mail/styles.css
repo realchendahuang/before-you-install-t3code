@@ -427,6 +427,31 @@ a:hover {
 .tile-cal { background: linear-gradient(135deg, #1a73e8, #0b57d0); }
 .tile-memes { background: linear-gradient(135deg, #f5b942, #d97706); }
 .tile-report { background: linear-gradient(135deg, #d97757, #b45333); }
+
+.lang-picker-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  height: 34px;
+  padding: 0 10px;
+  border-radius: 999px;
+  border: 1px solid #dadce0;
+  background: #ffffff;
+  color: #3c4043;
+  font-size: 13px;
+}
+.lang-picker-pill .material-symbols-outlined { font-size: 17px; color: #5f6368; }
+.tmail-lang-select {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  max-width: 118px;
+}
 .tile-gh { background: #24292f; }
 
 .profile-avatar-btn {

@@ -1,31 +1,30 @@
-# Before You Install T3 Code
+# Temu3 Code — Before You Install T3 Code
 
 <p align="center">
   <em>An independent, evidence-first public record of pingdotgg/t3code — documenting racial double standards, deceptive telemetry, critical security flaws, and commercial manipulation.</em>
 </p>
 
 <p align="center">
-  <a href="https://temu3code.com/"><strong>🌐 Open Interactive Visual Investigation (18 Languages)</strong></a>
-  ·
-  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a>
-  ·
-  <a href="./docs/EVIDENCE-INDEX.md"><strong>109 Visual Receipts</strong></a>
-  ·
-  <a href="./docs/COMPLETE-SOURCE-INDEX.md"><strong>327 Primary Sources</strong></a>
+  <a href="https://temu3code.com/?lang=en"><strong>🌐 temu3code.com</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=en"><strong>✉ Tmail Inbox</strong></a> ·
+  <a href="https://temu3code.com/?lang=en#x-receipts"><strong>📸 12 Original X Shots</strong></a> ·
+  <a href="https://temu3code.com/memes/?lang=en"><strong>🃏 61 Memes</strong></a>
+</p>
+<p align="center">
+  <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
+  <a href="./docs/EVIDENCE-INDEX.md"><strong>109 Receipts</strong></a> ·
+  <a href="./docs/COMPLETE-SOURCE-INDEX.md"><strong>327 Sources</strong></a>
 </p>
 
 <p align="center">
-  <strong>UN Official Languages:</strong>
+  <strong>Languages (18):</strong><br />
   <a href="./README.md"><strong>English</strong></a> ·
   <a href="./docs/i18n/README.zh-CN.md">简体中文</a> ·
+  <a href="./docs/i18n/README.zh-TW.md">繁體中文</a> ·
   <a href="./docs/i18n/README.fr.md">Français</a> ·
   <a href="./docs/i18n/README.es.md">Español</a> ·
   <a href="./docs/i18n/README.ru.md">Русский</a> ·
-  <a href="./docs/i18n/README.ar.md">العربية</a>
-</p>
-<p align="center">
-  <strong>Global Community Editions:</strong>
-  <a href="./docs/i18n/README.zh-TW.md">繁體中文</a> ·
+  <a href="./docs/i18n/README.ar.md">العربية</a> ·
   <a href="./docs/i18n/README.ja.md">日本語</a> ·
   <a href="./docs/i18n/README.ko.md">한국어</a> ·
   <a href="./docs/i18n/README.de.md">Deutsch</a> ·
@@ -74,16 +73,16 @@ Every exhibit below links to its dedicated, table-free localized exhibit file in
 
 - **#00 · [Origin Dispute: "Steal Our Code", Fork Naming Threats & Racial Double Standards](./cases/en/00-origin-fork-dispute-and-double-standard.md)** — `📌 Public Record`
   Within 11 minutes, @theo labeled a Chinese developer's free MIT fork a "Chinese knockoff" and "Temu3 Code" and threatened a GitHub account ban — then publicly welcomed trillion-dollar US companies copying MIT code less than 11 hours later.
-  [Open full exhibit](./cases/en/00-origin-fork-dispute-and-double-standard.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat) · [Original X post](https://x.com/realchendahuang/status/2125062675147448475)
+  [Open full exhibit](./cases/en/00-origin-fork-dispute-and-double-standard.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-23-origin-temu3-threat&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125062675147448475)
 - **#14 · [1,151-Tweet Quantitative Dataset: Selective Politeness & 4.0× Anti-Chinese Crisis Surge](./cases/en/14-1151-tweet-quantitative-double-standard.md)** — `📌 Public Record`
   Exhaustive quantitative analysis of 1,151 consecutive @theo X posts (Nov 7–24, 2026) proves a stark power asymmetry: 0.0% profanity toward 20 big-tech executives and lab staff vs. 8.0% hostility toward ordinary developers — surging 4.0× to 14.4% during the 25-hour Chinese-fork dispute.
-  [Open full exhibit](./cases/en/14-1151-tweet-quantitative-double-standard.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips) · [Original X post](https://x.com/realchendahuang/status/2125404517697290438)
+  [Open full exhibit](./cases/en/14-1151-tweet-quantitative-double-standard.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-19-selective-politeness-vips&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125404517697290438)
 - **#15 · [Zero USPTO Trademarks Behind the GitHub Ban Threat & 17-Hour Retroactive `TRADEMARK.md`](./cases/en/15-zero-uspto-trademarks-and-retroactive-policy.md)** — `📌 Public Record`
   When @theo threatened to contact GitHub to take down a Chinese developer's account for "trademark infringement", T3 Tools Inc. held 0 USPTO registrations for `T3 Code`, `T3 Tools`, or `T3 Connect` — and retroactively merged `TRADEMARK.md` 17 hours later.
-  [Open full exhibit](./cases/en/15-zero-uspto-trademarks-and-retroactive-policy.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker) · [Original X post](https://x.com/realchendahuang/status/2125408163273080950)
+  [Open full exhibit](./cases/en/15-zero-uspto-trademarks-and-retroactive-policy.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-24-retroactive-trademark-blocker&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125408163273080950)
 - **#16 · [Two-Year Historical Pattern: Nationality Backlashes, $20k FFmpeg Bounty & Deleted Threats](./cases/en/16-two-year-pattern-of-bullying-and-deletions.md)** — `📌 Public Record`
   The November 2026 Chinese-fork outburst was not an isolated lapse — public records from 2024 to 2026 document a repeating cycle of nationality-targeted harassment, open-source bullying, mocking other developers' UIs, and post-backlash deletions.
-  [Open full exhibit](./cases/en/16-two-year-pattern-of-bullying-and-deletions.md) · [Interactive card](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty) · [Original X post](https://x.com/realchendahuang/status/2125408843152953693)
+  [Open full exhibit](./cases/en/16-two-year-pattern-of-bullying-and-deletions.md) · [Interactive card](https://temu3code.com/mail/?thread=2025-10-ffmpeg-bounty&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125408843152953693)
 
 ### Part II · Deceptive Telemetry & Privacy Violations
 
@@ -91,16 +90,16 @@ Every exhibit below links to its dedicated, table-free localized exhibit file in
 
 - **#01 · [Default Telemetry Behind a "No Telemetry" Homepage Promise](./cases/en/01-default-telemetry-and-cross-tool-tracking.md)** — `🟡 Partially Patched`
   While its homepage promised "No telemetry. Unless you opt in. Full stop.", T3 Code enabled default PostHog tracking, routed raw copies through closed-source `ingest.t3.codes`, hashed external `~/.codex` and `~/.claude.json` credentials, and rejected four community opt-out PRs.
-  [Open full exhibit](./cases/en/01-default-telemetry-and-cross-tool-tracking.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry) · [Original X post](https://x.com/realchendahuang/status/2125153472450527440)
+  [Open full exhibit](./cases/en/01-default-telemetry-and-cross-tool-tracking.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-03-06-pr174-default-telemetry&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125153472450527440)
 - **#07 · [The Managed Policy Contradiction: Four Documented Telemetry Blind Spots](./cases/en/07-managed-policy-blind-spots.md)** — `🔴 Unfixed`
   @theo claimed T3 Code had the "best corporate managed policy system" making it "trivial to turn off all telemetry" — directly contradicted by T3 Code's own `docs/user/telemetry.md` and `docs/user/managed-policy.md`.
-  [Open full exhibit](./cases/en/07-managed-policy-blind-spots.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Original X post](https://x.com/realchendahuang/status/2125391659492081947)
+  [Open full exhibit](./cases/en/07-managed-policy-blind-spots.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125391659492081947)
 - **#11 · [Nov 25 Clarification Contradicted Within 2 Hours by Overnight PRs & 100 MB Dump](./cases/en/11-nov25-clarification-contradicted-in-2-hours.md)** — `🟡 Partially Patched`
   On the morning of November 25, @theo made three sweeping privacy assurances and released a 100 MB telemetry dump — all three claims were contradicted within two hours by his own team's PRs and the gzipped dump itself.
-  [Open full exhibit](./cases/en/11-nov25-clarification-contradicted-in-2-hours.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Original X post](https://x.com/realchendahuang/status/2125394810559426993)
+  [Open full exhibit](./cases/en/11-nov25-clarification-contradicted-in-2-hours.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125394810559426993)
 - **#12 · [Six-Hour Post-GDPR Overnight Blitz: 2.2M/hr IP Logs & Broken Account Deletion](./cases/en/12-post-gdpr-overnight-blitz-2m-ip-logs.md)** — `🟡 Partially Patched`
   After a formal EU GDPR complaint was filed on November 24, six hours of emergency overnight patches inadvertently surfaced four deeper privacy disclosures — led by 2.2 million/hour IP-tagged Axiom spans retained for 30 days.
-  [Open full exhibit](./cases/en/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse) · [Original X post](https://x.com/realchendahuang/status/2125395501663281198)
+  [Open full exhibit](./cases/en/12-post-gdpr-overnight-blitz-2m-ip-logs.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-25-gdpr-overnight-collapse&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125395501663281198)
 
 ### Part III · Product Defects & Critical Security Flaws
 
@@ -108,22 +107,22 @@ Every exhibit below links to its dedicated, table-free localized exhibit file in
 
 - **#02 · [Fake SQLite Thread Deletion (41.6 GB Bloat) & 5-Second Full-OS Process Scanning](./cases/en/02-fake-sqlite-delete-and-process-scanner.md)** — `🟡 Partially Patched`
   Clicking "permanently delete" left full conversation history intact inside `statev2.sqlite` (bloating local disks to 41.6 GB), while a background Rust monitor scanned every OS process and full command line every 5 seconds with zero opt-out.
-  [Open full exhibit](./cases/en/02-fake-sqlite-delete-and-process-scanner.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy) · [Original X post](https://x.com/realchendahuang/status/2125160473176023486)
+  [Open full exhibit](./cases/en/02-fake-sqlite-delete-and-process-scanner.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-10-28-fake-delete-process-spy&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125160473176023486)
 - **#03 · [52-Day Silent `git push --force` vs. 21-Hour Removal of Model Privacy Filter](./cases/en/03-silent-force-push-vs-21h-filter-removal.md)** — `🔴 Unfixed`
   For 52+ days, T3 Code left a bug open where Claude Auto mode silently approved `git push --force origin main` without prompting — yet needed only 21 hours to remove a privacy whitelist so private models appeared on @theo's public leaderboard.
-  [Open full exhibit](./cases/en/03-silent-force-push-vs-21h-filter-removal.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push) · [Original X post](https://x.com/realchendahuang/status/2125201882687881378)
+  [Open full exhibit](./cases/en/03-silent-force-push-vs-21h-filter-removal.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-10-03-issue15353-force-push&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125201882687881378)
 - **#04 · [Google Antigravity Header Spoofing, Fake `SSH_CONNECTION` & 3-Minute Account Bans](./cases/en/04-antigravity-spoofing-and-3-minute-bans.md)** — `🔴 Unfixed`
   Despite guaranteeing ToS compliance in its FAQ, T3 Code extracts OS keyring credentials, spoofs Google internal headers (`antigravity/hub/2.24.0`) against `v1internal`, and injects fake `SSH_CONNECTION` values — exposing personal Google subscriptions to rapid bans.
-  [Open full exhibit](./cases/en/04-antigravity-spoofing-and-3-minute-bans.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban) · [Original X post](https://x.com/realchendahuang/status/2125213397507858657)
+  [Open full exhibit](./cases/en/04-antigravity-spoofing-and-3-minute-bans.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-22-antigravity-spoof-3min-ban&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125213397507858657)
 - **#05 · [T3 Connect: Zero End-to-End Encryption & Plaintext TLS-Termination Gateway](./cases/en/05-t3-connect-zero-e2e-plaintext-relay.md)** — `🔴 Unfixed`
   Every prompt, source file, and terminal stream routed through T3 Connect terminates in plaintext inside T3-controlled infrastructure — with zero end-to-end encryption and default-off device approval.
-  [Open full exhibit](./cases/en/05-t3-connect-zero-e2e-plaintext-relay.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay) · [Original X post](https://x.com/realchendahuang/status/2125218189596676555)
+  [Open full exhibit](./cases/en/05-t3-connect-zero-e2e-plaintext-relay.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-24-managed-policy-plaintext-relay&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125218189596676555)
 - **#13 · [Zero GitHub Security Advisories, Silent High-Severity Patches & Rushed `SECURITY.md`](./cases/en/13-zero-security-advisories-and-silent-patches.md)** — `🔴 Unfixed`
   While dismissing Chinese source-code auditors on X, T3 Code quietly merged high-severity vulnerability fixes — including secret-store path traversal, cross-domain token leaks, and untrusted-repo command execution — while keeping published GitHub Security Advisories at 0.
-  [Open full exhibit](./cases/en/13-zero-security-advisories-and-silent-patches.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Original X post](https://x.com/realchendahuang/status/2125395980354994414)
+  [Open full exhibit](./cases/en/13-zero-security-advisories-and-silent-patches.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125395980354994414)
 - **#19 · [`ca81b7b9` Critical Auth & Repo Execution Audit: 30-Day Plaintext LAN Shell, Unrevocable Tokens & `SSH_AUTH_SOCK` Exposure](./cases/en/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md)** — `🔴 Unfixed`
   Line-by-line verification of latest `main` HEAD (`ca81b7b9`, Nov 25 14:49 CST) confirmed five active security and reliability flaws: 30-day plaintext `--lan` shell cookies with missing-`Origin` bypass, unrevocable 30-day Bearer tokens, replayable `?wsTicket=` URLs, `isIPv4` killing `::1` tunnels, and untrusted repositories executing hooks/submodules with inherited `SSH_AUTH_SOCK` and `GITHUB_TOKEN`.
-  [Open full exhibit](./cases/en/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns) · [Original X post](https://x.com/realchendahuang/status/2125494234614788390)
+  [Open full exhibit](./cases/en/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-25-ca81b7b9-active-vulns&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125494234614788390)
 
 ### Part IV · Commercial Manipulation & Community Bullying
 
@@ -131,22 +130,22 @@ Every exhibit below links to its dedicated, table-free localized exhibit file in
 
 - **#06 · [Angel-Investor Conflicts: Vibe Kanban Shutdown Mockery & Daytona Overlap](./cases/en/06-angel-investor-conflicts-vibe-kanban-daytona.md)** — `📌 Public Record`
   Beyond code defects, @theo's public X posts document sharp conflicts between his role as an angel investor in competing developer startups and his operation of T3 Code.
-  [Open full exhibit](./cases/en/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona) · [Original X post](https://x.com/realchendahuang/status/2125385742243520653)
+  [Open full exhibit](./cases/en/06-angel-investor-conflicts-vibe-kanban-daytona.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-16-vibe-kanban-daytona&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125385742243520653)
 - **#08 · [The $800,000+ Business Ledger & 31.7-Trillion-Token Daily Compute Radar](./cases/en/08-800k-spend-and-31t-token-radar.md)** — `📌 Public Record`
   Default-on telemetry was not an engineering oversight: it financed a real-time 31.7T-token/day ($10.19M/day equivalent API spend) intelligence radar traded for $300k+ in free OpenAI early-access tokens and investor outreach.
-  [Open full exhibit](./cases/en/08-800k-spend-and-31t-token-radar.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar) · [Original X post](https://x.com/realchendahuang/status/2125392410763239723)
+  [Open full exhibit](./cases/en/08-800k-spend-and-31t-token-radar.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-18-31t-token-radar&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125392410763239723)
 - **#09 · [Internal `yolo merges` vs. External Community Hostility & `.github/VOUCHED.td` Bans](./cases/en/09-yolo-merges-vs-community-hostility.md)** — `📌 Public Record`
   Internally, T3 Code shipped 500 commits/day through automated agent loops and admitted "yolo merges breaking shit" — while externally telling contributors "here's my advice: Don't", denouncing users via `.github/VOUCHED.td`, and insulting issue reporters.
-  [Open full exhibit](./cases/en/09-yolo-merges-vs-community-hostility.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult) · [Original X post](https://x.com/realchendahuang/status/2125392916369871309)
+  [Open full exhibit](./cases/en/09-yolo-merges-vs-community-hostility.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-09-issue33639-bermudi-insult&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125392916369871309)
 - **#10 · [Public `@bot` Fork-Scraping, Competitor Mockery & Critic Suppression](./cases/en/10-fork-scraping-bot-and-critics-suppression.md)** — `📌 Public Record`
   While mocking rivals for copying UI patterns, @theo publicly replied "Okay I'm stealing this" to a developer's fork and dispatched `@bot` 30 seconds later to scrape her code — while deploying auto-blockers and urging followers to demonetize critics.
-  [Open full exhibit](./cases/en/10-fork-scraping-bot-and-critics-suppression.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork) · [Original X post](https://x.com/realchendahuang/status/2125393641665671593)
+  [Open full exhibit](./cases/en/10-fork-scraping-bot-and-critics-suppression.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-08-stealing-miaai-fork&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125393641665671593)
 - **#17 · [Sponsor Stack Bindings, Codex 0% Quota Exploit & 10-Account `CLIProxyAPI` Hypocrisy](./cases/en/17-sponsor-stack-and-quota-exploit-hypocrisy.md)** — `📌 Public Record`
   While preaching compliance and refusing built-in account switching due to ban risks, T3 Code embeds @theo's YouTube sponsors (Clerk and Axiom) into its cloud stack, while @theo boasted of exploiting Codex's 0% quota bug and published a 10-account `CLIProxyAPI` pooling Gist linked directly from T3's FAQ.
-  [Open full exhibit](./cases/en/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [Interactive card](https://temu3code.com/mail/?thread=2023-05-sponsor-roster) · [Original X post](https://x.com/realchendahuang/status/2125411353393553744)
+  [Open full exhibit](./cases/en/17-sponsor-stack-and-quota-exploit-hypocrisy.md) · [Interactive card](https://temu3code.com/mail/?thread=2023-05-sponsor-roster&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125411353393553744)
 - **#18 · [The 77,000-Star Funnel: 30s-Idle Host-Credential Starring & Unfixed Arbitrary-Repo Bug](./cases/en/18-77k-star-funnel-and-arbitrary-repo-starring.md)** — `🔴 Unfixed`
   Six months after condemning GitHub stars as a way "to trick VCs into investing", @theo self-merged an in-app 30-second-idle toast that fires `PUT user/starred/...` using host GitHub credentials — catapulting the repo from 30k to 77k stars (with ~129 watchers) while leaving an arbitrary-repo starring bug unfixed.
-  [Open full exhibit](./cases/en/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars) · [Original X post](https://x.com/realchendahuang/status/2125416210120765799)
+  [Open full exhibit](./cases/en/18-77k-star-funnel-and-arbitrary-repo-starring.md) · [Interactive card](https://temu3code.com/mail/?thread=2026-11-02-pr29922-77k-stars&lang=en) · [Original X post](https://x.com/realchendahuang/status/2125416210120765799)
 
 ---
 
