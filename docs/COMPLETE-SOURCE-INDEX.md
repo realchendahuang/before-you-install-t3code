@@ -387,7 +387,6 @@
 | `SRC-325` | Origin Context | X Reply (2026-11-24) | https://x.com/realchendahuang/status/2125066387647513072 | Prior YouTube public record documenting discrepancies between public statements and private messages. |
 | `SRC-326` | Origin Context | X Reply (2026-11-24) | https://x.com/realchendahuang/status/2125066552785711291 | Prior 2024 record of `@theo` publicly mocking Rails creator DHH's email client UI for engagement. |
 | `SRC-327` | Origin Context | X Reply (2026-11-24) | https://x.com/realchendahuang/status/2125066677188702698 | T3 Code's own FAQ acknowledging inspiration from Codex Desktop, Conductor, Claude Desktop, and Cursor. |
-
 ---
 
 ## 9. Nov 25–27 Post-Audit Updates & Deep-Dive Receipts (Exhibits #20–#28)
@@ -445,3 +444,28 @@
 | `SRC-376` | Part 27 | `hazae41/glacier#1` & Silent `v0.1.13` Security PRs | https://github.com/hazae41/glacier/issues/1#issuecomment-1264711070 | 2022 `@t3dotgg` insult (`2126134616696520845`) & `v0.1.13` security PRs (`#42535`, `#39408`, `#39489`, `#41988`): https://x.com/hazae41/status/2126134616696520845 ; https://github.com/pingdotgg/t3code/pull/42535 ; https://github.com/pingdotgg/t3code/pull/39408 ; https://github.com/pingdotgg/t3code/pull/39489 ; https://github.com/pingdotgg/t3code/pull/41988 |
 | `SRC-377` | Part 28 | Issue `#44029` & 41h X Silence | https://github.com/pingdotgg/t3code/issues/44029 | `113 GiB` SQLite (`2126207815052325020`) & Theo Nov 25–27 silence reposts (`2125737351901303200`, `2126054989768675651`, `2126062066809307637`): https://x.com/jullerino/status/2126207815052325020 ; https://x.com/theo/status/2125737351901303200 ; https://x.com/theo/status/2126054989768675651 ; https://x.com/theo/status/2126062066809307637 |
 | `SRC-378` | Part 25 | Dedicated T3 Tier List Site | https://t3.ademark.dev/ | Dedicated T3 Code benchmark subdomain created by `@zqkrq` (`2123008336664674752`). |
+
+---
+
+## 10. Community Technical Audit Addendum (`v0.1.12`, Hardening, ACP & Forks)
+
+| Ref | Scope | Artifact | Direct URL | Verification Summary |
+|---|---|---|---|---|
+| `SRC-379` | `v0.1.12` Release Audit | Release `v0.1.12` | https://github.com/pingdotgg/t3code/releases/tag/v0.1.12 | Stable release (`2026-11-25T07:36:07Z`) tagging `ca81b7b9`; top-level highlights omit all privacy/telemetry/SQLite/security fixes while auto-generated changelog truncates at `PR #42196`. |
+| `SRC-380` | `ca81b7b9` Hardening | `publicConfig.ts#L19-L21` | https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/cloud/publicConfig.ts#L19-L21 | Declares build-time `__T3CODE_BUILD_RELAY_CLIENT_OTLP_TRACES_URL__` / dataset / token macros (resolving to `us-east-1.aws.edge.axiom.co` in shipped desktop builds). |
+| `SRC-381` | `ca81b7b9` Hardening | `relay.ts#L119-L131` | https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/relay.ts#L119-L131 | `RelayAgentActivityState` schema enumerating `projectTitle`, `threadTitle`, `phase`, `headline`, `detail`, `modelTitle`, `updatedAt`, and `deepLink` sent to T3 Connect relay. |
+| `SRC-382` | `ca81b7b9` Hardening | `AgentAwarenessRelay.ts#L506-L579` | https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/relay/AgentAwarenessRelay.ts#L506-L579 | Server publisher dispatching `RelayAgentActivityState` whenever `publishAgentActivity` is enabled, bypassing `T3CODE_TELEMETRY_ENABLED`, `DO_NOT_TRACK`, and Managed Policy `limits.telemetry`. |
+| `SRC-383` | `ca81b7b9` Hardening | `managedPolicy.ts#L129-L137` | https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/contracts/src/managedPolicy.ts#L129-L137 | `ManagedPolicyDocument` schema requiring non-empty `organization: TrimmedNonEmptyString`. |
+| `SRC-384` | `ca81b7b9` Hardening | `managedPolicyFile.ts#L51-L57` | https://github.com/pingdotgg/t3code/blob/ca81b7b9/packages/shared/src/managedPolicyFile.ts#L51-L57 | Strict Managed Policy decoder (`{ onExcessProperty: "error" }`), failing closed and blocking startup on missing `organization` or unknown fields. |
+| `SRC-385` | `ca81b7b9` ACP Audit | `AcpRegistrySessions.ts` | https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/provider/AcpRegistrySessions.ts | Generic `acpRegistry` session driver proving T3 Code can run official `agy acp` over standard JSON-RPC without `v1internal` spoofing, fake `SSH_CONNECTION`, or keyring scraping. |
+| `SRC-386` | `ca81b7b9` ACP Audit | `builtInDrivers.ts` | https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/provider/builtInDrivers.ts | Built-in provider driver registry exposing `acpRegistry` alongside the built-in Antigravity driver. |
+| `SRC-387` | Migration Audit | `v0.1.11` Migration `102` | https://github.com/pingdotgg/t3code/blob/v0.1.11/apps/server/src/persistence/Migrations/102_ThreadItemCounts.ts | Latest SQLite migration in official `v0.1.11` (`102`), baseline for fork upgrade/collision checks. |
+| `SRC-388` | Migration Audit | `v0.1.12` Migration `117` | https://github.com/pingdotgg/t3code/blob/v0.1.12/apps/server/src/persistence/Migrations/117_WorkflowMailSender.ts | Latest SQLite migration in official `v0.1.12` (`117`). |
+| `SRC-389` | Fork Audit | `m3code` `antigravityUsageLimits.ts` | https://github.com/MiaAI-Lab/m3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts | Confirms `MiaAI-Lab/m3code` still retains upstream Antigravity `v1internal`/keyring code even after `PR #43026` removed it in upstream `v0.1.13`. |
+| `SRC-390` | Fork Audit | `m3code` Migration `138` | https://github.com/MiaAI-Lab/m3code/blob/main/apps/server/src/persistence/Migrations/138_WorkflowRunTags.ts | Confirms `MiaAI-Lab/m3code` renumbered SQLite migrations (`103` reassigned, upstream `103` moved to `126`, reaching `138`), making shared `~/.t3` unsafe. |
+| `SRC-391` | Fork Audit | `stardust` `antigravityUsageLimits.ts` | https://github.com/zds-xiaoxin/stardust/blob/main/apps/server/src/provider/antigravityUsageLimits.ts | Confirms `zds-xiaoxin/stardust` still retains upstream Antigravity `v1internal`/keyring code even after `PR #43026` removed it in upstream `v0.1.13`. |
+| `SRC-392` | Fork Audit | `stardust` Migration `105` | https://github.com/zds-xiaoxin/stardust/blob/main/apps/server/src/persistence/Migrations/105_TaskFolders.ts | Confirms `zds-xiaoxin/stardust` advances SQLite schema to `105` (one-way upgrade relative to official `v0.1.11`). |
+| `SRC-393` | Alternatives Audit | `paseo-antigravity` `usage.ts` | https://github.com/robbin/paseo-antigravity/blob/main/server/usage.ts | Official-CLI quota polling (`agy` `/usage --output-format json`) without spoofing `antigravity/hub` or `v1internal`. |
+| `SRC-394` | Alternatives Audit | `robbin/paseo-antigravity` | https://github.com/robbin/paseo-antigravity | Open-source Antigravity plugin for Paseo using official `agy acp` and CLI `/usage`. |
+| `SRC-395` | Alternatives Audit | `getpaseo/paseo` | https://github.com/getpaseo/paseo | Open-source multi-agent client with end-to-end encrypted remote transport. |
+| `SRC-396` | Alternatives Audit | `stablyai/orca` | https://github.com/stablyai/orca | MIT-licensed multi-agent desktop client with E2EE remote access, in-app telemetry opt-out UI, and `DO_NOT_TRACK=1` support. |
