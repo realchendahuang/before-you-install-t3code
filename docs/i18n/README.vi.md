@@ -1,19 +1,19 @@
-# Temu3 Code — Trước khi cài T3 Code
+# Temu3 Code · Trước khi bạn cài T3 Code
 
 <p align="center">
-  <em>Một hồ sơ công khai độc lập, lấy chứng cứ làm trọng tâm về pingdotgg/t3code — ghi lại tiêu chuẩn kép về chủng tộc, telemetry gây nhầm lẫn, lỗ hổng bảo mật nghiêm trọng và thao túng thương mại.</em>
+  <em>20 vụ việc, 109 ảnh chụp, và 3,5 năm bài đăng công khai cùng code từ pingdotgg/t3code. Không tracking.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=vi"><strong>🌐 temu3code.com</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=vi"><strong>✉ Hộp thư Tmail</strong></a> ·
-  <a href="https://temu3code.com/?lang=vi#x-receipts"><strong>📸 12 ảnh chụp X gốc</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=vi"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=vi#x-receipts"><strong>📸 12 bài đăng X</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=vi"><strong>🃏 61 meme</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 bằng chứng</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 nguồn</strong></a>
+  <a href="../EVIDENCE-INDEX.md"><strong>109 ảnh chụp</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 liên kết</strong></a>
 </p>
 
 <p align="center">
@@ -50,11 +50,11 @@
 
 <!-- origin-story:start -->
 > [!TIP]
-> **Vì sao là "Temu3 Code"?**
+> **Sao lại là "Temu3 Code"?**
 >
-> Ngày 23/11/2026 — 10 phút sau khi gọi bản fork MIT miễn phí của một nhà phát triển Trung Quốc là "Chinese knockoff" — @theo hào phóng tặng tên thương hiệu của chúng tôi trên X: "Temu3 Code" (84k lượt xem).
+> Ngày 23/11/2026, mười phút sau khi gọi bản fork MIT miễn phí của một dev Trung Quốc là "Chinese knockoff", @theo đặt luôn tên cho tụi mình trên X: "Temu3 Code" (84 nghìn lượt xem).
 >
-> Thương hiệu miễn phí từ một nhà sáng lập chưa đăng ký bất kỳ nhãn hiệu nào với USPTO thì quá tốt để bỏ phí — nên chúng tôi đã đăng ký temu3code.com, đưa toàn bộ public audit vào và bỏ luôn telemetry PostHog. Cảm ơn buổi tư vấn đặt tên miễn phí, Theo. (CC0 1.0 — muốn thì cứ fork ngược lại chúng tôi.) — [Xem tweet đặt tên của @theo ↗](https://x.com/theo/status/2124825920808829077)
+> Khi một founder chẳng có nhãn hiệu USPTO nào đưa bạn một cái tên miễn phí, cứ lấy. Tụi mình đăng ký temu3code.com, đặt toàn bộ hồ sơ công khai ở đây, và bỏ PostHog ra ngoài. Cảm ơn vì cái tên, Theo. Mọi thứ ở đây là CC0 1.0, cứ fork thoải mái. [Xem bài của @theo ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

@@ -1,19 +1,19 @@
-# Temu3 Code — T3 Code 설치 전에
+# Temu3 Code · T3 Code 설치 전에
 
 <p align="center">
-  <em>pingdotgg/t3code에 관한 독립적이고 증거 중심의 공개 기록 — 인종적 이중 잣대, 기만적 텔레메트리, 중대한 보안 결함, 상업적 조작을 기록한다.</em>
+  <em>사례 20건, 스크린샷 109장, pingdotgg/t3code의 3년 6개월치 공개 게시물과 코드. 추적 없음.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=ko"><strong>🌐 temu3code.com</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=ko"><strong>✉ Tmail 수신함</strong></a> ·
-  <a href="https://temu3code.com/?lang=ko#x-receipts"><strong>📸 원본 X 화면 12개</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=ko"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=ko#x-receipts"><strong>📸 X 게시물 12개</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=ko"><strong>🃏 밈 61개</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>영수증 109건</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>출처 327개</strong></a>
+  <a href="../EVIDENCE-INDEX.md"><strong>스크린샷 109장</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>링크 327개</strong></a>
 </p>
 
 <p align="center">
@@ -50,11 +50,11 @@
 
 <!-- origin-story:start -->
 > [!TIP]
-> **왜 "Temu3 Code"인가?**
+> **"Temu3 Code"라는 이름은 어디서 나왔나**
 >
-> 2026년 11월 23일 — 중국 개발자의 무료 MIT 포크를 "Chinese knockoff"이라고 발언한 지 정확히 10분 만에, @theo가 X에서 우리의 브랜드명을 관대하게 기증했습니다: "Temu3 Code" (8.4만 조회수).
+> 2026년 11월 23일, 중국 개발자의 무료 MIT 포크를 "Chinese knockoff"라고 부른 지 10분 뒤 @theo가 X에서 이름을 지어줬다. "Temu3 Code" (조회수 8.4만).
 >
-> USPTO 출원商标가 0개인 창업자가 무료로 선물을 준 브랜드 이름을 버리기엔 아깝죠. 그래서 temu3code.com을 등록하고 공개 감사를 옮겨 놓았으며, PostHog 텔레메트리는 제외했습니다. 무료 명명 상담, Theo, 감사합니다. (CC0 1.0 — 우리를 다시 포크하셔도 됩니다.) — [@theo의 이름 짓기 트윗 보기 ↗](https://x.com/theo/status/2124825920808829077)
+> 미국 상표가 하나도 없는 창업자가 이름을 공짜로 지어줬다면 받아야 한다. temu3code.com을 등록하고 공개 기록을 전부 모았고, PostHog는 넣지 않았다. 이름 고맙습니다, Theo. 여기 있는 건 전부 CC0 1.0이니 마음껏 포크하세요. [@theo 게시물 보기 ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

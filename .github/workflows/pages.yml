@@ -25,6 +25,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      - name: Verify repository integrity
+        run: python3 scripts/verify_repo.py
+
       - name: Stage static site and evidence assets
         run: |
           rm -rf _site
@@ -33,7 +36,14 @@ jobs:
           cp -R evidence/. _site/evidence/
           touch _site/.nojekyll
           test -f _site/index.html
+          test -f _site/404.html
+          test -f _site/favicon.ico
+          test -f _site/robots.txt
+          test -f _site/sitemap.xml
           test -f _site/mail/index.html
+          test -f _site/memes/index.html
+          test -f _site/story/index.html
+          test -f _site/receipts/x-2124825920808829077-temu3-code.webp
           test -f _site/evidence/00-cover-en.png
 
       - name: Upload Pages artifact

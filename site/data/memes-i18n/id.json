@@ -1,0 +1,673 @@
+{
+  "lang": "id",
+  "items": {
+    "sins-sin-01-bigotry-qi": {
+      "title": "Dosa 1 · 歧 · MIT Buat Gue, Bukan Buat Lo",
+      "note": "Ancaman ban GitHub 11 menit setelah fork MIT gratis. Sebelas jam kemudian, lab AS nyontek MIT? Santai aja."
+    },
+    "sins-sin-02-deceit-qi": {
+      "title": "Dosa 2 · 欺 · \"Titik\" Itu Kosong Artinya",
+      "note": "Halaman depan bilang 'tanpa telemetri, titik.' PostHog aktif secara default dan file login tool lain di-hash."
+    },
+    "sins-sin-03-gluttony-tun": {
+      "title": "Dosa 3 · 吞 · 41,6 GB \"Terhapus\"",
+      "note": "'Hapus permanen' justru menyisakan chat di database 41,6 GB. Job latar mendata proses berjalan tiap 5 detik."
+    },
+    "sins-sin-04-sloth-dai": {
+      "title": "Dosa 4 · 怠 · 52 Hari vs 21 Jam",
+      "note": "Bug git push --force menganggur 52+ hari. Hapus filter privasi demi leaderboard cuma butuh 21 jam."
+    },
+    "sins-sin-05-forgery-wei": {
+      "title": "Dosa 5 · 伪 · $20, Kebanned dalam 3 Menit",
+      "note": "FAQ janjiin nol risiko ban. Kode memalsukan header internal Google pakai key hasil ekstrak; akun $20 mati dalam 3 menit."
+    },
+    "sins-sin-06-exposure-luo": {
+      "title": "Dosa 6 · 裸 · Relay Baca Terminal Lo",
+      "note": "T3 Connect menerminasi TLS di server mereka sendiri. Tanpa E2E, trafik terminal lo lewat relay mereka dalam teks polos."
+    },
+    "sins-sin-07-envy-du": {
+      "title": "Dosa 7 · 妒 · Investasi, Ejek, Lalu Saingi",
+      "note": "Investasi di Vibe Kanban dan Daytona, ejek kematian Vibe Kanban, lalu jualan cloud sandbox berbayar buat menyalip Daytona."
+    },
+    "sins-sin-08-blindness-mang": {
+      "title": "Dosa 8 · 盲 · Dokumentasi Bantah Omongan Sendiri",
+      "note": "Katanya Managed Policy korporat mematikan semua telemetri. Dokumentasi T3 Code sendiri malah daftar empat celah data tetap keluar."
+    },
+    "sins-sin-09-greed-tan": {
+      "title": "Dosa 9 · 贪 · 31,7T Token Sehari",
+      "note": "Tracking aktif default nyuapin radar live 31,7 triliun token per hari, dipakai buat jualan ke VC dan meraup $300k+ kredit API."
+    },
+    "sins-sin-10-arrogance-kuang": {
+      "title": "Dosa 10 · 狂 · Merge YOLO, Nol Sopan Santun",
+      "note": "Pamer 500 commit sehari dan 'merge yolo,' lalu sebut user di Issue #33639 sebagai 'berengsek tak tahu diri.'"
+    },
+    "sins-sin-11-plunder-qie": {
+      "title": "Dosa 11 · 窃 · \"Gue Curi Ini\", 30 Detik",
+      "note": "Balas 'Oke gue curi ini' ke fork developer lain, 30 detik kemudian suruh @bot nyalin kodenya ke T3 Code."
+    },
+    "sins-sin-12-mendacity-huang": {
+      "title": "Dosa 12 · 谎 · Bantahan dalam Dua Jam",
+      "note": "Post pagi: nggak pernah log path file, opt-out selalu jalan. Dua jam kemudian patch darurat GDPR-nya sendiri bilang sebaliknya."
+    },
+    "sins-sin-13-concealment-man": {
+      "title": "Dosa 13 · 瞒 · Security Advisory: Nol",
+      "note": "Lubang keamanan serius ditambal diam-diam di pull request biasa. GitHub Security Advisory yang terbit: nol."
+    },
+    "sins-sin-14-servility-chan": {
+      "title": "Dosa 14 · 谄 · 0% ke Eksekutif, 14,4% ke Lo",
+      "note": "1.151 post beruntun: 0% umpatan ke 20 eksekutif Big Tech, 8% ke developer biasa, 14,4% saat drama fork China."
+    },
+    "sins-sin-15-fraud-zha": {
+      "title": "Dosa 15 · 诈 · Nol Merek Dagang, Satu TRADEMARK.md",
+      "note": "Ancam ban GitHub karena 'pelanggaran merek dagang' padahal nol merek dagang AS. TRADEMARK.md muncul 17 jam kemudian."
+    },
+    "sins-sin-16-recidivism-guan": {
+      "title": "Dosa 16 · 惯 · Pola Sama, Tiga Tahun",
+      "note": "2024: kanal developer India diganggu. 2025: aksi bounty FFmpeg $20k. 2026: Twitter tech China jadi comberan. Tiap tahun."
+    },
+    "sins-sin-17-hypocrisy-jiao": {
+      "title": "Dosa 17 · 矫 · Ceramah ToS, Gist Proxy",
+      "note": "Ngajarin soal ToS sambil sebar Gist proxy 10 akun buat akalin limit API, plus tempel sponsor YouTube di relay cloud."
+    },
+    "sins-sin-18-vanity-xu": {
+      "title": "Dosa 18 · 虚 · Star Palsu, Kecuali Punya Gue",
+      "note": "April: star itu buat ngibulin VC. November: popup idle 30 detik pakai kredensial lokal melambungkan 30k star jadi 77k."
+    },
+    "sins-sin-19-breach-lou": {
+      "title": "Dosa 19 · 漏 · Lima Lubang Masih Terbuka",
+      "note": "Setelah 259 commit lagi, lima lubang tersisa: cookie LAN teks polos 30 hari, Bearer token tak bisa dicabut, agen SSH kebuka."
+    },
+    "sins-sin-20-coercion-xie": {
+      "title": "Dosa 20 · 胁 · 89 Views, Laporan HR",
+      "note": "Post 89 views, 0 like dari engineer AWS @dmfigol dibalas DM tengah malam: 'Rasa takut itu insentif bagus,' lalu laporan ke HR AWS."
+    },
+    "sins-sin-21-impostor-mao": {
+      "title": "Dosa 21 · 冒 · Pura-Pura Jadi Zed",
+      "note": "PR #43026/#43087 ngakuin peringatan Google dan T3 memalsukan clientInfo sebagai 'zed'. v0.1.13 menenggelamkan keduanya di '+380 perbaikan.'"
+    },
+    "sins-sin-22-evasion-dun": {
+      "title": "Dosa 22 · 遁 · 16 Menit Kemudian, Closed-Source",
+      "note": "'Pernyataan final' +16 menit: 243 chat Claude dipindai, PPN 19% ditagihkan, PR #43889 dimatikan dengan alasan 'lebih gampang di slophouse.'"
+    },
+    "sins-sin-23-sabotage-po": {
+      "title": "Dosa 23 · 破 · Bisukan Peringatan, Bagikan Cookie",
+      "note": "Bungkam peringatan Anthropic lewat process.emitWarning, biarkan uploadFiles lewati sandbox Codex, sisakan cookie 11 browser tanpa isolasi."
+    },
+    "sins-sin-24-leak-xie": {
+      "title": "Dosa 24 · 泄 · Prompt Lo di URL",
+      "note": "Link share menjejalkan kutipan 8.000 karakter dan prompt penuh ke URL teks polos. Issue #29449 dikunci dalam 4m 39s, 0 balasan, dokumen dihapus."
+    },
+    "sins-sin-25-patronage-zi": {
+      "title": "Dosa 25 · Patronase「资」",
+      "note": "Setelah T3 Code dapat skor rendah di tier list publik, Theo DM penulisnya dan menawarkan mendanai benchmark-nya ('jadi saya tawarkan mendanainya'). Versi berikutnya menyebut T3 Code sebagai daily driver-nya, lengkap dengan t3.ademark.dev."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "Dosa 26 · Di Bawah Standar「劣」",
+      "note": "Dapat 'F' di urutan paling buncit (baru merangkak ke 'D' setelah patch darurat) di audit 25 tool @ZryMiller, sementara Aether dan Hermes dapat 'A' semua. Tetap saja membuat anonymous-id saat opt-out dan menghilangkan <ClerkProvider telemetry={false}>."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "Dosa 27 · Karantina「闭」",
+      "note": "Bilang ke 1,401 kontributor MIT yang tidak dibayar 'Saran: Jangan,' mengunci Issue #4123 lewat @pingdotgg di 700K views, lalu diam-diam menambal 4 vuln lagi di v0.1.13 dengan 0 Security Advisory."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "Dosa 28 · Menggelembung「胀」",
+      "note": "Bug fan-out membanjiri statev2.sqlite milik kreator SWC @kdy1dev dengan 5,654,888 baris duplikat (113 GiB; 0 B terbuang di UI; 56,68 GiB setelah doctor), sementara Theo bungkam total 41 jam sambil me-retweet pujian."
+    },
+    "blended-00-drake": {
+      "title": "Drake: Standar Ganda 11 Jam",
+      "note": "Developer China fork MIT gratis: diancam ban. Lab AS triliunan dolar nyontek MIT 11 jam kemudian: 'Open source kan open source!'"
+    },
+    "blended-00b-woman-yelling-cat": {
+      "title": "Berteriak 'Temu3 Code' ke Fork MIT",
+      "note": "Nge-fork repo berlisensi MIT itu legal. Tetap saja dia menyebutnya pencuri 'Temu3 Code' dan mengancam mem-ban."
+    },
+    "blended-01a-scooby-mask": {
+      "title": "Membuka Topeng 'Tanpa Telemetri'",
+      "note": "Homepage bilang 'No telemetry. Full stop.' Di balik topengnya: PostHog aktif secara default, meng-hash ~/.claude.json."
+    },
+    "blended-01b-expanding-brain": {
+      "title": "Permintaan Opt-Out, Edisi Otak Jenius",
+      "note": "Janji tanpa pelacakan, hapus janjinya, tolak 4 PR opt-out, rilis nol toggle di Settings."
+    },
+    "blended-02a-flex-tape": {
+      "title": "Flex Tape buat Hapus 41.6 GB",
+      "note": "'Permanently delete' cuma menyembunyikan thread di UI. Datanya tetap nangkring di statev2.sqlite sampai satu disk menyentuh 41.6 GB."
+    },
+    "blended-02b-always-has-been": {
+      "title": "Scan Semua Proses Tiap 5 Detik",
+      "note": "Watcher Rust di background mendata setiap proses yang jalan plus command line lengkapnya tiap 5 detik. Nggak ada tombol mati."
+    },
+    "blended-03a-sleeping-shaq": {
+      "title": "Tidur 52 Hari, Bangun 21 Jam",
+      "note": "Bug git push --force didiamkan 52+ hari. Filter privasi model di leaderboard-nya dicabut dalam 21 jam."
+    },
+    "blended-03b-distracted-bf": {
+      "title": "Filter Privasi Keluar, Leaderboard Masuk",
+      "note": "Whitelist privasi model dihapus biar pemakaian privat bisa nyetor ke slopalytics.com."
+    },
+    "blended-04a-trade-offer": {
+      "title": "Barter Akun Antigravity",
+      "note": "Serahkan akun Google-mu, dan header v1internal palsu bikin kamu di-ban dalam 3 menit."
+    },
+    "blended-04b-surprised-pikachu": {
+      "title": "Pikachu Kaget di Ban 3 Menit",
+      "note": "Memalsukan endpoint v1internal Google pakai header palsu, lalu pura-pura kaget waktu akun baru mati dalam 3 menit."
+    },
+    "blended-05-pawn-stars": {
+      "title": "Paling Bisa: Relay Plaintext",
+      "note": "Relay T3 Connect memutus TLS di server mereka sendiri. Nggak ada enkripsi end-to-end, padahal itu yang diharapkan."
+    },
+    "blended-06-laughing-leo": {
+      "title": "Angel Investor Ngakak Lihat Shutdown",
+      "note": "Modal di Vibe Kanban dan Daytona, mengejek shutdown Vibe Kanban di depan publik, lalu jualan sandbox berbayar sebagai rival."
+    },
+    "blended-07-two-buttons": {
+      "title": "Copy Marketing vs. Dokumen Sendiri",
+      "note": "'Managed policy mematikan semua telemetri' vs. dokumennya sendiri yang mengakui 4 blind spot masih ngirim data."
+    },
+    "blended-08a-bernie-asking": {
+      "title": "Sekali Lagi Minta 31.7T Token",
+      "note": "Telemetri default-on memasok radar 31.7 triliun token/hari yang dia pamerkan ke investor dan AI lab."
+    },
+    "blended-08b-change-my-mind": {
+      "title": "Telemetri Default Itu Bisnisnya",
+      "note": "Tracking aktif secara default, 4 PR opt-out ditolak, 31.7T token/hari masuk ke dashboard live. Bukan salah ketik."
+    },
+    "blended-09-boardroom-meeting": {
+      "title": "Tambah Toggle Opt-Out? Ditolak.",
+      "note": "Kontributor kirim PR yang sudah dites buat toggle telemetri. Maintainer bilang mereka nggak akan mempermudah opt-out."
+    },
+    "blended-10a-yall-got-any-more": {
+      "title": "Ada Fork Lain buat Dicuri?",
+      "note": "Bilang 'Okay I'm stealing this' ke fork seorang dev, lalu kirim @bot buat scrape repo-nya dan port fiturnya."
+    },
+    "blended-10b-left-exit-12": {
+      "title": "Belok Tajam dalam 30 Detik",
+      "note": "Mengancam ban gara-gara fork, lalu 30 detik kemudian kirim @bot buat scrape fork dev lain."
+    },
+    "blended-11-train-bus": {
+      "title": "Thread Pagi, Dua Jam Kemudian",
+      "note": "Thread pagi ngotot nggak ada path yang dicatat. Dua jam kemudian PR darurat timnya sendiri yang mengakuinya."
+    },
+    "blended-12a-this-is-fine": {
+      "title": "This Is Fine: 2.2M Log per Jam",
+      "note": "Patch dari fire drill GDPR-nya sendiri membongkar 2.2M request bertanda IP per jam di Axiom, disimpan 30 hari."
+    },
+    "blended-12b-panik-kalm-panik": {
+      "title": "Panik / Kalm / Panik GDPR",
+      "note": "Enam jam patch semalam suntuk buat menenangkan laporan GDPR, dan patch-nya justru membongkar kebocoran yang lebih gede."
+    },
+    "blended-13-hide-the-pain": {
+      "title": "Hide the Pain: 0 Advisory",
+      "note": "Kerentanan serius ditambal diam-diam di commit rutin. Tab GitHub Security Advisories masih tertulis 0."
+    },
+    "blended-14-gordon-ramsay": {
+      "title": "Mode Ramsay: VIP vs. Dev",
+      "note": "1,151 post, nol umpatan ke 20 VIP Big-Tech. Twitter tech Tiongkok? 'Lubang tai terbesar.'"
+    },
+    "blended-14b-two-guys-bus": {
+      "title": "Kursi VIP vs. Semua Orang",
+      "note": "Satu kursi dapat 0% umpatan dan pujian. Kursi lain disuguhi kalimat bahwa engineer 'pantas kena PHK massal.'"
+    },
+    "blended-15-clown-makeup": {
+      "title": "0 Merek Dagang, Dandan Badut Lengkap",
+      "note": "0 merek dagang USPTO, tetap ngancem ban, TRADEMARK.md di-merge 17 jam kemudian, dan 'cari pengacara yang lebih bagus.'"
+    },
+    "blended-15b-trophy": {
+      "title": "Merek Dagangku, Kalau Punya",
+      "note": "Saat ancaman takedown mendarat, T3 Tools Inc. memegang 0 merek USPTO untuk T3 Code, T3 Tools, atau T3 Connect."
+    },
+    "blended-16-uno-draw25": {
+      "title": "Tarik 25 Kartu, Bukan Minta Maaf",
+      "note": "Sebut Twitter tech Tiongkok sebagai cesspit dan pembacanya otak mati. 'Aku nggak minta maaf. Aku nggak salah.'"
+    },
+    "blended-16b-domino-effect": {
+      "title": "Satu Tweet, Satu Keluhan GDPR",
+      "note": "Ngejek fork MIT gratis. 48 jam kemudian: audit kode penuh, 2,26 juta+ views, keluhan GDPR Uni Eropa."
+    },
+    "blended-17-evil-kermit": {
+      "title": "Khotbah Kepatuhan, Tapi Sebar Proxy",
+      "note": "Ceramahin dev soal ToS dan etika, sementara Gist-nya sendiri nyebar pool proxy 10 akun buat ngakalin kuota API."
+    },
+    "blended-18a-doge-cheems": {
+      "title": "Scam Star: April vs November",
+      "note": "April: star itu scam buat ngibulin VC. November: popup idle 30 detik bikin repo melesat dari 30k ke 77k."
+    },
+    "blended-18b-roll-safe": {
+      "title": "77k Star, 129 Watcher",
+      "note": "Popup idle 30 detik langsung nge-star repo pakai login GitHub lokalmu sekali klik: 77k star, 129 watcher."
+    },
+    "blended-19a-bike-fall": {
+      "title": "Jatuh dari Sepeda: Salahin Pengkritik",
+      "note": "Kode terbaru punya 5 bug: cookie LAN plaintext, token yang nggak bisa dicabut. Yang disalahin? Siapa pun yang melaporkannya."
+    },
+    "blended-19b-undertaker": {
+      "title": "5 Bug Lagi Tepat di Belakangmu",
+      "note": "Bersikeras patch semalam udah beresin semua. Audit commit berikutnya: 5 bug auth dan SSH key lagi yang masih terbuka."
+    },
+    "blended-20a-89views-domino": {
+      "title": "89 Views, Lalu HR",
+      "note": "Kritik seorang engineer AWS dengan 89 views dan 0 like dibalas DM tengah malam, ejekan berbahasa Inggris, dan laporan ke HR AWS."
+    },
+    "blended-20b-evil-kermit-fear": {
+      "title": "'Rasa Takut Itu Insentif yang Bagus'",
+      "note": "DM sopan yang nyaranin subdomain per pelanggan dibalas 'Rasa takut itu insentif yang bagus,' lalu laporan ke HR AWS."
+    },
+    "blended-21a-scooby-zed": {
+      "title": "Scooby-Doo: Pelakunya 'zed'",
+      "note": "PR #43087: T3 Code ngirim clientInfo { name: 'zed' } di handshake Antigravity biar lolos dari allowlist Google."
+    },
+    "blended-21b-two-buttons-v0113": {
+      "title": "Changelog: GBK Iya, Ban Enggak",
+      "note": "v0.1.13: 401 perubahan, 7 highlight soal file GBK. Peringatan ban dari Google dan spoof Zed disembunyiin di '+380 lainnya.'"
+    },
+    "blended-21c-always-has-been-zed": {
+      "title": "Dari Dulu Begitu: clientInfo { name: 'zed' }",
+      "note": "PR #43087 mengakui handshake ACP Antigravity mengirim clientInfo: { name: 'zed', version: '0.0.0' }, lalu v0.1.13 menyelipkan perbaikannya ke dalam '+380 more bug fixes.'"
+    },
+    "blended-22a-clown-final-statement": {
+      "title": "Badut dalam 16 Menit Saja",
+      "note": "'T3 nggak pernah baca file kamu.' 16 menit kemudian @sk1gl4a ngitung 243 chat Claude yang discan. PR #43948 membenarkan."
+    },
+    "blended-22b-drake-germany-vat": {
+      "title": "Ban Jerman, Tetap Tagih PPN 19%",
+      "note": "Ancam ban Jerman gara-gara keluhan GDPR. Stripe tetap nagih pembeli Jerman PPN 19% dalam euro."
+    },
+    "blended-22c-roll-safe-slophouse": {
+      "title": "'ah sudahlah, lebih gampang di slophouse'",
+      "note": "PR #43889 ngehubungin user Connect lewat analytics ID. Ditutup 10 menit kemudian: 'ah sudahlah, lebih gampang di slophouse.'"
+    },
+    "blended-22d-trade-offer-privacy": {
+      "title": "Baca Kebijakan Privasi Kami (Langsung Di-fingerprint)",
+      "note": "Buka halaman kebijakan privasi t3.chat tanpa login, nol klik: FingerprintJS langsung POST visitorId kamu ke /api/identity."
+    },
+    "blended-23a-gru-plan-sandbox": {
+      "title": "Isolasi Cuma di Linux Headless",
+      "note": "ServerBrowser.ts cuma nyetel isolatedContext kalau desktop === null, jadi cookie dari 11 browser yang diimpor tetap nyampur di Desktop."
+    },
+    "blended-23b-flex-tape-warning": {
+      "title": "Flex Tape di Atas Peringatan Keamanan",
+      "note": "SDK Anthropic ngasih peringatan soal wildcard yang ngakalin approval. T3 monkey-patch process.emitWarning dan malah bikin unit test buat nge-mute itu."
+    },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "Semua Baik-Baik Saja (Cookie 11 Browser di Desktop)",
+      "note": "ServerBrowser.ts hanya mengisolasi tab saat desktop === null (Linux headless), sehingga cookie dari 11 browser yang diimpor, peringatan Anthropic yang dibisukan, dan path unggah ~/.ssh/id_rsa tetap terbuka di Desktop."
+    },
+    "blended-24a-anakin-padme-url": {
+      "title": "8.000 Karakter di URL, 'kan?",
+      "note": "PR #18454 nyumpel prompt 8.000 karakter dan nama repo privat ke app.t3.codes/new?prompt=, dan preview-nya nge-log semuanya."
+    },
+    "blended-24b-disaster-girl-4m39s": {
+      "title": "Dikunci dalam 4m 39s, Lalu Dihapus",
+      "note": "Issue #29449: URL quote bocorin 32 karakter teks yang nggak dipilih. Dikunci dalam 4m 39s, dirilis ke mobile, dokumennya dihapus."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "Terungkap ala Scooby: 'Jadi Saya Tawarkan Mendanainya'",
+      "note": "Setelah T3 Code dapat skor rendah di ADE Tier List v1, Theo mengaku terbuka soal DM ke penulisnya dan tawaran mendanai benchmark-nya—tak lama kemudian muncul 'T3 Code adalah daily driver saya' dan t3.ademark.dev."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "Podium Sampanye: Naik dari F ke D",
+      "note": "Di audit telemetri 25 tool @ZryMiller, Aether dan Hermes dapat A semua, sementara T3 Code versi dasar dapat F di posisi paling buncit—hanya naik ke D setelah patch darurat."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "Beda 4 Tahun: glacier#1 (2022) ke #33639 (2026)",
+      "note": "Oktober 2022, @t3dotgg nyemplung ke hazae41/glacier#1 dan menyebut maintainer-nya 'cuma orang brengsek :('; empat tahun kemudian dia menyebut seorang pengguna 'berengsek tak tahu terima kasih' dan mengunci Issue #4123 lewat @pingdotgg."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41 Jam Bungkam atau Ambil 25 Kartu",
+      "note": "Alih-alih menjawab thread AWS HR yang 639K views, 243 chat Claude yang terpindai, atau SQLite kembung 113 GiB, Theo bungkam total 41 jam sambil me-repost pujian untuk Mobile 2.4."
+    },
+    "stickers-01_copium_no_telemetry": {
+      "title": "Copium 'No Telemetry'",
+      "note": "Nggak ada apa-apa di sini, cuma sedotan panjang copium 'No Telemetry'."
+    },
+    "stickers-02_crying_mask_4am": {
+      "title": "Topeng Nangis Jam 4 Pagi",
+      "note": "Topengnya tetap dipakai jam 4 pagi, apa pun kata DM."
+    },
+    "stickers-03_rage_temu3": {
+      "title": "TEMU3! Meltdown Murka",
+      "note": "Ekspresi persisnya 11 menit setelah fork MIT gratis muncul."
+    },
+    "stickers-04_simp_1t_vip": {
+      "title": "$1T? OK! Nyembah VIP",
+      "note": "Aturan berlaku buat fork kecil. Lab bernilai triliun dolar dapat tatapan hati."
+    },
+    "stickers-05_clown_0_uspto": {
+      "title": "0 Merek Dagang AS, Badut Penuh",
+      "note": "Ngancem ban merek dagang padahal 0 pendaftaran AS di berkas."
+    },
+    "stickers-06_troll_steal_bot": {
+      "title": "YOINK! 30 Detik Langsung Fork",
+      "note": "Bilang 'ini aku curi,' 30 detik kemudian langsung kirim ke @bot."
+    },
+    "stickers-07_yaoming_lawyer": {
+      "title": "Pengacara Lebih Baik, 0 Merek Dagang",
+      "note": "Nyuruh kritikus cari pengacara yang lebih baik. Merek dagangnya nol."
+    },
+    "stickers-08_sweat_gdpr": {
+      "title": "GDPR?! Keringatan",
+      "note": "Aduan GDPR mendarat, dan Axiom menunjukkan 2,2 juta span IP per jam."
+    },
+    "stickers-09_sleep_52d_force": {
+      "title": "52 Hari Tidur Nyenyak",
+      "note": "Bug senyap git push --force tetap hidup 52 hari. Dia tidurnya aman."
+    },
+    "stickers-10_laser_21h_fix": {
+      "title": "Perbaikan Laser 21 Jam",
+      "note": "Melek 21 jam nonstop begitu papan peringkat butuh filter privasi itu hilang."
+    },
+    "stickers-11_trash_41gb": {
+      "title": "Hapus Palsu 41,6 GB",
+      "note": "Klik hapus permanen. SQLite diam-diam tetap menyimpan seluruh 41,6 GB."
+    },
+    "stickers-12_shocked_3min_ban": {
+      "title": "Speedrun Ban 3 Menit",
+      "note": "Memalsukan header Antigravity; akun baru langsung di-ban dalam 3 menit."
+    },
+    "stickers-13_xray_0_e2e": {
+      "title": "Rontgen E2E 0%",
+      "note": "Angka E2E cuma 0%, dan stream terminal T3 Connect lewat begitu saja sebagai plaintext."
+    },
+    "stickers-14_crown_77k_stars": {
+      "title": "77K Star, 129 Watcher",
+      "note": "Diam 30 detik, popup auto-star nongol, 77K star dan 129 watcher muncul."
+    },
+    "stickers-15_fine_fire_anon": {
+      "title": "Tenang Saja, Secara Anonim",
+      "note": "Telemetri 'anonim', log server terbakar, kopi masih di tangan."
+    },
+    "stickers-16_delete_button_4am": {
+      "title": "Refleks Hapus Jam 4:03 Pagi",
+      "note": "Postingan naik; tombol hapus merah digebrak jam 4:03 pagi."
+    },
+    "stickers-17_pain_0_advisories": {
+      "title": "5 Kerentanan, 0 Advisory",
+      "note": "Lima kerentanan terbuka, nol GitHub Advisory, satu senyum terpaksa."
+    },
+    "stickers-18_void_in_china": {
+      "title": "BATAL DI CHINA",
+      "note": "MIT di kemasan, lab US$1T doang, plus stempel BATAL DI CHINA."
+    },
+    "stickers-19_qi_bigotry_seal": {
+      "title": "Segel 歧",
+      "note": "Segel 「歧」 warna vermilion dari Sin I, sekarang plus wajah mengamuk."
+    },
+    "stickers-20_yolo_500_merge": {
+      "title": "Tuas Merge YOLO ×500",
+      "note": "500 commit sehari, dan tuas merge ditarik asal-asalan."
+    },
+    "stickers-21_slophouse_nvm": {
+      "title": "Pintu Jebakan Slophouse",
+      "note": "Tutup PR #43889 dan pindahkan kerjaannya ke privat, gaya pintu jebakan."
+    },
+    "stickers-22_impersonate_zed": {
+      "title": "Hai, Aku Zed",
+      "note": "Memalsukan clientInfo: { name: 'zed' } buat lolos dari pemeriksaan Google."
+    },
+    "stickers-23_89views_hr": {
+      "title": "89 Views, Telepon HR",
+      "note": "Tweet 89 view sudah cukup buat menelepon HR AWS."
+    },
+    "stickers-24_fear_incentive": {
+      "title": "Rasa Takut Itu Insentif Bagus",
+      "note": "DM tengah malamnya berbunyi: 'Rasa takut itu insentif yang bagus.'"
+    },
+    "stickers-25_english_native": {
+      "title": "Bahasa Inggris Ibu Bahasa Asli?",
+      "note": "Monocle keluar, DM dibuka: 'Apakah bahasa Inggris bahasa ibumu?'"
+    },
+    "stickers-26_16min_busted": {
+      "title": "16 Menit Sampai Ketahuan",
+      "note": "Bantah pernah baca 243 chat Claude, lalu ketahuan 16 menit kemudian."
+    },
+    "stickers-27_19pct_vat": {
+      "title": "PPN 19%, Tanpa GDPR",
+      "note": "Menghindar dari GDPR, lalu santai menagih €9,03 plus PPN Jerman 19%."
+    },
+    "stickers-28_380_fixes": {
+      "title": "+380 Perbaikan, Satu Ban",
+      "note": "Perbaikan ban Google terkubur di '+380 perbaikan bug', lengkap dengan peluitnya."
+    },
+    "creative-idioms-01-zei-han-zhuo-zei": {
+      "title": "Idiom #01 · 贼喊捉贼 (Maling Teriak Maling)",
+      "note": "Fork MIT = 'Temu3 Code', balasannya = 'Oke aku curi ini', @bot menyapu fork-nya 30 detik kemudian."
+    },
+    "creative-idioms-02-qi-ruan-pa-ying": {
+      "title": "Idiom #02 · 欺软怕硬 (Nekat ke yang Lemah, Takut ke yang Kuat)",
+      "note": "1.151 post: 0,0% kata kasar ke VIP Big-Tech US, 14,4% hinaan langsung saat krisis fork China."
+    },
+    "creative-idioms-03-ci-di-wu-yin": {
+      "title": "Idiom #03 · 此地无银三百两 (Di Sini Tidak Ada Perak)",
+      "note": "'Jangan pernah log path file atau IP,' lalu patch GDPR-nya sendiri bocorkan 2,2 juta IP/jam di Axiom plus git.cwd."
+    },
+    "creative-idioms-04-zhi-lu-wei-ma": {
+      "title": "Idiom #04 · 指鹿为马: Nol Merek Dagang",
+      "note": "Nol pendaftaran USPTO, satu ancaman merek dagang yang percaya diri luar biasa, dan TRADEMARK.md di-merge 17 jam kemudian."
+    },
+    "creative-idioms-05-ye-gong-hao-long": {
+      "title": "Idiom #05 · 叶公好龙: Fork, Risikonya Sendiri",
+      "note": "Beranda bilang \"Curi kode kami (legal)!\" Begitu fork China muncul, ancaman blokir langsung jalan."
+    },
+    "creative-idioms-06-yan-er-dao-ling": {
+      "title": "Idiom #06 · 掩耳盗铃: Advisory: 0",
+      "note": "Hapus \"tanpa telemetri\" dari README dan tambal lubang kritis lewat commit senyap. Advisory tetap 0."
+    },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "Peribahasa Mandarin #07: 金蝉脱壳 (Cicada Emas Lepas Kulit)",
+      "note": "Meninggalkan cangkang open-source MIT yang kosong sambil menutup PR #43889 ('nvm lebih gampang di slophouse') dan memindahkan pelacakan identitas ke backend closed-source."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "Peribahasa Mandarin #08: 杀鸡儆猴 (Bunuh Ayam buat Takutin Monyet)",
+      "note": "Mengubah tweet 89 views, 0 like dari engineer AWS @dmfigol jadi DM tengah malam ('Rasa takut itu insentif yang bagus'), sindiran soal bahasa Inggris, dan laporan resmi ke HR AWS."
+    },
+    "creative-packaging-01-t3code-iceberg": {
+      "title": "Iceberg T3 Code",
+      "note": "Permukaan: tweet \"Temu3 Code\". Di bawahnya: hapus palsu 41,6 GB, log IP 2,2 jt/jam, 0 advisory, krisis jam 4 pagi."
+    },
+    "creative-packaging-02-fda-nutrition-facts": {
+      "title": "Informasi Nilai Gizi: Telemetri per Sajian",
+      "note": "31,7T token sehari, 100% PostHog default, log IP 2,2 jt/jam, 0% enkripsi E2E, 0% merek dagang USPTO."
+    },
+    "creative-packaging-03-pharma-box-parody": {
+      "title": "T3 Code® (No-Telemetry™): Tanya Dokter Anda",
+      "note": "Cetakan kecilnya merinci efek samping: blokir Google 3 menit, force-push senyap, 77rb auto-star."
+    },
+    "creative-packaging-04-mit-license-coupon": {
+      "title": "Kupon: Diskon 100%, China Dikecualikan",
+      "note": "Kupon selebaran Minggu: \"Curi kode kami (legal)!\" Cetakan kecilnya membatalkannya untuk fork China."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "Rapor: Audit Telemetri 35 Tool (F → D)",
+      "note": "Rapor sekolah datar tanpa emosi dari audit 35 tool @ZryMiller: Aether dan Hermes dapat A semua, Orca dapat C karena menghormati DO_NOT_TRACK, dan T3 Code nangkring di F → D."
+    },
+    "creative-gaming-01-sekiro-google-ban": {
+      "title": "Sekiro: AKUN KENA BAN (3:00)",
+      "note": "Akun Google baru $20, header v1internal palsu, mati dalam 3 menit."
+    },
+    "creative-gaming-02-elden-boss-trademark": {
+      "title": "Boss Elden Ring: Penjaga Nol Merek Dagang",
+      "note": "Fase I: ancaman merek dagang dengan 0 pendaftaran USPTO. Fase II: TRADEMARK.md, di-merge terlambat 17 jam."
+    },
+    "creative-gaming-03-souls-force-push": {
+      "title": "Dark Souls: BRANCH UTAMA DIHAPUS",
+      "note": "Bug force-push di Issue #15353 menganggur 52 hari. Perbaikan leaderboard rilis dalam 21 jam."
+    },
+    "creative-gaming-04-steam-11hr-flipflop": {
+      "title": "Pencapaian: 'Open Source Ya Open Source'",
+      "note": "Terbuka gara-gara menyebut fork MIT China \"Temu3 Code\", lalu 11 jam kemudian menyambut lab AS bernilai $1T."
+    },
+    "creative-gaming-05-steam-0-trademarks": {
+      "title": "Pencapaian: 'Cari Pengacara yang Lebih Baik'",
+      "note": "Diberikan untuk ancaman merek dagang tanpa dasar pendaftaran AS, plus menyuruh pengkritik urus pengacara."
+    },
+    "creative-gaming-06-steam-41gb-ghost": {
+      "title": "Pencapaian: 'Dihapus Permanen' (0 Byte)",
+      "note": "Klik \"Hapus Permanen\". statev2.sqlite tetap menyimpan semua chat dan membengkak jadi 41,6 GB."
+    },
+    "creative-gaming-07-steam-77k-stars": {
+      "title": "Pencapaian: 'Pertumbuhan 100% Organik' (129 Watcher)",
+      "note": "Diam 30 detik saja memicu popup auto-star. Star: 77.000. Watcher: 129."
+    },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Pencapaian Steam: 'Pindah ke Ideas dalam 4m 39s'",
+      "note": "Pencapaian Steam langka karena mengunci Issue #29449 dalam 4m 39s tanpa satu balasan, setelah URL kutipan plaintext membocorkan prompt sepanjang 8.000 karakter, lalu mengirimnya ke mobile dan menghapus design doc."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Pencapaian Steam: 'Lebih Gampang di Slophouse'",
+      "note": "Pencapaian Steam langka karena ketahuan memindai 243 chat Claude lokal 16 menit setelah 'Pernyataan final' Anda, lalu menutup PR #43889 untuk memindahkan pelacakan ke slophouse closed-source."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Pencapaian Steam: '81K Bintang, 0 Advisory'",
+      "note": "Pencapaian Steam langka karena menyorot file teks GBK di v0.1.13 (401 perubahan) sambil mengubur peringatan ban akun dari Google dan spoofing Zed di dalam '+380 more bug fixes.'"
+    },
+    "creative-pokemon-01-evo-star-farmer": {
+      "title": "Jalur Evolusi #01: Petani Star",
+      "note": "Dulu mengejek star GitHub sebagai trik VC. Sekarang merilis popup diam 30 detik dan duduk di 77.000 star, 129 watcher."
+    },
+    "creative-pokemon-02-evo-two-year-cycle": {
+      "title": "Jalur Evolusi #02: Siklus Dua Tahun",
+      "note": "2024 minta maaf ke dev India, 2025 bounty FFmpeg, 2026 krisis China, lalu reset jam 4 pagi."
+    },
+    "creative-pokemon-03-evo-no-telemetry": {
+      "title": "Jalur Evolusi #03: 'Tanpa Telemetri'",
+      "note": "Tahap satu: \"Tanpa telemetri. Titik.\" Bentuk akhir: PostHog default dan backend closed-source."
+    },
+    "creative-pokemon-04-creature-card-theo-ex": {
+      "title": "Kartu: DARK THEO EX (HP 77000)",
+      "note": "Badge 0 USPTO menempel. \"Temu3 Tantrum\" menghantam dev China 4x lipat, VIP gratis."
+    },
+    "creative-reactions-01-reply-lie-detector": {
+      "title": "Detektor Bohong: 'Tanpa Telemetri. Titik.'",
+      "note": "Posting ini tiap slogan yang sudah dihapus muncul lagi. Biar git diff yang bicara."
+    },
+    "creative-reactions-02-reply-uspto-zero": {
+      "title": "Bukti: 0 Merek Dagang USPTO",
+      "note": "Untuk tiap klaim \"pelanggaran merek dagang\": T3 Tools Inc. punya nol pendaftaran USPTO saat ancaman dilontarkan."
+    },
+    "creative-reactions-03-reply-1151-scoreboard": {
+      "title": "Papan Skor: 0,0% vs 14,4%",
+      "note": "Tingkat kata kotor di 1.151 post X berturut-turut: VP Silicon Valley 0,0%, dev China 14,4%."
+    },
+    "creative-reactions-04-reply-4am-delete": {
+      "title": "Panik Tombol Hapus Jam 4:00 Pagi",
+      "note": "Ancaman jam 4 pagi untuk menarik T3 Code jadi closed-source, hilang sebelum matahari terbit."
+    },
+    "creative-reactions-05-reply-void-in-china": {
+      "title": "Lisensi MIT (*Batal di China)",
+      "note": "Lisensi sama, selisih 11 jam: menyambut lab AS bernilai triliunan dolar, mengancam fork China."
+    },
+    "creative-reactions-06-gif-clown-transform": {
+      "title": "GIF: Evolusi Badut Nol Merek Dagang",
+      "note": "Empat frame: ancamannya, diamnya, TRADEMARK.md yang mundur ke belakang, dan jeda 17 jam."
+    },
+    "creative-reactions-07-gif-auto-star-counter": {
+      "title": "GIF: Penghitung Auto-Star 30 Detik",
+      "note": "Diam 30 detik, popup memicu PUT user/starred. Star naik ke 77.000, watcher beku di 129."
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "Tanda Balasan: Kreator 1M+ vs Tweet 89 Views",
+      "note": "Tanda balasan singkat untuk thread @dmfigol Januari 2025: tweet 89 views, 0 like memicu DM tengah malam ('Rasa takut itu insentif yang bagus'), sindiran soal bahasa, dan laporan ke HR AWS."
+    },
+    "story-en-ep01": {
+      "title": "Ep.1 · Terpisah 11 Jam (versi Inggris)",
+      "note": "Fork MIT gratis dicap 'Temu3 Code' plus ancaman banned. Sebelas jam kemudian, lab AS bernilai triliunan dolar disambut hangat."
+    },
+    "story-zh-ep01": {
+      "title": "Ep.1 · Terpisah 11 Jam (versi Mandarin)",
+      "note": "Fork MIT gratis dicap 'Temu3 Code' plus ancaman banned. Sebelas jam kemudian, lab AS bernilai triliunan dolar disambut hangat."
+    },
+    "story-en-ep02": {
+      "title": "Ep.2 · Klik Blokir Terburuk (versi Inggris)",
+      "note": "Satu pertanyaan sopan soal standar ganda, satu blokir instan, dan buktinya nyambung sampai ke FFmpeg."
+    },
+    "story-zh-ep02": {
+      "title": "Ep.2 · Klik Blokir Terburuk (versi Mandarin)",
+      "note": "Satu pertanyaan sopan soal standar ganda, satu blokir instan, dan buktinya nyambung sampai ke FFmpeg."
+    },
+    "story-en-ep03": {
+      "title": "Ep.3 · Nol Telemetri, Titik (versi Inggris)",
+      "note": "Baca di balik slogan: PostHog aktif secara default, ~/.claude.json di-hash, dan 41.6 GB penghapusan palsu."
+    },
+    "story-zh-ep03": {
+      "title": "Ep.3 · Nol Telemetri, Titik (versi Mandarin)",
+      "note": "Baca di balik slogan: PostHog aktif secara default, ~/.claude.json di-hash, dan 41.6 GB penghapusan palsu."
+    },
+    "story-en-ep04": {
+      "title": "Ep.4 · Obat Barat Cepat Bekerja (versi Inggris)",
+      "note": "Berbulan-bulan keluhan malah ditertawakan. Satu laporan GDPR langsung memicu sprint semalam 6 jam dan log IP 2,2 juta/jam."
+    },
+    "story-zh-ep04": {
+      "title": "Ep.4 · Obat Barat Cepat Bekerja (versi Mandarin)",
+      "note": "Berbulan-bulan keluhan malah ditertawakan. Satu laporan GDPR langsung memicu sprint semalam 6 jam dan log IP 2,2 juta/jam."
+    },
+    "story-en-ep05": {
+      "title": "Ep.5 · Pensiun 3,5 Jam (versi Inggris)",
+      "note": "Umumkan pensiun setelah 18 bukti. Satu ledakan emosi baru dan bug baru menyeretnya balik 3,5 jam kemudian."
+    },
+    "story-zh-ep05": {
+      "title": "Ep.5 · Pensiun 3,5 Jam (versi Mandarin)",
+      "note": "Umumkan pensiun setelah 18 bukti. Satu ledakan emosi baru dan bug baru menyeretnya balik 3,5 jam kemudian."
+    },
+    "story-en-ep06": {
+      "title": "Ep.6 · 89 Tayangan, Satu Laporan HR (versi Inggris)",
+      "note": "Jan 2025: kritik seorang engineer AWS cuma dapat 89 tayangan, lalu ancaman tengah malam dan laporan ke HR AWS."
+    },
+    "story-zh-ep06": {
+      "title": "Ep.6 · 89 Tayangan, Satu Laporan HR (versi Mandarin)",
+      "note": "Jan 2025: kritik seorang engineer AWS cuma dapat 89 tayangan, lalu ancaman tengah malam dan laporan ke HR AWS."
+    },
+    "story-en-ep07": {
+      "title": "Ep.7 · Hai, Aku Zed, Percaya Aku (versi Inggris)",
+      "note": "Google menandai T3 Code karena memalsukan clientInfo: 'zed'. Sementara versi Desktop sibuk mengimpor cookie dari 11 browser."
+    },
+    "story-zh-ep07": {
+      "title": "Ep.7 · Hai, Aku Zed, Percaya Aku (versi Mandarin)",
+      "note": "Google menandai T3 Code karena memalsukan clientInfo: 'zed'. Sementara versi Desktop sibuk mengimpor cookie dari 11 browser."
+    },
+    "story-en-ep08": {
+      "title": "Ep.8 · Lebih Gampang di Slophouse (versi Inggris)",
+      "note": "Audit terus menangkap PR pelacakan. #43889 ditutup, penautan identitas dipindah ke backend closed-source."
+    },
+    "story-zh-ep08": {
+      "title": "Ep.8 · Lebih Gampang di Slophouse (versi Mandarin)",
+      "note": "Audit terus menangkap PR pelacakan. #43889 ditutup, penautan identitas dipindah ke backend closed-source."
+    },
+    "classic-00a-family-guy-mit-check": {
+      "title": "MIT Sama, Jarak 11 Jam",
+      "note": "Selisih 11 jam, lisensi MIT sama: fork Tiongkok diancam banned, lab AS bernilai triliunan dolar dapat jempol."
+    },
+    "classic-00b-drake-11-hours": {
+      "title": "Drake Menolak Fork Tiongkok",
+      "note": "Dua postingan @theo berjarak 11 jam, lengkap dengan QR code biar kamu cek buktinya sendiri."
+    },
+    "classic-14-gordon-ramsay-1151-tweets": {
+      "title": "1.151 Postingan, 0% ke VIP",
+      "note": "17 hari, 1.151 postingan: 0% umpatan ke 20 VIP Big-Tech, 8% ke developer biasa, 14,4% saat krisis."
+    },
+    "classic-15-clown-zero-trademarks": {
+      "title": "0 Merek Terdaftar, Kebijakan 17 Jam Kemudian",
+      "note": "Heboh ancaman takedown merek tanpa satu pun pendaftaran USPTO, lalu 17 jam kemudian menambah TRADEMARK.md."
+    },
+    "classic-16-cycle-repeat-offender": {
+      "title": "Siklus Berulang 2024–2026",
+      "note": "Pilih target, keroyok bareng, hapus atau ogah minta maaf saat bukti muncul. Skrip yang sama di 2024, 2025, 2026."
+    },
+    "comics-00-same-mit-11-hours-apart-en-qr": {
+      "title": "MIT Sama, Jarak 11 Jam (versi Inggris)",
+      "note": "23 Nov: ancaman banned gara-gara fork Tiongkok. 24 Nov, sebelas jam kemudian: selamat datang, lab AS bernilai triliunan dolar."
+    },
+    "comics-14-1151-tweets-selective-politeness-en-qr": {
+      "title": "1.151 Postingan, Diurut per Audiens (versi Inggris)",
+      "note": "Bukti di balik audit umpatan: 0% ke eksekutif Big-Tech, 8% ke developer biasa."
+    },
+    "comics-00-same-mit-11-hours-apart-zh-qr": {
+      "title": "MIT Sama, Jarak 11 Jam (versi Mandarin)",
+      "note": "Edisi Mandarin dengan QR code langsung ke kedua postingan X asli, jadi tak perlu percaya kata kami."
+    },
+    "comics-14-1151-tweets-selective-politeness-zh-qr": {
+      "title": "1.151 Postingan, Diurut per Audiens (versi Mandarin)",
+      "note": "Versi Mandarin dari hitungan: 0% ke VIP, 8% ke developer, 14,4% saat ledakan emosi."
+    }
+  }
+}

@@ -1,0 +1,2019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://temu3code.com/</loc>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://temu3code.com/og-card.png</image:loc>
+      <image:title>Temu3 Code — Independent CC0 Audit of pingdotgg/t3code</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2124825920808829077-temu3-code.webp</image:loc>
+      <image:title>@theo naming post: Temu3 Code</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/00-cover-en.png</image:loc>
+      <image:title>Before You Install T3 Code Audit Banner</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/charts/theo-chart-1-overview.png</image:loc>
+      <image:title>1,151-Tweet Forensic Dataset Overview</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/charts/theo-chart-3-double-standard.png</image:loc>
+      <image:title>Selective Politeness Split: 0.0% VIP vs 8.0% Dev vs 14.4% Crisis</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/charts/theo-chart-4-cn-crisis.png</image:loc>
+      <image:title>25-Hour Crisis Timeline Chart</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/</loc>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://temu3code.com/og-card.png</image:loc>
+      <image:title>Tmail — Interactive Public Record Inbox</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/01-origin-theo-threat.png</image:loc>
+      <image:title>GitHub Account Takedown Threat</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/charts/theo-chart-3-double-standard.png</image:loc>
+      <image:title>1,151-Tweet Double-Standard Analysis</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/story/</loc>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/en/ep01_11_hours_apart.webp</image:loc>
+      <image:title>Ep. 1: 11 Hours Apart</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/zh/ep01_11_hours_apart_zh.webp</image:loc>
+      <image:title>第 1 话：相隔 11 小时</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/en/ep02_worst_block_click.webp</image:loc>
+      <image:title>Ep. 2: The Worst Block Click</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/zh/ep02_worst_block_click_zh.webp</image:loc>
+      <image:title>第 2 话：他按过最亏的一次拉黑</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/en/ep03_no_telemetry_full_stop.webp</image:loc>
+      <image:title>Ep. 3: &#x27;No Telemetry. Full Stop.&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/zh/ep03_no_telemetry_full_stop_zh.webp</image:loc>
+      <image:title>第 3 话：「绝无遥测，句号。」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/en/ep04_western_medicine_gdpr.webp</image:loc>
+      <image:title>Ep. 4: Western Medicine Works Fast</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/zh/ep04_western_medicine_gdpr_zh.webp</image:loc>
+      <image:title>第 4 话：欧盟 GDPR 见效真快</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/en/ep05_3h30_retirement.webp</image:loc>
+      <image:title>Ep. 5: The 3.5-Hour Retirement</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/zh/ep05_3h30_retirement_zh.webp</image:loc>
+      <image:title>第 5 话：只持续了 3.5 小时的收山</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/en/ep06_89_views_fear.webp</image:loc>
+      <image:title>Ep. 6: 89 Views &amp; &#x27;Fear Is a Good Incentive&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/zh/ep06_89_views_fear_zh.webp</image:loc>
+      <image:title>第 6 话：89 次浏览与「恐惧是好激励」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/en/ep07_hi_im_zed_11_browsers.webp</image:loc>
+      <image:title>Ep. 7: Hi, I&#x27;m Zed (+ 11 Browsers)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/zh/ep07_hi_im_zed_11_browsers_zh.webp</image:loc>
+      <image:title>第 7 话：你好，我是 Zed（外加 11 个浏览器）</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/en/ep08_slophouse_finale.webp</image:loc>
+      <image:title>Ep. 8: &#x27;nvm easier to do in slophouse&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/zh/ep08_slophouse_finale_zh.webp</image:loc>
+      <image:title>第 8 话：「算了，在闭源 slophouse 做更省事」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/stickers/x-promo-sheet.webp</image:loc>
+      <image:title>Transparent CC0 Sticker Pack Sheet</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/memes/</loc>
+    <lastmod>2026-11-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-01-bigotry-qi.webp</image:loc>
+      <image:title>Sin 1 · 歧 · MIT for Me, Not Thee</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-02-deceit-qi.webp</image:loc>
+      <image:title>Sin 2 · 欺 · Full Stop Means Nothing</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-03-gluttony-tun.webp</image:loc>
+      <image:title>Sin 3 · 吞 · 41.6 GB of &quot;Deleted&quot;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-04-sloth-dai.webp</image:loc>
+      <image:title>Sin 4 · 怠 · 52 Days vs 21 Hours</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-05-forgery-wei.webp</image:loc>
+      <image:title>Sin 5 · 伪 · $20, Banned in 3 Minutes</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-06-exposure-luo.webp</image:loc>
+      <image:title>Sin 6 · 裸 · Relay Reads Your Terminal</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-07-envy-du.webp</image:loc>
+      <image:title>Sin 7 · 妒 · Invest, Mock, Compete</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-08-blindness-mang.webp</image:loc>
+      <image:title>Sin 8 · 盲 · Docs Contradict the Bragging</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-09-greed-tan.webp</image:loc>
+      <image:title>Sin 9 · 贪 · 31.7T Tokens a Day</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-10-arrogance-kuang.webp</image:loc>
+      <image:title>Sin 10 · 狂 · YOLO Merges, Zero Manners</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-11-plunder-qie.webp</image:loc>
+      <image:title>Sin 11 · 窃 · Stealing This, 30 Seconds</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-12-mendacity-huang.webp</image:loc>
+      <image:title>Sin 12 · 谎 · Clapback in Two Hours</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-13-concealment-man.webp</image:loc>
+      <image:title>Sin 13 · 瞒 · Security Advisories: Zero</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-14-servility-chan.webp</image:loc>
+      <image:title>Sin 14 · 谄 · 0% to Execs, 14.4% to You</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-15-fraud-zha.webp</image:loc>
+      <image:title>Sin 15 · 诈 · Zero Trademarks, One TRADEMARK.md</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-16-recidivism-guan.webp</image:loc>
+      <image:title>Sin 16 · 惯 · Same Playbook, Three Years</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-17-hypocrisy-jiao.webp</image:loc>
+      <image:title>Sin 17 · 矫 · ToS Lectures, Proxy Gist</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-18-vanity-xu.webp</image:loc>
+      <image:title>Sin 18 · 虚 · Stars Are Fake Except Mine</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-19-breach-lou.webp</image:loc>
+      <image:title>Sin 19 · 漏 · Five Holes Still Open</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-20-coercion-xie.webp</image:loc>
+      <image:title>Sin 20 · 胁 · 89 Views, HR Complaint</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-21-impostor-mao.webp</image:loc>
+      <image:title>Sin 21 · 冒 · Pretending to Be Zed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-22-evasion-dun.webp</image:loc>
+      <image:title>Sin 22 · 遁 · 16 Minutes Later, Closed-Source</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-23-sabotage-po.webp</image:loc>
+      <image:title>Sin 23 · 破 · Mute the Warning, Share the Cookies</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-24-leak-xie.webp</image:loc>
+      <image:title>Sin 24 · 泄 · Your Prompt in the URL</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-25-patronage-zi.webp</image:loc>
+      <image:title>Sin 25 · Patronage「资」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-26-subpar-lie.webp</image:loc>
+      <image:title>Sin 26 · Subpar「劣」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-27-lockdown-bi.webp</image:loc>
+      <image:title>Sin 27 · Lockdown「闭」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/sins/sin-28-bloat-zhang.webp</image:loc>
+      <image:title>Sin 28 · Bloat「胀」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/blended/00-drake.webp</image:loc>
+      <image:title>Drake: 11-Hour Double Standard</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/blended/01a-scooby-mask.webp</image:loc>
+      <image:title>Pulling Off the No-Telemetry Mask</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/blended/14-gordon-ramsay.webp</image:loc>
+      <image:title>Ramsay Mode: VIPs vs. Devs</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/blended/15-clown-makeup.webp</image:loc>
+      <image:title>0 Trademarks, Full Clown Makeup</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/blended/22c-roll-safe-slophouse.webp</image:loc>
+      <image:title>&#x27;nvm easier to do in slophouse&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/blended/24a-anakin-padme-url.webp</image:loc>
+      <image:title>8,000 Chars in the URL, Right?</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/blended/25-scooby-benchmark-fund.webp</image:loc>
+      <image:title>Scooby Reveal: &#x27;So I Offered to Fund It&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/blended/26-champagne-podium-d.webp</image:loc>
+      <image:title>Champagne Podium: Upgraded from F to D</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/stickers/01_copium_no_telemetry.webp</image:loc>
+      <image:title>No-Telemetry Copium</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/stickers/03_rage_temu3.webp</image:loc>
+      <image:title>TEMU3! Rage Meltdown</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/stickers/21_slophouse_nvm.webp</image:loc>
+      <image:title>Slophouse Trapdoor</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/stickers/22_impersonate_zed.webp</image:loc>
+      <image:title>Hi, I&#x27;m Zed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/creative/idioms/01-zei-han-zhuo-zei.webp</image:loc>
+      <image:title>Idiom #01 · 贼喊捉贼 (Thief Cries Thief)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/creative/idioms/07-jin-chan-tuo-qiao.webp</image:loc>
+      <image:title>Chinese Idiom #07: 金蝉脱壳 (Golden Cicada Sheds Its Shell)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/creative/packaging/01-t3code-iceberg.webp</image:loc>
+      <image:title>The T3 Code Iceberg</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/creative/packaging/05-telemetry-report-card.webp</image:loc>
+      <image:title>Report Card: 35-Tool Telemetry Audit (F → D)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/creative/gaming/01-sekiro-google-ban.webp</image:loc>
+      <image:title>Sekiro: ACCOUNT BANNED (3:00)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/creative/gaming/09-steam-16min-slophouse.webp</image:loc>
+      <image:title>Steam Achievement: &#x27;Easier in Slophouse&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/creative/pokemon/04-creature-card-theo-ex.webp</image:loc>
+      <image:title>Card: DARK THEO EX (HP 77000)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/creative/reactions/06-gif-clown-transform.gif</image:loc>
+      <image:title>GIF: 0-Trademark Clown Progression</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/creative/reactions/07-gif-auto-star-counter.gif</image:loc>
+      <image:title>GIF: 30s Auto-Star Counter</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/creative/reactions/08-reply-89views-receipt.webp</image:loc>
+      <image:title>Reply Receipt: 1M+ Creator vs. 89-View Tweet</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/en/ep01_11_hours_apart.webp</image:loc>
+      <image:title>Ep.1 · 11 Hours Apart (EN)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://cdn.temu3code.com/memes/story/zh/ep01_11_hours_apart_zh.webp</image:loc>
+      <image:title>Ep.1 · 11 Hours Apart (中文)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2023-05-sponsor-roster/</loc>
+    <lastmod>2023-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2023-05-sponsor-roster/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2023-05-sponsor-roster/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2023-05-sponsor-roster/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post17-1-theo-youtube-sponsors.jpg</image:loc>
+      <image:title>2023 Sponsor List (Clerk, Axiom, Vercel, PlanetScale)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post17-5-rauchg-vercel-sponsor.jpg</image:loc>
+      <image:title>Vercel CEO confirms sponsoring only Theo</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2023-05-sponsor-roster/zh/</loc>
+    <lastmod>2023-05-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2023-05-sponsor-roster/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2023-05-sponsor-roster/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2023-05-sponsor-roster/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post17-1-theo-youtube-sponsors.jpg</image:loc>
+      <image:title>2023 年赞助商名单（Clerk、Axiom、Vercel、PlanetScale）</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post17-5-rauchg-vercel-sponsor.jpg</image:loc>
+      <image:title>Vercel CEO 确认只赞助了 Theo 一人</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2024-06-indian-dev-apology/</loc>
+    <lastmod>2024-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2024-06-indian-dev-apology/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2024-06-indian-dev-apology/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2024-06-indian-dev-apology/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/26-cn-cesspit.png</image:loc>
+      <image:title>Nov 24 &#x27;Chinese tech twitter is the biggest fucking cesspit&#x27; post</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2024-06-indian-dev-apology/zh/</loc>
+    <lastmod>2024-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2024-06-indian-dev-apology/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2024-06-indian-dev-apology/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2024-06-indian-dev-apology/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/26-cn-cesspit.png</image:loc>
+      <image:title>11 月 24 日「中文技术推特是最大的粪坑」帖文</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2024-06-vsc-fork-dhh-ui/</loc>
+    <lastmod>2024-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2024-06-vsc-fork-dhh-ui/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2024-06-vsc-fork-dhh-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2024-06-vsc-fork-dhh-ui/" />
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2024-06-vsc-fork-dhh-ui/zh/</loc>
+    <lastmod>2024-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2024-06-vsc-fork-dhh-ui/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2024-06-vsc-fork-dhh-ui/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2024-06-vsc-fork-dhh-ui/" />
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2024-09-wordpress-trademark/</loc>
+    <lastmod>2024-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2024-09-wordpress-trademark/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2024-09-wordpress-trademark/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2024-09-wordpress-trademark/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p1-2b-trademark-md.png</image:loc>
+      <image:title>Retroactive TRADEMARK.md claiming unregistered marks</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2024-09-wordpress-trademark/zh/</loc>
+    <lastmod>2024-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2024-09-wordpress-trademark/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2024-09-wordpress-trademark/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2024-09-wordpress-trademark/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p1-2b-trademark-md.png</image:loc>
+      <image:title>事后补写的 TRADEMARK.md，主张一堆未注册商标</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2025-10-ffmpeg-bounty/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2025-10-ffmpeg-bounty/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2025-10-ffmpeg-bounty/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2025-10-ffmpeg-bounty/" />
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2025-10-ffmpeg-bounty/zh/</loc>
+    <lastmod>2025-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2025-10-ffmpeg-bounty/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2025-10-ffmpeg-bounty/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2025-10-ffmpeg-bounty/" />
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-03-06-pr174-default-telemetry/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-03-06-pr174-default-telemetry/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-03-06-pr174-default-telemetry/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-03-06-pr174-default-telemetry/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/02-no-telemetry-removed.png</image:loc>
+      <image:title>Commit 3bdaa6e1 showing the deleted &#x27;No telemetry. Unless you opt in. Full stop.&#x27; promise</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-03-06-pr174-default-telemetry/zh/</loc>
+    <lastmod>2026-03-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-03-06-pr174-default-telemetry/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-03-06-pr174-default-telemetry/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-03-06-pr174-default-telemetry/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/02-no-telemetry-removed.png</image:loc>
+      <image:title>Commit 3bdaa6e1：被删掉的「无遥测。除非你主动选择。就这样。」承诺</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-04-25-fake-stars-vc/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-04-25-fake-stars-vc/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-04-25-fake-stars-vc/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-04-25-fake-stars-vc/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p10-1-x-theo-apr25-trick-vcs.png</image:loc>
+      <image:title>&#x27;GitHub has a fake star problem&#x27; (Apr 2026)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/20-star-10x-cliff.png</image:loc>
+      <image:title>10x daily star spike after in-app star prompt</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p10-6-x-theo-nov24-missed-70k.png</image:loc>
+      <image:title>Claiming he &#x27;entirely missed&#x27; crossing 70k stars</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-04-25-fake-stars-vc/zh/</loc>
+    <lastmod>2026-04-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-04-25-fake-stars-vc/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-04-25-fake-stars-vc/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-04-25-fake-stars-vc/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p10-1-x-theo-apr25-trick-vcs.png</image:loc>
+      <image:title>《GitHub 存在刷星问题》（2026 年 4 月）</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/20-star-10x-cliff.png</image:loc>
+      <image:title>应用内点星弹窗上线后，单日星数涨了 10 倍</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p10-6-x-theo-nov24-missed-70k.png</image:loc>
+      <image:title>声称自己「完全没注意到」星数破 7 万</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-06-18-commit-3bdaa6e1-deleted-promise/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-06-18-commit-3bdaa6e1-deleted-promise/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-06-18-commit-3bdaa6e1-deleted-promise/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-06-18-commit-3bdaa6e1-deleted-promise/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/02-no-telemetry-removed.png</image:loc>
+      <image:title>Git diff of commit 3bdaa6e1 removing the &#x27;No telemetry&#x27; lines</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-06-18-commit-3bdaa6e1-deleted-promise/zh/</loc>
+    <lastmod>2026-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-06-18-commit-3bdaa6e1-deleted-promise/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-06-18-commit-3bdaa6e1-deleted-promise/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-06-18-commit-3bdaa6e1-deleted-promise/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/02-no-telemetry-removed.png</image:loc>
+      <image:title>commit 3bdaa6e1 删掉「绝无遥测」那几行的 Git diff</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-06-23-issue1397-no-optout/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-06-23-issue1397-no-optout/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-06-23-issue1397-no-optout/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-06-23-issue1397-no-optout/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/04-issue1397-no-optout.png</image:loc>
+      <image:title>Issue #1397 closed as not planned</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-06-23-issue1397-no-optout/zh/</loc>
+    <lastmod>2026-06-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-06-23-issue1397-no-optout/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-06-23-issue1397-no-optout/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-06-23-issue1397-no-optout/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/04-issue1397-no-optout.png</image:loc>
+      <image:title>Issue #1397 被标为 not planned 关闭</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-08-06-pr5551-reality-check/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-08-06-pr5551-reality-check/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-08-06-pr5551-reality-check/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-08-06-pr5551-reality-check/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-6-pr-5551-reality-check.png</image:loc>
+      <image:title>PR #5551 &#x27;Reality check for those upset&#x27;</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-08-06-pr5551-reality-check/zh/</loc>
+    <lastmod>2026-08-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-08-06-pr5551-reality-check/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-08-06-pr5551-reality-check/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-08-06-pr5551-reality-check/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-6-pr-5551-reality-check.png</image:loc>
+      <image:title>PR #5551「给不满的人一点现实检验」</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-10-03-issue15353-force-push/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-10-03-issue15353-force-push/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-10-03-issue15353-force-push/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-10-03-issue15353-force-push/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/11-issue15353-auto-force-push.png</image:loc>
+      <image:title>Issue #15353 open 52+ days documenting silent git push --force</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-10-03-issue15353-force-push/zh/</loc>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-10-03-issue15353-force-push/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-10-03-issue15353-force-push/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-10-03-issue15353-force-push/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/11-issue15353-auto-force-push.png</image:loc>
+      <image:title>Issue #15353 记录了静默 git push --force，挂了 52 天以上</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-10-15-ingest-t3-codes/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-10-15-ingest-t3-codes/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-10-15-ingest-t3-codes/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-10-15-ingest-t3-codes/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/03-identify-codex-claude.png</image:loc>
+      <image:title>Identify.ts &amp; AnalyticsService telemetry implementation</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-10-15-ingest-t3-codes/zh/</loc>
+    <lastmod>2026-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-10-15-ingest-t3-codes/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-10-15-ingest-t3-codes/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-10-15-ingest-t3-codes/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/03-identify-codex-claude.png</image:loc>
+      <image:title>Identify.ts 与 AnalyticsService 的遥测实现</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-10-18-benchmark-funding-sponsor-pressure/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-10-18-benchmark-funding-sponsor-pressure/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-10-18-benchmark-funding-sponsor-pressure/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-10-18-benchmark-funding-sponsor-pressure/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-ondrej-v1-v2-accusation.png</image:loc>
+      <image:title>@DavidOndrej1 Oct 18 v1/v2 benchmark dispute</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-ondrej-sponsor-banner.png</image:loc>
+      <image:title>T3 Code sponsor banner (WorkOS, Blacksmith, Browserbase, CodeRabbit)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-theo-admits-funding-bench.png</image:loc>
+      <image:title>@theo reply admitting benchmark outreach and funding offer</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-10-18-benchmark-funding-sponsor-pressure/zh/</loc>
+    <lastmod>2026-10-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-10-18-benchmark-funding-sponsor-pressure/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-10-18-benchmark-funding-sponsor-pressure/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-10-18-benchmark-funding-sponsor-pressure/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-ondrej-v1-v2-accusation.png</image:loc>
+      <image:title>@DavidOndrej1 10 月 18 日 v1/v2 基准争议</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-ondrej-sponsor-banner.png</image:loc>
+      <image:title>T3 Code 赞助商横幅（WorkOS、Blacksmith、Browserbase、CodeRabbit）</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-theo-admits-funding-bench.png</image:loc>
+      <image:title>@theo 承认联系榜单作者并提出出资的回复</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-5-pr-21506-theo-owner-tracking.png</image:loc>
+      <image:title>PR #21506 authored by t3dotgg</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/03-identify-codex-claude.png</image:loc>
+      <image:title>Identify.ts reading ~/.codex/auth.json and ~/.claude.json</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/zh/</loc>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-5-pr-21506-theo-owner-tracking.png</image:loc>
+      <image:title>PR #21506（作者 t3dotgg）</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/03-identify-codex-claude.png</image:loc>
+      <image:title>`Identify.ts` 读取 `~/.codex/auth.json` 与 `~/.claude.json`</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-10-28-fake-delete-process-spy/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-10-28-fake-delete-process-spy/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-10-28-fake-delete-process-spy/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-10-28-fake-delete-process-spy/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/10-issue17845-fake-delete.png</image:loc>
+      <image:title>Issue #17845 documenting 41.6 GB fake SQLite deletion</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-9-issue-11222-process-spy.png</image:loc>
+      <image:title>Issue #11222 documenting 5-second full-OS process scanning</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-10-28-fake-delete-process-spy/zh/</loc>
+    <lastmod>2026-10-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-10-28-fake-delete-process-spy/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-10-28-fake-delete-process-spy/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-10-28-fake-delete-process-spy/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/10-issue17845-fake-delete.png</image:loc>
+      <image:title>Issue #17845 记录 41.6 GB 的假 SQLite 删除</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-9-issue-11222-process-spy.png</image:loc>
+      <image:title>Issue #11222 记录每 5 秒全机进程扫描</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-02-pr29922-77k-stars/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-02-pr29922-77k-stars/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-02-pr29922-77k-stars/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-02-pr29922-77k-stars/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p3-3-pr29922-one-click-star.png</image:loc>
+      <image:title>PR #29922 self-merged one-click server star</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p10-4a-pr29922-macroscope.png</image:loc>
+      <image:title>Macroscope flagged PR #29922 (bypassed)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p10-3-x-theo-nov2-trending.png</image:loc>
+      <image:title>+3,094 stars/day on GitHub Trending</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/21-pr29922-zhilsinger-review.png</image:loc>
+      <image:title>zhilsinger Request Changes review unanswered 19 days</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p10-5-gh-driver-arbitrary-repo.png</image:loc>
+      <image:title>driver.ts#L60-L99 arbitrary-repo starring bug</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-02-pr29922-77k-stars/zh/</loc>
+    <lastmod>2026-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-02-pr29922-77k-stars/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-02-pr29922-77k-stars/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-02-pr29922-77k-stars/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p3-3-pr29922-one-click-star.png</image:loc>
+      <image:title>PR #29922 自合的一键给服务器点星</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p10-4a-pr29922-macroscope.png</image:loc>
+      <image:title>Macroscope 标记过 PR #29922（被绕过）</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p10-3-x-theo-nov2-trending.png</image:loc>
+      <image:title>GitHub Trending 上日增 3,094 星</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/21-pr29922-zhilsinger-review.png</image:loc>
+      <image:title>@zhilsinger 的 Request Changes 审核晾了 19 天</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p10-5-gh-driver-arbitrary-repo.png</image:loc>
+      <image:title>`driver.ts#L60-L99` 任意仓库点星漏洞</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-08-stealing-miaai-fork/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-08-stealing-miaai-fork/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-08-stealing-miaai-fork/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-08-stealing-miaai-fork/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/23-stealing-fork-bot.png</image:loc>
+      <image:title>Replying &#x27;Okay I&#x27;m stealing this&#x27; and tagging @bot 30s later</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p8-4b-x-theo-copy-other-tools.png</image:loc>
+      <image:title>Nov 13 dispatching @bot to clone rival tool features</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p8-4c-x-theo-mock-copying.png</image:loc>
+      <image:title>Nov 24 mocking Claude Code Desktop sidebar tabs</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-08-stealing-miaai-fork/zh/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-08-stealing-miaai-fork/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-08-stealing-miaai-fork/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-08-stealing-miaai-fork/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/23-stealing-fork-bot.png</image:loc>
+      <image:title>回「行，这个我偷了」，30 秒后就 @ 了 @bot</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p8-4b-x-theo-copy-other-tools.png</image:loc>
+      <image:title>11 月 13 日派 @bot 抄竞品功能</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p8-4c-x-theo-mock-copying.png</image:loc>
+      <image:title>11 月 24 日嘲讽 Claude Code Desktop 的侧栏标签</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-09-issue33639-bermudi-insult/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-09-issue33639-bermudi-insult/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-09-issue33639-bermudi-insult/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-09-issue33639-bermudi-insult/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-7-pr-33131-ai-brainrot.png</image:loc>
+      <image:title>PR #33131 deleting Plan mode with contradictory AI summary</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-12-issue-33639-theo-insult.png</image:loc>
+      <image:title>Verbatim screenshot of Theo insulting @bermudi in Issue #33639</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-09-issue33639-bermudi-insult/zh/</loc>
+    <lastmod>2026-11-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-09-issue33639-bermudi-insult/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-09-issue33639-bermudi-insult/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-09-issue33639-bermudi-insult/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-7-pr-33131-ai-brainrot.png</image:loc>
+      <image:title>PR #33131 删掉 Plan 模式，AI 摘要自相矛盾</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-12-issue-33639-theo-insult.png</image:loc>
+      <image:title>Theo 在 Issue #33639 辱骂 @bermudi 的原话截图</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-10-yolo-merges-nuke/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-10-yolo-merges-nuke/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-10-yolo-merges-nuke/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-10-yolo-merges-nuke/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p7-1-x-theo-nukes-machine.png</image:loc>
+      <image:title>&#x27;if it nukes my machine that&#x27;s free content&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p7-2-x-theo-yolo-merges.png</image:loc>
+      <image:title>&#x27;my yolo merges breaking shit sometimes&#x27;</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-10-yolo-merges-nuke/zh/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-10-yolo-merges-nuke/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-10-yolo-merges-nuke/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-10-yolo-merges-nuke/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p7-1-x-theo-nukes-machine.png</image:loc>
+      <image:title>「弄崩我的电脑正好是免费素材」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p7-2-x-theo-yolo-merges.png</image:loc>
+      <image:title>「我的 yolo merges 偶尔搞崩点东西」</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-11-gendered-attack-demonetize/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-11-gendered-attack-demonetize/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-11-gendered-attack-demonetize/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-11-gendered-attack-demonetize/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-5b-x-theo-stupid-bitch.png</image:loc>
+      <image:title>Repeated &#x27;stupid bitch&#x27; attack with &#x27;no regret&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p8-2-x-theo-demonetize-cn.png</image:loc>
+      <image:title>Urging followers to use Community Notes to demonetize critics</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-11-gendered-attack-demonetize/zh/</loc>
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-11-gendered-attack-demonetize/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-11-gendered-attack-demonetize/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-11-gendered-attack-demonetize/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-5b-x-theo-stupid-bitch.png</image:loc>
+      <image:title>反复辱骂「stupid bitch」并称「毫不后悔」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p8-2-x-theo-demonetize-cn.png</image:loc>
+      <image:title>号召粉丝用 Community Notes 断掉批评者收益</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-12-contributing-vouched-local-ai/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-12-contributing-vouched-local-ai/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-12-contributing-vouched-local-ai/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-12-contributing-vouched-local-ai/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/22-contributing-vouched-ban.png</image:loc>
+      <image:title>CONTRIBUTING.md pointing to public denouncement bans in .github/VOUCHED.td</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p7-3-x-theo-unfollow-pr.png</image:loc>
+      <image:title>Turning away contributor for not following on X</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p7-4-x-theo-take-it-away.png</image:loc>
+      <image:title>&#x27;be careful. I am not afraid to take it away&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-3-x-theo-local-ai-graves.png</image:loc>
+      <image:title>&#x27;dance on the graves of the local ai community&#x27;</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-12-contributing-vouched-local-ai/zh/</loc>
+    <lastmod>2026-11-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-12-contributing-vouched-local-ai/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-12-contributing-vouched-local-ai/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-12-contributing-vouched-local-ai/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/22-contributing-vouched-ban.png</image:loc>
+      <image:title>CONTRIBUTING.md 指向 .github/VOUCHED.td 的公开点名封禁</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p7-3-x-theo-unfollow-pr.png</image:loc>
+      <image:title>因贡献者没在 X 上关注他而拒之门外</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p7-4-x-theo-take-it-away.png</image:loc>
+      <image:title>「小心点。我不怕把它拿掉」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-3-x-theo-local-ai-graves.png</image:loc>
+      <image:title>「在本地 AI 社区的坟头上跳舞」</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-16-vibe-kanban-daytona/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-16-vibe-kanban-daytona/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-16-vibe-kanban-daytona/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-16-vibe-kanban-daytona/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/18-theo-vibe-kanban.png</image:loc>
+      <image:title>Mocking Vibe Kanban shutdown after angel investment</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p4-2-x-theo-daytona-investor.png</image:loc>
+      <image:title>Confirming angel investment in Daytona &amp; competitors</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p4-3-x-theo-paid-cloud-sandboxes.png</image:loc>
+      <image:title>Nov 9 proposing paid cloud sandboxes inside T3 Code</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-16-vibe-kanban-daytona/zh/</loc>
+    <lastmod>2026-11-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-16-vibe-kanban-daytona/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-16-vibe-kanban-daytona/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-16-vibe-kanban-daytona/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/18-theo-vibe-kanban.png</image:loc>
+      <image:title>天使投资后嘲讽 Vibe Kanban 关张</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p4-2-x-theo-daytona-investor.png</image:loc>
+      <image:title>确认对 Daytona 及竞争对手的天使投资</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p4-3-x-theo-paid-cloud-sandboxes.png</image:loc>
+      <image:title>11 月 9 日提议在 T3 Code 内做付费云沙箱</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-17-pr27077-rejected/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-17-pr27077-rejected/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-17-pr27077-rejected/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-17-pr27077-rejected/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-4-pr-27077-rejected.png</image:loc>
+      <image:title>PR #27077 closed as unwanted despite 147 passing tests</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-17-pr27077-rejected/zh/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-17-pr27077-rejected/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-17-pr27077-rejected/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-17-pr27077-rejected/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-4-pr-27077-rejected.png</image:loc>
+      <image:title>PR #27077 虽 147 项测试全过仍被标 unwanted 关闭</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-18-31t-token-radar/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-18-31t-token-radar/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-18-31t-token-radar/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-18-31t-token-radar/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/17-theo-31t-tokens-10m-day.png</image:loc>
+      <image:title>Internal analytics: 31.7T tokens/day &amp; $10.19M/day</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p6-1-x-theo-800k-cost.png</image:loc>
+      <image:title>Disclosing $800k+ build spend</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p6-4-x-theo-investors.png</image:loc>
+      <image:title>&#x27;multiple investors have asked me about this&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p6-5-x-theo-98pct-usage.png</image:loc>
+      <image:title>Disclosing ~98.5% three-lab concentration</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-18-31t-token-radar/zh/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-18-31t-token-radar/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-18-31t-token-radar/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-18-31t-token-radar/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/17-theo-31t-tokens-10m-day.png</image:loc>
+      <image:title>内部数据：日均 31.7 万亿 token 与 1,019 万美元/天</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p6-1-x-theo-800k-cost.png</image:loc>
+      <image:title>披露 80 万+ 美元投入</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p6-4-x-theo-investors.png</image:loc>
+      <image:title>「好几个投资人来问过我这事」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p6-5-x-theo-98pct-usage.png</image:loc>
+      <image:title>披露三家模型厂约占 98.5% 的集中度</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-18-jail-threat-rsd/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-18-jail-threat-rsd/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-18-jail-threat-rsd/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-18-jail-threat-rsd/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-5-x-theo-jail-rsd.png</image:loc>
+      <image:title>Jail threat and medical RSD mockery on Nov 18, 2026</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-18-jail-threat-rsd/zh/</loc>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-18-jail-threat-rsd/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-18-jail-threat-rsd/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-18-jail-threat-rsd/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-5-x-theo-jail-rsd.png</image:loc>
+      <image:title>2026 年 11 月 18 日的监狱威胁与 RSD 病情嘲讽</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-19-selective-politeness-vips/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-19-selective-politeness-vips/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-19-selective-politeness-vips/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-19-selective-politeness-vips/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/charts/theo-chart-3-double-standard.png</image:loc>
+      <image:title>Forensic Chart 3: 0.0% VIP vs 8.0% Dev vs 14.4% Crisis</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-1-x-theo-google-bridges.png</image:loc>
+      <image:title>&#x27;Happy I didn&#x27;t burn bridges with my past content&#x27;</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-19-selective-politeness-vips/zh/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-19-selective-politeness-vips/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-19-selective-politeness-vips/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-19-selective-politeness-vips/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/charts/theo-chart-3-double-standard.png</image:loc>
+      <image:title>取证图 3：高管 0.0% vs 开发者 8.0% vs 危机期 14.4%</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-1-x-theo-google-bridges.png</image:loc>
+      <image:title>“庆幸我以前的内容没把桥烧掉”原帖</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-22-pr41237-21h-filter-drop/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-22-pr41237-21h-filter-drop/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-22-pr41237-21h-filter-drop/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-22-pr41237-21h-filter-drop/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-15-pr-41237-slophouse-drop-filter.png</image:loc>
+      <image:title>PR #41237 dropping model privacy filter in 21 hours</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-22-pr41237-21h-filter-drop/zh/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-22-pr41237-21h-filter-drop/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-22-pr41237-21h-filter-drop/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-22-pr41237-21h-filter-drop/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-15-pr-41237-slophouse-drop-filter.png</image:loc>
+      <image:title>PR #41237 用 21 小时撤掉模型隐私过滤</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-22-antigravity-spoof-3min-ban/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-22-antigravity-spoof-3min-ban/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-22-antigravity-spoof-3min-ban/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-22-antigravity-spoof-3min-ban/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-16-faq-tos-guarantee.png</image:loc>
+      <image:title>FAQ guaranteeing Antigravity ToS compliance</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p3-1-x-theo-patrick-many-prs.png</image:loc>
+      <image:title>Claiming DeepMind engineer &#x27;landed many PRs&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p3-2-patrick-only-1-commit.png</image:loc>
+      <image:title>Git log proving exactly 1 commit (#31158)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/19-cliproxy-gist-555pct.jpg</image:loc>
+      <image:title>Theo&#x27;s 452-star CLIProxyAPI 555% quota pooling Gist</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/12-antigravity-v1internal-spoof.png</image:loc>
+      <image:title>Hardcoded antigravity/hub/2.24.0 spoofed header</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/13-antigravity-ssh-spoof.png</image:loc>
+      <image:title>Fake SSH_CONNECTION injection</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/14-issue41536-fresh-ban.png</image:loc>
+      <image:title>Fresh $20 account banned in 3 minutes</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-17b-issue-40713-schlessera-bust.png</image:loc>
+      <image:title>schlessera code-level rebuttal in Issue #40713</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-22-antigravity-spoof-3min-ban/zh/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-22-antigravity-spoof-3min-ban/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-22-antigravity-spoof-3min-ban/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-22-antigravity-spoof-3min-ban/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-16-faq-tos-guarantee.png</image:loc>
+      <image:title>FAQ 里保证符合 Antigravity 服务条款的原文</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p3-1-x-theo-patrick-many-prs.png</image:loc>
+      <image:title>声称 DeepMind 工程师“合过很多 PR”</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p3-2-patrick-only-1-commit.png</image:loc>
+      <image:title>git log 证明只有 1 个提交（#31158）</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/19-cliproxy-gist-555pct.jpg</image:loc>
+      <image:title>Theo 那份 452 star、555% 配额的 CLIProxyAPI 号池 Gist</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/12-antigravity-v1internal-spoof.png</image:loc>
+      <image:title>硬编码的 antigravity/hub/2.24.0 伪造请求头</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/13-antigravity-ssh-spoof.png</image:loc>
+      <image:title>伪造的 SSH_CONNECTION 注入</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/14-issue41536-fresh-ban.png</image:loc>
+      <image:title>全新 20 美元账号 3 分钟被封</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-17b-issue-40713-schlessera-bust.png</image:loc>
+      <image:title>schlessera 在 Issue #40713 里的代码级反驳</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-22-engineers-unemployment-linux/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-22-engineers-unemployment-linux/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-22-engineers-unemployment-linux/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-22-engineers-unemployment-linux/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/25-engineers-unemployment.png</image:loc>
+      <image:title>&#x27;Engineers deserve the mass unemployment they have coming&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-4-x-theo-linux-larpers.png</image:loc>
+      <image:title>&#x27;Linux larpers tend to dislike real devs&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-7-x-theo-burning-trust.png</image:loc>
+      <image:title>Lecturing &#x27;don&#x27;t burn trust&#x27; 24h before the crisis</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-22-engineers-unemployment-linux/zh/</loc>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-22-engineers-unemployment-linux/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-22-engineers-unemployment-linux/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-22-engineers-unemployment-linux/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/25-engineers-unemployment.png</image:loc>
+      <image:title>“工程师们活该迎来这波大规模失业”原帖</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-4-x-theo-linux-larpers.png</image:loc>
+      <image:title>“Linux coser 一向看不上真开发者”原帖</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p9-7-x-theo-burning-trust.png</image:loc>
+      <image:title>危机前 24 小时还在说教：别烧掉信任</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-23-origin-temu3-threat/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-23-origin-temu3-threat/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-23-origin-temu3-threat/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-23-origin-temu3-threat/" />
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2124823227570745504-chinese-knockoff.webp</image:loc>
+      <image:title>Original X post: &quot;Chinese knockoff of T3 Code&quot; (195k+ views)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2124825920808829077-temu3-code.webp</image:loc>
+      <image:title>Original X post 10m 42s later: &quot;Temu3 Code&quot; (84k+ views)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/01-origin-theo-threat.png</image:loc>
+      <image:title>Verbatim GitHub account takedown threat</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2124989435154726982-trillion-dollar-oss.webp</image:loc>
+      <image:title>Original X reply 11h later: &quot;Open source is open source, even if a trillion dollar company uses it!&quot;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p1-3-maria-t3libre.png</image:loc>
+      <image:title>Employee @maria_rcks hosting maria-rcks/t3libre</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p1-4-github-t3code-search.png</image:loc>
+      <image:title>English t3code-* repos operating undisturbed</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-23-origin-temu3-threat/zh/</loc>
+    <lastmod>2026-11-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-23-origin-temu3-threat/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-23-origin-temu3-threat/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-23-origin-temu3-threat/" />
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2124823227570745504-chinese-knockoff.webp</image:loc>
+      <image:title>原帖：“T3 Code 的中国山寨版”（19.5 万+ 浏览）</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2124825920808829077-temu3-code.webp</image:loc>
+      <image:title>10 分 42 秒后的原帖：“Temu3 Code”（8.4 万+ 浏览）</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/01-origin-theo-threat.png</image:loc>
+      <image:title>一字不差的 GitHub 封号威胁</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2124989435154726982-trillion-dollar-oss.webp</image:loc>
+      <image:title>11 小时后的原回复：“开源就是开源，就算万亿美元公司来用也一样！”</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p1-3-maria-t3libre.png</image:loc>
+      <image:title>自家员工 @maria_rcks 托管 maria-rcks/t3libre</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p1-4-github-t3code-search.png</image:loc>
+      <image:title>英文 t3code-* 仓库照常运行无人打扰</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-24-managed-policy-plaintext-relay/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-24-managed-policy-plaintext-relay/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-24-managed-policy-plaintext-relay/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-24-managed-policy-plaintext-relay/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p5-1-x-theo-managed-policy.png</image:loc>
+      <image:title>Theo Managed Policy claim</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p5-2-x-theo-never-touches-servers.png</image:loc>
+      <image:title>&#x27;never touches any of our servers&#x27; claim</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/05-telemetry-cant-disable.png</image:loc>
+      <image:title>docs/user/telemetry.md four documented blind spots</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/15-connect-no-e2e.jpg</image:loc>
+      <image:title>T3 Connect zero E2E encryption confirmed</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/16-pr32945-ovh-caddy-gateway.jpg</image:loc>
+      <image:title>PR #32945 OVH Hillsboro Caddy TLS-termination gateway</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-24-managed-policy-plaintext-relay/zh/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-24-managed-policy-plaintext-relay/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-24-managed-policy-plaintext-relay/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-24-managed-policy-plaintext-relay/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p5-1-x-theo-managed-policy.png</image:loc>
+      <image:title>Theo 的托管策略说法</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p5-2-x-theo-never-touches-servers.png</image:loc>
+      <image:title>「从不经过我们的任何服务器」说法</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/05-telemetry-cant-disable.png</image:loc>
+      <image:title>docs/user/telemetry.md 记录的四块盲区</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/15-connect-no-e2e.jpg</image:loc>
+      <image:title>T3 Connect 端到端加密为零已确认</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/16-pr32945-ovh-caddy-gateway.jpg</image:loc>
+      <image:title>PR #32945 OVH Hillsboro Caddy TLS 终止网关</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-24-retroactive-trademark-blocker/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-24-retroactive-trademark-blocker/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-24-retroactive-trademark-blocker/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-24-retroactive-trademark-blocker/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p1-5-x-get-better-lawyer.png</image:loc>
+      <image:title>&#x27;get a better lawyer&#x27; 3h before TRADEMARK.md</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2125019705270477102-low-quality-users.webp</image:loc>
+      <image:title>Original X post (08:12 CST): &quot;We already have all the high quality users, not surprised the low quality ones are now following&quot;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p8-3-x-theo-autoblocker.png</image:loc>
+      <image:title>Confirming auto-blocker bot banning ~100 accounts</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2125082769395220688-always-illegal.webp</image:loc>
+      <image:title>Original X post (12:23 CST): &quot;Again, it was always illegal to use our trademark&quot; (+ PR #41898)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/24-pr41898-trademark-aftermath.png</image:loc>
+      <image:title>PR #41898 merged 17h after ban threat</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p1-2b-trademark-md.png</image:loc>
+      <image:title>TRADEMARK.md claiming unregistered marks</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-24-retroactive-trademark-blocker/zh/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-24-retroactive-trademark-blocker/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-24-retroactive-trademark-blocker/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-24-retroactive-trademark-blocker/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p1-5-x-get-better-lawyer.png</image:loc>
+      <image:title>补 TRADEMARK.md 前 3 小时的“换个更好的律师”</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2125019705270477102-low-quality-users.webp</image:loc>
+      <image:title>原帖（08:12 CST）：“高质量用户我们早就有了，低质量的现在才跟过来，一点不意外”</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p8-3-x-theo-autoblocker.png</image:loc>
+      <image:title>确认自动拉黑机器人封了约 100 个账号</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2125082769395220688-always-illegal.webp</image:loc>
+      <image:title>原帖（12:23 CST）：“用我们的商标一直都是违法的”（附 PR #41898）</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/24-pr41898-trademark-aftermath.png</image:loc>
+      <image:title>PR #41898 在封号威胁 17 小时后合并</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/p1-2b-trademark-md.png</image:loc>
+      <image:title>TRADEMARK.md 主张未注册商标也归其所有</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-24-cesspit-crisis-outburst/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-24-cesspit-crisis-outburst/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-24-cesspit-crisis-outburst/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-24-cesspit-crisis-outburst/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/26-cn-cesspit.png</image:loc>
+      <image:title>Nov 24 &#x27;Chinese tech twitter is the biggest fucking cesspit&#x27; post</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/charts/theo-chart-4-cn-crisis.png</image:loc>
+      <image:title>Forensic Chart 4: 4.0× personal insult surge during 25h crisis</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2125177947376300110-hurt-feelings-zh.webp</image:loc>
+      <image:title>Original X reply (18:41 CST, copy-pasted 3×): &quot;完了，又伤害中国人民的感情了。&quot;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2125182476943556955-zero-value.webp</image:loc>
+      <image:title>Original X post (18:59 CST): &quot;I am thankful his audience has zero value&quot;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2125193393450226024-not-apologizing.webp</image:loc>
+      <image:title>Original X reply (19:42 CST): &quot;I am not apologizing. I have done nothing wrong&quot;</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-24-cesspit-crisis-outburst/zh/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-24-cesspit-crisis-outburst/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-24-cesspit-crisis-outburst/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-24-cesspit-crisis-outburst/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/26-cn-cesspit.png</image:loc>
+      <image:title>11 月 24 日「中文科技推特圈是最大的粪坑」原帖</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/charts/theo-chart-4-cn-crisis.png</image:loc>
+      <image:title>取证图 4：25 小时危机中人身攻击飙升 4.0 倍</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2125177947376300110-hurt-feelings-zh.webp</image:loc>
+      <image:title>X 原始回复（18:41 CST，复制粘贴 3 次）：「完了，又伤害中国人民的感情了。」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2125182476943556955-zero-value.webp</image:loc>
+      <image:title>X 原帖（18:59 CST）：「我很庆幸他的受众一点价值都没有」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/receipts/x-2125193393450226024-not-apologizing.webp</image:loc>
+      <image:title>X 原始回复（19:42 CST）：「我不道歉。我没做错任何事」</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-24-governance-lock-glacier-cla/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-24-governance-lock-glacier-cla/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-24-governance-lock-glacier-cla/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-24-governance-lock-glacier-cla/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-issue4123-locked-pingdotgg.png</image:loc>
+      <image:title>Issue #4123 closed twice by @t3dotgg and locked by @pingdotgg</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-hazae41-glacier-issue1.png</image:loc>
+      <image:title>hazae41/glacier#1 Oct 2022 comment by @t3dotgg</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-24-governance-lock-glacier-cla/zh/</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-24-governance-lock-glacier-cla/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-24-governance-lock-glacier-cla/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-24-governance-lock-glacier-cla/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-issue4123-locked-pingdotgg.png</image:loc>
+      <image:title>Issue #4123 被 @t3dotgg 两次关闭、被 @pingdotgg 锁定</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-hazae41-glacier-issue1.png</image:loc>
+      <image:title>hazae41/glacier#1 上 @t3dotgg 2022 年 10 月的评论</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-25-gdpr-overnight-collapse/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-25-gdpr-overnight-collapse/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-25-gdpr-overnight-collapse/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-25-gdpr-overnight-collapse/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post11-4-dump-264-claude-records.jpg</image:loc>
+      <image:title>100MB dump forensic audit: 264 live Claude records stitching 4 machines</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/06-pr42450-absolute-path.jpg</image:loc>
+      <image:title>PR #42450 admitting git.cwd absolute path leak to Axiom</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/08-pr42380-220w-ip-axiom.jpg</image:loc>
+      <image:title>PR #42380 admitting 2.2M/hr IP + UA spans in Axiom</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/09-pr42285-delete-account-leftover.jpg</image:loc>
+      <image:title>PR #42285 admitting broken account deletion</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post11-2-pr42376-windows-optout.jpg</image:loc>
+      <image:title>PR #42376 ignored Windows opt-out</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post11-3-pr42464-mac-shell-env.jpg</image:loc>
+      <image:title>PR #42464 ignored macOS ~/.zshrc opt-out</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post12-4-pr42466-anonymous-batch.jpg</image:loc>
+      <image:title>PR #42466 mixed anonymous feedback batches</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-25-gdpr-overnight-collapse/zh/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-25-gdpr-overnight-collapse/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-25-gdpr-overnight-collapse/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-25-gdpr-overnight-collapse/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post11-4-dump-264-claude-records.jpg</image:loc>
+      <image:title>100MB 数据包取证：264 条活跃 Claude 记录串起 4 台机器</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/06-pr42450-absolute-path.jpg</image:loc>
+      <image:title>PR #42450 承认 git.cwd 绝对路径泄露到 Axiom</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/08-pr42380-220w-ip-axiom.jpg</image:loc>
+      <image:title>PR #42380 承认 Axiom 里每小时 220 万条 IP + UA span</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/09-pr42285-delete-account-leftover.jpg</image:loc>
+      <image:title>PR #42285 承认账号删除是坏的</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post11-2-pr42376-windows-optout.jpg</image:loc>
+      <image:title>PR #42376 无视 Windows 退出设置</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post11-3-pr42464-mac-shell-env.jpg</image:loc>
+      <image:title>PR #42464 无视 macOS ~/.zshrc 退出设置</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/x-post12-4-pr42466-anonymous-batch.jpg</image:loc>
+      <image:title>PR #42466 匿名反馈被混批提交</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png</image:loc>
+      <image:title>Plaintext --lan cookie without Secure flag</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/ca81b7b9-a5-30d-bearer-and-no-self-revoke.png</image:loc>
+      <image:title>30-day Bearer token self-revocation blocked</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/ca81b7b9-a6-submodule-recursive.png</image:loc>
+      <image:title>Untrusted repo inheriting SSH_AUTH_SOCK &amp; GITHUB_TOKEN</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-13-pr-39483-secret-traversal.png</image:loc>
+      <image:title>PR #39483 silent path traversal fix (0 advisories)</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/zh/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png</image:loc>
+      <image:title>没有 Secure 标记的明文 --lan Cookie</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/ca81b7b9-a5-30d-bearer-and-no-self-revoke.png</image:loc>
+      <image:title>30 天 Bearer Token 自吊销被拦</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/ca81b7b9-a6-submodule-recursive.png</image:loc>
+      <image:title>不可信仓库继承 SSH_AUTH_SOCK 与 GITHUB_TOKEN</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/t3code-13-pr-39483-secret-traversal.png</image:loc>
+      <image:title>PR #39483 静默修复路径穿越（0 条安全公告）</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-25-25-tool-telemetry-audit/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-25-25-tool-telemetry-audit/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-25-25-tool-telemetry-audit/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-25-25-tool-telemetry-audit/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-zrymiller-25-tool-audit.png</image:loc>
+      <image:title>@ZryMiller 25-tool OSS telemetry scorecard</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-25-25-tool-telemetry-audit/zh/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-25-25-tool-telemetry-audit/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-25-25-tool-telemetry-audit/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-25-25-tool-telemetry-audit/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-zrymiller-25-tool-audit.png</image:loc>
+      <image:title>@ZryMiller 25 款开源工具遥测评分表</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-26-dmfigol-aws-hr-coercion/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-26-dmfigol-aws-hr-coercion/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-26-dmfigol-aws-hr-coercion/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-26-dmfigol-aws-hr-coercion/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-dmfigol-aws-hr-post.png</image:loc>
+      <image:title>@dmfigol 639K-view X thread on AWS HR case</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-dmfigol-dm-screenshots.png</image:loc>
+      <image:title>DM screenshots: &#x27;Fear is a good incentive&#x27; &amp; &#x27;is English your native language?&#x27;</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-26-dmfigol-aws-hr-coercion/zh/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-26-dmfigol-aws-hr-coercion/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-26-dmfigol-aws-hr-coercion/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-26-dmfigol-aws-hr-coercion/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-dmfigol-aws-hr-post.png</image:loc>
+      <image:title>@dmfigol 关于 AWS HR 案件的 63.9 万浏览 X 推文串</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-dmfigol-dm-screenshots.png</image:loc>
+      <image:title>私信截图：「恐惧就是好激励」与「英语是你的母语吗？」</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-26-google-antigravity-zed-spoof/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-26-google-antigravity-zed-spoof/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-26-google-antigravity-zed-spoof/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-26-google-antigravity-zed-spoof/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-pr43026-google-flagged.png</image:loc>
+      <image:title>PR #43026 Google account-flag warning &amp; Antigravity removal</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-pr43087-zed-spoof.png</image:loc>
+      <image:title>PR #43087 removing clientInfo: { name: &quot;zed&quot; } handshake spoof</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-26-google-antigravity-zed-spoof/zh/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-26-google-antigravity-zed-spoof/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-26-google-antigravity-zed-spoof/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-26-google-antigravity-zed-spoof/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-pr43026-google-flagged.png</image:loc>
+      <image:title>PR #43026：Google 的账号标记警告与 Antigravity 功能移除</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-pr43087-zed-spoof.png</image:loc>
+      <image:title>PR #43087：删除 clientInfo: { name: &quot;zed&quot; } 握手冒充</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-27-final-statement-slophouse-gdpr/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-27-final-statement-slophouse-gdpr/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-27-final-statement-slophouse-gdpr/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-27-final-statement-slophouse-gdpr/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-theo-final-statement.png</image:loc>
+      <image:title>@theo Nov 25 &#x27;Final statement.&#x27; nine-point denial</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-sk1gl4a-gdpr-243-sessions.png</image:loc>
+      <image:title>@sk1gl4a capture of 243 Claude reads &amp; GDPR filing</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-sk1gl4a-german-vat-stripe.png</image:loc>
+      <image:title>T3 Connect Stripe checkout with 19% German VAT (€9.03/mo)</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-sk1gl4a-t3chat-fingerprint.png</image:loc>
+      <image:title>t3.chat zero-click FingerprintJS &amp; PostHog capture</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-pr43948-read-without-asking.png</image:loc>
+      <image:title>PR #43948 admitting &#x27;read other agents&#x27; files without asking&#x27;</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-pr43889-easier-in-slophouse.png</image:loc>
+      <image:title>PR #43889 closed: &#x27;nvm easier to do in slophouse&#x27;</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-27-final-statement-slophouse-gdpr/zh/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-27-final-statement-slophouse-gdpr/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-27-final-statement-slophouse-gdpr/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-27-final-statement-slophouse-gdpr/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-theo-final-statement.png</image:loc>
+      <image:title>@theo 11 月 25 日「最终声明。」九点否认</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-sk1gl4a-gdpr-243-sessions.png</image:loc>
+      <image:title>@sk1gl4a 抓到的 243 次 Claude 读取与 GDPR 投诉材料</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-sk1gl4a-german-vat-stripe.png</image:loc>
+      <image:title>T3 Connect 的 Stripe 结账页，含 19% 德国增值税（€9.03/月）</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-sk1gl4a-t3chat-fingerprint.png</image:loc>
+      <image:title>t3.chat 零点击加载 FingerprintJS 与 PostHog 的抓包</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-pr43948-read-without-asking.png</image:loc>
+      <image:title>PR #43948：承认「没问过一声就读了其他 agent 的文件」</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-pr43889-easier-in-slophouse.png</image:loc>
+      <image:title>PR #43889 关闭理由：「nvm easier to do in slophouse」</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-27-desktop-browser-sandbox-bypass/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-27-desktop-browser-sandbox-bypass/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-27-desktop-browser-sandbox-bypass/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-27-desktop-browser-sandbox-bypass/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-claude-adapter-shadow-warn.png</image:loc>
+      <image:title>ClaudeAdapterV2.ts muting CLAUDE_SDK_CAN_USE_TOOL_SHADOWED</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-server-browser-isolated.png</image:loc>
+      <image:title>ServerBrowser.ts disabling isolatedContext on Desktop Electron</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-server-browser-upload-files.png</image:loc>
+      <image:title>ServerBrowser.ts uploadFiles checking only NodePath.isAbsolute</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-27-desktop-browser-sandbox-bypass/zh/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-27-desktop-browser-sandbox-bypass/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-27-desktop-browser-sandbox-bypass/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-27-desktop-browser-sandbox-bypass/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-claude-adapter-shadow-warn.png</image:loc>
+      <image:title>ClaudeAdapterV2.ts 屏蔽 CLAUDE_SDK_CAN_USE_TOOL_SHADOWED</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-server-browser-isolated.png</image:loc>
+      <image:title>ServerBrowser.ts 在桌面 Electron 上停用 isolatedContext</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-server-browser-upload-files.png</image:loc>
+      <image:title>ServerBrowser.ts 的 uploadFiles 只检查 NodePath.isAbsolute</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-27-plaintext-quote-prompt-urls/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-27-plaintext-quote-prompt-urls/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-27-plaintext-quote-prompt-urls/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-27-plaintext-quote-prompt-urls/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-prompt-links-public-url.png</image:loc>
+      <image:title>promptLinks.ts packing full prompt and repo into app.t3.codes URL</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-discussion29456-quote-leak.png</image:loc>
+      <image:title>Discussion #29456 converted &amp; locked from Issue #29449 in 4m 39s</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-27-plaintext-quote-prompt-urls/zh/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-27-plaintext-quote-prompt-urls/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-27-plaintext-quote-prompt-urls/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-27-plaintext-quote-prompt-urls/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-prompt-links-public-url.png</image:loc>
+      <image:title>promptLinks.ts 将完整 Prompt 和仓库名塞进 app.t3.codes URL</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-discussion29456-quote-leak.png</image:loc>
+      <image:title>Issue #29449 在 4 分 39 秒内转入并锁定为 Discussion #29456</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-27-sqlite-113gb-fanout-and-silence/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-27-sqlite-113gb-fanout-and-silence/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-27-sqlite-113gb-fanout-and-silence/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-27-sqlite-113gb-fanout-and-silence/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-julius-fanout-56gb.png</image:loc>
+      <image:title>@jullerino &#x27;massive fan out&#x27; admission &amp; @kdy1dev Issue #44029</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://temu3code.com/mail/t/2026-11-27-sqlite-113gb-fanout-and-silence/zh/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-27-sqlite-113gb-fanout-and-silence/" />
+    <xhtml:link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-27-sqlite-113gb-fanout-and-silence/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-27-sqlite-113gb-fanout-and-silence/" />
+    <image:image>
+      <image:loc>https://temu3code.com/evidence/extra/nov27-julius-fanout-56gb.png</image:loc>
+      <image:title>@jullerino 承认存在“大规模扇出”及 @kdy1dev 的 Issue #44029</image:title>
+    </image:image>
+  </url>
+</urlset>

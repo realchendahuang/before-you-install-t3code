@@ -27,8 +27,8 @@
       suiteTitle: "Public Record Suite",
       classicPortal: "Temu3",
       profileGreeting: "Public Record Archive",
-      profileSub: "Viewing verbatim public statements, GitHub PRs, USPTO records & 109 receipts for @theo / pingdotgg/t3code (2023–2026).",
-      openFullReport: "Back to Temu3 Home",
+      profileSub: "Public posts, GitHub PRs, and archived screenshots for @theo / pingdotgg/t3code.",
+      openFullReport: "Temu3 Home",
       submitReceipt: "Submit Receipt",
       folderInbox: "Inbox",
       folderStarred: "Starred",
@@ -55,18 +55,20 @@
       tabTelemetry: "Telemetry & Security",
       tabTelemetrySub: "PostHog, 2.2M/hr IP logs, Antigravity bans, ca81b7b9…",
       verifiedSource: "Verified Primary Source",
-      photosTitle: "TPhotos — 109 Primary Visual Receipts",
-      photosDesc: "Every archived screenshot, GitHub PR capture, USPTO check, and forensic chart from the repository. Click any image to inspect at full resolution.",
-      activityTitle: "TCal — Multi-Year Pattern & 1,151-Tweet Activity",
-      activityDesc: "Chronological timeline from May 2023 to Nov 2026 alongside the exhaustive 1,151-tweet quantitative dataset (Nov 7–24, 2026).",
-      viewChronoInbox: "Open Chronological Inbox",
-      driveTitle: "TDrive — 6 Deep Dossiers & 327 Primary Sources",
-      driveDesc: "Line-by-line source code audits, verbatim SQL, USPTO TSDR records, and 2-minute hardening commands.",
+      photosTitle: "TPhotos · Archived Screenshots",
+      photosDesc: "Screenshots, PRs, and charts. Click any image to zoom.",
+      activityTitle: "TCal · Timeline & 1,151 Posts",
+      activityDesc: "Timeline from 2023 to 2026 and stats from 1,151 posts.",
+      viewChronoInbox: "Sort oldest first",
+      driveTitle: "TDrive · Reports & Source Links",
+      driveDesc: "Full write-ups, trademark checks, and cleanup commands.",
       peopleDirTitle: "People & Counterparties Directory",
       peopleDirDesc: "Click any person or community below to filter every documented interaction with @theo and pingdotgg/t3code.",
       backInbox: "← Back to Inbox",
       dockReport: "Temu3",
       searchPlaceholder: "Search public record (e.g. Temu, FFmpeg, 41.6 GB, PR #42450, Antigravity...)",
+      viewOriginalEn: "Original EN",
+      viewTranslated: "Translated",
       replyOriginal: "Open Original Source",
       shareOnX: "Share on X",
       fullExhibit: "Full Exhibit Dossier",
@@ -88,7 +90,7 @@
       suiteTitle: "公共档案套件",
       classicPortal: "Temu3 主页",
       profileGreeting: "独立公共记录档案箱",
-      profileSub: "收录 @theo 与 pingdotgg/t3code 的公开原文、GitHub PR/Issue、USPTO 商标查询及 109 份存档截图（2023–2026）。",
+      profileSub: "收录 @theo 和 pingdotgg/t3code 的公开原帖、GitHub PR 和存档截图。",
       openFullReport: "返回 Temu3 主页",
       submitReceipt: "提交公开证据",
       folderInbox: "收件箱",
@@ -116,18 +118,20 @@
       tabTelemetry: "遥测与安全漏洞",
       tabTelemetrySub: "默认 PostHog、220 万/时 IP 日志、Antigravity 3 分钟封号…",
       verifiedSource: "已核验一手信源",
-      photosTitle: "TPhotos — 109 份一手截图证据库",
-      photosDesc: "仓库完整归档的推文截图、PR 源码截图、USPTO 记录与统计图表，点击任意图片查看原图。",
-      activityTitle: "TCal — 3.5 年时间线与 1,151 条推文定量分析",
-      activityDesc: "完整还原 2023 年 5 月至 2026 年 11 月公开行为轨迹，结合 1,151 条连续推文定量统计图表。",
-      viewChronoInbox: "按最早时间浏览收件箱",
-      driveTitle: "TDrive — 6 份深度技术卷宗与 327 条一手信源",
-      driveDesc: "逐行源码审计、SQL 取证、USPTO 商标检索及 2 分钟清理加固命令。",
+      photosTitle: "TPhotos · 截图存档",
+      photosDesc: "截图、PR 记录和图表，点开查看大图。",
+      activityTitle: "TCal · 时间线和 1,151 条推文",
+      activityDesc: "2023 到 2026 年时间线，以及 1,151 条推文统计。",
+      viewChronoInbox: "按最早时间排序",
+      driveTitle: "TDrive · 专题报告与原始链接",
+      driveDesc: "完整报告、商标查询和 2 分钟清理命令。",
       peopleDirTitle: "涉及人物与开发者群体目录",
       peopleDirDesc: "点击任意人物或群体，立刻筛选与 @theo 及 pingdotgg/t3code 的全部公开交互记录。",
       backInbox: "← 返回收件箱",
       dockReport: "主页",
       searchPlaceholder: "搜索公共记录（如 Temu、FFmpeg、41.6 GB、PR #42450、Antigravity...）",
+      viewOriginalEn: "英文原文",
+      viewTranslated: "显示译文",
       replyOriginal: "打开一手原文",
       shareOnX: "转发到 X",
       fullExhibit: "查看完整证据页",
@@ -189,9 +193,80 @@
   ];
 
   const SHARED_I18N = window.Temu3I18n;
+  const ICONS = {
+    menu: '<path d="M3 6h18M3 12h18M3 18h18"/>',
+    search: '<circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>',
+    person: '<circle cx="12" cy="8" r="4"/><path d="M4 20c0-3.5 3.6-6 8-6s8 2.5 8 6"/>',
+    group: '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 19.5c0-3 2.9-5 6.5-5s6.5 2 6.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M17 14.5c2.5 0 4.5 1.5 4.5 4"/>',
+    translate: '<path d="m5 8 6 6M4 14l6-6 2-3M2 5h12M7 2h1"/><path d="m22 22-5-10-5 10M14 18h6"/>',
+    help_outline: '<circle cx="12" cy="12" r="9"/><path d="M9.5 9.2a2.6 2.6 0 0 1 5 1c0 1.8-2.5 2.2-2.5 3.8"/><circle cx="12" cy="17.2" r="0.8" fill="currentColor" stroke="none"/>',
+    volunteer_activism: '<path d="M12 20s-7-4.5-7-9.5A4 4 0 0 1 12 8a4 4 0 0 1 7 2.5C19 15.5 12 20 12 20Z"/>',
+    apps: '<circle cx="5" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="5" r="1.5" fill="currentColor" stroke="none"/><circle cx="5" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="12" r="1.5" fill="currentColor" stroke="none"/><circle cx="5" cy="19" r="1.5" fill="currentColor" stroke="none"/><circle cx="12" cy="19" r="1.5" fill="currentColor" stroke="none"/><circle cx="19" cy="19" r="1.5" fill="currentColor" stroke="none"/>',
+    mail: '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/>',
+    photo_library: '<rect x="4" y="4" width="16" height="16" rx="2"/><circle cx="9.5" cy="9.5" r="1.5" fill="currentColor" stroke="none"/><path d="m20 15-4.5-4.5L7 19"/>',
+    folder_open: '<path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/>',
+    calendar_month: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>',
+    auto_stories: '<path d="M2 6.5A2.5 2.5 0 0 1 4.5 4H12v16H4.5A2.5 2.5 0 0 1 2 17.5v-11Z"/><path d="M22 6.5A2.5 2.5 0 0 0 19.5 4H12v16h7.5a2.5 2.5 0 0 0 2.5-2.5v-11Z"/>',
+    playing_cards: '<rect x="5" y="4" width="11" height="15" rx="2"/><path d="M16 7h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9"/>',
+    style: '<rect x="5" y="4" width="11" height="15" rx="2"/><path d="M16 7h2a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9"/>',
+    home: '<path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5Z"/>',
+    code: '<path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/>',
+    edit: '<path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/>',
+    inbox: '<path d="M4 4h16l2 9v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6l2-9Z"/><path d="M2 13h6l2 3h4l2-3h6"/>',
+    star_border: '<polygon points="12 3 14.9 8.8 21.3 9.7 16.6 14.2 17.7 20.6 12 17.6 6.3 20.6 7.4 14.2 2.7 9.7 9.1 8.8" fill="none"/>',
+    star: '<polygon points="12 3 14.9 8.8 21.3 9.7 16.6 14.2 17.7 20.6 12 17.6 6.3 20.6 7.4 14.2 2.7 9.7 9.1 8.8" fill="currentColor" stroke-width="1.2"/>',
+    visibility_off: '<path d="M3 3l18 18"/><path d="M10.6 10.6a2 2 0 0 0 2.8 2.8"/><path d="M9.9 4.2A10.4 10.4 0 0 1 12 4c5.5 0 9.5 4.2 10.5 8-.4 1.6-1.4 3.2-2.7 4.5M6.6 6.6C4.4 8 2.9 10 2.5 12c1 3.8 5 8 9.5 8 1.9 0 3.7-.6 5.2-1.5"/>',
+    send: '<path d="M22 2 11 13"/><path d="m22 2-7 20-4-9-9-4 20-7Z"/>',
+    attach_file: '<path d="m21.4 11.1-9.2 9.2a6 6 0 0 1-8.5-8.5l9.2-9.2a4 4 0 0 1 5.7 5.7l-9.2 9.1a2 2 0 0 1-2.8-2.8l8.5-8.4"/>',
+    calendar_today: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/>',
+    arrow_drop_down: '<path d="m7 10 5 5 5-5H7Z" fill="currentColor" stroke="none"/>',
+    refresh: '<path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/>',
+    casino: '<rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="9" cy="9" r="1.1" fill="currentColor" stroke="none"/><circle cx="15" cy="9" r="1.1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.1" fill="currentColor" stroke="none"/><circle cx="9" cy="15" r="1.1" fill="currentColor" stroke="none"/><circle cx="15" cy="15" r="1.1" fill="currentColor" stroke="none"/>',
+    public: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18 14 14 0 0 1 0-18"/>',
+    date_range: '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h2M12 14h2M16 14h.01"/>',
+    schedule: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    gavel: '<path d="m14 13-7.5 7.5a2.1 2.1 0 0 1-3-3L11 10"/><path d="m16 16 6-6"/><path d="m8 8 6-6"/><path d="m9 7 8 8"/><path d="m21 11-8-8"/>',
+    shield: '<path d="M12 3 4 7v5c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V7l-8-4Z"/>',
+    arrow_back: '<path d="M19 12H5"/><path d="m12 19-7-7 7-7"/>',
+    link: '<path d="M10 13a5 5 0 0 0 7.5.5l2-2a5 5 0 0 0-7.1-7.1l-1.1 1.1"/><path d="M14 11a5 5 0 0 0-7.5-.5l-2 2a5 5 0 0 0 7.1 7.1l1.1-1.1"/>',
+    description: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/>',
+    article: '<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/>',
+    verified: '<path d="M12 2 14.9 4.2 18.5 3.8 19.6 7.2 22.5 9.5 21.3 13 22.5 16.5 19.6 18.8 18.5 22.2 14.9 21.8 12 24 9.1 21.8 5.5 22.2 4.4 18.8 1.5 16.5 2.7 13 1.5 9.5 4.4 7.2 5.5 3.8 9.1 4.2Z" fill="currentColor" stroke="none"/><path d="m8.8 12.2 2.2 2.2 4.5-4.6" stroke="#ffffff" stroke-width="2.1"/>',
+    chevron_left: '<path d="m15 18-6-6 6-6"/>',
+    chevron_right: '<path d="m9 18 6-6-6-6"/>',
+    sort: '<path d="M3 6h18M3 12h12M3 18h6"/>',
+    close: '<path d="M18 6 6 18M6 6l12 12"/>',
+    balance: '<path d="M12 3v18M5 7h14M7 7l-3 7h6l-3-7ZM17 7l-3 7h6l-3-7ZM8 21h8"/>',
+    fact_check: '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 9h5M7 14h4M14.5 12.5l1.5 1.5 3-3"/>',
+    visibility: '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/>',
+    trending_up: '<path d="m22 7-8.5 8.5-5-5L2 17"/><path d="M16 7h6v6"/>',
+    reply: '<path d="M9 14 4 9l5-5"/><path d="M4 9h10.5a5.5 5.5 0 0 1 5.5 5.5v0a5.5 5.5 0 0 1-5.5 5.5H11"/>',
+    forward: '<path d="m15 14 5-5-5-5"/><path d="M20 9H9.5A5.5 5.5 0 0 0 4 14.5v0A5.5 5.5 0 0 0 9.5 20H13"/>',
+    open_in_new: '<path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6M10 14 21 3"/>'
+  };
+  function iconSvg(name, cls = "") {
+    const body = ICONS[name] || ICONS.article;
+    const classes = cls ? `tmail-ico ${cls}` : "tmail-ico";
+    return `<svg class="${classes}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${body}</svg>`;
+  }
+  const INITIAL_SEO = {
+    title: document.title,
+    desc: document.querySelector('meta[name="description"]')?.getAttribute("content") || "",
+    ogTitle: document.querySelector('meta[property="og:title"]')?.getAttribute("content") || "",
+    ogDesc: document.querySelector('meta[property="og:description"]')?.getAttribute("content") || ""
+  };
+  const BLANK_IMG = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
+  const IMG_DIMS = {"evidence/00-cover-en.png":[1800,766],"evidence/00-cover-zh.png":[1800,766],"evidence/01-origin-theo-threat.png":[1400,1142],"evidence/02-no-telemetry-removed.png":[1200,900],"evidence/03-identify-codex-claude.png":[1000,980],"evidence/04-issue1397-no-optout.png":[900,760],"evidence/05-telemetry-cant-disable.png":[1400,1336],"evidence/06-pr42450-absolute-path.jpg":[1400,1144],"evidence/08-pr42380-220w-ip-axiom.jpg":[1400,1144],"evidence/09-pr42285-delete-account-leftover.jpg":[1400,1144],"evidence/10-issue17845-fake-delete.png":[920,840],"evidence/11-issue15353-auto-force-push.png":[1400,750],"evidence/12-antigravity-v1internal-spoof.png":[1400,750],"evidence/13-antigravity-ssh-spoof.png":[1400,750],"evidence/14-issue41536-fresh-ban.png":[1400,750],"evidence/15-connect-no-e2e.jpg":[1400,750],"evidence/16-pr32945-ovh-caddy-gateway.jpg":[1400,750],"evidence/17-theo-31t-tokens-10m-day.png":[1400,1214],"evidence/18-theo-vibe-kanban.png":[1400,1040],"evidence/19-cliproxy-gist-555pct.jpg":[1400,1120],"evidence/20-star-10x-cliff.png":[1400,1588],"evidence/21-pr29922-zhilsinger-review.png":[1400,1182],"evidence/22-contributing-vouched-ban.png":[960,840],"evidence/23-stealing-fork-bot.png":[1400,846],"evidence/24-pr41898-trademark-aftermath.png":[1400,766],"evidence/25-double-standard-chart-zh.png":[1400,934],"evidence/25-engineers-unemployment.png":[1400,1584],"evidence/26-cn-cesspit.png":[1400,810],"evidence/charts/theo-chart-1-overview.png":[2880,1920],"evidence/charts/theo-chart-2-rhythm.png":[2880,1920],"evidence/charts/theo-chart-3-double-standard.png":[2880,1920],"evidence/charts/theo-chart-4-cn-crisis.png":[2880,1920],"evidence/extra/ca81b7b9-a1-a4-a5-ttl-and-wsclaims.png":[1280,820],"evidence/extra/ca81b7b9-a1-cookie-origin-bypass.png":[1280,820],"evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png":[1512,810],"evidence/extra/ca81b7b9-a2-pr39483-silent-fix.png":[1512,810],"evidence/extra/ca81b7b9-a3-ipv6-loopback-killed.png":[1512,810],"evidence/extra/ca81b7b9-a4-ws-ticket-reuse-url.png":[1280,820],"evidence/extra/ca81b7b9-a5-30d-bearer-and-no-self-revoke.png":[1280,820],"evidence/extra/ca81b7b9-a6-submodule-recursive.png":[1512,810],"evidence/extra/p1-2b-trademark-md.png":[4240,4320],"evidence/extra/p1-3-maria-t3libre.png":[5840,3120],"evidence/extra/p1-4-github-t3code-search.png":[3312,4280],"evidence/extra/p1-5-x-get-better-lawyer.png":[2520,1952],"evidence/extra/p10-1-x-theo-apr25-trick-vcs.png":[2472,3045],"evidence/extra/p10-3-x-theo-nov2-trending.png":[2472,4686],"evidence/extra/p10-4a-pr29922-macroscope.png":[3392,1364],"evidence/extra/p10-5-gh-driver-arbitrary-repo.png":[4400,3328],"evidence/extra/p10-6-x-theo-nov24-missed-70k.png":[2472,4067],"evidence/extra/p2-1a-cliproxy-claude.png":[4560,1968],"evidence/extra/p2-1b-cliproxy-xai-agy.png":[4560,3728],"evidence/extra/p2-2-pr33800-cliproxy-agy.png":[6208,3400],"evidence/extra/p2-3-x-theo-cliproxy-clickhouse.png":[2520,1316],"evidence/extra/p2-4-x-theo-grokbot-tutorial.png":[2520,4513],"evidence/extra/p2-4b-x-theo-15k-ultra.png":[2520,3226],"evidence/extra/p2-5-x-theo-not-cliproxy.png":[2520,2682],"evidence/extra/p3-1-x-theo-patrick-many-prs.png":[2520,2146],"evidence/extra/p3-2-patrick-only-1-commit.png":[6176,2608],"evidence/extra/p3-3-pr29922-one-click-star.png":[6208,3400],"evidence/extra/p3-4-code-star-prompt.png":[4080,4624],"evidence/extra/p4-2-x-theo-daytona-investor.png":[2520,1106],"evidence/extra/p4-3-x-theo-paid-cloud-sandboxes.png":[2520,1796],"evidence/extra/p5-1-x-theo-managed-policy.png":[2472,1486],"evidence/extra/p5-2-x-theo-never-touches-servers.png":[2472,1561],"evidence/extra/p5-4-doc-managed-policy-paths.png":[4240,2960],"evidence/extra/p6-1-x-theo-800k-cost.png":[2472,1390],"evidence/extra/p6-3-x-theo-my-analytics.png":[2472,1294],"evidence/extra/p6-4-x-theo-investors.png":[2472,1362],"evidence/extra/p6-5-x-theo-98pct-usage.png":[2472,1102],"evidence/extra/p7-1-x-theo-nukes-machine.png":[2472,1102],"evidence/extra/p7-2-x-theo-yolo-merges.png":[2472,1258],"evidence/extra/p7-3-x-theo-unfollow-pr.png":[2472,2403],"evidence/extra/p7-4-x-theo-take-it-away.png":[2472,1066],"evidence/extra/p7-5-x-theo-pic-over-pr.png":[2472,1294],"evidence/extra/p8-2-x-theo-demonetize-cn.png":[2472,1198],"evidence/extra/p8-3-x-theo-autoblocker.png":[2472,1486],"evidence/extra/p8-4b-x-theo-copy-other-tools.png":[2472,1198],"evidence/extra/p8-4c-x-theo-mock-copying.png":[2472,3317],"evidence/extra/p9-1-x-theo-google-bridges.png":[2472,3018],"evidence/extra/p9-3-x-theo-local-ai-graves.png":[2472,1294],"evidence/extra/p9-4-x-theo-linux-larpers.png":[2472,1582],"evidence/extra/p9-5-x-theo-jail-rsd.png":[2472,3012],"evidence/extra/p9-5b-x-theo-stupid-bitch.png":[2472,1084],"evidence/extra/p9-7-x-theo-burning-trust.png":[2472,1102],"evidence/extra/t3code-12-issue-33639-theo-insult.png":[1512,810],"evidence/extra/t3code-13-pr-39483-secret-traversal.png":[1512,810],"evidence/extra/t3code-14-pr-30997-powershell-av.png":[1512,810],"evidence/extra/t3code-15-pr-41237-slophouse-drop-filter.png":[1512,810],"evidence/extra/t3code-16-faq-tos-guarantee.png":[1512,810],"evidence/extra/t3code-17-issue-40713-lie-and-bust.png":[1512,810],"evidence/extra/t3code-17b-issue-40713-schlessera-bust.png":[1512,810],"evidence/extra/t3code-18b-code-v1internal-call.png":[1512,810],"evidence/extra/t3code-20-pr-26876-spoof-zed.png":[1512,810],"evidence/extra/t3code-4-pr-27077-rejected.png":[900,680],"evidence/extra/t3code-5-pr-21506-theo-owner-tracking.png":[960,820],"evidence/extra/t3code-6-pr-5551-reality-check.png":[960,920],"evidence/extra/t3code-7-pr-33131-ai-brainrot.png":[920,740],"evidence/extra/t3code-9-issue-11222-process-spy.png":[920,840],"evidence/extra/x-post05-3-managed-endpoint-provider.jpg":[1512,810],"evidence/extra/x-post05-4-security-md-intended.jpg":[1512,810],"evidence/extra/x-post11-2-pr42376-windows-optout.jpg":[2048,1673],"evidence/extra/x-post11-3-pr42464-mac-shell-env.jpg":[2048,1673],"evidence/extra/x-post11-4-dump-264-claude-records.jpg":[1200,792],"evidence/extra/x-post12-3-pr42459-android-fcm-leak.jpg":[2048,1673],"evidence/extra/x-post12-4-pr42466-anonymous-batch.jpg":[2048,1673],"evidence/extra/x-post17-1-theo-youtube-sponsors.jpg":[1108,890],"evidence/extra/x-post17-2-maria-endless-deleted.jpg":[1108,894],"evidence/extra/x-post17-3-codex-45444-regression.jpg":[2048,1673],"evidence/extra/x-post17-5-rauchg-vercel-sponsor.jpg":[1108,794],"evidence/extra/nov27-claude-adapter-shadow-warn.png":[1512,873],"evidence/extra/nov27-discussion29456-quote-leak.png":[1512,873],"evidence/extra/nov27-dmfigol-aws-hr-post.png":[1512,873],"evidence/extra/nov27-dmfigol-dm-screenshots.png":[1512,873],"evidence/extra/nov27-hazae41-glacier-issue1.png":[1512,873],"evidence/extra/nov27-issue4123-locked-pingdotgg.png":[1512,873],"evidence/extra/nov27-julius-fanout-56gb.png":[1512,873],"evidence/extra/nov27-ondrej-sponsor-banner.png":[1512,873],"evidence/extra/nov27-ondrej-v1-v2-accusation.png":[1512,873],"evidence/extra/nov27-pr43026-google-flagged.png":[1512,873],"evidence/extra/nov27-pr43087-zed-spoof.png":[1512,873],"evidence/extra/nov27-pr43889-easier-in-slophouse.png":[1512,873],"evidence/extra/nov27-pr43948-read-without-asking.png":[1512,873],"evidence/extra/nov27-prompt-links-public-url.png":[1512,873],"evidence/extra/nov27-server-browser-isolated.png":[1512,873],"evidence/extra/nov27-server-browser-upload-files.png":[1512,873],"evidence/extra/nov27-sk1gl4a-gdpr-243-sessions.png":[1512,873],"evidence/extra/nov27-sk1gl4a-german-vat-stripe.png":[1512,873],"evidence/extra/nov27-sk1gl4a-t3chat-fingerprint.png":[1512,873],"evidence/extra/nov27-theo-admits-funding-bench.png":[1512,873],"evidence/extra/nov27-theo-final-statement.png":[1512,873],"evidence/extra/nov27-zrymiller-25-tool-audit.png":[1512,873],"receipts/x-2124823227570745504-chinese-knockoff.webp":[2440,3668],"receipts/x-2124825920808829077-temu3-code.webp":[610,372],"receipts/x-2124989435154726982-trillion-dollar-oss.webp":[2440,1428],"receipts/x-2125019705270477102-low-quality-users.webp":[2440,1428],"receipts/x-2125082769395220688-always-illegal.webp":[2440,2996],"receipts/x-2125177947376300110-hurt-feelings-zh.webp":[2440,968],"receipts/x-2125182476943556955-zero-value.webp":[610,328],"receipts/x-2125193393450226024-not-apologizing.webp":[2440,1448]};
+  function imgDimAttrs(path) {
+    const clean = String(path || "").replace(/^\.?\//, "");
+    const d = IMG_DIMS[clean];
+    return d ? `width="${d[0]}" height="${d[1]}"` : "";
+  }
+  const mailLocaleCache = new Map();
   const state = {
     lang: SHARED_I18N ? SHARED_I18N.detectInitialLang() : "en",
     bundle: null,
+    mailLocale: null,
     data: null,
     evidence: [],
     assetPrefix: "../",
@@ -208,7 +283,12 @@
     query: "",
     activeThreadId: null,
     starredIds: new Set(),
-    readIds: new Set()
+    readIds: new Set(),
+    showOriginalMsgs: new Set(),
+    lbGallery: null,
+    lbIndex: -1,
+    lbPrevFocus: null,
+    modalPrevFocus: null
   };
 
   const $ = (sel) => document.querySelector(sel);
@@ -226,13 +306,20 @@
         openFullReport: "openHome"
       };
       const k = aliasMap[key] || key;
-      if (state.bundle.mail[k]) return state.bundle.mail[k];
+      const val = SHARED_I18N && SHARED_I18N.getKey ? SHARED_I18N.getKey(state.bundle.mail, k) : state.bundle.mail[k];
+      if (val) return val;
     }
     const fallbackLang = isZh() ? "zh" : "en";
     return (I18N[fallbackLang] && I18N[fallbackLang][key]) || I18N.en[key] || key;
   }
 
+  function fmt(template, vars) {
+    if (SHARED_I18N && SHARED_I18N.fmt) return SHARED_I18N.fmt(template, vars);
+    return String(template || "").replace(/\{(\w+)\}/g, (_, k) => (vars && k in vars ? String(vars[k]) : ""));
+  }
+
   function escapeHtml(str) {
+    if (SHARED_I18N && SHARED_I18N.escapeHtml) return SHARED_I18N.escapeHtml(str);
     return String(str || "")
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
@@ -241,8 +328,229 @@
       .replace(/'/g, "&#39;");
   }
 
+  function isolateHandlesHtml(escaped) {
+    if (SHARED_I18N && SHARED_I18N.isolateHandlesHtml) return SHARED_I18N.isolateHandlesHtml(escaped);
+    return escaped.replace(/(^|[^A-Za-z0-9_.])(@[A-Za-z0-9_]+)/g, '$1<bdi dir="ltr">$2</bdi>');
+  }
+
+  function escapeBidi(str) {
+    return isolateHandlesHtml(escapeHtml(str));
+  }
+
+  function formatInline(raw) {
+    const parts = String(raw || "").split(/(`[^`\n]+`)/g);
+    return parts
+      .map((part) => {
+        if (part.length >= 2 && part.startsWith("`") && part.endsWith("`")) {
+          return `<code>${escapeHtml(part.slice(1, -1))}</code>`;
+        }
+        return isolateHandlesHtml(
+          escapeHtml(part).replace(/\*\*([^\n]+?)\*\*/g, "<strong>$1</strong>")
+        );
+      })
+      .join("");
+  }
+
   function formatBody(text) {
-    return escapeHtml(text).replace(/`([^`\n]+)`/g, "<code>$1</code>");
+    const lines = String(text || "").replace(/\r\n?/g, "\n").split("\n");
+    const blocks = [];
+    const ulRe = /^\s*(?:-|•)\s+(.+)$/;
+    const olRe = /^\s*(\d+)\.\s+(.+)$/;
+    const quoteRe = /^\s*>\s?(.*)$/;
+
+    const isOrderedStart = (idx) => {
+      const m = lines[idx].match(olRe);
+      if (!m) return false;
+      const num = Number(m[1]);
+      if (num === 1) return true;
+      let j = idx + 1;
+      while (j < lines.length && /^\s*$/.test(lines[j])) j++;
+      if (j < lines.length) {
+        const m2 = lines[j].match(olRe);
+        if (m2 && Number(m2[1]) === num + 1) return true;
+      }
+      return false;
+    };
+
+    let i = 0;
+    while (i < lines.length) {
+      if (/^\s*$/.test(lines[i])) {
+        i++;
+        continue;
+      }
+
+      if (quoteRe.test(lines[i])) {
+        const qLines = [];
+        while (i < lines.length && quoteRe.test(lines[i])) {
+          qLines.push(lines[i].replace(quoteRe, "$1"));
+          i++;
+        }
+        const qParas = [];
+        let cur = [];
+        for (const ql of qLines) {
+          if (/^\s*$/.test(ql)) {
+            if (cur.length) {
+              qParas.push(`<p>${cur.map(formatInline).join("<br>")}</p>`);
+              cur = [];
+            }
+          } else {
+            cur.push(ql);
+          }
+        }
+        if (cur.length) {
+          qParas.push(`<p>${cur.map(formatInline).join("<br>")}</p>`);
+        }
+        if (qParas.length) {
+          blocks.push(`<blockquote class="msg-quote">${qParas.join("")}</blockquote>`);
+        }
+        continue;
+      }
+
+      if (ulRe.test(lines[i])) {
+        const items = [];
+        while (i < lines.length) {
+          const m = lines[i].match(ulRe);
+          if (m) {
+            items.push(`<li>${formatInline(m[1])}</li>`);
+            i++;
+            continue;
+          }
+          if (/^\s*$/.test(lines[i])) {
+            let j = i + 1;
+            while (j < lines.length && /^\s*$/.test(lines[j])) j++;
+            if (j < lines.length && ulRe.test(lines[j])) {
+              i = j;
+              continue;
+            }
+          }
+          break;
+        }
+        blocks.push(`<ul class="msg-list">${items.join("")}</ul>`);
+        continue;
+      }
+
+      if (isOrderedStart(i)) {
+        const items = [];
+        const firstNum = Number(lines[i].match(olRe)[1]);
+        while (i < lines.length) {
+          const m = lines[i].match(olRe);
+          if (m) {
+            items.push(`<li>${formatInline(m[2])}</li>`);
+            i++;
+            continue;
+          }
+          if (/^\s*$/.test(lines[i])) {
+            let j = i + 1;
+            while (j < lines.length && /^\s*$/.test(lines[j])) j++;
+            if (j < lines.length && olRe.test(lines[j])) {
+              i = j;
+              continue;
+            }
+          }
+          break;
+        }
+        const startAttr = firstNum !== 1 ? ` start="${firstNum}"` : "";
+        blocks.push(`<ol class="msg-list"${startAttr}>${items.join("")}</ol>`);
+        continue;
+      }
+
+      const pLines = [];
+      while (
+        i < lines.length &&
+        !/^\s*$/.test(lines[i]) &&
+        !quoteRe.test(lines[i]) &&
+        !ulRe.test(lines[i]) &&
+        !isOrderedStart(i)
+      ) {
+        pLines.push(lines[i]);
+        i++;
+      }
+      if (pLines.length) {
+        blocks.push(`<p class="msg-p">${pLines.map(formatInline).join("<br>")}</p>`);
+      }
+    }
+
+    return blocks.join("");
+  }
+
+  async function fetchMailLocaleFile(code) {
+    if (mailLocaleCache.has(code)) return mailLocaleCache.get(code);
+    try {
+      const res = await fetch(`${state.dataPrefix}mail-threads/${encodeURIComponent(code)}.json?v=3`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const obj = await res.json();
+      mailLocaleCache.set(code, obj);
+      return obj;
+    } catch (_) {
+      mailLocaleCache.set(code, null);
+      return null;
+    }
+  }
+
+  async function loadMailTranslation(code) {
+    if (!code || code === "en") return null;
+    let obj = await fetchMailLocaleFile(code);
+    if (!obj && code === "zh-TW") {
+      obj = await fetchMailLocaleFile("zh-CN");
+    }
+    return obj;
+  }
+
+  function getLocThread(th) {
+    return (state.mailLocale && state.mailLocale.threads && state.mailLocale.threads[th.id]) || null;
+  }
+
+  function getLocMsg(th, mi) {
+    const lt = getLocThread(th);
+    return (lt && Array.isArray(lt.messages) && lt.messages[mi]) || null;
+  }
+
+  function locThreadFields(th) {
+    const lt = getLocThread(th);
+    return {
+      from: (lt && lt.from) || th.from,
+      to: (lt && lt.to) || th.to,
+      dateDisplay: (lt && lt.dateDisplay) || th.dateDisplay,
+      subject: (lt && lt.subject) || (isZh() ? (th.subjectZh || th.subject) : th.subject),
+      snippet: (lt && lt.snippet) || (isZh() ? (th.snippetZh || th.snippet) : th.snippet)
+    };
+  }
+
+  function locTopicLabel(tp) {
+    const fromMailLocale = state.mailLocale && state.mailLocale.topics && state.mailLocale.topics[tp.id];
+    if (fromMailLocale) return fromMailLocale;
+    const localized = t(`topics.${tp.id}`);
+    if (localized && localized !== `topics.${tp.id}`) return localized;
+    return isZh() ? tp.labelZh : tp.label;
+  }
+
+  function locPerson(p) {
+    const lp = state.mailLocale && state.mailLocale.people && state.mailLocale.people[p.id];
+    return {
+      name: (lp && lp.name) || p.name,
+      role: (lp && lp.role) || p.role
+    };
+  }
+
+  function locEvidence(ev) {
+    const le = state.mailLocale && state.mailLocale.evidence && state.mailLocale.evidence[ev.id];
+    return {
+      title: (le && le.title) || ev.title,
+      caption: (le && le.caption) || ev.caption
+    };
+  }
+
+  function locMessage(th, m, mi) {
+    const lm = getLocMsg(th, mi);
+    return {
+      sender: (lm && lm.sender) || m.sender,
+      handle: (lm && lm.handle) || m.handle,
+      to: (lm && lm.to) || m.to,
+      time: (lm && lm.time) || m.time,
+      body: (lm && lm.body) || m.body,
+      attTitle: (ai) => (lm && Array.isArray(lm.attachments) && lm.attachments[ai]) || (m.attachments[ai] && m.attachments[ai].title) || "",
+      linkLabel: (li) => (lm && Array.isArray(lm.links) && lm.links[li]) || (m.links[li] && m.links[li].label) || ""
+    };
   }
 
   function assetUrl(path) {
@@ -266,35 +574,43 @@
   }
 
   async function detectAssetPrefix() {
-    const isImageOk = async (url) => {
-      try {
-        const res = await fetch(url, { method: "HEAD" });
-        const ct = (res.headers.get("content-type") || "").toLowerCase();
-        return res.ok && ct.startsWith("image/");
-      } catch (_) {
-        return false;
-      }
-    };
-
     const p = window.location.pathname || "/";
-    const inSubdir = /\/(mail|inbox)(\/|$)/.test(p);
-
-    if (!inSubdir && (await isImageOk("./evidence/00-cover-en.png"))) {
+    if (/^\/?(index\.html)?$/.test(p)) {
       state.assetPrefix = "./";
       state.dataPrefix = "./data/";
       state.reportBase = "./";
-    } else if (await isImageOk("../evidence/00-cover-en.png")) {
+    } else if (/^\/(mail|inbox)(\/index\.html|\/)?$/.test(p)) {
       state.assetPrefix = "../";
-      state.dataPrefix = "../data/";
-      state.reportBase = "../";
-    } else if (await isImageOk("../../evidence/00-cover-en.png")) {
-      state.assetPrefix = "../../";
       state.dataPrefix = "../data/";
       state.reportBase = "../";
     } else {
-      state.assetPrefix = "../";
-      state.dataPrefix = "../data/";
-      state.reportBase = "../";
+      const isImageOk = async (url) => {
+        try {
+          const res = await fetch(url, { method: "HEAD" });
+          const ct = (res.headers.get("content-type") || "").toLowerCase();
+          return res.ok && ct.startsWith("image/");
+        } catch (_) {
+          return false;
+        }
+      };
+      const inSubdir = /\/(mail|inbox)(\/|$)/.test(p);
+      if (!inSubdir && (await isImageOk("./evidence/00-cover-en.png"))) {
+        state.assetPrefix = "./";
+        state.dataPrefix = "./data/";
+        state.reportBase = "./";
+      } else if (await isImageOk("../evidence/00-cover-en.png")) {
+        state.assetPrefix = "../";
+        state.dataPrefix = "../data/";
+        state.reportBase = "../";
+      } else if (await isImageOk("../../evidence/00-cover-en.png")) {
+        state.assetPrefix = "../../";
+        state.dataPrefix = "../data/";
+        state.reportBase = "../";
+      } else {
+        state.assetPrefix = "../";
+        state.dataPrefix = "../data/";
+        state.reportBase = "../";
+      }
     }
 
     $$("[data-report-link]").forEach((a) => {
@@ -380,9 +696,13 @@
       const freeText = q.replace(/(from|to):[^\s]+/g, "").trim();
 
       list = list.filter((th) => {
-        if (fromMatch && !th.from.toLowerCase().includes(fromMatch[1])) return false;
-        if (toMatch && !`${th.to} ${th.from}`.toLowerCase().includes(toMatch[1])) return false;
+        const lt = getLocThread(th);
+        const fromStr = `${th.from} ${(lt && lt.from) || ""}`.toLowerCase();
+        const toStr = `${th.to} ${th.from} ${(lt && lt.to) || ""} ${(lt && lt.from) || ""}`.toLowerCase();
+        if (fromMatch && !fromStr.includes(fromMatch[1])) return false;
+        if (toMatch && !toStr.includes(toMatch[1])) return false;
         if (!freeText) return true;
+        const locMsgs = lt && Array.isArray(lt.messages) ? lt.messages : [];
         const haystack = [
           th.subject,
           th.subjectZh,
@@ -394,8 +714,38 @@
           th.date,
           th.dateDisplay,
           "#" + th.exhibit,
-          ...th.messages.map((m) => `${m.sender} ${m.handle} ${m.body}`)
+          lt && lt.subject,
+          lt && lt.snippet,
+          lt && lt.from,
+          lt && lt.to,
+          lt && lt.dateDisplay,
+          ...th.messages.map((m, mi) => {
+            const lm = locMsgs[mi];
+            const enAtts = (m.attachments || []).map((a) => a.title).join(" ");
+            const enLinks = (m.links || []).map((lk) => lk.label).join(" ");
+            const locAtts = lm && Array.isArray(lm.attachments) ? lm.attachments.join(" ") : "";
+            const locLinks = lm && Array.isArray(lm.links) ? lm.links.join(" ") : "";
+            return [
+              m.sender,
+              m.handle,
+              m.to,
+              m.time,
+              m.body,
+              enAtts,
+              enLinks,
+              lm && lm.sender,
+              lm && lm.handle,
+              lm && lm.to,
+              lm && lm.time,
+              lm && lm.body,
+              locAtts,
+              locLinks
+            ]
+              .filter(Boolean)
+              .join(" ");
+          })
         ]
+          .filter(Boolean)
           .join(" ")
           .toLowerCase();
         return haystack.includes(freeText);
@@ -420,20 +770,68 @@
     return list;
   }
 
+  function setMetaAttr(selector, val) {
+    const el = document.querySelector(selector);
+    if (el && val) el.setAttribute("content", val);
+  }
+
+  function updateMailMeta(title, desc) {
+    if (title) {
+      document.title = title;
+      setMetaAttr('meta[property="og:title"]', title);
+    }
+    if (desc) {
+      setMetaAttr('meta[name="description"]', desc);
+      setMetaAttr('meta[property="og:description"]', desc);
+    }
+  }
+
+  function applyInboxMeta() {
+    if (state.lang === "en") {
+      updateMailMeta(INITIAL_SEO.title, INITIAL_SEO.desc);
+      setMetaAttr('meta[property="og:title"]', INITIAL_SEO.ogTitle);
+      setMetaAttr('meta[property="og:description"]', INITIAL_SEO.ogDesc);
+    } else {
+      const pt = t("pageTitle");
+      const pd = t("aboutBody");
+      updateMailMeta(
+        pt && pt !== "pageTitle" ? pt : INITIAL_SEO.title,
+        pd && pd !== "aboutBody" ? pd : INITIAL_SEO.desc
+      );
+    }
+  }
+
   async function applyI18n(nextCode) {
+    const prevLang = state.lang;
     if (nextCode && SHARED_I18N) {
       state.lang = SHARED_I18N.normalizeLang(nextCode) || "en";
     }
-    if (SHARED_I18N) {
-      SHARED_I18N.applyDirection(state.lang);
-      state.bundle = await SHARED_I18N.loadBundle(state.lang, state.dataPrefix);
+    const targetLang = state.lang;
+    if (prevLang !== targetLang && state.showOriginalMsgs) {
+      state.showOriginalMsgs.clear();
     }
-    const pt = t("pageTitle");
-    if (pt && pt !== "pageTitle") document.title = pt;
+    if (SHARED_I18N) {
+      SHARED_I18N.applyDirection(targetLang);
+    }
+    const [bundle, mailLocale] = await Promise.all([
+      SHARED_I18N ? SHARED_I18N.loadBundle(targetLang, state.dataPrefix) : Promise.resolve(null),
+      loadMailTranslation(targetLang)
+    ]);
+    if (state.lang !== targetLang) return;
+    state.bundle = bundle;
+    state.mailLocale = mailLocale;
+
+    if (state.view !== "thread") applyInboxMeta();
 
     $$("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      if (key) el.textContent = t(key);
+      if (!key) return;
+      const val = t(key);
+      if (el.tagName !== "OPTION" && /@[A-Za-z0-9_]+/.test(val)) {
+        el.innerHTML = escapeBidi(val);
+      } else {
+        el.textContent = val;
+      }
     });
     const searchEl = $("#searchInput");
     if (searchEl) searchEl.placeholder = t("searchPlaceholder");
@@ -450,7 +848,7 @@
         state.sort = "oldest";
         $("#sortSelect").value = "oldest";
         renderAll();
-        showToast(isZh() ? "已切换为最早时间优先（2023 → 2026）" : "Sorted oldest first: May 2023 → Nov 2026");
+        showToast(t("sortedOldestToast"));
       });
     }
     const randBtn = $("#quickRandomBtn");
@@ -466,6 +864,10 @@
     $("#countStarred").textContent = state.starredIds.size;
     $("#countDeleted").textContent = all.filter((th) => th.deleted || th.topics.includes("deleted")).length;
     $("#countSent").textContent = all.filter((th) => th.sentByTheo).length;
+    const countPhotosEl = $("#countPhotos");
+    if (countPhotosEl && Array.isArray(state.evidence) && state.evidence.length) {
+      countPhotosEl.textContent = state.evidence.length;
+    }
     $("#tabBullyingCount").textContent = all.filter(
       (th) => th.category === "bullying" || th.topics.includes("bullying") || th.topics.includes("double-standard")
     ).length;
@@ -492,11 +894,11 @@
       .map((tp) => {
         const count = state.data.threads.filter((th) => th.topics.includes(tp.id)).length;
         const active = state.topic === tp.id ? " active" : "";
-        const label = isZh() ? tp.labelZh : tp.label;
+        const label = locTopicLabel(tp);
         return `<li>
           <button type="button" class="topic-btn${active}" data-topic="${tp.id}">
-            <span class="material-symbols-outlined">${tp.icon}</span>
-            <span class="nav-label">${escapeHtml(label)}</span>
+            ${iconSvg(tp.icon)}
+            <span class="nav-label">${escapeBidi(label)}</span>
             <span class="person-count">${count}</span>
           </button>
         </li>`;
@@ -508,7 +910,7 @@
     const allContactsActive = !state.person && state.view === "inbox" ? " active" : "";
     const peopleItems = [
       `<li><button type="button" class="person-btn${allContactsActive}" data-person="">
-        <span class="person-name">${escapeHtml(t("allContacts"))}</span>
+        <span class="person-name">${escapeBidi(t("allContacts"))}</span>
         <span class="person-count">${state.data.threads.length}</span>
       </button></li>`
     ];
@@ -516,9 +918,10 @@
       const count = state.data.threads.filter((th) => th.people.includes(p.id)).length;
       if (!count) return;
       const active = state.person === p.id ? " active" : "";
+      const lp = locPerson(p);
       peopleItems.push(`<li>
         <button type="button" class="person-btn${active}" data-person="${p.id}">
-          <span class="person-name">${escapeHtml(p.name)}</span>
+          <span class="person-name">${escapeBidi(lp.name)}</span>
           <span class="person-count">${count}</span>
         </button>
       </li>`);
@@ -557,7 +960,7 @@
       const tp = state.data.topics.find((x) => x.id === state.topic);
       if (tp) {
         chips.push({
-          label: `${isZh() ? "主题" : "Topic"}: ${isZh() ? tp.labelZh : tp.label}`,
+          label: `${t("topicPrefix")}: ${locTopicLabel(tp)}`,
           clear: () => {
             state.topic = null;
           }
@@ -568,7 +971,7 @@
       const p = state.data.people.find((x) => x.id === state.person);
       if (p) {
         chips.push({
-          label: `${isZh() ? "人物" : "Person"}: ${p.name}`,
+          label: `${t("personPrefix")}: ${locPerson(p).name}`,
           clear: () => {
             state.person = null;
           }
@@ -576,8 +979,9 @@
       }
     }
     if (state.platform !== "all") {
+      const platLabel = state.platform === "Code" ? t("platCode") : state.platform;
       chips.push({
-        label: `${isZh() ? "来源" : "Source"}: ${state.platform}`,
+        label: `${t("sourcePrefix")}: ${platLabel}`,
         clear: () => {
           state.platform = "all";
           $("#platformFilter").value = "all";
@@ -585,8 +989,9 @@
       });
     }
     if (state.year !== "all") {
+      const yearMap = { "2026-pre": t("yearPre"), crisis: t("yearCrisis") };
       chips.push({
-        label: `${isZh() ? "时间段" : "Date"}: ${state.year}`,
+        label: `${t("datePrefix")}: ${yearMap[state.year] || state.year}`,
         clear: () => {
           state.year = "all";
           $("#yearFilter").value = "all";
@@ -613,7 +1018,7 @@
     bar.innerHTML = chips
       .map(
         (c, idx) =>
-          `<span class="active-chip">${escapeHtml(c.label)} <button type="button" data-clear-chip="${idx}" aria-label="Remove filter">×</button></span>`
+          `<span class="active-chip">${escapeBidi(c.label)} <button type="button" data-clear-chip="${idx}" aria-label="Remove filter">×</button></span>`
       )
       .join("") + `<button type="button" class="inline-link-btn" id="clearAllFiltersBtn">${escapeHtml(t("clearFilters"))}</button>`;
 
@@ -629,7 +1034,7 @@
   function renderEmailList() {
     const list = getFilteredThreads();
     const total = list.length;
-    $("#rangeLabel").textContent = total ? `1–${total} of ${total}` : "0 of 0";
+    $("#rangeLabel").textContent = total ? fmt(t("rangeFormat"), { a: 1, b: total, n: total }) : "0";
 
     // Show category tabs only on top-level Inbox with no person/topic filter
     $("#categoryTabs").hidden = !(state.folder === "inbox" && !state.topic && !state.person);
@@ -644,7 +1049,7 @@
     const container = $("#emailList");
     if (!total) {
       container.innerHTML = `<div class="empty-state">
-        <span class="material-symbols-outlined">inbox</span>
+        ${iconSvg("inbox")}
         <p>${escapeHtml(t("emptyList"))}</p>
         <button type="button" class="tool-btn" id="emptyResetBtn">${escapeHtml(t("clearFilters"))}</button>
       </div>`;
@@ -656,33 +1061,37 @@
       .map((th) => {
         const starred = state.starredIds.has(th.id);
         const isRead = state.readIds.has(th.id);
-        const subject = isZh() ? th.subjectZh : th.subject;
-        const snippet = isZh() ? th.snippetZh : th.snippet;
+        const lf = locThreadFields(th);
         const attCount = th.messages.reduce((n, m) => n + (m.attachments ? m.attachments.length : 0), 0);
         const msgCount = th.messages.length;
         const starDisplay = th.starCount + (starred ? 1 : 0);
         const chipClass = th.deleted ? " chip-deleted" : th.status === "open" ? " chip-open" : "";
-        const chipLabel = th.deleted ? "Deleted" : th.platform;
+        const platLabel = th.platform === "Code" ? t("platCode") : th.platform;
+        const chipLabel = th.deleted ? t("chipDeleted") : platLabel;
+        const leadMsg = th.messages && th.messages[0];
+        const avatarChar = (leadMsg && leadMsg.avatar) || th.from.replace(/^@/, "").charAt(0).toUpperCase() || "T";
+        const avatarColor = (leadMsg && leadMsg.color) || "#5f6368";
 
         return `<div class="email-row${isRead ? " is-read" : ""}" role="listitem" tabindex="0" data-thread-id="${th.id}">
+          <div class="row-avatar" style="background:${escapeHtml(avatarColor)}" aria-hidden="true">${escapeHtml(avatarChar)}</div>
           <div class="row-controls">
             <button type="button" class="star-btn${starred ? " is-starred" : ""}" data-star-id="${th.id}" aria-label="Star thread" title="Star">
-              <span class="material-symbols-outlined">${starred ? "star" : "star_border"}</span>
+              ${iconSvg(starred ? "star" : "star_border", starred ? "is-filled" : "")}
               <span>${starDisplay}</span>
             </button>
           </div>
           <div class="row-sender">
-            <span class="sender-name">${escapeHtml(th.from)}</span>
+            <span class="sender-name">${escapeBidi(lf.from)}</span>
             ${msgCount > 1 ? `<span class="msg-count">${msgCount}</span>` : ""}
           </div>
           <div class="row-main">
             <span class="platform-chip${chipClass}">${escapeHtml(chipLabel)}</span>
-            <span class="row-subject">${escapeHtml(subject)}</span>
-            <span class="row-snippet">— ${escapeHtml(snippet)}</span>
+            <span class="row-subject">${escapeBidi(lf.subject)}</span>
+            <span class="row-snippet">${escapeBidi(lf.snippet)}</span>
           </div>
           <div class="row-meta">
-            ${attCount ? `<span class="attach-pill" title="${attCount} screenshots"><span class="material-symbols-outlined">attach_file</span>${attCount}</span>` : ""}
-            <span class="row-date">${escapeHtml(th.dateDisplay)}</span>
+            ${attCount ? `<span class="attach-pill" title="${attCount}">${iconSvg("attach_file")}${attCount}</span>` : ""}
+            <span class="row-date">${escapeHtml(lf.dateDisplay)}</span>
           </div>
         </div>`;
       })
@@ -724,7 +1133,7 @@
     }
   }
 
-  function openThread(id) {
+  function openThread(id, opts = {}) {
     const th = state.data.threads.find((x) => x.id === id);
     if (!th) return;
     state.activeThreadId = id;
@@ -733,8 +1142,15 @@
     saveRead();
     try {
       const url = new URL(window.location.href);
+      const prevThread = url.searchParams.get("thread");
       url.searchParams.set("thread", id);
-      window.history.replaceState({}, "", url.toString());
+      if (!opts.fromPopstate) {
+        if (opts.replace || prevThread === id) {
+          window.history.replaceState({ view: "thread", threadId: id }, "", url.toString());
+        } else {
+          window.history.pushState({ view: "thread", threadId: id }, "", url.toString());
+        }
+      }
     } catch (_) {}
     renderAll();
     $("#threadContent").scrollTop = 0;
@@ -750,14 +1166,15 @@
     }
 
     const idx = list.findIndex((x) => x.id === th.id);
-    const posText = idx >= 0 ? `${idx + 1} of ${list.length}` : `#${th.exhibit}`;
+    const posText = idx >= 0 ? fmt(t("posFormat"), { i: idx + 1, n: list.length }) : `#${th.exhibit}`;
     $("#threadPosLabel").textContent = posText;
     $("#prevThreadBtn").disabled = idx <= 0;
     $("#nextThreadBtn").disabled = idx < 0 || idx >= list.length - 1;
 
     const starred = state.starredIds.has(th.id);
     const starBtn = $("#threadStarBtn");
-    starBtn.innerHTML = `<span class="material-symbols-outlined${starred ? " is-filled" : ""}" style="${starred ? "color:#f4b400" : ""}">${starred ? "star" : "star_border"}</span>`;
+    starBtn.innerHTML = iconSvg(starred ? "star" : "star_border", starred ? "is-filled" : "");
+    starBtn.style.color = starred ? "#f4b400" : "";
 
     const CASE_SLUGS = {
       "00": "origin-fork-dispute-and-double-standard",
@@ -781,15 +1198,32 @@
       "18": "77k-star-funnel-and-arbitrary-repo-starring",
       "19": "ca81b7b9-lan-cookie-bearer-ws-and-repo-rce"
     };
+    const DOSSIER_EXHIBIT_MAP = {
+      "20": "05-governance-trademark-and-history.md",
+      "21": "03-antigravity-tos-and-t3connect-relay.md",
+      "22": "01-telemetry-and-gdpr-timeline.md",
+      "23": "02-local-safety-and-security-audit.md",
+      "24": "02-local-safety-and-security-audit.md",
+      "25": "04-business-ledger-sponsors-and-77k-stars.md",
+      "26": "01-telemetry-and-gdpr-timeline.md",
+      "27": "05-governance-trademark-and-history.md",
+      "28": "02-local-safety-and-security-audit.md"
+    };
     const caseLang = SHARED_I18N ? (SHARED_I18N.normalizeLang(state.lang) || "en") : "en";
     const slug = CASE_SLUGS[th.exhibit];
+    const dossierFile = DOSSIER_EXHIBIT_MAP[th.exhibit];
     const exhibitUrl = slug
       ? `https://github.com/realchendahuang/temu3code/blob/main/cases/${caseLang}/${th.exhibit}-${slug}.md`
+      : dossierFile
+      ? `https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/${dossierFile}`
       : "https://github.com/realchendahuang/temu3code#all-20-verified-exhibits-0019";
     $("#threadExhibitTopLink").href = exhibitUrl;
     $("#threadExhibitTopLabel").textContent = `${t("fullExhibit")} #${th.exhibit}`;
 
-    const subject = isZh() ? th.subjectZh : th.subject;
+    const lf = locThreadFields(th);
+    const subject = lf.subject;
+    updateMailMeta(`${subject} · Tmail`, lf.snippet || INITIAL_SEO.desc);
+    const platLabel = th.platform === "Code" ? t("platCode") : th.platform;
     const statusLabel =
       th.status === "open"
         ? t("statusOpen")
@@ -801,26 +1235,40 @@
     const statusClass = th.deleted ? " chip-deleted" : th.status === "open" ? " chip-open" : "";
 
     const primaryLink = (th.messages[0] && th.messages[0].links && th.messages[0].links[0] && th.messages[0].links[0].url) || state.data.meta.repoUrl;
-    const shareText = encodeURIComponent(`${th.dateDisplay} — ${th.subject} (Public Record Inbox #${th.exhibit})`);
+    const shareText = encodeURIComponent(`${lf.dateDisplay} · ${subject} (#${th.exhibit})`);
     const shareUrl = encodeURIComponent(window.location.href);
 
     const messagesHtml = th.messages
       .map((m, mi) => {
+        const lm = locMessage(th, m, mi);
+        const origBody = m.body || "";
+        const locBody = lm.body || origBody;
+        const hasTranslation = state.lang !== "en" && locBody.trim() !== origBody.trim();
+        const msgKey = `${th.id}:${mi}`;
+        const showingOrig = hasTranslation && state.showOriginalMsgs.has(msgKey);
+        const activeBody = showingOrig ? origBody : locBody;
+
         const atts = (m.attachments || [])
-          .map(
-            (a, ai) => `<button type="button" class="att-card" data-open-att="${mi}-${ai}">
-              <img class="att-thumb" src="${escapeHtml(assetUrl(a.src))}" alt="${escapeHtml(a.title)}" loading="lazy" />
-              <div class="att-meta">📎 ${escapeHtml(a.title)}</div>
-            </button>`
-          )
+          .map((a, ai) => {
+            const attTitle = lm.attTitle(ai);
+            const dims = imgDimAttrs(a.src);
+            return `<button type="button" class="att-card" data-open-att="${mi}-${ai}">
+              <img class="att-thumb" src="${escapeHtml(assetUrl(a.src))}" alt="${escapeHtml(attTitle)}" ${dims} loading="lazy" decoding="async" />
+              <div class="att-meta">📎 ${escapeBidi(attTitle)}</div>
+            </button>`;
+          })
           .join("");
 
         const links = (m.links || [])
           .map(
-            (lk) =>
-              `<a class="source-link-pill" href="${escapeHtml(lk.url)}" target="_blank" rel="noopener noreferrer">↗ ${escapeHtml(lk.label)}</a>`
+            (lk, li) =>
+              `<a class="source-link-pill" href="${escapeHtml(lk.url)}" target="_blank" rel="noopener noreferrer">↗ ${escapeBidi(lm.linkLabel(li))}</a>`
           )
           .join("");
+
+        const origBtn = hasTranslation
+          ? `<button type="button" class="msg-orig-btn${showingOrig ? " is-original" : ""}" data-toggle-orig="${mi}" aria-pressed="${showingOrig ? "true" : "false"}">${escapeHtml(showingOrig ? t("viewTranslated") : t("viewOriginalEn"))}</button>`
+          : "";
 
         return `<article class="thread-msg-card">
           <div class="msg-avatar" style="background:${escapeHtml(m.color)}">${escapeHtml(m.avatar)}</div>
@@ -828,14 +1276,17 @@
             <div class="msg-head">
               <div>
                 <div class="msg-sender-line">
-                  <span class="msg-sender-name">${escapeHtml(m.sender)}</span>
-                  <span class="msg-handle">&lt;${escapeHtml(m.handle)}&gt;</span>
+                  <span class="msg-sender-name">${escapeBidi(lm.sender)}</span>
+                  <span class="msg-handle">&lt;${escapeHtml(lm.handle)}&gt;</span>
                 </div>
-                <div class="msg-to">to ${escapeHtml(m.to)}</div>
+                <div class="msg-to">${escapeBidi(t("toPrefix"))} ${escapeBidi(lm.to)}</div>
               </div>
-              <div class="msg-time">${escapeHtml(m.time)}</div>
+              <div class="msg-head-meta">
+                ${origBtn}
+                <div class="msg-time">${escapeHtml(lm.time)}</div>
+              </div>
             </div>
-            <div class="msg-text">${formatBody(m.body)}</div>
+            <div class="msg-text" data-msg-body="${mi}"${showingOrig ? ' dir="ltr"' : ""}>${formatBody(activeBody)}</div>
             ${atts ? `<div class="msg-attachments">${atts}</div>` : ""}
             ${links ? `<div class="msg-links">${links}</div>` : ""}
           </div>
@@ -845,41 +1296,86 @@
 
     $("#threadContent").innerHTML = `<div class="thread-inner">
       <div class="thread-subject-row">
-        <h1 class="thread-subject">${escapeHtml(subject)}</h1>
-        <span class="platform-chip">${escapeHtml(th.platform)}</span>
+        <h1 class="thread-subject">${escapeBidi(subject)}</h1>
+        <span class="platform-chip">${escapeHtml(platLabel)}</span>
         <span class="platform-chip${statusClass}">${escapeHtml(statusLabel)}</span>
-        <span class="platform-chip">Exhibit #${escapeHtml(th.exhibit)}</span>
+        <span class="platform-chip">${escapeHtml(t("exhibitLabel"))} #${escapeHtml(th.exhibit)}</span>
       </div>
       ${messagesHtml}
       <div class="thread-footer-actions">
         <a class="gmail-reply-btn" href="${escapeHtml(primaryLink)}" target="_blank" rel="noopener noreferrer">
-          <span class="material-symbols-outlined">reply</span>
+          ${iconSvg("reply")}
           <span>${escapeHtml(t("replyOriginal"))}</span>
         </a>
         <a class="gmail-reply-btn" href="https://x.com/intent/tweet?text=${shareText}&url=${shareUrl}" target="_blank" rel="noopener noreferrer">
-          <span class="material-symbols-outlined">forward</span>
+          ${iconSvg("forward")}
           <span>${escapeHtml(t("shareOnX"))}</span>
         </a>
         <a class="gmail-reply-btn" href="${exhibitUrl}">
-          <span class="material-symbols-outlined">article</span>
+          ${iconSvg("article")}
           <span>${escapeHtml(t("fullExhibit"))} (#${escapeHtml(th.exhibit)})</span>
         </a>
         <button type="button" class="gmail-reply-btn" id="footerCopyBtn">
-          <span class="material-symbols-outlined">link</span>
+          ${iconSvg("link")}
           <span>${escapeHtml(t("copyLink"))}</span>
         </button>
         <button type="button" class="gmail-reply-btn" id="footerMemeBtn">
-          <span class="material-symbols-outlined">style</span>
+          ${iconSvg("style")}
           <span>${escapeHtml(t("viewMemeCard"))}</span>
         </button>
+        <a class="gmail-reply-btn" href="./t/${encodeURIComponent(th.id)}/${isZh() ? "zh/" : ""}">
+          ${iconSvg("open_in_new")}
+          <span>HTML</span>
+        </a>
       </div>
     </div>`;
 
+    $$("#threadContent [data-toggle-orig]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const mi = Number(btn.getAttribute("data-toggle-orig"));
+        const msgKey = `${th.id}:${mi}`;
+        const nextOrig = !state.showOriginalMsgs.has(msgKey);
+        if (nextOrig) state.showOriginalMsgs.add(msgKey);
+        else state.showOriginalMsgs.delete(msgKey);
+
+        const m = th.messages[mi];
+        const lm = locMessage(th, m, mi);
+        const bodyText = nextOrig ? (m.body || "") : (lm.body || m.body || "");
+        const card = btn.closest(".thread-msg-card");
+        const textEl = card && card.querySelector(`[data-msg-body="${mi}"]`);
+        if (textEl) {
+          textEl.innerHTML = formatBody(bodyText);
+          if (nextOrig) textEl.setAttribute("dir", "ltr");
+          else textEl.removeAttribute("dir");
+        }
+        btn.classList.toggle("is-original", nextOrig);
+        btn.setAttribute("aria-pressed", nextOrig ? "true" : "false");
+        btn.textContent = nextOrig ? t("viewTranslated") : t("viewOriginalEn");
+      });
+    });
+
+    const threadGallery = [];
+    const attIndexMap = new Map();
+    (th.messages || []).forEach((msg, mIdx) => {
+      const lm = locMessage(th, msg, mIdx);
+      (msg.attachments || []).forEach((att, aIdx) => {
+        attIndexMap.set(`${mIdx}-${aIdx}`, threadGallery.length);
+        threadGallery.push({
+          src: assetUrl(att.src),
+          title: lm.attTitle(aIdx),
+          caption: `${lf.dateDisplay} · ${t("exhibitLabel")} #${th.exhibit}`,
+          sourceUrl: primaryLink
+        });
+      });
+    });
+
     $$("#threadContent [data-open-att]").forEach((btn) => {
       btn.addEventListener("click", () => {
-        const [mi, ai] = btn.getAttribute("data-open-att").split("-").map(Number);
-        const att = th.messages[mi].attachments[ai];
-        openLightbox(assetUrl(att.src), att.title, `${th.dateDisplay} · Exhibit #${th.exhibit}`, primaryLink);
+        const key = btn.getAttribute("data-open-att");
+        const gIdx = attIndexMap.get(key) || 0;
+        const item = threadGallery[gIdx];
+        if (!item) return;
+        openLightbox(item.src, item.title, item.caption, item.sourceUrl, threadGallery, gIdx);
       });
     });
 
@@ -888,37 +1384,48 @@
   }
 
   async function openThreadMemesModal(th) {
-    if (!state.memes) {
-      try {
-        const res = await fetch(`${state.dataPrefix}memes.json`);
-        if (res.ok) {
-          const obj = await res.json();
-          state.memes = Array.isArray(obj.items) ? obj.items : [];
-        } else {
+    const [_, overlay] = await Promise.all([
+      (async () => {
+        if (state.memes) return;
+        try {
+          const res = await fetch(`${state.dataPrefix}memes.json?v=7`);
+          if (res.ok) {
+            const obj = await res.json();
+            state.memes = Array.isArray(obj.items) ? obj.items : [];
+          } else {
+            state.memes = [];
+          }
+        } catch (_) {
           state.memes = [];
         }
-      } catch (_) {
-        state.memes = [];
-      }
-    }
+      })(),
+      SHARED_I18N && SHARED_I18N.loadMemesOverlay
+        ? SHARED_I18N.loadMemesOverlay(state.lang, state.dataPrefix)
+        : Promise.resolve(null)
+    ]);
     let matches = state.memes.filter((m) => m.exhibit === th.exhibit || m.thread === th.id);
     if (!matches.length) matches = state.memes.slice(0, 3);
     const cardsHtml = matches
       .slice(0, 6)
       .map((m) => {
-        const title = isZh() ? m.titleZh : m.titleEn;
-        return `<a href="../memes/#${encodeURIComponent(m.id)}" style="display:flex;flex-direction:column;gap:6px;padding:8px;border:1px solid #dadce0;border-radius:10px;text-decoration:none;color:#202124;background:#fff;">
-          <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" style="width:100%;height:auto;border-radius:6px;display:block;" loading="lazy" />
-          <strong style="font-size:12.5px;line-height:1.35;">${escapeHtml(title)}</strong>
-          <span style="font-size:11px;color:#0b57d0;">${escapeHtml(t("copyInMemes"))}</span>
+        const picked = SHARED_I18N && SHARED_I18N.pickMemeText
+          ? SHARED_I18N.pickMemeText(m, state.lang, overlay)
+          : { title: isZh() ? m.titleZh : m.titleEn, note: isZh() ? m.noteZh : m.noteEn };
+        const w = Number(m.width) || 900;
+        const h = Number(m.height) || 900;
+        return `<a class="meme-modal-card" href="../memes/#${encodeURIComponent(m.id)}">
+          <img src="${escapeHtml(m.url)}" alt="${escapeHtml(picked.title)}" width="${w}" height="${h}" loading="lazy" decoding="async" />
+          <strong class="meme-modal-title">${escapeBidi(picked.title)}</strong>
+          ${picked.note ? `<span class="meme-modal-note">${escapeBidi(picked.note)}</span>` : ""}
+          <span class="meme-modal-cta">${escapeHtml(t("copyInMemes"))}</span>
         </a>`;
       })
       .join("");
     openModal(
       `${t("viewMemeCard")} · #${th.exhibit}`,
-      `<p style="margin-top:0;font-size:13px;color:#5f6368;">${escapeHtml(t("memeModalDesc"))}</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px;">${cardsHtml}</div>
-      <div style="margin-top:14px;display:flex;justify-content:flex-end;">
+      `<p class="modal-desc">${escapeHtml(t("memeModalDesc"))}</p>
+      <div class="meme-modal-grid">${cardsHtml}</div>
+      <div class="modal-actions">
         <a class="tool-btn" href="../memes/">${escapeHtml(t("openAllMemes"))}</a>
       </div>`
     );
@@ -928,37 +1435,51 @@
     const q = filterText.trim().toLowerCase();
     const items = state.evidence.filter((e) => {
       if (!q) return true;
-      return `${e.id} ${e.part} ${e.title} ${e.caption} ${e.path}`.toLowerCase().includes(q);
+      const le = locEvidence(e);
+      return `${e.id} ${e.part} ${e.title} ${e.caption} ${le.title} ${le.caption} ${e.path}`.toLowerCase().includes(q);
+    });
+
+    const gallery = items.map((e) => {
+      const le = locEvidence(e);
+      return {
+        src: assetUrl(e.path),
+        title: `${e.id} · ${le.title}`,
+        caption: le.caption,
+        sourceUrl: e.sourceUrl || e.dossier
+      };
     });
 
     $("#photosGrid").innerHTML = items
-      .map(
-        (e, i) => `<button type="button" class="photo-card" data-ev-idx="${i}">
-          <img src="${escapeHtml(assetUrl(e.path))}" alt="${escapeHtml(e.title)}" loading="lazy" />
+      .map((e, i) => {
+        const le = locEvidence(e);
+        const dims = imgDimAttrs(e.path);
+        return `<button type="button" class="photo-card" data-ev-idx="${i}">
+          <img src="${escapeHtml(assetUrl(e.path))}" alt="${escapeHtml(le.title)}" ${dims} loading="lazy" decoding="async" />
           <div class="photo-card-body">
             <span class="photo-card-part">${escapeHtml(e.id)} · ${escapeHtml(e.part)}</span>
-            <div class="photo-card-title">${escapeHtml(e.title)}</div>
+            <div class="photo-card-title">${escapeBidi(le.title)}</div>
           </div>
-        </button>`
-      )
+        </button>`;
+      })
       .join("");
 
     $$("#photosGrid .photo-card").forEach((card, i) => {
       card.addEventListener("click", () => {
-        const ev = items[i];
-        openLightbox(assetUrl(ev.path), `${ev.id} · ${ev.title}`, ev.caption, ev.sourceUrl || ev.dossier);
+        const item = gallery[i];
+        if (!item) return;
+        openLightbox(item.src, item.title, item.caption, item.sourceUrl, gallery, i);
       });
     });
   }
 
   function renderActivityView() {
     const metrics = [
-      { num: "3.5+ yrs", label: isZh() ? "公开记录时间跨度 (2023.05 – 2026.11)" : "Documented span (May 2023 – Nov 2026)", danger: false },
-      { num: "0.0% vs 8.0%", label: isZh() ? "对大厂高管脏话率 vs 对普通开发者" : "Profanity to 20 Big-Tech VIPs vs. ordinary devs", danger: true },
-      { num: "4.0× (14.4%)", label: isZh() ? "25 小时危机期人身攻击暴涨倍数" : "Personal insult surge in 25h crisis (3.6% → 14.4%)", danger: true },
-      { num: "1,151", label: isZh() ? "17 天全量连续推文取证样本 (75.6% 回复)" : "Consecutive tweets analyzed (75.6% replies)", danger: false },
-      { num: "2.2M / hr", label: isZh() ? "Axiom 留存 30 天的含 IP 中继日志量" : "IP-tagged Axiom relay spans kept 30 days", danger: true },
-      { num: "0", label: isZh() ? "已发布的 GitHub 安全公告数" : "Published GitHub Security Advisories", danger: true }
+      { num: "3.5+ yrs", label: t("tcalM1"), danger: false },
+      { num: "0.0% vs 8.0%", label: t("tcalM2"), danger: true },
+      { num: "4.0× (14.4%)", label: t("tcalM3"), danger: true },
+      { num: "1,151", label: t("tcalM4"), danger: false },
+      { num: "2.2M / hr", label: t("tcalM5"), danger: true },
+      { num: "0", label: t("tcalM6"), danger: true }
     ];
 
     $("#activityMetrics").innerHTML = metrics
@@ -971,38 +1492,48 @@
       .join("");
 
     const charts = [
-      { src: "evidence/charts/theo-chart-3-double-standard.png", title: isZh() ? "图表 3：选择性礼貌（0.0% VIP vs 8.0% 开发者 vs 14.4% 危机）" : "Chart 3: Selective Politeness Split (0.0% VIP vs. 8.0% Dev vs. 14.4% Crisis)" },
-      { src: "evidence/charts/theo-chart-4-cn-crisis.png", title: isZh() ? "图表 4：25 小时三波辱骂升级曲线（4.0× 飙升）" : "Chart 4: 25-Hour Crisis Timeline (4.0× Insult Surge)" },
-      { src: "evidence/charts/theo-chart-1-overview.png", title: isZh() ? "图表 1：1,151 条推文构成与 162 vs 0 产品聚焦" : "Chart 1: 1,151-Tweet Corpus & 162 vs. 0 Product Mentions" },
-      { src: "evidence/charts/theo-chart-2-rhythm.png", title: isZh() ? "图表 2：24 小时发帖节律与 2.7 分钟中位间隔" : "Chart 2: Circadian Cadence & 2.7m Median Interval" }
+      { src: "evidence/charts/theo-chart-3-double-standard.png", title: t("tcalC1") },
+      { src: "evidence/charts/theo-chart-4-cn-crisis.png", title: t("tcalC2") },
+      { src: "evidence/charts/theo-chart-1-overview.png", title: t("tcalC3") },
+      { src: "evidence/charts/theo-chart-2-rhythm.png", title: t("tcalC4") }
     ];
+
+    const chartsGallery = charts.map((c) => ({
+      src: assetUrl(c.src),
+      title: c.title,
+      caption: t("activityDesc"),
+      sourceUrl: "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md"
+    }));
 
     $("#activityCharts").innerHTML = charts
       .map(
-        (c, i) => `<div class="chart-card" data-chart-idx="${i}">
-          <img src="${escapeHtml(assetUrl(c.src))}" alt="${escapeHtml(c.title)}" />
+        (c, i) => `<button type="button" class="chart-card" data-chart-idx="${i}">
+          <img src="${escapeHtml(assetUrl(c.src))}" alt="${escapeHtml(c.title)}" ${imgDimAttrs(c.src)} loading="lazy" decoding="async" />
           <div class="chart-card-cap">${escapeHtml(c.title)}</div>
-        </div>`
+        </button>`
       )
       .join("");
 
     $$("#activityCharts .chart-card").forEach((card, i) => {
       card.addEventListener("click", () => {
-        openLightbox(assetUrl(charts[i].src), charts[i].title, "Forensic Dataset (n = 1,151, Nov 7–24, 2026)", "https://github.com/realchendahuang/temu3code/blob/main/docs/dossiers/06-tweet-forensic-dataset-1151.md");
+        const item = chartsGallery[i];
+        if (!item) return;
+        openLightbox(item.src, item.title, item.caption, item.sourceUrl, chartsGallery, i);
       });
     });
 
     const sortedOldest = state.data.threads.slice().sort((a, b) => a.date.localeCompare(b.date));
     $("#activityTimeline").innerHTML = sortedOldest
       .map((th) => {
-        const subject = isZh() ? th.subjectZh : th.subject;
+        const lf = locThreadFields(th);
+        const platLabel = th.platform === "Code" ? t("platCode") : th.platform;
         return `<div class="timeline-row" data-timeline-id="${th.id}">
           <span class="timeline-date">${escapeHtml(th.date)}</span>
           <div>
-            <strong>${escapeHtml(subject)}</strong>
-            <div style="font-size:12px;color:#5f6368;margin-top:2px;">${escapeHtml(th.from)}</div>
+            <strong>${escapeBidi(lf.subject)}</strong>
+            <div class="timeline-from">${escapeBidi(lf.from)}</div>
           </div>
-          <span class="platform-chip">${escapeHtml(th.platform)} · #${escapeHtml(th.exhibit)}</span>
+          <span class="platform-chip">${escapeHtml(platLabel)} · #${escapeHtml(th.exhibit)}</span>
         </div>`;
       })
       .join("");
@@ -1015,25 +1546,28 @@
   function renderDriveView() {
     const openGh = escapeHtml(t("openOnGithub"));
     $("#driveGrid").innerHTML = DOSSIERS.map((d) => {
-      const title = isZh() ? d.titleZh : `Dossier ${d.num} · ${d.title}`;
+      const locTitle = t(`dossiers.${d.num}.title`);
+      const locDesc = t(`dossiers.${d.num}.desc`);
+      const title = locTitle && !locTitle.startsWith("dossiers.") ? locTitle : (isZh() ? d.titleZh : `Dossier ${d.num} · ${d.title}`);
+      const desc = locDesc && !locDesc.startsWith("dossiers.") ? locDesc : d.desc;
       return `<a class="drive-card" href="${d.url}" target="_blank" rel="noopener noreferrer">
         <span class="photo-card-part">DOSSIER ${d.num}</span>
-        <strong style="font-size:14px;">${escapeHtml(title)}</strong>
-        <span style="font-size:12.5px;color:#5f6368;">${escapeHtml(d.desc)}</span>
-        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">${openGh}</span>
+        <strong class="drive-card-title">${escapeHtml(title)}</strong>
+        <span class="drive-card-desc">${escapeHtml(desc)}</span>
+        <span class="drive-card-cta">${openGh}</span>
       </a>`;
     }).join("") + `
       <a class="drive-card" href="https://github.com/realchendahuang/temu3code/blob/main/docs/COMPLETE-SOURCE-INDEX.md" target="_blank" rel="noopener noreferrer">
         <span class="photo-card-part">INDEX</span>
-        <strong style="font-size:14px;">${escapeHtml(t("masterIndexTitle"))}</strong>
-        <span style="font-size:12.5px;color:#5f6368;">${escapeHtml(t("masterIndexDesc"))}</span>
-        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">${openGh}</span>
+        <strong class="drive-card-title">${escapeHtml(t("masterIndexTitle"))}</strong>
+        <span class="drive-card-desc">${escapeHtml(t("masterIndexDesc"))}</span>
+        <span class="drive-card-cta">${openGh}</span>
       </a>
       <a class="drive-card" href="https://github.com/realchendahuang/temu3code#2-minute-hardening--cleanup-playbook" target="_blank" rel="noopener noreferrer">
         <span class="photo-card-part">HARDENING</span>
-        <strong style="font-size:14px;">${escapeHtml(t("hardeningTitle"))}</strong>
-        <span style="font-size:12.5px;color:#5f6368;">${escapeHtml(t("hardeningDesc"))}</span>
-        <span style="font-size:12px;color:#0b57d0;font-weight:600;margin-top:auto;">${openGh}</span>
+        <strong class="drive-card-title">${escapeHtml(t("hardeningTitle"))}</strong>
+        <span class="drive-card-desc">${escapeHtml(t("hardeningDesc"))}</span>
+        <span class="drive-card-cta">${openGh}</span>
       </a>
     `;
   }
@@ -1043,16 +1577,19 @@
       .map((p) => {
         const matches = state.data.threads.filter((th) => th.people.includes(p.id)).sort((a, b) => a.date.localeCompare(b.date));
         if (!matches.length) return "";
-        const span = matches.length === 1 ? matches[0].dateDisplay : `${matches[0].dateDisplay} → ${matches[matches.length - 1].dateDisplay}`;
+        const lp = locPerson(p);
+        const firstDate = locThreadFields(matches[0]).dateDisplay;
+        const lastDate = locThreadFields(matches[matches.length - 1]).dateDisplay;
+        const span = matches.length === 1 ? firstDate : `${firstDate} → ${lastDate}`;
         return `<button type="button" class="person-card" data-dir-person="${p.id}">
           <div class="person-card-head">
             <span class="person-avatar-sm" style="background:${p.color}">${escapeHtml(p.name.replace(/^@/, "").charAt(0).toUpperCase())}</span>
             <div>
-              <div class="person-card-name">${escapeHtml(p.name)}</div>
-              <div class="person-card-role">${escapeHtml(p.role)}</div>
+              <div class="person-card-name">${escapeBidi(lp.name)}</div>
+              <div class="person-card-role">${escapeBidi(lp.role)}</div>
             </div>
           </div>
-          <div class="person-card-span">${matches.length} ${matches.length === 1 ? "thread" : "threads"} · ${escapeHtml(span)}</div>
+          <div class="person-card-span">${matches.length} ${escapeHtml(matches.length === 1 ? t("threadWord") : t("threadsWord"))} · ${escapeHtml(span)}</div>
         </button>`;
       })
       .join("");
@@ -1091,6 +1628,7 @@
     updateCounts();
     renderSidebar();
     updateDockAndPanes();
+    if (state.view !== "thread") applyInboxMeta();
     if (state.view === "inbox") renderEmailList();
     else if (state.view === "thread") renderThreadDetail();
     else if (state.view === "attachments") renderAttachmentsView($("#photosSearchInput").value || "");
@@ -1115,11 +1653,16 @@
     renderAll();
   }
 
-  function clearUrlThreadParam() {
+  function clearUrlThreadParam(opts = {}) {
     try {
       const url = new URL(window.location.href);
+      if (!url.searchParams.has("thread")) return;
       url.searchParams.delete("thread");
-      window.history.replaceState({}, "", url.toString());
+      if (opts.push) {
+        window.history.pushState({ view: state.view }, "", url.toString());
+      } else {
+        window.history.replaceState({ view: state.view }, "", url.toString());
+      }
     } catch (_) {}
   }
 
@@ -1139,33 +1682,70 @@
     }
   }
 
-  function openLightbox(src, title, caption, sourceUrl) {
-    $("#lightboxImg").src = src;
-    $("#lightboxImg").alt = title || "";
-    $("#lightboxTitle").textContent = title || "Receipt";
-    $("#lightboxCaption").textContent = caption || "";
+  function renderLightboxItem(item) {
+    const img = $("#lightboxImg");
+    img.src = BLANK_IMG;
+    img.src = item.src;
+    img.alt = item.title || "";
+    $("#lightboxTitle").innerHTML = escapeBidi(item.title || "Receipt");
+    $("#lightboxCaption").innerHTML = escapeBidi(item.caption || "");
     const srcLink = $("#lightboxSourceLink");
-    if (sourceUrl) {
-      srcLink.href = sourceUrl;
+    if (item.sourceUrl) {
+      srcLink.href = item.sourceUrl;
       srcLink.hidden = false;
     } else {
       srcLink.hidden = true;
     }
-    $("#lightbox").hidden = false;
+    const navGroup = $("#lightboxNavGroup");
+    if (navGroup) {
+      const hasMulti = Array.isArray(state.lbGallery) && state.lbGallery.length > 1;
+      navGroup.hidden = !hasMulti;
+      if (hasMulti) {
+        $("#lightboxCounter").textContent = `${state.lbIndex + 1} / ${state.lbGallery.length}`;
+      }
+    }
+  }
+
+  function openLightbox(src, title, caption, sourceUrl, gallery = null, galleryIdx = 0) {
+    const lb = $("#lightbox");
+    if (lb.hidden) state.lbPrevFocus = document.activeElement;
+    state.lbGallery = Array.isArray(gallery) && gallery.length > 1 ? gallery : null;
+    state.lbIndex = state.lbGallery ? Math.max(0, Math.min(galleryIdx, state.lbGallery.length - 1)) : -1;
+    const item = state.lbGallery ? state.lbGallery[state.lbIndex] : { src, title, caption, sourceUrl };
+    renderLightboxItem(item);
+    lb.hidden = false;
+    $("#lightboxCloseBtn").focus();
+  }
+
+  function stepMailLightbox(delta) {
+    if (!state.lbGallery || !state.lbGallery.length) return;
+    state.lbIndex = (state.lbIndex + delta + state.lbGallery.length) % state.lbGallery.length;
+    renderLightboxItem(state.lbGallery[state.lbIndex]);
   }
 
   function closeLightbox() {
-    $("#lightbox").hidden = true;
+    const lb = $("#lightbox");
+    lb.hidden = true;
+    $("#lightboxImg").src = BLANK_IMG;
+    state.lbGallery = null;
+    state.lbIndex = -1;
+    if (state.lbPrevFocus && typeof state.lbPrevFocus.focus === "function") state.lbPrevFocus.focus();
+    state.lbPrevFocus = null;
   }
 
   function openModal(title, html) {
+    const ov = $("#modalOverlay");
+    if (ov.hidden) state.modalPrevFocus = document.activeElement;
     $("#modalTitle").textContent = title;
     $("#modalBody").innerHTML = html;
-    $("#modalOverlay").hidden = false;
+    ov.hidden = false;
+    $("#modalCloseBtn").focus();
   }
 
   function closeModal() {
     $("#modalOverlay").hidden = true;
+    if (state.modalPrevFocus && typeof state.modalPrevFocus.focus === "function") state.modalPrevFocus.focus();
+    state.modalPrevFocus = null;
   }
 
   function closeMobileSidebar() {
@@ -1185,16 +1765,16 @@
             { label: "Security Audit", token: "from:audit" }
           ]
         : state.data.people.slice(0, 10).map((p) => ({
-            label: p.name,
+            label: locPerson(p).name,
             personId: p.id
           }));
 
     pop.innerHTML =
-      `<div class="popover-heading">${mode === "from" ? "Filter by sender" : "Filter by person / counterparty"}</div>` +
+      `<div class="popover-heading">${escapeHtml(mode === "from" ? t("filterSender") : t("filterPerson"))}</div>` +
       items
         .map(
           (it, idx) =>
-            `<button type="button" class="popover-item" data-pop-idx="${idx}"><span>${escapeHtml(it.label)}</span></button>`
+            `<button type="button" class="popover-item" data-pop-idx="${idx}"><span>${escapeBidi(it.label)}</span></button>`
         )
         .join("");
     pop.hidden = false;
@@ -1225,16 +1805,12 @@
 - Verbatim Quote / Code Location: ...`;
 
     openModal(
-      isZh() ? "提交新的公开证据（严格核验标准）" : "Submit a Verifiable Public Receipt",
-      `<p>${
-        isZh()
-          ? "本档案箱只收录<strong>可公开核验的一手记录</strong>（公开推文链接、GitHub PR/Issue/Commit、官方档案或带上下文的原图），不收录匿名私信传闻。"
-          : "Tmail only indexes <strong>publicly verifiable primary artifacts</strong> (canonical X URLs, GitHub PRs/commits/issues, official filings, or verifiable screenshots). Uncorroborated private rumors are excluded."
-      }</p>
+      t("submitTitle"),
+      `<p>${escapeHtml(t("submitBody"))}</p>
       <pre>${escapeHtml(template)}</pre>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
-        <a class="tool-btn" href="https://github.com/realchendahuang/temu3code/issues/new" target="_blank" rel="noopener noreferrer">Open GitHub Issue ↗</a>
-        <a class="tool-btn" href="https://github.com/realchendahuang/temu3code/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">Read CONTRIBUTING.md ↗</a>
+      <div class="modal-actions">
+        <a class="tool-btn" href="https://github.com/realchendahuang/temu3code/issues/new" target="_blank" rel="noopener noreferrer">${escapeHtml(t("submitIssueBtn"))}</a>
+        <a class="tool-btn" href="https://github.com/realchendahuang/temu3code/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">${escapeHtml(t("submitGuideBtn"))}</a>
       </div>`
     );
   }
@@ -1243,7 +1819,7 @@
     openModal(
       t("aboutTitle"),
       `<p>${escapeHtml(t("aboutBody"))}</p>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;">
+      <div class="modal-actions">
         <a class="tool-btn" href="${state.reportBase}">${escapeHtml(t("openHome"))}</a>
         <a class="tool-btn" href="../memes/">${escapeHtml(t("openAllMemes"))}</a>
         <a class="tool-btn" href="https://github.com/realchendahuang/temu3code" target="_blank" rel="noopener noreferrer">${escapeHtml(t("openOnGithub"))}</a>
@@ -1417,7 +1993,7 @@
     // Thread toolbar actions
     $("#backToInboxBtn").addEventListener("click", () => {
       state.view = "inbox";
-      clearUrlThreadParam();
+      clearUrlThreadParam({ push: true });
       renderAll();
     });
     $("#threadStarBtn").addEventListener("click", () => {
@@ -1462,13 +2038,44 @@
     $("#modalOverlay").addEventListener("click", (e) => {
       if (e.target === $("#modalOverlay")) closeModal();
     });
+    $("#lightboxPrevBtn").addEventListener("click", () => stepMailLightbox(-1));
+    $("#lightboxNextBtn").addEventListener("click", () => stepMailLightbox(1));
     $("#lightboxCloseBtn").addEventListener("click", closeLightbox);
     $("#lightbox").addEventListener("click", (e) => {
       if (e.target === $("#lightbox")) closeLightbox();
     });
 
+    // Browser history Back/Forward support for thread view <-> inbox
+    window.addEventListener("popstate", () => {
+      if (!state.data) return;
+      const deepThread = new URLSearchParams(window.location.search).get("thread");
+      if (deepThread && state.data.threads.some((x) => x.id === deepThread)) {
+        openThread(deepThread, { fromPopstate: true });
+      } else {
+        state.view = "inbox";
+        state.activeThreadId = null;
+        renderAll();
+      }
+    });
+
     // Global keyboard shortcuts (Gmail-style!)
     document.addEventListener("keydown", (e) => {
+      if (!$("#lightbox").hidden) {
+        if (e.key === "Escape") { e.preventDefault(); closeLightbox(); }
+        else if (e.key === "ArrowLeft") { e.preventDefault(); stepMailLightbox(-1); }
+        else if (e.key === "ArrowRight") { e.preventDefault(); stepMailLightbox(1); }
+        else if (e.key === "Tab" && SHARED_I18N && SHARED_I18N.trapFocus) {
+          SHARED_I18N.trapFocus($(".lightbox-card"), e);
+        }
+        return;
+      }
+      if (!$("#modalOverlay").hidden) {
+        if (e.key === "Escape") { e.preventDefault(); closeModal(); }
+        else if (e.key === "Tab" && SHARED_I18N && SHARED_I18N.trapFocus) {
+          SHARED_I18N.trapFocus($(".modal-card"), e);
+        }
+        return;
+      }
       if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === "k") {
         e.preventDefault();
         $("#searchInput").focus();
@@ -1477,11 +2084,9 @@
       }
       const inInput = ["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName);
       if (e.key === "Escape") {
-        if (!$("#lightbox").hidden) closeLightbox();
-        else if (!$("#modalOverlay").hidden) closeModal();
-        else if (state.view === "thread") {
+        if (state.view === "thread") {
           state.view = "inbox";
-          clearUrlThreadParam();
+          clearUrlThreadParam({ push: true });
           renderAll();
         }
         return;
@@ -1498,19 +2103,25 @@
 
   async function init() {
     bindGlobalEvents();
-    await detectAssetPrefix();
+    const inSubdir = /\/(mail|inbox)(\/|$)/.test(window.location.pathname || "/");
+    state.assetPrefix = inSubdir ? "../" : "./";
+    state.dataPrefix = inSubdir ? "../data/" : "./data/";
+    state.reportBase = state.assetPrefix;
 
     try {
-      const [threadsRes, evRes] = await Promise.all([
-        fetch("./threads.json"),
-        fetch(`${state.dataPrefix}evidence.json`).catch(() => null)
+      const [, threadsRes, evRes] = await Promise.all([
+        detectAssetPrefix(),
+        fetch("./threads.json?v=3"),
+        fetch(`${state.dataPrefix}evidence.json?v=3`).catch(() => null),
+        applyI18n(state.lang)
       ]);
+      if (!threadsRes.ok) throw new Error(`HTTP ${threadsRes.status}`);
       state.data = await threadsRes.json();
       if (evRes && evRes.ok) {
         state.evidence = await evRes.json();
       }
       loadPersistedState(state.data.threads);
-      await applyI18n(state.lang);
+      if (state.lang !== "en") applyInboxMeta();
 
       // Check deep-link ?thread=..., ?sort=oldest, ?view=photos
       const params = new URLSearchParams(window.location.search);
@@ -1520,7 +2131,7 @@
       }
       const deepThread = params.get("thread");
       if (deepThread && state.data.threads.some((x) => x.id === deepThread)) {
-        openThread(deepThread);
+        openThread(deepThread, { replace: true });
       } else if (params.get("view") === "photos" || window.location.hash === "#photos") {
         state.view = "attachments";
         renderAll();

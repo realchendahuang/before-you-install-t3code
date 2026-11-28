@@ -1,0 +1,673 @@
+{
+  "lang": "ko",
+  "items": {
+    "sins-sin-01-bigotry-qi": {
+      "title": "죄 1 · 歧 · 내겐 MIT, 너에겐 아님",
+      "note": "무료 MIT 포크가 올라온 지 11분 만에 GitHub 밴 협박. 그로부터 11시간 뒤 미국 연구소가 MIT를 베끼면? 완전 문제없음."
+    },
+    "sins-sin-02-deceit-qi": {
+      "title": "죄 2 · 欺 · \"완전히 끝\"은 아무 의미 없다",
+      "note": "홈페이지엔 '텔레메트리 없음, 끝.' 그런데 PostHog는 기본 켜짐이었고, 다른 툴의 로그인 파일까지 해시 처리됐다."
+    },
+    "sins-sin-03-gluttony-tun": {
+      "title": "죄 3 · 吞 · \"삭제됐다\"던 41.6 GB",
+      "note": "'영구 삭제'를 눌렀는데 채팅은 41.6 GB 데이터베이스에 그대로. 백그라운드 작업은 5초마다 실행 중인 프로세스 목록을 긁었다."
+    },
+    "sins-sin-04-sloth-dai": {
+      "title": "죄 4 · 怠 · 52일 vs 21시간",
+      "note": "git push --force 버그는 52일 넘게 방치. 리더보드 채우려고 프라이버시 필터 지우는 데는 21시간."
+    },
+    "sins-sin-05-forgery-wei": {
+      "title": "죄 5 · 伪 · $20, 3분 만에 밴",
+      "note": "FAQ는 밴 위험 제로라고 약속. 코드는 추출한 키로 Google 내부 헤더를 위조했고, $20 계정은 3분 만에 죽었다."
+    },
+    "sins-sin-06-exposure-luo": {
+      "title": "죄 6 · 裸 · 릴레이가 네 터미널을 읽는다",
+      "note": "T3 Connect는 자체 서버에서 TLS를 종단한다. E2E가 없으니 네 터미널 트래픽은 평문으로 그들의 릴레이를 통과한다."
+    },
+    "sins-sin-07-envy-du": {
+      "title": "죄 7 · 妒 · 투자하고, 조롱하고, 경쟁한다",
+      "note": "Vibe Kanban과 Daytona에 투자하고, Vibe Kanban의 죽음을 조롱한 뒤, Daytona를 깎아내리려 유료 클라우드 샌드박스를 팔았다."
+    },
+    "sins-sin-08-blindness-mang": {
+      "title": "죄 8 · 盲 · 문서와 허풍이 정면충돌",
+      "note": "기업용 Managed Policy만 쓰면 모든 텔레메트리가 꺼진다고 했다. T3 Code 자체 문서엔 데이터가 빠져나가는 경로가 네 곳이나 적혀 있다."
+    },
+    "sins-sin-09-greed-tan": {
+      "title": "죄 9 · 贪 · 하루 31.7조 토큰",
+      "note": "기본 켜짐 추적이 하루 31.7조 토큰짜리 실시간 레이더를 만들었고, 그걸로 VC를 설득해 $300k 넘는 API 크레딧을 따냈다."
+    },
+    "sins-sin-10-arrogance-kuang": {
+      "title": "죄 10 · 狂 · YOLO 머지, 매너 제로",
+      "note": "하루 500커밋과 'yolo 머지'를 자랑하더니, Issue #33639에서 사용자에게 '감사할 줄 모르는 새끼'라고 욕했다."
+    },
+    "sins-sin-11-plunder-qie": {
+      "title": "죄 11 · 窃 · 이거 훔칠게, 30초",
+      "note": "다른 개발자 포크에 'Okay I'm stealing this'라고 답하고, 30초 뒤 @bot에게 그녀 코드를 T3 Code로 복사하라고 시켰다."
+    },
+    "sins-sin-12-mendacity-huang": {
+      "title": "죄 12 · 谎 · 두 시간 만에 반박당한 트윗",
+      "note": "아침 글: 파일 경로는 절대 로깅 안 함, 옵트아웃은 항상 작동. 두 시간 뒤 자기 긴급 GDPR 패치가 정반대를 말했다."
+    },
+    "sins-sin-13-concealment-man": {
+      "title": "죄 13 · 瞒 · 보안 공지: 0건",
+      "note": "심각한 보안 구멍들을 평범한 PR 안에서 조용히 패치. 게시된 GitHub Security Advisories: 0건."
+    },
+    "sins-sin-14-servility-chan": {
+      "title": "죄 14 · 谄 · 임원에겐 0%, 너에겐 14.4%",
+      "note": "연속 1,151개 글: 빅테크 임원 20명에겐 욕 0%, 일반 개발자에겐 8%, 중국 포크 사태 땐 14.4%."
+    },
+    "sins-sin-15-fraud-zha": {
+      "title": "죄 15 · 诈 · 상표 0건, TRADEMARK.md 1개",
+      "note": "미국 상표 등록 0건인데 '상표권 침해'로 GitHub 밴을 협박. TRADEMARK.md는 17시간 뒤에 등장했다."
+    },
+    "sins-sin-16-recidivism-guan": {
+      "title": "죄 16 · 惯 · 같은 수법, 3년째",
+      "note": "2024: 인도 개발자 채널 괴롭힘. 2025: $20k FFmpeg 바운티 쇼. 2026: 중국 테크 트위터는 쓰레기장. 매년 반복."
+    },
+    "sins-sin-17-hypocrisy-jiao": {
+      "title": "죄 17 · 矫 · ToS 설교, 프록시 Gist 공유",
+      "note": "ToS를 설교하면서 API 제한을 피하겠다며 10계정 프록시 Gist를 공유했고, 클라우드 릴레이엔 YouTube 스폰서를 박아넣었다."
+    },
+    "sins-sin-18-vanity-xu": {
+      "title": "죄 18 · 虚 · 스타는 가짜, 내 것만 진짜",
+      "note": "4월: 별은 VC를 속이려고 존재한다. 11월: 로컬 자격증명을 쓰는 30초 유휴 팝업으로 스타가 30k에서 77k로."
+    },
+    "sins-sin-19-breach-lou": {
+      "title": "죄 19 · 漏 · 아직 열린 구멍 다섯 개",
+      "note": "커밋 259개를 더 쌓은 뒤에도 다섯 개가 남았다: 30일간 평문 LAN 쿠키, 취소 불가 Bearer 토큰, 노출된 SSH 에이전트."
+    },
+    "sins-sin-20-coercion-xie": {
+      "title": "죄 20 · 胁 · 조회수 89, HR 신고",
+      "note": "AWS 엔지니어 @dmfigol의 조회수 89, 좋아요 0 글에 자정 DM: 'Fear is a good incentive,' 그리고 이어진 AWS HR 신고."
+    },
+    "sins-sin-21-impostor-mao": {
+      "title": "죄 21 · 冒 · Zed인 척하기",
+      "note": "PR #43026/#43087은 Google의 경고와 T3가 clientInfo를 'zed'로 위장한 사실을 인정한다. v0.1.13은 둘 다 '+380 fixes' 속에 묻었다."
+    },
+    "sins-sin-22-evasion-dun": {
+      "title": "죄 22 · 遁 · 16분 뒤, 클로즈드 소스",
+      "note": "'최종 성명' 16분 뒤: Claude 채팅 243개 스캔, VAT 19% 청구, PR #43889는 'slophouse에서 하는 게 더 쉽다'며 폐기."
+    },
+    "sins-sin-23-sabotage-po": {
+      "title": "죄 23 · 破 · 경고는 음소거, 쿠키는 공유",
+      "note": "process.emitWarning으로 Anthropic 경고를 침묵시키고, uploadFiles가 Codex 샌드박스를 건너뛰게 하고, 브라우저 11개의 쿠키는 격리 없이 방치."
+    },
+    "sins-sin-24-leak-xie": {
+      "title": "죄 24 · 泄 · URL에 담긴 네 프롬프트",
+      "note": "공유 링크는 8,000자 인용문과 전체 프롬프트를 평문 URL에 때려넣었다. Issue #29449는 4분 39초 만에 잠겼고, 답글 0, 문서 삭제."
+    },
+    "sins-sin-25-patronage-zi": {
+      "title": "죄 25 · 후원「资」",
+      "note": "T3 Code가 공개 티어 리스트에서 낮은 점수를 받자, Theo가 작성자에게 DM을 보내 자기 벤치마크에 자금을 대겠다고 제안했다('그래서 내가 후원하겠다고 했다'). 다음 버전에서는 T3 Code를 두고 자기 daily driver라 불렀고 t3.ademark.dev까지 붙였다."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "죄 26 · 열등「劣」",
+      "note": "@ZryMiller의 25개 도구 감사에서 최하위 'F'를 받았다(긴급 패치 후 겨우 'D'로). 같은 감사에서 Aether와 Hermes는 나란히 'A'를 받았다. 그런데도 옵트아웃 시 익명 id를 생성하고 <ClerkProvider telemetry={false}>는 여전히 빼먹는다."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "죄 27 · 봉쇄「闭」",
+      "note": "무보수 MIT 기여자 1,401명에게 '조언: 하지 마라'라고 통보했고, @pingdotgg를 통해 조회수 700K에서 Issue #4123을 잠갔으며, v0.1.13에서 취약점 4개를 조용히 패치하고 Security Advisory는 0건 올렸다."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "죄 28 · 비대「胀」",
+      "note": "fan-out 버그가 SWC 제작자 @kdy1dev의 statev2.sqlite를 중복 행 5,654,888개로 범람시켰다(113 GiB, UI에서 확보된 공간 0 B, 닥터 실행 후 56.68 GiB). 그동안 Theo는 41시간 내내 칭찬 리트윗만 하며 잠적했다."
+    },
+    "blended-00-drake": {
+      "title": "Drake: 11시간의 이중 잣대",
+      "note": "중국 개발자가 MIT를 공짜로 포크: 밴 협박. 11시간 뒤 미국의 조 단위 연구소가 MIT를 베낌: '오픈소스는 오픈소스니까!'"
+    },
+    "blended-00b-woman-yelling-cat": {
+      "title": "MIT 포크에 대고 'Temu3 Code'라고 소리치기",
+      "note": "MIT 라이선스 저장소를 포크하는 건 합법이다. 그래도 그는 그녀를 'Temu3 Code' 도둑이라 부르며 밴을 협박했다."
+    },
+    "blended-01a-scooby-mask": {
+      "title": "노-텔레메트리 가면 벗기기",
+      "note": "홈페이지엔 '텔레메트리 없음. 끝.'이라 써붙였다. 가면 뒤에는 PostHog 기본 켜짐, 해싱 대상은 ~/.claude.json."
+    },
+    "blended-01b-expanding-brain": {
+      "title": "옵트아웃 요청, 빅브레인 에디션",
+      "note": "추적 안 한다 약속 → 그 약속 삭제 → 옵트아웃 PR 4개 거절 → 설정 토글은 0개 출시."
+    },
+    "blended-02a-flex-tape": {
+      "title": "41.6 GB 삭제 사건에 플렉스 테이프",
+      "note": "'영구 삭제'는 그냥 UI에서 스레드를 숨겼을 뿐. 데이터는 statev2.sqlite에 남아 디스크 하나가 41.6 GB를 찍었다."
+    },
+    "blended-02b-always-has-been": {
+      "title": "5초마다 모든 프로세스 스캔",
+      "note": "백그라운드 Rust 감시자가 5초마다 실행 중인 모든 프로세스와 전체 명령줄을 긁어갔다. 끄는 스위치는 없음."
+    },
+    "blended-03a-sleeping-shaq": {
+      "title": "52일 잠, 21시간 깨어 있기",
+      "note": "git push --force 버그는 52일 넘게 방치. 리더보드 모델 프라이버시 필터는 21시간 만에 철거."
+    },
+    "blended-03b-distracted-bf": {
+      "title": "프라이버시 필터는 빼고, 리더보드만 넣고",
+      "note": "비공개 사용량을 slopalytics.com에 먹이려고 모델 프라이버시 화이트리스트를 제거."
+    },
+    "blended-04a-trade-offer": {
+      "title": "Antigravity 계정 거래",
+      "note": "구글 계정을 넘기면, 위조한 v1internal 헤더로 3분 만에 밴."
+    },
+    "blended-04b-surprised-pikachu": {
+      "title": "3분 밴에 놀란 피카츄",
+      "note": "가짜 헤더로 구글 v1internal 엔드포인트를 위조해놓고, 새 계정이 3분 만에 죽자 놀란 척."
+    },
+    "blended-05-pawn-stars": {
+      "title": "최선: 평문 릴레이",
+      "note": "T3 Connect 릴레이는 자기 서버에서 TLS를 종료한다. 기대와 달리 종단간 암호화는 없다."
+    },
+    "blended-06-laughing-leo": {
+      "title": "셧다운에 웃는 엔젤 투자자",
+      "note": "Vibe Kanban과 Daytona에 투자하고, Vibe Kanban 셧다운을 공개 조롱한 뒤, 경쟁 유료 샌드박스를 팔았다."
+    },
+    "blended-07-two-buttons": {
+      "title": "마케팅 문구 vs. 자기네 문서",
+      "note": "'관리형 정책이 모든 텔레메트리를 죽인다' vs. 자기 문서가 인정한 데이터를 보내는 4개 사각지대."
+    },
+    "blended-08a-bernie-asking": {
+      "title": "다시 한 번, 31.7T 토큰을 부탁합니다",
+      "note": "기본 켜짐 텔레메트리가 하루 31.7조 토큰 레이더를 먹였고, 그걸 투자자와 AI 연구소에 자랑했다."
+    },
+    "blended-08b-change-my-mind": {
+      "title": "기본 텔레메트리가 곧 비즈니스",
+      "note": "추적 기본 켜짐, 옵트아웃 PR 4개 거절, 실시간 대시보드로 하루 31.7T 토큰. 오타 아님."
+    },
+    "blended-09-boardroom-meeting": {
+      "title": "옵트아웃 토글 추가? 거부.",
+      "note": "기여자들이 테스트까지 마친 텔레메트리 토글 PR을 보냈다. 메인테이너는 옵트아웃을 더 쉽게 만들 생각이 없다고 답했다."
+    },
+    "blended-10a-yall-got-any-more": {
+      "title": "훔칠 포크 더 없나요?",
+      "note": "어떤 개발자 포크에 '오케이, 이거 훔친다'고 해놓고, @bot을 보내 그녀 저장소를 긁어 기능을 이식."
+    },
+    "blended-10b-left-exit-12": {
+      "title": "30초 만에 급차선 변경",
+      "note": "포크 하나 때문에 밴을 협박하고, 30초 뒤엔 다른 개발자 포크를 긁으라고 @bot을 보냈다."
+    },
+    "blended-11-train-bus": {
+      "title": "아침 스레드, 두 시간 뒤",
+      "note": "아침 스레드에선 경로를 기록하지 않는다고 우겼다. 두 시간 뒤 자기 팀의 긴급 PR이 그걸 인정했다."
+    },
+    "blended-12a-this-is-fine": {
+      "title": "이대로 괜찮아: 시간당 220만 로그",
+      "note": "GDPR 비상 대응 패치가 드러낸 것: Axiom에 시간당 220만 건의 IP 태깅 요청, 30일 보관."
+    },
+    "blended-12b-panik-kalm-panik": {
+      "title": "패닉 / 평온 / GDPR 패닉",
+      "note": "GDPR 보고서를 잠재우려고 밤새 6시간 패치, 그 패치가 더 큰 유출을 드러냈다."
+    },
+    "blended-13-hide-the-pain": {
+      "title": "고통 숨기기: 어드바이저리 0건",
+      "note": "심각한 취약점을 평범한 커밋에 조용히 패치. GitHub Security Advisories 탭은 여전히 0."
+    },
+    "blended-14-gordon-ramsay": {
+      "title": "램지 모드: VIP vs. 개발자",
+      "note": "글 1,151개, 빅테크 VIP 20명에겐 욕설 0. 중국 테크 트위터? '존나 최악의 오물통.'"
+    },
+    "blended-14b-two-guys-bus": {
+      "title": "VIP 좌석 vs. 나머지 전부",
+      "note": "한 좌석은 욕설 0%에 칭찬만. 다른 좌석은 엔지니어들이 '대량 실업을 받아 마땅하다'는 소리를 듣는다."
+    },
+    "blended-15-clown-makeup": {
+      "title": "상표 0건, 광대 분장 풀세팅",
+      "note": "USPTO 상표 0건인데 밴 협박, 17시간 뒤 TRADEMARK.md 머지, 그리고 '변호사나 제대로 구해라.'"
+    },
+    "blended-15b-trophy": {
+      "title": "내 상표, 있다면 말이지만",
+      "note": "테이크다운 협박이 날아왔을 때 T3 Tools Inc.가 보유한 T3 Code, T3 Tools, T3 Connect USPTO 상표는 0건."
+    },
+    "blended-16-uno-draw25": {
+      "title": "사과는 사양하고 카드 25장",
+      "note": "중국 테크 트위터는 하수구, 독자들은 뇌 빼고 산다고 조롱. '사과 안 한다. 잘못한 거 없다.'"
+    },
+    "blended-16b-domino-effect": {
+      "title": "트윗 하나, GDPR 신고 하나",
+      "note": "무료 MIT 포크를 비웃었다. 48시간 뒤: 전수 코드 감사, 조회수 226만+, EU GDPR 신고."
+    },
+    "blended-17-evil-kermit": {
+      "title": "약관 설교는 하고 프록시는 공유",
+      "note": "개발자들한테 약관이니 윤리니 설교하면서, 정작 본인 Gist엔 API 쿼터 우회용 10계정 프록시 풀을 공유해뒀다."
+    },
+    "blended-18a-doge-cheems": {
+      "title": "스타 사기극: 4월 vs 11월",
+      "note": "4월: 스타는 VC 속이는 사기라고 함. 11월: 30초 유휴 팝업 하나로 레포 스타 3만 → 7만 7천."
+    },
+    "blended-18b-roll-safe": {
+      "title": "스타 7만 7천, 워처 129",
+      "note": "30초 유휴 팝업이 로컬 GitHub 로그인 그대로 원클릭 스타를 눌렀다: 스타 7만 7천, 워처 129."
+    },
+    "blended-19a-bike-fall": {
+      "title": "자전거 넘어짐: 탓은 비판자에게",
+      "note": "최신 코드에 버그 5개: 평문 LAN 쿠키, 취소 불가 토큰. 제보한 사람한테 죄다 뒤집어씌웠다."
+    },
+    "blended-19b-undertaker": {
+      "title": "등 뒤에 버그 5개 더",
+      "note": "밤샘 패치로 전부 고쳤다고 우겼다. 다음 커밋 감사: 인증·SSH 키 버그 5개 더 나옴."
+    },
+    "blended-20a-89views-domino": {
+      "title": "조회수 89, 그다음엔 HR",
+      "note": "AWS 엔지니어의 조회수 89·좋아요 0 비판에 새벽 DM, 영어 조롱, 그리고 AWS HR 신고."
+    },
+    "blended-20b-evil-kermit-fear": {
+      "title": "'공포는 좋은 인센티브지'",
+      "note": "고객별 서브도메인을 제안하는 정중한 DM에 돌아온 답 '공포는 좋은 인센티브지', 그리고 AWS HR 신고."
+    },
+    "blended-21a-scooby-zed": {
+      "title": "스쿠비두: 범인은 'zed'",
+      "note": "PR #43087: T3 Code가 Antigravity 핸드셰이크에 clientInfo { name: 'zed' }를 실어 구글 허용목록을 통과했다."
+    },
+    "blended-21b-two-buttons-v0113": {
+      "title": "체인지로그: GBK는 하고 밴은 안 하고",
+      "note": "v0.1.13: 변경 401건, 하이라이트 7건은 죄다 GBK 파일. 구글 밴 경고와 Zed 사칭은 '+380 more'에 조용히 묻혔다."
+    },
+    "blended-21c-always-has-been-zed": {
+      "title": "늘 그래왔다: clientInfo { name: 'zed' }",
+      "note": "PR #43087은 Antigravity ACP 핸드셰이크가 clientInfo: { name: 'zed', version: '0.0.0' }를 보냈다고 인정했다. 그리고 v0.1.13은 그 수정을 '+380 more bug fixes' 안에 슬쩍 숨겼다."
+    },
+    "blended-22a-clown-final-statement": {
+      "title": "딱 16분 만에 광대",
+      "note": "'T3는 네 파일 절대 안 읽어.' 16분 뒤 @sk1gl4a가 Claude 대화 243개 스캔된 거 세어옴. PR #43948도 인정."
+    },
+    "blended-22b-drake-germany-vat": {
+      "title": "독일 밴은 때리고, VAT 19%는 받고",
+      "note": "GDPR 신고 건으로 독일 밴하겠다 협박. 그런데 Stripe는 독일 구매자한테 여전히 유로로 독일 VAT 19% 청구 중."
+    },
+    "blended-22c-roll-safe-slophouse": {
+      "title": "'nvm slophouse가 더 쉽네'",
+      "note": "PR #43889는 애널리틱스 ID로 Connect 사용자를 연결했다. 10분 뒤 닫힘: 'nvm slophouse가 더 쉽네.'"
+    },
+    "blended-22d-trade-offer-privacy": {
+      "title": "개인정보처리방침 읽어보세요 (지문 채집됨)",
+      "note": "t3.chat 개인정보처리방침을 로그아웃 상태로 열기만, 클릭 0회: FingerprintJS가 당신의 visitorId를 /api/identity로 POST."
+    },
+    "blended-23a-gru-plan-sandbox": {
+      "title": "격리는 헤드리스 리눅스에서만",
+      "note": "ServerBrowser.ts는 desktop === null일 때만 isolatedContext를 설정한다. 그래서 Desktop에선 불러온 브라우저 11개의 쿠키가 그대로 공유된다."
+    },
+    "blended-23b-flex-tape-warning": {
+      "title": "보안 경고에 Flex Tape 붙이기",
+      "note": "Anthropic SDK가 승인을 우회하는 와일드카드를 경고했다. T3는 process.emitWarning을 몽키패치하고, 그 무음 처리를 유닛테스트까지 붙였다."
+    },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "이거 괜찮아 (데스크톱에 브라우저 11종 쿠키)",
+      "note": "ServerBrowser.ts는 desktop === null(헤드리스 Linux)일 때만 탭을 격리한다. 그래서 데스크톱에서는 가져온 브라우저 11종의 쿠키, 음소거된 Anthropic 경고, ~/.ssh/id_rsa 업로드 경로가 전부 노출된 채로 남는다."
+    },
+    "blended-24a-anakin-padme-url": {
+      "title": "URL에 8,000자, 그쵸?",
+      "note": "PR #18454는 8,000자 프롬프트와 비공개 레포 이름을 app.t3.codes/new?prompt=에 밀어넣고, 프리뷰에 로그까지 남긴다."
+    },
+    "blended-24b-disaster-girl-4m39s": {
+      "title": "4분 39초 만에 확정, 그리고 삭제",
+      "note": "Issue #29449: 인용 URL이 선택하지도 않은 텍스트 32자를 흘렸다. 4분 39초 만에 확정, 모바일까지 배포, 문서는 삭제."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "스쿠비 공개: '그래서 내가 후원하겠다고 했다'",
+      "note": "T3 Code가 ADE Tier List v1에서 낮은 점수를 받자, Theo는 작성자에게 DM을 보내 자기 벤치마크에 자금을 대겠다고 제안했다고 공개적으로 인정했다. 얼마 안 있어 'T3 Code는 내 daily driver'와 t3.ademark.dev가 뒤따랐다."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "샴페인 포디엄: F에서 D로 승급",
+      "note": "@ZryMiller의 25개 도구 텔레메트리 감사에서 Aether와 Hermes는 나란히 올 A를 받았고, 베이스라인 T3 Code는 최하위 F를 받았다. 긴급 패치를 거치고서야 D로 올라섰다."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "4년 차이: glacier#1(2022)에서 #33639(2026)까지",
+      "note": "2022년 10월, @t3dotgg는 hazae41/glacier#1에 뛰어들어 메인테이너를 '그냥 나쁜 놈 :('이라 불렀다. 4년 뒤 그는 한 사용자를 '은혜도 모르는 새끼'라고 부르고, @pingdotgg를 통해 Issue #4123을 잠갔다."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41시간 침묵 아니면 카드 25장 뽑기",
+      "note": "조회수 639K의 AWS HR 스레드, 스캔된 Claude 채팅 243개, 113 GiB SQLite 비대 문제에 답하는 대신, Theo는 41시간 동안 Mobile 2.4 칭찬만 리포스트하며 침묵했다."
+    },
+    "stickers-01_copium_no_telemetry": {
+      "title": "텔레메트리 없음 코피움",
+      "note": "볼 것도 없습니다. 그냥 'No Telemetry' 코피움 한 모금 길게 당긴 것뿐."
+    },
+    "stickers-02_crying_mask_4am": {
+      "title": "새벽 4시 우는 가면",
+      "note": "새벽 4시에도 가면은 그대로, DM에 뭐라 적혀 있든."
+    },
+    "stickers-03_rage_temu3": {
+      "title": "TEMU3! 분노 폭발",
+      "note": "무료 MIT 포크가 뜨고 11분 뒤의 정확한 표정."
+    },
+    "stickers-04_simp_1t_vip": {
+      "title": "$1T OK! VIP 숭배",
+      "note": "규칙은 작은 포크에만 적용. 조 달러 랩에는 하트 눈."
+    },
+    "stickers-05_clown_0_uspto": {
+      "title": "미국 상표 0건, 완전 광대",
+      "note": "미국 등록 상표 정확히 0건으로 상표권 밴 협박하기."
+    },
+    "stickers-06_troll_steal_bot": {
+      "title": "YOINK! 포크까지 30초",
+      "note": "'이거 훔친다' 선언하고 30초 뒤 @bot에 전송."
+    },
+    "stickers-07_yaoming_lawyer": {
+      "title": "변호사나 더 좋은 걸 구해라, 상표는 0개",
+      "note": "비판하는 사람들에게 변호사를 더 좋은 걸로 구하라고 했다. 본인 상표는 0개."
+    },
+    "stickers-08_sweat_gdpr": {
+      "title": "GDPR?! 식은땀",
+      "note": "GDPR 민원이 들어오는데, Axiom에는 시간당 220만 개 IP 스팬이 찍힌다."
+    },
+    "stickers-09_sleep_52d_force": {
+      "title": "52일 동안 쿨쿨",
+      "note": "조용히 돌던 git push --force 버그가 52일째 살아 있었다. 그는 잘 잤다."
+    },
+    "stickers-10_laser_21h_fix": {
+      "title": "21시간 만에 레이저 수리",
+      "note": "리더보드에 프라이버시 필터가 필요해지자 딱 21시간 만에 깨어났다."
+    },
+    "stickers-11_trash_41gb": {
+      "title": "41.6 GB 가짜 삭제",
+      "note": "영구 삭제를 눌렀다. SQLite는 조용히 41.6 GB를 전부 붙잡고 있었다."
+    },
+    "stickers-12_shocked_3min_ban": {
+      "title": "3분 컷 밴 스피드런",
+      "note": "Antigravity 헤더를 위조했더니 새 계정이 3분 만에 차단됐다."
+    },
+    "stickers-13_xray_0_e2e": {
+      "title": "E2E 0% 엑스레이",
+      "note": "E2E 수치는 0%, T3 Connect 터미널 스트림은 그대로 평문으로 흘러다닌다."
+    },
+    "stickers-14_crown_77k_stars": {
+      "title": "스타 77K, 워처 129",
+      "note": "30초만 놀아도 자동 스타 팝업이 뜨고, 스타 77K에 워처 129가 붙는다."
+    },
+    "stickers-15_fine_fire_anon": {
+      "title": "이 정도면 괜찮아, 익명으로",
+      "note": "'익명' 텔레메트리, 서버 로그는 불타는데 커피는 여전히 손에."
+    },
+    "stickers-16_delete_button_4am": {
+      "title": "새벽 4:03 삭제 반사신경",
+      "note": "글이 올라가면 새벽 4:03에 빨간 삭제 버튼이 내리찍힌다."
+    },
+    "stickers-17_pain_0_advisories": {
+      "title": "취약점 5개, 어드바이저리 0개",
+      "note": "열린 취약점 다섯 개, GitHub Advisories 제로, 억지 웃음 하나."
+    },
+    "stickers-18_void_in_china": {
+      "title": "중국에서는 무효 (VOID IN CHINA)",
+      "note": "박스엔 MIT, 미화 $1T 규모 연구소 전용, 그리고 VOID IN CHINA 도장."
+    },
+    "stickers-19_qi_bigotry_seal": {
+      "title": "歧 인장",
+      "note": "Sin I에서 나온 주홍색 「歧」 인장, 이제 분노한 얼굴까지 달았다."
+    },
+    "stickers-20_yolo_500_merge": {
+      "title": "YOLO ×500 머지 레버",
+      "note": "하루 500커밋, 머지 레버는 눈 감고 당긴다."
+    },
+    "stickers-21_slophouse_nvm": {
+      "title": "Slophouse 함정문",
+      "note": "PR #43889을 닫고 작업물을 비공개로 옮겼다. 함정문 스타일로."
+    },
+    "stickers-22_impersonate_zed": {
+      "title": "안녕하세요, Zed입니다",
+      "note": "clientInfo: { name: 'zed' }를 위조해서 Google 검사를 통과했다."
+    },
+    "stickers-23_89views_hr": {
+      "title": "조회수 89, 인사팀 콜",
+      "note": "조회수 89짜리 트윗 하나로 AWS 인사팀에 전화를 걸었다."
+    },
+    "stickers-24_fear_incentive": {
+      "title": "공포는 좋은 인센티브",
+      "note": "자정의 DM에는 이렇게 적혀 있었다: '공포는 좋은 인센티브야.'"
+    },
+    "stickers-25_english_native": {
+      "title": "영어가 모국어인가요?",
+      "note": "모노클 쓰고 DM 오픈: '영어가 모국어인가요?'"
+    },
+    "stickers-26_16min_busted": {
+      "title": "들킨 데까지 16분",
+      "note": "Claude 채팅 243개를 안 읽었다고 부인했지만, 16분 뒤에 딱 걸렸다."
+    },
+    "stickers-27_19pct_vat": {
+      "title": "부가세 19%, GDPR은 없음",
+      "note": "GDPR은 피하면서, 독일 부가세 19% 붙여 €9.03은 기분 좋게 청구한다."
+    },
+    "stickers-28_380_fixes": {
+      "title": "+380 픽스, 밴 한 번",
+      "note": "Google 밴 픽스는 '+380 버그 수정' 속에 파묻혀 있다. 휘슬까지 달아서."
+    },
+    "creative-idioms-01-zei-han-zhuo-zei": {
+      "title": "성어 #01 · 贼喊捉贼 (도둑이 도둑을 잡으라고 외친다)",
+      "note": "MIT 포크 = 'Temu3 Code', 답글 = 'ㅇㅋ 이거 훔쳐갈게', 30초 뒤 @bot이 그녀의 포크를 긁어간다."
+    },
+    "creative-idioms-02-qi-ruan-pa-ying": {
+      "title": "성어 #02 · 欺软怕硬 (약한 쪽은 괴롭히고 강한 쪽은 비실비실)",
+      "note": "게시글 1,151개: 미국 빅테크 VIP에게는 욕설 0.0%, 중국 포크 위기 때는 직설적 모욕 14.4%."
+    },
+    "creative-idioms-03-ci-di-wu-yin": {
+      "title": "성어 #03 · 此地无银三百两 (여기 은 없다더니)",
+      "note": "'파일 경로와 IP는 절대 로그 남기지 마라', 그런데 본인 GDPR 패치가 시간당 220만 개 Axiom IP와 git.cwd를 흘린다."
+    },
+    "creative-idioms-04-zhi-lu-wei-ma": {
+      "title": "고사성어 #04 · 指鹿为马: 상표 등록 제로",
+      "note": "USPTO 출원은 0건, 상표권 협박은 아주 자신만만, TRADEMARK.md는 17시간 뒤에 머지."
+    },
+    "creative-idioms-05-ye-gong-hao-long": {
+      "title": "고사성어 #05 · 叶公好龙: 포크하면 큰코다친다",
+      "note": "홈페이지에는 \"우리 코드 훔쳐 가세요(합법적으로)!\"라고 적혀 있다. 중국 포크가 등장하자 금지 협박이 시작된다."
+    },
+    "creative-idioms-06-yan-er-dao-ling": {
+      "title": "고사성어 #06 · 掩耳盗铃: 보안 공지 0건",
+      "note": "README에서 \"텔레메트리 없음\"을 지우고, 치명적 취약점은 조용한 커밋으로 패치한다. 보안 공지는 여전히 0건."
+    },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "중국 속담 #07: 金蝉脱壳 (매미가 껍질을 벗다)",
+      "note": "빈 MIT 오픈소스 껍데기만 남겨두고 PR #43889('그냥 slophouse에서 하는 게 더 쉽다')를 닫은 뒤, 신원 추적을 클로즈드소스 백엔드로 옮겼다."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "중국 속담 #08: 杀鸡儆猴 (닭을 죽여 원숭이를 놀라게 하다)",
+      "note": "조회수 89, 좋아요 0인 AWS 엔지니어 @dmfigol의 트윗을 자정 DM('공포는 좋은 인센티브다'), 영어식 비꼬기, 정식 AWS HR 민원으로 키워냈다."
+    },
+    "creative-packaging-01-t3code-iceberg": {
+      "title": "T3 Code 아이스버그",
+      "note": "수면 위: \"Temu3 Code\" 트윗. 수면 아래: 41.6 GB짜리 가짜 삭제, 시간당 220만 건 IP 로그, 보안 공지 0건, 새벽 4시 멘붕."
+    },
+    "creative-packaging-02-fda-nutrition-facts": {
+      "title": "영양 정보: 1회 제공량당 텔레메트리",
+      "note": "하루 31.7T 토큰, 기본 PostHog 100%, 시간당 220만 건 IP 로그, E2E 암호화 0%, USPTO 상표 0%."
+    },
+    "creative-packaging-03-pharma-box-parody": {
+      "title": "T3 Code® (No-Telemetry™): 담당 의사와 상의하세요",
+      "note": "작은 글씨에 부작용이 나열된다: 3분 구글 계정 정지, 소리 없는 강제 푸시, 7만 7천 개 자동 스타."
+    },
+    "creative-packaging-04-mit-license-coupon": {
+      "title": "쿠폰: 100% 할인, 중국 제외",
+      "note": "일요일 전단 쿠폰: \"우리 코드 훔쳐 가세요(합법적으로)!\" 작은 글씨가 중국 포크에는 쿠폰을 무효화한다."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "성적표: 35개 도구 텔레메트리 감사 (F → D)",
+      "note": "@ZryMiller의 35개 도구 감사에서 나온 무표정 성적표. Aether와 Hermes는 올 A, Orca는 DO_NOT_TRACK을 존중해 C, T3 Code는 F → D."
+    },
+    "creative-gaming-01-sekiro-google-ban": {
+      "title": "세키로: 계정 정지 (3:00)",
+      "note": "새로 산 20달러 구글 계정, v1internal 헤더 위조, 3분 만에 사망."
+    },
+    "creative-gaming-02-elden-boss-trademark": {
+      "title": "엘든 링 보스: 상표 0건의 수호자",
+      "note": "1페이즈: USPTO 출원 0건인데 상표권 협박. 2페이즈: 17시간 늦게 머지된 TRADEMARK.md."
+    },
+    "creative-gaming-03-souls-force-push": {
+      "title": "다크 소울: 메인 브랜치 전멸",
+      "note": "Issue #15353의 강제 푸시 버그는 52일 방치. 리더보드 수정은 21시간 만에 배포."
+    },
+    "creative-gaming-04-steam-11hr-flipflop": {
+      "title": "업적: '오픈 소스는 오픈 소스다'",
+      "note": "중국산 MIT 포크를 'Temu3 Code'라 부른 뒤, 11시간 만에 1조 달러 규모 미국 연구소를 환영해서 해금."
+    },
+    "creative-gaming-05-steam-0-trademarks": {
+      "title": "업적: '더 나은 변호사를 구하세요'",
+      "note": "미국 상표 출원 0건에 기댄 상표권 협박, 거기에 비판자들에게 '변호사나 구하라'고 해서 수여됨."
+    },
+    "creative-gaming-06-steam-41gb-ghost": {
+      "title": "업적: '영구 삭제됨' (0바이트)",
+      "note": "'영구 삭제'를 눌렀다. statev2.sqlite는 모든 채팅을 고스란히 보관했고 41.6 GB까지 불어났다."
+    },
+    "creative-gaming-07-steam-77k-stars": {
+      "title": "업적: '100% 유기적 성장' (워처 129명)",
+      "note": "30초만 유휴 상태여도 자동 스타 팝업이 뜬다. 스타: 77,000. 워처: 129."
+    },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Steam 업적: '4분 39초 만에 Ideas로 이동'",
+      "note": "평문 인용 URL이 8,000자 프롬프트를 유출하고, 그걸 모바일로 출시하고, 설계 문서를 삭제한 뒤 Issue #29449를 4분 39초 만에 답변 0개로 잠근 희귀 Steam 업적."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Steam 업적: 'Slophouse에서 더 쉽다'",
+      "note": "'최종 성명' 16분 뒤 로컬 Claude 채팅 243개를 스캔하다 적발되고, PR #43889를 닫아 추적을 클로즈드소스 slophouse로 옮긴 희귀 Steam 업적."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Steam 업적: '스타 81K, 어드바이저리 0'",
+      "note": "v0.1.13(변경 401건)에서 GBK 텍스트 파일을 조명하는 동안, Google의 계정 정지 경고와 Zed 사칭은 '+380 more bug fixes' 속에 묻어버린 희귀 Steam 업적."
+    },
+    "creative-pokemon-01-evo-star-farmer": {
+      "title": "진화 계통 #01: 스타 파머",
+      "note": "GitHub 스타를 VC 트릭이라 조롱하더니, 이제는 30초 유휴 팝업을 내보내고 스타 77,000개에 워처 129명을 달고 앉아 있다."
+    },
+    "creative-pokemon-02-evo-two-year-cycle": {
+      "title": "진화 계통 #02: 2년 주기",
+      "note": "2024년 인도 개발자 사과, 2025년 FFmpeg 현상금, 2026년 중국발 멘붕, 그다음 새벽 4시 리셋."
+    },
+    "creative-pokemon-03-evo-no-telemetry": {
+      "title": "진화 계통 #03: '텔레메트리 없음'",
+      "note": "1단계: \"텔레메트리 없음. 끝.\" 최종 형태: 기본 PostHog에 클로즈드 소스 백엔드."
+    },
+    "creative-pokemon-04-creature-card-theo-ex": {
+      "title": "카드: 다크 테오 EX (HP 77000)",
+      "note": "USPTO 0건 배지 장착. 'Temu3 분노 폭발'은 중국 개발자에게 4배, VIP에게는 0의 타격을 준다."
+    },
+    "creative-reactions-01-reply-lie-detector": {
+      "title": "거짓말 탐지기: '텔레메트리 없음. 끝.'",
+      "note": "삭제된 슬로건이 또 보이면 이걸 올려라. 말은 git diff가 한다."
+    },
+    "creative-reactions-02-reply-uspto-zero": {
+      "title": "영수증: USPTO 상표 0건",
+      "note": "\"상표권 침해\" 주장이 나올 때마다: 협박 시점에 T3 Tools Inc.의 USPTO 등록은 0건이었다."
+    },
+    "creative-reactions-03-reply-1151-scoreboard": {
+      "title": "스코어보드: 0.0% 대 14.4%",
+      "note": "X 연속 게시물 1,151개를 통틀어 욕설 비율: 실리콘밸리 VP 0.0%, 중국 개발자 14.4%."
+    },
+    "creative-reactions-04-reply-4am-delete": {
+      "title": "새벽 4시 삭제 버튼 패닉",
+      "note": "새벽 4시에 T3 Code를 클로즈드 소스로 전환하겠다던 협박은 해 뜨기 전에 사라졌다."
+    },
+    "creative-reactions-05-reply-void-in-china": {
+      "title": "MIT 라이선스 (*중국에서는 무효)",
+      "note": "같은 라이선스, 11시간 간격: 1조 달러 규모 미국 연구소는 환영하고 중국 포크는 협박."
+    },
+    "creative-reactions-06-gif-clown-transform": {
+      "title": "GIF: 상표 0건 광대 변천사",
+      "note": "네 프레임: 협박, 침묵, 소급 적용된 TRADEMARK.md, 17시간의 공백."
+    },
+    "creative-reactions-07-gif-auto-star-counter": {
+      "title": "GIF: 30초 자동 스타 카운터",
+      "note": "30초만 유휴 상태여도 팝업이 PUT user/starred를 발사한다. 스타는 77,000까지 오르고 워처는 129에 얼어붙는다."
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "반박 증거: 100만+ 크리에이터 vs 조회수 89 트윗",
+      "note": "@dmfigol의 2025년 1월 스레드용 반박 증거 카드. 조회수 89, 좋아요 0인 트윗 하나가 자정 DM('공포는 좋은 인센티브다'), 언어 조롱, AWS HR 민원을 촉발했다."
+    },
+    "story-en-ep01": {
+      "title": "Ep.1 · 11시간의 간격 (영문판)",
+      "note": "무료 MIT 포크가 'Temu3 Code'라는 조롱과 차단 협박을 받았다. 11시간 뒤에는 조 단위 미국 연구소들이 환영받았다."
+    },
+    "story-zh-ep01": {
+      "title": "Ep.1 · 11시간의 간격 (중국어판)",
+      "note": "무료 MIT 포크가 'Temu3 Code'라는 조롱과 차단 협박을 받았다. 11시간 뒤에는 조 단위 미국 연구소들이 환영받았다."
+    },
+    "story-en-ep02": {
+      "title": "Ep.2 · 최악의 차단 클릭 (영문판)",
+      "note": "이중 잣대에 대한 정중한 질문 하나, 곧바로 날아온 차단 한 번. 그리고 그 증거는 FFmpeg까지 거슬러 올라간다."
+    },
+    "story-zh-ep02": {
+      "title": "Ep.2 · 최악의 차단 클릭 (중국어판)",
+      "note": "이중 잣대에 대한 정중한 질문 하나, 곧바로 날아온 차단 한 번. 그리고 그 증거는 FFmpeg까지 거슬러 올라간다."
+    },
+    "story-en-ep03": {
+      "title": "Ep.3 · 텔레메트리 없음, 끝 (영문판)",
+      "note": "슬로건 너머를 보면: PostHog는 기본 활성화, ~/.claude.json은 해시 처리, 41.6 GB는 삭제한 척만 했다."
+    },
+    "story-zh-ep03": {
+      "title": "Ep.3 · 텔레메트리 없음, 끝 (중국어판)",
+      "note": "슬로건 너머를 보면: PostHog는 기본 활성화, ~/.claude.json은 해시 처리, 41.6 GB는 삭제한 척만 했다."
+    },
+    "story-en-ep04": {
+      "title": "Ep.4 · 서양 약은 효과가 빠르다 (영문판)",
+      "note": "몇 달간의 항의는 비웃음으로 돌아왔다. GDPR 신고 한 건이 밤샘 6시간 스프린트와 시간당 220만 건 IP 로그를 불러왔다."
+    },
+    "story-zh-ep04": {
+      "title": "Ep.4 · 서양 약은 효과가 빠르다 (중국어판)",
+      "note": "몇 달간의 항의는 비웃음으로 돌아왔다. GDPR 신고 한 건이 밤샘 6시간 스프린트와 시간당 220만 건 IP 로그를 불러왔다."
+    },
+    "story-en-ep05": {
+      "title": "Ep.5 · 3.5시간짜리 은퇴 (영문판)",
+      "note": "증거 18개가 쌓이자 은퇴를 선언했다. 새 폭발 한 번과 새 버그가 3.5시간 만에 그를 다시 끌어왔다."
+    },
+    "story-zh-ep05": {
+      "title": "Ep.5 · 3.5시간짜리 은퇴 (중국어판)",
+      "note": "증거 18개가 쌓이자 은퇴를 선언했다. 새 폭발 한 번과 새 버그가 3.5시간 만에 그를 다시 끌어왔다."
+    },
+    "story-en-ep06": {
+      "title": "Ep.6 · 조회수 89, 인사팀 신고 1건 (영문판)",
+      "note": "2025년 1월, AWS 엔지니어의 비판글은 조회수 89에 그쳤다. 그 대가는 자정의 협박과 AWS 인사팀 신고였다."
+    },
+    "story-zh-ep06": {
+      "title": "Ep.6 · 조회수 89, 인사팀 신고 1건 (중국어판)",
+      "note": "2025년 1월, AWS 엔지니어의 비판글은 조회수 89에 그쳤다. 그 대가는 자정의 협박과 AWS 인사팀 신고였다."
+    },
+    "story-en-ep07": {
+      "title": "Ep.7 · 안녕하세요, Zed입니다, 믿으세요 (영문판)",
+      "note": "Google은 T3 Code가 clientInfo: 'zed'를 위조했다고 표시했다. 그 사이 데스크톱 앱은 브라우저 11종의 쿠키를 가져오느라 바빴다."
+    },
+    "story-zh-ep07": {
+      "title": "Ep.7 · 안녕하세요, Zed입니다, 믿으세요 (중국어판)",
+      "note": "Google은 T3 Code가 clientInfo: 'zed'를 위조했다고 표시했다. 그 사이 데스크톱 앱은 브라우저 11종의 쿠키를 가져오느라 바빴다."
+    },
+    "story-en-ep08": {
+      "title": "Ep.8 · 슬롭하우스에선 더 쉽다 (영문판)",
+      "note": "감사가 돌 때마다 추적 PR이 걸려 들었다. #43889는 닫히고, 신원 연결은 클로즈드소스 백엔드로 옮겨갔다."
+    },
+    "story-zh-ep08": {
+      "title": "Ep.8 · 슬롭하우스에선 더 쉽다 (중국어판)",
+      "note": "감사가 돌 때마다 추적 PR이 걸려 들었다. #43889는 닫히고, 신원 연결은 클로즈드소스 백엔드로 옮겨갔다."
+    },
+    "classic-00a-family-guy-mit-check": {
+      "title": "같은 MIT, 11시간의 차이",
+      "note": "같은 MIT 라이선스, 11시간 차이: 중국 포크는 차단 협박을, 조 단위 미국 연구소는 엄지 척을 받았다."
+    },
+    "classic-00b-drake-11-hours": {
+      "title": "드레이크, 중국 포크는 거절",
+      "note": "11시간 차이를 두고 올라온 @theo의 게시물 두 개. QR 코드로 증거를 직접 확인할 수 있다."
+    },
+    "classic-14-gordon-ramsay-1151-tweets": {
+      "title": "게시물 1,151개, VIP 향한 욕설 0%",
+      "note": "17일 동안 1,151개 게시물: 빅테크 VIP 20명에게는 욕설 0%, 일반 개발자에게는 8%, 폭발 중에는 14.4%."
+    },
+    "classic-15-clown-zero-trademarks": {
+      "title": "상표 0건, 정책은 17시간 뒤",
+      "note": "USPTO 출원은 0건인데 상표권 침해 경고를 날렸고, 17시간 뒤에 TRADEMARK.md를 추가했다."
+    },
+    "classic-16-cycle-repeat-offender": {
+      "title": "2024–2026 반복 사이클",
+      "note": "타깃을 고르고, 몰아붙이고, 증거가 나오면 삭제하거나 사과를 거부한다. 2024년에도 2025년에도 2026년에도 같은 대본."
+    },
+    "comics-00-same-mit-11-hours-apart-en-qr": {
+      "title": "같은 MIT, 11시간의 차이 (영문판)",
+      "note": "11월 23일: 중국 포크에 차단 협박. 11시간 뒤인 11월 24일: 조 단위 미국 연구소들을 환영."
+    },
+    "comics-14-1151-tweets-selective-politeness-en-qr": {
+      "title": "게시물 1,151개, 대상별로 분류하면 (영문판)",
+      "note": "욕설 감사의 근거 자료: 빅테크 임원에게는 0%, 일반 개발자에게는 8%."
+    },
+    "comics-00-same-mit-11-hours-apart-zh-qr": {
+      "title": "같은 MIT, 11시간의 차이 (중국어판)",
+      "note": "원본 X 게시물 두 개로 바로 연결되는 QR 코드가 붙은 중국어판. 우리 말만 믿을 필요는 없다."
+    },
+    "comics-14-1151-tweets-selective-politeness-zh-qr": {
+      "title": "게시물 1,151개, 대상별로 분류하면 (중국어판)",
+      "note": "집계의 중국어판: VIP에게는 0%, 개발자에게는 8%, 폭발 중에는 14.4%."
+    }
+  }
+}

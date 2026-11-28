@@ -178,6 +178,21 @@ Placing November 2026 alongside `@theo`'s documented public history from 2024–
 
 ---
 
+## 6. Nov 26–27 Governance Lock, `glacier#1` Precedent & `@dmfigol` AWS HR Case (Exhibits #20 & #27)
+
+1. **`@dmfigol` Private DMs & Retracted AWS HR Inquiry (Nov 26, Exhibit #20):** Former AWS engineer `@dmfigol` (`2126025881844174968`, 639K+ views; `2126025885740626075`; `2126025889016094829`) posted Jan 29, 2025 DM screenshots following an 89-view quote-tweet of `@theo`'s CheckPoint/Palo Alto `t3.chat` unblock ultimatum. `@theo` wrote *"The root of the issue is an incentives problem. Fear is a good incentive."* and *"I have to ask - is English your native language?"*, citing his AWS customer spend before `@dmfigol` received an AWS HR inquiry a month later over a same-day retracted complaint (cleared with zero wrongdoing; `@petersteele` `2126096729934033141` and `@_Defeatable_` `2126096598367117581` corroborated earlier disputes, while `@dmfigol` noted in `2084660216759558593` / `2126094390250590678` that attributing 3 later AWS rejections is explicitly *"circumstantial"*).
+2. **`Issue #4123` Org Lock, 1,401 Contributors & `2022` `glacier#1` Comment (Exhibit #27):** Despite `1,401` MIT contributors (0 CLA) vs. `6` core accounts, `@pingdotgg` locked telemetry complaint [`Issue #4123`](https://github.com/pingdotgg/t3code/issues/4123) at `2026-11-24T20:43:48Z` during peak backlash (one of 779 locked items), while `v0.1.13` shipped four silent security patches ([`#42535`](https://github.com/pingdotgg/t3code/pull/42535), [`#39408`](https://github.com/pingdotgg/t3code/pull/39408), [`#39489`](https://github.com/pingdotgg/t3code/pull/39489), [`#41988`](https://github.com/pingdotgg/t3code/pull/41988)) with `0` advisories. Separately, `@hazae41` (`2126134616696520845`) surfaced `@t3dotgg`'s `2022-10-02` comment on [`hazae41/glacier#1`](https://github.com/hazae41/glacier/issues/1#issuecomment-1264711070): *"I wish this was a parody but sadly the maintainer is just a dick :("*. Afterward, `@theo` posted zero original tweets/replies for ~41 hours post-`2125737351901303200`, reposting praise and Mobile 2.4 (`2126054989768675651`, `2126062066809307637`).
+
+![@dmfigol 639K-view X thread on AWS HR complaint](../../evidence/extra/nov27-dmfigol-aws-hr-post.png)
+
+![Archived Jan 29, 2025 DM screenshots quoting Fear is a good incentive](../../evidence/extra/nov27-dmfigol-dm-screenshots.png)
+
+![Issue #4123 closed twice and locked by @pingdotgg org account](../../evidence/extra/nov27-issue4123-locked-pingdotgg.png)
+
+![Oct 2022 @t3dotgg comment on hazae41/glacier#1](../../evidence/extra/nov27-hazae41-glacier-issue1.png)
+
+---
+
 ## Primary References
 
 - **Original Audit Threads:**
@@ -202,6 +217,9 @@ Placing November 2026 alongside `@theo`'s documented public history from 2024–
   - GitHub Trademark Policy & `@vildanden_ai` thread: https://docs.github.com/en/site-policy/content-removal-policies/github-trademark-policy ; https://x.com/vildanden_ai/status/2125275487404761555
   - Retroactive `PR #41898`, `TRADEMARK.md`, `"aware of the legality"`, `"get a better lawyer"`, & WordPress tweet: https://github.com/pingdotgg/t3code/pull/41898 ; https://github.com/pingdotgg/t3code/blob/main/TRADEMARK.md ; https://x.com/theo/status/2125082769395220688 ; https://x.com/theo/status/2125026423769555308 ; https://x.com/theo/status/1839261574005141945
   - Historical receipts (`vsc-material-but-i-wont-sue-you`, Indian dev apology video, $20k FFmpeg bounty record): https://github.com/t3dotgg/vsc-material-but-i-wont-sue-you ; https://www.youtube.com/watch?v=o2CSJYXJBpc ; https://www.youtube.com/watch?v=1oQ3KMeaH04
+- **Nov 26–27 `@dmfigol` AWS HR Case, Org Lock & `glacier#1` (Exhibits #20 & #27):**
+  - https://x.com/dmfigol/status/2126025881844174968 ; https://x.com/dmfigol/status/2126025885740626075 ; https://x.com/dmfigol/status/2126025889016094829 ; https://x.com/petersteele/status/2126096729934033141 ; https://x.com/_Defeatable_/status/2126096598367117581 ; https://x.com/dmfigol/status/2126094390250590678 ; https://x.com/dmfigol/status/2084660216759558593 ; https://x.com/realchendahuang/status/2126204776467853346
+  - https://github.com/hazae41/glacier/issues/1#issuecomment-1264711070 ; https://x.com/hazae41/status/2126134616696520845 ; https://github.com/pingdotgg/t3code/pull/42535 ; https://github.com/pingdotgg/t3code/pull/39408 ; https://github.com/pingdotgg/t3code/pull/39489 ; https://github.com/pingdotgg/t3code/pull/41988 ; https://x.com/theo/status/2125737351901303200 ; https://x.com/theo/status/2126054989768675651 ; https://x.com/theo/status/2126062066809307637
 
 ---
 [← Back to README](../../README.md) · [Complete Source Index](../COMPLETE-SOURCE-INDEX.md) · [← Dossier 04](./04-business-ledger-sponsors-and-77k-stars.md) · [Dossier 06 →](./06-tweet-forensic-dataset-1151.md)

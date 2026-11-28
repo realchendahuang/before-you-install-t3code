@@ -2,44 +2,167 @@
   "use strict";
 
   const X_RECEIPTS = [
-    { id: "2124823227570745504", src: "./receipts/x-2124823227570745504-chinese-knockoff.png", url: "https://x.com/theo/status/2124823227570745504", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
-    { id: "2124825920808829077", src: "./receipts/x-2124825920808829077-temu3-code.png", url: "https://x.com/theo/status/2124825920808829077", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "hostility"] },
-    { id: "2124829315657576890", src: "./evidence/01-origin-theo-threat.png", url: "https://x.com/theo/status/2124829315657576890", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "hostility"] },
-    { id: "2124989435154726982", src: "./receipts/x-2124989435154726982-trillion-dollar-oss.png", url: "https://x.com/theo/status/2124989435154726982", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
-    { id: "2125019705270477102", src: "./receipts/x-2125019705270477102-low-quality-users.png", url: "https://x.com/theo/status/2125019705270477102", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "hostility"] },
-    { id: "2125082769395220688", src: "./receipts/x-2125082769395220688-always-illegal.png", url: "https://x.com/theo/status/2125082769395220688", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "double-standard"] },
-    { id: "2125077510941802509", src: "./evidence/extra/p8-3-x-theo-autoblocker.png", url: "https://x.com/theo/status/2125077510941802509", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "hostility"] },
-    { id: "2125177503526588877", src: "./evidence/26-cn-cesspit.png", url: "https://x.com/theo/status/2125177503526588877", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
-    { id: "2125177947376300110", src: "./receipts/x-2125177947376300110-hurt-feelings-zh.png", url: "https://x.com/theo/status/2125177947376300110", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
-    { id: "2125182476943556955", src: "./receipts/x-2125182476943556955-zero-value.png", url: "https://x.com/theo/status/2125182476943556955", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
-    { id: "2125193393450226024", src: "./receipts/x-2125193393450226024-not-apologizing.png", url: "https://x.com/theo/status/2125193393450226024", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
-    { id: "2119240810202034645", src: "./evidence/23-stealing-fork-bot.png", url: "https://x.com/theo/status/2119240810202034645", thread: "2026-11-08-stealing-miaai-fork", tags: ["double-standard"] }
+    { id: "2124823227570745504", src: "./receipts/x-2124823227570745504-chinese-knockoff.webp", w: 2440, h: 3668, url: "https://x.com/theo/status/2124823227570745504", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
+    { id: "2124825920808829077", src: "./receipts/x-2124825920808829077-temu3-code.webp", w: 610, h: 372, url: "https://x.com/theo/status/2124825920808829077", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "hostility"] },
+    { id: "2124829315657576890", src: "./evidence/01-origin-theo-threat.png", w: 1400, h: 1142, url: "https://x.com/theo/status/2124829315657576890", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "hostility"] },
+    { id: "2124989435154726982", src: "./receipts/x-2124989435154726982-trillion-dollar-oss.webp", w: 2440, h: 1428, url: "https://x.com/theo/status/2124989435154726982", thread: "2026-11-23-origin-temu3-threat", tags: ["origin", "double-standard"] },
+    { id: "2125019705270477102", src: "./receipts/x-2125019705270477102-low-quality-users.webp", w: 2440, h: 1428, url: "https://x.com/theo/status/2125019705270477102", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "hostility"] },
+    { id: "2125082769395220688", src: "./receipts/x-2125082769395220688-always-illegal.webp", w: 2440, h: 2996, url: "https://x.com/theo/status/2125082769395220688", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "double-standard"] },
+    { id: "2125077510941802509", src: "./evidence/extra/p8-3-x-theo-autoblocker.png", w: 2472, h: 1486, url: "https://x.com/theo/status/2125077510941802509", thread: "2026-11-24-retroactive-trademark-blocker", tags: ["origin", "hostility"] },
+    { id: "2125177503526588877", src: "./evidence/26-cn-cesspit.png", w: 1400, h: 810, url: "https://x.com/theo/status/2125177503526588877", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
+    { id: "2125177947376300110", src: "./receipts/x-2125177947376300110-hurt-feelings-zh.webp", w: 2440, h: 968, url: "https://x.com/theo/status/2125177947376300110", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
+    { id: "2125182476943556955", src: "./receipts/x-2125182476943556955-zero-value.webp", w: 610, h: 328, url: "https://x.com/theo/status/2125182476943556955", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
+    { id: "2125193393450226024", src: "./receipts/x-2125193393450226024-not-apologizing.webp", w: 2440, h: 1448, url: "https://x.com/theo/status/2125193393450226024", thread: "2026-11-24-cesspit-crisis-outburst", tags: ["origin", "hostility"] },
+    { id: "2119240810202034645", src: "./evidence/23-stealing-fork-bot.png", w: 1400, h: 846, url: "https://x.com/theo/status/2119240810202034645", thread: "2026-11-08-stealing-miaai-fork", tags: ["double-standard"] }
+  ];
+
+  const PREVIEW_THREADS = [
+    {
+      thread: "2026-11-23-origin-temu3-threat",
+      cards: [
+        {
+          badgeClass: "win-badge-red",
+          badgeKey: "home.winC1Badge",
+          metaKey: "home.winC1Meta",
+          href: "https://x.com/theo/status/2124829315657576890",
+          textKey: "home.winC1Text"
+        },
+        {
+          badgeClass: "win-badge-green",
+          badgeKey: "home.winC2Badge",
+          metaKey: "home.winC2Meta",
+          href: "https://x.com/theo/status/2124989435154726982",
+          textKey: "home.winC2Text"
+        },
+        {
+          badgeClass: "win-badge-amber",
+          badgeKey: "home.winC3Badge",
+          metaKey: "home.winC3Meta",
+          href: "https://x.com/theo/status/2119240810202034645",
+          textKey: "home.winC3Text"
+        }
+      ]
+    },
+    {
+      thread: "2026-11-25-gdpr-overnight-collapse",
+      cards: [
+        { badgeClass: "win-badge-red", badgeKey: "home.winP2B1", metaKey: "home.winP2M1", textKey: "home.winP2T1" },
+        { badgeClass: "win-badge-amber", badgeKey: "home.winP2B2", metaKey: "home.winP2M2", textKey: "home.winP2T2" }
+      ]
+    },
+    {
+      thread: "2025-10-ffmpeg-bounty",
+      cards: [
+        { badgeClass: "win-badge-amber", badgeKey: "home.winP3B1", metaKey: "home.winP3M1", textKey: "home.winP3T1" },
+        { badgeClass: "win-badge-red", badgeKey: "home.winP3B2", metaKey: "home.winP3M2", textKey: "home.winP3T2" }
+      ]
+    },
+    {
+      thread: "2026-11-25-ca81b7b9-active-vulns",
+      cards: [
+        { badgeClass: "win-badge-red", badgeKey: "home.winP4B1", metaKey: "home.winP4M1", textKey: "home.winP4T1" },
+        { badgeClass: "win-badge-amber", badgeKey: "home.winP4B2", metaKey: "home.winP4M2", textKey: "home.winP4T2" }
+      ]
+    }
   ];
 
   const I18N = window.Temu3I18n;
+  const INITIAL_SEO = {
+    title: document.title,
+    desc: document.querySelector('meta[name="description"]')?.getAttribute("content") || "",
+    ogTitle: document.querySelector('meta[property="og:title"]')?.getAttribute("content") || "",
+    ogDesc: document.querySelector('meta[property="og:description"]')?.getAttribute("content") || ""
+  };
   let lang = I18N.detectInitialLang();
   let bundle = null;
+  let memesOverlay = null;
+  let activePreviewIdx = 0;
   let activeFilter = "all";
   let visibleReceipts = X_RECEIPTS.slice();
   let memeCatalog = [];
+  let memeCatalogMeta = null;
   let lbMode = "receipts";
+  let lbIsSins = false;
   let lbItems = [];
   let lbIndex = -1;
+  let lbPrevFocus = null;
+  const BLANK_IMG = "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==";
 
   function t(path, fallback = "") {
     return I18N.getKey(bundle, path) || fallback;
   }
 
   function escapeHtml(s) {
-    return String(s || "")
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
+    return I18N.escapeHtml(s);
   }
 
-  function isZh() {
-    return lang === "zh-CN" || lang === "zh-TW";
+  function escapeBidi(s) {
+    return I18N.escapeBidi(s);
+  }
+
+  function showToast(msg) {
+    const el = document.getElementById("homeToast");
+    if (!el) return;
+    el.textContent = msg;
+    el.hidden = false;
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(() => { el.hidden = true; }, 2400);
+  }
+
+  async function copyImageAsPng(url) {
+    try {
+      const res = await fetch(url, { mode: "cors" });
+      if (!res.ok) throw new Error("fetch failed");
+      const blob = await res.blob();
+      const bmp = await createImageBitmap(blob);
+      const canvas = document.createElement("canvas");
+      canvas.width = bmp.width;
+      canvas.height = bmp.height;
+      canvas.getContext("2d").drawImage(bmp, 0, 0);
+      const pngBlob = await new Promise((resolve, reject) =>
+        canvas.toBlob((b) => (b ? resolve(b) : reject(new Error("toBlob failed"))), "image/png")
+      );
+      await navigator.clipboard.write([new ClipboardItem({ "image/png": pngBlob })]);
+      showToast(t("home.mmCopied", "Copied PNG to clipboard."));
+    } catch (_) {
+      window.open(url, "_blank", "noopener,noreferrer");
+      showToast(t("home.mmCopyFallback", "Opened image in a new tab."));
+    }
+  }
+
+  function renderPreviewPane() {
+    const host = document.getElementById("winCenterCards");
+    const openBtn = document.getElementById("winOpenThreadBtn");
+    const item = PREVIEW_THREADS[activePreviewIdx] || PREVIEW_THREADS[0];
+    if (!host || !item) return;
+
+    host.innerHTML = item.cards
+      .map((c) => {
+        const badge = escapeHtml(t(c.badgeKey, ""));
+        const meta = escapeBidi(t(c.metaKey, ""));
+        const body = escapeBidi(t(c.textKey, ""));
+        const inner = `<div class="win-msg-head">
+          <span class="${c.badgeClass}">${badge}</span>
+          <span class="muted">${meta}</span>
+        </div>
+        <p>${body}</p>`;
+        if (c.href) {
+          return `<a class="win-msg-card" href="${escapeHtml(c.href)}" target="_blank" rel="noopener noreferrer">${inner}</a>`;
+        }
+        return `<a class="win-msg-card" href="./mail/?thread=${encodeURIComponent(item.thread)}">${inner}</a>`;
+      })
+      .join("");
+
+    if (openBtn) {
+      openBtn.href = `./mail/?thread=${encodeURIComponent(item.thread)}`;
+      openBtn.textContent = t("home.winOpenThread", "Open this thread in Tmail →");
+    }
+
+    document.querySelectorAll("[data-preview-idx]").forEach((btn) => {
+      const active = Number(btn.getAttribute("data-preview-idx")) === activePreviewIdx;
+      btn.classList.toggle("is-active", active);
+      btn.setAttribute("aria-selected", active ? "true" : "false");
+    });
   }
 
   function renderXReceipts() {
@@ -50,7 +173,7 @@
         ? X_RECEIPTS.slice()
         : X_RECEIPTS.filter((r) => r.tags.includes(activeFilter));
 
-    const openX = t("common.openX", "X ↗");
+    const openX = t("common.openX", "Original post ↗");
     const openMail = t("common.openMail", "Tmail →");
 
     grid.innerHTML = visibleReceipts
@@ -59,11 +182,11 @@
         return `<article class="xr-card">
           <button type="button" class="xr-thumb-btn" data-lb-idx="${idx}" aria-label="${escapeHtml(title)}">
             <div class="xr-thumb-frame">
-              <img src="${escapeHtml(r.src)}" alt="${escapeHtml(title)}" loading="lazy" />
+              <img src="${escapeHtml(r.src)}" alt="${escapeHtml(title)}" width="${r.w}" height="${r.h}" loading="lazy" decoding="async" />
             </div>
           </button>
           <div class="xr-card-body">
-            <h3 class="xr-card-title">${escapeHtml(title)}</h3>
+            <h3 class="xr-card-title">${escapeBidi(title)}</h3>
             <div class="xr-card-actions">
               <a class="xr-btn xr-btn-x" href="${escapeHtml(r.url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(openX)}</a>
               <a class="xr-btn" href="./mail/?thread=${encodeURIComponent(r.thread)}">${escapeHtml(openMail)}</a>
@@ -77,6 +200,24 @@
   function renderMemeShowcase() {
     const rail = document.getElementById("homeSinsRail");
     const viralGrid = document.getElementById("homeViralGrid");
+
+    // Sync Story cover & dynamic meme counts
+    const coverImg = document.getElementById("homeStoryCoverImg");
+    if (coverImg && memeCatalogMeta && Array.isArray(memeCatalogMeta.storyEpisodes) && memeCatalogMeta.storyEpisodes.length) {
+      const ep1 = memeCatalogMeta.storyEpisodes[0];
+      const media = ep1.media || {};
+      const pick = media[lang] || (lang === "zh-TW" ? media["zh-CN"] : null) || media.en || ep1.en || ep1.zh;
+      if (pick && pick.url) {
+        coverImg.src = pick.url;
+        if (pick.width) coverImg.width = pick.width;
+        if (pick.height) coverImg.height = pick.height;
+      }
+    }
+    const zipBtn = document.getElementById("homeStoryZipBtn");
+    if (zipBtn && memeCatalogMeta && memeCatalogMeta.stickerZipUrl) {
+      zipBtn.href = memeCatalogMeta.stickerZipUrl;
+    }
+
     if (!rail || !viralGrid || !memeCatalog.length) return;
 
     const sins = memeCatalog.filter((m) => m.series === "sins");
@@ -84,79 +225,123 @@
 
     rail.innerHTML = sins
       .map((m, idx) => {
-        const title = isZh() ? m.titleZh : m.titleEn;
+        const { title } = I18N.pickMemeText(m, lang, memesOverlay);
+        const w = Number(m.width) || 853;
+        const h = Number(m.height) || 1280;
         return `<button type="button" class="sin-rail-card" data-sin-idx="${idx}">
           <div class="sin-rail-img">
-            <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" loading="lazy" />
+            <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" width="${w}" height="${h}" loading="lazy" decoding="async" />
           </div>
-          <div class="sin-rail-title">${escapeHtml(title)}</div>
+          <div class="sin-rail-title">${escapeBidi(title)}</div>
         </button>`;
       })
       .join("");
 
     viralGrid.innerHTML = featuredViral
       .map((m, idx) => {
-        const title = isZh() ? m.titleZh : m.titleEn;
+        const { title, note } = I18N.pickMemeText(m, lang, memesOverlay);
+        const w = Number(m.width) || 1200;
+        const h = Number(m.height) || 1200;
+        const srcHref = m.sourceUrl || `./mail/?thread=${encodeURIComponent(m.thread)}`;
+        const srcAttrs = m.sourceUrl ? ' target="_blank" rel="noopener noreferrer"' : "";
         return `<article class="mm-viral-card">
           <button type="button" class="mm-viral-thumb" data-viral-idx="${idx}" aria-label="${escapeHtml(title)}">
-            <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" loading="lazy" />
+            <img src="${escapeHtml(m.url)}" alt="${escapeHtml(title)}" width="${w}" height="${h}" loading="lazy" decoding="async" />
           </button>
           <div class="mm-viral-body">
-            <span class="mm-viral-title">${escapeHtml(title)}</span>
-            <a class="mm-viral-link" href="./mail/?thread=${encodeURIComponent(m.thread)}">#${escapeHtml(m.exhibit)} →</a>
+            <div class="mm-viral-top">
+              <span class="mm-viral-title">${escapeBidi(title)}</span>
+              <a class="mm-viral-link" href="${escapeHtml(srcHref)}"${srcAttrs}>#${escapeHtml(m.exhibit)} →</a>
+            </div>
+            ${note ? `<p class="mm-viral-note">${escapeBidi(note)}</p>` : ""}
           </div>
         </article>`;
       })
       .join("");
   }
 
-  function updateLightbox() {
+  function triggerDrawPop() {
+    const wrap = document.getElementById("lbImgWrap");
+    if (!wrap) return;
+    wrap.classList.remove("is-drawing");
+    void wrap.offsetWidth;
+    wrap.classList.add("is-drawing");
+  }
+
+  function updateLightbox(animate = false) {
     const lb = document.getElementById("receiptLightbox");
     if (!lb || lbIndex < 0 || lbIndex >= lbItems.length) return;
     const img = document.getElementById("lbImg");
+    const counter = document.getElementById("lbCounter");
     const xLink = document.getElementById("lbXLink");
     const mailLink = document.getElementById("lbMailLink");
     const rawLink = document.getElementById("lbRawLink");
+    const drawAgainBtn = document.getElementById("lbDrawAgainBtn");
+    const copyBtn = document.getElementById("lbCopyPngBtn");
 
+    if (counter) counter.textContent = `${lbIndex + 1} / ${lbItems.length}`;
+    if (copyBtn) copyBtn.textContent = t("home.mmCopyPng", "Copy PNG");
+
+    const noteEl = document.getElementById("lbNote");
     if (lbMode === "memes") {
       const m = lbItems[lbIndex];
-      const title = isZh() ? m.titleZh : m.titleEn;
-      document.getElementById("lbTitle").textContent = title;
+      const { title, note } = I18N.pickMemeText(m, lang, memesOverlay);
+      document.getElementById("lbTitle").innerHTML = escapeBidi(title);
+      if (noteEl) noteEl.innerHTML = escapeBidi(note || "");
+      img.src = BLANK_IMG;
       img.src = m.url;
       img.alt = title;
       xLink.href = `./memes/#${encodeURIComponent(m.id)}`;
       xLink.removeAttribute("target");
       xLink.textContent = t("home.mmOpenArsenal", "Open in /memes/ ↗");
-      mailLink.href = `./mail/?thread=${encodeURIComponent(m.thread)}`;
-      mailLink.textContent = t("common.openMail", "Tmail →");
+      if (m.sourceUrl) {
+        mailLink.href = m.sourceUrl;
+        mailLink.setAttribute("target", "_blank");
+        mailLink.setAttribute("rel", "noopener noreferrer");
+        mailLink.textContent = t("common.openX", "Original post ↗");
+      } else {
+        mailLink.href = `./mail/?thread=${encodeURIComponent(m.thread)}`;
+        mailLink.removeAttribute("target");
+        mailLink.removeAttribute("rel");
+        mailLink.textContent = t("common.openMail", "Tmail →");
+      }
       rawLink.href = m.url;
-      rawLink.textContent = t("common.rawImage", "Raw ↗");
+      rawLink.textContent = t("common.rawImage", "Full image ↗");
+      if (drawAgainBtn) drawAgainBtn.hidden = !lbIsSins;
+      if (animate) triggerDrawPop();
       return;
     }
 
     const r = lbItems[lbIndex];
     const title = t(`home.xrTitles.${r.id}`, r.id);
-    document.getElementById("lbTitle").textContent = title;
+    document.getElementById("lbTitle").innerHTML = escapeBidi(title);
+    if (noteEl) noteEl.textContent = "";
+    img.src = BLANK_IMG;
     img.src = r.src;
     img.alt = title;
     xLink.href = r.url;
     xLink.setAttribute("target", "_blank");
-    xLink.textContent = t("common.openX", "X ↗");
+    xLink.textContent = t("common.openX", "Original post ↗");
     mailLink.href = `./mail/?thread=${encodeURIComponent(r.thread)}`;
     mailLink.textContent = t("common.openMail", "Tmail →");
     rawLink.href = r.src;
-    rawLink.textContent = t("common.rawImage", "Raw ↗");
+    rawLink.textContent = t("common.rawImage", "Full image ↗");
+    if (drawAgainBtn) drawAgainBtn.hidden = true;
   }
 
-  function openLightbox(idx, mode = "receipts", list = null) {
+  function openLightbox(idx, mode = "receipts", list = null, isSins = false, animate = false) {
     const lb = document.getElementById("receiptLightbox");
     lbMode = mode;
+    lbIsSins = isSins;
     lbItems = list || visibleReceipts;
     if (!lb || idx < 0 || idx >= lbItems.length) return;
+    if (lb.hidden) lbPrevFocus = document.activeElement;
     lbIndex = idx;
-    updateLightbox();
+    updateLightbox(animate);
     lb.hidden = false;
     document.body.style.overflow = "hidden";
+    const closeBtn = lb.querySelector(".xr-lb-close");
+    if (closeBtn) closeBtn.focus();
   }
 
   function closeLightbox() {
@@ -165,43 +350,99 @@
     lb.hidden = true;
     lbIndex = -1;
     document.body.style.overflow = "";
+    if (lbPrevFocus && typeof lbPrevFocus.focus === "function") lbPrevFocus.focus();
+    lbPrevFocus = null;
   }
 
-  async function applyLanguage(nextCode) {
-    lang = I18N.normalizeLang(nextCode) || "en";
-    I18N.applyDirection(lang);
-    bundle = await I18N.loadBundle(lang, "./data/");
-    if (!bundle) return;
+  function stepLightbox(delta) {
+    if (lbIndex < 0 || !lbItems.length) return;
+    lbIndex = (lbIndex + delta + lbItems.length) % lbItems.length;
+    updateLightbox(false);
+  }
 
-    const pt = t("home.pageTitle");
-    if (pt) document.title = pt;
+  function setMetaAttr(selector, val) {
+    const el = document.querySelector(selector);
+    if (el && val) el.setAttribute("content", val);
+  }
+
+  async function applyLanguage(nextCode, deferMemes = false) {
+    const target = I18N.normalizeLang(nextCode) || "en";
+    lang = target;
+    I18N.applyDirection(lang);
+    const [nextBundle, nextOverlay] = await Promise.all([
+      I18N.loadBundle(lang, "./data/"),
+      I18N.loadMemesOverlay(lang, "./data/")
+    ]);
+    if (lang !== target || !nextBundle) return;
+    bundle = nextBundle;
+    memesOverlay = nextOverlay;
+
+    if (lang === "en") {
+      document.title = INITIAL_SEO.title;
+      setMetaAttr('meta[name="description"]', INITIAL_SEO.desc);
+      setMetaAttr('meta[property="og:title"]', INITIAL_SEO.ogTitle);
+      setMetaAttr('meta[property="og:description"]', INITIAL_SEO.ogDesc);
+    } else {
+      const pt = t("home.pageTitle");
+      const pd = t("home.heroSub");
+      if (pt) {
+        document.title = pt;
+        setMetaAttr('meta[property="og:title"]', pt);
+      }
+      if (pd) {
+        setMetaAttr('meta[name="description"]', pd);
+        setMetaAttr('meta[property="og:description"]', pd);
+      }
+    }
 
     document.querySelectorAll("[data-i18n]").forEach((el) => {
       const v = t(el.getAttribute("data-i18n"));
-      if (v) el.textContent = v;
+      if (!v) return;
+      if (el.tagName !== "OPTION" && /@[A-Za-z0-9_]+/.test(v)) {
+        el.innerHTML = escapeBidi(v);
+      } else {
+        el.textContent = v;
+      }
     });
     document.querySelectorAll("[data-i18n-html]").forEach((el) => {
       const v = t(el.getAttribute("data-i18n-html"));
-      if (v) el.innerHTML = v;
+      if (v) el.innerHTML = I18N.isolateHandlesHtml(v);
+    });
+    document.querySelectorAll("[data-i18n-tip]").forEach((el) => {
+      const v = t(el.getAttribute("data-i18n-tip"));
+      if (v) el.setAttribute("data-tip", v);
     });
 
+    renderPreviewPane();
     renderXReceipts();
-    renderMemeShowcase();
-    if (lbIndex >= 0) updateLightbox();
+    if (!deferMemes) {
+      renderMemeShowcase();
+      if (lbIndex >= 0) updateLightbox(false);
+    }
   }
 
   async function init() {
     I18N.mountLangSelect(document.getElementById("langSelect"), lang, applyLanguage);
-    await applyLanguage(lang);
-    try {
-      const res = await fetch("./data/memes.json");
-      if (res.ok) {
+    const [, res] = await Promise.all([
+      applyLanguage(lang, true),
+      fetch("./data/memes.json?v=7").catch(() => null)
+    ]);
+    if (res && res.ok) {
+      try {
         const data = await res.json();
+        memeCatalogMeta = data;
         memeCatalog = Array.isArray(data.items) ? data.items : [];
-        renderMemeShowcase();
-      }
-    } catch (_) {}
+      } catch (_) {}
+    }
+    renderMemeShowcase();
   }
+
+  document.querySelectorAll("[data-preview-idx]").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      activePreviewIdx = Number(btn.getAttribute("data-preview-idx")) || 0;
+      renderPreviewPane();
+    });
+  });
 
   document.querySelectorAll("[data-xr-filter]").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -213,13 +454,13 @@
 
   document.getElementById("xReceiptsGrid").addEventListener("click", (e) => {
     const btn = e.target.closest("[data-lb-idx]");
-    if (btn) openLightbox(Number(btn.getAttribute("data-lb-idx")), "receipts", visibleReceipts);
+    if (btn) openLightbox(Number(btn.getAttribute("data-lb-idx")), "receipts", visibleReceipts, false, false);
   });
 
   document.getElementById("homeSinsRail").addEventListener("click", (e) => {
     const btn = e.target.closest("[data-sin-idx]");
     if (!btn) return;
-    openLightbox(Number(btn.getAttribute("data-sin-idx")), "memes", memeCatalog.filter((m) => m.series === "sins"));
+    openLightbox(Number(btn.getAttribute("data-sin-idx")), "memes", memeCatalog.filter((m) => m.series === "sins"), true, false);
   });
 
   document.getElementById("homeViralGrid").addEventListener("click", (e) => {
@@ -228,32 +469,65 @@
     openLightbox(
       Number(btn.getAttribute("data-viral-idx")),
       "memes",
-      memeCatalog.filter((m) => m.series === "blended" && m.featured).slice(0, 6)
+      memeCatalog.filter((m) => m.series === "blended" && m.featured).slice(0, 6),
+      false,
+      false
     );
   });
 
   document.getElementById("homeDrawSinBtn").addEventListener("click", () => {
     const sins = memeCatalog.filter((m) => m.series === "sins");
     if (!sins.length) { window.location.href = "./memes/?series=sins"; return; }
-    openLightbox(Math.floor(Math.random() * sins.length), "memes", sins);
+    openLightbox(Math.floor(Math.random() * sins.length), "memes", sins, true, true);
+  });
+
+  document.getElementById("lbDrawAgainBtn").addEventListener("click", () => {
+    if (!lbItems.length) return;
+    let next = Math.floor(Math.random() * lbItems.length);
+    if (lbItems.length > 1 && next === lbIndex) next = (next + 1) % lbItems.length;
+    lbIndex = next;
+    updateLightbox(true);
+  });
+
+  document.getElementById("lbCopyPngBtn").addEventListener("click", () => {
+    if (lbIndex < 0 || !lbItems.length) return;
+    const cur = lbItems[lbIndex];
+    const url = lbMode === "memes" ? cur.url : cur.src;
+    if (url) copyImageAsPng(url);
   });
 
   document.querySelectorAll("[data-lb-close]").forEach((el) => el.addEventListener("click", closeLightbox));
-  document.getElementById("lbPrev").addEventListener("click", () => {
-    if (lbIndex < 0 || !lbItems.length) return;
-    lbIndex = (lbIndex - 1 + lbItems.length) % lbItems.length;
-    updateLightbox();
-  });
-  document.getElementById("lbNext").addEventListener("click", () => {
-    if (lbIndex < 0 || !lbItems.length) return;
-    lbIndex = (lbIndex + 1) % lbItems.length;
-    updateLightbox();
-  });
+  document.getElementById("lbPrev").addEventListener("click", () => stepLightbox(-1));
+  document.getElementById("lbNext").addEventListener("click", () => stepLightbox(1));
+  document.getElementById("lbPrevMobile").addEventListener("click", () => stepLightbox(-1));
+  document.getElementById("lbNextMobile").addEventListener("click", () => stepLightbox(1));
+
+  // Touch swipe left/right inside lightbox
+  let touchStartX = 0;
+  let touchStartY = 0;
+  const lbStage = document.getElementById("lbStage");
+  if (lbStage) {
+    lbStage.addEventListener("touchstart", (e) => {
+      if (e.touches.length !== 1) return;
+      touchStartX = e.touches[0].clientX;
+      touchStartY = e.touches[0].clientY;
+    }, { passive: true });
+    lbStage.addEventListener("touchend", (e) => {
+      if (!e.changedTouches.length) return;
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      const dy = e.changedTouches[0].clientY - touchStartY;
+      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.4) {
+        stepLightbox(dx < 0 ? 1 : -1);
+      }
+    }, { passive: true });
+  }
+
   document.addEventListener("keydown", (e) => {
     if (lbIndex < 0 || !lbItems.length) return;
     if (e.key === "Escape") closeLightbox();
-    else if (e.key === "ArrowLeft") { lbIndex = (lbIndex - 1 + lbItems.length) % lbItems.length; updateLightbox(); }
-    else if (e.key === "ArrowRight") { lbIndex = (lbIndex + 1) % lbItems.length; updateLightbox(); }
+    else if (e.key === "ArrowLeft") stepLightbox(-1);
+    else if (e.key === "ArrowRight") stepLightbox(1);
+    else if (e.key === "Tab") I18N.trapFocus(document.querySelector("#receiptLightbox .xr-lb-dialog"), e);
   });
 
   init();

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>0 security advisories &amp; 5 active auth/RCE flaws at ca81b7b9 · Tmail</title>
+  <meta name="description" content="Even after quietly fixing path traversal in PR #39483, HEAD still ships plaintext --lan cookies, unrevocable Bearer tokens, and repo hook RCE." />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#f6f8fc" />
+
+  <link rel="canonical" href="https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/" />
+  <link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/zh/" />
+  <link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Temu3 Code" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/" />
+  <meta property="og:title" content="0 security advisories &amp; 5 active auth/RCE flaws at ca81b7b9" />
+  <meta property="og:description" content="Even after quietly fixing path traversal in PR #39483, HEAD still ships plaintext --lan cookies, unrevocable Bearer tokens, and repo hook RCE." />
+  <meta property="og:image" content="https://temu3code.com/evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png" />
+  <meta property="og:image:width" content="1512" />
+  <meta property="og:image:height" content="810" />
+  <meta property="article:published_time" content="2026-11-25" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="0 security advisories &amp; 5 active auth/RCE flaws at ca81b7b9" />
+  <meta name="twitter:description" content="Even after quietly fixing path traversal in PR #39483, HEAD still ships plaintext --lan cookies, unrevocable Bearer tokens, and repo hook RCE." />
+  <meta name="twitter:image" content="https://temu3code.com/evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png" />
+  <meta name="twitter:image:alt" content="0 security advisories &amp; 5 active auth/RCE flaws at ca81b7b9" />
+
+  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg" />
+  <link rel="apple-touch-icon" href="../../../apple-touch-icon.png" />
+  <link rel="stylesheet" href="../thread.css?v=3" />
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "0 security advisories & 5 active auth/RCE flaws at ca81b7b9", "description": "Even after quietly fixing path traversal in PR #39483, HEAD still ships plaintext --lan cookies, unrevocable Bearer tokens, and repo hook RCE.", "datePublished": "2026-11-25", "dateModified": "2026-11-25", "inLanguage": "en", "image": ["https://temu3code.com/evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png", "https://temu3code.com/evidence/extra/ca81b7b9-a5-30d-bearer-and-no-self-revoke.png", "https://temu3code.com/evidence/extra/ca81b7b9-a6-submodule-recursive.png", "https://temu3code.com/evidence/extra/t3code-13-pr-39483-secret-traversal.png"], "mainEntityOfPage": "https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/", "license": "https://creativecommons.org/publicdomain/zero/1.0/", "author": {"@type": "Organization", "name": "Temu3 Code Public Archive", "url": "https://temu3code.com/"}, "publisher": {"@type": "Organization", "name": "Temu3 Code", "url": "https://temu3code.com/", "logo": {"@type": "ImageObject", "url": "https://temu3code.com/apple-touch-icon.png"}}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://temu3code.com/"}, {"@type": "ListItem", "position": 2, "name": "Tmail", "item": "https://temu3code.com/mail/"}, {"@type": "ListItem", "position": 3, "name": "0 security advisories & 5 active auth/RCE flaws at ca81b7b9", "item": "https://temu3code.com/mail/t/2026-11-25-ca81b7b9-active-vulns/"}]}</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand-link" href="../../">
+        <svg class="brand-mark" viewBox="0 0 36 28" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="32" height="24" rx="4" fill="#FFFFFF" />
+          <path d="M2 8.2V22.5C2 24.43 3.57 26 5.5 26H9V13.4L2 8.2Z" fill="#4285F4" />
+          <path d="M34 8.2V22.5C34 24.43 32.43 26 30.5 26H27V13.4L34 8.2Z" fill="#34A853" />
+          <path d="M27 13.4V26H27L34 8.2C34 5.9 31.3 4.6 29.5 6L27 7.9V13.4Z" fill="#FBBC04" />
+          <path d="M9 13.4V7.9L18 14.6L27 7.9V13.4L18 20.1L9 13.4Z" fill="#EA4335" />
+          <path d="M2 8.2C2 5.9 4.7 4.6 6.5 6L9 7.9V13.4L2 8.2Z" fill="#C5221F" />
+        </svg>
+        <span>Tmail</span>
+      </a>
+      <div class="topbar-actions">
+        <a class="lang-switch" href="zh/" hreflang="zh-CN">中文版</a>
+        <a class="cta-primary" href="../../?thread=2026-11-25-ca81b7b9-active-vulns">Open in Interactive Tmail →</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../../">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="../../">Tmail</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span>0 security advisories &amp; 5 active auth/RCE flaws at ca81b7b9</span>
+    </nav>
+
+    <article class="thread-shell">
+      <header class="thread-header">
+        <h1 class="thread-title">0 security advisories &amp; 5 active auth/RCE flaws at ca81b7b9</h1>
+        <div class="chip-row">
+          <span class="chip">Code</span>
+          <span class="chip chip-open">Unfixed</span>
+          <a class="chip chip-exhibit" href="https://github.com/realchendahuang/temu3code/blob/main/cases/en/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md" target="_blank" rel="noopener noreferrer">Exhibit #19</a>
+          <span class="chip">Security &amp; Bans</span>
+        </div>
+        <p class="thread-summary">Even after quietly fixing path traversal in PR #39483, HEAD still ships plaintext --lan cookies, unrevocable Bearer tokens, and repo hook RCE.</p>
+        <div class="thread-meta-grid">
+          <span><strong>From: </strong>Security Audit (ca81b7b9)</span>
+          <span><strong>To: </strong>All T3 Code Installations (0 Security Advisories)</span>
+          <span><strong>Date: </strong><time datetime="2026-11-25">Nov 25, 2026</time></span>
+        </div>
+      </header>
+
+      <section class="msg-stack" aria-label="Thread messages">
+        <article class="msg-card">
+  <div class="msg-avatar" style="background:#C5221F" aria-hidden="true">S</div>
+  <div class="msg-main">
+    <div class="msg-head">
+      <div>
+        <div><span class="msg-sender">Independent Security Audit (ca81b7b9)</span><span class="msg-handle">&lt;+259 commits checked · Nov 25 14:49 CST&gt;</span></div>
+        <div class="msg-to">To: Developers &amp; Security Teams</div>
+      </div>
+      <div class="msg-time">Nov 25, 2026, 14:49 CST</div>
+    </div>
+    <div class="msg-body">
+<p class="msg-p">Even after quietly patching high-severity bugs like <code>ServerSecretStore</code> path traversal (PR #39483), T3 Code still has 0 published GitHub Security Advisories.</p>
+<p class="msg-p">Line-by-line inspection of <code>main</code> HEAD (<code>ca81b7b9</code>) verified 5 active vulnerabilities:</p>
+<ol class="msg-list"><li>**Plaintext <code>--lan</code> cookies:** 30-day shell cookies omit the <code>Secure</code> flag and allow missing-<code>Origin</code> bypass (<code>http.ts:215-241</code>, <code>EnvironmentAuth.ts:798-819</code>).</li><li><strong>Unrevocable Bearer tokens:</strong> 30-day non-DPoP Bearer tokens cannot be self-revoked (<code>EnvironmentAuth.ts:1506-1521</code>).</li><li>**Replayable <code>?wsTicket=</code> URLs:** Query-string tickets carry a 5-minute replay window (<code>EnvironmentAuth.ts:1553-1585</code>).</li><li><strong>IPv6 tunnel cutoff:</strong> <code>NodeNet.isIPv4</code> kills <code>::1</code> loopback tunnels (<code>startupAccess.ts:71-110</code>).</li><li><strong>Untrusted repo execution:</strong> Worktrees auto-run recursive submodules and hooks with inherited host <code>SSH_AUTH_SOCK</code> and <code>GITHUB_TOKEN</code> (<code>GitVcsDriverCore.ts:6144-6205</code>).</li></ol>
+    </div>
+    <div class="msg-attachments"><figure class="att-fig"><a href="../../../evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png" target="_blank" rel="noopener noreferrer"><img src="../../../evidence/extra/ca81b7b9-a1-lan-cookie-no-secure.png" alt="Plaintext --lan cookie without Secure flag" width="1512" height="810" loading="lazy" decoding="async" /></a><figcaption>Plaintext --lan cookie without Secure flag</figcaption></figure><figure class="att-fig"><a href="../../../evidence/extra/ca81b7b9-a5-30d-bearer-and-no-self-revoke.png" target="_blank" rel="noopener noreferrer"><img src="../../../evidence/extra/ca81b7b9-a5-30d-bearer-and-no-self-revoke.png" alt="30-day Bearer token self-revocation blocked" width="1280" height="820" loading="lazy" decoding="async" /></a><figcaption>30-day Bearer token self-revocation blocked</figcaption></figure><figure class="att-fig"><a href="../../../evidence/extra/ca81b7b9-a6-submodule-recursive.png" target="_blank" rel="noopener noreferrer"><img src="../../../evidence/extra/ca81b7b9-a6-submodule-recursive.png" alt="Untrusted repo inheriting SSH_AUTH_SOCK &amp; GITHUB_TOKEN" width="1512" height="810" loading="lazy" decoding="async" /></a><figcaption>Untrusted repo inheriting SSH_AUTH_SOCK &amp; GITHUB_TOKEN</figcaption></figure><figure class="att-fig"><a href="../../../evidence/extra/t3code-13-pr-39483-secret-traversal.png" target="_blank" rel="noopener noreferrer"><img src="../../../evidence/extra/t3code-13-pr-39483-secret-traversal.png" alt="PR #39483 silent path traversal fix (0 advisories)" width="1512" height="810" loading="lazy" decoding="async" /></a><figcaption>PR #39483 silent path traversal fix (0 advisories)</figcaption></figure></div>
+    <div class="msg-links"><a class="source-pill" href="https://github.com/realchendahuang/temu3code/blob/main/cases/en/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md" target="_blank" rel="noopener noreferrer">↗ Exhibit #19 Full Audit</a><a class="source-pill" href="https://github.com/realchendahuang/temu3code/blob/main/cases/en/13-zero-security-advisories-and-silent-patches.md" target="_blank" rel="noopener noreferrer">↗ Exhibit #13 (0 Security Advisories)</a></div>
+  </div>
+</article>
+      </section>
+
+      <div class="thread-footer-cta">
+        <div class="cta-group">
+          <a class="cta-primary" href="../../?thread=2026-11-25-ca81b7b9-active-vulns">Open in Interactive Tmail →</a>
+          <a class="btn-outline" href="https://github.com/realchendahuang/temu3code/blob/main/cases/en/19-ca81b7b9-lan-cookie-bearer-ws-and-repo-rce.md" target="_blank" rel="noopener noreferrer">Full Exhibit Dossier #19 ↗</a>
+        </div>
+        <a class="btn-outline" href="../../">← Back to Tmail Inbox</a>
+      </div>
+    </article>
+
+    <nav class="prev-next-nav" aria-label="Adjacent threads">
+      <a class="pn-card" href="../2026-11-25-gdpr-overnight-collapse/"><span class="pn-label">← Previous</span><span class="pn-title">[DELETED] 4 AM closed-source threat &amp; 90m PR contradictions</span></a>
+      <a class="pn-card is-next" href="../2026-11-25-25-tool-telemetry-audit/"><span class="pn-label">Next →</span><span class="pn-title">25-tool OSS telemetry audit: T3 Code moved F to D vs. A-tier peers</span></a>
+    </nav>
+
+    <footer class="archive-footer">CC0 1.0 Public Domain · Zero Telemetry · Static archive mirror of Temu3 Code public records</footer>
+  </main>
+</body>
+</html>

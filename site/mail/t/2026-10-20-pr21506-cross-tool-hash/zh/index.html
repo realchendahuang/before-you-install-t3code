@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>PR #21506 偷读 ~/.codex 和 ~/.claude.json，把多台机器串成一个人 · Tmail</title>
+  <meta name="description" content="由 t3dotgg 提交：Identify.ts 把 OpenAI JWT 的 user_id 和 Claude 的 accountUuid 做成无盐 SHA-256 哈希，塞进 install.owner_observed。" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#f6f8fc" />
+
+  <link rel="canonical" href="https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/zh/" />
+  <link rel="alternate" hreflang="en" href="https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/" />
+  <link rel="alternate" hreflang="zh-CN" href="https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/zh/" />
+  <link rel="alternate" hreflang="x-default" href="https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Temu3 Code" />
+  <meta property="og:locale" content="zh_CN" />
+  <meta property="og:url" content="https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/zh/" />
+  <meta property="og:title" content="PR #21506 偷读 ~/.codex 和 ~/.claude.json，把多台机器串成一个人" />
+  <meta property="og:description" content="由 t3dotgg 提交：Identify.ts 把 OpenAI JWT 的 user_id 和 Claude 的 accountUuid 做成无盐 SHA-256 哈希，塞进 install.owner_observed。" />
+  <meta property="og:image" content="https://temu3code.com/evidence/extra/t3code-5-pr-21506-theo-owner-tracking.png" />
+  <meta property="og:image:width" content="960" />
+  <meta property="og:image:height" content="820" />
+  <meta property="article:published_time" content="2026-10-20" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="PR #21506 偷读 ~/.codex 和 ~/.claude.json，把多台机器串成一个人" />
+  <meta name="twitter:description" content="由 t3dotgg 提交：Identify.ts 把 OpenAI JWT 的 user_id 和 Claude 的 accountUuid 做成无盐 SHA-256 哈希，塞进 install.owner_observed。" />
+  <meta name="twitter:image" content="https://temu3code.com/evidence/extra/t3code-5-pr-21506-theo-owner-tracking.png" />
+  <meta name="twitter:image:alt" content="PR #21506 偷读 ~/.codex 和 ~/.claude.json，把多台机器串成一个人" />
+
+  <link rel="icon" type="image/svg+xml" href="../../../../favicon.svg" />
+  <link rel="apple-touch-icon" href="../../../../apple-touch-icon.png" />
+  <link rel="stylesheet" href="../../thread.css?v=3" />
+
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsArticle", "headline": "PR #21506 偷读 ~/.codex 和 ~/.claude.json，把多台机器串成一个人", "description": "由 t3dotgg 提交：Identify.ts 把 OpenAI JWT 的 user_id 和 Claude 的 accountUuid 做成无盐 SHA-256 哈希，塞进 install.owner_observed。", "datePublished": "2026-10-20", "dateModified": "2026-10-20", "inLanguage": "zh-CN", "image": ["https://temu3code.com/evidence/extra/t3code-5-pr-21506-theo-owner-tracking.png", "https://temu3code.com/evidence/03-identify-codex-claude.png"], "mainEntityOfPage": "https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/zh/", "license": "https://creativecommons.org/publicdomain/zero/1.0/", "author": {"@type": "Organization", "name": "Temu3 Code Public Archive", "url": "https://temu3code.com/"}, "publisher": {"@type": "Organization", "name": "Temu3 Code", "url": "https://temu3code.com/", "logo": {"@type": "ImageObject", "url": "https://temu3code.com/apple-touch-icon.png"}}}</script>
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "首页", "item": "https://temu3code.com/"}, {"@type": "ListItem", "position": 2, "name": "Tmail", "item": "https://temu3code.com/mail/"}, {"@type": "ListItem", "position": 3, "name": "PR #21506 偷读 ~/.codex 和 ~/.claude.json，把多台机器串成一个人", "item": "https://temu3code.com/mail/t/2026-10-20-pr21506-cross-tool-hash/zh/"}]}</script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand-link" href="../../../?lang=zh-CN">
+        <svg class="brand-mark" viewBox="0 0 36 28" fill="none" aria-hidden="true">
+          <rect x="2" y="2" width="32" height="24" rx="4" fill="#FFFFFF" />
+          <path d="M2 8.2V22.5C2 24.43 3.57 26 5.5 26H9V13.4L2 8.2Z" fill="#4285F4" />
+          <path d="M34 8.2V22.5C34 24.43 32.43 26 30.5 26H27V13.4L34 8.2Z" fill="#34A853" />
+          <path d="M27 13.4V26H27L34 8.2C34 5.9 31.3 4.6 29.5 6L27 7.9V13.4Z" fill="#FBBC04" />
+          <path d="M9 13.4V7.9L18 14.6L27 7.9V13.4L18 20.1L9 13.4Z" fill="#EA4335" />
+          <path d="M2 8.2C2 5.9 4.7 4.6 6.5 6L9 7.9V13.4L2 8.2Z" fill="#C5221F" />
+        </svg>
+        <span>Tmail</span>
+      </a>
+      <div class="topbar-actions">
+        <a class="lang-switch" href="../" hreflang="en">English</a>
+        <a class="cta-primary" href="../../../?lang=zh-CN&amp;thread=2026-10-20-pr21506-cross-tool-hash">在交互式 Tmail 中打开 →</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../../../../?lang=zh-CN">首页</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <a href="../../../?lang=zh-CN">Tmail</a>
+      <span class="breadcrumb-sep" aria-hidden="true">/</span>
+      <span>PR #21506 偷读 ~/.codex 和 ~/.claude.json，把多台机器串成一个人</span>
+    </nav>
+
+    <article class="thread-shell">
+      <header class="thread-header">
+        <h1 class="thread-title">PR #21506 偷读 ~/.codex 和 ~/.claude.json，把多台机器串成一个人</h1>
+        <div class="chip-row">
+          <span class="chip">Code</span>
+          <span class="chip">部分修补</span>
+          <a class="chip chip-exhibit" href="https://github.com/realchendahuang/temu3code/blob/main/cases/zh-CN/01-default-telemetry-and-cross-tool-tracking.md" target="_blank" rel="noopener noreferrer">证据 #01</a>
+          <span class="chip">遥测与隐私</span><span class="chip">漏洞与封号</span>
+        </div>
+        <p class="thread-summary">由 t3dotgg 提交：Identify.ts 把 OpenAI JWT 的 user_id 和 Claude 的 accountUuid 做成无盐 SHA-256 哈希，塞进 install.owner_observed。</p>
+        <div class="thread-meta-grid">
+          <span><strong>发件方：</strong>@theo → `~/.codex` 与 `~/.claude`</span>
+          <span><strong>对象：</strong>用户家目录里的凭证</span>
+          <span><strong>日期：</strong><time datetime="2026-10-20">2026 年 10 月 20 日</time></span>
+        </div>
+      </header>
+
+      <section class="msg-stack" aria-label="消息记录">
+        <article class="msg-card">
+  <div class="msg-avatar" style="background:#D93025" aria-hidden="true">T</div>
+  <div class="msg-main">
+    <div class="msg-head">
+      <div>
+        <div><span class="msg-sender">Theo Browne（@t3dotgg）</span><span class="msg-handle">&lt;GitHub · PR #21506&gt;</span></div>
+        <div class="msg-to">发送至：apps/server/src/telemetry/Identify.ts</div>
+      </div>
+      <div class="msg-time">2026 年 10 月 19–20 日</div>
+    </div>
+    <div class="msg-body">
+<p class="msg-p">Theo（@t3dotgg）合并了 PR #21506：<code>feat(server): analytics records a stable install id and who owns each install</code>。</p>
+<p class="msg-p"><code>Identify.ts</code> 读了 <code>~/.codex/auth.json</code>（解出 OpenAI JWT 的 <code>user_id</code> 声明）和 <code>~/.claude.json</code>（<code>oauthAccount.accountUuid</code>），再配上 T3 Connect 的用户 ID。接着它算出无盐 SHA-256 摘要（<code>telemetryId.ts</code>），存成 <code>install.owner_observed</code>，把不同机器绑到同一个人身上。</p>
+<p class="msg-p">T3 存的是明文 Clerk ID，所以无盐摘要能确定性地反推回原文。这些读取外部 CLI 文件的代码在仓库里躺了一个月，直到 Part 1 播放量破 226 万，PR #42299 才把它们删掉。</p>
+    </div>
+    <div class="msg-attachments"><figure class="att-fig"><a href="../../../../evidence/extra/t3code-5-pr-21506-theo-owner-tracking.png" target="_blank" rel="noopener noreferrer"><img src="../../../../evidence/extra/t3code-5-pr-21506-theo-owner-tracking.png" alt="PR #21506（作者 t3dotgg）" width="960" height="820" loading="lazy" decoding="async" /></a><figcaption>PR #21506（作者 t3dotgg）</figcaption></figure><figure class="att-fig"><a href="../../../../evidence/03-identify-codex-claude.png" target="_blank" rel="noopener noreferrer"><img src="../../../../evidence/03-identify-codex-claude.png" alt="Identify.ts 读取 ~/.codex/auth.json 与 ~/.claude.json" width="1000" height="980" loading="lazy" decoding="async" /></a><figcaption>Identify.ts 读取 ~/.codex/auth.json 与 ~/.claude.json</figcaption></figure></div>
+    <div class="msg-links"><a class="source-pill" href="https://github.com/pingdotgg/t3code/pull/21506" target="_blank" rel="noopener noreferrer">↗ PR #21506</a><a class="source-pill" href="https://github.com/pingdotgg/t3code/pull/42299" target="_blank" rel="noopener noreferrer">↗ 审计后移除 PR #42299</a></div>
+  </div>
+</article>
+      </section>
+
+      <div class="thread-footer-cta">
+        <div class="cta-group">
+          <a class="cta-primary" href="../../../?lang=zh-CN&amp;thread=2026-10-20-pr21506-cross-tool-hash">在交互式 Tmail 中打开 →</a>
+          <a class="btn-outline" href="https://github.com/realchendahuang/temu3code/blob/main/cases/zh-CN/01-default-telemetry-and-cross-tool-tracking.md" target="_blank" rel="noopener noreferrer">查看完整卷宗 #01 ↗</a>
+        </div>
+        <a class="btn-outline" href="../../../?lang=zh-CN">← 返回 Tmail 收件箱</a>
+      </div>
+    </article>
+
+    <nav class="prev-next-nav" aria-label="相邻记录">
+      <a class="pn-card" href="../../2026-10-18-benchmark-funding-sponsor-pressure/zh/"><span class="pn-label">← 上一条</span><span class="pn-title">私联榜单作者，主动提出出资赞助基准测试</span></a>
+      <a class="pn-card is-next" href="../../2026-10-28-fake-delete-process-spy/zh/"><span class="pn-label">下一条 →</span><span class="pn-title">41.6 GB 的假 SQLite 删除 + 每 5 秒扫一遍全机命令行</span></a>
+    </nav>
+
+    <footer class="archive-footer">CC0 1.0 公共领域 · 零遥测 · 静态归档镜像，同步自 Temu3 Code 公开记录</footer>
+  </main>
+</body>
+</html>

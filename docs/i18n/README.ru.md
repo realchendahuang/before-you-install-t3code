@@ -1,19 +1,19 @@
-# Temu3 Code — прежде чем ставить T3 Code
+# Temu3 Code · Прежде чем ставить T3 Code
 
 <p align="center">
-  <em>Независимый публичный реестр pingdotgg/t3code, основанный на доказательствах: расовые двойные стандарты, вводящая в заблуждение телеметрия, критические уязвимости и коммерческие манипуляции.</em>
+  <em>20 кейсов, 109 скриншотов и 3,5 года публичных постов и кода из pingdotgg/t3code. Без трекинга.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=ru"><strong>🌐 temu3code.com</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=ru"><strong>✉ Ящик Tmail</strong></a> ·
-  <a href="https://temu3code.com/?lang=ru#x-receipts"><strong>📸 12 оригинальных скриншотов X</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=ru"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=ru#x-receipts"><strong>📸 12 постов в X</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=ru"><strong>🃏 61 мем</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 чеков</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 источников</strong></a>
+  <a href="../EVIDENCE-INDEX.md"><strong>109 скриншотов</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 ссылок</strong></a>
 </p>
 
 <p align="center">
@@ -50,11 +50,11 @@
 
 <!-- origin-story:start -->
 > [!TIP]
-> **Почему «Temu3 Code»?**
+> **Почему "Temu3 Code"?**
 >
-> 23 ноября 2026 года — через 10 минут после того, как @theo назвал бесплатную MIT-форк китайского разработчика «Chinese knockoff», — он щедро подарил нам название бренда в X: «Temu3 Code» (84 тысячи просмотров).
+> 23 ноября 2026 года, через десять минут после того, как назвал бесплатный MIT-форк китайского разработчика "Chinese knockoff", @theo сам дал нам имя в X: "Temu3 Code" (84 тыс. просмотров).
 >
-> Бесплатный брендинг от основателя с 0 товарных знаков USPTO — слишком хорош, чтобы его упустить. Поэтому мы зарегистрировали temu3code.com, перенесли туда публичный аудит и не стали добавлять телеметрию PostHog. Спасибо за бесплатную консультацию по неймингу, Theo. (CC0 1.0 — не стесняйтесь форкать нас в ответ.) — [Посмотреть твит @theo о нейминге ↗](https://x.com/theo/status/2124825920808829077)
+> Когда основатель с нулём американских товарных знаков сам дарит тебе имя, его берут. Мы зарегистрировали temu3code.com, выложили сюда все публичные записи и не стали ставить PostHog. Спасибо за имя, Theo. Всё здесь под CC0 1.0, так что форкайте. [Пост @theo ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

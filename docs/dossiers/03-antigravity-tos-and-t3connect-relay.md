@@ -236,19 +236,35 @@ Deep source verification against `pingdotgg/t3code` HEAD `ca81b7b9` confirms fou
    - `startupAccess.ts#L39` explicitly permits `"::1"` in `isLoopbackHost`, but `isPrivateNetworkAddress` (`lines 71–74`) evaluates `NodeNet.isIPv4(ipv4)`. Pure IPv6 `::1` returns `false`, causing `closeNonPrivateNetworkConnections` to call `socket.destroy()` on valid local Tailscale Serve and T3 Connect tunnel connections.
    ![startupAccess.ts — NodeNet.isIPv4 rejects IPv6 ::1 loopback sockets via socket.destroy()](../../evidence/extra/ca81b7b9-a3-ipv6-loopback-killed.png)
 
-### 3.4 Architectural Counter-Proof: Built-In `acpRegistry` & Official `agy acp` (Zero Spoofing Required)
+---
 
-T3 Code already ships a generic `acpRegistry` provider driver ([`AcpRegistrySessions.ts`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/provider/AcpRegistrySessions.ts), [`builtInDrivers.ts`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/provider/builtInDrivers.ts)) that spawns a user-installed, Google-signed `agy acp` binary directly over standard JSON-RPC (`stdin`/`stdout`):
+## 3.5 Nov 25–26 Google Flagging Admission & `v0.1.13` Silent Removal (Exhibit #21)
 
-- **Why this refutes "necessary workaround" defenses:** Disabling the built-in Antigravity provider and routing through `acpRegistry` → official `agy acp` conducts normal coding sessions with **zero** `v1internal:retrieveUserQuotaSummary` polling, **zero** fake `SSH_CONNECTION` injection, **zero** `CredReadW` / OS keyring extraction, and **zero** `"zed"` client spoofing. The spoofing and credential-scraping code in `antigravityUsageLimits.ts` and `antigravityAuthSupport.ts` is strictly non-essential to ACP execution—it exists solely to drive T3's sidebar quota bar and multi-account/CLIProxyAPI scraping.
+Two days after closing `#40713` and `#41536`, upstream merged two PRs acknowledging Antigravity policy warnings while burying both changes inside `v0.1.13`'s `"Plus 380 more bug fixes"` rollup with `0` Security Advisories:
+
+- **[PR #43026](https://github.com/pingdotgg/t3code/pull/43026)** (`2026-11-25T19:25:43Z`, `@juliusmarminge`): Admitted *"Antigravity supports only ACP for external clients. Google told us that calling its internal APIs can get an account flagged"* (`"Either one could get users in trouble"`), deleting `antigravityUsageLimits.ts` and dropping `@napi-rs/keyring` from `apps/server`.
+- **[PR #43087](https://github.com/pingdotgg/t3code/pull/43087)** (`2026-11-26T15:42:39Z`, `@gabrielelpidio`): Removed fallback `clientInfo: { name: "zed", version: "0.0.0" }` impersonation from the Antigravity ACP handshake (`"Posing as another client breaks the same rule"`).
+- **[`v0.1.13`](https://github.com/pingdotgg/t3code/releases/tag/v0.1.13)** (`2026-11-26T19:32:24Z`, `401 changes`): Highlighted 7 minor items (GBK/GB18030 files, path copying, simulator toggles) while omitting Google's warning and both PRs from the top changelog.
+
+![PR #43026 acknowledging Google account-flagging warning](../../evidence/extra/nov27-pr43026-google-flagged.png)
+
+![PR #43087 removing Zed allowlist handshake impersonation](../../evidence/extra/nov27-pr43087-zed-spoof.png)
+
+---
+
+### 3.6 Architectural Counter-Proof: Built-In `acpRegistry` & Official `agy acp` (Zero Spoofing Required)
+
+Even prior to `PR #43026` and `PR #43087`, T3 Code already shipped a generic `acpRegistry` provider driver ([`AcpRegistrySessions.ts`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/provider/AcpRegistrySessions.ts), [`builtInDrivers.ts`](https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/provider/builtInDrivers.ts)) that spawns a user-installed, Google-signed `agy acp` binary directly over standard JSON-RPC (`stdin`/`stdout`):
+
+- **Why this refutes "necessary workaround" defenses:** Disabling the built-in Antigravity provider and routing through `acpRegistry` → official `agy acp` conducts normal coding sessions with **zero** `v1internal:retrieveUserQuotaSummary` polling, **zero** fake `SSH_CONNECTION` injection, **zero** `CredReadW` / OS keyring extraction, and **zero** `"zed"` client spoofing. The spoofing and credential-scraping code in `antigravityUsageLimits.ts` and `antigravityAuthSupport.ts` was strictly non-essential to ACP execution—it existed solely to drive T3's sidebar quota bar and multi-account/CLIProxyAPI scraping.
 - **Official CLI quota alternative:** Independent open-source Antigravity integration [`robbin/paseo-antigravity`](https://github.com/robbin/paseo-antigravity/blob/main/server/usage.ts) (`server/usage.ts`, lines 145–146) retrieves quota via the official CLI command (`agy` with `"/usage", "--output-format", "json"`) instead of forging `antigravity/hub/2.24.0` headers against `v1internal`.
-- **`/etc/hosts` warning:** Do **not** block `daily-cloudcode-pa.googleapis.com` in `/etc/hosts` to stop T3's built-in quota poller; Google's official `agy` CLI uses that endpoint for legitimate requests, so host-blocking it breaks the official CLI too. Disable T3's built-in Antigravity provider in Settings instead.
+- **`/etc/hosts` warning:** Do **not** block `daily-cloudcode-pa.googleapis.com` in `/etc/hosts` to stop older T3 builds' or unpatched forks' built-in quota poller; Google's official `agy` CLI uses that endpoint for legitimate requests, so host-blocking it breaks the official CLI too. Disable the built-in Antigravity provider in Settings instead.
 
-### 3.5 Fork & Alternative Client Migration Hazards (Inherited Spoofing, SQLite Schema Collisions & Closed-Source Trade-Offs)
+### 3.7 Fork & Alternative Client Migration Hazards (Inherited Spoofing, SQLite Schema Collisions & Closed-Source Trade-Offs)
 
 Users migrating away from official T3 Code should verify three concrete source-level risks before switching:
 
-1. **High-star T3 Forks still inherit `antigravityUsageLimits.ts`:** Both [`MiaAI-Lab/m3code`](https://github.com/MiaAI-Lab/m3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts) (which strips upstream telemetry) and [`zds-xiaoxin/stardust`](https://github.com/zds-xiaoxin/stardust/blob/main/apps/server/src/provider/antigravityUsageLimits.ts) (the renamed MIT fork) currently retain upstream's `antigravityUsageLimits.ts` `v1internal` / keyring-scraping code. Switching to a de-telemetered fork does **not** remove Antigravity ToS exposure unless the built-in Antigravity driver is disabled.
+1. **High-star T3 Forks still inherit `antigravityUsageLimits.ts`:** Even after upstream deleted `antigravityUsageLimits.ts` in `PR #43026` (`v0.1.13`), both [`MiaAI-Lab/m3code`](https://github.com/MiaAI-Lab/m3code/blob/main/apps/server/src/provider/antigravityUsageLimits.ts) (which strips upstream telemetry) and [`zds-xiaoxin/stardust`](https://github.com/zds-xiaoxin/stardust/blob/main/apps/server/src/provider/antigravityUsageLimits.ts) (the renamed MIT fork) still retain upstream's `antigravityUsageLimits.ts` `v1internal` / keyring-scraping code on `main`. Switching to a de-telemetered fork does **not** remove Antigravity ToS exposure unless the built-in Antigravity driver is disabled or the fork syncs `PR #43026`/`PR #43087`.
 2. **SQLite `statev2.sqlite` migration collisions (never share `~/.t3` across forks):**
    - Official `v0.1.11` migrations end at [`102_ThreadItemCounts.ts`](https://github.com/pingdotgg/t3code/blob/v0.1.11/apps/server/src/persistence/Migrations/102_ThreadItemCounts.ts); official `v0.1.12` advances to [`117_WorkflowMailSender.ts`](https://github.com/pingdotgg/t3code/blob/v0.1.12/apps/server/src/persistence/Migrations/117_WorkflowMailSender.ts).
    - `zds-xiaoxin/stardust` advances to [`105_TaskFolders.ts`](https://github.com/zds-xiaoxin/stardust/blob/main/apps/server/src/persistence/Migrations/105_TaskFolders.ts) (one-way upgrade relative to `v0.1.11`; downgrading back to `v0.1.11` fails on schema version mismatch).
@@ -309,6 +325,8 @@ Users migrating away from official T3 Code should verify three concrete source-l
   - https://github.com/pingdotgg/t3code/discussions/21286, https://github.com/pingdotgg/t3code/discussions/37831
   - https://github.com/pingdotgg/t3code/pull/32945 (Open — `$25k/mo` Cloudflare bill, OVH Hillsboro `gw.t3coderelay.com` Caddy + Go Unix-socket gateway)
   - https://x.com/theo/status/2125370330244128924 (Nov 25 post stating E2E encryption is impossible)
+- Google Flagging Admission & Zed Impersonation Removal (Exhibit #21):
+  - https://github.com/pingdotgg/t3code/pull/43026 ; https://github.com/pingdotgg/t3code/pull/43087 ; https://github.com/pingdotgg/t3code/releases/tag/v0.1.13 ; https://x.com/realchendahuang/status/2126228292231659944
 - Built-In `acpRegistry`, Fork Migration Collisions & Open-Source Alternatives:
   - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/provider/AcpRegistrySessions.ts
   - https://github.com/pingdotgg/t3code/blob/ca81b7b9/apps/server/src/provider/builtInDrivers.ts

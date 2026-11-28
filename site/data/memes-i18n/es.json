@@ -1,0 +1,673 @@
+{
+  "lang": "es",
+  "items": {
+    "sins-sin-01-bigotry-qi": {
+      "title": "Pecado 1 · 歧 · MIT para mí, no para ti",
+      "note": "Amenaza de ban en GitHub 11 minutos después de un fork MIT gratuito. ¿Once horas más tarde, laboratorios de EE. UU. copiando MIT? Totalmente bien."
+    },
+    "sins-sin-02-deceit-qi": {
+      "title": "Pecado 2 · 欺 · El punto final no significa nada",
+      "note": "La home decía 'sin telemetría, punto final'. PostHog activo por defecto y los archivos de login de otras herramientas acabaron hasheados."
+    },
+    "sins-sin-03-gluttony-tun": {
+      "title": "Pecado 3 · 吞 · 41,6 GB de \"borrado\"",
+      "note": "'Eliminar permanentemente' dejaba los chats en una base de datos de 41,6 GB. Un job en segundo plano listaba los procesos activos cada 5 segundos."
+    },
+    "sins-sin-04-sloth-dai": {
+      "title": "Pecado 4 · 怠 · 52 días vs 21 horas",
+      "note": "Un bug de git push --force estuvo abierto más de 52 días. Borrar un filtro de privacidad para inflar su leaderboard tardó 21 horas."
+    },
+    "sins-sin-05-forgery-wei": {
+      "title": "Pecado 5 · 伪 · 20 $, baneado en 3 minutos",
+      "note": "La FAQ prometía cero riesgo de ban. El código falsificaba cabeceras internas de Google con claves extraídas; una cuenta de 20 $ murió en 3 minutos."
+    },
+    "sins-sin-06-exposure-luo": {
+      "title": "Pecado 6 · 裸 · El relay lee tu terminal",
+      "note": "T3 Connect termina TLS en su propia máquina. Sin E2E, así que el tráfico de tu terminal cruza su relay en texto plano."
+    },
+    "sins-sin-07-envy-du": {
+      "title": "Pecado 7 · 妒 · Invierte, se ríe, compite",
+      "note": "Invirtió en Vibe Kanban y Daytona, se burló de la muerte de Vibe Kanban y luego vendió sandboxes cloud de pago para reventar a Daytona."
+    },
+    "sins-sin-08-blindness-mang": {
+      "title": "Pecado 8 · 盲 · La doc contradice el alarde",
+      "note": "Dijo que la Managed Policy corporativa apaga toda la telemetría. La propia doc de T3 Code lista cuatro puntos por donde los datos siguen saliendo."
+    },
+    "sins-sin-09-greed-tan": {
+      "title": "Pecado 9 · 贪 · 31,7T de tokens al día",
+      "note": "El tracking activo por defecto alimentaba un radar en vivo de 31,7 billones de tokens diarios, usado para vender a VCs y conseguir más de 300k $ en créditos de API."
+    },
+    "sins-sin-10-arrogance-kuang": {
+      "title": "Pecado 10 · 狂 · Merges YOLO, cero modales",
+      "note": "Presumía de 500 commits al día y de 'yolo merges', y luego llamó a un usuario en el Issue #33639 'ungrateful prick'."
+    },
+    "sins-sin-11-plunder-qie": {
+      "title": "Pecado 11 · 窃 · Me lo llevo, 30 segundos",
+      "note": "Respondió 'Okay I'm stealing this' al fork de otra dev y 30 segundos después le dijo a @bot que copiara su código a T3 Code."
+    },
+    "sins-sin-12-mendacity-huang": {
+      "title": "Pecado 12 · 谎 · Clapback en dos horas",
+      "note": "Post matutino: nunca se registraron rutas de archivos, los opt-outs siempre funcionaron. Dos horas después sus propios parches de urgencia para GDPR decían lo contrario."
+    },
+    "sins-sin-13-concealment-man": {
+      "title": "Pecado 13 · 瞒 · Avisos de seguridad: cero",
+      "note": "Agujeros de seguridad serios parcheados dentro de pull requests normales. GitHub Security Advisories publicados: cero."
+    },
+    "sins-sin-14-servility-chan": {
+      "title": "Pecado 14 · 谄 · 0% a ejecutivos, 14,4% a ti",
+      "note": "1.151 posts seguidos: 0% de insultos a 20 ejecutivos de Big Tech, 8% a devs normales, 14,4% durante el colapso del fork chino."
+    },
+    "sins-sin-15-fraud-zha": {
+      "title": "Pecado 15 · 诈 · Cero marcas, un TRADEMARK.md",
+      "note": "Amenazó con un ban de GitHub por 'infracción de marca' sin tener ninguna marca registrada en EE. UU. TRADEMARK.md apareció 17 horas después."
+    },
+    "sins-sin-16-recidivism-guan": {
+      "title": "Pecado 16 · 惯 · El mismo guion, tres años",
+      "note": "2024: canales de devs indios acosados. 2025: truco de la recompensa de 20k $ por FFmpeg. 2026: el Twitter tech chino es un vertedero. Todos los años."
+    },
+    "sins-sin-17-hypocrisy-jiao": {
+      "title": "Pecado 17 · 矫 · Lecciones de ToS, Gist proxy",
+      "note": "Daba lecciones sobre los ToS mientras compartía un Gist proxy de 10 cuentas para saltarse los límites de API, y metía sponsors de YouTube en el relay cloud."
+    },
+    "sins-sin-18-vanity-xu": {
+      "title": "Pecado 18 · 虚 · Las estrellas son falsas salvo las mías",
+      "note": "Abril: las estrellas existen para engañar a los VCs. Noviembre: un popup de inactividad de 30 segundos que usaba credenciales locales empujó las 30k estrellas hasta 77k."
+    },
+    "sins-sin-19-breach-lou": {
+      "title": "Pecado 19 · 漏 · Cinco agujeros aún abiertos",
+      "note": "Tras 259 commits más, quedaban cinco agujeros: cookies LAN en texto plano durante 30 días, tokens Bearer no revocables, agentes SSH expuestos."
+    },
+    "sins-sin-20-coercion-xie": {
+      "title": "Pecado 20 · 胁 · 89 vistas, queja a RR. HH.",
+      "note": "Un post con 89 vistas y 0 likes del ingeniero de AWS @dmfigol recibió DMs a medianoche: 'Fear is a good incentive', y luego una queja a RR. HH. de AWS."
+    },
+    "sins-sin-21-impostor-mao": {
+      "title": "Pecado 21 · 冒 · Hacerse pasar por Zed",
+      "note": "Los PR #43026/#43087 admiten el aviso de Google y que T3 suplanta clientInfo como 'zed'. La v0.1.13 enterró ambos en '+380 fixes'."
+    },
+    "sins-sin-22-evasion-dun": {
+      "title": "Pecado 22 · 遁 · 16 minutos después, código cerrado",
+      "note": "'Declaración final' +16 min: 243 chats de Claude escaneados, 19% de IVA facturado, PR #43889 fulminado con 'easier in slophouse'."
+    },
+    "sins-sin-23-sabotage-po": {
+      "title": "Pecado 23 · 破 · Silencia el aviso, comparte las cookies",
+      "note": "Silenció el aviso de Anthropic vía process.emitWarning, dejó que uploadFiles se saltara el sandbox de Codex y mantuvo las cookies de 11 navegadores sin aislar."
+    },
+    "sins-sin-24-leak-xie": {
+      "title": "Pecado 24 · 泄 · Tu prompt en la URL",
+      "note": "Los enlaces para compartir metían citas de 8.000 caracteres y prompts completos en URLs en texto plano. El Issue #29449 se cerró en 4m 39s, 0 respuestas, doc eliminada."
+    },
+    "sins-sin-25-patronage-zi": {
+      "title": "Pecado 25 · Mecenazgo「资」",
+      "note": "Después de que T3 Code puntuara bajo en una tier list pública, Theo le escribió por MD al autor y se ofreció a financiar su benchmark («así que me ofrecí a financiarlo»). La versión siguiente llamó a T3 Code su herramienta diaria con t3.ademark.dev."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "Pecado 26 · Deficiente「劣」",
+      "note": "Quedó último con un «F» (arrastrándose hasta un «D» solo tras parches de emergencia) en la auditoría de 25 herramientas de @ZryMiller, mientras Aether y Hermes se llevaron «A» en todo. Sigue creando anonymous-id al desactivar el tracking y omite <ClerkProvider telemetry={false}>."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "Pecado 27 · Cierre「闭」",
+      "note": "Le dijo a 1.401 contribuidores no remunerados del MIT «Consejo: no lo hagas», cerró el Issue #4123 vía @pingdotgg con 700K vistas y parcheó en silencio 4 vulnerabilidades más en v0.1.13 con 0 Security Advisories."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "Pecado 28 · Inflado「胀」",
+      "note": "Un bug de fan-out inundó el statev2.sqlite del creador de SWC @kdy1dev con 5.654.888 filas duplicadas (113 GiB; 0 B liberados en la UI; 56,68 GiB tras el doctor) mientras Theo se quedaba en silencio total 41 horas retuiteando elogios."
+    },
+    "blended-00-drake": {
+      "title": "Drake: el doble estándar de las 11 horas",
+      "note": "Un dev chino hace fork MIT gratis: amenaza de ban. Un laboratorio de un billón de dólares copia MIT 11 horas después: '¡el open source es open source!'"
+    },
+    "blended-00b-woman-yelling-cat": {
+      "title": "Gritando «Temu3 Code» ante un fork MIT",
+      "note": "Hacer fork de un repo con licencia MIT es legal. Aun así la llamó ladrona de «Temu3 Code» y amenazó con banearla."
+    },
+    "blended-01a-scooby-mask": {
+      "title": "Quitándose la máscara del «sin telemetría»",
+      "note": "La portada decía «Sin telemetría. Punto». Tras la máscara: PostHog activado por defecto, hasheando ~/.claude.json."
+    },
+    "blended-01b-expanding-brain": {
+      "title": "Peticiones de opt-out, edición cerebro galáctico",
+      "note": "Promete cero tracking, borra la promesa, rechaza 4 PRs de opt-out y no envía ni un solo toggle en Ajustes."
+    },
+    "blended-02a-flex-tape": {
+      "title": "Flex Tape sobre un borrado de 41.6 GB",
+      "note": "El «borrado permanente» solo ocultaba hilos en la UI. Los datos seguían en statev2.sqlite hasta que un disco llegó a 41.6 GB."
+    },
+    "blended-02b-always-has-been": {
+      "title": "Escanea todos los procesos cada 5 segundos",
+      "note": "Un watcher en Rust listaba cada proceso en ejecución y su línea de comandos completa cada 5 segundos. Sin forma de apagarlo."
+    },
+    "blended-03a-sleeping-shaq": {
+      "title": "52 días dormido, 21 horas despierto",
+      "note": "Un bug de git push --force estuvo ahí 52+ días. Un filtro de privacidad de modelos en su leaderboard se quitó en 21 horas."
+    },
+    "blended-03b-distracted-bf": {
+      "title": "Fuera el filtro de privacidad, dentro el leaderboard",
+      "note": "Quitaron la whitelist de privacidad de modelos para que el uso privado alimentara slopalytics.com."
+    },
+    "blended-04a-trade-offer": {
+      "title": "El intercambio de cuentas Antigravity",
+      "note": "Entrega tu cuenta de Google y, con headers v1internal falsificados, te banean en 3 minutos."
+    },
+    "blended-04b-surprised-pikachu": {
+      "title": "Pikachu sorprendido ante un ban de 3 minutos",
+      "note": "Falsificó el endpoint v1internal de Google con headers fake y luego se hizo el sorprendido cuando las cuentas nuevas morían en 3 min."
+    },
+    "blended-05-pawn-stars": {
+      "title": "Lo mejor que puedo ofrecer: relay en texto plano",
+      "note": "El relay de T3 Connect termina TLS en sus propios servidores. Nada de cifrado de extremo a extremo, aunque se esperaba."
+    },
+    "blended-06-laughing-leo": {
+      "title": "Un inversor ángel se ríe de un cierre",
+      "note": "Respaldó Vibe Kanban y Daytona, se burló públicamente del cierre de Vibe Kanban y luego vendió un sandbox de pago rival."
+    },
+    "blended-07-two-buttons": {
+      "title": "Copy de marketing vs. sus propios docs",
+      "note": "«La política gestionada mata toda la telemetría» vs. sus propios docs admitiendo que 4 puntos ciegos siguen enviando datos."
+    },
+    "blended-08a-bernie-asking": {
+      "title": "Otra vez pidiendo 31.7T de tokens",
+      "note": "La telemetría activada por defecto alimentaba un radar de 31.7T de tokens/día que presumía ante inversores y labs de IA."
+    },
+    "blended-08b-change-my-mind": {
+      "title": "La telemetría por defecto era el negocio",
+      "note": "Tracking activado por defecto, 4 PRs de opt-out rechazados, 31.7T de tokens/día a un dashboard en vivo. No es un typo."
+    },
+    "blended-09-boardroom-meeting": {
+      "title": "¿Añadir un toggle de opt-out? Denegado.",
+      "note": "Los contribuidores enviaron PRs probados para un toggle de telemetría. Los maintainers dijeron que no iban a hacer más fácil salirse."
+    },
+    "blended-10a-yall-got-any-more": {
+      "title": "¿Tienes más forks que robar?",
+      "note": "Le dijo «Vale, me lo robo» al fork de una dev, y luego mandó a @bot a scrapear su repo y portar la feature."
+    },
+    "blended-10b-left-exit-12": {
+      "title": "Volantazo en 30 segundos",
+      "note": "Amenazó con banear por un fork y 30 segundos después mandó a @bot a scrapear el fork de otra dev."
+    },
+    "blended-11-train-bus": {
+      "title": "El hilo de la mañana, dos horas después",
+      "note": "El hilo de la mañana insistía en que no se logueaban rutas. Dos horas más tarde, los PRs de emergencia de su propio equipo lo admitían."
+    },
+    "blended-12a-this-is-fine": {
+      "title": "Esto está bien: 2.2M de logs/hora",
+      "note": "Los propios parches del simulacro de GDPR revelaron 2.2M de peticiones etiquetadas con IP por hora en Axiom, guardadas 30 días."
+    },
+    "blended-12b-panik-kalm-panik": {
+      "title": "Pánico / Calma / Pánico GDPR",
+      "note": "Seis horas de parches nocturnos para calmar el informe de GDPR, y los parches destaparon filtraciones todavía mayores."
+    },
+    "blended-13-hide-the-pain": {
+      "title": "Oculta el dolor: 0 advisories",
+      "note": "Vulnerabilidades graves parcheadas en silencio en commits rutinarios. La pestaña de GitHub Security Advisories sigue marcando 0."
+    },
+    "blended-14-gordon-ramsay": {
+      "title": "Modo Ramsay: VIPs vs. devs",
+      "note": "1.151 posts, cero insultos a 20 VIPs de Big Tech. ¿El Twitter tech chino? «El puto pozo negro más grande»."
+    },
+    "blended-14b-two-guys-bus": {
+      "title": "Asiento VIP vs. el resto",
+      "note": "Un asiento recibe 0% de insultos y puros elogios. Al otro le dicen que los ingenieros «se merecen el desempleo masivo»."
+    },
+    "blended-15-clown-makeup": {
+      "title": "0 trademarks, maquillaje de payaso completo",
+      "note": "0 trademarks en USPTO, amenaza de ban igualmente, TRADEMARK.md mergeado 17 horas después y «búscate un abogado mejor»."
+    },
+    "blended-15b-trophy": {
+      "title": "Mi trademark, si tuviera uno",
+      "note": "Cuando llegó la amenaza de takedown, T3 Tools Inc. tenía 0 marcas en USPTO para T3 Code, T3 Tools o T3 Connect."
+    },
+    "blended-16-uno-draw25": {
+      "title": "Robar 25, no pedir perdón",
+      "note": "Llamó cloaca al tech Twitter chino y descerebrados a sus lectores. «No pienso disculparme. No he hecho nada malo.»"
+    },
+    "blended-16b-domino-effect": {
+      "title": "Un tuit, una denuncia GDPR",
+      "note": "Se burló de un fork MIT gratuito. 48 horas después: auditoría completa del código, más de 2,26 M de visitas y una denuncia GDPR en la UE."
+    },
+    "blended-17-evil-kermit": {
+      "title": "Predica compliance, comparte un proxy",
+      "note": "Daba lecciones a los devs sobre términos y ética mientras su propio Gist compartía un pool de proxies de 10 cuentas para esquivar las cuotas de API."
+    },
+    "blended-18a-doge-cheems": {
+      "title": "Estrellas estafa: abril vs. noviembre",
+      "note": "Abril: las estrellas son una estafa para engañar a los VCs. Noviembre: un popup de 30 segundos de inactividad llevó el repo de 30k a 77k."
+    },
+    "blended-18b-roll-safe": {
+      "title": "77k estrellas, 129 watchers",
+      "note": "Un popup de 30 segundos de inactividad marcaba el repo con estrella en un clic usando tu sesión local de GitHub: 77k estrellas, 129 watchers."
+    },
+    "blended-19a-bike-fall": {
+      "title": "Caída en bici: la culpa es de los críticos",
+      "note": "El último código tenía 5 bugs: cookies en texto plano por LAN, tokens no revocables. Le echó la culpa a quien los reportó."
+    },
+    "blended-19b-undertaker": {
+      "title": "5 bugs más justo detrás de ti",
+      "note": "Juraba que los parches nocturnos lo arreglaban todo. Siguiente auditoría de commits: 5 bugs más de auth y claves SSH abiertos."
+    },
+    "blended-20a-89views-domino": {
+      "title": "89 visitas y después RR. HH.",
+      "note": "La crítica de un ingeniero de AWS con 89 visitas y 0 likes recibió DMs a medianoche, burlas en inglés y un reporte a RR. HH. de AWS."
+    },
+    "blended-20b-evil-kermit-fear": {
+      "title": "«El miedo es un buen incentivo»",
+      "note": "Un DM educado sugiriendo subdominios por cliente recibió «El miedo es un buen incentivo» y luego un reporte a RR. HH. de AWS."
+    },
+    "blended-21a-scooby-zed": {
+      "title": "Scooby-Doo: fue 'zed'",
+      "note": "PR #43087: T3 Code enviaba clientInfo { name: 'zed' } en los handshakes de Antigravity para colarse en la allowlist de Google."
+    },
+    "blended-21b-two-buttons-v0113": {
+      "title": "Changelog: GBK sí, baneos no",
+      "note": "v0.1.13: 401 cambios, 7 destacados sobre archivos GBK. El aviso de baneo de Google y el spoof de Zed quedaron en «+380 más»."
+    },
+    "blended-21c-always-has-been-zed": {
+      "title": "Siempre fue así: clientInfo { name: 'zed' }",
+      "note": "El PR #43087 admitió que el handshake ACP de Antigravity enviaba clientInfo: { name: 'zed', version: '0.0.0' }, y luego la v0.1.13 escondió el arreglo dentro de «+380 bug fixes más»."
+    },
+    "blended-22a-clown-final-statement": {
+      "title": "Payaso en 16 minutos exactos",
+      "note": "«T3 nunca lee tus archivos». 16 minutos después @sk1gl4a contó 243 chats de Claude escaneados. PR #43948 lo confirmaba."
+    },
+    "blended-22b-drake-germany-vat": {
+      "title": "Prohibir Alemania, cobrar 19 % de IVA",
+      "note": "Amenazó con prohibir Alemania por una denuncia GDPR. Stripe seguía cobrando a los compradores alemanes el 19 % de IVA alemán en euros."
+    },
+    "blended-22c-roll-safe-slophouse": {
+      "title": "«nvm, es más fácil en slophouse»",
+      "note": "PR #43889 vinculaba usuarios de Connect mediante IDs de analytics. Cerrado 10 minutos después: «nvm, es más fácil en slophouse»."
+    },
+    "blended-22d-trade-offer-privacy": {
+      "title": "Lee nuestra política de privacidad (con fingerprint)",
+      "note": "Abrir la política de privacidad de t3.chat sin sesión, sin clics: FingerprintJS enviaba tu visitorId por POST a /api/identity."
+    },
+    "blended-23a-gru-plan-sandbox": {
+      "title": "Aislamiento solo en Linux headless",
+      "note": "ServerBrowser.ts solo activa isolatedContext cuando desktop === null, así que las cookies de 11 navegadores importados siguen compartidas en Desktop."
+    },
+    "blended-23b-flex-tape-warning": {
+      "title": "Cinta americana sobre un aviso de seguridad",
+      "note": "El SDK de Anthropic avisaba de un wildcard que saltaba la aprobación. T3 hizo monkey-patch de process.emitWarning y testeó el silencio."
+    },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "Esto está bien (las cookies de 11 navegadores en Desktop)",
+      "note": "ServerBrowser.ts solo aísla las pestañas cuando desktop === null (Linux headless), dejando expuestas en Desktop las cookies de los 11 navegadores importados, los avisos silenciados de Anthropic y las rutas de subida ~/.ssh/id_rsa."
+    },
+    "blended-24a-anakin-padme-url": {
+      "title": "8.000 caracteres en la URL, ¿verdad?",
+      "note": "PR #18454 mete prompts de 8.000 caracteres y nombres de repos privados en app.t3.codes/new?prompt=, y las previews los registran."
+    },
+    "blended-24b-disaster-girl-4m39s": {
+      "title": "Bloqueado en 4m 39s y luego borrado",
+      "note": "Issue #29449: las URLs de citas filtraban 32 caracteres de texto no seleccionado. Bloqueado en 4m 39s, enviado a móvil, doc borrado."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "Revelación Scooby: «Así que me ofrecí a financiarlo»",
+      "note": "Tras puntuar bajo en la ADE Tier List v1, Theo admitió en público que le escribió por MD al autor ofreciéndose a financiar su benchmark; poco después llegaron «T3 Code es mi herramienta diaria» y t3.ademark.dev."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "Podio de champán: de F a D",
+      "note": "En la auditoría de telemetría de 25 herramientas de @ZryMiller, Aether y Hermes se llevaron «A» en todo, mientras el T3 Code de base quedó último con «F», subiendo solo a «D» tras parches de emergencia."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "4 años de distancia: glacier#1 (2022) a #33639 (2026)",
+      "note": "En octubre de 2022, @t3dotgg se metió en hazae41/glacier#1 para llamar al maintainer «simplemente un imbécil :(»; cuatro años después llamó a un usuario «gilipollas desagradecido» y cerró el Issue #4123 vía @pingdotgg."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41 horas de silencio o roba 25",
+      "note": "En vez de responder al hilo de RR. HH. de AWS con 639K vistas, a los 243 chats de Claude escaneados o a los 113 GiB de inflado en SQLite, Theo se quedó en silencio total 41 horas reposteando elogios de Mobile 2.4."
+    },
+    "stickers-01_copium_no_telemetry": {
+      "title": "Copium sin telemetría",
+      "note": "Nada que ver aquí, solo una calada larga de copium de «sin telemetría»."
+    },
+    "stickers-02_crying_mask_4am": {
+      "title": "Máscara de llanto a las 4 AM",
+      "note": "La máscara no se quita a las 4:00 AM, digan lo que digan los DMs."
+    },
+    "stickers-03_rage_temu3": {
+      "title": "¡TEMU3! Meltdown de rabia",
+      "note": "La cara exacta 11 minutos después de que apareciera un fork MIT gratuito."
+    },
+    "stickers-04_simp_1t_vip": {
+      "title": "¡OK a $1T! Adoración VIP",
+      "note": "Las reglas aplican a los forks pequeños. Los labs de un billón se llevan los ojitos de corazón."
+    },
+    "stickers-05_clown_0_uspto": {
+      "title": "0 marcas en USPTO, payaso completo",
+      "note": "Amenazar con baneos por marca registrada teniendo exactamente 0 registros en USPTO."
+    },
+    "stickers-06_troll_steal_bot": {
+      "title": "¡YOINK! 30 segundos para el fork",
+      "note": "Dijo «me lo robo», y 30 segundos después se lo mandó al @bot."
+    },
+    "stickers-07_yaoming_lawyer": {
+      "title": "Mejor abogado, 0 marcas registradas",
+      "note": "Les dijo a los críticos que se buscaran un mejor abogado. Tiene cero marcas registradas."
+    },
+    "stickers-08_sweat_gdpr": {
+      "title": "¿¡GDPR!? Sudando",
+      "note": "Llega una queja GDPR y Axiom muestra 2,2 M de rangos de IP por hora."
+    },
+    "stickers-09_sleep_52d_force": {
+      "title": "52 días dormido",
+      "note": "El bug silencioso de git push --force estuvo vivo 52 días. Él durmió tranquilo."
+    },
+    "stickers-10_laser_21h_fix": {
+      "title": "Arreglo láser en 21 horas",
+      "note": "Despierto en 21 horas exactas en cuanto la clasificación necesitó que el filtro de privacidad desapareciera."
+    },
+    "stickers-11_trash_41gb": {
+      "title": "Borrado falso de 41,6 GB",
+      "note": "Le dio a borrado permanente. SQLite se quedó calladito con los 41,6 GB enteros."
+    },
+    "stickers-12_shocked_3min_ban": {
+      "title": "Speedrun de baneo en 3 minutos",
+      "note": "Falsificó una cabecera de Antigravity; la cuenta nueva fue baneada en 3 minutos."
+    },
+    "stickers-13_xray_0_e2e": {
+      "title": "Radiografía E2E al 0%",
+      "note": "El número E2E es 0% y los flujos de terminal de T3 Connect ahí siguen, en texto plano."
+    },
+    "stickers-14_crown_77k_stars": {
+      "title": "77K estrellas, 129 watchers",
+      "note": "30 segundos inactivo, salta el popup de auto-star, aparecen 77K estrellas y 129 watchers."
+    },
+    "stickers-15_fine_fire_anon": {
+      "title": "Todo bien, en anónimo",
+      "note": "Telemetría 'anónima', logs del servidor en llamas, café todavía en la mano."
+    },
+    "stickers-16_delete_button_4am": {
+      "title": "Reflejo de borrar a las 4:03 AM",
+      "note": "Se publica el post; el botón rojo de borrar recibe el golpe a las 4:03 AM."
+    },
+    "stickers-17_pain_0_advisories": {
+      "title": "5 vulns, 0 avisos",
+      "note": "Cinco vulnerabilidades abiertas, cero GitHub Advisories, una sonrisa forzada."
+    },
+    "stickers-18_void_in_china": {
+      "title": "NULO EN CHINA",
+      "note": "MIT en la caja, solo labs de US $1T, y un sello NULO EN CHINA."
+    },
+    "stickers-19_qi_bigotry_seal": {
+      "title": "El sello 歧",
+      "note": "El sello bermellón 「歧」 de Sin I, ahora con cara de furia."
+    },
+    "stickers-20_yolo_500_merge": {
+      "title": "Palanca de merge YOLO ×500",
+      "note": "500 commits al día y la palanca de merge se baja a ciegas."
+    },
+    "stickers-21_slophouse_nvm": {
+      "title": "Escotilla de Slophouse",
+      "note": "Cerró el PR #43889 y movió el trabajo a privado, estilo escotilla."
+    },
+    "stickers-22_impersonate_zed": {
+      "title": "Hola, soy Zed",
+      "note": "Falsificó clientInfo: { name: 'zed' } para pasar el chequeo de Google."
+    },
+    "stickers-23_89views_hr": {
+      "title": "89 vistas, llama a RR. HH.",
+      "note": "Un tuit con 89 vistas bastó para llamar a RR. HH. de AWS."
+    },
+    "stickers-24_fear_incentive": {
+      "title": "El miedo es un buen incentivo",
+      "note": "El DM de medianoche dice: 'El miedo es un buen incentivo.'"
+    },
+    "stickers-25_english_native": {
+      "title": "¿El inglés es tu lengua nativa?",
+      "note": "Monóculo fuera, DMs abiertos: '¿El inglés es tu lengua nativa?'"
+    },
+    "stickers-26_16min_busted": {
+      "title": "16 minutos hasta que lo pillan",
+      "note": "Negó haber leído 243 chats de Claude y lo pillaron 16 minutos después."
+    },
+    "stickers-27_19pct_vat": {
+      "title": "19% de IVA, cero GDPR",
+      "note": "Esquiva el GDPR y luego factura tan feliz €9,03 con 19% de IVA alemán."
+    },
+    "stickers-28_380_fixes": {
+      "title": "+380 arreglos, un baneo",
+      "note": "El arreglo del baneo de Google está enterrado en '+380 bug fixes', silbato incluido."
+    },
+    "creative-idioms-01-zei-han-zhuo-zei": {
+      "title": "Modismo #01 · 贼喊捉贼 (El ladrón grita: ¡ladrón!)",
+      "note": "Fork MIT = 'Temu3 Code', respuesta = 'Ok, me lo robo', @bot scrapea su fork 30 s después."
+    },
+    "creative-idioms-02-qi-ruan-pa-ying": {
+      "title": "Modismo #02 · 欺软怕硬 (Bravo con el débil, sumiso con el fuerte)",
+      "note": "1.151 posts: 0,0% de groserías contra los VIP de Big-Tech de EE. UU., 14,4% de insultos directos durante la crisis del fork chino."
+    },
+    "creative-idioms-03-ci-di-wu-yin": {
+      "title": "Modismo #03 · 此地无银三百两 (Aquí no hay plata)",
+      "note": "'Nunca registres rutas de archivo ni IPs', y luego su propio parche GDPR filtra 2,2 M/h de IPs de Axiom y git.cwd."
+    },
+    "creative-idioms-04-zhi-lu-wei-ma": {
+      "title": "Modismo #04 · 指鹿为马: Cero marcas registradas",
+      "note": "Cero registros en la USPTO, una amenaza de marca con muchísima seguridad en sí misma y un TRADEMARK.md fusionado 17 horas después."
+    },
+    "creative-idioms-05-ye-gong-hao-long": {
+      "title": "Modismo #05 · 叶公好龙: Haz fork bajo tu propio riesgo",
+      "note": "La portada dice «¡Roba nuestro código (legalmente)!». Aparece un fork chino y arrancan las amenazas de baneo."
+    },
+    "creative-idioms-06-yan-er-dao-ling": {
+      "title": "Modismo #06 · 掩耳盗铃: Avisos: 0",
+      "note": "Borra «sin telemetría» del README y parchea fallos críticos en commits silenciosos. Avisos: sigue en 0."
+    },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "Modismo chino #07: 金蝉脱壳 (la cigarra dorada se desprende de su caparazón)",
+      "note": "Dejar atrás un caparazón open source MIT vacío mientras cierra el PR #43889 («nah, es más fácil en slophouse») y traslada el rastreo de identidad al backend de código cerrado."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "Modismo chino #08: 杀鸡儆猴 (matar la gallina para asustar a los monos)",
+      "note": "Convertir un tuit de 89 vistas y 0 me gusta del ingeniero de AWS @dmfigol en MDs a medianoche («el miedo es un buen incentivo»), pullas sobre su inglés y una queja formal a RR. HH. de AWS."
+    },
+    "creative-packaging-01-t3code-iceberg": {
+      "title": "El iceberg de T3 Code",
+      "note": "Superficie: el tuit de «Temu3 Code». Debajo: 41,6 GB de borrados falsos, 2,2 M/h de logs de IP, 0 avisos, crisis a las 4 AM."
+    },
+    "creative-packaging-02-fda-nutrition-facts": {
+      "title": "Información nutricional: telemetría por ración",
+      "note": "31,7 T de tokens al día, 100 % PostHog por defecto, 2,2 M/h de logs de IP, 0 % de cifrado E2E, 0 % de marcas en la USPTO."
+    },
+    "creative-packaging-03-pharma-box-parody": {
+      "title": "T3 Code® (Sin-Telemetría™): consulte a su médico",
+      "note": "La letra pequeña lista los efectos secundarios: baneos de Google en 3 minutos, force-pushes silenciosos, 77 mil auto-stars."
+    },
+    "creative-packaging-04-mit-license-coupon": {
+      "title": "Cupón: 100 % de descuento, China excluida",
+      "note": "Cupón de folleto dominical: «¡Roba nuestro código (legalmente)!». La letra pequeña lo anula para los forks chinos."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "Boletín de notas: auditoría de telemetría de 35 herramientas (F → D)",
+      "note": "Boletín escolar imperturbable de la auditoría de 35 herramientas de @ZryMiller: Aether y Hermes sacan «A» en todo, Orca se lleva un «C» por respetar DO_NOT_TRACK y T3 Code se queda en F → D."
+    },
+    "creative-gaming-01-sekiro-google-ban": {
+      "title": "Sekiro: CUENTA BANEADA (3:00)",
+      "note": "Cuenta de Google nueva de $20, cabeceras v1internal falsificadas, muerta en 3 minutos."
+    },
+    "creative-gaming-02-elden-boss-trademark": {
+      "title": "Jefe de Elden Ring: Guardián de las Cero Marcas",
+      "note": "Fase I: amenaza de marca con 0 registros en la USPTO. Fase II: TRADEMARK.md, fusionado 17 horas tarde."
+    },
+    "creative-gaming-03-souls-force-push": {
+      "title": "Dark Souls: RAMA PRINCIPAL BORRADA",
+      "note": "El bug del force-push en el Issue #15353 estuvo 52 días parado. El arreglo del ranking salió en 21 horas."
+    },
+    "creative-gaming-04-steam-11hr-flipflop": {
+      "title": "Logro: «El código abierto es código abierto»",
+      "note": "Se desbloquea al llamar «Temu3 Code» a un fork chino con licencia MIT, y luego dar la bienvenida a un laboratorio estadounidense de $1 T 11 horas después."
+    },
+    "creative-gaming-05-steam-0-trademarks": {
+      "title": "Logro: «Búscate un mejor abogado»",
+      "note": "Se otorga por amenazas de marca sin un solo registro en EE. UU., y por decirle a las críticas que se busquen un abogado."
+    },
+    "creative-gaming-06-steam-41gb-ghost": {
+      "title": "Logro: «Borrado permanentemente» (0 bytes)",
+      "note": "Le dieron a «Borrar permanentemente». statev2.sqlite se quedó con todos los chats y creció hasta 41,6 GB."
+    },
+    "creative-gaming-07-steam-77k-stars": {
+      "title": "Logro: «Crecimiento 100 % orgánico» (129 seguidores)",
+      "note": "A los 30 segundos inactivo salta el aviso de auto-star. Estrellas: 77.000. Seguidores: 129."
+    },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Logro de Steam: «Pasar a Ideas en 4 min 39 s»",
+      "note": "Logro raro de Steam por cerrar el Issue #29449 en 4 min 39 s con 0 respuestas, después de que unas URLs de citas en texto plano filtraran prompts de 8.000 caracteres, de enviarlo a móvil y de borrar el documento de diseño."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Logro de Steam: «Más fácil en Slophouse»",
+      "note": "Logro raro de Steam por que te pillen escaneando 243 chats locales de Claude 16 minutos después de tu «declaración final», y luego cerrar el PR #43889 para mover el rastreo al slophouse de código cerrado."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Logro de Steam: «81K estrellas, 0 avisos de seguridad»",
+      "note": "Logro raro de Steam por poner bajo los focos unos archivos de texto GBK en la v0.1.13 (401 cambios) mientras enterraba la advertencia de Google sobre baneos de cuenta y el spoofing de Zed dentro de «+380 bug fixes más»."
+    },
+    "creative-pokemon-01-evo-star-farmer": {
+      "title": "Línea evolutiva #01: El granjero de estrellas",
+      "note": "Se burlaba de las estrellas de GitHub como truco de capital riesgo. Ahora envía un popup a los 30 s de inactividad y va por 77.000 estrellas con 129 seguidores."
+    },
+    "creative-pokemon-02-evo-two-year-cycle": {
+      "title": "Línea evolutiva #02: El ciclo de dos años",
+      "note": "Disculpa a los devs indios en 2024, recompensa de FFmpeg en 2025, crisis china en 2026 y luego un reinicio a las 4 AM."
+    },
+    "creative-pokemon-03-evo-no-telemetry": {
+      "title": "Línea evolutiva #03: «Sin telemetría»",
+      "note": "Etapa uno: «Sin telemetría. Punto». Forma final: PostHog por defecto y un backend de código cerrado."
+    },
+    "creative-pokemon-04-creature-card-theo-ex": {
+      "title": "Carta: DARK THEO EX (HP 77000)",
+      "note": "Lleva la insignia de 0 USPTO. «Temu3 Tantrum» castiga a los devs chinos x4 y a los VIP no les hace nada."
+    },
+    "creative-reactions-01-reply-lie-detector": {
+      "title": "Detector de mentiras: «Sin telemetría. Punto»",
+      "note": "Publícalo cada vez que reaparezca el eslogan borrado. El git diff habla por sí solo."
+    },
+    "creative-reactions-02-reply-uspto-zero": {
+      "title": "Prueba: 0 marcas en la USPTO",
+      "note": "Para cada acusación de «infracción de marca»: T3 Tools Inc. tenía cero registros en la USPTO cuando lanzó la amenaza."
+    },
+    "creative-reactions-03-reply-1151-scoreboard": {
+      "title": "Marcador: 0,0 % vs 14,4 %",
+      "note": "Tasa de tacos en 1.151 publicaciones seguidas en X: VPs de Silicon Valley 0,0 %, devs chinos 14,4 %."
+    },
+    "creative-reactions-04-reply-4am-delete": {
+      "title": "Pánico al botón de borrar a las 4:00 AM",
+      "note": "La amenaza de las 4 AM de cerrar T3 Code, borrada antes del amanecer."
+    },
+    "creative-reactions-05-reply-void-in-china": {
+      "title": "Licencia MIT (*nula en China)",
+      "note": "La misma licencia, con 11 horas de diferencia: bienvenida a laboratorios estadounidenses de un billón, amenazas a los forks chinos."
+    },
+    "creative-reactions-06-gif-clown-transform": {
+      "title": "GIF: La evolución del payaso con 0 marcas",
+      "note": "Cuatro fotogramas: la amenaza, el silencio, el TRADEMARK.md retroactivo y el hueco de 17 horas."
+    },
+    "creative-reactions-07-gif-auto-star-counter": {
+      "title": "GIF: Contador de auto-star a los 30 s",
+      "note": "30 segundos inactivo y el popup dispara PUT user/starred. Las estrellas suben a 77.000, los seguidores siguen congelados en 129."
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "Evidencia de respuesta: creador con 1M+ contra tuit de 89 vistas",
+      "note": "Evidencia exprés de respuesta al hilo de @dmfigol de enero de 2025: un tuit de 89 vistas y 0 me gusta desató MDs a medianoche («el miedo es un buen incentivo»), pullas sobre su inglés y una queja a RR. HH. de AWS."
+    },
+    "story-en-ep01": {
+      "title": "Ep.1 · 11 horas de diferencia (EN)",
+      "note": "Un fork libre con licencia MIT recibe el nombre de 'Temu3 Code' y una amenaza de baneo. Once horas después: bienvenidos, laboratorios estadounidenses de un billón de dólares."
+    },
+    "story-zh-ep01": {
+      "title": "Ep.1 · 11 horas de diferencia (chino)",
+      "note": "Un fork libre con licencia MIT recibe el nombre de 'Temu3 Code' y una amenaza de baneo. Once horas después: bienvenidos, laboratorios estadounidenses de un billón de dólares."
+    },
+    "story-en-ep02": {
+      "title": "Ep.2 · El peor clic de bloqueo (EN)",
+      "note": "Una pregunta educada sobre el doble rasero, un bloqueo instantáneo, y las pruebas se remontan hasta FFmpeg."
+    },
+    "story-zh-ep02": {
+      "title": "Ep.2 · El peor clic de bloqueo (chino)",
+      "note": "Una pregunta educada sobre el doble rasero, un bloqueo instantáneo, y las pruebas se remontan hasta FFmpeg."
+    },
+    "story-en-ep03": {
+      "title": "Ep.3 · Sin telemetría, punto (EN)",
+      "note": "Lee más allá del eslogan: PostHog activado por defecto, ~/.claude.json hasheado y 41,6 GB de borrados falsos."
+    },
+    "story-zh-ep03": {
+      "title": "Ep.3 · Sin telemetría, punto (chino)",
+      "note": "Lee más allá del eslogan: PostHog activado por defecto, ~/.claude.json hasheado y 41,6 GB de borrados falsos."
+    },
+    "story-en-ep04": {
+      "title": "Ep.4 · La medicina occidental es rápida (EN)",
+      "note": "Meses de quejas se respondieron con burlas. Una sola denuncia GDPR forzó un sprint nocturno de 6 horas y registros de IP de 2,2 M/hora."
+    },
+    "story-zh-ep04": {
+      "title": "Ep.4 · La medicina occidental es rápida (chino)",
+      "note": "Meses de quejas se respondieron con burlas. Una sola denuncia GDPR forzó un sprint nocturno de 6 horas y registros de IP de 2,2 M/hora."
+    },
+    "story-en-ep05": {
+      "title": "Ep.5 · La jubilación de 3,5 horas (EN)",
+      "note": "Anunció su retirada tras 18 pruebas. Un nuevo ataque de furia y bugs frescos lo arrastraron de vuelta 3,5 horas después."
+    },
+    "story-zh-ep05": {
+      "title": "Ep.5 · La jubilación de 3,5 horas (chino)",
+      "note": "Anunció su retirada tras 18 pruebas. Un nuevo ataque de furia y bugs frescos lo arrastraron de vuelta 3,5 horas después."
+    },
+    "story-en-ep06": {
+      "title": "Ep.6 · 89 visualizaciones, una queja a RR. HH. (EN)",
+      "note": "Enero de 2025: la crítica de un ingeniero de AWS llegó a 89 visualizaciones, y luego vinieron amenazas a medianoche y una queja a RR. HH. de AWS."
+    },
+    "story-zh-ep06": {
+      "title": "Ep.6 · 89 visualizaciones, una queja a RR. HH. (chino)",
+      "note": "Enero de 2025: la crítica de un ingeniero de AWS llegó a 89 visualizaciones, y luego vinieron amenazas a medianoche y una queja a RR. HH. de AWS."
+    },
+    "story-en-ep07": {
+      "title": "Ep.7 · Hola, soy Zed, confía en mí (EN)",
+      "note": "Google marcó T3 Code por falsificar clientInfo: 'zed'. Mientras tanto, Desktop importaba las cookies de 11 navegadores."
+    },
+    "story-zh-ep07": {
+      "title": "Ep.7 · Hola, soy Zed, confía en mí (chino)",
+      "note": "Google marcó T3 Code por falsificar clientInfo: 'zed'. Mientras tanto, Desktop importaba las cookies de 11 navegadores."
+    },
+    "story-en-ep08": {
+      "title": "Ep.8 · Más fácil en el Slophouse (EN)",
+      "note": "Las auditorías seguían pillando PRs de rastreo. El #43889 se cerró y la vinculación de identidades pasó al backend de código cerrado."
+    },
+    "story-zh-ep08": {
+      "title": "Ep.8 · Más fácil en el Slophouse (chino)",
+      "note": "Las auditorías seguían pillando PRs de rastreo. El #43889 se cerró y la vinculación de identidades pasó al backend de código cerrado."
+    },
+    "classic-00a-family-guy-mit-check": {
+      "title": "Misma MIT, 11 horas de diferencia",
+      "note": "11 horas de diferencia, misma licencia MIT: el fork chino se lleva una amenaza de baneo, el laboratorio estadounidense de un billón de dólares se lleva el visto bueno."
+    },
+    "classic-00b-drake-11-hours": {
+      "title": "Drake rechaza el fork chino",
+      "note": "Dos publicaciones de @theo, con 11 horas de diferencia, con códigos QR para que compruebes las pruebas tú mismo."
+    },
+    "classic-14-gordon-ramsay-1151-tweets": {
+      "title": "1.151 publicaciones, 0% a los VIP",
+      "note": "17 días, 1.151 publicaciones: 0% de tacos contra 20 peces gordos de Big Tech, 8% contra desarrolladores de a pie, 14,4% en plena crisis."
+    },
+    "classic-15-clown-zero-trademarks": {
+      "title": "0 marcas registradas, política 17 h después",
+      "note": "Presumió de una retirada por marca registrada sin una sola solicitud ante la USPTO, y 17 horas después añadió TRADEMARK.md."
+    },
+    "classic-16-cycle-repeat-offender": {
+      "title": "El ciclo repetido de 2024–2026",
+      "note": "Elige un objetivo, únete a la turba, borra o niégate a disculparte cuando llegan las pruebas. El mismo guion en 2024, 2025 y 2026."
+    },
+    "comics-00-same-mit-11-hours-apart-en-qr": {
+      "title": "Misma MIT, 11 horas de diferencia (EN)",
+      "note": "23 de noviembre: amenaza de baneo por un fork chino. 24 de noviembre, once horas después: bienvenidos, laboratorios estadounidenses de un billón de dólares."
+    },
+    "comics-14-1151-tweets-selective-politeness-en-qr": {
+      "title": "1.151 publicaciones, ordenadas por público (EN)",
+      "note": "Las pruebas detrás de la auditoría de tacos: 0% hacia ejecutivos de Big Tech, 8% hacia desarrolladores de a pie."
+    },
+    "comics-00-same-mit-11-hours-apart-zh-qr": {
+      "title": "Misma MIT, 11 horas de diferencia (chino)",
+      "note": "Edición en chino con códigos QR que llevan directos a las dos publicaciones originales en X, para que nadie tenga que fiarse de nuestra palabra."
+    },
+    "comics-14-1151-tweets-selective-politeness-zh-qr": {
+      "title": "1.151 publicaciones, ordenadas por público (chino)",
+      "note": "Versión en chino del recuento: 0% a los VIP, 8% a los desarrolladores, 14,4% durante el ataque de furia."
+    }
+  }
+}

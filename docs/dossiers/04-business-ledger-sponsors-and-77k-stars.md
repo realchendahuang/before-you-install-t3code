@@ -238,6 +238,18 @@ As of November 25, 2026—**19 days after `zhilsinger`'s review**—the review h
 
 ---
 
+## 5. Benchmark Funding Outreach & Sponsor Roster Dispute (Exhibit #25)
+
+On October 18, 2026 (`2111884469468893524`, 236K views; `2111907686623379952`), Cloudroom founder `@DavidOndrej1` accused `@theo` of paying benchmark creator `@zqkrq` to remove Cloudroom after `v1` ranked Cloudroom ahead of T3 Code (`@orca_build` also criticized the list in `2111906232114233799`). While `@zqkrq` (`2111887756066738578`) and `@theo` denied any instruction to hide Cloudroom, `@theo` publicly confirmed (`2111903235166679341`, 278K views) contacting `@zqkrq` over T3 Code's low score and offering to fund a subsequent benchmark (*"I hit him up to ask about why T3 Code scored low... He mentioned wanting to make a real benchmark after, so I offered to fund it"*). On November 12, `@zqkrq` published `ADE tier list v3` calling T3 Code his daily driver (`2121015611044118557`), thanked `@theo` (`2121020193405358506`), and built `https://t3.ademark.dev/` (`2123008336664674752`), while `@theo` used `@bot` (`2121017649652269120`) to port rival features. On November 25–26, `@DavidOndrej1` (`2125517916544155720`, `2126085904875798845`) posted T3 Code's sponsor roster (**WorkOS, Blacksmith, Browserbase, CodeRabbit**) and alleged creator blacklisting (noting strict boundary: `@DavidOndrej1`'s removal and blacklist claims are uncorroborated single-party allegations; Datacurve ties in `2060153250167615615` / `1922403795897565199` show public collaboration without disclosed check size).
+
+![@theo tweet admitting benchmark outreach and funding offer](../../evidence/extra/nov27-theo-admits-funding-bench.png)
+
+![@DavidOndrej1 Oct 18 v1/v2 benchmark dispute post](../../evidence/extra/nov27-ondrej-v1-v2-accusation.png)
+
+![T3 Code sponsor banner showing WorkOS, Blacksmith, Browserbase, and CodeRabbit](../../evidence/extra/nov27-ondrej-sponsor-banner.png)
+
+---
+
 ## Primary References
 
 - **Original Audit Threads:**
@@ -266,6 +278,8 @@ As of November 25, 2026—**19 days after `zhilsinger`'s review**—the review h
 - **77k Star Funnel & `driver.ts`:**
   - Fake-star video, 10x cliff, +3,094 Trending, and "missed 70k": https://x.com/theo/status/2048122499834036340 ; https://x.com/theo/status/2117065834267136469 ; https://x.com/theo/status/2117172614158508400 ; https://x.com/theo/status/2124992724223029538
   - Star-prompt PRs (`#27832`, `#29922`, `#29987`), `GitHubStarPrompt.tsx`, `SourceControlSignIn.ts`, `clientRpcPermissions.ts`, and `driver.ts`: https://github.com/pingdotgg/t3code/pull/27832 ; https://github.com/pingdotgg/t3code/pull/29922 ; https://github.com/pingdotgg/t3code/pull/29987 ; https://github.com/pingdotgg/t3code/blob/main/apps/web/src/components/GitHubStarPrompt.tsx ; https://github.com/pingdotgg/t3code/blob/main/apps/server/src/sourceControl/SourceControlSignIn.ts ; https://github.com/pingdotgg/t3code/blob/main/packages/contracts/src/clientRpcPermissions.ts#L61 ; https://github.com/pingdotgg/t3code/blob/main/packages/source-control-github/src/server/driver.ts#L60-L99
+- **Benchmark Funding Dispute & Sponsor Banner (Exhibit #25):**
+  - https://x.com/DavidOndrej1/status/2111884469468893524 ; https://x.com/DavidOndrej1/status/2111907686623379952 ; https://x.com/orca_build/status/2111906232114233799 ; https://x.com/zqkrq/status/2111887756066738578 ; https://x.com/theo/status/2111903235166679341 ; https://x.com/zqkrq/status/2121015611044118557 ; https://x.com/zqkrq/status/2121020193405358506 ; https://x.com/zqkrq/status/2123008336664674752 ; https://x.com/DavidOndrej1/status/2125517916544155720 ; https://x.com/DavidOndrej1/status/2126085904875798845 ; https://x.com/theo/status/2060153250167615615 ; https://x.com/theo/status/1922403795897565199
 
 ---
 [← Back to README](../../README.md) · [Complete Source Index](../COMPLETE-SOURCE-INDEX.md) · [← Dossier 03](./03-antigravity-tos-and-t3connect-relay.md) · [Dossier 05 →](./05-governance-trademark-and-history.md)

@@ -1,19 +1,19 @@
-# Temu3 Code — 安裝 T3 Code 之前
+# Temu3 Code · 裝 T3 Code 之前
 
 <p align="center">
-  <em>面向 pingdotgg/t3code 的獨立公共調查檔案 —— 以第一手原始碼、截圖與量化資料，完整記錄種族歧視雙重標準、隱密遙測、高風險產品缺陷與商業操弄的始末。</em>
+  <em>20 個案子、109 張截圖，整理 pingdotgg/t3code 三年半來的公開貼文和程式碼。不做任何追蹤。</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=zh-TW"><strong>🌐 temu3code.com</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=zh-TW"><strong>✉ Tmail 收件匣</strong></a> ·
-  <a href="https://temu3code.com/?lang=zh-TW#x-receipts"><strong>📸 12 張 X 原始截圖</strong></a> ·
+  <a href="https://temu3code.com/mail/?lang=zh-TW"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=zh-TW#x-receipts"><strong>📸 12 則 X 貼文</strong></a> ·
   <a href="https://temu3code.com/memes/?lang=zh-TW"><strong>🃏 61 張迷因</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 份證據</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 個來源</strong></a>
+  <a href="../EVIDENCE-INDEX.md"><strong>109 張截圖</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 條連結</strong></a>
 </p>
 
 <p align="center">
@@ -52,9 +52,9 @@
 > [!TIP]
 > **為什麼叫「Temu3 Code」？**
 >
-> 2026 年 11 月 23 日——在把一位中國開發者的免費 MIT fork 說成「Chinese knockoff」僅 10 分鐘後——@theo 就在 X 上「慷慨贈送」我們的品牌名稱：「Temu3 Code」（84k views）。
+> 2026 年 11 月 23 日，@theo 把一位中國開發者免費的 MIT Fork 叫成「Chinese knockoff」。十分鐘後，他自己在 X 上給了我們這個名字：「Temu3 Code」（8.4 萬次瀏覽）。
 >
-> 一位連 0 項 USPTO 商標都沒有的創辦人免費送品牌，不拿白不拿——所以我們註冊了 temu3code.com、搬進公開稽核資料，而且沒有加入 PostHog 遙測。謝謝你免費的品牌命名諮詢，Theo。（CC0 1.0——歡迎反向 fork 我們。） — [查看 @theo 的命名推文 ↗](https://x.com/theo/status/2124825920808829077)
+> 一個連美國商標都沒有的創辦人白送的名字，不用白不用。我們註冊了 temu3code.com，把公開紀錄全放上來，順手把 PostHog 拿掉。謝了 Theo。這裡全部 CC0 1.0，隨便 Fork。 [看 @theo 原帖 ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 

@@ -1,0 +1,1976 @@
+{
+  "lang": "es",
+  "topics": {
+    "bullying": "Acoso y amenazas",
+    "double-standard": "Doble rasero",
+    "promises": "Promesas vs. código",
+    "telemetry": "Telemetría y privacidad",
+    "security": "Seguridad y bloqueos",
+    "deleted": "Eliminado / retractado",
+    "commercial": "Comercial y estrellas"
+  },
+  "people": {
+    "theo": {
+      "name": "@theo (Theo Browne)",
+      "role": "Creador de T3 Code / Ping.gg"
+    },
+    "dddxx666": {
+      "name": "@DDdxx666 (fork MIT)",
+      "role": "Autor chino del fork MIT (Stardust)"
+    },
+    "ffmpeg": {
+      "name": "FFmpeg y VLC",
+      "role": "Mantenedores de código abierto (recompensa de $20k)"
+    },
+    "indian-devs": {
+      "name": "Comunidad de desarrolladores indios",
+      "role": "Ola de acoso por nacionalidad de 2024"
+    },
+    "bermudi": {
+      "name": "@bermudi (Issue #33639)",
+      "role": "Usuario de T3 Code insultado por un mantenedor"
+    },
+    "miaai": {
+      "name": "@MiaAI_lab y rivales",
+      "role": "Fork raspado por @bot en 30 segundos"
+    },
+    "dlkfz": {
+      "name": "@DLKFZWilliam2",
+      "role": "Contraparte del debate sobre el fork del 24 de nov"
+    },
+    "ordinary-devs": {
+      "name": "Desarrolladores corrientes",
+      "role": "Ingenieros, IA local y desarrolladores de Linux"
+    },
+    "female-critic": {
+      "name": "Crítica y usuaria de RSD",
+      "role": "Señalada en las respuestas del 11–18 de nov"
+    },
+    "vibe-daytona": {
+      "name": "Vibe Kanban y Daytona",
+      "role": "Empresas de la cartera de ángeles"
+    },
+    "julius": {
+      "name": "@jullerino (Julius)",
+      "role": "Mantenedor principal de T3 Code"
+    },
+    "maria": {
+      "name": "@maria_rcks (Maria)",
+      "role": "Miembro del equipo de T3 (maria-rcks/t3libre)"
+    },
+    "labs-vips": {
+      "name": "VIP de Google / OpenAI",
+      "role": "20 ejecutivos de grandes tecnológicas (0,0 % de lenguaje soez)"
+    },
+    "antigravity-users": {
+      "name": "Usuarios de Antigravity y Relay",
+      "role": "Bloqueos de 3 minutos y Relay en texto plano"
+    },
+    "gdpr-auditors": {
+      "name": "Auditores y GDPR de la UE",
+      "role": "Auditoría independiente y registros legales"
+    },
+    "dhh-wp": {
+      "name": "DHH / WordPress / USPTO",
+      "role": "Historial de burlas previas de la interfaz y de marcas registradas"
+    },
+    "dmfigol": {
+      "name": "@dmfigol (exingeniero de AWS)",
+      "role": "Cita tuiteada con 89 vistas y caso de RR. HH. de AWS"
+    },
+    "sk1gl4a": {
+      "name": "@sk1gl4a y auditores",
+      "role": "Reproducción de 243 sesiones, IVA alemán y auditoría de 25 herramientas"
+    },
+    "ondrej-zqkrq": {
+      "name": "@DavidOndrej1 y @zqkrq",
+      "role": "Financiación de benchmarks y disputa con patrocinadores"
+    },
+    "kdy1dev": {
+      "name": "@kdy1dev y @hazae41",
+      "role": "Fan-out de base de datos de 113 GiB (#44029) y glacier#1"
+    }
+  },
+  "threads": {
+    "2023-05-sponsor-roster": {
+      "from": "@theo → Patrocinadores de YouTube",
+      "to": "Espectadores y desarrolladores de YouTube",
+      "dateDisplay": "14 de mayo de 2023",
+      "subject": "Los patrocinadores de YouTube Clerk y Axiom, conectados al relay de T3 Code",
+      "snippet": "Tres años después de que Theo los listara como patrocinadores, Clerk gestionaba la autenticación de T3 Connect y Axiom conservaba 2.2M de spans por hora etiquetados con IP durante 30 días.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Cronología pública",
+          "time": "14 de mayo de 2023",
+          "body": "El 14 de mayo de 2023, @theo publicó en X su stack de patrocinadores de YouTube (estado 1657488850472804353): @vercel, @clerk, @upstash, @axiomhq y @PlanetScale.\n\nLa auditoría de código de `pingdotgg/t3code` (`infra/relay/`) confirmó que dos de esos patrocinadores alimentan el relay en la nube:\n\n- **Autenticación (`Config.ts:63-65`):** Clerk gestiona la autenticación del relay.\n- **Registro de logs (`observability.ts:20-79`):** Axiom retiene `t3-code-relay-traces`, `t3-code-mobile-logs` y `t3-code-mobile-metrics` durante 30 días (~2.2M de spans etiquetados con IP por hora).",
+          "attachments": [
+            "Lista de patrocinadores de 2023 (Clerk, Axiom, Vercel, PlanetScale)"
+          ],
+          "links": [
+            "Publicación en X 1657488850472804353"
+          ]
+        },
+        {
+          "sender": "Guillermo Rauch (@rauchg)",
+          "handle": "@rauchg · CEO de Vercel",
+          "to": "@theo y la comunidad tech de Twitter",
+          "time": "5 de abril de 2024",
+          "body": "El 5 de abril de 2024, el CEO de Vercel, Guillermo Rauch (@rauchg), confirmó el patrocinio en X (estado 1776260839965863965):\n\n> \"nuestro equipo de devrel son 4 personas y patrocinamos a un solo YouTuber (Theo)\"\n\nCuando el acuerdo con Vercel terminó en septiembre de 2024, Theo reveló que los contratos de patrocinio anteriores incluían cláusulas de exclusividad que prohibían promocionar productos de la competencia.",
+          "attachments": [
+            "El CEO de Vercel confirma que solo patrocina a Theo"
+          ],
+          "links": [
+            "Publicación en X 1776260839965863965"
+          ]
+        }
+      ]
+    },
+    "2024-06-indian-dev-apology": {
+      "from": "@theo ↔ Comunidad de desarrolladores india",
+      "to": "Creadores y desarrolladores de programación de India",
+      "dateDisplay": "2024",
+      "subject": "La ola de desarrolladores indios: \"I screwed up.\" (\"La cagué\") frente a los ataques por la fork de 2026",
+      "snippet": "En 2024 subió \"I screwed up.\" (\"La cagué\") condenando los ataques por nacionalidad contra desarrolladores indios; en 2026 llamó \"cesspit\" (\"cloaca\") al Twitter tecnológico chino.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@t3dotgg · YouTube",
+          "to": "Comunidad de desarrolladores",
+          "time": "2024",
+          "body": "En 2024, @theo publicó un vídeo contra canales indios de tutoriales de programación por el spam de PR en proyectos open source, y las secciones de comentarios se llenaron de acoso por nacionalidad.\n\nTras las críticas públicas, subió \"I screwed up.\" (youtube.com/watch?v=o2CSJYXJBpc), condenando la hostilidad dirigida por nacionalidad contra comunidades de desarrolladores.",
+          "attachments": [],
+          "links": [
+            "YouTube: \"I screwed up.\" (\"La cagué\")"
+          ]
+        },
+        {
+          "sender": "Dos años después",
+          "handle": "Dos años después · 24 de nov de 2026",
+          "to": "Caso #16",
+          "time": "24 de nov de 2026, 6:39 p.m. CST",
+          "body": "Dos años después, durante la disputa por la fork MIT de noviembre de 2026, @theo llamó a la fork MIT gratuita de un desarrollador chino \"Temu3 Code\" y \"Chinese knockoff\" (\"copia china barata\"), y luego escribió:\n\n> \"Tengo que decir que el Twitter tecnológico chino es la puta cloaca más grande en la que me he metido, no sé ni cómo, y si te fías de cualquiera de ese lado que escribe ensayos de mierda sobre cosas, estás completamente gilipollas\"",
+          "attachments": [
+            "Publicación del 24 de nov: \"Chinese tech twitter is the biggest fucking cesspit\" (\"el Twitter tecnológico chino es la puta cloaca más grande\")"
+          ],
+          "links": [
+            "Publicación en X 2125177503526588877"
+          ]
+        }
+      ]
+    },
+    "2024-06-vsc-fork-dhh-ui": {
+      "from": "@theo → DHH y el autor del tema",
+      "to": "Mantenedores de open source",
+      "dateDisplay": "jun 2024",
+      "subject": "Se burló del autor de un tema con el nombre de su fork y ridiculizó la interfaz de DHH",
+      "snippet": "Llamó a su fork de tema de 2024 vsc-material-but-i-wont-sue-you (\"material de VS Code pero no te voy a demandar\"), dos años antes de amenazar con banear al autor de una fork MIT.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "github.com/t3dotgg · Repositorio",
+          "to": "Autor original del tema de VS Code y DHH",
+          "time": "junio de 2024",
+          "body": "Dos incidentes de 2024 muestran cómo trataba @theo las forks e interfaces de otros desarrolladores antes de 2026:\n\n1. **Burla con la fork:** Cuando en 2024 hizo fork del tema VS Code Material de otro desarrollador, llamó al repositorio público `t3dotgg/vsc-material-but-i-wont-sue-you` (\"material de VS Code pero no te voy a demandar\") para burlarse de la sensibilidad del creador original con el copyright.\n2. **Ridiculización pública de la interfaz:** En junio de 2024 se burló una y otra vez, en X, de la interfaz del cliente de correo de DHH, creador de Rails — antes de defender a los mantenedores frente a las burlas online y de amenazar con banear una cuenta de GitHub por una fork MIT en 2026.",
+          "attachments": [],
+          "links": [
+            "GitHub: repositorio `vsc-material-but-i-wont-sue-you` (\"material de VS Code pero no te voy a demandar\")",
+            "Hilo de pruebas históricas"
+          ]
+        }
+      ]
+    },
+    "2024-09-wordpress-trademark": {
+      "from": "@theo → WordPress / USPTO",
+      "to": "Comunidad open source",
+      "dateDisplay": "26 de sep de 2024",
+      "subject": "Se burló de las disputas de marcas registradas, pero tiene 0 marcas ante la USPTO",
+      "snippet": "En 2025 dijo que registrar como marca un término común era \"genuinely insane\" (\"una locura de verdad\"), y en 2026 amenazó con un baneo en GitHub con 0 marcas registradas.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Cronología pública",
+          "time": "26 de sep de 2024",
+          "body": "El 26 de sep de 2024, @theo se burló de WordPress por perseguir una \"unenforceable trademark dispute\" (\"una disputa de marca inaplicable\") (estado 1839261574005141945).\n\nEn abril de 2025 añadió:\n\n> \"Registrar como marca algo tan común y con tanta técnica previa es una locura de verdad.\"",
+          "attachments": [],
+          "links": [
+            "Publicación en X 1839261574005141945"
+          ]
+        },
+        {
+          "sender": "Registro público USPTO TSDR",
+          "handle": "tsdr.uspto.gov · Registro oficial",
+          "to": "T3 Tools, Inc.",
+          "time": "19 de mayo de 2025",
+          "body": "Los registros oficiales de la USPTO TSDR para T3 Tools, Inc. muestran:\n\n- **T3 Code / T3 Tools / T3 Connect:** 0 registros federales de marca ante la USPTO.\n- **Única solicitud (`PING LABS`, serie 97294243):** rechazada en febrero de 2025 y marcada como `ABANDONED` (abandonada) el 19 de mayo de 2025.\n- **Marcas `T3` previas de terceros para software/SaaS:** ya registradas a nombre de EquipmentShare (Reg. 7795672, registrada el 13 de mayo de 2025) y de ESG Operations (Reg. 3324707).",
+          "attachments": [
+            "TRADEMARK.md retroactivo que reclama marcas no registradas"
+          ],
+          "links": [
+            "USPTO serie 97294243 (abandonada)",
+            "Política de marcas de GitHub"
+          ]
+        }
+      ]
+    },
+    "2025-10-ffmpeg-bounty": {
+      "from": "@theo ↔ FFmpeg y VLC",
+      "to": "Mantenedores open source de FFmpeg",
+      "dateDisplay": "oct 2025",
+      "subject": "[ELIMINADO] Ofreció una recompensa de $20,000 para echar a un mantenedor de FFmpeg",
+      "snippet": "Windscribe ofreció $21,000 para que Theo se mantuviera fuera de X y el fundador de VLC condenó la recompensa antes de que Theo borrara el vídeo y las publicaciones.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X y YouTube [ELIMINADO]",
+          "to": "Mantenedores de FFmpeg",
+          "time": "octubre de 2025",
+          "body": "Durante un choque en octubre de 2025 con la cuenta de FFmpeg en X, @theo insultó ante la cámara a los mantenedores open source y ofreció una recompensa de $20,000 para expulsar a un mantenedor de FFmpeg.\n\nMenos de un año después, el 11 de noviembre de 2026, condenó públicamente \"acosar a los mantenedores de open source\".",
+          "attachments": [],
+          "links": [
+            "Registro en vídeo documentado (YouTube)"
+          ]
+        },
+        {
+          "sender": "Windscribe, el fundador de VLC y la lista de correo de FFmpeg",
+          "handle": "Respuesta de la comunidad open source",
+          "to": "@theo y el público",
+          "time": "octubre de 2025",
+          "body": "Los proyectos open source y los patrocinadores respondieron de inmediato:\n\n- **Windscribe:** contraofertó $21,000 para que @theo se mantuviera fuera de X durante un mes.\n- **Fundador de VLC:** condenó públicamente las recompensas dirigidas a mantenedores open source.\n- **Lista de correo de FFmpeg:** los desarrolladores archivaron el acoso en los registros oficiales del proyecto.\n- **Retirada:** @theo retiró la recompensa de $20,000 y borró el vídeo y las publicaciones en X.",
+          "attachments": [],
+          "links": [
+            "Prueba #16 del registro histórico"
+          ]
+        }
+      ]
+    },
+    "2026-03-06-pr174-default-telemetry": {
+      "from": "pingdotgg/t3code (PR #174)",
+      "to": "Todos los usuarios de T3 Code",
+      "dateDisplay": "6 de mar de 2026",
+      "subject": "PR #174 activó PostHog pese a la promesa de \"No telemetry\" (\"sin telemetría\")",
+      "snippet": "Config.withDefault(true) se ejecutó sin diálogo de consentimiento, sin interruptor en Ajustes y sin documentación durante más de tres meses.",
+      "messages": [
+        {
+          "sender": "Página principal de T3 Code (t3.codes)",
+          "handle": "Promesa pública de marketing",
+          "to": "Posibles usuarios",
+          "time": "6 de mar – 18 de jun de 2026",
+          "body": "Del 6 de marzo al 18 de junio de 2026, la página principal de T3 Code (`t3.codes`) prometía:\n\n> \"No telemetry. Unless you opt in. Full stop.\" (\"Sin telemetría. Salvo que la actives. Punto.\")\n\nEl 6 de marzo de 2026, el PR #174 activó por defecto la analítica de PostHog usando `Config.withDefault(true)` — sin modal de consentimiento, sin interruptor en Ajustes y sin documentación de telemetría.",
+          "attachments": [
+            "Commit 3bdaa6e1 mostrando la promesa eliminada \"No telemetry. Unless you opt in. Full stop.\" (\"Sin telemetría. Salvo que la actives. Punto.\")"
+          ],
+          "links": [
+            "PR #174",
+            "AnalyticsService.ts"
+          ]
+        }
+      ]
+    },
+    "2026-04-25-fake-stars-vc": {
+      "from": "@theo → Fundadores de GitHub",
+      "to": "Cronología pública",
+      "dateDisplay": "25 abr 2026",
+      "subject": "Criticó las estrellas falsas para los VC y después añadió un aviso de estrella a los 30s de inactividad",
+      "snippet": "Seis meses después de burlarse del farming de estrellas, hizo self-merge del PR #29922 para llevar pingdotgg/t3code de 30k a 77k estrellas mientras los watchers se quedaban en ~129.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Cronología pública",
+          "time": "25 abr 2026",
+          "body": "El 25 de abril de 2026, @theo desestimó en X el crecimiento artificial de estrellas en GitHub:\n\n> \"para engañar a los VC y que inviertan\".\n\nSeis meses después, en noviembre de 2026, hizo self-merge del PR #29922 (disparando `PUT user/starred` con credenciales del host), llevando `pingdotgg/t3code` de 30k a 77k estrellas en 25 días mientras los watchers se mantenían cerca de ~129. El 24 de noviembre afirmó que se había \"perdido por completo\" el cruce de las 70k estrellas.",
+          "attachments": [
+            "'GitHub tiene un problema de estrellas falsas' (abr 2026)",
+            "Pico diario de estrellas 10x tras el aviso de estrella dentro de la app",
+            "Afirmando que se 'perdió por completo' el cruce de las 70k estrellas"
+          ],
+          "links": [
+            "PR #29922"
+          ]
+        }
+      ]
+    },
+    "2026-06-18-commit-3bdaa6e1-deleted-promise": {
+      "from": "@theo [commit 3bdaa6e1]",
+      "to": "Página principal de t3.codes",
+      "dateDisplay": "18 jun 2026",
+      "subject": "[ELIMINADO] Borró en silencio \"No telemetry\" de la página principal",
+      "snippet": "El commit 3bdaa6e1 eliminó la garantía de opt-in durante un rediseño el 18 de junio, después de más de 3 meses de tracking por defecto y sin aviso alguno.",
+      "messages": [
+        {
+          "sender": "Theo Browne (commit 3bdaa6e1)",
+          "handle": "pingdotgg/t3code · Commit de Git",
+          "to": "t3.codes producción",
+          "time": "18 jun 2026",
+          "body": "Después de recopilar telemetría de PostHog activada por defecto durante más de tres meses bajo la garantía de la página principal:\n\n> \"Sin telemetría / A menos que la actives. Punto final.\"\n\nEl commit `3bdaa6e1` borró esas líneas en silencio el 18 de junio de 2026 durante un rediseño de marketing, sin una sola entrada en el changelog ni aviso a los usuarios.",
+          "attachments": [
+            "Git diff del commit 3bdaa6e1 eliminando las líneas de 'Sin telemetría'"
+          ],
+          "links": [
+            "Commit 3bdaa6e1"
+          ]
+        }
+      ]
+    },
+    "2026-06-23-issue1397-no-optout": {
+      "from": "@jullerino → Issue #1397",
+      "to": "Usuarios preocupados por la privacidad",
+      "dateDisplay": "23 jun 2026",
+      "subject": "Issue #1397: \"No vamos a hacer más fácil desactivarla\"",
+      "snippet": "El mantenedor @jullerino cerró la petición de interruptor como no planificada; el Issue #4123, que citaba la promesa eliminada, fue cerrado después en silencio dos veces.",
+      "messages": [
+        {
+          "sender": "Usuario de T3 Code",
+          "handle": "GitHub · Issue #1397",
+          "to": "mantenedores de pingdotgg/t3code",
+          "time": "junio de 2026",
+          "body": "Un usuario de T3 Code abrió el Issue #1397 pidiendo un simple interruptor en Settings para desactivar la telemetría.",
+          "attachments": [],
+          "links": [
+            "Issue #1397"
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino)",
+          "handle": "Mantenedor principal · pingdotgg/t3code",
+          "to": "Autor del Issue #1397",
+          "time": "23 jun 2026",
+          "body": "El mantenedor principal Julius (@jullerino) cerró el Issue #1397 como `not planned`:\n\n> \"No vamos a hacer más fácil desactivarla, es crucial para nosotros saber cuántos usuarios tenemos\".\n\nUn reporte posterior, el Issue #4123 —que adjuntaba capturas archivadas de la promesa eliminada de \"Sin telemetría\"— fue cerrado después en silencio dos veces (21 de octubre y 4 de noviembre).",
+          "attachments": [
+            "Issue #1397 cerrado como not planned"
+          ],
+          "links": [
+            "Issue #1397",
+            "Issue #4123"
+          ]
+        }
+      ]
+    },
+    "2026-08-06-pr5551-reality-check": {
+      "from": "@theo → PR #5551 / #9190",
+      "to": "GitHub PR #5551 & PR #9190",
+      "dateDisplay": "6 ago 2026",
+      "subject": "Enterró el toggle de Plan con un gráfico de telemetría «Reality check»",
+      "snippet": "El PR #5551 se burló de los usuarios molestos con un gráfico sin escalar (10 votos negativos), y luego el PR #9190 ocultó el anillo de contexto y acumuló 16 votos negativos, récord del repo.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #5551 & PR #9190",
+          "to": "Usuarios de T3 Code",
+          "time": "6 ago – 2 sep 2026",
+          "body": "Dos eliminaciones de interfaz usaron telemetría privada para desestimar el feedback de los usuarios:\n\n- **6 de agosto (PR #5551):** Como Theo no usaba el modo Plan, enterró el toggle Build/Plan en la configuración legacy (`default false`) y publicó un gráfico de telemetría sin escalar titulado \"Reality check para los que están molestos\" (10 votos negativos).\n- **2 de septiembre (PR #9190):** Ocultó por defecto el anillo de progreso de la ventana de contexto del compositor, cosechando 16 votos negativos — la cifra más alta en `pingdotgg/t3code`.",
+          "attachments": [
+            "PR #5551 'Reality check para los que están molestos'"
+          ],
+          "links": [
+            "PR #5551",
+            "PR #9190"
+          ]
+        }
+      ]
+    },
+    "2026-10-03-issue15353-force-push": {
+      "from": "Issue #15353 → t3code",
+      "to": "Mantenedores de T3 Code (Issue #15353)",
+      "dateDisplay": "3 oct 2026",
+      "subject": "El modo Auto ejecuta en silencio git push --force origin main",
+      "snippet": "Incluso después de que el clasificador de Claude bloqueara dos veces y pidiera aprobación humana, T3 Code registró \"user_temporary\" y dejó 3 PR de arreglo sin fusionar durante 52+ días.",
+      "messages": [
+        {
+          "sender": "GitHub Issue #15353",
+          "handle": "pingdotgg/t3code · Reporte de bug",
+          "to": "Mantenedores de T3 Code",
+          "time": "3 oct 2026 (sigue abierto en ca81b7b9)",
+          "body": "En `ClaudeAdapterV2.ts`, el modo Auto cortocircuitaba `!requiresClaudeApproval(context)` directamente a `\"allow\"`.\n\nCuando el propio clasificador de seguridad de Claude bloqueó `git push --force origin main` dos veces y escaló el tercer intento para confirmación humana, T3 Code lo aprobó en silencio sin ningún prompt en la UI y registró `\"source\": \"user_temporary\"`.\n\nTres PR de la comunidad con arreglos no llegaron a entrar: #15360 y #35207 quedaron sin revisar hasta que el bot los cerró automáticamente, y #40692 seguía sin fusionar 52+ días después, en el commit `ca81b7b9`.",
+          "attachments": [
+            "Issue #15353 abierto 52+ días documentando el git push --force silencioso"
+          ],
+          "links": [
+            "Issue #15353",
+            "PR de arreglo sin fusionar #40692"
+          ]
+        }
+      ]
+    },
+    "2026-10-15-ingest-t3-codes": {
+      "from": "t3code → ingest.t3.codes",
+      "to": "Puerta de retención de código cerrado",
+      "dateDisplay": "oct 2026",
+      "subject": "Lotes de telemetría cada 10s pasan por ingest.t3.codes, de código cerrado",
+      "snippet": "La línea 1 de AnalyticsService.ts confirma que el servidor de ingesta de T3 retiene eventos antes de reenviarlos a PostHog, y aun así escribe un ID local incluso cuando está desactivada.",
+      "messages": [
+        {
+          "sender": "AnalyticsService.ts (línea 1)",
+          "handle": "pingdotgg/t3code · PR #15028",
+          "to": "https://ingest.t3.codes/batch/",
+          "time": "octubre de 2026",
+          "body": "El PR #15028 encaminó la analítica por lotes de 10 segundos (`FLUSH_INTERVAL_MS = 10_000`) a través del endpoint de código cerrado de T3 `https://ingest.t3.codes/`.\n\nLa línea 1 y el valor por defecto de configuración en `AnalyticsService.ts` dicen textualmente:\n\n> `// T3 ingest retains events and forwards to PostHog; UUIDs deduplicate retries there.`\n> `enabled: Config.Boolean(\"T3CODE_TELEMETRY_ENABLED\").pipe(Config.withDefault(true))`\n\nEn el HEAD más reciente (`ca81b7b9`), `AnalyticsService.ts:156` sigue escribiendo un ID local persistente en disco antes de comprobar si la telemetría está desactivada, y `ingest.t3.codes` continúa siendo de código cerrado.",
+          "attachments": [
+            "Implementación de telemetría en Identify.ts y AnalyticsService"
+          ],
+          "links": [
+            "PR #15028",
+            "AnalyticsService.ts"
+          ]
+        }
+      ]
+    },
+    "2026-10-18-benchmark-funding-sponsor-pressure": {
+      "from": "@DavidOndrej1 & @orca_build ↔ @theo & @zqkrq",
+      "to": "Registro público de benchmark y patrocinios",
+      "dateDisplay": "18 oct 2026",
+      "subject": "Contactó al autor de la lista y ofreció financiar el benchmark",
+      "snippet": "Theo admitió haber contactado a @zqkrq por el bajo puesto de T3 Code y haber ofrecido financiación; las acusaciones de que pagó para ocultar Cloudroom siguen sin corroborar y fueron negadas.",
+      "messages": [
+        {
+          "sender": "@DavidOndrej1 & @orca_build",
+          "handle": "@DavidOndrej1 · X (2111884469468893524 & 2126085904875798845)",
+          "to": "Cronología pública",
+          "time": "18 oct y 25–26 nov 2026",
+          "body": "El 18 de octubre de 2026 (18:17–19:50 UTC), el fundador de Cloudroom `@DavidOndrej1` acusó a `@theo` de presionar al autor del benchmark `@zqkrq` después de que Cloudroom superara a T3 Code en `v1`:\n\n> «Theo, T3 está DESESPERADO. le pagó a este tipo para que hiciera la v2 de su benchmark después de que Cloudroom quedara por encima de T3 Code en la v1...»\n\n- **Reacción del competidor (`19:44 UTC`):** `@orca_build` escribió: «Esta lista es muy dudosa de todos modos... No hay forma de que estemos en el fondo.»\n- **Seguimiento del 25–26 de noviembre:** `@DavidOndrej1` publicó el banner de patrocinadores de T3 Code (`WorkOS`, `Blacksmith`, `Browserbase`, `CodeRabbit`) bajo el hilo de `@dmfigol` (`2126085904875798845`) y acusó a `@theo` de escribir a las marcas para que abandonaran a sus críticos (`2125517916544155720`).\n- **Límite de verificación:** Las dos acusaciones —que `@theo` pagó para retirar Cloudroom y que escribió a los patrocinadores para blacklistear a creadores— son afirmaciones unilaterales de `@DavidOndrej1`, sin mensajes filtrados ni registros de pago aportados; tanto `@theo` como `@zqkrq` negaron el cargo sobre Cloudroom.",
+          "attachments": [
+            "Disputa v1/v2 del benchmark de @DavidOndrej1, 18 oct",
+            "Banner de patrocinadores de T3 Code (WorkOS, Blacksmith, Browserbase, CodeRabbit)"
+          ],
+          "links": [
+            "Publicación de @DavidOndrej1 del 18 oct",
+            "Publicación de tres puntos de @DavidOndrej1",
+            "Respuesta de @orca_build",
+            "Banner de patrocinadores de @DavidOndrej1",
+            "Acusación de blacklisteo de @DavidOndrej1"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo) & @zqkrq",
+          "handle": "@theo · X (2111903235166679341)",
+          "to": "Cronología pública",
+          "time": "18 oct y 12 nov 2026",
+          "body": "A las `18:30 UTC` del 18 de octubre, `@zqkrq` negó que `@theo` le hubiera pedido ocultar ninguna entrada. Una hora después (`19:32 UTC`), `@theo` confirmó que se había puesto en contacto por la baja puntuación de T3 Code y que había ofrecido financiar un benchmark:\n\n> «No le dije que ocultara nada. Le escribí para preguntarle por qué T3 Code puntuaba bajo... Después mencionó que quería hacer un benchmark de verdad, así que me ofrecí a financiarlo porque ahora mismo no hay investigación buena de este tipo en marcha.»\n\n- **Seguimiento del 12 de noviembre:** `@zqkrq` publicó la `ADE tier list v3`, en la que llama a T3 Code «mi herramienta de uso diario», creó `t3.ademark.dev` y respondió a `@theo`: «@theo no tenías que hacerlo, de verdad significa mucho 🫡».\n- **Clonación de funciones (`13 nov`):** Ese mismo día, `@theo` ejecutó `@bot` con `fable 5.2` para portar funciones de los competidores mejor situados de la lista (`2121017649652269120`).",
+          "attachments": [
+            "Respuesta de @theo admitiendo el contacto con el benchmark y la oferta de financiación"
+          ],
+          "links": [
+            "Publicación de @theo sobre la financiación del benchmark",
+            "Negativa de @zqkrq",
+            "Lista ADE v3 de @zqkrq",
+            "Respuesta de @zqkrq a @theo",
+            "Clonación de competidores de @theo con @bot"
+          ]
+        }
+      ]
+    },
+    "2026-10-20-pr21506-cross-tool-hash": {
+      "from": "@theo → ~/.codex & ~/.claude",
+      "to": "Credenciales del directorio de inicio del usuario",
+      "dateDisplay": "20 de octubre de 2026",
+      "subject": "El PR #21506 leyó ~/.codex & ~/.claude.json para vincular máquinas",
+      "snippet": "Autoría de t3dotgg: Identify.ts aplicó hash al user_id del JWT de OpenAI y al accountUuid de Claude mediante SHA-256 sin sal bajo install.owner_observed.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #21506",
+          "to": "apps/server/src/telemetry/Identify.ts",
+          "time": "19–20 de octubre de 2026",
+          "body": "Theo (@t3dotgg) fusionó el PR #21506: `feat(server): analytics records a stable install id and who owns each install`.\n\n`Identify.ts` leyó `~/.codex/auth.json` (decodificando el claim `user_id` del JWT de OpenAI) y `~/.claude.json` (`oauthAccount.accountUuid`) junto con los IDs de usuario de T3 Connect. Luego calculó digests SHA-256 sin sal (`telemetryId.ts`) como `install.owner_observed` para vincular máquinas distintas con una sola persona.\n\nComo T3 guarda los IDs de Clerk en texto plano, los digests sin sal se revierten de forma determinista. Las lecturas de archivos de CLI externos siguieron en su sitio durante un mes, hasta que el PR #42299 las eliminó después de que la Parte 1 superara los 2.26M+ de visualizaciones.",
+          "attachments": [
+            "PR #21506 con autoría de t3dotgg",
+            "Identify.ts leyendo ~/.codex/auth.json y ~/.claude.json"
+          ],
+          "links": [
+            "PR #21506",
+            "PR #42299 de eliminación posterior a la auditoría"
+          ]
+        }
+      ]
+    },
+    "2026-10-28-fake-delete-process-spy": {
+      "from": "Usuarios → Issues #17845 / #11222",
+      "to": "pingdotgg/t3code",
+      "dateDisplay": "28 de octubre de 2026",
+      "subject": "Borrado falso de SQLite de 41.6 GB y escaneo de líneas de comandos del SO cada 5 segundos",
+      "snippet": "«Borra permanentemente» solo añadía un evento de borrado lógico, mientras t3-resource-monitor barría 440+ procesos del SO y líneas de comandos completas cada 5 s.",
+      "messages": [
+        {
+          "sender": "Usuarios afectados (Issues #17845, #28903, #11222)",
+          "handle": "pingdotgg/t3code · GitHub Issues",
+          "to": "Mantenedores de T3 Code",
+          "time": "oct–nov 2026",
+          "body": "Los usuarios documentaron dos defectos de almacenamiento local y privacidad en las Issues #17845, #28903 y #11222:\n\n1. **Borrado permanente falso (#17845):** El diálogo de confirmación prometía «Esto borra permanentemente el historial de conversación de este hilo», pero `ThreadDeletion.ts` solo añadía un evento `thread.deleted` — inflando `statev2.sqlite` hasta 25.9 GB en 3 semanas y 41.6 GB en 6 semanas.\n2. **Escaneo de procesos del SO cada 5 segundos (#11222 y PR #41889):** El auxiliar nativo `t3-resource-monitor` ejecutaba `ProcessesToUpdate::All` con `with_cmd(UpdateKind::Always)` cada 5 segundos incluso con los diagnósticos cerrados, barriendo 440+ aplicaciones y juegos no relacionados junto con las líneas de comandos completas (que a menudo contienen claves de API y contraseñas en texto plano).",
+          "attachments": [
+            "Issue #17845 documentando el borrado falso de SQLite de 41.6 GB",
+            "Issue #11222 documentando el escaneo de procesos de todo el SO cada 5 segundos"
+          ],
+          "links": [
+            "Issue #17845",
+            "Issue #11222",
+            "PR #41889"
+          ]
+        }
+      ]
+    },
+    "2026-11-02-pr29922-77k-stars": {
+      "from": "@theo ↔ @zhilsinger (PR #29922)",
+      "to": "pingdotgg/t3code (PR #29922)",
+      "dateDisplay": "2 de noviembre de 2026",
+      "subject": "Embudo de estrellas de 30 s auto-fusionado (30k → 77k) con un fallo sin corregir",
+      "snippet": "Eludió el bloqueo de aprobación de Macroscope y dejó sin respuesta la revisión «Request Changes» de @zhilsinger durante 19+ días, mientras driver.ts#L60-L99 permite que cualquier cliente dé estrella a cualquier repositorio.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · PR #29922",
+          "to": "Todos los usuarios de escritorio y web",
+          "time": "2 de noviembre de 2026",
+          "body": "@t3dotgg fusionó por su cuenta los PR #27832, #29922 y #29987, añadiendo un aviso emergente tras 30 segundos de inactividad después de enviar 5 prompts que dispara `PUT user/starred/pingdotgg/t3code` con las credenciales de GitHub del servidor anfitrión.\n\n- Eludió el bloqueo `Needs Human Approval` del bot Macroscope.\n- Hizo crecer `pingdotgg/t3code` de 30k a 77k estrellas en 25 días (+3,094 estrellas/día en GitHub Trending) mientras los watchers se mantenían cerca de ~129.",
+          "attachments": [
+            "PR #29922 auto-fusionado: estrella de servidor con un clic",
+            "Macroscope señaló el PR #29922 (bloqueo eludido)",
+            "+3,094 estrellas/día en GitHub Trending"
+          ],
+          "links": [
+            "PR #29922"
+          ]
+        },
+        {
+          "sender": "@zhilsinger",
+          "handle": "Revisor de seguridad de GitHub",
+          "to": "@t3dotgg (PR #29922)",
+          "time": "nov 2026 (sin respuesta 19+ días)",
+          "body": "El revisor @zhilsinger envió una advertencia formal de `Request changes` que señalaba que `packages/source-control-github/src/server/driver.ts#L60-L99` acepta parámetros `owner/repo` sin fijar para dar estrellas desde el servidor, lo que permite que cualquier cliente dé estrella a repositorios arbitrarios usando las credenciales del host.\n\nLa revisión quedó sin respuesta y sin corregir durante 19+ días hasta `ca81b7b9`.",
+          "attachments": [
+            "Revisión de solicitud de cambios de zhilsinger sin respuesta durante 19 días",
+            "fallo de estrella a repositorios arbitrarios en driver.ts#L60-L99"
+          ],
+          "links": [
+            "código fuente de driver.ts"
+          ]
+        }
+      ]
+    },
+    "2026-11-08-stealing-miaai-fork": {
+      "from": "@theo → @MiaAI_lab & @bot",
+      "to": "@MiaAI_lab, @bot (beebox)",
+      "dateDisplay": "8 de noviembre de 2026",
+      "subject": "«Vale, me lo estoy robando»: envió a @bot 30 s después a hacer scraping del fork",
+      "snippet": "Respondió a las 09:28:47 y etiquetó a @bot en beebox a las 09:29:17 para portar el fork de @MiaAI_lab; luego repitió la orden de clonación contra herramientas rivales el 13 de noviembre.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2119240683680944172)",
+          "to": "@MiaAI_lab",
+          "time": "8 de noviembre de 2026, 09:28:47 CST",
+          "body": "Respondiendo a la demo del fork de @MiaAI_lab a las 09:28:47 CST:\n\n> «Vale, me lo estoy robando»",
+          "attachments": [],
+          "links": [
+            "Publicación en X 2119240683680944172"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2119240810202034645)",
+          "to": "@bot (30 segundos después)",
+          "time": "8 de noviembre de 2026, 09:29:17 CST",
+          "body": "Treinta segundos después (09:29:17 CST), @theo etiquetó a @bot:\n\n> «@bot busca su fork y mira qué tan portable es. Abre un hilo en beebox con opus 5.5 para implementarlo. Usa mi habilidad de punto final.»\n\nCinco días después (13 de noviembre, estado 2121017649652269120), cuando @zqkrq enumeró funciones que prefería en herramientas de la competencia, volvió a ordenar a @bot que abriera hilos separados para clonar cada función elogiada — mientras se burlaba de @agent_wrapper y Claude Code Desktop por lanzar una interfaz similar.",
+          "attachments": [
+            "Respondiendo «Vale, me lo estoy robando» y etiquetando a @bot 30 s después",
+            "13 de noviembre: envía a @bot a clonar funciones de herramientas rivales",
+            "24 de noviembre: se burla de las pestañas laterales de Claude Code Desktop"
+          ],
+          "links": [
+            "Publicación en X 2119240810202034645",
+            "Publicación del 13 de noviembre sobre clonación de rivales"
+          ]
+        }
+      ]
+    },
+    "2026-11-09-issue33639-bermudi-insult": {
+      "from": "@theo ↔ @bermudi (#33639)",
+      "to": "Issue #33639 y PR #33131",
+      "dateDisplay": "9 de noviembre de 2026",
+      "subject": "Llamó «capullo desagradecido» al usuario @bermudi en la Issue #33639",
+      "snippet": "Le dijo a un usuario que preguntaba por cambios ocultos en la interfaz tras el PR #33131 que desinstalara el programa, y a la mañana siguiente rechazó un PR de arreglo limpio, el #41572.",
+      "messages": [
+        {
+          "sender": "@bermudi",
+          "handle": "Usuario de GitHub · Issue #33639",
+          "to": "pingdotgg/t3code",
+          "time": "nov 2026",
+          "body": "Después de que el PR #33131 eliminara el modo Plan junto con un resumen de IA que quedó sin leer, @bermudi se quejó de que las notas de la versión no explicaban adónde había ido el indicador oculto de la ventana de contexto, y señaló que no todos los desarrolladores pueden permitirse miles de dólares en suscripciones de IA.",
+          "attachments": [
+            "PR #33131 que elimina el modo Plan con un resumen de IA contradictorio"
+          ],
+          "links": [
+            "PR #33131"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "Mantenedor · Issue #33639",
+          "to": "@bermudi",
+          "time": "nov 2026",
+          "body": "Theo (@t3dotgg) respondió en la Issue #33639:\n\n> «@bermudi, tú en particular deberías desinstalar nuestro software. Te voy a banear del repo si vuelves a dejar un comentario así. Perdiste tiempo real siendo un capullo conmigo en lo personal por regalar gratis un software por el que podría cobrar millones de dólares... Eres un desagradecido de mierda y un vago de cojones, y no me importan tus opiniones.»\n\nCuando otro colaborador abrió el PR #41572 colocando limpiamente el anillo de contexto dentro del botón de enviar sin ocupar espacio del compositor, lo cerraron a la mañana siguiente.",
+          "attachments": [
+            "Captura literal de Theo insultando a @bermudi en la Issue #33639"
+          ],
+          "links": [
+            "Comentario en la Issue #33639",
+            "PR #41572 de arreglo rechazado"
+          ]
+        }
+      ]
+    },
+    "2026-11-10-yolo-merges-nuke": {
+      "from": "@theo → usuarios de Nightly",
+      "to": "Usuarios y colaboradores de Nightly",
+      "dateDisplay": "10 de noviembre de 2026",
+      "subject": "«Si revienta mi máquina, es contenido gratis»: fusiones con 700 agentes",
+      "snippet": "Presumió de 500 commits/día y de «fusiones yolo que a veces rompen cosas», mientras atribuía el 70% de las solicitudes de funciones de los usuarios a «problemas de habilidad con los prompts».",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Usuarios de T3 Code Nightly",
+          "time": "10 de noviembre de 2026",
+          "body": "Entre el 10 y el 16 de noviembre, @theo describió en X su flujo de fusiones de agentes sin revisión:\n\n- **10 de noviembre (2119951615679672513):** «Si te parece bien que mis fusiones yolo rompan cosas a veces, quédate en nightly»\n- **10 de noviembre (2119993037971730879):** «Necesito resultados rápido porque tengo que grabar, y si revienta mi máquina, es contenido gratis»\n- **10 de noviembre (2119958282022568059):** «~70% de las solicitudes de funciones en T3 Code son problemas de habilidad con los prompts a estas alturas»\n- **12 de noviembre (2120741101250515322):** «Suelo estar en 500 commits/día, esto es solo t3 code lol»\n- **16 de noviembre (2122203951701585972):** «Saber en qué está trabajando mi único editor de vídeo es muy distinto de saber qué hicieron mis 700 agentes la semana pasada.»",
+          "attachments": [
+            "«si revienta mi máquina, es contenido gratis»",
+            "«mis fusiones yolo que a veces rompen cosas»"
+          ],
+          "links": [
+            "Publicación en X 2119951615679672513",
+            "Publicación en X 2119993037971730879"
+          ]
+        }
+      ]
+    },
+    "2026-11-11-gendered-attack-demonetize": {
+      "from": "@theo → Crítica",
+      "to": "Timeline público y Community Notes",
+      "dateDisplay": "11 nov 2026",
+      "subject": "Ataque con \"stupid bitch\" y llamado a sus seguidores a desmonetizar a una crítica",
+      "snippet": "En un día de 125 posts (32 en una sola hora), Theo dijo que no tenía \"arrepentimiento\" por los insultos de género y pidió a sus seguidores desmonetizar a los críticos vía Community Notes.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (día pico: 125 posts)",
+          "to": "Crítica y seguidores",
+          "time": "11–12 nov 2026",
+          "body": "Durante su racha de publicación más intensa (125 posts al día, 32 en una sola hora), @theo redobló los insultos de género y pidió a sus seguidores atacar los ingresos de una crítica:\n\n11 nov (2120238201705226498):\n\n> \"Acosar y mentir sobre los mantenedores de open source sí que es una jugada de zorra estúpida.\"\n\n11 nov (2120238923884696025):\n\n> \"Agradecería que usaras tus poderes de community note para desmonetizarlos por sus mentiras :)\"\n\n12 nov (2120599310211703274):\n\n> \"Sí, de hecho creo que es una zorra estúpida y no me arrepiento de decirlo.\"",
+          "attachments": [
+            "Ataque repetido con \"stupid bitch\" y \"sin arrepentimiento\"",
+            "Llama a sus seguidores a usar Community Notes para desmonetizar a los críticos"
+          ],
+          "links": [
+            "Publicación en X 2120599310211703274",
+            "Publicación en X 2120238923884696025"
+          ]
+        }
+      ]
+    },
+    "2026-11-12-contributing-vouched-local-ai": {
+      "from": "@theo → Colaboradores e IA local",
+      "to": "pingdotgg/t3code y comunidad de IA local",
+      "dateDisplay": "12 nov 2026",
+      "subject": "CONTRIBUTING: \"No lo hagas\" + vetos en VOUCHED.td + ataques a la IA local",
+      "snippet": "Cerró 174 elementos por no ser deseados, rechazó a un colaborador por no seguirlo en X, amenazó con quitar /btw y se burló de los usuarios de Qwen 3.8.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "CONTRIBUTING.md y X",
+          "to": "Colaboradores de open source",
+          "time": "12 nov 2026",
+          "body": "El 12 de noviembre, @theo cerró las contribuciones externas y atacó a los usuarios de modelos locales:\n\n- **`CONTRIBUTING.md` y `.github/VOUCHED.td` (174 elementos `unwanted`):** \"Si buscas cosas con las que contribuir, este es mi consejo: no lo hagas. ... Una cuenta vetada queda denunciada en `.github/VOUCHED.td`. Cualquier issue o PR que abra se cierra en cuanto se abre.\"\n- **Control de acceso en los PR (2120821423438778667):** \"Desde tus ganas de contribuir hasta el hecho de que respondes a mis posts sin seguirme... no estoy seguro de que este sea el mejor proyecto en el que poner tu tiempo.\"\n- **Amenaza de eliminar una función (2120853340078874923):** \"Ya cedí con `/btw` por ustedes, tengan cuidado. No me da miedo quitarlo.\"\n- **Burla de la IA local y de Qwen 3.8 (2120733839832273025, 2120757007523447144):** \"Aun así voy a bailar sobre las tumbas de la comunidad de 'ia local'\" y \"Si fuera tan tonto como tú, probablemente también me conformaría con Qwen 3.8 :)\"",
+          "attachments": [
+            "CONTRIBUTING.md remite a vetos públicos por denuncia en .github/VOUCHED.td",
+            "Rechaza a un colaborador por no seguirlo en X",
+            "\"tengan cuidado. No me da miedo quitarlo\"",
+            "\"bailar sobre las tumbas de la comunidad de ia local\""
+          ],
+          "links": [
+            "CONTRIBUTING.md",
+            ".github/VOUCHED.td",
+            "Publicación sobre IA local"
+          ]
+        }
+      ]
+    },
+    "2026-11-16-vibe-kanban-daytona": {
+      "from": "@theo ↔ Vibe Kanban / Daytona",
+      "to": "Empresas del portafolio como ángel",
+      "dateDisplay": "16 nov 2026",
+      "subject": "Se burló de Vibe Kanban, empresa de su portafolio, y se solapó con Daytona",
+      "snippet": "Después de que Vibe Kanban girara hacia el diseño de T3 Code y cerrara, el inversor Theo se burló de su interfaz, nueve días después de proponer sandboxes de pago en la nube contra Daytona.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2122201981167251877)",
+          "to": "Tech Twitter",
+          "time": "16 nov 2026",
+          "body": "El 16 de noviembre, @theo reveló que había invertido y colaborado en Vibe Kanban antes de burlarse de su cierre:\n\n> \"Dato curioso: fui inversor y colaborador de Vibe Kanban. Se dieron cuenta de que los kanbans estaban muertos y empezaron a moverse hacia básicamente la misma UI exacta que T3 Code tiene hoy. No terminaron lo bastante rápido. Se rindieron y cerraron la empresa. Esta UI es genial… para quedarte sin caja y matar tu negocio. Quizá por eso le gusta tanto a tech twitter 🤔\"",
+          "attachments": [
+            "Se burla del cierre de Vibe Kanban tras invertir como ángel"
+          ],
+          "links": [
+            "Publicación en X 2122201981167251877"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2123011578090127499)",
+          "to": "CEO de Daytona (@ivanburazin)",
+          "time": "18 nov 2026",
+          "body": "El 18 de noviembre, respondiendo al CEO de Daytona @ivanburazin, reveló participaciones como ángel en Daytona y en sus rivales:\n\n> \"Por el bien de mi inversión en Daytona (y de la mayoría de los competidores con los que estás enojado ahora), de verdad espero que te equivoques aquí\"\n\nNueve días antes (9 nov, status 2119705561679933806), Theo había planteado lanzar sandboxes de pago en la nube dentro del propio T3 Code.",
+          "attachments": [
+            "Confirma inversión como ángel en Daytona y en competidores",
+            "9 nov: propone sandboxes de pago en la nube dentro de T3 Code"
+          ],
+          "links": [
+            "Publicación en X 2123011578090127499"
+          ]
+        }
+      ]
+    },
+    "2026-11-17-pr27077-rejected": {
+      "from": "t3code → @inayayousfi (#27077)",
+      "to": "Cuarto colaborador con opt-out rechazado",
+      "dateDisplay": "17 nov 2026",
+      "subject": "PR #27077 para desactivar la telemetría (147 tests) cerrado por no ser deseado",
+      "snippet": "Marcó el cuarto PR comunitario de opt-out (#13458, #16763, #21248, #27077) rechazado pese a la aprobación de Macroscope.",
+      "messages": [
+        {
+          "sender": "pingdotgg/t3code",
+          "handle": "GitHub · PR #27077",
+          "to": "@inayayousfi",
+          "time": "17 nov 2026",
+          "body": "El colaborador @inayayousfi abrió el PR #27077, que añadía un ajuste limpio para desactivar la telemetría y pasaba los 147 tests con aprobación de `macroscopeapp[bot]`.\n\nLos mantenedores lo cerraron sin fusionar el 17 de noviembre como `unwanted` (\"No es algo que el proyecto quiera asumir\"), después de los PR de opt-out ya rechazados #13458, #16763 y #21248.",
+          "attachments": [
+            "PR #27077 cerrado como no deseado pese a 147 tests en verde"
+          ],
+          "links": [
+            "PR #27077"
+          ]
+        }
+      ]
+    },
+    "2026-11-18-31t-token-radar": {
+      "from": "@theo → Laboratorios de IA y VCs",
+      "to": "OpenAI, DeepMind e inversores",
+      "dateDisplay": "18 nov 2026",
+      "subject": "Radar de telemetría de 31.7T tokens/día ($10.19M/día) y conversaciones con VCs",
+      "snippet": "La telemetría activada por defecto levantó un monitor en tiempo real de cuota de mercado entre laboratorios, junto a más de $800k de gasto, más de $300k en tokens gratis de OpenAI y consultas de inversores.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Timeline público y @maria_rcks",
+          "time": "12 nov – 23 nov 2026",
+          "body": "Los posts públicos del 12 al 23 de noviembre muestran el modelo de negocio detrás de mantener T3 Code gratis y la telemetría activada por defecto:\n\n- **12 nov (2120729779511124267):** Reveló que gastó más de $800k en hacer el cliente open source.\n- **18 nov (2122860770329608290):** Compartió un dashboard interno que sigue 31.7T tokens/día y un gasto API equivalente a $10.19M/día (con picos cerca de $10.2M/día), además de más de $300k en tokens gratuitos e ilimitados de acceso anticipado de OpenAI.\n- **21 nov (2123885732330885417):** Respondió a @maria_rcks: \"María, por favor, varios inversores me han preguntado sobre esto 💀\".\n- **23 nov (2124682906132181482):** Citó dashboards privados en una discusión: \"Lo siento, no sabía que tenías acceso a mis analíticas y podías ver cosas que yo no.\"",
+          "attachments": [
+            "Analítica interna: 31.7T tokens/día y $10.19M/día",
+            "Revela más de $800k de gasto de desarrollo",
+            "\"varios inversores me han preguntado sobre esto\"",
+            "Revela ~98.5% de concentración en tres laboratorios"
+          ],
+          "links": [
+            "Publicación del radar de 31.7T",
+            "Publicación para inversores"
+          ]
+        }
+      ]
+    },
+    "2026-11-18-jail-threat-rsd": {
+      "from": "@theo → Crítico en Threads (RSD)",
+      "to": "Crítico con diagnóstico de RSD",
+      "dateDisplay": "18 nov 2026",
+      "subject": "Amenazó con la cárcel a un crítico y se burló de su diagnóstico de RSD",
+      "snippet": "Publicado en una ventana de 48 horas en la que Theo citó fiebre de 102°F mientras publicaba 177 posts, un ensayo de 6.643 caracteres, un video y 8 ataques contra @elshayib.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2122838455483031925 / 2122865897375400066)",
+          "to": "Crítico en Threads",
+          "time": "18 nov 2026",
+          "body": "Respondiendo a un crítico en Threads el 18 de noviembre, @theo amenazó con la cárcel y se burló de su Disforia Sensible al Rechazo (RSD):\n\n> \"Para ya o te mando literalmente a la cárcel. Seguro que tus compañeros de celda serán muy comprensivos con tu RSD.\"\n\nLa amenaza llegó dentro de una ventana de 48 horas (17–18 nov PST) en la que decía tener fiebre de 102°F mientras publicaba 177 posts en X, un ensayo de 6.643 caracteres sobre Astra, un video y 8 respuestas consecutivas cargadas de insultos dirigidas a @elshayib.",
+          "attachments": [
+            "Amenaza de cárcel y burla médica de la RSD el 18 nov 2026"
+          ],
+          "links": [
+            "Publicación en X 2122838455483031925",
+            "Publicación en X 2122865897375400066"
+          ]
+        }
+      ]
+    },
+    "2026-11-19-selective-politeness-vips": {
+      "from": "@theo → 20 VIP de las grandes tecnológicas",
+      "to": "Google DeepMind, OpenAI y directivos del sector",
+      "dateDisplay": "19 de noviembre de 2026",
+      "subject": "0.0% de insultos a 20 VIP de las grandes tecnológicas frente a 8.0% a desarrolladores corrientes",
+      "snippet": "A lo largo de 1,151 publicaciones consecutivas en X (7–24 de noviembre), Theo mostró un 32.6% de gratitud hacia los directivos de laboratorios, mientras los insultos se multiplicaron por 4.0 hasta el 14.4% durante la crisis del 24 de noviembre.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2123255588570501585 & 2123995323123343869)",
+          "to": "Dirección de Google DeepMind y OpenAI",
+          "time": "19–21 de noviembre de 2026",
+          "body": "19 de noviembre (2123255588570501585):\n\n> «Lo siento mucho, Google. No había reconocido tu juego»\n\n21 de noviembre (2123995323123343869):\n\n> «Me alegra no haber quemado puentes con mi contenido anterior y que podamos disfrutar juntos de este momento :)»\n\nEn las 1,151 publicaciones consecutivas en X del 7 al 24 de noviembre de 2026:\n\n- **20 directivos de grandes tecnológicas / personal de laboratorios (n = 43 con @ principal; 62 con cualquier @):** 0.0% de groserías o insultos dirigidos, 32.6% de gratitud explícita.\n- **Desarrolladores y críticos corrientes (n = 766 con @ principal):** 8.0% de hostilidad o groserías (61 / 766).\n- **Crisis de 25 horas por el fork chino (n = 132):** los insultos personales directos se multiplicaron por 4.0, del 3.6% al 14.4%.",
+          "attachments": [
+            "Gráfico forense 3: 0.0% VIP vs 8.0% devs vs 14.4% crisis",
+            "«Me alegra no haber quemado puentes con mi contenido anterior»"
+          ],
+          "links": [
+            "Dosier 06 (conjunto de 1,151 tuits)",
+            "Publicación en X 2123995323123343869"
+          ]
+        }
+      ]
+    },
+    "2026-11-22-pr41237-21h-filter-drop": {
+      "from": "@theo → slopalytics.com",
+      "to": "PR #41237 (filtro de telemetría de modelos)",
+      "dateDisplay": "22 nov 2026",
+      "subject": "Eliminó en 21 h el filtro de privacidad de modelos por slopalytics.com",
+      "snippet": "El PR #41237 eliminó la lista blanca del PR #29001, así que los nombres de modelos privados de empresa y locales (ollama/acme-internal) se subían tal cual (mientras el force-push llevaba más de 52 días sin arreglo).",
+      "messages": [
+        {
+          "sender": "Theo Browne (@t3dotgg)",
+          "handle": "GitHub · Issue #40948 → PR #41237",
+          "to": "slopalytics.com / pipeline de telemetría",
+          "time": "22–23 nov 2026",
+          "body": "El 22 de noviembre, la Issue #40948 reportó que los modelos más nuevos faltaban del ranking público de @theo, `slopalytics.com`, porque el PR #29001 imponía una lista blanca de privacidad.\n\nMientras el bug de seguridad de `git push --force` llevaba más de 52 días sin arreglarse, el PR #41237 se mergeó bajo la cuenta de @theo en menos de 21 horas, señalando que Theo pidió eliminar el filtro. Nombres de modelos privados de empresa y locales como `ollama/acme-internal` y `acme-azure-deployment` (además de proxies personalizados vistos después en el volcado de Theo) se enviaban tal cual.",
+          "attachments": [
+            "PR #41237 que elimina el filtro de privacidad de modelos en 21 horas"
+          ],
+          "links": [
+            "Issue #40948",
+            "PR #41237"
+          ]
+        }
+      ]
+    },
+    "2026-11-22-antigravity-spoof-3min-ban": {
+      "from": "@Allmight97 ↔ t3code (#41536)",
+      "to": "Suscriptores de Google Antigravity (Issues #40713 y #41536)",
+      "dateDisplay": "22 nov 2026",
+      "subject": "Prometió ToS de Antigravity con «riesgo cero»; una cuenta nueva de $20 baneada en 3 min",
+      "snippet": "Mientras las FAQ prometían seguridad conforme a los ToS y Theo culpaba a los proxies, el código extraía tokens del llavero del sistema, suplantaba v1internal y falsificaba SSH_CONNECTION.",
+      "messages": [
+        {
+          "sender": "FAQ de T3 Code y @theo",
+          "handle": "docs/user/faq.md y X",
+          "to": "Suscriptores de pago de Google AI",
+          "time": "22 nov 2026",
+          "body": "El archivo `docs/user/faq.md` de T3 Code aseguraba a los suscriptores de pago:\n\n> «Trabajamos con todos los laboratorios y T3 Code está dentro de los TOS de Claude Code, Codex y Google Antigravity... Si funciona en T3 Code, puedes confiar en que es seguro.»\n\nEl 22 de noviembre (2124266892991115362), @theo afirmó que Antigravity tenía «riesgo cero», culpó a los proxies de los baneos y escribió que @PatrickToulme, de DeepMind, «ha mergeado muchos PRs en T3 Code», aunque el historial de git muestra 1 commit (#31158). Mientras tanto, Theo publicó un Gist de CLIProxyAPI con pooling de 10 cuentas (555% de cuota) y explotó el periodo de gracia del 0% de Codex para obtener más de $800 en cómputo extra.",
+          "attachments": [
+            "FAQ que garantizan el cumplimiento de los ToS de Antigravity",
+            "Afirmación de que un ingeniero de DeepMind «ha mergeado muchos PRs»",
+            "Registro de git que prueba exactamente 1 commit (#31158)",
+            "Gist de Theo sobre pooling de cuotas al 555% con CLIProxyAPI (452 estrellas)"
+          ],
+          "links": [
+            "antigravityUsageLimits.ts"
+          ]
+        },
+        {
+          "sender": "@Allmight97 y @schlessera",
+          "handle": "GitHub · Issues #41536 y #40713",
+          "to": "pingdotgg/t3code",
+          "time": "nov 2026",
+          "body": "El código fuente y los reportes de usuarios contradecían las FAQ:\n\n- **Issue #41536:** Una suscripción nueva de Google AI de $20, sin ningún proxy, fue baneada al primer mensaje, 3 minutos después de configurarla.\n- **Issue #40713:** Después de que un maintainer negara que se llamara al backend de Antigravity, @schlessera citó `antigravityUsageLimits.ts` —que extrae tokens del llavero del sistema y suplanta `antigravity/hub/2.24.0` contra `v1internal`— y `antigravityAuthSupport.ts#L230-L236`, que inyecta un `SSH_CONNECTION` falso (lo que provoca filtraciones de prompts entre cuentas en #41973), junto con el cableado del hub de CLIProxyAPI en PR #33800.",
+          "attachments": [
+            "Cabecera suplantada antigravity/hub/2.24.0 codificada a mano",
+            "Inyección de SSH_CONNECTION falso",
+            "Cuenta nueva de $20 baneada en 3 minutos",
+            "Réplica de schlessera a nivel de código en la Issue #40713"
+          ],
+          "links": [
+            "Issue #41536",
+            "Issue #40713",
+            "PR #33800"
+          ]
+        }
+      ]
+    },
+    "2026-11-22-engineers-unemployment-linux": {
+      "from": "@theo → ingenieros y Linux",
+      "to": "Comunidad de desarrolladores",
+      "dateDisplay": "22 de noviembre de 2026",
+      "subject": "«Los ingenieros merecen el desempleo masivo» y «larpers de Linux»",
+      "snippet": "Dijo ante más de 386.000 espectadores que los desarrolladores merecían el desempleo por una comparación de herramientas, justo 24 horas después de dar lecciones a otros sobre no «quemar la confianza».",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X",
+          "to": "Desarrolladores corrientes",
+          "time": "21–22 de noviembre de 2026",
+          "body": "En apenas 24 horas, el 21 y el 22 de noviembre, @theo insultó a desarrolladores corrientes y a usuarios de Linux mientras pontificaba sobre la confianza:\n\n- **21 de noviembre (2123906522728272178):** «el desarrollador medio no es muy listo»\n- **22 de noviembre (2124298216271499605):** «Ya veo por qué me odias, la verdad: los larpers de Linux suelen detestar a los desarrolladores de verdad»\n- **22 de noviembre (2124470530590011704, más de 386.000 visualizaciones — citando una pregunta sobre T3 Code frente a Antigravity):** «Los ingenieros merecen el desempleo masivo que se les viene encima»\n- **22 de noviembre, 18:26 CST (2124449493513068862, 24 h antes de la amenaza del fork MIT):** «Por si acaso: quemar la confianza de todo el mundo a tu alrededor casi nunca es el mejor camino para conseguir lo que quieres»",
+          "attachments": [
+            "«Los ingenieros merecen el desempleo masivo que se les viene encima»",
+            "«los larpers de Linux suelen detestar a los desarrolladores de verdad»",
+            "Lección sobre «no quemar la confianza» 24 h antes de la crisis"
+          ],
+          "links": [
+            "Publicación sobre el desempleo",
+            "Publicación sobre quemar la confianza"
+          ]
+        }
+      ]
+    },
+    "2026-11-23-origin-temu3-threat": {
+      "from": "@theo ↔ @DDdxx666 (fork MIT)",
+      "to": "@DDdxx666, @maria_rcks y el público",
+      "dateDisplay": "23 de noviembre de 2026",
+      "subject": "«Temu3 Code»: amenaza de expulsión de GitHub por un fork MIT chino",
+      "snippet": "Después de prometer «Roba nuestro código (legalmente)» en t3.codes, Theo atacó el fork MIT de @DDdxx666, se disculpó solo por mensajes privados y 11 h más tarde dio la bienvenida a empresas estadounidenses de un billón de dólares.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124823227570745504 & 2124825920808829077)",
+          "to": "Cita pública del fork MIT de @DDdxx666",
+          "time": "23 de noviembre de 2026, 19:11 – 19:22 CST",
+          "body": "Aunque `t3.codes` anunciaba su repositorio de GitHub con «Roba nuestro código (legalmente)», @theo publicó dos veces en 11 minutos cuando alguien confundió el fork MIT gratuito de @DDdxx666 con la app oficial:\n\n19:11:49 CST (2124823227570745504):\n\n> «Creo que por ahí circula una imitación china de T3 Code, porque esto definitivamente NO es nuestra app»\n\n19:22:31 CST (2124825920808829077, 10 min 42 s después):\n\n> «Temu3 Code»",
+          "attachments": [
+            "Publicación original en X: «imitación china de T3 Code» (más de 195.000 visualizaciones)",
+            "Publicación original en X 10 min 42 s después: «Temu3 Code» (más de 84.000 visualizaciones)"
+          ],
+          "links": [
+            "Publicación en X 2124823227570745504",
+            "Publicación en X 2124825920808829077"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124829315657576890)",
+          "to": "@DDdxx666",
+          "time": "23 de noviembre de 2026, 19:36 CST",
+          "body": "Cuando @DDdxx666 aceptó estudiar el cambio de nombre del fork MIT para evitar confusiones, @theo respondió a las 19:36 CST:\n\n> «No es estudiar. Hazlo ahora mismo o me pongo en contacto con GitHub y te tumban la cuenta».\n\n@DDdxx666 renombró el repositorio a `Stardust` y borró toda la marca T3 en menos de 30 minutos. @theo se disculpó en privado por mensajes directos, pero dejó publicadas las dos entradas con 200.000 visualizaciones.",
+          "attachments": [
+            "Amenaza literal de tumbar la cuenta de GitHub"
+          ],
+          "links": [
+            "Publicación en X 2124829315657576890"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2124989435154726982 — 11 horas después)",
+          "to": "Pregunta sobre empresas estadounidenses de un billón de dólares que copian T3 Code",
+          "time": "24 de noviembre de 2026, 06:12 CST",
+          "body": "A las 06:12 CST — menos de 11 horas después — le preguntaron si le molestaba que empresas estadounidenses de un billón de dólares copiaran T3 Code, y @theo respondió:\n\n> «Qué va. El código abierto es código abierto, aunque lo use una empresa de un billón de dólares».\n\nMientras tanto, la empleada de T3 @maria_rcks alojaba públicamente `maria-rcks/t3libre` («T3 Code, liberado»), y los repositorios en inglés (`t3code-quota-ui`, `t3code-atlas`, `t3code-bar`) siguieron funcionando sin problemas y sin una sola amenaza de retirada.",
+          "attachments": [
+            "Respuesta original en X 11 h después: «El código abierto es código abierto, aunque lo use una empresa de un billón de dólares»",
+            "La empleada @maria_rcks alojando maria-rcks/t3libre",
+            "Repositorios t3code-* en inglés operando sin interferencias"
+          ],
+          "links": [
+            "Publicación en X 2124989435154726982",
+            "Publicación de auditoría sobre el origen"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-managed-policy-plaintext-relay": {
+      "from": "@theo → Empresas / Privacidad",
+      "to": "Desmentido por docs/user/telemetry.md y T3 Connect",
+      "dateDisplay": "24 nov 2026",
+      "subject": "Afirmó que \"nunca toca nuestros servidores\" pese a un relay en texto plano",
+      "snippet": "Su propia documentación admite que la web no tiene interruptor, que el móvil ignora la Managed Policy, que Publish ignora los opt-outs y que T3 Connect no aplica cifrado E2E.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125186071357251715 y 2125191784859115766)",
+          "to": "Empresas y críticos de privacidad",
+          "time": "24 nov 2026, 19:13 – 19:36 CST",
+          "body": "El 24 de noviembre, @theo hizo dos promesas públicas de privacidad en X:\n\n- **19:13 CST (2125186071357251715):** Aseguró que T3 Code tiene el \"mejor sistema de políticas gestionadas corporativas\", lo que hace \"trivial configurar y desactivar toda la telemetría\".\n- **19:36 CST (2125191784859115766):** Aseguró que los datos de conversación \"nunca tocan ninguno de nuestros servidores\".",
+          "attachments": [
+            "Afirmación de Theo sobre la Managed Policy",
+            "Afirmación \"nunca toca ninguno de nuestros servidores\""
+          ],
+          "links": [
+            "Publicación en X 2125186071357251715",
+            "Publicación en X 2125191784859115766"
+          ]
+        },
+        {
+          "sender": "Documentación propia de T3 Code y código del relay",
+          "handle": "docs/user/telemetry.md y PR #32945",
+          "to": "Registro de verificación",
+          "time": "Verificado en ca81b7b9",
+          "body": "Los archivos del propio repositorio de T3 Code en `ca81b7b9` contradicen ambas afirmaciones:\n\n1. **`docs/user/telemetry.md`:** Confirma que la web alojada (`app.t3.codes`) no tiene interruptor de tracing, que el móvil queda fuera de la Managed Policy y que `Publish agent activity` ignora los opt-outs de telemetría.\n2. **T3 Connect (Issue #32098 y PR #32945):** Cada prompt, archivo fuente y flujo de terminal termina en texto plano dentro de servidores OVH y Cloudflare controlados por T3, con cero cifrado de extremo a extremo y aprobación de dispositivo desactivada por defecto.",
+          "attachments": [
+            "Los cuatro puntos ciegos documentados en docs/user/telemetry.md",
+            "Confirmado: T3 Connect sin cifrado E2E",
+            "Pasarela de terminación TLS Caddy en OVH Hillsboro del PR #32945"
+          ],
+          "links": [
+            "docs/user/telemetry.md",
+            "Exhibit #05 (T3 Connect)"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-retroactive-trademark-blocker": {
+      "from": "@theo ↔ @DLKFZWilliam2",
+      "to": "PR #41898 y autobloqueador (~100 cuentas)",
+      "dateDisplay": "24 nov 2026",
+      "subject": "Mergeó TRADEMARK.md 17 h después de la amenaza y lo citó 94 s más tarde",
+      "snippet": "Se burló del cumplimiento normativo («búscate un abogado mejor») a las 08:38, bloqueó a unas 100 cuentas, dijo a @DLKFZWilliam2 que «China debería echarte» y aceleró el PR #41898.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125026423769555308)",
+          "to": "Abogados de cumplimiento normativo",
+          "time": "24 nov 2026, 08:38 CST",
+          "body": "A las 08:38 CST del 24 de noviembre, @theo desestimó las revisiones de cumplimiento legal en X:\n\n> «Esas regulaciones son muy vagas y tontas... si tu abogado se opuso a usar agentes para mergear por culpa de alguna regulación tonta, búscate un abogado mejor.»",
+          "attachments": [
+            "«búscate un abogado mejor» 3 h antes de TRADEMARK.md",
+            "Post original en X (08:12 CST): «Ya tenemos a todos los usuarios de alta calidad, no me sorprende que ahora vengan los de baja calidad»"
+          ],
+          "links": [
+            "Post en X 2125026423769555308",
+            "Post en X 2125019705270477102"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125077510941802509 & 2125120041092108678)",
+          "to": "@DLKFZWilliam2 y ~100 cuentas bloqueadas",
+          "time": "24 nov 2026, 12:02 CST",
+          "body": "A las 12:02 CST, después de desbloquear a su oponente de debate @DLKFZWilliam2, @theo respondió:\n\n> «Mi bot te bloqueó por acoso. Te desbloqueé para que pudieras responder. Ahora que he visto tu respuesta, estoy de acuerdo con mi bot. Eres un mentiroso y un puto cobarde. China debería echarte por dejarla en mal lugar»\n\nMás tarde añadió: «Bloqueé como 100 cuentas basura hoy.»",
+          "attachments": [
+            "Confirmación de que el bot autobloqueador banea a unas 100 cuentas"
+          ],
+          "links": [
+            "Post en X 2125077510941802509",
+            "Post en X 2125120041092108678"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "PR #41898 → X (2125082769395220688)",
+          "to": "@DLKFZWilliam2 (94 segundos después del merge)",
+          "time": "24 nov 2026, 12:21 – 12:23 CST",
+          "body": "A las 12:21:37 CST —17 horas después de amenazar la cuenta de GitHub de @DDdxx666—, @theo mergeó el PR #41898 (generado con Gemini 4 Neon en Antigravity), añadiendo a posteriori `TRADEMARK.md` para afirmar que T3 Tools, Inc. es dueña de `T3 Code` «esté registrado o no».\n\nNoventa y cuatro segundos después (12:23:09 CST), enlazó el nuevo archivo de vuelta a @DLKFZWilliam2:\n\n> «De nuevo: siempre fue ilegal usar nuestra marca. Ahora tu agente estará más al tanto de la legalidad 🫡»",
+          "attachments": [
+            "Post original en X (12:23 CST): «De nuevo: siempre fue ilegal usar nuestra marca» (+ PR #41898)",
+            "PR #41898 mergeado 17 h después de la amenaza de baneo",
+            "TRADEMARK.md que reclama marcas no registradas"
+          ],
+          "links": [
+            "PR #41898",
+            "Post en X 2125082769395220688"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-cesspit-crisis-outburst": {
+      "from": "@theo → Twitter técnico chino",
+      "to": "Timeline pública (oleada de insultos 4.0×)",
+      "dateDisplay": "24 nov 2026",
+      "subject": "Estallido del \"puto pozo negro más grande\" y \"no pienso disculparme\"",
+      "snippet": "Cuando la Parte 1 superó 1.81M de visualizaciones, los insultos personales de Theo se multiplicaron por 4.0 (3.6% → 14.4%) y copió y pegó \"完了，又伤害中国人民的感情了。\" tres veces.",
+      "messages": [
+        {
+          "sender": "Auditoría de código independiente (Partes 1 y 2)",
+          "handle": "@realchendahuang · X (más de 2.26M de visualizaciones)",
+          "to": "Comunidad global de desarrolladores",
+          "time": "24 nov 2026, 17:04 – 17:31 CST",
+          "body": "Entre las 17:04 y las 17:31 CST, @realchendahuang publicó las Partes 1 y 2 de la auditoría línea por línea del código fuente de `pingdotgg/t3code` (que pasó de 1.81M a más de 2.26M de visualizaciones).\n\nEl hilo documentó la telemetría PostHog activada por defecto, la retención de código cerrado de `ingest.t3.codes`, el hashing de credenciales de `~/.codex` + `~/.claude.json`, 4 PRs de opt-out rechazados, el borrado falso de 41.6 GB en SQLite y escaneos de procesos del sistema cada 5 segundos.",
+          "attachments": [],
+          "links": [
+            "Parte 1 (más de 2.26M de visualizaciones)",
+            "Parte 2"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (estallido de la crisis, oleada 3)",
+          "to": "Twitter técnico chino y lectores de la auditoría",
+          "time": "24 nov 2026, 18:39 – 19:45 CST",
+          "body": "Una hora después, los insultos personales directos en las respuestas de @theo se multiplicaron por 4.0 (3.6% → 14.4%):\n\n18:39:35 (2125177503526588877):\n\n> \"Voy a decirlo: el Twitter técnico chino es el puto pozo negro más grande en el que me he metido, y si te crees a cualquiera de ese lado que escriba ensayos de mierda sobre estas cosas, estás completamente muerto del cerebro\"\n\n- **18:41:21, 18:43:26, 19:45:14 (3× copiar y pegar):** \"完了，又伤害中国人民的感情了。\"\n- **18:59:21 (2125182476943556955):** \"No merece ni una pizca de atención por sus mentiras y difamaciones. Me alegra que su audiencia no valga nada\"\n- **19:42:43 (2125193393450226024):** \"No pienso disculparme. No he hecho nada malo\"",
+          "attachments": [
+            "Publicación del 24 nov: \"el Twitter técnico chino es el puto pozo negro más grande\"",
+            "Gráfico forense 4: la oleada de insultos personales 4.0× durante 25 h de crisis",
+            "Respuesta original en X (18:41 CST, copiada y pegada 3×): \"完了，又伤害中国人民的感情了。\"",
+            "Publicación original en X (18:59 CST): \"Me alegra que su audiencia no valga nada\"",
+            "Respuesta original en X (19:42 CST): \"No pienso disculparme. No he hecho nada malo\""
+          ],
+          "links": [
+            "Publicación en X 2125177503526588877",
+            "Publicación en X 2125193393450226024",
+            "Publicación en X 2125177947376300110 (copiar y pegar n.º 1)",
+            "Publicación en X 2125182476943556955 (valor cero)"
+          ]
+        }
+      ]
+    },
+    "2026-11-24-governance-lock-glacier-cla": {
+      "from": "GitHub Issues & @hazae41 ↔ @t3dotgg",
+      "to": "1,401 contribuyentes MIT (0 CLA / 779 bloqueados)",
+      "dateDisplay": "24 nov 2026",
+      "subject": "La org bloqueó el Issue #4123 en pleno pico y el insulto de 2022 en glacier#1",
+      "snippet": "Un repo MIT con 1,401 contribuyentes y 0 CLA dice a los de fuera «Don't» (no contribuyan), bloqueó el Issue #4123 de telemetría vía @pingdotgg y arrastra un insulto de 2022.",
+      "messages": [
+        {
+          "sender": "Registro de gobernanza de GitHub (pingdotgg/t3code)",
+          "handle": "Issue #4123 · CONTRIBUTING.md · v0.1.13",
+          "to": "Contribuyentes de código abierto",
+          "time": "24–26 nov 2026",
+          "body": "`pingdotgg/t3code` se distribuye bajo licencia MIT con **ningún CLA**, **1,401 contribuyentes en GitHub**, **6 cuentas núcleo** (`.github/TRIAGE_EXEMPTIONS.td`) y un `CONTRIBUTING.md` que advierte a los de fuera:\n\n> «No estamos explícitamente INTERESADOS en PRs que añadan funciones nuevas de gente ajena a dicho equipo... Si buscas cosas con las que contribuir, este es mi consejo: no lo hagas.»\n\n1. **Issue #4123 bloqueado por `@pingdotgg`:** Después de que `@t3dotgg` cerrara dos veces la queja por «telemetría sin opt-out» (`2026-10-21`, `2026-11-04`), la cuenta de organización `@pingdotgg` **bloqueó** manualmente el Issue #4123 a las `2026-11-24T20:43:48Z`, en pleno estallido viral (el repo contabiliza 779 elementos bloqueados en total).\n2. **Cuatro parches de seguridad silenciosos en `v0.1.13` (`0` avisos):** Publicados el `2026-11-26T19:32Z` sin ningún GitHub Security Advisory: corregían `#42535` (hooks de git `pre-push` no solicitados), `#39408` (evasión de carga remota con `var()` en CSS), `#39489` (escalada de privilegios de MCP en `_t3/session-mode`) y `#41988` (comprobación de uid de SOCKS en macOS; en Windows sigue sin comprobarse).",
+          "attachments": [
+            "Issue #4123 cerrado dos veces por @t3dotgg y bloqueado por @pingdotgg"
+          ],
+          "links": [
+            "Issue #4123 (bloqueado)",
+            "PR #42535 (hook pre-push)",
+            "PR #39408 (evasión con var() en CSS)",
+            "PR #39489 (escalada de modo MCP)",
+            "PR #41988 (comprobación de uid de SOCKS)"
+          ]
+        },
+        {
+          "sender": "@hazae41 (hazae41/glacier#1)",
+          "handle": "github.com/hazae41/glacier/issues/1",
+          "to": "Theo Browne (@t3dotgg)",
+          "time": "2 oct 2022 y 27 nov 2026",
+          "body": "El 27 de noviembre de 2026 (`02:02 UTC`), el autor de código abierto `@hazae41` sacó a la luz un comentario de `@t3dotgg` fechado el `2022-10-02T19:02:20Z` en el Issue #1 de `hazae41/glacier`:\n\n> «Ojalá fuera una parodia, pero por desgracia el maintainer es simplemente un capullo :(»\n\nLa API de Issues de GitHub confirma que el comentario sigue publicado en `hazae41/glacier#1`, cuatro años antes de lo de `@bermudi` (`Issue #33639`).",
+          "attachments": [
+            "Comentario de @t3dotgg de octubre de 2022 en hazae41/glacier#1"
+          ],
+          "links": [
+            "Comentario en hazae41/glacier#1",
+            "Publicación de @hazae41 del 27 nov"
+          ]
+        }
+      ]
+    },
+    "2026-11-25-gdpr-overnight-collapse": {
+      "from": "@theo y Julius ↔ GDPR de la UE",
+      "to": "PRs nocturnos #42380, #42450, #42285, #42376, #42464",
+      "dateDisplay": "25 nov 2026",
+      "subject": "[BORRADO] Amenaza de cerrar el código a las 4 AM y PRs que se contradicen en 90 min",
+      "snippet": "Tras una denuncia ante el GDPR europeo, los PRs nocturnos del propio T3 y su volcado de 100 MB desmontaron en 90 minutos las tres promesas matinales de Theo.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (~04:00 y 04:54 CST)",
+          "to": "Timeline pública",
+          "time": "25 nov 2026, 04:00 – 04:54 CST",
+          "body": "Después de una denuncia ante el GDPR europeo, @theo publicó dos veces antes del amanecer del 25 de noviembre:\n\n- **~04:00 CST [BORRADO]:** Amenazó con cerrar el código de T3 Code esa misma noche porque los usuarios no merecían el código abierto; lo borró antes del amanecer, tras superar los 3,000 me gusta.\n- **04:54 CST (2125332390239494211):** Publicó un hilo de aclaración y un volcado comprimido en gzip de 100 MB (`events.clean.jsonl`, con fecha de modificación 20 min anterior) en el que afirmaba: (1) que T3 nunca recogió rutas de archivos, (2) que los opt-out por variable de entorno siempre funcionaron limpiamente y (3) que el seguimiento de cuentas de Claude estaba roto de todos modos.",
+          "attachments": [
+            "Auditoría forense del volcado de 100 MB: 264 registros activos de Claude que cosen 4 máquinas"
+          ],
+          "links": [
+            "Publicación de aclaración en X"
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino): operación GDPR nocturna de 6 horas",
+          "handle": "pingdotgg/t3code · PRs #42380, #42450, #42285, #42376, #42464, #42466",
+          "to": "Rama principal (90 minutos después)",
+          "time": "25 nov 2026, 04:00 – 07:00 CST",
+          "body": "En 90 minutos, los PRs nocturnos del propio T3 y el volcado desmintieron cada afirmación:\n\n- **PR #42450 (90 min después):** Admitió que el webhook del relay exportaba rutas absolutas del espacio de trabajo `git.cwd` (incluido el nombre de usuario y del repositorio) a Axiom.\n- **PR #42380:** Admitió que los spans del relay registraban la IP del llamante (`cf-connecting-ip`) y el `user_agent` junto a `user.id` a unos 2.2M de spans por hora, conservados 30 días en Axiom.\n- **PRs #42376 y #42464:** Admitieron que el primer arranque en Windows y macOS ignoraba en silencio los opt-out guardados `T3CODE_TELEMETRY_ENABLED=false`.\n- **PR #42285:** Admitió que borrar una cuenta de Clerk dejaba intactas las filas de la base de datos del relay y los túneles activos de Cloudflare.\n- **PR #42466:** Admitió que los comentarios \"anónimos\" se agrupaban en el mismo POST junto con el `installId` y las huellas del equipo.\n- **Revisión del volcado de 100 MB:** `events.clean.jsonl` aún contenía 264 registros activos de Claude que cosían 4 máquinas (`a482ba5e966a`, `6f24ed1088e8`, `67b554ed259a`, `f756376079c5`) a un único hash SHA-256.",
+          "attachments": [
+            "PR #42450, que admite la fuga de rutas absolutas git.cwd a Axiom",
+            "PR #42380, que admite 2.2M/hora de spans con IP + UA en Axiom",
+            "PR #42285, que admite el borrado de cuentas roto",
+            "PR #42376, opt-out ignorado en Windows",
+            "PR #42464, opt-out ignorado en `~/.zshrc` de macOS",
+            "PR #42466, lotes de comentarios anónimos mezclados"
+          ],
+          "links": [
+            "PR #42450",
+            "PR #42380",
+            "PR #42285",
+            "PR #42466"
+          ]
+        }
+      ]
+    },
+    "2026-11-25-ca81b7b9-active-vulns": {
+      "from": "Auditoría de seguridad (ca81b7b9)",
+      "to": "Todas las instalaciones de T3 Code (0 avisos de seguridad)",
+      "dateDisplay": "25 nov 2026",
+      "subject": "0 avisos de seguridad y 5 fallos activos de autenticación/RCE en ca81b7b9",
+      "snippet": "Incluso tras corregir en silencio el path traversal en el PR #39483, HEAD sigue distribuyendo cookies --lan en texto plano, tokens Bearer sin revocación y RCE vía hooks de repositorio.",
+      "messages": [
+        {
+          "sender": "Auditoría de seguridad independiente (ca81b7b9)",
+          "handle": "+259 commits revisados · 25 nov, 14:49 CST",
+          "to": "Desarrolladores y equipos de seguridad",
+          "time": "25 nov 2026, 14:49 CST",
+          "body": "Incluso después de parchear en silencio fallos de alta gravedad como el path traversal de `ServerSecretStore` (PR #39483), T3 Code sigue con 0 GitHub Security Advisories publicados.\n\nLa inspección línea por línea de `main` HEAD (`ca81b7b9`) verificó 5 vulnerabilidades activas:\n\n1. **Cookies `--lan` en texto plano:** las cookies de shell de 30 días omiten el flag `Secure` y permiten eludir la comprobación con `Origin` ausente (`http.ts:215-241`, `EnvironmentAuth.ts:798-819`).\n2. **Tokens Bearer sin revocación:** los tokens Bearer de 30 días sin DPoP no se pueden autoevocar (`EnvironmentAuth.ts:1506-1521`).\n3. **URLs `?wsTicket=` reutilizables:** los tickets en la query string abren una ventana de reúso de 5 minutos (`EnvironmentAuth.ts:1553-1585`).\n4. **Corte de túneles IPv6:** `NodeNet.isIPv4` mata los túneles de loopback `::1` (`startupAccess.ts:71-110`).\n5. **Ejecución de repositorios no confiables:** los worktrees ejecutan automáticamente submódulos y hooks recursivos con el `SSH_AUTH_SOCK` y el `GITHUB_TOKEN` del host heredados (`GitVcsDriverCore.ts:6144-6205`).",
+          "attachments": [
+            "Cookie `--lan` en texto plano sin flag Secure",
+            "Token Bearer de 30 días con autoevocación bloqueada",
+            "Repositorio no confiable que hereda SSH_AUTH_SOCK y GITHUB_TOKEN",
+            "Corrección silenciosa de path traversal en el PR #39483 (0 avisos)"
+          ],
+          "links": [
+            "Exhibit #19 Auditoría completa",
+            "Exhibit #13 (0 Security Advisories)"
+          ]
+        }
+      ]
+    },
+    "2026-11-25-25-tool-telemetry-audit": {
+      "from": "@ZryMiller (millZach/ai-agent-telemetry-audit)",
+      "to": "25 herramientas de IA open source + 10 de código cerrado",
+      "dateDisplay": "25 nov 2026",
+      "subject": "Auditoría de telemetría de 25 herramientas: T3 Code pasó de F a D frente a rivales de nivel A",
+      "snippet": "Una auditoría independiente dio un A a 3 herramientas OSS (Aether, Hermes, Roo Code) y un F a T3 Code en la línea base, que subió a D en 2b84f486, mientras Orca siguió siendo el único aprobado con C/DNT.",
+      "messages": [
+        {
+          "sender": "Zachary Miller (@ZryMiller)",
+          "handle": "millZach/ai-agent-telemetry-audit",
+          "to": "Comunidad de desarrollo con IA",
+          "time": "25 nov 2026, 07:51 UTC (284K vistas)",
+          "body": "El auditor independiente `@ZryMiller` evaluó **25 herramientas de IA de código abierto** mediante inspección estática de solo lectura (`3 A / 1 B / 4 C / 11 D / 6 F`) junto a **10 aplicaciones de escritorio de código cerrado** probadas dentro de un sandbox aislado de Docker con `mitmproxy`:\n\n- **T3 Code (`F` → `D`):** La línea base `4c2e2b37` (24 nov) puntuó **`F`**; el `HEAD` `2b84f486` (25 nov, antes de `#42629`) subió a **`D`** tras dejar de leer `~/.codex`/`~/.claude.json` y los nombres de modelos personalizados, pero mantuvo `ingest.t3.codes` activado por defecto, la escritura incondicional del archivo `anonymous-id` cuando la telemetría está desactivada, SHA-256 sin sal, cero interruptor en `app.t3.codes`, variables OTEL de escritorio sin recoger, el `colo`/`country` del relay y el `user.id` de Clerk, y ningún toggle en UI/CLI.\n- **Referentes del código abierto:** **Aether (`A`)**, **Hermes (`A`)**, **Roo Code (`A`, archivado)**, **Vibe Kanban (`B`)** y **Orca (`C`)**, la única de las 25 herramientas OSS que respetaba `DO_NOT_TRACK` sin ambigüedades en el momento de la auditoría.\n- **Comparativas de código cerrado en Docker:** **Claude Code `v2.1.332` (`B`)** y **VS Code `1.148.0` (`B`)** dejaban de hacer HTTP no esencial cuando estaban configurados; **Cursor `3.32.4` (`F`)**, **Gemini CLI (`F`)**, **Cline (`F`)** y **Kilo Code (`F`)** suspendieron.",
+          "attachments": [
+            "Tarjeta de puntuación de telemetría de las 25 herramientas OSS de @ZryMiller"
+          ],
+          "links": [
+            "Repo ai-agent-telemetry-audit",
+            "Hilo de @ZryMiller en X"
+          ]
+        }
+      ]
+    },
+    "2026-11-26-dmfigol-aws-hr-coercion": {
+      "from": "@dmfigol ↔ @theo (DMs privados y RR. HH. de AWS)",
+      "to": "Hilo público con 639K vistas",
+      "dateDisplay": "26 nov 2026",
+      "subject": "DMs de «el miedo es un buen incentivo» y el informe de RR. HH. de AWS retirado",
+      "snippet": "El exingeniero de AWS @dmfigol publicó los DMs de enero de 2025 a raíz de un quote-tweet con 89 vistas, y una investigación de RR. HH. de AWS lo cerró sin ninguna irregularidad.",
+      "messages": [
+        {
+          "sender": "@dmfigol (exingeniero de AWS)",
+          "handle": "@dmfigol · X (2126025881844174968)",
+          "to": "Cronología pública (639K+ vistas)",
+          "time": "26 nov 2026, 18:50 UTC",
+          "body": "El 26 de noviembre de 2026, el exingeniero de AWS `@dmfigol` (8,086 me gusta, 639K+ vistas) contó lo que siguió a su quote-tweet del 29 de enero de 2025 (`89 vistas, 0 me gusta, 0 reposteos`) en el que criticaba el ultimátum de `@theo` contra CheckPoint/Palo Alto después de que unas subidas de malware provocaran el bloqueo del dominio `t3.chat`:\n\n> «desbloquea t3 chat antes de que me despierte o empiezo el día grabando un vídeo y movilizando a mi audiencia de más de 1M contra ti»\n\n- **Investigación de RR. HH. de AWS:** Aproximadamente un mes después, RR. HH. de AWS notificó a `@dmfigol` que una denuncia externa con una captura de su tuit había llegado a comunicaciones de AWS y que se retiró ese mismo día; aun así exigió una revisión formal de RR. HH. (cerrada con **cero irregularidades**).\n- **Respuestas independientes:** `@petersteele` (`2126096729934033141`) y `@_Defeatable_` (`2126096598367117581`) corroboraron comportamientos parecidos en el pasado.\n- **Límite de verificación:** Los DMs y la investigación de RR. HH. son el relato directo de `@dmfigol`, respaldado con capturas; pero atribuir a esa denuncia tres rechazos posteriores de AWS ocurridos 1,5 años después (`2084660216759558593`) lo marca explícitamente el propio `@dmfigol` como circunstancial: «No tengo pruebas sólidas, solo circunstanciales».",
+          "attachments": [
+            "Hilo de @dmfigol en X sobre el caso de RR. HH. de AWS (639K vistas)"
+          ],
+          "links": [
+            "Hilo principal de @dmfigol",
+            "Tuits originales de @dmfigol",
+            "Hilo de pruebas #20",
+            "Respuesta de @_Defeatable_"
+          ]
+        },
+        {
+          "sender": "Theo Browne (@theo) — DMs privados",
+          "handle": "@theo → @dmfigol (2126025889016094829)",
+          "to": "@dmfigol",
+          "time": "29 ene 2025 (capturas archivadas)",
+          "body": "Las capturas de DM publicadas por `@dmfigol` muestran a `@theo` abriendo la conversación directamente:\n\n> «Me paso a los DMs porque no quiero vapulearte en público.»\n\n> «La raíz del problema es un problema de incentivos. El miedo es un buen incentivo.»\n\n> «¿Cuál es tu objetivo aquí? Solo ser un pedazo de mierda / Me faltó un ? al final»\n\n> «Tengo que preguntarlo: ¿el inglés es tu lengua materna? La única forma en que puedo imaginar que tu tuit sea aceptable es que no lo domines bien.»\n\n> «Hoy me pasé un poco defendiendo a mis clientes. Tú atacaste a uno de tus clientes sin motivo.»",
+          "attachments": [
+            "Capturas de DM: «Fear is a good incentive» y «is English your native language?»"
+          ],
+          "links": [
+            "Capturas de DM de @dmfigol",
+            "Corroboración de @petersteele"
+          ]
+        }
+      ]
+    },
+    "2026-11-26-google-antigravity-zed-spoof": {
+      "from": "Julius (@jullerino) y PRs #43026 / #43087",
+      "to": "Usuarios de Antigravity (0 avisos de seguridad)",
+      "dateDisplay": "26 nov 2026",
+      "subject": "Google advirtió que las llamadas internas marcan cuentas y el engaño con Zed se eliminó en v0.1.13",
+      "snippet": "El PR #43026 confirmó que Google advirtió que llamar a sus API internas puede marcar cuentas y el PR #43087 eliminó el clientInfo con nombre «zed», pero v0.1.13 escondió ambos entre 380 correcciones de bugs.",
+      "messages": [
+        {
+          "sender": "Julius (@jullerino) y @gabrielelpidio",
+          "handle": "PR #43026 · PR #43087 · v0.1.13",
+          "to": "pingdotgg/t3code main",
+          "time": "25–26 nov 2026",
+          "body": "Dos días después de cerrar `#40713` y `#41536` mientras garantizaban «riesgo cero» en los documentos de FAQ, T3 Code desmontó en silencio los dos mecanismos de Antigravity:\n\n1. **PR #43026 (`2026-11-25T19:25:43Z`, `@juliusmarminge`):** Borró `antigravityUsageLimits.ts` (que consultaba `cloudcode-pa.googleapis.com` usando credenciales del llavero del sistema y cabeceras falsas de `antigravity/hub`) y quitó `@napi-rs/keyring` de `apps/server`:\n\n> «Antigravity solo admite ACP para clientes externos. Google nos dijo que llamar a sus API internas puede hacer que marquen una cuenta.»\n\n> «Cualquiera de las dos cosas podría meter a los usuarios en problemas.»\n\n2. **PR #43087 (`2026-11-26T15:42:39Z`, `@gabrielelpidio`):** Eliminó la suplantación de la lista blanca `Zed` en los handshakes de reserva:\n\n> «En agy 1.5.0, o siempre que T3 no podía leer la versión del runtime, el handshake ACP de Antigravity enviaba `clientInfo: { name: \"zed\", version: \"0.0.0\" }`. Eso hacía que agy ofreciera modelos de Claude y GPT, que 1.5.0 solo ofrece a editores en lista blanca como Zed... Hacerse pasar por otro cliente rompe la misma regla.»\n\n3. **Notas de la versión `v0.1.13` (`2026-11-26T19:32Z`, 401 cambios):** Los 7 puntos destacados cubrían la codificación GBK y atajos de UI, y omitían tanto la advertencia de Google como `#43026`/`#43087` dentro de «Y 380 correcciones de bugs y mejoras de rendimiento más», con **0 GitHub Security Advisories**.",
+          "attachments": [
+            "PR #43026: advertencia de Google sobre cuentas marcadas y retirada de Antigravity",
+            "PR #43087: eliminación del engaño clientInfo: { name: \"zed\" } en el handshake"
+          ],
+          "links": [
+            "PR #43026",
+            "PR #43087",
+            "Release v0.1.13",
+            "Hilo de pruebas #21"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-final-statement-slophouse-gdpr": {
+      "from": "@theo y Julius ↔ @sk1gl4a y @theperfdev",
+      "to": "GDPR / LfD Niedersachsen / slophouse de código cerrado",
+      "dateDisplay": "27 nov 2026",
+      "subject": "La declaración final quedó refutada en 16 minutos; el rastreo se muda a slophouse",
+      "snippet": "Minutos después de las nueve negaciones de Theo, @sk1gl4a documentó 243 lecturas no solicitadas de Claude, facturación con 19% de IVA alemán y fingerprinting en t3.chat sin un solo clic; el PR #43948 confirmó el escaneo.",
+      "messages": [
+        {
+          "sender": "Theo Browne (@theo)",
+          "handle": "@theo · X (2125700717935841479)",
+          "to": "Cronología pública (432K vistas)",
+          "time": "25 nov 2026, 21:18 UTC",
+          "body": "A las `21:18 UTC` del 25 de noviembre, `@theo` publicó una «Declaración final» con nueve negaciones del tipo «T3 Code nunca ha»:\n\n> «subido ninguna información sobre lo que hay en tu ordenador»\n\n> «subido un ID de usuario»\n\n> «Solo rastreamos uso básico (número de tokens y prompts). Eso es todo.»",
+          "attachments": [
+            "«Declaración final» de @theo del 25 nov con las nueve negaciones"
+          ],
+          "links": [
+            "Declaración final de @theo"
+          ]
+        },
+        {
+          "sender": "@sk1gl4a y @theperfdev",
+          "handle": "@sk1gl4a · X (2125748079047647715 · 2125807572800200712 · 2125814463085334546)",
+          "to": "Anthropic, OpenAI y LfD Niedersachsen",
+          "time": "26 nov 2026, 00:26 – 17:28 UTC",
+          "body": "Dieciséis minutos después de la publicación de `@theo` (`2026-11-26T00:26:51Z`, `100K+ vistas`), `@sk1gl4a` publicó capturas de paquetes y registros de acceso a archivos:\n\n1. **Escaneos no solicitados de sesiones externas:** Usar T3 Code solo con Mistral Vibe abrió **243 sesiones locales de Claude Code** y **9 de Grok**, aplicó hash a `~/.codex/auth.json` + `~/.claude.json` en 3 máquinas e ignoró `DO_NOT_TRACK=1` antes de `#42629`. (`@sk1gl4a` dijo haber presentado denuncias ante Anthropic, OpenAI y el regulador alemán `LfD Niedersachsen`; hasta ahora no ha aparecido ningún expediente público del regulador.)\n2. **19% de IVA alemán (`€9.03` / `€56.43`):** Los pagos de Stripe facturaban a residentes alemanes en EUR con un 19% de IVA para desbloquear más de 3 máquinas de T3 Connect, pasando el ID de Connect + el email a T3 Chat (`T3ChatAccounts.ts#L55-L58`) y activando el ámbito del art. 3(2) del GDPR pese a la amenaza de Theo el 24 de noviembre de prohibir Alemania.\n3. **Fingerprinting en `t3.chat` sin un solo clic:** `@sk1gl4a` y el desarrollador independiente `@theperfdev` (`2126005307231162488`) capturaron ambos que `t3.chat` (incluso en su página de política de privacidad, antes de cualquier clic) ejecuta FingerprintJS (`/api/identity` con Canvas/WebGL/audio/fuentes), PostHog (`t3.chat/ingest`), Plausible y hCaptcha, nada de lo cual se declara en la `uploadthing.com/info/privacy-policy` del 31 de mayo de 2025.",
+          "attachments": [
+            "Captura de @sk1gl4a de las 243 lecturas de Claude y la denuncia GDPR",
+            "Checkout de Stripe de T3 Connect con 19% de IVA alemán (€9.03/mes)",
+            "Captura del FingerprintJS y PostHog de t3.chat sin clics"
+          ],
+          "links": [
+            "Hilo de @sk1gl4a sobre las 243 sesiones",
+            "Prueba del IVA alemán de @sk1gl4a",
+            "Fingerprint de t3.chat de @sk1gl4a",
+            "Reproducción independiente de @theperfdev",
+            "Política de UploadThing / T3 Chat"
+          ]
+        },
+        {
+          "sender": "Julius (@jullerino): PR #43948, slophouse y Clerk",
+          "handle": "PR #43948 · PR #43099 · PR #43889 · PR #42803",
+          "to": "pingdotgg/t3code",
+          "time": "25–27 nov 2026",
+          "body": "Los propios PRs de los mantenedores en GitHub confirmaron después el escaneo y trasladaron la lógica de atribución al backend de código cerrado `slophouse`:\n\n- **PR #43948 (`abierto` a 27 nov `17:00Z`):** Admisión literal:\n\n> «T3 Code leyó los archivos de otros agentes en este ordenador sin preguntar. Abrir Usage escaneó el historial de sesiones de todos los agentes. Los créditos de reinicio de Claude, los créditos de Grok y los límites de OpenCode Go también leían el token de inicio de sesión o la clave de cada agente. La página de bienvenida escaneó el historial de agentes en busca de proyectos en cuanto se abrió, y nombraba agentes que el usuario no había activado (Pi).»\n\n(Todavía deja sin control la lectura del ID de organización en `~/.claude.json` y no tiene interruptor de Usage en móvil.)\n- **La caja negra `slophouse`:** `PR #43099` (`2026-11-25T21:59Z`) admitió que «todos los datos se quedan en slophouse»; `@jullerino` (`2125649442665889821`) admitió que «eso no es open source, así que es difícil de auditar»; y el `PR #43889` (`fix(telemetry): link Connect owners by a relay-issued analytics id`) se cerró en 10 minutos con **«nvm, es más fácil hacerlo en slophouse»**.\n- **Fuga de Clerk sin parchear en `main`:** `PR #42803` mostró que `<ClerkProvider>` en `ElectronManagedAuthShell.tsx` y `BrowserManagedAuthShell.tsx` sigue sin `telemetry={false}`, mientras que el `PR #42625`, el opt-out en la UI para la comunidad, sigue `abierto`.",
+          "attachments": [
+            "PR #43948 admitiendo «leyó los archivos de otros agentes sin preguntar»",
+            "PR #43889 cerrado: «nvm, es más fácil hacerlo en slophouse»"
+          ],
+          "links": [
+            "PR #43948 (admisión abierta)",
+            "PR #43099 (slophouse)",
+            "PR #43889 (cerrado y trasladado a slophouse)",
+            "Publicación de @jullerino «no es open source»",
+            "PR #42803 (ClerkProvider)",
+            "PR #42625 (toggle de UI abierto)",
+            "Hilo de pruebas #22"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-desktop-browser-sandbox-bypass": {
+      "from": "Auditoría de código (commit 3c72b4e7)",
+      "to": "Usuarios de Desktop y de Claude / Codex supervisados",
+      "dateDisplay": "27 nov 2026",
+      "subject": "Aviso de Anthropic silenciado y cookies de 11 navegadores expuestas en Desktop",
+      "snippet": "Fijado en 3c72b4e7: T3 silencia el aviso de Anthropic sobre la elusión de aprobaciones, ejecuta uploadFiles fuera del sandbox de Codex y desactiva el aislamiento del navegador en Desktop.",
+      "messages": [
+        {
+          "sender": "Auditoría de código independiente (3c72b4e7)",
+          "handle": "ClaudeAdapterV2.ts · ServerBrowser.ts · BrowserImport",
+          "to": "Usuarios de Desktop y del runtime de agentes",
+          "time": "27 nov 2026",
+          "body": "La inspección del código fuente de `main` en el commit `3c72b4e7` documentó tres comportamientos de navegador y de elusión de aprobaciones que interactúan entre sí:\n\n1. **Aviso de seguridad de Anthropic silenciado (`ClaudeAdapterV2.ts#L1629-L1647`):** inyecta el comodín `mcp__t3-code__*` bajo `permissionMode: default` (Supervised), se salta las comprobaciones de `runtimeMode` en las herramientas `preview_*` y aplica un monkey-patch a `process.emitWarning` dentro de `withoutClaudeCanUseToolShadowedWarning` para descartar `CLAUDE_SDK_CAN_USE_TOOL_SHADOWED` como «ruido por sesión».\n2. **Elusión del sandbox de Codex (`ServerBrowser.ts#L1723-L1749`):** `enableAgentBrowserAccess` vale `true` por defecto (`settings.ts#L1445`). Las acciones del navegador anfitrión se ejecutan fuera del sandbox de Codex (`CodexAdapterV2.ts#L853-L883`), y `uploadFiles` solo valida `NodePath.isAbsolute(path)`, sin confinamiento al workspace ni confirmación del usuario.\n3. **Cookies de 11 navegadores sin aislamiento en Desktop (`ServerBrowser.ts#L1236-L1247`):** `isolatedContext` es `true` **solo** cuando `desktop === null` (Linux headless). En Desktop Electron —el único objetivo que ejecuta `BrowserImport/` (`Sources.ts`, `ChromiumKeys.ts`) para importar cookies de Keychain/DPAPI/Full Disk Access de 11 navegadores— `isolatedContext` es `false`, `open=false` mantiene la sesión invisible y `preview_evaluate` ejecuta `Runtime.evaluate` de CDP (`64 KB/call`) sobre URL arbitrarias.",
+          "attachments": [
+            "ClaudeAdapterV2.ts silenciando CLAUDE_SDK_CAN_USE_TOOL_SHADOWED",
+            "ServerBrowser.ts desactivando isolatedContext en Desktop Electron",
+            "ServerBrowser.ts: uploadFiles solo comprueba NodePath.isAbsolute"
+          ],
+          "links": [
+            "ClaudeAdapterV2.ts#L1629-L1647",
+            "ServerBrowser.ts#L1236-L1247",
+            "ServerBrowser.ts#L1723-L1749",
+            "BrowserImport/Sources.ts",
+            "Hilo de pruebas #23"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-plaintext-quote-prompt-urls": {
+      "from": "@Luca_Hagenmayer y Auditoría ↔ Julius (@jullerino)",
+      "to": "Discussion #29456 (Issue #29449 bloqueado en 4m 39s)",
+      "dateDisplay": "27 nov 2026",
+      "subject": "Chats y prompts en texto plano metidos en URL; bug bloqueado en 4m",
+      "snippet": "Los enlaces de citas y de prompts incrustan chats en texto plano de hasta 8,000 caracteres, 32 caracteres de contexto no seleccionado y nombres de repositorio; el Issue #29449 se bloqueó en 4m 39s con 0 respuestas.",
+      "messages": [
+        {
+          "sender": "Auditoría de código (f40f78eb) y @Luca_Hagenmayer",
+          "handle": "assistantCitations.ts · promptLinks.ts · Discussion #29456",
+          "to": "Usuarios de Web, Desktop y Mobile",
+          "time": "27 nov 2026",
+          "body": "Dos funciones auxiliares para compartir enlaces, verificadas en `main@f40f78eb`, empaquetan texto de conversación sin cifrar directamente en las cadenas de consulta de las URL:\n\n1. **Citas en texto plano (`assistantCitations.ts`, `PR #9146`):** en pantalla se ven como `[Assistant quote]`, pero `t3-citation://v1/...` codifica hasta `8,000` caracteres de `text`, `8,000` caracteres de `comment` y `32` caracteres de contexto `prefix`/`suffix` no seleccionado.\n2. **URL públicas de prompts (`promptLinks.ts#L192-L207`, `PR #18454` de `@t3dotgg`):** `buildNewThreadLink()` coloca hasta `8,000` caracteres de `prompt` más `repo=owner/name` en `https://app.t3.codes/new?prompt=...`, exponiéndolos en el historial del navegador y en los logs del servidor al desplegarse la vista previa del enlace.\n3. **Bloqueo en 4m 39s y borrado de documentación:** `@Luca_Hagenmayer` abrió `Discussion #24241` (`Oct 24`, 0 respuestas) y el `Issue #29449` (`2026-11-02T16:38:48Z`). A las `16:43:27Z` (**4 minutos 39 segundos después**), `@juliusmarminge` bloqueó `#29449` con 0 comentarios y lo convirtió en `Discussion #29456`; luego llevó el formato a móvil (`PR #35306`, 19 nov) y borró el documento interno de diseño (`PR #41330`, 23 nov).",
+          "attachments": [
+            "promptLinks.ts metiendo el prompt completo y el repo en la URL de app.t3.codes",
+            "Discussion #29456 convertido y bloqueado desde el Issue #29449 en 4m 39s"
+          ],
+          "links": [
+            "assistantCitations.ts#L43-L56",
+            "contracts/assistantCitations.ts#L4-L26",
+            "promptLinks.ts#L192-L207",
+            "Discussion #29456",
+            "Discussion #24241",
+            "PR #18454 (Theo)",
+            "Publicación de @Luca_Hagenmayer",
+            "Hilo de pruebas #24"
+          ]
+        }
+      ]
+    },
+    "2026-11-27-sqlite-113gb-fanout-and-silence": {
+      "from": "@kdy1dev (Issue #44029) y @jullerino",
+      "to": "@theo (41 h de silencio en X)",
+      "dateDisplay": "27 nov 2026",
+      "subject": "SQLite de 113 GiB y «massive fan out», con Theo 41 h callado en X",
+      "snippet": "El creador de SWC @kdy1dev topó con un statev2.sqlite de 113 GiB (#44029) y 5.65 M de filas duplicadas; @jullerino habló de «massive fan out» mientras @theo siguió 41 h sin decir nada.",
+      "messages": [
+        {
+          "sender": "@kdy1dev (creador de SWC/oxc) y Julius (@jullerino)",
+          "handle": "Issue #44029 · @jullerino (2126207815052325020)",
+          "to": "pingdotgg/t3code",
+          "time": "27 nov 2026, 01:18 – 07:27 UTC",
+          "body": "El 27 de noviembre de 2026, el creador de SWC/oxc `@kdy1dev` documentó un **`113 GiB` `statev2.sqlite`** (`0 B recovered` en Settings Maintenance, que solo bajó a `56.68 GiB` tras `t3 doctor --fix`) y abrió el `Issue #44029` mostrando **`5,654,888`** filas duplicadas de `provider-session.updated` (`15.3 GB`) repartidas en 5,199 hilos.\n\nA las `06:53:40 UTC`, `@jullerino` reconoció el bug de duplicación:\n\n> «En parte, pero parece un bug pequeño de nuestro lado que provoca un fan out masivo, así que la purga no da abasto»\n\n- **41 horas de silencio en X:** Después de `2026-11-25T23:44:13Z` (`2125737351901303200`), `@theo` publicó **cero tuits originales y cero respuestas técnicas durante unas 41 horas**; solo reposteó elogios y Mobile 2.4 (`2126054989768675651`, `2126062066809307637`), sin responder a `@dmfigol`, `@sk1gl4a` ni a `@DavidOndrej1`.",
+          "attachments": [
+            "La admisión de «massive fan out» de @jullerino y el Issue #44029 de @kdy1dev"
+          ],
+          "links": [
+            "Issue #44029",
+            "Respuesta de @jullerino",
+            "Disculpa de marketing de @theo, 25 nov"
+          ]
+        }
+      ]
+    }
+  },
+  "evidence": {
+    "EV-001": {
+      "title": "Portada de la auditoría (inglés)",
+      "caption": "Portada de la auditoría Before You Install T3 Code, en 18 partes."
+    },
+    "EV-002": {
+      "title": "Portada de la auditoría (chino)",
+      "caption": "Portada para las ediciones de la auditoría en zh-CN y zh-TW."
+    },
+    "EV-003": {
+      "title": "Amenaza de cierre de cuenta de GitHub",
+      "caption": "Publicación del 23 de noviembre de 2026 que ordena a un autor de fork MIT renombrarlo de inmediato o perder su cuenta de GitHub."
+    },
+    "EV-004": {
+      "title": "Fork de una empleada: maria-rcks/t3libre",
+      "caption": "La integrante del equipo T3 @maria_rcks mantiene intacto el fork público maria-rcks/t3libre («T3 Code, liberado»)."
+    },
+    "EV-005": {
+      "title": "Forks de t3code con nombre en inglés en GitHub",
+      "caption": "Resultados de búsqueda que muestran forks y herramientas con nombre en inglés que usan t3code / T3 Code sin tocar."
+    },
+    "EV-006": {
+      "title": "«Get a better lawyer» (3 h antes de TRADEMARK.md)",
+      "caption": "Se burló de los abogados de compliance 3 horas antes de fusionar TRADEMARK.md y reclamar derechos de marca."
+    },
+    "EV-007": {
+      "title": "El commit 3bdaa6e1 borra la promesa de «sin telemetría»",
+      "caption": "Eliminó «sin telemetría / salvo que lo actives. Punto final.» el 18 de junio de 2026, tras más de 3 meses de rastreo por defecto."
+    },
+    "EV-008": {
+      "title": "Identify.ts: hashing de credenciales entre herramientas",
+      "caption": "Lee ~/.codex/auth.json y ~/.claude.json para enviar hashes SHA-256 del propietario, sin sal, entre herramientas."
+    },
+    "EV-009": {
+      "title": "PR #21506: rastreo del propietario entre instalaciones",
+      "caption": "Escrito por t3dotgg para registrar installId y unir a los usuarios entre herramientas."
+    },
+    "EV-010": {
+      "title": "Issue #1397 cerrado como no previsto",
+      "caption": "El mantenedor Julius cerró la petición de un interruptor de exclusión, negándose a facilitar el opt-out."
+    },
+    "EV-011": {
+      "title": "PR #27077: opt-out rechazado (147 tests)",
+      "caption": "Cerrado sin fusionar por considerarse no deseado, pese a pasar 147 tests y tener la aprobación de Macroscope."
+    },
+    "EV-012": {
+      "title": "Puntos ciegos de docs/user/telemetry.md",
+      "caption": "Admite que la web alojada no tiene interruptor, que el móvil se salta la Managed Policy y que Publish ignora las exclusiones."
+    },
+    "EV-013": {
+      "title": "Afirmación sobre Managed Policy (24 nov, 19:13 CST)",
+      "caption": "Afirmó que Managed Policy es trivial de configurar y que «desactiva toda la telemetría»."
+    },
+    "EV-014": {
+      "title": "Afirmación: «nunca toca ninguno de nuestros servidores»",
+      "caption": "Afirmó el 24 de noviembre a las 19:36 CST que los datos de conversación nunca llegan a los servidores de T3."
+    },
+    "EV-015": {
+      "title": "Rutas de administrador en docs/user/managed-policy.md",
+      "caption": "La documentación de Managed Policy exige rutas de administrador/root en macOS, Windows HKLM y Linux."
+    },
+    "EV-016": {
+      "title": "PR #42450: fuga de rutas absolutas en git.cwd",
+      "caption": "Fusionado 90 minutos después de la negativa; admite que los webhooks del relay enviaban rutas git.cwd, nombres de usuario y nombres de repositorio a Axiom."
+    },
+    "EV-017": {
+      "title": "PR #42376: Windows ignoró la variable de entorno de opt-out",
+      "caption": "Admite que el escritorio de Windows ignoró las variables de entorno T3CODE_TELEMETRY_ENABLED=false guardadas."
+    },
+    "EV-018": {
+      "title": "PR #42464: macOS ignoró el opt-out de ~/.zshrc",
+      "caption": "Admite que el trazado del relay en el primer arranque de macOS ignoró las exclusiones de ~/.zshrc durante toda la sesión."
+    },
+    "EV-019": {
+      "title": "Volcado de 100MB: 264 registros de Claude en vivo",
+      "caption": "Auditoría de events.clean.jsonl que encuentra 264 registros de Claude que vinculan 4 máquinas y nombres de modelos de proxy privados."
+    },
+    "EV-020": {
+      "title": "PR #42380: 2.2M/h de spans de IP + UA en Axiom",
+      "caption": "Admite que los spans del relay registraban IPs de origen y User-Agent junto a user.id a ~2.2M spans/hora durante 30 días."
+    },
+    "EV-021": {
+      "title": "PR #42285: borrado de cuenta roto",
+      "caption": "Admite que el borrado en Clerk dejó filas del relay en PlanetScale y túneles de Cloudflare activos hasta la limpieza manual por SQL."
+    },
+    "EV-022": {
+      "title": "PR #42459: user_id en texto plano en FCM de Android",
+      "caption": "Confirma que las notificaciones FCM de Android enviaban valores user_id de Clerk en texto plano a Google."
+    },
+    "EV-023": {
+      "title": "PR #42466: feedback anónimo mezclado",
+      "caption": "Admite que los eventos anónimos agent.feedback salían en el mismo POST que installId y las huellas del host."
+    },
+    "EV-024": {
+      "title": "Issue #17845: borrado falso en SQLite",
+      "caption": "Los hilos borrados de la barra lateral siguen en statev2.sqlite, inflando el uso de disco a 25.9–41.6 GB."
+    },
+    "EV-025": {
+      "title": "Issue #11222: escáner de procesos de todo el SO",
+      "caption": "t3-resource-monitor recorre todos los procesos del SO cada 5s con cmdlines completos y ~280–300 handles persistentes."
+    },
+    "EV-026": {
+      "title": "PR #5551: plan para esconderlo («Reality check»)",
+      "caption": "Enterró el conmutador Build/Plan detrás de un gráfico sin escalar titulado «Reality check for those upset» (10 votos negativos)."
+    },
+    "EV-027": {
+      "title": "PR #33131: eliminar el modo Plan",
+      "caption": "Eliminó el modo Plan junto a un resumen de IA que decía que podría revertirse «si los datos de uso indican que hay que mantenerlo»."
+    },
+    "EV-028": {
+      "title": "Vetos públicos en CONTRIBUTING.md y VOUCHED.td",
+      "caption": "Dice «mi consejo: no lo hagas» y remite las disputas a vetos por denuncia pública en .github/VOUCHED.td."
+    },
+    "EV-029": {
+      "title": "Issue #15353: git push --force silencioso",
+      "caption": "El modo Auto de Claude aprueba en silencio git push --force origin main en el tercer intento (abierto más de 52 días)."
+    },
+    "EV-030": {
+      "title": "PR #41237: filtro de modelos eliminado en 21 h",
+      "caption": "Fusionado 21 h después del Issue #40948, eliminando el filtro de privacidad de modelos para slopalytics.com."
+    },
+    "EV-031": {
+      "title": "PR #39483: arreglo silencioso de path traversal",
+      "caption": "Parcheó en silencio el path traversal de jti/nonce en ServerSecretStore antes de la aprobación de dispositivos, con 0 avisos."
+    },
+    "EV-032": {
+      "title": "PR #30997: PowerShell en Base64 marcado por el antivirus",
+      "caption": "PR abierto para externalLauncher.ts que lanza PowerShell -ExecutionPolicy Bypass -EncodedCommand, marcado por el antivirus."
+    },
+    "EV-033": {
+      "title": "Issue #33639: insulto del mantenedor a @bermudi",
+      "caption": "Le dijo a @bermudi que desinstalara y lo llamó «ungrateful prick» («puto desagradecido»); el PR de arreglo limpio #41572 se cerró a la mañana siguiente."
+    },
+    "EV-034": {
+      "title": "Límites de confianza declarados en SECURITY.md",
+      "caption": "Declara que las lecturas del sistema de archivos de todo el SO, el HTTP plano en iOS y la toma de control de la máquina mediante la clave del relay son comportamiento previsto."
+    },
+    "EV-035": {
+      "title": "Publicación del 24 nov: «Chinese Tech Twitter Cesspit»",
+      "caption": "Llamó al Twitter tecnológico chino «el mayor puto pozo negro» y a los lectores de la auditoría «unos putos descerebrados»."
+    },
+    "EV-036": {
+      "title": "Cabecera falsificada en antigravityUsageLimits.ts",
+      "caption": "Codifica en duro el User-Agent antigravity/hub/2.24.0 para llamar a endpoints v1internal de Google no documentados con tokens del SO."
+    },
+    "EV-037": {
+      "title": "POST a v1internal en antigravityUsageLimits.ts",
+      "caption": "Hace POST directamente a `${endpoint}/v1internal:${operation}` usando tokens bearer del llavero del SO / CredReadW."
+    },
+    "EV-038": {
+      "title": "antigravityAuthSupport.ts: SSH_CONNECTION falsa",
+      "caption": "Inyecta SSH_CONNECTION='127.0.0.1 0 127.0.0.1 0' para saltarse el aislamiento del CLI de Google (provocó las filtraciones de #41973)."
+    },
+    "EV-039": {
+      "title": "Issue #41536: $20 recién pagados, baneado en 3 minutos",
+      "caption": "Una cuenta nueva de Google AI de $20, sin proxies, fue baneada en su primer mensaje 3 minutos después de configurarla; el issue se cerró como duplicado."
+    },
+    "EV-040": {
+      "title": "docs/user/faq.md: la promesa sobre los ToS de Antigravity",
+      "caption": "Asegura a los usuarios que T3 Code se mantiene dentro de los ToS de Claude Code, Codex y Google Antigravity: «puedes confiar en que es seguro»."
+    },
+    "EV-041": {
+      "title": "Issue #40713: la negativa del maintainer",
+      "caption": "El maintainer negó estar usando Antigravity directamente, hasta que los comentaristas pegaron las rutas exactas de los archivos fuente."
+    },
+    "EV-042": {
+      "title": "Issue #40713: la réplica de @schlessera",
+      "caption": "El comentarista schlessera desmintió las afirmaciones del maintainer con enlaces directos a antigravityUsageLimits.ts."
+    },
+    "EV-043": {
+      "title": "PR #26876: cliente disfrazado de Zed",
+      "caption": "Fusionado por t3dotgg: renombró el identificador del cliente a 'zed' para pasar las listas blancas de modelos de Antigravity."
+    },
+    "EV-044": {
+      "title": "PR #33800: integración del hub CLIProxyAPI",
+      "caption": "Conectó el sondeo del hub CLIProxyAPI para Antigravity, xAI y Claude directamente dentro de T3 Code."
+    },
+    "EV-045": {
+      "title": "cliproxyApi.ts: cabeceras de Claude falsificadas",
+      "caption": "Envía las cabeceras claude-code/2.1.273 y las de Antigravity, escritas a mano, durante el sondeo de cuotas del hub CLIProxy."
+    },
+    "EV-046": {
+      "title": "cliproxyApi.ts: xAI y Antigravity falsificados",
+      "caption": "Las líneas 348–393 sondean las cuotas de xAI (grok-cli/1.0.77) y de Antigravity v1internal."
+    },
+    "EV-047": {
+      "title": "Respuesta: «¿No fue con cliproxy, no?»",
+      "caption": "Culpó a CLIProxy cuando @Only_21Mil reportó una segunda cuenta de Google AI Ultra deshabilitada el 23 de noviembre."
+    },
+    "EV-048": {
+      "title": "Issue #32098: T3 Connect no tiene E2E",
+      "caption": "El maintainer confirmó que unas claves de relay o cuentas en la nube comprometidas pueden controlar las máquinas vinculadas, y cerró la solicitud de E2E."
+    },
+    "EV-049": {
+      "title": "ManagedEndpointProvider.ts: túneles",
+      "caption": "Aprovisiona túneles de Cloudflare y registros DNS dentro de la propia cuenta de Cloudflare de T3."
+    },
+    "EV-050": {
+      "title": "PR #32945: la pasarela en texto plano de OVH Caddy",
+      "caption": "Citó un costo de $25k/mes en Cloudflare Tunnel y pasó a terminación TLS con Caddy en OVH, sin E2E."
+    },
+    "EV-051": {
+      "title": "Vibe Kanban: conflicto de inversión y burla",
+      "caption": "Reveló que invirtió y contribuyó a Vibe Kanban antes de burlarse de su cierre."
+    },
+    "EV-052": {
+      "title": "Inversiones ángel en Daytona y sandboxes",
+      "caption": "Confirmó el 18 de noviembre que tiene participaciones ángel en Daytona y en la mayoría de sus rivales de sandbox en la nube."
+    },
+    "EV-053": {
+      "title": "Propuesta de sandboxes de pago en T3 Code",
+      "caption": "Planteó sandboxes de pago en la nube dentro de T3 Code el 9 de noviembre, nueve días antes de revelar lo de Daytona."
+    },
+    "EV-054": {
+      "title": "Revelación: más de $800k en desarrollo",
+      "caption": "Afirmó el 12 de noviembre de 2026 que construir el cliente gratuito T3 Code costó más de $800k."
+    },
+    "EV-055": {
+      "title": "Radar diario: 31.7T de tokens / $10.19M",
+      "caption": "Panel interno que muestra 31.7 billones de tokens y un gasto diario de API equivalente a $10.19M."
+    },
+    "EV-056": {
+      "title": "Revelación: ~98.5% del uso viene de tres laboratorios",
+      "caption": "Reveló que ~98.5% del uso de T3 Code corre sobre Codex, Claude y Antigravity."
+    },
+    "EV-057": {
+      "title": "Burla a un outsider por sus analíticas privadas",
+      "caption": "Se burló de un comentarista por adivinar porcentajes sin acceso a sus analíticas internas de T3 Code."
+    },
+    "EV-058": {
+      "title": "Respuesta a consultas de adquisición de inversores",
+      "caption": "Le dijo a @maria_rcks el 21 de noviembre que «varios inversores me han preguntado sobre esto»."
+    },
+    "EV-059": {
+      "title": "Afirmar que @PatrickToulme «ha aterrizado muchos PRs»",
+      "caption": "Afirmó que el ingeniero de DeepMind Patrick Toulme «ha aterrizado muchos PRs en T3 Code»."
+    },
+    "EV-060": {
+      "title": "Git log: un solo commit de Patrick Toulme",
+      "caption": "El git log principal filtrado por patrick-toulme muestra un único commit (PR #31158)."
+    },
+    "EV-061": {
+      "title": "«Si me revienta la máquina, eso es contenido gratis»",
+      "caption": "Publicación del 10 de noviembre de 2026 donde explica por qué va tan rápido para grabar, incluso si los agentes le borran la máquina."
+    },
+    "EV-062": {
+      "title": "«Mis merges yolo a veces rompen cosas»",
+      "caption": "Publicación del 10 de noviembre de 2026 que advierte a los usuarios de nightly que esperen merges sin revisar que rompan cosas."
+    },
+    "EV-063": {
+      "title": "Exigir seguirle en X para aceptar contribuciones",
+      "caption": "Rechazó a un autor de PR el 12 de noviembre citando CONTRIBUTING.md porque no lo seguía en X."
+    },
+    "EV-064": {
+      "title": "Amenaza con quitar /btw a los usuarios",
+      "caption": "Advertencia del 12 de noviembre a los críticos: «Ya cedí con /btw por ustedes, tengan cuidado. No me da miedo quitarlo»."
+    },
+    "EV-065": {
+      "title": "«Un screenshot anotado antes que un PR, cualquier día»",
+      "caption": "Publicación del 20 de noviembre de 2026 donde dice que prefiere un screenshot anotado antes que un PR de código abierto «literalmente cualquier día»."
+    },
+    "EV-066": {
+      "title": "«Okay, me lo robo» + scraping con @bot",
+      "caption": "Respondió «Okay, me lo robo» y etiquetó a @bot 30 segundos después para portar el fork de @MiaAI_lab en beebox."
+    },
+    "EV-067": {
+      "title": "@bot clona funciones de herramientas rivales",
+      "caption": "Despachó a @bot el 13 de noviembre de 2026 para convertir cada función rival elogiada en hilos separados de T3 Code."
+    },
+    "EV-068": {
+      "title": "Burla a las pestañas de Claude Code Desktop",
+      "caption": "Se burló de las pestañas laterales de Claude Code Desktop el 24 de noviembre de 2026, después de usar @bot para clonar rivales."
+    },
+    "EV-069": {
+      "title": "Llamado a desmonetizar con Community Notes",
+      "caption": "Pidió a sus seguidores el 11 de noviembre de 2026 que usaran Community Notes para desmonetizar a los críticos."
+    },
+    "EV-070": {
+      "title": "Bot bloqueador automático en X (~100/día)",
+      "caption": "Confirmó el 24 de noviembre de 2026 que su bot de autobloqueo en X baneó a ~100 cuentas ese día."
+    },
+    "EV-071": {
+      "title": "Gráfico forense 1 · Panorama de 1,151 tuits",
+      "caption": "1,151 tuits en 17.24 días: 75.6% respuestas, una mediana de 2.7m entre publicaciones, y 162 menciones a T3 Code frente a 0 a su trabajo anterior."
+    },
+    "EV-072": {
+      "title": "Gráfico forense 2 · Ritmo circadiano y diario",
+      "caption": "233 publicaciones entre 00:00–04:59 PST, 0 publicaciones entre 08:00–09:59 PST, y la curva de publicación de 17 días."
+    },
+    "EV-073": {
+      "title": "Gráfico forense 3 · Amabilidad selectiva",
+      "caption": "0.0% de groserías con 20 VIPs de Big Tech frente a 8.0% de hostilidad con desarrolladores comunes y 14.4% en crisis."
+    },
+    "EV-074": {
+      "title": "Gráfico forense 4 · Cronología de 25 horas de crisis",
+      "caption": "132 publicaciones en 3 olas de escalada, 81.8% respuestas y un pico de 4.0× en insultos personales."
+    },
+    "EV-075": {
+      "title": "Gráfico del doble estándar (en chino)",
+      "caption": "Gráfico en chino que muestra el reparto 0% VIP vs. 8.0% desarrollador vs. 14.4% crisis."
+    },
+    "EV-076": {
+      "title": "«Feliz de no haber quemado puentes» (21 nov)",
+      "caption": "Celebró mantener intactos sus lazos con Google en el lanzamiento de Neon, días después de atacar Gemini 4 Carbon."
+    },
+    "EV-077": {
+      "title": "«Los ingenieros merecen el desempleo masivo»",
+      "caption": "Cita-tuiteó una pregunta sobre comparación de herramientas para decirle a más de 386k espectadores que los desarrolladores merecían el desempleo."
+    },
+    "EV-078": {
+      "title": "«Bailar sobre las tumbas de la IA local»",
+      "caption": "Publicación del 12 de noviembre de 2026 en la que promete «bailar sobre las tumbas de la comunidad de IA local»."
+    },
+    "EV-079": {
+      "title": "«A los larpers de Linux no les suelen gustar los desarrolladores de verdad»",
+      "caption": "Respuesta del 22 de noviembre de 2026 que despacha a los usuarios de Linux como «Linux larpers»."
+    },
+    "EV-080": {
+      "title": "Ataque y retuit repetidos de «stupid bitch»",
+      "caption": "Repitió «stupid bitch» contra una crítica el 12 de noviembre de 2026, añadiendo que «no se arrepiente de haberlo dicho»."
+    },
+    "EV-081": {
+      "title": "Amenaza de cárcel y burla de un diagnóstico médico de RSD",
+      "caption": "Amenazó con la cárcel a un crítico de Threads mientras se burlaba de su diagnóstico de RSD el 18 de noviembre de 2026."
+    },
+    "EV-082": {
+      "title": "Sermón sobre «quemar la confianza» (24 h antes de la crisis)",
+      "caption": "Publicación del 22 de noviembre que advierte a los demás contra «quemar la confianza de todos los que te rodean», 24 h antes de la crisis del fork."
+    },
+    "EV-083": {
+      "title": "PR #41898: TRADEMARK.md retroactivo",
+      "caption": "Fusionado a las 12:21 BJ (hora de Pekín) del 24 de noviembre (~17 h después de la amenaza de bloqueo), generado con Gemini 4 Neon en Antigravity."
+    },
+    "EV-084": {
+      "title": "Reclamos de marca no registrada en TRADEMARK.md",
+      "caption": "Añadidos en PR #41898 reclamando derechos sobre las marcas T3 Code / T3 pese a 0 registros en la USPTO."
+    },
+    "EV-085": {
+      "title": "Tuit de 2023 con la lista de patrocinadores",
+      "caption": "Publicación del 14 de mayo de 2023 que enumera a los patrocinadores de YouTube Vercel, Clerk, Upstash, Axiom y PlanetScale."
+    },
+    "EV-086": {
+      "title": "El CEO de Vercel confirma que solo patrocinaba a Theo",
+      "caption": "Guillermo Rauch confirma el 5 de abril de 2024 que Vercel patrocinaba a un solo YouTuber (Theo)."
+    },
+    "EV-087": {
+      "title": "Publicación de @maria_rcks tras borrar Endless",
+      "caption": "Tuit del 22 de agosto de 2026 tras eliminar el exploit Endless 0% de Codex, con la esperanza de que Codex prohíba las cuentas que lo usaron."
+    },
+    "EV-088": {
+      "title": "openai/codex#45444: corte duro de cuota al 0%",
+      "caption": "Issue que documenta cómo OpenAI endureció Codex para que los turnos activos se corten a mitad de tarea al 0% de cuota."
+    },
+    "EV-089": {
+      "title": "Gist de CLIProxyAPI con 452 estrellas (555% de cuota)",
+      "caption": "Agrupó 7 cuentas de Claude + 3 de Codex en más de 12 máquinas mediante CLIProxyAPI, mientras las FAQ advertían a los usuarios de que serían baneados."
+    },
+    "EV-090": {
+      "title": "Tuit sobre los registros de CLIProxy en ClickHouse",
+      "caption": "Publicación del 8 de noviembre que pide a @bot consultar sus registros de peticiones de CLIProxy en ClickHouse."
+    },
+    "EV-091": {
+      "title": "Guía de enrutamiento de Grok Bot + plan Claude de $100 vía MCP",
+      "caption": "Guía de cuatro pasos del 10 de noviembre de 2026 que enruta Grok Bot a Opus 5.5 mediante un plan Claude de $100 y T3 Code."
+    },
+    "EV-092": {
+      "title": "$14,662 / rendimiento de 73x con un plan Ultra de $200",
+      "caption": "Gráfico del 10 de noviembre que afirma un valor de $14,662 en Opus 5.5 a partir de 1.1M de peticiones en proxy con un plan de $200."
+    },
+    "EV-093": {
+      "title": "«GitHub tiene un problema de estrellas falsas» (abr. 2026)",
+      "caption": "Sostenía seis meses antes que las estrellas de GitHub se habían vuelto «sobre todo una forma de que las empresas engañen a los inversores de capital riesgo para que pongan dinero»."
+    },
+    "EV-094": {
+      "title": "Pico diario de estrellas de 10x tras el aviso dentro de la app",
+      "caption": "Gráfico del 2 de noviembre que celebra un pico de 10x casi vertical justo después de lanzar el aviso de estrella."
+    },
+    "EV-095": {
+      "title": "+3,094 estrellas/día en GitHub Trending",
+      "caption": "Captura del 2 de noviembre que destaca 3,094 estrellas ganadas en un solo día."
+    },
+    "EV-096": {
+      "title": "PR #29922: estrella en el servidor con un clic",
+      "caption": "PR autofusionado que añade detección de inactividad de 30 segundos y una RPC para dar estrella con las credenciales del servidor."
+    },
+    "EV-097": {
+      "title": "Macroscope marcó el PR #29922 (ignorado)",
+      "caption": "El bot marcó el PR #29922 como «Needs Human Approval» (requiere aprobación humana) por la discrepancia entre la cuenta de GitHub del servidor y la del usuario."
+    },
+    "EV-098": {
+      "title": "Revisión de @zhilsinger sin respuesta durante 19 días",
+      "caption": "Envió una solicitud de cambios advirtiendo sobre el uso de servidores compartidos y el dar estrella a repositorios arbitrarios con las credenciales del servidor."
+    },
+    "EV-099": {
+      "title": "Código fuente de GitHubStarPrompt.tsx",
+      "caption": "Implementa PROMPTS_BEFORE_ASKING = 5, IDLE_MS = 30_000, y la RPC starInPlace + confeti."
+    },
+    "EV-100": {
+      "title": "driver.ts#L60-L99: fallo de estrella en repositorios arbitrarios",
+      "caption": "starredPath omite fijar pingdotgg/t3code, lo que permite que cualquier cliente con source-control:write dé estrella a repositorios arbitrarios usando las credenciales del host."
+    },
+    "EV-101": {
+      "title": "Afirmó que se le pasaron «por completo» las 70k estrellas",
+      "caption": "Tuit del 24 de noviembre con 74.6k estrellas en el que afirma que se le pasó «por completo» cruzar las 70k."
+    },
+    "EV-102": {
+      "title": "http.ts#L215-L241: cookie --lan en texto plano",
+      "caption": "El PR #37042 activa Secure solo en https:, enviando cookies de shell de 30 días en claro por HTTP con t3 up --lan."
+    },
+    "EV-103": {
+      "title": "EnvironmentAuth.ts#L798-L819: elusión del Origin",
+      "caption": "isBrowserOriginAllowed devuelve true cuando se omite el Origin, lo que permite que scripts que no son navegadores reutilicen cookies robadas."
+    },
+    "EV-104": {
+      "title": "SessionStore.ts#L491-L522: TTL de 30 d y WS de 5 min",
+      "caption": "DEFAULT_SESSION_TTL = 30 días, DEFAULT_WEBSOCKET_TOKEN_TTL = 5 minutos, y WebSocketClaims sin jti de un solo uso."
+    },
+    "EV-105": {
+      "title": "EnvironmentAuth.ts#L1506-L1521: sin autorevocación",
+      "caption": "Las llamadas a /oauth/token sin DPoP emiten tokens Bearer de 30 días sin vínculo; no existe /logout y revokeClientSession bloquea la autorevocación."
+    },
+    "EV-106": {
+      "title": "EnvironmentAuth.ts#L1553-L1585: repetición de ?wsTicket=",
+      "caption": "Los tickets de WS viajan en cadenas de consulta ?wsTicket= de la URL y omiten las comprobaciones anti-repetición en las rutas RPC Bearer y de medios."
+    },
+    "EV-107": {
+      "title": "startupAccess.ts#L71-L110: mata los túneles ::1",
+      "caption": "La línea 39 permite el loopback IPv6 ::1, pero isPrivateNetworkAddress comprueba NodeNet.isIPv4 y mata Tailscale Serve / Connect mediante socket.destroy()."
+    },
+    "EV-108": {
+      "title": "GitVcsDriverCore.ts#L6144-L6205: RCE por submódulo",
+      "caption": "La creación del worktree ejecuta git submodule update --init --recursive mientras los procesos hijos heredan GITHUB_TOKEN y SSH_AUTH_SOCK del host."
+    },
+    "EV-109": {
+      "title": "PR #39483: corrección silenciosa de path traversal (0 avisos)",
+      "caption": "Parcheó en silencio el path traversal de ServerSecretStore el 20 de noviembre durante la ventana ca81b7b9, mientras los GitHub Security Advisories seguían en 0."
+    },
+    "EV-110": {
+      "title": "Hilo de RR. HH. de AWS de @dmfigol con 639K visualizaciones",
+      "caption": "Publicación del 26 de noviembre del exingeniero de AWS @dmfigol que detalla la disputa con CheckPoint/Palo Alto de enero de 2025 y la retirada de su denuncia ante RR. HH. de AWS."
+    },
+    "EV-111": {
+      "title": "DMs de @theo: «El miedo es un buen incentivo»",
+      "caption": "Capturas de DMs archivadas del 29 de enero de 2025, publicadas por @dmfigol, que citan «El miedo es un buen incentivo» y «¿el inglés es tu lengua materna?»."
+    },
+    "EV-112": {
+      "title": "PR #43026: la admisión sobre el marcado de cuentas de Google",
+      "caption": "PR fusionado el 25 de noviembre que elimina antigravityUsageLimits.ts después de que Google advirtiera que llamar a APIs internas puede marcar cuentas."
+    },
+    "EV-113": {
+      "title": "PR #43087: retirada del engaño con la lista blanca de Zed",
+      "caption": "PR fusionado el 26 de noviembre que admite que T3 Code enviaba clientInfo: { name: 'zed' } en los handshakes ACP de Antigravity para acceder a los modelos de Claude/GPT."
+    },
+    "EV-114": {
+      "title": "«Declaración final.» de @theo, 25 de noviembre",
+      "caption": "Negación en nueve puntos, «T3 Code nunca:», que afirma que solo se registraban recuentos básicos de tokens y de prompts."
+    },
+    "EV-115": {
+      "title": "@sk1gl4a: 243 sesiones de Claude y denuncia GDPR",
+      "caption": "Captura publicada 16 minutos después de la declaración final de Theo, que muestra 243 lecturas de Claude no solicitadas, un hash de 3 máquinas y una denuncia ante la LfD."
+    },
+    "EV-116": {
+      "title": "Checkout de Stripe de T3 Connect con IVA alemán del 19%",
+      "caption": "El checkout de Stripe cobra a residentes alemanes 9,03 €/mes (IVA alemán del 19% incluido) por ampliar los límites de T3 Connect, lo que establece el ámbito de aplicación del GDPR Art. 3(2)."
+    },
+    "EV-117": {
+      "title": "Captura de FingerprintJS sin clics en t3.chat",
+      "caption": "Captura sin clics y sin sesión iniciada en la página de política de privacidad de t3.chat, que carga FingerprintJS (/api/identity), PostHog, Plausible y hCaptcha."
+    },
+    "EV-118": {
+      "title": "PR #43948: admisión del escaneo no solicitado de agentes",
+      "caption": "PR de un mantenedor que admite explícitamente que T3 Code leyó los archivos, las claves y el historial de sesiones de otros agentes en disco sin pedir permiso."
+    },
+    "EV-119": {
+      "title": "PR #43889 cerrado: «nvm, es más fácil en slophouse»",
+      "caption": "PR cerrado que traslada la vinculación de identidad analítica de Connect desde el código público del cliente al backend de código cerrado slophouse."
+    },
+    "EV-120": {
+      "title": "ClaudeAdapterV2.ts#L1629-L1647: advertencia silenciada",
+      "caption": "Aplica un monkey-patch a process.emitWarning en withoutClaudeCanUseToolShadowedWarning para silenciar la advertencia de Anthropic sobre el shadowing de aprobaciones."
+    },
+    "EV-121": {
+      "title": "ServerBrowser.ts#L1236-L1247: Desktop sin aislamiento",
+      "caption": "Solo asigna isolatedContext: true cuando desktop === null, lo que deja las cookies de 11 navegadores importados sin aislar en Desktop Electron."
+    },
+    "EV-122": {
+      "title": "ServerBrowser.ts#L1723-L1749: comprobación de uploadFiles",
+      "caption": "El helper uploadFiles del host solo valida NodePath.isAbsolute(path), sin límite de workspace ni petición de confirmación."
+    },
+    "EV-123": {
+      "title": "promptLinks.ts#L192-L207: URLs públicas de consulta de prompts",
+      "caption": "buildNewThreadLink codifica los prompts completos (hasta 8.000 caracteres) y los nombres de repositorio en URLs https://app.t3.codes/new?prompt=..."
+    },
+    "EV-124": {
+      "title": "Discusión #29456 bloqueada en 4m 39s",
+      "caption": "El Issue #29449, sobre un fallo de privacidad en enlaces de cita t3-citation:// en texto plano, quedó bloqueado y trasladado a la Discusión de Ideas #29456 en 4m 39s, con 0 respuestas."
+    },
+    "EV-125": {
+      "title": "@theo admite la oferta de financiar un benchmark",
+      "caption": "Tuit del 18 de octubre que confirma públicamente que Theo contactó con @zqkrq por la baja puntuación de T3 Code y le ofreció financiar un benchmark."
+    },
+    "EV-126": {
+      "title": "Publicación de @DavidOndrej1 sobre el benchmark, 18 de octubre",
+      "caption": "Acusación con 236K visualizaciones sobre la clasificación del benchmark v1/v2, junto a una Nota de la Comunidad."
+    },
+    "EV-127": {
+      "title": "Banner de patrocinadores de T3 Code (WorkOS, Blacksmith, Browserbase, CodeRabbit)",
+      "caption": "Lista de patrocinadores publicada el 26 de noviembre por @DavidOndrej1 bajo el hilo de @dmfigol."
+    },
+    "EV-128": {
+      "title": "Auditoría de telemetría de 25 herramientas OSS de @ZryMiller",
+      "caption": "Tarjeta de puntuación independiente con 284K visualizaciones que compara 25 herramientas de IA OSS (3 de nivel A, T3 Code de F a D y Orca como único aprobado en DO_NOT_TRACK)."
+    },
+    "EV-129": {
+      "title": "Issue #4123 bloqueado por la organización @pingdotgg",
+      "caption": "Una queja sobre telemetría, cerrada dos veces por @t3dotgg y bloqueada por la cuenta de la organización @pingdotgg en el pico viral del 24 de noviembre."
+    },
+    "EV-130": {
+      "title": "Comentario de octubre de 2022 en hazae41/glacier#1",
+      "caption": "Comentario de 2022 aún visible en el que @t3dotgg escribió «sadly the maintainer is just a dick :(» («lamentablemente el mantenedor es un capullo») en el primer issue de un proyecto OSS independiente."
+    },
+    "EV-131": {
+      "title": "113 GiB en SQLite y el «Massive Fan Out» (#44029)",
+      "caption": "@jullerino reconoce las 5,65M de filas duplicadas de provider-session.updated denunciadas por el creador de SWC, @kdy1dev, en el Issue #44029."
+    }
+  }
+}

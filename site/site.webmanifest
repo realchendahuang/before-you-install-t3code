@@ -1,0 +1,23 @@
+{
+  "name": "Temu3 Code · Public Archive",
+  "short_name": "Temu3 Code",
+  "description": "Independent CC0 1.0 public archive for T3 Code (pingdotgg/t3code) across 18 languages. Zero telemetry.",
+  "start_url": "/",
+  "scope": "/",
+  "lang": "en",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

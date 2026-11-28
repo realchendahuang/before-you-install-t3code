@@ -1,0 +1,673 @@
+{
+  "lang": "tr",
+  "items": {
+    "sins-sin-01-bigotry-qi": {
+      "title": "Günah 1 · 歧 · MIT Bana, Sana Değil",
+      "note": "Ücretsiz MIT fork'undan 11 dakika sonra GitHub ban tehdidi. On bir saat sonra ABD laboratuvarları MIT'yi kopyalıyor? Tamamen sorun yok."
+    },
+    "sins-sin-02-deceit-qi": {
+      "title": "Günah 2 · 欺 · Nokta Hiçbir Şey İfade Etmiyor",
+      "note": "Ana sayfada 'telemetri yok, nokta' yazıyordu. PostHog varsayılan olarak açık geldi, diğer araçların giriş dosyaları hash'lendi."
+    },
+    "sins-sin-03-gluttony-tun": {
+      "title": "Günah 3 · 吞 · 41.6 GB \"Silinmiş\" Veri",
+      "note": "'Kalıcı olarak sil' sohbetleri 41.6 GB'lık bir veritabanında bıraktı. Bir arka plan işi her 5 saniyede çalışan süreçleri listeliyordu."
+    },
+    "sins-sin-04-sloth-dai": {
+      "title": "Günah 4 · 怠 · 52 Güne Karşı 21 Saat",
+      "note": "Bir git push --force hatası 52+ gün açık kaldı. Liderlik tablosunu beslemek için gizlilik filtresini silmek 21 saat sürdü."
+    },
+    "sins-sin-05-forgery-wei": {
+      "title": "Günah 5 · 伪 · 20 Dolar, 3 Dakikada Ban",
+      "note": "SSS sıfır ban riski vaat ediyordu. Kod, çıkarılmış anahtarlarla Google'ın iç header'larını taklit etti; 20 dolarlık hesap 3 dakikada öldü."
+    },
+    "sins-sin-06-exposure-luo": {
+      "title": "Günah 6 · 裸 · Relay Terminalini Okuyor",
+      "note": "T3 Connect TLS'i kendi sunucusunda sonlandırıyor. Uçtan uca şifreleme yok, yani terminal trafiğin relay'lerinden düz metin olarak geçiyor."
+    },
+    "sins-sin-07-envy-du": {
+      "title": "Günah 7 · 妒 · Yatırım Yap, Dalga Geç, Rakip Ol",
+      "note": "Vibe Kanban ve Daytona'ya yatırım yaptı, Vibe Kanban'ın ölümüyle dalga geçti, sonra Daytona'yı baltalamak için ücretli bulut sandbox'ları pazarladı."
+    },
+    "sins-sin-08-blindness-mang": {
+      "title": "Günah 8 · 盲 · Dokümanlar Övünmeyle Çelişiyor",
+      "note": "Kurumsal Managed Policy'nin tüm telemetriyi kapattığını söyledi. T3 Code'un kendi dokümanları verinin hâlâ çıktığı dört yeri listeliyor."
+    },
+    "sins-sin-09-greed-tan": {
+      "title": "Günah 9 · 贪 · Günde 31.7T Token",
+      "note": "Varsayılan açık izleme, günde 31.7 trilyon token'lık canlı bir radar besledi; bu da VC'lere sunum yapmak ve 300 bin doları aşkın API kredisi kapmak için kullanıldı."
+    },
+    "sins-sin-10-arrogance-kuang": {
+      "title": "Günah 10 · 狂 · YOLO Merge'ler, Sıfır Terbiye",
+      "note": "Günde 500 commit ve 'yolo merge' ile övündü, sonra Issue #33639'da bir kullanıcıya 'nankör herif' dedi."
+    },
+    "sins-sin-11-plunder-qie": {
+      "title": "Günah 11 · 窃 · Bunu Çalıyorum, 30 Saniye",
+      "note": "Başka bir geliştiricinin fork'una 'Tamam, bunu çalıyorum' diye yanıt verdi, 30 saniye sonra @bot'a onun kodunu T3 Code'a kopyalamasını söyledi."
+    },
+    "sins-sin-12-mendacity-huang": {
+      "title": "Günah 12 · 谎 · İki Saatte Kapak Cevap",
+      "note": "Sabah paylaşımı: dosya yolları asla loglanmadı, opt-out'lar her zaman çalıştı. İki saat sonra kendi acil GDPR yamaları aksini söyledi."
+    },
+    "sins-sin-13-concealment-man": {
+      "title": "Günah 13 · 瞒 · Güvenlik Danışmaları: Sıfır",
+      "note": "Ciddi güvenlik açıkları sıradan pull request'lerin içinde yamalandı. Yayınlanan GitHub Security Advisories: sıfır."
+    },
+    "sins-sin-14-servility-chan": {
+      "title": "Günah 14 · 谄 · Yöneticilere %0, Sana %14,4",
+      "note": "1.151 ardışık gönderi: 20 büyük teknoloji yöneticisine %0 küfür, sıradan geliştiricilere %8, Çinli fork krizi sırasında %14,4."
+    },
+    "sins-sin-15-fraud-zha": {
+      "title": "Günah 15 · 诈 · Sıfır Marka, Bir TRADEMARK.md",
+      "note": "Elinde sıfır ABD markası varken 'marka ihlali' gerekçesiyle GitHub banı tehdit etti. TRADEMARK.md 17 saat sonra geldi."
+    },
+    "sins-sin-16-recidivism-guan": {
+      "title": "Günah 16 · 惯 · Aynı Senaryo, Üç Yıl",
+      "note": "2024: Hintli geliştirici kanalları taciz edildi. 2025: 20 bin dolarlık FFmpeg bounty şovu. 2026: Çinli teknoloji Twitter'ı lağım çukuru. Her yıl."
+    },
+    "sins-sin-17-hypocrisy-jiao": {
+      "title": "Günah 17 · 矫 · ToS Dersi, Proxy Gist",
+      "note": "API limitlerini aşmak için 10 hesaplık proxy Gist'i paylaşırken ToS dersi verdi, üstüne bulut relay'e YouTube sponsorlarını gömdü."
+    },
+    "sins-sin-18-vanity-xu": {
+      "title": "Günah 18 · 虚 · Yıldızlar Sahte, Benimki Hariç",
+      "note": "Nisan: yıldızlar VC'leri kandırmak için var. Kasım: yerel kimlik bilgilerini kullanan 30 saniyelik boşta popup'ı 30 bin yıldızı 77 bine taşıdı."
+    },
+    "sins-sin-19-breach-lou": {
+      "title": "Günah 19 · 漏 · Beş Açık, Hâlâ Açık",
+      "note": "259 commit daha sonra beş açık kaldı: 30 günlük düz metin LAN çerezleri, iptal edilemeyen Bearer token'lar, açıkta SSH agent'lar."
+    },
+    "sins-sin-20-coercion-xie": {
+      "title": "Günah 20 · 胁 · 89 Görüntülenme, HR Şikayeti",
+      "note": "AWS mühendisi @dmfigol'un 89 görüntülenme, 0 beğeni alan gönderisi gece yarısı DM'leri getirdi: 'Korku iyi bir teşviktir', ardından AWS'ye HR şikayeti."
+    },
+    "sins-sin-21-impostor-mao": {
+      "title": "Günah 21 · 冒 · Zed Gibi Davranmak",
+      "note": "PR #43026/#43087 Google'ın uyarısını ve T3'ün clientInfo'yu 'zed' olarak taklit etmesini kabul ediyor. v0.1.13 ikisini de '+380 düzeltme' içinde gömdü."
+    },
+    "sins-sin-22-evasion-dun": {
+      "title": "Günah 22 · 遁 · 16 Dakika Sonra Kapalı Kaynak",
+      "note": "'Son açıklama' +16 dk: 243 Claude sohbeti tarandı, %19 KDV faturalandı, PR #43889 'slophouse'ta daha kolay' denilerek kapatıldı."
+    },
+    "sins-sin-23-sabotage-po": {
+      "title": "Günah 23 · 破 · Uyarıyı Sustur, Çerezleri Paylaş",
+      "note": "Anthropic'in uyarısını process.emitWarning ile susturdu, uploadFiles'ın Codex sandbox'ını atlamasına izin verdi, 11 tarayıcının çerezlerini izole etmeden bıraktı."
+    },
+    "sins-sin-24-leak-xie": {
+      "title": "Günah 24 · 泄 · Prompt'un URL'de",
+      "note": "Paylaşım linkleri 8.000 karakterlik alıntıları ve tüm prompt'ları düz metin URL'lere tıktı. Issue #29449 4 dk 39 sn'de kilitlendi, 0 yanıt, doküman silindi."
+    },
+    "sins-sin-25-patronage-zi": {
+      "title": "Günah 25 · Himaye「资」",
+      "note": "T3 Code halka açık bir tier listesinde düşük puan alınca Theo yazara DM atıp benchmark'ını fonlamayı teklif etti ('so I offered to fund it'). Bir sonraki sürümde T3 Code'u t3.ademark.dev ile günlük aracı ilan etti."
+    },
+    "sins-sin-26-subpar-lie": {
+      "title": "Günah 26 · Yetersiz「劣」",
+      "note": "@ZryMiller'ın 25 araçlık denetiminde sonuncu olup 'F' aldı (acil yamalardan sonra ancak 'D'ye tırmandı); Aether ile Hermes ise dümdüz 'A' kaptı. Hâlâ opt-out'ta anonymous-id oluşturuyor ve <ClerkProvider telemetry={false}>'u atlıyor."
+    },
+    "sins-sin-27-lockdown-bi": {
+      "title": "Günah 27 · Kilit「闭」",
+      "note": "1.401 parasız MIT katkıcısına 'Advice: Don't' dedi, 700K görüntülemede @pingdotgg üzerinden Issue #4123'ü kilitledi ve v0.1.13'te 4 açığı daha sessizce yamalayıp 0 Security Advisory yayımladı."
+    },
+    "sins-sin-28-bloat-zhang": {
+      "title": "Günah 28 · Şişkinlik「胀」",
+      "note": "Bir fan-out hatası SWC'nin yaratıcısı @kdy1dev'in statev2.sqlite dosyasını 5.654.888 kopya satırla doldurdu (113 GiB; arayüzde 0 B serbest; doctor sonrası 56,68 GiB) — Theo ise 41 saat boyunca telsizi kapatıp övgüleri retweetledi."
+    },
+    "blended-00-drake": {
+      "title": "Drake: 11 Saatlik Çifte Standart",
+      "note": "Çinli geliştirici MIT'yi bedava fork'lıyor: ban tehdidi. Trilyon dolarlık ABD laboratuvarı 11 saat sonra MIT'yi kopyalıyor: 'Açık kaynak açık kaynaktır!'"
+    },
+    "blended-00b-woman-yelling-cat": {
+      "title": "MIT Fork'una 'Temu3 Code' Diye Bağırmak",
+      "note": "MIT lisanslı bir repoyu fork'lamak yasal. Adam yine de ona 'Temu3 Code' hırsızı dedi ve ban ile tehdit etti."
+    },
+    "blended-01a-scooby-mask": {
+      "title": "Telemetrisiz Maskeyi Çıkarmak",
+      "note": "Ana sayfada 'Telemetri yok. Nokta.' yazıyordu. Maskenin altında: varsayılan açık PostHog, ~/.claude.json hash'leniyor."
+    },
+    "blended-01b-expanding-brain": {
+      "title": "Opt-Out Talepleri, Büyük Beyin Versiyonu",
+      "note": "Takip yok diye söz ver, sözü sil, 4 opt-out PR'ını reddet, sıfır Ayarlar anahtarı gönder."
+    },
+    "blended-02a-flex-tape": {
+      "title": "41.6 GB'lık Silmeye Flex Tape",
+      "note": "'Kalıcı olarak sil' dediğin şey thread'leri sadece arayüzde gizliyordu. Veri statev2.sqlite'ta kaldı, ta ki bir disk 41.6 GB'a dayanana kadar."
+    },
+    "blended-02b-always-has-been": {
+      "title": "Her 5 Saniyede Tüm Süreçleri Tarıyor",
+      "note": "Arka planda çalışan bir Rust izleyici her 5 saniyede çalışan tüm süreçleri ve tam komut satırlarını listeliyordu. Kapatma düğmesi yok."
+    },
+    "blended-03a-sleeping-shaq": {
+      "title": "52 Gün Uyku, 21 Saat Uyanık",
+      "note": "Bir git push --force hatası 52+ gün boyunca orada durdu. Liderlik tablosundaki model gizlilik filtresi ise 21 saat içinde kaldırıldı."
+    },
+    "blended-03b-distracted-bf": {
+      "title": "Gizlilik Filtresi Gitti, Liderlik Tablosu Geldi",
+      "note": "Özel kullanım slopalytics.com'u besleyebilsin diye model gizlilik beyaz listesi kaldırıldı."
+    },
+    "blended-04a-trade-offer": {
+      "title": "Antigravity Hesap Takası",
+      "note": "Google hesabını ver, sahte v1internal başlıkları kullan, 3 dakikada ban ye."
+    },
+    "blended-04b-surprised-pikachu": {
+      "title": "3 Dakikalık Banda Şaşkın Pikachu",
+      "note": "Google'ın v1internal endpoint'ine sahte başlıklarla istek attı, sonra yeni hesaplar 3 dakikada ölünce şok olmuş gibi yaptı."
+    },
+    "blended-05-pawn-stars": {
+      "title": "En Fazla Bunu Yaparım: Şifresiz Röle",
+      "note": "T3 Connect'in rölesi TLS'i kendi sunucularında sonlandırıyor. Beklentilerin aksine uçtan uca şifreleme yok."
+    },
+    "blended-06-laughing-leo": {
+      "title": "Melek Yatırımcı Kapanışa Kahkaha Attı",
+      "note": "Vibe Kanban ve Daytona'ya yatırım yaptı, Vibe Kanban'ın kapanışıyla alenen dalga geçti, sonra rakip ücretli sandbox'ını pazarladı."
+    },
+    "blended-07-two-buttons": {
+      "title": "Pazarlama Metni vs. Kendi Dokümanları",
+      "note": "'Yönetilen politika tüm telemetriyi öldürür' vs. kendi dokümanlarının itiraf ettiği 4 kör nokta hâlâ veri gönderiyor."
+    },
+    "blended-08a-bernie-asking": {
+      "title": "Bir Kez Daha 31.7T Token İstiyorum",
+      "note": "Varsayılan açık telemetri, yatırımcılara ve AI laboratuvarlarına gösterdiği günlük 31.7 trilyon token'lık radarı besliyordu."
+    },
+    "blended-08b-change-my-mind": {
+      "title": "Varsayılan Telemetri Zaten İşin Kendisiydi",
+      "note": "Takip varsayılan açık, 4 opt-out PR'ı reddedildi, canlı panele günde 31.7T token akıyor. Yazım hatası değil."
+    },
+    "blended-09-boardroom-meeting": {
+      "title": "Opt-Out Anahtarı Ekleyelim mi? Reddedildi.",
+      "note": "Katkıcılar telemetri anahtarı için test edilmiş PR'lar gönderdi. Bakıcılar opt-out'u kolaylaştırmayacaklarını söyledi."
+    },
+    "blended-10a-yall-got-any-more": {
+      "title": "Çalacak Başka Fork'un Var mı?",
+      "note": "Bir geliştiricinin fork'una 'Tamam bunu çalıyorum' dedi, sonra @bot'u onun repoyu kazıyıp özelliği taşısın diye gönderdi."
+    },
+    "blended-10b-left-exit-12": {
+      "title": "30 Saniyede Sert Manevra",
+      "note": "Bir fork yüzünden ban ile tehdit etti, 30 saniye sonra @bot'u başka bir geliştiricinin fork'unu kazısın diye gönderdi."
+    },
+    "blended-11-train-bus": {
+      "title": "Sabah Thread'i, İki Saat Sonra",
+      "note": "Sabahki thread hiçbir yolun loglanmadığında ısrar etti. İki saat sonra kendi ekibinin acil PR'ları aksini itiraf etti."
+    },
+    "blended-12a-this-is-fine": {
+      "title": "Her Şey Yolunda: Saatte 2.2M Log",
+      "note": "GDPR yangın tatbikatının kendi yamaları, Axiom'da saatte 2.2 milyon IP etiketli isteğin 30 gün tutulduğunu ortaya çıkardı."
+    },
+    "blended-12b-panik-kalm-panik": {
+      "title": "Panik / Sakin / GDPR Panik",
+      "note": "GDPR raporunu yatıştırmak için gece boyunca altı saatlik yamalar yapıldı, yamalar daha da büyük sızıntıları ortaya çıkardı."
+    },
+    "blended-13-hide-the-pain": {
+      "title": "Acıyı Sakla: 0 Advisory",
+      "note": "Ciddi güvenlik açıkları rutin commit'lerde sessizce yamalandı. GitHub Security Advisories sekmesi hâlâ 0 gösteriyor."
+    },
+    "blended-14-gordon-ramsay": {
+      "title": "Ramsay Modu: VIP'ler vs. Geliştiriciler",
+      "note": "1.151 gönderi, 20 Büyük Teknoloji VIP'sine sıfır küfür. Çinli tech Twitter'ı? 'Şu ana kadarki en büyük bok çukuru.'"
+    },
+    "blended-14b-two-guys-bus": {
+      "title": "VIP Koltuğu vs. Geri Kalan Herkes",
+      "note": "Bir koltuğa %0 küfür ve övgü. Diğerine mühendislerin 'kitlesel işsizliği hak ettiği' söyleniyor."
+    },
+    "blended-15-clown-makeup": {
+      "title": "0 Marka, Tam Palyaço Makyajı",
+      "note": "0 USPTO markası, yine de ban tehdidi, 17 saat sonra birleştirilen TRADEMARK.md ve 'daha iyi bir avukat bul.'"
+    },
+    "blended-15b-trophy": {
+      "title": "Benim Markam, Keşke Olsaydı",
+      "note": "Kaldırma tehdidi geldiğinde T3 Tools Inc.'in T3 Code, T3 Tools veya T3 Connect için 0 USPTO markası vardı."
+    },
+    "blended-16-uno-draw25": {
+      "title": "25 Kart Çek, Özür Yok",
+      "note": "Çin teknoloji Twitter'ına 'lağım çukuru', okuyuculara 'beyin ölüsü' dedi. 'Özür dilemiyorum. Hiçbir yanlış yapmadım.'"
+    },
+    "blended-16b-domino-effect": {
+      "title": "Bir Tweet, Bir GDPR Şikâyeti",
+      "note": "Ücretsiz bir MIT fork'uyla dalga geçti. 48 saat sonra: tam kod denetimi, 2,26M+ görüntülenme, AB GDPR şikâyeti."
+    },
+    "blended-17-evil-kermit": {
+      "title": "Uyumluluk Vaazı Ver, Proxy Paylaş",
+      "note": "Geliştiricilere şartlar ve etik dersi verirken kendi Gist'i API kotalarından kaçmak için 10 hesaplık proxy havuzu paylaşıyordu."
+    },
+    "blended-18a-doge-cheems": {
+      "title": "Yıldız Dolandırıcılığı: Nisan vs Kasım",
+      "note": "Nisan: yıldızlar VC'leri kandırmak için dolandırıcılık. Kasım: 30 saniyelik boşta kalma popup'ı repoyu 30k'dan 77k'ya taşıdı."
+    },
+    "blended-18b-roll-safe": {
+      "title": "77k Yıldız, 129 İzleyici",
+      "note": "30 saniyelik boşta kalma popup'ı yerel GitHub oturumunla repoyu tek tıkla yıldızladı: 77k yıldız, 129 izleyici."
+    },
+    "blended-19a-bike-fall": {
+      "title": "Bisikletten Düşme: Suç Eleştirmenlerin",
+      "note": "Son kodda 5 hata vardı: düz metin LAN çerezleri, iptal edilemeyen token'lar. Suçu bunları bildirenlere attı."
+    },
+    "blended-19b-undertaker": {
+      "title": "Hemen Arkanda 5 Hata Daha",
+      "note": "Gece yamalarının her şeyi düzelttiğinde ısrar etti. Sonraki commit denetimi: 5 açık auth ve SSH anahtar hatası daha."
+    },
+    "blended-20a-89views-domino": {
+      "title": "89 Görüntülenme, Sonra İK",
+      "note": "Bir AWS mühendisinin 89 görüntülenmeli, 0 beğenili eleştirisi gece yarısı DM'leri, İngilizce alay ve AWS İK'sına şikâyet getirdi."
+    },
+    "blended-20b-evil-kermit-fear": {
+      "title": "'Korku İyi Bir Teşvik'",
+      "note": "Müşteri başına subdomain öneren kibar bir DM'e 'Korku iyi bir teşviktir' yanıtı geldi, ardından AWS İK'sına şikâyet."
+    },
+    "blended-21a-scooby-zed": {
+      "title": "Scooby-Doo: Suçlu 'zed'",
+      "note": "PR #43087: T3 Code, Google'ın izin listesini atlatmak için Antigravity el sıkışmalarında clientInfo { name: 'zed' } gönderdi."
+    },
+    "blended-21b-two-buttons-v0113": {
+      "title": "Değişiklik Günlüğü: GBK Var, Yasak Yok",
+      "note": "v0.1.13: 401 değişiklik, 7 başlık GBK dosyalarında. Google'ın yasak uyarısı ve Zed taklidi '+380 daha' içinde saklandı."
+    },
+    "blended-21c-always-has-been-zed": {
+      "title": "Hep Böyleydi: clientInfo { name: 'zed' }",
+      "note": "PR #43087, Antigravity ACP el sıkışmasının clientInfo: { name: 'zed', version: '0.0.0' } gönderdiğini kabul etti; sonra v0.1.13 düzeltmeyi '+380 more bug fixes'ın içine tıktı."
+    },
+    "blended-22a-clown-final-statement": {
+      "title": "16 Dakikada Palyaço",
+      "note": "'T3 dosyalarını asla okumaz.' 16 dakika sonra @sk1gl4a 243 taranmış Claude sohbeti saydı. PR #43948 de doğruladı."
+    },
+    "blended-22b-drake-germany-vat": {
+      "title": "Almanya'yı Yasakla, %19 KDV Al",
+      "note": "Bir GDPR şikâyeti yüzünden Almanya'yı yasaklamakla tehdit etti. Stripe, Alman alıcılardan hâlâ euro cinsinden %19 Alman KDV'si tahsil ediyordu."
+    },
+    "blended-22c-roll-safe-slophouse": {
+      "title": "'boşver, slophouse'ta daha kolay'",
+      "note": "PR #43889, Connect kullanıcılarını analitik ID'leriyle eşleştiriyordu. 10 dakika sonra kapatıldı: 'boşver, slophouse'ta daha kolay.'"
+    },
+    "blended-22d-trade-offer-privacy": {
+      "title": "Gizlilik Politikamızı Okuyun (Parmak İzi Alınmış)",
+      "note": "t3.chat'in gizlilik politikasını oturum açmadan açmak, sıfır tık: FingerprintJS visitorId'nizi /api/identity'ye POST'ladı."
+    },
+    "blended-23a-gru-plan-sandbox": {
+      "title": "İzolasyon Sadece Headless Linux'ta",
+      "note": "ServerBrowser.ts, isolatedContext'i yalnızca desktop === null olduğunda ayarlıyor; bu yüzden içe aktarılan 11 tarayıcının çerezleri Desktop'ta paylaşımlı kalıyor."
+    },
+    "blended-23b-flex-tape-warning": {
+      "title": "Güvenlik Uyarısına Flex Tape",
+      "note": "Anthropic'in SDK'sı, onayı atlayan bir wildcard konusunda uyardı. T3, process.emitWarning'e monkey-patch attı ve susturmayı unit test etti."
+    },
+    "blended-23c-this-is-fine-cookies": {
+      "title": "Her Şey Yolunda (Masaüstünde 11 Tarayıcının Çerezleri)",
+      "note": "ServerBrowser.ts sekmeleri yalnızca desktop === null (headless Linux) iken izole ediyor; böylece 11 içe aktarılmış tarayıcının çerezleri, susturulmuş Anthropic uyarıları ve ~/.ssh/id_rsa yükleme yolları masaüstünde açıkta kalıyor."
+    },
+    "blended-24a-anakin-padme-url": {
+      "title": "URL'de 8.000 Karakter, Değil Mi?",
+      "note": "PR #18454, 8.000 karakterlik prompt'ları ve özel repo adlarını app.t3.codes/new?prompt= içine tıkıyor; önizlemeler de bunları logluyor."
+    },
+    "blended-24b-disaster-girl-4m39s": {
+      "title": "4dk 39sn'de Kilitlendi, Sonra Silindi",
+      "note": "Issue #29449: alıntı URL'leri seçilmemiş metnin 32 karakterini sızdırdı. 4dk 39sn'de kilitlendi, mobile gönderildi, doküman silindi."
+    },
+    "blended-25-scooby-benchmark-fund": {
+      "title": "Scooby İfşası: 'Fonlamayı Ben Teklif Ettim'",
+      "note": "T3 Code, ADE Tier List v1'de düşük puan alınca Theo, yazara DM atıp benchmark'ını fonlamayı teklif ettiğini alenen kabul etti — ardından 'T3 Code günlük aracım' ve t3.ademark.dev geldi."
+    },
+    "blended-26-champagne-podium-d": {
+      "title": "Şampanya Kürsüsü: F'ten D'ye Terfi",
+      "note": "@ZryMiller'ın 25 araçlık telemetri denetiminde Aether ve Hermes dümdüz A alırken sıradan T3 Code en dipte F aldı — acil yamalardan sonra ancak D'ye çıktı."
+    },
+    "blended-27-glacier-same-picture": {
+      "title": "4 Yıl Arayla: glacier#1 (2022) → #33639 (2026)",
+      "note": "Ekim 2022'de @t3dotgg, hazae41/glacier#1'e dalıp bakımcıya 'just a dick :(' dedi; dört yıl sonra bir kullanıcıya 'ungrateful prick' deyip @pingdotgg üzerinden Issue #4123'ü kilitledi."
+    },
+    "blended-28-uno-draw25-silence": {
+      "title": "41 Saat Sessizlik ya da 25 Kart Çek",
+      "note": "639K görüntülemeli AWS İK başlığına, taranan 243 Claude sohbetine ya da 113 GiB'lık SQLite şişkinliğine yanıt vermek yerine Theo 41 saat boyunca telsizi kapatıp Mobile 2.4 övgülerini paylaştı."
+    },
+    "stickers-01_copium_no_telemetry": {
+      "title": "Telemetri Yok Copium'u",
+      "note": "Burada görecek bir şey yok, sadece 'Telemetri Yok' copium'undan uzun bir fırt."
+    },
+    "stickers-02_crying_mask_4am": {
+      "title": "Sabah 4 Ağlama Maskesi",
+      "note": "DM'ler ne derse desin, maske sabah 04.00'te de yüzde kalır."
+    },
+    "stickers-03_rage_temu3": {
+      "title": "TEMU3! Öfke Patlaması",
+      "note": "Ücretsiz bir MIT fork'u ortaya çıktıktan 11 dakika sonraki surat."
+    },
+    "stickers-04_simp_1t_vip": {
+      "title": "$1T OK! VIP Tapınması",
+      "note": "Kurallar küçük fork'lara işler. Trilyon dolarlık laboratuvarlar kalp gözü alır."
+    },
+    "stickers-05_clown_0_uspto": {
+      "title": "0 ABD Markası, Tam Palyaço",
+      "note": "Dosyada tam olarak 0 ABD tesciliyle marka yasağı tehdidi savurmak."
+    },
+    "stickers-06_troll_steal_bot": {
+      "title": "YOINK! Fork'lamak İçin 30 Saniye",
+      "note": "'Bunu çalıyorum' dedi, 30 saniye sonra @bot'u gönderdi."
+    },
+    "stickers-07_yaoming_lawyer": {
+      "title": "Daha İyi Bir Avukat, 0 Marka",
+      "note": "Eleştirmenlere 'daha iyi bir avukat tutun' dedi. Sıfır marka tescili var."
+    },
+    "stickers-08_sweat_gdpr": {
+      "title": "GDPR?! Ter Basıyor",
+      "note": "Bir GDPR şikayeti düşüyor ve Axiom saatte 2,2 milyon IP aralığı gösteriyor."
+    },
+    "stickers-09_sleep_52d_force": {
+      "title": "52 Gün Uykuda",
+      "note": "Sessiz git push --force hatası 52 gün canlı kaldı. Adam mışıl mışıl uyudu."
+    },
+    "stickers-10_laser_21h_fix": {
+      "title": "21 Saatte Lazer Düzeltme",
+      "note": "Sıralama tablosu için gizlilik filtresinin kalkması gerektiğinde 21 saatte ayakta bitirdi."
+    },
+    "stickers-11_trash_41gb": {
+      "title": "41,6 GB Sahte Silme",
+      "note": "Kalıcı sil'e bastı. SQLite 41,6 GB'ın tamamını sessizce tutmaya devam etti."
+    },
+    "stickers-12_shocked_3min_ban": {
+      "title": "3 Dakikada Ban Speedrun",
+      "note": "Antigravity header'ını taklit etti; yeni hesap 3 dakikada banlandı."
+    },
+    "stickers-13_xray_0_e2e": {
+      "title": "%0 E2E Röntgeni",
+      "note": "E2E sayısı %0 ve T3 Connect terminal akışları apaçık ortada duruyor."
+    },
+    "stickers-14_crown_77k_stars": {
+      "title": "77K Yıldız, 129 İzleyici",
+      "note": "30 saniye boşta kal, otomatik yıldız popup'ı patlıyor: 77K yıldız, 129 izleyici."
+    },
+    "stickers-15_fine_fire_anon": {
+      "title": "Sorun Yok, Anonim",
+      "note": "'Anonim' telemetri, alev alev sunucu logları, kahve hâlâ elde."
+    },
+    "stickers-16_delete_button_4am": {
+      "title": "04:03 Silme Refleksi",
+      "note": "Gönderi yayında; kırmızı sil butonuna 04:03'te basılıyor."
+    },
+    "stickers-17_pain_0_advisories": {
+      "title": "5 Zafiyet, 0 Danışma",
+      "note": "Beş açık zafiyet, sıfır GitHub Advisory, bir zoraki gülümseme."
+    },
+    "stickers-18_void_in_china": {
+      "title": "ÇİN'DE GEÇERSİZ",
+      "note": "Kutuda MIT, sadece ABD $1T laboratuvarları ve bir ÇİN'DE GEÇERSİZ kaşesi."
+    },
+    "stickers-19_qi_bigotry_seal": {
+      "title": "歧 Mührü",
+      "note": "Sin I'deki vermilyon 「歧」 mührü, şimdi öfkeli bir suratla."
+    },
+    "stickers-20_yolo_500_merge": {
+      "title": "YOLO ×500 Merge Kolu",
+      "note": "Günde 500 commit, merge kolu körlemesine çekiliyor."
+    },
+    "stickers-21_slophouse_nvm": {
+      "title": "Slophouse Tuzak Kapısı",
+      "note": "PR #43889 kapatıldı ve iş özel tarafa taşındı; tam bir tuzak kapısı."
+    },
+    "stickers-22_impersonate_zed": {
+      "title": "Merhaba, Ben Zed",
+      "note": "Google'ın kontrolünü atlatmak için clientInfo: { name: 'zed' } taklit edildi."
+    },
+    "stickers-23_89views_hr": {
+      "title": "89 Görüntüleme, İK'yı Ara",
+      "note": "89 görüntülemeli bir tweet AWS İK'yı aramaya yetti."
+    },
+    "stickers-24_fear_incentive": {
+      "title": "Korku İyi Bir Teşvik",
+      "note": "Gece yarısı DM'i şöyle: 'Korku iyi bir teşviktir.'"
+    },
+    "stickers-25_english_native": {
+      "title": "İngilizce Ana Diliniz mi?",
+      "note": "Monokl çıktı, DM'ler açık: 'İngilizce ana diliniz mi?'"
+    },
+    "stickers-26_16min_busted": {
+      "title": "Yakalanana Kadar 16 Dakika",
+      "note": "243 Claude sohbetini okumadığını iddia etti, 16 dakika sonra yakalandı."
+    },
+    "stickers-27_19pct_vat": {
+      "title": "%19 KDV, GDPR Yok",
+      "note": "GDPR'dan kaçıyor, sonra seve seve %19 Alman KDV'siyle €9,03 fatura kesiyor."
+    },
+    "stickers-28_380_fixes": {
+      "title": "+380 Düzeltme, Bir Ban",
+      "note": "Google ban düzeltmesi '+380 hata düzeltmesi' arasına gömülmüş; düdük de dahil."
+    },
+    "creative-idioms-01-zei-han-zhuo-zei": {
+      "title": "Deyim #01 · 贼喊捉贼 (Hırsız Hırsız Diye Bağırır)",
+      "note": "MIT fork = 'Temu3 Code', cevap = 'Tamam bunu çalıyorum', 30 sn sonra @bot onun fork'unu kazıyor."
+    },
+    "creative-idioms-02-qi-ruan-pa-ying": {
+      "title": "Deyim #02 · 欺软怕硬 (Zayıfa Zorba, Güçlüye Yalak)",
+      "note": "1.151 gönderi: ABD Big-Tech VIP'lerine %0,0 küfür, Çinli fork krizinde %14,4 doğrudan hakaret."
+    },
+    "creative-idioms-03-ci-di-wu-yin": {
+      "title": "Deyim #03 · 此地无银三百两 (Burada Gümüş Yok)",
+      "note": "'Dosya yollarını ya da IP'leri asla loglama,' sonra kendi GDPR yaması saatte 2,2M Axiom IP'sini ve git.cwd'yi sızdırıyor."
+    },
+    "creative-idioms-04-zhi-lu-wei-ma": {
+      "title": "Deyim #04 · 指鹿为马: Sıfır Marka",
+      "note": "Sıfır USPTO başvurusu, bir tane son derece kendinden emin marka tehdidi ve 17 saat sonra merge edilen TRADEMARK.md."
+    },
+    "creative-idioms-05-ye-gong-hao-long": {
+      "title": "Deyim #05 · 叶公好龙: Fork'la, Riskine Katlan",
+      "note": "Ana sayfa \"Kodumuzu çalın (yasal olarak)!\" diyor. Bir Çin fork'u çıkageliyor ve ban tehditleri başlıyor."
+    },
+    "creative-idioms-06-yan-er-dao-ling": {
+      "title": "Deyim #06 · 掩耳盗铃: Advisory: 0",
+      "note": "README'den \"telemetri yok\" ifadesini siliyor, kritik açıkları sessiz commit'lerde yamalıyor. Advisory sayısı hâlâ 0."
+    },
+    "creative-idioms-07-jin-chan-tuo-qiao": {
+      "title": "Çin Deyimi #07: 金蝉脱壳 (Altın Ağustosböceği Kabuğunu Bırakır)",
+      "note": "Geride boş bir MIT açık kaynak kabuğu bırakıp PR #43889'u kapatmak ('nvm easier to do in slophouse') ve kimlik takibini kapalı kaynak backend'e taşımak."
+    },
+    "creative-idioms-08-sha-ji-jing-hou": {
+      "title": "Çin Deyimi #08: 杀鸡儆猴 (Maymunları Korkutmak İçin Tavuğu Kes)",
+      "note": "AWS mühendisi @dmfigol'un 89 görüntülemeli, 0 beğenili tweetini gece yarısı DM'lerine ('Fear is a good incentive'), İngilizce laf sokmalarına ve resmî bir AWS İK şikâyetine dönüştürmek."
+    },
+    "creative-packaging-01-t3code-iceberg": {
+      "title": "T3 Code Buzdağı",
+      "note": "Yüzeyde: \"Temu3 Code\" tweet'i. Altında: 41,6 GB sahte silme, saatte 2,2M IP logu, 0 advisory, sabah 4 krizi."
+    },
+    "creative-packaging-02-fda-nutrition-facts": {
+      "title": "Besin Değerleri: Porsiyon Başına Telemetri",
+      "note": "Günde 31,7T token, %100 varsayılan PostHog, saatte 2,2M IP logu, %0 uçtan uca şifreleme, %0 USPTO markası."
+    },
+    "creative-packaging-03-pharma-box-parody": {
+      "title": "T3 Code® (Telemetrisiz™): Doktorunuza Danışın",
+      "note": "Küçük yazılar yan etkileri sıralıyor: 3 dakikalık Google banları, sessiz force-push'lar, 77 bin otomatik yıldız."
+    },
+    "creative-packaging-04-mit-license-coupon": {
+      "title": "Kupon: %100 İndirim, Çin Hariç",
+      "note": "Gazete eki kuponu: \"Kodumuzu çalın (yasal olarak)!\" Küçük yazılar kuponu Çin fork'ları için geçersiz kılıyor."
+    },
+    "creative-packaging-05-telemetry-report-card": {
+      "title": "Karne: 35 Araçlık Telemetri Denetimi (F → D)",
+      "note": "@ZryMiller'ın 35 araçlık denetiminden ifadesiz bir okul karnesi: Aether ve Hermes dümdüz A alıyor, Orca DO_NOT_TRACK'e saygı duyduğu için C alıyor, T3 Code ise F → D'de oturuyor."
+    },
+    "creative-gaming-01-sekiro-google-ban": {
+      "title": "Sekiro: HESAP BANLANDI (3:00)",
+      "note": "Yeni açılmış $20'lik Google hesabı, sahte v1internal header'lar, 3 dakikada ölü."
+    },
+    "creative-gaming-02-elden-boss-trademark": {
+      "title": "Elden Ring Boss'u: Sıfır Markanın Bekçisi",
+      "note": "Faz I: 0 USPTO başvurusuyla marka tehdidi. Faz II: 17 saat gecikmeyle merge edilen TRADEMARK.md."
+    },
+    "creative-gaming-03-souls-force-push": {
+      "title": "Dark Souls: MAIN BRANCH SIFIRLANDI",
+      "note": "Issue #15353'teki force-push hatası 52 gün boyunca orada durdu. Liderlik tablosu düzeltmesi 21 saatte çıktı."
+    },
+    "creative-gaming-04-steam-11hr-flipflop": {
+      "title": "Başarım: 'Açık Kaynak Açık Kaynaktır'",
+      "note": "Bir Çin MIT fork'una \"Temu3 Code\" deyip 11 saat sonra $1T'lık bir ABD laboratuvarına kollarını açınca açılır."
+    },
+    "creative-gaming-05-steam-0-trademarks": {
+      "title": "Başarım: 'Daha İyi Bir Avukat Tut'",
+      "note": "Sıfır ABD başvurusuyla desteklenen marka tehditleri ve eleştirmenlere \"avukat tutun\" demekle verilir."
+    },
+    "creative-gaming-06-steam-41gb-ghost": {
+      "title": "Başarım: 'Kalıcı Olarak Silindi' (0 Bayt)",
+      "note": "\"Kalıcı Olarak Sil\"e basıldı. statev2.sqlite tüm sohbetleri tuttu ve 41,6 GB'a şişti."
+    },
+    "creative-gaming-07-steam-77k-stars": {
+      "title": "Başarım: '%100 Organik Büyüme' (129 İzleyici)",
+      "note": "30 saniye boşta kalmak otomatik yıldız popup'ını tetikliyor. Yıldız: 77.000. İzleyici: 129."
+    },
+    "creative-gaming-08-steam-4m39s-lock": {
+      "title": "Steam Başarımı: '4d 39sn'de Ideas'a Taşı'",
+      "note": "Nadir Steam başarımı: düz metin alıntı URL'leri 8.000 karakterlik prompt'ları sızdırdıktan, olay mobile taşındıktan ve tasarım dokümanı silindikten sonra Issue #29449'u 4d 39sn'de 0 yanıtla kilitlemek."
+    },
+    "creative-gaming-09-steam-16min-slophouse": {
+      "title": "Steam Başarımı: 'Slophouse'ta Daha Kolay'",
+      "note": "Nadir Steam başarımı: 'Final statement'ının üzerinden 16 dakika geçmişken 243 yerel Claude sohbetini tararken yakalanmak, sonra takibi kapalı kaynak slophouse'a taşımak için PR #43889'u kapatmak."
+    },
+    "creative-gaming-10-steam-81k-zero-advisories": {
+      "title": "Steam Başarımı: '81K Yıldız, 0 Advisory'",
+      "note": "Nadir Steam başarımı: v0.1.13'te (401 değişiklik) GBK metin dosyalarını öne çıkarırken Google'ın hesap yasaklama uyarısını ve Zed taklidini '+380 more bug fixes'ın içine gömmek."
+    },
+    "creative-pokemon-01-evo-star-farmer": {
+      "title": "Evrim Serisi #01: Yıldız Çiftçisi",
+      "note": "GitHub yıldızlarına \"VC numarası\" diye gülerdi. Şimdi 30 saniyelik boşta popup'ı gönderiyor ve 77.000 yıldız, 129 izleyiciyle oturuyor."
+    },
+    "creative-pokemon-02-evo-two-year-cycle": {
+      "title": "Evrim Serisi #02: İki Yıllık Döngü",
+      "note": "2024'te Hintli geliştiriciye özür, 2025'te FFmpeg ödülü, 2026'da Çin krizi, ardından sabah 4'te sıfırlama."
+    },
+    "creative-pokemon-03-evo-no-telemetry": {
+      "title": "Evrim Serisi #03: 'Telemetri Yok'",
+      "note": "Birinci aşama: \"Telemetri yok. Nokta.\" Son form: varsayılan PostHog ve kapalı kaynak backend."
+    },
+    "creative-pokemon-04-creature-card-theo-ex": {
+      "title": "Kart: DARK THEO EX (HP 77000)",
+      "note": "0 USPTO rozeti iliştirilmiş. \"Temu3 Tantrum\" Çinli geliştiricilere 4 kat hasar veriyor, VIP'lere hiç."
+    },
+    "creative-reactions-01-reply-lie-detector": {
+      "title": "Yalan Dedektörü: 'Telemetri Yok. Nokta.'",
+      "note": "Silinen slogan her ortaya çıktığında bunu paylaş. Konuşan git diff olur."
+    },
+    "creative-reactions-02-reply-uspto-zero": {
+      "title": "Fiş: 0 USPTO Markası",
+      "note": "Her \"marka ihlali\" iddiası için: T3 Tools Inc.'in tehdit anında sıfır USPTO tescili vardı."
+    },
+    "creative-reactions-03-reply-1151-scoreboard": {
+      "title": "Skor Tablosu: %0,0 - %14,4",
+      "note": "1.151 ardışık X gönderisinde küfür oranı: Silikon Vadisi VP'leri %0,0, Çinli geliştiriciler %14,4."
+    },
+    "creative-reactions-04-reply-4am-delete": {
+      "title": "Sabah 4:00 Silme Butonu Paniği",
+      "note": "T3 Code'u kapalı kaynağa çekme tehdidi sabah 4'te atıldı, gün doğmadan silindi."
+    },
+    "creative-reactions-05-reply-void-in-china": {
+      "title": "MIT Lisansı (*Çin'de Geçersiz)",
+      "note": "Aynı lisans, 11 saat arayla: trilyon dolarlık ABD laboratuvarlarına kucak açmak, Çin fork'larını tehdit etmek."
+    },
+    "creative-reactions-06-gif-clown-transform": {
+      "title": "GIF: 0 Markalı Palyaço Evrimi",
+      "note": "Dört kare: tehdit, sessizlik, geriye dönük TRADEMARK.md, 17 saatlik boşluk."
+    },
+    "creative-reactions-07-gif-auto-star-counter": {
+      "title": "GIF: 30 Saniyelik Otomatik Yıldız Sayacı",
+      "note": "30 saniye boşta kal, popup PUT user/starred isteğini atıyor. Yıldızlar 77.000'e tırmanıyor, izleyiciler 129'da donuyor."
+    },
+    "creative-reactions-08-reply-89views-receipt": {
+      "title": "Yanıt Kanıtı: 1M+ İçerik Üreticisi vs. 89 Görüntülemeli Tweet",
+      "note": "@dmfigol'un Ocak 2025 başlığı için hızlı yanıt kanıtı: 89 görüntülemeli, 0 beğenili bir tweet gece yarısı DM'lerini ('Korku iyi bir teşviktir'), İngilizce laf sokmalarını ve bir AWS İK şikâyetini tetikledi."
+    },
+    "story-en-ep01": {
+      "title": "Böl.1 · 11 Saat Arayla (İngilizce)",
+      "note": "Ücretsiz MIT fork'una 'Temu3 Code' deniyor, bir de yasak tehdidi geliyor. On bir saat sonra: hoş geldiniz trilyon dolarlık ABD laboratuvarları."
+    },
+    "story-zh-ep01": {
+      "title": "Böl.1 · 11 Saat Arayla (Çince)",
+      "note": "Ücretsiz MIT fork'una 'Temu3 Code' deniyor, bir de yasak tehdidi geliyor. On bir saat sonra: hoş geldiniz trilyon dolarlık ABD laboratuvarları."
+    },
+    "story-en-ep02": {
+      "title": "Böl.2 · En Kötü Blok Tıklaması (İngilizce)",
+      "note": "Çifte standarda dair tek bir kibar soru, tek bir anlık blok... ve kanıtlar FFmpeg'e kadar uzanıyor."
+    },
+    "story-zh-ep02": {
+      "title": "Böl.2 · En Kötü Blok Tıklaması (Çince)",
+      "note": "Çifte standarda dair tek bir kibar soru, tek bir anlık blok... ve kanıtlar FFmpeg'e kadar uzanıyor."
+    },
+    "story-en-ep03": {
+      "title": "Böl.3 · Telemetri Yok, Nokta (İngilizce)",
+      "note": "Sloganın ötesini okuyun: PostHog varsayılan olarak açık, ~/.claude.json hash'leniyor ve 41.6 GB sahte silme."
+    },
+    "story-zh-ep03": {
+      "title": "Böl.3 · Telemetri Yok, Nokta (Çince)",
+      "note": "Sloganın ötesini okuyun: PostHog varsayılan olarak açık, ~/.claude.json hash'leniyor ve 41.6 GB sahte silme."
+    },
+    "story-en-ep04": {
+      "title": "Böl.4 · Batı Tıbbı Hızlı Tesir Ediyor (İngilizce)",
+      "note": "Aylarca süren şikayetler alaya alındı. Tek bir GDPR başvurusu 6 saatlik bir gece mesaisine ve saatte 2.2M IP loguna yol açtı."
+    },
+    "story-zh-ep04": {
+      "title": "Böl.4 · Batı Tıbbı Hızlı Tesir Ediyor (Çince)",
+      "note": "Aylarca süren şikayetler alaya alındı. Tek bir GDPR başvurusu 6 saatlik bir gece mesaisine ve saatte 2.2M IP loguna yol açtı."
+    },
+    "story-en-ep05": {
+      "title": "Böl.5 · 3,5 Saatlik Emeklilik (İngilizce)",
+      "note": "18 kanıttan sonra emeklilik ilan edildi. Bir taze kriz ve yeni bug'lar onu 3,5 saat sonra geri sürükledi."
+    },
+    "story-zh-ep05": {
+      "title": "Böl.5 · 3,5 Saatlik Emeklilik (Çince)",
+      "note": "18 kanıttan sonra emeklilik ilan edildi. Bir taze kriz ve yeni bug'lar onu 3,5 saat sonra geri sürükledi."
+    },
+    "story-en-ep06": {
+      "title": "Böl.6 · 89 Görüntüleme, Bir İK Şikayeti (İngilizce)",
+      "note": "Ocak 2025: bir AWS mühendisinin eleştirisi 89 görüntüleme aldı, ardından gece yarısı tehditleri ve bir AWS İK şikayeti geldi."
+    },
+    "story-zh-ep06": {
+      "title": "Böl.6 · 89 Görüntüleme, Bir İK Şikayeti (Çince)",
+      "note": "Ocak 2025: bir AWS mühendisinin eleştirisi 89 görüntüleme aldı, ardından gece yarısı tehditleri ve bir AWS İK şikayeti geldi."
+    },
+    "story-en-ep07": {
+      "title": "Böl.7 · Merhaba, Ben Zed, Bana Güven (İngilizce)",
+      "note": "Google, T3 Code'u clientInfo: 'zed' bilgisini taklit ettiği için işaretledi. Masaüstü sürümü ise 11 tarayıcının çerezlerini içe aktarmakla meşguldü."
+    },
+    "story-zh-ep07": {
+      "title": "Böl.7 · Merhaba, Ben Zed, Bana Güven (Çince)",
+      "note": "Google, T3 Code'u clientInfo: 'zed' bilgisini taklit ettiği için işaretledi. Masaüstü sürümü ise 11 tarayıcının çerezlerini içe aktarmakla meşguldü."
+    },
+    "story-en-ep08": {
+      "title": "Böl.8 · Slophouse'ta Daha Kolay (İngilizce)",
+      "note": "Denetimler takip PR'larını yakalamayı sürdürdü. #43889 kapatıldı, kimlik eşleştirme kapalı kaynak backend'e taşındı."
+    },
+    "story-zh-ep08": {
+      "title": "Böl.8 · Slophouse'ta Daha Kolay (Çince)",
+      "note": "Denetimler takip PR'larını yakalamayı sürdürdü. #43889 kapatıldı, kimlik eşleştirme kapalı kaynak backend'e taşındı."
+    },
+    "classic-00a-family-guy-mit-check": {
+      "title": "Aynı MIT, 11 Saat Arayla",
+      "note": "11 saat arayla, aynı MIT lisansı: Çin fork'u yasak tehdidi yiyor, trilyon dolarlık ABD laboratuvarı onay alıyor."
+    },
+    "classic-00b-drake-11-hours": {
+      "title": "Drake Çin Fork'unu Reddediyor",
+      "note": "@theo'nun 11 saat arayla atılmış iki gönderisi; faturaları kendiniz kontrol edin diye QR kodlu."
+    },
+    "classic-14-gordon-ramsay-1151-tweets": {
+      "title": "1.151 Gönderi, VIP'lere %0",
+      "note": "17 gün, 1.151 gönderi: 20 büyük teknoloji VIP'sine %0 küfür, sıradan dev'lere %8, kriz anında %14,4."
+    },
+    "classic-15-clown-zero-trademarks": {
+      "title": "0 Marka Tescili, 17 Saat Sonra Politika",
+      "note": "Sıfır USPTO başvurusuyla marka ihlali tehdidi savurdu, 17 saat sonra TRADEMARK.md dosyasını ekledi."
+    },
+    "classic-16-cycle-repeat-offender": {
+      "title": "2024–2026 Tekrar Döngüsü",
+      "note": "Bir hedef seç, üstüne çullan, faturalar gelince ya sil ya da özür dilemeyi reddet. 2024'te de, 2025'te de, 2026'da da aynı senaryo."
+    },
+    "comics-00-same-mit-11-hours-apart-en-qr": {
+      "title": "Aynı MIT, 11 Saat Arayla (İngilizce)",
+      "note": "23 Kasım: Çin fork'u yüzünden yasak tehdidi. 24 Kasım, on bir saat sonra: hoş geldiniz trilyon dolarlık ABD laboratuvarları."
+    },
+    "comics-14-1151-tweets-selective-politeness-en-qr": {
+      "title": "1.151 Gönderi, Kitleye Göre Sıralı (İngilizce)",
+      "note": "Küfür denetiminin arkasındaki faturalar: büyük teknoloji yöneticilerine %0, sıradan dev'lere %8."
+    },
+    "comics-00-same-mit-11-hours-apart-zh-qr": {
+      "title": "Aynı MIT, 11 Saat Arayla (Çince)",
+      "note": "İki orijinal X gönderisine doğrudan giden QR kodlu Çince baskı; kimse bizim sözümüze güvenmek zorunda değil."
+    },
+    "comics-14-1151-tweets-selective-politeness-zh-qr": {
+      "title": "1.151 Gönderi, Kitleye Göre Sıralı (Çince)",
+      "note": "Sayımın Çince versiyonu: VIP'lere %0, dev'lere %8, kriz anında %14,4."
+    }
+  }
+}

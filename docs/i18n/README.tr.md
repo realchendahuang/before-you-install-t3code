@@ -1,19 +1,19 @@
-# Temu3 Code — T3 Code'u Yüklemeden Önce
+# Temu3 Code · T3 Code'u kurmadan önce
 
 <p align="center">
-  <em>pingdotgg/t3code üzerine bağımsız, kanıt öncelikli bir kamu kaydı — ırksal çifte standartları, aldatıcı telemetriyi, kritik güvenlik açıklarını ve ticari manipülasyonu belgeliyor.</em>
+  <em>20 vaka, 109 ekran görüntüsü ve pingdotgg/t3code'dan 3,5 yıllık kamuya açık gönderi ve kod. Takip yok.</em>
 </p>
 
 <p align="center">
   <a href="https://temu3code.com/?lang=tr"><strong>🌐 temu3code.com</strong></a> ·
-  <a href="https://temu3code.com/mail/?lang=tr"><strong>✉ Tmail Gelen Kutusu</strong></a> ·
-  <a href="https://temu3code.com/?lang=tr#x-receipts"><strong>📸 12 Orijinal X Görüntüsü</strong></a> ·
-  <a href="https://temu3code.com/memes/?lang=tr"><strong>🃏 61 Mem</strong></a>
+  <a href="https://temu3code.com/mail/?lang=tr"><strong>✉ Tmail</strong></a> ·
+  <a href="https://temu3code.com/?lang=tr#x-receipts"><strong>📸 12 X gönderisi</strong></a> ·
+  <a href="https://temu3code.com/memes/?lang=tr"><strong>🃏 61 mem</strong></a>
 </p>
 <p align="center">
   <a href="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml"><img src="https://github.com/realchendahuang/temu3code/actions/workflows/verify.yml/badge.svg" alt="Repository Verification CI" /></a> ·
-  <a href="../EVIDENCE-INDEX.md"><strong>109 Kanıt</strong></a> ·
-  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 Kaynak</strong></a>
+  <a href="../EVIDENCE-INDEX.md"><strong>109 ekran görüntüsü</strong></a> ·
+  <a href="../COMPLETE-SOURCE-INDEX.md"><strong>327 bağlantı</strong></a>
 </p>
 
 <p align="center">
@@ -52,9 +52,9 @@
 > [!TIP]
 > **Neden "Temu3 Code"?**
 >
-> 23 Kasım 2026’da — bir Çinli geliştiricinin ücretsiz MIT çatalına "Chinese knockoff" dedikten tam 10 dakika sonra — @theo X’te marka adımızı cömertçe bağışladı: "Temu3 Code" (84 bin görüntülenme).
+> 23 Kasım 2026'da @theo, Çinli bir geliştiricinin ücretsiz MIT fork'una "Chinese knockoff" dedikten on dakika sonra X'te bize ismi verdi: "Temu3 Code" (84 bin görüntülenme).
 >
-> USPTO’da markası olmayan bir kurucunun bedava isimlendirmesi değerini görmek için fazla iyi — bu yüzden temu3code.com’u kaydettik, kamu denetimini buraya taşıdık ve PostHog telemetrisini dışarıda bıraktık. Ücretsiz isimlendirme danışmanlığın için teşekkürler, Theo. (CC0 1.0 — istersen bizi geri çatallayın.) — [@theo’nun isimlendirme tweet’ini görüntüle ↗](https://x.com/theo/status/2124825920808829077)
+> ABD'de tescilli markası olmayan bir kurucu sana bedava isim veriyorsa alırsın. temu3code.com'u aldık, tüm kamuya açık kayıtları buraya koyduk ve PostHog'u dışarıda bıraktık. İsim için teşekkürler Theo. Buradaki her şey CC0 1.0, fork'lamak serbest. [@theo'nun gönderisini gör ↗](https://x.com/theo/status/2124825920808829077)
 <!-- origin-story:end -->
 ---
 
